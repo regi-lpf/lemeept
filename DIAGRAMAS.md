@@ -2,7 +2,7 @@
 
 Este documento complementa o guia de continuidade com uma visão visual do sistema.
 
-O código atual é procedural: ele está organizado em scripts e funções, não em classes Python. Por isso, o diagrama de classes abaixo é conceitual. Ele representa as responsabilidades do sistema e ajuda a entender como uma futura reorganização em classes poderia ser feita.
+O fluxo legado permanece organizado principalmente em scripts e funções. A nova pipeline usa `Registro` como dataclass e `GeradorPainel` para serialização; o diagrama representa responsabilidades e dependências, não todos os detalhes internos.
 
 ## 1. Visão geral do fluxo
 
@@ -23,8 +23,9 @@ flowchart TD
     E3["3_ArrumarPlanilha.py<br/>Validação e padronização"]
     XLS2["dados_finais_painel_ept.xlsx"]
     REL["Relatórios de OCR e validação"]
-    E4["4_GerarPainelHtml.py"]
-    HTML["painel_leme_ept.html"]
+    PIPE["lemeept/atualizar_dados.py<br/>normalizar, classificar e serializar"]
+    JSONP["lemeept/painel-ept.json<br/>dados compactos"]
+    HTML["lemeept/index-elementor-json.html<br/>shell estático do Elementor"]
     WP["Elementor / WordPress<br/>publicação manual"]
 
     SITE --> E1
@@ -49,9 +50,10 @@ flowchart TD
     REF --> E3
     E3 --> XLS2
     E3 --> REL
-    XLS2 --> E4
-    E4 --> HTML
-    HTML --> WP
+    XLS2 --> PIPE
+    PIPE --> JSONP
+    HTML -->|publicado uma vez| WP
+    JSONP -->|fetch HTTPS em cada carga| WP
 ```
 
 ## 2. Diagrama de classes conceitual
@@ -127,10 +129,9 @@ classDiagram
     }
 
     class GeradorPainel {
-        +lerPlanilhaFinal()
-        +prepararDados()
-        +gerarHTML()
-        +salvarPainel()
+        +validarIDs()
+        +montarContratoJSON()
+        +salvarJSONAtomico()
     }
 
     class RepositorioReferencias {
@@ -253,7 +254,7 @@ sequenceDiagram
     participant E2 as Python 2 / OCR
     participant GPT as GPT
     participant E3 as Python 3
-    participant E4 as Python 4
+    participant PIPE as Pipeline do painel
     participant WP as Elementor
 
     Pessoa->>E1: python 1_PegarDadosSiteIfc.py
@@ -284,9 +285,12 @@ sequenceDiagram
     E3->>E3: Valida IDs, categorias e confiança
     E3-->>Pessoa: Planilha final + relatório
     Pessoa->>Pessoa: Faz revisão humana
-    Pessoa->>E4: python 4_GerarPainelHtml.py
-    E4-->>Pessoa: painel_leme_ept.html
-    Pessoa->>WP: Cola o HTML e publica
+    Pessoa->>PIPE: python -m lemeept.atualizar_dados
+    PIPE->>PIPE: Normaliza e classifica registros
+    PIPE->>PIPE: Valida IDs e grava JSON compacto
+    PIPE-->>Pessoa: lemeept/painel-ept.json
+    Pessoa->>WP: Atualiza somente o JSON hospedado
+    WP->>WP: HTML estático faz fetch do JSON por HTTPS
 ```
 
 ## 5. Decisão da instituição e do campus
@@ -340,13 +344,17 @@ flowchart LR
         GPTF["Arquivos de troca com GPT"]
         CACHES["Caches"]
         REPORTS["Relatórios"]
-        PANEL["Painel HTML"]
+        SHELL["lemeept/index-elementor-json.html<br/>shell estático do Elementor"]
+        DATA["lemeept/painel-ept.json<br/>dados de publicação"]
     end
 
     COD --> Local
     REQ --> COD
     RJSON --> Local
     TEST --> COD
+    COD --> DATA
+    SHELL --> WP["Elementor / WordPress"]
+    DATA --> WP
     Local -.->|ignorado por .gitignore| Git
 ```
 

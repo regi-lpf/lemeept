@@ -64,6 +64,7 @@ def argumentos() -> argparse.Namespace:
     parser.add_argument("--offline", action="store_true", help="usa somente caches já existentes")
     parser.add_argument("--sem-educapes", action="store_true", help="não consulta metadados do eduCAPES")
     parser.add_argument("--sem-download", action="store_true", help="não baixa PDFs")
+    parser.add_argument("--sem-ocr", action="store_true", help="encerra após a coleta, sem iniciar OCR/GPT")
     parser.add_argument(
         "--inseguro-tls",
         action="store_true",
@@ -654,6 +655,10 @@ def main() -> int:
     print(json.dumps(resultado["resumo"], ensure_ascii=False, indent=2))
     if resultado["resumo"]["ids_duplicados"]:
         return 2
+
+    if getattr(args, "sem_ocr", False):
+        print("Coleta concluída. OCR não solicitado.")
+        return 0
 
     script_ocr = Path(__file__).with_name("2_PdfParaJson.py")
     comando = [sys.executable, str(script_ocr)]
