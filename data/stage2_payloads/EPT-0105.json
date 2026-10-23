@@ -1,0 +1,185 @@
+{
+  "id": "EPT-0105",
+  "metadados_resolvidos": {
+    "ano": 2020,
+    "autor": "Jair Adriano Strapazzon",
+    "orientador": "Humberto Luis de Cesaro",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP2"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "O ATENDIMENTO AO PÚBLICO LGBTQI+ NO CAMPUS CAMBORIÚ – INSTITUTO FEDERAL CATARINENSE: POR UMA POLÍTICA INSTITUCIONAL NÃO EXCLUDENTE NO ENSINO MÉDIO INTEGRADO",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/ARTIGO-VERSAO-FINAL-JAIR-ADRIANO-PDF-A.pdf",
+    "palavras_chave": [
+      "ProfEPT",
+      "LGBTQIfobia",
+      "exclusão",
+      "Ensino Médio Integrado",
+      "Educação Profissional e Tecnológica"
+    ],
+    "autores_referenciados": [
+      "Ana Caroline Pimenta Costa Camisasca",
+      "Ana Cristina Juvenal da Cruz",
+      "Ana Maria Colling",
+      "Anete Abramowicz",
+      "Arilda Schmidt Godoy",
+      "Carlos Pompe",
+      "Cátia Maria Alves Monteiro",
+      "Cladecir Alberto Schenkel",
+      "Daniel Borrillo",
+      "Denise Tolfo Silveira",
+      "Dermeval Saviani",
+      "Eder Pires de Camargo",
+      "Edna Raquel Hogemann",
+      "Egre Padoin",
+      "Eliane Quincozes Porto",
+      "Eliezer Moreira Pacheco",
+      "Elton Dias Xavier",
+      "Gaudêncio Frigotto",
+      "Guacira Lopes Louro",
+      "Iago Henrique Fernandes de Sousa Moura",
+      "Iara Falleiros Braga",
+      "Laurence Bardin",
+      "Leidiane Oliveira",
+      "Lorena Bernadete da Silva",
+      "Luigi Sturaro Guimarães",
+      "Maria Ciavatta",
+      "Maria Vitória Benevides",
+      "Mário Lopes Amorim",
+      "Mary Garcia Castro",
+      "Mirian Abramovay",
+      "Mirlene Fátima Simões Wexell Severo",
+      "Paolo Nosella",
+      "Rachel Pulcino",
+      "Rafael Porto Vieira",
+      "Raquel Pinho",
+      "Rogério Diniz Junqueira",
+      "Ronaldo Marcos de Lima Araujo",
+      "Sandra Regina Marcolino Gherardi",
+      "Silvana Mara Morais Santos",
+      "Tatiana Engel Gerhardt",
+      "Tatiane Cosentino Rodrigues",
+      "Thaisa Vanessa Costa Oliveira",
+      "Vânia Olímpia Barbosa Silva",
+      "Vantoir Roberto Brancher"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "http://educapes.capes.gov.br/handle/capes/643836",
+    "titulo_produto": "Diversidade sexual e de gênero: construir conhecimentos para desconstruir preconceitos",
+    "titulo_produto_bruto": "Texto – DIVERSIDADE SEXUAL E DE GÊNERO: CONSTRUIR CONHECIMENTOS PARA DESCONSTRUIR PRECONCEITOS.",
+    "data_publicacao": "2021-12-07",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "STRAPAZZON, Jair Adriano",
+        "papel": "creator"
+      },
+      {
+        "nome": "CESARO, Humberto",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/643836",
+        "url": "http://educapes.capes.gov.br/handle/capes/643836"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Diversidade Sexual e de Gênero: construir conhecimentos para desconstruir preconceitos",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "texto"
+    ],
+    "palavras_chave_educapes": [
+      "Diversidade sexual; gênero; LGBTfobia; inclusão; Educação Profissional e Tecnológica",
+      "Programa de Pós=Graduação em Educação Profissional e Tecnológica"
+    ],
+    "tipo_produto_regex": null,
+    "fonte_tipo_regex": null,
+    "formato_produto_regex": "Curso",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\n\nJAIR ADRIANO STRAPAZZON\n\nO ATENDIMENTO AO PÚBLICO LGBTQI+ NO CAMPUS CAMBORIÚ –\nINSTITUTO FEDERAL CATARINENSE: POR UMA POLÍTICA INSTITUCIONAL\nNÃO EXCLUDENTE NO ENSINO MÉDIO INTEGRADO\n\nBlumenau/SC\nSetembro de 2021\n\nJAIR ADRIANO STRAPAZZON\n\nO ATENDIMENTO AO PÚBLICO LGBTQI+ NO CAMPUS CAMBORIÚ –\nINSTITUTO FEDERAL CATARINENSE: POR UMA POLÍTICA INSTITUCIONAL\nNÃO EXCLUDENTE NO ENSINO MÉDIO INTEGRADO\n\nDissertação apresentada ao Programa de Pós-\ngraduação em Educação Profissional e Tecnológica,\nofertado pelo campus Blumenau do Instituto\nFederal Catarinense, como parte dos requisitos\npara a obtenção do título de Mestre em Educação\nProfissional e Tecnológica.\n\nOrientador: Prof. Dr. Humberto Luis de Cesaro\n\nBlumenau/SC\nSetembro de 2021",
+    "ficha_catalografica": "[PÁG. 3]\nStrapazzon, Jair Adriano\n S897a O atendimento ao público LGBTQI+ no campus Camboriú – Instituto\n Federal Catarinense: por uma política institucional não excludente no Ensino\n Médio Catarinense / Jair Adriano Strapazzon ; orientador Humberto Luis de\n Cesaro. – Blumenau, 2021.\n 62 p.\n\n Artigo (Mestrado) – Instituto Federal Catarinense campus Blumenau, Mes-\n trado Profissional em Educação Profissional e Tecnológica, Blumenau, 2021.\n\n Inclui referências.\n\n 1. LGBTQI+. 2. Ensino Profissional e Técnico. 3. Ensino Médio.\n 4. Discriminação Sexual. I. Cesaro, Humberto Luis de. II. Instituto Federal Catarinense. Mestrado\nProfissional em Educação Profissional e Tecnológica.\nIII. Título.\n\n CDD 371.8266\n\n Ficha catalográfica elaborada pela bibliotecária: Shyrlei K. Jagielski Benkendorf – CRB 14/662",
+    "sumario": "[PÁG. 11]\nSUMÁRIO\n\nAPRESENTAÇÃO ................................................................................................................... 11\n1 INTRODUÇÃO ..................................................................................................................... 13\n2 REFERENCIAL TEÓRICO .................................................................................................. 15\n2.1 Educação Profissional no Brasil: a dualidade que exclui! .............................................. 15\n2.2 LGBTQI+: definições e discussões ................................................................................ 18\n2.3 LGBTQIfobia ................................................................................................................. 20\n2.4 LGBTQIfobia e escola.................................................................................................... 22\n3 METODOLOGIA .................................................................................................................. 28\n4 ANÁLISE DOS DADOS (RESULTADOS E DISCUSSÕES) ............................................. 30\n4.1 Presenças de alunos(as) LGBTQI+ no curso/campus .................................................... 30\n4.2 Atitudes LGBTQIfóbicas no curso/campus e encaminhamentos ................................... 32\n4.3 Casos de abandono escolar devido à LGBTQIfobia no curso/campus .......................... 36\n4.4 Existência de disciplinas específicas sobre gênero e sexualidade nos cursos ................ 37\n4.5 Acolhimento ................................................................................................................... 38\n5 AVALIAÇÕES DO PRODUTO EDUCACIONAL .............................................................. 41\n5.1 Módulo 1 ........................................................................................................................ 41\n5.2 Módulo 2 ........................................................................................................................ 42\n5.3 Módulo 3 ........................................................................................................................ 43\n5.4 Módulo 4 ........................................................................................................................ 44\n5.5 Módulo 5 ........................................................................................................................ 46\n5.6 Comentários .................................................................................................................... 47\n6 CONSIDERAÇÕES FINAIS ................................................................................................ 49\nREFERÊNCIAS ....................................................................................................................... 52\nAPÊNDICE A –Produto Educacional....................................................................................... 56\nAPÊNDICE B – Termo de Consen",
+    "resumo": "[PÁG. 8]\nRESUMO\n\nO presente trabalho foi produzido no Mestrado Profissional em Educação Profissional e\nTecnológica (ProfEPT) e teve como objetivo compreender os processos de mediação utilizados\npelo Campus Camboriú do IFC para resolver os problemas da LGBTQIfobia e o abandono\nescolar desse público em específico no Ensino Médio Integrado. A metodologia utilizada pode\nser caracterizada como qualitativa, de natureza aplicada, e foi utilizada, como instrumento de\ncoleta de dados, a entrevista semiestruturada. Foram convidados(as) a participar da pesquisa\nos(as) servidores(as) que atuam diretamente com alunos(as), como Coordenadores(as) de\nCursos Técnicos Integrados ao Ensino Médio e servidores(as) que trabalham no Registro\nAcadêmico e no Serviço Integrado de Suporte e Acompanhamento ao Educando (SISAE). A\nescolha do Campus Camboriú se deu em virtude da proximidade do pesquisador, pela\nprioridade de oferta do Ensino Médio Integrado pelos Institutos Federais e também pelo grande\nnúmero de alunos(as) atendidos(as) no Ensino Médio Integrado, alvo da pesquisa. Os resultados\nda pesquisa demonstraram que o Campus Camboriú, apesar de ter, como agentes educacionais,\nprofissionais comprometidos(as) com a não aceitação da LGBTQIfobia, eles ainda não estão\ntotalmente preparados(as) para acabar com esse preconceito tão degradante, humilhante e\ndesumanizador. Como instituição, no entanto, o caminho parece preciso, aprovando resoluções\ne promovendo discussões para que esse combate aconteça. Por meio dos resultados das\nentrevistas, foi desenvolvido como produto educacional o curso “Diversidade Sexual e de\nGênero: construir conhecimentos para desconstruir preconceitos”, composto por textos,\nsugestões de leituras e curiosidades, de forma a sanar as dúvidas e dar embasamento aos(às)\ndocentes e servidores(as) do IFC para discussões, reflexões e ações junto aos(as) docentes,\ndiscentes e comunidade externa sobre o tema. O curso foi encaminhado aos membros dos\nRegistros Acadêmicos e dos Núcleos de Estudo em Gênero e Sexualidade de todos os campi da\ninstituição para avaliação. As pessoas que se dispuseram a fazer as leituras propostas avaliaram-\nnas positivamente, incluindo opiniões, sugestões e críticas que aprimoraram o material. Como\nproduto final, o curso foi alterado para a forma de e-book, pois é necessário que fique disponível\npor tempo indefinido no repositório EduCAPES.\nPalavras-Chave: ProfEPT; LGBTQIfobia; exclusão; Ensino Médio Integrado; Educação\nProfissional e Tecnológica.",
+    "introducao": "[PÁG. 14]\n13\n\n1 INTRODUÇÃO\n\nTendo em vista a dualidade estrutural da educação brasileira, acompanhada do sistema\npatriarcal, muitos grupos foram alijados do direito à educação formal, como negros(as),\níndios(as), sem-terra, mulheres e pessoas LGBTQI+. Esses grupos são vulneráveis às condições\npolíticas, sociais, culturais e econômicas moldados sobre o paradigma da normalidade.\n\nNesse sentido, estudos que busquem informações sobre a exclusão das pessoas\nLGBTQI+ e ações institucionais para desvanecer esse processo histórico fazem-se cada vez\nmais necessários.\n\nPara a pesquisa, foi selecionado o Ensino Médio Integrado (EMI) do campus Camboriú,\nvinculado ao Instituto Federal de Educação, Ciência e Tecnologia Catarinense (IFC),\nfundamentado em razões de localização, de grande número de alunos no EMI, de prioridade\ndos Institutos Federais na oferta desse nível de ensino e pela intenção da educação integral que,\npara Araújo e Frigotto (2015, p. 251), “é um projeto que traz um conteúdo político-pedagógico\nengajado, comprometido com ações formativas integradoras, em oposição às práticas\nfragmentadoras do saber”, trazendo uma concepção emancipatória dos indivíduos e\ncomprometida com mudanças frente às desigualdades existentes.\n\nAlém da educação integral, outra proposta – e desafio – é alcançar uma educação de\nqualidade para todos e todas, sem distinções, sejam elas quais forem, de maneira que se possa\nafirmar que a educação e as escolas não são excludentes, mas sim inclusivas. E, quando falamos\nem inclusão, Camargo (2017) elucida que, além dos alunos público-alvo da educação especial,\ntodos os demais também o são: brancos(as), negros(as), homossexuais, heterossexuais,\níndios(as), idades diversas e gêneros distintos.\n\nMesmo assim, ainda é correto afirmar que muitos(as) alunos(as) têm sido excluídos por\nmotivos diversos e, entre esses, se encontra o preconceito com pessoas LGBTQI+.\n\nA LGBTQIfobia é o termo usado para designar o conjunto de sentimentos negativos que\ncausam discriminação e violência contra pessoas lésbicas, gays, bissexuais, transgêneros e “[...]\npessoas cuja expressão de gênero não se enquadram nos modelos hegemônicos de\nmasculinidade e feminilidade.” (JUNQUEIRA, 2007, p. 60).\nA escola, e seus/suas agentes educacionais fazem parte da sociedade em que vivemos,\ne, não está distante de manter os processos supressivos de estudantes que não fazem parte da\nnormalidade exigida e imposta por instâncias societárias como as igrejas, vertentes políticas,\nfamílias, entre outras.\n\nSendo assim, os objetivos da pesquisa aqui realizada se propõem a desvelar o que\n\n[PÁG. 15]\n14\n\nacontece no campus Camboriú no que se trata da não-exclusão de pessoas LGBTQI+, tendo\ncomo objetivo geral “compreender os processos de mediação utilizados pelo Campus Camboriú\ndo IFC para resolver os problemas da LGBTQIfobia e o abandono escolar desse público em\nespecífico” e como objetivos específicos:\n Verificar se há um acolhimento para pessoas LGBTQI+ no campus Camboriú do IFC;\n Analisar as formas de mediações e resoluções de conflitos pelos(as) responsáveis em\nrelação aos processos de LGBTQIfobia;\n Constatar se há disciplinas específicas sobre Gênero e Sexualidade nos cursos pesquisados;\n Propor, como produto educacional, formação inicial e/ou continuada, na forma EAD, para\nos(as) servidores(as) dos campi do IFC.\n\nA metodologia utilizada pode ser identificada como qualitativa e aplicada. Como\ninstrumento para produção dos dados, foi utilizada a entrevista semiestruturada, buscando uma\nmaior interação entre pesquisador e entrevistados(as) e um maior grau de informações a respeito\ndo escopo da pesquisa (GERHARDT; SILVEIRA, 2009). Para o tratamento dos dados coletados\natravés das entrevistas, foi utilizada a Análise de Conteúdo, segundo Laurence Bardin (2011).\n\nComo produto educacional, foi desenvolvido o curso “Diversidade Sexual e de Gênero:\nconstruir conhecimentos para desconstruir preconceitos”. O referido curso tem como objetivo\nprincipal subsidiar os(as) agentes educacionais dos campi do Instituto Federal Catarinense\n(IFC) com conhecimentos básicos sobre diversidade, gênero, sexualidade, LGBTQIfobia, entre\noutros temas não menos importantes, dentro do espaço-tempo que (con)vivemos. O material foi\nproduzido com base nas leituras preliminares para a escrita da dissertação e nas entrevistas\nrealizadas, onde é possível perceber que, apesar do comprometimento com os(as) alunos(as),\nos(as) entrevistados(as) demonstraram ter alguns conceitos errôneos que buscamos elucidar\ncom esse curso.\nO Produto Educacional foi enviado para avaliação para os(as) participantes dos Núcleos\nde Estudo em Gênero e Sexualidade (Neges), dos Registros Acadêmicos dos campi do IFC e\ntambém aos(às) profissionais que se dispuseram a conceder as entrevistas, tendo sido avaliado\npositivamente. Após levadas em consideração as sugestões, críticas e comentários feitos na\navaliação, o curso foi modificado para o formato e-book.\n\n[PÁG. 16]\n15\n\n2 REFERENCIAL TEÓRICO\n\n2.1 Educação Profissional no Brasil: a dualidade que exclui!\n\nOs seres humanos, ao contrário dos animais, não conseguem se adaptar à natureza, é\npreciso utilizá-la, transformá-la, de forma que possibilite sua sobrevivência. “Assim,\ndiferentemente dos animais, que se adaptam à natureza, os homens têm de adaptar a natureza a\nsi. Agindo sobre ela, transformando-a, os homens ajustam a natureza às suas necessidades.”\n(SAVIANI, 2007, p. 154).\nEsse processo de transformação da natureza para servir às necessidades humanas, o qual\npodemos chamar de trabalho, é, para Saviani “[...] a essência do homem” (2007, p. 154). Isso\nporque:\n\nSe a existência humana não é garantida pela natureza, não é uma dádiva natural, mas\ntem de ser produzida pelos próprios homens, sendo, pois, um produto do trabalho, isso\nsignifica que o homem não nasce homem. Ele forma-se homem. Ele necessita\naprender a ser homem, precisa aprender a produzir sua própria existência (SAVIANI,\n2007, p. 154).\n\nOs conhecimentos gerados pelo trabalho, necessários à vida em determinada sociedade,\neram passados de geração a geração. Pode-se, então, inferir que o trabalho está interligado\ndiretamente à educação, visto que tudo que era aprendido fazendo, o que se demonstrava útil,\nera repassado aos outros num processo de ensino e de aprendizagem. Trabalho e educação,\ncomo se percebe, nascem juntos, visto que um é dependente do outro.\n\nEstão aí os fundamentos histórico-ontológicos da relação trabalho-educação.\nFundamentos históricos porque referidos a um processo produzido e desenvolvido ao\nlongo do tempo pela ação dos próprios homens. Fundamentos ontológicos porque o\nproduto dessa ação, o resultado desse processo, é o próprio ser dos homens.\n(SAVIANI, 2007, p. 155).\n\nComo processo histórico, o trabalho se constrói e se reconstrói segundo o momento\neconômico, político e social vigente. A partir da apropriação privada da terra, muda-se\ndrasticamente a forma de organização entre homens e mulheres. Com a propriedade privada,\nsurge a divisão entre os proprietários e os não proprietários. Esses últimos, agora, trabalhavam\nnão apenas para sua sobrevivência, mas também pela sobrevivência dos donos da terra. Assim,\nsurge a divisão das pessoas em classes sociais.\nEssa divisão dos homens (e mulheres) em classes dividirá também a educação,\nseparando-a em educação para os donos da terra, que passam a aprender em escolas, e o\naprendizado dos não proprietários, que continua sendo no trabalho.\n\n[PÁG. 17]\n16\n\nA educação profissional, desta forma, foi destinada aos mais pobres, aos “desvalidos da\nsorte”, marginalizados, abandonados e com propensão aos crimes e aos maus costumes. Mesmo\nas pessoas “livres” não se sentiam atraídas pelas artes mecânicas e manufaturas, a não ser que\na necessidade as obrigasse, sendo de caráter assistencialista, pois era direcionada àqueles que\nfugiam dos padrões de civilidade, moral e bons costumes (SCHENKEL, 2012).\nOutro aspecto importante a ser citado é que, aos egressos da educação profissional, o\n",
+    "descricao_produto_na_dissertacao": "[PÁG. 15] acontece no campus Camboriú no que se trata da não-exclusão de pessoas LGBTQI+, tendo\ncomo objetivo geral “compreender os processos de mediação utilizados pelo Campus Camboriú\ndo IFC para resolver os problemas da LGBTQIfobia e o abandono escolar desse público em\nespecífico” e como objetivos específicos:\n Verificar se há um acolhimento para pessoas LGBTQI+ no campus Camboriú do IFC;\n Analisar as formas de mediações e resoluções de conflitos pelos(as) responsáveis em\nrelação aos processos de LGBTQIfobia;\n Constatar se há disciplinas específicas sobre Gênero e Sexualidade nos cursos pesquisados;\n Propor, como produto educacional, formação inicial e/ou continuada, na forma EAD, para\nos(as) servidores(as) dos campi do IFC.\n\n[PÁG. 15] Como produto educacional, foi desenvolvido o curso “Diversidade Sexual e de Gênero:\nconstruir conhecimentos para desconstruir preconceitos”. O referido curso tem como objetivo\nprincipal subsidiar os(as) agentes educacionais dos campi do Instituto Federal Catarinense\n(IFC) com conhecimentos básicos sobre diversidade, gênero, sexualidade, LGBTQIfobia, entre\noutros temas não menos importantes, dentro do espaço-tempo que (con)vivemos. O material foi\nproduzido com base nas leituras preliminares para a escrita da dissertação e nas entrevistas\nrealizadas, onde é possível perceber que, apesar do comprometimento com os(as) alunos(as),\nos(as) entrevistados(as) demonstraram ter alguns conceitos errôneos que buscamos elucidar\ncom esse curso.\nO Produto Educacional foi enviado para avaliação para os(as) participantes dos Núcleos\nde Estudo em Gênero e Sexualidade (Neges), dos Registros Acadêmicos dos campi do IFC e\ntambém aos(às) profissionais que se dispuseram a conceder as entrevistas, tendo sido avaliado\npositivamente. Após levadas em consideração as sugestões, críticas e comentários feitos na\navaliação, o curso foi modificado para o formato e-book.\n\n[PÁG. 29] Esta pesquisa tem uma abordagem qualitativa, tendo em vista que “[...] preocupa-se [..]\ncom aspectos da realidade que não podem ser quantificados, centrando-se na compreensão e\nexplicação da dinâmica das relações sociais” (GERHARDT; SILVEIRA, 2009, p. 32). Para\nGodoy (1995, p. 21), “[...] um fenômeno pode ser melhor compreendido no contexto em que\nocorre e do qual é parte, devendo ser analisado numa perspectiva integrada.”. Sua natureza pode\nser considerada aplicada, uma vez que o objetivo do próprio ProfEPT determina a elaboração e\naplicação de um produto educacional.\nForam convidados a participar da pesquisa servidores(as) que atuam diretamente com\nalunos(as), como os(as) do Registro Acadêmico, Coordenadores(as) de Cursos Técnicos\nIntegrados ao Ensino Médio e servidores(as) do Serviço Integrado de Suporte e\nAcompanhamento ao Educando (SISAE). O Registro Acadêmico é o primeiro setor de contato\nentre estudantes e campus. Os(As) Coordenadores(as) de Curso são os sujeitos, a priori,\nresponsáveis pela resolução de conflitos entre docentes/discentes, docentes/docentes,\ndiscentes/discentes e que devem fazer os encaminhamentos para os demais setores para que\nhaja acompanhamento e solução dos problemas que podem surgir entre os atores acima\nmencionados. Já o SISAE, tem como função “implementar o atendimento integral e\ninterdisciplinar ao estudante do IFC visando ao sucesso no processo de ensino-aprendizagem,\nà saúde, ao bem-estar, à permanência e êxito estudantil” (IFC, 2020). Percebe-se que esses(as)\nsujeitos/atores estão intimamente ligados aos(as) estudantes",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 14,
+        "texto": "Para a pesquisa, foi selecionado o Ensino Médio Integrado (EMI) do campus Camboriú,\nvinculado ao Instituto Federal de Educação, Ciência e Tecnologia Catarinense (IFC),\nfundamentado em razões de localização, de grande número de alunos no EMI, de prioridade\ndos Institutos Federais na oferta desse nível de ensino e pela intenção da educação integral que,\npara Araújo e Frigotto (2015, p. 251), “é um projeto que traz um conteúdo político-pedagógico\nengajado, comprometido com ações formativas integradoras, em oposição às práticas\nfragmentadoras do saber”, trazendo uma concepção emancipatória dos indivíduos e\ncomprometida com mudanças frente às desigualdades existentes.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 16,
+        "texto": "Os seres humanos, ao contrário dos animais, não conseguem se adaptar à natureza, é\npreciso utilizá-la, transformá-la, de forma que possibilite sua sobrevivência. “Assim,\ndiferentemente dos animais, que se adaptam à natureza, os homens têm de adaptar a natureza a\nsi. Agindo sobre ela, transformando-a, os homens ajustam a natureza às suas necessidades.”\n(SAVIANI, 2007, p. 154).\nEsse processo de transformação da natureza para servir às necessidades humanas, o qual\npodemos chamar de trabalho, é, para Saviani “[...] a essência do homem” (2007, p. 154). Isso\nporque:",
+        "citacoes_detectadas": [
+          "SAVIANI, 2007, p. 154"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 16,
+        "texto": "Se a existência humana não é garantida pela natureza, não é uma dádiva natural, mas\ntem de ser produzida pelos próprios homens, sendo, pois, um produto do trabalho, isso\nsignifica que o homem não nasce homem. Ele forma-se homem. Ele necessita\naprender a ser homem, precisa aprender a produzir sua própria existência (SAVIANI,\n2007, p. 154).",
+        "citacoes_detectadas": [
+          "SAVIANI,\n2007, p. 154"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 16,
+        "texto": "Estão aí os fundamentos histórico-ontológicos da relação trabalho-educação.\nFundamentos históricos porque referidos a um processo produzido e desenvolvido ao\nlongo do tempo pela ação dos próprios homens. Fundamentos ontológicos porque o\nproduto dessa ação, o resultado desse processo, é o próprio ser dos homens.\n(SAVIANI, 2007, p. 155).",
+        "citacoes_detectadas": [
+          "SAVIANI, 2007, p. 155"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 18,
+        "texto": "Considerando o histórico da educação profissional, pode-se afirmar que ela adquiriu\nimportância na qualificação de mão de obra para o desenvolvimento das atividades econômicas\ne se revestiu de um caráter operacional, utilitarista e assistencialista em quaisquer de seus níveis.\nConforme Schenkel (2012), a alteração do status das antigas escolas técnicas em Institutos\nFederais de Educação não mudou essa característica, porém trouxe a esperança de uma\nformação integral, tão importante para a formação cidadã, através do desenvolvimento dos\nsujeitos em suas dimensões intelectual, física, emocional, social e cultural, assim avançando para\na ruptura de “todas as formas duais que permeiam a sociedade brasileira” (CIAVATTA, 2005, p.\n17).\nA divisão social em classes também teve influência nas famílias, tendo como\ncentralidade a relação entre proprietário e propriedade e, nesse sentido, estão inclusos todos os\nbens: casa, terra, escravos, filhos e esposa, tendo como recurso o controle da sexualidade\nfeminina, destituindo as mulheres da autonomia sobre seus próprios corpos e destinando-as a\npapeis sociais de esposa e mãe, juntamente com as tarefas domiciliares. A esse processo de\nsubordinação ",
+        "citacoes_detectadas": [
+          "CIAVATTA, 2005, p.\n17",
+          "MOURA; OLIVEIRA, 2016"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 27,
+        "texto": "A aprovação da Política de Inclusão e Diversidade e dos Neges, junto com a oferta de\numa formação integral, que busca garantir o desenvolvimento dos sujeitos em todas as suas\ndimensões – intelectual, física, emocional, social e cultural –, procurando formar cidadãos no\nseu significado mais amplo, não apenas com capacidade intelectual, mas também com o\ndiscernimento social sobre o que acontece em sua volta, os motivos para estes acontecimentos\ne a maneira de resolvê-los, nos traz esperança de mudanças para uma sociedade mais justa,\nigualitária e pacífica.\nPorém, para alcançar esses propósitos, não basta somente projetos pedagógicos ou\ndidáticas específicas, mas sim o engajamento ético-político de todos e todas os(as) agentes\neducacionais: docentes, técnicos(as) administrativos, gestores(as) (ARAÚJO; FRIGOTTO,\n2015).",
+        "citacoes_detectadas": [
+          "ARAÚJO; FRIGOTTO,\n2015"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 29,
+        "texto": "Esta pesquisa tem uma abordagem qualitativa, tendo em vista que “[...] preocupa-se [..]\ncom aspectos da realidade que não podem ser quantificados, centrando-se na compreensão e\nexplicação da dinâmica das relações sociais” (GERHARDT; SILVEIRA, 2009, p. 32). Para\nGodoy (1995, p. 21), “[...] um fenômeno pode ser melhor compreendido no contexto em que\nocorre e do qual é parte, devendo ser analisado numa perspectiva integrada.”. Sua natureza pode\nser considerada aplicada, uma vez que o objetivo do próprio ProfEPT determina a elaboração e\naplicação de um produto educacional.\nForam convidados a participar da pesquisa servidores(as) que atuam diretamente com\nalunos(as), como os(as) do Registro Acadêmico, Coordenadores(as) de Cursos Técnicos\nIntegrados ao Ensino Médio e servidores(as) do Serviço Integrado de Suporte e\nAcompanhamento ao Educando (SISAE). O Registro Acadêmico é o primeiro setor de contato\nentre estudantes e campus. Os(As) Coordenadores(as) de Curso são os sujeitos, a priori,\nresponsáveis pela resolução de conflitos entre docentes/discentes, docentes/docentes,\ndiscentes/discentes e que devem fazer os encaminhamentos para os demais setores para que\nhaja acompanhamento e solução",
+        "citacoes_detectadas": [
+          "GERHARDT; SILVEIRA, 2009, p. 32",
+          "IFC, 2020"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "CIAVATTA, Maria. A formação integrada: a escola e o trabalho como lugares de memória e identidade. Trabalho Necessário, [s. l.], ano 3, n. 3, 2005. Disponível em: https://bit.ly/3vAp9F5. Acesso em: 12 maio 2021. 53",
+      "CIAVATTA, Maria. O ensino integrado, a politecnia e a educação omnilateral. Por que lutamos? Trabalho e Educação, Belo Horizonte, n. 1, p. 187-205, jan-abr. 2014. Disponível em: https://bit.ly/3uF3TNn. Acesso em: 23 jan. 2021.",
+      "SAVIANI, Dermeval. Trabalho e educação: fundamentos ontológicos e históricos. Rev. Bras. Educ., Rio de Janeiro, v. 12, n. 34, p. 152-165, jan./abr. 2007. Disponível em: https://bit.ly/3fsp7tc. Acesso em: 7 fev. 2019."
+    ]
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0016",
+  "ano": 2025,
+  "autor": "Lucélio Beletti",
+  "orientador": "Raquel Cardoso de Faria e Custódio",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP2",
+  "dissertacao": {
+    "titulo": "A PRESENÇA DO PÚBLICO FEMININO NA ÁREA ELÉTRICA: UM ESTUDO DE CASO A PARTIR DA EVASÃO NO CURSO TÉCNICO EM ELETROTÉCNICA DO SENAI BLUMENAU",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/09/DISSERTACAO_E_PRODUTO_EDUCACIONAL___LUCELIO_BELLETTI.pdf",
+    "resumo": "A presença do público feminino na Educação Profissional e Tecnológica,\nespecialmente nas áreas de maior afinidade com a elétrica, apresenta especificidades\nrelacionadas às trajetórias de formação e atuação profissional. Na base dessa\nformação encontra-se o curso Técnico em Eletrotécnica. Pesquisar sobre a presença\ndas mulheres nesse curso, na condição de estudantes, concluintes ou desistentes, foi\na base desta pesquisa. A problemática consistiu em compreender o público feminino\nda área elétrica a partir do estudo de caso da evasão no curso técnico em\nEletrotécnica do SENAI de Blumenau. Esta pesquisa foi desenvolvida no âmbito do\nMestrado Profissional em Educação Profissional e Tecnológica - ProfEPT, na linha de\nPráticas Educativas, no macroprojeto Inclusão e Diversidade em Espaços Formais e\nNão Formais de Ensino na EPT. Caracteriza-se como de natureza aplicada, de\nabordagem qualitativa e objetivo de ser explicativa. As entrevistas semiestruturadas\ncom as estudantes, concluintes e desistentes do curso Técnico em Eletrotécnica\nsubsidiaram a construção dos dados. A análise de discurso de matriz francesa foi o\nmétodo escolhido para analisar os dados com o objetivo de interpretar os sentidos\npara além das palavras, considerando as condições de produção, ideologias e os\nlugares sociais e simbólicos das falas das entrevistadas. Os achados da pesquisa\nrevelam a influência da família nas escolhas profissionais, a importância dos(as)\ndocentes na permanência, a presença marcante do machismo na área e as\ndificuldades enfrentadas pelas mulheres, sobretudo nos espaços de atuação\nprofissional. Como proposta de prática educativa objetivando à permanência das\nmulheres na área elétrica, foi desenvolvido um produto educacional direcionado a\nestudantes dos anos finais do ensino fundamental e do ensino médio, com o objetivo\nde apresentar e desmistificar a área para as meninas, além de contribuir para a\ndesconstrução da cultura machista entre os estudantes.\n\nPalavras-chave: mulheres na elétrica; educação profissional e tecnológica; inclusão.",
+    "palavras_chave": [
+      "Mulheres na elétrica",
+      "Educação profissional e tecnológica",
+      "Inclusão"
+    ],
+    "autores_referenciados": [
+      "Adriana Hoffmann Fernandes",
+      "Agostinho de Campos",
+      "Alexandre Parra",
+      "Alysson Leandro Mascaro",
+      "Amanda Meincke Melo",
+      "Ana Maria Silva",
+      "Ana Sara Castaman",
+      "Andrea Valéria Steil",
+      "Andree Kartchevsky-Bulport",
+      "Anibal Ponce",
+      "Anselm Leonard Strauss",
+      "Antônio Carlos Gil",
+      "Arlida Schmidt Godoy",
+      "Bruna Duarte Ferreira Frohmut",
+      "Caliane Costa dos Santos da Conceição",
+      "Carine Bueira Loureiro",
+      "Carlos Montaño",
+      "Carlos Rodrigues Brandão",
+      "Charles Fourier",
+      "Cíntia Maria Teixeira",
+      "Claude Mossé",
+      "Claudia Sombrio Fronza",
+      "Danièle Kergoat",
+      "David da Costa Aguiar de Souza",
+      "Denise Tolfo Silveira",
+      "Dermeval Saviani",
+      "Diogo de Calasans Melo Andrade",
+      "Djamila Ribeiro",
+      "Douglas Silva do Prado",
+      "Edson Moreira Guimarães Neto",
+      "Elaine Turk Faria",
+      "Eni Puccinelli Orlandi",
+      "Eva Alterman Blay",
+      "Fernanda Gomes Marques",
+      "Friedrich Engels",
+      "Fulvia Rosemberg",
+      "Gabriel Kaplún",
+      "Guacira Lopes Louro",
+      "György Lukács",
+      "Heleieth Iara Bongiovani Saffioti",
+      "Helena Hathsue Nagamine Brandão",
+      "Helena Hirata",
+      "Heraldo Marelim Vianna",
+      "Irede A. Cardoso",
+      "Jacqueline Laufer",
+      "Jair Messias Ferreira Junior",
+      "Jane Soares de Almeida",
+      "Jaqueline Gomes de Jesus",
+      "Jean Baptiste Debret",
+      "José Carlos Silva",
+      "José dos Santos Rodrigues",
+      "Josimar de Aparecido Vieira",
+      "Juarez Tarcísio Dayrell",
+      "Juliet Corbin",
+      "Karl Marx",
+      "Karla Akotirene",
+      "Kimberlé Crenshaw",
+      "Léa Elisa Silingowschi Calil",
+      "Lélia Gonzalez",
+      "Lewis Henry Morgan",
+      "Liliana Rolfsen Petrilli Segnini",
+      "Lucas de Oliveira Maciel",
+      "Lucia Mara de Lima Padilha",
+      "Lucimar Viegas Ferreira",
+      "Luís Gomes",
+      "Luiz Antônio Cunha",
+      "Magda Chamon",
+      "Márcia Alves da Silva",
+      "Maria Beatriz Nader",
+      "Maria Cristina Rizzetto Cerqueira",
+      "Maria de Fátima Vieira Severiano",
+      "Maria Lúcia de Arruda Aranha",
+      "Maria Lúcia Durigueto",
+      "Maria Rosa Lombardi",
+      "Mario Alighiero Manacorda",
+      "Marli André",
+      "Menga Lüdke",
+      "Michel Jean Marie Thiollent",
+      "Mikell P. Groover",
+      "Moema Toscano",
+      "Montserrat Moreno",
+      "Paulo Freire",
+      "Peter Burke",
+      "Pierre Bourdieu",
+      "Priscila de Souza Chisté Leite",
+      "Rafael Padial",
+      "Renan Oliveira Altoé",
+      "Ricardo Luiz Coltro Antunes",
+      "Robert K. Yin",
+      "Roberta Pasquali",
+      "Robson Vinicius Cordeiro",
+      "Rodrigo Avella Ramirez",
+      "Rodrigo Ednilson Jesus",
+      "Rogério Moreira Orrutea",
+      "Rosemaria Josefa Vieira Silva",
+      "Silvia Maria Manfredi",
+      "Simone de Beauvoir",
+      "Tatiana Engel Gerhardt",
+      "Tereza Cristina Pereira Carvalho Fagundes",
+      "Vladimir Ilyich Lênin",
+      "Washington Dener dos Santos Cunha",
+      "William Farley Peck"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explora a divisão social e educacional com base na teoria de Saviani, vinculando gênero e classe. A citação direta de Saviani (2005) na seção 'Corpo/Fundamentação' confirma a matriz teórica.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 46,
+          "trecho": "A educação se divide entre aquela destinada aos não proprietários e aquela destinada aos proprietários. Os primeiros continuam a se educar no próprio processo de trabalho, fora da escola.",
+          "referencia_correspondente": "SAVIANI, Dermeval. Trabalho e educação: fundamentos ontológicos e históricos."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "MENINAS NA ELÉTRICA: A INCLUSÃO DAS MULHERES  E A DESCONSTRUÇÃO DE PRECONCEITOS",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Palestra / Apresentação",
+    "link": "https://educapes.capes.gov.br/handle/capes/1131192",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "tecnicos_profissionais_educacao"
+    ],
+    "nivel_aplicacao": "Ensino Médio",
+    "palavras_chave": [
+      "Mulheres na Elétrica",
+      "Educação Profissional e Tecnológica",
+      "Inclusão",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica-ProfEPT",
+      "Dissertação"
+    ],
+    "data_publicacao": "2025-09",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Belletti, Lucélio",
+        "papel": "creator"
+      },
+      {
+        "nome": "Custódio, Raquel Cardoso de Faria e",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1131192",
+        "url": "https://educapes.capes.gov.br/handle/capes/1131192"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "FICHA_PRODUTO_EDUCACIONAL_CICLO DE PALESTRAS",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "APRESENTACAO - MENINAS NA ELETRICA",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "P",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "inferencia_llm",
+      "rotulo_original_declarado": "MENINAS NA ELÉTRICA: INCLUINDO E DESCONSTRUINDO PRECONCEITOS. DESMISTIFICANDO E COMPREENDENDO A ATUAÇÃO DAS MULHERES NA ÁREA ELÉTRICA",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "imagem",
+        "texto",
+        "vídeo"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0016 2025 lucelio beletti raquel cardoso de faria e custodio ifc blumenau lp1 mp2 a presenca do publico feminino na area eletrica um estudo de caso a partir da evasao no curso tecnico em eletrotecnica do senai blumenau a presenca do publico feminino na educacao profissional e tecnologica especialmente nas areas de maior afinidade com a eletrica apresenta especificidades relacionadas as trajetorias de formacao e atuacao profissional na base dessa formacao encontra se o curso tecnico em eletrotecnica pesquisar sobre a presenca das mulheres nesse curso na condicao de estudantes concluintes ou desistentes foi a base desta pesquisa a problematica consistiu em compreender o publico feminino da area eletrica a partir do estudo de caso da evasao no curso tecnico em eletrotecnica do senai de blumenau esta pesquisa foi desenvolvida no ambito do mestrado profissional em educacao profissional e tecnologica profept na linha de praticas educativas no macroprojeto inclusao e diversidade em espacos formais e nao formais de ensino na ept caracteriza se como de natureza aplicada de abordagem qualitativa e objetivo de ser explicativa as entrevistas semiestruturadas com as estudantes concluintes e desistentes do curso tecnico em eletrotecnica subsidiaram a construcao dos dados a analise de discurso de matriz francesa foi o metodo escolhido para analisar os dados com o objetivo de interpretar os sentidos para alem das palavras considerando as condicoes de producao ideologias e os lugares sociais e simbolicos das falas das entrevistadas os achados da pesquisa revelam a influencia da familia nas escolhas profissionais a importancia dos as docentes na permanencia a presenca marcante do machismo na area e as dificuldades enfrentadas pelas mulheres sobretudo nos espacos de atuacao profissional como proposta de pratica educativa objetivando a permanencia das mulheres na area eletrica foi desenvolvido um produto educacional direcionado a estudantes dos anos finais do ensino fundamental e do ensino medio com o objetivo de apresentar e desmistificar a area para as meninas alem de contribuir para a desconstrucao da cultura machista entre os estudantes palavras chave mulheres na eletrica educacao profissional e tecnologica inclusao pedagogia historico critica meninas na eletrica a inclusao das mulheres e a desconstrucao de preconceitos material didatico instrucional palestra apresentacao ensino medio mulheres na eletrica educacao profissional e tecnologica inclusao programa de pos graduacao em educacao profissional e tecnologica profept dissertacao adriana hoffmann fernandes agostinho de campos alexandre parra alysson leandro mascaro amanda meincke melo ana maria silva ana sara castaman andrea valeria steil andree kartchevsky bulport anibal ponce anselm leonard strauss antonio carlos gil arlida schmidt godoy bruna duarte ferreira frohmut caliane costa dos santos da conceicao carine bueira loureiro carlos montano carlos rodrigues brandao charles fourier cintia maria teixeira claude mosse claudia sombrio fronza daniele kergoat david da costa aguiar de souza denise tolfo silveira dermeval saviani diogo de calasans melo andrade djamila ribeiro douglas silva do prado edson moreira guimaraes neto elaine turk faria eni puccinelli orlandi eva alterman blay fernanda gomes marques friedrich engels fulvia rosemberg gabriel kaplun guacira lopes louro gyorgy lukacs heleieth iara bongiovani saffioti helena hathsue nagamine brandao helena hirata heraldo marelim vianna irede a cardoso jacqueline laufer jair messias ferreira junior jane soares de almeida jaqueline gomes de jesus jean baptiste debret jose carlos silva jose dos santos rodrigues josimar de aparecido vieira juarez tarcisio dayrell juliet corbin karl marx karla akotirene kimberle crenshaw lea elisa silingowschi calil lelia gonzalez lewis henry morgan liliana rolfsen petrilli segnini lucas de oliveira maciel lucia mara de lima padilha lucimar viegas ferreira luis gomes luiz antonio cunha magda chamon marcia alves da silva maria beatriz nader maria cristina rizzetto cerqueira maria de fatima vieira severiano maria lucia de arruda aranha maria lucia durigueto maria rosa lombardi mario alighiero manacorda marli andre menga ludke michel jean marie thiollent mikell p groover moema toscano montserrat moreno paulo freire peter burke pierre bourdieu priscila de souza chiste leite rafael padial renan oliveira altoe ricardo luiz coltro antunes robert k yin roberta pasquali robson vinicius cordeiro rodrigo avella ramirez rodrigo ednilson jesus rogerio moreira orrutea rosemaria josefa vieira silva silvia maria manfredi simone de beauvoir tatiana engel gerhardt tereza cristina pereira carvalho fagundes vladimir ilyich lenin washington dener dos santos cunha william farley peck",
+    "termos_unificados": [
+      "Mulheres na elétrica",
+      "Educação profissional e tecnológica",
+      "Inclusão",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica-ProfEPT",
+      "Dissertação"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0108",
+  "ano": 2026,
+  "autor": "Raquel Stumpf Bernardes",
+  "orientador": "Sara Nunes",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP6",
+  "dissertacao": {
+    "titulo": "O COOPERATIVISMO NA ARTICULAÇÃO ENTRE TRABALHO E EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA NA FORMAÇÃO DE JOVENS APRENDIZES DO SETOR FINANCEIRO.",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2026/07/DISSERTACAO_-RAQUEL_STUMPF_BERNARDES.pdf",
+    "resumo": "Esta pesquisa, desenvolvida no âmbito do Programa de Mestrado Profissional em\nEducação Profissional e Tecnológica (ProfEPT), na área de Ensino e vinculada à linha\nde pesquisa \"Organização e Memórias de Espaços Pedagógicos da EPT\", analisa o\ncooperativismo em sua articulação com o trabalho e a Educação Profissional e\nTecnológica (EPT), tendo como objeto de estudo o Programa Aprendiz Cooperativo,\ndesenvolvido pela Cooperativa de Crédito Central Ailos, em Blumenau (SC).\nFundamentada nos pressupostos da formação humana integral, a investigação busca\ncompreender de que modo os conceitos de trabalho e cooperativismo são apropriados\ne ressignificados por jovens aprendizes ao longo de sua trajetória formativa, bem como\nanalisar em que medida os princípios da EPT se fazem presentes nessa construção\neducacional. O estudo ancora-se em referenciais teóricos que abordam o trabalho em\nsua dimensão ontológica e educativa, bem como nas concepções de politecnia,\nformação omnilateral e nos princípios do cooperativismo. Metodologicamente, trata-se\nde uma pesquisa qualitativa que articula revisão bibliográfica, análise documental e\npesquisa de campo, com a utilização de entrevistas narrativas fundamentadas em\nSchütze. Os resultados evidenciam que o programa possui importante potencial\nformativo ao promover experiências que extrapolam a dimensão técnica, incorporando\nvalores como cooperação, solidariedade e responsabilidade social. Observou-se que\nos jovens participantes ressignificam sua compreensão de trabalho a partir da vivência\ncooperativista, passando a concebê-lo para além de sua dimensão produtiva. Nesse\ncontexto, o trabalho como princípio educativo emerge como fundamento que sustenta\nnão apenas a EPT, mas também o próprio Programa Aprendiz Cooperativo. Como\nproduto educacional, foi desenvolvida uma vivência intercooperativa, voltada ao\nresgate histórico das experiências formativas do cooperativismo em Blumenau.\n\nPalavras-chave: Cooperativismo. Trabalho. Educação Profissional e Tecnológica.\nJuventude trabalhadora. Formação humana integral.",
+    "palavras_chave": [
+      "Cooperativismo",
+      "Trabalho",
+      "Educação Profissional e Tecnológica",
+      "Juventude trabalhadora",
+      "Formação humana integral"
+    ],
+    "autores_referenciados": [
+      "Airton Cardoso Cançado",
+      "Antônio Carlos Gil",
+      "Antonio Gramsci",
+      "Antonio Wherbty Ribeiro Nogueira",
+      "Archibaldo Figueira",
+      "Bernardo Kipnis",
+      "Bóris Fausto",
+      "Charles Gide",
+      "Cladecir Alberto Schenkel",
+      "Claudio Fernando André",
+      "Cloves Alexandre de Castro",
+      "Denise Tolfo Silveira",
+      "Dermeval Saviani",
+      "Diva Benevides Pinho",
+      "Edilene Ferreira de Sena",
+      "Edward Palmer Thompson",
+      "Eliezer Moreira Pacheco",
+      "Eric J. Hobsbawm",
+      "Fabiana Fátima do Prado Sedelak Pinheiro",
+      "Fabiane Tais Muzardo",
+      "Fábio Luiz da Silva",
+      "Fernanda Peixoto Córdova",
+      "Florestan Fernandes",
+      "Friedrich Buggenhagen",
+      "Gaudêncio Frigotto",
+      "George Gaskell",
+      "Helena Wendel Abramo",
+      "Heloisa Murgel Starling",
+      "Ivonete Telles Medeiros",
+      "Jacqueline Russ",
+      "João Carlos Cichaczewski",
+      "João Paulo Aires",
+      "José Odelso Schneider",
+      "José Roberto Pereira",
+      "Lilia Moritz Schwarcz",
+      "Luís Távora Furtado Ribeiro",
+      "Luiza Carvalho",
+      "Márcia R. Cardoso",
+      "Marcio Pochmann",
+      "Maria Aparecida Munhoz Gaiva",
+      "Maria Cecília de Souza Minayo",
+      "Maria Ciavatta",
+      "Maria de Fátima Arruda Souza",
+      "Maria Luiza Renaux Hering",
+      "Marise Nogueira Ramos",
+      "Marissol Mello Alves",
+      "Martin W. Bauer",
+      "Mônica Ribeiro da Silva",
+      "Nadya Araujo Guimarães",
+      "Neiva Cristina da Silva Rego Ravagnoli",
+      "Newton Duarte",
+      "Nicholas C. Allum",
+      "Paul Singer",
+      "Pedro Paulo Martoni Branco",
+      "Ralf Bohnsack",
+      "Reginaldo Leandro Plácido",
+      "Ricardo Antunes",
+      "Roseli Figaro",
+      "Sandra Jovchelovitch",
+      "Sergei Soares",
+      "Wivian Weller"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto fundamenta a pesquisa em 'formação humana integral' e discute o trabalho como categoria fundante, alinhando-se à Pedagogia Histórico-Crítica. Citam-se Frigotto e Saviani, autores associados a essa matriz.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 18,
+          "trecho": "o cooperativismo não pode ser compreendido apenas como modelo organizacional, mas como fenômeno historicamente situado, vinculado aos processos de modernização econômica e social",
+          "referencia_correspondente": "FRIGOTTO, 2001"
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 23,
+          "trecho": "o trabalho adquire uma dimensão educativa, pois ao interagir com a natureza e transformá-la, o homem reproduz a natureza e constitui a natureza humana",
+          "referencia_correspondente": "SAVIANI, 2007"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "O COOPERATIVISMO NA ARTICULAÇÃO ENTRE TRABALHO E EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA NA FORMAÇÃO DE JOVENS APRENDIZES DO SETOR FINANCEIRO",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Roteiro / Proposta Pedagógica",
+    "link": "https://educapes.capes.gov.br/handle/capes/1180962",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "tecnicos_profissionais_educacao"
+    ],
+    "nivel_aplicacao": "Educação Profissional e Tecnológica",
+    "palavras_chave": [
+      "Cooperativismo. Trabalho. Educação Profissional e Tecnológica. Juventude trabalhadora. Formação humana integral",
+      "Mestrado em educação profissional e tecnológica",
+      "Dissertação de conclusão"
+    ],
+    "data_publicacao": "2026-07-17",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Bernardes Stumpf, Raquel",
+        "papel": "creator"
+      },
+      {
+        "nome": "Nunes, Sara",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1180962",
+        "url": "https://educapes.capes.gov.br/handle/capes/1180962"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://raquelstumpf.wixsite.com/caminhosquetecem",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Caminhos que tecem: a história do cooperativismo em Blumenau",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "inferencia_llm",
+      "rotulo_original_declarado": "CAMINHOS QUE TECEM: A HISTÓRIA DO COOPERATIVISMO EM BLUMENAU.",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0108 2026 raquel stumpf bernardes sara nunes ifc blumenau lp2 mp6 o cooperativismo na articulacao entre trabalho e educacao profissional e tecnologica na formacao de jovens aprendizes do setor financeiro esta pesquisa desenvolvida no ambito do programa de mestrado profissional em educacao profissional e tecnologica profept na area de ensino e vinculada a linha de pesquisa organizacao e memorias de espacos pedagogicos da ept analisa o cooperativismo em sua articulacao com o trabalho e a educacao profissional e tecnologica ept tendo como objeto de estudo o programa aprendiz cooperativo desenvolvido pela cooperativa de credito central ailos em blumenau sc fundamentada nos pressupostos da formacao humana integral a investigacao busca compreender de que modo os conceitos de trabalho e cooperativismo sao apropriados e ressignificados por jovens aprendizes ao longo de sua trajetoria formativa bem como analisar em que medida os principios da ept se fazem presentes nessa construcao educacional o estudo ancora se em referenciais teoricos que abordam o trabalho em sua dimensao ontologica e educativa bem como nas concepcoes de politecnia formacao omnilateral e nos principios do cooperativismo metodologicamente trata se de uma pesquisa qualitativa que articula revisao bibliografica analise documental e pesquisa de campo com a utilizacao de entrevistas narrativas fundamentadas em schutze os resultados evidenciam que o programa possui importante potencial formativo ao promover experiencias que extrapolam a dimensao tecnica incorporando valores como cooperacao solidariedade e responsabilidade social observou se que os jovens participantes ressignificam sua compreensao de trabalho a partir da vivencia cooperativista passando a concebe lo para alem de sua dimensao produtiva nesse contexto o trabalho como principio educativo emerge como fundamento que sustenta nao apenas a ept mas tambem o proprio programa aprendiz cooperativo como produto educacional foi desenvolvida uma vivencia intercooperativa voltada ao resgate historico das experiencias formativas do cooperativismo em blumenau palavras chave cooperativismo trabalho educacao profissional e tecnologica juventude trabalhadora formacao humana integral pedagogia historico critica o cooperativismo na articulacao entre trabalho e educacao profissional e tecnologica na formacao de jovens aprendizes do setor financeiro material didatico instrucional roteiro proposta pedagogica educacao profissional e tecnologica cooperativismo trabalho educacao profissional e tecnologica juventude trabalhadora formacao humana integral cooperativismo trabalho educacao profissional e tecnologica juventude trabalhadora formacao humana integral mestrado em educacao profissional e tecnologica dissertacao de conclusao airton cardoso cancado antonio carlos gil antonio gramsci antonio wherbty ribeiro nogueira archibaldo figueira bernardo kipnis boris fausto charles gide cladecir alberto schenkel claudio fernando andre cloves alexandre de castro denise tolfo silveira dermeval saviani diva benevides pinho edilene ferreira de sena edward palmer thompson eliezer moreira pacheco eric j hobsbawm fabiana fatima do prado sedelak pinheiro fabiane tais muzardo fabio luiz da silva fernanda peixoto cordova florestan fernandes friedrich buggenhagen gaudencio frigotto george gaskell helena wendel abramo heloisa murgel starling ivonete telles medeiros jacqueline russ joao carlos cichaczewski joao paulo aires jose odelso schneider jose roberto pereira lilia moritz schwarcz luis tavora furtado ribeiro luiza carvalho marcia r cardoso marcio pochmann maria aparecida munhoz gaiva maria cecilia de souza minayo maria ciavatta maria de fatima arruda souza maria luiza renaux hering marise nogueira ramos marissol mello alves martin w bauer monica ribeiro da silva nadya araujo guimaraes neiva cristina da silva rego ravagnoli newton duarte nicholas c allum paul singer pedro paulo martoni branco ralf bohnsack reginaldo leandro placido ricardo antunes roseli figaro sandra jovchelovitch sergei soares wivian weller",
+    "termos_unificados": [
+      "Cooperativismo",
+      "Trabalho",
+      "Educação Profissional e Tecnológica",
+      "Juventude trabalhadora",
+      "Formação humana integral",
+      "Cooperativismo. Trabalho. Educação Profissional e Tecnológica. Juventude trabalhadora. Formação humana integral",
+      "Mestrado em educação profissional e tecnológica",
+      "Dissertação de conclusão"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "id": "EPT-0029",
+  "metadados_resolvidos": {
+    "ano": 2024,
+    "autor": "Júnior Cunha",
+    "orientador": "Fátima Peres Zago de Oliveira",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP3"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "ENSINO DE INOVAÇÃO NA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA: UM ESTADO DO CONHECIMENTO",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/01/Dissertacao-Junior_Cunha.pdf",
+    "palavras_chave": [
+      "Inovação na Educação Profissional",
+      "Ensino Médio Integrado",
+      "Ensino de Inovação",
+      "Inovação Social",
+      "Estado do Conhecimento"
+    ],
+    "autores_referenciados": [
+      "Adaylson W. S. Vasconcelos",
+      "Adilso de Campos Garcia",
+      "Ali Rushanara",
+      "Antônia de Abreu Souza",
+      "António Nóvoa",
+      "Arlinda Cantero Dorsa",
+      "Attico Chassot",
+      "Augusto Nibaldo Silva Triviños",
+      "Ben Sanders",
+      "Boaventura de Sousa Santos",
+      "Christiane G. Araújo",
+      "Claudio Ricardo Gomes de Lima Nunes",
+      "Décio Auler",
+      "Demétrio Delizoicov",
+      "Dermeval Saviani",
+      "Edilene Maria de Oliveira",
+      "Edmilson Rodrigues do Nascimento Júnior",
+      "Elenice Gomes de Oliveira",
+      "Eliezer Moreira Pacheco",
+      "Elisa Lucarelli",
+      "Fátima Peres Zago de Oliveira",
+      "Flaviane Mugnol do Nascimento",
+      "Gaudêncio Frigotto",
+      "Geoff Mulgan",
+      "Giorgio Sirilli",
+      "Gleny Terezinha Duro Guimarães",
+      "Graciela Messina Raimondi",
+      "Jair José Maldaner",
+      "Jefferson Mainardes",
+      "Joana Paulin Romanowski",
+      "Julie Caulier-Grice",
+      "Laurence Bardin",
+      "Luciana de Oliveira Campolina",
+      "Luís Carlos de Menezes",
+      "Luís Paulo Fagiolo Augusto",
+      "Luiz Paulo Bignetti",
+      "Marília Costa Morosini",
+      "Marise Nogueira Ramos",
+      "Marta Luiza Sfredo",
+      "Moacir Gadotti",
+      "Neil Postman",
+      "Neusa Dias de Macedo",
+      "Paloma Ribeiro de Souza",
+      "Paulo Freire",
+      "Pedro Artur Cruz de Melo",
+      "Peter Ferdinand Drucker",
+      "Roberto R. Silva",
+      "Robin Murray",
+      "Romilda Teodora Ens",
+      "Roque Moraes",
+      "Rosa Blanco Guijarro",
+      "Simon Tucker",
+      "Stephen Ball",
+      "Thiago Jovane Nascimento",
+      "Walter Antônio Bazzo",
+      "Wildson Luiz Pereira dos Santos"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/921171",
+    "titulo_produto": "Inovação social no contexto da formação humana integral",
+    "titulo_produto_bruto": "INOVAÇÃO SOCIAL – NO CONTEXTO DA FORMAÇÃO HUMANA INTEGRAL",
+    "data_publicacao": "2024-10-25",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Cunha, Júnior",
+        "papel": "creator"
+      },
+      {
+        "nome": "Oliveira, FÁTIMA PERES ZAGO de",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/921171",
+        "url": "https://educapes.capes.gov.br/handle/capes/921171"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Inovação social : no contexto da formação humana integral",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "texto"
+    ],
+    "palavras_chave_educapes": [
+      "Inovação Social",
+      "Inovação",
+      "Tecnologia",
+      "Educação Profissional e Tecnológica (EPT)",
+      "Tecnologia Social",
+      "Mestrado Profissional em Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado e Cursos de Graduação"
+    ],
+    "tipo_produto_regex": "tecnologia_social",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "E-book / Livro Digital",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA\n\nJÚNIOR CUNHA\n\nENSINO DE INOVAÇÃO NA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA:\nUM ESTADO DO CONHECIMENTO\n\nBlumenau\n2024\n\nJÚNIOR CUNHA\n\nENSINO DE INOVAÇÃO NA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA:\nUM ESTADO DO CONHECIMENTO\n\nDissertação apresentada ao Programa de\nPós-graduação em Educação Profissional\ne Tecnológica, ofertado pelo campus\nBlumenau\ndo\nInstituto\nFederal\nCatarinense, como parte dos requisitos\npara a obtenção do título de Mestre em\nEducação Profissional e Tecnológica.\n\nOrientadora: Profª. Drª. Fátima Peres\nZago de Oliveira.\n\nBlumenau\n2024",
+    "ficha_catalografica": "",
+    "sumario": "[PÁG. 14]\nSUMÁRIO\n\n1 INTRODUÇÃO........................................................................................................ 15\n1.1 CONSTRUINDO UM PROPÓSITO DE INSPIRAR PESSOAS A TRANSFORMAR O\nMUNDO - UM POUCO DA MINHA HISTÓRIA.......................................................................23\n1.2 ORGANIZAÇÃO DA DISSERTAÇÃO...............................................................................25\n\n2 APORTES TEÓRICOS-METODOLÓGICOS DA INVESTIGAÇÃO....................................27\n2.1 MOMENTO EXPLORATÓRIO.......................................................................................... 28\n2.2 ESTADO DO CONHECIMENTO.......................................................................................29\n2.2.1 Etapas Metodológicas do Estado do Conhecimento..................................................... 32\n2.2.1.1 Bibliografia Anotada....................................................................................................32\n2.2.1.2 Bibliografia Sistematizada...........................................................................................32\n2.2.1.3 Bibliografia Categorizada............................................................................................33\n2.2.1.4 Bibliografia Propositiva............................................................................................... 34\n2.2.2 Análise dos Dados.........................................................................................................34\n2.3 PRODUTO EDUCACIONAL............................................................................................. 35\n2.3.1 Aplicação e validação do Produto Educacional.............................................................38\n2.3.1.1 Benefícios de participação na validação e aplicação do produto educacional...........39\n2.3.1.2 Riscos de participação na validação e aplicação do produto educacional.................39\n\n3 REFERENCIAL TEÓRICO..................................................................................................40\n3.1 EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA........................................................... 40\n3.1.1 Concepções e reflexões sobre formação e trabalho..................................................... 41\n3.2 ALFABETIZAÇÃO CIENTÍFICA........................................................................................43\n3.3 INOVAÇÃO....................................................................................................................... 46\n3.3.1 Inovação Social..............................................................................................................48\n3.4 INOVAÇÃO SOCIAL PARA AMPLIAÇÃO DAS DISCUSSÕES DE CTS NA EPT............50\n\n4 ANÁLISE DOS DADOS DO ESTADO DO CONHECIMENTO SOBRE O ENSINO\nDE INOVAÇÃO.......................................................................................................... 52\n4.1 ORGANIZAÇÃO DO ESTADO DO CONHECIMENTO..........................................",
+    "resumo": "[PÁG. 11]\nRESUMO\nO presente trabalho discorre sobre o entendimento dos conceitos e práticas que\nvisam o ensino de inovação na Educação Profissional e Tecnológica - EPT, no\nâmbito do Ensino Médio Integrado - EMI, sendo a origem desta investigação a\nexperiência do pesquisador com a própria EPT e a inserção do conceito de inovação\nna educação. Inovação tem sido constantemente debatida em diversos âmbitos da\nsociedade e na educação tem se tornado pauta de avanços em pesquisas e novas\npráticas de ensino. Destarte, o objetivo geral desta pesquisa foi produzir um estado\nde conhecimento sobre o ensino de inovação, com base em repositórios de teses e\ndissertações, no período de 2018 até 2023. A natureza da metodologia é básica,\ncom abordagem analítico-descritiva, utilizando-se do estado do conhecimento como\nreferência da abordagem metodológica. Dessa maneira buscou-se a síntese e\nreflexão ao mesmo tempo, permitindo uma avaliação qualitativa de pesquisas nos\nrepositórios e o processo de análise de cada uma delas de forma estruturada,\npermitindo assim uma ampla compreensão sobre o objeto deste estudo. Para\nanálise de dados produzidos, foi utilizada a metodologia de Análise Textual\nDiscursiva. Como proposta de intervenção com produto educacional, foi construído\num e-book intitulado: <Inovação Social: no contexto da formação humana integral=,\ndocumentando uma prática pedagógica reflexiva com abordagem conceitual e uma\npossibilidade de atividade em sala de aula com educandos da EPT, possibilitando\numa compreensão humanizadora dos conceitos na vida do educando. Como\nresultados, buscou-se ampliar a compreensão sobre as nuances do ensino de\ninovação na EPT, contribuindo para a prática educadora e, principalmente, para o\ndesenvolvimento do educando. Esta pesquisa está vinculada ao ProfEPT - Mestrado\nProfissional em Educação Profissional e Tecnológica com linha de pesquisa em\nPráticas Educativas em Educação Profissional e Tecnológica e Macroprojeto 3, que\ntrata sobre Práticas Educativas no Currículo Integrado.\n\nPalavras-Chave: Inovação na Educação Profissional; Ensino Médio Integrado;\nEnsino de Inovação; Inovação Social; Estado do Conhecimento.",
+    "introducao": "[PÁG. 16]\n15\n\n 1 INTRODUÇÃO\n\nO\ncontínuo\ne\nacelerado\nmovimento\nde\nmudança\nna\nsociedade\ncontemporânea, logo na educação, em específico Educação Profissional e\nTecnológica - EPT, ao qual trata esta pesquisa, impõe a urgência de um olhar\nreflexivo para novas temáticas que surgem no cotidiano dos educadores e\neducandos. Pensar a inovação como algo presente e futuro, que tem instigado\nmudanças nos processos educacionais, é importante para que exista uma\ncompreensão da mudança cultural, com impacto social, que visa desenvolver novas\nperspectivas para educação.\nTendo como base o histórico da EPT no mundo e também no Brasil,\nidentifica-se a transformação de práticas que modificam as bases econômicas e\nsociais, consequentemente, surge a necessidade de discussão sobre o ensino de\ninovação no contexto educacional brasileiro.\nTratar da temática inovação é um grande desafio, pois são diversos, e por\nmuitas vezes difusos, os conceitos que se ramificam de uma origem, isto exige\nestudo, dedicação e uma compreensão da construção de conceitos que se\nreinventam constantemente. Como prática educadora, surge a necessidade de\ndesmistificar a relação do ensino da inovação no contexto da EPT, compreendendo\nos fenômenos da alfabetização científica para inovação, permeando assim o\ncontexto escolar e a prática do educador como precursora da formação dos\neducandos para o uso consciente da inovação.\nA sociedade fala sobre inovação constantemente, todos os dias observa-se\nnas mais diversas mídias: novos produtos, novas tecnologias e até mesmo novos\ncomportamentos sociais, baseados em situações que foram criadas no contexto da\ninovação, aqui muito mais presente o olhar da inovação tecnológica. O contexto\nescolar precisa refletir a realidade, trazendo o educando para o centro do debate, ou\nseja, ensinar e a aprender com o educando, sobre quais tipos de tecnologias,\ninovações e conhecimentos são plausíveis para essa nova realidade. A escola\nprecisa se aproximar do debate social, propiciando aos educandos uma percepção e\napropriação do seu papel no contexto da inovação durante o processo de\naprendizagem e formação humanizadora.\nUma das possibilidades para refletir sobre inovação na EPT está no contexto\nde políticas públicas, visto a infinidade de aplicações, podendo ser tecnológica,\n\n[PÁG. 17]\n16\nsocial entre outros que permeiam a dinâmica do desenvolvimento de projetos e do\nmundo do trabalho. A agenda com o desenvolvimento de políticas públicas no\nâmbito do governo federal, visa compreender e atender às novas demandas\neducacionais e sociais, onde é possível identificar em Ball e Mainardes (2011, p. 89)\na relação entre as pesquisas na área das ciências humanas e o sua imbricação na\ngestão de problemas políticos e sociais, sendo o distanciamento proporcionado pelo\nvocabulário científico um ponto de observação que torna a paisagem social mais\nvisível.\nJá Civiero, Schwertl, Oliveira, Fronza (2015, p. 11) refletem sobre os avanços\nda ciência e tecnologia nas áreas do conhecimento, onde o processo de\nensino-aprendizagem tem relação direta com questões contemporâneas.\n\nO ensino, numa perspectiva que empodera o sujeito de forma crítica, deve\nestar voltado à cidadania, dando-lhe condições de compreender, interpretar\ne agir sobre a realidade, de modo a transformá-la. Para que esse\nempoderamento aconteça faz-se necessário conhecer, aproximar e conduzir\num diálogo com questões contemporâneas.\n\nNessa construção de cidadania1, Maldaner (2016, p. 1) traz elementos\nfundamentais ao afirmar que <É possível estabelecer que a política consiste no\nconjunto de procedimentos formais e informais que expressam relações de poder e\nque se destinam à resolução pacífica dos conflitos quanto a bens públicos.=, onde\nentão o processo de construção das políticas públicas, expressam as relações de\npoder nos conflitos, sendo neste ponto uma interação do estado com a sociedade, e\nas mesmas devem <[...] ser sistematicamente avaliadas do ponto de vista de sua\nrelevância e adequação às necessidades sociais, além de abordar os aspectos de\neficiência, eficácia e efetividade das ações empreendidas.= (Maldaner, 2016, p. 1).\nSendo assim, as políticas públicas servem como um caminho para novas\npossibilidades de práticas reflexivas de inovação na EPT, trazendo aspectos de uma\nformação mais humana e também possibilitando que o estado acompanhe a\nvolatilidade das demandas sociais, do mundo do trabalho e do mercado.\nNo âmbito de políticas públicas do Estado brasileiro, tem-se diversas ações\nque despertam um olhar mais profundo sobre alfabetização científica para inovação,\nem que tem-se a promulgação da Lei da Inovação (Brasil, 2004) que <dispõe sobre\n1Cidadania como emancipação humana, que permita ao ser humano posicionar-se e ser crítico, então\napenas um sujeito que participa, de maneira formal ou informal, de qualquer sociedade ao seguir as\nregras dessa sociedade. (Oliveira, 2017, p. 28).\n\n[PÁG. 18]\n17\n\nincentivos à inovação e à pesquisa científica e tecnológica no ambiente produtivo e\ndá outras providências=, sendo atualizada em 2016 e regulamentada por (Brasil\n2016; 2018) mas com a mesma intencionalidade de incentivo à inovação no país.\nJá o Ministério da Ciência, Tecnologia e Inovação - MCTI passou a incorporar\na palavra \"Inovações\" por meio da MP 541 convertida na Lei nº 12.545, de 14 de\ndezembro de 2011. Já o Decreto nº 11.493, de 17 de abril de 2023 aborda em seu\nAnexo 1, Capítulo 1, Artigo 1º as áreas de competência do MCTI, sendo dentre elas\n<I - políticas nacionais de ciência, tecnologia e inovação; II - planejamento,\ncoordenação, supervisão, monitoramento e avaliação das atividades de ciência,\ntecnologia e inovação;=\nO Decreto nº 10.534, de 28 de outubro de 2020 institui a Política Nacional de\nInovação e em seu Artigo 5º descreve os eixos para a implementação da Política\nNacional de Inovação, sendo entre eles:\n\nI - a ampliação da qualificação profissional por meio da formação\ntecnológica de recursos humanos de empresas, de ICT e de entidades\nprivadas sem fins lucrativos, a fim de estimular a busca de novas estratégias\ne alternativas de soluções tecnológicas; [...] V - a disseminação da cultura\nde inovação empreendedora, correspondente a um conjunto de práticas\nbaseadas em valores e em princípios que visem à inovação a fim de gerar\nmudanças de paradigmas na economia; (Brasil, 2020, Art 5º)\n\nEsse mesmo decreto em seu Anexo apresenta diretrizes para a\nimplementação da Política Nacional de Inovação, e mesmo que se utilize o termo\n<qualificação=, abre caminhos para se trabalhar a formação integral dos educandos.\nMesmo que ainda em uma perspectiva voltada ao processo mercadológico, ao\nconsiderar como qualificação e não como formação do profissional autônomo e\ncidadão, que ainda vincula a inovação ao ensino superior, onde tem-se no inciso I,\nalíneas b, c e d, também no inciso V, alínea c:\n\nI - quanto ao eixo de ampliação da qualificação profissional por meio da\nformação tecnológica de recursos humanos: [...] b) revisão de currículos de\nensino superior, com vistas à promoção de uma abordagem mais prática,\nempreendedora\ne\ninterdisciplinar\npara\no\ndesenvolvimento\ndo\nempreendedorismo e da inovação;c) aproximação da produção de\nconhecimento e da formação de nível superior com as demandas do setor\nprodutivo nacional; d) estímulo às áreas de ciências exatas e agrárias, de\nsaúde, de tecnologia e de engenharia nos níveis técnico e superior; [...] V -\nquanto ao eixo de disseminação da cultura de inovação empreendedora: [...)\nestímulo aos jovens e aos adultos para empreender e inovar. (Brasil, 2020,\nAnexo)\n\n[PÁG. 19]\n18\nRevela-se pelos instrumentos legais a necessidade para empreender e\ninovar, o que deixa em aberto a perspectiva direcional de qual formação relacionada\nà inovação se pretende, o que instiga a buscar uma perspectiva que vislumbre a\nlibertação e dignidade humana. Outra legislação que apoia o ensino de inovação é a\nEstratégia Nacional de Inovação aprovada por meio da resolução CI nº 1, de 23 de\nJulho de 2021 da Câmara de In",
+    "descricao_produto_na_dissertacao": "[PÁG. 23] É possível ainda uma participação dos movimentos estudantis, da sociedade\ne todos os envolvidos no ensino de inovação, não é função única da escola discutir\nisso, mas da sociedade que é impactada diretamente, ainda mais no âmbito tão\ntecnológico que vem sendo construído de algo que em seu cerne é idealizado por\nseres-humanos.\nO ensino da inovação está inserido na EPT por meio dos mais diversos\nmomentos e espaços, constitui-se então um paralelo de observação para esta\npesquisa, buscando conceituar inovação, verificar quais pesquisas abordam o\nensino de inovação e gerar um produto que possa contribuir com educadores\nutilizando os três momentos pedagógicos de Delizoicov; Angotti; Pernambuco, 2018.\nDiante disso, o objetivo geral desta pesquisa é elaborar um estado de\nconhecimento sobre o ensino de inovação na EPT de nível médio, com base em\nteses e dissertações defendidas, no período de 2018 até 2023.\nComo meio de atingir o objetivo geral, traçou-se os objetivos específicos,\ncomo segue: i) Identificar os principais conceitos de inovação e como se comunicam\ncom no âmbito acadêmico com outros conceitos como alfabetização científica,\nciência, tecnologia e sociedade, educação profissional e tecnológica. ii) Inventariar\nteses e dissertações sobre tema ensino de inovação na EPT em nível médio, com\nrecorte no período 2018/2023; iii) Desenvolver e aplicar um produto educacional na\nforma de prática pedagógica, que contribua na formação de educadores com\npráticas que contextualizam o ensino de inovação social como parte do ensino na\nEPT no ensino médio integrado, sob uma perspectiva de formação humana integral.\nComo metodologia para aprofundar a compreensão da temática ensino de\ninovação se baseia em um estudo no formato de Estado do Conhecimento - EC que\né um recorte temporal, focado em teses e dissertações que versem sobre o ensino\nde inovação na EPT, buscando compreender quais práticas já vem surgindo nessas\npesquisas e que possam ser potencializadas e compartilhadas. Cabe destacar que\njá existe uma pesquisa que analisou a perspectiva da educação de nível superior,\nonde inovação já é associada de alguma forma nas matrizes curriculares,\ngeralmente como uma disciplina, que não se configura o cenário ideal, mas possível.\nPara a construção da metodologia desta pesquisa, partindo do ponto de vista\nteórico tem-se a conceituação de estado do conhecimento, com base em\nRomanowski e Ens (2006) e como percurso metodológico encontra-se caracterizado\npor Morosini; Kohls-Santos e Bittencourt (2021).\n\n[PÁG. 24] Em um contexto onde falar sobre inovação se torna uma inovação,\nentende-se que o ensino de inovação pode subsidiar os educadores para lidar com\nessa temática complexa e que poderá seguir em diversos caminhos. Por isso, a\nconstrução do produto educacional é uma proposta pedagógica que pode permitir\nsensibilizar os educadores quanto a temática indicando uma formação mais\nhumanizadora, e que, também busque possibilitar ao educando entender porque ele\nprecisa compreender tais conceitos em seu contexto social, criando assim subsídios\npara um protagonismo estudantil no âmbito da apropriação do quanto à concepção\nde inovação. A observação desta realidade na construção social com ensino da\ninovação na EPT se constitui na linha de Práticas Educativas em EPT com o\nMacroprojeto 3, que trata sobre Práticas Educativas no Currículo Integrado na EPT\ndo Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT.\n\n[PÁG. 27] 26\ncaracterização e o cont",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 20,
+        "texto": "com a criação do Ministério do Empreendedorismo, da Microempresa e da Empresa\nde Pequeno Porte pela Medida Provisória nº 1.187, de 13 de setembro de 2023\n(Brasil, 2023) e alterado pela Lei nº 14.816, de 16 de janeiro de 2024 (Brasil, 2024).\nDessa forma, fortalece políticas, programas e ações voltadas para o apoio e\nformalização de negócios, arranjos produtivos locais, artesanato, além de estimular\no microcrédito e facilitar o acesso a recursos financeiros. A formalização desse novo\nministério representa um marco no compromisso do governo brasileiro em criar um\nambiente favorável para o crescimento do empreendedorismo no Brasil,\npromovendo a inovação, a sustentabilidade e a inclusão social.\nA legislação apresentada considera a inovação e o empreendedorismo, tanto\nno âmbito dos sistemas produtivos e do desenvolvimento tecnológico da ciência,\ncomo para a formação educacional. Nas estratégias do MEC é possível identificar\nações para inserção da inovação na educação em todos os níveis, principalmente no\nnível superior e na EPT. É importante acompanhar a construção destas agendas que\nrelacionam EPT, inovação e empreendedorismo fortalecendo um itinerário formativo\nque esteja alinhado às d",
+        "citacoes_detectadas": [
+          "Brasil, 2023",
+          "Brasil, 2024"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 24,
+        "texto": "Em um contexto onde falar sobre inovação se torna uma inovação,\nentende-se que o ensino de inovação pode subsidiar os educadores para lidar com\nessa temática complexa e que poderá seguir em diversos caminhos. Por isso, a\nconstrução do produto educacional é uma proposta pedagógica que pode permitir\nsensibilizar os educadores quanto a temática indicando uma formação mais\nhumanizadora, e que, também busque possibilitar ao educando entender porque ele\nprecisa compreender tais conceitos em seu contexto social, criando assim subsídios\npara um protagonismo estudantil no âmbito da apropriação do quanto à concepção\nde inovação. A observação desta realidade na construção social com ensino da\ninovação na EPT se constitui na linha de Práticas Educativas em EPT com o\nMacroprojeto 3, que trata sobre Práticas Educativas no Currículo Integrado na EPT\ndo Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "do que se entende dos mais diversos conceitos que irão se conectar e construir a\ndissertação.\nConceituar EPT envolve autores como Souza, Nunes e Oliveira (2011) em seu\nlivro Política Públicas para a EPT no Brasil. Assim como as reflexões de Pacheco\n(2012) com perspectivas da educação profissional técnica de nível médio,\njuntamente com as reflexões de Ramos (2004 e 2007) e Frigotto (2001).\nJá para Alfabetização Científica, foram consultados os autores Auler e\nDelizoicov (2001) em seu artigo: Alfabetização científico-tecnológica para quê?, e\ntambém Chassot (2003) com suas inferências sobre o tema no livro Alfabetização\ncientífica: uma possibilidade para a inclusão social, combinando com Postman e\nWeingartner (1972) em seu livro Contestação: nova fórmula de ensino e\ncontribuições de Hurd (1998) em seu artigo: Scientific Literacy: New Minds for a\nChanging World.\nInovação é um conceito polissêmico e complexo de definir, pois permite uma\ngama de variações de acordo com a intenção de análise e estudo, por este motivo\nforam selecionados autores que definem inovação no sentido mais amplo e\nconhecido, como Drucker (2010), Chiavenato (2007), Sirilli (2008) e Keeley et al\n(2013). Seguindo para",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 36,
+        "texto": "O processo de ensino-aprendizagem envolve dois sujeitos, educador e\neducando num processo de dodiscência, ou seja, numa relação dialógica onde\neducador e educando ensinam e aprendem onde Freire (1996, p.23) em sua análise\nque retrata a dodiscência em que <Quem ensina aprende ao ensinar e quem\naprende ensina ao aprender. (...) ensinar não é transferir conhecimento, mas criar as\npossibilidades para a sua produção ou a sua construção.=",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 36,
+        "texto": "A inovação social, aqui criticizada como construção de nova percepção de\nvalor, com significado libertador e humanizador e suas diversas interpretações\naplicáveis em nosso cotidiano, ganha espaço de debate e aplicações também no\ncotidiano escolar. Pode trazer abordagens necessárias sobre a importância de\ninovar, compreendendo os limites ou reais impactos sociais do que está sendo\ncriado, sendo portanto uma situação-limite2 a ser superada quando a inovação é\ncriticizada para além do mercado. Isso porque, no momento em que a percepção\ncrítica se instaura, na ação mesma, se desenvolve um clima de esperança e de\nconfiança\nque\nlevam\nos\nhomens\na\nempenharem\nna\nsuperação\ndas\n<situações-limites= (Freire, 1999, p. 93).",
+        "citacoes_detectadas": [
+          "Freire, 1999, p. 93"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 36,
+        "texto": "O objetivo deste produto educacional é introduzir o ensino de inovação na\nperspectiva libertadora que envolve a pesquisa como ato de conhecimento por meio\ndo questionamento, indagação e aprofundamento considerando a realidade. Esse\nprocesso envolve o ensinar e o aprender e onde, o porquê, como, para quem se\npode aplicar as novas criações. Dessa forma, questiona uma possibilidade no\ncontexto da docência para discência, ou seja, ensinar para aprender e aprender para\n2 8situações-limite9 não são 8o contorno infranqueável onde terminam as possibilidades, mas a margem\nreal Paulo Freire apoia-se nos conceitos do filósofo brasileiro Álvaro Vieira Pinto, no seu livro\nConsciência e Realidade Nacional (1960), para tratar dos conceitos de <situações-limite=, <atos-limite=,\nconsciência ingênua e consciência crítica onde começam todas as possibilidades9; não são 8a\nfronteira entre o ser e o nada, mas a fronteira entre o ser e o ser mais9 (mais ser)= (FREIRE, 2018,\np.125) apud Santos (2011, p.75).",
+        "citacoes_detectadas": [
+          "FREIRE, 2018,\np.125"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 37,
+        "texto": "Valorizar a perspectiva do educando permite uma conjuntura de aprendizado,\ntornando-o significativo, crítico, criativo e colaborativo. Dessa forma pode propiciar o\nensino da inovação que precisa ser entendida em um processo de pessoas para\npessoas, e todo seu acumulado de situações de vida. Em convergência com o que\nse defende tem-se:\nO conteúdo empírico do conhecimento do educando, oriundo de sua\nvivência, de sua experiência constituída nas relações com a natureza e com\nos semelhantes - ou seja, sua apreensão das situações de vida\ncoletivamente acumulada -, é valorizado por Freire, uma vez que, de acordo\ncom sua argumentação, é com base nesse conhecimento empírico do aluno\nque se deve iniciar o processo educativo, embora esse conhecimento seja\ntambém analisado como uma <limitação na possibilidade de perceber mais\nalém= (Freire, 1975, p.126). Por isso a ênfase desse educador na\nproblematização da compreensão dos alunos sobre os temas, ou seja, na\nproblematização do que se denominou de cultura primeira ou prevalente do\n3 <É uma relação horizontal A com B. Nasce de uma matriz crítica e gera criticidade. Nutre-se do\namor, da humildade, da esperança, da fé, da confiança. Por isso, só o",
+        "citacoes_detectadas": [
+          "Freire, 1975, p.126"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 42,
+        "texto": "É importante que seja feita uma reflexão sobre a relação histórica da\nconstrução da EPT e suas intencionalidades, os conflitos das forças no processo de\nconstrução das diretrizes e práticas do que se entende por formação, baseada em\naspectos da inerência do ser humano no processo, criticizando a formação\nprofissional.\nJá Ramos (2004) apud Pacheco (2012, p.67) aborda os aspectos relacionais\nentre os conceitos de trabalho, ciência, tecnologia e cultura, assim como a relação\ndo trabalho com a intervenção no meio social.\nCompreender a relação indissociável entre trabalho, ciência, tecnologia e\ncultura significa entender o trabalho como princípio educativo, o que não\nsignifica aprender fazendo, nem é sinônimo de formar para o exercício do\ntrabalho. Considerar o trabalho como princípio educativo equivale a dizer\nque o ser humano é produtor de sua realidade e, por isso, apropria-se dela\ne pode transformá-la. Equivale a dizer, ainda, que somos sujeitos de nossa\nhistória e de nossa realidade. Em síntese, o trabalho é a primeira mediação\nentre o homem e a realidade material e social.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 42,
+        "texto": "A\nprática\neconômica\nse\norigina\nno\ntrabalho, buscando satisfazer\nnecessidades por meio da produção de riquezas, porém incorporado pelo\ncomportamento moderno, o fator econômico se torna base da necessidade de\nprofissionalizar-se. Ramos (2004) apud Pacheco (2012, p.67) questionam <[..] sob a\nperspectiva da integração entre trabalho, ciência e cultura, a profissionalização se\nopõe à redução da formação para o mercado de trabalho. Antes, ela incorpora\nvalores ético-políticos e conteúdos históricos e científicos que caracterizam a práxis\nhumana.=",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 42,
+        "texto": "Ramos (2004) apud Pacheco (2012, p.67) destacam a finalidade da EPT:\nPortanto, a educação profissional não é meramente ensinar a fazer e\npreparar para o mercado de trabalho, mas é proporcionar a compreensão\ndas dinâmicas sócio-produtivas das sociedades modernas, com as suas\nconquistas e os seus revezes, e também habilitar as pessoas para o\nexercício autônomo e crítico de profissões, sem nunca se esgotar a elas.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 43,
+        "texto": "A educação profissional deve servir como ferramenta que permita a síntese\ndo diverso, não como potencializadora das singularidades. Em uma corrente\nhistórica dual, com formação básica e formação profissional, deve-se compreender o\ntrabalho em dois sentidos: ontológico, que produz a existência humana e\nconsequentemente conhecimentos, histórico, fator econômico, que executa\nconhecimentos na produção capitalista.\nO princípio educativo do trabalho ontológico para Ramos (2004) apud\nPacheco (2012, p.68) <[...] proporciona a compreensão do processo histórico de\nprodução científica e tecnológica, como conhecimentos desenvolvidos e apropriados\nsocialmente para a transformação das condições naturais da vida e a ampliação das\ncapacidades, das potencialidades e dos sentidos humanos.=\nJá o princípio educativo do trabalho histórico para Ramos (2004) apud\nPacheco (2012, p.69):\n[...] coloca exigências específicas para o processo educacional, visando a\nparticipação direta dos membros da sociedade no trabalho socialmente\nprodutivo. Com esse sentido, conquanto também organize a base unitária\ndo ensino médio, fundamenta e justifica a formação específica para o\nexercício de profissões, essas entendidas",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 44,
+        "texto": "De acordo com Ramos (2007, p. 554):\nUm projeto de educação profissional contra hegemônico, ou seja,\ncomprometido com a soberania da nação e com os interesses de sua classe\ntrabalhadora,\nprocuraria\nunificar\norganicamente\na\nformação\nde\ntrabalhadores de nível médio e superior nos campos da ciência, tendo como\nbase uma formação omnilateral e politécnica.",
+        "citacoes_detectadas": []
+      }
+    ],
+    "referencias_filtradas": [
+      "FREIRE, Paulo. A importância do ato de ler – em três artigos que se completam, São Paulo: Cortez. 1989.",
+      "FREIRE, Paulo. Educação como prática da liberdade, São Paulo: Paz e Terra. 1980.",
+      "FREIRE, Paulo. Pedagogia da autonomia, São Paulo: Paz e Terra. 1986",
+      "FREIRE, Paulo. Pedagogia do oprimido, São Paulo: Paz e Terra. 1999"
+    ]
+  }
+}

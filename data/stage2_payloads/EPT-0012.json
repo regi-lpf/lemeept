@@ -1,0 +1,278 @@
+{
+  "id": "EPT-0012",
+  "metadados_resolvidos": {
+    "ano": 2025,
+    "autor": "Cristiane Vieira dos Santos Fürst",
+    "orientador": "Denise Fernandes",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP2",
+    "macroprojeto": "MP6"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "FAMÍLIA E ESCOLA: INFLUÊNCIAS SOCIAIS NA TRANSIÇÃO ENTRE O ENSINO FUNDAMENTAL AO ENSINO MÉDIO INTEGRADO NO IFSC (2018 A 2025)",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/10/DISSERTACAO-E-PRODUTO-EDUCACIONAL-_-CRISTIANE-FURST.pdf",
+    "palavras_chave": [
+      "Transição Escolar",
+      "Ensino Médio Integrado",
+      "Família-escola",
+      "Educação Profissional e Tecnológica",
+      "Produto Educacional"
+    ],
+    "autores_referenciados": [
+      "A. M. Bomfim",
+      "Acácia Zeneida Kuenzer",
+      "Adriano Larentes da Silva",
+      "Ana Andrea Ribeiro",
+      "Ana Gomes",
+      "Anandrá Ribeiro",
+      "Anandra Santos Ribeiro de Oliveira",
+      "Annette Lareau",
+      "Antoni Zabala",
+      "Antônio Carlos Gil",
+      "Bernadete Angelina Gatti",
+      "Bernardo Aguiar",
+      "C. A. Castro",
+      "C. D. Rosa",
+      "C. Schenckel",
+      "C. Schenkel",
+      "Carlos Fernandes",
+      "Claudiane Lúcia Araújo Maciel",
+      "Cláudio Marques M. Nogueira",
+      "D. C. Piotto",
+      "D. J. Treffinger",
+      "D. Ohara",
+      "Daniel Thin",
+      "Dante Henrique Moura",
+      "Dermeval Saviani",
+      "E. H. L. Coutinho",
+      "Écio Antonio Portes",
+      "Eduardo Henrique M. Lima",
+      "Eduardo Monteiro",
+      "Eliezer Moreira Pacheco",
+      "F. L. B. Melo",
+      "Fábio Campos",
+      "G. Rôças",
+      "Gaudêncio Frigotto",
+      "Gláucia Raquel Spindler",
+      "Guiomar Namo de Mello",
+      "I. M. B. Tetzlaff",
+      "Itamar de Oliveira Corrêa Filho",
+      "Ivanise Maria Rizzatti",
+      "Jairo Antônio da Paixão",
+      "Jaqueline Moll",
+      "João Amós Comênio",
+      "John W. Creswell",
+      "Jonas Emanuel Pinto Magalhães",
+      "José Carlos Libâneo",
+      "José M. E. Bidarra",
+      "L. F. V. Aguiar",
+      "Leandro Vendrami",
+      "M. A. A. Cunha",
+      "M. A. Dessen",
+      "M. R. T. P. Menuchi",
+      "Márcia Lopes Marinho",
+      "Maria Alice Nogueira",
+      "Maria Cecília de Souza Minayo",
+      "Maria Ciavatta",
+      "Maria Regina Z. Soares",
+      "Marina Regina Veloso Esteves",
+      "Mario Kaplún",
+      "Marise Nogueira Ramos",
+      "Marlice de Oliveira e Nogueira",
+      "Paulo Freire",
+      "Pierre Bourdieu",
+      "Priscila de Oliveira Coutinho",
+      "Priscila S. C. Leite",
+      "R. Bonfante",
+      "Rafaela Zorzetto de Camargo",
+      "Reginaldo Leandro Plácido",
+      "Renan Silveiro Rosa",
+      "Rosa Maria da Exaltação Coutrim",
+      "S. P. Bessemer",
+      "Sandra Maria Ruckl Wolf",
+      "Silvia Regina de Souza",
+      "Sônia Sousa Almeida Rodrigues",
+      "Tânia de Freitas Resende",
+      "U. Flick",
+      "Vicente Falconi Campos",
+      "Vicki L. Clark",
+      "Walter Correia"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/1131906",
+    "titulo_produto": "Construindo Pontes na Educação Básica : O Educador como Agente de Transformação na Transição para o Ensino Técnico Integrado",
+    "titulo_produto_bruto": "CONSTRUINDO PONTES NA EDUCAÇÃO: O EDUCADOR COMO AGENTE DE TRANSFORMAÇÃO NA TRANSIÇÃO ESCOLAR PARA O ENSINO MÉDIO INTEGRADO.",
+    "data_publicacao": "2025-10-21",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Fürst, Cristiane Vieira dos Santos",
+        "papel": "creator"
+      },
+      {
+        "nome": "Fernandes, Denise",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1131906",
+        "url": "https://educapes.capes.gov.br/handle/capes/1131906"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "PRODUTO EDUCACIONAL - CRISTIANE FURST.pdf",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "apresentação",
+      "curso",
+      "livro digital"
+    ],
+    "palavras_chave_educapes": [
+      "Transição escolar",
+      "Educação Profissional e Tecnológica",
+      "Formação de educadores",
+      "Inclusão e permanência escolar",
+      "Ensino Médio Integrado",
+      "Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT) – IFC Campus Blumenau",
+      "Organização e Memórias de Espaços Pedagógicos na Educação Profissional e Tecnológica"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "E-book / Livro Digital",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\nCRISTIANE VIEIRA DOS SANTOS FÜRST\nFAMÍLIA E ESCOLA: INFLUÊNCIAS SOCIAIS NA TRANSIÇÃO ENTRE O\nENSINO FUNDAMENTAL AO ENSINO MÉDIO INTEGRADO NO IFSC\n(2018 a 2025)\nBlumenau\n2025\n\nCRISTIANE VIEIRA DOS SANTOS FÜRST\nFAMÍLIA E ESCOLA: INFLUÊNCIAS SOCIAIS NA TRANSIÇÃO ENTRE O\nENSINO FUNDAMENTAL AO ENSINO MÉDIO INTEGRADO NO IFSC\n(2018 a 2025)\nDissertação\napresentada\nao\nPrograma\nde\nPós-graduação\nem\nEducação\nProfissional e\nTecnológica, ofertado pelo campus Blumenaudo\nInstituto Federal Catarinense, como parte dos\nrequisitosparaaobtençãodotítulodeMestraem\nEducação Profissional e Tecnológica.\nOrientadora: Profa. Dra. Denise Fernandes\nBlumenau\n2025",
+    "ficha_catalografica": "[PÁG. 3]\nFICHA CATALOGRÁFICA DISSERTAÇÃO\nFürst, Cristiane Vieira dos Santos.\nF991f Família e escola ; influências sociais na transição entre o ensino\nfundamental ao ensino médio integrado no IFSC (2018 A 2025) / Cristiane\nVieira dos Santos Fürst; orientadora: Denise Fernandes . -- Blumenau, 2025.\n140 p.\nDissertação (mestrado) – Instituto Federal Catarinense, campus Blumenau,\nMestrado Profissional em Educação Profissional Tecnológica (PROFEPT),\nBlumenau, 2025.\nInclui referências.\n1. Transição Escolar. 2. Ensino Médio Integrado. 3. Família-Escola.\n4. Educação Profissional e Tecnológica.I. Fernandes,Denise. II. Instituto\nFederal Catarinense. Mestrado Profissional em Educação Profissional e\nTecnológica. III. Título.\nCDD: 373\nFicha catalográfica elaborada pela bibliotecária\nShyrlei K. Jagielski Benkendorf - CRB 14/662",
+    "sumario": "[PÁG. 18]\nSUMÁRIO\nINTRODUÇÃO\n17\n2 REFERENCIAL TEÓRICO\n24\n2.1 OLHANDO O PASSADO PARA COMPREENDER O PRESENTE\n24\n2.1.2 Transição, Acesso e Permanência: Desafios Atuais\n32\n2.2 FAMÍLIA E ESCOLA: BASES SOCIAIS DA TRAJETÓRIA ESCOLAR\n40\n2.2.1 A Família: Processos, Expectativas e Escolhas Escolares\n42\n2.2.2 A Escola de Origem como Ponte de Mediação e Informação\n48\n3 METODOLOGIA\n53\n3.1 - Entre números e significados: como os dados foram analisados\n55\n4 RESULTADOS E DISCUSSÕES\n63\n4.1 CONDICIONANTES ESTRUTURAIS E HISTÓRICOS DA TRAJETÓRIA\nEDUCACIONAL\n63\n4.1.1 A Origem Escolar e as Redes de Informação: Mediações no Acesso ao IFSC73\n4.1.2 Escolaridade dos Pais e Desigualdades Informacionais: O Contraponto da\nEscola Pública\n88\n4.2 CONSIDERAÇÕES FINAIS DOS DADOS E INDICAÇÃO DO PRODUTO\nEDUCACIONAL\n90\n5 PRODUTO EDUCACIONAL\n93\n5.1 FINALIDADE DO PRODUTO EDUCACIONAL\n99\n5.2 JUSTIFICATIVA PARA APLICAÇÃO NA EPT\n101\n5.3 BASES TEÓRICAS\n102\n5.3.1 Inspirações em Freire e Faundez para fortalecer a conexão do produto\neducacional com o ensino\n108\n5.4 APLICAÇÃO E VALIDAÇÃO DO PRODUTO EDUCACIONAL\n111\n5.4.1 Replicação do Produto Educacional.\n123\n6 CONCLUSÕES\n125\nREFERÊNCIAS\n128\nAPÊNDICE A - FORMULÁRIO DE AVALIAÇÃO DO PRODUTO\n137\nEDUCACIONAL\n137\nANEXO A - RELAÇÃO DE PERGUNTAS DO QUESTIONÁRIO SÓCIO-ECONÔMICO DO\nIFSC\n140\nANEXO B - ATA DE DEFESA DE DISSERTAÇÃO\n141\nANEXO C - FICHA DE VALIDAÇÃO DA PRODUÇÃO TÉCNICA TECNOLÓGICA\n142\n(PTT)\n142\n17\n\nINTRODUÇÃO\nOingressonaescolapúblicaéumdireitouniversalasseguradopeloartigo\n205daConstituiçãoFederalde1988,quedefineaeducaçãocomo“direitodetodos\ne dever do Estado e da família, promovida e incentivada com a colaboração da\nsociedade”. Esse princípio é complementado pelo artigo 208, que garante a\ngratuidadeeobrigatoriedadedaEducaçãoBásica,incluindooEnsinoMédio(Brasil,\n1988, 1996).\nApesardesserespaldolegal,aeducaçãobrasileirahistoricamenteenfrenta\nentraves significativos relacionados à igualdade de acesso epermanência(IBGE,\n2020;Molletal.,2010).Asdesigualdadesdeclassesocialsereproduzemnointerior\ndasinstituiçõesescolares(CoutinhoeMelo,2011;Moura,2007),sendoatransição\nentreoensinofundamentaleomédioumpontodevulnerabilidade,queintensifica\nas taxas de abandono escolar entre jovens das camadas populares (Coutinho e\nMelo, 2011; IBGE, 2018, 2019, 2025).\nDiante desse cenário de desigualdade estrutural, a criação dos Institutos\nFederaisem2008representouumapolíticapúblicaestratégicavoltadaàampliação\nda inclusão educacional, priorizando o atendimento às demandas da classe\ntrabalhadora (Ramos, 2008). Conforme disposto em sua lei de criação, 50% das\nvagasofertadaspelosIFsdevemserdestinadasàeducaçãotécnicadenívelmédio,\npreferencialmentenaformaintegrada(Brasil,2008).Entretanto,aprocuraporesses\ncursossuperaamplamenteonúmerodevagasdisponíveis,configurando,naprática,\num estreitamento nas possibilidades de acesso. Isso implica na necessidade de\nprocessos seletivos, os quais podem gerar efeitos e",
+    "resumo": "[PÁG. 11]\nRESUMO\nEstainvestigaçãoanalisouadinâmicaentrefamília,escolaesociedadenatransição\ndo Ensino Fundamental para o Ensino Médio Integrado (EMI) nos Institutos\nFederais, focando no Instituto Federal de Santa Catarina (IFSC) como campo\nempírico.Opontodepartidafoioreconhecimentodequeessapassagemescolar\nrepresentaumaetapasensível,marcadapordesigualdadessociaiseculturaisque\ninfluenciamoacesso,especialmenteparaestudantesoriundosdeescolaspúblicas.\nA análise utilizou dados dos processos seletivos do IFSC entre 2018 e 2025,\nabrangendo\n67.519\ninscrições.\nA\nabordagem\nmetodológica\nadotada\nfoi\nquanti-qualitativa, com caráter translacional e objetivos exploratórios. Os dados\nforamcoletadospormeiodequestionáriossocioeconômicosinstitucionaisaplicados\nno ato da inscrição e analisados estatisticamente utilizando os testes de\nqui-quadradoeVdeCramer.Alémdisso,foirealizadaaanálisedeconteúdo(Bradin\n2011) sustentada em dois eixos teóricos: a constituição histórica da Educação\nProfissional e Tecnológica (Frigotto, 2006; Moura, 2007; Ramos, 2008; Pacheco,\n2012)eoconceitodetransiçãoescolarcomofenômenosocialeeducacional(Mello,\n1999;Molletal.,2010),dialogandocomasmediaçõessociaissobaóticadocapital\ncultural (Bourdieu, 1972, 1975,1979,1998;Thin,2006,2010;RibeiroeNogueira,\n2019; Nogueira, 1998, 2005, 2011, 2012, 2025), dentre outros. Os resultados\nevidenciaram que as desigualdades educacionais se intensificam por meio das\ndistintas formas de orientação e escolha escolar. Em análise global, todos os\nestudantestendemareceberinfluênciassignificativasdafamíliaeamigosemseus\nprocessos decisórios.Noentanto,aoanalisargruposespecíficos,observa-seque,\nenquanto os estudantes de instituições privadas também recebem influências\nsignificativasdamídia,osalunosdeescolaspúblicasdependem,emgrandeparte,\nda orientação de professores. Nesse contexto, a escola pública desempenha um\npapel crucial como principal detentora do capital informacional necessário,\ntornando-se um elo fundamental na transição para o Ensino Médio Integrado. A\npartirdessadiscussão,foidesenvolvidooProdutoEducacionalConstruindoPontes\nna Educação: O Educador como Agente de Transformação na Transição Escolar\nparaoEnsinoMédioIntegrado,ume-bookinterativovoltadoaapoiarprofessoresda\nredepúblicanaorientaçãoeducacionalemediaçãoinformacionaldepaisealunos.\nAvalidaçãodessematerialfoiconduzidacombasenaspercepçõesdeprofessores\ndaredepública,avaliandocritériosdeatratividade,clareza,envolvimento,aceitação\ne potencial de transformação, conforme Leite (2018). Apresentada no âmbito do\nPrograma de Mestrado ProfEPT, esta dissertação contribui para o campo da\nEducaçãoProfissionaleTecnológicaaoentrelaçarinvestigação,problematizaçãoe\na criação de umprodutoeducacionalqueampliaodiálogoentrefamília,escolae\nsociedade, promovendo práticas pedagógicas mais inclusivas e socialmente\nengajadas diante dos desafios contemporâneos da EPT.\nPalavras-Chave: Transição Escolar. Ensino Médio Integrado. Família-escola.\nEducação Profissional e Tecnológica. Produto Educacional.",
+    "introducao": "[PÁG. 19]\n17\n\nINTRODUÇÃO\nOingressonaescolapúblicaéumdireitouniversalasseguradopeloartigo\n205daConstituiçãoFederalde1988,quedefineaeducaçãocomo“direitodetodos\ne dever do Estado e da família, promovida e incentivada com a colaboração da\nsociedade”. Esse princípio é complementado pelo artigo 208, que garante a\ngratuidadeeobrigatoriedadedaEducaçãoBásica,incluindooEnsinoMédio(Brasil,\n1988, 1996).\nApesardesserespaldolegal,aeducaçãobrasileirahistoricamenteenfrenta\nentraves significativos relacionados à igualdade de acesso epermanência(IBGE,\n2020;Molletal.,2010).Asdesigualdadesdeclassesocialsereproduzemnointerior\ndasinstituiçõesescolares(CoutinhoeMelo,2011;Moura,2007),sendoatransição\nentreoensinofundamentaleomédioumpontodevulnerabilidade,queintensifica\nas taxas de abandono escolar entre jovens das camadas populares (Coutinho e\nMelo, 2011; IBGE, 2018, 2019, 2025).\nDiante desse cenário de desigualdade estrutural, a criação dos Institutos\nFederaisem2008representouumapolíticapúblicaestratégicavoltadaàampliação\nda inclusão educacional, priorizando o atendimento às demandas da classe\ntrabalhadora (Ramos, 2008). Conforme disposto em sua lei de criação, 50% das\nvagasofertadaspelosIFsdevemserdestinadasàeducaçãotécnicadenívelmédio,\npreferencialmentenaformaintegrada(Brasil,2008).Entretanto,aprocuraporesses\ncursossuperaamplamenteonúmerodevagasdisponíveis,configurando,naprática,\num estreitamento nas possibilidades de acesso. Isso implica na necessidade de\nprocessos seletivos, os quais podem gerar efeitos excludentes, contrariando, em\ncerta medida, os princípios fundantes dessas instituições.\nEssaseletividadetendeabeneficiarestudantesdetentoresdemaiorcapital\nmaterial,\ncultural e simbólico1, predominantemente oriundos de contextos\nsocioeconômicos mais favorecidos (Moll et al., 2010; Nogueira, 1998; Bourdieu,\n1979).Talcontradiçãodificultaocompassoentreaintencionalidadedaspolíticase\nsua efetiva concretização. Mesmo com a existência de políticas de ações\n1 Daniel Thin (2010, p.2) as descreve como uma \"confrontação desigual entre dois modos de\nsocialização\".Segundoele,asrelaçõesentrefamíliasdasclassespopulareseescolasãomarcadas\npeladivergência,efrequentementecontradição,entreaslógicassocializadoraspopulareseomodo\nescolar de socialização, que é dominante e se impõe.\n\n[PÁG. 20]\n18\nafirmativas, como a Lei nº 12.711/2012 (atualizada pela Lei nº 14.723/2023),que\nreservou 50% das vagas para estudantes de escolas públicas com recortes de\nrenda,raça,etniaedeficiência,osdesafiosrelacionadosaoacesso,àpermanência\ne ao êxito educacional persistem, sobretudo entre jovens oriundos de classes\npopulares.\nDessaforma,nãosetrataaquidequestionarodireitouniversalàeducação\npública, tampouco de restringir seu alcance a determinados grupos. Como já\ndiscutido, a educação pública, gratuita e de qualidade é um direito de todos. É\njustamente amparada por essa premissa que esta pesquisa busca analisarcomo\nesse direito,emboraformalmenteassegurado,seconcretizadeformadesigualno\ncotidiano escolar. Nesse cenário, estudantes oriundos da rede pública enfrentam\nmais barreiras para compreender os processos seletivos, conhecer os Institutos\nFederais e acessá-los efetivamente.\nTalrealidadereforçaanecessidadedeinvestigardinâmicasecontradições,\ncomosubsídioàformulaçãodeaçõesquepromovamaequidadeeducacional. Sob\nessa perspectiva as palavras de Bourdieu, (1998, p. 53) já advertiam que tratar\ntodosdeformaigual,semconsiderarasdesigualdadesdeorigem,poderesultarna\nreproduçãodeprivilégios.Seaescolanãoadotarpráticasdiferenciadasdeapoioa\nquem precisa, acabará,mesmoquedeformavelada,favorecendoaquelesquejá\npertencem a contextos familiares mais favorecidos. O alertadeBourdieu,mesmo\nque já tendo sido replicado por muitas vozes, ainda precisa ser reafirmado e\nsobretudo ouvido.\nAssim, delimitou-se o recorte empírico desta pesquisa, com foco nos\nestudantes oriundos da rede pública de ensino.SobaperspectivadeMariaAlice\nNogueira, Thin Daniel e Marilice Nogueira, às escolas públicas brasileiras são\nmajoritariamente frequentadas por alunos das camadas populares e das frações\ninferioresdascamadasmédias.Emboraessesautoresreconheçamque,noBrasil,a\nnoçãodeclassesocialnãopossuiumadefiniçãoestáveleuniversalmenteclara,é\npossível identificar que o predomínio das classes menos elitizadas nessas\ninstituições decorre de origem histórica,dualeseletivadaeducaçãonacional.Tal\ndualidade manifesta-se especialmente na Educação Profissional, historicamente\nvoltada à formação da classe trabalhadora, com objetivo de prepará-la para o\ntrabalho operário. Em contraposição, às escolas privadas foram concebidas para\npreservaraestruturadeclasses,oferecendoumensinopropedêuticoorientadoao\n\n[PÁG. 21]\n19\ndesenvolvimento intelectual.Essaconfiguraçãoestruturaldaeducaçãoprofissional\nbrasileirafoiamplamenteanalisadaporautores,comoFrigotto,PachecoeNogueira.\nAssim, as escolas públicas constituem espaços de acolhimento para os grupos\nsocialmente menos favorecidos, por vezes denominadas classe trabalhadora, no\ncontextohistóricodaEPT,ouclassepopular,conformeutilizadopelasociologiada\neducação ao abordar as desigualdades sociais e educacionais.\nNesse cenário, a presente pesquisa insere-se no campo da Educação\nProfissionaleTecnológica(EPT),comespecialatençãoaosdesafiosimpostospela\ntransição escolar entre o Ensino Fundamental e o Ensino Médio Integrado (EMI)\nofertado pelos Institutos Federais. O conceito de transição, neste estudo, é\ncompreendidocomoumprocessoqueenvolvemudançasinstitucionais,subjetivase\nsociais (Houaiss, 2009; Thin, 2010; Mello, 1999). Essa transição é marcada por\nrupturaseobstáculosqueatingemdemaneiramaisintensaosjovensdascamadas\npopulares(Mello,1999),sendoaescolapúblicaapontadacomoagenteessencialde\nmediação nesse processo (Nogueira, 2012; Nogueira, 2019).\nAs vivências pessoais e profissionais possibilitaram-me observar esse\nfenômenosobmúltiplasrealidades,oquemelevouaperceber,aindaquedeforma\nintuitiva, naquele momento, os efeitos concretos das desigualdades no acesso à\ninformaçãoeàorientaçãoescolar.Minhatrajetóriacomoestudantedaredepública\ne,posteriormente,comoeducadoraeminstituiçõesmunicipais,estaduaisefederais,\nproporcionou-meumolharampliadosobreopapelestratégicodosprofessorescomo\nmediadoresdasescolhasescolares,tantodopontodevistadiscentequantocomo\ndocente.\nNesse sentido, o Instituto Federal de Santa Catarina (IFSC) foi escolhido\ncomo campo empírico por ser o espaço onde surgiram os questionamentos que\nmotivaram esta pesquisa, uma vez que há um campus na cidade deCanoinhas,\nmeu município de origem e residência. No início da investigação, eu exercia a\nfunção de assistente em administração nesse campus, o que me possibilitou\nobservar a realidade institucional a partir da perspectiva de servidora pública.\nPosteriormente, com a aprovação em concurso público e o início da atuação\ndocente no Instituto Federal do Paraná (IFPR), pude estabelecer um necessário\ndistanciamento analítico em relação ao IFSC, favorecendo uma abordagem mais\ncrítica e aprofundada da pesquisa.\nAlémdisso,apresenteinvestigaçãojustifica-seporsuarelevânciasocial,ao\n\n[PÁG. 22]\n20\nbuscar compreender as desigualdades educacionais que atravessam o acesso à\ninformaçãosobreoingressoaoEnsinoMédioIntegrado(EMI),ofertadopelosIFs.\nEmboraessesinstitutostenhamsidoconcebidoscomoobjetivodedemocratizaro\nacessoaoensinotécnicoepromoverajustiçasocial(Brasil,2008;Castro,Plácido,\nSchenkel,2020;AguiarePacheco2017),alógicameritocráticaqueestruturaseus\nprocessos seletivos tende a favorecer estudantes com maior capital cultural,\nsimbólico e material (Moll et al., 2010; Nogueira, 1998; Bourdieu, 1979). Essa\ndinâmicaevidenciaobstáculosestruturaisentreamissãoinstitucionaldeinclusãoe\nos efeitos excludentes geradospelaseletividade.Aindaqueaspolíticasdeações\nafirmativas (Brasil 2012, 2023) representam avanços importantes, elas não\ngarantem,porsisó,umaequidadeplena,umavezquepressupõemaexistênciade\nredesdeapoioinformacional,escolarefamiliar,recursosquenemtodosestudantes\npossuem (Rezendeet al., 2011; Piotto; Tetzlaff, 2022).\nDessa",
+    "descricao_produto_na_dissertacao": "[PÁG. 24] 22\nconstituíramaunidadedeanáliseestatísticaedeconteúdo.Asvariáveisrelativasao\ntipo deescoladeorigem,escolaridadedospaisecanaisdeinformaçãoutilizados\npelos candidatos foram tratadas estatisticamente com o uso dos testes de\nqui-quadrado e V de Cramer, conferindo maior confiabilidade e robustez às\ninferências produzidas. A discussão dos dados desenvolveu-se a partir da\narticulação entre as análises estatísticas descritivas e Análise de Conteúdo,\nsustentada teoricamente pela mobilização conceitual constituinte do marco teórico.\nA partir dos resultados obtidos, foi desenvolvido Produto Educacional no\nformatodee-book, intituladoConstruindoPontesnaEducação:OEducadorcomo\nAgente de TransformaçãonaTransiçãoEscolarparaoEnsinoMédioIntegrado.A\nproposta emerge das evidências levantadas ao longo da pesquisa e tem como\nobjetivo apoiar professores da rede pública no fortalecimento da mediação\ninformacional,reconhecidacomoumelementoestratégicoparagarantirodireitode\nescolha educacional a todos os estudantes.\nA elaboração do Produto Educacional foi pautada por princípios de\nacessibilidade,aplicabilidadeereplicabilidade,visandosuautilizaçãoemdiferentes\ncontextos.Oprocessodevalidaçãodoe-bookseguiuoscritériospropostosporLeite\n(2018):atração,compreensão,envolvimento,aceitaçãoemudançadeação,por\nmeio de formulário estruturado aplicado a professores da rede pública, os quais\nvalidaram a proposta pedagógica.\nTodo o percurso investigativo está sistematizado nesta dissertação,\norganizadaemseiscapítulos,alémdosapêndiceseanexosquecomplementamo\nconteúdo principal. A estrutura adotada reflete a trajetória metodológica e teórica\npercorrida, e explicita a articulação dos dados empíricos, a fundamentação\nconceitual e a proposta de intervenção educacional.\nNo item 1 apresenta a introdução do estudo, delineando o contexto da\npesquisa, a delimitação do problema, a justificativa, os objetivos, os referenciais\nteóricos e a metodologia adotada, além de uma breve descrição do Produto\nEducacional desenvolvido.\nNoitem2,referenteaoReferencialTeórico,discuteosmarcosconceituais\nque sustentam a investigação, (i) A constituição histórico-política da Educação\nProfissionaleTecnológica(combaseemFrigotto,Moura,Ramos,Freire,Pacheco\nentreoutros)atransiçãoescolareoprocessodeingressonosInstitutosFederaisde\nEducação como fenômeno social e educacional articulando autores como Thin,\n\n[PÁG. 25] 23\nMello, e demais autores. (ii) As mediações socioculturais e os efeitos do capital\ncultural à luz de pesquisadores como Bourdieu, Bernstein, Nogueira, e outros.\nNo item 3,referenteàMetodologia,descreveosprocedimentosdecoleta,\norganização e análise dos dados, fundamentados em uma abordagem mista, de\nnatureza translacional ecomobjetivoexploratório,tendocomouniversoosalunos\ninscritos nos processos seletivos para o EMI do IFSC, entre os anos de 2018 e\n2025.\nNoitem4,intituladocomoResultadoseDiscussões,apresentaosachados\nempíricos da pesquisa, discutindo os condicionantes estruturais e históricos das\ntrajetórias escolares. Em seguida, são analisadas as correlações entre o tipo de\nescola de origem, a escolaridade dos responsáveis e os canais de informação\nutilizados para acesso aos processos seletivos do IFSC.\nNoitem5detalhaaconstrução,afundamentaçãoteórica,aaplicaçãoea\nvalidação do Produto Educacional Construindo Pontes na Educação:OEducador\ncomo Agente de Transformação na Transição Escolar para o Ensino Médio\nIntegrado.Omaterialfoidesenvolvidoapartirdasevidênciascoletadasnoestudoe\nvalidado por profess",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 19,
+        "texto": "INTRODUÇÃO\nOingressonaescolapúblicaéumdireitouniversalasseguradopeloartigo\n205daConstituiçãoFederalde1988,quedefineaeducaçãocomo“direitodetodos\ne dever do Estado e da família, promovida e incentivada com a colaboração da\nsociedade”. Esse princípio é complementado pelo artigo 208, que garante a\ngratuidadeeobrigatoriedadedaEducaçãoBásica,incluindooEnsinoMédio(Brasil,\n1988, 1996).\nApesardesserespaldolegal,aeducaçãobrasileirahistoricamenteenfrenta\nentraves significativos relacionados à igualdade de acesso epermanência(IBGE,\n2020;Molletal.,2010).Asdesigualdadesdeclassesocialsereproduzemnointerior\ndasinstituiçõesescolares(CoutinhoeMelo,2011;Moura,2007),sendoatransição\nentreoensinofundamentaleomédioumpontodevulnerabilidade,queintensifica\nas taxas de abandono escolar entre jovens das camadas populares (Coutinho e\nMelo, 2011; IBGE, 2018, 2019, 2025).\nDiante desse cenário de desigualdade estrutural, a criação dos Institutos\nFederaisem2008representouumapolíticapúblicaestratégicavoltadaàampliação\nda inclusão educacional, priorizando o atendimento às demandas da classe\ntrabalhadora (Ramos, 2008). Conforme disposto em sua lei de criação, 50% das\nvagasofertadaspelosIFsdevemserdestinadasàeducaçãot",
+        "citacoes_detectadas": [
+          "Ramos, 2008",
+          "Brasil,2008"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 20,
+        "texto": "18\nafirmativas, como a Lei nº 12.711/2012 (atualizada pela Lei nº 14.723/2023),que\nreservou 50% das vagas para estudantes de escolas públicas com recortes de\nrenda,raça,etniaedeficiência,osdesafiosrelacionadosaoacesso,àpermanência\ne ao êxito educacional persistem, sobretudo entre jovens oriundos de classes\npopulares.\nDessaforma,nãosetrataaquidequestionarodireitouniversalàeducação\npública, tampouco de restringir seu alcance a determinados grupos. Como já\ndiscutido, a educação pública, gratuita e de qualidade é um direito de todos. É\njustamente amparada por essa premissa que esta pesquisa busca analisarcomo\nesse direito,emboraformalmenteassegurado,seconcretizadeformadesigualno\ncotidiano escolar. Nesse cenário, estudantes oriundos da rede pública enfrentam\nmais barreiras para compreender os processos seletivos, conhecer os Institutos\nFederais e acessá-los efetivamente.\nTalrealidadereforçaanecessidadedeinvestigardinâmicasecontradições,\ncomosubsídioàformulaçãodeaçõesquepromovamaequidadeeducacional. Sob\nessa perspectiva as palavras de Bourdieu, (1998, p. 53) já advertiam que tratar\ntodosdeformaigual,semconsiderarasdesigualdadesdeorigem,poderesultarna\nreproduçãodeprivilégios.Seaescolanãoa",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 22,
+        "texto": "20\nbuscar compreender as desigualdades educacionais que atravessam o acesso à\ninformaçãosobreoingressoaoEnsinoMédioIntegrado(EMI),ofertadopelosIFs.\nEmboraessesinstitutostenhamsidoconcebidoscomoobjetivodedemocratizaro\nacessoaoensinotécnicoepromoverajustiçasocial(Brasil,2008;Castro,Plácido,\nSchenkel,2020;AguiarePacheco2017),alógicameritocráticaqueestruturaseus\nprocessos seletivos tende a favorecer estudantes com maior capital cultural,\nsimbólico e material (Moll et al., 2010; Nogueira, 1998; Bourdieu, 1979). Essa\ndinâmicaevidenciaobstáculosestruturaisentreamissãoinstitucionaldeinclusãoe\nos efeitos excludentes geradospelaseletividade.Aindaqueaspolíticasdeações\nafirmativas (Brasil 2012, 2023) representam avanços importantes, elas não\ngarantem,porsisó,umaequidadeplena,umavezquepressupõemaexistênciade\nredesdeapoioinformacional,escolarefamiliar,recursosquenemtodosestudantes\npossuem (Rezendeet al., 2011; Piotto; Tetzlaff, 2022).\nDessa forma, esta pesquisa contribui cientificamente ao aprofundar a\ncompreensão das transições escolares sob a perspectiva da EPT, articulando os\ncamposteóricosdademocratizaçãodoensino,docapitalculturaledasmediações\nsocioculturais. Ao analisar os dados referentes ",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 24,
+        "texto": "22\nconstituíramaunidadedeanáliseestatísticaedeconteúdo.Asvariáveisrelativasao\ntipo deescoladeorigem,escolaridadedospaisecanaisdeinformaçãoutilizados\npelos candidatos foram tratadas estatisticamente com o uso dos testes de\nqui-quadrado e V de Cramer, conferindo maior confiabilidade e robustez às\ninferências produzidas. A discussão dos dados desenvolveu-se a partir da\narticulação entre as análises estatísticas descritivas e Análise de Conteúdo,\nsustentada teoricamente pela mobilização conceitual constituinte do marco teórico.\nA partir dos resultados obtidos, foi desenvolvido Produto Educacional no\nformatodee-book, intituladoConstruindoPontesnaEducação:OEducadorcomo\nAgente de TransformaçãonaTransiçãoEscolarparaoEnsinoMédioIntegrado.A\nproposta emerge das evidências levantadas ao longo da pesquisa e tem como\nobjetivo apoiar professores da rede pública no fortalecimento da mediação\ninformacional,reconhecidacomoumelementoestratégicoparagarantirodireitode\nescolha educacional a todos os estudantes.\nA elaboração do Produto Educacional foi pautada por princípios de\nacessibilidade,aplicabilidadeereplicabilidade,visandosuautilizaçãoemdiferentes\ncontextos.Oprocessodevalidaçãodoe-bookseguiuoscrit",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 25,
+        "texto": "23\nMello, e demais autores. (ii) As mediações socioculturais e os efeitos do capital\ncultural à luz de pesquisadores como Bourdieu, Bernstein, Nogueira, e outros.\nNo item 3,referenteàMetodologia,descreveosprocedimentosdecoleta,\norganização e análise dos dados, fundamentados em uma abordagem mista, de\nnatureza translacional ecomobjetivoexploratório,tendocomouniversoosalunos\ninscritos nos processos seletivos para o EMI do IFSC, entre os anos de 2018 e\n2025.\nNoitem4,intituladocomoResultadoseDiscussões,apresentaosachados\nempíricos da pesquisa, discutindo os condicionantes estruturais e históricos das\ntrajetórias escolares. Em seguida, são analisadas as correlações entre o tipo de\nescola de origem, a escolaridade dos responsáveis e os canais de informação\nutilizados para acesso aos processos seletivos do IFSC.\nNoitem5detalhaaconstrução,afundamentaçãoteórica,aaplicaçãoea\nvalidação do Produto Educacional Construindo Pontes na Educação:OEducador\ncomo Agente de Transformação na Transição Escolar para o Ensino Médio\nIntegrado.Omaterialfoidesenvolvidoapartirdasevidênciascoletadasnoestudoe\nvalidado por professores da rede pública, como ferramenta de apoio àmediação\ninformacional.\nPor fim, no i",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 26,
+        "texto": "24\n2 REFERENCIAL TEÓRICO\n2.1 OLHANDO O PASSADO PARA COMPREENDER O PRESENTE\nCompreender a historicidade que nosconstituicomosociedadeéessencial\npara reconhecer a profunda responsabilidade de cada um de nós diante das\ndesigualdades de classe, especialmente no papel de trabalhadores e agentes do\nprocesso educativo. Como afirma Paulo Freire (1967, p. 88), educar é promover\n“uma educação para adecisão,paraaresponsabilidadesocialepolítica”. Nessa\nperspectiva, considera-se que “a educação das massas se faz, assim, algo de\nabsolutamente fundamental entre nós. Educação que, desvestida da roupagem\nalienadaealienante,sejaumaforçademudançaedelibertação”(Freire,1967,p.\n36). Partimosdapremissaqueécrucialcompreenderamaterialidadehistóricada\neducação profissional no Brasil para que se possa apreender seus impactos no\npresente, contexto em que ainda se observa a reprodução das desigualdades\nsociais.\nNessa ótica, fundamentamo-nos nos estudos de Dante Henrique Moura\n(2007, p. 5), o qual aponta “a relação entre a educação básica e profissionalno\nBrasil está historicamente marcada pela dualidade”. Essa dualidade refere-se à\nexistênciadedoissistemaseducacionaisdistintos:umvoltadoàselites,combase\nna form",
+        "citacoes_detectadas": [
+          "Freire,1967,p.\n36"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 29,
+        "texto": "27\nMoura (2007, p. 9) “empobrecia a formação geraldoestudanteemfavordeuma\nprofissionalização instrumental para o mercado de trabalho, sob a alegação da\nimportânciadarelaçãoentreteoriaepráticaparaaformaçãointegraldocidadão”.\nDessa forma, a promessa de uma formação integral foi substituída por uma\npreparação técnica simplificada, voltada à inserção imediata no mundo do trabalho.\nA obrigatoriedade do ensino profissionalizante foi posteriormente revogada\npelaLeinº7.044/1982.DeacordocomRamos(2017),talrevogaçãorefletiuotemor\nda burguesia de que, mesmo com acesso restrito ao conhecimento, os\ntrabalhadorespassassemaquestionarasestruturasdedominaçãoeascondições\nimpostas pelas relações de trabalho. Para a autora, esse movimento revela a\nintenção da classe dominante de conter qualquer avanço, ainda que tímido, no\nsentido da emancipação dos trabalhadores e da ruptura de sua hegemonia.\nA década de 1980 marcou o início de um processo de reestruturação da\neducação brasileira, impulsionado por mobilizações sociais e intelectuais que\nculminaram na elaboração da ConstituiçãoFederalde1988e,posteriormente,na\npromulgação da Lei nº 9.394/96, a nova Lei de Diretrizes e Bases da Educação\nNacional.Nosdebat",
+        "citacoes_detectadas": [
+          "Ramos, 2017",
+          "Pacheco, 2012"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "28\npolitécnica4,quepossibilitaaosestudantescompreenderosfundamentoscientíficos,\ntecnológicos e histórico-sociais da produção\nDo outro lado, consolidou-se a proposta de orientação neoliberal, que\nvinculava a educação aos princípios de prestação de serviços e a racionalidade\nmercadológica, ocasionando o esvaziamento de direitossociaiseafragmentação\ndaspolíticaseducacionais(Pacheco,2012).Emboraderrotadanoplanodiscursivo,\na proposta progressista serviu de base conceitual para a futura consolidação do\nEnsinoMédioIntegrado,mesmoquesuaimplementaçãotenhasidocontinuamente\ntensionada pelas forças do mercado.\nAaprovaçãodoDecretonº2.208em1997,eoconsequentelançamentodo\nProgramadeExpansãodaEducaçãoProfissional(PROEP),comfinanciamentodo\nBanco Interamericano de Desenvolvimento (BID), materializaram as diretrizes\nneoliberais no campo da educação técnica. SegundoMoura(2007),oPROEPfoi\npartedoprojetodeprivatizaçãodoEstadobrasileiro,alinhadoàpolíticaneoliberal\ndifundida por organismos multilateraisecorporaçõestransnacionais.Essedecreto\ninstitucionalizou a separação entre o ensino médio e a educação profissional,\nreforçando,maisumavez,adicotomiaformativa.ComosalientaPacheco(2017,p.\n19),“foialcançadooint",
+        "citacoes_detectadas": [
+          "Pacheco,2012",
+          "IFC,\n2019"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 31,
+        "texto": "29\nassim, a exclusão histórica dos menos favorecidos.\nOanode2004marcouumainflexãosignificativanaconcepçãodaeducação\nvoltadaàclassetrabalhadora,aopossibilitaraintegraçãoentreoensinomédioea\nformação profissional por meio de currículos unificados. Essa transformação foi\nconsolidada com a promulgação do Decreto nº 5.154/04, que resgatou os ideais\nprogressistasdefendidosnasdiscussõesqueantecederamaaprovaçãodaLDB/96.\nTais princípios buscavam a “consolidação da base unitária do ensino médio, que\ncomporte a diversidade própria da realidade brasileira, inclusive possibilitando a\nampliação de seus objetivos, como a formação específica para o exercício de\nprofissões técnicas” (Frigotto, Ciavatta; Ramos, 2005, p. 11). O referido decreto\ntambémintroduziuoconceitodepolitecnia,entendidocomoaarticulaçãoentreos\nconteúdos científicos e os processos reais de trabalho. Essa concepção tem por\nobjetivo\nassegurar\nque\nos\nestudantes\ncompreendam\nos\nfundamentos\ntécnico-científicos da produção moderna, promovendo a síntese entre teoria e\nprática na formação integral dos sujeitos. Conforme destacam (Frigotto, Ciavatta;\nRamos, 2005), essa proposta busca romper com a lógica fragmentada e\nfuncionalista da formaçã",
+        "citacoes_detectadas": [
+          "Coutinho e Melo, 2011"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 32,
+        "texto": "30\nnumaperspectivaemancipadoraedeintegraçãocurricular(Brasil,2008).Segundo\nCastro,PlácidoeSchenkel(2020),aconcepçãopedagógicadosInstitutosFederais\nestá ancorada no princípio da formação omnilateral, compreendida como o\ndesenvolvimento integral do sujeito em suas múltiplas dimensões: intelectual,\ntécnica, social, ética e política. Trata-se de uma proposta que busca superar a\nfragmentação histórica entre a formação geral e a formação profissional,\npromovendo a articulação entre saberes e práticas em um processo educativo\nunificado.\nOutro princípioestruturantedosIFséaverticalizaçãodoensino,ouseja,a\noferta de diferentes níveis e modalidades educacionais, da Educação Básica à\nPós-Graduação, em uma mesma instituição. Essa integração busca fortalecer a\ntrajetóriaformativacontínuadosestudantes,especialmentedaquelesoriundosdas\nclasses populares, para quem a permanência no sistema educativo tradicional\nhistoricamente se revelou mais desafiadora (Castro; Plácido; Schenkel, 2020).\nDeacordocomalegislaçãoqueinstituiuosInstitutosFederais(IFs),50%das\nvagas ofertadas devem ser destinadas à educação técnica de nível médio, com\nprioridade para a modalidade integrada (Brasil, 2008). Essa diretriz expr",
+        "citacoes_detectadas": [
+          "Brasil,2008",
+          "Castro; Plácido; Schenkel, 2020",
+          "Brasil, 2008",
+          "Castro;Plácido;\nSchenkel, 2020"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 35,
+        "texto": "33\na promulgação da Lei nº 12.711/2012, posteriormente atualizada pela Lei nº\n14.723/2023, que implementou o sistema de cotas para ingresso em instituições\nfederaisdeensinotécnicoesuperior.Apolíticaestabelecequepelomenos50%das\nvagasdevemserdestinadasaestudantesoriundosdaredepúblicadeensino,com\nrecortes adicionais relativos àrenda,raça,etniaedeficiência,conformedadosdo\nIBGE (Brasil, 2012; 2023).\nAlógicasubjacenteaessasaçõesafirmativasencontraeconopensamento\nde Boaventura de Sousa Santos, citado por Moll (2005), ao afirmar que há um\n“direitoàigualdadequandoadesigualdadeoprime,eumdireitoàdiferençaquando\na homogeneidade ameaça”. Essa perspectiva fundamenta a necessidade de\npolíticas educacionais que reconheçam as distintas condições de partida dos\nestudantes e que promovam, de fato, uma equidade substantiva no acesso e\npermanência.ValelembrarqueaConstituiçãoFederalde1988,emseuartigo205,\nestabeleceque“aeducação,direitodetodosedeverdoEstadoedafamília,será\npromovida\ne\nincentivada\ncom\na\ncolaboração\nda\nsociedade\n[...]”.\nComplementarmente,oartigo208asseguraodireitoà“educaçãobásicaobrigatória\ne gratuita dos 4 aos 17 anos de idade”, o queincluioEnsinoMédiocomoparte\ndesse direito fundamental (B",
+        "citacoes_detectadas": [
+          "Brasil, 1988"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 37,
+        "texto": "35\nApassagemdoensinofundamentalparaomédioécrucialemtermosde\nabandonoescolar.Opercentualdejovensqueparoudeestudarapartirdos\n15anoséquaseodobrododasfaixasetáriasanteriores.Atéos13anos,\ncerca de 8,5% abandonam os estudos. Aos14anos,ataxaéde8,1%,\nmas, aos 15anos,sobepara14,1%e,aos16,para17,7%,chegandoa\n18,0% aos 19 anos ou mais. (IBGE, 2020).\nEssabreveanálisedosindicadoresdeevasãoescolarorganizadospeloIBGE\nreforçapreocupaçõeshistóricasjáapontadasporautorescomoFrancoePacheco\n(2012),especialmentenoqueserefereaopadrãorecorrentedeabandonoescolar\nnafaixados15anos,momentoquemarcaoingressonoensinomédio.Essepadrão\néreafirmadopelosdadosmaisrecentes,evidenciandoapersistênciadofenômeno\nao longo do tempo. Além disso, conformedestacaoInep(2023),apandemiade\nCovid-19 agrava ainda mais esse cenário, impactandoprofundamenteatrajetória\neducacionaldosestudantes.Aanálisedatransiçãodoensinofundamentalparao\nensino médio, nesse contexto, exige a compreensão das mudanças provocadas\npelo período pandêmico e a necessidade de “construir um novo sentido para a\nfunção social da escola na sociedade de classes” (Magalhães; Ramos, 2021, p.\n245). Como aponta o mais recente boletim do IBGE (2025), “ograndemarcoda\ntrans",
+        "citacoes_detectadas": [
+          "IBGE, 2020",
+          "Magalhães; Ramos, 2021, p.\n245",
+          "IBGE,2025",
+          "IBGE, 2025",
+          "IBGE,2025"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "COUTINHO, E. H. L.; MELO, F. L. B. de. Inovações socioeducacionais e os processosseletivosdoscursostécnicosdaRedeFederaldeEducaçãoProfissional e Tecnológica. Educação & Tecnologia, [s. l.], v. 15, n. 3, 2011. Disponível em: https://seer.dppg.cefetmg.br/index.php/revista-et/article/view/278/279.Acessoem:20 abr. 2025.",
+      "FREIRE, Paulo.Educação como prática da liberdade.17.ed. Rio de Janeiro: Paz e Terra, 1967.",
+      "FREIRE, Paulo.Educação e mudança.Rio de Janeiro:Paz e Terra, 1979.",
+      "FREIRE, Paulo.Pedagogia da autonomia: saberes necessáriosà prática educativa.São Paulo: Paz e Terra, 1996.",
+      "FREIRE,Paulo. Pedagogia da indignação: cartas pedagógicase outros escritos. São Paulo: Unesp, 2000.",
+      "FREIRE, Paulo.Por uma pedagogia da pergunta. EditoraPaz e Terra, 2014.",
+      "PACHECO, Eliezer. (Org.)Perspectivas Da EducaçãoProfissional Técnica De Nível Médio: Proposta De Diretrizes Curriculares Nacionais.São Paulo: Editora Moderna, 2012. Disponível em: https://ifpr.edu.br/wp-content/uploads/2014/06/Perspectivas-da-EPT.pdf.Acesso em: 02 set. 2023.",
+      "PACHECO, Eliezer.Os Institutos Federais: uma revoluçãona educação profissional e tecnológica.São Paulo: Moderna, 2010.Disponível em: http://proedu.rnp.br/bitstream/handle/123456789/1274/Os%20institutos%20federais %20-%20E-book.pdf?sequence=1&isAllowed=y. Acessoem: 10 out. 2023.",
+      "RAMOS, Marise.Concepção do ensino médio integrado.Texto apresentado em seminário promovido pela Secretaria de Educação do Estado do Pará nos dias, v. 8, 2008.",
+      "FREIRE, Paulo. Pedagogia da autonomia: saberes necessários à prática educativa. São Paulo: Paz e Terra, 1996.",
+      "PACHECO, Eliezer (Org.). Perspectivas da educação profissional técnica de nível médio: proposta de diretrizes curriculares nacionais. São Paulo: Moderna, 2012. Disponível em: https://ifpr.edu.br/wp-content/uploads/2014/06/Perspectivas-da- EPT.pdf. Acesso em: 02 set. 2023.",
+      "RAMOS, Marise. Reforma da educação profissional: contradições na disputa por hegemonia no regime de acumulação flexível. Trabalho, Educação e Saúde, Rio de Janeiro, v. 3, pág. 545-558, 2007. Disponível em: https://www.scielo.br/j/tes/a/wHKGs8ZFRthbvfZdzgmFCmG/. Acesso em: 12 mai. 2025.",
+      "RAMOS, Marise. Concepção do ensino médio integrado. Texto apresentado em seminário promovido pela Secretaria de Educação do Estado do Pará, 2008. Disponível em: https://forumeja.org.br/goias/concepcao-de-curriculo-do-ensino- medio-integrado. Acesso em: 28 abr. 2025."
+    ]
+  }
+}

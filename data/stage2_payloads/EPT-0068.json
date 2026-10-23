@@ -1,0 +1,270 @@
+{
+  "id": "EPT-0068",
+  "metadados_resolvidos": {
+    "ano": 2023,
+    "autor": "José Luis Machado",
+    "orientador": "Reginaldo Leandro Plácido",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP2",
+    "macroprojeto": "MP5"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "CONCEPÇÕES DOS EDUCADORES DO IFC-BRUSQUE SOBRE A AVALIAÇÃO DA APRENDIZAGEM DOS ESTUDANTES NO ENSINO MÉDIO INTEGRADO",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/11/Dissertacao-Jose-Luis-Machado.pdf",
+    "palavras_chave": [
+      "Currículo Integrado",
+      "Educação Integral",
+      "Avaliação da Aprendizagem",
+      "Educação Profissional e Tecnológica",
+      "Concepções dos Educadores"
+    ],
+    "autores_referenciados": [
+      "A. M. B. Bock",
+      "A. M. Lakomy",
+      "A. Nitschke",
+      "Acácia Zeneida Kuenzer",
+      "Antoni Zabala",
+      "Antonio Gramsci",
+      "C. C. Luckesi",
+      "C. Cerezuela",
+      "D. Fernandes",
+      "D. T. Silveira",
+      "Dermeval Saviani",
+      "E. Pacheco",
+      "E. S. Silva",
+      "Gaudêncio Frigotto",
+      "H. Pitt",
+      "I. R. F. Suhr",
+      "J. C. Luckesi",
+      "J. D. Silva Júnior",
+      "J. F. Oliveira",
+      "J. Hoffmann",
+      "J. L. Machado",
+      "José Carlos Libâneo",
+      "K. M. Vieira",
+      "L. da C. Campolin",
+      "L. de S. Cavalcanti",
+      "Lev Vygotsky",
+      "M. Dalmoro",
+      "M. do C. Galiazzi",
+      "M. L. L. Oliveira",
+      "Maria Ciavatta",
+      "Mario Alighiero Manacorda",
+      "Marise Nogueira Ramos",
+      "N. N. R. Mori",
+      "Paulo Freire",
+      "Priscila de Souza Chisté Leite",
+      "R. Moraes",
+      "R. Schaefer",
+      "Reginaldo Leandro Plácido",
+      "T. E. Gerhardt"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/738581#:~:text=http%3A//educapes.capes.gov.br/handle/capes/738581",
+    "titulo_produto": "CONCEPÇÕES DOS EDUCADORES DO IFC-BRUSQUE SOBRE A AVALIAÇÃO DA APRENDIZAGEM DOS ESTUDANTES NO ENSINO MÉDIO INTEGRADO",
+    "titulo_produto_bruto": "Livro Digital – AVALIAÇÃO DA APRENDIZAGEM COMO ELEMENTO CONSTITUINTE DO PROCESSO EDUCATIVO",
+    "data_publicacao": "2023-09",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Machado, José Luis",
+        "papel": "creator"
+      },
+      {
+        "nome": "Placido, Reginaldo Leandro",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/738581",
+        "url": "https://educapes.capes.gov.br/handle/capes/738581#:~:text=http%3A//educapes.capes.gov.br/handle/capes/738581"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "CONCEPÇÕES DOS EDUCADORES DO IFC-BRUSQUE SOBRE A AVALIAÇÃO DA APRENDIZAGEM DOS ESTUDANTES NO ENSINO MÉDIO INTEGRADO",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Avaliação da aprendizagem como elemento constituinte do processo educativo Oficina temática: Fundamentos e recomendações",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "livro digital"
+    ],
+    "palavras_chave_educapes": [
+      "Currículo Integrado",
+      "Educação Integral",
+      "Avaliação da Aprendizagem",
+      "Educação Profissional e Tecnológica",
+      "Organização da EPT",
+      "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+      "Organização e Memória da EPT"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Oficina",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA\nJOSÉ LUIS MACHADO\nCONCEPÇÕES DOS EDUCADORES DO IFC-BRUSQUE SOBRE A AVALIAÇÃO\nDA APRENDIZAGEM DOS ESTUDANTES NO ENSINO MÉDIO INTEGRADO\nBlumenau\n2023\n\nJOSÉ LUIS MACHADO\nCONCEPÇÕES DOS EDUCADORES DO IFC-BRUSQUE SOBRE A AVALIAÇÃO\nDA APRENDIZAGEM DOS ESTUDANTES NO ENSINO MÉDIO INTEGRADO\nDissertação apresentada ao Programa de Pós-graduação em\nEducação Profissional e Tecnológica - ProfEPT, na linha de\npesquisa Organizações e Memórias de Espaços Pedagógicos na\nEducação Profissional e Tecnológica, no macroprojeto 5\nOrganização do currículo integrado na Educação Profissional e\nTecnológica, ofertado pelo campus Blumenau do Instituto\nFederal de Educação, Ciência e Tecnologia Catarinense, como\nparte dos requisitos para a obtenção do título de Mestre em\nEducação Profissional e Tecnológica.\nOrientador: Reginaldo Leandro Plácido\nBlumenau\n2023",
+    "ficha_catalografica": "[PÁG. 3]\nMachado, José Luis.\nM149c\nConcepções dos educadores do IFC-Brusque sobre a avaliação da aprendizagem dos\nestudantes no Ensino Médio Integrado / José Luis Machado; orientador Reginaldo\nLeandro Plácido. - Blumenau, 2023.\n131 p.\nDissertação (mestrado) – Instituto Federal Catarinense, campus Blumenau,\nMestrado Profissional em Educação Profissional Tecnológica (PROFEPT),\nBlumenau, 2023.\nInclui referências.\n1. Avaliação da Aprendizagem. 2. Educação Integral – Currículos. 3. Educação\nProfissional e Tecnológica. I. Plácido, Reginaldo Leandro. II. Instituto Federal\nCatarinense. Mestrado Profissional em Educação Profissional e Tecnológica. III. Título\nCDD: 371.26\nFicha catalográfica elaborada pela bibliotecária\nShyrlei K. Jagielski Benkendorf - CRB 14/662",
+    "sumario": "[PÁG. 13]\nSUMÁRIO\nApresentação …….…………………………………………………………………………...14\n1 Introdução ….……………………………………………………………………………… 16\n2 Referencial teórico …………..………………………………………………….………….18\n2.1 Currículo integrado ………………………………………………………………………18\n2.2 Perspectiva histórico-cultural ……..…………………………………………………….. 19\n2.3 Pedagogia histórico-crítica .…………………………………………………………..…. 21\n2.4 Tipificações da avaliação da aprendizagem .……………………………………………. 22\n2.5 Alguns aspectos da avaliação na EPT no IFC ..………….……………………………… 25\n3 Metodologia ………………………………………………………………………………..27\n4 Análise dos dados …………………………………………………………………………. 30\n4.1 Avaliação da aprendizagem no contexto educativo ……………………………………...30\n4.1.1 Compreensões iniciais dos participantes sobre a avaliação da aprendizagem no contexto\neducativo descritas no questionário …………………………………………………………. 31\n4.1.2 Compreensões iniciais dos participantes sobre a avaliação da aprendizagem no contexto\neducativo apresentadas na atividade Ficha de Anotações …………………………………... 34\n4.1.3 Aprofundando as concepções dos participantes sobre a avaliação da aprendizagem no\ncontexto educativo descritas no questionário ……………………………………………….. 36\n4.1.4 Concepções dos participantes sobre a avaliação da aprendizagem no contexto educativo\napresentadas na atividade Cartão-postal ……………………………………………………..40\n4.2 Avaliação da aprendizagem no contexto da formação integral …………………………. 43\n4.2.1 Concepções dos participantes sobre a avaliação no contexto da formação integral\napresentadas nas atividades Ficha de Anotações e Cartão-postal …..………………………..44\n4.2.2 Concepções dos participantes sobre a avaliação como forma dialógica e crítica no\ncontexto da formação integral descritas no questionário e apresentadas nas atividades Ficha de\nAnotações e Cartão-postal ….……………………………………………………………….. 46\n4.3 Avaliação da aprendizagem no contexto da integração ..………………………………... 52\n4.3.1 Compreensões dos participantes sobre a avaliação da aprendizagem no contexto da\nintegração apresentadas na atividade Cartão-postal ….……….……………….……………. 55\n4.3.2 Compreensões dos participantes sobre a avaliação integrada no contexto da integração\nobtidas no questionário e apresentadas na atividade Cartão-postal ..…………..…………….56\n5 Considerações finais .....………………………………………………………….………... 61\nReferências ..………………………………………………………………………………… 63\nApêndice A - Produto Educacional .………………………………………………………… 69\nAnexo A - Modelo de questionário de pesquisa - Fase 1 …………………………………...114\nAnexo B - Modelos de questionários de pesquisa - Fase 2 ....………………………….…...122\nAnexo C - Modelo de questionário para avaliação do Produto Educacional pelos participantes\nda oficina …..……..…………………………………………………………………….… 124\nAnexo D - Resultados da avaliação do Produto Educacional pelos participantes ..……..… 125\nAnexo E - Construindo as categorias de pesquisa ………………………………..……..… 126",
+    "resumo": "[PÁG. 9]\nRESUMO\nOs Projetos Pedagógicos dos Cursos Técnicos integrados ao Ensino Médio do IFC-Brusque\napresentam, como um de seus parâmetros, o conceito da avaliação contínua e cumulativa da\naprendizagem, com ênfase nos aspectos qualitativos. Nesse sentido, o presente estudo buscou\ncompreender\nas\nconcepções\ndos educadores do IFC-Brusque sobre a avaliação da\naprendizagem dos estudantes no Ensino Médio Integrado (EMI), bem como, realizou uma\noficina, como Produto Educacional. Dessa forma, elaborou-se a seguinte pergunta de\npesquisa: quais são as concepções dos educadores do IFC-Brusque sobre a avaliação da\naprendizagem dos estudantes no EMI? Respondendo esse questionamento, foi desenvolvida\numa pesquisa exploratória, qualitativa e de natureza básica, sendo utilizados para a coleta dos\ndados os seguintes procedimentos: pesquisa bibliográfica e documental, aplicação de\nquestionários, anotações em diário de bordo e aplicação do Produto Educacional. Para\ncompreensão\ndas\ninformações\ncoletadas\nfoi\nutilizada\na\nAnálise Textual Discursiva\n(MORAES, 2003). Os resultados apontam que os educadores apresentam concepções\navaliativas\nclassificatórias,\ndiagnósticas\ne\nformativas.\nAinda\nfoi\nevidenciado\ncerto\npredomínio da avaliação formativa de inspiração behaviorista e da avaliação formativa\nfundamentada em concepções cognitivistas e construtivistas. Tais aspectos apontam para uma\ndissociação entre o ensino e as ações avaliativas, ou seja, a concepção da avaliação como\nelemento desvinculado do processo de ensino-aprendizagem. Além disso, os educadores\nentendem ser necessário intensificar as devolutivas ao discente sobre seu desempenho nas\natividades avaliativas, para promover uma maior responsabilização do estudante por sua\naprendizagem e desenvolvimento, bem como, por seu “fracasso escolar”.\nPalavras-chave: Currículo Integrado; Educação Integral; Avaliação da Aprendizagem;\nEducação Profissional e Tecnológica; Concepções dos Educadores.",
+    "introducao": "[PÁG. 17]\n16\n1 INTRODUÇÃO\nA avaliação da aprendizagem dos estudantes tem sido caracterizada por intenso debate\nsobre as concepções e práticas pedagógicas desenvolvidas no ambiente escolar. Segundo\nZabala (1998), quando nos deparamos com discussões sobre a avaliação da aprendizagem,\nespontaneamente, imaginamos um instrumento avaliativo ligado aos resultados que o\nestudante deve obter para sua aprovação. Esta perspectiva, embora possa refletir alguma\njustiça para alguns, revela uma manutenção da desigualdade social por meio de processos\nexcludentes. Como psicólogo e técnico educacional, percebo que a avaliação da aprendizagem\nna educação está revestida pelas contradições apontadas por Zabala (1998).\nAlém das contradições, é necessário refletir, como aponta Hoffmann (2015), sobre\ncomo os educadores compreendem a avaliação da aprendizagem. Segundo a autora, \"muitos\nfatores dificultam a superação da prática tradicional, sobretudo a crença de profissionais de\ntodos os graus de ensino na manutenção da ação avaliativa classificatória como garantia de\num ensino de qualidade” (Hoffmann, 2019, p. 15).\nPara a realização desta pesquisa sobre as concepções dos educadores sobre avaliação,\nescolhemos o IFC-Brusque, um campus construído no modelo proposto para expansão da\nRede Federal de Ensino Técnico e Tecnológico. Condição esta que possibilita um controle\nmaior das variáveis de pesquisa, por minimizar possíveis influências infraestruturais na\ncompreensão dos educadores em relação a suas práticas. Nesta unidade, existem espaços\nfísicos considerados mínimos para o desenvolvimento das ações educativas com estudantes\ndo EMI. No IFC-Brusque foram organizados dois Projetos Pedagógicos de Curso (PPCs), um\npara o Curso Técnico de Informática e outro para o Curso Técnico de Química, ambos\nintegrados ao Ensino Médio (IFC-Brusque, 2019a; IFC-Brusque, 2019b). Tais cursos\npertencem a duas áreas predominantemente encontradas no EMI do IFC, quais sejam, ligadas\nàs tecnologias da informação e ao setor industrial (IFC, 2022), o que faz dessa unidade uma\namostra representativa dos Cursos Técnicos integrados ao Ensino Médio no IFC.\nNesse contexto, destacamos que avaliar difere de medir e, segundo Libâneo e Oliveira\ne Toschi (2012), está relacionada a uma compreensão mais ampla do desenvolvimento do\nestudante, enquanto o ato de medir está ligado à quantificação do conhecimento aprendido.\nNesse sentido, deve-se compreender a avaliação a partir de uma perspectiva mais abrangente,\nrefletindo-se sobre o projeto pedagógico que organiza as práticas educativas nas unidades\nescolares (Luckesi, 2019). Por isso, o processo de avaliação dos estudantes não deve estar\n\n[PÁG. 18]\n17\nligado apenas ao resultado propriamente quantificável, mas a um contexto posto em\nmovimento a partir dos objetivos educacionais definidos pela comunidade escolar.\nNessa perspectiva, partimos da seguinte pergunta: quais são as concepções dos\neducadores do IFC-Brusque sobre a avaliação da aprendizagem no EMI? Para responder essa\nquestão elencamos como o objetivo geral: compreender as concepções dos educadores do\nIFC-Brusque sobre a avaliação da aprendizagem dos estudantes no EMI; e como objetivos\nespecíficos: 1) analisar as concepções sobre avaliação da aprendizagem presentes nos\ndocumentos pedagógicos do IFC-Brusque; 2) discutir os princípios teóricos subjacentes aos\ninstrumentos utilizados pelos educadores na avaliação da aprendizagem; 3) identificar as\nconcepções e os instrumentos utilizados pelos educadores na avaliação da aprendizagem e; 4)\nelaborar e aplicar um Produto Educacional sobre avaliação da aprendizagem.\nAlém\ndisso,\nsendo\numa\npesquisa\nde\nnatureza\nbásica,\ncom\nelementos\npredominantemente qualitativos e de cunho exploratório, o referencial teórico partiu de\nconcepções alinhadas à visão democrático-participativa2 e à perspectiva sócio-histórica3,\ndiscutindo os seguintes temas: currículo integrado; perspectiva histórico-cultural; pedagogia\nHistórico-Crítica; tipificações da avaliação da aprendizagem e; alguns aspectos da avaliação\nna EPT e no IFC. A pesquisa de campo, realizada com os educadores participantes, foi\nexecutada em duas etapas: aplicação de questionário e aplicação do Produto Educacional.\nPara a interpretação dos dados, utilizamos a Análise Textual Discursiva (Moraes;\nGaliazzi, 2006). Trata-se dos dados que foram coletados junto aos documentos oficiais do IFC\ne dos PPCs dos Cursos Técnicos integrados ao Ensino Médio do IFC-Brusque, e dados\nobtidos na aplicação do questionário, das informações que emergiram na realização da oficina\ne das descrições no diário de bordo do pesquisador.\nAs informações analisadas apontam que os participantes apresentam concepções\navaliativas\nclassificatórias,\ndiagnósticas\ne\nformativas.\nCom\nproposições\navaliativas\nformativas fundamentadas em concepções behavioristas, cognitivistas e construtivistas. As\npráticas pedagógicas elencadas pelos educadores descrevem uma dissociação entre as ações\nde ensino-aprendizagem e as atividades avaliativas. Além disso, os educadores entendem ser\nnecessário intensificar as devolutivas aos estudantes sobre seu desempenho escolar, pautadas\nem uma maior responsabilização do estudante por sua aprendizagem.\n3 Segundo Bock (2004) a perspectiva sócio-histórica se caracteriza como o conjunto de propostas emancipadoras,\ncríticas e historizantes do processo de humanização. Propostas essas que tomam como fundamento, para análise\ndas realidades sociais, a visão materialista histórico-dialética de homem e de mundo.\n2 Segundo Libâneo (2004) a concepção democrático-participativa caracteriza-se pela participação democrática da\ncomunidade escolar na organização e gestão das instituições educacionais.\n\n[PÁG. 19]\n18\n2 REFERENCIAL TEÓRICO\n2.1 CURRÍCULO INTEGRADO\nSegundo Pacheco (2015), as estruturas curriculares dos IFs devem organizar uma\npolítica pedagógica que supere a formação humana unilateral4, ou seja, que proponha uma\nprática educativa para além daquela que articula o ensino técnico restrito à capacitação para\numa atividade operacional. Para o autor, “uma visão progressista da educação profissional e\ntecnológica” não reduz o processo educativo “à simples preparação técnica ou treinamento\npara o desempenho de determinada atividade produtiva” (Pacheco, 2015, p. 32). Kuenzer\n(2000), em um de seus estudos, encontrou essa mesma perspectiva unilateral na política\neducacional do Brasil. Ela identificou uma organização que desconsiderava as reais\nnecessidades dos estudantes da classe trabalhadora.\nKuenzer (2000) prossegue analisando, a partir do Decreto nº 2208/97, no qual há uma\nnova proposição para o Ensino Médio, em que é instituído um currículo de formação geral.\nTal reorganização acarreta o fim do Ensino Médio Técnico, deixando a capacitação técnica\npara as instituições de ensino profissionalizante públicas e privadas. Segundo Pacheco\n(2015), as propostas curriculares que surgem a partir de 2003, na esteira da concepção de\neducação a partir dos IFs, tencionava superar a dualidade formação geral x formação\nprofissionalizante, a partir de um currículo integrado.\nSegundo Ciavatta (2005), o currículo integrado para a EPT pode ser definido como\numa proposta de formação integral e omnilateral dos estudantes. O trabalho é concebido\ncomo princípio educativo em uma organização curricular estruturada para o ensino das bases\nda ciência, das tecnologias e dos aspectos culturais. Nas palavras da autora “o que se busca é\ngarantir ao adolescente, ao jovem e ao adulto trabalhador o direito a uma formação completa\npara a leitura do mundo e para a atuação como cidadão pertencente a um país, integrado\ndignamente à sua sociedade política” (Ciavatta, 2005, p. 2).\nNitschke, Plácido e Pitt (2021) também concordam com Ciavatta (2005), explicitando\nque a EPT é marcada pela proposta de educação integral. Esta, além de acontecer em tempo\nintegral, oferta a educação técnica e profissional integrada ao Ensino Médio. Os autores\nacrescentam que o EMI compromete-se com “uma formação i",
+    "descricao_produto_na_dissertacao": "[PÁG. 18] 17\nligado apenas ao resultado propriamente quantificável, mas a um contexto posto em\nmovimento a partir dos objetivos educacionais definidos pela comunidade escolar.\nNessa perspectiva, partimos da seguinte pergunta: quais são as concepções dos\neducadores do IFC-Brusque sobre a avaliação da aprendizagem no EMI? Para responder essa\nquestão elencamos como o objetivo geral: compreender as concepções dos educadores do\nIFC-Brusque sobre a avaliação da aprendizagem dos estudantes no EMI; e como objetivos\nespecíficos: 1) analisar as concepções sobre avaliação da aprendizagem presentes nos\ndocumentos pedagógicos do IFC-Brusque; 2) discutir os princípios teóricos subjacentes aos\ninstrumentos utilizados pelos educadores na avaliação da aprendizagem; 3) identificar as\nconcepções e os instrumentos utilizados pelos educadores na avaliação da aprendizagem e; 4)\nelaborar e aplicar um Produto Educacional sobre avaliação da aprendizagem.\nAlém\ndisso,\nsendo\numa\npesquisa\nde\nnatureza\nbásica,\ncom\nelementos\npredominantemente qualitativos e de cunho exploratório, o referencial teórico partiu de\nconcepções alinhadas à visão democrático-participativa2 e à perspectiva sócio-histórica3,\ndiscutindo os seguintes temas: currículo integrado; perspectiva histórico-cultural; pedagogia\nHistórico-Crítica; tipificações da avaliação da aprendizagem e; alguns aspectos da avaliação\nna EPT e no IFC. A pesquisa de campo, realizada com os educadores participantes, foi\nexecutada em duas etapas: aplicação de questionário e aplicação do Produto Educacional.\nPara a interpretação dos dados, utilizamos a Análise Textual Discursiva (Moraes;\nGaliazzi, 2006). Trata-se dos dados que foram coletados junto aos documentos oficiais do IFC\ne dos PPCs dos Cursos Técnicos integrados ao Ensino Médio do IFC-Brusque, e dados\nobtidos na aplicação do questionário, das informações que emergiram na realização da oficina\ne das descrições no diário de bordo do pesquisador.\nAs informações analisadas apontam que os participantes apresentam concepções\navaliativas\nclassificatórias,\ndiagnósticas\ne\nformativas.\nCom\nproposições\navaliativas\nformativas fundamentadas em concepções behavioristas, cognitivistas e construtivistas. As\npráticas pedagógicas elencadas pelos educadores descrevem uma dissociação entre as ações\nde ensino-aprendizagem e as atividades avaliativas. Além disso, os educadores entendem ser\nnecessário intensificar as devolutivas aos estudantes sobre seu desempenho escolar, pautadas\nem uma maior responsabilização do estudante por sua aprendizagem.\n3 Segundo Bock (2004) a perspectiva sócio-histórica se caracteriza como o conjunto de propostas emancipadoras,\ncríticas e historizantes do processo de humanização. Propostas essas que tomam como fundamento, para análise\ndas realidades sociais, a visão materialista histórico-dialética de homem e de mundo.\n2 Segundo Libâneo (2004) a concepção democrático-participativa caracteriza-se pela participação democrática da\ncomunidade escolar na organização e gestão das instituições educacionais.\n\n[PÁG. 28] Nesta pesquisa, optamos por uma abordagem de natureza básica, com elementos de\ninvestigação predominantemente qualitativos e com objetivo exploratório. Mesmo que neste\nestudo tenha sido aplicado um Produto Educacional, a aplicação não torna a pesquisa em\naplicada ou translacional, sobretudo por focarmos mais na discussão e elaboração do\nconhecimento do que na descrição da aplicação da oficina.\nCom a intencionalidade de subsidiar a construção dos dados de ",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 18,
+        "texto": "17\nligado apenas ao resultado propriamente quantificável, mas a um contexto posto em\nmovimento a partir dos objetivos educacionais definidos pela comunidade escolar.\nNessa perspectiva, partimos da seguinte pergunta: quais são as concepções dos\neducadores do IFC-Brusque sobre a avaliação da aprendizagem no EMI? Para responder essa\nquestão elencamos como o objetivo geral: compreender as concepções dos educadores do\nIFC-Brusque sobre a avaliação da aprendizagem dos estudantes no EMI; e como objetivos\nespecíficos: 1) analisar as concepções sobre avaliação da aprendizagem presentes nos\ndocumentos pedagógicos do IFC-Brusque; 2) discutir os princípios teóricos subjacentes aos\ninstrumentos utilizados pelos educadores na avaliação da aprendizagem; 3) identificar as\nconcepções e os instrumentos utilizados pelos educadores na avaliação da aprendizagem e; 4)\nelaborar e aplicar um Produto Educacional sobre avaliação da aprendizagem.\nAlém\ndisso,\nsendo\numa\npesquisa\nde\nnatureza\nbásica,\ncom\nelementos\npredominantemente qualitativos e de cunho exploratório, o referencial teórico partiu de\nconcepções alinhadas à visão democrático-participativa2 e à perspectiva sócio-histórica3,\ndiscutindo os seguintes",
+        "citacoes_detectadas": [
+          "Moraes;\nGaliazzi, 2006"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 19,
+        "texto": "18\n2 REFERENCIAL TEÓRICO\n2.1 CURRÍCULO INTEGRADO\nSegundo Pacheco (2015), as estruturas curriculares dos IFs devem organizar uma\npolítica pedagógica que supere a formação humana unilateral4, ou seja, que proponha uma\nprática educativa para além daquela que articula o ensino técnico restrito à capacitação para\numa atividade operacional. Para o autor, “uma visão progressista da educação profissional e\ntecnológica” não reduz o processo educativo “à simples preparação técnica ou treinamento\npara o desempenho de determinada atividade produtiva” (Pacheco, 2015, p. 32). Kuenzer\n(2000), em um de seus estudos, encontrou essa mesma perspectiva unilateral na política\neducacional do Brasil. Ela identificou uma organização que desconsiderava as reais\nnecessidades dos estudantes da classe trabalhadora.\nKuenzer (2000) prossegue analisando, a partir do Decreto nº 2208/97, no qual há uma\nnova proposição para o Ensino Médio, em que é instituído um currículo de formação geral.\nTal reorganização acarreta o fim do Ensino Médio Técnico, deixando a capacitação técnica\npara as instituições de ensino profissionalizante públicas e privadas. Segundo Pacheco\n(2015), as propostas curriculares que surgem a parti",
+        "citacoes_detectadas": [
+          "Pacheco, 2015, p. 32",
+          "Ciavatta, 2005, p. 2"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 20,
+        "texto": "19\n(Nitschke; Plácido; Pitt, 2021, p. 42). Nesse sentido, uma formação integral passa pela\narticulação dos conhecimentos historicamente produzidos pelo homem com o mundo, para\nalém da simples proposição da aprendizagem para uma atividade profissional, como\nobservamos nas proposições teóricas da perspectiva histórico-cultural e da pedagogia\nHistórico-Crítica. Além disso, os documentos orientadores do IFC (PPI, 2019; IFC, 2019b;\nIFC, 2021), em convergência com o conceito de currículo integrado, caracterizam o processo\nde ensino-aprendizagem e de avaliação da aprendizagem dos estudantes nessa instituição\nalinhados com essas concepções teóricas.\n2.2 PERSPECTIVA HISTÓRICO-CULTURAL\nA perspectiva histórico-cultural, fundamenta-se no materialismo histórico-dialético5 e\nnos aspectos culturais da formação da subjetividade. Para Vygotsky (1993) a aquisição da\ncultura produzida pelo homem ocorre do contexto social para o sujeito, movimento de\napropriação que caracteriza o processo de internalização. Segundo a teoria histórico-cultural a\ninternalização é ação de elaboração de “uma atividade externa para uma atividade interna e\nde um processo interpessoal para um processo intrapessoal” (Cavalcan",
+        "citacoes_detectadas": [
+          "Nitschke; Plácido; Pitt, 2021, p. 42",
+          "Cavalcanti, 2005, p. 188"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 21,
+        "texto": "20\n(Lakomy, 2008).\nPara resolver esse impasse e conseguir compreender o comportamento humano mais\nsofisticado, a perspectiva histórico-cultural propõe o conceito de mediação. Para Vygotsky\n“todas as funções psíquicas superiores são processos mediados” (1993, p. 48). Nesse sentido,\npostula que todas as pessoas usam instrumentos e signos para mediar suas relações com o\nmundo e com outras pessoas. O sujeito não é considerado passivo diante dos estímulos que\nrecebe, ele reflete e se posiciona, com maior ou menor criticidade. Para isso escolhe situações\ncompatíveis com sua personalidade (Lakomy, 2008).\nA partir desses conceitos, Vygotsky (2021) propõe um novo modelo de instrução\nescolar, ao compreender que “o aprendizado deve ser orientado para o futuro, e não para o\npassado” (1993, p. 89). A proposta da perspectiva histórico-cultural é a atuação do educador\nno espaço caracterizado pelo que o indivíduo pode fazer sozinho, com relação ao que poderá\nfazer com ajuda de outras pessoas. Esse espaço proposto para ser utilizado no processo de\ninstrução é denominado de Zona de Desenvolvimento Proximal (ZDP). Nessa prática de\nensino-aprendizagem, mediada pela utilização de instrumentos e signos ",
+        "citacoes_detectadas": [
+          "Lakomy, 2008",
+          "Lakomy, 2008",
+          "Cerezuela; Mori,\n2015, p. 1260",
+          "Vygotsky, 1993"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 22,
+        "texto": "21\npráticas de ensino são direcionadas para as possibilidades futuras de aprendizagem, como\npoderemos observar a seguir na pedagogia Histórico-Crítica.\n2.3 PEDAGOGIA HISTÓRICO-CRÍTICA\nDemerval Saviani, precursor da pedagogia Histórico-Crítica, desenvolveu importantes\nestudos relativos à educação e sobre as concepções de ensino-aprendizagem. Constatou que\nalgumas estruturas de ensino eram sistemas que não apresentavam críticas às suas próprias\nformulações (Saviani, 2014a). Ao contrário, caracterizaram-se como reprodutoras de modelos\nde ensino-aprendizagem tipicamente conservadores. Tais modelos, basicamente, eram\norganizados para promover dois tipos de educação, um destinado à classe dominante e o\noutro para a classe trabalhadora. Ele denominou essas concepções de pedagogias não-críticas,\nquais sejam, pedagogia Tradicional, Nova e Tecnicista (Saviani, 1991).\nOutras correntes teóricas analisadas pelo autor, debruçaram-se sobre essas práticas\neducativas não-críticas, amplamente desenvolvidas nas instituições escolares. Saviani (1991)\ndenominou essas demais concepções de teorias de crítico-reprodutivistas, pois destacavam\nque os sistemas educativos não conseguiriam superar a condição d",
+        "citacoes_detectadas": [
+          "Saviani, 2014a",
+          "Saviani, 1991"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 23,
+        "texto": "22\nescolhida, ou seja, sobre o contexto a ser estudado. Na sequência, surge a instrumentalização,\nação de reflexão onde o educador fornece as concepções e os instrumentos necessários para\nos estudantes analisarem o conteúdo proposto. Na próxima etapa, catarse, ocorre a\ninternalização do tema de estudo pelos estudantes. Por fim, a resultante desse processo de\nestudo é uma nova compreensão do que foi analisado, configurando-se a prática social final.\nNesse contexto estruturado pela Pedagogia Histórico-Crítica, como também, referenciado na\nperspectiva histórico-cultural, a avaliação da aprendizagem se configura como um processo\nhistórico, a partir da promoção de um debate criticizante no ambiente escolar.\n2.4 TIPIFICAÇÕES DA AVALIAÇÃO DA APRENDIZAGEM\nPensar a avaliação da aprendizagem como um processo historicizante e dialógico,\npressupõe entender como essa prática pedagógica pode ser reorganizada na escola (Freire,\n1996). Para Luckesi (2019), deve-se compreender os estudantes como sujeitos de sua\naprendizagem, que ao se apropriarem do conhecimento se desenvolvem. Por outro lado,\nquando o aprendizado não acontece, é indispensável um movimento dos educadores para que\nisso ocorra. Trata",
+        "citacoes_detectadas": [
+          "Freire,\n1996",
+          "Saviani, 1999",
+          "Hoffmann, 2019"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 24,
+        "texto": "23\nque orbitam às principais teorias pedagógicas. São concepções avaliativas encontradas nas\npráticas pedagógicas de parcela significativa das instituições escolares. Nesse sentido,\ndestacam-se três concepções avaliativas, quais sejam: avaliação classificatória6, avaliação\ndiagnóstica e avaliação formativa.\nPode-se definir a avaliação classificatória como o processo de verificação do que os\ndiscentes aprenderam ao final de determinado período, tendo como objetivo a atribuição de\nnotas a esses estudantes (Campolin, 2019). Trata-se, geralmente, de atividades de medição,\ncomo provas, exames e apresentação de trabalhos (Luckesi, 1996; Hoffmann, 1997). Para\nFernandes (2006, p. 25), esse tipo de avaliação tem uma “inspiração behaviorista cuja\nconcepção é mais restrita e pontual e quase limitada à verificação da consecução de objectivos\ncomportamentais e que, para muitos autores, é a mais predominante nos sistemas educativos”.\nJá a avaliação diagnóstica identifica a aprendizagem geral ou particular dos estudantes\nfrente aos conteúdos ensinados, bem como, em relação aos conteúdos que poderão ser\nministrados futuramente (Campolin, 2019). Nesse sentido, a avaliação pode ser organizada no\niní",
+        "citacoes_detectadas": [
+          "Campolin, 2019",
+          "Campolin, 2019"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 26,
+        "texto": "25\nbem como, por uma ativa ou apática participação dos pais na educação dos filhos, ou ainda,\npor características cognitivas naturais observadas no comportamento dos estudantes. Dessa\nforma, a compreensão é de que a escola pouco influencia no desenvolvimento dos estudantes,\nminimizando a responsabilidade dos educadores no processo educativo.\n2.5 ALGUNS ASPECTOS DA AVALIAÇÃO NA EPT E NO IFC\nA consolidação da EPT no EMI perpassa uma proposta de integração do trabalho,\nciência, cultura e dos desafios da integração da formação humanista com a educação técnica e\ntecnológica. Ainda, pela busca em se proporcionar uma educação com características de\nescola unitária7, que segundo Ramos (2010), surge da necessidade de preparação profissional\ndos jovens imersos em condições de escassez e que ingressam cada vez mais cedo no mundo\ndo trabalho. Trata-se então, em se promover uma avaliação da aprendizagem condizente com\nos princípios da formação integral e do currículo integrado (Nitschke; Plácido; Pitt, 2021).\nAssim, segundo Silva (2019, p. 31), na EPT “a avaliação da aprendizagem assume\npapel de destaque dentro do processo educativo, podendo ser desenvolvida reflexivamente\ncomo um instrumento a",
+        "citacoes_detectadas": [
+          "Nitschke; Plácido; Pitt, 2021"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 27,
+        "texto": "26\naprendizagem visando superar as contradições entre avaliação diagnóstica e avaliação\nclassificatória. Porém, essas ações, materializaram-se a partir da iniciativa pontual de alguns\ndocentes. O que a pesquisadora constatou foi que, em função das mais variadas dificuldades\nencontradas na atividade profissional e, sobretudo, frente às perspectivas tradicionais de\nensino, ainda prevalecem avaliações em uma concepção classificatória.\nO estudo de Oliveira (2019), por sua vez, por meio de uma pesquisa participante,\ninvestigou a percepção dos estudantes sobre a temática da avaliação da aprendizagem. Os\nresultados apontaram que os estudantes compreendem que seus professores utilizam formas\ntradicionais numa concepção classificatória e metodologias que se encaixam em uma\nperspectiva diagnóstica e formativa. Mesmo diante desse contexto, os resultados numéricos\nem procedimentos pontuais de avaliação, em uma perspectiva classificatória, foram elencados\npelos estudantes como fundamentais para aprovação. Outra pesquisa, conduzida por Silva\n(2019), investigou os cursos Técnicos de Informática e Controle Ambiental integrados ao\nEnsino Médio. Foi constatado que os currículos desses cursos apresen",
+        "citacoes_detectadas": [
+          "IFC, 2019a",
+          "IFC, 2019b",
+          "IFC, 2019b, p. 2"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 28,
+        "texto": "27\ndemocracia, da autonomia e da participação crítica e cidadã” (IFC, 2019b, p. 2).\nEssas concepções são igualmente encontradas na Resolução nº 10/2021 (IFC, 2021),\nque dispõe sobre a Organização Didática dos cursos do IFC. Neste documento, as avaliações\ndevem “diagnosticar o rendimento da aprendizagem, bem como, propor formas de sanar o\nrendimento inferior à média” (IFC, 2021, p. 93). Além disso, apontam que “devem ser\nutilizados instrumentos diversificados pelo docente, que deve considerar a sistemática de\navaliação definida no PPC, de acordo com a natureza do componente curricular e\nespecificidades da turma” (IFC, 2021, p. 93). Essas concepções sobre avaliação da\naprendizagem, presentes nos documentos orientadores do IFC, foram construídas, em grande\nparte, a partir do conceito de currículo integrado (Ciavatta, 2005).\n3 METODOLOGIA",
+        "citacoes_detectadas": [
+          "IFC, 2019b, p. 2",
+          "IFC, 2021",
+          "IFC, 2021, p. 93",
+          "IFC, 2021, p. 93",
+          "Ciavatta, 2005"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 31,
+        "texto": "30\n4 ANÁLISE DOS DADOS\nA análise das informações ocorreu sob orientação dos objetivos elencados para este\nestudo, utilizando-se as categorias descritas na metodologia. Para tal, organizamos as\nseguintes seções para apresentação dos dados de pesquisa:\n1) Avaliação da aprendizagem no contexto educativo;\n2) Avaliação da aprendizagem no contexto da formação integral e;\n3) Avaliação da aprendizagem no contexto da integração.\nAssim, o texto de apresentação em cada seção percorre a seguinte organização: 1º)\ndescrição da categoria utilizada; 2º) apresentação das informações retiradas dos PPCs\nestudados; 3º) apresentação dos dados obtidos com a aplicação do questionário; 4º)\napresentação das informações coletadas na atividade Ficha de Anotações11; 5º) apresentação\ndas informações coletadas na atividade Cartão-postal e; 6º) inserção das informações\ndescritas no diário de bordo do pesquisador. Observamos que nem sempre surgiram dados\nrelativos às categorias de análise em todos os instrumentos de pesquisa, o que pontuamos em\nmomentos oportunos.\n4.1 AVALIAÇÃO DA APRENDIZAGEM NO CONTEXTO EDUCATIVO\nNesta seção, analisamos as concepções dos participantes utilizando a categoria\navaliação\nda\naprendi",
+        "citacoes_detectadas": [
+          "Silva, 2019"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 32,
+        "texto": "31\nprocesso de ensino-aprendizagem. Concepção essa que também consta nos princípios\npedagógicos da formação integral (Pacheco, 2015). Além disso, os PPCs em questão,\ndelimitam como devem ser os aspectos teórico-práticos da avaliação da aprendizagem no\nambiente escolar e quais são seus parâmetros, como descrito no recorte a seguir.\n[...] A avaliação dos aspectos qualitativos compreende, além da acumulação de\nconhecimentos e dos resultados alcançados com a avaliação de característica\nquantitativa, o diagnóstico, a orientação e reorientação do processo de ensino e de\naprendizagem, visando o aprofundamento dos conhecimentos e o desenvolvimento\nde habilidades e atitudes pelos estudantes. A avaliação do rendimento escolar\nenquanto elemento formativo e condição integradora entre ensino e aprendizagem\ndeverá ser ampla, contínua, gradual, dinâmica e cooperativa e seus resultados serão\nsistematizados,\nanalisados\ne\ndivulgados.\n[...]\n(IFC-Brusque,\n2019a,\np. 51;\nIFC-Brusque, 2019b, p. 72).\nAs concepções de ensino presentes nos documentos do IFC (PPI, 2019; IFC, 2019b;\nIFC, 2021), bem como, fundamentado na perspectiva de Vygotsky (1993) e nas proposições\ndo\ncurrículo\nintegrado\n(Ciavatta,\n2005),\n",
+        "citacoes_detectadas": [
+          "Pacheco, 2015",
+          "Ciavatta,\n2005",
+          "IFC, 2021",
+          "IFC, 2019b"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "CAMPOLIN, L. da C. A avaliação da aprendizagem na educação profissional e tecnológica: uma proposta de formação docente a partir da percepção dos sujeitos dos Curso Técnicos Subsequente do IFSC – Caçador. 2019. 152f. Dissertação (Curso de Pós-Graduação stricto sensu Mestrado Profissional em Educação Profissional e Tecnológica em Rede Nacional) - IFSC, Florianópolis, 2019. Disponível em: https://su",
+      "CAVALCANTI, L. de S. Cotidiano, mediação pedagógica e formação de conceitos: uma contribuição de Vygotsky ao ensino de geografia. Cadernos Cedes, Campinas, v. 25, n. 66, p. 185-207, mai-ago. 2005. Disponível em: https://www.scielo.br/j/ccedes/a/WnXnVgTRQHZttxBQR44gt9x/abstract/?lang=pt. Acesso em: 30 nov. 2021.",
+      "CIAVATTA, M. A formação integrada: a escola e o trabalho como lugares de memória e de identidade. Revista Trabalho Necessário, a. 3, n. 3, p. 1-20, 2005. Disponível em: https://periodicos.uff.br/trabalhonecessario/article/view/6122. Acesso em: 30 nov. 2021.",
+      "FREIRE, P. Pedagogia do oprimido. 17. ed. Rio de Janeiro: Paz e Terra, 1987.",
+      "FREIRE, P. Pedagogia da autonomia: saberes necessários à prática educativa. 36. ed. São Paulo: Paz e Terra, 1996. 65",
+      "HOFFMANN, J. Avaliação mito e desafio: uma perspectiva construtivista. 22. ed. Porto Alegre: Editora Mediação, 1997.",
+      "HOFFMANN, J. Avanços nas concepções e práticas da avaliação. In: XIII Congresso Internacional de Tecnologia na Educação, 2015, Anais [...] 2015, p. 1-7. Disponível em: http://www.pe.senac.br/congresso/anais/2015/arquivos/pdf/atlas/Texto1JussaraHofman.pdf. Acesso em 17 ago. 2022.",
+      "HOFFMANN, J. Avaliação mediadora: uma prática em construção da pré-escola à universidade. 35. ed. Porto Alegre: Editora Mediação, 2019.",
+      "IFC, 2021. Disponível em: https://consuper.ifc.edu.br/wp-content/uploads/sites/57/2022/11/Organizacao-Didatica-dos-C ursos-do-IFC.pdf. Acesso em: 02 set. 2022. 66",
+      "LAKOMY, A. M. Teorias cognitivas da aprendizagem. 2. ed. Curitiba: Editora IBPEX, 2008.",
+      "PACHECO, E. Fundamentos político-pedagógicos dos institutos federais: diretrizes para uma educação profissional e tecnológica transformadora. 1. ed. Natal: Editora IFRN, 2015. PPI. Projeto Político-Pedagógico Institucional. In: IFC. Plano de desenvolvimento institucional. Blumenau: IFC, 2019. Disponível em: https://pdi.ifc.edu.br/wp-content/uploads/sites/80/2023/03/PDI-IFC-2019-2023-Revisao-2 021-",
+      "SAVIANI, D. Pedagogia histórico-crítica: primeiras aproximações. 2. ed. São Paulo: Cortez Editora, 1991.",
+      "SAVIANI, D. Escola e democracia. 32. ed. Campinas: Autores Associados, 1999.",
+      "SAVIANI, D. A pedagogia Histórico-Crítica. Revista Binacional Brasil Argentina. Vitória da Conquista, v. 3, n. 2, p. 11-36, dez. 2014a. Disponível em: https://periodicos2.uesb.br/index.php/rbba/article/view/1405. Acesso em: 05 fev. 2022.",
+      "SAVIANI, D. O conceito dialético de mediação na pedagogia Histórico-Crítica em intermediação com a psicologia histórico-cultural. Germinal: marxismo e educação em debate, v. 7, n. 1, p. 26–43, 2014b. Disponível em: https://periodicos.ufba.br/index.php/revistagerminal/article/view/12463. Acesso em: 18 maio. 2023.",
+      "SAVIANI, D. Sobre a natureza e especificidade da educação. Germinal: marxismo e educação em debate, v. 7, n. 1, p. 286–293, 2015. Disponível em: https://periodicos.ufba.br/index.php/revistagerminal/article/view/13575. Acesso em: 30 nov. 2021.",
+      "SILVA, E. S. da. Avaliação da aprendizagem e currículo integrado na educação profissional e tecnológica: concepções e práticas educativas no IFPA/Câmpus Industrial de Marabá. Anápolis: 2019. 163p. Dissertação (Curso de Pós-Graduação stricto sensu Mestrado Profissional em Educação Profissional e Tecnológica em Rede Nacional) - Instituto Federal de Goiás, Anápolis, 2019. Disponível em: https://sucup",
+      "SILVA JÚNIOR, J. D. da; BARBOSA, V. F. B.; OLIVEIRA, M. L. L. de. Avaliação da aprendizagem no ensino médio integrado: análise documental e percepções de estudantes. Ensino em Re-Vista. Uberlândia, v. 28, n. contínua, p. 1-25, 2021. Disponível em: https://seer.ufu.br/index.php/emrevista/article/view/60971. Acesso em: 9 ago. 2022.",
+      "VYGOTSKY, L. S. Pensamento e linguagem. São Paulo: Martins Fontes, 1993.",
+      "VYGOTSKY, L. S. Psicologia, educação e desenvolvimento. São Paulo: Expressão Popular, 2021.",
+      "CAMPOLIN, L. da C. A avaliação da aprendizagem na educação profis­ sional e tecnológica: uma proposta de formação docente a partir da per­ cepção dos sujeitos dos Curso Técnicos Subsequente do IFSC – Caçador. 2019. 152f. Dissertação (Curso de Pós-Graduação stricto sensu Mestrado Profissional em Educação Profissional e Tecnológica em Rede Nacional) – Instituto Federal de Santa Catarina, Florianópol",
+      "CIAVATTA, M. A formação integrada: a escola e o trabalho como lugares de memória e de identidade. Revista Trabalho Necessário, a. 3, n. 3, p. 1-20, 2005. Disponível em: https://periodicos.uff.br/trabalhonecessario/arti­ cle/view/6122/5087. Acesso em: 30 nov. 2021.",
+      "FREIRE, P. Pedagogia da autonomia: saberes necessários à prática educa­ tiva. 36. ed. São Paulo: Paz e Terra, 1996.",
+      "HOFFMANN, J. Avaliação mito e desafio: uma perspectiva construtivista. 22. ed. Porto Alegre: Editora Mediação, 1997. Referências 42",
+      "HOFFMANN, J. Avanços nas concepções e práticas da avaliação. In: XIII Congresso Internacional de Tecnologia na Educação, 2015, Anais [...] 2015, p. 1-7. Disponível em: http://www.pe.senac.br/congresso/anais/2015/ar­ quivos/pdf/atlas/Texto1JussaraHofman.pdf. Acesso em 17 ago. 2022."
+    ]
+  }
+}

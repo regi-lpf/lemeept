@@ -1,0 +1,181 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0009",
+  "ano": 2025,
+  "autor": "Larissa Merlo Morales da Silva",
+  "orientador": "Reginaldo Leandro Plácido",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP4",
+  "dissertacao": {
+    "titulo": "A HISTÓRIA DA IMPLANTAÇÃO (2012-2022) DO IFC CAMPUS SÃO BENTO DO SUL E A SUA RELAÇÃO COM OS ARRANJOS PRODUTIVOS, SOCIAIS E CULTURAIS LOCAIS",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/11/DISSERTACAO_-E_PRODUTO_EDUCACIONAL___LARISSA_MERLO_MORALES_DA_SILVA-1.pdf",
+    "resumo": "Esta pesquisa analisa a história da implantação do Instituto Federal Catarinense\nCampus São Bento do Sul (IFC Campus São Bento do Sul) no período de\n2012-2022, investigando suas relações com os arranjos produtivos, sociais e\nculturais locais. O objetivo central foi compreender a formação da cultura escolar\ninstitucional mediante o diálogo estabelecido entre escola e território. A questão\nnorteadora indagou: como ocorreram as relações de diálogo e influência entre o IFC\nCampus São Bento do Sul durante sua implantação e os arranjos produtivos locais?\nMetodologicamente,\nadotou-se\nabordagem\nqualitativa baseada em análise\ndocumental e história oral, utilizando as categorias analíticas de porosidade e\npermeabilidade institucional (Plácido; Benkendorf; Todorov, 2021) e cultura escolar\n(Viñao Frago, 2007). O corpus empírico compreendeu documentos institucionais,\ncomo atas de audiências públicas, projetos pedagógicos de cursos, notícias e\nentrevistas semiestruturadas com gestores, servidores, estudantes e membros da\ncomunidade. Os resultados evidenciaram que a implantação do campus estabeleceu\nrelações de permeabilidade com os arranjos produtivos locais, especialmente com o\nsetor moveleiro e metalmecânico, influenciando a definição dos cursos técnicos\noferecidos e as práticas pedagógicas desenvolvidas. Identificou-se que a cultura\nescolar do IFC Campus São Bento do Sul incorporou elementos da cultura industrial\nregional, manifestando-se em projetos de extensão, parcerias empresariais e\nmetodologias de ensino voltadas às demandas produtivas locais. Como produto\neducacional, foi desenvolvido o projeto de extensão \"Falas, Histórias e Memórias da\nEscola\", utilizando narrativas audiovisuais para construção da memória institucional\ncom protagonismo estudantil. A pesquisa contribui para a compreensão das\ninterfaces entre educação profissional e desenvolvimento territorial, evidenciando\ncomo as instituições de EPT se constituem mediante processos de diálogo com os\narranjos produtivos locais.\n\nPalavras-chave: História das Instituições Escolares; Organização e Memória da\nEducação Profissional e Tecnológica; Culturas Escolares; Arranjos produtivos locais;\nPorosidade e Permeabilidade.",
+    "palavras_chave": [
+      "História das Instituições Escolares",
+      "Organização e Memória da Educação Profissional e Tecnológica",
+      "Culturas Escolares",
+      "Arranjos produtivos locais",
+      "Porosidade e Permeabilidade"
+    ],
+    "autores_referenciados": [
+      "A. Markusen",
+      "Acácia Zeneida Kuenzer",
+      "Alessandro Portelli",
+      "Angel I. Pérez Gómez",
+      "Antônio Carlos Gil",
+      "António Nóvoa",
+      "Antônio Viñao Frago",
+      "Bárbara de Almeida T. Borges",
+      "Carlos Nelson Coutinho",
+      "Carlos Rodrigues Brandão",
+      "Celso Furtado",
+      "Cezar Migliorin",
+      "Cladecir Alberto Schenkel",
+      "Cloves Alexandre de Castro",
+      "Dante Henrique Moura",
+      "David Harvey",
+      "Denise Matiola Todorov",
+      "Dermeval Saviani",
+      "Dominique Julia",
+      "Ednilse Maria Willers",
+      "Eduardo José Monteiro Costa",
+      "Fabio Stallivieri",
+      "Florestan Fernandes",
+      "Francisco Horácio Pereira de Oliveira",
+      "Francisco Luiz Corsi",
+      "Gaudêncio Frigotto",
+      "Helena M. M. Lastres",
+      "Ivanete Calçada",
+      "Ivonete Telles Medeiros",
+      "Jacques Le Goff",
+      "Jandir Ferrera de Lima",
+      "João Carlos Cichaczewski",
+      "John Ward Creswell",
+      "José dos Santos Rodrigues",
+      "José Eduardo Cassiolato",
+      "José Luis Machado",
+      "Joseane Viola Coelho Debortoli",
+      "Júlia Ferreira de Mello Lima",
+      "Justino Pereira de Magalhães",
+      "Laurence Bardin",
+      "Licínio C. Lima",
+      "Marcelo Matos",
+      "Marco Antonio Vargas",
+      "Marcos Gerhardt",
+      "Maria Cecília de Souza Minayo",
+      "Maria Laura Silveira",
+      "Maria Victoria de Mesquita Benevides Soares",
+      "Marise Nogueira Ramos",
+      "Milton Santos",
+      "Moisés Domingos Sobrinho",
+      "Natália Maria de Lima Bracarense",
+      "Nora Rut Krawczyk",
+      "Pierre Nora",
+      "Reginaldo Leandro Plácido",
+      "Renato Ramos Campos",
+      "Shyrlei Karyna Jagielski Benkendorf",
+      "Tânia Bacelar de Araújo",
+      "Thiago de Faria e Silva",
+      "Tomaz Tadeu da Silva"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica e Materialismo Histórico-Dialético",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": true,
+      "justificativa": "O texto mobiliza autores como Saviani (2007) e Kuenzer (2000) para discutir educação e trabalho como processos educativos, alinhando-se a matrizes críticas. Referências a Frigotto (2001) e Moura (2012) reforçam a perspectiva de formação humana integral.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 30,
+          "trecho": "O trabalho, além de constituir uma prática econômica e meio de subsistência, é expressão do modo de existência humana.",
+          "referencia_correspondente": "Saviani, 2007"
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 35,
+          "trecho": "A educação profissional continua sendo dirigida às camadas populares, com currículos voltados majoritariamente à formação técnico-operacional.",
+          "referencia_correspondente": "Kuenzer, 2000"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "A história da implantação do IFC campus São Bento do Sul (2012-2022) e a sua relação com os arranjos produtivos, sociais e culturais locais",
+    "tipo": "software_aplicativo",
+    "formato": "Roteiro / Proposta Pedagógica",
+    "link": "https://educapes.capes.gov.br/handle/capes/1132804",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "comunidade_externa"
+    ],
+    "nivel_aplicacao": "Educação Profissional e Tecnológica",
+    "palavras_chave": [
+      "História das Instituições Escolares",
+      "Organização e Memória da Educação Profissional e Tecnológica",
+      "Culturas Escolares",
+      "Arranjos produtivos locais",
+      "Porosidade e Permeabilidade",
+      "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+      "Organização e Memória da EPT"
+    ],
+    "data_publicacao": "2025-10-20",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "da Silva, Larissa Merlo Morales",
+        "papel": "creator"
+      },
+      {
+        "nome": "Placido, Reginaldo Leandro",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1132804",
+        "url": "https://educapes.capes.gov.br/handle/capes/1132804"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "A história da implantação do IFC campus São Bento do Sul (2012-2022) e a sua relação com os arranjos produtivos, sociais e culturais locais",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Produto educacional \"Falas, histórias e memórias”",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "FALAS, HISTÓRIAS E MEMÓRIAS",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "outro"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0009 2025 larissa merlo morales da silva reginaldo leandro placido ifc blumenau lp2 mp4 a historia da implantacao 2012 2022 do ifc campus sao bento do sul e a sua relacao com os arranjos produtivos sociais e culturais locais esta pesquisa analisa a historia da implantacao do instituto federal catarinense campus sao bento do sul ifc campus sao bento do sul no periodo de 2012 2022 investigando suas relacoes com os arranjos produtivos sociais e culturais locais o objetivo central foi compreender a formacao da cultura escolar institucional mediante o dialogo estabelecido entre escola e territorio a questao norteadora indagou como ocorreram as relacoes de dialogo e influencia entre o ifc campus sao bento do sul durante sua implantacao e os arranjos produtivos locais metodologicamente adotou se abordagem qualitativa baseada em analise documental e historia oral utilizando as categorias analiticas de porosidade e permeabilidade institucional placido benkendorf todorov 2021 e cultura escolar vinao frago 2007 o corpus empirico compreendeu documentos institucionais como atas de audiencias publicas projetos pedagogicos de cursos noticias e entrevistas semiestruturadas com gestores servidores estudantes e membros da comunidade os resultados evidenciaram que a implantacao do campus estabeleceu relacoes de permeabilidade com os arranjos produtivos locais especialmente com o setor moveleiro e metalmecanico influenciando a definicao dos cursos tecnicos oferecidos e as praticas pedagogicas desenvolvidas identificou se que a cultura escolar do ifc campus sao bento do sul incorporou elementos da cultura industrial regional manifestando se em projetos de extensao parcerias empresariais e metodologias de ensino voltadas as demandas produtivas locais como produto educacional foi desenvolvido o projeto de extensao falas historias e memorias da escola utilizando narrativas audiovisuais para construcao da memoria institucional com protagonismo estudantil a pesquisa contribui para a compreensao das interfaces entre educacao profissional e desenvolvimento territorial evidenciando como as instituicoes de ept se constituem mediante processos de dialogo com os arranjos produtivos locais palavras chave historia das instituicoes escolares organizacao e memoria da educacao profissional e tecnologica culturas escolares arranjos produtivos locais porosidade e permeabilidade pedagogia historico critica e materialismo historico dialetico a historia da implantacao do ifc campus sao bento do sul 2012 2022 e a sua relacao com os arranjos produtivos sociais e culturais locais software aplicativo roteiro proposta pedagogica educacao profissional e tecnologica historia das instituicoes escolares organizacao e memoria da educacao profissional e tecnologica culturas escolares arranjos produtivos locais porosidade e permeabilidade mestrado em educacao profissional e tecnologica profept organizacao e memoria da ept a markusen acacia zeneida kuenzer alessandro portelli angel i perez gomez antonio carlos gil antonio novoa antonio vinao frago barbara de almeida t borges carlos nelson coutinho carlos rodrigues brandao celso furtado cezar migliorin cladecir alberto schenkel cloves alexandre de castro dante henrique moura david harvey denise matiola todorov dermeval saviani dominique julia ednilse maria willers eduardo jose monteiro costa fabio stallivieri florestan fernandes francisco horacio pereira de oliveira francisco luiz corsi gaudencio frigotto helena m m lastres ivanete calcada ivonete telles medeiros jacques le goff jandir ferrera de lima joao carlos cichaczewski john ward creswell jose dos santos rodrigues jose eduardo cassiolato jose luis machado joseane viola coelho debortoli julia ferreira de mello lima justino pereira de magalhaes laurence bardin licinio c lima marcelo matos marco antonio vargas marcos gerhardt maria cecilia de souza minayo maria laura silveira maria victoria de mesquita benevides soares marise nogueira ramos milton santos moises domingos sobrinho natalia maria de lima bracarense nora rut krawczyk pierre nora reginaldo leandro placido renato ramos campos shyrlei karyna jagielski benkendorf tania bacelar de araujo thiago de faria e silva tomaz tadeu da silva",
+    "termos_unificados": [
+      "História das Instituições Escolares",
+      "Organização e Memória da Educação Profissional e Tecnológica",
+      "Culturas Escolares",
+      "Arranjos produtivos locais",
+      "Porosidade e Permeabilidade",
+      "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+      "Organização e Memória da EPT"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

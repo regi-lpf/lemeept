@@ -1,0 +1,215 @@
+{
+  "id": "EPT-0078",
+  "metadados_resolvidos": {
+    "ano": 2021,
+    "autor": "Alessandra Nitschke",
+    "orientador": "Reginaldo Leandro Plácido",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP2",
+    "macroprojeto": "MP6"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "EGRESSOS E NDB EM DIÁLOGO: O ACOMPANHAMENTO DE EGRESSOS COMO SUBSÍDIO EM PROCESSOS DE REFORMULAÇÃO DE CURSOS DE ENSINO MÉDIO INTEGRADO DO INSTITUTO FEDERAL CATARINENSE – CAMPUS CONCÓRDIA",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/DISSERTACAO-ALESSANDRA-NITSCHKE.pdf",
+    "palavras_chave": [
+      "Núcleo Docente Básico (NDB)",
+      "Egressos",
+      "Ensino Médio Integrado (EMI)",
+      "Educação Profissional e Tecnológica (EPT)",
+      "Currículo"
+    ],
+    "autores_referenciados": [
+      "A. M. D. P. Vieira",
+      "A. Pereira",
+      "A. Vieira",
+      "A. Zabala",
+      "Antônio Carlos Gil",
+      "C. A. de Castro",
+      "C. N. Gama",
+      "C. V. Sales",
+      "Cladecir Alberto Schenkel",
+      "D. J. Ferreira",
+      "D. M. Todorov",
+      "Dante Henrique Moura",
+      "Dermeval Saviani",
+      "E. Pacheco",
+      "E. Padoin",
+      "G. S. Faria",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "H. M. B. Grangeiro",
+      "Ivanise Maria Rizzatti",
+      "J. Favretto",
+      "J. Malanchen",
+      "J. Moll",
+      "J. S. Souza",
+      "José Gimeno Sacristán",
+      "K. G. Fagundes",
+      "K. R. de Sá",
+      "L. B. Espartel",
+      "L. M. S. Alves",
+      "Laurence Bardin",
+      "M. A. D. M. Vasconcelos",
+      "M. A. Santos",
+      "M. Amorim",
+      "M. D. C. Pena",
+      "M. R. D. Dias",
+      "M. R. Sakr",
+      "M. Ramos",
+      "M. S. Ribeiro",
+      "Maria Ciavatta",
+      "N. Duarte",
+      "Priscila de Souza Chisté Leite",
+      "Reginaldo Leandro Plácido",
+      "S. K. J. Benkendorf"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "http://educapes.capes.gov.br/handle/capes/600482",
+    "titulo_produto": "Tutorial de utilização de informações de e sobre egressos para o acompanhamento, avaliação e reformulação de cursos de ensino médio integrado",
+    "titulo_produto_bruto": "Texto – TUTORIAL DE UTILIZAÇÃO DE INFORMAÇÕES DE E SOBRE EGRESSOS PARA O ACOMPANHAMENTO, AVALIAÇÃO E REFORMULAÇÃO DE CURSOS DE ENSINO MÉDIO INTEGRADO",
+    "data_publicacao": "2021-06-24",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Nitschke, A.",
+        "papel": "creator"
+      },
+      {
+        "nome": "Placido, R. L.",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/600482",
+        "url": "http://educapes.capes.gov.br/handle/capes/600482"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Tutorial de utilização de informações de e sobre egressos para o acompanhamento, avaliação e reformulação de cursos de ensino médio integrado",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "EGRESSOS E NDB EM DIÁLOGO: O ACOMPANHAMENTO DE EGRESSOS COMO SUBSÍDIO EM PROCESSOS DE REFORMULAÇÃO DE CURSOS DE ENSINO MÉDIO INTEGRADO DO INSTITUTO FEDERAL CATARINENSE - CAMPUS CONCÓRDIA",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "texto"
+    ],
+    "palavras_chave_educapes": [
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "Egressos",
+      "Núcleo Docente Básico",
+      "Currículo",
+      "Mestrado Profissional em Educação Tecnológica",
+      "Organização e Memória da EPT"
+    ],
+    "tipo_produto_regex": null,
+    "fonte_tipo_regex": null,
+    "formato_produto_regex": "Manual / Protocolo",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\n\nALESSANDRA NITSCHKE\n\nEGRESSOS E NDB EM DIÁLOGO: O ACOMPANHAMENTO DE EGRESSOS\nCOMO SUBSÍDIO EM PROCESSOS DE REFORMULAÇÃO DE CURSOS DE\nENSINO MÉDIO INTEGRADO DO INSTITUTO FEDERAL CATARINENSE -\nCAMPUS CONCÓRDIA\n\nBlumenau - SC\n JUNHO - 2021\n\nALESSANDRA NITSCHKE\n\nEGRESSOS E NDB EM DIÁLOGO: O ACOMPANHAMENTO DE EGRESSOS\nCOMO SUBSÍDIO EM PROCESSOS DE REFORMULAÇÃO DE CURSOS DE\nENSINO MÉDIO INTEGRADO DO INSTITUTO FEDERAL CATARINENSE -\nCAMPUS CONCÓRDIA\n\nDissertação apresentada ao Programa de Pós-\ngraduação em Educação Profissional e Tecnológica,\nofertado pelo campus Blumenau do Instituto\nFederal Catarinense, como parte dos requisitos\npara a obtenção do título de Mestra em Educação\nProfissional e Tecnológica.\n\nOrientador: Reginaldo Leandro Plácido\n\nBlumenau - SC\nJunho - 2021",
+    "ficha_catalografica": "[PÁG. 3]\nN732e\n Nitschke, Alessandra.\n\nEgressos e NDB em diálogo: o acompanhamento de egressos como subsídio em processos\nde reformulação de cursos de ensino médio integrado do Instituto Federal Catarinense – Campus\nConcórdia / Alessandra Nitschke. - Blumenau, 2021.\n\n 85 p.: il., color.\n\n Artigo (Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT) – Instituto\nFederal Catarinense, Blumenau, 2021.\n\n Orientador: Prof. Dr. Reginaldo Leandro Plácido\n\n 1. Educação Profissional e Tecnológica. 2. Ensino Médio Integrado. 3. Egressos. 4. Núcleo\nDocente Básico. I. Plácido, Reginaldo Leandro. II. Instituto Federal Catarinense. III. Título.\n\nCDD 375\nFicha catalográfica elaborada pela bibliotecária: Shyrlei K. Jagielski Benkendorf – CRB 14/662",
+    "sumario": "[PÁG. 11]\nSUMÁRIO\n\nAPRESENTAÇÃO .......................................................................................... 13\n\n1\nINTRODUÇÃO ............................................................................................... 16\n\n2\nREFERENCIAL TEÓRICO ............................................................................. 18\n2.1\nO currículo: uma constante disputa e construção .................................... 18\n2.2\nEducação Profissional e Tecnológica para quê e para quem? ................. 19\n2.3\nO egresso como elemento da avaliação dos cursos ................................. 23\n2.4\nNúcleo Docente Básico ................................................................................ 25\n\n3\nMETODOLOGIA ............................................................................................. 27\n3.1\nEscolha Metodológica e Procedimentos de Construção e Análise dos\nDados ............................................................................................................. 27\n3.2\nElaboração, aplicação e avaliação do produto educacional ..................... 28\n\n4\nRESULTADOS E DISCUSSÕES .................................................................... 30\n4.1\nAtuação do Núcleo Docente Básico nos cursos de Ensino Médio Integrado\n ........................................................................................................................ 30\n4.2\nA atuação do NDB na construção do currículo do Ensino Médio Integrado\n ........................................................................................................................ 32\n4.3\nO egresso como um dos elementos para pensar o currículo ................... 35\n4.4\nTutorial de utilização de informações de e sobre egressos para o\nacompanhamento, avaliação e reformulação de cursos de Ensino Médio\nIntegrado ....................................................................................................... 37\n\n5\nCONSIDERAÇÕES FINAIS ........................................................................... 42\n\nREFERÊNCIAS .............................................................................................. 44\n\nAPÊNDICE A – PRODUTO EDUCACIONAL ................................................. 49\n\nAPÊNDICE B – ROTEIRO DE ENTREVISTA COM MEMBROS DOS NDBS 76\n\nAPÊNDICE C – QUESTIONÁRIO DE AVALIAÇÃO DO PRODUTO\nEDUCACIONAL ............................................................................................. 78\n\nAPÊNDICE D – TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO –\nSERVIDORES ................................................................................................ 79\n\nAPÊNDICE\nE\n–\nDOCUMENTOS\nCONSULTADOS\nNA\nPESQUISA\nDOCUMENTAL............................................................................................... 82\n\nANEXO A – CAPÍTULOS REFERENTE AO NDB NAS ORGANIZAÇÕES\nDIDÁTICAS .................................................................................................... 83",
+    "resumo": "[PÁG. 8]\nRESUMO\n\nA presente pesquisa foi desenvolvida no Mestrado Profissional em Educação\nProfissional e Tecnológica (ProfEPT), se insere na linha de pesquisa “Organização e\nMemórias de Espaços Pedagógicos na Educação Profissional e Tecnológica (EPT)”,e\nobjetivou compreender se e como o Núcleo Docente Básico (NDB) utiliza as\ninformações dos egressos nos processos de avaliação e acompanhamento dos\ncursos técnicos integrados ao ensino médio do Instituto Federal Catarinense –\nCampus Concórdia. Trata-se de uma pesquisa participante, qualitativa, de natureza\naplicada, que se utilizou de entrevista semiestruturada com representantes dos NDBs\ndos três cursos ofertados na instituição, além de pesquisa documental e bibliográfica.\nA pesquisa subsidiou o desenvolvimento do produto educacional “Tutorial de utilização\nde informações de e sobre egressos para o acompanhamento, avaliação e\nreformulação de cursos de Ensino Médio Integrado”. Os resultados demonstraram que\nos NDBs são estruturas importantes para pensar e discutir os rumos dos cursos\ntécnicos integrados ao ensino médio, mas que não utilizam dados sistematizados em\nrelação aos egressos. Em relação ao produto educacional, constatou-se que ele pode\npossibilitar o início da construção de uma cultura de diálogo com o egresso a fim de a\ninstituição não romper o relacionamento com o estudante quando ele recebe o\ndiploma.\n\nPalavras-Chave: Núcleo Docente Básico (NDB). Egressos. Ensino Médio Integrado\n(EMI). Educação Profissional e Tecnológica (EPT). Currículo.",
+    "introducao": "[PÁG. 16]\n16\n\n1 INTRODUÇÃO\n\nOs Institutos Federais são instituições pluricurriculares e multicampi que\noferecem cursos em diferentes níveis e modalidades de ensino de forma pública e\ngratuita. Dentre estes, o Instituto Federal Catarinense (IFC) foi o local desta pesquisa,\nespecificamente o campus Concórdia, localizado no oeste de Santa Catarina.\nNo IFC, cada curso de Ensino Médio Integrado (EMI) possui, além do colegiado,\no Núcleo Docente Básico (NDB). O NDB é presidido pelo coordenador, e composto\npor, no mínimo, mais três docentes pertencentes ao quadro efetivo do curso (IFC,\n2014). Dentre as atribuições do NDB, destaca-se que esse órgão discute, propõe e\natua, constantemente, nos processos de atualização e acompanhamento do curso.\nAo considerar a importância dos egressos e o papel do NDB no\nacompanhamento do curso, a pergunta que serve de base para a problematização\ndesta pesquisa é: como o acompanhamento de egressos pode contribuir para o NDB\nna sua atuação nos processos de avaliação e acompanhamento dos cursos técnicos\nintegrados ao Ensino Médio do IFC – Campus Concórdia?\nPressupondo que, no processo de pensar esses cursos, há disposição do NDB\nem considerar as informações oriundas dos egressos, esta pesquisa tem como\nobjetivo geral compreender se e como o NDB utiliza as informações dos egressos nos\nprocessos de avaliação e acompanhamento dos cursos técnicos integrados ao Ensino\nMédio do IFC – Campus Concórdia. Dos objetivos específicos, destacam-se os\nseguintes: investigar junto aos NDBs dos três cursos de EMI do IFC – Campus\nConcórdia se eles utilizam algum instrumento de coleta e sistematização para o\nacompanhamento dos egressos; identificar se os NDBs utilizam alguma metodologia\nde leitura e reflexão sobre informações obtidas com egressos; comparar como os\nNDBs dos três cursos realizam o acompanhamento dos seus egressos; elaborar e\naplicar um tutorial que auxilie o NDB a se apropriar das informações dos egressos na\nsua atuação frente ao curso.\nEsta pesquisa se caracteriza, quanto à natureza, como aplicada e sua\nabordagem é qualitativa, com objetivos de cunho exploratório. Do ponto de vista dos\nprocedimentos técnicos, caracteriza-se como pesquisa participante e, para a\nconstrução dos dados, utilizou-se de entrevista semiestruturada com os NDBs de cada\ncurso técnico integrado ao Ensino Médio do IFC – Campus Concórdia, além de\n\n[PÁG. 17]\n17\n\npesquisa documental e bibliográfica. A análise dos dados foi realizada por meio da\nmetodologia de análise de conteúdo com base em Bardin (1977).\nA partir do levantamento de pesquisas já realizadas sobre o tema, percebeu-se\nque boa parte dos estudos abordam o egresso da EPT na perspectiva das relações\nestabelecidas no mundo do trabalho (SALES; VASCONCELOS, 2016; FERREIRA,\n2017; SOUZA, 2018). Entende-se, a partir desses estudos, que tanto a dimensão das\nrelações estabelecidas pelos egressos no mundo do trabalho quanto a continuidade\nem cursos de graduação são relevantes e merecem um olhar atento da instituição de\nensino. Entretanto, acredita-se que, além dessas duas, possam existir outras\ndimensões relevantes que precisam ser investigadas. Nesse ponto é que esta\npesquisa se justifica teoricamente, buscando entender quais informações oriundas\ndos egressos são importantes para construir, (re)construir e (re)avaliar as mudanças\nnos cursos de EMI.\nApesar do IFC possuir uma política de acompanhamento de egressos, nem\nsempre as informações a respeito desses sujeitos chegam aos órgãos que avaliam e\nacompanham os caminhos dos cursos. Nesse sentido, a justificativa prática se\nalicerça na perspectiva de que a pesquisa e o produto educacional contribuam para\nque o IFC – Campus Concórdia possa, através dos NDBs dos cursos de EMI,\nconsolidar essa ação de acompanhamento de egressos ressaltada como fundamental\npelos autores.\n\n[PÁG. 18]\n18\n\n2 REFERENCIAL TEÓRICO\n\n2.1 O currículo: uma constante disputa e construção\n\nO currículo escolar é dinâmico e está em constante transformação, pois ele\ncarrega uma historicidade e não pode ser alheio à realidade. Para Sacristán (2000),\nfica claro que a prática a que o currículo se refere advém de uma realidade prévia\nmuito bem estabelecida, por meio de comportamentos didáticos, políticos,\nadministrativos, econômicos, entre outros, dentre os quais se camuflam muitos\npressupostos, teorias parciais, esquemas de racionalidade, crenças, valores, etc., que\nacabam por condicionar a teorização sobre o currículo. Pereira (2017, p. 298),\ncomplementa ao afirmar que:\n\nA organização das experiências culturais, científicas e cotidianas é a função\ndo currículo escolar, porém depende, em parte, da teoria subjacente que esse\ncurrículo toma por referência, bem como do sistema de produção da\nexistência que ele atende, ambos irão definir o que e para que selecionar tais\nexperiências [...]\n\nDesse modo, ao pensar a construção dos currículos do Ensino Médio Integrado\nà Educação Profissional, tendo como horizonte a emancipação humana, é preciso ter\nclareza de que a prática fragmentada e fragmentadora não é a que deve orientar a\ndiscussão. O que se busca é uma educação transformadora que toma o trabalho como\nprincípio educativo e, por isso, a discussão que gravita em torno desta pesquisa tem\ncomo referência a pedagogia histórico-crítica. Nessa linha, Ramos (2014, p. 217)\nexplica que:\n\nPartimos do pressuposto filosófico de que o homem é um ser histórico-social\ne que a produção de conhecimento é um processo de apreensão das\nmediações que configuram a realidade, em sua historicidade e suas\ncontradições. Encontramos na pedagogia histórico-crítica a referência para a\neducação escolar coerente com tais pressupostos[...]\n\nA pedagogia histórico-crítica é uma teoria educacional construída por Dermeval\nSaviani no contexto das lutas que se travavam nos anos 1970 e 1980, período da\nditadura militar no Brasil. Conforme Gama e Duarte (2017), essa teoria indica\npossibilidades reais de pensar um currículo que busque uma formação humana na\nperspectiva da transição para uma nova forma de organização da sociedade. Ela\napresenta à classe que vive do trabalho a possibilidade de acesso a uma efetiva\napropriação de todo e qualquer tipo de conhecimento.\n\n[PÁG. 19]\n19\n\nSegundo Saviani (2014), a pedagogia histórico-crítica procura recuperar o\npapel da escola como instrumento de acesso ao saber elaborado. Trata-se de uma\ncontraposição ao enaltecimento, por parte da escola e de educadores, às formas\ncotidianas, espontâneas e não elaboradas da educação.\n É preciso enfatizar que o lugar da aprendizagem do saber científico\nsistematizado é a escola. E o trabalhador, ou o seu filho, depende dela para se\ntornar um sujeito menos alienado ou dominado. Desse modo, não se quer desmerecer\no conhecimento espontâneo, o conhecimento do senso comum, apenas se quer\ncaracterizar qual é o espaço de aprendizagem da escola. Esse é, na maioria das vezes,\no único acesso que a classe trabalhadora tem ao conhecimento científico, enquanto\nos não sistematizados são disponibilizados em outros espaços.\nO currículo depende do contexto em que se desenvolve e dos sujeitos\nenvolvidos, sofrendo interferências diversas. Sacristán (2000) distingue oito\nsubsistemas nos quais se expressam práticas relacionadas com o currículo que\ninfluenciam no significado pedagógico do mesmo: o âmbito da atividade político-\nadministrativa; o subsistema de participação e de controle; a ordenação do sistema\neducativo; o sistema de produção de meios; os âmbitos de criação culturais, científicos,\netc; subsistema técnico-pedagógico: formadores, especialistas e pesquisadores em\neducação; o subsistema de inovação e o subsistema prático-pedagógico.\nAssim, o currículo é o resultado das múltiplas interações dos subsistemas e é\nnecessário um olhar para além do ambiente educacional em sua construção. Entende-\nse que a perspectiva dos egressos de um curso pode ser percebida como parte do\nsubsistema de participação social e de controle, visto que esse sujeito traz um olhar\nsobre a concretização prática do",
+    "descricao_produto_na_dissertacao": "[PÁG. 17] pesquisa documental e bibliográfica. A análise dos dados foi realizada por meio da\nmetodologia de análise de conteúdo com base em Bardin (1977).\nA partir do levantamento de pesquisas já realizadas sobre o tema, percebeu-se\nque boa parte dos estudos abordam o egresso da EPT na perspectiva das relações\nestabelecidas no mundo do trabalho (SALES; VASCONCELOS, 2016; FERREIRA,\n2017; SOUZA, 2018). Entende-se, a partir desses estudos, que tanto a dimensão das\nrelações estabelecidas pelos egressos no mundo do trabalho quanto a continuidade\nem cursos de graduação são relevantes e merecem um olhar atento da instituição de\nensino. Entretanto, acredita-se que, além dessas duas, possam existir outras\ndimensões relevantes que precisam ser investigadas. Nesse ponto é que esta\npesquisa se justifica teoricamente, buscando entender quais informações oriundas\ndos egressos são importantes para construir, (re)construir e (re)avaliar as mudanças\nnos cursos de EMI.\nApesar do IFC possuir uma política de acompanhamento de egressos, nem\nsempre as informações a respeito desses sujeitos chegam aos órgãos que avaliam e\nacompanham os caminhos dos cursos. Nesse sentido, a justificativa prática se\nalicerça na perspectiva de que a pesquisa e o produto educacional contribuam para\nque o IFC – Campus Concórdia possa, através dos NDBs dos cursos de EMI,\nconsolidar essa ação de acompanhamento de egressos ressaltada como fundamental\npelos autores.\n\n[PÁG. 27] Com uma abordagem qualitativa, realizou-se uma pesquisa de natureza\naplicada,\nassim\ncaracterizada\ntanto\npelo\ndirecionamento\ndo\ntema\ndo\nacompanhamento de egressos pelos NDBs, como pela elaboração e aplicação de um\nproduto educacional. Quanto ao propósito, assumiu caráter exploratório, devido à\nnecessidade de correlacionar os aspectos evidenciados pelos sujeitos da pesquisa\ncom a abordagem trazida por fontes documentais. Sua realização foi autorizada pela\nDireção do IFC – campus Concórdia com parecer favorável do Comitê de Ética em\nPesquisa com Seres Humanos (CEPSH) do IFC.\nEm relação às etapas da pesquisa, a primeira consistiu em um levantamento\nbibliográfico e documental. Consultou-se fontes e material em bases científicas a fim\nde construir uma discussão teórica a respeito do acompanhamento de egressos e do\nNDB. Também foram consultadas as atas das reuniões do ano de 2019 dos NDBs dos\ntrês Cursos Técnicos Integrados ao Ensino Médio do IFC – Campus Concórdia. A\nescolha pelo ano de 2019 foi por ser o ano mais recente, já que a construção dos\ndados se iniciou em 2020. No total foram localizadas seis atas, sendo quatro do curso\nTécnico em Alimentos e duas do curso Técnico em Informática para internet. Em\nrelação ao curso Técnico em Agropecuária, foi informado que não haviam sido\nlavradas atas das reuniões daquele ano. Buscou-se nas atas registros de ações,\ndiscussões ou encaminhamentos realizados referentes a egressos, não tendo sido\nencontrada nenhuma menção a eles nas atas analisadas. Ainda em relação à\npesquisa documental, foram selecionados documentos institucionais que tratassem\ndo acompanhamento de egressos e das atribuições dos NDBs, a lista de documentos\nconsultados encontra-se no Apêndice E.\nNa segunda etapa da pesquisa foram realizadas entrevistas semiestruturadas\ncom os coordenadores de curso, e selecionados mais dois membros de cada núcleo\ndos três cursos de EMI do IFC – Campus Concórdia, buscando respeitar a diversidade\nde áreas de atuação e formação, totalizando nove participantes.\nPara orientar a ent",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 18,
+        "texto": "Desse modo, ao pensar a construção dos currículos do Ensino Médio Integrado\nà Educação Profissional, tendo como horizonte a emancipação humana, é preciso ter\nclareza de que a prática fragmentada e fragmentadora não é a que deve orientar a\ndiscussão. O que se busca é uma educação transformadora que toma o trabalho como\nprincípio educativo e, por isso, a discussão que gravita em torno desta pesquisa tem\ncomo referência a pedagogia histórico-crítica. Nessa linha, Ramos (2014, p. 217)\nexplica que:",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 18,
+        "texto": "A pedagogia histórico-crítica é uma teoria educacional construída por Dermeval\nSaviani no contexto das lutas que se travavam nos anos 1970 e 1980, período da\nditadura militar no Brasil. Conforme Gama e Duarte (2017), essa teoria indica\npossibilidades reais de pensar um currículo que busque uma formação humana na\nperspectiva da transição para uma nova forma de organização da sociedade. Ela\napresenta à classe que vive do trabalho a possibilidade de acesso a uma efetiva\napropriação de todo e qualquer tipo de conhecimento.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 19,
+        "texto": "Segundo Saviani (2014), a pedagogia histórico-crítica procura recuperar o\npapel da escola como instrumento de acesso ao saber elaborado. Trata-se de uma\ncontraposição ao enaltecimento, por parte da escola e de educadores, às formas\ncotidianas, espontâneas e não elaboradas da educação.\n É preciso enfatizar que o lugar da aprendizagem do saber científico\nsistematizado é a escola. E o trabalhador, ou o seu filho, depende dela para se\ntornar um sujeito menos alienado ou dominado. Desse modo, não se quer desmerecer\no conhecimento espontâneo, o conhecimento do senso comum, apenas se quer\ncaracterizar qual é o espaço de aprendizagem da escola. Esse é, na maioria das vezes,\no único acesso que a classe trabalhadora tem ao conhecimento científico, enquanto\nos não sistematizados são disponibilizados em outros espaços.\nO currículo depende do contexto em que se desenvolve e dos sujeitos\nenvolvidos, sofrendo interferências diversas. Sacristán (2000) distingue oito\nsubsistemas nos quais se expressam práticas relacionadas com o currículo que\ninfluenciam no significado pedagógico do mesmo: o âmbito da atividade político-\nadministrativa; o subsistema de participação e de controle; a ordenação do sis",
+        "citacoes_detectadas": [
+          "PEREIRA, 2017, p. 302"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 20,
+        "texto": "criação do Colégio das Fábricas pelo príncipe Dom João VI, objetivando a preparação\nda mão de obra para atender às necessidades da Coroa recentemente instalada na\nColônia e às incipientes fábricas. Cerca de um século depois, Nilo Peçanha assina o\nDecreto nº 787/1906, considerado um marco para o ensino técnico, criando quatro\nescolas profissionais. Em 1909, através do Decreto nº 7.566/1909, também assinado\npor Nilo Peçanha, é criada uma rede nacional de ensino profissional e tecnológico\ncom 19 escolas de Aprendizes Artífices (BENKENDORF; PLÁCIDO; TODOROV,\n2020). O objetivo de criar essas escolas foi o de formar operários e mão de obra por\nmeio do ensino prático-repetitivo e de conhecimentos técnicos básicos necessários à\nexecução, de forma mecânica, de um ofício (ALVES et al., 2019).\nNa perspectiva do Decreto n.º 7.566/1909, a educação profissional figurava\nmais no plano assistencial e higienista do que como um programa propriamente\neducacional. Dessa maneira, \"enquanto aos filhos das elites se configurava um projeto\nde ensino superior, para os pobres restava educação profissional de caráter\nassistencial, reafirmando as relações de poder herdadas da colônia e do império e de\nsuas ba",
+        "citacoes_detectadas": [
+          "BENKENDORF; PLÁCIDO; TODOROV,\n2020",
+          "ALVES et al., 2019",
+          "DE CASTRO; PLÁCIDO; SCHENKEL, 2020,\np. 337",
+          "FAVRETTO; SCALABRIN, 2015",
+          "PADOIN; AMORIM, 2016, p. 1"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 21,
+        "texto": "Na perspectiva da consolidação desse projeto que a autora menciona, é preciso\nque se considere o trabalho como princípio educativo, e não como mercadoria que\nobjetiva somente a geração de lucro aos proprietários dos meios de produção. Para\nmelhor compreensão desse conceito, é interessante observar a definição trazida por\nFrigotto (2008, p. 402):",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 22,
+        "texto": "Ginásio Agrícola, tendo seu funcionamento autorizado pelo Decreto nº 60.731, de 19\nde maio de 1967. A primeira turma formada foi em 1968. Elevou-se de Ginásio Agrícola\npara Colégio Agrícola em 12 de maio de 1972. Posteriormente, em 4 de outubro de\n1979, passou a denominar-se Escola Agrotécnica Federal de Concórdia. Foi\ntransformada em Autarquia Federal pela Lei nº 8.731 de 16 de novembro de 1993,\nvinculada ao Ministério da Educação, nos termos do artigo 2º do anexo I, Decreto nº\n2.147 de 14 de fevereiro de 1997, adquirindo autonomia didática, disciplinar,\nadministrativa, patrimonial e financeira. Por fim, através da Lei nº 11.892/2008, a\nEscola Agrotécnica Federal de Concórdia passou a integrar o Instituto Federal de\nEducação, Ciência e Tecnologia Catarinense, denominando-se Campus Concórdia\n(BENKENDORF; PLÁCIDO; TODOROV, 2020).\nNa proposta político-pedagógica dos IFs é estabelecida a oferta de educação\nbásica, principalmente em cursos de Ensino Médio integrado à educação profissional\ntécnica (PACHECO, 2010). É necessário, portanto, compreender o sentido do EMI\nque os IFs se propõem a trabalhar, e, para isso, é importante fazer algumas\ndiferenciações. Educação integral, educação em",
+        "citacoes_detectadas": [
+          "BENKENDORF; PLÁCIDO; TODOROV, 2020",
+          "PACHECO, 2010",
+          "MOLL, 2010, p. 1",
+          "MOURA, 2013"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 23,
+        "texto": "Logo, é importante que o EMI não seja fragmentado e que possibilite ao\nestudante sua inserção ativa na sociedade, podendo ser considerado como uma\ntravessia, conforme afirma Moura (2013, p. 707): “[...] o EMI pode ser considerado o\ngerme da formação humana integral, omnilateral ou politécnica”. É preciso ir além do\noperacional e mecanicista, e buscar uma formação humana no seu sentido pleno,\ncapaz de melhorar as condições de vida desse sujeito na totalidade.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 34,
+        "texto": "Desse modo, quando esta pesquisa assume a concepção de que “[...] o\ncurrículo faz parte, na realidade, de múltiplos tipos de práticas que não podem reduzir-\nse unicamente à prática pedagógica de ensino [...]” (SACRISTÁN, 2000, p. 22) o que\nse quer enfatizar é que, nesse currículo integrado dos cursos de EMI, os estudantes\ntêm experiências que acontecem ou são viabilizadas pelo IFC que são diferenciadas\ne que contribuem para a sua formação para além dos conteúdos. Alguns aspectos são\nevidenciados no seguinte recorte: “Sabe essas MIC, MICTI, pô, pra muitos alunos é a\nprimeira vez que o cara vê o mar entende, pra alguns alunos é a primeira vez que ele\nanda de ônibus, é uma coisa sabe” (E4TI). O docente se refere aos eventos científicos\nque são realizados pelo IFC e que acontecem em regiões distintas do estado. Além\ndesses, acontecem também os encontros de atividades culturais, como por exemplo\nbanda marcial, grupo de danças, IFCultura e atividades esportivas, além de visitas\ntécnicas às propriedades rurais, indústrias e empresas relacionadas com a área de\natuação do curso.\nEssas oportunidades, por exemplo, de conhecer o mar, ou até mesmo andar\nde ônibus, acabam se tornando um marco na",
+        "citacoes_detectadas": [
+          "SACRISTÁN, 2000, p. 22",
+          "SACRISTÁN, 2000, p. 101"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 35,
+        "texto": "Nota-se que existem pontos limitantes, e que precisam ser trabalhados para\nque o NDB tenha mais voz nos espaços em que atua. Entretanto, é preciso ressaltar\nque esse núcleo é fundamental para a reformulação do curso, é através dele que se\ndiscutem questões sobre a construção de um currículo voltado para a superação do\n“[...] academicismo clássico e do profissionalismo estreito [...]” (RAMOS, 2007, p. 554).",
+        "citacoes_detectadas": [
+          "RAMOS, 2007, p. 554"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "ALVES, L. M. S.; PLÁCIDO, R. L.; FARIA F. P., ROHR, M. L. Retalhos de experiências exitosas em Educação Profissional e Tecnológica. Debates em Educação, Maceió, v. 11, n. 24, p. 564-585, ago. 2019. ISSN 2175-6600. Disponível em: https://www.seer.ufal.br/index.php/debateseducacao/article/view/6910. Acesso em: 31 mar. 2021.",
+      "MOLL, J. Escola de tempo integral. In: OLIVEIRA, D. A.; DUARTE, A. M. C.; VIEIRA, L. M. F. (org.). Dicionário: trabalho, profissão e condição docente. Belo Horizonte: UFMG/Faculdade de Educação, 2010. Disponível em: https://gestrado.net.br/wp- 47 content/uploads/2020/08/408-1.pdf. Acesso em: 01 maio 2020.",
+      "MOURA, D. H. Ensino médio integrado: subsunção aos interesses do capital ou travessia para a formação humana integral? Educação Pesquisa, São Paulo, v. 39, n. 3, p. 705-720, 2013. Disponível em: http://www.scielo.br/pdf/ep/v39n3/10.pdf. Acesso em: 31 jan. 2020.",
+      "PACHECO, E. Os Institutos Federais: uma revolução na educação profissional e tecnológica. Brasília: MEC/SETEC, 2010. Disponível em: https://memoria.ifrn.edu.br/bitstream/handle/1044/1013/Os%20institutos%20federais %20-%20Ebook.pdf?sequence=1&isAllowed=y. Acesso em: 25 set. 2019.",
+      "PEREIRA, A. Avaliação e reformulação de currículo: relações que se (des)encontram na prática. Revista E-Curriculum, [s. l.], v. 15, n. 2, p. 293-324, 30 jun. 2017. Portal de Revistas PUC SP. DOI: http://dx.doi.org/10.23925/1809-3876.2017v15i2p293-324. Disponível em: https://revistas. pucsp.br/curriculum/article/view/13597/23097. Acesso em: 02 out. 2020.",
+      "RAMOS, M. Reforma da educação profissional: contradições na disputa por hegemonia no regime de acumulação flexível. Trabalho, Educação e Saúde, [s. l.], v. 5, n. 3, p. 545-558, nov. 2007. DOI: http://dx.doi.org/10.1590/s1981- 77462007000300013. Disponível em: http://www.scielo.br/pdf/tes/v5n3/13.pdf. Acesso em: 14 nov. 2019.",
+      "RAMOS, M. Filosofia da práxis e práticas pedagógicas de formação de trabalhadores. Trabalho & Educação, Belo Horizonte, v. 23, n.1, p. 207-218, jan./abr. 2014. Disponível em: https://periodicos.ufmg.br/index.php/trabedu/article/view/9306/6682. Acesso em: 12 jan. 2021.",
+      "SACRISTÁN, J. G. O currículo: uma reflexão sobre a prática. Porto Alegre: Artmed, 2000."
+    ]
+  }
+}

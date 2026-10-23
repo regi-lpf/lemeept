@@ -1,0 +1,210 @@
+{
+  "id": "EPT-0088",
+  "metadados_resolvidos": {
+    "ano": 2020,
+    "autor": "Luana Tillmann",
+    "orientador": "",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP2"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "PORTIFÓLIO FORMATIVO: UMA PROPOSTA DE FORMAÇÃO CONTINUADA SOBRE PRÁTICAS PEDAGÓGICAS E MATERIAIS DIDÁTICOS ACESSÍVEIS PARA INCLUSÃO DE ESTUDANTES CEGOS NO ENSINO MÉDIO INTEGRADO NO CONTEXTO DA EPT.",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/DISSERTACAO-LUANA-TILMANN-PDF-A.pdf",
+    "palavras_chave": [
+      "Estudantes cegos",
+      "Ensino Médio Integrado",
+      "Educação Profissional e Tecnológica",
+      "Inclusão escolar e acessibilidade",
+      "Produto Educacional"
+    ],
+    "autores_referenciados": [
+      "A. Nóvoa",
+      "B. Selau",
+      "C. Skliar",
+      "C. Suzart",
+      "Cílson César Fagiani",
+      "D. Diniz",
+      "D. M. de F. Villas Boas",
+      "D. Tripp",
+      "Dante Henrique Moura",
+      "Dermeval Saviani",
+      "E. F. Borges",
+      "E. P. Camargo",
+      "E. R. Rosa",
+      "Gaudêncio Frigotto",
+      "J. B. Souza",
+      "J. L. Borges",
+      "L. Boff",
+      "Laurence Bardin",
+      "Lev Vygotsky",
+      "M. Ramos",
+      "M. Thiollent",
+      "O. V. D. Weid",
+      "Paulo Freire",
+      "R. Antunes",
+      "R. C. Bogdan",
+      "R. K. Sassaki",
+      "R. M. C. Garcia",
+      "S. K. Biklen",
+      "S. M. G. Gondim",
+      "T. T. Silva"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "http://educapes.capes.gov.br/handle/capes/574586",
+    "titulo_produto": "Portfólio formativo Inclusão de estudantes cegos no Ensino Médio Integrado: conhecimentos introdutórios sobre práticas pedagógicas e materiais didáticos acessíveis",
+    "titulo_produto_bruto": "Curso – PORTFÓLIO FORMATIVO INCLUSÃO DE ESTUDANTES CEGOS NO ENSINO MÉDIO INTEGRADO: CONHECIMENTOS INTRODUTÓRIOS SOBRE PRÁTICAS PEDAGÓGICAS E MATERIAS DIDÁTICOS ACESSÍVEIS.",
+    "data_publicacao": "2020-08-26",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Tillmann, Luana",
+        "papel": "creator"
+      },
+      {
+        "nome": "Fernandes, Sônia Regina de Souza",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/574586",
+        "url": "http://educapes.capes.gov.br/handle/capes/574586"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Versao.Final.PE.Portifolio.Formativo.Luana.Tilmann",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "curso"
+    ],
+    "palavras_chave_educapes": [
+      "Cegos – Educação. Educação inclusiva. Material didático. Estudantes do ensino médio integrado. IFC. PROFEPT.",
+      "Mestrado - PROFEPT - Pólo Blumenau",
+      "Banca de Defesa do Mestrado - ProfEPT"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Portfólio Formativo",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "\n\nLUANA TILLMANN\n\nPORTFÓLIO FORMATIVO: UMA PROPOSTA DE FORMAÇÃO CONTINUADA\nSOBRE PRÁTICAS PEDAGÓGICAS E MATERIAIS DIDÁTICOS ACESSÍVEIS\nPARA INCLUSÃO DE ESTUDANTES CEGOS NO ENSINO MÉDIO INTEGRADO\n\nDissertação apresentada ao Programa de Pós-\ngraduação\nem\nEducação\nProfissional\ne\nTecnológica, ofertado pelo Campus Blumenau do\nInstituto Federal Catarinense, como parte dos\nrequisitos para a obtenção do título de Mestra em\nEducação Profissional e Tecnológica.\n\nOrientadora:\nDra.\nSônia\nRegina\nde\nSouza\nFernandes\n\nBlumenau\n2020",
+    "ficha_catalografica": "",
+    "sumario": "[PÁG. 14]\nSUMÁRIO\n\nAPRESENTAÇÃO ..................................................................................................... 12\n1 PRIMEIRAS CONSIDERAÇÕES ........................................................................... 16\n2 REFERENCIAL TEÓRICO ..................................................................................... 19\n3 ESCOLHAS METODOLÓGICAS ........................................................................... 28\n4 RESULTADOS E DISCUSSÕES ............................................................................ 32\n5 CONSIDERAÇÕES SOBRE O PROCESSO FORMATIVO PERCORRIDO .......... 41\nREFERÊNCIAS ......................................................................................................... 43\nAPÊNDICE A - PRODUTO EDUCACIONAL ............................................................. 46\nAPÊNDICE B - ENTREVISTA REPRESENTANTE CGPPE ...................................... 48\nAPÊNDICE C - TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO PARA\nREPRESENTANTE DA COORDENAÇÃO GERAL DE POLÍTICAS E PROGRAMAS\nESTUDANTIS ............................................................................................................ 51\nAPÊNDICE D - TERMO DE AUTORIZAÇÃO PARA GRAVAÇÃO DE VOZ - PARA\nREPRESENTANTE DA COORDENAÇÃO GERAL DE PROGRAMAS E POLÍTICAS\nESTUDANTIS ............................................................................................................ 55\nAPÊNDICE E - CONTEXTUALIZAÇÃO DA PESQUISA – GRUPO FOCAL ............. 57\nAPÊNDICE F - TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO PARA\nMEMBROS DO GRUPO FOCAL .............................................................................. 59\nAPÊNDICE G - TERMO DE AUTORIZAÇÃO PARA GRAVAÇÃO DE VOZ – PARA\nPARTICIPANTE DO GRUPO FOCAL ....................................................................... 64\nAPÊNDICE H - AVALIAÇÃO COLABORATIVA PRODUTO EDUCACIONAL ............ 66\n12\n\nAPRESENTAÇÃO\n\nNesta apresentação, compartilharemos informações referentes aos caminhos\npercorridos durante a trajetória acadêmica e o desenvolvimento desta pesquisa, bem\ncomo, apresentaremos o texto dissertativo, estruturado em forma de artigo, e os\naspectos relacionados ao produto educacional. O interesse por investigar o processo\nde inclusão escolar de estudantes cegos no Ensino Médio Integrado (EMI) dá-se\npelo fato de ser pessoa com deficiência visual, experienciando a cegueira, bem\ncomo por trabalhar como docente de Atendimento Educacional Especializado (AEE)\nno Instituto Federal Catarinense (IFC).\nNasci com uma doença oftalmológica hereditária, denominada Glaucoma\nCongênito, que acarreta o aumento da pressão intraocular. Passei por inúmeras\nformas de tratamento, que compreenderam desde o uso de colírios até diferentes\nintervenções cirúrgicas, com o objetivo de preservar ao máximo meu resíduo visual.\nParalelamente, cursei as etapas da Educação Básica em escola comum e frequentei\no serviço de AEE, no qual recebi atendimentos de estimulação essencial, eficiência\nvisual e reabi",
+    "resumo": "[PÁG. 11]\nRESUMO\n\nEsta pesquisa foi desenvolvida no âmbito e ao longo do Programa de Pós-\ngraduação em Educação Profissional e Tecnológica Mestrado (ProfEPT), na área de\nconcentração de estudos - Educação Profissional e Tecnológica. Entendemos essa\nmodalidade de ensino sob o prisma da formação humana integral, a qual visa a\nindissociabilidade da formação profissional e da educação básica, articulando\nciência, trabalho, tecnologia e cultura no processo formativo, de modo crítico e\nemancipatório dos estudantes, sobretudo de trabalhadores. A pesquisa está\nassociada à linha de pesquisa Práticas Educativas em EPT. Teve como objetivo\ngeral produzir um Produto Educacional, que resultou num Portfólio Formativo, com\nvistas à formação continuada sobre práticas pedagógicas e materiais didáticos\nacessíveis para inclusão de estudantes cegos no ensino médio integrado.\nParticiparam desse processo docentes e técnicos administrativos em educação do\nInstituto Federal de Educação, Ciência e Tecnologia Catarinense (IFC). Foi\ndesenvolvida sob a abordagem qualitativa, por meio da pesquisa-ação educacional,\nposto que, o olhar enquanto investigadora e docente da instituição esteve\ndirecionado para a subjetividade dos processos escolares inclusivos, para os\naspectos pedagógicos e organizacionais, bem como para as relações interpessoais.\nTrabalhamos sob uma perspectiva de ação colaborativa e de construção de\nconhecimentos profissionais com os participantes da pesquisa. Os resultados\nobtidos a partir das produções de dados anunciaram a necessidade institucional de\nampliar os conhecimentos relacionados às práticas pedagógicas inclusivas e aos\nmateriais didáticos acessíveis, condizentes com as necessidades específicas de\nestudantes cegos. No primeiro momento, elaboramos e desenvolvemos, uma\nformação continuada, cujo objetivo foi compartilhar conhecimentos profissionais\nintrodutórios ao processo de inclusão escolar, com vistas a ampliar a realização de\npráticas pedagógicas inclusivas e a disponibilização de materiais didáticos\nacessíveis ao longo do processo de ensino e aprendizagem. Essa formação foi\ndesenvolvida em caráter experimental, em um ambiente virtual de ensino e\naprendizagem (devido a pandemia), com o intuito de avaliar o produto educacional.\nAs contribuições avaliativas dos participantes apontaram para necessidade de\nreestruturação, sobretudo, em aspectos relativos à carga horária e à quantidade de\nmateriais disponibilizados. Dessa forma, após a análise das contribuições dos\nparticipantes, a proposta foi reorganizada no formato de um portfólio formativo, o\nqual sugere uma perspectiva de continuidade no processo de formação de docentes\ne TAEs. Por fim, confirmamos nossa compreensão de que a formação continuada de\nprofessores também pode se dar no próprio ato da profissão, visto que percebemos\nque nossa ação docente foi ressignificada, aperfeiçoando nossos conhecimentos\nespecíficos e nossa prática pedagógica. Da mesma forma, esta pesquisa se\napresentou relevante em nível institucional para a inclusão educacional, ao passo\nque os conhecimentos específicos e didático-pedagógicos sistematizados, tanto\nneste artigo, quanto na formação continuada, materializada como produto\neducacional, podem contribuir à minimização de barreiras e à ampliação da\npermanência, da participação e da aprendizagem na Educação Profissional e\nTecnológica.\n\nPalavras-Chave: Estudantes cegos. Ensino Médio Integrado. Educação Profissional\ne Tecnológica. Inclusão escolar e acessibilidade. Produto Educacional.",
+    "introducao": "[PÁG. 9]\nAGRADECIMENTOS\n\nAgradeço ao Instituto Federal Catarinense por proporcionar-me três\nexperiências significativas e singulares, que contemplam as dimensões pessoal,\nprofissional e acadêmica da minha vida. São elas, a outorga do meu primeiro cão-\nguia, o exercício da docência em Rede Federal e a realização do mestrado. Da\nmesma forma, na dimensão pessoal, agradeço sobretudo aqueles que sempre\nestiveram comigo, em todas as fases e de todas as formas que só nós sabemos, e\nque me ensinam diariamente o sentido do amor incondicional. Gratidão aos meus\npais, Luiza e João, pelos apoios e incentivos constantes, por darem o exemplo e\nserem o alicerce da nossa família; gratidão à minha irmã, Morgana, pelo suporte\nfísico, tecnológico e emocional, bem como pela conexão e pela cumplicidade;\ngratidão ao meu marido, Lucas, pela experiência do amor de corpos e almas, pelo\ncompanheirismo, pelos abraços reconfortantes e pelas palavras ditas e não ditas.\nNa dimensão profissional, agradeço a todos os colegas servidores e a todos\nos estudantes com os quais atuo e atuei, especialmente no Campus Santa Rosa do\nSul, pelas experiências vividas e pelos conhecimentos compartilhados, assim como,\nagradeço novamente ao IFC pela oportunidade de usufruir de licença parcial e,\nposteriormente, integral, para a realização da pós-graduação stricto sensu. Na\ndimensão acadêmica, agradeço aos professores do Mestrado ProfEPT, pelos\nconhecimentos compartilhados, pelas leituras efetuadas, reflexões realizadas e\ndiscussões estabelecidas. Gratidão a minha orientadora, professora Sônia, pela\ncredibilidade, pelas orientações e pelos ensinamentos; gratidão às amigas, Alana e\nCarol Zago, pelos cafés, pelas conversas, pelas ajudas e pela parceria, que perdura\nenquanto colegas servidoras do IFC e enquanto amizades construídas; gratidão à\nprofessora Inge e à amiga Karem, pela experiência indescritível vivida na 39ª\nReunião Nacional da ANPED e pelos vínculos estabelecidos.\nPor fim, agradeço aos professores membros da banca, pelo aceite do convite\ne pelas indicações e conselhos dados na qualificação e na defesa, repletos de\nciência, profissionalismo, gentileza e carinho. Gratidão às professoras Judith e\nAndrea, pelas amigas que são, pelos conhecimentos compartilhados, pelos sorrisos\ntrocados e pelos aprendizados vividos. Gratidão ao professor Schenkel, pelo\nensinamento de que a docência se faz com conhecimentos teóricos e prático-\npedagógicos, bem como com amor.\n\n[PÁG. 10]\nO perceber, dentro do não-ver, exige, pois, uma transação. Uma transação\npermanente entre o corpo, o espaço e os eventos do mundo. O perceber, dentro do\nnão-ver, é um permanente trabalho, envolvendo o contato com a experiência, os\nfenômenos do mundo, e um aparelho neurosensoriomotor crucialmente dependente\nde um modo tátil de pensar/perceber.\n(Joana Belarmino de Sousa, 2009)\n\n[PÁG. 11]\nRESUMO\n\nEsta pesquisa foi desenvolvida no âmbito e ao longo do Programa de Pós-\ngraduação em Educação Profissional e Tecnológica Mestrado (ProfEPT), na área de\nconcentração de estudos - Educação Profissional e Tecnológica. Entendemos essa\nmodalidade de ensino sob o prisma da formação humana integral, a qual visa a\nindissociabilidade da formação profissional e da educação básica, articulando\nciência, trabalho, tecnologia e cultura no processo formativo, de modo crítico e\nemancipatório dos estudantes, sobretudo de trabalhadores. A pesquisa está\nassociada à linha de pesquisa Práticas Educativas em EPT. Teve como objetivo\ngeral produzir um Produto Educacional, que resultou num Portfólio Formativo, com\nvistas à formação continuada sobre práticas pedagógicas e materiais didáticos\nacessíveis para inclusão de estudantes cegos no ensino médio integrado.\nParticiparam desse processo docentes e técnicos administrativos em educação do\nInstituto Federal de Educação, Ciência e Tecnologia Catarinense (IFC). Foi\ndesenvolvida sob a abordagem qualitativa, por meio da pesquisa-ação educacional,\nposto que, o olhar enquanto investigadora e docente da instituição esteve\ndirecionado para a subjetividade dos processos escolares inclusivos, para os\naspectos pedagógicos e organizacionais, bem como para as relações interpessoais.\nTrabalhamos sob uma perspectiva de ação colaborativa e de construção de\nconhecimentos profissionais com os participantes da pesquisa. Os resultados\nobtidos a partir das produções de dados anunciaram a necessidade institucional de\nampliar os conhecimentos relacionados às práticas pedagógicas inclusivas e aos\nmateriais didáticos acessíveis, condizentes com as necessidades específicas de\nestudantes cegos. No primeiro momento, elaboramos e desenvolvemos, uma\nformação continuada, cujo objetivo foi compartilhar conhecimentos profissionais\nintrodutórios ao processo de inclusão escolar, com vistas a ampliar a realização de\npráticas pedagógicas inclusivas e a disponibilização de materiais didáticos\nacessíveis ao longo do processo de ensino e aprendizagem. Essa formação foi\ndesenvolvida em caráter experimental, em um ambiente virtual de ensino e\naprendizagem (devido a pandemia), com o intuito de avaliar o produto educacional.\nAs contribuições avaliativas dos participantes apontaram para necessidade de\nreestruturação, sobretudo, em aspectos relativos à carga horária e à quantidade de\nmateriais disponibilizados. Dessa forma, após a análise das contribuições dos\nparticipantes, a proposta foi reorganizada no formato de um portfólio formativo, o\nqual sugere uma perspectiva de continuidade no processo de formação de docentes\ne TAEs. Por fim, confirmamos nossa compreensão de que a formação continuada de\nprofessores também pode se dar no próprio ato da profissão, visto que percebemos\nque nossa ação docente foi ressignificada, aperfeiçoando nossos conhecimentos\nespecíficos e nossa prática pedagógica. Da mesma forma, esta pesquisa se\napresentou relevante em nível institucional para a inclusão educacional, ao passo\nque os conhecimentos específicos e didático-pedagógicos sistematizados, tanto\nneste artigo, quanto na formação continuada, materializada como produto\neducacional, podem contribuir à minimização de barreiras e à ampliação da\npermanência, da participação e da aprendizagem na Educação Profissional e\nTecnológica.\n\nPalavras-Chave: Estudantes cegos. Ensino Médio Integrado. Educação Profissional\ne Tecnológica. Inclusão escolar e acessibilidade. Produto Educacional.\n\n[PÁG. 12]\nABSTRACT\n\nThis research was developed within the scope and through the ProfEPT Master’s\nDegree – holding the Professional and Technological Education as the concentration\narea of investigation. We understand this modality of teaching from the perspective of\nintegral human formation, which aims the inseparability of professional and\nfundamental education, that articulates science, work, technology, and culture in the\nformative process in a critical and emancipatory way of students, in particularly\nworkers. This study was associated with the line of Educational Practices researches\nin Professional and Technological Education. It had as a primary goal to produce an\neducational product, that resulted in a training portfolio, aimed at continuous\nformation about pedagogical practices and accessible teaching materials to the\ninclusion of blind students in the Integrated High School. Teachers and administrative\ntechnicians in education of Catarinense Federal Institute of Education, Science, and\nTechnology, participated in this process. This research was developed under a\nqualitative approach, through an educational research-action, as the researcher and\nprofessor perspective of the institution was directed to the subjectivity of inclusive\nschool processes, for pedagogical and organizational aspects and for interpersonal\nrelations. We work from a perspective of collaborative action and the construction of\nprofessional knowledge with research participants. The results obtained from the data\ncollection announced the institutional need to expand the knowledge related to\ninclusive pedagogical practices and",
+    "descricao_produto_na_dissertacao": "[PÁG. 11] Esta pesquisa foi desenvolvida no âmbito e ao longo do Programa de Pós-\ngraduação em Educação Profissional e Tecnológica Mestrado (ProfEPT), na área de\nconcentração de estudos - Educação Profissional e Tecnológica. Entendemos essa\nmodalidade de ensino sob o prisma da formação humana integral, a qual visa a\nindissociabilidade da formação profissional e da educação básica, articulando\nciência, trabalho, tecnologia e cultura no processo formativo, de modo crítico e\nemancipatório dos estudantes, sobretudo de trabalhadores. A pesquisa está\nassociada à linha de pesquisa Práticas Educativas em EPT. Teve como objetivo\ngeral produzir um Produto Educacional, que resultou num Portfólio Formativo, com\nvistas à formação continuada sobre práticas pedagógicas e materiais didáticos\nacessíveis para inclusão de estudantes cegos no ensino médio integrado.\nParticiparam desse processo docentes e técnicos administrativos em educação do\nInstituto Federal de Educação, Ciência e Tecnologia Catarinense (IFC). Foi\ndesenvolvida sob a abordagem qualitativa, por meio da pesquisa-ação educacional,\nposto que, o olhar enquanto investigadora e docente da instituição esteve\ndirecionado para a subjetividade dos processos escolares inclusivos, para os\naspectos pedagógicos e organizacionais, bem como para as relações interpessoais.\nTrabalhamos sob uma perspectiva de ação colaborativa e de construção de\nconhecimentos profissionais com os participantes da pesquisa. Os resultados\nobtidos a partir das produções de dados anunciaram a necessidade institucional de\nampliar os conhecimentos relacionados às práticas pedagógicas inclusivas e aos\nmateriais didáticos acessíveis, condizentes com as necessidades específicas de\nestudantes cegos. No primeiro momento, elaboramos e desenvolvemos, uma\nformação continuada, cujo objetivo foi compartilhar conhecimentos profissionais\nintrodutórios ao processo de inclusão escolar, com vistas a ampliar a realização de\npráticas pedagógicas inclusivas e a disponibilização de materiais didáticos\nacessíveis ao longo do processo de ensino e aprendizagem. Essa formação foi\ndesenvolvida em caráter experimental, em um ambiente virtual de ensino e\naprendizagem (devido a pandemia), com o intuito de avaliar o produto educacional.\nAs contribuições avaliativas dos participantes apontaram para necessidade de\nreestruturação, sobretudo, em aspectos relativos à carga horária e à quantidade de\nmateriais disponibilizados. Dessa forma, após a análise das contribuições dos\nparticipantes, a proposta foi reorganizada no formato de um portfólio formativo, o\nqual sugere uma perspectiva de continuidade no processo de formação de docentes\ne TAEs. Por fim, confirmamos nossa compreensão de que a formação continuada de\nprofessores também pode se dar no próprio ato da profissão, visto que percebemos\nque nossa ação docente foi ressignificada, aperfeiçoando nossos conhecimentos\nespecíficos e nossa prática pedagógica. Da mesma forma, esta pesquisa se\napresentou relevante em nível institucional para a inclusão educacional, ao passo\nque os conhecimentos específicos e didático-pedagógicos sistematizados, tanto\nneste artigo, quanto na formação continuada, materializada como produto\neducacional, podem contribuir à minimização de barreiras e à ampliação da\npermanência, da participação e da aprendizagem na Educação Profissional e\nTecnológica.\n\n[PÁG. 11] Palavras-Chave: Estudantes cegos. Ensino Médio Integrado. Educação Profissional\ne Tecnológica. Inclusão escolar e acessibilidade",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 16,
+        "texto": "ensino comum, com caráter não substitutivo. Destina-se aos estudantes com\ndeficiência,\ncom\nTranstorno\ndo\nEspectro\ndo\nAutismo\ne\ncom\nAltas\nHabilidades/Superdotação. Esse serviço organiza, em âmbito institucional e de\nmodo contínuo, as estratégias e os recursos pedagógicos e de acessibilidade\ncorrespondentes às especificidades dos estudantes, a fim de minimizar as barreiras\nenfrentadas por eles ao longo do processo de ensino e aprendizagem, bem como\nampliar as possibilidades de participação, de permanência e de aprendizagem. Pelo\nfato da EE, sob a perspectiva inclusiva, ser uma modalidade de ensino transversal a\ntodos os níveis, etapas e demais modalidades, ressaltamos que os estudantes da\nEPT têm assegurado legalmente o acompanhamento de tal serviço (BRASIL, 2015).\nTodavia, observamos que em âmbito nacional, até o momento, não há\nlegislação ou normativa que versa sobre a regulamentação da oferta dos serviços da\nEE sob a perspectiva inclusiva na EPT, sobretudo, no EMI. Sendo assim, as\ninstituições de ensino que compõem a Rede Federal de Educação Profissional,\nCientífica e Tecnológica, individualmente, estruturam e organizam o AEE,\ndisponibilizam os recursos pedagógicos e de acessibili",
+        "citacoes_detectadas": [
+          "BRASIL, 2015",
+          "FRIGOTTO, 2010, p. 27",
+          "FRIGOTTO, 2010, p. 30",
+          "BOFF, 1998"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 19,
+        "texto": "Nesta seção, apresentaremos as primeiras considerações acerca da pesquisa\nrealizada. Inicialmente, consideramos que o local de fala se manifestou como um\ndos pormenores pertinentes ao desenvolvimento deste estudo, uma vez que, em\nconsonância com Boff (1998), entendemos que o ponto de vista sempre será a vista\nde um ponto, porquanto pensamos a partir de onde estamos. Isso significa que as\nescolhas epistemológicas e metodológicas expostas neste artigo são o reflexo da\nsoma de múltiplas singularidades oriundas da experiência da cegueira, por meio do\nenfrentamento de distintas barreiras e formas de opressão social que resultam na\ndesigualdade de condições; do trabalho realizado no serviço de AEE de modo\ncolaborativo com os demais docentes da EPT, assim como do contínuo processo\nformativo enquanto professora pesquisadora.\nDa mesma forma, compreendemos que a educação escolar é um bem\ncomum e que tem como papel fundamental oportunizar à todas as pessoas, inclusive\nàs pessoas cegas, o acesso aos conhecimentos sistematizados construídos\nhistórica e socialmente pela humanidade (SAVIANI, 2011), ressignificando as\npráticas sociais. Assim, visualizamos a relevância da realização de investigaçõe",
+        "citacoes_detectadas": [
+          "SAVIANI, 2011",
+          "VYGOTSKI, 1997",
+          "DINIZ, 2007",
+          "BRASIL, 2015"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 22,
+        "texto": "Nesta seção, apresentaremos o referencial teórico que serviu de base para o\ndesenvolvimento da pesquisa. Partimos da compreensão de que o ser humano se\nconstitui como tal essencialmente pelo trabalho, enquanto produção da existência\nhumana, tal como pelas relações sociais e culturais estabelecidas com outrem,\nmediante um processo educativo (SAVIANI, 2007, 2011, 2014). Sob essa\nperspectiva, o autor afirma que as dimensões de trabalho e educação possuem uma\nrelação com estreito vínculo ontológico-histórico na formação humana, contudo, os\nmodos de produção correntes em determinado modelo de sociedade modificaram os\nsentidos de tal relação.\nCom base no autor (2007, 2011, 2014), percebemos que a partir da\napropriação privada da terra e dos meios de produção, assim como da mudança das\nrelações de produção comunitárias para relações de poder de dominação e\nexploração, deu-se a separação da sociedade em classes, dominantes e dominados,\ne, consequentemente, a divisão social do trabalho e da educação. Nesse sentido,\nobservamos que na sociedade capitalista “A educação é, ao mesmo tempo, uma\nexigência do e para o processo de trabalho, bem como é, ela própria, um processo\nde trabalho” (SAVIANI,",
+        "citacoes_detectadas": [
+          "SAVIANI, 2011, p. 29",
+          "SAVIANI, 2014"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 23,
+        "texto": "necessidade da transformação da sociedade, a fim de romper com a divisão\nestrutural, tanto do trabalho quanto da educação. Entretanto, consideramos que\nessa transformação social só se dará por meio do acesso de todas as pessoas, sem\ndistinção, aos conhecimentos construídos histórica e socialmente pela humanidade,\nsendo elas, por exemplo, pretas, pardas, indígenas, brancas, amarelas;\ntransgêneras, cisgêneras, agêneras, não-binárias; com deficiência, sem deficiência.\nSob o prisma de uma educação que desenvolve de maneira indissociável a\nformação intelectual, física, técnica e profissional (MOURA, 2014), nos aproximamos\nde uma concepção de EPT que visa a formação humana integral, omnilateral e\npolitécnica para todos os estudantes, através da articulação entre educação,\ntrabalho, ciência, tecnologia e cultura (MOURA, 2008, 2014; FRIGOTTO, 2010;\nRAMOS, 2010). Dessa forma, olhamos para o EMI como uma possibilidade de\nunicidade entre educação básica e formação profissional para todos os brasileiros,\nsobretudo para aqueles oriundos da classe trabalhadora, a fim de terem acesso aos\nreferidos conhecimentos e, com isso, contribuírem com a transformação das práticas\nsociais.\nNesse sentido, com",
+        "citacoes_detectadas": [
+          "MOURA, 2014",
+          "MOURA, 2014, p. 99"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 26,
+        "texto": "Nesse sentido, precisamos observar que os mecanismos de inclusão fazem\nparte da necessidade de manutenção do status quo vigente, porquanto, conforme\nsalienta o autor, o Estado precisa atender uma parcela das reivindicações\nconcernentes aos direitos daqueles segmentos e setores marginalizados,\norganizados em movimentos sociais. Assim sendo, compreendemos que a inclusão\nsocial se direciona para todas as pessoas que são subordinadas aos mecanismos\nde exclusão gerados pelo processo de globalização da economia capitalista atual\n(BORGES; FAGIANI, 2018). Isso significa que esses processos de inclusão se\ndestinam a todos aqueles que não pertencem à identidade padrão de normalidade\n(SILVA, 2000), àquelas pessoas que estão às margens e vivenciam relações de\npoder de dominação e exploração.\nNo entanto, entendemos que as perspectivas de inclusão, sejam social ou\nescolar, denotam significativa contribuição no desenvolvimento de estratégias e\nprocedimentos de equiparação de oportunidades, bem como de reconhecimento das\ndiferentes formas de ser e estar no mundo. Em contraponto, precisamos olhar para\nos processos de inclusão social a partir da lógica dialética (SAVIANI, 2014), evitando\na análise d",
+        "citacoes_detectadas": [
+          "BORGES; FAGIANI, 2018",
+          "SILVA, 2000",
+          "SAVIANI, 2014",
+          "ROSA, 2016"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 28,
+        "texto": "observamos que essa perspectiva apontada vai ao encontro de uma das\ncompreensões trazidas pelo Modelo Social da Deficiência (DINIZ, 2007), na qual se\npercebe a intersecção da deficiência com as outras características que constituem a\npessoa.\nVygotski (1997) afirma que o desenvolvimento de uma pessoa cega não pode\nser analisado com base no desenvolvimento psicológico de uma pessoa\nnormovisual, uma vez que são distintos e estão diretamente relacionados com os\nestímulos externos aos quais cada pessoa tem acesso. Igualmente, o autor\ncompreende que as pessoas cegas possuem condições de realizar determinadas\natividades, tal como alguém que enxerga normalmente, todavia necessitam de meios\ne\nmodos\nalternativos,\ndenominados\npor\nele\nde\ncaminhos\nindiretos\nde\ndesenvolvimento.\nVisualizamos que esses caminhos indiretos têm relação com as dimensões de\nacessibilidade sistematizadas por Sassaki (2009), ao esclarecer que a acessibilidade\narquitetônica prevê uma sociedade sem barreiras físicas; a comunicacional diz\nrespeito a não existência de barreiras na comunicação entre as pessoas; a\nmetodológica indica a eliminação das barreiras nos métodos e técnicas; a\ninstrumental prevê uma sociedade sem barr",
+        "citacoes_detectadas": [
+          "DINIZ, 2007"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 29,
+        "texto": "que a cultura ocidental é estruturada essencialmente sob um viés audiovisual\n(SOUZA, 2009), tanto referente à percepção de mundo quanto à forma de acesso à\ninformação, priorizando, como relata a autora, o uso dos exteroceptores como via\nsensorial de acesso ao conhecimento. Sendo assim, por meio do uso da Didática\nMultissensorial\n(SOLER,\n1999),\nos\nmateriais\ndidáticos\nsão\nutilizados\nsimultaneamente por todos os estudantes, trazendo acessibilidade para os que\npossuem deficiência visual, seja cegueira ou baixa visão, bem como, apresentando-\nse como uma via de reforço do conceito para os normovisuais.\nA partir desse prisma, o processo de inclusão de estudantes cegos, vai além\nda oferta de materiais didáticos acessíveis, também é qualificado com a realização\nde práticas pedagógicas condizentes com as características de cada um deles.\nVygotski (1997) afirma que é fundamental que os professores se apropriem dos\nconhecimentos relacionados às estratégias e aos recursos que são condizentes com\nas peculiaridades da organização psicofisiológica do estudante cego.\nNesse sentido, com base em Saviani (2011, 2014), visualizamos o professor\ncomo sujeito central do processo de ensino e aprendizagem, ",
+        "citacoes_detectadas": [
+          "SOUZA, 2009",
+          "SOLER,\n1999",
+          "NÓVOA,\n1992, p. 13"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "No mesmo sentido, Saviani (2009) aponta que a formação docente necessita\narticular a forma e o conteúdo como aspectos essenciais dessa função. Destaca\nainda que os conhecimentos prático-didáticos e o domínio dos conteúdos são\nelementos indissociáveis na prática pedagógica, uma vez que o ato docente é um\nfenômeno concreto, sendo a organização curricular das formações docentes,\nfundamental para que os professores encontrem possibilidades de avançarem da\ncuriosidade ingênua para a curiosidade epistemológica (FREIRE, 1996), do\nconhecimento sincrético para o conhecimento sintético (SAVIANI, 2009), refletindo\ncriticamente a prática pedagógica e compreendendo as relações sociais implicadas\nnos saberes elaborados.\nPor fim, compreendemos que segundo Saviani (2009), a ação docente é\ncaracterizada por dois aspectos indissociáveis, forma e conteúdo. Sob essa\nperspectiva, conforme enfatiza o autor, os processos formativos da profissão\ndocente necessitam fundamentarem-se simultaneamente nos conteúdos culturais\nespecíficos\ne\nnas\npráticas\ndidático-pedagógicas.\nNo\nmesmo\nsentido,\ncompreendendo que a qualificação dos conhecimentos profissionais docentes\nrequer práticas formativas investidas do ponto ",
+        "citacoes_detectadas": [
+          "FREIRE, 1996",
+          "SAVIANI, 2009",
+          "NÓVOA, 2009"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "BOFF, L. A águia e a galinha: uma metáfora da condição humana. Petrópolis: Editora Vozes, 1998.",
+      "DINIZ, D. O que é deficiência. Brasília: Brasiliense, 2007.",
+      "DINIZ, Deficiência e políticas sociais – entrevista com Colin Barnes. Revista Ser Social, v. 15, n. 32, p. 237-251, 2013. Disponível em: http://periodicos.unb.br/index.php/SER_Social/article/viewFile/9514/7088. Acesso em: 13 mai. 2020.",
+      "FREIRE, P. Pedagogia da autonomia: saberes necessários à prática educativa. 25 ed. São Paulo: Paz e Terra, 1996.",
+      "FRIGOTTO, G. A relação da educação profissional e tecnológica com a universalização da educação básica. In: MOLL, Jaqueline (Org.). Educação profissional e tecnológica no Brasil contemporâneo: desafios, tensões e possibilidades. Porto Alegre: Artmed, 2010. p. 25-41.",
+      "MOURA, D. H. A formação de docentes para a educação profissional e tecnológica. Revista Brasileira da Educação Profissional e Tecnológica, v. 1, n. 1, p. 23-38, jul. 2008. Disponível em: http://www2.ifrn.edu.br/ojs/index.php/RBEPT/article/view/2863/1004. Acesso em: 19 abr. 2020.",
+      "MOURA, D. H. Trabalho e formação docente para a educação profissional. Curitiba: IFPR, 2014.",
+      "NÓVOA, A. Os professores e a sua formação. Lisboa: Dom Quixote, 1992.",
+      "NÓVOA, A. Professores: imagens do futuro presente. Lisboa: Universidade de Lisboa, 2009.",
+      "ROSA, E. R. da. Deficiência e trabalho: a luta pelo direito de ser explorado. Curitiba: Edição do Autor, 2016.",
+      "SAVIANI, D. Trabalho e educação: fundamentos ontológicos e históricos. Revista Brasileira de Educação, v. 12, n. 34, p. 152-166, jan./abr. 2007. Disponível em: http://www.scielo.br/pdf/rbedu/v12n34/a12v1234.pdf. Acesso em: 02 jun. 2020.",
+      "SAVIANI, D. Formação de professores: aspectos históricos e teóricos do problema no contexto brasileiro. Revista Brasileira de Educação, v. 14, n. 40, p. 143-155, jan./abr. 2009. Disponível em: http://www.scielo.br/pdf/rbedu/v14n40/v14n40a12.pdf. Acesso em: 20 abr. 2020.",
+      "SAVIANI, D. Pedagogia Histórico Crítica: primeiras aproximações. 11 ed. Campinas: Autores Associados, 2011. 45",
+      "SAVIANI, D. A pedagogia histórico-crítica. RBBA: Revista Binacional Brasil Argentina, v. 3, n. 02, p. 11-36, dez. 2014. Disponível em: http://periodicos2.uesb.br/index.php/rbba/article/view/1405. Acesso em 04 jun. 2020.",
+      "SILVA, T. T. da. A produção social da identidade e da diferença. In: SILVA, Tomaz Tadeu da (Org.). Identidade e diferença: a perspectiva dos estudos culturais. Petrópolis: Vozes, 2000. p. 73-102.",
+      "SOLER, Miquel-Albert. Didáctica multisensorial de las ciencias. Barcelona: Ediciones Paidós Ibérica, 1999.",
+      "SOUZA, J. B. de. O que percebemos quando não vemos. Fractal: Revista de Psicologia, v. 21, n. 1, p. 179-184, Jan./Abr. 2009. Disponível em: http://www.scielo.br/scielo.php?pid=S1984- 02922009000100014&script=sci_abstract. Acesso em: 18 mai. 2020.",
+      "VYGOTSKI, L. S. Fundamentos de defectologia. Obras Escogidas Tomo V. Madrid: Visor. 1997."
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0034",
+  "ano": 2024,
+  "autor": "Izolde Rejane do Carmo",
+  "orientador": "Juliene Marques Bogo",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP1",
+  "dissertacao": {
+    "titulo": "A BIBLIOTECA NA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA: PERCEPÇÕES DE ESTUDANTES DE CURSO TÉCNICO SUBSEQUENTE DO IFSC JARAGUÁ DO SUL CÂMPUS RAU",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/11/Dissertacao-Izolde-Rejane-do-Carmo.pdf",
+    "resumo": "O Instituto Federal se consolidou como instituição de ensino de qualidade. Para se\nmanter nesse patamar, faz-se necessário que todos os setores dentro da instituição\nde ensino atuem de forma conjunta, visando à formação integral do estudante. Com\nisso em vista, a presente pesquisa foi desenvolvida no Mestrado Profissional em\nEducação Profissional e Tecnológica (ProfEPT), inserida na linha de pesquisa\n“Práticas Educativas em EPT”. A finalidade desta pesquisa foi responder à seguinte\nquestão: como estudantes de curso técnico subsequente do IFSC Jaraguá do Sul -\nRau percebem a biblioteca na Educação Profissional e Tecnológica? Assim,\nengendrou-se o objetivo geral desta pesquisa: analisar a percepção de estudantes\nde Curso Técnico Subsequente em Eletrotécnica do IFSC Jaraguá do Sul - Rau a\nrespeito da biblioteca na Educação Profissional e Tecnológica. O estudo foi de\nnatureza aplicada com abordagem qualitativa, sendo os dados coletados através de\nentrevistas gravadas, com roteiro em forma de questionário semiestruturado,\naplicado\naos\nestudantes\ndo\nCurso\nTécnico\nSubsequente\nem\nEletrotécnica,\ningressantes em 2022-2. Através do material coletado com as entrevistas, pudemos\nconstatar, com base na Análise de Discurso, que os estudantes de cursos técnicos\nsubsequentes percebem a biblioteca como um instrumento imprescindível na sua\nformação profissional, que, além do suporte pedagógico, o setor oferece instalações\nconfortáveis para o seu bem-estar físico e mental. A partir dos resultados obtidos\ncom a análise, foi desenvolvido, aplicado e avaliado um produto educacional\nelaborado em formato de quiz, jogo educacional, proposto para servir como\ninstrumento de integração do setor biblioteca com alunos ingressantes nos cursos\nofertados pelo IFSC câmpus Rau. Os resultados apontam que o produto educacional\nse mostrou eficaz no sentido de preencher a lacuna existente, até então, da\naproximação do aluno ingressante com o setor biblioteca e todas as suas normas e\nserviços, bem como, o de impulsionar e legitimar o papel e o valor da biblioteca na\nqualidade de espaço pedagógico junto aos usuários e à instituição.\nPalavras-Chave: Educação Profissional e Tecnológica. ProfEPT. Ensino. Produto\nEducacional.",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "ProfEPT",
+      "Ensino",
+      "Produto Educacional"
+    ],
+    "autores_referenciados": [
+      "Antônio Carlos Gil",
+      "Armindo Ribeiro Ferreira",
+      "Carla Roberta Moreira Ribeiro",
+      "Dante Henrique Moura",
+      "Dermeval Saviani",
+      "Eliezer Moreira Pacheco",
+      "Eni Puccinelli Orlandi",
+      "Fábio José Rauen",
+      "Fabrício José Nascimento da Silveira",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "Gizele de Melo Viana",
+      "Gloria Durban Roca",
+      "Idalberto Chiavenato",
+      "Jussara Santos Pimenta",
+      "Luiz Antônio Cunha",
+      "Marcos Aurélio Neves",
+      "Maria Cecília de Souza Minayo",
+      "Maria Ciavatta",
+      "Maria Teresa Garbin Machado",
+      "Marília de Abreu Martins de Paiva",
+      "Marise Nogueira Ramos",
+      "Matthew Battles",
+      "Paulo Nunes de Almeida",
+      "Priscila de S. C. P. Leite",
+      "Robert Charles Bogdan",
+      "Rubens Borba de Moraes",
+      "Sari Knopp Biklen",
+      "Silvia Maria Manfredi"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explora a formação integral como processo histórico-social, alinhado à Pedagogia Histórico-Crítica, com referências a Saviani sobre educação e trabalho.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 29,
+          "trecho": "Saviani (2014, p. 20) explica que \"por ser uma linguagem codificada, não pode ser adquirida espontaneamente, exige a generalização da educação sistemática própria da forma escolar\".",
+          "referencia_correspondente": "SAVIANI, Demerval. A pedagogia histórico-crítica. Revista Binacional Brasil Argentina. v. 3, n. 2, p. 11-36, 2014."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Quiz Integração Biblioteca-Aluno",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Jogo Educacional",
+    "link": "https://educapes.capes.gov.br/handle/capes/870167",
+    "publico_alvo": [
+      "estudantes_alunos"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Biblioteca",
+      "Jogo",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica - ProfEPT",
+      "Dissertação"
+    ],
+    "data_publicacao": "2024-09-27",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "DO CARMO, IZOLDE REJANE",
+        "papel": "creator"
+      },
+      {
+        "nome": "BOGO, JULIENE MARQUES",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/870167",
+        "url": "https://educapes.capes.gov.br/handle/capes/870167"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Quiz Integração Biblioteca-Aluno",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "QUIZ – INTEGRAÇÃO BIBLIOTECA – ALUNO",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "jogo"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0034 2024 izolde rejane do carmo juliene marques bogo ifc blumenau lp1 mp1 a biblioteca na educacao profissional e tecnologica percepcoes de estudantes de curso tecnico subsequente do ifsc jaragua do sul campus rau o instituto federal se consolidou como instituicao de ensino de qualidade para se manter nesse patamar faz se necessario que todos os setores dentro da instituicao de ensino atuem de forma conjunta visando a formacao integral do estudante com isso em vista a presente pesquisa foi desenvolvida no mestrado profissional em educacao profissional e tecnologica profept inserida na linha de pesquisa praticas educativas em ept a finalidade desta pesquisa foi responder a seguinte questao como estudantes de curso tecnico subsequente do ifsc jaragua do sul rau percebem a biblioteca na educacao profissional e tecnologica assim engendrou se o objetivo geral desta pesquisa analisar a percepcao de estudantes de curso tecnico subsequente em eletrotecnica do ifsc jaragua do sul rau a respeito da biblioteca na educacao profissional e tecnologica o estudo foi de natureza aplicada com abordagem qualitativa sendo os dados coletados atraves de entrevistas gravadas com roteiro em forma de questionario semiestruturado aplicado aos estudantes do curso tecnico subsequente em eletrotecnica ingressantes em 2022 2 atraves do material coletado com as entrevistas pudemos constatar com base na analise de discurso que os estudantes de cursos tecnicos subsequentes percebem a biblioteca como um instrumento imprescindivel na sua formacao profissional que alem do suporte pedagogico o setor oferece instalacoes confortaveis para o seu bem estar fisico e mental a partir dos resultados obtidos com a analise foi desenvolvido aplicado e avaliado um produto educacional elaborado em formato de quiz jogo educacional proposto para servir como instrumento de integracao do setor biblioteca com alunos ingressantes nos cursos ofertados pelo ifsc campus rau os resultados apontam que o produto educacional se mostrou eficaz no sentido de preencher a lacuna existente ate entao da aproximacao do aluno ingressante com o setor biblioteca e todas as suas normas e servicos bem como o de impulsionar e legitimar o papel e o valor da biblioteca na qualidade de espaco pedagogico junto aos usuarios e a instituicao palavras chave educacao profissional e tecnologica profept ensino produto educacional pedagogia historico critica quiz integracao biblioteca aluno material didatico instrucional jogo educacional ensino medio integrado educacao profissional e tecnologica profept ensino produto educacional biblioteca jogo programa de pos graduacao em educacao profissional e tecnologica profept dissertacao antonio carlos gil armindo ribeiro ferreira carla roberta moreira ribeiro dante henrique moura dermeval saviani eliezer moreira pacheco eni puccinelli orlandi fabio jose rauen fabricio jose nascimento da silveira gabriel kaplun gaudencio frigotto gizele de melo viana gloria durban roca idalberto chiavenato jussara santos pimenta luiz antonio cunha marcos aurelio neves maria cecilia de souza minayo maria ciavatta maria teresa garbin machado marilia de abreu martins de paiva marise nogueira ramos matthew battles paulo nunes de almeida priscila de s c p leite robert charles bogdan rubens borba de moraes sari knopp biklen silvia maria manfredi",
+    "termos_unificados": [
+      "Educação Profissional e Tecnológica",
+      "ProfEPT",
+      "Ensino",
+      "Produto Educacional",
+      "Biblioteca",
+      "Jogo",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica - ProfEPT",
+      "Dissertação"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0099",
+  "ano": 2020,
+  "autor": "Josiane Rodrigues de Jesus",
+  "orientador": "Inge Renate Frose Suhr",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP1",
+  "dissertacao": {
+    "titulo": "REVISITANDO OS CONCEITOS – BASE DA PROPOSTA CURRICULAR DO CURSO DE FORMAÇÃO DE PROFESSORES EM NÍVEL MÉDIO NO ESTADO DO PARANÁ",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/DISSERTACAO-JOSIANE-RODRIGUES-DE-JESUS-Copia.pdf",
+    "resumo": "O presente texto relata a pesquisa desenvolvida no Mestrado Profissional em\nEducação Profissional e Tecnológica (ProfEPT), situado na linha de pesquisa Práticas\nPedagógicas em EPT. A pesquisa surgiu da seguinte problematização: Qual a\ncompreensão dos professores referente aos princípios basilares da Proposta\nCurricular do Curso Formação de Docentes, nível médio, na modalidade normal, do\nestado do Paraná? Em relação aos objetivos, o geral foi investigar a compreensão\ndos docentes atuantes no Curso de Formação de Docentes - Nível Médio - Modalidade\nNormal, do Colégio Estadual Arnaldo Busato, de Coronel Vivida/PR sobre os\nprincípios basilares da Proposta Curricular do Curso de Formação de Docentes.\nQuanto aos objetivos específicos, foram: i. Caracterizar a constituição histórica e os\nprincípios basilares da Proposta Pedagógica Curricular do Curso de Formação de\nDocentes em nível médio do Estado do Paraná; ii. Investigar de que modo os docentes\nda escola pesquisada compreendem os princípios basilares que embasam a Proposta\nPedagógica Curricular do Curso de Formação de Docentes em nível médio do Estado\ndo Paraná e, iii. Elaborar, a partir dos dados coletados, um produto educacional em\nformato de E-book e aplicá-lo. No que se refere à metodologia, além de pesquisa\nbibliográfica e estudo dos dois documentos norteadores exarados pelo Estado do\nParaná para elaboração das Propostas Curriculares do referido curso, a pesquisa de\ncampo foi realizada por meio de questionários respondidos pelos professores da\nreferida escola e curso. A fundamentação teórica da pesquisa utilizou autores que\nfundamentam a educação profissional e tecnológica e os já citados documentos\nnorteadores, que sustentaram as análises dos dados. A aplicação do produto realizou-\nse através de envio aos professores para leitura e posterior preenchimento de\nformulário avaliativo no Google Forms. A partir das análises realizadas após a leitura\ndo E-book pelos professores e o preenchimento de um formulário por eles, foi possível\nobservar alguns avanços no nível de conhecimento dos professores, destacando-se\nmaior dificuldade em compreender o princípio de trabalho como princípio educativo.\nO E-book revelou ter potencial para que os professores compreendam melhor os\nprincípios basilares que embasam a proposta curricular do curso de formação de\ndocentes em nível médio, desde que associado a outras estratégias. É importante\nressaltar que a coleta das informações, bem como a aplicação do produto foram\nrealizadas no formato digital, tendo em vista as limitações decorrentes da pandemia\nde COVID-19.\n\nPalavras-chave:\nProfEPT;\nEducação\nProfissional\ne\nTecnológica;\nProduto\nEducacional; Formação de Docentes; Proposta Curricular.",
+    "palavras_chave": [
+      "ProfEPT",
+      "Educação Profissional e Tecnológica",
+      "Produto Educacional",
+      "Formação de Docentes",
+      "Proposta Curricular"
+    ],
+    "autores_referenciados": [
+      "Acácia Zeneida Kuenzer",
+      "Antônio Carlos Gil",
+      "Antonio Carlos Will Ludwig",
+      "Carlos Luiz Gonçalves",
+      "Dermeval Saviani",
+      "Ellen Cristine dos Santos Ribeiro",
+      "Eva Maria Lakatos",
+      "Gaudêncio Frigotto",
+      "Karine Martins Sobral",
+      "Luis Manuel Durão Azevedo",
+      "Maria Ciavatta",
+      "Marina de Andrade Marconi",
+      "Marise Nogueira Ramos",
+      "Paulo Freire",
+      "Renata Pimentel Jataí",
+      "Ricardo Antunes",
+      "Selma Garrido Pimenta",
+      "Tom Bottomore"
+    ],
+    "base_epistemologica": {
+      "valor": "Materialismo Histórico-Dialético",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explicita a filiação teórica ao Materialismo Histórico-Dialético, com referências a autores como Kuenzer e Saviani, e discute princípios como 'trabalho como princípio educativo' e 'integração curricular'.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 28,
+          "trecho": "O TRABALHO como princípio educativo, a PRÁXIS como princípio curricular e o DIREITO DA CRIANÇA ao atendimento escolar (PARANÁ, 2014, p. 8).",
+          "referencia_correspondente": "RAMOS, 2014"
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 31,
+          "trecho": "O trabalho (que origina a educação) é o que constitui o ser humano (SAVIANI, 2007, p. 2).",
+          "referencia_correspondente": "SAVIANI, 2007, p. 2"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "COMPREENDER E ATUAR SOB A LUZ DOS PRINCÍPIOS BASILARES DA PROPOSTA CURRICULAR DO CURSO FORMAÇÃO DE DOCENTES",
+    "tipo": "material_didatico_instrucional",
+    "formato": "E-book / Livro Digital",
+    "link": "http://educapes.capes.gov.br/handle/capes/586253",
+    "publico_alvo": [
+      "docentes_professores"
+    ],
+    "nivel_aplicacao": "Formação de Professores",
+    "palavras_chave": [
+      "Trabalho como princípio educativo",
+      "Práxis",
+      "Integração curricular",
+      "Direito da criança ao atendimento escolar",
+      "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+      "Conclusão de curso"
+    ],
+    "data_publicacao": "2021-02-05",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "JESUS, Josiane Rodrigues de",
+        "papel": "creator"
+      },
+      {
+        "nome": "SUHR, Inge Renate Frose",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/586253",
+        "url": "http://educapes.capes.gov.br/handle/capes/586253"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "COMPREENDER E ATUAR SOB A LUZ DOS PRINCÍPIOS BASILARES DA PROPOSTA CURRICULAR DO CURSO FORMAÇÃO DE DOCENTES",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "Texto – COMPREENDER E ATUAR SOB A LUZ DOS PRINCÍPIOS BASILARES DA PROPOSTA CURRICULAR DO CURSO FORMAÇÃO DE DOCENTES",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0099 2020 josiane rodrigues de jesus inge renate frose suhr ifc blumenau lp1 mp1 revisitando os conceitos base da proposta curricular do curso de formacao de professores em nivel medio no estado do parana o presente texto relata a pesquisa desenvolvida no mestrado profissional em educacao profissional e tecnologica profept situado na linha de pesquisa praticas pedagogicas em ept a pesquisa surgiu da seguinte problematizacao qual a compreensao dos professores referente aos principios basilares da proposta curricular do curso formacao de docentes nivel medio na modalidade normal do estado do parana em relacao aos objetivos o geral foi investigar a compreensao dos docentes atuantes no curso de formacao de docentes nivel medio modalidade normal do colegio estadual arnaldo busato de coronel vivida pr sobre os principios basilares da proposta curricular do curso de formacao de docentes quanto aos objetivos especificos foram i caracterizar a constituicao historica e os principios basilares da proposta pedagogica curricular do curso de formacao de docentes em nivel medio do estado do parana ii investigar de que modo os docentes da escola pesquisada compreendem os principios basilares que embasam a proposta pedagogica curricular do curso de formacao de docentes em nivel medio do estado do parana e iii elaborar a partir dos dados coletados um produto educacional em formato de e book e aplica lo no que se refere a metodologia alem de pesquisa bibliografica e estudo dos dois documentos norteadores exarados pelo estado do parana para elaboracao das propostas curriculares do referido curso a pesquisa de campo foi realizada por meio de questionarios respondidos pelos professores da referida escola e curso a fundamentacao teorica da pesquisa utilizou autores que fundamentam a educacao profissional e tecnologica e os ja citados documentos norteadores que sustentaram as analises dos dados a aplicacao do produto realizou se atraves de envio aos professores para leitura e posterior preenchimento de formulario avaliativo no google forms a partir das analises realizadas apos a leitura do e book pelos professores e o preenchimento de um formulario por eles foi possivel observar alguns avancos no nivel de conhecimento dos professores destacando se maior dificuldade em compreender o principio de trabalho como principio educativo o e book revelou ter potencial para que os professores compreendam melhor os principios basilares que embasam a proposta curricular do curso de formacao de docentes em nivel medio desde que associado a outras estrategias e importante ressaltar que a coleta das informacoes bem como a aplicacao do produto foram realizadas no formato digital tendo em vista as limitacoes decorrentes da pandemia de covid 19 palavras chave profept educacao profissional e tecnologica produto educacional formacao de docentes proposta curricular materialismo historico dialetico compreender e atuar sob a luz dos principios basilares da proposta curricular do curso formacao de docentes material didatico instrucional e book livro digital formacao de professores profept educacao profissional e tecnologica produto educacional formacao de docentes proposta curricular trabalho como principio educativo praxis integracao curricular direito da crianca ao atendimento escolar mestrado em educacao profissional e tecnologica profept conclusao de curso acacia zeneida kuenzer antonio carlos gil antonio carlos will ludwig carlos luiz goncalves dermeval saviani ellen cristine dos santos ribeiro eva maria lakatos gaudencio frigotto karine martins sobral luis manuel durao azevedo maria ciavatta marina de andrade marconi marise nogueira ramos paulo freire renata pimentel jatai ricardo antunes selma garrido pimenta tom bottomore",
+    "termos_unificados": [
+      "ProfEPT",
+      "Educação Profissional e Tecnológica",
+      "Produto Educacional",
+      "Formação de Docentes",
+      "Proposta Curricular",
+      "Trabalho como princípio educativo",
+      "Práxis",
+      "Integração curricular",
+      "Direito da criança ao atendimento escolar",
+      "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+      "Conclusão de curso"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

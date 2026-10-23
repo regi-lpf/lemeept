@@ -1,0 +1,153 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0090",
+  "ano": 2020,
+  "autor": "Cristiane Albano Marquetti",
+  "orientador": "Humberto Luis de Cesaro",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP5",
+  "dissertacao": {
+    "titulo": "MATERIAIS DIDÁTICOS ACESSÍVEIS PARA ALUNOS SURDOS: RESPEITO LINGUÍSTICO NO ENSINO MÉDIO INTEGRADO EM MODELAGEM DO VESTUÁRIO NO IFSC – JARAGUÁ DO SUL",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/DISSERTACAO-PRODUTO-CRISTIANE-ALBANO-MARQUETTI-PDF-A.pdf",
+    "resumo": "A inclusão dos estudantes surdos extrapola a atuação de um tradutor/intérprete em\nsala de aula. Este trabalho trata da produção de material didático acessível de forma\na permitir a autonomia e a independência do estudante surdo e teve como objetivo\ndesenvolver material didático orientado pela visualidade para o curso do Ensino Médio\nIntegrado Técnico em Modelagem do Vestuário. A discussão sobre Educação\nProfissional e inclusão foi balizada por autores como Quadros e Souza (2008), Ribeiro\n(2013), Carvalho (2011), Góes (2012), Lodi e Lacerda (2014), Sassaki (2010), Silva\n(2011) e Frigotto (2001). A pesquisa foi dividida em duas etapas: no primeiro momento,\nfoi realizada uma pesquisa documental de caráter exploratório para identificar as\ndemandas desses estudantes e quais suas dificuldades em relação ao processo de\nensino/aprendizagem; e o segundo momento consistiu na produção de material\ndidático acessível e na aplicação do produto educacional junto à comunidade surda.\nA análise dos dados seguiu os procedimentos da Análise de Conteúdo (Bardin, 2002).\nOs resultados indicam que é possível aumentar a autonomia e melhorar a\naprendizagem dos estudantes surdos desde que exista material didático que respeite\nas singularidades linguísticas e culturais da comunidade surda, principalmente a\nvisualidade.  \n \n \nPalavras-Chave: Educação Profissional e Tecnológica. Material acessível. Inclusão.\nEducação Bilíngue.",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Material acessível",
+      "Inclusão",
+      "Educação Bilíngue"
+    ],
+    "autores_referenciados": [
+      "Acacia Z. A. Kuenzer",
+      "Alboni Marisa Dudeque Pianovski Vieira",
+      "Alexandre Bet da Rosa Cardoso",
+      "Ana Claudia B. Lodi",
+      "Andréa da Silva Rosa",
+      "Andreia Mendiola Marcon",
+      "Annette Duburg",
+      "Antonio de Souza Junior",
+      "Bernardete Angelina Gatti",
+      "Camilla Cocchia Barreto Caetano",
+      "Catia Regina Barp Machado",
+      "Cristina B. F. Lacerda",
+      "Denise Bandeira",
+      "Denise Tolfo Silveira",
+      "Elisangela Manarim Guimarãres",
+      "Eulalia Fernandes",
+      "Fernanda Peixoto Córdova",
+      "Gaudêncio Frigotto",
+      "Gladis Perlin",
+      "Humberto Luis de Cesaro",
+      "Idavania Maria de Souza Basso",
+      "Itiro Iida",
+      "Izaura Maria de Andrade da Silva",
+      "João José Saraiva da Fonseca",
+      "Jullyana Pimenta Borges Gonçalves",
+      "Karin Strobel",
+      "Laíse Miolo de Moraes",
+      "Lia Buarque",
+      "Lodenir Becker Karnopp",
+      "M. S. F. Aranha",
+      "Malú Milani de Paula",
+      "Mara Lúcia Masutti",
+      "Mara Rubia Theis",
+      "Maria Cecília Rafael de Góes",
+      "Marianne Rossi Stumpf",
+      "Neiva de Aquino Albres",
+      "Renata Krusser",
+      "Rimar Ramalho Segala",
+      "Romeu Kazumi Sassaki",
+      "Ronice Müller de Quadros",
+      "Rosa Blanco",
+      "Rosita Edler Carvalho",
+      "Saulo Xavier Souza",
+      "Sérgio Henrique Prado Scolari",
+      "Siderly do Carmo Dahle de Almeida",
+      "Solange Maria da Rocha",
+      "Tatiana Engel Gerhardt",
+      "Uéslei Paterno",
+      "Veridiane Pinto Ribeiro",
+      "Vinícius Nascimento",
+      "Werner Heidermann"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": true,
+      "justificativa": "O texto discute equidade e inclusão com referência a Frigotto (2001), alinhando-se à crítica social e emancipação. Não há declaração explícita da matriz teórica.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 27,
+          "trecho": "Equidade significa educar de acordo com as diferenças individuais, sem que qualquer manifestação de dificuldade se traduza em impedimento à aprendizagem.",
+          "referencia_correspondente": "FRIGOTTO, Gaudêncio. Educação e Trabalho: bases para debater a Educação Profissional Emancipadora."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "MATERIAIS DIDÁTICOS ACESSÍVEIS PARA ALUNOS SURDOS: RESPEITO LINGUÍSTICO NO ENSINO MÉDIO INTEGRADO EM MODELAGEM DO VESTUÁRIO NO IFSC - JARAGUÁ DO SUL",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Curso",
+    "link": "http://educapes.capes.gov.br/handle/capes/573602",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "docentes_professores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Profept; acessibilidade; respeito linguistico; moulage cartesiana",
+      "Técnico em Modelagem do Vestuário",
+      "Modelagem do Vestuário"
+    ],
+    "data_publicacao": "2020-08-11",
+    "autores_colaboradores": [
+      {
+        "nome": "INSTITUTO FEDERAL CATARINENSE",
+        "papel": "contributor"
+      },
+      {
+        "nome": "MARQUETTI, Cristiane Albano.\r\n\r\nCESARO, Humberto Luis.",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/573602",
+        "url": "http://educapes.capes.gov.br/handle/capes/573602"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "A moulage cartesiana em vídeoaulas",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "Curso – A MOULAGE CARTESIANA EM VIDEO – AULAS",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "outro"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0090 2020 cristiane albano marquetti humberto luis de cesaro ifc blumenau lp2 mp5 materiais didaticos acessiveis para alunos surdos respeito linguistico no ensino medio integrado em modelagem do vestuario no ifsc jaragua do sul a inclusao dos estudantes surdos extrapola a atuacao de um tradutor interprete em sala de aula este trabalho trata da producao de material didatico acessivel de forma a permitir a autonomia e a independencia do estudante surdo e teve como objetivo desenvolver material didatico orientado pela visualidade para o curso do ensino medio integrado tecnico em modelagem do vestuario a discussao sobre educacao profissional e inclusao foi balizada por autores como quadros e souza 2008 ribeiro 2013 carvalho 2011 goes 2012 lodi e lacerda 2014 sassaki 2010 silva 2011 e frigotto 2001 a pesquisa foi dividida em duas etapas no primeiro momento foi realizada uma pesquisa documental de carater exploratorio para identificar as demandas desses estudantes e quais suas dificuldades em relacao ao processo de ensino aprendizagem e o segundo momento consistiu na producao de material didatico acessivel e na aplicacao do produto educacional junto a comunidade surda a analise dos dados seguiu os procedimentos da analise de conteudo bardin 2002 os resultados indicam que e possivel aumentar a autonomia e melhorar a aprendizagem dos estudantes surdos desde que exista material didatico que respeite as singularidades linguisticas e culturais da comunidade surda principalmente a visualidade palavras chave educacao profissional e tecnologica material acessivel inclusao educacao bilingue pedagogia historico critica materiais didaticos acessiveis para alunos surdos respeito linguistico no ensino medio integrado em modelagem do vestuario no ifsc jaragua do sul material didatico instrucional curso ensino medio integrado educacao profissional e tecnologica material acessivel inclusao educacao bilingue profept acessibilidade respeito linguistico moulage cartesiana tecnico em modelagem do vestuario modelagem do vestuario acacia z a kuenzer alboni marisa dudeque pianovski vieira alexandre bet da rosa cardoso ana claudia b lodi andrea da silva rosa andreia mendiola marcon annette duburg antonio de souza junior bernardete angelina gatti camilla cocchia barreto caetano catia regina barp machado cristina b f lacerda denise bandeira denise tolfo silveira elisangela manarim guimarares eulalia fernandes fernanda peixoto cordova gaudencio frigotto gladis perlin humberto luis de cesaro idavania maria de souza basso itiro iida izaura maria de andrade da silva joao jose saraiva da fonseca jullyana pimenta borges goncalves karin strobel laise miolo de moraes lia buarque lodenir becker karnopp m s f aranha malu milani de paula mara lucia masutti mara rubia theis maria cecilia rafael de goes marianne rossi stumpf neiva de aquino albres renata krusser rimar ramalho segala romeu kazumi sassaki ronice muller de quadros rosa blanco rosita edler carvalho saulo xavier souza sergio henrique prado scolari siderly do carmo dahle de almeida solange maria da rocha tatiana engel gerhardt ueslei paterno veridiane pinto ribeiro vinicius nascimento werner heidermann",
+    "termos_unificados": [
+      "Educação Profissional e Tecnológica",
+      "Material acessível",
+      "Inclusão",
+      "Educação Bilíngue",
+      "Profept; acessibilidade; respeito linguistico; moulage cartesiana",
+      "Técnico em Modelagem do Vestuário",
+      "Modelagem do Vestuário"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

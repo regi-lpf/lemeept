@@ -1,0 +1,178 @@
+{
+  "id": "EPT-0005",
+  "metadados_resolvidos": {
+    "ano": 2025,
+    "autor": "Luziana da Silva Dias",
+    "orientador": "Raquel Cardoso de Faria e Custódio",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP3"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "PRÁTICA PEDAGÓGICA INTEGRADORA EM ENSINO, PESQUISA E EXTENSÃO: UM ESTUDO NA FEIRA DO CONHECIMENTO DO INSTITUTO FEDERAL CATARINENSE.",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/12/DISSERTACAO-LUZIANA-DA-SILVA-DIAS.pdf",
+    "palavras_chave": [
+      "Ensino",
+      "Extensão",
+      "Pesquisa",
+      "Feira do Conhecimento",
+      "Práticas Pedagógicas Integradoras"
+    ],
+    "autores_referenciados": [
+      "A. L. S. Henrique",
+      "Antônio Carlos Gil",
+      "Eliezer Moreira Pacheco",
+      "F. Almeida",
+      "G. Sonia",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "H. Japiassu",
+      "J. M. Nascimento",
+      "L. Gonçalves",
+      "M. Ramos",
+      "P. de Leite",
+      "Paulo Freire",
+      "R. M. de L. Araújo"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/1133227",
+    "titulo_produto": "Articulando Pesquisa, Ensino e Extensão por meio das Práticas Integradoras na Feira do Conhecimento",
+    "titulo_produto_bruto": "ARTICULANDO ENSINO, PESQUISA E EXTENSÃO ATRAVÉS DE PRÁTICAS INTEGRADORAS NA FEIRA DO CONHECIMENTO.",
+    "data_publicacao": "2025-09-30",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Dias, Luziana da Silva",
+        "papel": "creator"
+      },
+      {
+        "nome": "Custódio, Raquel Cardoso de Faria e",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1133227",
+        "url": "https://educapes.capes.gov.br/handle/capes/1133227"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "PE Articulando EPE",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "livro digital"
+    ],
+    "palavras_chave_educapes": [
+      "Ensino, Pesquisa, Extensão",
+      "Praticas Pedagógicas Integradoras",
+      "Feira do Conhecimento",
+      "Programa de Pós-graduação em Educação Profissional e Tecnológica",
+      "Dissertação"
+    ],
+    "tipo_produto_regex": null,
+    "fonte_tipo_regex": null,
+    "formato_produto_regex": "Infográfico",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\n\nLUZIANA DA SILVA DIAS\n\nPRÁTICAS PEDAGÓGICAS INTEGRADORAS EM ENSINO, PESQUISA E\nEXTENSÃO: UM ESTUDO NAS PUBLICAÇÕES DA FEIRA DO CONHECIMENTO\nDO INSTITUTO FEDERAL CATARINENSE IBIRAMA\n\nBlumenau / SC\n2025\n\nLUZIANA DA SILVA DIAS\n\nPRÁTICAS PEDAGÓGICAS EM ENSINO, PESQUISA E EXTENSÃO: UM\nESTUDO NAS PUBLICAÇÕES DA FEIRA DO CONHECIMENTO DO INSTITUTO\nFEDERAL CATARINENSE\n\nDissertação apresentada ao Programa de Pós-\ngraduação\nem\nEducação\nProfissional\ne\nTecnológica, ofertado pelo campus Blumenau do\nInstituto Federal Catarinense, como parte dos\nrequisitos para a obtenção do título de Mestra em\nEducação Profissional e Tecnológica.\n\nOrientadora: Raquel Cardoso de Faria e Custódio\n\nBlumenau/SC\n2025",
+    "ficha_catalografica": "[PÁG. 7]\nDias, Luziana da Silva\n\nD541p Práticas pedagógicas em ensino, pesquisa e extensão: um estudo nas\npublicações da feira do conhecimento do Instituto Federal Catarinense\nIbirama / Luziana da Silva Dias; orientadora: Raquel Cardoso de Faria e\nCustódio. -- Blumenau, 2025.\n 138 p.\n Dissertação (mestrado) – Instituto Federal Catarinense, campus\nBlumenau, Mestrado Profissional em Educação Profissional Tecnológica\n(PROFEPT), Blumenau, 2025.\n Inclui referências.\n\n 1. Ensino. 2. Pesquisa. 3. Extensão. 4. Práticas Pedagógicas.\n5. Integração da Ação Educativa. I. Custódio, Raquel Cardoso de Faria.\nII. Instituto Federal Catarinense. Mestrado Profissional em Educação\nProfissional e Tecnológica. III. Título.\n\nCDD: 371\nFicha catalográfica elaborada pela bibliotecária\n Shyrlei K. Jagielski Benkendorf - CRB 14/662",
+    "sumario": "",
+    "resumo": "[PÁG. 11]\nRESUMO\n\nA presente pesquisa, inserida no tema “Práticas Pedagógicas Integradoras\nvinculadas ao Ensino, à Pesquisa e à Extensão”, tem como delimitação a análise\ndessas práticas nas publicações eletrônicas dos Anais da Feira do Conhecimento do\nInstituto Federal Catarinense (IFC) - campus Ibirama, no período dos últimos cinco\nanos. A investigação orienta-se pela questão norteadora: Quais são as práticas\npedagógicas integradoras presentes nos projetos de ensino, pesquisa e extensão\npublicados nos Anais da Feira do Conhecimento do IFC - campus Ibirama? A\nrelevância desta pesquisa decorre da necessidade de compreender como a\nintegração entre ensino, pesquisa e extensão se concretizam na prática integradora\ne quais impactos ela gera na formação discente e na relação da instituição com a\ncomunidade. Sendo assim, a pesquisa foi realizada no âmbito do Programa de Pós-\nGraduação em Educação Profissional e Tecnológica (ProfEPT) do Instituto Federal\nCatarinense – campus Blumenau. Está vinculada especificamente ao macroprojeto 3\n– Práticas Educativas no Currículo Integrado, o qual acolhe iniciativas voltadas à\nintegração curricular com vistas ao aprimoramento dos métodos de ensino e\navaliação, superando a tradicional fragmentação entre as diferentes atividades\npedagógicas. A partir da análise, foi desenvolvido o Produto Educacional do\nProfEPT, “Articulando Ensino, Pesquisa e Extensão através de Práticas Integradoras\nna Feira do Conhecimento”, com o objetivo de apresentar exemplos de práticas\npedagógicas integradoras aplicadas em projetos de ensino, pesquisa e extensão na\nFeira do Conhecimento do IFC – campus Ibirama. Para atingir os objetivos da\npesquisa seguiu-se as etapas: a) levantamento por meio de revisão bibliográfica e\ndocumental sobre os conceitos e concepções de práticas pedagógicas integradoras.\nb) identificar práticas aplicadas ao ensino, à pesquisa e à extensão no campus\nIbirama, por meio da leitura dos projetos c) analisar as publicações dos Anais da\nFeira do Conhecimento, categorizando as práticas pedagógicas identificadas,\natravés da Análise do Conteúdo de Bardin d) compreender formas de\nimplementação dessas práticas e seus impactos para a formação discente e a\ncomunidade; e) elaborar um infográfico de instruções a partir dos projetos\npublicados.\nOs resultados\napontaram\nque\nocorrem\npráticas pedagógicas\nintegradoras no ensino, pesquisa e extensão na Feira do Conhecimento, elas\nrevelam potencial para promover protagonismo discente e fortalecer vínculos\ninstitucionais com a comunidade. Em síntese, as conclusões indicam que a Feira do\nConhecimento representa espaço relevante de difusão científica e valorização de\npráticas pedagógicas integradoras e pode consolidar-se como um espaço de\nreferência na integração entre ensino, pesquisa e extensão, ampliando seus\nimpactos na comunidade acadêmica e na sociedade.\nPalavras-Chave: Ensino. Extensão. Pesquisa. Feira do Conhecimento. Práticas\nPedagógicas Integradoras.",
+    "introducao": "[PÁG. 22]\n1. INTRODUÇÃO\n\nA articulação entre ensino, pesquisa e extensão constitui um dos eixos\ncentrais para o fortalecimento da educação superior, especialmente nos Institutos\nFederais. Trata-se de um princípio estruturante que vai além da esfera acadêmica,\npois inclui também o final do ensino básico, representado pelo ensino médio integral,\nassegurando que os estudantes, ainda nessa etapa, tenham acesso a práticas que\narticulam teoria e prática e sejam inseridos em processos formativos mais amplos.\nEsse movimento busca integrar os conhecimentos produzidos em sala de aula com\nas investigações científicas e as ações junto à comunidade, como também ampliar\nos espaços de formação, promovendo a construção de saberes em sintonia com as\nrealidades sociais e culturais das comunidades atendidas.\nRealizada anualmente, a Feira do Conhecimento reúne estudantes,\nprofessores e a comunidade externa, apresentando projetos desenvolvidos nas\náreas de ensino, pesquisa e extensão. Mais do que uma exposição de resultados,\nconstitui-se em um espaço de aplicação prática e reflexiva dos conhecimentos\nadquiridos em sala de aula, fortalecendo a integração entre teoria e prática.\nAlém disso, o evento caracteriza-se pela forte interatividade, possibilitando\nque projetos de diferentes áreas dialoguem entre si e proporcionando aos\nparticipantes uma visão ampliada de como os três pilares da educação podem atuar\nde forma integrada. Para os discentes, a experiência ultrapassa a dimensão\nacadêmica, unindo desenvolvimento técnico-científico à prática social, em\nconsonância com as demandas da comunidade local.\nDesde 2020, com a criação dos Anais da Feira do Conhecimento1 em formato\neletrônico, a produção acadêmica passou a ser sistematizada e disponibilizada ao\npúblico. Atualmente, encontram-se publicadas as edições referentes ao período de\n2020 a 2024. Nesse contexto, surge a seguinte questão norteadora: Quais são as\npráticas pedagógicas integradoras presentes nos projetos de ensino, pesquisa e\nextensão publicados nos Anais da Feira do Conhecimento do IFC - Campus\nIbirama? Esta pesquisa pretende identificar as práticas pedagógicas integradoras\nregistradas nos Anais da Feira do Conhecimento ao longo dos últimos cinco anos,\ncom a expectativa de compreender como essas experiências têm se manifestado no\ncontexto institucional. Para isso, conta-se com o apoio de autores como Freire\n\n1 Disponível em: Anais da Feira do Conhecimento do IFC Campus Ibirama.\n\n[PÁG. 23]\n23\n\n(2022), Ramos (2008), Araújo e Frigotto (2015), Henrique e Nascimento (2015),\nentre outros que discutem e fundamentam as práticas pedagógicas integradoras.\nA busca inicial no Google Acadêmico pelo tema Práticas Pedagógicas\nresultou em 981 mil artigos, evidenciando a vasta produção sobre o assunto. Ao\nrestringir o período para 2019 - 2024, o número reduziu para 25 mil, indicando o\ncrescimento recente do interesse na área. Com o uso do operador booleano OR,\nampliou-se a pesquisa para práticas integradoras ou pedagógicas, alcançando 5.630\nartigos.\nNo repositório da CAPES, a categoria Práticas Pedagógicas Integradoras\nrevelou 1.667 artigos, 1.168 dissertações e 353 teses, exigindo novo refinamento\npara selecionar os materiais mais relevantes. Já no Observatório do ProfEPT2 foram\nlocalizados 18 artigos sobre práticas pedagógicas, dos quais dois tratavam\nespecificamente das PPIs, configurando-se como fonte complementar para a\ninvestigação.\nA seleção final dos artigos para leitura e utilização no projeto de pesquisa foi\nconduzida através da leitura dos resumos. A leitura dos resumos foi uma etapa\nessencial para assegurar que os artigos selecionados fossem diretamente\npertinentes à questão da pesquisa.\nO objetivo geral consiste em: identificar as práticas pedagógicas integradoras\npresentes nos projetos de ensino, pesquisa e extensão publicados nos Anais da\nFeira do Conhecimento do Instituto Federal Catarinense – Campus Ibirama.\nComo objetivos específicos temos:\n1) Levantar, por meio de revisão bibliográfica, os conceitos e concepções\nsobre práticas pedagógicas integradoras;\n2) Identificar as práticas pedagógicas integradoras aplicadas no ensino, na\npesquisa e na extensão no IFC - Campus Ibirama, através das\npublicações eletrônicas dos Anais da Feira do Conhecimento;\n3) Analisar as publicações eletrônicas dos Anais da Feira do Conhecimento;\n3.1) categorizando as práticas pedagógicas integradoras identificadas;\n3.2) Esta pesquisa não apenas identifica e categoriza as práticas\npedagógicas integradoras registradas nos Anais da Feira do Conhecimento\n\n2 Disponível em: Observatório ProfEPT.\n\n[PÁG. 24]\ndo IFC - Campus Ibirama, mas também discute seus desafios e\npotencialidades;\n4) Compreender as formas de implementação dessas práticas e seus\nimpactos para a formação discente e para a comunidade;\n5) Elaborar um infográfico, a partir das informações extraídas dos projetos\npublicados nos Anais, com foco nas práticas pedagógicas integradoras.\nComo justificativa para o desenvolvimento dessa pesquisa, apesar da ampla\nliteratura sobre práticas pedagógicas integradoras em diferentes contextos, não foi\nidentificado estudos que analisaram especificamente a Feira do Conhecimento do\nIFC - Campus Ibirama. Nesse sentido, esta pesquisa busca preencher essa lacuna,\ndialogando com referenciais teóricos e experiências de outras instituições,\npermitindo estabelecer convergências e singularidades.\nA relevância do estudo está na necessidade de compreender como a\nintegração entre ensino, pesquisa e extensão se concretizam na prática e quais\nimpactos geram na formação discente e na relação da instituição com a\ncomunidade.\nA Feira do Conhecimento se apresenta, assim, como espaço privilegiado de\nobservação e análise dessas práticas. Por meio da sistematização dos Anais, é\npossível identificar iniciativas que favorecem a integração curricular, aproximam\nteoria e prática e ampliam o diálogo entre instituição e sociedade.\nSegundo Gil (2002), pesquisar significa investigar de forma intencional e\nestruturada, buscando respostas para problemas ou aprimoramento de processos.\nNessa perspectiva, esta dissertação se propõe a evidenciar como as PPIs\ncontribuem para a formação integral dos discentes, articulando competências\ncognitivas, sociais, culturais, éticas, econômicas e tecnológicas. Essa articulação\nencontra ressonância na concepção freireana de que “não há ensino sem pesquisa\ne pesquisa sem ensino” (FREIRE, 2022, p. 30), apontando para a necessidade de\nsuperar a fragmentação disciplinar e promover aprendizagens significativas e\ncontextualizadas.\nAssim, esta pesquisa não apenas identifica e categoriza as práticas\npedagógicas integradoras registradas nos Anais da Feira do Conhecimento do IFC -\nCampus Ibirama, mas também discute seus desafios e potencialidades. Ao final,\npretende-se elaborar um infográfico como produto educacional, servindo de\nreferência a docentes, discentes e gestores, com estratégias e exemplos práticos\n\n[PÁG. 25]\n25\n\npara integrar ensino, pesquisa e extensão de forma efetiva, contextualizada e\nsocialmente relevante.\nO trabalho está organizado em capítulos: no primeiro, a introdução, onde\napresentamos a proposta de investigação; no segundo capítulo, contempla-se o\nmarco teórico com todos os conceitos que fundamentam a pesquisa; o terceiro diz\nrespeito à metodologia da pesquisa e aos procedimentos adotados para coleta e\ntratamento dos dados; o quarto apresenta análise dos dados; o quinto explica o\nproduto educacional e, por fim, o sexto traz as considerações finais. Dessa forma,\nesta pesquisa do ProfEPT se associa à linha de Práticas Educativas em EPT, pois a\nsua temática perpassa as relações de ensino aprendizagem, inserindo-se no\nmacroprojeto 3, Práticas Educativas no Currículo Integrado.\n\n[PÁG. 26]\n2. REFERENCIAL TEÓRICO\n\nEste capítulo apresenta a fundamentação teórica que embasa a pesquisa,\ncontextualizando a discussão e reunindo os principais autores que abordam\nconceitos relacionados à temática escolhida. Para isso, o capítulo foi organizado e",
+    "descricao_produto_na_dissertacao": "[PÁG. 24] do IFC - Campus Ibirama, mas também discute seus desafios e\npotencialidades;\n4) Compreender as formas de implementação dessas práticas e seus\nimpactos para a formação discente e para a comunidade;\n5) Elaborar um infográfico, a partir das informações extraídas dos projetos\npublicados nos Anais, com foco nas práticas pedagógicas integradoras.\nComo justificativa para o desenvolvimento dessa pesquisa, apesar da ampla\nliteratura sobre práticas pedagógicas integradoras em diferentes contextos, não foi\nidentificado estudos que analisaram especificamente a Feira do Conhecimento do\nIFC - Campus Ibirama. Nesse sentido, esta pesquisa busca preencher essa lacuna,\ndialogando com referenciais teóricos e experiências de outras instituições,\npermitindo estabelecer convergências e singularidades.\nA relevância do estudo está na necessidade de compreender como a\nintegração entre ensino, pesquisa e extensão se concretizam na prática e quais\nimpactos geram na formação discente e na relação da instituição com a\ncomunidade.\nA Feira do Conhecimento se apresenta, assim, como espaço privilegiado de\nobservação e análise dessas práticas. Por meio da sistematização dos Anais, é\npossível identificar iniciativas que favorecem a integração curricular, aproximam\nteoria e prática e ampliam o diálogo entre instituição e sociedade.\nSegundo Gil (2002), pesquisar significa investigar de forma intencional e\nestruturada, buscando respostas para problemas ou aprimoramento de processos.\nNessa perspectiva, esta dissertação se propõe a evidenciar como as PPIs\ncontribuem para a formação integral dos discentes, articulando competências\ncognitivas, sociais, culturais, éticas, econômicas e tecnológicas. Essa articulação\nencontra ressonância na concepção freireana de que “não há ensino sem pesquisa\ne pesquisa sem ensino” (FREIRE, 2022, p. 30), apontando para a necessidade de\nsuperar a fragmentação disciplinar e promover aprendizagens significativas e\ncontextualizadas.\nAssim, esta pesquisa não apenas identifica e categoriza as práticas\npedagógicas integradoras registradas nos Anais da Feira do Conhecimento do IFC -\nCampus Ibirama, mas também discute seus desafios e potencialidades. Ao final,\npretende-se elaborar um infográfico como produto educacional, servindo de\nreferência a docentes, discentes e gestores, com estratégias e exemplos práticos\n\n[PÁG. 25] para integrar ensino, pesquisa e extensão de forma efetiva, contextualizada e\nsocialmente relevante.\nO trabalho está organizado em capítulos: no primeiro, a introdução, onde\napresentamos a proposta de investigação; no segundo capítulo, contempla-se o\nmarco teórico com todos os conceitos que fundamentam a pesquisa; o terceiro diz\nrespeito à metodologia da pesquisa e aos procedimentos adotados para coleta e\ntratamento dos dados; o quarto apresenta análise dos dados; o quinto explica o\nproduto educacional e, por fim, o sexto traz as considerações finais. Dessa forma,\nesta pesquisa do ProfEPT se associa à linha de Práticas Educativas em EPT, pois a\nsua temática perpassa as relações de ensino aprendizagem, inserindo-se no\nmacroprojeto 3, Práticas Educativas no Currículo Integrado.\n\n[PÁG. 111] O Produto Educacional desenvolvido nesta pesquisa foi um infográfico\nintitulado “Articulando ensino, pesquisa e extensão por meio das práticas\nintegradoras na Feira do Conhecimento”. Seu conteúdo foi elaborado a partir da\nidentificação das Práticas Pedagógicas Integradoras (PPIs) presentes nos projetos\nde ensino, pesquisa e extensão publicado",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 22,
+        "texto": "A articulação entre ensino, pesquisa e extensão constitui um dos eixos\ncentrais para o fortalecimento da educação superior, especialmente nos Institutos\nFederais. Trata-se de um princípio estruturante que vai além da esfera acadêmica,\npois inclui também o final do ensino básico, representado pelo ensino médio integral,\nassegurando que os estudantes, ainda nessa etapa, tenham acesso a práticas que\narticulam teoria e prática e sejam inseridos em processos formativos mais amplos.\nEsse movimento busca integrar os conhecimentos produzidos em sala de aula com\nas investigações científicas e as ações junto à comunidade, como também ampliar\nos espaços de formação, promovendo a construção de saberes em sintonia com as\nrealidades sociais e culturais das comunidades atendidas.\nRealizada anualmente, a Feira do Conhecimento reúne estudantes,\nprofessores e a comunidade externa, apresentando projetos desenvolvidos nas\náreas de ensino, pesquisa e extensão. Mais do que uma exposição de resultados,\nconstitui-se em um espaço de aplicação prática e reflexiva dos conhecimentos\nadquiridos em sala de aula, fortalecendo a integração entre teoria e prática.\nAlém disso, o evento caracteriza-se pela forte int",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 23,
+        "texto": "(2022), Ramos (2008), Araújo e Frigotto (2015), Henrique e Nascimento (2015),\nentre outros que discutem e fundamentam as práticas pedagógicas integradoras.\nA busca inicial no Google Acadêmico pelo tema Práticas Pedagógicas\nresultou em 981 mil artigos, evidenciando a vasta produção sobre o assunto. Ao\nrestringir o período para 2019 - 2024, o número reduziu para 25 mil, indicando o\ncrescimento recente do interesse na área. Com o uso do operador booleano OR,\nampliou-se a pesquisa para práticas integradoras ou pedagógicas, alcançando 5.630\nartigos.\nNo repositório da CAPES, a categoria Práticas Pedagógicas Integradoras\nrevelou 1.667 artigos, 1.168 dissertações e 353 teses, exigindo novo refinamento\npara selecionar os materiais mais relevantes. Já no Observatório do ProfEPT2 foram\nlocalizados 18 artigos sobre práticas pedagógicas, dos quais dois tratavam\nespecificamente das PPIs, configurando-se como fonte complementar para a\ninvestigação.\nA seleção final dos artigos para leitura e utilização no projeto de pesquisa foi\nconduzida através da leitura dos resumos. A leitura dos resumos foi uma etapa\nessencial para assegurar que os artigos selecionados fossem diretamente\npertinentes à questão",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 24,
+        "texto": "do IFC - Campus Ibirama, mas também discute seus desafios e\npotencialidades;\n4) Compreender as formas de implementação dessas práticas e seus\nimpactos para a formação discente e para a comunidade;\n5) Elaborar um infográfico, a partir das informações extraídas dos projetos\npublicados nos Anais, com foco nas práticas pedagógicas integradoras.\nComo justificativa para o desenvolvimento dessa pesquisa, apesar da ampla\nliteratura sobre práticas pedagógicas integradoras em diferentes contextos, não foi\nidentificado estudos que analisaram especificamente a Feira do Conhecimento do\nIFC - Campus Ibirama. Nesse sentido, esta pesquisa busca preencher essa lacuna,\ndialogando com referenciais teóricos e experiências de outras instituições,\npermitindo estabelecer convergências e singularidades.\nA relevância do estudo está na necessidade de compreender como a\nintegração entre ensino, pesquisa e extensão se concretizam na prática e quais\nimpactos geram na formação discente e na relação da instituição com a\ncomunidade.\nA Feira do Conhecimento se apresenta, assim, como espaço privilegiado de\nobservação e análise dessas práticas. Por meio da sistematização dos Anais, é\npossível identificar iniciativas",
+        "citacoes_detectadas": [
+          "FREIRE, 2022, p. 30"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 25,
+        "texto": "para integrar ensino, pesquisa e extensão de forma efetiva, contextualizada e\nsocialmente relevante.\nO trabalho está organizado em capítulos: no primeiro, a introdução, onde\napresentamos a proposta de investigação; no segundo capítulo, contempla-se o\nmarco teórico com todos os conceitos que fundamentam a pesquisa; o terceiro diz\nrespeito à metodologia da pesquisa e aos procedimentos adotados para coleta e\ntratamento dos dados; o quarto apresenta análise dos dados; o quinto explica o\nproduto educacional e, por fim, o sexto traz as considerações finais. Dessa forma,\nesta pesquisa do ProfEPT se associa à linha de Práticas Educativas em EPT, pois a\nsua temática perpassa as relações de ensino aprendizagem, inserindo-se no\nmacroprojeto 3, Práticas Educativas no Currículo Integrado.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 32,
+        "texto": "Na próxima fase, os alunos também poderão sugerir e idealizar novas\npropostas, assim como os professores fizeram. Os resultados obtidos até agora\nmostram que a interação e integração entre as áreas são possíveis. Com o\nenvolvimento dos docentes, discentes e da comunidade, o projeto se fortalece como\num espaço funcional, multidisciplinar e interativo, contribuindo para uma educação\ncientífica de qualidade.\nO projeto de ensino, Projeto Peixário, traz várias contribuições importantes\npara o aprendizado dos discentes. Ele não se limita apenas à biologia de peixes,\nmas cria um ambiente interdisciplinar que integra diferentes áreas do conhecimento,\ncomo tecnologia, química, economia e design.\nAlguns benefícios desse projeto incluem:\na) Os alunos podem desenvolver experimentos reais, tornando o ensino mais\ndinâmico e próximo da realidade;\nb) Diferentes áreas do conhecimento se complementam, mostrando como a\nciência e a tecnologia pode atuar junta;\nc) Docentes, discentes e a comunidade trabalham em conjunto, fortalecendo o\nespírito colaborativo;\nd) O projeto estimula soluções para questões ambientais, como o tratamento\necológico de efluentes e a manutenção da qualidade da água;\ne) Além do ",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 33,
+        "texto": "O segundo projeto apresentado é o projeto de pesquisa “Mapeamento de\nCórregos e Nascentes da Floresta Nacional de Ibirama-SC11”, realizada no Alto Vale\ndo Itajaí, Santa Catarina. O estudo buscou mapear os córregos e nascentes\nlocalizados na Floresta Nacional (FLONA) de Ibirama – SC. A intenção principal foi\ngerar informações que ajudem na preservação ambiental e no manejo dos recursos\nhídricos dessa área protegida.\nO projeto de pesquisa, “Mapeamento de Córregos e Nascentes da Floresta\nNacional de Ibirama-SC” contribui significativamente para a pesquisa ao preencher\nlacunas de informações sobre os recursos hídricos da região. Suas principais\ncontribuições são:\na) O estudo fornece dados inéditos sobre córregos e nascentes não mapeados,\nauxiliando no planejamento e gestão da Unidade de Conservação;\nb) Identifica padrões de degradação e conservação, permitindo um melhor\nentendimento dos impactos ambientais na região;\nc) Os dados coletados podem servir de base para estudos relacionados à\npreservação ambiental, manejo sustentável e políticas de conservação;\nd) Fornece informações essenciais para órgãos ambientais e gestores da\nFloresta Nacional, auxiliando na tomada de decisões para a pr",
+        "citacoes_detectadas": [
+          "FREIRE, 2022, p. 31"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 37,
+        "texto": "educação bancária criticada por Freire (2022), que se sustenta em uma relação\nvertical de imposição de saberes. Ao contrário, o evento constitui-se como espaço\nde diálogo e de construção coletiva, no qual estudantes, docentes e comunidade\ninteragem em pé de igualdade.\nAssim, mais do que divulgar resultados de projetos de ensino, pesquisa e\nextensão, a Feira do Conhecimento reafirma o compromisso do Instituto Federal\nCatarinense com a democratização do saber e com a promoção de mudanças\nsociais significativas, alinhando-se às demandas e necessidades da comunidade em\nque está inserido.\nA conexão entre a ciência e a comunidade é um tema importante,\nespecialmente quando percebemos que, em muitas situações, as instituições de\nensino científico tendem a se afastar das comunidades onde estão localizadas. A\nFeira do Conhecimento do Instituto Federal Catarinense de Ibirama serve como um\nexemplo de como esses vínculos podem ser reforçados. Iniciativas como a Feira do\nConhecimento são essenciais para aproximar a ciência das pessoas, superando\nbarreiras que, em certos casos, separam os centros de ensino das comunidades que\nos cercam.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 39,
+        "texto": "Paulo Freire em seu livro Pedagogia da Autonomia (2022), propõe que a\nprática educativa deve se constituir como ato de liberdade, diálogo e transformação\nsocial. Dessa forma, propõe a construção dialógica do saber como princípio\nfundamental para práticas integradoras.\nSegundo Henrique e Nascimento (2015), às práticas integradoras recebem\nessa denominação porque envolvem a articulação de diferentes dimensões: os\nsujeitos, os saberes e as instituições. Isso significa que elas não se restringem a um\nespaço único ou a um tipo específico de interação, mas podem acontecer em\nvariados níveis, mobilizando múltiplos elementos. O resultado desse processo é a\nformação de uma rede de interações e de compartilhamento de conhecimentos, que\npode ser compreendida como uma rede epistêmica, ou seja, um conjunto de\nconexões que favorecem a circulação, a construção e a socialização dos saberes\nentre diferentes contextos.\nDe acordo com Ramos (2008), o conceito de integração pode ser\ncompreendido a partir de três sentidos principais. O primeiro deles está relacionado\nà formação omnilateral, que tem caráter filosófico e entende o ser humano em sua\ntotalidade. Nesse sentido, a formação não deve ocorrer de",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 40,
+        "texto": "de pertencimento a determinado grupo social.\nDessa forma, Ramos (2008), enfatiza que trabalho, ciência e cultura não\npodem ser pensadas separadamente, pois constituem dimensões indissociáveis. A\nintegração entre elas coloca o ser humano como sujeito ativo, capaz de construir sua\nprópria realidade e transformá-la continuamente.\nNesse\ncontexto,\nas\npráticas\npedagógicas\nintegradoras\nvisam\nao\nfortalecimento da dialogicidade entre os saberes, ampliando a percepção da\nrealidade e possibilitando uma formação crítica e contextualizada. Ao articular\ndiferentes áreas de conhecimento e promover a participação de múltiplos sujeitos,\nelas contribuem para uma compreensão mais profunda de problemas sociais,\nambientais, culturais e econômicos que atravessam a sociedade contemporânea.\nComo\nexemplo,\npode-se\npensar\nem\num\nprojeto\nescolar\nsobre\nsustentabilidade. Em vez de cada disciplina abordar o tema de forma fragmentada,\nos professores se unem para desenvolver um projeto coletivo com os estudantes,\nenvolvendo também famílias, comunidade e instituições externas, como ONGs e\nórgãos ambientais. A interdisciplinaridade aparece de modo concreto: em Ciências,\nestudam-se reciclagem e preservação ambiental; ",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 67,
+        "texto": "No âmbito da Educação Profissional e Tecnológica, esse cenário revela um\ndesafio: como institucionalizar as práticas integradoras de modo que não se\nrestrinjam a experiências específicas, mas constituam eixo estruturante dos\ncurrículos? A ausência dessa vinculação curricular pode reduzir o alcance formativo,\nquando o ideal, conforme defendem Freire (2022) e Japiassu (1976) seriam que a\nintegração entre teoria e prática, entre áreas do conhecimento e entre instituição e\nsociedade, fosse assumida como princípio permanente e transversal na formação\ndiscente.\n 4.2 Projetos de extensão analisados entre os anos de 2020 até o ano de 2024",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 87,
+        "texto": "Fonte: Elaborado pela autora (2025).\nA análise da frequência das categorias permitiu observar a seguinte\ndistribuição: atividades formativas coletivas foram identificadas em dezoito (18)\nresumos, representando a categoria mais recorrente. Esse resultado evidencia que\noficinas, cursos, encontros, rodas de conversa e demais atividades coletivas\nconstituem estratégias amplamente utilizadas nos projetos de extensão, por\nfavorecerem o diálogo, a troca de saberes e a aprendizagem colaborativa, em\nconsonância com a perspectiva de Araujo (2014), que as caracteriza como espaços\nde experimentação e construção coletiva do conhecimento.\nEm seguida, destacam-se as práticas pedagógicas integradoras em contexto\nde atividades interinstitucionais, com dezesseis (16) ocorrências, revelando a forte\npresença de parcerias com outras instituições, comunidades e setores sociais. Essa\npredominância reforça o caráter socialmente referenciado da extensão, ampliando o\nalcance das ações educativas e fortalecendo a função social do Instituto Federal.\nTais resultados também dialogam com Freire (2022), ao defender que o\nconhecimento deve ser construído na relação com a realidade concreta dos sujeitos\ne em intera",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 111,
+        "texto": "O produto educacional fundamenta-se na concepção freireana de que “não há\nensino sem pesquisa e pesquisa sem ensino” (FREIRE, 2022, p. 30), a qual defende\na integração entre os diferentes saberes e a construção coletiva do conhecimento.",
+        "citacoes_detectadas": [
+          "FREIRE, 2022, p. 30"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "FREIRE, P. Extensão ou Comunicação?. Rio de Janeiro: Paz e Terra, 1983. __________ Pedagogia da Autonomia: saberes necessários à prática educativa. 74. ed. Rio de Janeiro: Paz e Terra, 2022. __________Pedagogia do Oprimido. 84. ed. rev. e atual. Rio de Janeiro: Paz e Terra, 2022."
+    ]
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "id": "EPT-0111",
+  "metadados_resolvidos": {
+    "ano": 2026,
+    "autor": "Geandro Chiarelli",
+    "orientador": "Reginaldo Leandro Plácido",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP2",
+    "macroprojeto": "MP4"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "A IMPLANTAÇÃO DA ACADEPOL/SC SOB A PERSPECTIVA DA CULTURA ESCOLAR: CONTEXTOS POLÍTICO-SOCIAIS (1964-1978).",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2026/11/DISSERTACAO-E-PRODUTO-EDUCACIONAL-_-GEANDRO-CHIARELLI.pdf",
+    "palavras_chave": [
+      "Academia de Polícia Civil de Santa Catarina",
+      "Cultura escolar",
+      "Materialismo Histórico-Dialético",
+      "Ditadura Militar",
+      "Educação Profissional e Tecnológica"
+    ],
+    "autores_referenciados": [
+      "Acácia Zeneida Kuenzer",
+      "Ademir Valdir dos Santos",
+      "Adriana Dickel",
+      "Adriano de Campos",
+      "Adriano Nervo Codato",
+      "Agustín Escolano",
+      "Alfred Stepan",
+      "Aluízio Palmar",
+      "Álvaro P. Pires",
+      "Ana Lice Brancher",
+      "Ana Lúcia Vulfe Nötzold",
+      "Ana Paula Paes de Paula",
+      "Ana Rosa Pires Moreira",
+      "Anderson Duarte Barboza",
+      "André Chervel",
+      "André Luis Cardoso Azoubel Zulli",
+      "André Rosemberg",
+      "Angélica Aparecida Antonechen Colombo",
+      "Anita Helena Schlesener",
+      "Anthony W. Pereira",
+      "Antônio Carlos Gil",
+      "Antonio Gramsci",
+      "Antônio Viñao Frago",
+      "Artur José Poerner",
+      "Beatriz Westin de Cerqueira Leite",
+      "Bóris Fausto",
+      "Caio Navarro de Toledo",
+      "Caio Prado Júnior",
+      "Camilla Ghisleni",
+      "Carlos Fico",
+      "Caroline Silveira Bauer",
+      "Celso Martins",
+      "Ciro Campos Christo Fernandes",
+      "Clarissa G. Santos",
+      "Cláudio Gasperin",
+      "Cleber Cristiano Prodanov",
+      "Clovis Antonio Brighenti",
+      "Cristóvão Domingos de Almeida",
+      "Dafne Souza Bispo",
+      "Dante Henrique Moura",
+      "Danubia Rodrigues Fonseca",
+      "David Harvey",
+      "Denice Barbara Catani",
+      "Denise Matiola Todorov",
+      "Dermeval Saviani",
+      "Domingos Cavalcanti",
+      "Domingos Leite Lima Filho",
+      "Dominique Julia",
+      "Eda Castro Lucas de Souza",
+      "Eliezer Moreira Pacheco",
+      "Élio Gaspari",
+      "Elisa Garcia",
+      "Eliton Felipe de Souza",
+      "Ellen Meiksins Wood",
+      "Ernani Cesar de Freitas",
+      "Ester Buffa",
+      "Fabiana de Oliveira Andrade",
+      "Felipe Genovez",
+      "Fernanda Lemos Rabelo",
+      "Fernando de Souza Coelho",
+      "Florestan Fernandes",
+      "Francieli Demenech",
+      "Francisca Branco Veiga",
+      "Friedrich Engels",
+      "Gabriela Dutra Quevedo",
+      "Gaudêncio Frigotto",
+      "Gisele Masson",
+      "György Lukács",
+      "Helaine Laura Martins",
+      "Heloísa Amélia Greco",
+      "Hermeto Lima",
+      "Hoyêdo G. Lins",
+      "Iara Thiesen",
+      "Jackson Ronie Sá-Silva",
+      "Jacqueline de Oliveira Muniz",
+      "Jacques Cellard",
+      "Jailton Luiz Velloso dos Santos",
+      "João Barroso",
+      "João Henrique Zanelatto",
+      "Joel Felipe Guindani",
+      "Jorge Ferreira",
+      "José Comblin",
+      "José Cretella Júnior",
+      "José Luís Sanfelice",
+      "José Rodrigues",
+      "José Willington Germano",
+      "Josi Fernandes Dourado",
+      "Juliana de Souza Silva",
+      "Juliane Conceição Primon Serres",
+      "Juliano Cabral Pereira",
+      "Justino Magalhães",
+      "Karel Kosík",
+      "Karl Marx",
+      "Kátia Maria dos Santos Melo",
+      "Letícia Maria Schabbach",
+      "Louis Althusser",
+      "Lucia Maria Wanderley Neves",
+      "Luciane Barbosa",
+      "Luciano Mendes de Faria Filho",
+      "Luiz Felipe Souza Barros de Paiva",
+      "Luiz Felipe Tureck",
+      "Marcela Alejandra Pronko",
+      "Márcia Gardenia Monteiro de Oliveira",
+      "Marcos Araguari de Abreu",
+      "Marcos Konder Reis",
+      "Marcos Luiz Bretas",
+      "Marcos Napolitano",
+      "Marcos Renan de Souza",
+      "Maria Aparecida Casagrande",
+      "Maria Cecília de Souza Minayo",
+      "Maria Célia Marcondes de Moraes",
+      "Maria Ciavatta",
+      "Maria Guiomar da Cunha Frota",
+      "Maria Helena Moreira Alves",
+      "Maria Ligia de Oliveira Barbosa",
+      "Maria Stela de Morais",
+      "Maria Victoria de Mesquita Benevides",
+      "Mariana Joffily",
+      "Marilena Chauí",
+      "Marília Freitas de Campos Pires",
+      "Marília Patta Ramos",
+      "Mario Alighiero Manacorda",
+      "Marise Nogueira Ramos",
+      "Marlene de Fáveri",
+      "Marli André",
+      "Marlon Jorge Teza",
+      "Martha Knisely Huggins",
+      "Maryângela Aguiar Bittencourt",
+      "Mello Barreto Filho",
+      "Menga Lüdke",
+      "Michel de Certeau",
+      "Michel Foucault",
+      "Mônica Ribeiro da Silva",
+      "Natália Guimarães Lemos",
+      "Nicos Poulantzas",
+      "Paolo Nosella",
+      "Paul Ricoeur",
+      "Paula Poncioni",
+      "Pedro Demo",
+      "Perry Anderson",
+      "Pierre Bourdieu",
+      "R. Duarte",
+      "Reginaldo Leandro Plácido",
+      "Reinaldo Lindolfo Lohn",
+      "Renato Sérgio de Lima",
+      "René Armand Dreifuss",
+      "Ricardo Antunes",
+      "Ricardo Duwe",
+      "Ricardo Martins Porto Lussac",
+      "Roberto Kant de Lima",
+      "Rodrigo Ghiringhelli de Azevedo",
+      "Rodrigo Patto Sá Motta",
+      "Ronaldo Conde Aguiar",
+      "Rosana Campos",
+      "Scott Mainwaring",
+      "Sérgio Adorno",
+      "Sérgio Luiz Bezerra Trindade",
+      "Sérgio Wanderley",
+      "Shyrlei Karyna Jagielski Benkendorf",
+      "Tânia Nunes de Souza",
+      "Tania Quintaneiro",
+      "Thomas E. Skidmore",
+      "Thomas H. Holloway",
+      "Tomaz Tadeu da Silva",
+      "Vera Lúcia Chaves Petrucci",
+      "Vera Maria Candau",
+      "Vladimir I. Lênin"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/1192122",
+    "titulo_produto": "A IMPLANTAÇÃO DA ACADEPOL: DAS HERANÇAS COLONIAIS E ORIGENS DA POLÍCIA BRASILEIRA À GÊNESE DA ESCOLA DE FORMAÇÃO POLICIAL  CIVIL CATARINENSE, 1964 A 1978",
+    "titulo_produto_bruto": "A IMPLANTAÇÃO DA ACADEPOL: DAS HERANÇAS COLONIAIS E ORIGENS DA POLÍCIA BRASILEIRA À GÊNESE DA ESCOLA DE FORMAÇÃO POLICIAL CIVIL CATARINENSE, 1964 A 1978",
+    "data_publicacao": "2026-10",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "CHIARELLI, Geandro",
+        "papel": "creator"
+      },
+      {
+        "nome": "Placido, Reginaldo Leandro",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1192122",
+        "url": "https://educapes.capes.gov.br/handle/capes/1192122"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "DISSERTAÇÃO _ A IMPLANTAÇÃO DA ACADEPOL/SC SOB A PERSPECTIVA DA CULTURA ESCOLAR- CONTEXTOS POLÍTICO-SOCIAIS (1964-1978)",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "PRODUTO EDUCACIONAL _ A IMPLANTAÇÃO DA ACADEPOL- DAS HERANÇAS COLONIAIS E ORIGENS DA POLÍCIA BRASILEIRA À GÊNESE DA ESCOLA DE FORMAÇÃO POLICIAL  CIVIL CATARINENSE, 1964 A 1978",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "vídeo"
+    ],
+    "palavras_chave_educapes": [
+      "Academia de Polícia Civil de Santa Catarina",
+      "Cultura escolar",
+      "Materialismo Histórico-Dialético",
+      "Ditadura Militar",
+      "Educação Profissional e Tecnológica",
+      "História da Educação Profissional",
+      "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+      "Organização e Memória da EPT"
+    ],
+    "tipo_produto_regex": null,
+    "fonte_tipo_regex": null,
+    "formato_produto_regex": "Vídeo / Audiovisual",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "Instituto Federal Catarinense\nPrograma de Pós-Graduação em Educação Profissional e Tecnológica\nCampus Blumenau\n\nGEANDRO CHIARELLI\n\nA IMPLANTAÇÃO DA ACADEPOL/SC SOB A PERSPECTIVA DA CULTURA\nESCOLAR: CONTEXTOS POLÍTICO-SOCIAIS (1964-1978)\n\nBlumenau/SC\n09/2026\n\n1\n\nGEANDRO CHIARELLI\n\nA IMPLANTAÇÃO DA ACADEPOL/SC SOB A PERSPECTIVA DA CULTURA\nESCOLAR: CONTEXTOS POLÍTICO-SOCIAIS (1964-1978)\n\nDissertação apresentada ao Programa de Pós-\ngraduação em Educação Profissional e Tecnológica,\nofertado pelo Campus Blumenau do Instituto\nFederal Catarinense, como parte dos requisitos\npara a obtenção do título de Mestre em Educação\nProfissional e Tecnológica.\n\nOrientador: Prof. Dr. Reginaldo Leandro Plácido\n\nBlumenau/SC\n09/2026",
+    "ficha_catalografica": "[PÁG. 3]\n2\n\n Chiarelli, Geandro\n\nC532i A implantação da ACADEPOL/SC sob a perspectiva da cultura escolar:\ncontextos políticos-sociais (1964-1978) / Geandro Chiarelli; orientador:\nReginaldo Leandro Plácido. -- Blumenau, 2026.\n 206 p.\n\n Dissertação (mestrado) – Instituto Federal Catarinense, campus\nBlumenau, Mestrado Profissional em Educação Profissional Tecnológica\n(PROFEPT), Blumenau, 2026.\n\n Inclui referências.\n\n 1. Educação Profissional e Tecnológica. 2. Cultura Escolar.\n3. Materialismo Histórico-Dialético 4. Ditadura Militar Brasileira.\n4. Santa Catarina. Polícia Civil.I. Plácido, Reginaldo Leandro. II.\nInstituto Federal Catarinense. Mestrado Profissional em Educação\nProfissional e Tecnológica. III. Título.\n\nCDD: 370.9\n\nFicha catalográfica elaborada pela bibliotecária\n Shyrlei K. Jagielski Benkendorf - CRB 14/662",
+    "sumario": "",
+    "resumo": "[PÁG. 11]\n8\n\nRESUMO\n\nEsta dissertação investiga o processo histórico de implantação da Academia de\nPolícia Civil de Santa Catarina (ACADEPOL/SC), no recorte temporal de 1964 a 1978,\nsob a perspectiva teórica da cultura escolar e do método do Materialismo Histórico-\nDialético. O estudo objetivou analisar a constituição da identidade institucional e das\npráticas pedagógicas em um contexto marcado pela ditadura civil-militar e pelo pacto\noligárquico firmado entre as elites políticas catarinenses e o regime de exceção.\nMetodologicamente, adotou-se uma abordagem qualitativa que articulou pesquisa\nbibliográfica,\nanálise\ndocumental\nem\narquivos\ninstitucionais,\nentrevistas\nsemiestruturadas com sujeitos históricos que vivenciaram a gênese da escola, além\nda aplicação de questionário estruturado e da realização de grupo focal para avaliação\ndo produto educacional desenvolvido. A investigação categoriza a ACADEPOL/SC\nnão apenas como uma instituição do aparelho ideológico e repressivo de Estado, mas\ncomo uma Escola de Governo inserida na modalidade de Educação Profissional e\nTecnológica (EPT), revelando uma complexa teia de relações em que operaram,\ndurante o período pesquisado, as categorias de hegemonia, reprodução, conformismo\ne convergência. Os resultados evidenciam que a cultura escolar foi forjada nas\ncontradições inerentes à tensão entre a Doutrina de Segurança Nacional e a\nnecessidade de profissionalização técnica, resultando em um ethos marcado tanto\npela rigidez disciplinar quanto por resistências e adaptações internas. Como práxis de\nintervenção e exigência do ProfEPT, a pesquisa fundamentou o desenvolvimento de\num produto educacional em formato de documentário. O artefato atua como mediador\npedagógico para a preservação da memória institucional e o ensino da história da\nsegurança pública, instrumentalizando a formação crítica dos servidores em face das\nestruturas históricas de poder.\n\nPalavras-chave: Academia de Polícia Civil de Santa Catarina; Cultura escolar;\nMaterialismo Histórico-Dialético; Ditadura Militar; Educação Profissional e Tecnológica.",
+    "introducao": "[PÁG. 20]\n17\n\n1 INTRODUÇÃO\n\nA pesquisa tem como objeto central de investigação a implantação de uma\ninstituição de ensino voltada à instrução dos quadros da Polícia Civil catarinense.\nTodavia, a análise do cenário político-social do período é necessária para a\ncompreensão dessa investigação. Ao examinar “A implantação da ACADEPOL/SC\nsob a perspectiva da cultura escolar: contextos político-sociais, 1964 a 1978”,\nevidenciou-se a necessidade de contextualizar uma historiografia da Polícia Civil\nbrasileira e de sua respectiva instituição de ensino. Se, na atualidade, a\nACADEPOL/SC encontra seu enquadramento jurídico respaldado como escola de\ngoverno (art. 39, § 2º, da Constituição Federal de 1988), é nas determinações\nestruturais e tensões do regime civil-militar que residem suas matrizes formadoras.\nObserva-se que suas origens se encontram dialeticamente entrelaçadas aos\ncomplexos contextos ideológicos e de força daquela época. Dessa articulação, surge\na necessidade de analisar a Escola de Polícia Civil enquanto instituição de Educação\nProfissional, transcendendo o mero tecnicismo e revelando sua cultura escolar em\nface de sua especificidade.\nA temática proposta origina-se da vivência docente do pesquisador na\nACADEPOL/SC e da constatação da escassez de abordagens historiográficas sobre\nas origens da referida instituição. Notou-se que as principais histórias reveladoras dos\nreais\ncontextos\nda\nimplantação\nda\nACADEPOL/SC\neram\ntransmitidas,\npredominantemente, por meio de relatos orais, nos quais policiais veteranos\ncompartilhavam memórias dos anos iniciais da Escola de Polícia Civil. Ressalte-se\nque os profissionais atuantes nesse período, em sua quase totalidade, já se\naposentaram ou faleceram, subsistindo os fatos apenas na memória de poucos\nremanescentes. Considera-se, ainda, que o serviço público impõe a aposentadoria\ncompulsória aos 75 anos e, entre a criação da Escola em 1964 e a análise\nempreendida na pesquisa, transcorreram mais de seis décadas.\nA problematização que sustenta esta pesquisa afasta a premissa de que a\ngênese da ACADEPOL/SC consistiu em um ato pedagógico autônomo ou de mera\nneutralidade administrativa. Ao contrário, compreende-se sua implantação como uma\nresposta orgânica do Estado ditatorial à necessidade de aparelhar e alinhar a polícia\ncatarinense aos ditames da Doutrina de Segurança Nacional. Sob a justificativa da\nmodernização técnica e da profissionalização, o\nprocesso formativo\nfoi\n\n[PÁG. 21]\n18\n\ninstrumentalizado para atender às demandas de controle social e coerção exigidas\npela acelerada acumulação capitalista do período. Nesse contexto, a instituição da\népoca assumiu contornos de aparelho privado de hegemonia, forjando uma cultura\nescolar alicerçada em um currículo oculto de disciplinamento, rotinas rígidas e\nalinhamentos geopolíticos. No entanto, por não ser um espaço imune às contradições\ndialéticas, essa mesma engrenagem reprodutiva, disfarçada de neutralidade técnica\npara omitir o controle ideológico, também criou brechas e tensões internas.\nA partir dessas contradições, a pesquisa orienta-se pela seguinte questão\nbalizadora: de que modo a cultura escolar da ACADEPOL/SC, entre 1964 e 1978,\nexpressou as determinações político-ideológicas do regime civil-militar e quais as suas\nimplicações para a formação na segurança pública, sob a ótica da Educação\nProfissional e Tecnológica? A questão exige apreender as condições históricas,\npolíticas e institucionais que tornaram possível a constituição de uma cultura escolar\nespecífica no interior de um aparelho de Estado durante o período da ditadura civil-\nmilitar. É a partir dessa interrogação que se organizam os procedimentos\nmetodológicos adotados, a análise documental e iconográfica desenvolvida e a\nestruturação dos capítulos seguintes desta dissertação.\nOs discursos e relatos dos sujeitos da criação da ACADEPOL/SC limitavam-se\na versões reproduzidas por novos policiais que, embora intencionassem enaltecer os\nprecursores, estão sujeitos à \"dissociação entre imaginação e memória em busca de\numa dimensão verificada da memória (e da história)” (Quevedo; Serres, 2023, p. 355).\nQuevedo e Serres (2023) demonstram as contribuições de Paul Ricoeur (2007), o qual\nrecorre a filósofos clássicos para diferenciar imaginação de memória. Aristóteles\napresenta a função temporalizante ao declarar que “a memória é passado [sic]”, ou\nseja, a representação de algo anteriormente percebido, adquirido ou aprendido,\nanterioridade. Platão, por sua vez, alude à representação presente de uma coisa\nausente, marca da ausência. Ambos, contudo, preconizam a inclusão da problemática\nda imagem na lembrança.\nMobilizado pelo risco de que a memória da ACADEPOL/SC se convertesse\napenas em imaginação, o pesquisador assumiu o desafio investigativo da posição de\npesquisador nativo. Esta pesquisa buscou a materialização desse resgate histórico,\nelaborado de modo a evidenciar a ACADEPOL/SC como instituição de EPT,\npreservando relatos de agentes promotores dessa história, revisitando a\ndocumentação oficial e buscando a memória para além da imaginação.\n\n[PÁG. 22]\n19\n\nA relevância do estudo justifica-se pela intersecção de cinco campos\nemergentes: a história da polícia no Brasil, o enquadramento da instituição investigada\ncomo escola de governo, os contextos político-sociais envolvidos, a instituição de\nensino policial sob a ótica da educação profissional e a perspectiva da cultura escolar.\nDessa forma, a condição de pesquisador nativo, associada ao recorte temporal, impôs\nvigilância metodológica e viabilizou o acesso aprofundado às fontes primárias.\nA delimitação temporal fundamenta-se no interesse historiográfico e na\noportunidade de assegurar ao pesquisador, mesmo pertencente aos quadros da\ninstituição e docente da ACADEPOL/SC, o necessário distanciamento epistemológico,\npara evitar que preceitos pessoais enviesassem a interpretação dos dados.\nSelecionou-se, assim, a \"implantação\" como cadeia de ciclo histórico, tendo como\nlimite temporal inicial o ano de 1964, com a criação da Escola de Polícia por meio da\nLei nº 3.427, de 9 de maio de 19641, publicada no Diário Oficial do Estado de Santa\nCatarina nº 7.545, de 11 de maio de 1964, e limite terminativo o ano de 1978, ano da\naprovação do Regimento Interno da Academia de Polícia Civil pelo Decreto nº 4.471,\nde 22 de fevereiro de 1978, publicado no Diário Oficial do Estado de Santa Catarina\nnº 10.932 em Florianópolis, 28 de fevereiro de 19782. Para esclarecer tal recorte,\ndemonstram-se os conceitos dos demais ciclos: fixação, consolidação e expansão,\nconforme a literatura especializada:\n\nNeste sentido, propõe-se a seguinte caracterização de uma cadeia de\npossíveis ciclos históricos de uma instituição escolar: implantação, o período\ndos anos iniciais da fundação, construção dos processos e seus primeiros\ncontatos com o meio envolvente; fixação, os processos são plenamente\nnormatizados e a relação com o meio envolvente é plenamente estabelecida;\nconsolidação, as relações com o meio envolvente produzem transformações\nconcretas na sociedade e na instituição, os egressos são absorvidos pela\nprópria instituição; expansão, a instituição multiplica-se, estendendo-se a\noutros espaços ou suas características são importadas por outras instituições\nescolares (Plácido; Benkendorf; Todorov, 2021, p. 191).\n\nA escolha do ano de 1978 para encerrar o recorte temporal não foi aleatória,\npois ela é essencial para compreender todo o ciclo de \"implantação\" da instituição. A\ntransição administrativa começou com a mudança do nome de Escola para Academia\n\n1https://acervo.arquivopublico.sc.gov.br/uploads/r/arquivo-publico-do-estado-de-santa-catarina-\napesc/8/5/0/850afc9d9f9c92e7093c5e6620fc3893d8ba3590ed5b1c241e70382694070975/07de967a-\n60be-4971-9e6d-3badd07a6ba6-32660-DOE_7545_11_05_1964_40F.pdf\n2https://acervo.arquivopublico.sc.gov.br/uploads/r/arquivo-publico-do-estado-de-santa-catarina-\napesc/f/3/1/f31837f13e4ef6bd628b33bdfe64ad8f94dee502435ec05c6bfb76bd1bf9e601/3ceb8a30-\n9699-4864-a3d9-a09c2",
+    "descricao_produto_na_dissertacao": "[PÁG. 23] de Polícia Civil, por meio da Lei nº 5.267, de 21 de outubro de 1976. No entanto, essa\nnova identidade e a sua estrutura pedagógica e disciplinar só se consolidaram, de fato,\ncom a aprovação do seu primeiro Regimento Interno (Decreto Estadual nº 4.471, de\n22 de fevereiro de 1978). Encerrar a pesquisa em 1976 interromperia a análise pela\nmetade, excluindo o principal documento que organizou o funcionamento e a cultura\nescolar da nova Academia. Além disso, 1978 fecha essa etapa de forma coerente,\npois ocorre pouco antes do aumento das tensões políticas e sociais em Santa Catarina,\na exemplo da \"Novembrada\" em 1979. Tais eventos deram início a uma nova fase\npolítica no estado, exigindo mudanças na segurança pública e marcando, assim, o fim\nclaro da fase de implantação da ACADEPOL.\nA inserção desta pesquisa no Programa de Pós-Graduação em Educação\nProfissional\ne\nTecnológica\n(ProfEPT)\njustifica-se\npela\ncompreensão\nda\nACADEPOL/SC\ncomo\numa\ninstituição\nque\nmaterializa,\nfuncional\ne\nepistemologicamente, a formação profissional de operadores de segurança pública.\nEmbora formalmente classificada como Escola de Governo, a academia policial\noferece qualificação para uma ocupação formalmente reconhecida (CBO nº 5172) e\nintegra as dimensões de trabalho, ciência, tecnologia e cultura em seu processo\nformativo (Frigotto; Ciavatta; Ramos, 2005). Investigar a cultura escolar desta\ninstituição à luz da EPT significa, portanto, historicizar os processos formativos do\ntrabalhador da segurança pública, identificando as determinações estruturais que\nmoldaram, e ainda moldam, a formação policial civil catarinense. Como os mestrados\nprofissionais buscam intervir e transformar a realidade, esta pesquisa resultou no\ndesenvolvimento de um Produto Educacional em formato de documentário audiovisual.\nA escolha desse formato se justifica porque a linguagem em vídeo facilita a\ncompreensão da teoria. Assim, fontes primárias e relatos orais são transformados em\num material pedagógico crítico, que preserva a identidade da instituição e contribui\ndiretamente para as práticas de ensino atuais.\nQuanto aos objetivos, a pesquisa investigou o processo histórico de\nimplantação da ACADEPOL/SC. Examinaram-se as práticas pedagógicas, currículos,\nnormas e regulamentos constituintes da cultura escolar da época, compreendendo as\nrelações entre os sujeitos institucionais e suas respectivas contribuições para a\nconstrução da identidade institucional. Analisaram-se, ainda, as transformações nas\nconcepções de formação policial, identificando permanências e rupturas nos\nprocessos formativos, culminando no desenvolvimento de um produto educacional\n\n[PÁG. 24] destinado a preservar e democratizar o acesso à história institucional. A pesquisa\nintegra o referencial teórico à práxis documental mediante os objetivos a seguir.\nEsta pesquisa tem como objetivo geral analisar o processo de implantação da\nAcademia de Polícia Civil de Santa Catarina (ACADEPOL/SC) entre os anos de 1964\ne 1978, compreendendo-a sob a perspectiva da cultura escolar e identificando as\ndeterminações histórico-políticas que formaram suas práticas pedagógicas, currículos\ne relações institucionais no contexto do regime civil-militar. Para compreender essa\ndinâmica, o estudo propõe, como objetivo específico, a reconstrução do processo\nhistórico de implantação da instituição, situando-o no quadro das políticas de\nsegurança pública orquestradas no território catarinense. Em conexão com esse\ncenário, busca-se examinar as pr",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 23,
+        "texto": "de Polícia Civil, por meio da Lei nº 5.267, de 21 de outubro de 1976. No entanto, essa\nnova identidade e a sua estrutura pedagógica e disciplinar só se consolidaram, de fato,\ncom a aprovação do seu primeiro Regimento Interno (Decreto Estadual nº 4.471, de\n22 de fevereiro de 1978). Encerrar a pesquisa em 1976 interromperia a análise pela\nmetade, excluindo o principal documento que organizou o funcionamento e a cultura\nescolar da nova Academia. Além disso, 1978 fecha essa etapa de forma coerente,\npois ocorre pouco antes do aumento das tensões políticas e sociais em Santa Catarina,\na exemplo da \"Novembrada\" em 1979. Tais eventos deram início a uma nova fase\npolítica no estado, exigindo mudanças na segurança pública e marcando, assim, o fim\nclaro da fase de implantação da ACADEPOL.\nA inserção desta pesquisa no Programa de Pós-Graduação em Educação\nProfissional\ne\nTecnológica\n(ProfEPT)\njustifica-se\npela\ncompreensão\nda\nACADEPOL/SC\ncomo\numa\ninstituição\nque\nmaterializa,\nfuncional\ne\nepistemologicamente, a formação profissional de operadores de segurança pública.\nEmbora formalmente classificada como Escola de Governo, a academia policial\noferece qualificação para uma ocupação formalmente reco",
+        "citacoes_detectadas": [
+          "Frigotto; Ciavatta; Ramos, 2005"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 25,
+        "texto": "O levantamento do estado da arte em repositórios como SciELO, Google\nAcadêmico e Portal de Periódicos da CAPES revelou que a historiografia das\ninstituições de segurança pública no Brasil, sobretudo durante o regime militar (1964-\n1985), deixou de apenas exaltar essas corporações e passou a analisar de forma\ncrítica a dinâmica do ensino policial (Bretas; Rosemberg, 2013). A literatura evidencia\nque a formação nesse período era permeada por contradições. De um lado, sob forte\ninfluência da Doutrina de Segurança Nacional (Motta, 2010), o Estado e as elites\nregionais usavam as escolas para exigir obediência e formar policiais tecnicamente\npreparados, mas submissos à ideologia do governo. De outro lado, o dia a dia dessas\ninstituições sofria com a falta de estrutura, e os alunos encontravam suas próprias\nmaneiras de lidar com as regras rígidas, uma vivência que ajudou a moldar a\nidentidade complexa do profissional de segurança atual.\nApesar de os autores evidenciarem que a criação de escolas como a\nACADEPOL/SC reflete esses interesses autoritários, ainda faltam pesquisas que\ninvestiguem o surgimento dessa academia no recorte temporal de 1964 a 1978,\narticulando a perspectiva da cultura",
+        "citacoes_detectadas": [
+          "Bretas; Rosemberg, 2013",
+          "Motta, 2010"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 31,
+        "texto": "republicanos e constitucionais, atuando sob o império da lei e sujeita a mecanismos\nde controle externo, como o Ministério Público e o Poder Judiciário (Kant de Lima,\n2008). O conceito de polícia contemporâneo foca na preservação de direitos\nfundamentais e no combate especializado à criminalidade. Essa transição evidencia\na transformação de uma polícia de características político-administrativas e\npatrimonialistas para uma estrutura técnica e jurídica, alinhada à evolução do Brasil\nrumo à consolidação democrática e à garantia da cidadania. Ou seja, a instituição\npolicial contemporânea vivencia uma tensão dialética entre permanência e\ntransformação. Se há \"muito a mudar\", é porque persistem práticas de uma tradição\ninquisitorial que conflitam com a igualdade jurídica exigida pela democracia (Kant de\nLima, 1995). Contudo, a mudança já é perceptível na redefinição da identidade\nprofissional, que busca equilibrar o mandato do uso da força com a cidadania e a\nincorporação de novos saberes acadêmicos (Muniz, 1999). Essa modernização se\nconsolida pela gestão da informação e pelo uso de dados, deslocando a legitimidade\nda pura autoridade para a eficiência técnica e o respeito aos direitos ",
+        "citacoes_detectadas": [
+          "Kant de Lima,\n2008",
+          "Kant de\nLima, 1995",
+          "Muniz, 1999",
+          "Lima, 2011"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 38,
+        "texto": "mas também de valores e crenças sobre o seu papel social. Segundo Poncioni (2005),\nas academias brasileiras historicamente consolidaram um modelo policial profissional\ntradicional, caracterizado por um arranjo burocrático-militar com foco excessivo no\ncontrole do crime e na aplicação da lei, muitas vezes em detrimento de uma formação\nvoltada para a mediação de conflitos e para o relacionamento com o cidadão. Essa\nperspectiva educacional gera um paradoxo na formação policial, pois o treinamento\nrígido e técnico oferecido nos bancos escolares frequentemente se choca com a\nrealidade contingente e complexa das ruas, levando a um descompasso entre o\n\"prescrito\" e o \"vivido\". Como destaca Muniz (2001), essa formação é marcada por\ndilemas e paradoxos que refletem uma crise de identidade das instituições, em que a\neducação policial oscila entre a instrução adestradora e a necessidade de uma\nautonomia intelectual que a estrutura disciplinar muitas vezes cerceia. Sob a ótica do\nmaterialismo histórico-dialético, tal cultura escolar não é neutra, mas atua como um\nAparelho Ideológico de Estado destinado a fabricar \"corpos dóceis\" e mentalidades\nalinhadas à manutenção da ordem e da hegemonia das",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 53,
+        "texto": "A gênese da Escola de Polícia Civil de Santa Catarina, instituída em 1964 e\nefetivamente implantada em 1967, encontra-se historicamente entrelaçada à ditadura\ncivil-militar brasileira, compondo um denso contexto político-social, fundamental ao\nestudo desta pesquisa. Tal conjuntura reconfigurou a vida política, social e econômica,\ntanto em âmbito nacional quanto estadual. Em Santa Catarina, o regime caracterizou-\nse por uma complexa correlação de forças, consubstanciada no apoio ativo das elites\nlocais e na rigorosa implementação dos mecanismos federais de segurança e\nrepressão, frequentemente coordenados a partir de outras unidades federativas, dada\na regionalização do aparato coercitivo. O golpe de 1964 transcendeu a esfera político-\nmilitar, configurando-se como um movimento com ampla participação de setores civis,\nincluindo o empresariado, latifundiários e a alta hierarquia da Igreja Católica (Velloso\nDos Santos, 2019).\nDiferentemente de outras regiões onde a oposição emergiu de imediato, em\nSanta Catarina o golpe encontrou terreno fértil entre as oligarquias, o setor\nempresarial e a administração estadual. A cúpula política catarinense, historicamente\nhegemonizada pelas família",
+        "citacoes_detectadas": [
+          "Velloso\nDos Santos, 2019",
+          "Campos, 2017",
+          "Duwe, 2013",
+          "Farines; Tuyama; Auras, 2021",
+          "Pereira, 2021"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 55,
+        "texto": "sequestros, interrogatórios e torturas de cidadãos ligados à UFSC e a movimentos\nsindicais, a exemplo dos mineiros de Criciúma (Martins, 2006; Souza, 2016).\nOutro episódio significativo foi a Novembrada, ocorrida em 1979 em\nFlorianópolis durante a visita do General-Presidente João Figueiredo, consistindo em\num protesto popular massivo, liderado majoritariamente por estudantes, contra o\narrocho salarial e o autoritarismo (Fáveri, 2015). A despeito da detenção preventiva\nde lideranças estudantis, a manifestação eclodiu e foi violentamente reprimida,\nconvertendo-se em símbolo de resistência e desafiando a narrativa de tranquilidade e\napoio irrestrito ao regime (Fáveri, 2015; Santos; Paiva, 2023). A ditadura civil-militar\nem Santa Catarina operou por meio de um sistema de controle político-social\nbeneficiário da convergência da elite local (Pereira, 2021) e subordinado à lógica\nhierárquica federal. As ações repressivas, direcionadas a estudantes, trabalhadores e\nà oposição política partidária, evidenciam que o estado, longe de ser um refúgio da\nditabranda, configurou-se como palco de vigilância constante e violações sistemáticas\nde direitos humanos (Garcia, 2011).\nO contexto sociopolít",
+        "citacoes_detectadas": [
+          "Fáveri, 2015",
+          "Pereira, 2021",
+          "Garcia, 2011"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 57,
+        "texto": "atuação harmoniosa entre a esfera governamental e o setor privado. Trata-se de um\nsistema imbricado de influências políticas, acumulação de capital e controle eleitoral.\nNo período precedente ao golpe civil-militar de 1964, o cenário político de Santa\nCatarina encontrava-se polarizado entre duas grandes forças: a família Ramos,\nvinculada ao Partido Social Democrático, e a família Konder-Bornhausen, ligada à\nUnião Democrática Nacional. Tal como ocorria na macroestrutura política nacional,\nessas facções apresentavam-se como adversárias durante os pleitos eleitorais.\nContudo, na prática política de bastidores, funcionavam como um bloco hegemônico\nunificado. A rivalidade aparente configurava-se como uma disputa intraoligárquica que,\nem última instância, assegurava que o pacto oligárquico catarinense mantivesse o\ncontrole perpétuo do aparelho estatal.\nCom a deflagração do golpe de 1964, operou-se uma reconfiguração abrupta\nno cenário nacional, à qual o pacto oligárquico catarinense reagiu com celeridade e\npragmatismo. Imediatamente após a deposição de João Goulart, o governador\ncatarinense Celso Ramos declarou adesão irrestrita ao movimento militar,\norganizando, na sequência, a \"Marcha ",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 58,
+        "texto": "Os 21 anos subsequentes de ditadura foram sustentados pelo discurso do\n\"Milagre Econômico\", cujo custo social foi o recrudescimento da repressão e a perda\nde vidas humanas. Com a imposição do bipartidarismo pelo Ato Institucional nº 2, que\ninstituiu a ARENA como partido governista e o MDB como oposição consentida, as\nFigura 7 - Capa do Jornal “O Estado” de 02 de abril de 1964. Na parte inferior à direita, o manifesto\ndo governador Celso Ramos apoiando o golpe civil-militar, intitulado “Ao Povo Catarinense”\nFonte: Arquivo público da Hemeroteca Digital Catarinense, acervo digitalizado do jornal “O Estado\nde Florianópolis” 1915-1979, edição 14900. Destaque em vermelho adicionado pelo autor.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 59,
+        "texto": "oligarquias catarinenses, outrora rivais, unificaram-se formalmente. A migração em\nmassa dos quadros do pacto oligárquico catarinense para a ARENA consolidou a base\nde sustentação civil do regime militar no estado.\nEssa fusão das frações de classe dominantes transformou Santa Catarina em\numa vitrine do modelo de desenvolvimento da ditadura. O fundo público tornou-se\npeça central no financiamento de empresas privadas aliadas ao pacto oligárquico\ncatarinense, estabelecendo uma parceria na qual o Estado e a iniciativa privada\nexpandiam seus lucros mutuamente, sustentados pelo silenciamento das vozes\ndissidentes mediante a repressão.\nTodavia, a hegemonia não é estática e enfrenta contradições dialéticas. As\nprimeiras fissuras no monólito governista surgiram nas urnas em 1974, quando o\ncandidato ao Senado pelo MDB derrotou a situação, conferindo novo fôlego à\nresistência. A resposta do regime foi o endurecimento repressivo, materializado na\nOperação Barriga Verde em 1975, que deteve dezenas de militantes, e na repressão\nà Novembrada em 1979, massivo protesto popular em Florianópolis durante a visita\ndo general João Figueiredo.\nDiante da inevitabilidade da abertura política, o pacto olig",
+        "citacoes_detectadas": [
+          "Gramsci, 2024, p. 54"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 60,
+        "texto": "das estruturas de poder preexistentes. As mudanças operadas garantiram a\ncontinuidade do pacto oligárquico catarinense. Em última análise, o caso catarinense\nsuscita o questionamento historiográfico se tal fenômeno constitui uma exceção ou se\nreflete a regra da transição brasileira, ou seja, uma \"democracia\" gerida pelas mesmas\nelites que sustentaram o arbítrio.\nA lógica do “consórcio” e a estética do “estado perfeito”, veiculadas pela obra\nSanta Catarina, Terra e Gente, encontram na Escola de Polícia Civil um novo ambiente\npara representação da aparente normalidade social por meio da prática educativa\naplicada. A idealização da realidade catarinense, destinada a encobrir as contradições\ndo regime ditatorial, manifesta-se na construção de uma cultura escolar com\naparência estritamente técnica e apolítica, direcionada à modernização administrativa\nsob o pretexto de \"ordem e progresso\". Assim, o exame desse pacto entre elites é\nimprescindível para revelar de que maneira a identidade escolar foi moldada para\nfuncionar como um mecanismo de legitimação social. Ao profissionalizar o policial sob\no pretexto da eficiência técnica, a instituição colaborava para ocultar a violência estatal,\n",
+        "citacoes_detectadas": [
+          "Saviani, 2012"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 61,
+        "texto": "pública em estrita consonância com os preceitos do governo militar (Brancher; Lohn,\n2014). O período compreendeu as gestões sucessivas de Celso Ramos, Ivo Silveira,\nColombo Machado Salles, Antônio Carlos Konder Reis, Jorge Bornhausen, Henrique\nCórdova e Esperidião Amin.\nEvidencia-se, nesse intervalo, uma robusta articulação política que permitiu a\nessas lideranças locais não apenas oferecer suporte, mas também serem sustentadas\npelas sucessivas administrações ditatoriais. Essa relação evidencia a estreita\nintegração e o alinhamento orgânico entre o governo catarinense e o projeto\nautoritário nacional. A Figura 8 sistematiza a linha do tempo dos governadores\ncatarinenses, ilustrando como as oligarquias tradicionais se mantiveram alinhadas ao\nregime. O gráfico evidencia que a troca de governantes não passou de um arranjo\ninterno da própria elite, o que Gramsci (2000b) chama de “transformismo”. Na prática,\nessa falsa alternância garantiu a manutenção do pacto de poder regional e a total\nsubordinação às ordens autoritárias de Brasília.\nA trajetória política do Poder Executivo em Santa Catarina durante a ditadura\nmilitar revela um padrão de acomodação e alinhamento estratégico das elite",
+        "citacoes_detectadas": [
+          "Brancher; Lohn,\n2014",
+          "Campos, 2017"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 63,
+        "texto": "Ivo Silveira (1966-1971): A consolidação do bipartidarismo. Sucessor\nvinculado à família Ramos, Ivo Silveira enfrentou a imposição do Ato Institucional nº 2\n(AI-2), que instituiu o bipartidarismo em 1965. Temendo a cassação de seu mandato\ndevido à origem na coligação com o PTB, Silveira articulou a formação da ARENA em\nSanta Catarina. Esse movimento promoveu a fusão pragmática com a UDN,\nrepresentada pela oligarquia Konder-Bornhausen, garantindo a manutenção dos\nprivilégios das elites locais (Duwe, 2013). Ressalte-se a assimetria no tratamento\ndispensado aos agentes políticos, enquanto o vice-governador Francisco Roberto\nDall'Igna, do PTB, teve seu mandato interrompido, Ivo Silveira, embora citado em\nrelatórios de informação militar por supostos esquemas de corrupção eleitoral,\nconcluiu integralmente seu governo (Santa Catarina, 2014). Tal fato sugere a\nexistência de uma blindagem política para os clãs dominantes, indicando que os\nórgãos de segurança operavam com cautela para não desestabilizar as bases de\napoio regionais.\nColombo Machado Salles (1971-1975): O interregno tecnocrático. Em 1971,\na nomeação de Colombo Machado Salles pelo General-Presidente Emílio Garrastazu\nMédici ref",
+        "citacoes_detectadas": [
+          "Duwe, 2013",
+          "Santa Catarina, 2014",
+          "Brancher;\nLohn, 2014",
+          "Martins, 2006"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "CAMPOS, Adriano de. Oligarquias em disputa: Ramos x Konder. Revista Santa Catarina em História, Florianópolis, v. 11, n. 1, p. 89-97, 2017.",
+      "DUWE, Ricardo. O partido da ARENA na imprensa catarinense: cultura política e poder no Jornal de Santa Catarina (1974-1979). 2013. Dissertação (Mestrado em História) – Universidade Federal de Santa Catarina, Florianópolis, 2013.",
+      "FÁVERI, Marlene de. A derrota do regime militar na Novembrada. Revista Santa Catarina em História, Florianópolis, v. 9, n. 1, p. 65-80, 2015.",
+      "FÁVERI, Marlene de. A \"Novembrada\" em Florianópolis: memória e história de um protesto. Revista Tempo e Argumento, Florianópolis, v. 7, n. 15, p. 45-72, 2015a.",
+      "GARCIA, Elisa. A integração do Cone Sul e a Operação Condor. 2011. Tese (Doutorado em História) – Universidade de Brasília, Brasília, 2011.",
+      "GRAMSCI, Antônio. Cadernos do cárcere. Volume 2: Os intelectuais. O princípio educativo. Jornalismo. 2. ed. Rio de Janeiro: Civilização Brasileira, 2000a.",
+      "GRAMSCI, Antonio. Cadernos do cárcere. Tradução de Carlos Nelson Coutinho. 2. ed. Rio de Janeiro: Civilização Brasileira, 2000b. v. 3.",
+      "GRAMSCI, A. Cadernos do cárcere: introdução ao estudo da filosofia. A filosofia de Benedetto Croce. 6. ed. Rio de Janeiro: Civilização Brasileira, 2011.",
+      "GRAMSCI, Antonio. Cadernos do cárcere: caderno 19. Tradução de IGS-Brasil. 1. ed. Rio de Janeiro: IGS-Brasil, 2024.",
+      "KANT DE LIMA, Roberto. A polícia da cidade do Rio de Janeiro: seus dilemas e paradoxos. 2. ed. Rio de Janeiro: Forense, 1995.",
+      "KANT DE LIMA, Roberto. Ensaios de antropologia e de direito: acesso à justiça e processos institucionais de administração de conflitos e produção da verdade jurídica em uma perspectiva comparada. Rio de Janeiro: Lumen Juris, 2008.",
+      "LIMA, Renato Sérgio de. Entre palavras e números: violência, democracia e segurança pública no Brasil. São Paulo: Alameda, 2011.",
+      "MARTINS, Celso. Os quatro cantos do sol: Operação Barriga Verde. Florianópolis: Editora da UFSC, 2006.",
+      "MARTINS, Helaine Laura. Os limites do controle jurisdicional dos concursos públicos. 2013. 82 f. Monografia (Bacharelado em Direito) - Universidade do Sul de Santa Catarina, Palhoça, 2013.",
+      "MOTTA, Rodrigo Patto Sá. Em guarda contra o perigo vermelho: o anticomunismo no Brasil (1917-1964). São Paulo: Perspectiva, 2002.",
+      "MOTTA, Rodrigo Patto Sá. Modernizando a repressão: a Usaid e a polícia brasileira. Revista Brasileira de História, São Paulo, v. 30, n. 59, p. 237-266, jun. 2010.",
+      "MOTTA, Rodrigo Patto Sá. As universidades e o regime militar: cultura política brasileira e modernização autoritária. Rio de Janeiro: Zahar, 2014.",
+      "MUNIZ, Jacqueline de Oliveira. Ser policial é, sobretudo, uma razão de ser: cultura e cotidiano da Polícia Militar do Estado do Rio de Janeiro. 1999. Tese (Doutorado em Ciência Política) — Instituto Universitário de Pesquisas do Rio de Janeiro, Rio de Janeiro, 1999.",
+      "MUNIZ, Jacqueline de Oliveira. A crise de identidade das polícias militares brasileiras: dilemas e paradoxos da formação educacional. Security and Defense Studies Review, Washington, DC, v. 1, p. 177-198, 2001. 166",
+      "PEREIRA, Anthony W. Ditadura e repressão: o autoritarismo e o estado de direito no Brasil, no Chile e na Argentina. Tradução de Ruy Jungmann. São Paulo: Paz e Terra, 2010.",
+      "PEREIRA, Juliano Cabral. Santa Catarina sob suspeita: a atuação dos órgãos de segurança e informação da ditadura militar em território catarinense (1964-1985). 2021. Dissertação (Mestrado em História) – Universidade do Estado de Santa Catarina, Florianópolis, 2021.",
+      "SANTA CATARINA. Assembleia Legislativa. Comissão Estadual da Verdade Paulo Stuart Wright. Relatório final. Florianópolis: ALESC, 2014.",
+      "SANTA CATARINA. Conselho Estadual de Educação. Parecer nº 250, de 17 de setembro de 2013. Credenciamento da Academia de Polícia Civil. Diário Oficial do Estado, Florianópolis, 2013.",
+      "SANTA CATARINA. Conselho Estadual de Educação. Resolução nº 154, de 17 de setembro de 2013. Dispõe sobre o credenciamento da Academia de Polícia Civil de Santa Catarina. Diário Oficial do Estado, Florianópolis, 2013.",
+      "SANTA CATARINA. Decreto nº 1.795, de 17 de setembro de 2013. Homologa o Parecer nº 250/2013 e a Resolução nº 154/2013 do Conselho Estadual de Educação. Diário Oficial do Estado, Florianópolis, 2013."
+    ]
+  }
+}

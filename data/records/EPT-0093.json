@@ -1,0 +1,179 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0093",
+  "ano": 2020,
+  "autor": "Roseli Bonfante",
+  "orientador": "Inge Renate Frose Suhr",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP1",
+  "dissertacao": {
+    "titulo": "O PROCESSO DE ESCOLHA PROFISSIONAL DE JOVENS DA CLASSE QUE VIVE DO TRABALHO: UM ESTUDO A PARTIR DO CAMPUS RIO DO SUL DO INSTITUTO FEDERAL CATARINENSE",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/Artigo_ps_banca-1.pdf",
+    "resumo": "11\n\nRESUMO\n\nEsta pesquisa buscou compreender como os jovens da classe que vive do trabalho elaboram\nsuas escolhas profissionais e, a partir dos dados coletados, propor uma metodologia reflexiva\nacerca do mundo do trabalho e das escolhas profissionais. Tal metodologia assumiu o formato\nde manual, a ser utilizado por profissionais da Educação que atuam no Ensino Médio Integrado\n(EMI), com o objetivo de orientar as escolhas profissionais dos estudantes. Esta pesquisa está\ninserida na linha de pesquisa de Práticas Educativas em Educação Profissional e Tecnológica e\nno macro projeto Propostas Metodológicas e Recursos Didáticos em Espaços Formais e não\nFormais de Ensino da Educação Profissional e Tecnológica. Do ponto de vista epistemológico,\na pesquisa embasou-se na concepção sócio-histórica de homem e de mundo, a qual tem suas\nproposições teóricas e metodológicas fundamentadas no materialismo histórico-dialético. A\ncoleta de dados realizou-se por meio de entrevistas semiestruturadas com estudantes do Curso\nTécnico de Agropecuária, integrado ao Ensino Médio no Instituto Federal Catarinense (IFC) –\nCampus Rio do Sul. Foram investigados os fatores que influenciaram na decisão quanto à\nescolha do IFC para cursar o Ensino Médio Integrado. Duas hipóteses orientaram os\nquestionamentos desta pesquisa. A primeira, de que a condição econômica dos jovens seria um\ndeterminante em suas escolhas profissionais, o que, na realidade estudada não se confirmou,\nembora muitos entrevistados revelem que contam com o empenho extra dos pais em buscar\nrecursos financeiros e a intenção de trabalhar para complementar a renda para poderem estudar.\nPressupôs-se ainda que os jovens da classe que vive do trabalho tenderiam a não seguir para\num curso superior, dadas as condições concretas em que vivem. A pesquisa revelou, porém,\nque a maioria dos jovens entrevistados pretende seguir a outros níveis de ensino. Quanto à\nsegunda hipótese, de que estes jovens fazem suas escolhas dentre as profissões que estão em\nseu universo vivencial, ela se confirmou, pois um número significativo deles relatou o desejo\nde seguir em profissões que estão diretamente relacionadas com a profissão dos pais e mães,\ncomo agricultores, técnicos agrícolas, engenheiros agrônomos e madeireiros. A pesquisa\nrevelou ainda que os jovens estão submergidos em crenças liberais que pouco ou nada\nrepresentam sua realidade, justificando inclusive o desejo de cursar o ensino superior e a crença\nde que com esforço isso se tornará possível. A partir dos posicionamentos dos estudantes\nrevelados nas entrevistas, elaborou-se um roteiro a ser utilizado por profissionais da educação\npara orientar o processo reflexivo sobre o mundo do trabalho e sobre a escolha profissional\npelos jovens, principalmente os do terceiro ano do EMI. O Produto Educacional (PE), ou\nmanual, resultado dessa pesquisa, foi encaminhado digitalmente aos docentes e técnicos em\nassuntos educacionais da área de ensino do local em que foi realizada a coleta de dados, tendo\nem vista os limites impostos pela pandemia do Coronavírus (COVID-19). Após o período em\nque o manual esteve disponível para leitura, os profissionais o avaliaram por meio de formulário\neletrônico no Google Formulários. Apesar do baixo índice de retorno, as avaliações foram\nbastante positivas, indicando que ele traz em si potencial de auxiliar o processo de escolha\nprofissional para os estudantes da classe que vive do trabalho.\n\nPalavras-Chave: Mundo do trabalho. Orientação profissional. Educação Profissional e\nTecnológica. Escolha profissional. Ensino Médio Integrado.",
+    "palavras_chave": [
+      "Mundo do trabalho",
+      "Orientação profissional",
+      "Educação Profissional e Tecnológica",
+      "Escolha profissional",
+      "Ensino Médio Integrado"
+    ],
+    "autores_referenciados": [
+      "Acácia Zeneida Kuenzer",
+      "Antônio Carlos Gil",
+      "Beatriz Rosana Gonçalves Oliveira",
+      "Carlos Minayo-Gomez",
+      "Celso João Ferretti",
+      "Cesar Candiotto",
+      "Cladecir Alberto Schenkel",
+      "Conceição Lopes",
+      "Danièle Kergoat",
+      "Danilca Rodrigues Galdini",
+      "Dante Henrique Moura",
+      "Denise Tolfo Silveira",
+      "Denize Cristina de Oliveira",
+      "Dermeval Saviani",
+      "Diana Rebelo Neves",
+      "Diane Halpern",
+      "Domingos Leite Lima Filho",
+      "Dulce Helena Penna Soares",
+      "Edna Maria Severino Peters Kahhale",
+      "Eliezer Moreira Pacheco",
+      "Elisa Zaneratto Rosa",
+      "Flávia Lemos Abade",
+      "Gaudêncio Frigotto",
+      "Giovanni Alves",
+      "Helena Hirata",
+      "Inge Renate Frose Suhr",
+      "Isaac Asimov",
+      "Juliana Berzin",
+      "Karel Kosík",
+      "Kathia Maria Costa Neiva",
+      "Laurence Bardin",
+      "Leila Silva de Moura",
+      "Lólio Lourenço de Oliveira",
+      "Lúcia Maria Wanderley Neves",
+      "Luciana Albanese Valore",
+      "Lucy Leal Melo-Silva",
+      "Luiza Helena Raittz Cavallet",
+      "Marcela Alejandra Pronko",
+      "Marcelo Velloso Heeren",
+      "Maria Cecília de Souza Minayo",
+      "Maria Célia Pacheco Lassance",
+      "Maria da Graça Marchina Gonçalves",
+      "Maria Isabel Nogueira Tuppy",
+      "Maria Lúcia do Carmo Cruz Robazzi",
+      "Maria Lucia Tiellet Nunes",
+      "Marise Nogueira Ramos",
+      "Marli André",
+      "Marta Leandro da Silva",
+      "Menga Lüdke",
+      "Michael Gazzaniga",
+      "Mônica Ribeiro da Silva",
+      "Mônica Sparta",
+      "P. Ariès",
+      "Paulo Freire",
+      "Ricardo Antunes",
+      "Rosane Schotgues Levenfus",
+      "Roseli Figaro",
+      "Sérgio Ozella",
+      "Silvia Maria Manfredi",
+      "Silvio Duarte Bock",
+      "Simone Voltolini Olczyk",
+      "Tatiana Engel Gerhardt",
+      "Todd Heatherton",
+      "Tomas Gounet",
+      "Vânia Cardoso da Motta",
+      "Wanda Maria Junqueira Aguiar",
+      "Zilah Vieira Meirelles"
+    ],
+    "base_epistemologica": {
+      "valor": "Materialismo Histórico-Dialético",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "A dissertação explora a relação entre conhecimento e práticas de trabalho, fundamentado em conceitos do materialismo histórico-dialético, como trabalho como princípio educativo e omnilateralidade.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 22,
+          "trecho": "Desde os mais antigos tempos o trabalho é uma atividade central para a garantia da sobrevivência de homens e mulheres, assim como para a organização e funcionamento das sociedades (MANFREDI, 2016).",
+          "referencia_correspondente": "MANFREDI, 2016"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Metodologia do processo reflexivo SOBRE O MUNDO DO TRABALHO para jovens do  Ensino Médio Integrado",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Manual / Protocolo",
+    "link": "http://educapes.capes.gov.br/handle/capes/585079",
+    "publico_alvo": [
+      "docentes_professores",
+      "estudantes_alunos"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Educação profissional e tecnológica",
+      "Orietnação profissional",
+      "Mundo do trabalho",
+      "Escolha profisisonal",
+      "Mestrado profissional em Educação Profissional e Tecnológica (ProfEPT)",
+      "Conclusão de curso"
+    ],
+    "data_publicacao": "2020-12-18",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "BONFANTE, Roseli",
+        "papel": "creator"
+      },
+      {
+        "nome": "SUHR",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/585079",
+        "url": "http://educapes.capes.gov.br/handle/capes/585079"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Manual Metodologia do processo re exivo sobre o mundo do trabalho para jovens do ensino médio",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "Livro Digital – METODOLOGIA DO PROCESSO REFLEXIVO SOBRE O MUNDO DO TRABALHO PARA JOVENS DO ENSINO MÉDIO INTEGRADO",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "livro digital"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0093 2020 roseli bonfante inge renate frose suhr ifc blumenau lp1 mp1 o processo de escolha profissional de jovens da classe que vive do trabalho um estudo a partir do campus rio do sul do instituto federal catarinense 11 resumo esta pesquisa buscou compreender como os jovens da classe que vive do trabalho elaboram suas escolhas profissionais e a partir dos dados coletados propor uma metodologia reflexiva acerca do mundo do trabalho e das escolhas profissionais tal metodologia assumiu o formato de manual a ser utilizado por profissionais da educacao que atuam no ensino medio integrado emi com o objetivo de orientar as escolhas profissionais dos estudantes esta pesquisa esta inserida na linha de pesquisa de praticas educativas em educacao profissional e tecnologica e no macro projeto propostas metodologicas e recursos didaticos em espacos formais e nao formais de ensino da educacao profissional e tecnologica do ponto de vista epistemologico a pesquisa embasou se na concepcao socio historica de homem e de mundo a qual tem suas proposicoes teoricas e metodologicas fundamentadas no materialismo historico dialetico a coleta de dados realizou se por meio de entrevistas semiestruturadas com estudantes do curso tecnico de agropecuaria integrado ao ensino medio no instituto federal catarinense ifc campus rio do sul foram investigados os fatores que influenciaram na decisao quanto a escolha do ifc para cursar o ensino medio integrado duas hipoteses orientaram os questionamentos desta pesquisa a primeira de que a condicao economica dos jovens seria um determinante em suas escolhas profissionais o que na realidade estudada nao se confirmou embora muitos entrevistados revelem que contam com o empenho extra dos pais em buscar recursos financeiros e a intencao de trabalhar para complementar a renda para poderem estudar pressupos se ainda que os jovens da classe que vive do trabalho tenderiam a nao seguir para um curso superior dadas as condicoes concretas em que vivem a pesquisa revelou porem que a maioria dos jovens entrevistados pretende seguir a outros niveis de ensino quanto a segunda hipotese de que estes jovens fazem suas escolhas dentre as profissoes que estao em seu universo vivencial ela se confirmou pois um numero significativo deles relatou o desejo de seguir em profissoes que estao diretamente relacionadas com a profissao dos pais e maes como agricultores tecnicos agricolas engenheiros agronomos e madeireiros a pesquisa revelou ainda que os jovens estao submergidos em crencas liberais que pouco ou nada representam sua realidade justificando inclusive o desejo de cursar o ensino superior e a crenca de que com esforco isso se tornara possivel a partir dos posicionamentos dos estudantes revelados nas entrevistas elaborou se um roteiro a ser utilizado por profissionais da educacao para orientar o processo reflexivo sobre o mundo do trabalho e sobre a escolha profissional pelos jovens principalmente os do terceiro ano do emi o produto educacional pe ou manual resultado dessa pesquisa foi encaminhado digitalmente aos docentes e tecnicos em assuntos educacionais da area de ensino do local em que foi realizada a coleta de dados tendo em vista os limites impostos pela pandemia do coronavirus covid 19 apos o periodo em que o manual esteve disponivel para leitura os profissionais o avaliaram por meio de formulario eletronico no google formularios apesar do baixo indice de retorno as avaliacoes foram bastante positivas indicando que ele traz em si potencial de auxiliar o processo de escolha profissional para os estudantes da classe que vive do trabalho palavras chave mundo do trabalho orientacao profissional educacao profissional e tecnologica escolha profissional ensino medio integrado materialismo historico dialetico metodologia do processo reflexivo sobre o mundo do trabalho para jovens do ensino medio integrado material didatico instrucional manual protocolo ensino medio integrado mundo do trabalho orientacao profissional educacao profissional e tecnologica escolha profissional ensino medio integrado orietnacao profissional escolha profisisonal mestrado profissional em educacao profissional e tecnologica profept conclusao de curso acacia zeneida kuenzer antonio carlos gil beatriz rosana goncalves oliveira carlos minayo gomez celso joao ferretti cesar candiotto cladecir alberto schenkel conceicao lopes daniele kergoat danilca rodrigues galdini dante henrique moura denise tolfo silveira denize cristina de oliveira dermeval saviani diana rebelo neves diane halpern domingos leite lima filho dulce helena penna soares edna maria severino peters kahhale eliezer moreira pacheco elisa zaneratto rosa flavia lemos abade gaudencio frigotto giovanni alves helena hirata inge renate frose suhr isaac asimov juliana berzin karel kosik kathia maria costa neiva laurence bardin leila silva de moura lolio lourenco de oliveira lucia maria wanderley neves luciana albanese valore lucy leal melo silva luiza helena raittz cavallet marcela alejandra pronko marcelo velloso heeren maria cecilia de souza minayo maria celia pacheco lassance maria da graca marchina goncalves maria isabel nogueira tuppy maria lucia do carmo cruz robazzi maria lucia tiellet nunes marise nogueira ramos marli andre marta leandro da silva menga ludke michael gazzaniga monica ribeiro da silva monica sparta p aries paulo freire ricardo antunes rosane schotgues levenfus roseli figaro sergio ozella silvia maria manfredi silvio duarte bock simone voltolini olczyk tatiana engel gerhardt todd heatherton tomas gounet vania cardoso da motta wanda maria junqueira aguiar zilah vieira meirelles",
+    "termos_unificados": [
+      "Mundo do trabalho",
+      "Orientação profissional",
+      "Educação Profissional e Tecnológica",
+      "Escolha profissional",
+      "Ensino Médio Integrado",
+      "Orietnação profissional",
+      "Escolha profisisonal",
+      "Mestrado profissional em Educação Profissional e Tecnológica (ProfEPT)",
+      "Conclusão de curso"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0095",
+  "ano": 2020,
+  "autor": "Vânio Demétrio",
+  "orientador": "Eduardo Augusto Werneck Ribeiro",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP3",
+  "dissertacao": {
+    "titulo": "FORMAÇÃO PARA O MUNDO DO TRABALHO OU PARA O MERCADO DE TRABALHO? UMA ANÁLISE DOS PLANOS DE ENSINO DOS CURSOS DE MECÂNICA INTEGRADOS AO ENSINO MÉDIO DO IFC E DO IFSC",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/DISSERTACAO-VANIO-DEMETRIO-PDF-A.pdf",
+    "resumo": "O presente trabalho analisa a proposta de Educação Profissional e Tecnológica dos Institutos\nFederais de Educação a partir da formação integrada como contraponto à formação restrita ao\nmercado de trabalho. Busca responder se a referida proposta é atendida quando analisados\ndocumentos como os Projetos Pedagógicos (PPC) dos cursos técnicos em mecânica integrado\nao Ensino Médio oferecidos pelo IFC e IFSC. Apresenta também a proposta de construção do\nconhecimento por constelação de Theodor Adorno como alternativa para a (re)construção do\nconhecimento considerando suas múltiplas determinações no contexto das sempre renovadas\ncondições de produção da vida humana. A pesquisa foi desenvolvida a partir de um duplo\nmovimento metodológico: aprofundamento teórico e análise documental. O referencial teórico\ncentrou-se na discussão da concepção de formação integrada em Saviani (2007), Frigotto,\nCiavatta e Ramos (2012) e da teoria de pensamento em constelação de Theodor Adorno (1986;\n2008; 2009), com o objetivo de auxiliar na análise dos documentos, tanto os que versam sobre\nos princípios e diretrizes dos Institutos Federais, quanto o Projeto Pedagógico do Curso – PPC\ndos Cursos Técnicos em Mecânica integrados ao Ensino Médio oferecidos pelo IFC e Instituto\nFederal de Santa Catarina - IFSC. O que se produziu no decorrer do processo foi organizado\nem três artigos e um Produto Educacional, este último uma exigência do Mestrado Profissional.\nO percurso da pesquisa revelou a importância do tema abordado. Os resultados advindos dela\ndemonstram a pertinência da formação integrada como condição para a formação para o mundo\ndo trabalho. No entanto, apesar de constar nos documentos que estabelecem os princípios e\ndiretrizes dos Institutos Federais, se apresenta ainda como desafio quando analisados os PPCs\ndos cursos técnicos em Mecânica integrados ao Ensino Médio das instituições aqui\nmencionadas. O produto educacional teve por objetivo contribuir, a partir da ideia de construção\ndo conhecimento por meio de constelação, para a superação do desafio de empreender a\nformação integrada ao desenvolver o tema proposto a partir de uma sequência didática que\norganizou as atividades de tal modo que permitisse uma visão ampla do objeto em estudo,\nsuperando a visão apenas fenomênica e ideologizada do conteúdo. Contra a orientação de um\nensino médio técnico especificamente profissionalizante, bem como do ensino médio integrado\nque se alinha a essa perspectiva, necessário se faz fortalecer a defesa da formação para o mundo\ndo trabalho, com a compreensão, planejamento e efetivação da formação integrada e\nomnilateral. \n \n \nPalavras-Chave: Institutos Federais. Formação integrada. Mundo do trabalho. Constelação.\nEducação Profissional e Tecnológica.",
+    "palavras_chave": [
+      "Institutos Federais",
+      "Formação integrada",
+      "Mundo do trabalho",
+      "Constelação",
+      "Educação Profissional e Tecnológica"
+    ],
+    "autores_referenciados": [
+      "A. Barros-Mendes",
+      "A. R. Oliveira",
+      "Alan F. Chalmers",
+      "Antoni Zabala",
+      "Arice Cardoso Tavares",
+      "B. S. Bandeira",
+      "Bruno Latour",
+      "D. A. Cunha",
+      "Danielton Campos Melonio",
+      "Dante Henrique Moura",
+      "Denise Lino de Araújo",
+      "Dermeval Saviani",
+      "Eliezer Moreira Pacheco",
+      "Emmanuel Levinas",
+      "Gaudêncio Frigotto",
+      "João Luiz Gasparin",
+      "Karel Kosík",
+      "Luiz Roberto Gomes",
+      "Marcos Nobre",
+      "Maria Ciavatta",
+      "Marilena Chauí",
+      "Marise Nogueira Ramos",
+      "R. Mancini",
+      "Ricardo Musse",
+      "Sandra Regina de Oliveira García",
+      "Theodor W. Adorno"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": true,
+      "justificativa": "O resumo menciona a teoria de pensamento em constelação de Adorno, associada à crítica social e formação integral, alinhada à Pedagogia Histórico-Crítica.",
+      "evidencias": [
+        {
+          "secao": "Resumo",
+          "pagina": 11,
+          "trecho": "A proposta de construção do conhecimento por constelação de Theodor Adorno como alternativa para a (re)construção do conhecimento",
+          "referencia_correspondente": null
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "SEQUÊNCIA DIDÁTICA: PENSAR A CONSTELAÇÃO DA CIÊNCIA",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Sequência Didática",
+    "link": "https://educapes.capes.gov.br/handle/capes/574381",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "docentes_professores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Teodoro Adorno",
+      "Ensino Médio Integrado",
+      "Sequência Didática",
+      "Mestrado em Educação Profissional e Tecnológica em Rede Nacional - ProfEPT",
+      "Filosofia"
+    ],
+    "data_publicacao": "2020-08-25",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Demétrio, Vânio",
+        "papel": "creator"
+      },
+      {
+        "nome": "Ribeiro, Eduardo Augusto Werneck",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/574381",
+        "url": "https://educapes.capes.gov.br/handle/capes/574381"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Sequencia didática",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "Educional: SEQUÊNCIA DIDÁTICA – PENSAR A CONSTELAÇÃO DA CIÊNCIA",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "livro digital"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0095 2020 vanio demetrio eduardo augusto werneck ribeiro ifc blumenau lp1 mp3 formacao para o mundo do trabalho ou para o mercado de trabalho uma analise dos planos de ensino dos cursos de mecanica integrados ao ensino medio do ifc e do ifsc o presente trabalho analisa a proposta de educacao profissional e tecnologica dos institutos federais de educacao a partir da formacao integrada como contraponto a formacao restrita ao mercado de trabalho busca responder se a referida proposta e atendida quando analisados documentos como os projetos pedagogicos ppc dos cursos tecnicos em mecanica integrado ao ensino medio oferecidos pelo ifc e ifsc apresenta tambem a proposta de construcao do conhecimento por constelacao de theodor adorno como alternativa para a re construcao do conhecimento considerando suas multiplas determinacoes no contexto das sempre renovadas condicoes de producao da vida humana a pesquisa foi desenvolvida a partir de um duplo movimento metodologico aprofundamento teorico e analise documental o referencial teorico centrou se na discussao da concepcao de formacao integrada em saviani 2007 frigotto ciavatta e ramos 2012 e da teoria de pensamento em constelacao de theodor adorno 1986 2008 2009 com o objetivo de auxiliar na analise dos documentos tanto os que versam sobre os principios e diretrizes dos institutos federais quanto o projeto pedagogico do curso ppc dos cursos tecnicos em mecanica integrados ao ensino medio oferecidos pelo ifc e instituto federal de santa catarina ifsc o que se produziu no decorrer do processo foi organizado em tres artigos e um produto educacional este ultimo uma exigencia do mestrado profissional o percurso da pesquisa revelou a importancia do tema abordado os resultados advindos dela demonstram a pertinencia da formacao integrada como condicao para a formacao para o mundo do trabalho no entanto apesar de constar nos documentos que estabelecem os principios e diretrizes dos institutos federais se apresenta ainda como desafio quando analisados os ppcs dos cursos tecnicos em mecanica integrados ao ensino medio das instituicoes aqui mencionadas o produto educacional teve por objetivo contribuir a partir da ideia de construcao do conhecimento por meio de constelacao para a superacao do desafio de empreender a formacao integrada ao desenvolver o tema proposto a partir de uma sequencia didatica que organizou as atividades de tal modo que permitisse uma visao ampla do objeto em estudo superando a visao apenas fenomenica e ideologizada do conteudo contra a orientacao de um ensino medio tecnico especificamente profissionalizante bem como do ensino medio integrado que se alinha a essa perspectiva necessario se faz fortalecer a defesa da formacao para o mundo do trabalho com a compreensao planejamento e efetivacao da formacao integrada e omnilateral palavras chave institutos federais formacao integrada mundo do trabalho constelacao educacao profissional e tecnologica pedagogia historico critica sequencia didatica pensar a constelacao da ciencia material didatico instrucional sequencia didatica ensino medio integrado institutos federais formacao integrada mundo do trabalho constelacao educacao profissional e tecnologica teodoro adorno ensino medio integrado sequencia didatica mestrado em educacao profissional e tecnologica em rede nacional profept filosofia a barros mendes a r oliveira alan f chalmers antoni zabala arice cardoso tavares b s bandeira bruno latour d a cunha danielton campos melonio dante henrique moura denise lino de araujo dermeval saviani eliezer moreira pacheco emmanuel levinas gaudencio frigotto joao luiz gasparin karel kosik luiz roberto gomes marcos nobre maria ciavatta marilena chaui marise nogueira ramos r mancini ricardo musse sandra regina de oliveira garcia theodor w adorno",
+    "termos_unificados": [
+      "Institutos Federais",
+      "Formação integrada",
+      "Mundo do trabalho",
+      "Constelação",
+      "Educação Profissional e Tecnológica",
+      "Teodoro Adorno",
+      "Ensino Médio Integrado",
+      "Sequência Didática",
+      "Mestrado em Educação Profissional e Tecnológica em Rede Nacional - ProfEPT",
+      "Filosofia"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0105",
+  "ano": 2020,
+  "autor": "Jair Adriano Strapazzon",
+  "orientador": "Humberto Luis de Cesaro",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP2",
+  "dissertacao": {
+    "titulo": "O ATENDIMENTO AO PÚBLICO LGBTQI+ NO CAMPUS CAMBORIÚ – INSTITUTO FEDERAL CATARINENSE: POR UMA POLÍTICA INSTITUCIONAL NÃO EXCLUDENTE NO ENSINO MÉDIO INTEGRADO",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/ARTIGO-VERSAO-FINAL-JAIR-ADRIANO-PDF-A.pdf",
+    "resumo": "O presente trabalho foi produzido no Mestrado Profissional em Educação Profissional e\nTecnológica (ProfEPT) e teve como objetivo compreender os processos de mediação utilizados\npelo Campus Camboriú do IFC para resolver os problemas da LGBTQIfobia e o abandono\nescolar desse público em específico no Ensino Médio Integrado. A metodologia utilizada pode\nser caracterizada como qualitativa, de natureza aplicada, e foi utilizada, como instrumento de\ncoleta de dados, a entrevista semiestruturada. Foram convidados(as) a participar da pesquisa\nos(as) servidores(as) que atuam diretamente com alunos(as), como Coordenadores(as) de\nCursos Técnicos Integrados ao Ensino Médio e servidores(as) que trabalham no Registro\nAcadêmico e no Serviço Integrado de Suporte e Acompanhamento ao Educando (SISAE). A\nescolha do Campus Camboriú se deu em virtude da proximidade do pesquisador, pela\nprioridade de oferta do Ensino Médio Integrado pelos Institutos Federais e também pelo grande\nnúmero de alunos(as) atendidos(as) no Ensino Médio Integrado, alvo da pesquisa. Os resultados\nda pesquisa demonstraram que o Campus Camboriú, apesar de ter, como agentes educacionais,\nprofissionais comprometidos(as) com a não aceitação da LGBTQIfobia, eles ainda não estão\ntotalmente preparados(as) para acabar com esse preconceito tão degradante, humilhante e\ndesumanizador. Como instituição, no entanto, o caminho parece preciso, aprovando resoluções\ne promovendo discussões para que esse combate aconteça. Por meio dos resultados das\nentrevistas, foi desenvolvido como produto educacional o curso “Diversidade Sexual e de\nGênero: construir conhecimentos para desconstruir preconceitos”, composto por textos,\nsugestões de leituras e curiosidades, de forma a sanar as dúvidas e dar embasamento aos(às)\ndocentes e servidores(as) do IFC para discussões, reflexões e ações junto aos(as) docentes,\ndiscentes e comunidade externa sobre o tema. O curso foi encaminhado aos membros dos\nRegistros Acadêmicos e dos Núcleos de Estudo em Gênero e Sexualidade de todos os campi da\ninstituição para avaliação. As pessoas que se dispuseram a fazer as leituras propostas avaliaram-\nnas positivamente, incluindo opiniões, sugestões e críticas que aprimoraram o material. Como\nproduto final, o curso foi alterado para a forma de e-book, pois é necessário que fique disponível\npor tempo indefinido no repositório EduCAPES.\nPalavras-Chave: ProfEPT; LGBTQIfobia; exclusão; Ensino Médio Integrado; Educação\nProfissional e Tecnológica.",
+    "palavras_chave": [
+      "ProfEPT",
+      "LGBTQIfobia",
+      "Exclusão",
+      "Ensino Médio Integrado",
+      "Educação Profissional e Tecnológica"
+    ],
+    "autores_referenciados": [
+      "Ana Caroline Pimenta Costa Camisasca",
+      "Ana Cristina Juvenal da Cruz",
+      "Ana Maria Colling",
+      "Anete Abramowicz",
+      "Arilda Schmidt Godoy",
+      "Carlos Pompe",
+      "Cátia Maria Alves Monteiro",
+      "Cladecir Alberto Schenkel",
+      "Daniel Borrillo",
+      "Denise Tolfo Silveira",
+      "Dermeval Saviani",
+      "Eder Pires de Camargo",
+      "Edna Raquel Hogemann",
+      "Egre Padoin",
+      "Eliane Quincozes Porto",
+      "Eliezer Moreira Pacheco",
+      "Elton Dias Xavier",
+      "Gaudêncio Frigotto",
+      "Guacira Lopes Louro",
+      "Iago Henrique Fernandes de Sousa Moura",
+      "Iara Falleiros Braga",
+      "Laurence Bardin",
+      "Leidiane Oliveira",
+      "Lorena Bernadete da Silva",
+      "Luigi Sturaro Guimarães",
+      "Maria Ciavatta",
+      "Maria Vitória Benevides",
+      "Mário Lopes Amorim",
+      "Mary Garcia Castro",
+      "Mirian Abramovay",
+      "Mirlene Fátima Simões Wexell Severo",
+      "Paolo Nosella",
+      "Rachel Pulcino",
+      "Rafael Porto Vieira",
+      "Raquel Pinho",
+      "Rogério Diniz Junqueira",
+      "Ronaldo Marcos de Lima Araújo",
+      "Sandra Regina Marcolino Gherardi",
+      "Silvana Mara Morais dos Santos",
+      "Tatiana Engel Gerhardt",
+      "Tatiane Cosentino Rodrigues",
+      "Thaisa Vanessa Costa Oliveira",
+      "Vânia Olímpia Barbosa Silva",
+      "Vantoir Roberto Brancher"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": true,
+      "justificativa": "O texto alude a Saviani (2007) e Ciavatta (2005) para discutir exclusão social e formação integral, mas não explicita a matriz teórica. A metodologia qualitativa e a crítica à educação dualista sugerem proximidade com a Pedagogia Histórico-Crítica.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 14,
+          "trecho": "A educação brasileira tem uma dualidade estrutural, excluindo grupos como LGBTQI+ e negros(as) sob o paradigma da normalidade.",
+          "referencia_correspondente": "SAVIANI, 2007, p. 154"
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 27,
+          "trecho": "A formação integral deve romper as dualidades sociais e promover a educação como processo de transformação.",
+          "referencia_correspondente": "CIAVATTA, 2005, p. 17"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Diversidade sexual e de gênero: construir conhecimentos para desconstruir preconceitos",
+    "tipo": "curso_oficina",
+    "formato": "Curso",
+    "link": "http://educapes.capes.gov.br/handle/capes/643836",
+    "publico_alvo": [
+      "docentes_professores",
+      "gestores_coordenadores",
+      "comunidade_externa"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Diversidade sexual; gênero; LGBTfobia; inclusão; Educação Profissional e Tecnológica",
+      "Programa de Pós=Graduação em Educação Profissional e Tecnológica"
+    ],
+    "data_publicacao": "2021-12-07",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "STRAPAZZON, Jair Adriano",
+        "papel": "creator"
+      },
+      {
+        "nome": "CESARO, Humberto",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/643836",
+        "url": "http://educapes.capes.gov.br/handle/capes/643836"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Diversidade Sexual e de Gênero: construir conhecimentos para desconstruir preconceitos",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "inferencia_llm",
+      "rotulo_original_declarado": "Texto – DIVERSIDADE SEXUAL E DE GÊNERO: CONSTRUIR CONHECIMENTOS PARA DESCONSTRUIR PRECONCEITOS.",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0105 2020 jair adriano strapazzon humberto luis de cesaro ifc blumenau lp1 mp2 o atendimento ao publico lgbtqi no campus camboriu instituto federal catarinense por uma politica institucional nao excludente no ensino medio integrado o presente trabalho foi produzido no mestrado profissional em educacao profissional e tecnologica profept e teve como objetivo compreender os processos de mediacao utilizados pelo campus camboriu do ifc para resolver os problemas da lgbtqifobia e o abandono escolar desse publico em especifico no ensino medio integrado a metodologia utilizada pode ser caracterizada como qualitativa de natureza aplicada e foi utilizada como instrumento de coleta de dados a entrevista semiestruturada foram convidados as a participar da pesquisa os as servidores as que atuam diretamente com alunos as como coordenadores as de cursos tecnicos integrados ao ensino medio e servidores as que trabalham no registro academico e no servico integrado de suporte e acompanhamento ao educando sisae a escolha do campus camboriu se deu em virtude da proximidade do pesquisador pela prioridade de oferta do ensino medio integrado pelos institutos federais e tambem pelo grande numero de alunos as atendidos as no ensino medio integrado alvo da pesquisa os resultados da pesquisa demonstraram que o campus camboriu apesar de ter como agentes educacionais profissionais comprometidos as com a nao aceitacao da lgbtqifobia eles ainda nao estao totalmente preparados as para acabar com esse preconceito tao degradante humilhante e desumanizador como instituicao no entanto o caminho parece preciso aprovando resolucoes e promovendo discussoes para que esse combate aconteca por meio dos resultados das entrevistas foi desenvolvido como produto educacional o curso diversidade sexual e de genero construir conhecimentos para desconstruir preconceitos composto por textos sugestoes de leituras e curiosidades de forma a sanar as duvidas e dar embasamento aos as docentes e servidores as do ifc para discussoes reflexoes e acoes junto aos as docentes discentes e comunidade externa sobre o tema o curso foi encaminhado aos membros dos registros academicos e dos nucleos de estudo em genero e sexualidade de todos os campi da instituicao para avaliacao as pessoas que se dispuseram a fazer as leituras propostas avaliaram nas positivamente incluindo opinioes sugestoes e criticas que aprimoraram o material como produto final o curso foi alterado para a forma de e book pois e necessario que fique disponivel por tempo indefinido no repositorio educapes palavras chave profept lgbtqifobia exclusao ensino medio integrado educacao profissional e tecnologica pedagogia historico critica diversidade sexual e de genero construir conhecimentos para desconstruir preconceitos curso oficina curso ensino medio integrado profept lgbtqifobia exclusao ensino medio integrado educacao profissional e tecnologica diversidade sexual genero lgbtfobia inclusao educacao profissional e tecnologica programa de pos graduacao em educacao profissional e tecnologica ana caroline pimenta costa camisasca ana cristina juvenal da cruz ana maria colling anete abramowicz arilda schmidt godoy carlos pompe catia maria alves monteiro cladecir alberto schenkel daniel borrillo denise tolfo silveira dermeval saviani eder pires de camargo edna raquel hogemann egre padoin eliane quincozes porto eliezer moreira pacheco elton dias xavier gaudencio frigotto guacira lopes louro iago henrique fernandes de sousa moura iara falleiros braga laurence bardin leidiane oliveira lorena bernadete da silva luigi sturaro guimaraes maria ciavatta maria vitoria benevides mario lopes amorim mary garcia castro mirian abramovay mirlene fatima simoes wexell severo paolo nosella rachel pulcino rafael porto vieira raquel pinho rogerio diniz junqueira ronaldo marcos de lima araujo sandra regina marcolino gherardi silvana mara morais dos santos tatiana engel gerhardt tatiane cosentino rodrigues thaisa vanessa costa oliveira vania olimpia barbosa silva vantoir roberto brancher",
+    "termos_unificados": [
+      "ProfEPT",
+      "LGBTQIfobia",
+      "Exclusão",
+      "Ensino Médio Integrado",
+      "Educação Profissional e Tecnológica",
+      "Diversidade sexual; gênero; LGBTfobia; inclusão; Educação Profissional e Tecnológica",
+      "Programa de Pós=Graduação em Educação Profissional e Tecnológica"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0018",
+  "ano": 2025,
+  "autor": "Gabriela Boemer Amaral Moretto",
+  "orientador": "Viviane Grimm",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP3",
+  "dissertacao": {
+    "titulo": "A PERSPECTIVA ESTUDANTIL SOBRE A AFILIAÇÃO NO ENSINO MÉDIO INTEGRADO À EDUCAÇÃO PROFISSIONAL: UM ESTUDO COM ESTUDANTES DO INSTITUTO FEDERAL CATARINENSE (IFC) CAMPUS BLUMENAU",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/08/DISSERTACAO-E-PRODUTO-EDUCACIONAL-_-GABRIELA-BOEMER-AMARAL-MORETTO-2.pdf",
+    "resumo": "Esta pesquisa está vinculada à linha de pesquisa Práticas Educativas em Educação\nProfissional e Tecnológica e ao Macroprojeto 3 – Práticas Educativas no Currículo\nIntegrado do ProfEPT. Parte da concepção de Educação Profissional e Tecnológica\n(EPT) como uma proposta formativa que integra trabalho, ciência, cultura e\ntecnologia, e do currículo integrado como princípio educativo orientado à formação\nomnilateral dos sujeitos. Nessa perspectiva, considera-se que a construção de\nvínculos institucionais e intelectuais — isto é, a afiliação estudantil — é elemento\ncentral para a permanência e o êxito dos estudantes no Ensino Médio Integrado à\nEducação Profissional e Tecnológica (EMIEP). O objetivo da pesquisa foi analisar o\nprocesso de afiliação estudantil de estudantes do Instituto Federal Catarinense (IFC)\n– Campus Blumenau, considerando os desafios enfrentados na transição escolar e\nas estratégias utilizadas por eles durante o processo de adaptação e integração\ninstitucional. Trata-se de uma pesquisa qualitativa, de natureza aplicada e caráter\ndescritivo. Participaram 27 estudantes dos cursos técnicos integrados em\nEletromecânica e Informática, além de dois ex - coordenadores de curso e três\nservidores do Serviço Integrado de Suporte e Acompanhamento Educacional\n(SISAE). A geração de dados ocorreu por meio de questionários e entrevistas\nsemiestruturadas, organizadas em eixos temáticos. A análise, com base na Análise\nde Conteúdo (Bardin, 1977), considerou categorias a priori, fundamentadas no\nreferencial teórico “tempo de estranhamento”, “tempo de aprendizagem” e “tempo de\nafiliação”, e a posteriori, como a categoria emergente “tempo de hesitação”. Os\nresultados evidenciaram que a transição para o EMIEP representa uma travessia\ncomplexa, marcada por exigências pedagógicas e pelos desafios próprios da\njuventude. As narrativas dos estudantes revelaram sentimentos ambivalentes e\ndestacaram tanto o reconhecimento do IFC como espaço de desenvolvimento\nquanto as fragilidades institucionais no acolhimento. A afiliação estudantil mostrou-se\ncomo um processo contínuo que depende do engajamento dos estudantes e do\nsuporte institucional, sendo influenciado por fatores como organização curricular,\npráticas pedagógicas e atuação dos setores de apoio. Ressalta-se, ainda, a\nnecessidade de políticas permanentes de acolhimento que reconheçam os\nestudantes em sua integralidade. A partir da análise foi elaborado o guia “Acolhe\nIFC: um guia de orientação para ingressantes do Ensino Médio Integrado”, com o\nintuito de apoiar a transição escolar, promover o acolhimento e fortalecer a\nidentificação dos estudantes com a instituição. O guia foi aplicado em oficinas\npresenciais com estudantes ingressantes em 2025 dos cursos de Informática,\nEletromecânica e Mecatrônica. A avaliação do produto educacional foi realizada:\npelos estudantes participantes da pesquisa e os ingressantes de 2025, por meio de\nformulário eletrônico, apontando a utilidade, clareza e pertinência do material como\ninstrumento de acolhimento, orientação e integração institucional. Os resultados\nindicam que o guia atende sua finalidade e também pode ser útil a familiares e\npessoas interessadas em conhecer os cursos e a estrutura do IFC - Campus\nBlumenau.\nPalavras-Chave: Ensino médio integrado à educação profissional. Educação\nProfissional e Tecnológica. Transição escolar. Juventude. Afiliação estudantil.",
+    "palavras_chave": [
+      "Ensino médio integrado à educação profissional",
+      "Educação Profissional e Tecnológica",
+      "Transição escolar",
+      "Juventude",
+      "Afiliação estudantil"
+    ],
+    "autores_referenciados": [
+      "A. N. Perret-Clermont",
+      "Acácia Zeneida Kuenzer",
+      "Adolph Hoirish",
+      "Adriano Larentes da Silva",
+      "Adriano Souza Senkevics",
+      "Alain Coulon",
+      "Almir Ferreira da Silva Junior",
+      "Ana Cláudia S. Menezes",
+      "Andréia Modrzejewski Zucolotto",
+      "Andreisi Carbone Anversa",
+      "Angelina Peralva",
+      "Antônio Carlos Gil",
+      "Antônio Carlos Maciel",
+      "Arnold Van Gennep",
+      "Boaventura de Sousa Santos",
+      "Boris Cyrulnik",
+      "Caffa Abreu Cabus",
+      "Camila Mendonça Morais",
+      "Cárita Portilho de Lima",
+      "Carmen Célia Barradas Correia Bastos",
+      "Christine Delory-Momberger",
+      "Danielle Beatriz de Paula Pires",
+      "Dante Henrique Moura",
+      "Debora Cristina Fonseca",
+      "Dermeval Saviani",
+      "Dolores Izabel M. Barros",
+      "Domingos Leite Lima Filho",
+      "Emanoela Moreira Maciel",
+      "Erik Homburger Erikson",
+      "Eva Maria Lakatos",
+      "Felippe Oliveira Spinetti de Santa Rita Matta",
+      "Fernanda Viana Fernandes",
+      "Gabriel Kaplún",
+      "Gabriel Oliveira Mota",
+      "Gaudêncio Frigotto",
+      "Georgina Gonçalves dos Santos",
+      "Helena Wendel Abramo",
+      "Isabella Abreu Carvalho Guedes",
+      "Itagiane Jost",
+      "Jailton Rodrigues de Souza",
+      "Jéssica de Almeida Cunha",
+      "João Carlos Cichaczewski",
+      "Jorge Larrosa",
+      "José Saragoça",
+      "Juarez Tarcísio Dayrell",
+      "Juliana Danielly de Rezende Miguel",
+      "Kênia Barros Almeida",
+      "Larice Santos Silva",
+      "Laurence Bardin",
+      "Liliane Barreira Sanchez",
+      "Luan Arambell",
+      "Luciana Santos da Rosa",
+      "Lucília Regina de Souza Machado",
+      "Luís Ventura de Pinho",
+      "Lys Maria Vinhaes Dantas",
+      "Maíra Tavares Mendes",
+      "Mara Regina Martins Jacomeli",
+      "Maria Alice Nogueira",
+      "Maria Amélia do Rosario Santoro Franco",
+      "Maria Ciavatta",
+      "Maria Elisa Grijó Guahyba de Almeida",
+      "Maria Lúcia Rabello",
+      "Mariana Kawanami",
+      "Marília Pinto de Carvalho",
+      "Marília Pontes Spósito",
+      "Marilsa de Sá Rodrigues",
+      "Marina de Andrade Marconi",
+      "Mario Alighiero Manacorda",
+      "Marise Nogueira Ramos",
+      "Michel de Certeau",
+      "Miguel A. Zabalza",
+      "Mirelle Candido Vecchietti",
+      "Mônica Ribeiro da Silva",
+      "N. M. Mirza",
+      "Paulo Cesar Rodrigues Carrano",
+      "Priscila de Souza Chisté Leite",
+      "Renan Silveiro Rosa",
+      "Rodrigo Ednilson Jesus",
+      "Roque Moraes",
+      "Rosângela da Luz Matos",
+      "Sandra José Soares Mateus",
+      "Sônia Maria Rocha Sampaio",
+      "T. Zittoun",
+      "Vanessa de Jesus Krominski",
+      "Verônica Gitirana",
+      "Z. L. T. Aranha"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": true,
+      "justificativa": "O texto menciona Saviani (1989) e discute formação omnilateral, categorias associadas à Pedagogia Histórico-Crítica, mas sem declaração explícita da matriz teórica.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 23,
+          "trecho": "A relação entre educação e trabalho se torna mais explícita e direta, promovendo a interação entre teoria e prática de maneira concreta, como destacado por Saviani (1989).",
+          "referencia_correspondente": "Saviani, 1989"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Acolhe IFC: um guia de orientações para estudantes ingressantes no Ensino Médio Integrado",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Guia",
+    "link": "https://educapes.capes.gov.br/handle/capes/1043482",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "gestores_coordenadores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Ensino Médio Integrado",
+      "Afiliação estudantil",
+      "Transição escolar",
+      "Educação Profissional e Tecnológica",
+      "Mestrado em Educação Profissional e Tecnológica",
+      "Dissertação"
+    ],
+    "data_publicacao": "2025-06-12",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "MORETTO, GABRIELA BOEMER AMARAL",
+        "papel": "creator"
+      },
+      {
+        "nome": "GRIMM, VIVIANE",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1043482",
+        "url": "https://educapes.capes.gov.br/handle/capes/1043482"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://drive.google.com/file/d/1EGMQ41cA0ppczG822bCU_QjWLgk64U9R/view?usp=sharing",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Guia - Acolhe IFC",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "ACOLHE IFC: UM GUIA DE ORIENTAÇÕES PARA ESTUDANTES INGRESSANTES NO ENSINO MÉDIO INTEGRADO.",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0018 2025 gabriela boemer amaral moretto viviane grimm ifc blumenau lp1 mp3 a perspectiva estudantil sobre a afiliacao no ensino medio integrado a educacao profissional um estudo com estudantes do instituto federal catarinense ifc campus blumenau esta pesquisa esta vinculada a linha de pesquisa praticas educativas em educacao profissional e tecnologica e ao macroprojeto 3 praticas educativas no curriculo integrado do profept parte da concepcao de educacao profissional e tecnologica ept como uma proposta formativa que integra trabalho ciencia cultura e tecnologia e do curriculo integrado como principio educativo orientado a formacao omnilateral dos sujeitos nessa perspectiva considera se que a construcao de vinculos institucionais e intelectuais isto e a afiliacao estudantil e elemento central para a permanencia e o exito dos estudantes no ensino medio integrado a educacao profissional e tecnologica emiep o objetivo da pesquisa foi analisar o processo de afiliacao estudantil de estudantes do instituto federal catarinense ifc campus blumenau considerando os desafios enfrentados na transicao escolar e as estrategias utilizadas por eles durante o processo de adaptacao e integracao institucional trata se de uma pesquisa qualitativa de natureza aplicada e carater descritivo participaram 27 estudantes dos cursos tecnicos integrados em eletromecanica e informatica alem de dois ex coordenadores de curso e tres servidores do servico integrado de suporte e acompanhamento educacional sisae a geracao de dados ocorreu por meio de questionarios e entrevistas semiestruturadas organizadas em eixos tematicos a analise com base na analise de conteudo bardin 1977 considerou categorias a priori fundamentadas no referencial teorico tempo de estranhamento tempo de aprendizagem e tempo de afiliacao e a posteriori como a categoria emergente tempo de hesitacao os resultados evidenciaram que a transicao para o emiep representa uma travessia complexa marcada por exigencias pedagogicas e pelos desafios proprios da juventude as narrativas dos estudantes revelaram sentimentos ambivalentes e destacaram tanto o reconhecimento do ifc como espaco de desenvolvimento quanto as fragilidades institucionais no acolhimento a afiliacao estudantil mostrou se como um processo continuo que depende do engajamento dos estudantes e do suporte institucional sendo influenciado por fatores como organizacao curricular praticas pedagogicas e atuacao dos setores de apoio ressalta se ainda a necessidade de politicas permanentes de acolhimento que reconhecam os estudantes em sua integralidade a partir da analise foi elaborado o guia acolhe ifc um guia de orientacao para ingressantes do ensino medio integrado com o intuito de apoiar a transicao escolar promover o acolhimento e fortalecer a identificacao dos estudantes com a instituicao o guia foi aplicado em oficinas presenciais com estudantes ingressantes em 2025 dos cursos de informatica eletromecanica e mecatronica a avaliacao do produto educacional foi realizada pelos estudantes participantes da pesquisa e os ingressantes de 2025 por meio de formulario eletronico apontando a utilidade clareza e pertinencia do material como instrumento de acolhimento orientacao e integracao institucional os resultados indicam que o guia atende sua finalidade e tambem pode ser util a familiares e pessoas interessadas em conhecer os cursos e a estrutura do ifc campus blumenau palavras chave ensino medio integrado a educacao profissional educacao profissional e tecnologica transicao escolar juventude afiliacao estudantil pedagogia historico critica acolhe ifc um guia de orientacoes para estudantes ingressantes no ensino medio integrado material didatico instrucional guia ensino medio integrado ensino medio integrado a educacao profissional educacao profissional e tecnologica transicao escolar juventude afiliacao estudantil ensino medio integrado mestrado em educacao profissional e tecnologica dissertacao a n perret clermont acacia zeneida kuenzer adolph hoirish adriano larentes da silva adriano souza senkevics alain coulon almir ferreira da silva junior ana claudia s menezes andreia modrzejewski zucolotto andreisi carbone anversa angelina peralva antonio carlos gil antonio carlos maciel arnold van gennep boaventura de sousa santos boris cyrulnik caffa abreu cabus camila mendonca morais carita portilho de lima carmen celia barradas correia bastos christine delory momberger danielle beatriz de paula pires dante henrique moura debora cristina fonseca dermeval saviani dolores izabel m barros domingos leite lima filho emanoela moreira maciel erik homburger erikson eva maria lakatos felippe oliveira spinetti de santa rita matta fernanda viana fernandes gabriel kaplun gabriel oliveira mota gaudencio frigotto georgina goncalves dos santos helena wendel abramo isabella abreu carvalho guedes itagiane jost jailton rodrigues de souza jessica de almeida cunha joao carlos cichaczewski jorge larrosa jose saragoca juarez tarcisio dayrell juliana danielly de rezende miguel kenia barros almeida larice santos silva laurence bardin liliane barreira sanchez luan arambell luciana santos da rosa lucilia regina de souza machado luis ventura de pinho lys maria vinhaes dantas maira tavares mendes mara regina martins jacomeli maria alice nogueira maria amelia do rosario santoro franco maria ciavatta maria elisa grijo guahyba de almeida maria lucia rabello mariana kawanami marilia pinto de carvalho marilia pontes sposito marilsa de sa rodrigues marina de andrade marconi mario alighiero manacorda marise nogueira ramos michel de certeau miguel a zabalza mirelle candido vecchietti monica ribeiro da silva n m mirza paulo cesar rodrigues carrano priscila de souza chiste leite renan silveiro rosa rodrigo ednilson jesus roque moraes rosangela da luz matos sandra jose soares mateus sonia maria rocha sampaio t zittoun vanessa de jesus krominski veronica gitirana z l t aranha",
+    "termos_unificados": [
+      "Ensino médio integrado à educação profissional",
+      "Educação Profissional e Tecnológica",
+      "Transição escolar",
+      "Juventude",
+      "Afiliação estudantil",
+      "Ensino Médio Integrado",
+      "Mestrado em Educação Profissional e Tecnológica",
+      "Dissertação"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

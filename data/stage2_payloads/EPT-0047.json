@@ -1,0 +1,190 @@
+{
+  "id": "EPT-0047",
+  "metadados_resolvidos": {
+    "ano": 2024,
+    "autor": "Moacir Dutra de Oliveira",
+    "orientador": "Eder Aparecido de Carvalho",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP2",
+    "macroprojeto": "MP6"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "ACOLHIMENTO DE ESTUDANTES TRANS NOS CURSOS DE ENSINO MÉDIO INTEGRADO DO INSTITUTO FEDERAL CATARINENSE",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/10/Dissertacao-Moacir.pdf",
+    "palavras_chave": [
+      "Gênero",
+      "Sexualidade",
+      "Inclusão",
+      "Diversidade",
+      "Educação Profissional e Tecnológica"
+    ],
+    "autores_referenciados": [
+      "A. de J. Marchão",
+      "A. de S. Junior",
+      "A. M. D. P. Vieira",
+      "Alexandre Fernandez Vaz",
+      "Alfrancio Ferreira Dias",
+      "Annecy Tojeiro Giordani",
+      "Antonio Carlos Espit",
+      "B. Ramírez Guzmán",
+      "Bárbara Colossi Felippe",
+      "Beatriz Pagliarini Bagagli",
+      "Berenice Alves de Melo Bento",
+      "C. S. Cesar",
+      "Caetana Juracy Resende Silva",
+      "Caio Benevides Pedra",
+      "Cátia Maria Alves Monteiro",
+      "Danilo Araujo de Oliveira",
+      "Dermeval Saviani",
+      "Edna Lúcia da Silva",
+      "Eliezer Moreira Pacheco",
+      "G. do C. Xavier",
+      "Gaudêncio Frigotto",
+      "Guacira Lopes Louro",
+      "H. H. Souza",
+      "H. Henriques",
+      "Irineu Mario Colombo",
+      "J. da S. Borba",
+      "Jaqueline Gomes de Jesus",
+      "Judith Butler",
+      "Keo Silva",
+      "L. S. Ferreira",
+      "Laurence Bardin",
+      "Liane Carly Hermes Zanella",
+      "M. H. L. F. Laffin",
+      "M. Sarat",
+      "Maria Ciavatta",
+      "Maria Clara Maciel de Araújo Ribeiro",
+      "Maria Teresa Eglér Mantoan",
+      "Mario Quintana",
+      "Marise Nogueira Ramos",
+      "Mirla Cisne",
+      "N. M. de J. Bento",
+      "N. R. Xavier",
+      "P. C. Argenti",
+      "Paulo Freire",
+      "Roberta Pasqualli",
+      "Rosita Edler Carvalho",
+      "S. de M. M. Vigano",
+      "Silvana Mara Morais dos Santos",
+      "Suzana da Conceição de Barros",
+      "T. Reis",
+      "V. Vergueiro",
+      "Victor Régio da Silva Bento"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/778431",
+    "titulo_produto": "Acolher é Respeitar as Diferenças: Orientações para o Trabalho de Acolhimento / Público Alvo - Estudantes Trans",
+    "titulo_produto_bruto": "ACOLHER É RESPEITAR AS DIFERENÇAS",
+    "data_publicacao": "2024-04-25",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense - IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Oliveira, Moacir Dutra de",
+        "papel": "creator"
+      },
+      {
+        "nome": "Carvalho, Eder Aparecido de",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/778431",
+        "url": "https://educapes.capes.gov.br/handle/capes/778431"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Acolher é Respeitar as Diferenças: Orientações para o Trabalho de Acolhimento / Público Alvo - Estudantes Trans",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "texto"
+    ],
+    "palavras_chave_educapes": [
+      "Acolhimento; Sexualidade; Educação; Estudantes \"Trans\"",
+      "Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT)",
+      "Produto Educacional"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Cartilha",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "Instituto Federal Catarinense\nProfEPT - Programa de Pós-Graduação em Educação Profissional e Tecnológica\n Campus Blumenau\n\nMOACIR DUTRA DE OLIVEIRA\n\nACOLHIMENTO DE ESTUDANTES TRANS NOS CURSOS DE ENSINO MÉDIO\nINTEGRADO DO INSTITUTO FEDERAL CATARINENSE: um estudo de caso nos campi\nque possuem moradia estudantil.\n\nBLUMENAU – SC\n2024\n\nMOACIR DUTRA DE OLIVEIRA\n\nACOLHIMENTO DE ESTUDANTES TRANS NOS CURSOS DE ENSINO MÉDIO\nINTEGRADO DO INSTITUTO FEDERAL CATARINENSE: um estudo de caso nos campi\nque possuem moradia estudantil.\n\nDissertação submetida ao Programa de Pós-graduação em\nEducação Profissional e Tecnológica do Instituto Federal\nCatarinense – Campus Blumenau, para a obtenção do título\nde Mestre em Educação Profissional e Tecnológica.\n\nOrientador: Prof. Dr. Eder Aparecido de Carvalho\n\nBLUMENAU – SC\n2024",
+    "ficha_catalografica": "",
+    "sumario": "[PÁG. 15]\nSUMÁRIO\n\n1\nINTRODUÇÃO ......................................................................................................................... 15\n2\nREFERENCIAL TEÓRICO ...................................................................................................... 23\n2.1.\nA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA NO INSTITUTO FEDERAL\nCATARINENSE ............................................................................................................................ 23\n2.2.\nA MORADIA ESTUDANTIL, UM SEGUNDO LAR ..................................................... 25\n2.3.\nPARA ALÉM DA LEGISLAÇÃO E POLÍTICAS INSTITUCIONAIS .......................... 28\n3\nMETODOLOGIA ...................................................................................................................... 32\n4\nANÁLISE DOS DADOS (RESULTADOS E DISCUSSÕES) ................................................. 35\n4.1.\nO TRABALHO DE ACOLHIMENTO ............................................................................. 35\n4.2.\nQUEM SE ENVOLVE NO PROCESSO DE ACOLHIMENTO? .................................... 37\n4.3.\nCOMO PERMANECER NA MORADIA E NA ESCOLA? ............................................ 37\n4.4.\nACOLHIMENTO DE ESTUDANTES TRANS ............................................................... 39\n4.5.\nPRODUTO EDUCACIONAL ........................................................................................... 41\n4.6.\nAVALIAÇÃO DO PRODUTO EDUCACIONAL ........................................................... 42\n4.7.\nMÓDULO 1 ....................................................................................................................... 43\n4.8.\nMÓDULO 2 ....................................................................................................................... 44\n4.9.\nMÓDULO 3 ....................................................................................................................... 44\n4.10. MÓDULO 4 ....................................................................................................................... 45\n4.11. COMENTÁRIOS ............................................................................................................... 45\n5\nCONSIDERAÇÕES FINAIS ..................................................................................................... 48\n6\nBIBLIOGRAFIA /FONTES DE REFERÊNCIA ...................................................................... 51\n7\nAPÊNDICE ................................................................................................................................ 57\n7.1.\nAPÊNDICE I – Produto Educacional ................................................................................ 57\n7.2.\nAPÊNDICE II – Apresentação .......................................................................................... 78\n7.3.\nAPÊNDICE III – Registro Fotográfico .............................................................................. 82\n7.4.\nAPÊNDICE IV – Termo de consentim",
+    "resumo": "[PÁG. 10]\nRESUMO\n\nNeste artigo, a partir da experiência dos campi do Instituto Federal Catarinense – IFC, que ofertam\nmoradia estudantil: Abelardo Luz, Concórdia, Rio do Sul e Santa Rosa do Sul, foi analisada a\nimportância de um espaço seguro e acolhedor que contribua para o desenvolvimento integral por meio\nde estratégias que promovam um ambiente escolar mais inclusivo para todos. O objetivo central da\npesquisa que se apresenta neste trabalho é analisar os aspectos que envolvem o campo de estudo\nescolhido - acolhimento a estudantes TRANS, a partir de uma abordagem crítica e reflexiva, no\nInstituto Federal Catarinense (IFC) – Campus Santa Rosa do Sul, Concórdia, Abelardo Luz e Rio do\nSul, em virtude de estes ofertarem a moradia estudantil. No que tange aos aspectos metodológicos,\nessa pesquisa, parte de uma abordagem descritiva. Todavia, nela também se encontram aspectos\nqualitativos, e por ser de caráter exploratório, auxiliará no entendimento mais detalhado dos dados\ncoletados, permeando aspectos subjetivos, a partir da análise criteriosa e interpretativa e dos dados\nlevantados na aplicação de questionário. O artigo traz as discussões a respeito do acolhimento de\nestudantes TRANS nos campi do Instituto Federal Catarinense – IFC e aborda a relevância da\npromoção da inclusão e diversidade de gênero no ambiente escolar, com foco especial no acolhimento\nde estudantes transgênero, dada a importância de criar ambientes educacionais que sejam receptivos\ne inclusivos para garantir o bem-estar e o desenvolvimento acadêmico desses\\dessas estudantes. Este\nestudo destaca ainda os desafios enfrentados por estudantes transgênero, como discriminação e falta\nde compreensão, estratégias para implementar práticas educacionais que promovam a aceitação e a\nigualdade de gênero, ressaltando a necessidade de uma abordagem colaborativa entre docentes,\ntécnicos administrativos, pais e estudantes, a fim de que se garanta um ambiente educacional que\ncelebre e respeite a diversidade de gênero. O Produto Educacional desenvolvido por meio da Cartilha\nde Orientações oferece subsídios para os campi que desejam promover uma educação inclusiva e\nrespeitosa, como forma de dar visibilidade e de contribuir para a promoção de uma cultura de respeito\nà heterogeneidade e à inclusão no IFC.\n\nPalavras-chaves: Gênero. Sexualidade. Inclusão. Diversidade. Educação Profissional e Tecnológica.",
+    "introducao": "[PÁG. 16]\n15\n\n1\nINTRODUÇÃO\n\nO texto aqui apresentado é resultado de um estudo ligado ao Mestrado Profissional em\nEducação Profissional e Tecnológica (ProfEPT), na linha de pesquisa Organização e Memórias de\nEspaços Pedagógicos na Educação Profissional e Tecnológica, em seu Macroprojeto 6 – Organização\nde espaços pedagógicos na EPT. O objetivo é discutir e analisar, a partir da experiência dos campi do\nInstituto Federal Catarinense – IFC que ofertam moradia estudantil: Abelardo Luz, Concórdia, Rio\ndo Sul e Santa Rosa do Sul, a importância de um espaço seguro e acolhedor, com a finalidade de\ncontribuir para o desenvolvimento integral por meio de estratégias que promovam um ambiente\nescolar mais inclusivo para todos/todas. Outro aspecto, deste estudo, diz respeito à forma como está\nsendo trabalhado nesse espaço escolar o acolhimento aos/às estudantes “TRANS”.\nInicialmente, cabe pontuar que esta reflexão tem sua origem nas atividades de acolhimento1\ndirecionadas aos/às estudantes e que são desenvolvidas nos campi do Instituto Federal Catarinense –\nIFC, em especial naqueles que ofertam a moradia estudantil, como também na regulamentação desta.\nNeste sentido, parte-se de algumas estratégias no trabalho de acolhimento, as quais têm como\nprincípio básico contribuir para a permanência e êxito dos/das estudantes em questão. A escolha dos\ncampi para esta pesquisa se deu em virtude dos estudantes não só frequentarem as aulas durante toda\na semana na instituição, mas permanecerem na moradia estudantil, tendo um convívio maior entre\ntodos, sendo este o maior desafio.\nA inclusão e a diversidade, temas cada vez mais recorrentes no debate educacional, são valores\nfundamentais em uma sociedade que busca, para todos e todas, a equidade e o respeito,\nindependentemente das características individuais. Nesse contexto, a escola se destaca como um\nespaço fundamental para a promoção de uma sociedade inclusiva, assumindo o papel de promotora\nda igualdade e do respeito por todas as identidades. Tal constatação remete a um tema específico, a\ndiversidade de gênero, e se embasa no entendimento de que as instituições educativas desempenham\num papel crucial na formação de indivíduos conscientes, tolerantes e inclusivos.\nA sociedade contemporânea está em constante evolução, assim lança o desafio da necessidade\nde repensar e reestruturar as instituições, de modo que a sociedade possa refletir acerca da diversidade\nque a compõem. Um desses aspectos cruciais é a compreensão e, do mesmo modo, a acomodação das\nidentidades de gênero fora da dicotomia tradicional. Nas escolas, a inclusão de estudantes transgênero\né um tema de extrema relevância, pois envolve garantir um ambiente seguro e acolhedor aos/às\nestudantes, independentemente da identidade de gênero.\n\n1 Trabalho realizado no início do ano letivo com os/as estudantes ingressantes nos cursos técnicos ofertados pelo IFC.\n\n[PÁG. 17]\n16\n\nO acolhimento de estudantes nos primeiros dias do ano letivo é uma prática importante para\nestabelecer uma atmosfera de confiança, respeito e cooperação entre professores/as, técnicos/as e\nestudantes. Este trabalho é realizado nos campi do IFC e envolve diversas atividades, como\napresentação dos docentes, técnicos/as e estudantes, orientação sobre os regulamentos da instituição,\ndestacando o Regulamento de Conduta Discente, Regulamento da Moradia Estudantil e integração\nentre as turmas.\nO objetivo da atividade aqui em questão é criar um ambiente acolhedor, seguro, estimulante\npara o desenvolvimento e a convivência dos/das estudantes e é realizado por intermédio de dinâmicas\nde grupo, rodas de conversa, jogos e brincadeiras, que visam promover a integração, a autoestima e\no bem-estar. Trata-se de um trabalho muito simétrico, mas que necessita ser ampliado para aproveitar\na confiança e cooperação entre estudantes. Por essa razão, a apresentação da Cartilha de Orientações\né fundamental para o processo de inclusão, já que busca sensibilizar os/as estudantes em como lidar\ncom a diversidade, evitando situações de discriminação, violência ou preconceito.\nDesse modo, pode-se afirmar que a acolhida adequada a estudantes transgênero nos campi,\nparticularmente nos que oferecem moradia estudantil, é um passo essencial para avalizar um ambiente\nde aprendizado seguro e inclusivo, em que os/as estudantes possam alcançar o êxito acadêmico.\nO trabalho de recepção/acolhimento promovido pelos campi do IFC é a chave propulsora\ninicial na construção de laços entre estudantes e instituição. Essas conexões são fundamentais para\naproximar o/a estudante do contexto diário no campus, por meio do desenvolvimento de um ambiente\nsocial no qual o sentimento de pertencimento desempenha um papel crucial na sustentação, na\ncompreensão da realidade e impulsiona a participação ativa.\nPode-se, de acordo com Mantoan (2004), entender a inclusão como o processo que garante,\nno ambiente educacional, acesso igualitário às oportunidades e recursos, a todas as pessoas\nindependentemente de suas origens, habilidades e características. Por outro lado, é um espaço de\ncontradições, e o percurso histórico revela que a escola ao mesmo tempo reproduz e critica as\nconcepções dominantes. Desse modo, é a instituição com potencial para alterar os padrões e normas,\nque se manifestam por meio de processos de exclusão, derivados da relação hierárquica e dos\npreconceitos sociais, podendo promover ações que levam a repensar as práticas tradicionalmente\nautoritárias (FERREIRA e BORBA, 2021).\nÉ inegável que a escola desempenha um papel fundamental na formação de cidadãos críticos,\ncriativos e conscientes de sua diversidade cultural e social. Para isso, é preciso que ela reconheça e\nvalorize as diferentes formas de expressão, comunicação e aprendizagem, respeitando as origens,\nvalores e sentimentos daqueles/daquelas que dela fazem parte. Assim, não pode se isolar da realidade\n\n[PÁG. 18]\n17\n\nque a cerca, nem impor uma visão única e homogênea do conhecimento. A escola, deve, então,\npromover o diálogo, a colaboração e a participação dos/das estudantes na construção do próprio saber,\nestimulando a autonomia, criatividade e criticidade (MANTOAN, 2003).\nCom base nesse pressuposto, DIAS e DE OLIVEIRA afirmam que:\no cotidiano escolar é dinâmico, fluido e com experiências inesperadas, que se inserem nas\npráticas pedagógicas através do currículo “oculto” ou “informal”, permeando nas aulas e no\ncotidiano escolar, questões diversas. Os programas das disciplinas escolares e a própria\ngestão organizacional, muitas vezes, não se apropria dessas questões, desprezando-as; porém,\nquando em situações adversas, elas aparecem. (DIAS e DE OLIVEIRA, 2015, p. 260).\nPartindo da afirmação acima e direcionando a discussão para o viés da inclusão, apesar de as\nconquistas históricas de movimentos feministas, ocorridas nas últimas décadas, apontarem para o\ndesenvolvimento da igualdade de gênero, as desigualdades ainda persistem na sociedade brasileira.\nEssa constatação, encontrada em diversos estudos da literatura acerca desta temática, justifica o\ndebate em torno das relações de gênero, em ambiente escolar (RIBEIRO, CATRINCK e\nMAGALHÃES, 2021). São notórias as dificuldades das pessoas transgênero2 e a suscetibilidade a\nnumerosas violações aos direitos humanos.\nNesse cenário, de acordo com VIGANO e LAFFIN (2017, p. 658),\na discussão de gênero e sexualidade baseia-se em uma construção histórica da desigualdade\nentre homens e mulheres, que faz parte de nossa sociedade há décadas, e, mesmo assim, ainda\nexistem fatores que se colocam como impeditivos desses debates.\nNessa direção, a importância da educação, entre outros fatores, é ensinar as pessoas a serem\ncidadãs. Como toda a propriedade humana, a cidadania é resultado da prática, do processo que se\ninicia com a educação (PEDRA, 2020, p. 72). Por essa razão, a criação de instrumentos que integram\nsujeito e objeto, teoria e prática, conhecimento e realidade, é imperativa para o diálogo com os\n“pressupostos de uma educação transformadora e crític",
+    "descricao_produto_na_dissertacao": "[PÁG. 19] comunidade escolar, procurando evidenciar o comprometimento da educação com a inclusão. “A\nescola como instituição inclusiva deve ser promotora da igualdade sobretudo na questão de gênero e\nda não discriminação” (MARCHÃO E HENRIQUES, 2017).\nNo entanto, no âmbito escolar, Cesar (2019), adverte que na escola estes temas não passam\nde conceitos muito superficiais, que não são trabalhados com profundidade em decorrência da\npermanência de padrões rotineiros. Tal compreensão indica que é preciso realizar ações concretas\npara a inclusão, porquanto as vivências de estudantes impactam diretamente no processo de\naprendizagem. A ausência de uma postura inclusiva culmina no contrário, e esse fato gera evasão\nescolar, pois os/as excluídos/as não se sentem parte deste ambiente e sofrem preconceitos. Com base\nnisso, destacam-se as questões de gênero e sexualidade que, devido ao preconceito e a discriminações,\nculminam em agressões física e moral. Por não se enquadrarem nos “chamados” padrões sociais,\nessas pessoas são impelidas à exclusão e à evasão escolar, sendo que a “distinção sexual, serve para\ncompreender — e justificar — a desigualdade social” (LOURO, 1997, p. 22).\nNesse sentido, o acolhimento também é uma oportunidade para conhecer as expectativas, os\ninteresses, as dificuldades e as potencialidades dos/das estudantes, bem como as características\nindividuais e culturais. Assim, a instituição pode planejar ações pedagógicas que atendam às\nnecessidades e aos objetivos de cada um, respeitando a diversidade e a singularidade dos sujeitos.\nAlém disso, o acolhimento favorece o estabelecimento de vínculos afetivos entre os/as participantes\nda comunidade escolar, o que contribui para a prevenção de conflitos, a promoção da cidadania e a\nformação de uma cultura de paz.\nComo uma demonstração de avanço, o IFC desempenha um papel crucial não apenas na\ntransmissão de conhecimento, mas também na construção de ambientes inclusivos e acolhedores para\nos/as estudantes. No entanto, quando se trata de estudantes transgênero, ainda há desafios\nsignificativos a serem superados, especialmente os que se referem a ambientes de moradia estudantil.\nDesta forma, o produto educacional que foi produzido completa as atividades que são trabalhadas no\nacolhimento, proporcionando um novo olhar para esse trabalho com estudantes, especialmente os\n“TRANS” nos campi do IFC. E como resultado tem-se espaços de diálogo, reflexão e aprendizado,\nque contribuem para a construção de uma cultura de respeito, inclusão e valorização da diversidade\nno ambiente escolar.\nCom base no que se coloca acima, é de grande importância, segundo LOURO (1997, p. 81),\nque se tenha a ciência de que a presença da sexualidade independe da intenção manifesta ou dos\ndiscursos explícitos, da existência ou não de uma disciplina de “educação sexual”, da inclusão ou não\ndesses assuntos nos regimentos escolares. A sexualidade está presente nos sujeitos, as pessoas\n\n[PÁG. 22] a partir das propostas pedagógicas, do tipo de sujeito que se quer formar e da realidade\nescolar, torna-se importante que as temáticas relacionadas aos corpos, gêneros e sexualidades\nestejam presentes, pois essas são questões sociais e fazem parte do cotidiano das escolas em\ndiversas situações, tais como: na separação das filas entre meninas e meninos, na divisão dos\nbanheiros, nos namoros na escola, na gravidez de uma adolescente, na homofobia, na\ndiversidade de corpos, entre outros.\nNesta perspectiva, este tema perpassa questões so",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 24,
+        "texto": "Nas comunidades primitivas, por meio do trabalho, o ser humano extraía da natureza\nelementos para a satisfação das suas necessidades, pois necessitava inicialmente produzir a sua vida.\nEntão, aquele indivíduo agia sobre a natureza e a transformava conforme suas necessidades. Essa\nação, que era consciente sobre o meio, foi capaz de criar e recriar as condições de sua existência. Para\nisso, teve que trabalhar e, portanto, significa dizer que a essência do homem é o trabalho (SAVIANI,\n1989, 2007).\nCom o desenvolvimento das relações sociais, dá-se início à divisão do trabalho e,\nconsequentemente, o estabelecimento da propriedade privada e a concentração dos meios de produção\nnas mãos de poucos. Esse acontecimento provocou a ruptura da unidade vigente nas comunidades\nprimitivas e fez com que o surgisse a divisão social por classes (SAVIANI, 2007).\nNeste sentido, Saviani, no que tange à educação e à forma de organização, destaca que\na maneira como os homens produzem os seus meios de vida permite a organização da escola\ncomo um espaço separado da produção. Logo, a separação também é uma forma de relação,\nou seja: nas sociedades de classes a relação entre trabalho e educação tende a manife",
+        "citacoes_detectadas": [
+          "SAVIANI, 2007",
+          "SAVIANI, 1989",
+          "SILVA, 2009",
+          "VIEIRA E JUNIOR,\n2016"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 25,
+        "texto": "a educação formal brasileira é reflexo da sociedade que fomos constituindo (e nos\nconstituindo) ao longo de nossa história: uma sociedade escravocrata e colonial, forjada por\nideais burgueses e individualistas, cujas práticas políticas nunca priorizaram as massas\nmazeladas pelo capital, mas as segregaram e aprisionaram sob o rótulo de “minorias” a serem\ndominadas pelo poder hegemônico. (RIBEIRO, CATRINCK, E MAGALHÃES, 2021, p. 3).\nA partir de sua criação, esse campo educativo é um palco de disputa de ideologias pela\ndicotomia, em relação à educação propedêutica e profissional (FELIPPE, 2019). “As funções sociais\nhistóricas atribuídas ao ensino médio estiveram sempre em consonância com a divisão do trabalho\n[…] separação do secundário ou propedêutico para as elites e profissional à classe trabalhadora”\n(PADOIN e AMORIN, 2016. p. 07).\nEm conformidade com o que se coloca, vale ressalvar os pressupostos teóricos e\nmetodológicos que norteiam os documentos das políticas públicas. E quando se trata de Educação\nProfissional Técnica de Ensino Médio, destacam-se dois princípios fundamentais, que devem nortear\no processo educativo para a formação integral: o trabalho como princípio educativo ",
+        "citacoes_detectadas": [
+          "FELIPPE, 2019",
+          "FELIPPE, 2019",
+          "SAVIANI, 1989",
+          "SAVIANI, 2007, p.161"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 26,
+        "texto": "propriedade privada, com a socialização dos meios de produção, em decorrência do processo\nprodutivo a serviço da coletividade (SAVIANI, 1989). No mesmo sentido, Felippe destaca que,\no trabalho pode assumir uma configuração educativa e contribuir para o processo formativo\ndo indivíduo, principalmente quando próximo do processo educacional. Entende-se que, por\nintermédio da educação, considerando o princípio educativo do trabalho, pode-se chegar ao\nconhecimento, ao processo de formação humana integral, promoção da cultura, a produção\ndos meios de vida e a transformação da sociedade. (2019, p. 4).\nIgualmente, para Ramos (2008), o trabalho como princípio educativo abrange a\nindissociabilidade entre trabalho, ciência e cultura, uma vez que o ser humano é sujeito de sua própria\nhistória e produtor da realidade. Por esse motivo, é impossível discutir educação dissociada da ideia\nde que o trabalho é o princípio educativo, que nesse sentido caracteriza a educação politécnica\n(FELIPPE, 2019).\nLevando em consideração a dinâmica histórica educacional, para Saviani diz que\ntoda a educação organizada se dá a partir do conceito e do fato do trabalho, portanto, do\nentendimento e da realidade do tr",
+        "citacoes_detectadas": [
+          "SAVIANI, 1989",
+          "FELIPPE, 2019",
+          "SILVA, 2009, p. 10",
+          "IFC, 2019, p.20"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 32,
+        "texto": "Além disso, a perspectiva de Paulo Freire (1987) sobre educação emancipadora e crítica é\nessencial para embasar o processo de inclusão escolar de pessoas trans; destaca a importância de uma\neducação que liberte e promova a consciência crítica, permitindo que todos os alunos, incluindo os\ntrans, possam se ver representados e respeitados dentro do ambiente escolar. Em \"Pedagogia do\nOprimido\", Freire propõe uma educação dialógica que valoriza a experiência e a voz dos estudantes,\ncombatendo a opressão e a marginalização. Para a inclusão escolar de alunos trans, isso implica na\nnecessidade de formação continuada dos educadores sobre questões de gênero e diversidade,\ncurrículos que abordem e respeitem a diversidade de identidades de gênero, e políticas escolares que\nprotejam e promovam os direitos desses estudantes. Ao criar um ambiente escolar que reconheça e\nvalorize a diversidade de gênero, a educação não só se torna mais justa e inclusiva, mas também\ncontribui para a formação de uma sociedade mais equitativa e respeitosa com as diferenças.\nNessa perspectiva, significa adotar uma perspectiva crítica e reflexiva sobre as questões de\ngênero e sexualidade na educação, reconhecendo a div",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 33,
+        "texto": "A primeira etapa pertencente à metodologia esteve centrada na aprovação desta pesquisa, no\nque compreende a coleta de dados, pelo Comitê de Ética em Pesquisa com Seres Humanos\n(CEPSH/IFC), conforme parecer consubstanciado nº 5.232.181. Em relação ao processo da pesquisa,\nos dados e instrumentos utilizados ficarão arquivados com o pesquisador responsável por um período\nde 05 anos, após decorrido esse tempo, serão destruídos.\nLevando em consideração o escopo deste estudo, cabe informar que o objetivo aqui é analisar\ncomo é realizado o acolhimento aos estudantes “TRANS” do ensino médio integrado no Instituto\nFederal Catarinense (IFC) – Campus Santa Rosa do Sul, Concórdia, Abelardo Luz e Rio do Sul, em\nvirtude de estes ofertarem a moradia estudantil.\nAs bases conceituais da EPT que balizam a formação humana integral e o trabalho como\nprincípio educativo se apresentam também como farol teórico-metodológico. Entende-se, portanto,\nque a escola se constitui como lugar de encontro de distintas determinações culturais e, assim sendo,\ncompõe interesses diversos e visões variadas. Desta forma, não há como separar esses dois elementos.\nOs dados de contato dos/das 28 participantes foram obtidos ",
+        "citacoes_detectadas": [
+          "ZANELLA,2013"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "FELIPPE, Bárbara Colossi. A Pesquisa como Princípio Pedagógico na Educação Profissional Técnica de Nível Médio: um estudo de caso com docentes participantes do edital 20/2017/PROPPI/DAE do Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina (IFSC) - Dissertação (Mestrado Profissional) - Florianópolis,",
+      "SAVIANI, Dermeval. Sobre a concepção de politecnia/Dermeval Saviani. Rio de Janeiro: FIOCRUZ. Politécnico da Saúde Joaquim Venâncio, 1989.",
+      "SAVIANI, Demerval. Trabalho e educação: fundamentos ontológicos e históricos. Revista Brasileira de Educação, Rio de Janeiro. v. 12, n. 34, p. 152-180, jan./abr. 2007. Disponível em: http://educa.fcc.org.br/scielo.php?script=sci_abstract&pid=S1413- 24782007000100012&lng=pt&nrm=iso&tlng=pt, Acesso em: 16 ago. 2021. 56",
+      "SILVA, Caetana Juracy Resende. Institutos Federais lei 11.892, de 29/11/2008: comentários e reflexões / organização, – Natal: IFRN, 2009. 70 p.:",
+      "SILVA, Edna Lúcia da, Metodologia da pesquisa e elaboração de dissertação/Edna Lúcia da Silva, Estera Muszkat Menezes. – 4. ed. rev. atual. – Florianópolis: UFSC, 2005. 138p",
+      "SILVA, Keo; VAZ, Alexandre Fernandez. Pessoas trans no ensino superior: lutas por acesso e permanência, a exemplo da Universidade Federal de Santa Catarina (2012-2015). Crítica Cultural, Palhoça,",
+      "VIEIRA, A. M. D. P.; JUNIOR, A. de S. A educação profissional no Brasil. Revista Interacções, [S. l.], v. 12, n. 40, 2017. DOI: 10.25755/int.10691. Disponível em: https://revistas.rcaap.pt/interaccoes/article/view/10691. Acesso em: 16 abr. 2022.",
+      "ZANELLA, Liane Carly Hermes, Metodologia de pesquisa / Liane Carly Hermes Zanella. – 2. ed. reimp. – Florianópolis: Departamento de Ciências da Administração/UFSC, 2013. 134 p. : il. 57 7"
+    ]
+  }
+}

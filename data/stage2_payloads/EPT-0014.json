@@ -1,0 +1,389 @@
+{
+  "id": "EPT-0014",
+  "metadados_resolvidos": {
+    "ano": 2025,
+    "autor": "Jainara Pacheco de Braga",
+    "orientador": "Cloves Alexandre de Castro",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP3"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "ENSINO AGRÍCOLA, AGRICULTURA FAMILIAR E AGROECOLOGIA: UMA APROXIMAÇÃO NECESSÁRIA",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/09/DISSERTACAO-E-PRODUTO-EDUCACIONAL_JAINARA.pdf",
+    "palavras_chave": [
+      "Currículo",
+      "Formação integral",
+      "Ensino agrotécnico",
+      "Agroecologia",
+      "Agricultura Familiar"
+    ],
+    "autores_referenciados": [
+      "A. P. Dias",
+      "Adriana D'Agostini",
+      "Alcione Talaska",
+      "Alessandro Eziquiel Paixão",
+      "Alvaro de Vita",
+      "Alvaro Hypolito",
+      "Anakeila de Barros Stauffer",
+      "André Cellard",
+      "André Monteiro Costa",
+      "Antoni Zabala",
+      "Antonio Bento Mancio",
+      "Antônio Carlos Gil",
+      "Antônio Flávio Barbosa Moreira",
+      "Ariovaldo Umbelino de Oliveira",
+      "Aristela Arestides Lima",
+      "Armando Bartra Vergés",
+      "Assis Leão da Silva",
+      "Augusto Nibaldo Silva Triviños",
+      "Avelar Araújo Santos Junior",
+      "Barbara Aparecida Nunes Silva",
+      "Barbara Maria Popenga",
+      "Bernardo Mançano Fernandes",
+      "Bernardo Parodi Svartman",
+      "Bill Mollison",
+      "C. Schimitt",
+      "Carla Moro Bitencourt",
+      "Carlos Renilton Freitas Cruz",
+      "Celbo Antonio da Fonseca Rosas",
+      "Célia Regina Appio",
+      "Célia Regina Vendramini",
+      "César Nunes de Castro",
+      "Clarice Aparecida Santos",
+      "Cláudia Valentina Assumpção Galian",
+      "Cláudio Koller",
+      "Clécio Henrique Limeira",
+      "Cloves Alexandre de Castro",
+      "Daniella de Souza Bezerra",
+      "Danielle Cerri",
+      "Dante Henrique Moura",
+      "David José Caume",
+      "Demóstenes Dantas Vieira",
+      "Denis Monteiro",
+      "Dermeval Saviani",
+      "Diogo de Souza Pinto",
+      "Dirceia Aparecida Silva Anjos",
+      "E. S. Borges",
+      "Edisio Oliveira de Azevedo",
+      "Eduardo Brandão Lima Junior",
+      "Edvaldo Aparecido Souza",
+      "Eliezer Moreira Pacheco",
+      "Elisabeth Juchem Machado Leal",
+      "Elmer Agostinho Carlos Matos",
+      "Eva Maria Lakatos",
+      "Fabiana Fátima Cherobin",
+      "Fabiane Machado Vezani",
+      "Fabrício Menicucci",
+      "Fernando Bilhalva Vitória",
+      "Fernando Michelotti",
+      "Flavia Londres",
+      "Flávia Moreira Barroca Barros",
+      "Francieli Marchesan",
+      "Francinete Pessoa Nogueira",
+      "Francisco José Montorio Sobral",
+      "Francisco Roberto Caporal",
+      "Gabriel B. Fernandes",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "Geralda Aparecida de Carvalho Pena",
+      "Gildair Lopes Santos",
+      "Glademir Alves Trindade",
+      "Gustavo Pinto Silva",
+      "Hemelyn Soares das Chagas",
+      "Igor Ojeda",
+      "Ilma Passos Veiga",
+      "Irineu Mario Colombo",
+      "Italo Carneiro",
+      "Jainara Pacheco de Braga",
+      "João Cichaczewski",
+      "João P. Stédile",
+      "João Vitor Balla",
+      "Joaquim Tavares da Conceição",
+      "José Carlos Köche",
+      "José de Souza Martins",
+      "José Gllauco Smith Avelino Lima",
+      "José Maria Ferraz",
+      "Jovana Ritter Antunes",
+      "Julian Perez-Cassarino",
+      "Juliana Santilli",
+      "Karl Marx",
+      "L. H. G. Moura",
+      "Laurence Roudart",
+      "Leandro Severino Nascimento Oliveira",
+      "Leonardo Melgarejo",
+      "Leonilde Sérvolo de Medeiros",
+      "Letícia Dalmazzo Melotti",
+      "Luciana Buainain Jacob",
+      "Luciana Miyoko Massukado",
+      "M. C. Vargas",
+      "M. M. Silva",
+      "Maico Parisoto",
+      "Maicon Fontanive",
+      "Marcel Mazoyer",
+      "Marcela Pereira Rosa",
+      "Marcella Marcelli Lopes",
+      "Marcia Lie Ayukawa",
+      "Marcio Silva",
+      "Marco Antonio Carvalho",
+      "Marco Antonio de Moraes",
+      "Marcus Peixoto",
+      "Maria Aparecida da Silva",
+      "Maria Auxiliadora Tavares Carvalho",
+      "Maria Ciavatta",
+      "Maria de Nazareth Baudel Wanderley",
+      "Maria Geiza Ferreira Freire",
+      "Maria Isabel Antunes-Rocha",
+      "Marina de Andrade Marconi",
+      "Marise Nogueira Ramos",
+      "Marja Zattoni Milano",
+      "Melania Olimira Hohn",
+      "Michael Young",
+      "Miguel Altieri",
+      "Mirina Luiza Myczkowski Gomes",
+      "Moacir Palmeira",
+      "Mônica Alves Gonçalves",
+      "Monica Costa Arrevabeni",
+      "Nayara Pasqualotto",
+      "Olinda Evangelista",
+      "Orlando Bif",
+      "Oséias Santos de Oliveira",
+      "Otavio Guilherme Velho",
+      "Paula Baptista Jorge Louzano",
+      "Páulea Zaquini",
+      "Paulo da Silveira",
+      "Paulo Freire",
+      "Priscila Leite",
+      "Renato Linhares Assis",
+      "Rinaldo de Castilho Rossi",
+      "Rogério Leandro Lima da Silveira",
+      "Romier da Paixão Sousa",
+      "Romiere da Paixão Sousa",
+      "Ronaldo Marcos Araujo",
+      "Rony Freitas",
+      "Rosa Maria Vieira Medeiros",
+      "Roseli Saleti Caldart",
+      "Salomão Mufarrej Hage",
+      "Silvana Maria Gritti",
+      "Sonia Regina Mendonça",
+      "Tabajara Marcondes",
+      "Tatiana Aparecida Balem",
+      "Thais Patricia Paulino Silva",
+      "Tomaz Tadeu Silva",
+      "Uwe Flick",
+      "Virginia Elisabeta Etges",
+      "Vitória Guedes Geraldo",
+      "W. D. A. Silva",
+      "W. O. Simões",
+      "Walter Steenbock"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/1131104",
+    "titulo_produto": "Contribuições para o debate sobre agroecologia no ensino médio integrado",
+    "titulo_produto_bruto": "CONTRIBUIÇÕES PARA O DEBATE SOBRE AGROECOLOGIA NO ENSINO MÉDIO INTEGRADO",
+    "data_publicacao": "2025-09-16",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Braga, Jainara Pacheco de",
+        "papel": "creator"
+      },
+      {
+        "nome": "Castro, Cloves Alexandre de",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1131104",
+        "url": "https://educapes.capes.gov.br/handle/capes/1131104"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Contribuições para o debate sobre agroecologia no ensino médio integrado",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "livro digital"
+    ],
+    "palavras_chave_educapes": [
+      "Currículo",
+      "Formação Integral",
+      "Agroecologia",
+      "Agricultura Familiar",
+      "Mestrado em Educação Profissional e Tecnológica-PROFEPT"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Minuta / Norma",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\nJAINARA PACHECO DE BRAGA\nENSINO AGRÍCOLA, AGRICULTURA FAMILIAR E AGROECOLOGIA: UMA\nAPROXIMAÇÃO NECESSÁRIA\nBlumenau\n2025\n\nJAINARA PACHECO DE BRAGA\nENSINO AGRÍCOLA, AGRICULTURA FAMILIAR E AGROECOLOGIA: UMA\nAPROXIMAÇÃO NECESSÁRIA\nDissertação apresentada ao Programa de Pós-\ngraduação em Educação Profissional e\nTecnológica, ofertado pelo campus Blumenau\ndo Instituto Federal Catarinense, como parte\ndos requisitos para a obtenção do título de\nMestre/Mestra em Educação Profissional e\nTecnológica.\nOrientador: Prof° Dr.Cloves Alexandre de\nCastro\nBlumenau\n2025",
+    "ficha_catalografica": "[PÁG. 3]\nFICHA CATALOGRÁFICA DISSERTAÇÃO\n\n Braga, Jainara Pacheco.\nB813e Ensino agrícola, agricultura familiar e agroecologia: uma aproximação\nnecessária / Jainara Pacheco de Braga ; orientador: Cloves Alexandre de\nCastro . -- Blumenau, 2025.\n 269 p.\n Dissertação (mestrado) – Instituto Federal Catarinense, campus\nBlumenau, Mestrado Profissional em Educação Profissional Tecnológica\n(PROFEPT), Blumenau, 2025.\n Inclui referências.\n\n 1. Currículo. 2. Ensino Agrícola. 3. Ecologia Agrícola.\n 4. Agricultura Familiar. 5.Formação Integral. I. Castro, Cloves Alexandre de .\nII. Instituto Federal Catarinense. Mestrado Profissional em Educação\nProfissional e Tecnológica. III. Título\n\nCDD: 374.013\nFicha catalográfica elaborada pela bibliotecária\n Shyrlei K. Jagielski Benkendorf - CRB 14/662",
+    "sumario": "[PÁG. 17]\nSUMÁRIO\n1 INTRODUÇÃO\n 15\n2 REFERENCIAL TEÓRICO\n 23\n2.1 Agricultura Familiar, Agroecologia e Extensão Rural\n 23\n2.2 Trajetória histórica do ensino agrícola e da Educação Profissional no Brasil 32\n2.3 Os Institutos Federais e a formação integral\n 42\n2.4 Currículo e ensino agrícola: territórios em disputa\n 49\n3 METODOLOGIA 59\n4 RESULTADOS E DISCUSSÕES\n 63\n4.1 Análise das diretrizes\n 64\n4.2 Análise do documento de (Re)ssignificação do ensino agrícola da Rede Federal\nde Educação Profissional e Tecnológica\n 80\n4.3 Análise dos Projetos Pedagógicos de Curso: Contradições em curso\n 104\n4.4 Análise das matrizes curriculares\n 117\n5 PRODUTO EDUCACIONAL\n 133\n5.1 Avaliação do Produto Educacional\n\n 138\nCONSIDERAÇÕES FINAIS\n 154\nREFERÊNCIAS\n 157\nANEXO A – PERFIL PROFISSIONAL DO TÉCNICO EM AGROPECUÁRIA\nINTEGRADO AO ENSINO MÉDIO\n 168\nAPÊNDICE A – PRODUTO EDUCACIONAL\n 172\n15\n1 INTRODUÇÃO\nEsse estudo emergiu do desejo de refletir sobre o currículo do Curso Técnico\nem Agropecuária Integrado ao Ensino Médio do Instituto Federal Catarinense - IFC.\nA proposta se enquadra na linha de pesquisa “Organização e Memória de Espaços\nPedagógicos na Educação Profissional e Tecnológica”, macroprojeto “Práticas\nEducativas no Currículo Integrado”.\nA pesquisa em educação ou ensino surge, frequentemente, a partir dos\nquestionamentos originados da prática cotidiana dos profissionais da educação\n(Triviños, 2015). No contexto dos Mestrados Profissionais isso é, ainda, incentivado\ne reiterado. Em diálogo sobre a pesquisa qualitativa em educação, Triviños sugere\nque\nparece-nos recomendável que o foco da pesquisa de um estudante de pós-\ngraduação deve estar essencialmente vinculado a dois aspectos\nfundamentais: 1° O tópico de pesquisa deve cair diretamente no âmbito\ncultural de sua graduação (secundariamente no da especialização); 2° o\nassunto deve surgir da prática quotidiana que o pesquisador realiza como\nprofissional (Triviños, 2015, p. 93).\nDurante os últimos anos vivenciei algumas experiências com o ensino\nagrícola, como egressa de um curso destinado a formação docente para o ensino\nagrícola, a Licenciatura em Ciências Agrícolas no IFC campus Araquari e,\nposteriormente, como professora na mesma instituição.\n Ao longo da graduação\ne posteriormente como docente no curso, me deparei com a baixa expressividade da\nAgroecologia no currículo do curso Técnico em Agropecuá",
+    "resumo": "[PÁG. 11]\nRESUMO\nA presente pesquisa, de natureza básica e abordagem qualitativa, desenvolvida no\nPrograma de Mestrado Profissional em Educação Profissional e Tecnológica\n(ProfEPT) ofertado pelo IFC campus Blumenau está vinculada à linha de pesquisa\n“Organização e memória de Espaços Pedagógicos na Educação Profissional e\nTecnológica”. O estudo objetivou compreender como a Agroecologia e a Agricultura\nFamiliar estão presentes no currículo dos Cursos Técnicos em Agropecuária\nIntegrados ao Ensino Médio de sete campi do IFC. Para tanto, mergulhou-se no\naprofundamento teórico acerca da Educação Profissional (EPT) e Tecnológica, do\ncurrículo do ensino integrado, do histórico da EPT e do ensino agrícola, da\nAgroecologia e da Agricultura Familiar. Os procedimentos técnicos para a coleta de\ndados foram a pesquisa bibliográfica e análise documental. O corpus documental da\npesquisa consistiu nos Projetos Pedagógicos de todos os cursos Técnicos em\nAgropecuária Integrados ao Ensino Médio ofertados no IFC, nas resoluções que\norientam a operação do ensino médio integrado no IFC e no documento de\n(Re)ssignificação do Ensino Agrícola da Rede Federal de Educação Profissional e\nTecnológica. Tendo o materialismo histórico-dialético como campo teórico, foi\nutilizada a Análise de Conteúdo como metodologia para analisar os dados. O\nresultado da pesquisa indica, sobretudo, que não há uma abordagem agroecológica\nnos currículos dos cursos estudados e que, apesar da Agricultura Familiar estar\npresente na justificativa dos cursos, ainda há uma primazia pelas formas patronais\nde produção. A pesquisa revelou também uma incipiência na formação voltada a\nextensão rural participativa na maior parte dos cursos analisados. Como produto\neducacional, foi desenvolvido um material didático contendo uma abordagem\npossível acerca da Agroecologia e da Agricultura Familiar para professores e\nestudantes dos cursos de Ciências agrárias, sobretudo dos Cursos Técnicos em\nAgropecuária Integrados ao Ensino Médio. O produto educacional foi avaliado\npositivamente por docentes e discentes.\nPalavras-Chave: Currículo. Formação integral. Ensino agrotécnico. Agroecologia.\nAgricultura Familiar.",
+    "introducao": "[PÁG. 18]\n15\n1 INTRODUÇÃO\nEsse estudo emergiu do desejo de refletir sobre o currículo do Curso Técnico\nem Agropecuária Integrado ao Ensino Médio do Instituto Federal Catarinense - IFC.\nA proposta se enquadra na linha de pesquisa “Organização e Memória de Espaços\nPedagógicos na Educação Profissional e Tecnológica”, macroprojeto “Práticas\nEducativas no Currículo Integrado”.\nA pesquisa em educação ou ensino surge, frequentemente, a partir dos\nquestionamentos originados da prática cotidiana dos profissionais da educação\n(Triviños, 2015). No contexto dos Mestrados Profissionais isso é, ainda, incentivado\ne reiterado. Em diálogo sobre a pesquisa qualitativa em educação, Triviños sugere\nque\nparece-nos recomendável que o foco da pesquisa de um estudante de pós-\ngraduação deve estar essencialmente vinculado a dois aspectos\nfundamentais: 1° O tópico de pesquisa deve cair diretamente no âmbito\ncultural de sua graduação (secundariamente no da especialização); 2° o\nassunto deve surgir da prática quotidiana que o pesquisador realiza como\nprofissional (Triviños, 2015, p. 93).\nDurante os últimos anos vivenciei algumas experiências com o ensino\nagrícola, como egressa de um curso destinado a formação docente para o ensino\nagrícola, a Licenciatura em Ciências Agrícolas no IFC campus Araquari e,\nposteriormente, como professora na mesma instituição.\n Ao longo da graduação\ne posteriormente como docente no curso, me deparei com a baixa expressividade da\nAgroecologia no currículo do curso Técnico em Agropecuária Integrado ao Ensino\nMédio. Sendo proveniente de uma formação que tem como pautas a valorização da\nAgroecologia e da Agricultura Familiar preza pela formação de técnicos em\nagropecuária aptos para lidar com as demandas por sustentabilidade ambiental e\nsocial no campo, surgiram algumas inquietações com relação ao currículo do curso\ne sua perspectiva formativa.\nA baixa expressividade dessas temáticas na formação agropecuária pode\ncontribuir para acentuar as relações desiguais de trabalho e condições de acesso a\nmercados e políticas públicas pelos pequenos produtores rurais, visto que os\nprofissionais que deveriam amparar e fomentar o desenvolvimento rural sustentável\ncom vistas à inclusão do campesinato, estão recebendo uma formação hegemônica\nque serve aos interesses das formas patronais de produção, contribuindo para a\n\n[PÁG. 19]\nmanutenção do metabolismo socioecológico do capital.\nNesse estudo, o currículo será o aspecto central da discussão, uma vez que\nrepresenta uma intencionalidade formativa e, consequentemente, um projeto de\ncidadão e profissional que se almeja formar. A ênfase se dará aos currículos dos\ncursos Técnico em Agropecuária Integrado ao Ensino Médio do IFC de todos os\ncampi que ofertam o curso homônimo. Visando compreender as determinantes que\nlevaram a construção de tais documentos, também serão analisadas as diretrizes e\nnormativas que orientam sua construção e reformulação. E, como ponto de partida\npara a reflexão acerca dos Projetos Pedagógicos dos Cursos (PPCs), será analisado\no documento de (Re)ssignificação do Ensino Agrícola da RFEPT.\nO Instituto Federal Catarinense integra a Rede Federal de Educação\nProfissional e Tecnológica e possui, atualmente, 15 campi além da Reitoria,\ndistribuídos nas seguintes cidades de Santa Catarina: Abelardo Luz, Araquari,\nBlumenau, Brusque, Camboriú, Concórdia, Fraiburgo, Ibirama, Luzerna, Rio do Sul,\nSanta Rosa do Sul, São Bento do Sul, São Francisco do Sul, Sombrio e Videira\n(Instituto Federal Catarinense, 2019), conforme figura abaixo.\nFonte: Site do IFC na internet1.\nA instituição foi criada pela Lei 11.892 em 2008 a partir da integração das\nescolas agrotécnicas federais de Concórdia, Sombrio e Rio do Sul e os colégios\n1\n Disponível em: http://ifc.edu.br/sobre-o-ifc/ Acesso em: 19 de ago. 2023\nFigura 1 – Mapa de Distribuição dos campi do IFC\n\n[PÁG. 20]\n17\nagrícolas de Camboriú e Araquari. Atualmente, a instituição oferta, em seus diversos\ncampi, cursos de qualificação profissional, educação profissional técnica de nível\nmédio, cursos de graduação na forma de bacharelado e licenciatura, tecnólogos de\nnível superior e cursos de pós-graduação lato e stricto sensu (Brasil, 2009).\nA concepção de educação profissional adotada pelos Institutos Federais está\nalicerçada na integração entre ciência, tecnologia e cultura como elementos\nindissociáveis da atividade humana e possui sua centralidade no trabalho. A\nformação integral e integrada proposta pelos IF’s está relacionada a oferta de uma\nformação humana que abranja as dimensões social, política e produtiva (Brasil,\n2009).\nA ideia de formação integral é elucidada por Pacheco (2012) como resultado\nde uma ruptura histórica do homem pela divisão do trabalho. Trata da superação da\ndualidade entre o que é trabalho manual e intelectual. Nesse contexto, o ensino\ntécnico integrado ao ensino médio se consolida como uma estratégia de formação\nintegral e integrada. Os Institutos Federais possuem como carro-chefe a oferta de\ncursos técnicos integrados ao ensino médio.\nNesta pesquisa, serão exploradas a presença de temas como Agroecologia e\nda Agricultura Familiar nos currículos dos cursos Técnicos em Agropecuária\nIntegrados ao Ensino Médio do IFC. O referido curso é ofertado em 7 campi da\ninstituição: Abelardo Luz, Araquari, Camboriú, Concórdia, Rio do Sul, Santa Rosa do\nSul e Videira.\nDada a diversidade das frentes de produção agropecuária no estado, o curso\nTécnico em Agropecuária Integrado ao Ensino Médio, combinado a outros cursos\nrelacionados às ciências agrárias oferecidos pelos campi, representa um espaço\nfértil para a formação de profissionais qualificados e preparados para atender às\nurgentes demandas por sustentabilidade na produção de alimentos.\nA Rede Federal de Educação Profissional, Científica e Tecnológica possui,\ndesde sua criação, preocupação com o fomento ao desenvolvimento dos arranjos\nprodutivos locais e regionais e à sustentabilidade em suas ações de ensino,\npesquisa e extensão. Assim como, o comprometimento com a formação de\nprofissionais que possuam, em sua atividade laboral, compromisso com a\nsustentabilidade ambiental:\nA relação da EPT com o desenvolvimento exige a consciência de que um país\nnão logra êxito sem o domínio crítico e ético do conhecimento científico-\ntecnológico, desde sua construção à sua aplicação e transferência. Pretende-\n\n[PÁG. 21]\nse a formação de profissionais que em suas atividades produtivas busquem o\nuso consciente e, consequentemente, a preservação dos recursos naturais,\nde modo a extrair os meios que favoreçam a melhoria da qualidade de vida\nda população brasileira com responsabilidade socioambiental (Pacheco,\n2012, p. 112).\nA urgência na mudança do paradigma agropecuário aponta para a\nnecessidade de adoção de práticas pedagógicas alinhadas a técnicas mais\nsustentáveis para a produção de alimentos. Esse cenário se reflete nas implicações\nambientais que têm relegado à agropecuária o posto de um dos setores que mais\nconsomem recursos hídricos e emitem gases atmosféricos poluentes. Isso, somado\naos impactos causados pelo setor na qualidade do solo, à supressão de recursos\nflorestais e à insegurança alimentar provocada pela oferta de alimentos eivados de\ncontaminantes químicos e biológicos, tem levado à necessidade de se repensar as\ntécnicas e práticas adotadas para produzir insumos alimentares.\nAlém do legado ambiental nefasto que tem sido associado às formas\npatronais de produção agrícola produtoras, sobretudo, de commodities, a questão da\nprodução de alimentos perpassa por outra crise: a humanitária. A pressão pela\nbusca de padrões de produtividade atingíveis apenas em monoculturas intensivas\nem insumos e a propriedade privada da terra imposta pelo setor patronal intensifica\na desigualdade e o esvaziamento do campo e a contaminação da população e dos\nrecursos naturais. Juliana Santilli aponta que\n[…] entre os diversos impactos socioambientais das monoculturas intensivas\nem insumos químicos (erosão do solo, poluição das águas e ",
+    "descricao_produto_na_dissertacao": "[PÁG. 25] articulação ou a interação de diversos elementos, os quais explicitam a percepção\ndo pesquisador de uma determinada porção da realidade social a ser compreendida\nou desvelada” (Leal, 2002, p. 233).\nAo analisar o Projeto Pedagógico do Curso Técnico em Agropecuária\nIntegrado ao Ensino Médio do IFC campus Araquari, durante o Estágio\nSupervisionado do curso de Licenciatura em Ciências Agrícolas foi constatado a\npresença de uma única disciplina de Agroecologia de somente 60h (IFC, 2016). Ao\nrevisitar o PPC atualizado do curso, de 2023, enquanto docente no referido curso,\npercebeu-se que a única disciplina de Agroecologia não estava mais presente (IFC,\n2020), suprimindo essa discussão relevante para uma ampliação da dimensão\nsocioambiental na formação técnica em Agropecuária.\nEssa constatação motivou o seguinte questionamento: De que forma a\nAgroecologia e a Agricultura Familiar estão presentes nos currículos dos cursos\nTécnicos em Agropecuária Integrados do IFC?\nDito isso, a presente pesquisa objetiva compreender como a Agroecologia e\nAgricultura Familiar estão presentes no currículo dos Cursos Técnicos em\nAgropecuária Integrados ao Ensino Médio de sete campi IFC que ofertam o referido\ncurso. Para alcançar esse objetivo geral, foram desenvolvidos os seguintes objetivos\nespecíficos:\nI. Levantar na literatura científica as concepções curriculares para o ensino\nagrotécnico condizentes com as bases da EPT;\nII. Buscar evidências da presença da Agroecologia na proposta pedagógica do curso\ntécnico em agropecuária integrado ao ensino médio;\nIII. Investigar a relação entre Agroecologia, Agricultura Familiar e formação integral\nno ensino agrotécnico;\nIV. Confeccionar, aplicar e avaliar um produto educacional.\nPor fim, espera-se que essa pesquisa contribua para as discussões sobre\ncurrículo integrado, ensino agrícola, Agroecologia e Agricultura Familiar no âmbito\nlocal e regional na Rede Federal de EPT.\n\n[PÁG. 67] Os documentos analisados foram escolhidos de acordo com os objetivos da\npesquisa. Diante da necessidade de refletir acerca do ensino agrícola na RFEPT,\nbuscou-se confrontar o documento de (Re)ssignificação do Ensino Agrícola na\nRFEPT, desenvolvido durante a criação da rede, com os Projetos Pedagógicos dos\nCursos Técnicos em Agropecuária Integrados ao Ensino Médio do IFC. As\nResoluções que contém as diretrizes para a EPT integrada de nível médio passam a\ncompor o corpus documental por sugestão da banca de qualificação.\nDiante da necessidade de compreender as orientações que norteiam o ensino\nmédio integrado e a construção dos seus currículos no IFC, os primeiros\ndocumentos analisados são as Diretrizes para a Educação Profissional Técnica\nIntegrada ao Ensino Médio do Instituto Federal Catarinense, seguido pelo\ndocumento de (Re)ssignificação do Ensino Agrícola na RFEPT, sucedido pelos\nPPCs dos cursos.\nNos tópicos contidos neste capítulo estarão presentes os resultados das\nanálises documentais e discussões estabelecidas com os autores consultados ao\nlongo da elaboração dessa pesquisa sob a luz do materialismo histórico dialético. As\nanálises aqui descritas deram origem ao Produto Educacional intitulado\n“Contribuições para o debate sobre Agroecologia no Ensino Médio Integrado”.\nAssim, os últimos capítulos desse tópico serão destinados a discorrer acerca da\nelaboração, aplicação e avaliação desse produto educacional.\n4.1 Análise das diretrizes\nPara esse tópico foram analisadas as seguintes normativas: Resolução Nº\n16/2019 – CONSUPER que d",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 18,
+        "texto": "15\n1 INTRODUÇÃO\nEsse estudo emergiu do desejo de refletir sobre o currículo do Curso Técnico\nem Agropecuária Integrado ao Ensino Médio do Instituto Federal Catarinense - IFC.\nA proposta se enquadra na linha de pesquisa “Organização e Memória de Espaços\nPedagógicos na Educação Profissional e Tecnológica”, macroprojeto “Práticas\nEducativas no Currículo Integrado”.\nA pesquisa em educação ou ensino surge, frequentemente, a partir dos\nquestionamentos originados da prática cotidiana dos profissionais da educação\n(Triviños, 2015). No contexto dos Mestrados Profissionais isso é, ainda, incentivado\ne reiterado. Em diálogo sobre a pesquisa qualitativa em educação, Triviños sugere\nque\nparece-nos recomendável que o foco da pesquisa de um estudante de pós-\ngraduação deve estar essencialmente vinculado a dois aspectos\nfundamentais: 1° O tópico de pesquisa deve cair diretamente no âmbito\ncultural de sua graduação (secundariamente no da especialização); 2° o\nassunto deve surgir da prática quotidiana que o pesquisador realiza como\nprofissional (Triviños, 2015, p. 93).\nDurante os últimos anos vivenciei algumas experiências com o ensino\nagrícola, como egressa de um curso destinado a formação docente ",
+        "citacoes_detectadas": [
+          "Triviños, 2015",
+          "Triviños, 2015, p. 93"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 24,
+        "texto": "21\nA formação profissional agrícola deve abranger as demandas e\nparticularidades dessa população expressiva de produtores que, historicamente, tem\nsido sobrepujada pelos interesses do agronegócio e do latifúndio no nosso país, que\ntem suas particularidades socioeconômicas, culturais e territoriais pouco abordadas\nnos cursos de formação profissional.\nO Documento Base para a promoção da formação integral, fortalecimento do\nensino médio integrado e implementação do currículo integrado no âmbito das\nInstituições da Rede EPCT, conforme Lei 11.892/2008 aponta que, são princípios da\nEducação Profissional Técnica de Nível Médio, dentre outros:\narticulação com o desenvolvimento socioeconômico-ambiental dos territórios\nonde os cursos ocorrem, devendo observar os arranjos socioprodutivos e\nsuas demandas locais, tanto no meio urbano quanto no campo;\nreconhecimento das diversidades das formas de produção, dos processos de\ntrabalho e das culturas a eles subjacentes, as quais estabelecem novos\nparadigmas a serem trabalhados no itinerário formativo do estudante (Brasil,\n2016, p. 2).\nO mesmo documento destaca ainda que os currículos dos cursos técnicos\nintegrados devem proporcionar aos estudantes\nr",
+        "citacoes_detectadas": [
+          "Brasil,\n2016, p. 2",
+          "Brasil,\n2016, p. 4",
+          "Brasil, 2008",
+          "Flick, 2009"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 25,
+        "texto": "articulação ou a interação de diversos elementos, os quais explicitam a percepção\ndo pesquisador de uma determinada porção da realidade social a ser compreendida\nou desvelada” (Leal, 2002, p. 233).\nAo analisar o Projeto Pedagógico do Curso Técnico em Agropecuária\nIntegrado ao Ensino Médio do IFC campus Araquari, durante o Estágio\nSupervisionado do curso de Licenciatura em Ciências Agrícolas foi constatado a\npresença de uma única disciplina de Agroecologia de somente 60h (IFC, 2016). Ao\nrevisitar o PPC atualizado do curso, de 2023, enquanto docente no referido curso,\npercebeu-se que a única disciplina de Agroecologia não estava mais presente (IFC,\n2020), suprimindo essa discussão relevante para uma ampliação da dimensão\nsocioambiental na formação técnica em Agropecuária.\nEssa constatação motivou o seguinte questionamento: De que forma a\nAgroecologia e a Agricultura Familiar estão presentes nos currículos dos cursos\nTécnicos em Agropecuária Integrados do IFC?\nDito isso, a presente pesquisa objetiva compreender como a Agroecologia e\nAgricultura Familiar estão presentes no currículo dos Cursos Técnicos em\nAgropecuária Integrados ao Ensino Médio de sete campi IFC que ofertam o referido\n",
+        "citacoes_detectadas": [
+          "Leal, 2002, p. 233",
+          "IFC, 2016",
+          "IFC,\n2020"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 29,
+        "texto": "mais uma vitória para a Agricultura familiar é a transferência da gestão do ATER\npública do Ministério da Agricultura (MAPA) para o Ministério do Desenvolvimento\nAgrário (MDA). Essa alteração indica o prenúncio de uma mudança ideológica nos\nrumos da ATER no país com a abertura ao diálogo para formas mais sustentáveis de\nprodução de alimentos que incorporasse os paradigmas da agroecologia.\nEm 2004 é criada a Política Nacional de Assistência Técnica e Extensão Rural\npara a Agricultura Familiar e Reforma Agrária – PNATER, alterada em 2010 pela Lei\nnº 12.188. O PNATER passa a conter entre seus princípios a promoção do\ndesenvolvimento rural sustentável e a adoção de uma abordagem multidisciplinar da\nATER com base nos princípios agroecológicos, destinados, sobretudo, a agricultura\nfamiliar (Brasil, 2010).\nO PNATER passa, então, a considerar a extensão rural como um processo\neducativo. Isso significa compreender o meio rural como um espaço propício a\naprendizagem. Essa nova abordagem da ATER requer um novo perfil de\nprofissionais que sejam capacitados para atuar de forma integrada, considerando\nnão apenas os aspectos técnicos da produção agrícola, mas também as dimensões\nsociais, econômic",
+        "citacoes_detectadas": [
+          "Brasil, 2010"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 33,
+        "texto": "disciplinas técnicas dos cursos profissionalizantes agrícolas. A dimensão\nsocioeconômica e cultural está expressa nas diretrizes da RFEPT através do\nfomento a expressão cultural e ao fortalecimento dos arranjos produtivos locais. A\ndimensão sociopolítica deve se materializar para o alcance de uma formação cidadã,\nemancipatória e integral.\nA Agroecologia enquanto matriz disciplinar integradora apresenta grande\npotencialidade no contexto dos cursos técnicos em agropecuária de nível médio\nintegrados da RFEPT. Diante do currículo integrado, o diálogo multidisciplinar entre\nas disciplinas do núcleo técnico e básico e os princípios institucionais\nfundamentados no desenvolvimento sustentável, percebe-se as discussões acerca\nda Agroecologia cruciais para a promoção de uma formação profissional agrotécnica\nalinhada aos preceitos da sustentabilidade e justiça social.\nEm reflexão sobre a Agroecologia na Educação Profissional e Tecnológica,\nAppio sugere que\nno âmbito da formação humana, a Agroecologia na Educação Profissional\ne Tecnológica pode contribuir para a formação dos estudantes na\nperspectiva crítica por ser uma ciência integradora, que valoriza e agrega\nconhecimentos e saberes das com",
+        "citacoes_detectadas": [
+          "Appio, 2024, p. 20",
+          "Appio, 2023, p.13"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 39,
+        "texto": "Agrícola (DEA), e instituiu o modelo de “escola-fazenda” nas escolas agrotécnicas,\nbaseado no princípio do “saber fazer e fazer para aprender” (Sobral, 2009).\nA formação técnica em Agropecuária, assim como nos demais cursos\nprofissionalizantes na área, foi construída historicamente sob os moldes do modelo\nprodutivo da agricultura capitalista e patronal. Em um país com uma estrutura\nfundiária e de crédito agrícola desigual e ineficiente em atender as parcelas mais\nsensíveis de produtores rurais, faz-se imprescindível formar profissionais na área\nagropecuária aptos a atender os agricultores familiares e camponeses e fornecer-\nlhes opções para a permanência digna no campo.\nDurante a Ditadura Militar, reforçou-se a modernização desenvolvimentista\nbaseada na abertura econômica para o capital estrangeiro. É instituída a Lei 5.692\nde 1971, de profissionalização compulsória, que faz da profissionalização o principal\nobjetivo do 2° grau. Criada com o discurso de suprimento das demandas do\nmercado com argumentos de escassez de técnicos e evitar a frustração dos que não\nconseguiam acessar as universidades. Esses cursos possuíam uma carga horária\ndedicada ao ensino profissionalizante alta, res",
+        "citacoes_detectadas": [
+          "Sobral, 2009",
+          "Sobral, 2009",
+          "Frigotto, 2012, p. 34",
+          "Frigotto et al, 2012"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 40,
+        "texto": "37\nEm 1986 o governo implementou o Programa de Expansão e Melhoria do\nEnsino Técnico (PROTEC), instituindo as Unidades de Ensino Descentralizadas\nvinculadas a uma escola-mãe, que poderia ser um Centro Federal de Educação\nTecnológica (CEFET) ou uma escola técnica ou agrotécnica. O Banco Mundial\nfinanciou a expansão do PROTEC, alicerçado na Teoria do Capital Humano,\nfortemente defendida pelos neoliberais à época. Teoria essa que defende a ideia de\nque o capital humano é instrumento equalizador social e de desenvolvimento\neconômico (Ramos, 2004).\nO fim da década de 80 e a década seguinte, com as discussões para a\nelaboração de uma nova LDB, foram marcadas pela redemocratização das relações\ninstitucionais no Brasil e organização dos trabalhadores das escolas técnicas e\nagrotécnicas federais:\nAo final da década de 80, o processo de redemocratização das relações\ninstitucionais, somado às mudanças no mundo do trabalho, começou a pautar\nna sociedade e no interior das instituições o debate sobre uma formação de\nnovo tipo que incorporasse dimensões políticas comprometidas com a\ncidadania. Docentes e servidores técnico-administrativos das escolas federais\nreuniram-se em corporações nacionais ",
+        "citacoes_detectadas": [
+          "Ramos, 2004",
+          "Ramos, 2004, p. 35",
+          "Frigotto et al, 2012",
+          "Ramos, 2014"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 41,
+        "texto": "formulação das políticas públicas para o setor rural (Carvalho, 2008).\nEm 1990, sob a égide do discurso do estado mínimo, é extinta a Empresa\nBrasileira de Assistência Técnica e Extensão Rural (EMBRATER), primeira empresa\npública de Ater no Brasil, causando um desmantelamento do Sistema Nacional de\nATER (Carvalho, 2008). A ofensiva é a negação do direito a ate aos agricultores\nfamiliares, assentados e movimentos sociais do campo.\nO fim dos recursos federais para custeio dos programas de ATER levou os\nestados a elaborarem novas estratégias, como a fusão de empresas de pesquisa e\nextensão, aportes municipais, redução no quadro de funcionários e a extinção de\nalgumas agências. Os movimentos sociais e agricultores familiares cobram as\nagências remanescentes para cumprir a legislação, exigindo a assistência técnica\ngratuita e de qualidade que lhes é de direito. Carvalho (2008, p. 8) sugere que esse\nnovo contexto contribuiu para “o estabelecimento de novas relações entre a\nsociedade civil organizada e o Estado e a legitimação da metodologia participativa\njunto aos agricultores e agricultoras familiares e suas formas organizativas”.\n As metodologias participativas de extensão rural repres",
+        "citacoes_detectadas": [
+          "Carvalho, 2008",
+          "Carvalho, 2008",
+          "Carvalho, 2008, p. 9",
+          "Ramos, 2014"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 42,
+        "texto": "39\natravés da lei n° 9.394/96. A derrota do projeto original da LDB na Câmara\nrepresentou a anulação da possibilidade de uma “concepção avançada de educação\nbásica e tecnológica, dando espaço a um processo de regulamentação fragmentada\ne focalizada” que culminaria na instituição do Decreto n° 2.208/97 (Ramos, 2004, p.\n43).\nGaudêncio Frigotto (2001) defende que o modelo de Educação Profissional\nsubordinada ao mercado é resultado de uma política filantrópica e de atenuação da\npobreza promovida pelo Banco Mundial Internacional. No âmbito pedagógico, o\nBanco Mundial tem promovido uma conformação do trabalhador em formação aos\nmodelos organizacionais e tecnológicos da produção.\nMarise Ramos, em reflexão sobre a história da Educação Profissional no\nBrasil, indica que\nA educação profissional no Brasil e a consolidação do capitalismo\ndependente podem ser compreendidas mediante a seguinte síntese. A\nhistória do desenvolvimento industrial e tecnológico brasileiro foi marcada\npelo embate entre um projeto de desenvolvimento autônomo e outro\nassociado e subordinado ao grande capital, tendo predominado o segundo\nmodelo especialmente a partir do governo de JK (Ramos, 2004, p. 43).\nNo seio do que ",
+        "citacoes_detectadas": [
+          "Ramos, 2004, p.\n43",
+          "Ramos, 2004, p. 43",
+          "Frigotto, 2001"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 43,
+        "texto": "para a implementação de currículos baseados em competências (Ramos, 2008).\nOutra importante política agrícola instituída nesse ano foi a criação do\nPrograma Nacional de Fortalecimento da Agricultura Familiar (PRONAF) através do\nDecreto nº 1.946, de 28 de junho de 1996. O PRONAF, resultado da luta de\nmovimentos sociais de trabalhadores rurais, fornecia, inicialmente crédito agrícola\naos agricultores familiares (Peixoto, 2008).\nApós um malabarismo retórico do Ministério da Educação para garantir a\nimplementação do Decreto n° 2.208/97, a fim de convencer os professores da\npertinência do novo modelo, a reforma curricular foi adotada na educação\nprofissional contando com aporte financeiro do Banco Interamericano de\nDesenvolvimento através de empréstimos (Ramos, 2008).\nA posse do presidente Lula e a ascensão de um governo de centro-esquerda\nfomentou a “possibilidade de o campo popular buscar formas de reverter os\nprocessos ocorridos nas políticas de EPT da década de 1990 e avançar no sentido\nde integrar a formação geral ao ensino médio” (Cichaczewski, 2023, p. 107).\nO referido decreto de 1997 determina a impossibilidade da integração da\neducação profissional ao ensino médio, reafirmando ",
+        "citacoes_detectadas": [
+          "Ramos, 2008",
+          "Peixoto, 2008",
+          "Ramos, 2008",
+          "Cichaczewski, 2023, p. 107",
+          "Carvalho,\n2008, p. 8"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 44,
+        "texto": "41\nrural participativa. A metodologia participativa descrita na PNATER privilegia\nprocessos participativos em prol do desenvolvimento sustentável, baseado em\nprincípios de equidade social, igualdade de gênero, agroecologia, educação popular,\nempoderamento e etnia (Carvalho, 2008).\nEm 2004, após intensa mobilização de grupos de trabalho e articulações\nsociais, sindicais e de trabalhadores, o Decreto n° 2.208 é revogado e substituído\npelo Decreto n° 5.154, com o intuito de consolidar a base unitária do Ensino Médio\n(Frigotto et al, 2012). Nesse sentido, intensificam-se as discussões sobre a\npolitecnia e o ensino integrado.\nMarise Ramos (2014) defende que esse ato possibilitou, além da superação\ndo impedimento da integração entre educação básica e profissional, a\nregulamentação desse modelo de educação, a definição de responsabilidades\nquanto a seu financiamento, o monitoramento e garantia de qualidade da educação\nprofissional.\nEm 2008 é criada a Rede Federal de Educação Profissional, Científica e\nTecnológica, criando os Institutos Federais de Educação, Ciência e Tecnologia,\natravés da Lei n° 11.892, especializados na oferta de educação profissional e\ntecnológica nos diferentes níveis",
+        "citacoes_detectadas": [
+          "Carvalho, 2008",
+          "Frigotto et al, 2012",
+          "Brasil, 2008",
+          "Araujo e Frigotto, 2015"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 45,
+        "texto": "compreensão do mundo do trabalho (Castro et al, 2020, p. 350-1).\nApesar das conquistas no âmbito da educação profissional, as determinantes\nlegais que norteiam o ensino agrícola têm se transformado de modo a atender as\ndemandas do capital e os interesses mercadológicos. Nesse sentido, Carvalho\naponta que\nconsiderando a historicidade entorno das políticas educacionais específicas\nde formação desse profissional técnico para atender demandas do segmento\nprodutivo rural, desde a criação das primeiras escolas técnicas, ainda no\ninício do século XX, passando pelas reformas da década de 1940 com a Lei\nOrgânica do Ensino Técnico Agrícola, pela LDB de 1961 e a\nprofissionalização compulsória da Lei 5.692/71, o período COAGRI e os\nimpactos da nova reforma decorrente da Nova LDB, Lei 9.394/96 e os\ndecretos 2.208/97 e 5.154/04, a literatura pesquisada permite afirmar que, os\ncursos técnicos agrícolas no Brasil acompanharam, a partir de políticas de\nGoverno e não de Estado, aos interesses dominantes sob o olhar serviçal de\num Estado Burguês (Carvalho, 2012, p. 258).\nAs transformações ocorridas no bojo da elaboração das políticas públicas que\nregulam a promoção do ensino agrícola no país não têm ",
+        "citacoes_detectadas": [
+          "Castro et al, 2020, p. 350-1",
+          "Carvalho, 2012, p. 258",
+          "Frigotto, 2001, p. 73"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "APPIO, Célia Regina. Uma nova dimensão da formação humana – o lugar da agroecologia no curso de pedagogia, com ênfase em educação do campo do Instituto Federal Catarinense partindo da teoria decolonial. (Tese) Doutorado em Educação. FURB. Blumenau, 2024.",
+      "APPIO, Célia Regina. Agroecologia na educação profissional agrícola no Brasil, Colômbia e Cuba: algumas considerações epistemológicas educacionais. RBEC: Rev. Bras. Educ. Comp., Campinas, SP, v. 5, p. 1-15, e023001, 2023.",
+      "APPIO, Célia Regina. O Tratamento do desenvolvimento sustentável nos cursos de licenciatura em ciências agrícolas do Instituto Federal Catarinense: alguns apontamentos. Pôster - XIII Reunião Científica da ANPEd-Sul, 2020.",
+      "ARAUJO, Ronaldo Marcos; FRIGOTTO, Gaudêncio. Práticas pedagógicas e ensino integrado. Revista Educação em Questão, v. 52, n. 38, p. 61-80, 2015.",
+      "BRASIL, CAPES. Documento de Área – Ensino. Brasília, 2019. 159",
+      "CARVALHO, Marco Antonio. Técnico agrícola: peão melhorado?. 2012. 298 f. Tese (Doutorado em Ciências Humanas) - Pontifícia Universidade Católica de Goiás,",
+      "CARVALHO, Maria Auxiliadora Tavares. Metodologia participativa de extensão rural para o desenvolvimento sustentável–Mexpar. 2008.",
+      "CASTRO, Cloves Alexandre.; PLÁCIDO, Reginaldo L.; SCHENKEL, C. A. História socioespacial do trabalho no Brasil, educação profissional tecnológica e a questão regional. Revista Labor, v. 1, n. 24, 2020.",
+      "CASTRO, César Nunes de. Desafios da agricultura familiar: o caso da assistência técnica e extensão rural. Boletim regional, urbano e ambiental. V.12, jul.-dez, 2015.",
+      "CICHACZEWSKI, João. Uma história a ser feita: os sentidos da formação profissional nos IFs. 1. ed. Blumenau, SC: Editora IFC, 2023.",
+      "FLICK, Uwe. Introdução à pesquisa qualitativa. 3ª edição. Artmed editora, 2009.",
+      "FRIGOTTO, Gaudêncio. CIAVATTA, Maria; RAMOS, Marise. A gênese do decreto 5.154/1971: um debate no contexto controverso da democracia restrita. In:",
+      "FRIGOTTO, Gaudêncio; CIAVATTA, Maria; RAMOS, Marise (Orgs.) Ensino Médio: concepções e contradições. 3ed. São Paulo: Cortes, p. 21-56, 2012.",
+      "FRIGOTTO, Gaudêncio. A polissemia da categoria trabalho e a batalha de ideias nas sociedades de classes. Revista Brasileira de Educação, v. 14, n. 40, jan./abr, 2009. 161",
+      "FRIGOTTO, Gaudêncio. Educação e Trabalho: bases para debater a Educação Profissional Emancipadora. PERSPECTIVA, Florianópolis, v.19, n.1, p.71-87, jan./jun., 2001.",
+      "FRIGOTTO, Gaudêncio. Educação omnilateral. In: CALDART, R. S. et al. (org.). Dicionário da Educação do Campo. Rio de Janeiro/São Paulo: Escola Politécnica de Saúde Joaquim Venâncio/Expressão Popular, 2012, p. 265-272.",
+      "FRIGOTTO, Gaudêncio. Concepções e mudanças no mundo do trabalho e o ensino médio. In: FRIGOTTO, G.; CIAVATTA, M.; RAMOS, M (orgs.) Ensino Médio Integrado: concepção e contradições. 3ed. São Paulo: Cortez: 2012.",
+      "LEAL, Elisabeth Juchem Machado. Um desafio para o pesquisador: a formulação do problema de pesquisa. Revista Contrapontos, v. 2, n. 2, p. 227-235, 2002. 163",
+      "PEIXOTO, Marcus. Extensão Rural no Brasil œ uma abordagem histórica da legislação. 2008. 165",
+      "RAMOS, Marise Nogueira. Reforma da Educação Profissional: Contradições na disputa por hegemonia no regime da acumulação flexível. Trab. Educ. Saúde, v. 5 n. 3, p. 545-558, nov.2007-fev.2008.",
+      "RAMOS, Marise Nogueira. História e política da educação profissional. Coleção formação pedagógica, v. 5. Instituto Federal do Paraná, 2014.",
+      "SOBRAL, Francisco José Montorio. A formação do técnico em agropecuária no contexto da agricultura familiar do oeste catarinense. Tese (Doutorado em Educação) - Universidade Estadual de Campinas, 2005.",
+      "SOBRAL, Francisco José Montorio. Retrospectiva histórica do ensino agrícola no Brasil. Revista Brasileira da Educação Profissional e Tecnológica, v. 2, n. 2, p. 78-95, 2009.",
+      "TRIVIÑOS, Augusto Nibaldo. Introdução à pesquisa qualitativa em ciências sociais: A pesquisa qualitativa em educação. Atlas: 1ª edição, 2015."
+    ]
+  }
+}

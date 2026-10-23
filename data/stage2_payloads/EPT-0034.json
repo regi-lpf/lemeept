@@ -1,0 +1,205 @@
+{
+  "id": "EPT-0034",
+  "metadados_resolvidos": {
+    "ano": 2024,
+    "autor": "Izolde Rejane do Carmo",
+    "orientador": "Juliene Marques Bogo",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP1"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "A BIBLIOTECA NA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA: PERCEPÇÕES DE ESTUDANTES DE CURSO TÉCNICO SUBSEQUENTE DO IFSC JARAGUÁ DO SUL CÂMPUS RAU",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/11/Dissertacao-Izolde-Rejane-do-Carmo.pdf",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "ProfEPT",
+      "Ensino",
+      "Produto Educacional"
+    ],
+    "autores_referenciados": [
+      "Antônio Carlos Gil",
+      "Armindo Ribeiro Ferreira",
+      "Carla Roberta Moreira Ribeiro",
+      "Dante Henrique Moura",
+      "Dermeval Saviani",
+      "Eliezer Moreira Pacheco",
+      "Eni Puccinelli Orlandi",
+      "Fábio José Rauen",
+      "Fabrício José Nascimento da Silveira",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "Gizele de Melo Viana",
+      "Gloria Durban Roca",
+      "Idalberto Chiavenato",
+      "Jussara Santos Pimenta",
+      "Luiz Antônio Cunha",
+      "Marcos Aurélio Neves",
+      "Maria Cecília de Souza Minayo",
+      "Maria Ciavatta",
+      "Maria Teresa Garbin Machado",
+      "Marília de Abreu Martins de Paiva",
+      "Marise Nogueira Ramos",
+      "Matthew Battles",
+      "Paulo Nunes de Almeida",
+      "Priscila de S. C. P. Leite",
+      "Robert Charles Bogdan",
+      "Rubens Borba de Moraes",
+      "Sari Knopp Biklen",
+      "Silvia Maria Manfredi"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/870167",
+    "titulo_produto": "Quiz Integração Biblioteca-Aluno",
+    "titulo_produto_bruto": "QUIZ – INTEGRAÇÃO BIBLIOTECA – ALUNO",
+    "data_publicacao": "2024-09-27",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "DO CARMO, IZOLDE REJANE",
+        "papel": "creator"
+      },
+      {
+        "nome": "BOGO, JULIENE MARQUES",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/870167",
+        "url": "https://educapes.capes.gov.br/handle/capes/870167"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Quiz Integração Biblioteca-Aluno",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "jogo"
+    ],
+    "palavras_chave_educapes": [
+      "Educação Profissional e Tecnológica",
+      "Biblioteca",
+      "Jogo",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica - ProfEPT",
+      "Dissertação"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Jogo Educacional",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\nIZOLDE REJANE DO CARMO\nA BIBLIOTECA NA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA:\nPERCEPÇÕES DE ESTUDANTES DE CURSO TÉCNICO SUBSEQUENTE DO\nIFSC JARAGUÁ DO SUL CÂMPUS RAU\nBlumenau\n2024\n\nIZOLDE REJANE DO CARMO\nA BIBLIOTECA NA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA:\nPERCEPÇÕES DE ESTUDANTES DE CURSO TÉCNICO SUBSEQUENTE DO\nIFSC JARAGUÁ DO SUL CÂMPUS RAU\nDissertação\napresentada\nao\nPrograma\nde\nPós-graduação\nem\nEducação\nProfissional\ne\nTecnológica, ofertado pelo câmpus Blumenau do\nInstituto\nFederal\nCatarinense, como parte dos\nrequisitos para a obtenção do título de Mestra em\nEducação Profissional e Tecnológica.\nOrientadora: Profa. Dra. Juliene Marques Bogo\nBlumenau\n2024",
+    "ficha_catalografica": "",
+    "sumario": "[PÁG. 15]\nSUMÁRIO\nAPRESENTAÇÃO\n13\n1. INTRODUÇÃO\n14\n2. REFERENCIAL TEÓRICO\n17\n2.1 PERCURSOS DA BIBLIOTECA ATÉ À INSTITUIÇÃO ESCOLAR\n17\n2.2 FORMAÇÃO INTEGRAL NA PERSPECTIVA DA EPT\n25\n2.3 OS REFLEXOS DA FORMAÇÃO INTEGRAL NOS CURSOS TÉCNICOS\nSUBSEQUENTES\n31\n3. METODOLOGIA\n34\n4. RESULTADOS E DISCUSSÕES\n38\n4.1 ANÁLISE DOS DADOS\n38\n4.2 PRODUTO EDUCACIONAL\n47\n5. CONSIDERAÇÕES FINAIS\n54\nREFERÊNCIAS\n57\nAPÊNDICE A - ROTEIRO PARA ENTREVISTA SEMIESTRUTURADA\n62\nAPÊNDICE B - DESCRIÇÃO TÉCNICA DO PRODUTO EDUCACIONAL\n63\nAPÊNDICE C - PRODUTO EDUCACIONAL\n64\nAPÊNDICE D - TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO\n76\nAPÊNDICE E - QUESTIONÁRIO DE AVALIAÇÃO DO PRODUTO\nEDUCACIONAL\n79\nANEXO A - ANUÊNCIA DO IFSC\n82\nANEXO B - PUBLICAÇÃO SOBRE O PRODUTO EDUCACIONAL NO SITE DO\nIFSC\n83\nANEXO C - PARECER CONSUBSTANCIADO DO CEP\n84\n13\nAPRESENTAÇÃO\nO amor pelos livros começou bem antes da pesquisadora trabalhar em\nbibliotecas. Era proibida de ler, pois sua genitora acreditava que ler era perda de\ntempo; ela sabia, sem o saber, que a leitura liberta. E tinha razão. Ler é perigoso:\ndesperta a imaginação. Libertou a pesquisadora de uma vida já traçada para as\nmeninas da sua geração: permanecer no interior, trabalhar e constituir família. Ela\nvoou, na imaginação e literalmente, saiu de casa aos 17 anos, conheceu o mundo,\nvoltou diversas vezes, mas, como as heroínas dos livros que lia, nunca desistiu.\nTendo, como formação técnica, o curso Técnico em Enfermagem e\ngraduação em Licenciatura em História; trabalhou em diversos segmentos da\nindústria, comércio e saúde até reencontrar profissionalmente, aos 45 anos de\nidade, a sua paixão: os livros! Atua como auxiliar de biblioteca no Instituto Federal\nhá 15 anos, estando hoje lotada no IFSC Jaraguá do Sul câmpus Rau. Nessa\ntrajetória, vivenciou-se o cotidiano da instituição na formação de estudantes, bem\ncomo experienciaram-se as turbulências vinculadas à relação ensino e mundo do\ntrabalho. Nesse contexto, foi possível constatar que formar, numa proposta de\nformação\nintegral,\npromovendo\na\ninclusão\ne\ncontribuindo,\nassim,\npara\no\ndesenvolvimento socioeconômico e cultural desse estudante, pode ser possível se\ntodos os setores da instituição estiverem presentes e engajados nesse processo, o\nque configura uma tarefa desafiadora. Tal tarefa, assim, também deve ser\nassumid",
+    "resumo": "[PÁG. 11]\nRESUMO\nO Instituto Federal se consolidou como instituição de ensino de qualidade. Para se\nmanter nesse patamar, faz-se necessário que todos os setores dentro da instituição\nde ensino atuem de forma conjunta, visando à formação integral do estudante. Com\nisso em vista, a presente pesquisa foi desenvolvida no Mestrado Profissional em\nEducação Profissional e Tecnológica (ProfEPT), inserida na linha de pesquisa\n“Práticas Educativas em EPT”. A finalidade desta pesquisa foi responder à seguinte\nquestão: como estudantes de curso técnico subsequente do IFSC Jaraguá do Sul -\nRau percebem a biblioteca na Educação Profissional e Tecnológica? Assim,\nengendrou-se o objetivo geral desta pesquisa: analisar a percepção de estudantes\nde Curso Técnico Subsequente em Eletrotécnica do IFSC Jaraguá do Sul - Rau a\nrespeito da biblioteca na Educação Profissional e Tecnológica. O estudo foi de\nnatureza aplicada com abordagem qualitativa, sendo os dados coletados através de\nentrevistas gravadas, com roteiro em forma de questionário semiestruturado,\naplicado\naos\nestudantes\ndo\nCurso\nTécnico\nSubsequente\nem\nEletrotécnica,\ningressantes em 2022-2. Através do material coletado com as entrevistas, pudemos\nconstatar, com base na Análise de Discurso, que os estudantes de cursos técnicos\nsubsequentes percebem a biblioteca como um instrumento imprescindível na sua\nformação profissional, que, além do suporte pedagógico, o setor oferece instalações\nconfortáveis para o seu bem-estar físico e mental. A partir dos resultados obtidos\ncom a análise, foi desenvolvido, aplicado e avaliado um produto educacional\nelaborado em formato de quiz, jogo educacional, proposto para servir como\ninstrumento de integração do setor biblioteca com alunos ingressantes nos cursos\nofertados pelo IFSC câmpus Rau. Os resultados apontam que o produto educacional\nse mostrou eficaz no sentido de preencher a lacuna existente, até então, da\naproximação do aluno ingressante com o setor biblioteca e todas as suas normas e\nserviços, bem como, o de impulsionar e legitimar o papel e o valor da biblioteca na\nqualidade de espaço pedagógico junto aos usuários e à instituição.\nPalavras-Chave: Educação Profissional e Tecnológica. ProfEPT. Ensino. Produto\nEducacional.",
+    "introducao": "[PÁG. 17]\n14\n1. INTRODUÇÃO\nO Instituto Federal de Santa Catarina tem como missão “Promover a\ninclusão e formar cidadãos, por meio da educação profissional, científica e\ntecnológica,\ngerando,\ndifundindo\ne\naplicando\nconhecimento\ne\ninovação,\ncontribuindo para o desenvolvimento socioeconômico e cultural” (IFSC, 2020). O\ncâmpus Rau do Instituto Federal de Santa Catarina (IFSC), em Jaraguá do Sul,\ncorroborando com a missão estabelecida pela instituição, oferta cursos técnicos de\nnível médio subsequente, cursos de qualificação profissional e superior em\ntecnologias.\nA biblioteca do câmpus Jaraguá do Sul - Rau, atuando de forma conjunta\ncom os demais setores, tendo como meta a formação integral do indivíduo, oferece\nestrutura técnica, auxílio em pesquisas bibliográficas, suporte bibliográfico físico e\nvirtual. Ademais, atividades culturais diversas, como sarau cultural, contação de\nhistórias, varal literário, exposição de livros por tema ou data comemorativa e\nmontagem de quebra-cabeça, que envolvem a comunidade acadêmica e a\nsociedade em geral, também são desenvolvidas pela biblioteca, aproximando, de\nforma efetiva, o câmpus com a população que o cerca.\nA partir disso e sabendo que a contemporaneidade se configura em um\ntempo de rapidez na comunicação, de pesquisa na palma das mãos e de\nbibliotecas virtuais cada dia mais equipadas, faz-se necessário entender a\npercepção do público-alvo desse setor, para que o mesmo não se torne obsoleto.\nPerante esse panorama e procurando compreender a leitura dos estudantes a\nrespeito da biblioteca, a presente pesquisa se configura diante da seguinte\nquestão: como estudantes de curso técnico subsequente do IFSC Jaraguá do Sul -\nRau percebem a biblioteca na Educação Profissional e Tecnológica?\nPara respondê-la, foram realizadas entrevistas com alunos da turma\nelencada como amostra do curso Técnico Subsequente em Eletrotécnica, ofertado\nno período de agosto de 2022 a julho de 2024, buscando desvendar se, na\npercepção desses sujeitos que vem para a instituição em busca de conhecimento\ntécnico, existe espaço para a pesquisa, para o lúdico, para o lazer e para a cultura.\nDestaca-se, ainda, o perfil dos estudantes que serão entrevistados: trabalhadores\nque se dirigem à instituição após o trabalho ou que vão para o trabalho após a\naula, com menos tempo no câmpus. Tal turma foi selecionada como amostra por\n\n[PÁG. 18]\n15\nter seu percurso formativo realizado no mesmo período em que esta pesquisa se\ndesenvolve, além do fato de que a pesquisadora, autora desta investigação, está\nlotada no mesmo câmpus em que o curso é ofertado, tendo contado direto,\nportanto, com estudantes e professores do curso.\nAssim, engendrou-se o objetivo geral desta pesquisa: analisar a percepção\nde estudantes do Curso Técnico Subsequente em Eletrotécnica do IFSC Jaraguá\ndo Sul - Rau a respeito da biblioteca na Educação Profissional e Tecnológica.\nTambém destacaram-se os seguintes objetivos específicos:\n- Compreender a biblioteca como espaço de aprendizagem, cultura e lazer\nrelacionado à formação integral do indivíduo;\n- Identificar ações da biblioteca que evidenciam a prática da formação integral\ndentro da Educação Profissional e Tecnológica;\n- Fornecer fundamentos referentes à contribuição da biblioteca nas ações\nformativas pessoais e profissionais do indivíduo;\n- Elaborar um produto educacional que integre os alunos ingressantes com o\nsetor biblioteca.\nPara entender o estado do conhecimento da temática e da delimitação aqui\nexploradas, foram realizadas pesquisas nas bases das plataformas Periódicos\nCapes, ProfEPT e SciELO, a partir de busca com as seguintes palavras-chave:\n“Biblioteca”, “Percepção” e “Formação integral”, como título. Também foram usados\nos seguintes filtros: idioma português, últimos 5 anos, revisado por pares. Como\nresultado obtido no Portal de Periódicos Capes, Portal do ProfEPT e Portal Scielo,\nnão houve estudo que contemple todos os filtros utilizados. No Portal do ProfEPT,\nforam encontradas quatro dissertações que se aproximam da ideia proposta1, ou\nseja, as pesquisas tratam da biblioteca na perspectiva da EPT, mas se diferenciam\ndesta pesquisa na metodologia. Dessa forma, perante o baixo número de artigos\nencontrados relacionados à “Biblioteca”, “Percepção” e “Formação integral”,\nevidenciou-se uma lacuna no que se refere à temática aqui apresentada.\n1 Disponíveis em:\nhttps://sucupira.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConcl\nusao.jsf?popup=true&id_trabalho=7762374\nhttps://sucupira.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConcl\nusao.jsf?popup=true&id_trabalho=9138722\nhttps://sucupira.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConcl\nusao.xhtml?popup=true&id_trabalho=11022783\nhttps://sucupira.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConcl\nusao.xhtml?popup=true&id_trabalho=11581725\n\n[PÁG. 19]\n16\nA fim de cumprir com os objetivos traçados, esta pesquisa perpassa pelas\nseguintes discussões: no próximo capítulo, que configura o marco teórico,\ninicialmente, apresenta-se uma síntese do surgimento e da ascensão da biblioteca\ne de seu papel dentro da instituição escolar; num segundo momento, discute-se a\nformação integral do estudante na perspectiva da Educação Profissional e\nTecnológica (EPT), trazendo um pouco da trajetória do homem na sua busca por\nsobrevivência e aprendizado, aliando o mundo do trabalho com o preparo\nprofissional dentro de uma formação omnilateral; por fim, destacam-se os reflexos\nda formação integral nos cursos técnicos, que formam profissionais capacitados e\nconscientes do seu papel na sociedade. Nos capítulos seguintes, apresentam-se,\nrespectivamente: a metodologia da pesquisa, os resultados da pesquisa e a\napresentação do PE, bem como os resultados de sua avaliação. Por fim, as\nconsiderações finais são explicitadas.\nEste projeto de pesquisa, vinculado ao Programa de Pós-Graduação em\nEducação Profissional e Tecnológica, insere-se na linha de pesquisa Práticas\nEducativas em EPT, macroprojeto 1: Propostas metodológicas e recursos didáticos\nem espaços formais e não formais de ensino na EPT. Tal classificação se realiza\nem virtude do entendimento da biblioteca não apenas como um lugar, mas sim\ncomo um espaço de formação, de prática educativa, que deveria ser assegurada\ncomo direito a todos os estudantes.\n\n[PÁG. 20]\n17\n2. REFERENCIAL TEÓRICO\nEste capítulo se divide em três subcapítulos: no primeiro, abordam-se os\npercursos históricos da biblioteca até sua chegada à instituição escolar; na\nsequência, contempla-se a discussão sobre formação integral na perspectiva da\nEPT e, por fim, no último subcapítulo, apresentam-se os reflexos dessa formação\nomnilateral nos cursos Técnicos Subsequentes do IFSC, Jaraguá do Sul, câmpus\nRau.\n2.1 PERCURSOS DA BIBLIOTECA ATÉ À INSTITUIÇÃO ESCOLAR\nSe pensarmos a Biblioteca como um espaço do saber, e não somente como\numa sala de livros, veremos que, aí sim, ela cumpre seu papel de forma\ndinâmica e viva. (Ferreira, 2015, p 36)\nDiferentemente de Alexandria e seus rolos de papiro, as primeiras\nbibliotecas não se tornaram cinzas, pelo fato de estarem repletas de placas\ngravadas em argila. Para Battles (2003, p. 31), “A literatura da Mesopotâmia\nremonta ao terceiro milênio antes de Cristo e vai da prece à poesia, do epistolário\naos livros de registro contábil”. O sistema de escrita aplicado para esses registros\nforam denominados de cuneiforme em razão dos caracteres serem em formato de\ncunha e gravados na argila com o auxílio de uma agulheta. Essas placas eram\nsecas ao sol ou em fornos e no clima seco do Crescente Fértil, tornavam-se\nextremamente duráveis e com isso acabaram dando impulso para a construção das\nprimeiras bibliotecas. Desse modo, Battles (2003, p. 31), afirma que, “Já no terceiro\nmilênio antes de Cristo, havia um templo na cidade de Nippur, no sudoeste do que\nhoje é o Iraque, com arquivos cheios de placas de argila”.\nAs bibliotecas da Mesopotâ",
+    "descricao_produto_na_dissertacao": "[PÁG. 18] 15\nter seu percurso formativo realizado no mesmo período em que esta pesquisa se\ndesenvolve, além do fato de que a pesquisadora, autora desta investigação, está\nlotada no mesmo câmpus em que o curso é ofertado, tendo contado direto,\nportanto, com estudantes e professores do curso.\nAssim, engendrou-se o objetivo geral desta pesquisa: analisar a percepção\nde estudantes do Curso Técnico Subsequente em Eletrotécnica do IFSC Jaraguá\ndo Sul - Rau a respeito da biblioteca na Educação Profissional e Tecnológica.\nTambém destacaram-se os seguintes objetivos específicos:\n- Compreender a biblioteca como espaço de aprendizagem, cultura e lazer\nrelacionado à formação integral do indivíduo;\n- Identificar ações da biblioteca que evidenciam a prática da formação integral\ndentro da Educação Profissional e Tecnológica;\n- Fornecer fundamentos referentes à contribuição da biblioteca nas ações\nformativas pessoais e profissionais do indivíduo;\n- Elaborar um produto educacional que integre os alunos ingressantes com o\nsetor biblioteca.\nPara entender o estado do conhecimento da temática e da delimitação aqui\nexploradas, foram realizadas pesquisas nas bases das plataformas Periódicos\nCapes, ProfEPT e SciELO, a partir de busca com as seguintes palavras-chave:\n“Biblioteca”, “Percepção” e “Formação integral”, como título. Também foram usados\nos seguintes filtros: idioma português, últimos 5 anos, revisado por pares. Como\nresultado obtido no Portal de Periódicos Capes, Portal do ProfEPT e Portal Scielo,\nnão houve estudo que contemple todos os filtros utilizados. No Portal do ProfEPT,\nforam encontradas quatro dissertações que se aproximam da ideia proposta1, ou\nseja, as pesquisas tratam da biblioteca na perspectiva da EPT, mas se diferenciam\ndesta pesquisa na metodologia. Dessa forma, perante o baixo número de artigos\nencontrados relacionados à “Biblioteca”, “Percepção” e “Formação integral”,\nevidenciou-se uma lacuna no que se refere à temática aqui apresentada.\n1 Disponíveis em:\nhttps://sucupira.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConcl\nusao.jsf?popup=true&id_trabalho=7762374\nhttps://sucupira.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConcl\nusao.jsf?popup=true&id_trabalho=9138722\nhttps://sucupira.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConcl\nusao.xhtml?popup=true&id_trabalho=11022783\nhttps://sucupira.capes.gov.br/sucupira/public/consultas/coleta/trabalhoConclusao/viewTrabalhoConcl\nusao.xhtml?popup=true&id_trabalho=11581725\n\n[PÁG. 37] 34\n3. METODOLOGIA\nA finalidade desta pesquisa é responder à seguinte questão: como\nestudantes de curso técnico subsequente do IFSC Jaraguá do Sul - Rau percebem\na biblioteca na Educação Profissional e Tecnológica? Retoma-se a problemática,\nporque, para Gil (2002, p.17), a pesquisa científica pode ser definida “[...] como o\nprocedimento racional e sistemático que tem como objetivo proporcionar respostas\naos problemas que são propostos”. Para responder tal questão, foi realizada uma\nentrevista\ncom\nperguntas\nabertas\n(Apêndice\nA),\nde\namostragem,\ncom os\nestudantes do Curso Técnico Subsequente em Eletrotécnica do IFSC Jaraguá do\nSul - Rau, turma 2022-2, que frequentam o curso regularmente.\nDessa maneira, a pesquisa é de natureza aplicada, pois busca encontrar\nsoluções\nenvolvendo\ninteresses\nlocais\ne\n“[...]\nconsiste\nna\nutilização\ndos\nconhecimentos já disponíveis para alguma aplicação prática” (Rauen, 2015, p.\n164). Para essa ap",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 19,
+        "texto": "16\nA fim de cumprir com os objetivos traçados, esta pesquisa perpassa pelas\nseguintes discussões: no próximo capítulo, que configura o marco teórico,\ninicialmente, apresenta-se uma síntese do surgimento e da ascensão da biblioteca\ne de seu papel dentro da instituição escolar; num segundo momento, discute-se a\nformação integral do estudante na perspectiva da Educação Profissional e\nTecnológica (EPT), trazendo um pouco da trajetória do homem na sua busca por\nsobrevivência e aprendizado, aliando o mundo do trabalho com o preparo\nprofissional dentro de uma formação omnilateral; por fim, destacam-se os reflexos\nda formação integral nos cursos técnicos, que formam profissionais capacitados e\nconscientes do seu papel na sociedade. Nos capítulos seguintes, apresentam-se,\nrespectivamente: a metodologia da pesquisa, os resultados da pesquisa e a\napresentação do PE, bem como os resultados de sua avaliação. Por fim, as\nconsiderações finais são explicitadas.\nEste projeto de pesquisa, vinculado ao Programa de Pós-Graduação em\nEducação Profissional e Tecnológica, insere-se na linha de pesquisa Práticas\nEducativas em EPT, macroprojeto 1: Propostas metodológicas e recursos didáticos\nem espaços form",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 20,
+        "texto": "17\n2. REFERENCIAL TEÓRICO\nEste capítulo se divide em três subcapítulos: no primeiro, abordam-se os\npercursos históricos da biblioteca até sua chegada à instituição escolar; na\nsequência, contempla-se a discussão sobre formação integral na perspectiva da\nEPT e, por fim, no último subcapítulo, apresentam-se os reflexos dessa formação\nomnilateral nos cursos Técnicos Subsequentes do IFSC, Jaraguá do Sul, câmpus\nRau.\n2.1 PERCURSOS DA BIBLIOTECA ATÉ À INSTITUIÇÃO ESCOLAR\nSe pensarmos a Biblioteca como um espaço do saber, e não somente como\numa sala de livros, veremos que, aí sim, ela cumpre seu papel de forma\ndinâmica e viva. (Ferreira, 2015, p 36)\nDiferentemente de Alexandria e seus rolos de papiro, as primeiras\nbibliotecas não se tornaram cinzas, pelo fato de estarem repletas de placas\ngravadas em argila. Para Battles (2003, p. 31), “A literatura da Mesopotâmia\nremonta ao terceiro milênio antes de Cristo e vai da prece à poesia, do epistolário\naos livros de registro contábil”. O sistema de escrita aplicado para esses registros\nforam denominados de cuneiforme em razão dos caracteres serem em formato de\ncunha e gravados na argila com o auxílio de uma agulheta. Essas placas eram\nsecas",
+        "citacoes_detectadas": [
+          "Battles, 2003, p. 32"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 28,
+        "texto": "25\n2.2 FORMAÇÃO INTEGRAL NA PERSPECTIVA DA EPT\nAté chegarmos à formação integral, foi percorrido um longo caminho. O\nponto de partida da relação trabalho e educação, para Saviani (2007, p. 154), dá-se\natravés da necessidade da subsistência, \"Os homens aprendiam a produzir sua\nexistência no próprio ato de produzi-la. Eles aprendiam a trabalhar trabalhando.\nLidando com a natureza, relacionando-se uns com os outros, os homens\neducavam-se e educavam as novas gerações”. Com a evolução da produção,\nhouve a divisão do trabalho, e a apropriação da terra culminou na divisão dos\nhomens em classes. Conforme o autor (2007, p. 155), já “Na antiguidade, tanto\ngrega como romana, configura-se esse fenômeno que contrapõe, de um lado, uma\naristocracia que detém a propriedade privada da terra; e, de outro lado, os\nescravos”. A sociedade atual, segundo Saviani (2014), se desenvolveu a partir do\nfeudalismo que produzia para sobreviver, era uma sociedade alicerçada nas\nclasses dominantes que eram os proprietários das terras, os senhores feudais, a\nnobreza e o clero, que contavam com os serviçais para realizar todo o trabalho\nnecessário para a manutenção do feudo, trabalho este executado servindo-se de\ni",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 29,
+        "texto": "26\nescritos, Saviani (2014, p. 20) explica que “[...] por ser uma linguagem codificada,\nnão pode ser adquirida espontaneamente, exige a generalização da educação\nsistemática própria da forma escolar”. É então, nesse contexto, que a escola\nassume um importante papel nessa sociedade em construção, através dela, as\ncamadas sociais mais baixas têm a possibilidade de aprender a ler e, assim,\nadquirir meios de sobreviver nesse contexto de comercialização.\nSaviani (2014, p. 20) afirma que, “Vê-se, então, que o mesmo processo\nque colocou a indústria no centro da produção e a cidade no centro da vida social,\ncolocou também a escola no centro da educação”. Esse cenário só teve alteração\napós a Revolução Industrial, com a introdução das máquinas, na qual reduziu-se a\ndemanda por qualificação específica, já que elas substituíram muitos trabalhos\nmanuais, mas, mesmo assim, era exigido um nível mínimo de qualificação geral,\nobrigando a escola a ligar-se a área da produção. Desse modo,\nCom o impacto da Revolução Industrial, os principais países assumiram a\ntarefa de organizar sistemas nacionais de ensino, buscando generalizar a\nescola básica. Portanto, a Revolução Industrial correspondeu a uma\nRe",
+        "citacoes_detectadas": [
+          "Saviani, 2007, p. 159"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "27\ninstituições era, formar por meio de ensino prático em oficinas de trabalho manual\nou mecânico, jovens para trabalhar como operários nas fábricas.\nNo período que se estende entre o fim do sistema imperialista e o início do\nsistema repúblicano, por volta de 1930, o país passou por “[...] profundas\nmudanças socioeconômicas, provocadas pela extinção da escravatura, pela\nconsolidação do projeto de imigração e pela expansão da economia cafeeira”\n(Manfredi, 2002, p. 79). Que impulsionou, com o crescimento das cidades, os\nserviços essenciais como construção de estradas, infraestrutura e edificações, e\nconsequentemente\nprojetando\na\neducação\ncom\na\nimprescindibilidade\nda\nqualificação profissional. Nesse contexto, como destaca Manfredi (2002, p. 79), “As\npoucas e acanhadas instituições dedicadas ao ensino compulsório de ofícios\nartesanais e manufatureiros cedem lugar a verdadeiras redes de escolas, por\niniciativa de governos estaduais, do governo federal e outros protagonistas [...]”.\nEssas escolas já não tinham o objetivo exclusivamente assistencialista, mas sim,\ntransformar em trabalhadores assalariados aqueles que integravam as populações\nurbanas para compor as massas nas fábricas.\nEsse",
+        "citacoes_detectadas": [
+          "Manfredi, 2002, p. 79",
+          "Brasil, 1959"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 32,
+        "texto": "29\nprofissional o conhecimento científico adquire, para o trabalhador, o sentido de\nforça produtiva, traduzindo-se em técnicas e procedimentos”.\nNesse período, tem início os alinhamentos para viabilizar o processo de\nexpansão da rede federal de ensino, especificar a missão junto ao desenvolvimento\nsocial\ne\ndelinear\nas\nestratégias\norganizacionais dessas instituições. Como\nresultado dessas discussões e debates, é publicada em 29/12/2008 a Lei\n11.892/2008 (Brasil, 2008), que implanta na esfera do Ministério da Educação, os\nInstitutos Federais de Educação Profissional Científica e Tecnológica. Trata-se de\num projeto, como ressalta Pacheco (2011, p. 17), ‘[...] progressista que entende a\neducação\ncomo\ncompromisso\nde\ntransformação\ne\nde\nenriquecimento\nde\nconhecimentos objetivos capazes de modificar a vida social e de atribuir-lhe maior\nsentido e alcance no conjunto da experiência humana”. Sendo que a origem\ndesses institutos, em sua grande maioria, foram as Escolas Aprendizes Artífices\ncriadas em 1909, e que cem anos depois de abertas para somente formar\noperários, tornam-se escolas de formação integral do indivíduo. Para Pacheco\n(2011, p. 19), entrelaçando cultura, ciência e tecnologia e",
+        "citacoes_detectadas": [
+          "Brasil, 2008",
+          "Pacheco, 2011, p. 20"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 33,
+        "texto": "30\nrealidade e a compreensão do processo histórico de construção do conhecimento”.\nNa visão de Frigotto (2012), a escola, nesse contexto de educação omnilateral, terá\num papel transformador na medida em que, partindo de sujeitos concretos com\ntoda sua bagagem cultural e de saberes comuns, construa as bases científicas que\nviabilizem a compreensão de como se produzem as relações sociais e os\nfenômenos da natureza. E explica que omnilateralidade é,\n[...] um termo que vem do latim e cuja tradução literal significa “todos os\nlados ou dimensões”. Educação omnilateral significa, assim, a concepção\nde educação ou de formação humana que busca levar em conta todas as\ndimensões que constituem a especificidade do ser humano e as condições\nobjetivas e subjetivas reais para seu pleno desenvolvimento histórico.\nEssas\ndimensões\nenvolvem\nsua\nvida\ncorpórea\nmaterial\ne\nseu\ndesenvolvimento intelectual, cultural, educacional, psicossocial, afetivo,\nestético e lúdico. (Frigotto, 2012, P. 267, grifo do autor).\nA ideia de formação integral, de formação humana, para Ciavatta (2012, p.\n85), “[...] sugere superar o ser humano dividido historicamente pela divisão social\ndo trabalho entre a ação de executar e ",
+        "citacoes_detectadas": [
+          "Frigotto; Araujo, 2018, p.252"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 34,
+        "texto": "31\nFrigotto e Araujo (2018, p. 253), argumentam que para a evolução de\npráticas pedagógicas integradoras, faz-se necessário que, “[...] os sujeitos do\nensino, [...] e da aprendizagem revelem uma atitude humana transformadora, que\nse materialize no seu compromisso político com os trabalhadores e com a\nsociedade dos trabalhadores”.\nAinda de acordo com os autores (2018), visto que\nas práticas educativas não se estabelecem na escola e nem tem consequências\nque se encerram nela, não se pode reduzir a viabilidade da formação integral à boa\nvontade dos docentes e dos gestores educacionais, primordial é a busca e\nimplementação\nde\num\nambiente\npropício\ne\nintegrador\npara\nas\npráticas\npedagógicas, levando em conta a realidade total dos sujeitos envolvidos.\n2.3\nOS REFLEXOS DA FORMAÇÃO INTEGRAL NOS CURSOS TÉCNICOS\nSUBSEQUENTES\nPara Ciavatta (2012, p. 98-99), se a educação de jovens e adultos não pode\nser limitada “[...] às necessidades estritas do mercado de trabalho, ela não pode ser\nalheia às suas necessidades de sobrevivência e às exigências da produção\neconômica, como campo de onde os sujeitos sociais retiram os meios de vida”. A\nautora (2012), afirma que o levantamento de oportunidades de oc",
+        "citacoes_detectadas": [
+          "Sebrae, 2022",
+          "IFSC, 2022"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 45,
+        "texto": "42\nmesmo que tímidos, os resultados da inserção, ainda que lenta, da educação\nintegral nas escolas brasileiras. Tal como trazido por Ciavatta (2012), Frigotto\n(2012), Pacheco (2012) e Ramos (2014), que são unânimes em afirmar que educar\nintegralmente é dar ao adolescente ou ao adulto trabalhador uma formação\ncompleta, física e intelectualmente para que possa, através da compreensão do\nmundo\nem que vive, desempenhar seu papel na sociedade e integrar-se\npoliticamente a ela. Além disso, reforça-se o que consta no PDI do IFSC (2020):\nque a educação é o ambiente propício para a formação integral do indivíduo, para\ntorná-lo cidadão consciente com visão crítica.\nJá no que diz respeito à questão 3 - Na sua opinião, a quem a biblioteca se\ndestina?, trazemos para análise as Sds:\nSd9 - “Ah! Pra todos né? Pra todo público, pra quem quiser aprender”.\n(Lausimar Laus).\nSd10 - ”Acho que para todos, seja pra quem quer estudar ou só pegar um\nlivro só pra lazer, nè?”. (Leonardo Boff).\nSd11 - “Ah! Pra comunidade né? Se é aberta pra comunidade, pra todo\nmundo, né? Não só pros alunos, né? Pra quem é livre e quer ver uma boa\nhistória, né? Um bom livro pra ler”. (Manoel Carlos Karam).\nSd12 - “Pra todo mun",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 46,
+        "texto": "43\ndo uso da biblioteca, principalmente pelas instituições públicas de educação, além\nde elevar o nível de conhecimento, possibilitou o reconhecimento, por parte desse\nusuário, da biblioteca como um local de pertencimento.\nDando sequência, parte-se para a questão 4 - Quando você usa a biblioteca\ndo IFSC, o que você procura?\nSd13 - “Espaço para estudos e reuniões com colegas,para realizar\natividades e a parte da informática para realizar trabalhos”. (Lindolf Bell).\nSd14 - “Geralmente é um lugar que eu tiro para fazer trabalhos, onde eu\nposso ter um pouco mais de espaço pra poder fazer eles”. (Maicon\nTenfen).\nSd15- “As vezes eu uso aquela salinha para estudar que é fechada, às\nvezes até jogava xadrez com outros colegas, e o livro raramente, algum\nlivro desse curso”. (Leonardo Boff).\nSd16- “Sobre as matérias das aulas”. (Sonia Bridi).\nMais uma vez, as respostas convergem em paráfrase para o uso da\nbiblioteca como setor de apoio pedagógico, estando presente na Sd13, de Lindolf\nBell, “Espaço para estudos,[...] a parte da informática para realizar trabalhos”; na\nSd14, de Maicon Tenfen, “[...] para fazer trabalhos”; na Sd15, de Leonardo Boff,\n“[...] aquela salinha para estudar”; e na Sd16",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 57,
+        "texto": "54\n5. CONSIDERAÇÕES FINAIS\nNa contemporaneidade, a escola é a instituição mais eficiente em que os\nindivíduos podem ter\nacesso à compreensão do funcionamento da engrenagem\nsocial,\nobter\nconsciência crítica sobre a própria realidade e sobre a sua\nparticipação\nnesse\nmecanismo\ntodo.\nA\nbiblioteca,\ncomo\nintegrante\ndesse\nempreendimento, deve servir, além de apoio pedagógico, como espaço de reflexão,\nde expansão do conhecimento e de disseminação cultural.\nNesse contexto de aproximação do aluno com a biblioteca, deu-se início à\ninvestigação que deu origem a este estudo. Com a análise feita a partir das SDs\napresentadas pelos alunos da turma elencada para a pesquisa, pôde-se observar\nque tanto a pergunta de pesquisa, quanto o objetivo geral estabelecido para este\nestudo,\nou\nseja,\nanalisar\na\npercepção\nde\nestudantes\ndo\nCurso\nTécnico\nSubsequente do IFSC Jaraguá do Sul - Rau a respeito da biblioteca na Educação\nProfissional e Tecnológica, foram contemplados com um resultado positivo,\nendossado principalmente pela última questão, quando perguntados sobre o\nimpacto da biblioteca na sua formação técnica, pois foram unânimes em responder\nque a biblioteca é um setor de muita importância dentro de su",
+        "citacoes_detectadas": []
+      }
+    ],
+    "referencias_filtradas": [
+      "BATTLES, Matthew. A conturbada história das bibliotecas. São Paulo: Editora Planeta do Brasil, 2003.",
+      "IFSC - INSTITUTO FEDERAL DE SANTA CATARINA. Projeto Político de Curso: Técnico em Eletrotécnica. 2018. Disponível em: file:///C:/Users/Usuario/Downloads/PPC_T%C3%A9cnico_Eletrot%C3%A9cnica_20 18%20EM%20%20APROVA%C3%87%C3%83O%20CEPE%20(1).pdf. Acesso em: 06 mar. 2023.",
+      "IFSC - INSTITUTO FEDERAL DE SANTA CATARINA. Plano de Desenvolvimento Institucional. 2020-2024. Florianópolis, 2020. Disponível em: https://drive.google.com/file/d/1XiW-Iox93MuAimDCT2BcZTfrGfG0nC1T/view. Acesso em: 07 nov. 2022.",
+      "IFSC - INSTITUTO FEDERAL DE SANTA CATARINA. Estude no câmpus Jaraguá do Sul - Centro e Rau. 2022. Disponível em: https://www.ifsc.edu.br/en/web/campus-jaragua-do-sul. Acesso em 06 mar. 2023.",
+      "IFSC - INSTITUTO FEDERAL DE SANTA CATARINA. Como os cursos do IFSC são criados? 2021. Disponível em: https://www.ifsc.edu.br/postagens-blog-intercambistas/-/asset_publisher/qYC5Mt2B 59 w6wv/content/id/2206709/como-os-cursos-do-ifsc-s%C3%A3o-criados. Acesso em: 22 out. 2022.",
+      "IFSC - INSTITUTO FEDERAL DE SANTA CATARINA. Eletrotécnica. 2024. Disponível em: https://www.ifsc.edu.br/en/tecnicos-subsequentes/-/visualizar/eletrotecnica/Campus -Jaragua-do-Sul---Rau/77/116/thDocucvQC8N . Acesso em 17 maio 2024.",
+      "MANFREDI, Silvia Maria. Educação Profissional no Brasil. São Paulo: Cortez, 2002.",
+      "PACHECO, Eliezer. Institutos Federais: uma revolução na educação profissional e tecnológica. In: PACHECO, Eliezer (org.). Institutos Federais uma revolução na educação profissional e tecnológica. São Paulo: Moderna. 2011. p.13-32.",
+      "PACHECO, Eliezer. (org.). Perspectivas da educação profissional técnica de nível médio: proposta de diretrizes curriculares. São Paulo: Moderna, 2012.",
+      "SAVIANI, Demerval. Trabalho e educação: fundamentos ontológicos e históricos. Revista Brasileira de educação. v. 12, n. 34, p. 152/166, jan./abr. 2007. Disponível em: http://educa.fcc.org.br/pdf/rbedu/v12n34/v12n34a12.pdf. Acesso em: 08 jul. 2022.",
+      "SAVIANI, Demerval. A pedagogia histórico-crítica. Revista Binacional Brasil Argentina. v. 3, n. 2, p. 11-36, 2014. Disponível em: https://drive.google.com/file/d/18TALslA_L1aulzXGiLKWiUybKENJzhfr/view Acesso em: 01 nov. 2022. SEBRAE. Jaraguá do Sul: emprego,ocupações,empresas, dados demográficos, educação, comércio exterior, PIB. Sebrae. 2022. https://datampe.sebrae.com.br/profile/geo/jaragua-do-s"
+    ]
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "id": "EPT-0042",
+  "metadados_resolvidos": {
+    "ano": 2024,
+    "autor": "Leandro Severino Nascimento de Oliveira",
+    "orientador": "Cloves Alexandre de Castro",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP2",
+    "macroprojeto": "MP6"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "EDUCAÇÃO NO/DO CAMPO E PEDAGOGIA DA ALTERNÂNCIA NO CAMPUS AVANÇADO ABELARDO LUZ DO IFC SOB A PERSPECTIVA DOCENTE",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/10/Dissertacao-Leandro-Severino.pdf",
+    "palavras_chave": [
+      "Educação no campo",
+      "Pedagogia da Alternância",
+      "Luta pela terra",
+      "MST",
+      "Formação integral"
+    ],
+    "autores_referenciados": [
+      "A. Cunhal",
+      "A. O. Melo",
+      "A. T. Santos",
+      "A. U. Oliveira",
+      "Abbé Granereau",
+      "Aline Guterres Ferreira",
+      "Anny Camila Lima Rodrigues",
+      "B. M. Fernandes",
+      "Boldt de Oliveira",
+      "C. A. Castro",
+      "C. E. Oliveira Júnior",
+      "C. M. Marinho",
+      "C. T. C. Amaro",
+      "Célia Beatriz Piatti",
+      "Cladecir Alberto Schenkel",
+      "Cristina Luisa Bencke Vergütz",
+      "D. D. Lihtnov",
+      "D. F. Silveira",
+      "D. Gaio",
+      "Daniervelin Renata Marques Pereira",
+      "Dante Henrique Moura",
+      "Dermeval Saviani",
+      "Diego Miranda de Andrade",
+      "E. D. Minuzzi",
+      "E. Khater",
+      "E. P. Camargo",
+      "E. Reetz",
+      "Edival Sebastião Teixeira",
+      "Eliezer Moreira Pacheco",
+      "F. Baldi",
+      "F. Oliveira",
+      "G. R. A. Frazão",
+      "Gabriel Almeida Frazão",
+      "Gaudêncio Frigotto",
+      "Glademir Alves Trindade",
+      "H. R. Freitas",
+      "J. B. Begnami",
+      "J. C. Cichaczewski",
+      "J. S. Martins",
+      "Jaqueline de Moraes Thurler Dália",
+      "Jean Claude Gimonet",
+      "João Paulo Reis Costa",
+      "Juliano Pinheiro",
+      "K. C. S. Souza",
+      "Karl Marx",
+      "L. A. Barros",
+      "L. C. S. Ferreira",
+      "L. M. L. Padilha",
+      "L. M. Nascimento",
+      "L. M. Sá",
+      "L. Mendes",
+      "L. R. S. Machado",
+      "Laurence Bardin",
+      "Letícia Cristina Antunes",
+      "Lourdes Helena Silva",
+      "Luama Vieira de Sousa",
+      "Luciane Teixeira da Silva",
+      "M. Borges Junior",
+      "M. C. Molina",
+      "M. C. S. Ferreira",
+      "M. F. C. Sobreira",
+      "M. Franco",
+      "M. G. Arroyo",
+      "M. G. Gohn",
+      "M. Ramos",
+      "M. Resende",
+      "M. Ribeiro",
+      "Maria Ciavatta",
+      "Maria de Lourdes Bernartt",
+      "Maria Raquel Barros Lima",
+      "Mariana Petri da Silva",
+      "Nayara Massucatto",
+      "P. J. Orso",
+      "Paolo Nosella",
+      "Patrícia Sara Melo Lopes",
+      "Paulo Freire",
+      "Pedro Puig Calvó",
+      "R. S. Caldart",
+      "R. X. Coutinho",
+      "Ronaldo Marcos de Lima Araújo",
+      "S. C. Leite",
+      "S. Haddad",
+      "Silvanete Pereira dos Santos",
+      "T. E. Gerhardt",
+      "T. P. Costa",
+      "Thierry de Burghgrave",
+      "Verônica Klepka"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/778188",
+    "titulo_produto": "Pedagogia da Alternância: conhecimento e reflexão",
+    "titulo_produto_bruto": "GUIA – PEDAGOGIA DA ALTERNÂNCIA CONHECIMENTO E REFLEXÃO",
+    "data_publicacao": "2024-06-13",
+    "autores_colaboradores": [
+      {
+        "nome": "INSTITUTO FEDERAL CATARINENSE-IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Oliveira, Leandro Severino Nascimento de",
+        "papel": "creator"
+      },
+      {
+        "nome": "CASTRO, Cloves Alexandre de",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/778188",
+        "url": "https://educapes.capes.gov.br/handle/capes/778188"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Pedagogia da Alternância: conhecimento e reflexão",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "livro digital"
+    ],
+    "palavras_chave_educapes": [
+      "Formação Integral",
+      "Pedagogia da Alternância",
+      "Educação do Campo",
+      "Organização e Memória dos Espaços Pedagógicos em EPT",
+      "PROFEPT",
+      "Produto Educacional resultado de pesquisa de dissertação de Mestrado."
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Guia",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO STRICTO SENSU\nMESTRADO PROFISSIONAL EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\nLEANDRO SEVERINO NASCIMENTO DE OLIVEIRA\nEDUCAÇÃO NO/DO CAMPO E PEDAGOGIA DA ALTERNÂNCIA NO CAMPUS\nAVANÇADO ABELARDO LUZ DO IFC SOB A PERSPECTIVA DOCENTE\nBlumenau\n2024\n\nLEANDRO SEVERINO NASCIMENTO DE OLIVEIRA\nEDUCAÇÃO NO/DO CAMPO E PEDAGOGIA DA ALTERNÂNCIA NO CAMPUS\nAVANÇADO ABELARDO LUZ DO IFC SOB A PERSPECTIVA DOCENTE\nDissertação\napresentada\nao\nPrograma\nde\nPós-graduação\nem\nEducação\nProfissional e\nTecnológica, ofertado pelo campus Blumenau do\nInstituto Federal Catarinense, como parte dos\nrequisitos para a obtenção do título de Mestre em\nEducação Profissional e Tecnológica.\nOrientador: Prof. Dr. Cloves Alexandre de Castro.\nBlumenau\n2024",
+    "ficha_catalografica": "",
+    "sumario": "[PÁG. 13]\nSUMÁRIO\nAPRESENTAÇÃO\n12\n1 INTRODUÇÃO\n15\n2 TEMA E DELIMITAÇÃO\n20\n2.1 Tema\n20\n2.2 Delimitação\n20\n3 PROBLEMA\n21\n4 OBJETIVOS\n22\n4.1 Objetivo geral\n22\n4.2 Objetivos específicos\n22\n5 JUSTIFICATIVA\n23\n6 MARCO TEÓRICO\n27\n7 MARCO CONCEITUAL REFERENCIAL\n33\n7.1 Educação rural x educação do campo\n33\n7.2 A luta do MST por terra e educação\n37\n7.3 O Campus Abelardo Luz - uma conquista\n45\n7.4 Pedagogia da Alternância: origens e finalidades\n48\n8 METODOLOGIA\n55\n9 ANÁLISE E INTERPRETAÇÃO DOS DADOS\n57\n9.1 Durante sua formação, foi ofertadas disciplinas ou teorias sobre\neducação do campo?\n57\n9.2 O IFC ofertou alguma capacitação sobre educação do campo e/ou\nPedagogia da Alternância?\n58\n9.3 No processo seletivo (concurso) para docente, o senhor/senhora teve\nconhecimento\nque\natuaria\nnum campus localizado dentro de um\nacampamento rural, com a proposta da metodologia da Pedagogia da\nAlternância?\n59\n9.4 Qual seu conceito sobre Educação do/no Campo?\n60\n9.5 Qual seu conceito sobre Pedagogia da Alternância?\n61\n9.6 O senhor/a senhora acha que a Pedagogia da Alternância é indicada para\nesta comunidade em que se encontra o campus avançado Aberlado Luz? 62\n9.7 Quais os pontos fracos e fortes da Pedagogia da Alternância no EMI do\ncampus Abelardo Luz?\n63\n9.8 O que senhor/ a senhora mudaria na metodologia aplicada a Pedagogia\nda Alternância no EMI do campus Abelardo Luz?\n65\n9.9 O senhor/ a senhora acha que a metodologia da Pedagogia da\nAlternância incentiva os alunos desta comunidade a dar prosseguimento\nnos estudos? Porque?\n65\n9.10 Na sua opinião, o campus Abelardo Luz, no EMI, cumpre o papel social\nque estimulou a sua criação? Porque? ....&..& &&&&&&&&&&&& 67\n10 AVALIAÇÃO DO PRODUTO EDUCACIONAL\n70\n10.1 Apresentação\n70\n10.2 Parte 1 Pedagogia da Alternância - origem.\n71\n10.3 Parte 2 - Quais as finalidades da Pedagogia da Alternância?\n72\n10.4 Parte 3 -Tempo-escola e tempo-comunidade/tempo-família\n73\n10.5 Parte 4 - Reflexões acerca do IFC e da Pedagogia da Alternância\n75\n10.6 Comentários\n76\n11 CONSIDERAÇÕES FINAIS\n77\nREFERÊNCIAS\n79\nAPÊNDICES A - Roteiro para entrevista semiestruturada para docentes 87\nAPÊNDICES B - Produto Educacional 89",
+    "resumo": "[PÁG. 9]\nRESUMO\nEste trabalho teve o desafio de perceber e compreender, sob a perspectiva docente,\na educação do campo e a Pedagogia da Alternância no Instituto Federal Catarinense\n(IFC), campus Abelardo Luz-SC. Para tanto, mergulhou-se nos significados e\nconcepções de educação do campo e Pedagogia da Alternância e percebeu-se que\nno Brasil, essas práxis têm se constituído por meio da pedagogia dos movimentos\nsociais de luta pela terra, particularmente, o Movimento dos Trabalhadores Sem\nTerra-MST, que vem experienciando a formação integral em suas práticas\neducativas. O campus Abelardo Luz é o único campus da Rede Federal de\nEducação Científica e Tecnológica que se encontra em um assentamento.\nRecentemente a sua legitimidade de estar no território de assentados foi\npublicamente contestado, seja por agentes políticos e econômicos locais, ou mesmo\npor servidores do campus. Isso nos levou a tê-lo como objeto da nossa pesquisa\ncujo objetivo foi compreender sob a perspectiva docente a educação do campo e a\nPedagogia da Alternância que se fazem no campus Abelardo Luz. A metodologia\nutilizada pode ser classificada como qualitativa. A análise dos dados optou-se pelos\nprocedimentos indicados por Bardin (2011). O resultado da pesquisa indica,\nprincipalmente, que grande parte dos docentes entrevistados não possuem\nqualificação na metodologia da pedagogia da Alternância, e também a falta de oferta\ndessa qualificação por parte do IFC. Como Produto Educacional foi proposto um\nGuia Formativo em pedagogia da alternância, avaliado positivamente pelos(as)\ndocentes, técnicos(as) administrativos e discentes aos quais o mesmo foi submetido\npara avaliação.\nPalavras-chave: Educação no campo. Pedagogia da Alternância. Luta pela terra.\nMST. Formação integral.",
+    "introducao": "[PÁG. 18]\n15\n1 INTRODUÇÃO\nA educação é um direito humano necessário para a concretização da\ndignidade humana plena. Deve ser garantida para qualquer pessoa, independente\nde quaisquer condições humanas. Por meio dela, é assegurado o acesso aos bens\nmateriais e culturais necessários para a manutenção da vida, conhecimentos\nconstruídos ao longo da história, características muito caras à espécie humana: a\nvocação de produzir conhecimentos, de pensar sobre a sua própria prática, de\nutilizar os bens naturais para seus fins e de se organizar socialmente (Haddad,\n2012).\nA educação do campo é uma modalidade de educação e ao mesmo tempo\numa abordagem metodológica que se diferencia da mera educação no campo,\ncaracterizada pela expansão de escolas rurais e que transportam a prática escolar\ndo espaço urbano para o espaço rural, como se as dinâmicas e desafios fossem os\nmesmos. A educação do campo é <um fenômeno da realidade brasileira atual=\n(Caldart, 2012, p. 257), e é produto da organização dos trabalhadores que vivem\nno/do campo que por meio das práxis buscam educar o campo. De acordo com\n(Castro, 2018, p.16 ).\nA educação do campo só ganha sentido real quando os educadores têm a\nreal dimensão de que a sua origem é resultante de uma pedagogia\nconstruída na dinâmica dos movimentos sociais [...] e quando os educandos\nse fazem sujeitos de fato dos seus processos de aprendizagem nos\nespaços-tempo de alternância.\nÉ uma modalidade de educação constituída por meio da experiência de\nmovimentos sociais na luta pela terra de várias gerações de camponeses no Brasil,\ne configura-se como uma categoria de análise específica, que parte desde as\nsituações e das práticas, como das políticas de educação dos trabalhadores do\ncampo (Caldart, 2012), resultantes dos acúmulos históricos e pedagógicos da luta\npela terra.\nO IFC tem, em sua formação, laços significativos com o campo. Trata-se de\numa instituição que surgiu por meio da integração das escolas agrotécnicas federais\nde Concórdia, Rio do Sul e Sombrio e dos colégios agrícolas de Araquari e\nCamboriú. Os dois últimos vinculados à Universidade Federal de Santa Catarina\n(UFSC).\n\n[PÁG. 19]\n16\nA missão do IFC é a de proporcionar educação profissional, científica e\ntecnológica, integrada ao ensino médio, de modo que seja indissociável das práticas\nde Ensino, Pesquisa e Extensão, com o fito de buscar a formação cidadã, a inclusão\nsocial, a inovação e o desenvolvimento regional (IFC, 2019a).\nAo se falar em inclusão social é preciso ser claro que se refere a todas\ndimensões garantidoras da cidadania, e que de alguma forma e vários motivos, ao\nserem negadas, refletem nos processos educativos. Por isso a\n[...] educação inclusiva aponta para uma possibilidade legal de educação\npara todos, isto é a educação que visa reverter o percurso da exclusão, ao\ncriar condições, estruturas e espaços para uma diversidade de educandos.\nDesta forma buscamos o ideal de uma escola inclusiva que possa\ntransformar não apenas a estrutura física, mas aspectos subjetivos como as\natitudes e a mentalidade dos educadores e de todos os atores da\ncomunidade escolar, para aprender a lidar com as diferenças (Khater;\nSouza, 2018, p. 33).\nApesar de não ser um campus unicamente direcionado para estudantes que\ntrabalham e vivem no/do campo, o IFC, visando a inclusão e formação cidadã dos\nestudantes, através de convênios com o Movimento dos Trabalhadores Sem Terra\n(MST) e Prefeitura de Abelardo Luz, implantou o Campus Avançado Abelardo Luz,\njunto ao Assentamento José Maria.\nÉ importante ressaltar que o campus Abelardo Luz se localiza no território que\no MST realizou sua primeira ocupação no estado de Santa Catarina, no município de\nAbelardo Luz, no ano de 1985. Atualmente o município conta com 22 assentamentos\ne com aproximadamente 1500 famílias vivendo neles. No assentamento José Maria\nexistem três escolas - uma municipal, outra estadual e o campus Avançado Abelardo\nLuz, do IFC.\nAs escolas se estruturam e mantém, geralmente, em seus currículos o estudo\nda leitura e escrita, matemática, ciências e outras disciplinas que adquiriram durante\no século XIX, o status científico, como história, geografia, física. Porém, para os\nestudantes da educação do campo é necessário que haja uma <aproximação entre\ntrabalho e estudo, visto que a maior parte deles ingressa cedo nas lidas da roça para\najudar a família [...]= (Ribeiro, 2012, p. 293-294). Assim, vamos ao encontro do que\nexpõe Marlene Ribeiro (2010):\nPara estes sujeitos, quando existe uma escola na área onde vivem, é\noferecida uma educação na mesma modalidade da que é oferecida às\npopulações que residem e trabalham nas áreas urbanas, não havendo [...]\n\n[PÁG. 20]\n17\nnenhuma tentativa de adequar a escola rural às características dos\ncamponeses ou de seus filhos, quando estes a frequentam (Ribeiro, 2010,\np. 293).\nCom o aumento do protagonismo de movimentos sociais, em especial o MST\ne outros movimentos camponeses, a educação do campo e a proposta da\nPedagogia da Alternância vem ganhando força nestes espaços, aproximando o\natendimento aos filhos dos trabalhadores destes grupos e procurando, através de\npolíticas públicas comprometidas com a educação, atender as necessidades e\ndireitos das pessoas que vivem nas zonas rurais e que buscam através do diálogo\nentre teoria e prática na educação o desenvolvimento integral do estudante através\ndos currículos integrados e atendendo assim a Lei de Diretrizes e Bases da\nEducação Nacional (LDB, Lei 9394/96).\nArt. 1º A educação abrange os processos formativos que se desenvolvem\nna vida familiar, na convivência humana, no trabalho, nas instituições de\nensino e pesquisa, nos movimentos sociais e organizações da sociedade\ncivil e nas manifestações culturais (Brasil, 1996).\nAtender a esse dispositivo da LDB no que se refere a Educação do Campo,\nimplica na efetivação da educação neste espaço pela opção da metodologia da\nPedagogia da Alternância, tema desta pesquisa de mestrado que busca aferir a\ncontribuição da Pedagogia da Alternância, pela ótica docente na formação dos\ndiscentes do curso Técnico em Agropecuária do campus avançado Abelardo Luz.\nPara melhor entendimento sobre esta metodologia de ensino se faz necessário\nvoltar à sua origem.\nA Pedagogia da Alternância consiste numa metodologia de organização do\nensino escolar que conjuga diferentes experiências formativas distribuídas\nao longo de tempos e espaços distintos, tendo como finalidade uma\nformação profissional. Esse método começou a tomar forma em 1935 a\npartir das insatisfações de um pequeno grupo de agricultores franceses com\no sistema educacional de seu país, o qual não atendia, a seu ver, as\nespecificidades da Educação para o meio rural (Teixeira; Bernartt;Trindade,\n2008, p. 227).\nA Pedagogia da Alternância é uma metodologia pedagógica que busca a\nintegração entre a teoria e a prática dos estudantes que vivem no/do campo, pois\ntem como princípio a indissociabilidade entre teoria e a prática. Em sua casa o\nestudante assume o papel principal: ele planeja, coloca em prática o conhecimento\nteórico adquirido na escola, tudo acompanhado pela família e realizado diversas\n\n[PÁG. 21]\n18\nvezes na propriedade da própria família. No ambiente escolar o trabalho de\nplanejamento e execução é realizado por todos, desde a gestão até os servidores\ntécnico-administrativos, que realizam suas atividades fora da sala de aula\n(Lorenzoni, 2018).\nA Pedagogia da Alternância é um método que busca a interação entre o\nestudante que vive no campo e a realidade que ele vivencia em seu\ncotidiano, de forma a promover constante troca de conhecimentos entre seu\nambiente de vida e trabalho e o escolar (Lorenzoni, 2018).\nO método da Pedagogia da Alternância\n[...] consiste na articulação entre Tempo-Escola (TE) e Tempo-Comunidade\n(TC). No TE, os educandos permanecem de duas semanas a dois meses,\ndependendo do curso, no espaço da escola em regime de internato. No TC,\nos educandos retornam às suas propriedades familiares ou às comunidades\nou aos assentamentos para colocarem ",
+    "descricao_produto_na_dissertacao": "[PÁG. 25] 22\n4 OBJETIVOS\n4.1 Objetivo geral\nCompreender a Pedagogia da Alternância, sob a perspectiva docente, no\ncurso Técnico Integrado em Agropecuária do IFC 3 Campus Avançado Abelardo\nLuz.\n4.2 Objetivos específicos\na)\nMapear as concepções de Pedagogia da Alternância;\nb)\nPesquisar a importância da Pedagogia da Alternância para o curso Técnico\nIntegrado em Agropecuária ofertado no Campus Abelardo Luz; Compreender\nc)\nCompreender\na\nrelevância\ndos\ntempo-escola\ne\nTempo-família/tempo-comunidade na formação dos estudantes do curso Técnico em\nAgropecuária do Campus Abelardo Luz;\nd)\nVerificar qual a relevância que os docentes vêem na metodologia da\nPedagogia da Alternância para esse curso e campus;\ne)\nProduzir um produto educacional que contribua para o aprimoramento ou\naperfeiçoamento da Pedagogia da Alternância no Ensino Médio Integrado (EMI) e na\nEPT.\n\n[PÁG. 58] 55\n 8 METODOLOGIA\n Para dar início à pesquisa foi necessário fazer um levantamento bibliográfico\n para conhecer e entender o que já foi pesquisado em relação ao tema. Por isso\n foram realizadas consultas no Portal CAPES, Banco de Teses e Dissertações e\n Google Acadêmico. Ao percebermos a inseparabilidade da educação do campo com\n a Pedagogia da Alternância e os movimentos de luta pela terra no Brasil, a pesquisa\n utilizou-se dessas questões para termos conhecimento do estado da arte sobre\n essas temáticas.\n Após esse passo inicial construímos o pré-projeto e o submetemos ao\n escrutínio de colegas do colegiado do PROFEPT-Polo IFC, no seminário de\n pré-projetos do Programa. Após as críticas e contribuições, o projeto foi sendo\n aperfeiçoado, encaminhado ao Comitê de Ética em Pesquisa com Seres Humanos\n conforme Resolução do Conselho Nacional de Saúde (CNS) nº 466/12 e 510/16 e\n suas complementares, via Plataforma Brasil, e, submetido ao exame de qualificação,\n em junho de 2023.\n No que se refere à abordagem, trata-se de pesquisa qualitativa, que segundo\n Gerhardt e Silveira (2009, p. 32) <[...] preocupa-se [..] com aspectos da realidade que\n não podem ser quantificados, centrando-se na compreensão e explicação da\n dinâmica das relações sociais.=\n A nossa pesquisa é exploratória, pois, pauta-se pela proposição de explorar o\n contexto a ser estudado, com o fito de construir dados a partir das experiências de\n atuação educacional dos participantes da pesquisa (Gerhardt; Silveira, 2009). Mas\n também pode ser caracterizada como de natureza aplicada, pois a proposta do\n mestrado profissional prevê a elaboração e aplicação de um produto educacional,\n pensado, a priori, como um curso que contribua para o aprimoramento ou\n aperfeiçoamento da Pedagogia da Alternância no EMI e na EPT.\n Em Gerhardt e Silveira (2009), as pesquisas aplicadas têm como princípio\n construir conhecimentos de aplicação prática, com a intencionalidade de organizar e\n gerar soluções para questões pontuais em determinados contextos.\n Para o instrumento de coleta de dados, utilizamos de entrevistas semi\n estruturadas, com alguns questionamentos com pedidos de justificativas, que\n possibilitam resultados mais concretos e precisos. Estas entrevistas foram realizadas\n\n[PÁG. 73] 70\nMas, o fato mais marcante das entrevistas foi o de nenhum dos entrevistados\npossuírem conhecimento sobre Educação do/no campo e da metodologia da\nPedagogia da Alternância, contribuindo para vislumbrar que o objetivo da pesquisa\nfoi alcançado: compreender a metodologia da Pedagogia da Alternância sob a ótica\ndocente.\nOutro fator que chama a atenção é",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "27\n6 MARCO TEÓRICO\nAo contrário dos outros seres vivos, os seres humanos precisam modificar a\nnatureza para produzirem sua sobrevivência. Ou seja, é necessário adaptar a\nnatureza a si. Esse processo de transformação da natureza em objetos úteis para\nproduzir a sua existência pode ser chamado de trabalho, que para Saviani é a\nessência própria do homem (Saviani, 2007).\nSe a existência humana não é garantida pela natureza, não é uma dádiva\nnatural, mas tem de ser produzida pelos próprios homens, sendo, pois, um\nproduto do trabalho, isso significa que o homem não nasce homem. Ele\nforma-se homem. Ele necessita aprender a ser homem, precisa aprender a\nproduzir sua própria existência (Saviani, 2007, p. 154).\nEste processo de transformação da natureza em bens utilizáveis para a\ncontinuidade da vida humana era repassado entre os homens e também para as\nfuturas gerações. Aprende-se a modificar e adaptar a natureza, e se ensina a outros\nhomens para que este conhecimento não se perca. Esse processo de\nensinar-aprender, podemos chamar de educação. Percebe-se que trabalho e\neducação, desta forma, surgem ao mesmo tempo.\nEstão\naí\nos\nfundamentos\nhistórico-ontológicos\nda\nrelação\ntrabalho-educação. F",
+        "citacoes_detectadas": [
+          "Saviani, 2007",
+          "Saviani, 2007, p. 154",
+          "Saviani, 2007, p.\n155"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 31,
+        "texto": "28\nde Portugal era o proprietário das capitanias para as quais nomeava governadores,\nque por sua vez, tinham o poder de distribuir sesmarias (fazendas), que deveriam\nser produtoras de mercadorias para o abastecimento do mercado europeu.\nO marco inicial da história da propriedade privada no Brasil vem do Período\nColonial, quando as terras tornaram-se propriedade do rei e por meio dos\nseus funcionários ele fazia concessões de sesmarias a pessoas para\ncultivá-las e explorá-las. A propriedade privada, em sua origem, é um\nprojeto funcionalizante, porque o objetivo era a exploração do território\nbrasileiro, não só do ponto de vista da colonização, mas também na\nobtenção de dividendos e de matérias primas (Gaio, 2019, p. 29).\nCom o surgimento destas classes sociais distintas, mudaram as formas de\ntrabalho e também da educação, pois ela é indissocial das formas de produção da\nvida material. A principal mudança foi que a educação para os detentores de bens e\ndo poder era a educação de caráter propedêutica, voltada a continuidade de estudos\ne capacitação para o domínio dos conhecimentos para os <dirigentes=. Para os\ndemais estratos da sociedade, apenas uma escolarização básica para a realiza",
+        "citacoes_detectadas": [
+          "Gaio, 2019, p. 29",
+          "Schenkel, 2012",
+          "Saviani, 2005, p.\n248"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 32,
+        "texto": "29\nA educação profissional, segundo Schenkel (2012), foi destinada aos mais\npobres, aos <desvalidos da sorte=, marginalizados, abandonados e com inclinação a\ncrimes e aos maus costumes. Ela teve um caráter assistencialista, pois era\ndirecionada àqueles que fugiam dos padrões de civilidade, moral e bons costumes.\nA motivação era a necessidade do controle social das classes sociais menos\nfavorecidas\ne\nurbana,\ntransformando-os\nem\noperários\ndas\nfábricas\nem\nfuncionamento naquele momento (Mendes, 2005).\nO Decreto Federal nº 7.566/1909 instituiu a concepção, finalidade e\norganização didático-administrativa da educação profissional orientadas\npelo propósito moralizante e de incentivo às atividades econômicas. O\nprimeiro aparece claramente em trechos como: 8[...] adquirir hábitos de\ntrabalho profícuo, que os afastará da ociosidade ignorante, escola do vício e\ndo crime9; admitir preferencialmente 8[...] os desfavorecidos da fortuna: idade\nde 10 annos no minimo e de 13 annos9; e 8[...] a cada requerente será\napenas facultada a aprendizagem de um só officio, consultada a respectiva\naptidão e inclinação9 (Brasil, 1909, p. 6.975 apud Minuzzi; Machado;\nCoutinho, 2022, p. 3-4).\nApós isso diversas ",
+        "citacoes_detectadas": [
+          "Mendes, 2005",
+          "Moura, 2010",
+          "Frigotto;\nCiavatta; Ramos, 2012, p. 25"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 33,
+        "texto": "30\nda formação integral e educação profissional. Este grupo colaborou para a criação\ndo Decreto nº 5.154/2004. Para justificar os encaminhamentos os autores afirmaram\nque:\n[...] a educação politécnica não é aquela que só é possível em outra\nrealidade, mas uma concepção de educação que busca, a partir do\ndesenvolvimento do capitalismo e de sua crítica, superar a proposta\nburguesa de educação que potencialize a transformação estrutural da\nrealidade (Frigotto; Franco; Ramos, 2005, p. 14).\nJá em 2008, a educação profissional passa por um momento importante, com\na criação dos IFs, através da Lei nº 11.892, de 29 de dezembro do referido ano, com\nobjetivos voltados para:\nministrar educação profissional de nível técnico, prioritariamente em cursos\nintegrados; Ministrar cursos de formação inicial e continuada de\ntrabalhadores; Realizar pesquisas aplicadas, estendo seus resultados a à\npopulação; Desenvolver atividades de extensão voltada à produção,\ndesenvolvimento e difusão de conhecimentos científicos e tecnológicos;\nEstimular processos educativos que levem à geração de trabalho e renda; e\nministrar Educação Superior em cursos de Tecnologia, Licenciatura,\nBacharelado, de pós-graduação lato",
+        "citacoes_detectadas": [
+          "Frigotto; Franco; Ramos, 2005, p. 14",
+          "Brasil, 2008",
+          "Ciavatta, 2014, p. 198",
+          "Freire, 1996",
+          "Ramos, 2008, p. 13"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 48,
+        "texto": "45\ncampus do IFC, pela primeira vez desde a criação destes institutos, em 2008.\n7.3 O Campus Abelardo Luz - uma conquista\nO Campus Avançado Abelardo Luz5, pertence ao conjunto de campus do IFC.\nAs primeiras atividades iniciaram em 2009, com a oferta do curso Técnico em\nAgropecuária Subsequente, em parceria com a Prefeitura Municipal de Abelardo Luz\ne a Escola Estadual de Ensino Médio Paulo Freire, com a denominação de Polo de\nAbelardo Luz do IFC Campus Concórdia. Em 2015, passou a ser denominado\nCampus Avançado Abelardo Luz, vinculado administrativamente ao IFC Campus\nConcórdia. Em 2016, vinculado à reitoria do IFC, para em 2018, voltar a ser\nvinculado Campus Concórdia (IFC, 2021).\nA sede do campus está situada no Assentamento José Maria, o qual está\nlocalizado a aproximadamente 30 km de distância do centro da cidade de\nAbelardo Luz. Este campus é fruto da conquista efetivada, por meio de\nAudiências Públicas, pelos trabalhadores do MST, juntamente com os\npoderes políticos municipais e estaduais, da comunidade, das universidades\ne do próprio IFC (IFC, 2021, p. 24).\nO Projeto Pedagógico do Curso (PPC) técnico em agropecuária integrado ao\nensino médio informa que as tratativas para:\na",
+        "citacoes_detectadas": [
+          "IFC, 2021",
+          "IFC, 2021, p. 24",
+          "IFC, 2018"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 49,
+        "texto": "46\nextensão e está entre os maiores produtores de grãos de SC, ostentando o título de\nCapital Nacional da Semente de Soja.\nNo município, se concentra o maior número de assentamentos da reforma\nagrária do sul do Brasil, tendo em torno de 1,5 mil famílias assentadas em 22\nassentamentos. Considerando outros municípios da região, como Passos Maia,\nCatanduvas, Dionísio Cerqueira e São Miguel do Oeste, o número de assentados\ncontabiliza cerca de 3,5 mil famílias, além de agricultores familiares e comunidades\nnão pertencentes ao MST (Abelardo Luz, 2022).\nVale considerar que em Santa Catarina a luta do MST iniciou com a primeira\nocupação de terras em 25 de maio de 1985, no Município de Abelardo Luz,\nque traz em sua história as marcas de muitas lutas e conquistas. Hoje são\n22 assentamentos, com aproximadamente 1500 famílias assentadas neste\nMunicípio (Abelardo Luz, 2022).\nAlém de assentamentos da reforma agrária, o município de Abelardo Luz\ntambém conta com duas áreas indígenas, fazendo parte do Território da Cidadania.6\nDe acordo com dados de 2015, do Instituto Nacional de Colonização e\nReforma Agrária (INCRA), nos assentamentos de Abelardo Luz são\nproduzidos aproximadamente 48 mil litros ",
+        "citacoes_detectadas": [
+          "Abelardo Luz, 2022",
+          "Abelardo Luz, 2022",
+          "Abelardo Luz, 2022",
+          "Abelardo Luz, 2022",
+          "Brasil, 2008, p. 2"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 59,
+        "texto": "56\nCampus Abelardo Luz de forma virtual. A leitura de atas de reuniões dos Projetos\nPedagógicos do curso supracitado, também estiveram entre os instrumentos de\ncoletas de dados, com o fito de observar e comparar os conteúdos dos documentos\ne as falas dos sujeitos da pesquisa nas entrevistas.\nA escolha do Campus Avançado Abelardo Luz, deu-se, tal como explicado na\napresentação desta dissertação, pela curiosidade do pesquisador por compreender\no porquê, em 2017, agentes políticos da cidade de Abelardo Luz e alguns\nservidores, operavam para que ele fosse transferido para a cidade, visto ser o único\ncampus de um IF que está localizado em um assentamento e que possui a proposta\nda educação do campo com a metodologia da Pedagogia da Alternância.\nEm relação ao nível de ensino (EMI), a opção se deu por ser este nível de\nensino a prioridade do IFC, segundo a Lei 11.892, de 20 de dezembro de 2008. Além\ndisso, o curso técnico em Agropecuária integrado ao ensino médio, do Campus\nAbelardo Luz, foi pensado para filhos e filhas de pessoas que vivem do/no campo.\nNesse sentido,\n[...] é uma proposição pedagógica que se compromete com a utopia de uma\nformação inteira, que não se satisfaz com a social",
+        "citacoes_detectadas": [
+          "Araujo; Frigotto, 2015, p.\n6"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 62,
+        "texto": "59\natuam nas áreas que dão subsídios técnicos ao agronegócio. Isso fica evidente ao\nassociar à atividade de subsistência à conservação da água e à agroecologia.\n9.2 O IFC ofertou alguma capacitação sobre educação do campo e/ou\nPedagogia da Alternância?\nSegundo os/as entrevistados/as, todos relatam que tiveram ciência de que o\ncampus avançado Abelardo Luz utiliza como metodologia a Pedagogia da\nAlternância depois de estarem em exercício, e que não lhes foram ofertadas\nnenhuma formação específica sobre o tema.\nNão, nunca foi nos oferecido uma capacitação de verdade e isso nos faz\nmuita falta (E2).\nNão. Confesso para você ver o Leandro, eu ainda não entendo direito a\nPedagogia da Alternância (E4).\nNão, não, eu não. Não sei se teve. Eu não vou dizer ah, não teve nada.\nNão. Eu não soube. Não estou dizendo que não ia fazer. Não ofertou. Mas\neu não. Que eu lembre não. Não teve nenhuma (E5).\nA partir das falas dos entrevistados, percebe-se a falta de formação do\nservidor no momento do seu ingresso, para ser agente de um projeto diferenciado,\ncomo o da educação do campo, como a ausência de formação continuada dos\ndocentes, inviabilizando, dessa forma, um processo de reflexão da prática\npeda",
+        "citacoes_detectadas": [
+          "Freire, 1996, p. 39"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 66,
+        "texto": "63\nEles trabalham um pouco lá, vem fazer as práticas aqui na propriedade,\nretornam para aí. Ficou essa alternância. Aí a coisa fazia sentido, porque\neles estudavam lá e vinham aplicar ali (E5).\nObserva-se que alguns relatos, inclusive, confundem com estágios ou que a\nmetodologia da Pedagogia da Alternância só é viável para disciplinas da área\ntécnica, desvinculando o ensino propedêutico do ensino técnico. Indo de encontro\naos objetivos dos IFs, que dentre as finalidades dos cursos técnicos integrados, está\njustamente a indissociabilidade entre ambas, numa perspectiva de formação\nhumana integral, que tem por propósito a \"formação integrada, plena, vindo\npossibilitar ao educando a compreensão das partes no seu todo ou da unidade no\ndiverso\" (Ciavatta, 2014, p. 198). Novamente, fica evidenciado a necessária\nformação contínua para a educação do/no campo para os trabalhadores que nela\natua, para contribuírem para a formação das mulheres e homens do campo, para\natuarem nesta frente em seus lugares e territórios.\n9.6 O senhor/a senhora acha que a Pedagogia da Alternância é indicada para\nesta comunidade em que se encontra o campus avançado Aberlado Luz?\nNeste ponto, todos os entrevistados ",
+        "citacoes_detectadas": [
+          "Ciavatta, 2014, p. 198"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "ABELARDO LUZ. Site da Prefeitura Municipal. Abelardo Luz, [2022]. Disponível em: https://abelardoluz.sc.gov.br/. Acesso em: 18 abr. 2024.",
+      "CIAVATTA, M. O ensino integrado, a politécnica e a educação omnilateral. Por que lutamos? Trabalho e Educação, Belo Horizonte, n. 1, p. 187-205, 2014. Disponível em: https://periodicos.ufmg.br/index.php/trabedu/article/view/9303. Acesso em: 22 abr. 2024. 83",
+      "IFC, 2023. Disponível em: https://editora.ifc.edu.br/wp-content/uploads/sites/39/2023/03/Uma-historia-a-ser-feit a-versao-final.pdf. Acesso em: 22 abr. 2024.",
+      "FREIRE, P. Pedagogia da autonomia: saberes necessários à prática educativa. 25. ed. São Paulo: Paz e Terra, 1996.",
+      "GAIO, D. A história da propriedade privada no Brasil e os conflitos entre posse e propriedade. [Belo Horizonte: UFMG], 2019. Disponível em: https://repositorio.ufmg.br/handle/1843/37928. Acesso em: 18 abr. 2024. 84",
+      "MENDES, L. Políticas públicas e a pedagogia das competências na educação profissional: a trajetória do ensino profissionalizante de nível técnico no Brasil e no Estado de São Paulo. 2005. Tese (Doutorado em Educação, Sociedade, Política e Cultura) 3 Universidade Estadual de Campinas, Campinas, 2005. Disponível em: https://repositorio.unicamp.br/Acervo/Detalhe/362573. Acesso em: 22 abr. 2024.",
+      "MOURA, D. H. Ensino médio e educação profissional: dualidade histórica e possibilidade de integração. In: MOLL, J. et al. Educação profissional e tecnológica no Brasil contemporâneo: desafios, tensões e possibilidades. Porto Alegre: Artmed, 2010.",
+      "RAMOS, M. Concepção do ensino médio integrado. [S. l.: s. n.], 2008. Disponível em: https://tecnicadmiwj.files.wordpress.com/2008/09/texto-concepcao-do-ensino-medio-i ntegrado-marise-ramos1.pdf. Acesso em: 18 abr. 2024.",
+      "RAMOS, M. Possibilidades e desafios na organização do currículo integrado. In:",
+      "SAVIANI, D. A escola pública no Brasil: história e historiografia. In: LOMBARDI, J. C.; SAVIANI, D.; NASCIMENTO, M. I. M. (org.). A escola pública no Brasil: história e historiografia. Campinas: Autores Associados, 2005. (Memória da educação).",
+      "SAVIANI, D. Trabalho e educação: fundamentos ontológicos e históricos. Revista Brasileira de Educação, Rio de Janeiro, v. 12, n. 34, p. 152-165, 2007. DOI: https://doi.org/10.1590/S1413-24782007000100012.",
+      "SCHENKEL, C. A. Gestão ambiental: perfil profissional e formação em cursos superiores de tecnologia e de bacharelado. 2012. Tese (Doutorado em Ciências Humanas) 3 Universidade Federal de Uberlândia, Uberlândia, 2012. Disponível em: https://repositorio.ufu.br/handle/123456789/13630. Acesso em: 22 abr. 2024. 88",
+      "BRASIL – Ministério da Educação. Conselho Nacional de Educação. Câmara de Edu- cação Básica. Proposta de Regulamentação da Pedagogia da Alternância. Estabele- ce normas e princípios para o reconhecimento e regulamentação da Pedagogia da Alternância na Educação Básica, na Educação Superior e na Formação e Profissio- nais da Educação. 2020. Disponível em: https://bit.ly/49JOTSX BRASIL. Lei Nº 9.394,",
+      "BRASIL, Kelly Cardoso. A Alternância desde a Formação de Professores na Li- cenciatura em Educação do Campo na Universidade Federal de Mato Grosso Do Sul. Dissertação de Mestrado. CAMPO GRANDE/MS 2021 Disponível em: ht- tps://bit.ly/48uD7e9. Acesso em 12/11/2023 Pedagogia da Alternância: conhecimento e reflexão 34 BRASIL. Dias letivos para aplicação da pedagogia nos centros familiares de formação ",
+      "BRASIL, Kelly Cardoso. A alternância desde a formação de professores na licen- ciatura em educação do campo na Universidade Federal de Mato Grosso do Sul. 2021. 154 f. Dissertação (Mestrado em Educação) – Universidade Federal do Mato Grosso do Sul, Campo Grande, 2021. Disponível em: https://bit.ly/3wxJoIL. Acesso em: 27 jan. 2024. BRASIL. Ministério da Educação. Conselho Nacional de Educação. Câma",
+      "FREIRE, Paulo. Educação como prática da liberdade. Rio de Janeiro: Paz e Terra, 1974."
+    ]
+  }
+}

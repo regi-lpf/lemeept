@@ -1,0 +1,145 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0100",
+  "ano": 2020,
+  "autor": "Karem Aparecida Simas Resende",
+  "orientador": "Sônia Regina de Souza Fernandes",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP2",
+  "dissertacao": {
+    "titulo": "DISSERTAÇÃO KAREM APARECIDA SIMAS RESENDE",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/VERSAO-FINAL-DISSERTACAO-E-PRODUTO-EDUCACIONAL-KAREM-APARECIDA-SIMAS-RESENDE.pdf",
+    "resumo": "Este trabalho é resultado de uma pesquisa desenvolvida no âmbito do Mestrado em\nRede/ProfEPT – inserido na linha de pesquisa Práticas Educativas em Educação\nProfissional e Tecnológica (EPT). Apresenta um estudo acerca das tecnologias\nassistivas relacionadas às atividades e participação da pessoa cega no uso de\ncomputador com software livre NVDA. Objetivou a produção de um tutorial pedagógico\ncomo ferramenta formativa para professores com estudantes cegos, com vistas ao\nuso dos programas ABBYY FineReader e Adobe Pro DC, que digitalizam e convertem\nos arquivos em PDF para o formato acessível e editável. Tal propósito, visa contribuir\njunto às pessoas cegas que estejam cursando a Educação Técnica Profissional de\nnível médio, à igualdade de condições e oportunidades de acesso ao processo de\naprendizagem. O referencial teórico alicerça-se em Mantoan (2013); Sassaki (1997);\nOrrú (2017) dentre outros, os quais abordam categorias como inclusão, segregação e\nnormalidade, a partir dos aspectos teóricos e históricos. Já às categorias, pessoa com\ndeficiência e tecnologias assistivas, dão base ao estudo Gasparetto (2009); Bersch\n(2009) e Weinschenker (2018). O arcabouço legal brasileiro também é considerado\nna pesquisa. A metodologia se acerca das contribuições da pesquisa em educação\nem sua abordagem qualitativa. Os sujeitos da pesquisa foram professores e TAEs do\nInstituto Federal Catarinense, que atuam no Ensino Médio Integrado. A coleta de\ndados, foi feita por meio de questionário, usando e-mail (Google Forms), para avaliar\no conhecimento e uso das tecnologias assistivas para cegos, objetivando à\nsistematização da formação e do desenvolvimento do tutorial em videoaula, que\nenvolve fases como distinguir, descrever, explicar, aplicar e, por fim, elaborar um\nproduto educacional que possa contribuir com a garantia e aplicação do Desenho\nUniversal da Aprendizagem (DUA). O estudante com deficiência visual busca as\nmesmas oportunidades de aprendizagem e de qualificação profissional como os\ndemais que frequentam o Ensino Médio Integrado e, para que isso ocorra, iguais\noportunidades de leitura devem e podem ser oferecidas por meio de material\nacessível, revisado e adequado conforme as necessidades de cada estudantes, a\npartir do uso dos programas ABBYY FineReader e Adobe Pro DC que trarão agilidade,\ne comodidade para os estudantes que farão uso deste material, bem estar e, quiçá,\ndiminuir as dificuldades de acesso à leitura em sala de sala e estreitar as relações dos\nprofessores e de todos os estudantes.\n\nPalavras chaves: Tutorial Pedagógico. Tecnologia Assistiva. Desenho Universal da\nAprendizagem. Estudantes Cegos e Ensino. Formação Continuada de Professores.",
+    "palavras_chave": [
+      "Tutorial Pedagógico",
+      "Tecnologia Assistiva",
+      "Desenho Universal da Aprendizagem",
+      "Estudantes Cegos e Ensino",
+      "Formação Continuada de Professores"
+    ],
+    "autores_referenciados": [
+      "A. Gazy",
+      "A. P. Sonza",
+      "Acácia Zeneida Kuenzer",
+      "Ana Paula Zerbato",
+      "Antoni Zabala",
+      "B. P. Salton",
+      "C. M. Garcia",
+      "Claudia Werneck",
+      "D. Diniz",
+      "D. J. C. Garcia",
+      "D. L. Edyburn",
+      "Dermeval Saviani",
+      "F. M. de P. Vital",
+      "G. Gibbs",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "Geisa Letícia Kempfer Böck",
+      "I. B. de C. Cortelazzo",
+      "I. M. M. Maior",
+      "José Carlos Libâneo",
+      "L. Barbosa",
+      "L. Garcez",
+      "M. M. M. Weinschenker",
+      "M. Ramos",
+      "Maria Ciavatta",
+      "Marli André",
+      "Menga Lüdke",
+      "Paulo Freire",
+      "R. M. Garcia",
+      "S. E. Orrú",
+      "T. E. Mantoan",
+      "U. D. L. Cast"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto desenvolve categorias como formação integral e educação politécnica, alinhadas à Pedagogia Histórico-Crítica, com citações de Saviani (2007) e Frigotto (2018).",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 36,
+          "trecho": "O DUA consiste em um conjunto de princípios baseados na pesquisa... (ZERBATO, 2018, p.56).",
+          "referencia_correspondente": "ZERBATO, A.P. Desenho universal para aprendizagem da inclusão escolar..."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Tecnologias assistivas : tutorial pedagógico como ferramenta formativa para professores com estudantes",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Manual / Protocolo",
+    "link": "http://educapes.capes.gov.br/handle/capes/597738",
+    "publico_alvo": [
+      "docentes_professores",
+      "tecnicos_profissionais_educacao"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Tutorial Pedagógico. Tecnologia Assistiva. Desenho Universal da Aprendizagem. Estudantes Cegos e Ensino. Formação Continuada de Professores",
+      "Mestrado em Rede/ProfEPT",
+      "Dissertação"
+    ],
+    "data_publicacao": "2021-03-29",
+    "autores_colaboradores": [
+      {
+        "nome": "IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "FERNANDES, SÔNIA REGINA",
+        "papel": "creator"
+      },
+      {
+        "nome": "KAREN APARECIDA, SIMAS RESENDE",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/597738",
+        "url": "http://educapes.capes.gov.br/handle/capes/597738"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://youtu.be/7Fu5SbQbq1E",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "ProdotuEducacional_Tecnologias_assistivas_tutorial_pedagógico_como_ferramenta_Karem_Resende.pdf",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "TECNOLOGIAS ASSISTIVAS : Texto – TUTORIAL PEDAGÓGICO COMO FERRAMENTA FORMATIVA PARA PROFESSORES COM ESTUDANTES",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0100 2020 karem aparecida simas resende sonia regina de souza fernandes ifc blumenau lp1 mp2 dissertacao karem aparecida simas resende este trabalho e resultado de uma pesquisa desenvolvida no ambito do mestrado em rede profept inserido na linha de pesquisa praticas educativas em educacao profissional e tecnologica ept apresenta um estudo acerca das tecnologias assistivas relacionadas as atividades e participacao da pessoa cega no uso de computador com software livre nvda objetivou a producao de um tutorial pedagogico como ferramenta formativa para professores com estudantes cegos com vistas ao uso dos programas abbyy finereader e adobe pro dc que digitalizam e convertem os arquivos em pdf para o formato acessivel e editavel tal proposito visa contribuir junto as pessoas cegas que estejam cursando a educacao tecnica profissional de nivel medio a igualdade de condicoes e oportunidades de acesso ao processo de aprendizagem o referencial teorico alicerca se em mantoan 2013 sassaki 1997 orru 2017 dentre outros os quais abordam categorias como inclusao segregacao e normalidade a partir dos aspectos teoricos e historicos ja as categorias pessoa com deficiencia e tecnologias assistivas dao base ao estudo gasparetto 2009 bersch 2009 e weinschenker 2018 o arcabouco legal brasileiro tambem e considerado na pesquisa a metodologia se acerca das contribuicoes da pesquisa em educacao em sua abordagem qualitativa os sujeitos da pesquisa foram professores e taes do instituto federal catarinense que atuam no ensino medio integrado a coleta de dados foi feita por meio de questionario usando e mail google forms para avaliar o conhecimento e uso das tecnologias assistivas para cegos objetivando a sistematizacao da formacao e do desenvolvimento do tutorial em videoaula que envolve fases como distinguir descrever explicar aplicar e por fim elaborar um produto educacional que possa contribuir com a garantia e aplicacao do desenho universal da aprendizagem dua o estudante com deficiencia visual busca as mesmas oportunidades de aprendizagem e de qualificacao profissional como os demais que frequentam o ensino medio integrado e para que isso ocorra iguais oportunidades de leitura devem e podem ser oferecidas por meio de material acessivel revisado e adequado conforme as necessidades de cada estudantes a partir do uso dos programas abbyy finereader e adobe pro dc que trarao agilidade e comodidade para os estudantes que farao uso deste material bem estar e quica diminuir as dificuldades de acesso a leitura em sala de sala e estreitar as relacoes dos professores e de todos os estudantes palavras chaves tutorial pedagogico tecnologia assistiva desenho universal da aprendizagem estudantes cegos e ensino formacao continuada de professores pedagogia historico critica tecnologias assistivas tutorial pedagogico como ferramenta formativa para professores com estudantes material didatico instrucional manual protocolo ensino medio integrado tutorial pedagogico tecnologia assistiva desenho universal da aprendizagem estudantes cegos e ensino formacao continuada de professores tutorial pedagogico tecnologia assistiva desenho universal da aprendizagem estudantes cegos e ensino formacao continuada de professores mestrado em rede profept dissertacao a gazy a p sonza acacia zeneida kuenzer ana paula zerbato antoni zabala b p salton c m garcia claudia werneck d diniz d j c garcia d l edyburn dermeval saviani f m de p vital g gibbs gabriel kaplun gaudencio frigotto geisa leticia kempfer bock i b de c cortelazzo i m m maior jose carlos libaneo l barbosa l garcez m m m weinschenker m ramos maria ciavatta marli andre menga ludke paulo freire r m garcia s e orru t e mantoan u d l cast",
+    "termos_unificados": [
+      "Tutorial Pedagógico",
+      "Tecnologia Assistiva",
+      "Desenho Universal da Aprendizagem",
+      "Estudantes Cegos e Ensino",
+      "Formação Continuada de Professores",
+      "Tutorial Pedagógico. Tecnologia Assistiva. Desenho Universal da Aprendizagem. Estudantes Cegos e Ensino. Formação Continuada de Professores",
+      "Mestrado em Rede/ProfEPT",
+      "Dissertação"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

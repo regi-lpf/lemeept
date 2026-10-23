@@ -1,0 +1,175 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0028",
+  "ano": 2024,
+  "autor": "Jucélia Correia de Santana",
+  "orientador": "Raquel Cardoso de Faria e Custódio",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP5",
+  "dissertacao": {
+    "titulo": "ATENDIMENTO EDUCACIONAL ESPECIALIZADO: PRÁTICAS PEDAGÓGICAS E ARTICULAÇÕES PARA O ENSINO NO CURSO TÉCNICO DE INFORMÁTICA INTEGRADO AO ENSINO MÉDIO DO INSTITUTO FEDERAL CATARINENSE.",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/01/DISSERTACAO-JUCELIA_CORREIA_DE_SANTANA.pdf",
+    "resumo": "Esta dissertação de Mestrado do ProfEpt resulta de uma pesquisa que tem sua origem\nna curiosidade pessoal, bem como na vivência desse universo que, muitas vezes,\nsurpreende a todos pela ausência de informações capazes de explicar as dúvidas\nadvindas do conhecimento insuficiente que dê conta de um tema atual e abrangente.\nA pesquisa de natureza básica, com abordagem qualitativa e objetivos exploratórios.\nTendo como objetivo geral: conhecer no âmbito da Educação Profissional e\nTecnológica do Instituto Federal Catarinense, Campus de Rio do Sul, as contribuições\ne articulações da equipe de Atendimento Educacional Especializado (AEE) às práticas\npedagógicas dos docentes do Ensino médio Integrado, curso Técnico em Informática\npara a Internet, que corroborem para o desenvolvimento do processo de ensino-\naprendizagem de estudantes com deficiência e/ou necessidades educacionais\nespecíficas. O objeto deste estudo foi a equipe de atendimento educacional\nespecializado e os docentes da área básica e da área técnica. Enquanto problema de\ninvestigação: como se estabelece a relação da equipe do atendimento educacional\nespecializado junto aos docentes da área básica e da área técnica. Para investigar\nessa questão foi necessária uma contextualização do Atendimento Educacional\nEspecializado, suas funções e atribuições no linear da história. Os procedimentos\nmetodológicos adotados incluem pesquisa bibliográfica, documental e entrevistas,\nutilizando o procedimento técnico do estudo de caso para trilhar o percurso em busca\ndo conhecimento almejado. Assim, observou-se a existência de diversas práticas e\narticulações entres os grupos, e que há contribuições, no entanto devido à alta\ndemanda e a complexibilidade dos processos exige-se aperfeiçoamento. Desse modo\nna intencionalidade de apresentar e divulgar parte dos estudos, das análises\nrealizadas, dos resultados obtidos, socializando, assim, os conhecimentos adquiridos\ne buscando contribuir com informações que possam ser utilizadas no trabalho, no\nensino e na própria vivência de profissionais que buscam por uma educação inclusiva,\nfoi desenvolvido um site como produto educacional.\n\nPalavras-chave: Atendimento Educacional Especializado. Inclusão. Educação\nProfissional e Tecnológica.",
+    "palavras_chave": [
+      "Atendimento Educacional Especializado",
+      "Inclusão",
+      "Educação Profissional e Tecnológica"
+    ],
+    "autores_referenciados": [
+      "A. G. M. Sarmento",
+      "Adriana Roseli Wünsch Takahashi",
+      "Antônio Carlos Gil",
+      "Antonio Gramsci",
+      "Augusto Nibaldo Silva Triviños",
+      "Camila Bruning",
+      "Carlos J. M. Moreira",
+      "César Coll",
+      "Cipriano Carlos Luckesi",
+      "Claudia Regina Mosca Giroto",
+      "Cloves Alexandre de Castro",
+      "D. A. B. Barreto",
+      "D. S. Teixeira",
+      "Denise Matiola Todorov",
+      "Denise Tolfo Silveira",
+      "Dermeval Saviani",
+      "Dominique Julia",
+      "Douglas Guilherme Willian",
+      "E. G. Mendes",
+      "Eliezer Moreira Pacheco",
+      "Eva Maria Lakatos",
+      "G. de C. Cruz",
+      "Gabriel Kaplún",
+      "Gárdia Vargas",
+      "Gaudêncio Frigotto",
+      "Ilma Passos Alencastro Veiga",
+      "Ivonete Telles Medeiros",
+      "J. M. de L. Neto",
+      "J. O. L. dos Santos",
+      "José Carlos Köcke",
+      "José Carlos Libâneo",
+      "Jurjo Torres Santomé",
+      "K. H. Araújo",
+      "Kelmara Mendes Vieira",
+      "L. Ruiz",
+      "Laurence Bardin",
+      "Lori Alice Gressler",
+      "Luciana Godri",
+      "M. A. C. Correia",
+      "M. C. Pimentel",
+      "M. D. Pletsch",
+      "Maria Aparecida Ramos de Meneses",
+      "Maria Cecília de Souza Minayo",
+      "Maria Ciavatta",
+      "Maria das Graças Rua",
+      "Marilda Aparecida Behrens",
+      "Marina de Andrade Marconi",
+      "Marise Nogueira Ramos",
+      "Marlon Dalmoro",
+      "Miguel González Arroyo",
+      "Paulo Freire",
+      "Priscila de Souza Chisté Leite",
+      "R. Glat",
+      "R. M. C. Garcia",
+      "Reginaldo Leandro Plácido",
+      "Robert K. Yin",
+      "Rosângela Machado",
+      "Rose Clér Estivalete Beche",
+      "Rosimar Bortolini Poker",
+      "S. C. Pimentel",
+      "S. C. Sobrinho",
+      "Sandra Eli Sartoreto de Oliveira Martins",
+      "Shirlene Bemfica de Oliveira",
+      "Shyrlei Karyna Jagielski Benkendorf",
+      "Simone Jordão Almeida",
+      "Solange Cristina da Silva",
+      "Tatiana Engel Gerhardt",
+      "Vitor Henrique Paro",
+      "Waleska Ramalho Ribeiro"
+    ],
+    "base_epistemologica": {
+      "valor": "Educação Libertadora / Freireana",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto cita explicitamente Paulo Freire e desenvolve conceitos de educação libertadora, como dialogicidade e emancipação, com referência à obra 'Pedagogia da autonomia'.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 21,
+          "trecho": "A educação é uma resposta da finitude da infinitude, que só é possível porque o homem se reconhece enquanto ser inacabado, sujeito da sua própria educação e não objeto (Freire, 1987, p. 14).",
+          "referencia_correspondente": "FREIRE, Paulo. Pedagogia da autonomia: saberes necessários à prática educativa."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Um olhar sobre o atendimento educacional especializado",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Site / Portal",
+    "link": "https://educapes.capes.gov.br/handle/capes/918462",
+    "publico_alvo": [
+      "docentes_professores",
+      "estudantes_alunos",
+      "tecnicos_profissionais_educacao",
+      "comunidade_externa"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Atendimento Educacional Especializado. Inclusão . Educação Profissional e Tecnológica",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica-ProfEPT",
+      "Dissertação"
+    ],
+    "data_publicacao": "2024-10",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Santana, Jucélia Correia de",
+        "papel": "creator"
+      },
+      {
+        "nome": "Custódio, Raquel Cardoso de Faria e",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/918462",
+        "url": "https://educapes.capes.gov.br/handle/capes/918462"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Um olhar sobre o atendimento educacional especializado",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "UM OLHAR SOBRE O ATENDIMENTO EDUCACIONAL ESPECIALIZADO.",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "portal"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0028 2024 jucelia correia de santana raquel cardoso de faria e custodio ifc blumenau lp2 mp5 atendimento educacional especializado praticas pedagogicas e articulacoes para o ensino no curso tecnico de informatica integrado ao ensino medio do instituto federal catarinense esta dissertacao de mestrado do profept resulta de uma pesquisa que tem sua origem na curiosidade pessoal bem como na vivencia desse universo que muitas vezes surpreende a todos pela ausencia de informacoes capazes de explicar as duvidas advindas do conhecimento insuficiente que de conta de um tema atual e abrangente a pesquisa de natureza basica com abordagem qualitativa e objetivos exploratorios tendo como objetivo geral conhecer no ambito da educacao profissional e tecnologica do instituto federal catarinense campus de rio do sul as contribuicoes e articulacoes da equipe de atendimento educacional especializado aee as praticas pedagogicas dos docentes do ensino medio integrado curso tecnico em informatica para a internet que corroborem para o desenvolvimento do processo de ensino aprendizagem de estudantes com deficiencia e ou necessidades educacionais especificas o objeto deste estudo foi a equipe de atendimento educacional especializado e os docentes da area basica e da area tecnica enquanto problema de investigacao como se estabelece a relacao da equipe do atendimento educacional especializado junto aos docentes da area basica e da area tecnica para investigar essa questao foi necessaria uma contextualizacao do atendimento educacional especializado suas funcoes e atribuicoes no linear da historia os procedimentos metodologicos adotados incluem pesquisa bibliografica documental e entrevistas utilizando o procedimento tecnico do estudo de caso para trilhar o percurso em busca do conhecimento almejado assim observou se a existencia de diversas praticas e articulacoes entres os grupos e que ha contribuicoes no entanto devido a alta demanda e a complexibilidade dos processos exige se aperfeicoamento desse modo na intencionalidade de apresentar e divulgar parte dos estudos das analises realizadas dos resultados obtidos socializando assim os conhecimentos adquiridos e buscando contribuir com informacoes que possam ser utilizadas no trabalho no ensino e na propria vivencia de profissionais que buscam por uma educacao inclusiva foi desenvolvido um site como produto educacional palavras chave atendimento educacional especializado inclusao educacao profissional e tecnologica educacao libertadora freireana um olhar sobre o atendimento educacional especializado material didatico instrucional site portal ensino medio integrado atendimento educacional especializado inclusao educacao profissional e tecnologica atendimento educacional especializado inclusao educacao profissional e tecnologica programa de pos graduacao em educacao profissional e tecnologica profept dissertacao a g m sarmento adriana roseli wunsch takahashi antonio carlos gil antonio gramsci augusto nibaldo silva trivinos camila bruning carlos j m moreira cesar coll cipriano carlos luckesi claudia regina mosca giroto cloves alexandre de castro d a b barreto d s teixeira denise matiola todorov denise tolfo silveira dermeval saviani dominique julia douglas guilherme willian e g mendes eliezer moreira pacheco eva maria lakatos g de c cruz gabriel kaplun gardia vargas gaudencio frigotto ilma passos alencastro veiga ivonete telles medeiros j m de l neto j o l dos santos jose carlos kocke jose carlos libaneo jurjo torres santome k h araujo kelmara mendes vieira l ruiz laurence bardin lori alice gressler luciana godri m a c correia m c pimentel m d pletsch maria aparecida ramos de meneses maria cecilia de souza minayo maria ciavatta maria das gracas rua marilda aparecida behrens marina de andrade marconi marise nogueira ramos marlon dalmoro miguel gonzalez arroyo paulo freire priscila de souza chiste leite r glat r m c garcia reginaldo leandro placido robert k yin rosangela machado rose cler estivalete beche rosimar bortolini poker s c pimentel s c sobrinho sandra eli sartoreto de oliveira martins shirlene bemfica de oliveira shyrlei karyna jagielski benkendorf simone jordao almeida solange cristina da silva tatiana engel gerhardt vitor henrique paro waleska ramalho ribeiro",
+    "termos_unificados": [
+      "Atendimento Educacional Especializado",
+      "Inclusão",
+      "Educação Profissional e Tecnológica",
+      "Atendimento Educacional Especializado. Inclusão . Educação Profissional e Tecnológica",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica-ProfEPT",
+      "Dissertação"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

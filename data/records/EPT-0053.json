@@ -1,0 +1,187 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0053",
+  "ano": 2024,
+  "autor": "Ligia Batiston",
+  "orientador": "Sara Nunes",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP3",
+  "dissertacao": {
+    "titulo": "NUTRINDO IDEIAS: EDUCAÇÃO ALIMENTAR E NUTRICIONAL NO ENSINO MÉDIO INTEGRADO",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/07/Dissertacao-Ligia_Batiston.pdf",
+    "resumo": "O estudo aborda a inclusão de disciplinas do eixo transversal com a Educação\nAlimentar Nutricional (EAN) como forma de promover a integração das disciplinas do\nEnsino Médio. Buscamos investigar e desenvolver um formato interdisciplinar que\npermite a assimilação dos conhecimentos próprios de cada disciplina lecionada no\nEnsino Médio com a EAN. O problema inicial, portanto, centrava-se na investigação\nde como o currículo integrado do Instituto Federal Catarinense (IFC) abordava a\nEAN ou se, por outro lado, adotando um modelo neoliberal de ensino, deixava ou\ndeixa de o fazer. Portanto, o estudo faz uma análise do currículo do IFC e utiliza a\nEAN como elo entre todas as disciplinas. Para cumprir tal desiderato, o nosso\ncampo de aplicação do produto educacional foi o primeiro ano do curso técnico\nintegrado com o ensino médio em eletromecânica, particularmente na disciplina de\nHistória (seguindo a linha de pesquisa do Mestrado Profissional em Educação\nProfissional e Tecnológica, ProfEPT/Campus Blumenau, Práticas Educativas em\nEPT, Macroprojeto 3 – Práticas Educativas no Currículo Integrado). A pesquisa, em\nsi, teve um caráter exploratório, desenvolvendo-se in loco, em sala de aula, e\ndelineada de maneira descritiva e transversal. Realizamos uma abordagem\nquantitativa e qualitativa e aplicamos a Sequência Didática “Nutrir ideias” em uma\nroda de conversa (metodologia ativa) com os alunos. Nossos referenciais partiram\nda utilização das metodologias ativas, do resgate da educação profissional e\ntecnológica, utilizando como modelo e marco teórico da EAN o Guia Alimentar e\nseguindo os principais autores que tratam da integração interdisciplinar, a saber:\nFrigotto, Ciavatta e Ramos. Na prática, verificamos a dificuldade em realizar a\nintegração disciplinar. Inversamente proporcional a essa resistência, está a\nmobilização dos alunos para ouvir ou e inteirar sobre temas relacionados à saúde –\ncomo a EAN, por exemplo. Essa disposição dos acadêmicos é notável: há um\ngrande interesse sobre temas relacionados à saúde e alguns foram incluídos ao\nproduto educacional para serem também debatidos como questões colaterais e que\npodem perpassam também todas as disciplinas curriculares. Em nosso encontro,\nresgatamos as memórias históricas relacionadas aos alimentos, à cultura e\nfortalecemos a importância da formação integral do estudante, preparando-o para o\nmundo do trabalho, desenvolvendo a reflexão sobre seus hábitos, dentre os quais os\nalimentares, para manter a saúde e a qualidade de vida com um olhar crítico,\nemancipatório, buscando o diálogo e a valorização das múltiplas relações sociais. O\nresultado, dada a primeira abordagem, foi positivo pela aceitação e participação da\nclasse. Em assim sendo, observamos que o atual modelo curricular permite a\ninclusão de estratégias e de ações integradoras que incitem reflexões diversas,\nestimulem a pluralidade de espaços e conhecimentos que favoreçam ações de\nautocuidado, autorreflexão, resgate histórico e cultural.\n\nPalavras-Chave: Educação Alimentar e Nutricional (EAN); Ensino; Educação\nProfissional e Tecnológica; Produto educacional; Educação Integrada.",
+    "palavras_chave": [
+      "Educação Alimentar e Nutricional (EAN)",
+      "Ensino",
+      "Educação Profissional e Tecnológica",
+      "Produto educacional",
+      "Educação Integrada"
+    ],
+    "autores_referenciados": [
+      "A. Cortonesi",
+      "A. M. T. Carvalho",
+      "Adilson Ângelo",
+      "Amarildo Luiz Trevisan",
+      "Antoni Zabala",
+      "Antônio Carlos Gil",
+      "B. Franklin",
+      "B. N. Leite",
+      "B. Savarin",
+      "B. Slater",
+      "Boaventura de Sousa Santos",
+      "C. R. A. Santos",
+      "Cláudia Thomé da Rosa Piasetzki",
+      "D. F. dos S. Silva",
+      "D. Matthes",
+      "Dermeval Saviani",
+      "E. C. M. P. Souza",
+      "E. S. Silveira",
+      "F. C. R. Sodré",
+      "Flávia Lemos Abade",
+      "G. da C. Leão",
+      "G. Pereira Pessoa",
+      "G. V. S. Leal",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "H. Nunes de Ávila",
+      "Ilmo Correia Silva",
+      "Iracema Mezomo",
+      "J. C. de S. Ferreira",
+      "J. Contreras",
+      "J. L. Flandrin",
+      "J. M. Silva",
+      "J. Sampaio",
+      "Jader de Sousa Nunes",
+      "K. F. Bezerra",
+      "L. C. F. M. Capuchinho",
+      "L. S. D. M. Rufino",
+      "M. C. Angelis-Pereira",
+      "M. C. G. Silva",
+      "M. Checcucci",
+      "M. L. M. Afonso",
+      "M. Montanari",
+      "M. P. R. T. Santos",
+      "M. Pollan",
+      "M. R. C. Silva",
+      "M. S. Galisa",
+      "Maiara Dorneles Minuzzi",
+      "Maria Cecília de Souza Minayo",
+      "Maria Ciavatta",
+      "Marise Nogueira Ramos",
+      "N. Toral",
+      "Paulo Freire",
+      "Paulo Malta Ferraz",
+      "Priscila de Souza Chisté Leite",
+      "R. C. Pereira",
+      "R. M. L. Araújo",
+      "R. N. Garcia",
+      "R. P. N. Silva",
+      "Ricardo Antunes",
+      "S. C. Mercante",
+      "S. da S. Costa",
+      "S. T. Philippi",
+      "Sara Maria Souza Nogueira",
+      "Sivasailam Thiagarajan",
+      "T. S. Pereira",
+      "V. F. A. Neves",
+      "W. P. S. Ana",
+      "Wanderley Azevedo de Brito"
+    ],
+    "base_epistemologica": {
+      "valor": "Materialismo Histórico-Dialético",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explora a integração curricular como formação omnilateral, alinhada ao materialismo histórico-dialético, com referências a Ciavatta, Ramos e Frigotto.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 27,
+          "trecho": "Integrar é formar a educação geral como parte inseparável da educação profissional em todos os campos onde se dá a preparação para o trabalho.",
+          "referencia_correspondente": "CIAVATTA, M. A formação integrada: a escola e o trabalho como lugares de memória e de identidade."
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 29,
+          "trecho": "A integração, por sua vez, ressaltaria a unidade que deve existir entre as diferentes disciplinas e formas de conhecimento nas instituições escolares.",
+          "referencia_correspondente": "Ramos, 2008, p.17"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Sequência didática Nutrindo Ideias",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Sequência Didática",
+    "link": "https://educapes.capes.gov.br/handle/capes/748140",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "docentes_professores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Nutrição",
+      "História",
+      "Integração",
+      "Educação Profissional e Tecnológica",
+      "Mestrado Profissional em Educação Profissional e Tecnológica",
+      "Dissertação"
+    ],
+    "data_publicacao": "2024-03-01",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Batiston, Ligia",
+        "papel": "creator"
+      },
+      {
+        "nome": "Nunes, Sara",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/748140",
+        "url": "https://educapes.capes.gov.br/handle/capes/748140"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Sequência didática - Nutrindo Ideias",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "NUTRINDO IDEIAS: EDUCAÇÃO ALIMENTAR E NUTRICIONAL NO ENSINO MÉDIO INTEGRADO",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "outro"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0053 2024 ligia batiston sara nunes ifc blumenau lp1 mp3 nutrindo ideias educacao alimentar e nutricional no ensino medio integrado o estudo aborda a inclusao de disciplinas do eixo transversal com a educacao alimentar nutricional ean como forma de promover a integracao das disciplinas do ensino medio buscamos investigar e desenvolver um formato interdisciplinar que permite a assimilacao dos conhecimentos proprios de cada disciplina lecionada no ensino medio com a ean o problema inicial portanto centrava se na investigacao de como o curriculo integrado do instituto federal catarinense ifc abordava a ean ou se por outro lado adotando um modelo neoliberal de ensino deixava ou deixa de o fazer portanto o estudo faz uma analise do curriculo do ifc e utiliza a ean como elo entre todas as disciplinas para cumprir tal desiderato o nosso campo de aplicacao do produto educacional foi o primeiro ano do curso tecnico integrado com o ensino medio em eletromecanica particularmente na disciplina de historia seguindo a linha de pesquisa do mestrado profissional em educacao profissional e tecnologica profept campus blumenau praticas educativas em ept macroprojeto 3 praticas educativas no curriculo integrado a pesquisa em si teve um carater exploratorio desenvolvendo se in loco em sala de aula e delineada de maneira descritiva e transversal realizamos uma abordagem quantitativa e qualitativa e aplicamos a sequencia didatica nutrir ideias em uma roda de conversa metodologia ativa com os alunos nossos referenciais partiram da utilizacao das metodologias ativas do resgate da educacao profissional e tecnologica utilizando como modelo e marco teorico da ean o guia alimentar e seguindo os principais autores que tratam da integracao interdisciplinar a saber frigotto ciavatta e ramos na pratica verificamos a dificuldade em realizar a integracao disciplinar inversamente proporcional a essa resistencia esta a mobilizacao dos alunos para ouvir ou e inteirar sobre temas relacionados a saude como a ean por exemplo essa disposicao dos academicos e notavel ha um grande interesse sobre temas relacionados a saude e alguns foram incluidos ao produto educacional para serem tambem debatidos como questoes colaterais e que podem perpassam tambem todas as disciplinas curriculares em nosso encontro resgatamos as memorias historicas relacionadas aos alimentos a cultura e fortalecemos a importancia da formacao integral do estudante preparando o para o mundo do trabalho desenvolvendo a reflexao sobre seus habitos dentre os quais os alimentares para manter a saude e a qualidade de vida com um olhar critico emancipatorio buscando o dialogo e a valorizacao das multiplas relacoes sociais o resultado dada a primeira abordagem foi positivo pela aceitacao e participacao da classe em assim sendo observamos que o atual modelo curricular permite a inclusao de estrategias e de acoes integradoras que incitem reflexoes diversas estimulem a pluralidade de espacos e conhecimentos que favorecam acoes de autocuidado autorreflexao resgate historico e cultural palavras chave educacao alimentar e nutricional ean ensino educacao profissional e tecnologica produto educacional educacao integrada materialismo historico dialetico sequencia didatica nutrindo ideias material didatico instrucional sequencia didatica ensino medio integrado educacao alimentar e nutricional ean ensino educacao profissional e tecnologica produto educacional educacao integrada nutricao historia integracao mestrado profissional em educacao profissional e tecnologica dissertacao a cortonesi a m t carvalho adilson angelo amarildo luiz trevisan antoni zabala antonio carlos gil b franklin b n leite b savarin b slater boaventura de sousa santos c r a santos claudia thome da rosa piasetzki d f dos s silva d matthes dermeval saviani e c m p souza e s silveira f c r sodre flavia lemos abade g da c leao g pereira pessoa g v s leal gabriel kaplun gaudencio frigotto h nunes de avila ilmo correia silva iracema mezomo j c de s ferreira j contreras j l flandrin j m silva j sampaio jader de sousa nunes k f bezerra l c f m capuchinho l s d m rufino m c angelis pereira m c g silva m checcucci m l m afonso m montanari m p r t santos m pollan m r c silva m s galisa maiara dorneles minuzzi maria cecilia de souza minayo maria ciavatta marise nogueira ramos n toral paulo freire paulo malta ferraz priscila de souza chiste leite r c pereira r m l araujo r n garcia r p n silva ricardo antunes s c mercante s da s costa s t philippi sara maria souza nogueira sivasailam thiagarajan t s pereira v f a neves w p s ana wanderley azevedo de brito",
+    "termos_unificados": [
+      "Educação Alimentar e Nutricional (EAN)",
+      "Ensino",
+      "Educação Profissional e Tecnológica",
+      "Produto educacional",
+      "Educação Integrada",
+      "Nutrição",
+      "História",
+      "Integração",
+      "Mestrado Profissional em Educação Profissional e Tecnológica",
+      "Dissertação"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

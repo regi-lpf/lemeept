@@ -1,0 +1,235 @@
+{
+  "id": "EPT-0003",
+  "metadados_resolvidos": {
+    "ano": 2025,
+    "autor": "Letícia Bachmann Kurth",
+    "orientador": "Fátima Peres Zago de Oliveira",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP3"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "CURRICULARIZAÇÃO DA PESQUISA NO ENSINO MÉDIO INTEGRADO: PACTOS E PERSPECTIVAS DOCENTES NO IFC – CAMPUS RIO DO SUL",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/12/Dissertacao_IFC_-_LETCIA_BACHMANN_KURTH.pdf",
+    "palavras_chave": [
+      "curricularização da pesquisa",
+      "iniciação científica",
+      "EPT"
+    ],
+    "autores_referenciados": [
+      "Altino F. Morais",
+      "Amurabi Oliveira",
+      "Ana Carolina R. Carmo",
+      "Andressa Freire Ramos Couto",
+      "Ângela Brognoli",
+      "Antonio Gramsci",
+      "Antônio Joaquim Severino",
+      "Antônio R. da S. P. Rodrigues",
+      "Cristiane de Almeida",
+      "Dermeval Saviani",
+      "Dirceia A. S. Anjos",
+      "Evandro G. Leite",
+      "Fátima P. Z. de Oliveira",
+      "Fernanda C. L. Coimbra",
+      "Gaudêncio Frigotto",
+      "Haroldo V. Bentes",
+      "Irineu M. Colombo",
+      "João A. M. T. R. Gonçalves",
+      "João C. Cichaczewski",
+      "José Gimeno Sacristán",
+      "Jovana R. Antunes",
+      "Juliana Favretto",
+      "Laura Lima",
+      "Leonardo L. Brito",
+      "Marcelo P. Cigales",
+      "Maria C. de S. Minayo",
+      "Maria Ciavatta",
+      "Maria do C. Galiazzi",
+      "Maria do Socorro M. F. Barbosa",
+      "Marise Nogueira Ramos",
+      "Maurice J. Bazin",
+      "Nelson O. Alencar",
+      "Paula A. G. Civiero",
+      "Paulo Freire",
+      "Pedro Demo",
+      "Raquel E. de O. Santos",
+      "Regina C. M. Pereira",
+      "Robson S. Sousa",
+      "Roque Moraes",
+      "Salete Valer",
+      "Shirley de L. F. Arantes",
+      "Simone O. Peres",
+      "Tomaz Tadeu da Silva",
+      "Viviane P. C. Araújo"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/1133578",
+    "titulo_produto": "Curricularização da Pesquisa; A Iniciação Científica como componente curricular no contexto da Educação Profissional e Tecnológica",
+    "titulo_produto_bruto": "CURRICULARIZAÇÃO DA PESQUISA: A INICIAÇÃO CIENTÍFICA COMO COMPONENTE CURRICULAR NO CONTEXTO DA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA",
+    "data_publicacao": "2025-12-10",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Kurth, Letícia",
+        "papel": "creator"
+      },
+      {
+        "nome": "Oliveira, Fátima",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1133578",
+        "url": "https://educapes.capes.gov.br/handle/capes/1133578"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Produto Educacional: Curricularização da Pesquisa",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "livro digital"
+    ],
+    "palavras_chave_educapes": [
+      "Educação Profissional e Tecnológica",
+      "EPT",
+      "Ensino Médio Integrado",
+      "EMI",
+      "Curricularização da Pesquisa",
+      "Mestrado em Educação Profissional e Tecnológica (PROFEPT)",
+      "Produto Educacional"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "E-book / Livro Digital",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE – IFC - CAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\nMESTRADO EM EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA\n\nLETÍCIA BACHMANN KURTH\n\nCURRICULARIZAÇÃO DA PESQUISA NO ENSINO MÉDIO INTEGRADO:\nPACTOS E PERSPECTIVAS DOCENTES NO IFC - CAMPUS RIO DO SUL\n\nBLUMENAU\n2025\n\nLETÍCIA BACHMANN KURTH\n\nCURRICULARIZAÇÃO DA PESQUISA NO ENSINO MÉDIO INTEGRADO:\nPACTOS E PERSPECTIVAS DOCENTES NO IFC - CAMPUS RIO DO SUL\n\nDissertação apresentada ao Programa de Pós-\ngraduação\nem\nEducação\nProfissional\ne\nTecnológica, ofertado pelo Campus Blumenau\ndo Instituto Federal Catarinense, como parte\ndos requisitos para a obtenção do título de\nMestre/Mestra em Educação Profissional e\nTecnológica.\n\nOrientador: Prof. Drª Fátima Peres Zago de\nOliveira\n\nBLUMENAU\n2025",
+    "ficha_catalografica": "",
+    "sumario": "[PÁG. 16]\nSUMÁRIO\n\n1 INTRODUÇÃO\n\n17\n2 REFERENCIAL TEÓRICO\n\n23\n2.1 A PESQUISA COMO PRINCÍPIO PEDAGÓGICO: ARTICULAÇÕES COM O\nTRABALHO E A EDUCAÇÃO\n\n23\n2.2 A EPT NO BRASIL E O ENSINO MÉDIO INTEGRADO: CAMPOS DE\nDISPUTA\n\n29\n2.3 A CURRICULARIZAÇÃO DA PESQUISA NO IFC E A APROXIMAÇÃO COM A\nPEDAGOGIA HISTÓRICO-CRÍTICA\n\n38\n3 METODOLOGIA\n\n44\n3.1 MOMENTO EXPLORATÓRIO\n\n46\n3.1.1 O lugar da pesquisa nos projetos pedagógicos dos cursos técnicos\nintegrados ao Ensino Médio do IFC - campus Rio do Sul\n50\n3.2 MOMENTO EMPÍRICO\n\n58\n3.2.1 Análise textual discursiva como método de análise dos dados\n60\n4 ANÁLISE DOS DADOS (RESULTADOS E DISCUSSÕES)\n62\n4.1\nCOMPREENSÃO\nDOS\nDOCENTES\nSOBRE\nPESQUISA\nE\nCURRICULARIZAÇÃO DA PESQUISA (CATEGORIA Á PRIORI)\n64\n4.2 ACESSO À INICIAÇÃO CIENTÍFICA NO IFC - CAMPUS RIO DO SUL\n(CATEGORIA À PRIORI)\n\n71\n4.3 CONTRIBUIÇÕES DA INICIAÇÃO CIENTÍFICA CURRICULARIZADA NA\n(TRANS)FORMAÇÃO DOS ESTUDANTES (CATEGORIA À PRIORI)\n74\n4.4 DIFICULDADES NA CURRICULARIZAÇÃO DA PESQUISA (CATEGORIA À\nPRIORI)\n\n79\n4.5 A PESQUISA COMO POTENCIAL INTEGRADORA DE SABERES (CATEGORIA\nEMERGENTE)\n\n85\n4.6\nPERSPECTIVAS\nACERCA\nDA\nCONTINUIDADE\nDO\nCOMPONENTE\nCURRICULAR DE INICIAÇÃO CIENTÍFICA NO IFC - CAMPUS RIO DO SUL\n(CATEGORIA EMERGENTE)\n\n87\n5 PRODUTO EDUCACIONAL\n\n91\n6 CONSIDERAÇÕES FINAIS\n\n100\nREFERÊNCIAS\n\n103\nAPÊNDICE A –\nROTEIRO PARA ENTREVISTA COM\nDOCENTES DO\nCOMPONENTE CURRICULAR DE INICIAÇÃO CIENTÍFICA, COORDENADORES E\nGESTÃO\n\n110\nAPÊNDICE B – MODELO DE TERMO DE CONSENTIMENTO LIVRE E\nESCLARECIDO (TCLE) PARA PARTICIPAÇÃO NA ENTREVISTA\n113\nAPÊNDICE\nC\n–\nQUESTIONÁRIO\nDE\nAVALIAÇÃO\nDO\nPRODUTO\nEDUCACIONAL\n\n116\nAPÊNDICE D – ROTEIRO DE AVALIAÇÃO DO PRODUTO EDUCACIONAL\n117\nAPÊNDICE E – PRODUTO EDUCACIONAL\n118\nANEXO A – PARECER CONSUBSTANCIADO DO COMITÊ DE ÉTICA EM\nPESQUISAS COM SERES HUMANOS\n119",
+    "resumo": "[PÁG. 11]\nRESUMO\n\nEsta pesquisa tem como objeto a curricularização da pesquisa no âmbito da Educação\nProfissional e Tecnológica, mais precisamente no Ensino Médio Integrado (EMI) do\nInstituto Federal Catarinense (IFC), campus Rio do Sul, contemplando os cursos\ntécnicos em Agroecologia, Agropecuária e Informática para Internet. A motivação para\no estudo decorre da trajetória da pesquisadora, marcada pela articulação entre ensino,\npesquisa e extensão desde a graduação em Pedagogia no IFC e pela atuação na\neducação básica, que despertou o interesse em compreender o papel da pesquisa\ncomo eixo formativo articulador de teoria e prática. A pesquisa fundamenta-se em\nautores como Demo (2001), Oliveira (2017) e Freire (1996; 2020), que concebem a\npesquisa como princípio pedagógico e caminho para uma educação crítica e\nemancipatória, contrapondo-se ao modelo reprodutivista e à concepção bancária. No\ncontexto institucional, destacam-se as resoluções nº 16/2019 e nº 13/2022 do\nCONSUPER/IFC, que normatizam a inserção da pesquisa nos currículos. Nesse\nsentido, o componente de Iniciação Científica (IC), presente nos três cursos\nanalisados, configura-se como estratégia central da curricularização, ainda que não\nseja a única. Com abordagem qualitativa e natureza translacional, a investigação\nenvolve análise documental e entrevistas com docentes e coordenadores, buscando\ncompreender pactos e perspectivas em torno da curricularização da pesquisa. Além\ndisso, prevê a elaboração de um produto educacional, um e-book, destinado a apoiar\nprofessores da IC e gestão do campus na construção de uma pesquisa curricularizada\ne integrada. A relevância do estudo reside na escassez de produções acadêmicas\nsobre a temática no âmbito da Educação Profissional e Tecnológica, o que lhe confere\ncaráter inovador. Os resultados demonstram haver docentes com perspectivas\nalinhadas ao eixo humanizador, porém também docentes alinhados ao eixo\nreducionista da pesquisa, levando em consideração as narrativas expostas no\ndecorrer das entrevistas. Além disso, as perspectivas apontam para a necessidade de\nfortalecer o componente de IC, visto que os debates em torno de sua existência e\ncontinuidade são recorrentes, demonstrando não haver consenso acerca da\ncurricularização da pesquisa de forma reflexiva e integrada no campus. Espera-se que\nos resultados contribuam para fortalecer a integração curricular no EMI e consolidar a\npesquisa como princípio educativo capaz de promover autonomia, criticidade e\nprotagonismo estudantil.\n\nPalavras-Chave: curricularização da pesquisa; iniciação científica; EPT.",
+    "introducao": "[PÁG. 18]\n17\n\n 1 INTRODUÇÃO\n\nInicio esta dissertação trazendo minha jornada como educadora-pesquisadora\nque começou a ser desenhada durante a Licenciatura em Pedagogia, cursada no\nInstituto Federal Catarinense (IFC). Foi ali, meio a articulação da indissociabilidade\nentre pesquisa, ensino e extensão, não como apêndice da formação, mas como um\ndos pilares centrais do curso. Essa percepção consolidada pela curricularização da\npesquisa contribuiu para minha identidade profissional e me instigou a assumir a\npostura de professora-pesquisadora em sala de aula.\nPosteriormente, em uma experiência profissional na educação básica,\nindaguei-me sobre o papel da pesquisa como articuladora entre teoria e prática na\netapa do ensino médio. Sabendo que a curricularização da pesquisa e da extensão\ntambém acontece no Ensino Médio Integrado (EMI) do IFC, surgiu o interesse em\naprofundar-me no tema curricularização da pesquisa, bem como na utilização da\npesquisa como um recurso pedagógico interdisciplinar e transversal, que pudesse\nestar presente em todos os aspectos formativos do estudante.\nDiante disso, definiu-se a curricularização da pesquisa no EMI e, em específico,\nnos cursos de EMI do IFC - campus Rio do Sul, como objeto desta investigação.\nOliveira (2017) e Oliveira, Civiero e Bazzo (2019) já abordaram a curricularização da\npesquisa como uma alternativa para a democratização do ensino de pesquisa, de\nforma a criar experiências formativas, ao longo do curso, que desenvolvam no\nestudante a capacidade de investigar, analisar e propor soluções fundamentadas,\ncríticas e reflexivas.\nNum primeiro momento, a temática do projeto em questão surgiu por interesse\nda pesquisadora em compreender a curricularização da pesquisa e seus impactos na\ntrajetória formativa do estudante de ensino médio, etapa da educação básica em que\njá atuou como docente. Ademais, parte também das próprias experiências enquanto\nestudante na graduação, momento em que vivenciou ações de ensino, pesquisa e\nextensão de forma indissociáveis na disciplina de Pesquisa e Processos Educativos\ndo curso de Licenciatura em Pedagogia.\nFalar sobre curricularização da pesquisa pressupõe entender a pesquisa\ninstitucionalizada como parte integrante do currículo de cada curso e enxergá-la como\num caminho para uma educação crítica, em uma superação com as metodologias\ntradicionais de educação. Em suma, convém dizer que a pesquisa curricularizada,\n\n[PÁG. 19]\n18\n\ntendo-a como um princípio pedagógico, pode aproximar-se de uma educação\nemancipatória, reflexiva, na qual o estudante possa desempenhar o papel de\nprotagonista em seu percurso formativo (Demo, 2001).\nDemo (2001), em sua obra Pesquisa: princípio científico e educativo, aborda a\npesquisa como um mecanismo do ‘aprender a aprender’, em que o estudante, por\nmeio da ‘elaboração própria’, utiliza de suas fontes pessoais de curiosidade para\ndesenvolver novos conhecimentos. A pesquisa, segundo Demo (2001), pode ser\nutilizada na escola básica e, mesmo desde o jardim de infância, como um hábito de\nvida crítico e como caminho necessário para a emancipação humana. Entende-se que\nassim como é um mecanismo de aprender a aprender, é também necessário, segundo\nOliveira (2017, p. 273), “aprender a desaprender” metodologias de treino, a\ninexorabilidade da verdade impregnada na ciência e na tecnologia e o velho modelo\npositivista do conhecimento. Por meio da autonomia propiciada pela pesquisa, o\nestudante pode desaprender regras, reproduções e pactos de sociedade a que estava\nsubmetido por meio da educação reprodutivista.\nAo destacar a educação reprodutivista, entende-se que essa vai ao encontro\nda concepção bancária proposta por Freire (2020) na obra Pedagogia do oprimido,\nonde aponta para a importância de uma educação problematizadora, que se difere de\numa educação de concepção ‘bancária’. Nessa última, o estudante é quase que\n‘coisificado’, não sendo visto como ser histórico e cultural, mas como receptor de\nconhecimentos nele depositados. O estudante pode estar nessa situação também na\npesquisa, quando ocorre por meio do treino, da reprodução de métodos e de forma\nmeritocrática apenas para atender ao mercado. A educação problematizadora, por\noutro lado, educa por meio de processo dialógico e de dodiscência, podendo ser vista\ncomo ato libertador. Nessa perspectiva, a pesquisa pode ser compreendida como\nexercício da curiosidade inicialmente ingênua para a epistemológica (Freire, 1996;\nOliveira, 2017), utilizada como princípio educativo, em uma proposta de educação\ncrítica e reflexiva.\nAssim, em uma tentativa de compreender qual a concepção de pesquisa\npresente no currículo dos cursos de EMI da instituição objeto desta investigação,\niniciaram-se buscas por seus documentos oficiais. Nas páginas virtuais dos cursos\ntécnicos integrados ao ensino médio do IFC - campus Rio do Sul, foi possível\nencontrar seus Projetos Pedagógicos de Curso de Educação Profissional Técnica de\nNível Médio (PPCTM). Realizando a leitura dos documentos, observou-se que os três\n\n[PÁG. 20]\n19\n\ncursos possuem determinadas ações de integração entre inovação, pesquisa e\nextensão em suas matrizes curriculares, bem como certa carga horária específica\ndestinada à esta tríade, composta por diversas disciplinas. Além disso, percebe-se um\ncomponente curricular, denominado Iniciação Científica (IC), presente em todos os\nprojetos pedagógicos de curso verificados. No curso de Agropecuária, a IC aparece\ncomo um componente curricular de 30h presente no 2º ano. Em Agroecologia, o\ncomponente curricular aparece no 1º ano do curso com a denominação de Iniciação\nCientífica/Informática, onde propõe-se abordar fundamentos da ciência e tecnologia,\njuntamente com noções básicas de informática e, por fim, no curso de Informática para\nInternet, a IC é visualizada também no 1º ano, mas com a denominação Iniciação\nCientífica e Tecnológica, um componente curricular de 30h.\nOs componentes de IC (e suas pequenas variações de nomenclatura)\nconfiguram-se em uma forma de curricularização da pesquisa, ainda que nela não se\nesgotem. Portanto, e sendo comum a todos os três cursos anteriormente citados,\nobjetivou-se focalizar este componente curricular como objeto particular desta\ninvestigação. É importante ressaltar que, de acordo com a Resolução nº13/2022 do\nCONSUPER (Instituto Federal Catarinense [IFC], 2022), a regulamentarização da\ncurricularização da pesquisa ocorre por meio de três formas, atividades em\ncomponentes curriculares, componente curricular específico, ou ainda pela\nparticipação dos estudantes em projetos cadastrados na Coordenadoria de Extensão\ne Pesquisa (IFC, 2022). Os três projetos pedagógicos verificados apresentam ações\nde curricularização da pesquisa em seus currículos. Especificações mais detalhadas\nacerca destas ações podem ser percebidos adiante, no marco teórico desta pesquisa.\nAlém disso, o projeto aqui mencionado justifica-se no que concerne a sua\nadequação referente à linha de pesquisa Práticas Educativas em Educação\nProfissional e Tecnológica, que compõe o programa de Mestrado Profissional em\nEducação Profissional e Tecnológica, da qual a pesquisadora está vinculada. Além\ndisso, está adequado ao Macroprojeto 3 - Práticas Educativas no Currículo Integrado,\nvisto que a pesquisa, enquanto princípio pedagógico, propõe contribuir diretamente\ncom as práticas educativas inerentes à integração curricular.\nDa mesma forma, é imprescindível relembrar a resolução nº 16/2019, aprovada\nem 21 de março de 2019 (Instituto Federal Catarinense [IFC], 2019a), que dispõe\nsobre as diretrizes a serem seguidas no EMI do IFC, onde é possível encontrar\nreferência à pesquisa como princípio pedagógico articulador de teoria e prática de\n\n[PÁG. 21]\n20\n\nforma curricularizada. Ademais, também a Resolução nº 13/2022 do Conselho\nSuperior do Instituto Federal Catarinense (IFC, 2022), é possível observar disposições\nacerca da normatização da curricularização da pesquisa e da extensão nos cursos da\ninstituição.\nSalienta-se que o recorte temporal para ",
+    "descricao_produto_na_dissertacao": "[PÁG. 21] forma curricularizada. Ademais, também a Resolução nº 13/2022 do Conselho\nSuperior do Instituto Federal Catarinense (IFC, 2022), é possível observar disposições\nacerca da normatização da curricularização da pesquisa e da extensão nos cursos da\ninstituição.\nSalienta-se que o recorte temporal para análise empírica foi definido a partir do\nano de 2019, uma vez que é a data da resolução nº 16/2019 do Conselho Superior do\nInstituto Federal Catarinense (IFC, 2019a) que dispõe sobre as diretrizes para a\nEducação Profissional Técnica Integrada ao Ensino Médio do IFC. A pesquisa tem\ncomo sujeitos docentes que atuam ou atuaram no componente curricular IC e\ncoordenadores de curso.\nComo objetivo geral, propõe-se analisar os pactos e as perspectivas adotados\npelos docentes na curricularização da pesquisa presente nos cursos de Ensino Médio\nIntegrado do Instituto Federal Catarinense - Campus Rio do Sul, a partir do ano de\n2019. Para chegar a esse propósito, estabeleceu-se um percurso contendo alguns\nobjetivos específicos, quais sejam, descrever o processo histórico da curricularização\nda pesquisa e extensão articulada com a historicização da EPT; averiguar a\nconceituação de currículo, bem como as concepções acerca da curricularização da\npesquisa; identificar os pactos e as perspectivas da curricularização da pesquisa nos\ncursos de EMI do IFC - campus Rio do Sul; verificar a compreensão dos docentes\nsobre a curricularização da pesquisa nos diferentes cursos de EMI e as necessidades\ncomuns de quem leciona o componente curricular; e, por fim, elaborar, aplicar e validar\num produto educacional que oriente o trabalho docente na busca pela curricularização\nda pesquisa no ensino médio integrado do IFC - campus Rio do Sul.\nAo todo foram investigados documentos, docentes e coordenadores dos três\ncursos técnicos integrados ao ensino médio, Técnico em Agroecologia, Técnico em\nAgropecuária e Técnico em Informática para Internet. Buscando os Projetos\nPedagógicos de Curso de Educação Profissional Técnica de Nível Médio (PPCTM)\ndos respectivos cursos, percebeu-se que todos possuem ações pontuadas e certa\ncarga horária específica destinada à tríade inovação-pesquisa-extensão. Além disso,\nverificou-se um componente curricular denominado Iniciação Científica presente nos\nrespectivos projetos, onde a pesquisa figura de forma curricularizada. Por esse\nmotivo, optou-se em focar as investigações aqui realizadas neste componente\ncurricular.\nA pesquisa possui natureza translacional e de abordagem qualitativa, com\n\n[PÁG. 22] alguns momentos previstos em sua metodologia, quais sejam, momento exploratório,\nem que a pesquisadora busca familiarizar-se com a temática, e momento empírico,\nno qual busca-se compreender quais são as percepções e os pactos estabelecidos\npelos docentes perante a curricularização da pesquisa no IFC - campus Rio do Sul.\nAlém disso, um processo de busca por produções acadêmicas foi iniciado,\nutilizando o portal de periódicos da Capes e o portal Scielo. Foram encontrados\npoucos resultados que tratam sobre a curricularização da pesquisa na educação\nbásica e, em específico, no âmbito da Educação Profissional e Tecnológica. Foi\npossível perceber uma escassa produção sobre o assunto, evidenciando um certo\nineditismo nas pesquisas realizadas que abordam o tema.\nElaborou-se, ainda, um produto educacional, precisamente um e-book, voltado\naos docentes do componente curricular de Iniciação Científica, o qual terá como\npropósito orientar as ações docentes ",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 19,
+        "texto": "tendo-a como um princípio pedagógico, pode aproximar-se de uma educação\nemancipatória, reflexiva, na qual o estudante possa desempenhar o papel de\nprotagonista em seu percurso formativo (Demo, 2001).\nDemo (2001), em sua obra Pesquisa: princípio científico e educativo, aborda a\npesquisa como um mecanismo do ‘aprender a aprender’, em que o estudante, por\nmeio da ‘elaboração própria’, utiliza de suas fontes pessoais de curiosidade para\ndesenvolver novos conhecimentos. A pesquisa, segundo Demo (2001), pode ser\nutilizada na escola básica e, mesmo desde o jardim de infância, como um hábito de\nvida crítico e como caminho necessário para a emancipação humana. Entende-se que\nassim como é um mecanismo de aprender a aprender, é também necessário, segundo\nOliveira (2017, p. 273), “aprender a desaprender” metodologias de treino, a\ninexorabilidade da verdade impregnada na ciência e na tecnologia e o velho modelo\npositivista do conhecimento. Por meio da autonomia propiciada pela pesquisa, o\nestudante pode desaprender regras, reproduções e pactos de sociedade a que estava\nsubmetido por meio da educação reprodutivista.\nAo destacar a educação reprodutivista, entende-se que essa vai ao encontro\nda co",
+        "citacoes_detectadas": [
+          "Demo, 2001"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 20,
+        "texto": "cursos possuem determinadas ações de integração entre inovação, pesquisa e\nextensão em suas matrizes curriculares, bem como certa carga horária específica\ndestinada à esta tríade, composta por diversas disciplinas. Além disso, percebe-se um\ncomponente curricular, denominado Iniciação Científica (IC), presente em todos os\nprojetos pedagógicos de curso verificados. No curso de Agropecuária, a IC aparece\ncomo um componente curricular de 30h presente no 2º ano. Em Agroecologia, o\ncomponente curricular aparece no 1º ano do curso com a denominação de Iniciação\nCientífica/Informática, onde propõe-se abordar fundamentos da ciência e tecnologia,\njuntamente com noções básicas de informática e, por fim, no curso de Informática para\nInternet, a IC é visualizada também no 1º ano, mas com a denominação Iniciação\nCientífica e Tecnológica, um componente curricular de 30h.\nOs componentes de IC (e suas pequenas variações de nomenclatura)\nconfiguram-se em uma forma de curricularização da pesquisa, ainda que nela não se\nesgotem. Portanto, e sendo comum a todos os três cursos anteriormente citados,\nobjetivou-se focalizar este componente curricular como objeto particular desta\ninvestigação. É importante",
+        "citacoes_detectadas": [
+          "IFC, 2022"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 22,
+        "texto": "alguns momentos previstos em sua metodologia, quais sejam, momento exploratório,\nem que a pesquisadora busca familiarizar-se com a temática, e momento empírico,\nno qual busca-se compreender quais são as percepções e os pactos estabelecidos\npelos docentes perante a curricularização da pesquisa no IFC - campus Rio do Sul.\nAlém disso, um processo de busca por produções acadêmicas foi iniciado,\nutilizando o portal de periódicos da Capes e o portal Scielo. Foram encontrados\npoucos resultados que tratam sobre a curricularização da pesquisa na educação\nbásica e, em específico, no âmbito da Educação Profissional e Tecnológica. Foi\npossível perceber uma escassa produção sobre o assunto, evidenciando um certo\nineditismo nas pesquisas realizadas que abordam o tema.\nElaborou-se, ainda, um produto educacional, precisamente um e-book, voltado\naos docentes do componente curricular de Iniciação Científica, o qual terá como\npropósito orientar as ações docentes na perspectiva da curricularização da pesquisa,\nsendo elaborado concomitantemente com o desenvolvimento da investigação. Ao final\nde sua elaboração, o produto foi submetido à apreciação dos participantes e,\nbuscando sua validação, foram levad",
+        "citacoes_detectadas": [
+          "IFC, 2019a",
+          "IFC,\n2022"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 24,
+        "texto": "Saviani (2007, p. 152) trata sobre a relação ontológica e histórica que existe\nentre as concepções de trabalho e educação e, também, sobre a ruptura que se\nsucedeu entre ambas, afirmando que “Trabalho e educação são atividades\nespecificamente humanas. Isso significa que, rigorosamente falando, apenas o ser\nhumano trabalha e educa”. Os homens adaptam a natureza a si próprios, enquanto\nos demais animais fazem o contrário, pois devem adaptar-se à natureza nas\ncondições de vida que lhes são apresentadas. Somente a racionalidade do homem\npermite produzir sua vida material a partir da natureza primária.\nIsso significa dizer que o homem não nasce homem, mas constrói-se, uma vez\nque necessita fazer-se em meio à natureza que encontra ao seu redor. Saviani (2007,\np. 154) argumenta que\nSe a existência humana não é garantida pela natureza, não é uma\ndádiva natural, mas tem de ser produzida pelos próprios homens,\nsendo, pois, um produto do trabalho, isso significa que o homem não\nnasce homem. Ele forma-se homem. Ele não nasce sabendo produzir-\nse como homem. Ele necessita aprender a ser homem, precisa\naprender a produzir sua própria existência. Portanto, a produção do\nhomem é, ao mesmo tempo, a",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 25,
+        "texto": "trabalho.\nNas sociedades primitivas, a educação e o trabalho estavam em simbiose, mas\nnunca separados. Na medida que a subsistência demandava o trabalho, este, por sua\nvez, demandava o aprender a trabalhar. A educação constitui-se, assim, uma forma\nde aprender a ser, de aprender o mundo e de aprender a ser no mundo (Saviani,\n2007). O trabalho ontológico diferenciava-se do que hoje consideramos trabalho.\nEntão, por conseguinte, a educação diferenciava-se do que hoje compreendemos por\neducação.\nO desenvolvimento do modo de produção acarretou na ‘privatização’ da terra,\nlevando à divisão dos seres humanos em classes distintas. “Configuram-se, em\nconsequência, duas classes sociais fundamentais: a classe dos proprietários e a dos\nnão-proprietários” (Saviani, 2007, p. 155). Como o trabalho caracteriza-se por ser a\nessência do homem, não é possível que os seres humanos vivam sem trabalhar.\nDessa forma, com o controle da terra, a classe dos proprietários tornou possível uma\nlastimável façanha, viver sem trabalhar para que alguém trabalhe mais.\nFrigotto (2009) aborda as distintas visões que leva a atividade trabalho ao longo\ndo tempo e das modificações do sistema econômico. O ponto de ruptu",
+        "citacoes_detectadas": [
+          "Saviani,\n2007",
+          "Saviani, 2007, p. 155",
+          "Frigotto, 2009, p. 176"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 25,
+        "texto": "Assim, o que atualmente se compreende por este termo é o conceito apropriado\npelo capital, a venda de nosso tempo de serviço em troca de uma quantia em dinheiro,\num pagamento que comumente chamamos por salário.\nCom a modificação do conceito de trabalho, há também uma ruptura no\nconceito de educação. A partir disso, a educação passa a configurar-se de duas\nmaneiras, uma educação para a classe proletária (centrada em exercícios intelectuais,\nfísicos e artísticos) e outra para a classe dos que trabalham (centrada no próprio ofício\nde trabalhar) (Saviani, 2007).\nO que antes era visto como uma preparação para a vida nas sociedades\nprimitivas, passa a ser visto como uma preparação para o trabalho necessário para a",
+        "citacoes_detectadas": [
+          "Saviani, 2007"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 26,
+        "texto": "classe que dele vive. Sendo assim, compreende-se que a educação passa a\nacompanhar as modificações do sistema econômico em que se vive.\nSegundo Saviani (2007, p. 157),\nCom efeito, é o modo como se organiza o processo de produção –\nportanto, a maneira como os homens produzem os seus meios de vida\n– que permitiu a organização da escola como um espaço separado da\nprodução. Logo, a separação também é uma forma de relação, ou seja:\nnas sociedades de classes a relação entre trabalho e educação tende\na manifestar-se na forma da separação entre escola e produção.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 26,
+        "texto": "Pode-se dizer que uma EPT comprometida com a formação humana integral é\numa EPT comprometida com a reintegração do trabalho manual e intelectual e,\nportanto, é necessário que se compreenda as relações entre as instâncias ‘trabalho’\ne ‘educação’, uma vez que essas estão profundamente arraigadas em sua concepção\ne representam o âmago de uma educação voltada à superação das classes\nhistoricamente oprimidas.\nPara Ramos (2014), o termo ‘formação humana integral’ sugere que seja\nnecessário superar a divisão social do trabalho e, para isso, compreender o ser\nhumano como um ser histórico e social. Nesse sentido, no caso de uma formação\nintegrada (ou Ensino Médio Integrado, que trataremos mais a seguir), o que se busca\né promover uma educação geral básica e de forma inseparável de uma educação",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 27,
+        "texto": "profissional. Mas além disso, que trabalho e educação estejam entrelaçados por meio\nde dois principais âmbitos: o trabalho como princípio educativo e a pesquisa como\nprincípio pedagógico.\nConsiderar o trabalho como princípio educativo quer dizer, segundo Ramos\n(2014, p. 91), “[...] proporcionar a compreensão das dinâmicas socioprodutivas das\nsociedades modernas, com as suas conquistas e os seus revezes, e também habilitar\nas pessoas para o exercício autônomo e crítico de profissões, sem nunca se esgotar\na elas”. Ou seja, compreender o trabalho como mediação primeira entre o homem e o\nmundo e, portanto, enxergá-lo em seu caráter ontológico e histórico.\nIsso não significa, porém, negar a realidade material do trabalho, por meio do\nqual necessitamos fazer nossos meios de vida. Em realidade, uma concepção unitária\nde educação promove, ao mesmo tempo, a visão do trabalho enquanto princípio\neducativo e contexto econômico. Assim, integrando-se em um mesmo currículo, é\ncapaz de possibilitar “[...] construções intelectuais elevadas; a apropriação de\nconceitos necessários para a intervenção consciente na realidade e a compreensão\ndo processo histórico de construção do conhecimento” (Ramos, 2",
+        "citacoes_detectadas": [
+          "Ramos, 2014, p. 92",
+          "Moura, 2007",
+          "IFC, 2019a"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 28,
+        "texto": "Logo, a pesquisa é parte indissociável do processo de ensino-aprendizagem,\nsendo importante mecanismo para atingir uma educação crítica-reflexiva.\nEm seu título II - Organização e Planejamento, capítulo II - Da organização\ncurricular, as Diretrizes apontam, no Art. 20, que\nO currículo dos cursos técnicos integrados devem ser organizados e\nfundamentados na omnilateralidade, politecnia, trabalho como\nprincípio educativo e pesquisa como princípio pedagógico, buscando\na integração entre as áreas do saber, numa superação da\nfragmentação de conhecimentos e de segmentação da organização\ncurricular, a partir de diferentes formas de colaboração interdisciplinar\ne integração [...] (IFC, 2019a, n.p.).",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 29,
+        "texto": "Demo (2001, p. 16), por outro lado, adiciona camadas de contextualização\nsocial ao conceito de pesquisa quando afirma que a compreende “[...] não só como\nbusca de conhecimento, mas igualmente como atitude política, sem reducionismo e\nembaralhamento, num todo só dialético”.\nEntendemos que a pesquisa enquanto princípio pedagógico na EPT, sobretudo\nno EMI, não carece, necessariamente, de descobertas inéditas, mas objetiva, em\nprimeiro lugar, servir de instrumento para o desenvolvimento do próprio estudante,\ncomo o aprimoramento da capacidade criativa, analítica, reflexiva, da postura curiosa\ne da habilidade de ‘aprender a aprender’. Assim, o costume escolar de aprender pelo\nouvir, sem questionamentos, deve ser substituído pelo hábito de aprender pela\nelaboração própria, onde se produz conhecimento a partir das próprias curiosidades.\nDessa forma, promovendo um ensino crítico e um caminho para uma educação\nemancipatória (Demo, 2001).\nDemo (2021) exemplifica ações que são próprias do somente aprender, tais\ncomo copiar diretamente, fazer prova de forma decorada, fichar textos, cumprir\napenas tarefas às quais o estudante é obrigado e, por fim, reduzir a educação à\ndisciplina. Dessa forma, ",
+        "citacoes_detectadas": [
+          "Demo, 2001",
+          "Freire, 2020"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "de Demo (2001), em uma atitude formativa e reflexiva perante toda a vida.\nAlém disso, podemos, ainda, nos amparar no conceito de ‘situações-limite’, que\nFreire (2020) traz como uma situação problema, um obstáculo a ser enxergado de\nforma crítica, com postura consciente e autônoma e, assim, superado. A pesquisa\nrealizada a partir de uma curiosidade proposta pelos próprios educandos pode revelar-\nse em uma ‘situação-limite’ por eles percebida e, dessa forma, por meio da\ninvestigação, suscitar sua superação.\nNa mesma perspectiva de uma educação emancipatória, Pacheco (2012)\nafirma, também, que a pesquisa enquanto princípio pedagógico na EPT precisa estar\norientada por uma perspectiva ética e voltada aos interesses da coletividade. Assim,\naliando o desenvolvimento de tecnologias às necessidades da vida coletiva e\nafastando-se de uma perspectiva mercadológica, que enxerga o avanço tecnológico\ncomo fonte de lucro e enriquecimento. O autor afirma, ainda, que uma forma de\nconsolidação da pesquisa em ações pedagógicas na escola “[...] pode ser a sua\nvinculação com a produção de tecnologias sociais, fundamento de uma intervenção\nsocial junto às comunidades nos territórios de atuação da unida",
+        "citacoes_detectadas": [
+          "Pacheco,\n2012, p. 72"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "DEMO, Pedro. Educar pela pesquisa. 10. ed. Campinas: Autores Associados, 2015.",
+      "DEMO, Pedro. Pesquisa: princípio científico e educativo. 8. ed. São Paulo: Cortez, 2001.",
+      "FREIRE, Paulo. Pedagogia da autonomia: saberes necessários à prática educativa. 25 ed. São Paulo: Paz e Terra, 1996.",
+      "FREIRE, Paulo. Pedagogia do oprimido. 74. ed. Rio de Janeiro: Paz e Terra, 2020.",
+      "FRIGOTTO, Gaudêncio. A polissemia da categoria trabalho e a batalha das ideias nas sociedades de classe. Rio de Janeiro, Revista Brasileira de Educação, v. 14, n. 40, p. 168-194, jan./abr. 2009. DOI: https://doi.org/10.1590/S1413- 24782009000100014. Disponível em: https://www.scielo.br/j/rbedu/a/QFXsLx9gvgFvHTcmfNbQKQL/?format=pdf&lang=pt. Acesso em: 28 jun. 2023.",
+      "MOURA, Dante H. Educação básica e educação profissional e tecnológica: dualidade histórica e perspectivas de integração. Natal, Holos, v. 2, n. 23, 2007. Disponível em: https://www2.ifrn.edu.br/ojs/index.php/HOLOS/article/view/11/110. Acesso em: 30 nov. 2025.",
+      "RAMOS, Marise N. Concepção do ensino médio integrado. Fóruns Eja Brasil. Paraná, 2008 Disponível em: https://homol.forumeja.org.br/wp- content/uploads/tainacan- items/1688/439501/concepcao_do_ensino_medio_integrado5.pdf. Acesso em: 23 jun. 2023.",
+      "RAMOS, Marise N. História e política da educação profissional. 1. ed. Curitiba:",
+      "RAMOS, Marise N. Palestra da prof.ª Marise Nogueira Ramos no encerramento do",
+      "SAVIANI, Dermeval. A pedagogia histórico-crítica. Vitória da Conquista, Revista Binacional Brasil Argentina, v. 3, n. 2, p. 11-36, 2014. Disponível em: https://periodicos2.uesb.br/rbba/article/view/1405/1214. Acesso em: 5 dez. 2025.",
+      "SAVIANI, Dermeval. Escola e democracia. 41. ed. Campinas: Autores Associados, 2008.",
+      "SAVIANI, Dermeval. Trabalho e educação: fundamentos ontológicos e históricos. Rio de Janeiro, Revista Brasileira de Educação, v. 12, n. 34, p. 152-165, 2007. DOI: https://doi.org/10.1590/S1413-24782007000100012. Disponível em: https://www.scielo.br/j/rbedu/a/wBnPGNkvstzMTLYkmXdrkWP/?format=pdf&lang=pt. Acesso em: 28 mai. 2023."
+    ]
+  }
+}

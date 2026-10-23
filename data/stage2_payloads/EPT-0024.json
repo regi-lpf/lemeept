@@ -1,0 +1,293 @@
+{
+  "id": "EPT-0024",
+  "metadados_resolvidos": {
+    "ano": 2024,
+    "autor": "Rosana Richter",
+    "orientador": "Viviane Grimm",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP3"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "DESAFIOS PEDAGÓGICOS NO DESENVOLVIMENTO DO CURRÍCULO INTEGRADO NO CURSO TÉCNICO EM ADMINISTRAÇÃO DE NÍVEL MÉDIO NO CEDUP – HERMANN HERING – BLUMENAU",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/01/Dissertacao_Final_Rosana_Richter.pdf",
+    "palavras_chave": [
+      "Currículo integrado",
+      "Ensino médio integrado",
+      "Técnico em Administração",
+      "Educação Profissional e Tecnológica"
+    ],
+    "autores_referenciados": [
+      "A. Martin",
+      "A. Nitschke",
+      "A. P. M. Lima",
+      "A. S. Silva",
+      "Acácia Zeneida Kuenzer",
+      "Antônio Carlos Gil",
+      "B. A. Gatti",
+      "C. A. Grümm",
+      "C. C. Fagiani",
+      "C. D. Santos",
+      "D. M. Todorov",
+      "Dante Henrique Moura",
+      "Dermeval Saviani",
+      "E. C. Faria",
+      "E. F. A. Gameleira",
+      "E. Pacheco",
+      "E. R. Araújo",
+      "E. S. S. Barretto",
+      "F. C. S. Souza",
+      "F. D. Ferreti",
+      "F. F. Harami",
+      "F. G. Ferreira",
+      "F. H. M. Souza",
+      "F. L. G. R. Silva",
+      "F. L. G. Rodrigues",
+      "F. Oliveira",
+      "F. S. Prevatali",
+      "G. C. N. Jesus",
+      "G. O. R. Wanzeler",
+      "Gaudêncio Frigotto",
+      "H. C. A. V. Florambel",
+      "H. D. L. Conte",
+      "H. Gardner",
+      "H. H. Jacobs",
+      "I. A. Costa",
+      "J. A. C. Souza",
+      "J. A. Vieira",
+      "J. Dewey",
+      "J. Ferreira",
+      "J. L. Medeiros",
+      "J. M. Graciano",
+      "J. M. Nascimento",
+      "J. S. Souza",
+      "José Carlos Libâneo",
+      "José Gimeno Sacristán",
+      "L. A. B. Oliveira",
+      "L. F. Felzke",
+      "L. M. Silva",
+      "L. R. S. Machado",
+      "Laurence Bardin",
+      "M. A. C. Nunes",
+      "M. Lima",
+      "M. M. Gomide",
+      "M. M. M. Vieira",
+      "M. M. Pistrak",
+      "M. O. Neves",
+      "M. Pereira",
+      "M. R. Silva",
+      "M. S. Oliveira",
+      "M. Young",
+      "Maria Ciavatta",
+      "Marise Nogueira Ramos",
+      "Marli André",
+      "O. F. Carvalho",
+      "P. C. A. Almeida",
+      "P. F. F. Costa",
+      "R. F. Campos",
+      "R. Lidani",
+      "R. M. L. Araújo",
+      "R. Santos",
+      "Reginaldo Leandro Plácido",
+      "Ricardo Antunes",
+      "S. A. Silva",
+      "S. C. S. Jucá",
+      "S. M. S. Nogueira",
+      "S. R. O. Garcia",
+      "S. S. Valentim",
+      "T. G. S. Melo",
+      "T. Mercês",
+      "T. Possamai",
+      "V. C. Motta",
+      "W. A. Brito",
+      "W. P. S. Ana"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/921347",
+    "titulo_produto": "ENSINO MÉDIO INTEGRADO EM TÉCNICO EM ADMINISTRAÇÃO: pressupostos, desafios e possibilidades do currículo integrado",
+    "titulo_produto_bruto": "ENSINO MÉDIO INTEGRADO EM TÉCNICO EM ADMINISTRAÇÃO: PRESSUPOSTOS, DESAFIOS E POSSIBILIDADES DO CURRÍCULO INTEGRADO",
+    "data_publicacao": "2024-10-30",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Richter, Rosana",
+        "papel": "creator"
+      },
+      {
+        "nome": "Grimm, Viviane",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/921347",
+        "url": "https://educapes.capes.gov.br/handle/capes/921347"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Infográfico - Ensino Médio Integrado em Técnico em Administração",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "texto"
+    ],
+    "palavras_chave_educapes": [
+      "Ensino Médio Integrado",
+      "Técnico em Administração",
+      "Educação Profissional e Tecnológia",
+      "Mestrado em Educação Profissional e Tecnológica",
+      "Dissertação"
+    ],
+    "tipo_produto_regex": null,
+    "fonte_tipo_regex": null,
+    "formato_produto_regex": "Infográfico",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "Instituto Federal Catarinense\nPrograma de Pós-Graduação em Educação Profissional e Tecnológica\nCampus Blumenau\n\nROSANA RICHTER\n\nDESAFIOS NO DESENVOLVIMENTO DO CURRÍCULO INTEGRADO NO CURSO\nDE ENSINO MÉDIO INTEGRADO EM TÉCNICO EM ADMINISTRAÇÃO NO\nCEDUP – HERMANN HERING - BLUMENAU\n\nBlumenau-SC\n2024\n\nROSANA RICHTER\n\nDESAFIOS NO DESENVOLVIMENTO DO CURRÍCULO INTEGRADO NO CURSO\nDE ENSINO MÉDIO INTEGRADO EM TÉCNICO EM ADMINISTRAÇÃO NO\nCEDUP – HERMANN HERING - BLUMENAU\n\nDissertação apresentada ao Programa de\nPós-graduação em Educação Profissional e\nTecnológica do Instituto Federal Catarinense\n– Campus Blumenau para a obtenção do\ntítulo de Mestre em Educação Profissional e\nTecnológica.\n\nOrientadora: Prof.ª Dra. Viviane Grimm\n\nBlumenau\n2024",
+    "ficha_catalografica": "[PÁG. 3]\nFICHA CATALOGRÁFICA DISSERTAÇÃO\n\n Richter, Rosana.\nR536d Desafios para o desenvolvimento do currículo integrado no curso de\nensino médio integrado em técnico em administração no CEDUP – Hermann\nHering / Rosana Richter; orientadora Viviane Grimm. -- Blumenau, 2024.\n 125 p.\n Dissertação (mestrado) – Instituto Federal Catarinense, campus Blumenau,\nMestrado Profissional em Educação Profissional Tecnológica (PROFEPT),\nBlumenau, 2024.\n\n Inclui referências.\n\n1. Educação Profissional e Tecnológica. 2. Currículo Integrado. 3. Ensino\nMédio Profissionalizante. I. Grimm, Viviane. II. Instituto Federal Catarinense.\nMestrado Profissional em Educação Profissional e Tecnológica. III. Título.\n\nCDD: 375\n\nFicha catalográfica elaborada pela bibliotecária\nShyrlei K. Jagielski Benkendorf - CRB 14/662",
+    "sumario": "[PÁG. 17]\nSUMÁRIO\n\n1 INTRODUÇÃO ....................................................................................................... 18\n2 REFERENCIAL TEÓRICO ..................................................................................... 24\n2.1 EDUCAÇÃO PROFISSIONAL E MUNDO DO TRABALHO ............................... 24\n2.2 ENSINO MÉDIO INTEGRADO E CURRÍCULO INTEGRADO ........................... 36\n2.3 POLÍTICA DE ENSINO MÉDIO INTEGRADO NA REDE ESTADUAL DE\nENSINO DE SANTA CATARINA ............................................................................... 44\n3 METODOLOGIA .................................................................................................... 49\n3.1 COLETA E ANÁLISE DE DADOS ...................................................................... 50\n4 RESULTADOS E DISCUSSÃO.............................................................................. 54\n4.1 ORGANIZAÇÃO CURRICULAR DO CURSO TÉCNICO EM ADMINISTRAÇÃO\n(2007 – 2024) ............................................................................................................ 54\n4.2 OS DESAFIOS DO CURRÍCULO INTEGRADO A PARTIR DOS(AS)\nDOCENTES .............................................................................................................. 63\n4.2.1 Perfil dos participantes .................................................................................. 63\n4.2.2 Concepções dos professores sobre o currículo integrado ........................ 64\n5 PRODUTO EDUCACIONAL .................................................................................. 74\n6 CONCLUSÕES ...................................................................................................... 77\nREFERÊNCIAS ......................................................................................................... 79\nAPÊNDICE A - ARTIGOS SELECIONADOS SOBRE CURSOS TÉCNICOS EM\nADMINISTRAÇÃO .................................................................................................... 88\nAPÊNDICE B - QUESTIONÁRIO ............................................................................. 92\nAPÊNDICE C – PARECER CONSUBSTANCIADO DE APROVAÇÃO DO COMITÊ\nDE ÉTICA EM PESQUISA ...................................................................................... 100\nAPÊNDICE D – TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO ......... 105\nAPÊNDICE E – PRODUTO EDUCACIONAL ......................................................... 108\nAPÊNDICE F – QUESTIONÁRIO APLICADO AOS DOCENTES PARA AVALIAÇÃO\nDO INFOGRÁFICO ................................................................................................. 121\n18\n\n1 INTRODUÇÃO\n\nO desenvolvimento do currículo integrado demanda a constante construção\nda relação entre conhecimentos gerais e específicos, sustentada pelos pilares\nfundamentais do trabalho, da ciência e da cultura (Ramos, 2005). No entanto,\nmudanças implementadas a partir da Lei 13.415/2017, que instituiu a Reforma do\nEnsino Médio, tem impactado a oferta de cursos de",
+    "resumo": "[PÁG. 11]\nRESUMO\n\nEsta dissertação, desenvolvida no Mestrado em Educação Profissional e\nTecnológica do Instituto Federal Catarinense – Blumenau (ProfEPT), na linha de\npesquisa Práticas Educativas em EPT e no Macroprojeto Práticas Educativas no\nCurrículo Integrado, tem como objetivo geral analisar os desafios vivenciados pelos\ndocentes no desenvolvimento do currículo integrado no Curso Técnico em\nAdministração do Centro de Educação Profissional Hermann Hering (CEDUPHH). A\npesquisa caracteriza-se como de natureza aplicada e de abordagem qualitativa,\nutilizando métodos de pesquisa documental e de campo. Foram analisadas as\nmatrizes curriculares desde a criação do curso, em 2007 e aplicado um questionário\ncom os docentes do CEDUPHH que atuam no curso. Os resultados indicam o\nreconhecimento da importância da formação integrada e da contextualização dos\nconteúdos, embora os docentes também demonstrem enfrentar desafios\nsignificativos, como a carga horária inadequada para o planejamento pedagógico e a\nfalta de colaboração no desenvolvimento de atividades interdisciplinares. Observou-\nse que embora a maioria dos professores busque a inovação em suas práticas, a\nformação dos docentes e a infraestrutura insuficiente ainda impõem barreiras à\nefetivação do currículo integrado. Com base nos desafios identificados, foi\ndesenvolvido um produto educacional na forma de infográfico que apresenta os\npressupostos, desafios e possibilidades do currículo integrado. O produto foi\naplicado e avaliado por meio de um questionário com docentes. O infográfico\nintitulado \"Currículo Integrado no Ensino Médio Integrado: pressupostos, desafios e\npossibilidades\" foi positivamente avaliado pelos docentes, evidenciando sua eficácia\nem termos de design estético e clareza na apresentação das informações, embora\ntenha sido indicada a necessidade de um aprofundamento temático adicional.\nApesar dos desafios enfrentados durante sua aplicação, o infográfico demonstrou\nser uma ferramenta valiosa para estimular reflexões e práticas interdisciplinares no\nâmbito do Curso Técnico em Administração do CEDUPHH.\n\nPalavras-Chave: Currículo integrado. Ensino médio integrado. Técnico em\nAdministração. Educação Profissional e Tecnológica.",
+    "introducao": "[PÁG. 18]\n18\n\n1 INTRODUÇÃO\n\nO desenvolvimento do currículo integrado demanda a constante construção\nda relação entre conhecimentos gerais e específicos, sustentada pelos pilares\nfundamentais do trabalho, da ciência e da cultura (Ramos, 2005). No entanto,\nmudanças implementadas a partir da Lei 13.415/2017, que instituiu a Reforma do\nEnsino Médio, tem impactado a oferta de cursos de Ensino Médio Integrado à\nEducação Profissional e Tecnológica, agravando os desafios ao desenvolvimento do\ncurrículo integrado (Oliveira, 2023).\nSegundo Possamai e Rodrigues (2022), esta reforma visa preparar mão de\nobra para atender às demandas do capitalismo e seus processos de exploração da\nforça de trabalho. Em outras palavras, ela retrocede ao modelo que separa a\nformação profissional da educação geral, um princípio fundamental do currículo\nintegrado no Ensino Médio Integrado (Ramos, 2014). Com isso, promove-se uma\ntrajetória de estudos fragmentada, supostamente baseada na escolha livre do\nestudante, mas que distorce a própria concepção de itinerário formativo (Lima;\nMercês, 2022).\nA recente Reforma do Ensino Médio demandou a reestruturação dos\ncurrículos das diferentes redes de ensino. No estado de Santa Catarina resultou na\nelaboração do Currículo Base do Território Catarinense e os respectivos Cadernos\nPedagógicos. Como parte desse processo, a Rede Estadual de Ensino lançou, em\n2022, o Caderno 5 – Trilhas de Aprofundamento da Educação Profissional e\nTecnológica (Santa Catarina, 2021). Este documento apresenta dez eixos\ntecnológicos que serviram de base para a elaboração das matrizes curriculares de\n27 cursos distintos, incluindo o curso Técnico em Administração.\nConsiderando a posição profissional da pesquisadora, que atua como\nservidora pública estadual no cargo de Professora – ACT (Admissão de Professor e\nCaráter Temporário) no curso Técnico em Administração no Centro de Educação\nProfissional Hermann Hering (CEDUP), foi possível acompanhar as mudanças\ncurriculares implementadas desde 2016 que envolvem a oferta da matriz curricular\ndo Ensino Médio Integrado. Durante esse percurso, realizou-se a revisão de artigos\nsobre cursos técnicos na área de Administração por meio da consulta ao Portal de\nPeriódicos CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível\nSuperior), em 2022, com o intuito de rastrear os estudos acadêmicos sobre o tema.\n\n[PÁG. 19]\n19\n\nA pesquisa foi orientada pelos termos \"curso técnico em Administração\"\n\"técnico administração\" e \"integrado\", utilizando opções de revisão por pares e sem\nperíodo definido, resultando em um total de 31 registros (Apêndice A). A análise dos\ntítulos e resumos dos artigos revelou uma diversidade temática nos estudos, que\nabordaram questões como prática pedagógica, uso de tecnologias digitais,\negressos, estilos de aprendizagem, metodologia de ensino, formação docente,\ncurrículo, memória e identidade do ensino médio integrado.\nEntretanto, chamou a atenção o fato de apenas um dos artigos tratar\nespecificamente do currículo integrado. O artigo em questão relata uma pesquisa\nque buscou conhecer a concepção dos docentes sobre a integração curricular no\nensino médio integrado à educação profissional e as abordagens de viés\noperacional sobre como realizar a integração. Os achados da pesquisa\ndemonstraram que “a prática da integração curricular ainda encontra muitos\nobstáculos fortemente vinculados às barreiras atitudinais” (Oliveira; Valentim, 2018,\np. 31).\nA formação em Administração desta pesquisadora, aliada à sua experiência\nem um curso Técnico em Administração na modalidade de Ensino Médio Integrado,\njuntamente com a escassez de pesquisas que abordam esse mesmo tema,\ndirecionou sua escolha para o objeto de estudo. A premência desse tipo de\ninvestigação se justifica pelo fato de a integração da educação profissional com o\nensino médio ser uma realidade sobre a qual são necessárias investigações que\ncontribuam para identificar e compreender os desafios que envolvem a integração\ncurricular.\nAna, Nogueira e Brito (2020) mencionam que são diversos os desafios\nrelacionados à implementação do currículo integrado na Educação Profissional e\nTecnológica. Na perspectiva da práxis pedagógica, por exemplo, os autores\nconsideram como sendo o desafio principal a reflexão em torno da efetivação dos\nprincípios preconizados pelo currículo no que se refere aos conceitos, origem e\nefetivação de práticas significativas e coerentes, visando uma formação humana\nintegral.\nOutro desafio enfrentado segundo Ramos (2011), está relacionado à análise\ndas possibilidades da efetivação do currículo integrado de maneira que proporcione\no acesso aos conhecimentos científicos, visando a estruturação e compreensão dos\nprocessos socioprodutivos de maneira crítica. Ferreira e Felzke (2021) apontam\n\n[PÁG. 20]\n20\n\ntambém como desafio a necessidade de uma relação intrínseca entre formação\nprofissional e formação básica, ou seja, a indissociabilidade, não por meio de uma\nformação profissional em detrimento da formação geral, mas sim por meio de uma\nformação profissional que possibilite aos estudantes se apropriarem de\nconhecimentos, integrando-se de forma digna à vida produtiva.\nAdemais, Ramos (2008) elenca como desafio a necessidade em promover um\ncurrículo que preconize o desenvolvimento dos estudantes em todas as direções, a\npartir da compreensão de seu lugar, de suas potencialidades em relação a produção\nde novos conhecimentos, bem como ser capaz de aprender com os conhecimentos\njá produzidos de maneira reflexiva, através da formação omnilateral. A formação\nomnilateral é fundamentada na epistemologia da práxis e busca a superação das\nrelações sociais de produção como fundamento para uma formação crítica. Ela\npropõe oferecer ao trabalhador uma compreensão profunda dos fundamentos\ncientíficos, tecnológicos, sócio-históricos e culturais que sustentam a existência\nhumana.\nComo discutido por Ramos (2008), à formação omnilateral está vinculado ao\nconceito de educação, que visa o desenvolvimento pleno e integral do ser humano,\ncapacitando o trabalhador a satisfazer suas necessidades. Nessa perspectiva, a\nformação omnilateral permite ao indivíduo transitar dialeticamente entre a\nnecessidade e a liberdade, formando um ser produtivo e criativo, autodeterminado\npor sua capacidade de criação, em vez de ser sobre determinado por relações de\nexploração.\nAlém dos desafios já mencionados, Silva (2017) ressalta os desafios em torno\ndo modelo curricular atual do ensino médio e a urgência de revisar a maneira como\no conhecimento escolar é abordado. Para a autora, é essencial ampliar o acesso à\neducação e garantir a qualidade do ensino oferecido:\n\nO Ensino Médio no país necessita sim de uma reformulação, seja com\nrelação à ampliação do acesso com vistas a cumprir a determinação\nconstitucional quanto à obrigatoriedade escolar para a faixa etária dos 15\naos 17 anos, seja quanto ao cumprimento das metas do Plano Nacional de\nEducação, que determina a universalização para essa faixa etária em 85%\naté 2024. No entanto, não se trata apenas de uma questão de quantidade,\n[...] a realidade mostra que é insuficiente uma mudança curricular, haja vista\nas condições de estrutura física e material muitas vezes precária; as\ndificuldades na formação inicial e continuada de professores; a ausência de\numa política permanente de assistência estudantil; a pouca valorização dos\nprofissionais da educação; dentre outros (Silva, 2017, p. 84).\n\n[PÁG. 21]\n21\n\nDessa forma, gerar o acesso equitativo a oportunidades educacionais, através\num currículo que considere o contexto da sociedade, bem como, prever a formação\ndos docentes através de estratégias efetivas para promover a equidade e a inclusão\nem sala de aula. Além disso, Oliveira (2018, p. 100) ressalta os desafios\nrelacionados à integração curricular nos cursos técnicos, destacando que:\n\nA Educação Profissional integrada ao ensino médio foi desmontada em\n1997 pelo Decreto nº 2.208 e, após muita luta, se reergueu 2004 por meio\nDecreto nº 5.154. Em 200",
+    "descricao_produto_na_dissertacao": "[PÁG. 22] pessoal e profissional dos estudantes. Além disso, espera-se que o currículo\nintegrado\nproporcione\nacesso\nequitativo\naos\nconhecimentos\ncientíficos e\ntecnológicos, assegurando que todos os estudantes, independentemente de seu\ncontexto socioeconômico, tenham oportunidades iguais de desenvolvimento\nintelectual e profissional.\nOutra hipótese investigada foi a interdisciplinaridade como estratégia\npedagógica no currículo integrado. Acredita-se que a articulação entre diferentes\náreas de conhecimento contribua para uma aprendizagem mais significativa e\ncontextualizada, preparando os estudantes para os desafios complexos do mercado\nde trabalho atual. A relação intrínseca entre formação profissional e básica também\né uma hipótese relevante a ser explorada. Acredita-se que integrar habilidades\ntécnicas com uma base sólida de conhecimentos gerais fortaleça a formação dos\nestudantes, proporcionando-lhes uma visão omnilateral e preparando-os para se\nadaptarem a diferentes demandas e contextos sociais.\nAlém disso, espera-se que o currículo integrado promova a equidade\neducacional, reduzindo as disparidades regionais e socioeconômicas através de\numa oferta educativa que atenda às necessidades específicas de cada estudante,\nsem discriminação. Por fim, a hipótese de que a aprendizagem por meio da\npesquisa, a relação entre teoria e prática e a contextualização dos conteúdos são\nfundamentais para o sucesso do currículo integrado será explorada.\nEste estudo tem como objetivo geral analisar os desafios enfrentados pelos\ndocentes no desenvolvimento do currículo integrado no curso Técnico de\nAdministração do CEDUPHH. Para tanto, foram delineados os seguintes objetivos\nespecíficos:\na) Mapeara organização curricular do curso de Técnico em Administração do\nCEDUP – Blumenau desde o início de sua oferta (2007 – 2024);\nb) Analisar as concepções de currículo integrado de professores que atuam\nno curso de Técnico em Administração do CEDUP - Blumenau, identificando os\ndesafios para construção de um currículo integrado na educação profissional no\nensino médio;\nc) Construir e avaliar um produto educacional que contribua no\ndesenvolvimento do currículo integrado no Curso Técnico em Administração no\nCEDUP Hermann Hering.\nQuanto à metodologia, a presente pesquisa caracteriza-se como uma\n\n[PÁG. 23] investigação de natureza aplicada com abordagem qualitativa, voltada para o\ndesenvolvimento de um produto educacional. Classificada como pesquisa\nexploratória, ela visa aprofundar a compreensão dos desafios relacionados ao\ncurrículo integrado no Curso Técnico em Administração oferecido pelo Centro de\nEducação Profissional Hermann Hering (CEDUPHH).\nA coleta de dados ocorreu em duas etapas iniciais: na primeira foi realizada\numa pesquisa documental e na segunda a aplicação de um questionário a docentes\nque integram o curso. Na análise documental, as matrizes curriculares do Curso\nTécnico em Administração do CEDUPHH foram analisadas, permitindo identificar as\nmudanças que foram implementadas ao longo do tempo. A aplicação do\nquestionário, com a participação de 19 professores, possibilitou o acesso a\npercepções sobre as percepções e os desafios enfrentados no Ensino Médio\nIntegrado, permitindo uma análise exploratória dos dados pela estatística descritiva\ne análise de conteúdo, conforme indicado por Bardin (2011).\nCom base nos resultados obtidos nesta etapa, foi desenvolvido um produto\neducacional, na forma de infográfico, que aborda os pressupostos, desafios e\nindicação d",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 18,
+        "texto": "O desenvolvimento do currículo integrado demanda a constante construção\nda relação entre conhecimentos gerais e específicos, sustentada pelos pilares\nfundamentais do trabalho, da ciência e da cultura (Ramos, 2005). No entanto,\nmudanças implementadas a partir da Lei 13.415/2017, que instituiu a Reforma do\nEnsino Médio, tem impactado a oferta de cursos de Ensino Médio Integrado à\nEducação Profissional e Tecnológica, agravando os desafios ao desenvolvimento do\ncurrículo integrado (Oliveira, 2023).\nSegundo Possamai e Rodrigues (2022), esta reforma visa preparar mão de\nobra para atender às demandas do capitalismo e seus processos de exploração da\nforça de trabalho. Em outras palavras, ela retrocede ao modelo que separa a\nformação profissional da educação geral, um princípio fundamental do currículo\nintegrado no Ensino Médio Integrado (Ramos, 2014). Com isso, promove-se uma\ntrajetória de estudos fragmentada, supostamente baseada na escolha livre do\nestudante, mas que distorce a própria concepção de itinerário formativo (Lima;\nMercês, 2022).\nA recente Reforma do Ensino Médio demandou a reestruturação dos\ncurrículos das diferentes redes de ensino. No estado de Santa Catarina resultou na\nel",
+        "citacoes_detectadas": [
+          "Ramos, 2005",
+          "Oliveira, 2023",
+          "Ramos, 2014",
+          "Lima;\nMercês, 2022",
+          "Santa Catarina, 2021"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 19,
+        "texto": "A pesquisa foi orientada pelos termos \"curso técnico em Administração\"\n\"técnico administração\" e \"integrado\", utilizando opções de revisão por pares e sem\nperíodo definido, resultando em um total de 31 registros (Apêndice A). A análise dos\ntítulos e resumos dos artigos revelou uma diversidade temática nos estudos, que\nabordaram questões como prática pedagógica, uso de tecnologias digitais,\negressos, estilos de aprendizagem, metodologia de ensino, formação docente,\ncurrículo, memória e identidade do ensino médio integrado.\nEntretanto, chamou a atenção o fato de apenas um dos artigos tratar\nespecificamente do currículo integrado. O artigo em questão relata uma pesquisa\nque buscou conhecer a concepção dos docentes sobre a integração curricular no\nensino médio integrado à educação profissional e as abordagens de viés\noperacional sobre como realizar a integração. Os achados da pesquisa\ndemonstraram que “a prática da integração curricular ainda encontra muitos\nobstáculos fortemente vinculados às barreiras atitudinais” (Oliveira; Valentim, 2018,\np. 31).\nA formação em Administração desta pesquisadora, aliada à sua experiência\nem um curso Técnico em Administração na modalidade de Ensino Méd",
+        "citacoes_detectadas": [
+          "Oliveira; Valentim, 2018,\np. 31"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 20,
+        "texto": "também como desafio a necessidade de uma relação intrínseca entre formação\nprofissional e formação básica, ou seja, a indissociabilidade, não por meio de uma\nformação profissional em detrimento da formação geral, mas sim por meio de uma\nformação profissional que possibilite aos estudantes se apropriarem de\nconhecimentos, integrando-se de forma digna à vida produtiva.\nAdemais, Ramos (2008) elenca como desafio a necessidade em promover um\ncurrículo que preconize o desenvolvimento dos estudantes em todas as direções, a\npartir da compreensão de seu lugar, de suas potencialidades em relação a produção\nde novos conhecimentos, bem como ser capaz de aprender com os conhecimentos\njá produzidos de maneira reflexiva, através da formação omnilateral. A formação\nomnilateral é fundamentada na epistemologia da práxis e busca a superação das\nrelações sociais de produção como fundamento para uma formação crítica. Ela\npropõe oferecer ao trabalhador uma compreensão profunda dos fundamentos\ncientíficos, tecnológicos, sócio-históricos e culturais que sustentam a existência\nhumana.\nComo discutido por Ramos (2008), à formação omnilateral está vinculado ao\nconceito de educação, que visa o desenvolvimento ",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 21,
+        "texto": "A preocupação em identificar e contribuir para minimizar as deficiências no\nensino é relevante para a redução das disparidades regionais e socioeconômicas,\npromovendo maior acessibilidade à educação técnica. Não se trata apenas de\najustar o currículo, mas sim de uma formação que integre trabalho, ciência e cultura.\nDessa forma, reconstituir a totalidade do conhecimento científico através da relação\nentre os conceitos e do diálogo entre as diferentes disciplinas através da\ninterdisciplinaridade.\nE por fim, segundo Wanzeler e Prates (2019), outro desafio do currículo\nintegrado está na aprendizagem através da pesquisa, ou seja, propiciar que os\nestudantes construam perguntas a partir de um tema, promovendo a investigação,\nvisando a elaboração de sentenças e aplicação dos conhecimentos, a partir de\nsituações práticas e contextualizadas.\nFrente a esses desafios e ao contexto que envolve o ensino médio integrado\nà educação profissional, se estabeleceu a seguinte pergunta de pesquisa: Quais são\nos desafios vivenciados pelos docentes no desenvolvimento do currículo integrado\ndo curso Técnico em Administração do Centro de Educação Profissional Hermann\nHering (CEDUPHH)?\nA partir da literatur",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 22,
+        "texto": "pessoal e profissional dos estudantes. Além disso, espera-se que o currículo\nintegrado\nproporcione\nacesso\nequitativo\naos\nconhecimentos\ncientíficos e\ntecnológicos, assegurando que todos os estudantes, independentemente de seu\ncontexto socioeconômico, tenham oportunidades iguais de desenvolvimento\nintelectual e profissional.\nOutra hipótese investigada foi a interdisciplinaridade como estratégia\npedagógica no currículo integrado. Acredita-se que a articulação entre diferentes\náreas de conhecimento contribua para uma aprendizagem mais significativa e\ncontextualizada, preparando os estudantes para os desafios complexos do mercado\nde trabalho atual. A relação intrínseca entre formação profissional e básica também\né uma hipótese relevante a ser explorada. Acredita-se que integrar habilidades\ntécnicas com uma base sólida de conhecimentos gerais fortaleça a formação dos\nestudantes, proporcionando-lhes uma visão omnilateral e preparando-os para se\nadaptarem a diferentes demandas e contextos sociais.\nAlém disso, espera-se que o currículo integrado promova a equidade\neducacional, reduzindo as disparidades regionais e socioeconômicas através de\numa oferta educativa que atenda às necessidades es",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 23,
+        "texto": "investigação de natureza aplicada com abordagem qualitativa, voltada para o\ndesenvolvimento de um produto educacional. Classificada como pesquisa\nexploratória, ela visa aprofundar a compreensão dos desafios relacionados ao\ncurrículo integrado no Curso Técnico em Administração oferecido pelo Centro de\nEducação Profissional Hermann Hering (CEDUPHH).\nA coleta de dados ocorreu em duas etapas iniciais: na primeira foi realizada\numa pesquisa documental e na segunda a aplicação de um questionário a docentes\nque integram o curso. Na análise documental, as matrizes curriculares do Curso\nTécnico em Administração do CEDUPHH foram analisadas, permitindo identificar as\nmudanças que foram implementadas ao longo do tempo. A aplicação do\nquestionário, com a participação de 19 professores, possibilitou o acesso a\npercepções sobre as percepções e os desafios enfrentados no Ensino Médio\nIntegrado, permitindo uma análise exploratória dos dados pela estatística descritiva\ne análise de conteúdo, conforme indicado por Bardin (2011).\nCom base nos resultados obtidos nesta etapa, foi desenvolvido um produto\neducacional, na forma de infográfico, que aborda os pressupostos, desafios e\nindicação de práticas pe",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 24,
+        "texto": "A atenção à educação formal dos trabalhadores surgiu, segundo Costa e\nMachado (2020), com o advento do capitalismo, impulsionada pela necessidade de\ncontrole da cidadania e aumento da produtividade da força de trabalho para elevar\nos lucros. No Brasil, até o século XIX, a educação propedêutica estava acessível\nprincipalmente aos filhos dos grandes proprietários de terra. De acordo com os\nautores, a institucionalização da educação profissional teve um início modesto com o\nestabelecimento do Colégio das Fábricas, em 1809. Outras iniciativas surgiram,\nmarcadas pelo viés assistencialista voltadas para órfãos e crianças desfavorecidas.\nEm 1909, as Escolas de Aprendizes Artífices foram criadas com o objetivo de\npreparar operários para suas profissões.\n Costa e Machado (2020) também afirmam que apesar das mudanças nas leis\nao longo do tempo, a diferenciação entre formação profissional e formação geral\npersistiu sem uma transformação efetiva no cenário social e educacional ao longo do\nséculo XX. Contudo, algumas iniciativas governamentais, assim como teorias\nvoltadas para a prática pedagógica, têm buscado contribuir para mudar esse\ncenário. Serão destacadas, aqui, uma breve incursão sobre ",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 28,
+        "texto": "produtivo. Contudo, sua implementação exigiu uma reflexão crítica sobre a equidade\nno acesso à educação e os impactos da separação entre ensino médio e técnico na\nformação integral dos estudantes.\nO Decreto nº 5.154/2004 (Brasil, 2004) permitiu a oferta de cursos técnicos de\nnível médio de três formas: integrada, concomitante ou subsequente. No entanto, é\nimportante considerar não apenas a forma de oferta, mas também a concepção que\nnorteia o Ensino Médio Integrado (EMI). Essa modalidade foi proposta como\nalternativa ao modelo fragmentado de educação profissional introduzido pelo\nDecreto nº 2.208/1997, que separava o ensino técnico da formação geral, focando\nno atendimento às demandas do mercado de trabalho (Brasil, 1997). Conforme\nRamos (2017), a concepção do EMI vai além da integração formal entre ensino\nmédio e educação profissional. Trata-se de um projeto de formação humana integral,\nque articula trabalho, ciência e cultura. Essa concepção não se limita à junção de\ndisciplinas, mas visa a compreensão crítica das dimensões econômicas, sociais e\nhistóricas da prática social, proporcionando aos estudantes uma visão sistêmica das\nrelações sociais de produção.\nO Decreto nº 2.208/199",
+        "citacoes_detectadas": [
+          "Brasil, 2004",
+          "Brasil, 1997",
+          "Brasil, 2004",
+          "Brasil, 1997"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 29,
+        "texto": "estudantes adquiram competências técnicas e desenvolvam uma compreensão\ncrítica dos processos sociais e históricos que moldam a sociedade. O Documento\nBase para a Educação Profissional Técnica de Nível Médio Integrada ao Ensino\nMédio (Brasil, 2007b), publicado em 2007 apresentou elementos conceituais\nimprescindíveis e uma vontade política de induzir a implantação do Ensino Médio\nIntegrado, comprometida com a formação integral dos estudantes, buscando superar\na dualidade entre formação geral e formação profissional (Moura; Garcia; Ramos,\n2007).\nPossamai e Rodrigues (2022) ressaltam que o Documento Base representou\num esforço significativo para a superação dessa dualidade, promovendo uma\nformação mais contextualizada e significativa. As autoras enfatizam que essa\nintegração é essencial para atender às demandas contemporâneas, preparando os\nestudantes para o mundo do trabalho e para o exercício pleno da cidadania. Assim,\no Documento Base se configurou como um marco importante na busca por uma\neducação que valorizasse a formação integral dos estudantes.\nA Lei nº 11.892, em 2008 (Brasil, 2008b), também representa um marco\nsignificativo na reestruturação da educação profissional no Brasi",
+        "citacoes_detectadas": [
+          "Brasil, 2007b",
+          "Moura; Garcia; Ramos,\n2007",
+          "Brasil, 2008b",
+          "Brasil, 2008b",
+          "Brasil, 2012"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 31,
+        "texto": "Essa iniciativa teve como propósito modernizar o ensino médio, tornando-o\nmais alinhado com as exigências do século XXI, com uma abordagem mais\ncontextualizada e interdisciplinar, fundamental para o desenvolvimento de\ncompetências essenciais para a vida pessoal, acadêmica e profissional dos\nestudantes. No entanto, ela também gerou críticas significativas. Motta e Frigotto\n(2017) apontam que a medida provisória (MP) foi implementada sem um amplo\ndebate democrático com a sociedade civil e os educadores, o que levantou\npreocupações sobre a qualidade e a equidade na educação. Ferreti e Silva (2017)\ndestacam que as mudanças propostas, embora modernizadoras, poderiam reforçar\na visão utilitarista da educação, ao priorizar disciplinas instrumentais em detrimento\nde áreas consideradas essenciais, como Filosofia e Sociologia. Oliveira (2018)\ncomplementa essa análise, ressaltando que a falta de uma formação integral pode\ncomprometer o desenvolvimento pleno dos estudantes, limitando sua formação\ncidadã.\nA Lei nº 13.415/2017 (Brasil, 2017), que instituiu a Reforma do Ensino Médio,\noriginada da Medida Provisória nº 746/2016 e convertida em lei com poucas\nalterações no texto e discussões, tem im",
+        "citacoes_detectadas": [
+          "Brasil, 2017",
+          "Brasil, 1996",
+          "Brasil, 2007a",
+          "Ferretti; Silva, 2017",
+          "Ferretti; Silva,\n2017"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 32,
+        "texto": "Outro aspecto importante é a reafirmação dos artigos 39 e 42 da Lei nº\n9.394/96 (Brasil, 1996), que desobrigam o Estado de custear a educação\nprofissional. Graciano e Gomide (2016) ressaltam que essa lei reafirmou a dualidade\ncurricular, podendo acentuar desigualdades sociais e limitar o acesso a uma\neducação de qualidade para todos os estudantes. Além disso, a autorização para\nque profissionais sem formação pedagógica lecionem disciplinas técnicas levantou\npreocupações sobre a qualidade do ensino e a formação integral dos alunos.\nPortanto, a Lei nº 13.415/2017 (Brasil, 2017), embora buscasse modernizar o ensino\nmédio e promover uma maior flexibilização curricular, demanda uma reflexão crítica\nsobre seus impactos na equidade e na formação completa dos jovens.\nNa sequência, discutimos as Diretrizes Curriculares Nacionais Gerais para a\nEducação Profissional e Tecnológica, estabelecidas pela Resolução CNE/CP nº\n01/2021 (Brasil, 2021). Sua formulação, que não contou com a participação de\neducadores e gestores, suscita preocupações sobre sua adequação e legitimidade\ndesde o princípio. As diretrizes propõem modalidades de cursos técnicos —\nintegrada, concomitante, intercomplementar e sub",
+        "citacoes_detectadas": [
+          "Brasil, 1996",
+          "Brasil, 2017",
+          "Brasil, 2021",
+          "Ramos, 2014",
+          "Brasil, 2023",
+          "Brasil, 2023"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 33,
+        "texto": "frequentemente pressionada a moldar currículos que priorizam a empregabilidade\nem detrimento de uma formação humanista.\nDe forma geral, os marcos legais apontam para uma narrativa marcada por\navanços e retrocessos a educação profissional de nível médio, porém também por\ndesafios persistentes. Desde a criação das escolas de artífices até as reformas mais\nrecentes, cada legislação refletiu não apenas a busca por uma educação mais\nalinhada às necessidades do mercado, mas também as tensões entre inclusão\nsocial, formação técnica e interesses político-econômicos. Ao longo dos anos, as\npolíticas oscilaram entre tentativas de integrar de forma mais efetiva a formação\ngeral e técnica e momentos de retrocesso, como a separação curricular introduzida\npor reformas recentes. A falta de uma visão consistente e democrática na\nformulação de algumas diretrizes, como observado na elaboração das recentes\nresoluções, evidencia desafios persistentes na construção de um sistema\neducacional inclusivo e que prepare os jovens para um futuro complexo. Portanto,\napesar dos avanços, há uma clara necessidade de reflexão.\nA busca por uma educação de qualidade que prepare os estudantes para os\ndesafios do mundo",
+        "citacoes_detectadas": [
+          "Brasil, 2021"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "OLIVEIRA, F. B. Educação profissional na rede estadual de ensino de Santa Catarina: um estudo sobre as implicações da Lei nº 13.415/2017 nos cursos de ensino médio integrado. 2023. 144 f. Dissertação (Mestrado em Educação Profissional e Tecnológica) - Instituto Federal Catarinense, Blumenau, 2023.",
+      "OLIVEIRA, F. Reformas educacionais no Brasil: um estudo das leis orgânicas do ensino. São Paulo: Educação Moderna, 2012. 85",
+      "OLIVEIRA, M. S. Concepções, percepções e experiências de integração curricular nos cursos técnicos de uma instituição federal. 2018. Dissertação (Mestrado em Educação Tecnológica) - Centro Federal de Educação Tecnológica de Minas Gerais, Belo Horizonte, 2018.",
+      "OLIVEIRA, M. S.; VALENTIM, S. S. Integração curricular em um curso técnico em administração: concepções docentes. Trabalho & Educação, v. 27, n. 1, p. 11-34, 2018. Disponível em: https://periodicos.ufmg.br/index.php/trabedu/article/view/9625. Acesso em: 21 ago. 2023.",
+      "RAMOS, M. N. A política de educação profissional no Brasil: a direção do desenvolvimento econômico e social. Educação & Sociedade, v. 28, n. 100, p. 1349-1372, 2007.",
+      "RAMOS, M. N. Concepção do ensino médio integrado. In: FÓRUM EJA, 8., 2008, Belém. Anais.... Belém: Secretaria de Educação do Estado do Pará, 2008. Disponível em: http://forumeja.org.br/go/sites/forumeja.org.br.go/files/concepcao_do_ensino_medio_ integrad o5.pdf. Acesso: 25 nov. 2023.",
+      "RAMOS, M. N. O currículo para o Ensino Médio em suas diferentes modalidades: concepções, propostas e problemas. Educação & Sociedade, v. 32, n. 116, p. 771– 788, 2011. https://doi.org/10.1590/S0101-73302011000300009",
+      "RAMOS, M. N. Possibilidades e desafios na organização do Currículo Integrado. In:",
+      "RAMOS, M. N.; FRIGOTTO, G.; CIAVATTA, M. Ensino Médio Integrado: Concepção e Contradições. 1. ed. São Paulo: Cortez, 2005.",
+      "RAMOS, M. N. Ensino Médio Integrado: da conceituação à operacionalização. Cadernos de Pesquisa em Educação, n. 39, p. 15-15, 2014. Disponível em: https://periodicos.ufes.br/ educacao/article/view/10243. Acesso em: 21 ago. 2024.",
+      "RAMOS, M. N.; FRIGOTTO, G. Medida Provisória 746/2016: a contra-reforma do ensino médio do golpe de estado de 31 de agosto de 2016. Revista HISTEDBR, v. 16, n. 70, p. 30–48, 2017. https://doi.org/10.20396/rho.v16i70.8649207 86",
+      "SANTA CATARINA. Secretaria de Estado da Educação, Ciência e Tecnologia. Proposta curricular de Santa Catarina: estudos temáticos. Florianópolis: IOESC, 2005.",
+      "SANTA CATARINA. Parecer n° 413 CEDB/CEDP - SC, de 11 de dezembro de 2007. Autoriza o funcionamento do Curso de Educação Profissional Técnica de Nível Médio, na Área de Gestão, Com Habilitação em Técnico em Administração, na forma Integrada ao Ensino Médio, no Centro de Educação Profissional Hermann Hering, no município de Blumenau/SC. Florianópolis: Diário Oficial, 2008.",
+      "SANTA CATARINA. Secretaria de Estado da Educação. Caderno de orientações: organização e funcionamento das unidades escolares de Educação Básica e Profissional da rede pública estadual, para os anos 2015/2016. Florianópolis: Secretaria de Estado de Educação, 2014. Disponível em: https://issuu.com/sedsc/docs/caderno_- _orienta____es_dieb_anos_l_4becb7d26a02b9. Acesso em: 25 nov. 2023.",
+      "SANTA CATARINA. Parecer CEDB/CEDP nº 144, de 14 de dezembro de 2015. Atualiza o Plano de curso do Curso Técnico em Nível Médio em Administração e dá outras providências. Florianópolis: Secretaria Estadual de Educação, 2015.",
+      "SANTA CATARINA. Parecer CEDP/CEE/SC nº 134, de 10 de dezembro de 2018. Atualiza o Plano de curso do Curso Técnico em Administração e dá outras providências. Florianópolis: Secretaria Estadual de Educação, 2018.",
+      "SANTA CATARINA. Secretaria de Estado da Educação. Currículo Base do Território Catarinense do Ensino Médio: Caderno 5 – Trilhas de Aprofundamento da Educação Profissional e Tecnológica. Florianópolis, Secretaria de Estado da Educação, 2021. Disponível em: https://www.sed.sc.gov.br/servicos/etapas-e- modalidades-de-ensino/29-modalidade-de-ensino/31310-novo-ensino-medio. Acesso em: 6 jul. 2023.",
+      "SANTA CATARINA. Curso Técnico em Administração – EMIEP. Florianópolis: Secretaria de Estado da Educação, 2023a.",
+      "SANTA CATARINA. Parecer CEDP/CEE/SC nº 76, de 06 de novembro de 2023. Atualiza o Plano de curso do Curso Técnico em Administração e dá outras providências. Florianópolis: Secretaria Estadual de Educação, 2023b.",
+      "SANTA CATARINA. Educação Híbrida: Caderno de Orientações da Educação Híbrida para a Rede Estadual de Ensino de Santa. 1ª ed. Florianópolis: Secretaria de Estado da Educação, 2023c."
+    ]
+  }
+}

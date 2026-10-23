@@ -1,0 +1,225 @@
+{
+  "id": "EPT-0023",
+  "metadados_resolvidos": {
+    "ano": 2025,
+    "autor": "Ana Cláudia de Oliveira",
+    "orientador": "Raquel Cardoso de Faria e Custódio",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP3"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "O ENSINO DE LITERATURA NUMA PERSPECTIVA DECOLONIAL: UM OLHAR A RESPEITO DO ENSINO MÉDIO INTEGRADO DO INSTITUTO FEDERAL CATARINENSE.",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/05/Dissertacao_Ana_Claudia_de_Oliveira.pdf",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Análise do Discurso",
+      "Decolonialidade",
+      "Ensino Médio Integrado",
+      "Literaturas Indígenas e Afro-brasileiras"
+    ],
+    "autores_referenciados": [
+      "Adilson Cesar Araújo",
+      "Ana Margarida Campello",
+      "Angélica Maria Vieira Cruz",
+      "Antonio Candido",
+      "Antônio Carlos Gil",
+      "Bell Hooks",
+      "Bernardo Aguiar",
+      "C. N. N. da Silva",
+      "Carla Akotirene",
+      "Chimamanda Ngozi Adichie",
+      "Eliana Márcia dos Santos Carvalho",
+      "Fabiana Claudia Viana Borges",
+      "Fábio Campos",
+      "Gaudêncio Frigotto",
+      "Graça Graúna",
+      "Ira Shor",
+      "Joaze Bernardino-Costa",
+      "Louis Althusser",
+      "Luís Donisete Benzi Grupioni",
+      "Luiz Silva Cuti",
+      "Marcelo Andrade",
+      "Maria Amélia Dalvi",
+      "Maria Ciavatta",
+      "Marise Nogueira Ramos",
+      "Michael Apple",
+      "Neide Luzia de Rezende",
+      "Nelson Maldonado-Torres",
+      "Paulo Freire",
+      "Raimundo Nonato Ferreira do Nascimento",
+      "Ramón Grosfoguel",
+      "Raymond Aron",
+      "Reinaldo Fleuri",
+      "Renata Lourenço dos Santos",
+      "Renato Almeida de Oliveira",
+      "Rildo Cosson",
+      "Rita Jover-Faleiros",
+      "Tom Bottomore",
+      "Vera Maria Candau",
+      "Walter Correia"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/973177",
+    "titulo_produto": "LITERATURA, EDUCAÇÃO E DECOLONIALIDADE",
+    "titulo_produto_bruto": "LITERATURA, EDUCAÇÃO E DECOLONIALIDADE",
+    "data_publicacao": "2025-05-09",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Oliveira, Ana Cláudia de",
+        "papel": "creator"
+      },
+      {
+        "nome": "Custódio, Raquel Cardoso de Faria e",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/973177",
+        "url": "https://educapes.capes.gov.br/handle/capes/973177"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "LITERATURA, EDUCAÇÃO E DECOLONIALIDADE",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "livro digital"
+    ],
+    "palavras_chave_educapes": [
+      "Ensino de Literatura",
+      "Literatura Afro-brasileira",
+      "Literaturas Indígenas",
+      "Ensino Médio Integrado",
+      "Decolonial",
+      "EPT",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica - Mestrado ProfEPT",
+      "Dissertação"
+    ],
+    "tipo_produto_regex": null,
+    "fonte_tipo_regex": null,
+    "formato_produto_regex": "E-book / Livro Digital",
+    "fonte_formato_regex": "educapes_dc_type"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\n\nANA CLÁUDIA DE OLIVEIRA\n\nO ENSINO DE LITERATURA NUMA PERSPECTIVA DECOLONIAL: UM OLHAR A\nRESPEITO DO ENSINO MÉDIO INTEGRADO DO INSTITUTO FEDERAL\nCATARINENSE\n\nBlumenau\n2025\n\nANA CLÁUDIA DE OLIVEIRA\n\nO ENSINO DE LITERATURA NUMA PERSPECTIVA DECOLONIAL: UM OLHAR A\nRESPEITO DO ENSINO MÉDIO INTEGRADO DO INSTITUTO FEDERAL\nCATARINENSE\n\nDissertação apresentada ao Programa de Pós-\ngraduação\nem\nEducação\nProfissional\ne\nTecnológica, ofertado pelo Campus Blumenau do\nInstituto Federal Catarinense, como parte dos\nrequisitos para a obtenção do título de Mestra em\nEducação Profissional e Tecnológica.\n\nOrientadora: Profa. Dra. Raquel Cardoso de Faria\ne Custódio\n\nBlumenau\n2025",
+    "ficha_catalografica": "[PÁG. 3]\nOliveira, Ana Cláudia de.\nO48e O ensino de literatura numa perspectiva decolonial: um olhar a respeito do\nensino médio integrado do Instituto Federal Catarinense / Ana Cláudia de\nOliveira ; orientadora: Raquel Cardoso de Faria e Custódio. -- Blumenau, 2025.\n 112 p.\n Dissertação (mestrado) – Instituto Federal Catarinense, campus Blumenau,\nMestrado Profissional em Educação Profissional Tecnológica (PROFEPT),\nBlumenau, 2025.\n Inclui referências.\n\n 1. Educação Profissional e Tecnológica. 2. Ensino Médio Integrado.\n3.Literatura Indígena. 4. Literatura Afro-Brasileira. 5. Análise de Discurso.\n6. Decolonialidade. I. Custódio, Raquel Cardoso de Faria e. II. Instituto Federal\nCatarinense. Mestrado Profissional em Educação Profissional e Tecnológica.\nIII. Título.\n\nCDD: 374.013\nFicha catalográfica elaborada pela bibliotecária\n Shyrlei K. Jagielski Benkendorf - CRB 14/662",
+    "sumario": "[PÁG. 13]\nSUMÁRIO\n\nAPRESENTAÇÃO.....................................................................................................14\n1. INTRODUÇÃO.......................................................................................................16\n2. MARCO TEÓRICO ...............................................................................................20\n2.1 O ENSINO DE LITERATURA NUMA PERSPECTIVA DECOLONIAL…...…......20\n2.1.1 Literatura, cânone e ensino……………………………....................................20\n2.1.2 Perspectiva Colonial x Decolonial……....………….......................................32\n2.2 EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA…………………………………37\n2.2.1 Dualidade educacional: EP e EPT no\nBrasil….……………………………………………………………………………..……...42\n2.2.2 O Ensino Médio Integrado dos IF’s e a proposta da formação\nintegral…...………………..........................................................................................47\n2.2.3 O trabalho docente na perspectiva da formação integral………………....44\n3. METODOLOGIA ...................................................................................................53\n4. RESULTADOS E DISCUSSÕES……………………………………………………...58\n4.1 ANÁLISE DOS DADOS…………………………………………………………....….58\n4.1.1 Produto educacional: elaboração, aplicação e\navaliação………………………………………………………………………………..…..70\n5. CONSIDERAÇÕES FINAIS……………………………………………………………78\nREFERÊNCIAS......................................................................................................... 83\nAPÊNDICE A – ROTEIRO DE QUESTIONÁRIO….…….…………………………….93\nAPÊNDICE B - TERMO DE LIVRE CONSENTIMENTO E ESCLARECIDO\n(TCLE)…………………………………………………………………………………….…96\nAPÊNDICE C - TERMO DE COMPROMISSO DE UTILIZAÇÃO DE DADOS\n(TCUD).....................................................................................................................100\nAPÊNDICE D - DESCRIÇÃO TÉCNICA DO PRODUTO EDUCACIONAL……..…101\nAPÊNDICE E - QUESTIONÁRIO DE AVALIAÇÃO DO PRODUTO\nEDUCACIONAL…...................................................................................................103\nANEXO A - TERMO DE ANUÊNCIA DO IFC…………………………………………106\nANEXO B - PARECER CONSUBSTANCIADO DO CEP…………………………....108\n14\n\nAPRESENTAÇÃO\n\nDesde a minha infância, a Literatura se fez presente como uma oportunidade\nde leitura de fruição1, de aprendizado e de inspiração. Mais tarde, na jornada escolar,\nessa paixão se intensificou, sobretudo com a possibilidade de emprestar livros da\nbiblioteca da escola municipal e com a mediação literária realizada pela bibliotecária.\n No entanto, mais do que um passatempo, a Literatura é uma potência do\nimaginário2, através das páginas dos livros somos transportados para lugares\ndistantes, épocas diferentes, contextos diversos, assim com a possibilidade de criar\nnovas perspectivas e novas formas de compreender a complexidade da existência\nhumana.\n\nAssim, seguindo nos estudos, no ano de 2010, ingressei no ensino médio no\nCEDUP Hermann Hering Blumenau. O curso era integrado à educação profissional\nem admini",
+    "resumo": "[PÁG. 10]\nRESUMO\n\nA Literatura desempenha um papel importante na formação dos cidadãos,\ncontribuindo para o desenvolvimento de diversas áreas da vida. No Ensino Médio\nIntegrado, ela está presente no componente curricular de Língua Portuguesa. Dentro\ndesse espaço dos textos literários, para além do cânone, encontra-se a Literatura\nnuma perspectiva decolonial, uma abordagem que valoriza vozes que foram\nhistoricamente marginalizadas, assim como revisita e problematiza obras clássicas.\nNesse sentido, é que se construiu a problemática da pesquisa: compreender o espaço\nda Literatura numa perspectiva decolonial na Educação Profissional e Tecnológica, a\npartir das percepções dos docentes de Língua Portuguesa do Ensino Médio Integrado\ndo Instituto Federal Catarinense. Esta pesquisa pertence ao Programa de Pós-\ngraduação em Educação Profissional e Tecnológica, inserida na linha de Práticas\nEducativas em Educação Profissional e Tecnológica, no macroprojeto 3: Práticas\nEducativas no Curriculo Integrado e possui as seguintes características: natureza\naplicada, com abordagem qualitativa, objetivos exploratórios e descritivos. Para a\ncoleta de dados, foi aplicado um questionário com professores de Língua Portuguesa\ndo Ensino Médio Integrado do Instituto Federal Catarinense. Posteriormente, a análise\ndos dados coletados foi feita com a utilização da Análise de Discurso pecheutiana. Os\nresultados observados foram que os docentes têm uma percepção da Literatura como\nelemento essencial para a formação integral e compreendem a discussão da\nLiteratura numa perspectiva decolonial, assim como as obrigações estipuladas na\nLDB, no entanto, enfrentam dificuldades e resistências ao trabalhar as Literaturas\nindígenas e afro-brasileiras em sala de aula no espaço do EMI. A partir deste cenário\né que se construiu um guia educacional voltado aos docentes de Língua Portuguesa\nda EPT.\nPalavras-chave: Educação Profissional e Tecnológica. Análise do Discurso.\nDecolonialidade. Ensino Médio Integrado. Literaturas Indígenas e Afro-brasileiras",
+    "introducao": "[PÁG. 16]\n16\n\n1. INTRODUÇÃO\n\nA Literatura está presente em todo o curso da educação básica, desde a\neducação infantil até o ensino médio, momento no qual ela ganha mais notoriedade\nno componente curricular de Língua Portuguesa.\n No entanto, apesar de curricular, ela ainda é um espaço menor. Uma vez que,\nnas aulas de Língua Portuguesa do ensino médio, ocorre o aprofundamento dos\nestudos da linguagem. Assim, a disciplina é responsabilizada por ações de ensino\ndirecionadas à produção textual, à leitura, à interpretação dos textos, à gramática, à\nanálise linguística entre outros elementos, e a Literatura, por vezes, acaba ficando\nmarginalizada no entremeio de tantos conteúdos.\nDessa forma, apesar de sua grande importância para a formação crítica dos\nestudantes por ser potência enquanto voz e espaço de representação, ainda há, em\nmuitos casos, uma presença tímida da Literatura em sala de aula.\nAlém de existir um espaço reduzido da Literatura na totalidade curricular,\nquando é estudada, muitas vezes acaba contemplando somente obras canônicas, o\nque deixa à margem variadas narrativas que poderiam e deveriam ser trazidas à cena,\nseja por questões de representação e diversidade, pela contemplação estética e pelo\natendimento à Lei de Diretrizes e Bases da Educação de 1996 (LDB).\nO ensino de Literatura no espaço escolar é subordinado à legislação\neducacional brasileira e, portanto, à LDB, que tornou obrigatório, desde 2008 (Lei\n11.645), a inclusão da história e da cultura afro-brasileira e indígena no ensino\nfundamental e médio de escolas públicas e privadas (Brasil, 1996).\nEm sua atuação como docente da área de linguagens e, em especial, diante\ndas experiências de ensino-aprendizagem de Literatura, a autora da pesquisa sentiu\numa defasagem no que se refere a pensar a Literatura para além do eurocentrismo e\ndo cânone ocidental. Dessa forma, foram realizadas leituras literárias e buscas de\npesquisas científicas com essa temática com a intenção de resgatar autores\nhistoricamente excluídos da sociedade, tal como os povos originários e afro-\nbrasileiros.\nAssim, surgiu a necessidade de pensar a Literatura numa perspectiva\ndecolonial, como parte de uma perspectiva mais ampla de estudos que busca desafiar\nas estruturas de poder e hierarquias estabelecidas pelas práticas coloniais. Para isso,\nconta-se com o apoio de autores, como Quijano (2005), Mignolo (2008) e demais\n\n[PÁG. 17]\n17\n\npesquisadores do grupo Modernidade/Colonialidade. Tais autores entendem a\ndecolonialidade como uma proposta de desobedecer a ótica colonial e criar novas\nformas de conhecimento, identidade e justiça.\nDiante de tal perspectiva, entende-se ser importante considerar as\ninterseccionalidades que estão vinculadas à perspectiva decolonial, tal como raça,\ngênero, classe etc. Segundo Akotirene (2019), a interseccionalidade é um instrumento\nmetodológico crítico para pensar os sistemas de opressão que são interligados, isto\né, as experiências de discriminação não são isoladas e nem uniforme para os\nindivíduos, mas se intercruzam.\nPara exemplificar, Akotirene (2019) fala das vivências das mulheres negras que\nalém de sentirem os impactos de desigualdade de gênero também sofrem violência\npor questões raciais. Esse cenário está intimamente interligado ao capitalismo, pois\ntem como base de funcionamento as desigualdades.\nReconhecemos que essas interseccionalidades dialogam com a perspectiva\ndecolonial, especialmente porque ela busca combater as desigualdades/formas de\nopressão e ambas perspectivas contestam a forma de poder dominante. Logo, a teoria\ndecolonial propõe como posicionamento uma proposta epistemológica que visa\nrevisitar conceitos pré-estabelecidos pela perspectiva da colonialidade, considerando\nsuas devidas interseccionalidades. No entanto, para esta pesquisa, foi necessário\nrealizar-se uma delimitação direcionada aos aspectos vinculados às relações étnico-\nraciais, especialmente tendo em vista o que se prevê na LDB, como já mencionado.\nDiante desse contexto e de forma somada às aulas do ProfEPT, realizadas no\nIFC, Campus Blumenau, percebeu-se que também é necessário pensar o espaço da\nLiteratura, especialmente na perspectiva decolonial, no Ensino Médio Integrado (EMI),\npois, na EPT, prioriza-se a formação integral dos estudantes, ou seja, a formação das\ndiversas dimensões do homem. A partir disso, surge a motivação para a delimitação\nda presente pesquisa: o ensino de Literatura numa perspectiva decolonial no contexto\nda Educação Profissional Tecnológica, especificamente nos campi do IFC, instituição\nna qual a pesquisadora estuda, com enfoque nas percepções dos docentes de Língua\nPortuguesa do IFC.\nPara compreender como o tema é tratado pela academia, ou seja, seu estado\nde conhecimento, foram realizadas buscas com as seguintes palavras-chave:\n“Ensino” de “Literatura”, “Decolonial” e “EPT”, no portal de periódicos da CAPES\n(Coordenação de Aperfeiçoamento de Pessoal de Nível Superior) foram encontrados\n\n[PÁG. 18]\n18\n\ntrês resultados de artigos, porém ao analisar os resumos, se constatou que estes não\npossuem relação direta com a temática da presente pesquisa, na plataforma Scielo\n(Scientific Electronic Library Online) não foram encontrados nenhum resultado.\n Na busca na plataforma Google Acadêmico, com as mesmas palavras-chave:\ncom período limitado de 2021 até 2024, com publicações escritas em língua\nportuguesa, foram encontrados 70 resultados.\nApós uma leitura prévia dos resumos com a intenção de verificar possíveis\nrelações das temáticas com a presente pesquisa, foi possível encontrar pesquisas\nrelacionadas à decolonialidade, à EPT, à Relações ético-raciais, à Literatura, à prática\ndocente, mas não houve resultados referentes ao entrecruzamento dessas temáticas.\nAssim, pôde-se constatar que há poucas pesquisas nessa perspectiva e, quando\nexistem, não são focadas no ensino de Literatura numa perspectiva decolonial, nem\nrelacionadas à formação integral dos jovens, tampouco com a EPT.\nMediante ao exposto, vale destacar que os Institutos Federais (IFs) são\nespaços públicos de educação e de promoção da cultura, criados a partir da Lei nº\n11.892, de 29 de dezembro de 2008 (Brasil, 2008). Entre os seus objetivos, destaca-\nse o da promoção da Educação Profissional e Tecnológica para a formação cidadã\n(Brasil, 2008). Dessa forma, busca-se uma educação que forme o homem e que\ndesenvolva por completo todas as suas potencialidades, ou seja, uma formação\nintegral.\nDesse modo, a partir dos pontos já abordados e considerando os estudos\nrealizados no ProfEPT, surgiu a problemática desta pesquisa: quais são as\npercepções dos docentes de Língua Portuguesa do IFC a respeito da Literatura, numa\nperspectiva decolonial? Para respondê-la, foi necessário realizar a coleta de dados\ncom a aplicação de um questionário online, disponibilizado via Google Forms, aos\ndocentes de Língua Portuguesa do EMI de todos os campi do IFC.\nDestarte, nasce o objetivo geral desta pesquisa: analisar a percepção dos\ndocentes de Língua Portuguesa do IFC a respeito do ensino de Literatura numa\nperspectiva decolonial. E também destacamos os objetivos específicos da pesquisa:\ncompreender a noção de Literatura numa perspectiva decolonial associada à LDB\n(Art. 26-A); entender a constituição do EMI na EPT vinculado a uma perspectiva de\nformação integral; apurar e investigar o ensino da Literatura numa perspectiva\ndecolonial, por meio de aplicação de questionário on-line com docentes (subseção de\nanálise); desenvolver, aplicar e avaliar o produto educacional “Literatura, Educação e\n\n[PÁG. 19]\n19\n\nDecolonialidade” (conforme apêndice D - descrição técnica do produto), no formato\nde guia educacional, conforme demandas identificadas nesta pesquisa.\nA fim de sua execução, o trabalho está organizado em 5 capítulos: no primeiro,\na introdução, apresenta-se a proposta de investigação; no segundo capítulo,\ncontempla-se o marco teórico com todos os conceitos elementares; o terceiro diz\nrespeito à metodologia da pesquisa e aos procedimentos adotados para",
+    "descricao_produto_na_dissertacao": "[PÁG. 18] três resultados de artigos, porém ao analisar os resumos, se constatou que estes não\npossuem relação direta com a temática da presente pesquisa, na plataforma Scielo\n(Scientific Electronic Library Online) não foram encontrados nenhum resultado.\n Na busca na plataforma Google Acadêmico, com as mesmas palavras-chave:\ncom período limitado de 2021 até 2024, com publicações escritas em língua\nportuguesa, foram encontrados 70 resultados.\nApós uma leitura prévia dos resumos com a intenção de verificar possíveis\nrelações das temáticas com a presente pesquisa, foi possível encontrar pesquisas\nrelacionadas à decolonialidade, à EPT, à Relações ético-raciais, à Literatura, à prática\ndocente, mas não houve resultados referentes ao entrecruzamento dessas temáticas.\nAssim, pôde-se constatar que há poucas pesquisas nessa perspectiva e, quando\nexistem, não são focadas no ensino de Literatura numa perspectiva decolonial, nem\nrelacionadas à formação integral dos jovens, tampouco com a EPT.\nMediante ao exposto, vale destacar que os Institutos Federais (IFs) são\nespaços públicos de educação e de promoção da cultura, criados a partir da Lei nº\n11.892, de 29 de dezembro de 2008 (Brasil, 2008). Entre os seus objetivos, destaca-\nse o da promoção da Educação Profissional e Tecnológica para a formação cidadã\n(Brasil, 2008). Dessa forma, busca-se uma educação que forme o homem e que\ndesenvolva por completo todas as suas potencialidades, ou seja, uma formação\nintegral.\nDesse modo, a partir dos pontos já abordados e considerando os estudos\nrealizados no ProfEPT, surgiu a problemática desta pesquisa: quais são as\npercepções dos docentes de Língua Portuguesa do IFC a respeito da Literatura, numa\nperspectiva decolonial? Para respondê-la, foi necessário realizar a coleta de dados\ncom a aplicação de um questionário online, disponibilizado via Google Forms, aos\ndocentes de Língua Portuguesa do EMI de todos os campi do IFC.\nDestarte, nasce o objetivo geral desta pesquisa: analisar a percepção dos\ndocentes de Língua Portuguesa do IFC a respeito do ensino de Literatura numa\nperspectiva decolonial. E também destacamos os objetivos específicos da pesquisa:\ncompreender a noção de Literatura numa perspectiva decolonial associada à LDB\n(Art. 26-A); entender a constituição do EMI na EPT vinculado a uma perspectiva de\nformação integral; apurar e investigar o ensino da Literatura numa perspectiva\ndecolonial, por meio de aplicação de questionário on-line com docentes (subseção de\nanálise); desenvolver, aplicar e avaliar o produto educacional “Literatura, Educação e\n\n[PÁG. 53] A presente pesquisa tem como problemática a seguinte questão: quais são as\npercepções dos docentes de Língua Portuguesa do IFC a respeito da Literatura, numa\nperspectiva decolonial? Para que ela possa ser exequível, faz-se necessário definir\nalguns procedimentos metodológicos a serem utilizados, pois, conforme Gil (2002, p.\n17), “pode-se definir pesquisa como o procedimento racional e sistemático que tem\ncomo objetivo proporcionar respostas aos problemas que são propostos”.\nAssim, num primeiro momento se constituiu a pesquisa bibliográfica, que,\nsegundo Lakatos (2017, p. 123), é a que: “[...] abrange toda a bibliografia já tornada\npública em relação ao tema de estudo” e tem como objetivo “[...] colocar o pesquisador\nem contato direto com tudo o que foi escrito, dito ou filmado sobre determinado\nassunto” (Lakatos, 2017, p. 123). Dessa forma, foram realizadas buscas de artigos\ncientíficos na plataforma C",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 19,
+        "texto": "Decolonialidade” (conforme apêndice D - descrição técnica do produto), no formato\nde guia educacional, conforme demandas identificadas nesta pesquisa.\nA fim de sua execução, o trabalho está organizado em 5 capítulos: no primeiro,\na introdução, apresenta-se a proposta de investigação; no segundo capítulo,\ncontempla-se o marco teórico com todos os conceitos elementares; o terceiro diz\nrespeito à metodologia da pesquisa e aos procedimentos adotados para coleta e\ntratamento dos dados; o quarto apresenta análise dos dados e, por fim, o quinto exibe\nas considerações finais. Assim, esta pesquisa do ProfEPT se associa à linha de\nPráticas Educativas em EPT, pois a sua temática perpassa as relações de ensino-\naprendizagem, inserindo-se no macroprojeto 3: Práticas Educativas no Currículo\nIntegrado.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 21,
+        "texto": "econômico, religioso, de gênero, entre tantos outros. Isso porque o leitor pode se\nimaginar no lugar de um personagem fictício, mas correspondente a vivências reais:\nsentimentos, relações, tal como outros elementos próprios da humanidade. O que se\naproxima da leitura de mundo descrita por Freire (1989), como a capacidade de\ncompreender o contexto e sua realidade pela relação da linguagem com o mundo,\npara além da perspectiva de apenas decodificar, mas com uma postura crítica.\nVale ressaltar que, segundo Zilberman (2021, p. 11), “não é de hoje que a\nliteratura faz parte do currículo escolar”, visto que ela é trabalhada em contextos de\nensino desde as primeiras civilizações. De acordo com Silva (2013, p. 53), “a\nexperiência da humanidade por meio do material literário ganha forma pelo menos\ndesde a antiguidade clássica”, isto é, desde sua origem ela surge como uma\nnecessidade do homem de pensar sobre sua própria condição humana, sofrendo\nalterações ao longo do tempo de acordo com contexto histórico e social, mas\nintimamente relacionada com a escola.\nPara Zilberman (2021), ao longo da história ocidental, a Literatura e a escola\nestavam entrelaçadas por motivos diferentes - religiosos,",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 31,
+        "texto": "sua descendência, trazendo um lado do Brasil que é camuflado”. Ou seja, os escritos\nvão além da questão de personagens, têm temáticas variadas e diversos gêneros\ntextuais, na busca de uma narrativa mais autêntica e menos estereotipada.\nPortanto, é essencial oportunizar aos alunos os contatos com estas Literaturas\npara que se possa refletir sobre a história de seu próprio país, do seu povo, que é\ndiverso nos costumes, na língua, na etnia e na cultural. Logo, pode-se criar uma\nconsciência histórica, promovendo a igualdade racial, considerando que a escola é\nespaço plural, que deve promover a conscientização e a sensibilização dos jovens.\nAssim, conforme problematiza hooks5(2013), apesar de os estudos do\nmulticulturalismo estarem avançando na sociedade, é importante refletir sobre o papel\ndo espaço da sala de aula na formação dos jovens. No entanto, sem esquecer o\ncontexto da escola e a formação de professores: “vamos encarar a realidade: a\nmaioria de nós frequentamos escolas onde o estilo de ensino refletia a noção de uma\núnica norma de pensamento e experiência, a qual fomos encorajados a crer que fosse\nuniversal” (hooks, 2013, p. 51).\n Diante dessa reflexão, pode-se afirmar que o pr",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 35,
+        "texto": "Ou seja, autores e pesquisadores que foram inspirados no movimento,\ncomposto por intelectuais do MC, que tende a se aproximar de uma perspectiva para\nalém do eurocentrismo.\nNesse sentido, segundo Oliveira e Candau (2010, p. 19), “o eurocentrismo não\né a perspectiva cognitiva somente dos europeus, mas torna-se também do conjunto\ndaqueles educados sob sua hegemonia”. Logo, se quisermos pensar práticas\neducativas mais democráticas e que incluam diferentes representações do homem e\nda cultura, para além do eurocentrismo, a perspectiva decolonial é uma opção\nepistemológica.\nNo contexto brasileiro, podemos utilizar um professor como referência na\ndefesa de uma educação libertária, que já na década de 60 fazia um contraponto à\nótica colonial e à pedagogia tradicional: Paulo Freire, com sua obra “Pedagogia do\nOprimido”, defendia uma educação que busque transformações sociais. E também faz\numa denúncia à educação bancária: entendida como uma abordagem educacional,\ndescrita por Freire (2005), na qual os educandos são passivos e, portanto,\nreceptáculos em que o professor (detentor do saber) deposita os conhecimentos para\nque sejam memorizados e reproduzidos sem reflexão.\n Freire (2005) também",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 36,
+        "texto": "Na\nmedida\nque\nos\ninvadidos\nvão\nreconhecendo-se\n“‘inferiores”\nnecessariamente irão reconhecendo a ‘superioridade’ dos invasores. Os\nvalores destes passam a ser a pauta dos invadidos. Quanto mais se acentua\na invasão, alienando o ser da cultura e o ser dos invadidos, mais estes\nquererão parecer com aqueles: andar como aqueles, vestir à sua maneira,\nfalar a seu modo. (Freire, 2005, p.175).",
+        "citacoes_detectadas": [
+          "Freire, 2005, p.175"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 36,
+        "texto": "De modo que, segundo Freire (2005), a cultura popular que representa o “outro”\né inferiorizada e os saberes apagados, esse processo é construído de forma\nintencional, até o momento que o oprimido só se perceba e veja a realidade sob a\nperspectiva do próprio opressor. Logo, a opressão não é um destino, mas algo\nhistoricamente construído e que pode ser mudado, para isso devemos problematizar\na realidade e buscar uma educação libertadora.\nTal reflexão vai ao encontro do pensamento de Saviani (2011, p.48) ao se\nreferir aos saberes arrebatados pela burguesia:",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 36,
+        "texto": "Ou seja, no espaço escolar, no contexto do capitalismo, existe uma apropriação\nou apagamento de alguns saberes, dessa forma é importante ter a consciência desse\nprocesso para poder agir na realidade, buscando perspectivas educacionais que lutem\npela representação da diversidade. Assim a “[...] educação é uma atividade que supõe\numa heterogeneidade real e uma homogeneidade possível; desigualdade no ponto de\npartida e uma igualdade no ponto de chegada”. (Saviani, 1996, p. 82).\nA partir desse contexto, podemos compreender o ensino de Literatura numa\nperspectiva decolonial como uma reflexão que desafia o legado do colonialismo, por\nmeio da Arte em forma de texto literário, em busca de dar voz e vez aos “cânones\nemergentes”, como a Literaturas indígenas e afro-brasileiras.\nConforme Dalvi (2013, p. 80), “[...] os textos literários, pelo modo como utilizam,\nreinventam e potenciam, sob todos os pontos de vista, as línguas, as memórias, as\nexperiências ou vivências socio-histórico-culturais, os povos e as comunidades,\ncooperam na construção de identidades”. À medida que a educação e a Literatura são\naspectos fundamentais de identidade e condição para o desenvolvimento de um povo,",
+        "citacoes_detectadas": [
+          "Saviani, 1996, p. 82"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 38,
+        "texto": "Para Marx (2004), quanto mais afastado do trabalho no seu sentido criador (da\nsua essência), o homem se torna uma mercadoria miserável que produz mais riqueza\npara o capital. Logo, essa relação é desigual e gera uma exploração dos indivíduos,\npois “O trabalhador torna-se tanto mais pobre quanto mais riqueza produz, quanto\nmais sua produção aumenta em poder e em extensão. O trabalhador torna-se uma\nmercadoria tanto mais barata quanto maior o número de bens produz” (Marx, 2004, p.\n159). Nessa lógica, há uma valorização maior das coisas do que do ser humano.\nNesse contexto, de acordo com Marx (2015), os indivíduos não trabalham para\nse autorrealizar, esse fenômeno é descrito como trabalho abstrato, no qual não se\nproduz algo essencial à vida, mas sim algo que se possa extrair a mais-valia,\nentendida como o sobretrabalho não remunerado que é apropriado pelos donos dos\nmeios de produção. Dessa forma, gerando consequências ao trabalhador, que é\nalienado, porque não produz algo para si, nem tem controle sobre o processo de\ntrabalho que lhe é imposto e, por conseguinte, o homem é reduzido a apenas\nreproduzir o sistema, se tornando uma ferramenta de acumulação, sem desenvolver\nsuas habilida",
+        "citacoes_detectadas": [
+          "Marx, 2004, p.\n159"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 39,
+        "texto": "que viviam da pesca, agricultura e coleta. Naquele momento, a divisão do trabalho era\ndiferenciada por gênero: mulheres cuidavam de atividades domésticas e da\nagricultura, e homens, da caça e pesca.\nMais tarde, conforme Manfredi (2017), nas sociedades agrícolas, as mulheres\ncontinuavam com atividades domésticas e agrícolas e os homens trabalhavam com\nartesanato (uso de ferro, pedra e madeira). Entretanto, com o surgimento das\nprimeiras cidades, do crescimento agrícola e do artesanato, ocorre uma nova\ndinâmica de divisão do trabalho, criando novos formatos: com nobre, guerreiro,\nartesão, comerciante, senhor feudal, sacerdote etc.\nNesse contexto, Manfredi (2017) explica que a separação das funções sociais\né feita de acordo com a apropriação dos meios de produção. A consequência é a\norigem das corporações de ofício (com as noções de profissões a serem exercidas) e\na separação do trabalho manual e intelectual.\nSegundo Aron (2008, p. 202), “em outras palavras, a dialética da história é\nconstruída pelo movimento das forças produtivas, que entram em contradição em\ncertas épocas revolucionárias”. Isto é, a história da humanidade é dinâmica, marcada\npor conflitos e com forças produtivas que",
+        "citacoes_detectadas": [
+          "Marx; Engles, 2001, p.66",
+          "Frigotto, 2015"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 40,
+        "texto": "liberdade e fraternidade” divulgados pela burguesia no plano ideológico, na\nmaterialidade, ou seja, no contexto do capitalismo a escola é desigual, pois se\ninstaurou dividindo os sujeitos de acordo com sua classe.\nPodemos inferir que esse processo acompanha a história da educação no\nBrasil, consequentemente, também na Educação Profissional. De acordo com\nCampello (2008), a dualidade estrutural fragmenta também a escola de acordo com a\nclasse social, dividindo os homens em caminhos opostos, seja dos explorados ou dos\nque participam da exploração, tal como a divisão social do trabalho.\n“As classes econômica e politicamente dominantes, através do controle do\nEstado, estruturam e controlam o sistema escolar segundo seus interesses de\nexploração e dominação sobre as classes subalternas\" (Fleuri, 2001, p. 30). Portanto,\nos marginalizados são os trabalhadores no sistema capitalista. Ou seja, a escola\ntambém reforça essa divisão dos sujeitos, pois de acordo com Fleury (2001), ela\nsozinha não possui forças para modificações nas estruturas de poder, o que só\npoderia ser feito com uma reestruturação econômica e política.\nPara Baudelot e Establet (1971 apud Saviani, 2002), a escola não é una,\n",
+        "citacoes_detectadas": [
+          "Fleuri, 2001, p. 30",
+          "Campello, 2008",
+          "Moura, 2007, p. 6"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 41,
+        "texto": "A educação institucionalizada, especialmente nos últimos 150 anos, serviu -\nno seu todo- ao propósito de não só fornecer os conhecimentos e o pessoal\nnecessário à máquina produtiva em expansão do sistema do capital, como\ntambém gerar e transmitir um quadro de valores que legitima os interesses\ndominantes. como se não pudesse haver nenhuma alternativa à gestão da\nsociedade” (2008, p. 35).\nPortanto, conforme Mészáros (2008), a escola é essencial para o capitalismo,\numa vez que ela internaliza certos valores no indivíduo, assegurando a reprodução\ngeral do capital, assim como a conformidade com a situação em que está. Mészáros\n(2008) prossegue e defende que: mesmo que as soluções educacionais sejam\nexpressas por lei e “invertidas” a esse processo, não serão um problema para o capital\ndesde que a lógica que orienta a sociedade permaneça de acordo com o interesse\ndessa classe hegemônica: a burguesia - que, nas palavras de Engels (1847 apud\nBottomore, 1988), é a classe dos grandes detentores dos meios de produção.\nTendo em vista esse papel chave da escola, é importante para o capital\nassegurar a fragmentação dos conhecimentos, dividindo o homem como no trabalho.\nEssa separação é entendida",
+        "citacoes_detectadas": [
+          "Ramos, 2008, p. 3"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 43,
+        "texto": "Isto é, a integração que articule fundamentos importantes para o\ndesenvolvimento de cidadãos na busca de uma perspectiva de formação integral, que\nfoque em todos os sentidos da vida humana.\nDe acordo com Araújo e Silva (2017 p.12), “O projeto de Ensino Médio\nIntegrado da Rede Federal, ainda que incipiente, e com muitos desafios, a serem\nenfrentados, tem sido defendido por alguns pesquisadores da educação como ousado\ne original”. Em outras palavras, na medida em que ele nos possibilita pensar o EMI\ncomo uma resposta a superação da dualidade histórica da educação no Brasil (escola\ndos trabalhadores x escola da elite), dando acesso à educação pública de qualidade\naos jovens. Assim, de acordo com Frigotto, Ciavatta e Ramos (2005, p.45):",
+        "citacoes_detectadas": []
+      }
+    ],
+    "referencias_filtradas": [
+      "CAMPELLO, Ana Margarida. Dualidade educacional. Pereira IB, Lima JCF, organizadores. Dicionário da Educação Profissional em Saúde. Rio de Janeiro:",
+      "FLEURI, Reinaldo, Matias. Educar para quê? Contra o autoritarismo da relação pedagógica na escola. Editora Cortez. 9ª Ed. 2001.",
+      "FREIRE, Paulo e SHOR, Ira. Medo e ousadia. Rio de Janeiro, Paz e Terra, 1986.",
+      "FREIRE, Paulo. A importância do ato de ler: em três artigos que se completam. São Paulo: Autores Associados: Cortez, 1989. 86",
+      "FREIRE, Paulo. Pedagogia da autonomia: saberes necessários à prática educativa. São Paulo: Paz e Terra, 37ª edição, 1996 (coleção leitura).",
+      "FREIRE, Paulo. Pedagogia do oprimido. 44. ed. Rio de Janeiro: Paz e Terra, 2005.",
+      "FRIGOTTO, Gaudêncio. Institutos Federais de Educação, Ciência e Tecnologia. Relação com o ensino médio integrado e o projeto societário de desenvolvimento. Rio de Janeiro: UERJ, LPP, p. 83-112, 2018.",
+      "FRIGOTTO, Gaudêncio et al. Concepções e mudanças no mundo do trabalho e o ensino médio. Ensino médio integrado: concepção e contradições. São Paulo: Cortez, p. 57-82, 2005.",
+      "FRIGOTTO, Gaudêncio. Contexto e sentido ontológico, epistemológico e político da inversão da relação educação e trabalho para trabalho e educação. Revista Contemporânea de Educação, v. 10, n. 20, p. 228-248, 2015.",
+      "FRIGOTTO, Gaudêncio; CIAVATTA, Maria; RAMOS, Marise. Ensino médio integrado: concepção e contradições. São Paulo: Cortez, 2005.",
+      "FRIGOTTO, Gaudêncio. Educação Omnilateral In: SALETE, R.; PEREIRA, I. B.;"
+    ]
+  }
+}

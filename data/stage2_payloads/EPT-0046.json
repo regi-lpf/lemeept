@@ -1,0 +1,184 @@
+{
+  "id": "EPT-0046",
+  "metadados_resolvidos": {
+    "ano": 2024,
+    "autor": "Taira Franciele Skerke",
+    "orientador": "Juliene Marques Bogo",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP3"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "INCLUSÃO NA AVALIAÇÃO DA APRENDIZAGEM: UMA ANÁLISE A PARTIR DA PRÁTICA DOCENTE NOS CURSOS DE ENSINO MÉDIO INTEGRADO À EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA DO IFSC, CAMPUS GASPAR",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/10/Dissertacao-Taira-Franciele-Skerke.pdf",
+    "palavras_chave": [
+      "avaliação da aprendizagem",
+      "Desenho Universal para a Aprendizagem",
+      "ensino médio integrado à educação profissional e tecnológica",
+      "ética do cuidado"
+    ],
+    "autores_referenciados": [
+      "A. P. Mendonça",
+      "Alice Casimiro Lopes",
+      "Antônio Carlos Gil",
+      "Antonio Gramsci",
+      "Bernardete A. Gatti",
+      "Carla Ramos Gonçalves",
+      "Cipriano Carlos Luckesi",
+      "Cladecir Alberto Schenkel",
+      "D. M. Vianna",
+      "Dermeval Saviani",
+      "Eladio Sebastian-Heredero",
+      "Elizabeth Macedo",
+      "Eni Pulcinelli Orlandi",
+      "G. Rôças",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "Geisa Letícia Kempfer Böck",
+      "Ivanise Maria Rizzatti",
+      "J. Sanfelice",
+      "Joelma Guimaraes",
+      "Jussara Maria Lerch Hoffmann",
+      "Karla Garcia Luiz",
+      "Leila Leal",
+      "M. A. Moreira",
+      "M. S. F. Farias",
+      "Maria Ciavatta",
+      "María del Pilar Lucio",
+      "Marise Nogueira Ramos",
+      "Michel Pêcheux",
+      "N. Studart",
+      "Pricila Kohls dos Santos",
+      "Priscila de S. C. P. Leite",
+      "R. Freitas",
+      "Robert K. Yin",
+      "Thais Becker Henriques Silveira"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/778210",
+    "titulo_produto": "Avaliação, DUA e ética do cuidado : um guia sobre como eliminar barreiras para a aprendizagem",
+    "titulo_produto_bruto": "AVALIAÇÃO, DUA E ÉTICA DO CUIDADO NO ENSINO MÉDIO INTEGRADO: UM GUIA SOBRE COMO ELIMINAR BARREIRAS PARA A APRENDIZAGEM",
+    "data_publicacao": "2024-07",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Skerke, Taira F.",
+        "papel": "creator"
+      },
+      {
+        "nome": "Marques, Juliene",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/778210",
+        "url": "https://educapes.capes.gov.br/handle/capes/778210"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Avaliação, DUA e Ética do Cuidado: um guia sobre como eliminar barreiras para a aprendizagem",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "texto"
+    ],
+    "palavras_chave_educapes": [
+      "Avaliação da Aprendizagem",
+      "Desenho Universal para a Aprendizagem",
+      "Ensino Médio Integrado à Educação Profissional e Tecnológica",
+      "Ética do Cuidado",
+      "Programa de Pós-graduação em Educação Profissional e Tecnológica",
+      "Produto Educacional"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Guia",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "Instituto Federal Catarinense\nPrograma de Pós-Graduação em Educação Profissional e Tecnológica\nCampus Blumenau\nTAIRA FRANCIELE SKERKE\nINCLUSÃO NA AVALIAÇÃO DA APRENDIZAGEM: UMA ANÁLISE A PARTIR\nDA PRÁTICA DOCENTE NOS CURSOS DE ENSINO MÉDIO INTEGRADO À\nEDUCAÇÃO PROFISSIONAL E TECNOLÓGICA DO IFSC, CAMPUS GASPAR\nBlumenau/SC\n2024\n\nTAIRA FRANCIELE SKERKE\nINCLUSÃO NA AVALIAÇÃO DA APRENDIZAGEM: UMA ANÁLISE A PARTIR\nDA PRÁTICA DOCENTE NOS CURSOS DE ENSINO MÉDIO INTEGRADO À\nEDUCAÇÃO PROFISSIONAL E TECNOLÓGICA DO IFSC, CAMPUS GASPAR\nDissertação submetida ao Programa de Pós-\ngraduação\nem\nEducação\nProfissional\ne\nTecnológica, do Instituto Federal Catarinense -\nCampus Blumenau para a obtenção do título\nde\nMestra\nem\nEducação\nProfissional\ne\nTecnológica.\nOrientadora: Profª Juliene Marques Bogo, Dra.\nBlumenau/SC\n2024",
+    "ficha_catalografica": "[PÁG. 3]\nS627i Skerke, Taira F.\nInclusão na avaliação da aprendizagem : uma análise a partir da prática\ndocente nos cursos de ensino médio integrado à educação profissional e\ntecnológica do IFSC, Campus Gaspar / Taira F. Skerke; orientadora, Juliene B.\nMarques – Blumenau, 2024.\n82 p. : il.\nDissertação (Mestrado em Educação Profissional e Tecnológica) - Instituto\nFederal de Educação, Ciência e Tecnologia Catarinense, Campus Blumenau,\nPrograma\nde\nPós-graduação\nem\nEducação\nProfissional\ne\nTecnológica,\nBlumenau, 2024.\nAcompanha produto educacional: Avaliação, DUA e ética do cuidado : um\nguia sobre como eliminar barreiras para a aprendizagem: ensino médio\nintegrado. Blumenau, 2024.\n1.\nAvaliação\nda\naprendizagem.\n2.\nDesenho\nUniversal\npara\na\nAprendizagem.\n3. Ensino Médio Integrado à Educação Profissional e\nTecnológica. 4. Ética do cuidado. I. Marques, Juliene B. II. Programa de Pós-\ngraduação em Educação Profissional e Tecnológica. Instituto Federal de\nEducação, Ciência e Tecnologia Catarinense, Campus Blumenau. III. Título.\nCDD 371.9\nFicha catalográfica elaborada por Claudia Kautzmann, CRB 14/1214",
+    "sumario": "[PÁG. 17]\nSUMÁRIO\nAPRESENTAÇÃO.................................................................................................................16\n1. INTRODUÇÃO.................................................................................................................. 18\n1.1 Objetivo Geral........................................................................................................... 20\n1.2 Objetivos Específicos.................................................................................................20\n2. REFERENCIAL TEÓRICO............................................................................................. 22\n2.1 Avaliação da aprendizagem......................................................................................22\n2.2 Marcos Legais sobre a Avaliação da Aprendizagem............................................. 25\n2.3 O desenho universal para a aprendizagem (DUA).................................................29\n2.4 Educação Profissional e Tecnológica e ensino médio integrado.......................... 35\n3. METODOLOGIA...............................................................................................................40\n3.1 A Análise do Discurso de Michel Pêcheux.............................................................. 42\n4. RESULTADOS E DISCUSSÕES......................................................................................45\n4.1 Análise dos dados...................................................................................................... 45\n4.2 Produto Educacional.................................................................................................52\n5. CONSIDERAÇÕES FINAIS.............................................................................................60\nREFERÊNCIAS......................................................................................................................62\nAPÊNDICE A – TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO...........67\nAPÊNDICE B – DESCRIÇÃO TÉCNICA DO PRODUTO EDUCACIONAL...............70\nAPÊNDICE C – QUESTIONÁRIO DE AVALIAÇÃO DO PRODUTO\nEDUCACIONAL....................................................................................................................71\nANEXO A – ANUÊNCIA DO IFSC, CAMPUS GASPAR................................................. 76\nANEXO B - FICHA DE VALIDAÇÃO DA PRODUÇÃO TÉCNICA TECNOLÓGICA\n(PTT) - ProfEPT.....................................................................................................................77\n16\nAPRESENTAÇÃO\nO ensino médio integrado à Educação Profissional e Tecnológica (EPT) é o meu\ncontexto de trabalho e também o contexto da pesquisa que aqui apresentamos.\nEu sou uma mulher branca e neurodivergente, filha única de mãe operária. Licenciada\nem Letras e especialista em Gestão Escolar, já fui professora efetiva de língua portuguesa na\neducação básica, nas prefeituras de Gaspar e Pomerode, e professora admitida em caráter\ntemporário na rede estadual de educação",
+    "resumo": "[PÁG. 12]\nRESUMO\nEsta pesquisa dialogou com professores que atuam nos cursos técnicos integrados ao ensino\nmédio no Campus Gaspar do IFSC sobre as temáticas avaliação da aprendizagem, inclusão e\ndesenho universal para a aprendizagem. Nós perguntamos aos sujeitos-participantes do nosso\nestudo como eles avaliam a aprendizagem dos seus estudantes e, considerando o contexto de\nprodução em que estão inseridos, tínhamos como objetivo analisar a inclusão na avaliação da\naprendizagem a partir da prática docente nos cursos de ensino médio integrado à Educação\nProfissional e Tecnológica do IFSC, Campus Gaspar. Nós selecionamos a avaliação\ndiagnóstica e formativa (Luckesi, 2000; Hoffmann, 2009) como perspectivas teóricas para\ndiscutir a avaliação escolar. E, ao abordar o tema educação inclusiva, exploramos as\npossibilidades do desenho universal para a aprendizagem (Böck, 2019) a partir do modelo\nsocial da deficiência. Este estudo, caracterizado como uma pesquisa de natureza aplicada;\nabordagem qualitativa; com delineamento técnico em estudo de caso; de propósito\nexploratório e descritivo, está vinculado à linha de pesquisa Práticas Educativas em Educação\nProfissional e Tecnológica, macroprojeto 3: Práticas Educativas no Currículo Integrado.\nTambém foi desenvolvido, aplicado e validado um produto educacional estruturado no\nformato de guia sobre a avaliação da aprendizagem a partir das contribuições do DUA,\ndestinado a professores de cursos de ensino médio integrado à Educação Profissional e\nTecnológica. A partir da análise das sequências discursivas que compuseram o corpus desta\npesquisa, percebemos que há uma variedade de perspectivas sobre inclusão nas avaliações da\naprendizagem. Alguns docentes afirmam adaptar suas avaliações para atender necessidades\nespecíficas dos alunos com deficiência, outros reconhecem a necessidade de aprimorar suas\npráticas para promover uma maior inclusão.\nPalavras-chave: avaliação da aprendizagem; Desenho Universal para a Aprendizagem;\nensino médio integrado à educação profissional e tecnológica; ética do cuidado.",
+    "introducao": "[PÁG. 20]\n18\n1. INTRODUÇÃO\nAprender é um direito de todos nós. É a liberdade de aprender, sobre a qual trata a\nConstituição Brasileira que, em seu art. 205, dispõe sobre o acesso de todos os brasileiros à\neducação de qualidade: “a educação, direito de todos e dever do Estado e da família, será\npromovida e incentivada com a colaboração da sociedade, visando ao pleno desenvolvimento\nda pessoa, seu preparo para o exercício da cidadania e sua qualificação para o trabalho”\n(Brasil, 1988, [on-line]).\nNo Brasil, a Lei n. 9394 (Brasil, 1996) estabelece as diretrizes e bases para a educação\nnacional, dentre as quais, destacamos três delas na introdução deste projeto, considerando\nserem princípios norteadores para as reflexões aqui propostas: 1º – igualdade de condições\npara o acesso e permanência na escola; 2º – currículos, métodos, técnicas, recursos educativos\ne organização específicos para atender às necessidades das pessoas com deficiência na escola;\ne, 3º – professores do ensino regular capacitados para a integração desses estudantes nas\nclasses comuns. E, como nas demais modalidades, também o ensino médio integrado à EPT\ndeve ser organizado a partir desses princípios, conforme a Lei de Diretrizes e Bases da\nEducação Nacional (Brasil, 1996).\nEsta pesquisa tem como seu território a educação profissional e tecnológica, o ensino\nmédio integrado. Trata-se pois de um estudo de caso em que dialogamos com professores dos\ncursos técnicos integrados ao ensino médio do IFSC, Campus Gaspar. Nós discutimos\navaliação da aprendizagem, ensino médio integrado e inclusão.\nNeste trabalho, compreendemos que a avaliação da aprendizagem integra o processo\ndidático de ensino-aprendizagem como um de seus elementos constitutivos. E “a avaliação, ao\nlado do planejamento e da execução do ensino constitui um todo delimitado por uma\nconcepção filosófico-política da educação” (Luckesi, 2000a, p. 10). O ato de avaliar é,\nportanto, entendido como um ato de investigar, um ato de produzir conhecimento (Luckesi,\n2000b; Hoffmann, 2009).\nSelecionamos a avaliação diagnóstica, processual e formativa (Luckesi, 2000;\nHoffmann, 2009) como perspectiva teórica para discutir a avaliação da aprendizagem escolar.\nDiagnóstica porque precisam conhecer, alunos e professores, de que ponto partem em relação\nàs competências a serem desenvolvidas – competências aqui compreendidas como resultado\nsubjetivo do processo de aprendizagem (Luckesi, 2000). Processual porque permite\nmonitoramento contínuo e ajuste de estratégias de ensino com base no progresso e nas\nnecessidades dos alunos. E formativa porque acreditamos que promover melhores condições\n\n[PÁG. 21]\n19\nde aprendizagem resultaria em mudanças essenciais das práticas avaliativas e das relações\ncom os estudantes, uma vez que toda observação do professor passa a vir acompanhada de\napoios, tanto intelectuais quanto afetivos, que possibilitam aos alunos superar quaisquer\ndesafios (Hoffmann, 2009).\nDentro do espectro da avaliação da aprendizagem, a pesquisa aqui apresentada reflete\nsobre as diferenças, sobre as múltiplas formas de ser e estar no mundo; sobretudo na escola,\nna EPT integrada ao ensino médio. Por isso, nós exploraremos as contribuições do Desenho\nUniversal para a Aprendizagem (DUA), a partir do Modelo Social da Deficiência, o qual\ncompreende a deficiência como um modo diferente de vida e não menos digna, mas como\nparte do ciclo de vida humano, podendo ocorrer a qualquer momento (Böck, 2019).\nDesde o princípio, é importante esclarecer que o DUA dialoga com os estudos sobre a\ninclusão da pessoa com deficiência, mas não o delimita como único público-alvo de suas\nproposições. O DUA, sobre o qual aprofundaremos adiante no texto, é um conjunto de\nprincípios para o desenvolvimento de currículos que fornece a todos os indivíduos igualdade\nde oportunidades para aprender. Trata-se, pois, de uma proposta que planeja intervenções\nacessíveis aos diferentes modos de participar e aprender e compreende a deficiência como um\nfenômeno social, portanto situam-se suas reflexões a partir do campo teórico do Modelo\nSocial da Deficiência (Böck, 2019).\nAo nosso estudo também está relacionado o conceito de Ética do Cuidado, um\nprincípio que possui intrínseca correlação com a perspectiva de avaliação da aprendizagem\naqui discutida. Assim como uma avaliação centrada no aluno respeita suas peculiaridades e\nprocessos de construção do conhecimento, a Ética do Cuidado nos leva a considerar a\nimportância das relações interpessoais e do bem-estar emocional no ambiente educacional\n(Luiz; Silveira, 2020). Este princípio pode oferecer novas perspectivas sobre como os\nsistemas avaliativos e as práticas pedagógicas podem ser ajustados para não apenas mensurar\nconhecimento de forma objetiva, mas também para cultivar um ambiente de respeito,\ncompreensão e apoio mútuo entre professores e estudantes – componentes vitais para uma\neducação verdadeiramente transformadora.\nDiante do panorama apresentado a respeito tanto da avaliação da aprendizagem quanto\nda perspectiva da inclusão escolar, engendrou-se a seguinte problemática condutora da\npesquisa: como ocorre a inclusão na avaliação da aprendizagem nos cursos de Ensino Médio\nIntegrado à EPT do IFSC, Campus Gaspar? A fim de respondê-la, o recorte de sujeitos\nparticipantes do estudo são 14 docentes que atuam nos cursos técnicos integrados ao ensino\nmédio do Campus Gaspar do IFSC, tanto os da área de formação geral como os docentes das\n\n[PÁG. 22]\n20\náreas técnicas específicas – química e informática. A coleta dos dados foi realizada após a\naprovação do Comitê de Ética em Pesquisa com Seres Humanos do IFC1, bem como com\nanuência do IFSC, Campus Gaspar (Anexo A).\nA partir do problema condutor, estabeleceram-se os objetivos abaixo apresentados.\n1.1 Objetivo Geral\nAnalisar a inclusão na avaliação da aprendizagem a partir da prática docente nos\ncursos de ensino médio integrado à EPT do IFSC, Campus Gaspar.\n1.2 Objetivos Específicos\na) Compreender como os professores de ensino médio integrado à EPT no IFSC Campus\nGaspar avaliam a aprendizagem dos seus estudantes;\nb) entender se os professores contemplam princípios do Desenho Universal para a\nAprendizagem ao selecionar recursos e estratégias para avaliar a aprendizagem dos\nestudantes;\nc) investigar se aspectos relacionados à inclusão das pessoas com deficiência ou que\nenfrentam mais barreiras para a aprendizagem estão presentes no planejamento e\nexecução das atividades de avaliação da aprendizagem;\nd) verificar as dificuldades e desafios enfrentados pelos docentes no planejamento e\nexecução de avaliações da aprendizagem;\ne) elaborar, aplicar e validar um produto educacional no formato de um guia sobre a\navaliação da aprendizagem a partir das contribuições do DUA, destinado a professores\nde cursos de ensino médio integrado à EPT.\nCom base nos objetivos propostos, esta dissertação estrutura-se em seções, começando\npela Apresentação e Introdução, seguidas por uma exploração do Referencial Teórico, a\ndescrição da Metodologia utilizada, a apresentação e análise dos Resultados, culminando nas\nConsiderações Finais.\nRessalta-se que esta pesquisa é realizada por meio do Programa de Pós-graduação em\nEducação Profissional e Tecnológica e, com base em sua proposta, vincula-se à linha de\npesquisa Práticas Educativas em Educação Profissional e Tecnológica, macroprojeto 3:\n1\nParecer consubstanciado do CEP nº 5.291.034.\n\n[PÁG. 23]\n21\nPráticas Educativas no Currículo Integrado.\n\n[PÁG. 24]\n22\n2. REFERENCIAL TEÓRICO\nConsiderando que esta pesquisa discute a interseccionalidade entre os estudos sobre a\navaliação da aprendizagem em sala de aula, Desenho Universal para a Aprendizagem e ensino\nmédio integrado à EPT na rede federal; neste capítulo, apresentaremos estes temas a partir dos\nautores com os quais dialogamos.\n2.1 Avaliação da aprendizagem\nNesta seção discutiremos os princípios teóricos a partir dos quais abordamos a\navaliação da aprendizagem no contexto do ensino médio integrado à EPT.\nO ato de avaliar, segund",
+    "descricao_produto_na_dissertacao": "[PÁG. 22] 20\náreas técnicas específicas – química e informática. A coleta dos dados foi realizada após a\naprovação do Comitê de Ética em Pesquisa com Seres Humanos do IFC1, bem como com\nanuência do IFSC, Campus Gaspar (Anexo A).\nA partir do problema condutor, estabeleceram-se os objetivos abaixo apresentados.\n1.1 Objetivo Geral\nAnalisar a inclusão na avaliação da aprendizagem a partir da prática docente nos\ncursos de ensino médio integrado à EPT do IFSC, Campus Gaspar.\n1.2 Objetivos Específicos\na) Compreender como os professores de ensino médio integrado à EPT no IFSC Campus\nGaspar avaliam a aprendizagem dos seus estudantes;\nb) entender se os professores contemplam princípios do Desenho Universal para a\nAprendizagem ao selecionar recursos e estratégias para avaliar a aprendizagem dos\nestudantes;\nc) investigar se aspectos relacionados à inclusão das pessoas com deficiência ou que\nenfrentam mais barreiras para a aprendizagem estão presentes no planejamento e\nexecução das atividades de avaliação da aprendizagem;\nd) verificar as dificuldades e desafios enfrentados pelos docentes no planejamento e\nexecução de avaliações da aprendizagem;\ne) elaborar, aplicar e validar um produto educacional no formato de um guia sobre a\navaliação da aprendizagem a partir das contribuições do DUA, destinado a professores\nde cursos de ensino médio integrado à EPT.\nCom base nos objetivos propostos, esta dissertação estrutura-se em seções, começando\npela Apresentação e Introdução, seguidas por uma exploração do Referencial Teórico, a\ndescrição da Metodologia utilizada, a apresentação e análise dos Resultados, culminando nas\nConsiderações Finais.\nRessalta-se que esta pesquisa é realizada por meio do Programa de Pós-graduação em\nEducação Profissional e Tecnológica e, com base em sua proposta, vincula-se à linha de\npesquisa Práticas Educativas em Educação Profissional e Tecnológica, macroprojeto 3:\n1\nParecer consubstanciado do CEP nº 5.291.034.\n\n[PÁG. 37] 35\nde processos);\n●\npedir aos estudantes que identifiquem o tipo de retorno ou conselho que\nestão procurando;\n●\nusar modelos que orientem a autorreflexão sobre a qualidade do que foi\nconcluído;\n●\nfornecer modelos diferentes de estratégias de autoavaliação (por exemplo,\ndramatização, revisão de vídeos, avaliação de colegas);\n●\nutilizar listas de verificação para avaliação, matrizes de avaliação (rubricas\nde pontuação) e exemplos de práticas ou trabalhos de estudantes avaliados com\nanotações ou comentários (Sebastian-Heredero, 2020, p. 753, grifo do autor).\nSão essas as diretrizes nas quais nos concentramos ao organizar o Produto Educacional\nno transcorrer desta pesquisa, o qual tinha como objetivo apresentar aos sujeitos participantes\ndeste estudo algumas possibilidades de implementação do DUA em suas práticas educativas,\nsobretudo as avaliativas, tornando-as mais inclusivas ao passar a considerar as diferenças não\nmais como desvio à regra, exceção, mas como parte da diversidade humana.\nA pesquisa de mestrado que aqui se apresenta discute novas possibilidades em relação\nà avaliação da aprendizagem a partir dos princípios e diretrizes do DUA, concentrando-se\nmais especificamente nos estudos e análises que se referem ao seu princípio II, o de\nProporcionar Modos Múltiplos de Ação e Expressão. Considerando-se que o contexto do\nnosso estudo é a EPT e, mais especificamente, o ensino médio integrado à EPT, é dele que\ntrataremos na sequência.\n2.4 Educação Profissional e Tecnológica e ensino médio integrado\nEste estudo debru",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 37,
+        "texto": "35\nde processos);\n●\npedir aos estudantes que identifiquem o tipo de retorno ou conselho que\nestão procurando;\n●\nusar modelos que orientem a autorreflexão sobre a qualidade do que foi\nconcluído;\n●\nfornecer modelos diferentes de estratégias de autoavaliação (por exemplo,\ndramatização, revisão de vídeos, avaliação de colegas);\n●\nutilizar listas de verificação para avaliação, matrizes de avaliação (rubricas\nde pontuação) e exemplos de práticas ou trabalhos de estudantes avaliados com\nanotações ou comentários (Sebastian-Heredero, 2020, p. 753, grifo do autor).\nSão essas as diretrizes nas quais nos concentramos ao organizar o Produto Educacional\nno transcorrer desta pesquisa, o qual tinha como objetivo apresentar aos sujeitos participantes\ndeste estudo algumas possibilidades de implementação do DUA em suas práticas educativas,\nsobretudo as avaliativas, tornando-as mais inclusivas ao passar a considerar as diferenças não\nmais como desvio à regra, exceção, mas como parte da diversidade humana.\nA pesquisa de mestrado que aqui se apresenta discute novas possibilidades em relação\nà avaliação da aprendizagem a partir dos princípios e diretrizes do DUA, concentrando-se\nmais especificamente nos ",
+        "citacoes_detectadas": [
+          "Leal, 2011"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 38,
+        "texto": "36\nem 2008, ocorre a publicação da Lei de Criação dos Institutos Federais (Brasil, 2008). Além\ndos Institutos Federais, Schenkel (2012) destaca a presença do Sistema S – SENAI, SENAC,\nSESCOOP, SENAT, SENAR entre outros – além das redes estaduais e das instituições\nprivadas na composição da oferta de educação profissional no Brasil. Para o autor, a formação\nprofissional ainda carrega profundas marcas e preconceitos herdados do período colonial\nescravagista (Schenkel, 2012).\nEm sua tese, Schenkel (2012, p. 137) conclui que a EPT ainda se reveste de “um\ncaráter operacional e utilitarista, em qualquer de seus três níveis de formação”, a saber: I -\nqualificação profissional, inclusive formação inicial e continuada de trabalhadores, II -\neducação profissional técnica de nível médio e, III - educação profissional tecnológica de\ngraduação e de pós-graduação (Brasil, 2004). Para o autor, nem mesmo os processos de\ntransformação em Centro Federal de Educação Tecnológica (CEFET) e, posteriormente, em\nInstituto Federal, alteraram essa característica.\nFrigotto (2001), por sua vez, afirma que a educação em geral e, particularmente, a\neducação profissional na atualidade, vincula-se a uma perspecti",
+        "citacoes_detectadas": [
+          "Brasil, 2008",
+          "Schenkel, 2012",
+          "Brasil, 2004",
+          "Frigotto, 2001"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 39,
+        "texto": "37\nidentidades autônomas intelectualmente e eticamente, capazes de superar e responder às\ndemandas do mercado, Kuenzer (2002) denomina de \"inclusão excludente\". Assim, as\nestratégias de ensino que constituem-se em modalidades aparentes de inclusão , como classes\nde aceleração, progressão automática, fornecem a exclusão do mundo do trabalho sob a\njustificativa da incompetência do indivíduo, sem a superação da dualidade e submetida aos\ndesejos do mercado.\nTambém Frigoto, Ciavatta e Ramos (2005) afirmam que é preciso lutar pelo ensino\nmédio como educação básica, dentro da concepção de escola unitária e educação politécnica,\npois avanços nesse sentido significariam mudanças estruturais na nossa sociedade. Para esses\nautores, faz-se necessário também lutar para superar a formação profissional como\nadestramento e adaptação às demandas do mercado e do capital.\nNesta pesquisa, o ensino médio integrado à EPT é compreendido como sendo um\nespaço de busca e de luta pelo projeto de escola unitária:\nUma educação unitária pressupõe que todos tenham acesso aos conhecimentos, à\ncultura e às mediações necessárias para trabalhar e para produzir a existência e a\nriqueza social. Uma educação dessa natu",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 40,
+        "texto": "38\nhumanidade que possibilita o contraditório avanço produtivo; e a cultura, que corresponde aos\nvalores éticos e estéticos que orientam as normas de conduta de uma sociedade (Ramos,\n[2008]).\nAinda, segundo a autora (Ramos, [2008]), a indissociabilidade entre educação\nprofissional e educação básica pressupõe compreender que o ensino médio é a etapa da\neducação básica em que a relação entre ciência e práticas produtivas se evidencia; e é a etapa\nbiopsicológica e social de seus estudantes em que ocorre o planejamento e a necessidade de\ninserção no mundo do trabalho, no mundo adulto. Disso decorre o compromisso com a\nnecessidade dos jovens e adultos de terem a formação profissional mediada pelo\nconhecimento.\nMarise Ramos ([2008]) ainda destaca em seu texto que:\n[…] hoje, não discutimos a preparação profissional no ensino médio como uma\npolítica compensatória para aqueles que não teriam acesso ao ensino superior; nem\ncomo uma necessidade da economia brasileira. Lembremos que iniciamos este texto\ndefendendo a necessidade de se desvincular as finalidades do ensino médio do\nmercado de trabalho e colocá-las sobre as necessidades dos sujeitos. Portanto,\ndefendemos a possibilidade do ensino ",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 41,
+        "texto": "39\nligação com o mercado de trabalho e sua origem na formação da classe trabalhadora. Apesar\ndas transformações institucionais, a educação profissional ainda mantém características\noperacionais e utilitaristas, herdadas de períodos anteriores.\nFrigotto (2001), ressalta a necessidade de uma educação profissional emancipadora,\nbaseada na solidariedade e na formação de sujeitos autônomos. A visão de Gramsci sobre a\nimportância do desenvolvimento intelectual de todos reforça a ideia de uma escola que\nofereça acesso ao capital social-cultural. Nesse sentido, o ensino médio integrado à educação\nprofissional é concebido como um espaço de busca por uma escola unitária, onde todos\ntenham acesso ao conhecimento e à cultura.\nRamos ([2008]), destaca a importância da formação omnilateral, da indissociabilidade\nentre educação profissional e educação básica, e da integração de conhecimentos gerais e\nespecíficos no ensino médio integrado. A educação politécnica, nesse contexto, visa capacitar\nos sujeitos para compreender os princípios científico-tecnológicos da produção moderna.\nEm suma, os autores acima referenciados apontam para a necessidade de uma\neducação profissional que vá além do adestrame",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 45,
+        "texto": "43\n(Orlandi, 2005, p. 11).\nAs experiências de interação (troca) com outros sujeitos nos modificam e exercem um\npapel determinante na compreensão e na elaboração de enunciados. Na AD, os interlocutores,\na situação, o contexto histórico-social, ideológico e as condições de produção são\nfundamentais para a compreensão dos efeitos de sentido do texto, e não meros complementos\n(Orlandi, 2012).\nPara interpretação dos sentidos, na AD têm-se a Psicanálise de Lacan, segundo a qual\nmuito do que falamos é inconsciente, pois reproduz-se abundantemente o que antes se ouviu e\nnem se tem consciência disso; além da Filosofia de Foucault e a Lingüística de Saussure,\nquem traz a dificuldade de sistematizarem-se os dados de fala (Pêcheux, 1988).\nO sentido, na Análise do Discurso, não existe em si, mas é determinado pelas posições\nideológicas colocadas em jogo no processo sócio-histórico em que as palavras são produzidas.\nAs palavras mudam de sentido segundo as posições daqueles que as empregam (Orlandi,\n2002). Sempre há no discurso um condicionamento histórico e ideológico e os sujeitos,\nconsiderando-se as posições que ocupam, significam as palavras conforme seus contextos\nA AD, que se serve também d",
+        "citacoes_detectadas": [
+          "Orlandi, 2005, p. 11",
+          "Orlandi, 2012",
+          "Pêcheux, 1988",
+          "Orlandi,\n2002",
+          "Orlandi, 2012",
+          "Orlandi, 2002"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 54,
+        "texto": "52\nculpada quando se faz necessária “alguma atividade diferenciada (normalmente de\nrecuperação, pois não acompanham os demais), com uma exigência mínima, pois há uma\nmentira compactuada de formação. A vida e o mercado de trabalho vai exigir o máximo\ndeles”. Evidencia-se nesta sequência discursiva uma relação de distanciamento em relação ao\nque nos trazem Silveira e Gonçalves (2022, p. 32), segundo as quais o encontro e o convívio,\nentre pessoas com e pessoas sem deficiência é ainda “a única e melhor opção para todas as\npessoas”. Para as autoras, a educação inclusiva ganhou, ao longo de sua trajetória no Brasil,\ncontornos jurídicos sólidos, que a reconhecem, por tudo que ela representa e possibilita, como\na única e melhor opção para o sistema educacional brasileiro.\nÉ relevante ainda destacarmos que a presença das pessoas com deficiência nos mais\nvariados contextos sociais transformam esses espaços, sendo elas também transformadas por\neles. Discutir inclusão pressupõe que questionarmos os pressupostos morais da organização\nsocial em torno do trabalho e da independência - afinal, o mundo do trabalho exige muito de\ntodos nós. O que temos, cada um a seu modo, já não seria o suficiente?",
+        "citacoes_detectadas": []
+      }
+    ],
+    "referencias_filtradas": [
+      "FRIGOTTO, Gaudêncio. Educação e trabalho: bases para debater a Educação Profissional Emancipatória. Perspectiva, Florianópolis, v. 19, n. 1, p. 71-87, 2001. Disponível em: https://periodicos.ufsc.br/index.php/perspectiva/article/view/8463/7770. Acesso em: 30 jul. 2021. 63",
+      "FRIGOTTO, Gaudêncio, CIAVATTA, Maria, RAMOS, Marise. (org.). Ensino médio integrado: concepção e contradições. São Paulo: Cortez, 2005.",
+      "LEAL, Leila. Educação profissional e ensino médio integrado no Brasil: um balanço das conquistas e reivindicações. Revista Poli, Rio de Janeiro, v. 3, n. 15, p. 4-13, 2011. Disponível em: https://www.epsjv.fiocruz.br/sites/default/files/revista_poli_-_15.pdf. Acesso em: 9 jul. 2021.",
+      "ORLANDI, Eni Pulcinelli. Discurso e leitura. 9. ed. São Paulo: Cortez, 2012.",
+      "ORLANDI, Eni Pulcinelli. Michel Pêcheux e a Análise de Discurso. Estudos da Língua(gem), Vitória da Conquista, n.1, p. 9-13, 2005.",
+      "ORLANDI, Eni Pulcinelli. Análise de discurso: princípios & procedimentos. 4. ed. Campinas, SP: Pontes, 2002.",
+      "PÊCHEUX, Michel. Semântica e discurso: uma crítica à afirmação do óbvio. Campinas: Ed. da UNICAMP, 1988.",
+      "SCHENKEL, Cladecir Alberto. Gestão ambiental: perfil profissional e formação em cursos superiores de tecnologia e de bacharelado. 2012. Tese (Doutorado em Ciências Humanas) - Universidade Federal de Uberlândia, Uberlândia, 2012. Disponível em: https://repositorio.ufu.br/handle/123456789/13630. Acesso em: 30 jul. 2021. 66 SEBASTIAN-HEREDERO, Eladio. Diretrizes para o Desenvolvimento Universal para "
+    ]
+  }
+}

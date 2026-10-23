@@ -1,0 +1,183 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0106",
+  "ano": 2020,
+  "autor": "Sandro Marcos Levati",
+  "orientador": "Humberto Luis de Cesaro",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP6",
+  "dissertacao": {
+    "titulo": "O VALOR DE UMA AÇÃO SOCIAL: O CÃO-GUIA",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/Artigo-Final-Sandro-Marcos-Levati-PDF-A.pdf",
+    "resumo": "Ao se pensar em “valor”, logo nos vem à mente sua concepção econômica, baseada\nna ideia de troca de mercadorias, sob as quais os indivíduos que as preferem,\ngeralmente, as associam a um perfeito equivalente monetário. Contudo, por meio do\nmétodo qualitativo, a presente pesquisa observa uma outra forma de valoração, que\nemerge, neste trabalho, por meio da identificação de benefícios que configurariam um\n“valor social”, observados no processo de formação e utilização do cão-guia, treinado\nno Centro de Formação de Treinadores e Instrutores de Cães-Guia, pertencente, por\nsua vez, ao Instituto Federal Catarinense de Camboriú. Ainda, considerando o animal\ncomo tecnologia assistiva e como ação inclusiva para as pessoas com deficiência\nvisual, sendo, simultaneamente, resultado complementar dos processos de formação\nde treinadores e instrutores de cães-guia. O conceito de valor social aqui referido é\naquele que se aproxima do estabelecido no modelo SROI (Social Return on\nInvestiment), onde benefícios alcançados são componentes deste valor por conta do\ninvestimento no projeto que promove tais formações. A pesquisa tende demonstrar à\nsociedade estas vantagens. Elegeu-se para participar da pesquisa, os cegos usuários\nde cães-guia e suas famílias; cegos ainda não usuários de cães-guia; as famílias\nsocializadoras de cães; os servidores que atuam ou atuaram diretamente no projeto\ne, ainda, os estudantes formados no mesmo projeto. No mais, para se alcançar o\nobjetivo geral correspondente à identificação de benefícios componentes do chamado\nvalor social do cão-guia treinado no Centro, desejou-se levantar benefícios diretos e\nindiretos agregados ao processo de sua formação e utilização. Este levantamento foi\npossível por meio de entrevistas realizadas com os envolvidos. Ainda, se recorreu a\npesquisa bibliográfica para que se pudesse alcançar a identificação dos benefícios\ncomponentes de valor social. Ao final, como resultado da pesquisa, além de ser\nconfeccionado este artigo e, ainda, elaborado como produto educacional um áudio\n(podcast) para conscientização da sociedade sobre o tema proposto, foram\nidentificados benefícios diretos e indireto possíveis de compor o valor social. Esta linha\nde pesquisa está vinculada: Organização e Memória de Espaços Pedagógicos na EPT\ne ao Macroprojeto 6 – Organização de Espaços Pedagógicos da EPT.\n\nPalavras-Chave: cão-guia; deficiência visual; Centro de Formação de Treinadores e\nInstrutores de Cães-guia; valor social; SROI.",
+    "palavras_chave": [
+      "Cão-guia",
+      "Deficiência visual",
+      "Centro de Formação de Treinadores e Instrutores de Cães-guia",
+      "Valor social",
+      "SROI"
+    ],
+    "autores_referenciados": [
+      "Alexandre A. B. da Silva",
+      "Ana Cristina Cypriano Pereira",
+      "Ana Paula Pagliosa Bastos",
+      "Anderson dos Santos Romualdo",
+      "Andréia Maria de Carvalho Maia",
+      "Ângela Maria Scalabrin Coutinho",
+      "Anita Brumer",
+      "Antonilma Santos de Almeida Castro",
+      "Antonio Jose Lopes Alves",
+      "Barbara Santos",
+      "Bertrand Binoche",
+      "Branca Nunes",
+      "Carmen Irene Correia de Oliveira",
+      "Charles C. Mueller",
+      "Cláudio Torres",
+      "Cleberson Luiz Santos de Paula",
+      "Deonir de Toni",
+      "Dermeval Saviani",
+      "Dulcéria Tartuci",
+      "Elaine Conte",
+      "Eliezer Moreira Pacheco",
+      "Eva Maria Lakatos",
+      "Fernando Dias de Avila-Pires",
+      "Francisco Reis Junior",
+      "Gaudêncio Frigotto",
+      "Gilberto de Lima Guimaraes",
+      "Graciela Fagundes Rodrigues",
+      "Humberto Luis de Cesaro",
+      "Hyndara Freitas",
+      "Jairo Simião Dornelas",
+      "Jorge Ávila de Lima",
+      "José Afonso Mazzon",
+      "José Arthur Giannotti",
+      "José Carlos Köche",
+      "Kátia Soares Coutinho",
+      "Levy Christiano Dias Ramos",
+      "Líbia Gomes Monteiro",
+      "Ligia de Oliveira Viana",
+      "Lilian Campagnin Luiz",
+      "Liliana Maria Passerino",
+      "Luciana Pacheco Marques",
+      "Luciana Pizzani",
+      "Maraluce Maria Custódio",
+      "Márcia Santos de Souza",
+      "Marcos José da Silveira Mazzotta",
+      "Maria Eloísa Famá D'Antino",
+      "Maria Nivalda de Carvalho-Freitas",
+      "Maria Regina Cazzaniga Maciel",
+      "Mariana Simões Ferraz do Amaral Fregonesi",
+      "Marina de Andrade Marconi",
+      "Marli André",
+      "Mauricio Perin da Rosa",
+      "Menga Lüdke",
+      "Miryam Bonadiu Pelosi",
+      "Otoniel Idis Niccolini",
+      "Pedro Augusto Rodrigues Contreiras",
+      "Rafael Lucian",
+      "Rita Bersch",
+      "Rui Pedro Mira",
+      "Sandro Marcos Levati",
+      "Tatiana Schor",
+      "Uwe Flick",
+      "Vítor Neves",
+      "Wanessa Ferreira Borges"
+    ],
+    "base_epistemologica": {
+      "valor": "Materialismo Histórico-Dialético",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explora valor social como produção histórica, alinhando-se ao materialismo histórico-dialético. Citam-se teorias de Marx sobre valor-trabalho.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 18,
+          "trecho": "O cão-guia é um animal treinado, que apresenta como finalidade, guiar cegos. Ou, melhor dizendo, é um animal que após um determinado tempo de treinamento é levado a desenvolver certas aptidões",
+          "referencia_correspondente": "GIANNOTTI, 2010"
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 28,
+          "trecho": "O trabalho se constitui em fator objetivo na criação de valor para uma dada mercadoria. Ou seja, as horas de trabalho dedicadas à produção de mercadorias definem seu valor",
+          "referencia_correspondente": "GIANNOTTI, 2010"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "O valor de uma ação social: o cão-guia",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Podcast",
+    "link": "http://educapes.capes.gov.br/handle/capes/603617",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "gestores_coordenadores",
+      "comunidade_externa"
+    ],
+    "nivel_aplicacao": "Educação Profissional e Tecnológica",
+    "palavras_chave": [
+      "Cão-guia",
+      "Deficiência visual",
+      "Valor Social",
+      "Programa de Pós=Graduação em Educação Profissional e Tecnológica"
+    ],
+    "data_publicacao": "2021-10-05",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Levati, Sandro Marcos",
+        "papel": "creator"
+      },
+      {
+        "nome": "Cesaro, Humberto Luis de",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/603617",
+        "url": "http://educapes.capes.gov.br/handle/capes/603617"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://anchor.fm/sandro-levati",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "O valor de uma ação social: o cão-guia",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "Podcast – O VALOR DE UMA AÇÃO SOCIAL: O CÃO-GUIA",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "áudio"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0106 2020 sandro marcos levati humberto luis de cesaro ifc blumenau lp2 mp6 o valor de uma acao social o cao guia ao se pensar em valor logo nos vem a mente sua concepcao economica baseada na ideia de troca de mercadorias sob as quais os individuos que as preferem geralmente as associam a um perfeito equivalente monetario contudo por meio do metodo qualitativo a presente pesquisa observa uma outra forma de valoracao que emerge neste trabalho por meio da identificacao de beneficios que configurariam um valor social observados no processo de formacao e utilizacao do cao guia treinado no centro de formacao de treinadores e instrutores de caes guia pertencente por sua vez ao instituto federal catarinense de camboriu ainda considerando o animal como tecnologia assistiva e como acao inclusiva para as pessoas com deficiencia visual sendo simultaneamente resultado complementar dos processos de formacao de treinadores e instrutores de caes guia o conceito de valor social aqui referido e aquele que se aproxima do estabelecido no modelo sroi social return on investiment onde beneficios alcancados sao componentes deste valor por conta do investimento no projeto que promove tais formacoes a pesquisa tende demonstrar a sociedade estas vantagens elegeu se para participar da pesquisa os cegos usuarios de caes guia e suas familias cegos ainda nao usuarios de caes guia as familias socializadoras de caes os servidores que atuam ou atuaram diretamente no projeto e ainda os estudantes formados no mesmo projeto no mais para se alcancar o objetivo geral correspondente a identificacao de beneficios componentes do chamado valor social do cao guia treinado no centro desejou se levantar beneficios diretos e indiretos agregados ao processo de sua formacao e utilizacao este levantamento foi possivel por meio de entrevistas realizadas com os envolvidos ainda se recorreu a pesquisa bibliografica para que se pudesse alcancar a identificacao dos beneficios componentes de valor social ao final como resultado da pesquisa alem de ser confeccionado este artigo e ainda elaborado como produto educacional um audio podcast para conscientizacao da sociedade sobre o tema proposto foram identificados beneficios diretos e indireto possiveis de compor o valor social esta linha de pesquisa esta vinculada organizacao e memoria de espacos pedagogicos na ept e ao macroprojeto 6 organizacao de espacos pedagogicos da ept palavras chave cao guia deficiencia visual centro de formacao de treinadores e instrutores de caes guia valor social sroi materialismo historico dialetico o valor de uma acao social o cao guia material didatico instrucional podcast educacao profissional e tecnologica cao guia deficiencia visual centro de formacao de treinadores e instrutores de caes guia valor social sroi programa de pos graduacao em educacao profissional e tecnologica alexandre a b da silva ana cristina cypriano pereira ana paula pagliosa bastos anderson dos santos romualdo andreia maria de carvalho maia angela maria scalabrin coutinho anita brumer antonilma santos de almeida castro antonio jose lopes alves barbara santos bertrand binoche branca nunes carmen irene correia de oliveira charles c mueller claudio torres cleberson luiz santos de paula deonir de toni dermeval saviani dulceria tartuci elaine conte eliezer moreira pacheco eva maria lakatos fernando dias de avila pires francisco reis junior gaudencio frigotto gilberto de lima guimaraes graciela fagundes rodrigues humberto luis de cesaro hyndara freitas jairo simiao dornelas jorge avila de lima jose afonso mazzon jose arthur giannotti jose carlos koche katia soares coutinho levy christiano dias ramos libia gomes monteiro ligia de oliveira viana lilian campagnin luiz liliana maria passerino luciana pacheco marques luciana pizzani maraluce maria custodio marcia santos de souza marcos jose da silveira mazzotta maria eloisa fama d antino maria nivalda de carvalho freitas maria regina cazzaniga maciel mariana simoes ferraz do amaral fregonesi marina de andrade marconi marli andre mauricio perin da rosa menga ludke miryam bonadiu pelosi otoniel idis niccolini pedro augusto rodrigues contreiras rafael lucian rita bersch rui pedro mira sandro marcos levati tatiana schor uwe flick vitor neves wanessa ferreira borges",
+    "termos_unificados": [
+      "Cão-guia",
+      "Deficiência visual",
+      "Centro de Formação de Treinadores e Instrutores de Cães-guia",
+      "Valor social",
+      "SROI",
+      "Programa de Pós=Graduação em Educação Profissional e Tecnológica"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

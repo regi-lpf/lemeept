@@ -1,0 +1,142 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0045",
+  "ano": 2024,
+  "autor": "Hermano Roepke",
+  "orientador": "Eder Aparecido de Carvalho",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP1",
+  "dissertacao": {
+    "titulo": "GAMIFICAÇÃO NA APRENDIZAGEM INDUSTRIAL: CONTRIBUIÇÕES PARA OS CURSOS DA ÁREA DA TECNOLOGIA DA INFORMAÇÃO NO SENAI TIMBÓ",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/10/Dissertacao-Hermano.pdf",
+    "resumo": "A pesquisa proposta, da linha de práticas educativas na educação profissional e\ntecnológica do macroprojeto 1 - Propostas metodológicas e recursos didáticos em\nespaços formais e não formais de ensino na EPT, envolve a aplicação e análise de\natividades gamificadas. Quanto à natureza trata-se de pesquisa aplicada, pois busca\npropor intervenção nos espaços de ensino e aprendizagem. O método utilizado foi da\npesquisa-ação, pois sua abordagem qualitativa tem um caráter exploratório de suma\nimportância. A análise foi por meio de questionários na plataforma Google Forms e\npor observações durante a aplicação das atividades gamificadas. Os dados obtidos\nforam analisados por meio de análise estatística descritiva a fim de compreender as\ncontribuições da gamificação para o processo de aprendizagem dos estudantes da\naprendizagem industrial dos cursos da área da tecnologia da informação no SENAI\nTimbó em 2023. O produto educacional desenvolvido foi um curso de formação\npresencial para desenvolver atividades gamificadas utilizando as plataformas de\ngamificação online: Kahoot, Quizlet e Wordwall com os docentes da unidade do SENAI\nde Timbó e três vídeos ensinando a criar atividades gamificadas nessas plataformas.\nOs resultados sugerem que o uso de atividades gamificadas como ferramenta\neducacional traz vantagens para o processo de aprendizagem, incluindo o aumento\ndo engajamento e do esforço dos estudantes.\n\nPalavras-Chave: Gamificação; Metodologia de ensino ativa; Atividade gamificada;\nSENAI; Aprendizagem industrial;",
+    "palavras_chave": [
+      "Gamificação",
+      "Metodologia de ensino ativa",
+      "Atividade gamificada",
+      "SENAI",
+      "Aprendizagem industrial"
+    ],
+    "autores_referenciados": [
+      "A. K. F. Nunes",
+      "Antônio Carlos Gil",
+      "C. A. D. Castro",
+      "C. V. Giordano",
+      "Cladecir Alberto Schenkel",
+      "Dermeval Saviani",
+      "E. G. Nemer",
+      "E. J. Cohen",
+      "E. S. J. Rodrigues",
+      "E. Z. Ferreira",
+      "F. A. N. Simões",
+      "F. Alves",
+      "F. L. Carvalho",
+      "F. S. C. Pimentel",
+      "Jovana Ritter Antunes",
+      "Juliana Favretto",
+      "K. M. Kapp",
+      "L. M. S. Alves",
+      "L. Miranda",
+      "M. A. E. Matos",
+      "M. L. G. Massi",
+      "M. Pischetola",
+      "Michel Jean Marie Thiollent",
+      "P. J. Fiuza",
+      "R. L. Aoki",
+      "R. R. Lemos",
+      "Reginaldo Leandro Plácido",
+      "V. B. D. Sales Júnior"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": true,
+      "justificativa": "A pesquisa cita Saviani (2015) sobre educação como prática social e transformação humana, alinhando-se à Pedagogia Histórico-Crítica. A referência é explícita na introdução e no referencial teórico.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 18,
+          "trecho": "A educação se encaixa no trabalho não material, que pode ser dividido em duas modalidades... (Saviani, 2015)",
+          "referencia_correspondente": "SAVIANI, D. Sobre a natureza e especificidade da educação. Germinal: Marxismo e Educação em Debate, Brasília, v. 7, n. 1, p. 286–293, 2015."
+        },
+        {
+          "secao": "Introdução",
+          "pagina": 19,
+          "trecho": "Educação profissional é a forma de transformar 'os homens em homens' por meio de trabalho não material... (Saviani, 2015)",
+          "referencia_correspondente": "SAVIANI, D. Sobre a natureza e especificidade da educação. Germinal: Marxismo e Educação em Debate, Brasília, v. 7, n. 1, p. 286–293, 2015."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Capacitação e Vídeos: ensinando a criar atividades gamificadas",
+    "tipo": "curso_oficina",
+    "formato": "Curso",
+    "link": "https://educapes.capes.gov.br/handle/capes/778432",
+    "publico_alvo": [
+      "docentes_professores",
+      "tecnicos_profissionais_educacao"
+    ],
+    "nivel_aplicacao": "Educação Profissional e Tecnológica",
+    "palavras_chave": [
+      "Atividades Aamificadas; Jogos; Educação; Produto Educacional",
+      "Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT)",
+      "Produto Educacional"
+    ],
+    "data_publicacao": "2024-04-26",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense - IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Roepke, Hermano",
+        "papel": "creator"
+      },
+      {
+        "nome": "Carvalho, Eder Aparecido de",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/778432",
+        "url": "https://educapes.capes.gov.br/handle/capes/778432"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "PRODUTO EDUCACIONAL",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "CURSO DE FORMAÇÃO PRESENCIAL PARA DESENVOLVER ATIVIDADES GAMIFICADAS COM DOCENTES DO SENAI TIMBÓ E TRÊS VÍDEOS ENSINANDO A CRIAR ATIVIDADES NAS PLATAFORMAS DE GAMIFICAÇÃO ONLINE: KAHOOT!, QUIZLET E WORDWALL",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "aula digital"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0045 2024 hermano roepke eder aparecido de carvalho ifc blumenau lp1 mp1 gamificacao na aprendizagem industrial contribuicoes para os cursos da area da tecnologia da informacao no senai timbo a pesquisa proposta da linha de praticas educativas na educacao profissional e tecnologica do macroprojeto 1 propostas metodologicas e recursos didaticos em espacos formais e nao formais de ensino na ept envolve a aplicacao e analise de atividades gamificadas quanto a natureza trata se de pesquisa aplicada pois busca propor intervencao nos espacos de ensino e aprendizagem o metodo utilizado foi da pesquisa acao pois sua abordagem qualitativa tem um carater exploratorio de suma importancia a analise foi por meio de questionarios na plataforma google forms e por observacoes durante a aplicacao das atividades gamificadas os dados obtidos foram analisados por meio de analise estatistica descritiva a fim de compreender as contribuicoes da gamificacao para o processo de aprendizagem dos estudantes da aprendizagem industrial dos cursos da area da tecnologia da informacao no senai timbo em 2023 o produto educacional desenvolvido foi um curso de formacao presencial para desenvolver atividades gamificadas utilizando as plataformas de gamificacao online kahoot quizlet e wordwall com os docentes da unidade do senai de timbo e tres videos ensinando a criar atividades gamificadas nessas plataformas os resultados sugerem que o uso de atividades gamificadas como ferramenta educacional traz vantagens para o processo de aprendizagem incluindo o aumento do engajamento e do esforco dos estudantes palavras chave gamificacao metodologia de ensino ativa atividade gamificada senai aprendizagem industrial pedagogia historico critica capacitacao e videos ensinando a criar atividades gamificadas curso oficina curso educacao profissional e tecnologica gamificacao metodologia de ensino ativa atividade gamificada senai aprendizagem industrial atividades aamificadas jogos educacao produto educacional mestrado profissional em educacao profissional e tecnologica profept produto educacional a k f nunes antonio carlos gil c a d castro c v giordano cladecir alberto schenkel dermeval saviani e g nemer e j cohen e s j rodrigues e z ferreira f a n simoes f alves f l carvalho f s c pimentel jovana ritter antunes juliana favretto k m kapp l m s alves l miranda m a e matos m l g massi m pischetola michel jean marie thiollent p j fiuza r l aoki r r lemos reginaldo leandro placido v b d sales junior",
+    "termos_unificados": [
+      "Gamificação",
+      "Metodologia de ensino ativa",
+      "Atividade gamificada",
+      "SENAI",
+      "Aprendizagem industrial",
+      "Atividades Aamificadas; Jogos; Educação; Produto Educacional",
+      "Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT)",
+      "Produto Educacional"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

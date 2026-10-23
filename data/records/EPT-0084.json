@@ -1,0 +1,150 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0084",
+  "ano": 2020,
+  "autor": "Glauber Pereira de Souza",
+  "orientador": "Bruno Nunes Batista",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP5",
+  "dissertacao": {
+    "titulo": "LEITURA E COMPREENSÃO TEXTUAL: TESSITURA DE PROPOSTAS PEDAGÓGICAS PARA O ENSINO MÉDIO INTEGRADO",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/VERSAO-FINAL-DISSERTACAO-E-PRODUTO-EDUCACIONAL-GLAUBER.pdf",
+    "resumo": "A dualidade estrutural da educação básica brasileira caracterizou ao longo da\nhistória um modelo de educação profissional e tecnológica centrado\nna\naprendizagem de processos operacionais necessários à execução do trabalho, em\ndetrimento de uma formação humanística geral que possibilitasse ao sujeito um\nentendimento crítico da sociedade humana. Junto a isso, constata-se a existência de\numa quantidade de sujeitos escolarizados que, embora saibam ler e escrever, não\npossuem um desenvolvimento de leitura suficiente que lhes proporcione produzir\nsentidos a partir dos textos lidos. Se dentro de uma sociedade grafocêntrica a leitura\né condição exigida para uma participação mais efetiva nas práticas sociais,\ndesenvolvê-la no âmbito da educação profissional e tecnológica se torna imperativo,\nno movimento de superação da dualidade estrutural. Assim, visando estipular\npráticas pedagógicas que contribuam para melhorar a capacidade de compreensão\ntextual dos alunos, elaborou-se a presente pesquisa, de caráter qualitativo e\nbaseada na metodologia da pesquisa-ação, em que se construiu uma abordagem\ndidática de trabalho com textos focado na análise de aspectos de constituição da\ntextualidade, incorporada à ideia de caminhada interpretativa proposta por Geraldi\n(1993). O trabalho foi realizado por meio de intervenções planejadas junto a um\ngrupo de alunos do 1º ano do curso Técnico em Química Integrado, do Instituto\nFederal Catarinense – campus Brusque – durante 10 encontros pedagógicos. A\npartir das discussões promovidas com os sujeitos participantes e da análise de\nquestionários, ao longo da pesquisa foram gerados dados que permitiram\ndepreender a necessidade de uma prática constante de atividades textuais nas\naulas de Língua Portuguesa, para que se amplie entre os discentes a habilidade de\nler e compreender textos. Dessa constatação, criou-se um produto educacional no\nformato de caderno didático-pedagógico dirigido a professores do ensino médio\nintegrado, com apontamentos que ressaltam aspectos considerados relevantes na\nformulação de práticas pedagógicas voltadas ao desenvolvimento da compreensão\ntextual.\n\nPalavras-Chave: Compreensão textual. Ensino de Língua Portuguesa. Caderno\ndidático-pedagógico. Educação profissional e tecnológica.",
+    "palavras_chave": [
+      "Compreensão textual",
+      "Ensino de Língua Portuguesa",
+      "Caderno didático-pedagógico",
+      "Educação profissional e tecnológica"
+    ],
+    "autores_referenciados": [
+      "A. Manguel",
+      "Acácia Zeneida Kuenzer",
+      "Agnaldo Martino",
+      "Ana María Kaufman",
+      "Angela Kleiman",
+      "Antonio Chizzotti",
+      "Bernard Schneuwly",
+      "Claudia Riolfi",
+      "David Tripp",
+      "E. T. Silva",
+      "Francisco Jucier Luz Sampaio Filho",
+      "Gaudêncio Frigotto",
+      "Ingedore Grunfeld Villaça Koch",
+      "Irandé Antunes",
+      "J. Foucambert",
+      "J. W. Geraldi",
+      "João Wanderlei Geraldi",
+      "João Wanderley Geraldi",
+      "Joaquim Dolz",
+      "Leonor Lopes Fávero",
+      "Luiz Antônio Marcuschi",
+      "M. A. Bezerra",
+      "M. A. Silva",
+      "M. N. G. Fonseca",
+      "Maria Aparecida Pauliukonis",
+      "Maria Ciavatta",
+      "María Elena Rodríguez",
+      "Maria Victoria de Mesquita Benevides Soares",
+      "Marisa Lajolo",
+      "Marise Nogueira Ramos",
+      "Michel Jean Marie Thiollent",
+      "Mikhail Bakhtin",
+      "Pedro Demo",
+      "R. M. L. Araújo",
+      "Roxane Rojo",
+      "S. Jurado",
+      "Vanda Maria Elias"
+    ],
+    "base_epistemologica": {
+      "valor": "Teoria Histórico-Cultural / Sociointeracionismo",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explora a interação social e a construção de significados via texto, alinhando-se à teoria de Bakhtin e Geraldi. Citas diretas em referências filtradas reforçam essa base.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 18,
+          "trecho": "O ensino de Língua Portuguesa não deve ser restrito à linguagem, mas feito a partir da linguagem.",
+          "referencia_correspondente": "GERALDI, 1993"
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 21,
+          "trecho": "No gênero a palavra ganha certa expressão típica",
+          "referencia_correspondente": "BAKHTIN, 2017"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Compreensão textual no ensino médio integrado: sugestões para o desenvolvimento de atividades",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Caderno Pedagógico",
+    "link": "https://educapes.capes.gov.br/handle/capes/598410",
+    "publico_alvo": [
+      "docentes_professores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Leitura",
+      "Textualidade",
+      "ProfEPT",
+      "Dissertação"
+    ],
+    "data_publicacao": "2020-04",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Souza, Glauber",
+        "papel": "creator"
+      },
+      {
+        "nome": "Batista, Bruno",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/598410",
+        "url": "https://educapes.capes.gov.br/handle/capes/598410"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Caderno Didático-Pedagógico",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "Caderno Didático-Pedagógico – COMPREENSÃO TEXTUAL NO ENSINO MÉDIO INTEGRADO: SUGESTÕES PARA O DESENVOLVIMENTO DE ATIVIDADES",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "livro digital"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0084 2020 glauber pereira de souza bruno nunes batista ifc blumenau lp2 mp5 leitura e compreensao textual tessitura de propostas pedagogicas para o ensino medio integrado a dualidade estrutural da educacao basica brasileira caracterizou ao longo da historia um modelo de educacao profissional e tecnologica centrado na aprendizagem de processos operacionais necessarios a execucao do trabalho em detrimento de uma formacao humanistica geral que possibilitasse ao sujeito um entendimento critico da sociedade humana junto a isso constata se a existencia de uma quantidade de sujeitos escolarizados que embora saibam ler e escrever nao possuem um desenvolvimento de leitura suficiente que lhes proporcione produzir sentidos a partir dos textos lidos se dentro de uma sociedade grafocentrica a leitura e condicao exigida para uma participacao mais efetiva nas praticas sociais desenvolve la no ambito da educacao profissional e tecnologica se torna imperativo no movimento de superacao da dualidade estrutural assim visando estipular praticas pedagogicas que contribuam para melhorar a capacidade de compreensao textual dos alunos elaborou se a presente pesquisa de carater qualitativo e baseada na metodologia da pesquisa acao em que se construiu uma abordagem didatica de trabalho com textos focado na analise de aspectos de constituicao da textualidade incorporada a ideia de caminhada interpretativa proposta por geraldi 1993 o trabalho foi realizado por meio de intervencoes planejadas junto a um grupo de alunos do 1o ano do curso tecnico em quimica integrado do instituto federal catarinense campus brusque durante 10 encontros pedagogicos a partir das discussoes promovidas com os sujeitos participantes e da analise de questionarios ao longo da pesquisa foram gerados dados que permitiram depreender a necessidade de uma pratica constante de atividades textuais nas aulas de lingua portuguesa para que se amplie entre os discentes a habilidade de ler e compreender textos dessa constatacao criou se um produto educacional no formato de caderno didatico pedagogico dirigido a professores do ensino medio integrado com apontamentos que ressaltam aspectos considerados relevantes na formulacao de praticas pedagogicas voltadas ao desenvolvimento da compreensao textual palavras chave compreensao textual ensino de lingua portuguesa caderno didatico pedagogico educacao profissional e tecnologica teoria historico cultural sociointeracionismo compreensao textual no ensino medio integrado sugestoes para o desenvolvimento de atividades material didatico instrucional caderno pedagogico ensino medio integrado compreensao textual ensino de lingua portuguesa caderno didatico pedagogico educacao profissional e tecnologica leitura textualidade profept dissertacao a manguel acacia zeneida kuenzer agnaldo martino ana maria kaufman angela kleiman antonio chizzotti bernard schneuwly claudia riolfi david tripp e t silva francisco jucier luz sampaio filho gaudencio frigotto ingedore grunfeld villaca koch irande antunes j foucambert j w geraldi joao wanderlei geraldi joao wanderley geraldi joaquim dolz leonor lopes favero luiz antonio marcuschi m a bezerra m a silva m n g fonseca maria aparecida pauliukonis maria ciavatta maria elena rodriguez maria victoria de mesquita benevides soares marisa lajolo marise nogueira ramos michel jean marie thiollent mikhail bakhtin pedro demo r m l araujo roxane rojo s jurado vanda maria elias",
+    "termos_unificados": [
+      "Compreensão textual",
+      "Ensino de Língua Portuguesa",
+      "Caderno didático-pedagógico",
+      "Educação profissional e tecnológica",
+      "Leitura",
+      "Textualidade",
+      "ProfEPT",
+      "Dissertação"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

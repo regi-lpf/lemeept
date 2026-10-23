@@ -1,0 +1,188 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0022",
+  "ano": 2025,
+  "autor": "Simone Elisa Mai",
+  "orientador": "Sara Nunes",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP4",
+  "dissertacao": {
+    "titulo": "INSTITUTO FEDERAL CATARINENSE CAMPUS ARAQUARI E A EXTENSÃO: UMA ANÁLISE NA PERSPECTIVA DA AÇÃO DIALÓGICA",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/05/DISSERTACAO_SIMONE_ELISA_MAI.pdf",
+    "resumo": "A presente pesquisa teve como objetivo compreender como se dão as relações dialógicas no\nfazer extensionista e se estão alinhadas aos arranjos produtivos sociais locais e culturais locais\ntendo como base os projetos de extensão do Campus Araquari do Instituto Federal de\nEducação, Ciência e Tecnologia Catarinense (IFC) realizados nos anos de 2022 e 2023. Para\ntal, realizou-se um embasamento teórico abarcando as categorias de História da Educação\nProfissional e Tecnológica, Os 65 anos do Campus Araquari, Da Extensão Universitária à\nExtensão Tecnológica no Brasil e os Documentos que norteiam a Extensão no IFC. Trata-se\nde uma pesquisa mista com abordagens/métodos qualitativos e quantitativos, de natureza\naplicada, cujos procedimentos envolveram o levantamento bibliográfico, pesquisa documental\ne legal. Inicialmente, foram identificados e analisados documentos relacionados aos projetos\nde extensão no IFC Campus Araquari. Foram levantados 21 projetos com editais internos do\ncampus, com concessão de bolsa e sem concessão de bolsa. Com base nesta realidade,\nincluímos, nos caminhos do método, a Análise de Conteúdo para analisar os 21 projetos e\nestabelecer quantitativamente graus de relacionamento entre os projetos e as categorias\ntemáticas de análise. O resultado desta análise culminou em cinco projetos que seguiram para\na etapa de entrevista semiestruturada. A pesquisa envolveu a realização de 16 entrevistas com\na comunidade interna/externa. Com base nos sujeitos participantes da pesquisa foi\ndesenvolvido um Produto Educacional em formato de vídeo, intitulado: “A Extensão que\ndialoga”.\nA base teórica abrangeu diversos autores, destacando-se: Cichaczewski (2022,\n2023), Cichaczewski e Castro 2020, Cunha (2005), Frigotto (2018), Frigotto; Ciavatta e\nRamos (2010), Junior Raitani (2010), Manfredi (2002), Octaviano (2010), Pacheco (2012),\nRamos (2014), Sobral (2015) e Vieira e Souza Junior (2016), no campo da Educação\nProfissional e Tecnológica. No que diz respeito à história do IFC Campus Araquari foram\nconsideradas as contribuições dos autores: Cardoso (2013), Castro e Costa (2022),\nCristofolini et. al. (2009), Güttschow (2018), Oliveira (2013), Pacheco (2015) e Raitani Júnior\n(2018). Para compreender a História da Extensão no Brasil e também a Extensão Tecnológica\nforam utilizados os autores Botomé (1996), CONIF (2013), Foligno et al., (2021), Messina\nGomez et al., (2019), Christofoletti e Serafim (2020), FORPROEX (1987), FORPROEXT\n(2013), Freire (1983), Incrocci e Andrade (2018); Nogueira (2000) e Thiollent; Santos e\nImperatore ( 2018). Os resultados permitem compreender que a instituição está percorrendo o\ncaminho com vistas a construir uma identidade extensionista em que a extensão, o ensino e a\npesquisa se constituam enquanto relação dialógica conectada com as realidades locais. Este\ntrabalho está inserido na linha de pesquisa Organização e Memórias de Espaços Pedagógicos\nna Educação Profissional e Tecnológica (EPT), e foi conduzido na perspectiva do\nmacroprojeto 4, que diz respeito à história e memórias no contexto da EPT.\nPalavras-Chave: Educação Profissional e Tecnológica. Extensão. Dialogicidade.",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Extensão",
+      "Dialogicidade"
+    ],
+    "autores_referenciados": [
+      "A. A. D. Raitani Júnior",
+      "A. de L. Palombini",
+      "A. de S. Junior",
+      "A. Kochhann",
+      "A. Z. Foligno",
+      "Alboni Marisa Dudeque Pianovski Vieira",
+      "Ana Sara Castaman",
+      "Antônio Carlos Gil",
+      "C. Castro",
+      "C. Leitão",
+      "C. Octaviano",
+      "D. E. C. Cardoso",
+      "D. G. Cunha",
+      "D. P. Martinelli",
+      "Dante Henrique Moura",
+      "Denise Tolfo Silveira",
+      "Dermeval Saviani",
+      "E. C. Cristofoletti",
+      "E. Jezine",
+      "Eliezer Moreira Pacheco",
+      "Eva Maria Lakatos",
+      "F. C. Castro",
+      "F. F. Streppel",
+      "F. L. Silva",
+      "F. Oliveira",
+      "Fábio José Rauen",
+      "Francisco José Montorio Sobral",
+      "G. G. Güttschow",
+      "G. P. Rosso",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "H. Ribeiro",
+      "I. C. Fontenele",
+      "I. R. Pino",
+      "J. A. Paula",
+      "J. A. Pocera",
+      "J. P. Oliveira",
+      "João Carlos Cichaczewski",
+      "John Ward Creswell",
+      "Josimar de Aparecido Vieira",
+      "L. M. de M. C. Incrocci",
+      "Laurence Bardin",
+      "Lucia Mara de Lima Padilha",
+      "Luiz Antônio Cunha",
+      "M. A. Marconi",
+      "M. Arroyo",
+      "M. D. P. Nogueira",
+      "M. G. Dalla Corte",
+      "M. P. Serafim",
+      "M. R. Silva",
+      "M. S. M. Serrano",
+      "Maria Ciavatta",
+      "Maria Margarida Machado",
+      "Marise Nogueira Ramos",
+      "Michel Jean Marie Thiollent",
+      "Moacir Gadotti",
+      "Morena Gomes Marques",
+      "N. J. Cristofolini",
+      "N. Prazer",
+      "P. J. S. C. Cruz",
+      "P. M. Goulart",
+      "P. S. Botomé",
+      "Paulo Freire",
+      "R. B. F. Dornelles",
+      "R. G. Silva",
+      "R. M. Monzani",
+      "R. S. Araújo",
+      "S. da R. Messina Gomez",
+      "S. Imperatore",
+      "S. R. M. dos Santos",
+      "S. R. Oliveira",
+      "T. L. Abreu",
+      "Tatiana Engel Gerhardt",
+      "Thiago de Faria e Silva",
+      "Vick L. Clark",
+      "Xênia de Castro Barbosa"
+    ],
+    "base_epistemologica": {
+      "valor": "Educação Libertadora / Freireana",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explicita a influência de Paulo Freire em debates sobre diálogo e emancipação, com citações diretas de sua obra.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 19,
+          "trecho": "O conhecimento científico, acadêmico dialoga com o saber da sociedade, da comunidade, estabelecendo trocas e reconhecendo o fato de que ambos contribuem, são favorecidos e se enriquecem mutuamente",
+          "referencia_correspondente": "Fontenele, 2023, p. 6"
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 34,
+          "trecho": "A prática da extensão na perspectiva dialógica e emancipadora é fruto das reflexões e discussões acerca da importância de uma relação de reciprocidade na troca de saberes",
+          "referencia_correspondente": "Freire, 1983"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "INSTITUTO FEDERAL CATARINENSE CAMPUS ARAQUARI E A EXTENSÃO: UMA ANÁLISE NA PERSPECTIVA DA AÇÃO DIALÓGICA",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Vídeo / Audiovisual",
+    "link": "https://educapes.capes.gov.br/handle/capes/984023",
+    "publico_alvo": [
+      "gestores_coordenadores",
+      "comunidade_externa",
+      "tecnicos_profissionais_educacao"
+    ],
+    "nivel_aplicacao": "Educação Profissional e Tecnológica",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica. Extensão. Dialogicidade",
+      "Mestrado em educação profissional e tecnológica",
+      "Elaboraçaõ de pesquisa/ dissertação"
+    ],
+    "data_publicacao": "2025-05-23",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "MAI, Simone Elisa",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/984023",
+        "url": "https://educapes.capes.gov.br/handle/capes/984023"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://www.youtube.com/watch?v=BAdCX99_k1k",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "A extensão que dialoga",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "EXTENSÃO: QUE DIALOGA",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "apresentação"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0022 2025 simone elisa mai sara nunes ifc blumenau lp2 mp4 instituto federal catarinense campus araquari e a extensao uma analise na perspectiva da acao dialogica a presente pesquisa teve como objetivo compreender como se dao as relacoes dialogicas no fazer extensionista e se estao alinhadas aos arranjos produtivos sociais locais e culturais locais tendo como base os projetos de extensao do campus araquari do instituto federal de educacao ciencia e tecnologia catarinense ifc realizados nos anos de 2022 e 2023 para tal realizou se um embasamento teorico abarcando as categorias de historia da educacao profissional e tecnologica os 65 anos do campus araquari da extensao universitaria a extensao tecnologica no brasil e os documentos que norteiam a extensao no ifc trata se de uma pesquisa mista com abordagens metodos qualitativos e quantitativos de natureza aplicada cujos procedimentos envolveram o levantamento bibliografico pesquisa documental e legal inicialmente foram identificados e analisados documentos relacionados aos projetos de extensao no ifc campus araquari foram levantados 21 projetos com editais internos do campus com concessao de bolsa e sem concessao de bolsa com base nesta realidade incluimos nos caminhos do metodo a analise de conteudo para analisar os 21 projetos e estabelecer quantitativamente graus de relacionamento entre os projetos e as categorias tematicas de analise o resultado desta analise culminou em cinco projetos que seguiram para a etapa de entrevista semiestruturada a pesquisa envolveu a realizacao de 16 entrevistas com a comunidade interna externa com base nos sujeitos participantes da pesquisa foi desenvolvido um produto educacional em formato de video intitulado a extensao que dialoga a base teorica abrangeu diversos autores destacando se cichaczewski 2022 2023 cichaczewski e castro 2020 cunha 2005 frigotto 2018 frigotto ciavatta e ramos 2010 junior raitani 2010 manfredi 2002 octaviano 2010 pacheco 2012 ramos 2014 sobral 2015 e vieira e souza junior 2016 no campo da educacao profissional e tecnologica no que diz respeito a historia do ifc campus araquari foram consideradas as contribuicoes dos autores cardoso 2013 castro e costa 2022 cristofolini et al 2009 guttschow 2018 oliveira 2013 pacheco 2015 e raitani junior 2018 para compreender a historia da extensao no brasil e tambem a extensao tecnologica foram utilizados os autores botome 1996 conif 2013 foligno et al 2021 messina gomez et al 2019 christofoletti e serafim 2020 forproex 1987 forproext 2013 freire 1983 incrocci e andrade 2018 nogueira 2000 e thiollent santos e imperatore 2018 os resultados permitem compreender que a instituicao esta percorrendo o caminho com vistas a construir uma identidade extensionista em que a extensao o ensino e a pesquisa se constituam enquanto relacao dialogica conectada com as realidades locais este trabalho esta inserido na linha de pesquisa organizacao e memorias de espacos pedagogicos na educacao profissional e tecnologica ept e foi conduzido na perspectiva do macroprojeto 4 que diz respeito a historia e memorias no contexto da ept palavras chave educacao profissional e tecnologica extensao dialogicidade educacao libertadora freireana instituto federal catarinense campus araquari e a extensao uma analise na perspectiva da acao dialogica material didatico instrucional video audiovisual educacao profissional e tecnologica educacao profissional e tecnologica extensao dialogicidade educacao profissional e tecnologica extensao dialogicidade mestrado em educacao profissional e tecnologica elaboracao de pesquisa dissertacao a a d raitani junior a de l palombini a de s junior a kochhann a z foligno alboni marisa dudeque pianovski vieira ana sara castaman antonio carlos gil c castro c leitao c octaviano d e c cardoso d g cunha d p martinelli dante henrique moura denise tolfo silveira dermeval saviani e c cristofoletti e jezine eliezer moreira pacheco eva maria lakatos f c castro f f streppel f l silva f oliveira fabio jose rauen francisco jose montorio sobral g g guttschow g p rosso gabriel kaplun gaudencio frigotto h ribeiro i c fontenele i r pino j a paula j a pocera j p oliveira joao carlos cichaczewski john ward creswell josimar de aparecido vieira l m de m c incrocci laurence bardin lucia mara de lima padilha luiz antonio cunha m a marconi m arroyo m d p nogueira m g dalla corte m p serafim m r silva m s m serrano maria ciavatta maria margarida machado marise nogueira ramos michel jean marie thiollent moacir gadotti morena gomes marques n j cristofolini n prazer p j s c cruz p m goulart p s botome paulo freire r b f dornelles r g silva r m monzani r s araujo s da r messina gomez s imperatore s r m dos santos s r oliveira t l abreu tatiana engel gerhardt thiago de faria e silva vick l clark xenia de castro barbosa",
+    "termos_unificados": [
+      "Educação Profissional e Tecnológica",
+      "Extensão",
+      "Dialogicidade",
+      "Educação Profissional e Tecnológica. Extensão. Dialogicidade",
+      "Mestrado em educação profissional e tecnológica",
+      "Elaboraçaõ de pesquisa/ dissertação"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

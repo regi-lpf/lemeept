@@ -1,0 +1,160 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0107",
+  "ano": 2020,
+  "autor": "Shyrlei Karyna Jagielski Benkendorf",
+  "orientador": "Reginaldo Leandro Plácido",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP4",
+  "dissertacao": {
+    "titulo": "TECENDO A HISTÓRIA DO INSTITUTO FEDERAL CATARINENSE, CAMPUS CONCÓRDIA (1965-1975): HISTÓRIAS DE (IN)DISCIPLINA",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/ARTIGO-FINAL-SHYRLEI-BENKENDORF.pdf",
+    "resumo": "A construção da narrativa da história institucional escolar do Instituto Federal\nCatarinense (IFC) Campus Concórdia é objetivo principal desta pesquisa, que é feita\npelo olhar da (in)disciplina, com o recorte temporal dos anos de 1965 a 1975. A\npesquisa, do ponto de vista metodológico, é de abordagem qualitativa e utiliza-se da\nmesoanálise e da análise de discurso. A partir dos dados pesquisados, entende-se\nque o internato na instituição pesquisada proporcionava uma intensa convivência e a\nvigilância de todas as ações, e as regras estabelecidas tornavam o ambiente rígido,\nestimulando o anseio por atos que se desviavam das normas impostas. O produto\neducacional desta pesquisa é o site Memorial da (In)disciplina do IFC campus\nConcórdia, que, além de contribuir para a memória e a história da instituição\npesquisada, visa a ser um instrumento de auxílio ao ensino para os estudantes do\nEnsino Médio Integrado.\n\nPalavras-Chave: Educação profissional e tecnológica; Cultura escolar; Indisciplina\nescolar; Escolas agrícolas; Internato.",
+    "palavras_chave": [
+      "Educação profissional e tecnológica",
+      "Cultura escolar",
+      "Indisciplina escolar",
+      "Escolas agrícolas",
+      "Internato"
+    ],
+    "autores_referenciados": [
+      "A. Veiga-Neto",
+      "Acácia Zeneida Kuenzer",
+      "André Chervel",
+      "Antoni Zabala",
+      "Antonio Carlos Espit",
+      "Antônio Viñao Frago",
+      "C. T. Alves",
+      "Cladecir Alberto Schenkel",
+      "Denise Matiola Todorov",
+      "Dermeval Saviani",
+      "Dominique Julia",
+      "F. A. C. Barbosa",
+      "Francisco José Montorio Sobral",
+      "G. Meneghetti",
+      "Gabriel Kaplún",
+      "I. Cavalcante",
+      "Ivanise Maria Rizzatti",
+      "J. C. Nascimento",
+      "Justino Pereira de Magalhães",
+      "L. B. Vendruscolo",
+      "L. S. Martins",
+      "M. C. P. Amador",
+      "M. T. C. Trevisol",
+      "Michel de Certeau",
+      "Michel Foucault",
+      "N. L. Carlos",
+      "O. Medeiros Neta",
+      "Pierre Nora",
+      "Priscila de Souza Chisté Leite",
+      "Reginaldo Leandro Plácido",
+      "Rensis Likert",
+      "S. E. de A. Chagas",
+      "S. S. Sampaio",
+      "Shyrlei Karyna Jagielski Benkendorf"
+    ],
+    "base_epistemologica": {
+      "valor": "Teoria Histórico-Cultural / Sociointeracionismo",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explora vigilância e disciplina via Foucault (2008b), alinhando-se à teoria sociointeracionista. Referências diretas a Foucault são citadas com páginas locais.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 16,
+          "trecho": "A vigilância, na visão de Foucault (2008b), é um dispositivo para o exercício de poder.",
+          "referencia_correspondente": "FOUCAULT, M. Vigiar e punir. 35. ed. Petrópolis: Vozes, 2008b."
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 22,
+          "trecho": "A indisciplina, sob o prisma de Foucault (2008b), pode ser interpretada como uma tática para se desvencilhar das amarras das regras.",
+          "referencia_correspondente": "FOUCAULT, M. Vigiar e punir. 35. ed. Petrópolis: Vozes, 2008b."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "TECENDO A HISTÓRIA DO INSTITUTO FEDERAL CATARINENSE, CAMPUS CONCÓRDIA (1965-1975): HISTÓRIAS DE (IN)DISCIPLINA",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Site / Portal",
+    "link": "http://educapes.capes.gov.br/handle/capes/601242",
+    "publico_alvo": [
+      "estudantes_alunos"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Cultura escolar",
+      "Indisciplina escolar",
+      "Escolas agrícolas",
+      "Internato",
+      "Mestrado Profissional em Educação Tecnológica",
+      "Organização e Memória da EPT"
+    ],
+    "data_publicacao": "2021-07-22",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Benkendorf, S. K. J.",
+        "papel": "creator"
+      },
+      {
+        "nome": "Placido, R. L.",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/601242",
+        "url": "http://educapes.capes.gov.br/handle/capes/601242"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://memoriasifcconcordia.com.br/",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "TECENDO A HISTÓRIA DO INSTITUTO FEDERAL CATARINENSE, CAMPUS CONCÓRDIA (1965-1975): HISTÓRIAS DE (IN)DISCIPLINA",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Memorial da Indisciplina do IFC campus Concórdia",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "Portal – MEMORIAL DA INDISCIPLINA DO IFC CAMPUS CONCÓRDIA",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "portal"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0107 2020 shyrlei karyna jagielski benkendorf reginaldo leandro placido ifc blumenau lp2 mp4 tecendo a historia do instituto federal catarinense campus concordia 1965 1975 historias de in disciplina a construcao da narrativa da historia institucional escolar do instituto federal catarinense ifc campus concordia e objetivo principal desta pesquisa que e feita pelo olhar da in disciplina com o recorte temporal dos anos de 1965 a 1975 a pesquisa do ponto de vista metodologico e de abordagem qualitativa e utiliza se da mesoanalise e da analise de discurso a partir dos dados pesquisados entende se que o internato na instituicao pesquisada proporcionava uma intensa convivencia e a vigilancia de todas as acoes e as regras estabelecidas tornavam o ambiente rigido estimulando o anseio por atos que se desviavam das normas impostas o produto educacional desta pesquisa e o site memorial da in disciplina do ifc campus concordia que alem de contribuir para a memoria e a historia da instituicao pesquisada visa a ser um instrumento de auxilio ao ensino para os estudantes do ensino medio integrado palavras chave educacao profissional e tecnologica cultura escolar indisciplina escolar escolas agricolas internato teoria historico cultural sociointeracionismo tecendo a historia do instituto federal catarinense campus concordia 1965 1975 historias de in disciplina material didatico instrucional site portal ensino medio integrado educacao profissional e tecnologica cultura escolar indisciplina escolar escolas agricolas internato mestrado profissional em educacao tecnologica organizacao e memoria da ept a veiga neto acacia zeneida kuenzer andre chervel antoni zabala antonio carlos espit antonio vinao frago c t alves cladecir alberto schenkel denise matiola todorov dermeval saviani dominique julia f a c barbosa francisco jose montorio sobral g meneghetti gabriel kaplun i cavalcante ivanise maria rizzatti j c nascimento justino pereira de magalhaes l b vendruscolo l s martins m c p amador m t c trevisol michel de certeau michel foucault n l carlos o medeiros neta pierre nora priscila de souza chiste leite reginaldo leandro placido rensis likert s e de a chagas s s sampaio shyrlei karyna jagielski benkendorf",
+    "termos_unificados": [
+      "Educação profissional e tecnológica",
+      "Cultura escolar",
+      "Indisciplina escolar",
+      "Escolas agrícolas",
+      "Internato",
+      "Mestrado Profissional em Educação Tecnológica",
+      "Organização e Memória da EPT"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

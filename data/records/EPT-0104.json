@@ -1,0 +1,151 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0104",
+  "ano": 2020,
+  "autor": "Helen Carolina Ferreira Santos",
+  "orientador": "Cloves Alexandre de Castro",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP3",
+  "dissertacao": {
+    "titulo": "CONTRIBUIÇÕES PARA PENSAR OS DESASTRES “NATURAIS” A PARTIR DE REFLEXÕES DE ESTUDANTES DO ENSINO MÉDIO ENSINO INTEGRADO DO IFC – CAMPUS SÃO BENTO DO SUL: O CASO DE RIO NEGRINHO-SC",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/DISSERTACAO-HELEN-FERREIRA.pdf",
+    "resumo": "O presente artigo é resultado de pesquisa desenvolvida no âmbito do Mestrado\nProfissional em Educação Profissional e Tecnológica (ProfEPT), Polo IFC-Blumenau,\nna linha de pesquisa “Práticas Educativas em Educação Profissional e Tecnológica”.\nTivemos como objetivo conhecer a percepção dos estudantes do Ensino Médio\nIntegrado (EMI) do Instituto Federal Catarinense-campus São Bento do Sul sobre os\ndesastres que ocorrem na cidade de Rio Negrinho–SC e seus conhecimentos prévios\nsobre os conceitos que possibilitam compreender a essência desses desastres, tais\ncomo: vulnerabilidade, risco, perigo, inundações e enchentes. Este estudo é\ncaracterizado como pesquisa qualitativa de natureza aplicada. O percurso para o\nlevantamento dos dados foi realizado por meio da pesquisa-ação. Foram utilizados\nquestionários com perguntas abertas com os estudantes do EMI ingressantes no ano\nde 2020, além de pesquisas documentais e bibliográfica. Após as respostas ao\nquestionário, foi elaborada uma história em quadrinhos intitulada “Pensando sobre os\ndesastres ‘Naturais’: o caso de Rio Negrinho–SC” como produto educacional. A partir\ndas respostas dos estudantes, notamos que no primeiro momento eles não tinham\nainda a noção clara dos significados dos conceitos e apresentavam apenas a causa\ndos eventos. Na validação da HQ pelos estudantes, verificamos que eles conseguiram\navançar, sair do campo da noção e da opinião e a apreenderem os conceitos,\nevidenciando que o Produto Educacional (PE) atingiu o seu objetivo, que foi o de\nproblematizar o tema e promover um diálogo com os termos que são corriqueiramente\nutilizados no senso comum e que na maioria das vezes são utilizados de forma\nequivocada. A partir de então, entendemos que o PE elaborado é um bom material a\nser utilizado na prática docente.\n\nPalavras-Chave: Desastres; Rio Negrinho–SC; Ensino Médio Integrado (EMI);\npráticas educativas; Educação Profissional e Tecnológica (EPT).",
+    "palavras_chave": [
+      "Desastres",
+      "Rio Negrinho–SC",
+      "Ensino Médio Integrado (EMI)",
+      "Práticas educativas",
+      "Educação Profissional e Tecnológica (EPT)"
+    ],
+    "autores_referenciados": [
+      "Ademir José Rosso",
+      "Allan Lavell",
+      "Antônio Carlos Gil",
+      "Antonio Gramsci",
+      "Antônio Luiz Coimbra Castro",
+      "Bernadete Machado Serpe",
+      "Brigido Vizeu Camargo",
+      "Camila Cunico",
+      "Chisato Oka-Fiori",
+      "Cloves Alexandre de Castro",
+      "Dante Henrique Moura",
+      "David Tripp",
+      "Domingos Leite Lima Filho",
+      "Eloíza Cristiane Torres",
+      "Fermino Fernandes Sisto",
+      "Fernando Becker",
+      "Gaudêncio Frigotto",
+      "Ivanise Maria Rizzatti",
+      "Jader de Oliveira Santos",
+      "Jean Piaget",
+      "Jennifer Rowell",
+      "Joana Nery Giglio",
+      "Joel Robert Georges Marcel Pellerin",
+      "John Twigg",
+      "José Luis Vieira de Almeida",
+      "Keli Castro Carneiro",
+      "Laurence Bardin",
+      "Marcos Antônio Mattedi",
+      "Marcus Vinícius da Cunha",
+      "Marise Nogueira Ramos",
+      "Marx Prestes Barbosa",
+      "Masato Kobiyama",
+      "Michel Jean Marie Thiollent",
+      "Milton Santos",
+      "Monalisa Cristina Silva Medeiros",
+      "Mônica Ribeiro da Silva",
+      "Norman Denzin",
+      "O. Editor",
+      "Paulo César Rondina",
+      "Paulo Freire",
+      "Ricardo Antunes",
+      "Roberto Fabris Goerl",
+      "Ronaldo Marcos de Lima Araújo",
+      "Terry Cannon",
+      "Uwe Flick",
+      "Vanessa Cristina Treviso",
+      "Yonna Lincoln"
+    ],
+    "base_epistemologica": {
+      "valor": "Educação Libertadora / Freireana e Teoria Histórico-Cultural / Sociointeracionismo",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": true,
+      "justificativa": "O texto integra a teoria de Freire sobre emancipação crítica e a abordagem de Piaget sobre construção do conhecimento, com citações diretas de suas obras.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 32,
+          "trecho": "Conhecer é tarefa de sujeitos, não de objetos. E é como sujeito e somente enquanto sujeito, que o homem pode realmente conhecer",
+          "referencia_correspondente": "BECKER, 2017"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Pensando sobre os desastres \"naturais\": o caso de Rio Negrinho: SC.",
+    "tipo": "material_didatico_instrucional",
+    "formato": "História em Quadrinhos (HQ)",
+    "link": "http://educapes.capes.gov.br/handle/capes/644976",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "docentes_professores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Desastres Naturais; Desastres; Rio Negrinho-SC; Vulnerabilidade; risco; perigo",
+      "Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT",
+      "O produto educacional é parte das exigências para a conclusão da dissertação de mestrado"
+    ],
+    "data_publicacao": "2021-11-18",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense - IFC/ Campus-Blumenau.",
+        "papel": "contributor"
+      },
+      {
+        "nome": "SANTOS, Hélen Carolina Ferreira; CASTRO, Cloves Alexandre de Castro",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/644976",
+        "url": "http://educapes.capes.gov.br/handle/capes/644976"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "HQ - Pensando sobre os desastres naturais: o caso de Rio Negrinho.",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "Livro Digital – PENSANDO SOBRE OS DESASTRES “NATURAIS”: O CASO DE RIO NEGRINHO: SC.",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "outro"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0104 2020 helen carolina ferreira santos cloves alexandre de castro ifc blumenau lp1 mp3 contribuicoes para pensar os desastres naturais a partir de reflexoes de estudantes do ensino medio ensino integrado do ifc campus sao bento do sul o caso de rio negrinho sc o presente artigo e resultado de pesquisa desenvolvida no ambito do mestrado profissional em educacao profissional e tecnologica profept polo ifc blumenau na linha de pesquisa praticas educativas em educacao profissional e tecnologica tivemos como objetivo conhecer a percepcao dos estudantes do ensino medio integrado emi do instituto federal catarinense campus sao bento do sul sobre os desastres que ocorrem na cidade de rio negrinho sc e seus conhecimentos previos sobre os conceitos que possibilitam compreender a essencia desses desastres tais como vulnerabilidade risco perigo inundacoes e enchentes este estudo e caracterizado como pesquisa qualitativa de natureza aplicada o percurso para o levantamento dos dados foi realizado por meio da pesquisa acao foram utilizados questionarios com perguntas abertas com os estudantes do emi ingressantes no ano de 2020 alem de pesquisas documentais e bibliografica apos as respostas ao questionario foi elaborada uma historia em quadrinhos intitulada pensando sobre os desastres naturais o caso de rio negrinho sc como produto educacional a partir das respostas dos estudantes notamos que no primeiro momento eles nao tinham ainda a nocao clara dos significados dos conceitos e apresentavam apenas a causa dos eventos na validacao da hq pelos estudantes verificamos que eles conseguiram avancar sair do campo da nocao e da opiniao e a apreenderem os conceitos evidenciando que o produto educacional pe atingiu o seu objetivo que foi o de problematizar o tema e promover um dialogo com os termos que sao corriqueiramente utilizados no senso comum e que na maioria das vezes sao utilizados de forma equivocada a partir de entao entendemos que o pe elaborado e um bom material a ser utilizado na pratica docente palavras chave desastres rio negrinho sc ensino medio integrado emi praticas educativas educacao profissional e tecnologica ept educacao libertadora freireana e teoria historico cultural sociointeracionismo pensando sobre os desastres naturais o caso de rio negrinho sc material didatico instrucional historia em quadrinhos hq ensino medio integrado desastres rio negrinho sc ensino medio integrado emi praticas educativas educacao profissional e tecnologica ept desastres naturais desastres rio negrinho sc vulnerabilidade risco perigo mestrado profissional em educacao profissional e tecnologica profept o produto educacional e parte das exigencias para a conclusao da dissertacao de mestrado ademir jose rosso allan lavell antonio carlos gil antonio gramsci antonio luiz coimbra castro bernadete machado serpe brigido vizeu camargo camila cunico chisato oka fiori cloves alexandre de castro dante henrique moura david tripp domingos leite lima filho eloiza cristiane torres fermino fernandes sisto fernando becker gaudencio frigotto ivanise maria rizzatti jader de oliveira santos jean piaget jennifer rowell joana nery giglio joel robert georges marcel pellerin john twigg jose luis vieira de almeida keli castro carneiro laurence bardin marcos antonio mattedi marcus vinicius da cunha marise nogueira ramos marx prestes barbosa masato kobiyama michel jean marie thiollent milton santos monalisa cristina silva medeiros monica ribeiro da silva norman denzin o editor paulo cesar rondina paulo freire ricardo antunes roberto fabris goerl ronaldo marcos de lima araujo terry cannon uwe flick vanessa cristina treviso yonna lincoln",
+    "termos_unificados": [
+      "Desastres",
+      "Rio Negrinho–SC",
+      "Ensino Médio Integrado (EMI)",
+      "Práticas educativas",
+      "Educação Profissional e Tecnológica (EPT)",
+      "Desastres Naturais; Desastres; Rio Negrinho-SC; Vulnerabilidade; risco; perigo",
+      "Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT",
+      "O produto educacional é parte das exigências para a conclusão da dissertação de mestrado"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

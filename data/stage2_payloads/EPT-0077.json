@@ -1,0 +1,234 @@
+{
+  "id": "EPT-0077",
+  "metadados_resolvidos": {
+    "ano": 2022,
+    "autor": "Mara Cristina Chaves Barbosa",
+    "orientador": "Fátima Peres Zago de Oliveira",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP_INDEFINIDA",
+    "macroprojeto": "MP_INDEFINIDO"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "O PAPEL DA MEDIAÇÃO PEDAGÓGICA NO CURSO DE EJA INTEGRADA À EPT – FORMAÇÃO BÁSICA EM ELETRICISTA – DO CAMPUS BLUMENAU",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/ARTIGO-MARA-CRISTINA-CHAVES-BARBOSA-PDFA.pdf",
+    "palavras_chave": [
+      "Mediação",
+      "Identidade",
+      "Educação de Jovens e Adultos",
+      "Educação Profissional e Tecnológica"
+    ],
+    "autores_referenciados": [
+      "Adriana Regina Sancerino",
+      "Alexander R. Luria",
+      "Antonio Amorim",
+      "Antonio Gramsci",
+      "Antonis Silva",
+      "Dermeval Saviani",
+      "Edite Maria da Silva de Faria",
+      "Erving Goffman",
+      "Fátima Oliveira",
+      "Gabriela Silva",
+      "Gaudêncio Frigotto",
+      "José Carlos Libâneo",
+      "Karin Anami",
+      "Karl Marx",
+      "Lev Vygotsky",
+      "Marcos Suel Zanette",
+      "Maria Clara Di Pierro",
+      "Maria de Fátima Cardoso Gomes",
+      "Maria Margarida Machado",
+      "Marinaide Lima Freitas",
+      "Marise Nogueira Ramos",
+      "Miguel Gaudêncio Arroyo",
+      "Patrícia Guimarães Vargas",
+      "Paulo Bezerra",
+      "Paulo Freire",
+      "Poliana Santos",
+      "Regiane Ibanhês Gimenes Berni",
+      "Renata Luiza da Costa",
+      "Ricardo Antunes",
+      "Roque Moraes",
+      "S. J. Quaresma",
+      "Sérgio Haddad",
+      "Stuart Hall",
+      "Sulanita Santos",
+      "Tânia Regina Dantas",
+      "V. Boni",
+      "Valéria Campos Cavalcante"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "http://educapes.capes.gov.br/handle/capes/717857",
+    "titulo_produto": "SEQUÊNCIA DIDÁTICA: EM BUSCA DA IDENTIDADE CULTURAL DE ALUNOS DA  EDUCAÇÃO DE JOVENS E ADULTOS INTEGRADA À EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA",
+    "titulo_produto_bruto": "SEQUÊNCIA DIDÁTICA – EM BUSCA DA IDENTIDADE CULTURAL DOS ALUNOS DA EDUCAÇÃO DE JOVENS E ADULTOS INTEGRADAS À EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA.",
+    "data_publicacao": "2022-10-01",
+    "autores_colaboradores": [
+      {
+        "nome": "INSTITUTO FEDERAL CATARINENSE-IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "BARBOSA, Mara Cristina Chaves",
+        "papel": "creator"
+      },
+      {
+        "nome": "OLIVEIRA, Fátima Perez Zago de",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/717857",
+        "url": "http://educapes.capes.gov.br/handle/capes/717857"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "SEQUÊNCIA DIDÁTICA: EM BUSCA DA IDENTIDADE CULTURAL DE ALUNOS DA  EDUCAÇÃO DE JOVENS E ADULTOS INTEGRADA À EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "texto"
+    ],
+    "palavras_chave_educapes": [
+      "Educação de Jovens  e Adultos, Educação Profissional e Tecnológica, Ensino Médio Integrado, Sequência Didática.",
+      "PROFEPT",
+      "Produto Educacional resultado de pesquisa de dissertação de Mestrado."
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Sequência Didática",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\nMARA CRISTINA CHAVES BARBOSA\nA MEDIAÇÃO PEDAGÓGICA NO CURSO DE EJA INTEGRADA À EPT –\nFORMAÇÃO BÁSICA EM ELETRICISTA INDUSTRIAL – DO IFC CAMPUS\nBLUMENAU-SC\nBlumenau - SC\nAgosto de 2022\n\nMARA CRISTINA CHAVES BARBOSA\nA MEDIAÇÃO PEDAGÓGICA NO CURSO DE EJA INTEGRADA À EPT –\nFORMAÇÃO BÁSICA EM ELETRICISTA INDUSTRIAL – DO IFC CAMPUS\nBLUMENAU-SC\nDissertação apresentada ao Programa de Pós-\ngraduação em Educação Profissional e\nTecnológica, ofertado pelo campus Blumenau do\nInstituto Federal Catarinense, como parte dos\nrequisitos para a obtenção do título de\nMestre/Mestra em Educação Profissional e\nTecnológica.\nOrientador: Fátima Peres Zago de Oliveira\nBlumenau\nAgosto de 2022",
+    "ficha_catalografica": "[PÁG. 3]\nBarbosa, Mara Cristina Chaves.\n B238p A mediação pedagógica no curso de EJA integrada à EPT:\nformação básica em eletricista do IFC campus Blumenau-SC. / Mara Cristina\nChaves Barbosa; orientadora Fátima Peres Zago de Oliveira. - - Blumenau,\n2022.\n 103 p.\n\n Artigo (mestrado) - Instituto Federal Catarinense campus Blumenau,\n Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT).\nBlumenau, 2022.\n\n Inclui referências.\n 1. Educação de Jovens e Adultos. 2. Educação Profissional e Tecnológica.\n 3. Mediaçao. I. Oliveira, Fátima Peres Zago. II. Instituto Federal Catarinense.\nMestrado Profissional em Educação Profissional e Tecnológica. III. Título.\n\n CDD 371.22\n Ficha catalográfica elaborada pela bibliotecária: Shyrlei K. Jagielski Benkendorf – CRB 14/662",
+    "sumario": "[PÁG. 12]\nSUMÁRIO\nAPRESENTAÇÃO......................................................................................................15\n1 INTRODUÇÃO.........................................................................................................19\n2 SITUANDO A TEMÁTICA: EDUCAÇÃO, TRABALHO, EDUCAÇÃO\nPROFISSIONAL E SUA INTEGRAÇÃO COM A EDUCAÇÃO DE JOVENS E\nADULTOS...................................................................................................................23\n2.1 PERCURSOS DA EDUCAÇÃO DE JOVENS E ADULTOS E DA EDUCAÇÃO\nPROFISSIONAL E TECNOLÓGICA...........................................................................26\n2.2 UM POUCO SOBRE A EJA NO INSTITUTO FEDERAL CATARINENSE -\nCAMPUS BLUMENAU...............................................................................................28\n3 METODOLOGIA......................................................................................................30\n3.1 O PRODUTO EDUCACIONAL.............................................................................31\n3.1.1.\n\nA\n\nAPLICAÇÂO\n\nE\n\nVALIDAÇÃO\n\nDO\nPE.............................................................32\n4 A MEDIAÇÃO E A IDENTIDADE NA VISÃO DE MEDIADORAS DO CURSO EM\nFORMAÇÃO BÁSICA EM ELETRICISTA INDUSTRIAL NA MODALIDADE EJA –\nIFC-CAMPUS BLUMENAU........................................................................................35\n4.1 – A MEDIAÇÃO NO CURSO EJA-EPT – COMPREENSÕES DOS SUJEITOS\nSOBRE A MEDIAÇÃO PEDAGÓGICA .....................................................................39\n4.2 – A IDENTIDADE SOCIÓLOGICA DOS ESTUDANTES DA EJA – EPT – IFC-\nBLUMENAU, NA VISÃO DOS SUJEITOS DE PESQUISA........................................44\n5 CONSIDERAÇÕES FINAIS....................................................................................47\nREFERÊNCIAS...........................................................................................................48\nAPÊNDICE A – PRODUTO EDUCACIONAL.............................................................53\nAPÊNDICE B – TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO 1.........80\nAPÊNDICE C – TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO 2.........82\nAPÊNDICE D – QUESTIONÁRIO/ENTREVISTA SEMIESTRUTURADA PARA AS\nPROFESSORAS MEDIADORAS DO CURSO EJA-EPT...........................................84\nAPÊNDICE E – FORMULÁRIO DE VALIDAÇÃO DO PRODUTO – ESTUDANTES 86\nAPÊNDICE F – FORMULÁRIO DE VALIDAÇÃO DO PRODUTO – PROFESSORES\n.....................................................................................................................................95\n",
+    "resumo": "[PÁG. 9]\nRESUMO\nEste trabalho é fruto do Programa de Mestrado em Educação Profissional e\nTecnológica (ProfEPT), Instituição Associada Instituto Federal Catarinense - IFC,\ncampus Blumenau-SC. A pesquisa, de natureza básica, seguiu a abordagem\nqualitativa. O objetivo foi investigar os papéis da mediação pedagógica no curso de\nEducação de Jovens e Adultos – EJA - integrada à Educação Profissional e\nTecnológica - EPT - formação básica em eletricista industrial – do campus\nBlumenau-SC e sua relação com a identidade dos estudantes. A oferta ocorre na\nmodalidade semipresencial (entendida como Educação a Distância EaD). Mister\ndestacar que, adaptada ao contexto da sindemia covídica (Covid-19), a pesquisa\nenvolveu dois momentos: o exploratório e o empírico. Contribuíram como\ninstrumentos de pesquisa as entrevistas semiestruturadas, os questionários, bem\ncomo as análises do referencial teórico, que foi construído por meio de levantamento\nbibliográfico e documental. Os sujeitos de pesquisa foram as professoras\nmediadoras e os estudantes envolvidos na aplicação do Produto Educacional. Para\na análise dos dados, optou-se por uma aproximação à Análise Textual Discursiva\n(ATD). Como parte desse processo de desconstruções e construções e com base\nnas análises realizadas, foi desenvolvido um Produto Educacional na forma de uma\nSequência Didática -SD, considerando a educação como fator principal para\nemancipação humana, através de uma prática pedagógica para o reconhecimento e\nfortalecimento da identidade dos sujeitos que transitam pela Educação de Jovens e\nAdultos. Os resultados demonstraram que a mediação pedagógica se constitui por\num conjunto de atividades que favorece a aprendizagem e está diretamente\nvinculada ao professor mediador. Por outro lado, a análise mostrou que o conceito\nde mediação pedagógica está em constante construção e é preciso buscar na\nidentidade dos sujeitos alunos da EJA-EPT elementos para seu desenvolvimento.\nPalavras-chave: Mediação. Identidade. Educação de Jovens e Adultos. Educação\nProfissional e Tecnológica.",
+    "introducao": "[PÁG. 9]\nRESUMO\nEste trabalho é fruto do Programa de Mestrado em Educação Profissional e\nTecnológica (ProfEPT), Instituição Associada Instituto Federal Catarinense - IFC,\ncampus Blumenau-SC. A pesquisa, de natureza básica, seguiu a abordagem\nqualitativa. O objetivo foi investigar os papéis da mediação pedagógica no curso de\nEducação de Jovens e Adultos – EJA - integrada à Educação Profissional e\nTecnológica - EPT - formação básica em eletricista industrial – do campus\nBlumenau-SC e sua relação com a identidade dos estudantes. A oferta ocorre na\nmodalidade semipresencial (entendida como Educação a Distância EaD). Mister\ndestacar que, adaptada ao contexto da sindemia covídica (Covid-19), a pesquisa\nenvolveu dois momentos: o exploratório e o empírico. Contribuíram como\ninstrumentos de pesquisa as entrevistas semiestruturadas, os questionários, bem\ncomo as análises do referencial teórico, que foi construído por meio de levantamento\nbibliográfico e documental. Os sujeitos de pesquisa foram as professoras\nmediadoras e os estudantes envolvidos na aplicação do Produto Educacional. Para\na análise dos dados, optou-se por uma aproximação à Análise Textual Discursiva\n(ATD). Como parte desse processo de desconstruções e construções e com base\nnas análises realizadas, foi desenvolvido um Produto Educacional na forma de uma\nSequência Didática -SD, considerando a educação como fator principal para\nemancipação humana, através de uma prática pedagógica para o reconhecimento e\nfortalecimento da identidade dos sujeitos que transitam pela Educação de Jovens e\nAdultos. Os resultados demonstraram que a mediação pedagógica se constitui por\num conjunto de atividades que favorece a aprendizagem e está diretamente\nvinculada ao professor mediador. Por outro lado, a análise mostrou que o conceito\nde mediação pedagógica está em constante construção e é preciso buscar na\nidentidade dos sujeitos alunos da EJA-EPT elementos para seu desenvolvimento.\nPalavras-chave: Mediação. Identidade. Educação de Jovens e Adultos. Educação\nProfissional e Tecnológica.\n\n[PÁG. 10]\nABSTRACT\nThis dissertation is the result of the Master's Program in Professional and\nTechnological Education (ProfEPT), Associated Institution Instituto Federal\nCatarinense - IFC, Blumenau-SC campus. The research, of a basic nature, followed\nthe qualitative approach. The objective was to investigate the roles of pedagogical\nmediation in the course of Youth and Adult Education - EJA - integrated with\nProfessional and Technological Education - EPT - basic training in industrial\nelectrician - of the Blumenau-SC campus and its relationship with the identity of\nstudents. The offer occurs in the blended mode (understood as Distance Education\nEaD). Mister to point out that, adapted to the context of the covidic syndemia (Covid-\n19), the research involved two moments: the exploratory and the empirical. Semi-\nstructured interviews, questionnaires, as well as the analysis of the theoretical\nframework, which was built through a bibliographic and documentary survey,\ncontributed as research instruments. The research subjects were the mediating\nteachers and the students involved in the application of the Educational Product. For\ndata analysis, we opted for an approximation to Discursive Textual Analysis (ATD).\nAs part of this process of deconstructions and constructions and based on the\nanalyzes carried out, an Educational Product was developed in the form of a Didactic\nSequence -SD, considering education as the main factor for human emancipation,\nthrough a pedagogical practice for the recognition and strengthening of the identity of\nthe subjects who transit through Youth and Adult Education. The results showed that\npedagogical mediation consists of a set of activities that favors learning and is\ndirectly linked to the mediator teacher. On the other hand, the analysis showed that\nthe concept of pedagogical mediation is in constant construction and it is necessary\nto seek in the identity of the students of the EJA-EPT elements for its development.\nKeywords: Mediation. Identity. Youth and Adult Education. Professional and\nTechnological Education.\n\n[PÁG. 11]\nLISTA DE ABREVIATURAS E SIGLAS\nANPEd - Associação Nacional de Pós-graduação e Pesquisa em Educação\nATD - Análise Textual Discursiva\nCF - Constituição Federal\nEAD – Educação a distância\nEJA - Educação de Jovens e Adultos\nEPT - Educação Profissional e Tecnológica\nHQ – História em Quadrinhos\nIBGE - Instituto Brasileiro de Geografia e Estatística\nIFC - Instituto Federal Catarinense\nLDB - Lei de Diretrizes e Bases da Educação Nacional\nMobral - Movimento Brasileiro de Alfabetização\nMP – Momento Pedagógico\nPND - Plano Nacional de Desenvolvimento\nPCP - Projeto de Criação e Pedagógico do Curso\nProeja - Programa Nacional de Integração da Educação Profissional com a\nEducação\nBásica na Modalidade de Educação de Jovens e Adultos\nPE – Produto Educacional\nProfEPT - Mestrado Profissional em Educação Profissional e Tecnológica\nSE – Sequência Didática\n\n[PÁG. 12]\nSUMÁRIO\nAPRESENTAÇÃO......................................................................................................15\n1 INTRODUÇÃO.........................................................................................................19\n2 SITUANDO A TEMÁTICA: EDUCAÇÃO, TRABALHO, EDUCAÇÃO\nPROFISSIONAL E SUA INTEGRAÇÃO COM A EDUCAÇÃO DE JOVENS E\nADULTOS...................................................................................................................23\n2.1 PERCURSOS DA EDUCAÇÃO DE JOVENS E ADULTOS E DA EDUCAÇÃO\nPROFISSIONAL E TECNOLÓGICA...........................................................................26\n2.2 UM POUCO SOBRE A EJA NO INSTITUTO FEDERAL CATARINENSE -\nCAMPUS BLUMENAU...............................................................................................28\n3 METODOLOGIA......................................................................................................30\n3.1 O PRODUTO EDUCACIONAL.............................................................................31\n3.1.1.\n\nA\n\nAPLICAÇÂO\n\nE\n\nVALIDAÇÃO\n\nDO\nPE.............................................................32\n4 A MEDIAÇÃO E A IDENTIDADE NA VISÃO DE MEDIADORAS DO CURSO EM\nFORMAÇÃO BÁSICA EM ELETRICISTA INDUSTRIAL NA MODALIDADE EJA –\nIFC-CAMPUS BLUMENAU........................................................................................35\n4.1 – A MEDIAÇÃO NO CURSO EJA-EPT – COMPREENSÕES DOS SUJEITOS\nSOBRE A MEDIAÇÃO PEDAGÓGICA .....................................................................39\n4.2 – A IDENTIDADE SOCIÓLOGICA DOS ESTUDANTES DA EJA – EPT – IFC-\nBLUMENAU, NA VISÃO DOS SUJEITOS DE PESQUISA........................................44\n5 CONSIDERAÇÕES FINAIS....................................................................................47\nREFERÊNCIAS...........................................................................................................48\nAPÊNDICE A – PRODUTO EDUCACIONAL.............................................................53\nAPÊNDICE B – TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO 1.........80\nAPÊNDICE C – TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO 2.........82\nAPÊNDICE D – QUESTIONÁRIO/ENTREVISTA SEMIESTRUTURADA PARA AS\nPROFESSORAS MEDIADORAS DO CURSO EJA-EPT...........................................84\nAPÊNDICE E – FORMULÁRIO DE VALIDAÇÃO DO PRODUTO – ESTUDANTES 86\nAPÊNDICE F – FORMULÁRIO DE VALIDAÇÃO DO PRODUTO – PROFESSORES\n.....................................................................................................................................95\n\n[PÁG. 13]\n",
+    "descricao_produto_na_dissertacao": "[PÁG. 9] RESUMO\nEste trabalho é fruto do Programa de Mestrado em Educação Profissional e\nTecnológica (ProfEPT), Instituição Associada Instituto Federal Catarinense - IFC,\ncampus Blumenau-SC. A pesquisa, de natureza básica, seguiu a abordagem\nqualitativa. O objetivo foi investigar os papéis da mediação pedagógica no curso de\nEducação de Jovens e Adultos – EJA - integrada à Educação Profissional e\nTecnológica - EPT - formação básica em eletricista industrial – do campus\nBlumenau-SC e sua relação com a identidade dos estudantes. A oferta ocorre na\nmodalidade semipresencial (entendida como Educação a Distância EaD). Mister\ndestacar que, adaptada ao contexto da sindemia covídica (Covid-19), a pesquisa\nenvolveu dois momentos: o exploratório e o empírico. Contribuíram como\ninstrumentos de pesquisa as entrevistas semiestruturadas, os questionários, bem\ncomo as análises do referencial teórico, que foi construído por meio de levantamento\nbibliográfico e documental. Os sujeitos de pesquisa foram as professoras\nmediadoras e os estudantes envolvidos na aplicação do Produto Educacional. Para\na análise dos dados, optou-se por uma aproximação à Análise Textual Discursiva\n(ATD). Como parte desse processo de desconstruções e construções e com base\nnas análises realizadas, foi desenvolvido um Produto Educacional na forma de uma\nSequência Didática -SD, considerando a educação como fator principal para\nemancipação humana, através de uma prática pedagógica para o reconhecimento e\nfortalecimento da identidade dos sujeitos que transitam pela Educação de Jovens e\nAdultos. Os resultados demonstraram que a mediação pedagógica se constitui por\num conjunto de atividades que favorece a aprendizagem e está diretamente\nvinculada ao professor mediador. Por outro lado, a análise mostrou que o conceito\nde mediação pedagógica está em constante construção e é preciso buscar na\nidentidade dos sujeitos alunos da EJA-EPT elementos para seu desenvolvimento.\nPalavras-chave: Mediação. Identidade. Educação de Jovens e Adultos. Educação\nProfissional e Tecnológica.\n\n[PÁG. 11] LISTA DE ABREVIATURAS E SIGLAS\nANPEd - Associação Nacional de Pós-graduação e Pesquisa em Educação\nATD - Análise Textual Discursiva\nCF - Constituição Federal\nEAD – Educação a distância\nEJA - Educação de Jovens e Adultos\nEPT - Educação Profissional e Tecnológica\nHQ – História em Quadrinhos\nIBGE - Instituto Brasileiro de Geografia e Estatística\nIFC - Instituto Federal Catarinense\nLDB - Lei de Diretrizes e Bases da Educação Nacional\nMobral - Movimento Brasileiro de Alfabetização\nMP – Momento Pedagógico\nPND - Plano Nacional de Desenvolvimento\nPCP - Projeto de Criação e Pedagógico do Curso\nProeja - Programa Nacional de Integração da Educação Profissional com a\nEducação\nBásica na Modalidade de Educação de Jovens e Adultos\nPE – Produto Educacional\nProfEPT - Mestrado Profissional em Educação Profissional e Tecnológica\nSE – Sequência Didática\n\n[PÁG. 12] SUMÁRIO\nAPRESENTAÇÃO......................................................................................................15\n1 INTRODUÇÃO.........................................................................................................19\n2 SITUANDO A TEMÁTICA: EDUCAÇÃO, TRABALHO, EDUCAÇÃO\nPROFISSIONAL E SUA INTEGRAÇÃO COM A EDUCAÇÃO DE JOVENS E\nADULTOS...................................................................................................................23\n2.1 PERCURSOS DA EDUCAÇÃO DE JOVENS E ADULTOS E DA EDUCAÇÃO\nPROFISSIONAL E TECNOLÓGICA...........",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 16,
+        "texto": "17\npermaneceram na escola em idade regular. 0 programa faz parte de uma\npolítica educacional brasileira que busca a inclusão e emancipação social\ndesses indivíduos, através de uma formação plena em que o estudante\ncompreenda as relações que estabelecem no mundo do qual faz parte,\nassumindo o papel de protagonista de sua própria história. [...] também\nprevê a superação da dualidade entre trabalho manual e intelectual,\ncompreendendo, assim, o trabalho em sua perspective criadora e não\nalienante. (IFC, 2018, p. 5).\nConsiderando esse percurso e tendo em mente o tema mediação, foi dada\ncontinuidade à pesquisa, entrevistando a professora mediadora4 do curso\nselecionado como foco e outras duas professoras que exerceram a função de\nprofessoras mediadoras e tiveram fundamental atuação para a implantação do\ncurso. Toda essa etapa foi realizada a distância.\nAs entrevistas semiestruturadas foram programadas, inicialmente, para serem\nrealizadas via WhatsApp. Algumas remarcações foram necessárias e, por fim, elas\naconteceram via Google Meet (um aplicativo que disponibiliza um serviço de\ncomunicação por vídeo). Na hora marcada, conectados à internet, acessamos o\naplicativo e, sem proximidade físi",
+        "citacoes_detectadas": [
+          "IFC, 2018, p. 5"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 20,
+        "texto": "21\ndificuldades ou não acompanham determinadas reflexões e/ou conceitos\nnecessários a compreensão do tema em\ndiscussão.\n9.Realizar o registro das atividades desenvolvidas em sala de aula,\nindicando as contribuições dos alunos e alunas.\n10.Realizar o registro individual que revele as aprendizagens de cada aluno\ne aluna.\n11. Informar a cada aluno e aluna, seus avanços, e, se for o caso, indicar as\ndificuldades que precisam ser superadas.\n12. Possibilitar que os professores e/ou professoras das diferentes áreas do\nconhecimento possam desenvolver os conceitos a alas inerentes.\n13. Garantir a articulação entre as discussões efetuadas pelas diferentes\náreas de conhecimento.\n14. Garantir a continuidade das discussões e reflexões, articulando-as de\nforma a permitir a continuidade nas demais áreas do conhecimento. (IFC,\n2018. P. 24 e 25.)\nEmbora a função do mediador já esteja caracterizada no PCP do curso, a\npesquisa, ao investigar a ação mediadora desse profissional, busca compreender\nsuas práticas pedagógicas no dia a dia. Para tal, leva-se em consideração o fato de\nocorrerem ações que não estão previstas e outras que estão previstas, mas nem\nsempre são concretizadas. Além disso, os sujei",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 21,
+        "texto": "processos de desumanização, por isso a necessidade no olhar dos sujeitos como\nhumanos, que lutam para ser gente, para que sejam vistos em sua totalidade.\nNesse sentido, acreditamos que a mediação pedagógica é uma prática\nimportante na Educação desses sujeitos, buscando reconhecer a identidade dos\nmesmos. Corroborando, Freire (1987) destaca os elementos essenciais para a\nprática educativa transformadora. Dentre elas, destacamos: “Ensinar exige respeito\naos saberes dos educandos” (FREIRE, 1987, p.31). Para tanto, é necessário fazê-\nlos se sentirem parte do processo e, para tal, é preciso lembrar que “Ensinar exige a\ncorporificação das palavras pelo exemplo” (FREIRE, 1987, p.35), pela prática\npedagógica, pelo professor e sua mediação.\nA mediação, conforme Vygotsky (2005), está presente na relação do homem\ncom o mundo, através da utilização de elementos intermediários. Bezerra (2001)\ncomplementa:\nA relação entre o homem e o mundo passa pela mediação do discurso, pela\nformação de ideias e pensamentos através dos quais o homem apreende o\nmundo e atua sobre ele, recebe a palavra do mundo sobre si mesmo e\nsobre ele-homem, e funda a sua própria palavra sobre esse mundo.\n(BEZERRA, 2001, p. X",
+        "citacoes_detectadas": [
+          "FREIRE, 1987, p.31",
+          "FREIRE, 1987, p.35",
+          "BERNI, 2006, p. 2539"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 22,
+        "texto": "2\n SITUANDO A TEMÁTICA: EDUCAÇÃO, TRABALHO, EDUCAÇÃO\nPROFISSIONAL E SUA INTEGRAÇÃO COM A EDUCAÇÃO DE JOVENS E\nADULTOS\nAutores como Frigotto, Ciavatta e Ramos, (2005) asseveram que a educação\nbrasileira tende a funcionar segundo a dualidade estrutural, em que a educação para\na elite é diferente daquela oferecida aos trabalhadores. Essa dualidade surge com a\npropriedade privada, mas se consolidou com o avanço do capitalismo, culminando\nnuma educação dividida segundo a origem de classe dos sujeitos.\nEmbora a dualidade estrutural ainda persista, atualmente existem propostas\ncontra-hegemônicas que buscam educar as classes que vivem do trabalho 6 e\n6 Expressão utilizada por Ricardo Antunes (2009, p.103): classes-que-vivem-do-trabalho, que\ncompreende todos os trabalhadores. “[...] a chave analítica para a definição de classe trabalhadora é\ndada pelo assalariamento e pela venda da sua própria força de trabalho. Por isso a denominamos\nclasse-que-vive--do-trabalho, uma expressão que procura captar e englobar a totalidade dos",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 23,
+        "texto": "propõem uma formação intelectual que lhes permita entender o processo produtivo\ne, também, desenvolver a dimensão intelectual, permitindo a compreensão do\nmundo natural e social de forma mais ampla e crítica, como é o caso da EJA.\nGramsci (2001) propõe a escola unitária, ou seja, para todos, indiferente de\nclasse. Uma educação com uma proposta que promova o trabalho como elo de\ndesenvolvimento humano, desinteressada (não utilitária) e que estabeleça novas\nrelações entre trabalho manual e trabalho intelectual, oportunizando uma educação\nemancipadora, capaz de formar sujeitos críticos e atuantes no meio em que vivem.\nPara Gramschi (2001, p. 33), esta seria uma\n[...] escola única inicial de cultura geral, humanista, formativa, que equilibre\nequanimemente o desenvolvimento da capacidade de trabalhar\nmanualmente (tecnicamente, industrialmente) e o desenvolvimento das\ncapacidades de trabalho intelectual.\nRamos (2010, 2014), Saviani (2007) e Frigotto (2009) também defendem a\nemancipação da classe trabalhadora e a defesa da educação integral para todos,\ncompreendendo o trabalho como realização humana inerente ao ser. Ramos (2014),\ndestaca tratar-se de uma concepção de formação humana com b",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 24,
+        "texto": "25\nteoria e da linguagem e, sim, que é construída a partir de uma realidade histórica\naliada a uma determinada práxis.\nO trabalho é, antes de tudo, um processo entre o homem e a natureza,\nprocesso este em que o homem, por sua própria ação, medeia, regula e\ncontrola seu metabolismo com a natureza. Ele se confronta com a matéria\nnatural como com uma potência natural [Naturmacht]. A fim de se apropriar\nda matéria natural de uma forma útil para sua própria vida, ele põe em\nmovimento as forças naturais pertencentes a sua corporeidade: seus braços\ne pernas, cabeça e mãos. Agindo sobre a natureza externa e modificando-a\npor meio desse movimento, ele modifica, ao mesmo tempo, sua própria\nnatureza. (MARX, 2016, p 326).\nA citação nos leva à compreensão de que o trabalho é a forma pela qual o ser\nhumano produz sua vida e que, ao trabalhar, ele transforma a natureza e a si\npróprio. Ainda, o modo como se dá a organização do trabalho determina a\nconsciência do homem.\nFrigotto (2009) considera que o trabalho precisa ser compreendido nos\nsentidos ontológico e histórico e deve ser reconhecido como um processo de\ndesenvolvimento do ser. O autor destaca que o princípio educativo em Marx não\nestá asso",
+        "citacoes_detectadas": [
+          "SAVIANI, 2003, p. 13"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 25,
+        "texto": "Não nos cabe, aqui, realizar uma aprofundada reconstituição histórica das\nlutas e disputas travadas no decorrer do processo de desenvolvimento da educação\nbrasileira e das políticas públicas educacionais. Contudo, faz-se necessário situar\nalguns acontecimentos e a linha cronológica dos marcos legais que servirão de\ncorpo para este trabalho.\nNo atual momento histórico, ações como a extinção da Secretaria de\nEducação Continuada, Alfabetização, Diversidade e Inclusão - Secadi7 demonstram\nque a EJA não é prioridade para os interesses hegemônicos, reforçam a estrutura de\ndesigualdade e manutenção do poder e privilégios das classes dominantes e não\ncontribuem para oferta de uma educação emancipadora pautada no que preconiza\nFreire (1979,1996).\nMuito embora os interesses hegemônicos não demonstrem preocupação em\nmanter políticas públicas que promovam a EJA, defende-se a educação para todos,\neducação transformadora e democrática. Insiste-se na oferta desta modalidade de\nensino para que os trabalhadores possam ter a possibilidade de uma formação que\ncontribua para uma vida com maior qualidade e mais oportunidades, respeitando os\ntempos humanos (ARROYO, 2017).\nNum processo histórico, Haddad ",
+        "citacoes_detectadas": [
+          "ARROYO, 2017",
+          "HADDAD; DI PIERRO, 2000, p. 1"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 31,
+        "texto": "problematização inicial, constitui-se de situações reais vivenciadas pelos alunos e\nque estão direcionadas e inseridas no tema proposto.\nO segundo MP engloba a organização do conhecimento, que busca, a partir\nda problematização e da compreensão dos assuntos discutidos, encontrar soluções\ne organizar saberes.\nUma segunda fase ou momento é o de cumprir as expectativas: é quando\npercebendo quais as superações, informações, habilidades necessárias\npara dar conta das questões inicialmente colocadas, o professor ou\neducador propõe atividades que permitam a sua conquista. Aqui predomina\na fala do organizador. Apesar de não se perder de vista a fala do outro, o\nque orienta essa etapa é a tentativa de propiciar os saltos que não poderiam\nser dados sem o conhecimento do qual o organizador é o portador. É o\nmomento da organização do conhecimento. (DELIZOICOV; ANGOTTI;\nPERNAMBUCO, 2002, p. 36).\nO Terceiro MP diz respeito à aplicação do conhecimento, dando ênfase ao\nconhecimento incorporado pelo aluno, estabelecendo uma educação dialógica em\nFreire, tendo o professor como mediador do conhecimento e trabalhando a partir da\nrealidade e da compreensão do aluno. Nesse sentido, Delizoicov et. al (20",
+        "citacoes_detectadas": [
+          "DELIZOICOV; ANGOTTI;\nPERNAMBUCO, 2002, p. 36",
+          "DELIZOICOV; ANGOTTI; PERNAMBUCO, 2002, p. 36"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 34,
+        "texto": "35\nalunos falaram das necessidades vivenciadas por eles enquanto trabalhadores que\nestudam. A avaliação desse momento foi prevista para reconhecer a participação\noral e escrita desses sujeitos, bem como reconhecer a construção dos\nconhecimentos e a efetivação de sua postura crítica e cidadã.\nAo término da aula, explicamos sobre os formulários de avaliação do produto\ne da importância de sua participação para a pesquisa. Alguns alunos também\nagradeceram a oportunidade de participarem de uma pesquisa e, com ela, de\nparticiparem das atividades e do diálogo oportunizado.\nSancerino (2016) se apropria dos dizeres de Freire (1979, p. 142) para\nfundamentar a importância de uma prática mediadora dialógica “[...] que a palavra\nseja compreendida pelo homem na sua justa significação: como força de\ntransformação do mundo”. Nesse sentido, é importante o professor estabelecer\npráticas dialógicas no cotidiano da EJA, construir uma cultura do diálogo em sala de\naula, pois:\nSão as experiências de aprendizagem mediadas pelo diálogo que\npossibilitam aos(as) alunos(as) a preparação para a captação do mundo,\npara que eles compreendam a realidade que os cerca e possam intervir\nnela, superando assim a situ",
+        "citacoes_detectadas": [
+          "SANCERINO,\n2016, p. 459"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 35,
+        "texto": "As professoras explicaram as questões consideradas na definição do curso,\ndurante a construção do PCP.\nA demanda da comunidade, claro, em primeiro lugar. Mas dentro dessas\ndemandas mapeadas qual é a capacidade física instalada. Porque assim\numa coisa que a gente se preocupa muito é com as condições do curso a\nser ofertado. Então, assim, eu vou abrir um curso de eletricista industrial eu\ntenho que ter laboratório, eu tenho que ter prática, né eu tenho que ir este\nmaterial, tenho que ter técnica, eu tenho que ter professores especializados.\nEntão, foi um pouco esse movimento que a gente fez. (ALPHA, 2020).\nQuanto à definição de um curso EJA ofertado com a maior parte da carga\nhorária em EaD, as professoras ouvidas destacaram como justificativa o fato de que,\ncom essa modalidade, há mais flexibilização e autonomia do horário para os\nestudantes.\nPrincipalmente, a possibilidade de flexibilização do horário do aluno. O\naluno que já é trabalhador ou que pretende ser, ele não tem disponibilidade\nna EJA, de um modo geral.[...] Ele não tem disponibilidade para ir todas as\nnoites das sete às dez à instituição. [...] Ele acabou de chegar do trabalho,\nnão é um menino que estava em casa, assisti",
+        "citacoes_detectadas": [
+          "ALPHA, 2020",
+          "BETA, 2020",
+          "BRASIL, 1996",
+          "ARROYO,\n2017"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 36,
+        "texto": "37\né assegurar a construção da autonomia dos estudantes, frente aos desafios\nexistentes no curso.\nPorque é um aluno trabalhador, é difícil para ele vir todos os dias à\nnoite para a instituição. Tem a questão da família, do trabalho. Aí, com\nbase em todas essas reflexões: por que a gente não tinha conseguido\natingir os alunos? Nós reformulamos essa proposta. Aí veio a professora\nBeta [nome verdadeiro suprimido], com toda a bagagem de educação a\ndistância para contribuir nesse processo. E aí a gente começou então a\nrediscutir, foi onde a gente chegou na qualificação profissional de eletricista\nindustrial, nesses moldes que tá hoje. Que é um curso a distância com\nmomentos presenciais, com ambiente virtual de aprendizagem.\n(ALPHA, 2020, grifos nossos).\nA professora Alpha destaca a diversidade dos sujeitos da EJA como uma\nrazão para a flexibilização de horários e práticas. Ela destaca, ainda a necessidade\ndesses sujeitos em conciliar o estudo com o trabalho e, por isso, a necessidade de\nreconfigurar o ambiente educacional, “[...] em comunhão nesse processo de refletir\nsobre a condição humana, suas dimensões e virtualidades formadoras” (ARROYO,\n2012, p. 28).\nA professora Alpha coloca em ",
+        "citacoes_detectadas": [
+          "ARROYO,\n2012, p. 28",
+          "DI PIERRO, 2005, p. 1121",
+          "BRASIL, 1996"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 37,
+        "texto": "suas diversidades históricas ou culturais tiveram seus direitos negados, por motivos\ndiversos. A educação é um deles e, para transformar essas trajetórias, mister se faz\ndar enfoque às questões identitárias desses grupos, reconhecer suas trajetórias e\ndesenvolver uma prática “[...] concreta de sistematização de conhecimentos que\npossibilitam uma autonomia, pensamento crítico e interação social” (AMORIM;\nDANTAS; FARIA, 2016, p. 41).\nAo encontro do posicionamento supracitado, a professora Alpha enfatiza que,\nindependente da modalidade, algumas estratégias são fundamentais: planejamento,\navaliação constante e resgate das relações entre professores e alunos. Ela\nacrescenta: \"acho que são estratégias que a gente pode utilizar, ampliar os nossos\nhorizontes e traçar novas possibilidades” (ALPHA, 2020).\nSobre o resgate das relações entre professor e aluno, Freitas e Cavalcante\n(2021) destacam:\n[...] não há nenhum instrumento ou tecnologia que o substitua, sendo assim,\nsua presença, seu exemplo, sua experiência representam a possibilidade de\nmediação entre os sujeitos alunos e os conhecimentos sistematizados por\nintermédio do domínio das habilidades de leitura e escrita que a sociedade\nvem ",
+        "citacoes_detectadas": [
+          "AMORIM;\nDANTAS; FARIA, 2016, p. 41",
+          "ALPHA, 2020",
+          "FREITAS; CAVALCANTE, 2021, p. 8",
+          "ALPHA, 2020",
+          "ALPHA, 2020"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "ARROYO, Miguel Gaudêncio. Outros Sujeitos, Outras Pedagogias. Petrópolis, RJ: Vozes, 2012.",
+      "ARROYO, Miguel Gaudêncio. Palestra proferida pelo youtube. abril, 2021. Disponível em: <https://www.youtube.com/watch?foo=bar&v=-_tWBKgMukI>. Acesso em 04 maio 2021.",
+      "ARROYO, Miguel Gaudêncio. Passageiros da noite: do trabalho para a EJA: itinerários pelo direito a uma vida justa. Editora Vozes Limitada, 2017.",
+      "ARROYO, Miguel Gaudêncio. Vidas ameaçadas: exigências-respostas éticas da educação e da docência. Petrópolis, RJ: Vozes, 2019.",
+      "BERNI, Regiane Ibanhês Gimenes. Mediação: o conceito vygotskyano e suas implicações na prática pedagógica. XI Simpósio Nacional de Letras e Linguística e I Simpósio Internacional de Letras e Linguística. Anais... Uberlândia, MG:",
+      "BRASIL, Ministério da Educação. Trabalhando com a Educação de Jovens e Adultos: alunos e alunas da EJA. Cadernos do MEC, Brasília, 2006. Disponível em: <http://portal.mec.gov.br/secad/arquivos/pdf/eja_caderno1.pdf>. Acesso em: 18 nov. 2020.",
+      "FREIRE, Paulo. A importância do ato de ler: em três artigos que se completam. São Paulo: Autores Associados; Cortez, 1996.",
+      "FREIRE, Paulo. Educação como prática da liberdade. 9. ed. Rio de Janeiro: Paz e Terra, 1979.",
+      "FREIRE, Paulo. Pedagogia do oprimido. Rio de Janeiro: Paz e Terra, 1987.",
+      "SAVIANI, D. Pedagogia histórico-crítica: primeiras aproximações. 8. ed. Campinas: Autores Associados, 2003.",
+      "SAVIANI, Demerval. Trabalho e Educação: fundamentos ontológicos e históricos. Revista Brasileira de Educação, São Paulo, v. 12, n. 34, 2007, p. 152-165. Disponível em: <https://www.scielo.br/j/rbedu/a/wBnPGNkvstzMTLYkmXdrkWP/? format=pdf&lang=pt>. Acesso em 03 nov. 2019.",
+      "SANCERINO, Adriana Regina. Mediação pedagógica na educação de jovens e adultos: exigência existencial e política do diálogo como fundamento da prática. Revista Brasileira de Educação 21 (2016): 455-475. Disponível em: <https://www.scielo.br/j/rbedu/a/PmtDjXgVNZtGTjmh9XYHr4b/? format=html&lang=pt>. Acesso em: 28 jun. 2022."
+    ]
+  }
+}

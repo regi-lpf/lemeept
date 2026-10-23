@@ -1,0 +1,174 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0048",
+  "ano": 2024,
+  "autor": "Maíra Cambraia Rocha",
+  "orientador": "Simão Alberto",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP4",
+  "dissertacao": {
+    "titulo": "REFLEXÕES ACERCA DAS PRODUÇÕES CIENTÍFICAS DOS DOCENTES DE HISTÓRIA DO EMI DO IFC, SOBRE EPT: UMA BUSCA PELA INFLUÊNCIA TEÓRICA EM SEUS PLANOS DE ENSINO",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/10/Dissertacao-Maira-Cambraia.pdf",
+    "resumo": "10\n\nRESUMO\n\nEsta pesquisa teve como objetivo compreender como as influências teóricas\npresentes nas produções científicas dos docentes de História do Instituto Federal\nCatarinense - IFC ecoam em seus planos de ensino para as turmas do Ensino Médio\nIntegrado - EMI. Tendo como recorte temporal os anos de 2008 a 2022 para\nlevantamento das produções científicas dos docentes, enquanto, para análise dos\nplanos de ensino, considerou-se os planos elaborados após a diretriz do ensino médio\ndo IFC, ou seja, de 2019 a 2022. Trata-se de um estudo que gravitou em torno da\ntemática história e memória da Educação Profissional e Tecnológica - EPT. A\npesquisa, do ponto de vista metodológico, é de abordagem qualitativa e quanto aos\nobjetivos, é classificada como exploratória. Baseou-se em revisão bibliográfica e\nanálise documental. Os dados coletados foram analisados através da Análise Textual\nDiscursiva - ATD, de Moraes e Galiazzi (2006). Os resultados apontam que os\ndocentes apresentam em suas produções científicas contextualizações sobre\ndualidade estrutural, contexto histórico da EPT e concepções de formação integrada,\npolitécnica e omnilateral. Entretanto, em seus planos de ensino de História, tais\ninfluências teóricas não foram perceptíveis. Diante deste resultado, julgou-se\nrelevante propor um instrumento de ensino, pesquisa e estudo, como Produto\nEducacional - PE, o qual resultou em um website, intitulado Repositório das produções\ncientíficas dos docentes de História do IFC, que, além de contribuir para valorização\ndas produções científicas destes educadores, poderá transformar-se em um recurso\ndidático por excelência capaz de auxiliar ao ensino da história da EPT, tendo como\nalicerce os referenciais teóricos evidenciados pelos docentes em seus textos de cunho\ncientífico. O PE tende ainda, proporcionar aos discentes do Ensino Médio Integrado\nacesso a informações sobre a história do IFC e a história e memória da EPT.\n\nPalavras-chave: Instituto Federal Catarinense; Educação Profissional e Tecnológica;\nEnsino Médio Integrado; Produção Científica de docentes; Plano de Ensino de\nHistória.",
+    "palavras_chave": [
+      "Instituto Federal Catarinense",
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "Produção Científica de docentes",
+      "Plano de Ensino de História"
+    ],
+    "autores_referenciados": [
+      "André Chervel",
+      "Andréia Matilde Bottamedi Bambinetti",
+      "Antônio Escolano Benito",
+      "Antonio Gramsci",
+      "Celso dos Santos Vasconcellos",
+      "Cladecir Alberto Schenkel",
+      "Claudino Piletti",
+      "Cloves Alexandre de Castro",
+      "D. M. S. O. Cassins",
+      "D. Saheb",
+      "Dante Henrique Moura",
+      "Denise Matiola Todorov",
+      "Dermeval Saviani",
+      "Dominique Julia",
+      "Edna Lúcia da Silva",
+      "Eliezer Moreira Pacheco",
+      "Estera Muszkat Menezes",
+      "F. Truccolo",
+      "Fabiany de Cássia Tavares Silva",
+      "Fernanda Dias Droescher",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "Gustavo F. C. e Silva",
+      "György Lukács",
+      "Jacques Le Goff",
+      "João José Barrico de Souza",
+      "José Carlos Libâneo",
+      "Juliana Favretto",
+      "Juliana M. Filgueiras",
+      "Juliana Vieira",
+      "Justino Pereira de Magalhães",
+      "Karl Marx",
+      "Liane Carly Hermes Zanella",
+      "Lúcia Maria Wanderley Neves",
+      "M. C. Ciavatta",
+      "M. Ramos",
+      "M. Resende",
+      "Marcela Alejandra Pronko",
+      "Maria Ciavatta",
+      "Maria do Carmo Galiazzi",
+      "Pierre Bourdieu",
+      "R. Antunes",
+      "R. M. T. Gonçalves",
+      "R. Moraes",
+      "Raquel Castro de Souza",
+      "Reginaldo Leandro Plácido",
+      "Rensis Likert",
+      "S. D. Motin",
+      "S. Nunes",
+      "Shyrlei Karyna Jagielski Benkendorf",
+      "Simão Alberto",
+      "Tatiana Engel Gerhardt",
+      "V. V. Dentz"
+    ],
+    "base_epistemologica": {
+      "valor": "Materialismo Histórico-Dialético",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto desenvolve categorias como trabalho como princípio educativo e formação humana integral, citando Marx e Saviani. O trecho curto evidencia a relação entre trabalho e educação como processo histórico.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 20,
+          "trecho": "O trabalho é um processo entre o homem e a Natureza, um processo em que o homem produz sua própria existência através da realização do seu trabalho.",
+          "referencia_correspondente": "MARX, 2002, p. 142"
+        },
+        {
+          "secao": "Introdução",
+          "pagina": 21,
+          "trecho": "Trabalho e educação são atividades especificamente humanas. Isso significa que, rigorosamente falando, apenas o ser humano trabalha e educa.",
+          "referencia_correspondente": "SAVIANI, 2007, p. 152"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "REFLEXÕES ACERCA DAS PRODUÇÕES CIENTÍFICAS DOS DOCENTES DE HISTÓRIA DO EMI DO IFC, SOBRE EPT: UMA BUSCA PELA INFLUÊNCIA TEÓRICA EM SEUS PLANOS DE ENSINO.",
+    "tipo": "acervo",
+    "formato": "Site / Portal",
+    "link": "https://educapes.capes.gov.br/handle/capes/778420",
+    "publico_alvo": [
+      "docentes_professores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Instituto Federal Catarinense",
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "Produção Científica de docentes",
+      "Plano de Ensino de História",
+      "Mestrado",
+      "Organização e Memórias"
+    ],
+    "data_publicacao": "2024-04-18",
+    "autores_colaboradores": [
+      {
+        "nome": "ProfEPT - IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "ROCHA, Maira Cambraia",
+        "papel": "creator"
+      },
+      {
+        "nome": "ALBERTO, Simão",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/778420",
+        "url": "https://educapes.capes.gov.br/handle/capes/778420"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "REFLEXÕES ACERCA DAS PRODUÇÕES CIENTÍFICAS DOS DOCENTES DE HISTÓRIA DO EMI DO IFC, SOBRE EPT: UMA BUSCA PELA INFLUÊNCIA TEÓRICA EM SEUS PLANOS DE ENSINO.",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Material Didático Instrucional: “Repositório das Produções Científicas dos docentes do IFC”",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "REPOSITÓRIO DAS PRODUÇÕES CIENTÍFICAS DOS DOCENTES DO IFC",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0048 2024 maira cambraia rocha simao alberto ifc blumenau lp2 mp4 reflexoes acerca das producoes cientificas dos docentes de historia do emi do ifc sobre ept uma busca pela influencia teorica em seus planos de ensino 10 resumo esta pesquisa teve como objetivo compreender como as influencias teoricas presentes nas producoes cientificas dos docentes de historia do instituto federal catarinense ifc ecoam em seus planos de ensino para as turmas do ensino medio integrado emi tendo como recorte temporal os anos de 2008 a 2022 para levantamento das producoes cientificas dos docentes enquanto para analise dos planos de ensino considerou se os planos elaborados apos a diretriz do ensino medio do ifc ou seja de 2019 a 2022 trata se de um estudo que gravitou em torno da tematica historia e memoria da educacao profissional e tecnologica ept a pesquisa do ponto de vista metodologico e de abordagem qualitativa e quanto aos objetivos e classificada como exploratoria baseou se em revisao bibliografica e analise documental os dados coletados foram analisados atraves da analise textual discursiva atd de moraes e galiazzi 2006 os resultados apontam que os docentes apresentam em suas producoes cientificas contextualizacoes sobre dualidade estrutural contexto historico da ept e concepcoes de formacao integrada politecnica e omnilateral entretanto em seus planos de ensino de historia tais influencias teoricas nao foram perceptiveis diante deste resultado julgou se relevante propor um instrumento de ensino pesquisa e estudo como produto educacional pe o qual resultou em um website intitulado repositorio das producoes cientificas dos docentes de historia do ifc que alem de contribuir para valorizacao das producoes cientificas destes educadores podera transformar se em um recurso didatico por excelencia capaz de auxiliar ao ensino da historia da ept tendo como alicerce os referenciais teoricos evidenciados pelos docentes em seus textos de cunho cientifico o pe tende ainda proporcionar aos discentes do ensino medio integrado acesso a informacoes sobre a historia do ifc e a historia e memoria da ept palavras chave instituto federal catarinense educacao profissional e tecnologica ensino medio integrado producao cientifica de docentes plano de ensino de historia materialismo historico dialetico reflexoes acerca das producoes cientificas dos docentes de historia do emi do ifc sobre ept uma busca pela influencia teorica em seus planos de ensino acervo site portal ensino medio integrado instituto federal catarinense educacao profissional e tecnologica ensino medio integrado producao cientifica de docentes plano de ensino de historia mestrado organizacao e memorias andre chervel andreia matilde bottamedi bambinetti antonio escolano benito antonio gramsci celso dos santos vasconcellos cladecir alberto schenkel claudino piletti cloves alexandre de castro d m s o cassins d saheb dante henrique moura denise matiola todorov dermeval saviani dominique julia edna lucia da silva eliezer moreira pacheco estera muszkat menezes f truccolo fabiany de cassia tavares silva fernanda dias droescher gabriel kaplun gaudencio frigotto gustavo f c e silva gyorgy lukacs jacques le goff joao jose barrico de souza jose carlos libaneo juliana favretto juliana m filgueiras juliana vieira justino pereira de magalhaes karl marx liane carly hermes zanella lucia maria wanderley neves m c ciavatta m ramos m resende marcela alejandra pronko maria ciavatta maria do carmo galiazzi pierre bourdieu r antunes r m t goncalves r moraes raquel castro de souza reginaldo leandro placido rensis likert s d motin s nunes shyrlei karyna jagielski benkendorf simao alberto tatiana engel gerhardt v v dentz",
+    "termos_unificados": [
+      "Instituto Federal Catarinense",
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "Produção Científica de docentes",
+      "Plano de Ensino de História",
+      "Mestrado",
+      "Organização e Memórias"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

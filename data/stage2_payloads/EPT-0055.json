@@ -1,0 +1,247 @@
+{
+  "id": "EPT-0055",
+  "metadados_resolvidos": {
+    "ano": 2024,
+    "autor": "Ariana Mendes",
+    "orientador": "Viviane Grimm",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP3"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "O “NOVO” ENSINO MÉDIO, JUVENTUDE E TRABALHO: UM ESTUDO SOBRE O COMPONENTE CURRICULAR PROJETO DE VIDA EM UMA ESCOLA DA REDE ESTADUAL DE SANTA CATARINA",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/07/Dissertacao-Ariana-Mendes.pdf",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Novo Ensino Médio",
+      "Projeto de Vida",
+      "Juventude",
+      "Trabalho"
+    ],
+    "autores_referenciados": [
+      "Acácia Zeneida Kuenzer",
+      "Alice Casimiro Lopes",
+      "Amanda Félix Silva",
+      "Ana Augusta Ravasco Moreira Maia",
+      "Ana Geraldi Favacho",
+      "Ana Maria Freitas Teixeira",
+      "Ana Maria Klein",
+      "Beatriz Prado Pereira",
+      "Celso João Ferretti",
+      "César Tello",
+      "Crislaine Cassiano Drago",
+      "Dante Henrique Moura",
+      "Deise Mancebo",
+      "Denise Tolfo Silveira",
+      "Dermeval Saviani",
+      "Edgar Cabanas",
+      "Elisabeth Fernandes de Macedo",
+      "Emerson Lizandro D. Silveira",
+      "Eva Illouz",
+      "Fernanda Teixeira Córdova",
+      "Filomena Lúcia Gossler Rodrigues da Silva",
+      "Flávio B. Moreira",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "Geraldo Leão",
+      "Henrique da Silva",
+      "Iana Gomes de Lima",
+      "Ionara Soveral Scalabrin",
+      "Isabel Cristina Oliveira da Silva",
+      "Jaqueline Moll",
+      "Jeferson Mainardes",
+      "Jefferson Mainardes",
+      "José Gimeno Sacristán",
+      "José Licínio Backes",
+      "Juarez da Silva Thiesen",
+      "Juarez Tarcísio Dayrell",
+      "Julia Malanchen",
+      "Juliana Alles de Camargo Souza",
+      "Juliana Batista Reis",
+      "Juliana Favretto",
+      "Kaliana Silva Santos",
+      "Luís Armando Gardin",
+      "Luiz Carlos de Freitas",
+      "Márcia Aparecida Jacomini",
+      "Márcia dos Santos Ferreira",
+      "Maria Ciavatta",
+      "Maria do Carmo Galiazzi",
+      "Maria Zenaide Alves",
+      "Marise Nogueira Ramos",
+      "Marli André",
+      "Maurice Tardif",
+      "Micaela Balsamo de Mello",
+      "Miguel González Arroyo",
+      "Priscila de Souza Chisté Leite",
+      "Ricardo Antunes",
+      "Roberto R. Silva",
+      "Roberto Rafael D. Silva",
+      "Rodrigo Pereira",
+      "Ronaldo Marques de Lima Araújo",
+      "Roque Moraes",
+      "Roseli Esquerdo Lopes",
+      "Rui Canário",
+      "Sandra Regina de O. Garcia",
+      "Shirlei de S. Corrêa",
+      "Simone Braz Ferreira Gontijo",
+      "Stephen J. Ball",
+      "Tamirirs Possamai",
+      "Tamiris Possamai",
+      "Tatiana Engel Gerhardt",
+      "Tatiane Aparecida Martini",
+      "Teresa T. Silva",
+      "Valéria Amorim Arantes",
+      "Viviane Grimm"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/744439",
+    "titulo_produto": "Infográfico \"JUVENTUDE E TRABALHO: limites e possibilidades do Projeto de Vida no Ensino Médio\"",
+    "titulo_produto_bruto": "JUVENTUDE E TRABALHO: LIMITES E POSSIBILIDADES DO PROJETO DE VIDA NO ENSINO MÉDIO",
+    "data_publicacao": "2023-10-01",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Mendes, Ariana",
+        "papel": "creator"
+      },
+      {
+        "nome": "Grimm, Viviane",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/744439",
+        "url": "https://educapes.capes.gov.br/handle/capes/744439"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Infográfico - Juventude e Trabalho: limites e possibilidades do Projeto de Vida no Ensino Médio",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "texto"
+    ],
+    "palavras_chave_educapes": [
+      "Juventude",
+      "Trabalho",
+      "Projeto de Vida",
+      "Educação Profissional e Tecnológia",
+      "Ensino Médio",
+      "Mestrado em Educação Profissional e Tecnológica"
+    ],
+    "tipo_produto_regex": null,
+    "fonte_tipo_regex": null,
+    "formato_produto_regex": "Infográfico",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "Instituto Federal Catarinense\n Programa de Pós- Graduação em Educação Profissional e Tecnológica - ProfEPT\nCampus Blumenau\n\nARIANA MENDES\n\nO “NOVO” ENSINO MÉDIO, JUVENTUDE E TRABALHO: UM ESTUDO SOBRE O\nCOMPONENTE CURRICULAR PROJETO DE VIDA EM UMA ESCOLA DA REDE\nESTADUAL DE SANTA CATARINA\n\nBlumenau – SC\n2024\n\nARIANA MENDES\n\nO “NOVO” ENSINO MÉDIO, JUVENTUDE E TRABALHO: UM ESTUDO SOBRE O\nCOMPONENTE CURRICULAR PROJETO DE VIDA EM UMA ESCOLA DA REDE\nESTADUAL DE SANTA CATARINA\n\nDissertação apresentada ao Programa de Pós-\nGraduação Stricto Sensu em Educação Profissional e\nTecnológica, ofertado pelo campus Blumenau do\nInstituto Federal Catarinense, como parte dos\nrequisitos para a obtenção do título de Mestra em\nEducação Profissional e Tecnológica.\n\nOrientador: Profa. Dra. Viviane Grimm\n\nBlumenau – SC\n2024",
+    "ficha_catalografica": "[PÁG. 3]\nMendes, Ariana.\nM538n O “novo” ensino médio, juventude e trabalho: um estudo sobre o\ncomponente curricular projeto de vida em uma escola da rede estadual de Santa Catarina\n/ Ariana Mendes; orientadora Viviane Grimm. -- Blumenau, 2023.\n 153 p.\n Dissertação (mestrado) – Instituto Federal Catarinense, campus Blumenau, Mestrado\nProfissional em Educação Profissional Tecnológica (PROFEPT), Blumenau, 2023.\n\n Inclui referências.\n\n1.Educação Profissional e Tecnológica. 2. Ensino Médio Integrado.\n3. Projeto de Vida. 4. Juventude. 5. Trabalho. I. Grimm, Viviane. II. Instituto Federal\nCatarinense. Mestrado Profissional em Educação Profissional e Tecnológica. III. Título\n\nCDD: 373.246\n\nFicha catalográfica elaborada pela bibliotecária\nShyrlei K. Jagielski Benkendorf - CRB 14/662",
+    "sumario": "[PÁG. 16]\n14\n\nSUMÁRIO\n\n1 INTRODUÇÃO ....................................................................................................... 15\n\n2 REFERENCIAL TEÓRICO ..................................................................................... 25\n2.1 NOVO ENSINO MÉDIO: TERRITORIOS EM DISPUTA...................................... 26\n2.2 A POLÍTICA CURRICULAR NA REFORMA DO ENSINO MÉDIO ....................... 36\n2.3 JUVENTUDES, TRABALHO E PROJETO DE VIDA ........................................... 47\n2.4 PROJETO DE VIDA E O NOVO ENSINO MÉDIO NO TERRITÓRIO\nCATARINENSE ......................................................................................................... 57\n\n3 METODOLOGIA .................................................................................................... 64\n\n4 ANÁLISE DOS DADOS: RESULTADOS E DISCUSSÕES ................................... 69\n4.1 PROCESSOS DE IMPLANTAÇÃO DO NOVO ENSINO MÉDIO NA ESCOLA\nPESQUISADA ........................................................................................................... 69\n4.2 ABORDAGENS METODOL´~OGICAS DO COMPONENTES CURRICULAR\nPROJETO DE VIDA .................................................................................................. 74\n4.3 CONCEPÇÃO SOBRE PROJETO DE VIDA E JUVENTUDE ............................. 86\n4.4 PROJETO DE VIDA, O MNDO DO TRABALHO E A FORMAÇÃO INTEGRAL . 95\n4.5 PROCESSOS DE DESENVOLVIMENTO E AVALIAÇÃO DO PRODUTO\nEDUCACIONAL ...................................................................................................... 101\n\n3 CONSIDERAÇÕES FINAIS ................................................................................. 107\n\nREFERÊNCIAS ....................................................................................................... 110\n\nAPÊNDICE A: PRODUTO EDUCACIONAL ........................................................... 119\nAPÊNDICE B: ROTEIRO DE ENTREVISTA (GESTOR E COORDENADOR) ....... 121\nAPÊNDICE C: ROTEIRO DE ENTREVISTA PARA PROFESSORES .................... 122\nAPÊNDICE D: TCLE EQUIPE GESTORA E PEDAGÓGICA ................................. 123\nAPÊNDICE E: TCLE PARA PROFESSORES ........................................................ 126\nAPÊNDICE F: SLIDES DA RODA DE CONVERSA ............................................... 129\nAPÊNDICE G: TCLE PARA RODA DE CONVERSA ............................................. 137\nAPÊNDICE H: QUESTIONÁRIO DA AVALIAÇÃO DO PE ..................................... 139\nAPÊNDICE I: QUADRO COM DADOS OBTIDOS A PARTIR DE UMA ATIVIDADE\nAVALIATIVA DO PROFESSOR DO COMPONENTE CURRICULAR PROJETO DE\nVIDA ........................................................................................................................ 142\n\nANEXO A: TERMO DE ANUÊNCIA DA SECRETARIA DE ESTADO DA\nEDUCAÇÃO ........................................................................................................... 144\nANEXO B: PARECER CONSUBSTANCIADA DO COMITÊ DE ÉTICA - IFC ........ 146\n15\n\n1 INTR",
+    "resumo": "[PÁG. 11]\nRESUMO\n\nEsta dissertação é resultado de uma pesquisa realizada no Mestrado Profissional em\nEducação Profissional e Tecnológica (ProfEPT) do Instituto Federal Catarinense -\nBlumenau, inserida na linha de pesquisa “Práticas Educativas em Educação\nProfissional e Tecnológica” no “Macroprojeto de Práticas Educativas no Currículo\nIntegrado”. O Novo Ensino Médio, instituído pela Lei 13.415/2017, trouxe alterações\nna oferta desta etapa de ensino, destacando-se a flexibilização curricular com a\nintrodução dos itinerários formativos, incluindo o projeto de vida. Neste sentido, o\nestudo busca analisar como o processo de recontextualização deste componente foi\nimplementado em uma escola piloto da rede estadual catarinense, localizada no\nMédio Vale do Itajaí, a fim de desenvolver um produto que contribua com a\ndiscussão sobre o projeto de vida, sob a luz dos conceitos de juventude e trabalho.\nPara a fundamentação teórica parte-se de autores que discutem a reforma do ensino\nmédio e sua relação com políticas neoliberais, o projeto de vida, juventude e\ntrabalho em consonância com a formação integral, a partir de autores tais como:\nThiesen (2021), Freitas (2014), Santos e Gontijo (2020), Silva (2023), Alves e Dayrell\n(2016) e Ramos (2008). Quanto à metodologia, trata-se de um estudo de caso,\nsendo que os dados foram coletados por meio de fontes documentais e entrevistas\ncom docentes atuantes no respectivo componente curricular, além da observação de\naulas e reuniões de planejamento. Os dados coletados foram analisados a partir da\nAnálise Textual Discursiva (MORAES; GALIAZZI, 2016) e da mobilização do\nconceito do ciclo de políticas de Stephen Ball (MAINARDES, 2006; 2018). Quanto\naos resultados do estudo, destaca-se que no processo de recontextualização do\ncomponente curricular projeto de vida, a dimensão do autoconhecimento teve maior\ndestaque na escola pesquisada, em uma perspectiva que tende a responsabilizar o\nestudante por suas escolhas, alinhando-se com as pautas dos reformadores\nempresariais da educação, favorecendo uma formação flexibilizada, afastando-se de\numa proposta de formação integral que articule o trabalho e sua importância para a\njuventude. A partir da análise, foi desenvolvido o infográfico “Juventude e trabalho:\nlimites e possibilidades do projeto de vida no ensino médio”, aplicado em uma roda\nde conversa com gestores, coordenadores e professores participantes da pesquisa,\nque destacaram a relevância do material para fomentar a discussão e ampliar a\ncompreensão acerca do projeto de vida, juventude e trabalho.\n\nPalavras-chave: Educação Profissional e Tecnológica. Novo Ensino Médio. Projeto\nde Vida. Juventude. Trabalho.",
+    "introducao": "[PÁG. 17]\n15\n\n1 INTRODUÇÃO\n\nA dissertação aqui apresentada é resultado da pesquisa realizada no\nMestrado Profissional em Educação Profissional e Tecnológica (ProfEPT) do Instituto\nFederal Catarinense (IFC), Campus Blumenau, inserido na linha de pesquisa\n“Práticas Educativas em Educação Profissional e Tecnológica” no “Macroprojeto de\nPráticas Educativas no Currículo Integrado. Como delimitação, toma-se como objeto\nde investigação o componente curricular projeto de vida em uma escola da rede\nestadual de Santa Catarina, implementado a partir da reforma do ensino médio.\nO ensino médio, enquanto última etapa da educação básica, vem passando\npor mudanças bastante significativas, que impactam diretamente na forma como se\natende esse público. Segundo Silva (2018), desde a promulgação da Lei de\nDiretrizes e Bases da Educação Nacional, em 1996, o ensino médio vem sendo alvo\nde disputas quanto às suas finalidades, questões como “qual ensino médio” e “para\nquem”, além das formas pelas quais ele é ofertado, tornou-se pauta das discussões\nsobre esta etapa da educação básica. Exemplo disso é o expressivo quantitativo de\nnormas, diretrizes, regulamentos e leis editados entre 1996 até 2018 conforme\ndestaca Silva (2018, p.9) dentre as quais foram editados “[...] duas diretrizes\ncurriculares nacionais para o ensino médio, duas para a educação profissional\ntécnica de nível médio, dois decretos, uma alteração da constituição, um projeto de\nlei, um programa que incentivava a reformulação curricular (PROEMI)”, além de\nalterações nas avaliações de larga escala.\nNesse contexto, compreender os mecanismos que desencadearam a reforma\ndo ensino médio, em 2017, é fundamental para que se identifiquem os sentidos\ndesse movimento, ou seja, as pretensões, os interesses e as disputas envolvidas.\nPara Thiesen (2021), a reforma se relaciona diretamente com uma proposta de\nfundo político, que apresenta interesses acadêmicos e culturais, mas que,\nsobretudo, visa fortalecer o movimento da transnacionalização das atividades de\nmercado, que enaltece ainda mais o processo de globalização econômica,\nconduzido pelos liberais e pelos reformadores empresariais da educação. A reforma\nresulta, portanto, em modificações tanto na oferta do ensino médio, quanto na\norganização curricular, que incorpora outros componentes curriculares, entre eles o\nprojeto de vida.\n\n[PÁG. 18]\n16\n\nO interesse pelo projeto de vida surge na medida em que a história\nprofissional da pesquisadora vem sendo impactada por essa nova organização que\no NEM propõe. Funcionária pública efetiva da rede estadual de ensino de Santa\nCatarina, desempenhando a função de assistente técnico pedagógico, realizando a\ncoordenação pedagógica da unidade em que atua, o estudo dos documentos\nnorteadores da reforma do ensino médio faz parte de seu trabalho. Além disso,\nparticipou da elaboração das trilhas de aprofundamento da área de linguagens, do\nCurrículo Base do Ensino Médio do Território Catarinense, desenvolvido por\ndocentes e profissionais da rede em momentos importantes de estudo e discussão,\ndespertando ainda mais o interesse pelo tema e percebendo a necessidade de\nestudar melhor esses componentes curriculares “novos”.\nPor sua vez, o ingresso no Mestrado Profissional em Educação Profissional e\nTecnológica possibilitou um novo olhar sobre o projeto de vida, uma vez que\ncategorias como formação integral, trabalho e juventudes podem sustentar práticas\neducativas a partir de um currículo integrado que culmine na formação de um sujeito\ncrítico, autônomo e emancipado, que compreende o projeto de vida como algo que\nnão depende só de si, mas que se articula com outros sujeitos e dimensões do\ncontexto no qual se insere.\nDessa forma, pode ser observado de um lado um projeto de vida com uma\nproposta pedagógica frágil, centrado no autoconhecimento e auto responsabilização\ndos estudantes, por outro lado os conhecimentos acessados a partir do mestrado,\ntrazem elementos robustos, que podem tornar o projeto de vida um instrumento\npotente para a formação dos estudantes do ensino médio, tornando o processo de\nrecontextualização da política em um momento importante de “tradução” da política,\npossibilitando observar as escolhas realizadas, adaptações, mudanças, disputas,\nconflitos, dentre outros aspectos, pois, conforme destaca Mainardes (2006), o\ncampo educacional e as políticas públicas destinadas a ele sofrem influências de\ninúmeras organizações e sujeitos. Isso, por sua vez, acentua as disputas que se\nformam em torno de tais políticas.\nEssas disputas acontecem desde o momento que a política é elaborada e se\nestendem por todas as suas etapas, que não são lineares e tampouco acontecem\nisoladamente. Mainardes (2018) ao discutir o ciclo de políticas de Stephen Ball,\nobserva que, embora elas se originem a partir de um marco referencial específico,\n\n[PÁG. 19]\n17\n\nsofrem ao longo de sua implementação muitas influências, as quais ganham corpo\nno processo de recontextualização, influenciando o contexto da prática.\nCom o intuito de construir uma aproximação com o objeto da pesquisa,\nbuscou-se identificar pesquisas prévias, relacionadas à temática da pesquisa,\nrealizando-se uma revisão de artigos e dissertações produzidas no Brasil, no\nperíodo entre 2016 e 2020, em duas bases de dados, sendo elas o Portal de\nPeriódicos da Capes e a Biblioteca Digital de Teses e Dissertações, sempre\nutilizando os termos de busca “Projeto de Vida” e “Ensino Médio”.\nNa busca realizada no Portal de Periódicos da Capes, foram encontrados 303\nartigos. Refinando a pesquisa com o filtro “revisado por pares” e o período delimitado\nentre 2016-2020 (cinco anos), chegou-se ao total de 90 artigos. Procurando refinar\nainda mais a busca, restringindo a pesquisa na área da educação, assim, foram\nlocalizados 15 artigos.\nNa Biblioteca Digital de Teses e Dissertações, foram localizadas, na primeira\nbusca, 96 dissertações. Utilizando-se o filtro do período 2016-2020 (cinco anos),\nchegou-se a 49 dissertações. Por conseguinte, refinando a busca pelos termos\n“Projeto de Vida” e “Ensino Médio”, no título, foram localizadas oito dissertações.\nComo a lista trazia um título repetido, o número final foi de sete documentos, sendo\ntodos eles dissertações, conforme detalhamento no Quadro 1.\n\nQuadro 1 – Número de artigos e dissertações localizadas por ano\nAno\nArtigo\nDissertação\n2016\n8\n2\n2017\n1\n1\n2018\n4\n0\n2019\n1\n3\n2020\n1\n1\nTOTAL\n22\nFonte: elaborado pela autora (2022).\n\nConforme pode ser observado, no Quadro 1, o projeto de vida é um tema\npresente na literatura especializada na área da educação, ainda antes do NEM ser\ninstituído, em 2017. A partir da leitura dos resumos e análise das pesquisas\nlocalizadas, observou-se que o projeto de vida é abordado de três formas: a) como\neixo articulador, isto é, como um tema que transita em todas as áreas do\nconhecimento e componentes curriculares, podendo ser abordado por um viés\ninterdisciplinar; b) como prática pedagógica ou metodologia, sendo utilizado como\n\n[PÁG. 20]\n18\n\nponto de referência para realizar discussões em sala de aula e até mesmo\ndesencadear atividades, tais como feiras de profissão ou desenvolvimento de projeto;\ne c) como componente curricular, tendo conteúdos, atividades e avaliação próprios,\ndesenvolvendo-se de forma independente de outros componentes curriculares ou\nprojetos da escola. O Quadro 2 apresenta como o projeto de vida é abordado nas\npesquisas localizadas.\n\nQuadro 2 – Categorização do projeto de vida, a partir das produções\nCategoria\nQuantidade\nProjeto de Vida como eixo articulador\n3\nProjeto de Vida como prática pedagógica/metodologia\n13\nProjeto de Vida enquanto componente curricular\n6\nFonte: elaborado pela autora (2022).\n\nAs pesquisas que tratam do projeto de vida como componente curricular,\nforam publicadas a partir de 2018, indicando possíveis reflexos da reforma do ensino\nmédio e da BNCC no estudo sobre a temática. Observa-se que as pesquisas que\nabordam o Projeto de Vida, tanto como prática pedagógica quanto como eixo\narticulador, são publi",
+    "descricao_produto_na_dissertacao": "[PÁG. 24] recontextualizado em uma escola-piloto do Novo Ensino Médio da Rede Estadual de\nSanta Catarina? Que concepções, valores e interesses norteiam o trabalho com\nesse componente nas escolas? Quais as possibilidades de o projeto de vida\ncontribuir para a formação integral do estudante e para o mundo do trabalho? Essas\ntrês questões, de forma sistematizada, nortearam o desenvolvimento da pesquisa.\nComo objetivo geral, buscou analisar o processo de recontextualização do\ncomponente curricular projeto de vida em uma escola-piloto do Novo Ensino Médio\nda rede estadual de educação de Santa Catarina. Como objetivos específicos,\nbuscou:\n• Mapear as orientações curriculares nacionais e da rede estadual de Santa\nCatarina para o componente curricular projeto de vida.\n• Identificar o modo como o componente curricular projeto de vida está sendo\ndesenvolvido em uma escola da Rede Estadual de Santa Catarina.\n• Analisar as concepções curriculares, valores e interesses que permeiam as\nescolhas em torno do componente curricular projeto de vida em uma escola\nda Rede Estadual de Santa Catarina.\n• Desenvolver, aplicar e avaliar um produto educacional que aborde questões\nrelacionadas ao projeto de vida, trabalho e juventude no ensino médio.\nTendo em vista tais objetivos, a pesquisa foi desenvolvida seguindo a\nmetodologia de estudo de caso de abordagem qualitativa (André, 2013). A coleta dos\ndados se deu por meio de fontes documentais e aplicação de entrevistas com três\ndocentes que atuam no respectivo componente curricular, além de observação de\ntrês reuniões de planejamento e das aulas ministradas por um dos docentes do\nprojeto de vida, em três turmas do ensino médio (1ª, 2ª e 3ª séries). Foram\nobservadas duas aulas na 1ª série, duas na 2ª série e quatro aulas na 3ª série.\nPara a análise dos dados, foi utilizado o conceito do ciclo de políticas de\nStephen Ball (Mainardes, 2006; 2018). Essa escolha se justifica na medida em que\nas políticas não se constituem em documentos que são instituídos de forma vertical.\nDe\nmodo\noposto,\nelas\npassam\npor\nmomentos\nde\nressignificação\ne\nrecontextualização (Mainardes, 2018), ou seja, nenhuma política é implementada\nsem que sofra as influências do seu contexto, sem que passe por processos de\ndisputa e negociações.\n\n[PÁG. 25] O percurso realizado para o desenvolvimento da pesquisa teve início no\nsegundo semestre do ano de 2021 sendo aprovado pelo Comitê de Ética no mês de\nmaio de 2022, sob o Parecer nº 5.433.898, de 16 de maio de 2022 (Anexo A). Na\nsequência, iniciou-se o trabalho de pesquisa de campo com a realização de visitas\nsistemáticas à escola, campo de pesquisa, alternando momento de leitura de\ndocumentos, entrevistas, acompanhamento de reuniões e de intervenções do\nprofessor de Projeto de Vida na sala de aula. Com base nos dados levantados nesse\nperíodo, em fevereiro de 2023, teve início a construção do Produto Educacional (PE)\nna forma de um Infográfico.\nIntitulado como “Juventude e trabalho: limites e possibilidades do Projeto de\nVida no ensino médio”, o infográfico possui como objetivo proporcionar visibilidade\nàs questões referentes ao processo de implantação do componente curricular\nprojeto de vida em uma escola da rede estadual de Santa Catarina, auxiliando em\ndiscussões que tratam do projeto de vida e seus desdobramentos no processo\nformativo dos estudantes no ensino médio, sobretudo a relação com o trabalho. O\ninfográfico possui como eixo conceitual o projeto de vida a partir da perspectiva da\ncategoria ju",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 17,
+        "texto": "A dissertação aqui apresentada é resultado da pesquisa realizada no\nMestrado Profissional em Educação Profissional e Tecnológica (ProfEPT) do Instituto\nFederal Catarinense (IFC), Campus Blumenau, inserido na linha de pesquisa\n“Práticas Educativas em Educação Profissional e Tecnológica” no “Macroprojeto de\nPráticas Educativas no Currículo Integrado. Como delimitação, toma-se como objeto\nde investigação o componente curricular projeto de vida em uma escola da rede\nestadual de Santa Catarina, implementado a partir da reforma do ensino médio.\nO ensino médio, enquanto última etapa da educação básica, vem passando\npor mudanças bastante significativas, que impactam diretamente na forma como se\natende esse público. Segundo Silva (2018), desde a promulgação da Lei de\nDiretrizes e Bases da Educação Nacional, em 1996, o ensino médio vem sendo alvo\nde disputas quanto às suas finalidades, questões como “qual ensino médio” e “para\nquem”, além das formas pelas quais ele é ofertado, tornou-se pauta das discussões\nsobre esta etapa da educação básica. Exemplo disso é o expressivo quantitativo de\nnormas, diretrizes, regulamentos e leis editados entre 1996 até 2018 conforme\ndestaca Silva (2018, p.9) d",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 18,
+        "texto": "O interesse pelo projeto de vida surge na medida em que a história\nprofissional da pesquisadora vem sendo impactada por essa nova organização que\no NEM propõe. Funcionária pública efetiva da rede estadual de ensino de Santa\nCatarina, desempenhando a função de assistente técnico pedagógico, realizando a\ncoordenação pedagógica da unidade em que atua, o estudo dos documentos\nnorteadores da reforma do ensino médio faz parte de seu trabalho. Além disso,\nparticipou da elaboração das trilhas de aprofundamento da área de linguagens, do\nCurrículo Base do Ensino Médio do Território Catarinense, desenvolvido por\ndocentes e profissionais da rede em momentos importantes de estudo e discussão,\ndespertando ainda mais o interesse pelo tema e percebendo a necessidade de\nestudar melhor esses componentes curriculares “novos”.\nPor sua vez, o ingresso no Mestrado Profissional em Educação Profissional e\nTecnológica possibilitou um novo olhar sobre o projeto de vida, uma vez que\ncategorias como formação integral, trabalho e juventudes podem sustentar práticas\neducativas a partir de um currículo integrado que culmine na formação de um sujeito\ncrítico, autônomo e emancipado, que compreende o projeto de vid",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 25,
+        "texto": "O percurso realizado para o desenvolvimento da pesquisa teve início no\nsegundo semestre do ano de 2021 sendo aprovado pelo Comitê de Ética no mês de\nmaio de 2022, sob o Parecer nº 5.433.898, de 16 de maio de 2022 (Anexo A). Na\nsequência, iniciou-se o trabalho de pesquisa de campo com a realização de visitas\nsistemáticas à escola, campo de pesquisa, alternando momento de leitura de\ndocumentos, entrevistas, acompanhamento de reuniões e de intervenções do\nprofessor de Projeto de Vida na sala de aula. Com base nos dados levantados nesse\nperíodo, em fevereiro de 2023, teve início a construção do Produto Educacional (PE)\nna forma de um Infográfico.\nIntitulado como “Juventude e trabalho: limites e possibilidades do Projeto de\nVida no ensino médio”, o infográfico possui como objetivo proporcionar visibilidade\nàs questões referentes ao processo de implantação do componente curricular\nprojeto de vida em uma escola da rede estadual de Santa Catarina, auxiliando em\ndiscussões que tratam do projeto de vida e seus desdobramentos no processo\nformativo dos estudantes no ensino médio, sobretudo a relação com o trabalho. O\ninfográfico possui como eixo conceitual o projeto de vida a partir da perspec",
+        "citacoes_detectadas": [
+          "Santa Catarina, 2020"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 29,
+        "texto": "tecnológico, abrindo oportunidades ao ensino privado que, a partir daí, pôde atuar,\noferecendo tanto o ensino básico quanto o superior (FAVRETTO, SCALABRIN,\n2015).\nEntretanto, o Decreto n.º 2.208/97, ao separar o ensino médio do ensino\ntécnico, imprime legalidade ao dualismo que sempre acompanhou a educação.\nTodavia, essa não é uma situação aleatória, pois faz parte de um projeto político que\nvisa fundamentalmente manter o capitalismo enquanto hegemonia, resultado de um\nprocesso histórico, pensado e articulado, com um objetivo particularmente definido\n(FRIGOTTO; CIAVATTA; RAMOS, 2005).\nSegundo Ferretti (2018), o Decreto n.º 2.208/1997 separou o ensino\npropedêutico do ensino profissional, fornecendo dois modelos educacionais com fins\nespecíficos para públicos também específicos. De tal modo, a partir da segunda\nsérie, era garantido aos estudantes o direito de se matricular em escolas\nprofissionais, pertencentes a outras redes, inclusive, nas redes privadas. Assim, esta\nforma ficou conhecida como sendo ensino médio concomitante.",
+        "citacoes_detectadas": [
+          "FRIGOTTO; CIAVATTA; RAMOS, 2005"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "Dessa forma, ao tratar do governo Lula no que se refere ao Ensino Médio,\nFrigotto, Ciavatta e Ramos (2005) observam ainda que, quando Lula assume a\npresidência, este decreto é revogado e substituído pelo Decreto n.º 5.154/04, que\ntenta reestabelecer a ideia que se tinha para o ensino médio na construção da LDB,\ntrazendo possibilidades importantes, como é o caso do ensino médio integrado,\nrevelando ainda “[...] a timidez poética do Governo da direção de um projeto\nnacional” (p.21). Segundo os autores citados, este decreto é um documento\nemblemático porque representa a continuidade da política econômica monetarista\nem um governo, no qual se esperavam muitas mudanças estruturais.\nTransformações essas que não aconteceram.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "[...] a publicação do Decreto n.º 5.154/2004, no início do governo Lula,\nocorreu no momento em que se reacendiam as discussões sobre a\nfinalidade do ensino médio e a possibilidade de sua integração à educação\nprofissional, no que se convencionou chamar de Ensino Médio Integrado –\nEMI. Essa oferta de ensino médio tem como fundamento a ideia do\ntrabalho como princípio educativo, o conceito de formação politécnica e\num currículo estruturado nos eixos de ciência, cultura e trabalho (DRAGO;\nMOURA, 2022, p. 357)",
+        "citacoes_detectadas": [
+          "DRAGO;\nMOURA, 2022, p. 357"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 42,
+        "texto": "A Reforma do Ensino Médio tem como fundamento as políticas\nconservadoras e por isso trouxe importantes alterações para o funcionamento do\nensino médio, que a partir dela passa a se chamar Novo Ensino Médio. Constitui-se\nnuma proposta de ensino que tem por base a pedagogia das competências e o\ndesenvolvimento de habilidades. O desenvolvimento de competência relaciona-se\ndiretamente ao “ser capaz de” (RAMOS, 2008, p. 142). Por tais motivos, fala-se\npouco do conteúdo, sem deixar claro aos sujeitos quais aquisições devem ter para\nque sejam capazes de fazer o que lhes é proposto. Assim, se estabelece uma",
+        "citacoes_detectadas": [
+          "RAMOS, 2008, p. 142"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 43,
+        "texto": "lacuna entre o sujeito e os conceitos aprendidos, esvaziando, em certa medida, o\nprocesso de aprendizagem.\nPara Ramos (2008), se de um lado a pedagogia das competências se\nfundamenta no pragmatismo - que no contexto atual pode ser conceituado como\nneopragmatismo - na prática, ela se desenvolve por uma perspectiva neotecnicista.\nIsso, pelo fato de que ela ainda reduz o que seriam competências profissionais a\ndesempenhos observáveis, visto que o conhecimento passa a se relacionar\ndiretamente também ao desempenho e à utilidade que ele tem para determinadas\nfunções possam ser realizadas. Por conseguinte, a atividade profissional passa a\ndepender essencialmente da acumulação de comportamentos elementares e, os\nprocessos de aprendizagem, perdem espaço, na medida em que comportamentos e\ndesempenhos passam a ganhar ênfase (RAMOS, 2008).\nEmbora possa parecer uma inovação educacional, a pedagogia das\ncompetências precisa ser situada dentro do contexto de propostas pedagógicas.\nAraújo (2004, p. 514-515), ao discorrer sobre ela, pontua de forma clara que",
+        "citacoes_detectadas": [
+          "RAMOS, 2008"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 56,
+        "texto": "Ramos (2008) enfatiza o aprimoramento da pessoa humana como uma das\ndiretrizes da LDB. Partindo desta perspectiva, o que pode ser observado é que o\nfoco do ensino médio se encontra no mercado do trabalho e não na formação dos\nestudantes. A partir dessa lógica, investe-se na construção de projetos de vida\nindividualizados e que não se articulam com um projeto social, construído com base\ndas necessidades e anseios da coletividade. A juventude, neste contexto, é\nconcebida como uma categoria abstrata e isolada.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 57,
+        "texto": "Ramos (2008, p. 7) retoma a LDB em seus artigos 35 e 36, onde o trabalho\nassume seu princípio educativo, “[...] no sentido de que o ensino deve explicitar a\nrelação entre a produção do conhecimento e as forças produtivas”. Para a autora, o\nprocesso de ensino deveria possibilitar em um primeiro momento a compreensão da\nperspectiva ontológica do trabalho humano, onde para garantir sua própria\nexistência o homem precisa transformar a natureza, relacionando-a com a\nperspectiva histórica, que consiste na evolução destas formas de produzir sua\nexistência, que por sua vez se relaciona com o desenvolvimento social dos sujeitos\n(RAMOS, 2008).",
+        "citacoes_detectadas": [
+          "RAMOS, 2008"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 57,
+        "texto": "O trabalho, sob esta ótica, segundo Ramos (2008, p.3) pode ser\ncompreendido como “[...] realização humana inerente ao ser (sentido ontológico) e\ncomo prática econômica (sentido histórico associado ao respectivo modo de\nprodução)”, articulando a esses dois conceitos a ciência, a cultura e a tecnologia.\nEstes conceitos possibilitam perceber que as formas de trabalho podem ser\nressignificadas a partir dos conhecimentos científicos que permitem aprimorar as\nformas de produção a partir das contradições, desenvolvendo diferentes tecnologias,\nconsiderando as questões culturais que envolvem a sociedade, trazendo para a\ndimensão do trabalho os valores que norteiam a conduta da sociedade. O trabalho,\nnesta perspectiva, não se resume apenas à produção de condições de existência,\nevidenciando outras dimensões, como a criação e a realização humana.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 57,
+        "texto": "[...] considerar o trabalho como princípio educativo equivale dizer que o ser\nhumano é produto da sua realidade e, por isto, se apropria dela e pode\ntransformá-la. Equivale dizer, ainda, que nós somos sujeitos de nossa\nhistória e de nossa realidade (RAMOS, 2008, p. 4).",
+        "citacoes_detectadas": [
+          "RAMOS, 2008, p. 4"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "RAMOS, Marise Nogueira. O modelo de competências: entre o pragmatismo e o tecnicismo. In: SEMINÁRIO DE PESQUISA, 3., 2008, Rio de Janeiro. O tempo do capital e do trabalho no Brasil de 2008: entre o pré-sal e a crise globalizada. Rio de Janeiro: EPSJV, 2009. p. 133-147. Disponível em: <https://www.arca.fiocruz.br/ bitstream/icict/39133/2/Semin%c3%a1rio%20de%20Pesquisa%203%20- %20O%20Modelo%20de%20",
+      "SANTA CATARINA. Currículo Base do Ensino Médio do Território de Santa Catarina: Caderno 1 – Disposições Gerais. Florianópolis: Secretaria Estadual de Educação, 2020. Disponível em: <file:///D:/Downloads/CURRI%CC% 81CULO%20CADERNO%20%201.pdf>. Acesso em: 22, jul. 2021. 116 ______________. Currículo Base do Ensino Médio do Território de Santa Catarina: Caderno 2 – Formação geral básica. Florianópoli"
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0047",
+  "ano": 2024,
+  "autor": "Moacir Dutra de Oliveira",
+  "orientador": "Eder Aparecido de Carvalho",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP6",
+  "dissertacao": {
+    "titulo": "ACOLHIMENTO DE ESTUDANTES TRANS NOS CURSOS DE ENSINO MÉDIO INTEGRADO DO INSTITUTO FEDERAL CATARINENSE",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/10/Dissertacao-Moacir.pdf",
+    "resumo": "Neste artigo, a partir da experiência dos campi do Instituto Federal Catarinense – IFC, que ofertam\nmoradia estudantil: Abelardo Luz, Concórdia, Rio do Sul e Santa Rosa do Sul, foi analisada a\nimportância de um espaço seguro e acolhedor que contribua para o desenvolvimento integral por meio\nde estratégias que promovam um ambiente escolar mais inclusivo para todos. O objetivo central da\npesquisa que se apresenta neste trabalho é analisar os aspectos que envolvem o campo de estudo\nescolhido - acolhimento a estudantes TRANS, a partir de uma abordagem crítica e reflexiva, no\nInstituto Federal Catarinense (IFC) – Campus Santa Rosa do Sul, Concórdia, Abelardo Luz e Rio do\nSul, em virtude de estes ofertarem a moradia estudantil. No que tange aos aspectos metodológicos,\nessa pesquisa, parte de uma abordagem descritiva. Todavia, nela também se encontram aspectos\nqualitativos, e por ser de caráter exploratório, auxiliará no entendimento mais detalhado dos dados\ncoletados, permeando aspectos subjetivos, a partir da análise criteriosa e interpretativa e dos dados\nlevantados na aplicação de questionário. O artigo traz as discussões a respeito do acolhimento de\nestudantes TRANS nos campi do Instituto Federal Catarinense – IFC e aborda a relevância da\npromoção da inclusão e diversidade de gênero no ambiente escolar, com foco especial no acolhimento\nde estudantes transgênero, dada a importância de criar ambientes educacionais que sejam receptivos\ne inclusivos para garantir o bem-estar e o desenvolvimento acadêmico desses\\dessas estudantes. Este\nestudo destaca ainda os desafios enfrentados por estudantes transgênero, como discriminação e falta\nde compreensão, estratégias para implementar práticas educacionais que promovam a aceitação e a\nigualdade de gênero, ressaltando a necessidade de uma abordagem colaborativa entre docentes,\ntécnicos administrativos, pais e estudantes, a fim de que se garanta um ambiente educacional que\ncelebre e respeite a diversidade de gênero. O Produto Educacional desenvolvido por meio da Cartilha\nde Orientações oferece subsídios para os campi que desejam promover uma educação inclusiva e\nrespeitosa, como forma de dar visibilidade e de contribuir para a promoção de uma cultura de respeito\nà heterogeneidade e à inclusão no IFC.\n\nPalavras-chaves: Gênero. Sexualidade. Inclusão. Diversidade. Educação Profissional e Tecnológica.",
+    "palavras_chave": [
+      "Gênero",
+      "Sexualidade",
+      "Inclusão",
+      "Diversidade",
+      "Educação Profissional e Tecnológica"
+    ],
+    "autores_referenciados": [
+      "A. de J. Marchão",
+      "A. de S. Junior",
+      "Alboni Marisa Dudeque Pianovski Vieira",
+      "Alexandre Fernandez Vaz",
+      "Alfrancio Ferreira Dias",
+      "Annecy Tojeiro Giordani",
+      "Antonio Carlos Espit",
+      "B. Ramírez Guzmán",
+      "Bárbara Colossi Felippe",
+      "Beatriz Pagliarini Bagagli",
+      "Berenice Alves de Melo Bento",
+      "C. S. Cesar",
+      "Caetana Juracy Resende Silva",
+      "Caio Benevides Pedra",
+      "Cátia Maria Alves Monteiro",
+      "Danilo Araujo de Oliveira",
+      "Dermeval Saviani",
+      "Edna Lúcia da Silva",
+      "Eliezer Moreira Pacheco",
+      "G. do C. Xavier",
+      "Gaudêncio Frigotto",
+      "Guacira Lopes Louro",
+      "H. H. Souza",
+      "H. Henriques",
+      "Irineu Mario Colombo",
+      "J. da S. Borba",
+      "Jaqueline Gomes de Jesus",
+      "Judith Butler",
+      "Keo Silva",
+      "L. S. Ferreira",
+      "Laurence Bardin",
+      "Liane Carly Hermes Zanella",
+      "M. Sarat",
+      "Maria Ciavatta",
+      "Maria Clara Maciel de Araújo Ribeiro",
+      "Maria Hermínia Lage Fernandes Laffin",
+      "Maria Teresa Eglér Mantoan",
+      "Mario Quintana",
+      "Marise Nogueira Ramos",
+      "Mirla Cisne",
+      "N. M. de J. Bento",
+      "N. R. Xavier",
+      "P. C. Argenti",
+      "Paulo Freire",
+      "Roberta Pasqualli",
+      "Rosita Edler Carvalho",
+      "S. de M. M. Vigano",
+      "Silvana Mara Morais dos Santos",
+      "Suzana da Conceição de Barros",
+      "T. Reis",
+      "V. Vergueiro",
+      "Victor Régio da Silva Bento"
+    ],
+    "base_epistemologica": {
+      "valor": "Educação Libertadora / Freireana",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explora a educação como ferramenta de emancipação, alinhando-se à pedagogia freireana. A citação direta de Freire em trecho sobre educação dialógica e crítica confirma a matriz teórica.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 32,
+          "trecho": "Além disso, a perspectiva de Paulo Freire (1987) sobre educação emancipadora e crítica é essencial para embasar o processo de inclusão escolar de pessoas trans",
+          "referencia_correspondente": "FELIPPE, Bárbara Colossi. A Pesquisa como Princípio Pedagógico na Educação Profissional Técnica de Nível Médio..."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Acolher é Respeitar as Diferenças: Orientações para o Trabalho de Acolhimento / Público Alvo - Estudantes Trans",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Cartilha",
+    "link": "https://educapes.capes.gov.br/handle/capes/778431",
+    "publico_alvo": [
+      "docentes_professores",
+      "estudantes_alunos"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Acolhimento; Sexualidade; Educação; Estudantes \"Trans\"",
+      "Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT)",
+      "Produto Educacional"
+    ],
+    "data_publicacao": "2024-04-25",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense - IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Oliveira, Moacir Dutra de",
+        "papel": "creator"
+      },
+      {
+        "nome": "Carvalho, Eder Aparecido de",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/778431",
+        "url": "https://educapes.capes.gov.br/handle/capes/778431"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Acolher é Respeitar as Diferenças: Orientações para o Trabalho de Acolhimento / Público Alvo - Estudantes Trans",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "ACOLHER É RESPEITAR AS DIFERENÇAS",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0047 2024 moacir dutra de oliveira eder aparecido de carvalho ifc blumenau lp2 mp6 acolhimento de estudantes trans nos cursos de ensino medio integrado do instituto federal catarinense neste artigo a partir da experiencia dos campi do instituto federal catarinense ifc que ofertam moradia estudantil abelardo luz concordia rio do sul e santa rosa do sul foi analisada a importancia de um espaco seguro e acolhedor que contribua para o desenvolvimento integral por meio de estrategias que promovam um ambiente escolar mais inclusivo para todos o objetivo central da pesquisa que se apresenta neste trabalho e analisar os aspectos que envolvem o campo de estudo escolhido acolhimento a estudantes trans a partir de uma abordagem critica e reflexiva no instituto federal catarinense ifc campus santa rosa do sul concordia abelardo luz e rio do sul em virtude de estes ofertarem a moradia estudantil no que tange aos aspectos metodologicos essa pesquisa parte de uma abordagem descritiva todavia nela tambem se encontram aspectos qualitativos e por ser de carater exploratorio auxiliara no entendimento mais detalhado dos dados coletados permeando aspectos subjetivos a partir da analise criteriosa e interpretativa e dos dados levantados na aplicacao de questionario o artigo traz as discussoes a respeito do acolhimento de estudantes trans nos campi do instituto federal catarinense ifc e aborda a relevancia da promocao da inclusao e diversidade de genero no ambiente escolar com foco especial no acolhimento de estudantes transgenero dada a importancia de criar ambientes educacionais que sejam receptivos e inclusivos para garantir o bem estar e o desenvolvimento academico desses dessas estudantes este estudo destaca ainda os desafios enfrentados por estudantes transgenero como discriminacao e falta de compreensao estrategias para implementar praticas educacionais que promovam a aceitacao e a igualdade de genero ressaltando a necessidade de uma abordagem colaborativa entre docentes tecnicos administrativos pais e estudantes a fim de que se garanta um ambiente educacional que celebre e respeite a diversidade de genero o produto educacional desenvolvido por meio da cartilha de orientacoes oferece subsidios para os campi que desejam promover uma educacao inclusiva e respeitosa como forma de dar visibilidade e de contribuir para a promocao de uma cultura de respeito a heterogeneidade e a inclusao no ifc palavras chaves genero sexualidade inclusao diversidade educacao profissional e tecnologica educacao libertadora freireana acolher e respeitar as diferencas orientacoes para o trabalho de acolhimento publico alvo estudantes trans material didatico instrucional cartilha ensino medio integrado genero sexualidade inclusao diversidade educacao profissional e tecnologica acolhimento sexualidade educacao estudantes trans mestrado profissional em educacao profissional e tecnologica profept produto educacional a de j marchao a de s junior alboni marisa dudeque pianovski vieira alexandre fernandez vaz alfrancio ferreira dias annecy tojeiro giordani antonio carlos espit b ramirez guzman barbara colossi felippe beatriz pagliarini bagagli berenice alves de melo bento c s cesar caetana juracy resende silva caio benevides pedra catia maria alves monteiro danilo araujo de oliveira dermeval saviani edna lucia da silva eliezer moreira pacheco g do c xavier gaudencio frigotto guacira lopes louro h h souza h henriques irineu mario colombo j da s borba jaqueline gomes de jesus judith butler keo silva l s ferreira laurence bardin liane carly hermes zanella m sarat maria ciavatta maria clara maciel de araujo ribeiro maria herminia lage fernandes laffin maria teresa egler mantoan mario quintana marise nogueira ramos mirla cisne n m de j bento n r xavier p c argenti paulo freire roberta pasqualli rosita edler carvalho s de m m vigano silvana mara morais dos santos suzana da conceicao de barros t reis v vergueiro victor regio da silva bento",
+    "termos_unificados": [
+      "Gênero",
+      "Sexualidade",
+      "Inclusão",
+      "Diversidade",
+      "Educação Profissional e Tecnológica",
+      "Acolhimento; Sexualidade; Educação; Estudantes \"Trans\"",
+      "Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT)",
+      "Produto Educacional"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

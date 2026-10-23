@@ -1,0 +1,132 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0074",
+  "ano": 2022,
+  "autor": "Igor Luiz de Paula",
+  "orientador": "Eduardo Augusto Werneck Ribeiro",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP6",
+  "dissertacao": {
+    "titulo": "ABORDAGEM SOBRE OS ELEMENTOS DE PERMANÊNCIA DOS ESTUDANTES DOS CURSOS DO IFC – CAMPUS BLUMENAU",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/ARTIGO-IGOR-LUIZ-DE-PAULA-PDFA.pdf",
+    "resumo": "O presente trabalho é composto por um artigo e a apresentação de produto educacional,\nambos o resultado de pesquisa realizada no Mestrado Profissional em Educação Profissional e\nTecnológica (ProfEPT) do campus Blumenau do Instituto Federal Catarinense (IFC), inserida na\nlinha de pesquisa \"Organização e Memórias de Espaços Pedagógicos na Educação\nProfissional e Tecnológica (EPT)\", no \"Macroprojeto 6: Organização de espaços pedagógicos\nna EPT\". Teve por objetivo, através do resgate de elementos da memória e levantamento de\ninformações, indicar quais agentes e práticas foram motivadoras da permanência dos\nestudantes dos cursos técnicos integrados ao Ensino Médio do IFC – Campus Blumenau.\nAborda também a importância dos projetos de vida e as expectativas em relação ao futuro,\npresentes nas trajetórias dos estudantes. A pesquisa demonstrou que sujeitos como\nprofessores, pais/responsáveis trazem a segurança e o acolhimento aos jovens nas suas\njornadas e contribuem significativamente na realização ou mudanças das trajetórias traçadas\nem seus projetos vida, refletidas na permanência nos dois cursos e consequente superação\ndos desafios que abarcam essa fase da vida. A partir dos dados coletados foi elaborado e\naplicado o produto educacional: Ensino Médio Integrado: Abordagem sobre os elementos e\npermanência dos Estudantes dos cursos do IFC – Campus Blumenau.\nPalavras-Chave: Permanência; Ensino Médio Integrado; Evasão escolar; Educação\nProfissional\nABSTRACT",
+    "palavras_chave": [
+      "Permanência",
+      "Ensino Médio Integrado",
+      "Evasão escolar",
+      "Educação Profissional"
+    ],
+    "autores_referenciados": [
+      "Ana Elizabeth M. Albuquerque",
+      "Ana Zuleima Lüscher",
+      "Antonio Candido",
+      "Antonio Viñao",
+      "Augusto Nibaldo Silva Triviños",
+      "Denise Tolfo Silveira",
+      "Fernanda Peixoto Córdova",
+      "Flávia Regina Back",
+      "François Dubet",
+      "G. Velho",
+      "Gustavo Henrique Moraes",
+      "Henri Bergson",
+      "Janaína Mariano Cesar",
+      "João Oliveira Ramos Neto",
+      "Lucília Regina de Souza Machado",
+      "Luzimar dos Santos Luciano",
+      "Maria Cecília de Souza Minayo",
+      "Michael Pollak",
+      "Miguel González Arroyo",
+      "Paul Ricoeur",
+      "Pedro Henrique Carvalho",
+      "Rosemary Dore",
+      "Santo Agostinho",
+      "Ueberson Ribeiro Almeida"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": true,
+      "justificativa": "O texto menciona 'trabalho como princípio educativo' e 'emancipação' com referências a Machado (2011) e Ramos Neto (2019), alinhando-se à Pedagogia Histórico-Crítica.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 21,
+          "trecho": "O trabalho como princípio educativo e a emancipação do educando devem fazer parte do conjunto das relações existentes no ambiente escolar",
+          "referencia_correspondente": "MACHADO, Lucília Regina de S. O desafi o da formação dos professores para a"
+        },
+        {
+          "secao": "Introdução",
+          "pagina": 19,
+          "trecho": "a práxis escolar que leva à permanência dos alunos exige ações que também envolvam os tr",
+          "referencia_correspondente": "ZANIN; GARCIA, 2020, p.51"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "ENSINO MÉDIO INTEGRADO: ABORDAGEM SOBRE OS ELEMENTOS DE PERMANÊNCIA DOS ESTUDANTES DOS CURSOS DO IFC – CAMPUS BLUMENAU",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Palestra / Apresentação",
+    "link": "http://educapes.capes.gov.br/handle/capes/717938",
+    "publico_alvo": [
+      "docentes_professores",
+      "gestores_coordenadores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Permanência na Escola; Evasão Escolar; Ensino Médio Integrado",
+      "Mestrado em Educação Profissional e Tecnológica",
+      "Práticas Educacionais"
+    ],
+    "data_publicacao": "2022-09-02",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "PAULA, IGOR LUIZ DE",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/717938",
+        "url": "http://educapes.capes.gov.br/handle/capes/717938"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "produto",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "inferencia_llm",
+      "rotulo_original_declarado": "Aprestação – ENSINO MÉDIO INTEGRADO: ABORDAGEM SOBRE OS ELEMENTOS DE PERMANÊNCIA DOS ESTUDANTES DOS CURSOS DO IFC – CAMPUS BLUMENAU",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "apresentação"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0074 2022 igor luiz de paula eduardo augusto werneck ribeiro ifc blumenau lp2 mp6 abordagem sobre os elementos de permanencia dos estudantes dos cursos do ifc campus blumenau o presente trabalho e composto por um artigo e a apresentacao de produto educacional ambos o resultado de pesquisa realizada no mestrado profissional em educacao profissional e tecnologica profept do campus blumenau do instituto federal catarinense ifc inserida na linha de pesquisa organizacao e memorias de espacos pedagogicos na educacao profissional e tecnologica ept no macroprojeto 6 organizacao de espacos pedagogicos na ept teve por objetivo atraves do resgate de elementos da memoria e levantamento de informacoes indicar quais agentes e praticas foram motivadoras da permanencia dos estudantes dos cursos tecnicos integrados ao ensino medio do ifc campus blumenau aborda tambem a importancia dos projetos de vida e as expectativas em relacao ao futuro presentes nas trajetorias dos estudantes a pesquisa demonstrou que sujeitos como professores pais responsaveis trazem a seguranca e o acolhimento aos jovens nas suas jornadas e contribuem significativamente na realizacao ou mudancas das trajetorias tracadas em seus projetos vida refletidas na permanencia nos dois cursos e consequente superacao dos desafios que abarcam essa fase da vida a partir dos dados coletados foi elaborado e aplicado o produto educacional ensino medio integrado abordagem sobre os elementos e permanencia dos estudantes dos cursos do ifc campus blumenau palavras chave permanencia ensino medio integrado evasao escolar educacao profissional abstract pedagogia historico critica ensino medio integrado abordagem sobre os elementos de permanencia dos estudantes dos cursos do ifc campus blumenau material didatico instrucional palestra apresentacao ensino medio integrado permanencia ensino medio integrado evasao escolar educacao profissional permanencia na escola evasao escolar ensino medio integrado mestrado em educacao profissional e tecnologica praticas educacionais ana elizabeth m albuquerque ana zuleima luscher antonio candido antonio vinao augusto nibaldo silva trivinos denise tolfo silveira fernanda peixoto cordova flavia regina back francois dubet g velho gustavo henrique moraes henri bergson janaina mariano cesar joao oliveira ramos neto lucilia regina de souza machado luzimar dos santos luciano maria cecilia de souza minayo michael pollak miguel gonzalez arroyo paul ricoeur pedro henrique carvalho rosemary dore santo agostinho ueberson ribeiro almeida",
+    "termos_unificados": [
+      "Permanência",
+      "Ensino Médio Integrado",
+      "Evasão escolar",
+      "Educação Profissional",
+      "Permanência na Escola; Evasão Escolar; Ensino Médio Integrado",
+      "Mestrado em Educação Profissional e Tecnológica",
+      "Práticas Educacionais"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

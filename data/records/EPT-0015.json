@@ -1,0 +1,176 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0015",
+  "ano": 2025,
+  "autor": "Lucas Neto",
+  "orientador": "Eduardo Augusto Werneck Ribeiro",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP3",
+  "dissertacao": {
+    "titulo": "CINEMA PARA UMA FORMAÇÃO HUMANA INTEGRAL CONTEMPORÂNEA: CONTRIBUIÇÕES PARA O ENSINO MÉDIO INTEGRADO NOS INSTITUTOS FEDERAIS",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/09/DISSERTAO_E_PRODUTO_EDUCACIONAL___LUCAS_NETO.pdf",
+    "resumo": "A presente pesquisa foi desenvolvida no âmbito do programa de Mestrado\nProfissional em Educação Profissional e Tecnológica (ProfEPT), na linha de\npesquisa Práticas Educativas em Educação Profissional e Tecnológica (EPT), no\nMacroprojeto 3 – Práticas Educativas no Currículo Integrado. O objetivo geral da\npesquisa foi avaliar como o letramento audiovisual e a educação midiática podem\nauxiliar o uso do Cinema na prática docente e contribuir para a formação humana\nintegral de estudantes do Ensino Médio Integrado (EMI) do Câmpus Jaraguá do Sul\n– Centro do Instituto Federal de Santa Catarina (IFSC), desenvolvendo o\npensamento crítico e olhares mais reflexivos diante das mídias audiovisuais. A\ndiscussão teórica se estruturou a partir dos seguintes conceitos centrais: letramento\naudiovisual (Fantin, 2014; Barbosa, 2014), educação midiática (Fantin, 2011;\nBuckingham, 2022), formação humana integral (Manacorda, 2007; Ramos, 2008;\n2010; Ciavatta, 2012) e currículo integrado (Santomé, 1998; Ramos, 2012; Araujo;\nFrigotto, 2015). A metodologia envolveu primeiro uma revisão de literatura, seguida\nde uma fase investigativa sobre a realidade do locus da pesquisa, sobre as práticas\ndidáticas com filmes no EMI do câmpus. A construção dos dados para análise se\ndeu através de entrevistas com docentes, observação de aula e também uma\nproposta de intervenção pedagógica através de uma oficina com uma turma do\ncurso Técnico em Modelagem do Vestuário. Para análise dos dados foi escolhida a\ntécnica de Análise de Conteúdo (Bardin, 1977), optando-se pela análise categorial\ntemática. Os achados da pesquisa constataram um domínio do uso instrumental do\nCinema como recurso didático na prática docente, mas os resultados da oficina\ntambém demonstraram impactos positivos de uma educação do olhar: para\ndocentes, como caminho para superação do uso instrumental; para discentes, como\nimportante\naspecto\nda\nformação\nintegral\nna\ncontemporaneidade\ne\nno\ndesenvolvimento do pensamento crítico. Também se observou que essa inclusão\ncrítico-reflexiva do audiovisual no EMI precisa fazer parte do currículo, porém\nnecessita de condições para sua materialização, que passam pela disputa nas\npolíticas curriculares, por condições de trabalho docente e por espaço institucional\npara práticas integradoras. Dessas constatações, concluiu-se que é através da\nprática docente a forma mais dinâmica do letramento audiovisual alcançar os\nestudantes, sendo assim indispensável a capacitação dos docentes nesse sentido.\nPor isso, o Produto Educacional (PE) desenvolvido foi um material didático, no\nformato de site, como proposta para contribuir com a formação continuada de\ndocentes da Educação Profissional e Tecnológica (EPT), auxiliando na qualificação\ndo uso de filmes como recurso didático para além do instrumental e,\nconsequentemente, impactando a formação dos discentes no desenvolvimento do\npensamento crítico e de olhares mais reflexivos diante das mídias audiovisuais.\nAlém da relevância geral do tema na contemporaneidade, sobretudo educacional, a\npresente pesquisa traz importantes contribuições por estar localizada no contexto\ndos Institutos Federais, instituições pouco tematizadas nas pesquisas que\nrelacionam Cinema e Educação, principalmente em relação ao letramento\naudiovisual e à educação midiática.\n\nPalavras-Chave: Letramento Audiovisual; Educação Midiática; Formação Humana\nIntegral; Ensino Médio Integrado; Institutos Federais.",
+    "palavras_chave": [
+      "Letramento Audiovisual",
+      "Educação Midiática",
+      "Formação Humana Integral",
+      "Ensino Médio Integrado",
+      "Institutos Federais"
+    ],
+    "autores_referenciados": [
+      "Adriana Fresquet",
+      "Adriana Hoffmann Fernandes",
+      "Alexandra Bujokas de Siqueira",
+      "Andrea Vicente Toledo Abreu",
+      "Antônio Carlos Gil",
+      "Antonio Gramsci",
+      "Antonio Ismael Lopes de Sousa",
+      "Augusto Nibaldo Silva Triviños",
+      "Beatriz Moreira de Azevedo Porto Gonçalves",
+      "Cynthia Macedo Dias",
+      "Daniel Bramo Nascimento de Carvalho",
+      "David Buckingham",
+      "Dermeval Saviani",
+      "Eliezer Moreira Pacheco",
+      "Eva Maria Lakatos",
+      "Evelyne Bévort",
+      "Fernando Mascarello",
+      "Flaviana Gasparotti Nunes",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "Getúlio Vargas",
+      "Gilles Lipovetsky",
+      "Gregorio Galvão Albuquerque",
+      "Guy Debord",
+      "Helder Dantas Vieira",
+      "Hugo Rodrigues Marins",
+      "Isabel Cristina Hentz",
+      "Ismail Xavier",
+      "István Mészáros",
+      "Jacques Aumont",
+      "Jean Baudrillard",
+      "Jean Serroy",
+      "Jefferson Mainardes",
+      "João Alegria",
+      "João Carlos Cichaczewski",
+      "João Paulo Rodrigues dos Santos",
+      "José Gimeno Sacristán",
+      "Juliana Pio",
+      "Jurjo Torres Santomé",
+      "Laurence Bardin",
+      "Lilian Castelo Branco de Lima",
+      "Luani de Liz Souza",
+      "Lucas Vasques",
+      "Luciane Neuvald",
+      "Lucília Regina de Souza Machado",
+      "Luiz Rafael dos Santos Andrade",
+      "Mahalla Stephany Feitosa Aguiar",
+      "Marcel Martin",
+      "Maria Angélica dos Santos",
+      "Maria Carmen Silveira Barbosa",
+      "Maria Ciavatta",
+      "Maria Luiza Belloni",
+      "Marina de Andrade Marconi",
+      "Mario Alighiero Manacorda",
+      "Marise Nogueira Ramos",
+      "Max Horkheimer",
+      "Michel Marie",
+      "Miguel González Arroyo",
+      "Monica Fantin",
+      "Paolo Nosella",
+      "Pedro Benjamin Garcia",
+      "Pier Cesare Rivoltella",
+      "Priscila de Souza Chisté Leite",
+      "Raquel Barbosa Moratori",
+      "Renata Mendes Gonçalves",
+      "Robson Loureiro",
+      "Rodrigo Duarte",
+      "Rogério de Almeida",
+      "Ronaldo Marcos de Lima Araújo",
+      "Ronaldo Nunes Linhares",
+      "Rosália Duarte",
+      "Roxane Rojo",
+      "Samoel Cordeiro de Souza Primo",
+      "Stuart Hall",
+      "Theodor W. Adorno",
+      "Vera Lucia Gaspar da Silva",
+      "Walter Benjamin"
+    ],
+    "base_epistemologica": {
+      "valor": "Materialismo Histórico-Dialético",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto vincula formação humana integral a conceitos de trabalho como princípio educativo e currículo integrado, citando Ciavatta e Ramos (p.47).",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 47,
+          "trecho": "Formação humana integral visa garantir ao adolescente... transformação social (Ramos, 2008; 2010).",
+          "referencia_correspondente": "RAMOS, Marise Nogueira. Concepção do Ensino Médio Integrado."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "LENDO CINEMA – Letramento Audiovisual para docentes",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Site / Portal",
+    "link": "https://educapes.capes.gov.br/handle/capes/1001598",
+    "publico_alvo": [
+      "docentes_professores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Cinema",
+      "EPT",
+      "Letramento Audiovisual",
+      "Educação Midiática"
+    ],
+    "data_publicacao": "2025",
+    "autores_colaboradores": [
+      {
+        "nome": "Neto, Lucas",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1001598",
+        "url": "https://educapes.capes.gov.br/handle/capes/1001598"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://lucasnetto4.wixsite.com/my-site/",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "LENDO CINEMA – LETRAMENTO AUDIOVISUAL PARA DOCENTES.",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "portal"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0015 2025 lucas neto eduardo augusto werneck ribeiro ifc blumenau lp1 mp3 cinema para uma formacao humana integral contemporanea contribuicoes para o ensino medio integrado nos institutos federais a presente pesquisa foi desenvolvida no ambito do programa de mestrado profissional em educacao profissional e tecnologica profept na linha de pesquisa praticas educativas em educacao profissional e tecnologica ept no macroprojeto 3 praticas educativas no curriculo integrado o objetivo geral da pesquisa foi avaliar como o letramento audiovisual e a educacao midiatica podem auxiliar o uso do cinema na pratica docente e contribuir para a formacao humana integral de estudantes do ensino medio integrado emi do campus jaragua do sul centro do instituto federal de santa catarina ifsc desenvolvendo o pensamento critico e olhares mais reflexivos diante das midias audiovisuais a discussao teorica se estruturou a partir dos seguintes conceitos centrais letramento audiovisual fantin 2014 barbosa 2014 educacao midiatica fantin 2011 buckingham 2022 formacao humana integral manacorda 2007 ramos 2008 2010 ciavatta 2012 e curriculo integrado santome 1998 ramos 2012 araujo frigotto 2015 a metodologia envolveu primeiro uma revisao de literatura seguida de uma fase investigativa sobre a realidade do locus da pesquisa sobre as praticas didaticas com filmes no emi do campus a construcao dos dados para analise se deu atraves de entrevistas com docentes observacao de aula e tambem uma proposta de intervencao pedagogica atraves de uma oficina com uma turma do curso tecnico em modelagem do vestuario para analise dos dados foi escolhida a tecnica de analise de conteudo bardin 1977 optando se pela analise categorial tematica os achados da pesquisa constataram um dominio do uso instrumental do cinema como recurso didatico na pratica docente mas os resultados da oficina tambem demonstraram impactos positivos de uma educacao do olhar para docentes como caminho para superacao do uso instrumental para discentes como importante aspecto da formacao integral na contemporaneidade e no desenvolvimento do pensamento critico tambem se observou que essa inclusao critico reflexiva do audiovisual no emi precisa fazer parte do curriculo porem necessita de condicoes para sua materializacao que passam pela disputa nas politicas curriculares por condicoes de trabalho docente e por espaco institucional para praticas integradoras dessas constatacoes concluiu se que e atraves da pratica docente a forma mais dinamica do letramento audiovisual alcancar os estudantes sendo assim indispensavel a capacitacao dos docentes nesse sentido por isso o produto educacional pe desenvolvido foi um material didatico no formato de site como proposta para contribuir com a formacao continuada de docentes da educacao profissional e tecnologica ept auxiliando na qualificacao do uso de filmes como recurso didatico para alem do instrumental e consequentemente impactando a formacao dos discentes no desenvolvimento do pensamento critico e de olhares mais reflexivos diante das midias audiovisuais alem da relevancia geral do tema na contemporaneidade sobretudo educacional a presente pesquisa traz importantes contribuicoes por estar localizada no contexto dos institutos federais instituicoes pouco tematizadas nas pesquisas que relacionam cinema e educacao principalmente em relacao ao letramento audiovisual e a educacao midiatica palavras chave letramento audiovisual educacao midiatica formacao humana integral ensino medio integrado institutos federais materialismo historico dialetico lendo cinema letramento audiovisual para docentes material didatico instrucional site portal ensino medio integrado letramento audiovisual educacao midiatica formacao humana integral ensino medio integrado institutos federais cinema ept adriana fresquet adriana hoffmann fernandes alexandra bujokas de siqueira andrea vicente toledo abreu antonio carlos gil antonio gramsci antonio ismael lopes de sousa augusto nibaldo silva trivinos beatriz moreira de azevedo porto goncalves cynthia macedo dias daniel bramo nascimento de carvalho david buckingham dermeval saviani eliezer moreira pacheco eva maria lakatos evelyne bevort fernando mascarello flaviana gasparotti nunes gabriel kaplun gaudencio frigotto getulio vargas gilles lipovetsky gregorio galvao albuquerque guy debord helder dantas vieira hugo rodrigues marins isabel cristina hentz ismail xavier istvan meszaros jacques aumont jean baudrillard jean serroy jefferson mainardes joao alegria joao carlos cichaczewski joao paulo rodrigues dos santos jose gimeno sacristan juliana pio jurjo torres santome laurence bardin lilian castelo branco de lima luani de liz souza lucas vasques luciane neuvald lucilia regina de souza machado luiz rafael dos santos andrade mahalla stephany feitosa aguiar marcel martin maria angelica dos santos maria carmen silveira barbosa maria ciavatta maria luiza belloni marina de andrade marconi mario alighiero manacorda marise nogueira ramos max horkheimer michel marie miguel gonzalez arroyo monica fantin paolo nosella pedro benjamin garcia pier cesare rivoltella priscila de souza chiste leite raquel barbosa moratori renata mendes goncalves robson loureiro rodrigo duarte rogerio de almeida ronaldo marcos de lima araujo ronaldo nunes linhares rosalia duarte roxane rojo samoel cordeiro de souza primo stuart hall theodor w adorno vera lucia gaspar da silva walter benjamin",
+    "termos_unificados": [
+      "Letramento Audiovisual",
+      "Educação Midiática",
+      "Formação Humana Integral",
+      "Ensino Médio Integrado",
+      "Institutos Federais",
+      "Cinema",
+      "EPT"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0026",
+  "ano": 2024,
+  "autor": "Kély Cristina Zimmermann",
+  "orientador": "Simão Alberto",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP6",
+  "dissertacao": {
+    "titulo": "O CONSELHO DE CLASSE E A ORGANIZAÇÃO DO TRABALHO PEDAGÓGICO EM CURSOS TÉCNICOS INTEGRADOS AO ENSINO MÉDIO DO IFSC, CAMPUS JARAGUÁ DO SUL – CENTRO: UMA CONSTRUÇÃO COLETIVA E DEMOCRÁTICA",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/01/Dissertacao-Kely_Zimmermann.pdf",
+    "resumo": "10\nRESUMO\nEsta dissertação é resultado de reflexões e discussões realizadas no ProfEPT do\nInstituto Federal Catarinense – IFC, Campus Blumenau, cujo objetivo gravitou em\ntorno do conhecer e compreender a funcionalidade do Conselho de Classe, bem\ncomo a organização do trabalho pedagógico nos Institutos Federais – IFs. Tomando\nconsciência de que o Conselho de Classe constitui um espaço de diálogo, reflexão e\ncompreensão das práticas pedagógicas, foi possível repensar a estrutura dos\nprocessos da aprendizagem como um todo, visando contextualizar a práxis\neducativa com o cotidiano dos sujeitos do processo. Razão pela qual surgiu o\ninteresse pela temática: “O Conselho de Classe e a organização do trabalho\npedagógico nos cursos técnicos integrados ao ensino médio do IFSC, Campus\nJaraguá do Sul – Centro: uma construção coletiva e democrática”. A escolha pela\nInstituição se deu pelo fato da pesquisadora trabalhar como Orientadora Pedagógica\nna Instituição. A pesquisa está inserida na linha “Organização e Memórias de\nEspaços Pedagógicos em Educação Profissional e Tecnológica”, sobretudo no\nMacroprojeto 6, denominado Organização de espaços pedagógicos na EPT, que\n“abriga projetos que trabalham questões relacionadas à organização e planejamento\nde espaços pedagógicos”. Trata-se de uma pesquisa interventiva e colaborativa\ncom abordagem qualitativa da pesquisa-ação, portanto, os envolvidos não apenas\ninformaram e pensaram sobre a realidade da instituição, mas também, durante o\nprocesso de sua elaboração e execução agiram como sujeitos ativos. A realização\nda pesquisa decorreu nos anos letivos de 2023 e 2024, tendo como participantes a\nequipe multidisciplinar e docentes envolvidos nos cursos integrados. O trabalho final\nresultou no produto educacional intitulado “ Minuta dos Conselhos de Classe dos\nCursos Técnicos Integrados ao Ensino Médio do IFSC, Campus Jaraguá do Sul -\nCentro”, materializando a organização didático-pedagógica dos Conselhos de\nClasse dos cursos. Em suma, o referencial teórico desta pesquisa foi respaldado\ncom as contribuições de autores como Dalben (1994), Cruz (2005), Guerra (2010),\nFreire (2006), Luckesi (2011), Saviani (2003), Libâneo (2005) entre outros que\npromovem o suporte teórico das discussões propostas.\nPalavras-Chave: Educação Profissional e Tecnológica. Ensino Médio Integrado.\nAvaliação. Conselho de Classe Participativo. Formação Continuada Docente.",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "Avaliação",
+      "Conselho de Classe Participativo",
+      "Formação Continuada Docente"
+    ],
+    "autores_referenciados": [
+      "Ângela Imaculada Loreiro de Freitas Dalben",
+      "Antoni Zabala",
+      "Any Dutra Coelho da Rocha",
+      "Carlos Henrique Carrilho Cruz",
+      "Carlos R. Cury",
+      "Celso dos Santos Vasconcellos",
+      "Eva Maria Lakatos",
+      "Gaudêncio Frigotto",
+      "Heloísa Lück",
+      "Ivana Maria Lopes de Melo Ibiapina",
+      "José Carlos Libâneo",
+      "Maria Ciavatta",
+      "Maria Teresa Esteban",
+      "Marina de Andrade Marconi",
+      "Marise Nogueira Ramos",
+      "Menga Lüdke",
+      "Michel Jean Marie Thiollent",
+      "Paulo Freire",
+      "Philippe Perrenoud",
+      "Simone S. H. Carminatti",
+      "Vitor Henrique Paro"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": true,
+      "justificativa": "O texto menciona referências a Libâneo e Freire, associados à crítica social da educação e à prática democrática, mas não declara explicitamente a matriz teórica.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 26,
+          "trecho": "A proposta de educação profissional e tecnológica do IFSC sustenta-se em uma concepção de educação integral do sujeito, cujo caráter é de totalidade, possibilitando a manifestação das individualidades...",
+          "referencia_correspondente": "LIBÂNEO, 2003, p. 68"
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 60,
+          "trecho": "A formação continuada de professores não pode ser negligenciada... construção de saberes necessários à profissão docente",
+          "referencia_correspondente": "FREIRE, 1996, p.58"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "O CONSELHO DE CLASSE E A ORGANIZAÇÃO DO TRABALHO PEDAGÓGICO EM CURSOS TÉCNICOS INTEGRADOS AO ENSINO MÉDIO DO IFSC, CAMPUS JARAGUÁ DO SUL - CENTRO: UMA CONSTRUÇÃO COLETIVA E DEMOCRÁTICA.",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Minuta / Norma",
+    "link": "https://educapes.capes.gov.br/handle/capes/921221",
+    "publico_alvo": [
+      "docentes_professores",
+      "gestores_coordenadores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "Avaliação",
+      "Conselho de Classe Participativo",
+      "Formação Continuada Docente",
+      "Mestrado Profissional",
+      "Organização e Memórias"
+    ],
+    "data_publicacao": "2025-01-23",
+    "autores_colaboradores": [
+      {
+        "nome": "ProfEPT - IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "ZIMMERMANN, Kély Cristina",
+        "papel": "creator"
+      },
+      {
+        "nome": "ALBERTO, Simão",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/921221",
+        "url": "https://educapes.capes.gov.br/handle/capes/921221"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "O CONSELHO DE CLASSE E A ORGANIZAÇÃO DO TRABALHO PEDAGÓGICO EM CURSOS TÉCNICOS INTEGRADOS AO ENSINO MÉDIO DO IFSC, CAMPUS JARAGUÁ DO SUL - CENTRO: UMA CONSTRUÇÃO COLETIVA E DEMOCRÁTICA.",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "inferencia_llm",
+      "rotulo_original_declarado": "MINUTA DOS CONSELHOS DE CLASSE DOS CURSOS TÉCNICOS INTEGRADOS AO ENSINO MÉDIO DO IFSC – CAMPUS JARAGUÁ DO SUL – CENTRO",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0026 2024 kely cristina zimmermann simao alberto ifc blumenau lp2 mp6 o conselho de classe e a organizacao do trabalho pedagogico em cursos tecnicos integrados ao ensino medio do ifsc campus jaragua do sul centro uma construcao coletiva e democratica 10 resumo esta dissertacao e resultado de reflexoes e discussoes realizadas no profept do instituto federal catarinense ifc campus blumenau cujo objetivo gravitou em torno do conhecer e compreender a funcionalidade do conselho de classe bem como a organizacao do trabalho pedagogico nos institutos federais ifs tomando consciencia de que o conselho de classe constitui um espaco de dialogo reflexao e compreensao das praticas pedagogicas foi possivel repensar a estrutura dos processos da aprendizagem como um todo visando contextualizar a praxis educativa com o cotidiano dos sujeitos do processo razao pela qual surgiu o interesse pela tematica o conselho de classe e a organizacao do trabalho pedagogico nos cursos tecnicos integrados ao ensino medio do ifsc campus jaragua do sul centro uma construcao coletiva e democratica a escolha pela instituicao se deu pelo fato da pesquisadora trabalhar como orientadora pedagogica na instituicao a pesquisa esta inserida na linha organizacao e memorias de espacos pedagogicos em educacao profissional e tecnologica sobretudo no macroprojeto 6 denominado organizacao de espacos pedagogicos na ept que abriga projetos que trabalham questoes relacionadas a organizacao e planejamento de espacos pedagogicos trata se de uma pesquisa interventiva e colaborativa com abordagem qualitativa da pesquisa acao portanto os envolvidos nao apenas informaram e pensaram sobre a realidade da instituicao mas tambem durante o processo de sua elaboracao e execucao agiram como sujeitos ativos a realizacao da pesquisa decorreu nos anos letivos de 2023 e 2024 tendo como participantes a equipe multidisciplinar e docentes envolvidos nos cursos integrados o trabalho final resultou no produto educacional intitulado minuta dos conselhos de classe dos cursos tecnicos integrados ao ensino medio do ifsc campus jaragua do sul centro materializando a organizacao didatico pedagogica dos conselhos de classe dos cursos em suma o referencial teorico desta pesquisa foi respaldado com as contribuicoes de autores como dalben 1994 cruz 2005 guerra 2010 freire 2006 luckesi 2011 saviani 2003 libaneo 2005 entre outros que promovem o suporte teorico das discussoes propostas palavras chave educacao profissional e tecnologica ensino medio integrado avaliacao conselho de classe participativo formacao continuada docente pedagogia historico critica o conselho de classe e a organizacao do trabalho pedagogico em cursos tecnicos integrados ao ensino medio do ifsc campus jaragua do sul centro uma construcao coletiva e democratica material didatico instrucional minuta norma ensino medio integrado educacao profissional e tecnologica ensino medio integrado avaliacao conselho de classe participativo formacao continuada docente mestrado profissional organizacao e memorias angela imaculada loreiro de freitas dalben antoni zabala any dutra coelho da rocha carlos henrique carrilho cruz carlos r cury celso dos santos vasconcellos eva maria lakatos gaudencio frigotto heloisa luck ivana maria lopes de melo ibiapina jose carlos libaneo maria ciavatta maria teresa esteban marina de andrade marconi marise nogueira ramos menga ludke michel jean marie thiollent paulo freire philippe perrenoud simone s h carminatti vitor henrique paro",
+    "termos_unificados": [
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "Avaliação",
+      "Conselho de Classe Participativo",
+      "Formação Continuada Docente",
+      "Mestrado Profissional",
+      "Organização e Memórias"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

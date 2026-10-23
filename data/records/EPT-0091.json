@@ -1,0 +1,124 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0091",
+  "ano": 2020,
+  "autor": "Henrique Pitt",
+  "orientador": "Reginaldo Leandro Plácido",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP3",
+  "dissertacao": {
+    "titulo": "A LITERATURA MARGINAL COMO CHAVE HERMENÊUTICA NO ESTUDO DA DITADURA MILITAR: UMA SEQUÊNCIA DIDÁTICA INTERDISCLIPLINAR COMO PRODUTO EDUCACIONAL NA EPT",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/DISSERTACAO-PRODUTO-HENRIQUE-PITT-PDF-A.pdf",
+    "resumo": "",
+    "palavras_chave": [],
+    "autores_referenciados": [
+      "Andréa Cristina de B. Queiroz",
+      "Angélica Madeira",
+      "Clóvis C. Britto",
+      "Denise Lino de Araújo",
+      "Gaudêncio Frigotto",
+      "Glauco Mattoso",
+      "Heloísa Buarque de Hollanda",
+      "Henrique Magalhães",
+      "Lev Vygotsky",
+      "Marcelo Giordan",
+      "Maria Ciavatta",
+      "Maria Lúcia de B. Camargo",
+      "Mariza Veloso",
+      "Michel de Certeau",
+      "Patrícia M. Barros",
+      "Paulo Leminski",
+      "Roberto Schwarz",
+      "Rosiane Moreira da S. Swiderski",
+      "Sandra Reimão",
+      "Terezinha da C. Costa-Hübes",
+      "Y. A. F. Guimarães"
+    ],
+    "base_epistemologica": {
+      "valor": "Teoria Histórico-Cultural / Sociointeracionismo",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": true,
+      "justificativa": "O texto menciona interacionismo sócio-histórico-cultural de Vigotski, vinculado à formação do conhecimento. A interdisciplinaridade é contextualizada como prática pedagógica.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 60,
+          "trecho": "Esta pedagogia baseia-se no interacionismo sócio-histórico-cultural, pensado por Vigotski",
+          "referencia_correspondente": "VIGOTSKI, Lev S. A formação social da mente: o desenvolvimento dos processos psicológicos superiores. 6ª ed. SP: Martins Fontes, 1998."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Tempoemas - golpes poéticos na ditadura militar : a utilização da literatura marginal em geografia, história e língua portuguesa, para o estudo do período militar do Brasil (1964-1985)",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Sequência Didática",
+    "link": "http://educapes.capes.gov.br/handle/capes/573584",
+    "publico_alvo": [
+      "docentes_professores",
+      "estudantes_alunos"
+    ],
+    "nivel_aplicacao": "Educação Profissional e Tecnológica",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "Sequência Didática",
+      "Literatura Marginal",
+      "Mestrado Profissional em Educação Tecnológica",
+      "Organização e Memória da EPT"
+    ],
+    "data_publicacao": "2020-08-08",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Pitt, H",
+        "papel": "creator"
+      },
+      {
+        "nome": "Placido, R L",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/573584",
+        "url": "http://educapes.capes.gov.br/handle/capes/573584"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Sequência Didática",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "Sequência Didática – TEMPOEMAS – GOLPES POÉTICOS NA DIDATURA MILITAR: A UTILIZAÇÃO DA LITERATURA MARGINAL EM GEOGRAFIA, HISTÓRIA E LÍNGUA PORTUGUESA , PARA O ESTUDO DO PERÍODO MILITAR DO BRASIL (1974 – 1985)",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "outro"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0091 2020 henrique pitt reginaldo leandro placido ifc blumenau lp1 mp3 a literatura marginal como chave hermeneutica no estudo da ditadura militar uma sequencia didatica interdiscliplinar como produto educacional na ept teoria historico cultural sociointeracionismo tempoemas golpes poeticos na ditadura militar a utilizacao da literatura marginal em geografia historia e lingua portuguesa para o estudo do periodo militar do brasil 1964 1985 material didatico instrucional sequencia didatica educacao profissional e tecnologica educacao profissional e tecnologica ensino medio integrado sequencia didatica literatura marginal mestrado profissional em educacao tecnologica organizacao e memoria da ept andrea cristina de b queiroz angelica madeira clovis c britto denise lino de araujo gaudencio frigotto glauco mattoso heloisa buarque de hollanda henrique magalhaes lev vygotsky marcelo giordan maria ciavatta maria lucia de b camargo mariza veloso michel de certeau patricia m barros paulo leminski roberto schwarz rosiane moreira da s swiderski sandra reimao terezinha da c costa hubes y a f guimaraes",
+    "termos_unificados": [
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "Sequência Didática",
+      "Literatura Marginal",
+      "Mestrado Profissional em Educação Tecnológica",
+      "Organização e Memória da EPT"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": false
+  }
+}

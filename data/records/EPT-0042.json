@@ -1,0 +1,206 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0042",
+  "ano": 2024,
+  "autor": "Leandro Severino Nascimento de Oliveira",
+  "orientador": "Cloves Alexandre de Castro",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP6",
+  "dissertacao": {
+    "titulo": "EDUCAÇÃO NO/DO CAMPO E PEDAGOGIA DA ALTERNÂNCIA NO CAMPUS AVANÇADO ABELARDO LUZ DO IFC SOB A PERSPECTIVA DOCENTE",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/10/Dissertacao-Leandro-Severino.pdf",
+    "resumo": "Este trabalho teve o desafio de perceber e compreender, sob a perspectiva docente,\na educação do campo e a Pedagogia da Alternância no Instituto Federal Catarinense\n(IFC), campus Abelardo Luz-SC. Para tanto, mergulhou-se nos significados e\nconcepções de educação do campo e Pedagogia da Alternância e percebeu-se que\nno Brasil, essas práxis têm se constituído por meio da pedagogia dos movimentos\nsociais de luta pela terra, particularmente, o Movimento dos Trabalhadores Sem\nTerra-MST, que vem experienciando a formação integral em suas práticas\neducativas. O campus Abelardo Luz é o único campus da Rede Federal de\nEducação Científica e Tecnológica que se encontra em um assentamento.\nRecentemente a sua legitimidade de estar no território de assentados foi\npublicamente contestado, seja por agentes políticos e econômicos locais, ou mesmo\npor servidores do campus. Isso nos levou a tê-lo como objeto da nossa pesquisa\ncujo objetivo foi compreender sob a perspectiva docente a educação do campo e a\nPedagogia da Alternância que se fazem no campus Abelardo Luz. A metodologia\nutilizada pode ser classificada como qualitativa. A análise dos dados optou-se pelos\nprocedimentos indicados por Bardin (2011). O resultado da pesquisa indica,\nprincipalmente, que grande parte dos docentes entrevistados não possuem\nqualificação na metodologia da pedagogia da Alternância, e também a falta de oferta\ndessa qualificação por parte do IFC. Como Produto Educacional foi proposto um\nGuia Formativo em pedagogia da alternância, avaliado positivamente pelos(as)\ndocentes, técnicos(as) administrativos e discentes aos quais o mesmo foi submetido\npara avaliação.\nPalavras-chave: Educação no campo. Pedagogia da Alternância. Luta pela terra.\nMST. Formação integral.",
+    "palavras_chave": [
+      "Educação no campo",
+      "Pedagogia da Alternância",
+      "Luta pela terra",
+      "MST",
+      "Formação integral"
+    ],
+    "autores_referenciados": [
+      "A. Cunhal",
+      "A. O. Melo",
+      "A. T. Santos",
+      "Abbé Granereau",
+      "Aline Guterres Ferreira",
+      "Anny Camila Lima Rodrigues",
+      "Ariovaldo Umbelino de Oliveira",
+      "Bernardo Mançano Fernandes",
+      "Boldt de Oliveira",
+      "C. E. Oliveira Júnior",
+      "C. M. Marinho",
+      "C. T. C. Amaro",
+      "Célia Beatriz Piatti",
+      "Cladecir Alberto Schenkel",
+      "Cloves Alexandre de Castro",
+      "Cristina Luisa Bencke Vergütz",
+      "D. D. Lihtnov",
+      "D. F. Silveira",
+      "D. Gaio",
+      "Daniervelin Renata Marques Pereira",
+      "Dante Henrique Moura",
+      "Dermeval Saviani",
+      "Diego Miranda de Andrade",
+      "E. D. Minuzzi",
+      "E. Khater",
+      "E. Reetz",
+      "Eder Pires de Camargo",
+      "Edival Sebastião Teixeira",
+      "Eliezer Moreira Pacheco",
+      "F. Baldi",
+      "F. Oliveira",
+      "G. R. A. Frazão",
+      "Gabriel Almeida Frazão",
+      "Gaudêncio Frigotto",
+      "Glademir Alves Trindade",
+      "H. R. Freitas",
+      "J. B. Begnami",
+      "Jaqueline de Moraes Thurler Dália",
+      "Jean Claude Gimonet",
+      "João Carlos Cichaczewski",
+      "João Paulo Reis Costa",
+      "José de Souza Martins",
+      "Juliano Pinheiro",
+      "K. C. S. Souza",
+      "Karl Marx",
+      "L. A. Barros",
+      "L. C. S. Ferreira",
+      "L. M. Nascimento",
+      "L. M. Sá",
+      "L. Mendes",
+      "Laurence Bardin",
+      "Letícia Cristina Antunes",
+      "Lourdes Helena Silva",
+      "Luama Vieira de Sousa",
+      "Lucia Mara de Lima Padilha",
+      "Luciane Teixeira da Silva",
+      "Lucília Regina de Souza Machado",
+      "M. Borges Junior",
+      "M. C. Molina",
+      "M. C. S. Ferreira",
+      "M. F. C. Sobreira",
+      "M. G. Arroyo",
+      "M. Ramos",
+      "M. Resende",
+      "M. Ribeiro",
+      "Maria Amélia do Rosario Santoro Franco",
+      "Maria Ciavatta",
+      "Maria da Glória Gohn",
+      "Maria de Lourdes Bernartt",
+      "Maria Raquel Barros Lima",
+      "Mariana Petri da Silva",
+      "Nayara Massucatto",
+      "P. J. Orso",
+      "Paolo Nosella",
+      "Patrícia Sara Melo Lopes",
+      "Paulo Freire",
+      "Pedro Puig Calvó",
+      "R. X. Coutinho",
+      "Ronaldo Marcos de Lima Araújo",
+      "Roseli Saleti Caldart",
+      "S. C. Leite",
+      "Sérgio Haddad",
+      "Silvanete Pereira dos Santos",
+      "T. P. Costa",
+      "Tatiana Engel Gerhardt",
+      "Thierry de Burghgrave",
+      "Verônica Klepka"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": true,
+      "justificativa": "O texto menciona 'trabalho como princípio educativo' e 'formação humana integral', associados à Pedagogia Histórico-Crítica, mas não declara explicitamente a matriz teórica.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 30,
+          "trecho": "O ser humano precisa modificar a natureza para produzir sua sobrevivência, sendo o trabalho a essência própria do homem (Saviani, 2007).",
+          "referencia_correspondente": "Saviani, 2007"
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 59,
+          "trecho": "A educação profissional foi destinada aos mais pobres, marginalizados, com inclinação a crimes e maus costumes (Schenkel, 2012).",
+          "referencia_correspondente": "Schenkel, 2012"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Pedagogia da Alternância: conhecimento e reflexão",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Guia",
+    "link": "https://educapes.capes.gov.br/handle/capes/778188",
+    "publico_alvo": [
+      "docentes_professores",
+      "gestores_coordenadores",
+      "estudantes_alunos"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Formação Integral",
+      "Pedagogia da Alternância",
+      "Educação do Campo",
+      "Organização e Memória dos Espaços Pedagógicos em EPT",
+      "PROFEPT",
+      "Produto Educacional resultado de pesquisa de dissertação de Mestrado"
+    ],
+    "data_publicacao": "2024-06-13",
+    "autores_colaboradores": [
+      {
+        "nome": "INSTITUTO FEDERAL CATARINENSE-IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Oliveira, Leandro Severino Nascimento de",
+        "papel": "creator"
+      },
+      {
+        "nome": "CASTRO, Cloves Alexandre de",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/778188",
+        "url": "https://educapes.capes.gov.br/handle/capes/778188"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Pedagogia da Alternância: conhecimento e reflexão",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "GUIA – PEDAGOGIA DA ALTERNÂNCIA CONHECIMENTO E REFLEXÃO",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "livro digital"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0042 2024 leandro severino nascimento de oliveira cloves alexandre de castro ifc blumenau lp2 mp6 educacao no do campo e pedagogia da alternancia no campus avancado abelardo luz do ifc sob a perspectiva docente este trabalho teve o desafio de perceber e compreender sob a perspectiva docente a educacao do campo e a pedagogia da alternancia no instituto federal catarinense ifc campus abelardo luz sc para tanto mergulhou se nos significados e concepcoes de educacao do campo e pedagogia da alternancia e percebeu se que no brasil essas praxis tem se constituido por meio da pedagogia dos movimentos sociais de luta pela terra particularmente o movimento dos trabalhadores sem terra mst que vem experienciando a formacao integral em suas praticas educativas o campus abelardo luz e o unico campus da rede federal de educacao cientifica e tecnologica que se encontra em um assentamento recentemente a sua legitimidade de estar no territorio de assentados foi publicamente contestado seja por agentes politicos e economicos locais ou mesmo por servidores do campus isso nos levou a te lo como objeto da nossa pesquisa cujo objetivo foi compreender sob a perspectiva docente a educacao do campo e a pedagogia da alternancia que se fazem no campus abelardo luz a metodologia utilizada pode ser classificada como qualitativa a analise dos dados optou se pelos procedimentos indicados por bardin 2011 o resultado da pesquisa indica principalmente que grande parte dos docentes entrevistados nao possuem qualificacao na metodologia da pedagogia da alternancia e tambem a falta de oferta dessa qualificacao por parte do ifc como produto educacional foi proposto um guia formativo em pedagogia da alternancia avaliado positivamente pelos as docentes tecnicos as administrativos e discentes aos quais o mesmo foi submetido para avaliacao palavras chave educacao no campo pedagogia da alternancia luta pela terra mst formacao integral pedagogia historico critica pedagogia da alternancia conhecimento e reflexao material didatico instrucional guia ensino medio integrado educacao no campo pedagogia da alternancia luta pela terra mst formacao integral educacao do campo organizacao e memoria dos espacos pedagogicos em ept profept produto educacional resultado de pesquisa de dissertacao de mestrado a cunhal a o melo a t santos abbe granereau aline guterres ferreira anny camila lima rodrigues ariovaldo umbelino de oliveira bernardo mancano fernandes boldt de oliveira c e oliveira junior c m marinho c t c amaro celia beatriz piatti cladecir alberto schenkel cloves alexandre de castro cristina luisa bencke vergutz d d lihtnov d f silveira d gaio daniervelin renata marques pereira dante henrique moura dermeval saviani diego miranda de andrade e d minuzzi e khater e reetz eder pires de camargo edival sebastiao teixeira eliezer moreira pacheco f baldi f oliveira g r a frazao gabriel almeida frazao gaudencio frigotto glademir alves trindade h r freitas j b begnami jaqueline de moraes thurler dalia jean claude gimonet joao carlos cichaczewski joao paulo reis costa jose de souza martins juliano pinheiro k c s souza karl marx l a barros l c s ferreira l m nascimento l m sa l mendes laurence bardin leticia cristina antunes lourdes helena silva luama vieira de sousa lucia mara de lima padilha luciane teixeira da silva lucilia regina de souza machado m borges junior m c molina m c s ferreira m f c sobreira m g arroyo m ramos m resende m ribeiro maria amelia do rosario santoro franco maria ciavatta maria da gloria gohn maria de lourdes bernartt maria raquel barros lima mariana petri da silva nayara massucatto p j orso paolo nosella patricia sara melo lopes paulo freire pedro puig calvo r x coutinho ronaldo marcos de lima araujo roseli saleti caldart s c leite sergio haddad silvanete pereira dos santos t p costa tatiana engel gerhardt thierry de burghgrave veronica klepka",
+    "termos_unificados": [
+      "Educação no campo",
+      "Pedagogia da Alternância",
+      "Luta pela terra",
+      "MST",
+      "Formação integral",
+      "Educação do Campo",
+      "Organização e Memória dos Espaços Pedagógicos em EPT",
+      "PROFEPT",
+      "Produto Educacional resultado de pesquisa de dissertação de Mestrado"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

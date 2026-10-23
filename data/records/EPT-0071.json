@@ -1,0 +1,192 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0071",
+  "ano": 2023,
+  "autor": "Vanderlei Wosniack",
+  "orientador": "Cloves Alexandre de Castro",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP6",
+  "dissertacao": {
+    "titulo": "O PAPEL DO GRÊMIO ESTUDANTIL NA ESCOLA",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/11/Dissertacao-Vanderlei-Wosniak.pdf",
+    "resumo": "O presente artigo expandido é resultado de pesquisa desenvolvida no âmbito do\nMestrado Profissional em Educação Profissional e Tecnológica (ProfEPT), Polo IFC -\nBlumenau, na linha de pesquisa Organização e Memórias de Espaços Pedagógicos\nna Educação Profissional e Tecnológica (EPT), no Macroprojeto 6 – Organização de\nespaços pedagógicos na EPT. A pesquisa buscou compreender a presença e os\nlimites de protagonismos dos estudantes do Centro de Educação Profissional\nHermann Hering (CEDUPHH), investigando a atuação do Grêmio Estudantil (GE)\nenquanto manifestação do protagonismo estudantil, bem como identificar e\ncompreender a perspectiva dos agentes e atores da escola quanto às possibilidades\nde manifestação. Trata-se de uma pesquisa de natureza básica, abordagem\nqualitativa, com coleta bibliográfica e documental, acompanhada do uso de entrevistas\ne questionários. O produto educacional (PE), caracterizado como uma história em\nquadrinhos (HQ), ilustra a importância de os estudantes se organizarem para\nassumirem seus direitos e deveres e busca a reflexão sobre a necessidade de\nfortalecer o trabalho coletivo e a construção do espaço democrático. A pesquisa e o\nPE tencionam contribuir para o debate acerca das possibilidades de transformação\nsocial a partir do protagonismo discente.\n\nPalavras-chave: cultura escolar; democracia; educação profissional e tecnológica;\nformação integral; grêmio estudantil.",
+    "palavras_chave": [
+      "Cultura escolar",
+      "Democracia",
+      "Educação profissional e tecnológica",
+      "Formação integral",
+      "Grêmio estudantil"
+    ],
+    "autores_referenciados": [
+      "A. B. Schwab",
+      "A. G. S. Neves",
+      "A. J. Vanzuiten",
+      "A. S. Sartori",
+      "Acácia Zeneida Kuenzer",
+      "Alessandra Nitschke",
+      "Antoni Zabala",
+      "Antonio Gramsci",
+      "Antônio Viñao Frago",
+      "Augusto Nibaldo Silva Triviños",
+      "Bell Hooks",
+      "C. C. Kunz",
+      "C. Hackenhaar",
+      "C. I. Henz",
+      "C. Moura",
+      "Carlos Henrique dos Santos Martins",
+      "Cloves Alexandre de Castro",
+      "D. G. Vidal",
+      "D. H. P. Laranjeira",
+      "Dante Henrique Moura",
+      "Denise Matiola Todorov",
+      "Dermeval Saviani",
+      "Domingos Leite Lima Filho",
+      "Eliezer Moreira Pacheco",
+      "F. A. S. Martins",
+      "F. de S. Barbeiro",
+      "F. S. Lino",
+      "G. F. de O. Zambon",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "Henrique Pitt",
+      "I. N. Salvador",
+      "I. Scherer-Warren",
+      "Ilma Passos Alencastro Veiga",
+      "Ivanise Maria Rizzatti",
+      "J. M. Pais",
+      "J. P. Chassot",
+      "Jacques Le Goff",
+      "Jairo Simião Dornelas",
+      "Jaqueline Moll",
+      "Juarez Tarcísio Dayrell",
+      "Karel Kosík",
+      "Kelmara Mendes Vieira",
+      "L. A. Rezende",
+      "L. B. R. Silvério",
+      "L. B. Santos",
+      "L. F. Miguel",
+      "L. F. Vitagliano",
+      "L. Martin",
+      "Laurence Bardin",
+      "Liane Carly Hermes Zanella",
+      "M. C. B. Dalberio",
+      "M. de L. Souza",
+      "M. F. S. Iriart",
+      "M. Frotscher",
+      "M. M. Pistrak",
+      "M. R. Silva",
+      "M. Ramos",
+      "M. Ridenti",
+      "M. W. N. Neves",
+      "Marcela Alejandra Pronko",
+      "Maria Ciavatta",
+      "Mariana Petri da Silva",
+      "Marilena Chauí",
+      "Marilsa de Sá Rodrigues",
+      "Marlon Dalmoro",
+      "Paulo Cesar Rodrigues Carrano",
+      "Paulo Freire",
+      "Priscila de Souza Chisté Leite",
+      "R. Antunes",
+      "R. G. Oliveira",
+      "R. Machado",
+      "R. S. Feitosa",
+      "Rafael Lucian",
+      "Raquel Elisabete de Oliveira Santos",
+      "Reginaldo Leandro Plácido",
+      "S. M. B. Mezzaroba",
+      "S. T. Urbanetz",
+      "Shyrlei Karyna Jagielski Benkendorf",
+      "Silvio Gallo",
+      "V. C. de O. Mailer",
+      "V. Reis",
+      "Vanderlei Wosniak",
+      "Vitor Henrique Paro"
+    ],
+    "base_epistemologica": {
+      "valor": "Educação Libertadora / Freireana",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto cita Freire (2006) sobre participação e democracia, alinhando-se à educação libertadora. O trecho discute a formação do cidadão e a crítica à educação bancária.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 20,
+          "trecho": "A participação está localizada na perspectiva de os educandos comporem os espaços de decisões [...] (FREIRE, 2006).",
+          "referencia_correspondente": "FREIRE, P. A educação na cidade. 7. ed. São Paulo, SP: Cortez, 2006."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Protagonismo estudantil: a manifestação do coletivo",
+    "tipo": "material_didatico_instrucional",
+    "formato": "História em Quadrinhos (HQ)",
+    "link": "https://educapes.capes.gov.br/handle/capes/731222#:~:text=http%3A//educapes.capes.gov.br/handle/capes/731222",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "docentes_professores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "História em Quadrinhos, Protagonismo Estudantil, Formação Integral, Grêmio Estudantil",
+      "PROFEPT",
+      "Produto Educacional resultado de pesquisa de dissertação de Mestrado"
+    ],
+    "data_publicacao": "2023-06-04",
+    "autores_colaboradores": [
+      {
+        "nome": "INSTITUTO FEDERAL CATARINENSE-IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Wosniak, Vanderlei",
+        "papel": "creator"
+      },
+      {
+        "nome": "CASTRO, Cloves Alexandre de",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/731222",
+        "url": "https://educapes.capes.gov.br/handle/capes/731222#:~:text=http%3A//educapes.capes.gov.br/handle/capes/731222"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Protagonismo estudantil: a manifestação do coletivo",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "HQ – PROTAGONISMO ESTUDANTIL",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "outro"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0071 2023 vanderlei wosniack cloves alexandre de castro ifc blumenau lp2 mp6 o papel do gremio estudantil na escola o presente artigo expandido e resultado de pesquisa desenvolvida no ambito do mestrado profissional em educacao profissional e tecnologica profept polo ifc blumenau na linha de pesquisa organizacao e memorias de espacos pedagogicos na educacao profissional e tecnologica ept no macroprojeto 6 organizacao de espacos pedagogicos na ept a pesquisa buscou compreender a presenca e os limites de protagonismos dos estudantes do centro de educacao profissional hermann hering ceduphh investigando a atuacao do gremio estudantil ge enquanto manifestacao do protagonismo estudantil bem como identificar e compreender a perspectiva dos agentes e atores da escola quanto as possibilidades de manifestacao trata se de uma pesquisa de natureza basica abordagem qualitativa com coleta bibliografica e documental acompanhada do uso de entrevistas e questionarios o produto educacional pe caracterizado como uma historia em quadrinhos hq ilustra a importancia de os estudantes se organizarem para assumirem seus direitos e deveres e busca a reflexao sobre a necessidade de fortalecer o trabalho coletivo e a construcao do espaco democratico a pesquisa e o pe tencionam contribuir para o debate acerca das possibilidades de transformacao social a partir do protagonismo discente palavras chave cultura escolar democracia educacao profissional e tecnologica formacao integral gremio estudantil educacao libertadora freireana protagonismo estudantil a manifestacao do coletivo material didatico instrucional historia em quadrinhos hq ensino medio integrado cultura escolar democracia educacao profissional e tecnologica formacao integral gremio estudantil historia em quadrinhos protagonismo estudantil formacao integral gremio estudantil profept produto educacional resultado de pesquisa de dissertacao de mestrado a b schwab a g s neves a j vanzuiten a s sartori acacia zeneida kuenzer alessandra nitschke antoni zabala antonio gramsci antonio vinao frago augusto nibaldo silva trivinos bell hooks c c kunz c hackenhaar c i henz c moura carlos henrique dos santos martins cloves alexandre de castro d g vidal d h p laranjeira dante henrique moura denise matiola todorov dermeval saviani domingos leite lima filho eliezer moreira pacheco f a s martins f de s barbeiro f s lino g f de o zambon gabriel kaplun gaudencio frigotto henrique pitt i n salvador i scherer warren ilma passos alencastro veiga ivanise maria rizzatti j m pais j p chassot jacques le goff jairo simiao dornelas jaqueline moll juarez tarcisio dayrell karel kosik kelmara mendes vieira l a rezende l b r silverio l b santos l f miguel l f vitagliano l martin laurence bardin liane carly hermes zanella m c b dalberio m de l souza m f s iriart m frotscher m m pistrak m r silva m ramos m ridenti m w n neves marcela alejandra pronko maria ciavatta mariana petri da silva marilena chaui marilsa de sa rodrigues marlon dalmoro paulo cesar rodrigues carrano paulo freire priscila de souza chiste leite r antunes r g oliveira r machado r s feitosa rafael lucian raquel elisabete de oliveira santos reginaldo leandro placido s m b mezzaroba s t urbanetz shyrlei karyna jagielski benkendorf silvio gallo v c de o mailer v reis vanderlei wosniak vitor henrique paro",
+    "termos_unificados": [
+      "Cultura escolar",
+      "Democracia",
+      "Educação profissional e tecnológica",
+      "Formação integral",
+      "Grêmio estudantil",
+      "História em Quadrinhos, Protagonismo Estudantil, Formação Integral, Grêmio Estudantil",
+      "PROFEPT",
+      "Produto Educacional resultado de pesquisa de dissertação de Mestrado"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}
