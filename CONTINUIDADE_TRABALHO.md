@@ -9,7 +9,7 @@ Este arquivo é o ponto de entrada para continuar o projeto em outra máquina ou
 - O checkout desta máquina está em `develop`, commit local `a653662` (`Corrige contagens do painel e documenta continuidade`), e aponta `origin/develop` em `6cc8d9c`. Portanto, o commit local está um commit à frente do tracking remoto neste checkout.
 - Atenção à integridade do PR: o diff do PR publicado pelo GitHub mostrou alterações de finais de linha CRLF em grande parte dos arquivos, embora a alteração real local seja pequena. Antes de continuar, comparar o estado remoto com o commit/arquivos locais e evitar aceitar um diff puramente de formatação como nova base. Não fazer reset/force push. Se o remoto realmente tiver conteúdo diferente, abrir uma correção pequena e revisável.
 - Branch de trabalho local: `develop`. Branch do PR: `codex/corrige-contagens-painel`.
-- Este documento e o catálogo de temporários estão sendo preparados no checkout local; confirmar que ambos foram incluídos no remoto antes de depender deles na outra máquina.
+- Este handoff e `LIMPEZA_TEMPORARIOS.md` estão no PR #4 (`codex/documenta-handoff-e-limpeza`), aberto e aguardando revisão/merge. Outra máquina pode consultar os arquivos nessa branch; após o merge, usar `develop` atualizado.
 
 ## O que já foi feito
 
