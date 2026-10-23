@@ -16,6 +16,7 @@ teste_json/
 # Tudo abaixo é gerado durante a execução.
 # Inventário, condições de limpeza e itens que exigem preservação: LIMPEZA_TEMPORARIOS.md.
 /pdf/
+# Downloads locais do corpus (inclui a pasta canônica pdf/dissertacoes/).
 /painel/
 /archive/
 /backups/

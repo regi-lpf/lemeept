@@ -125,7 +125,8 @@ flowchart TD
     XLS2["dados_finais_painel_ept.xlsx"]
     REL["Relatórios de OCR e validação"]
     PIPE["lemeept/atualizar_dados.py<br/>normalizar, classificar e serializar"]
-    JSONP["lemeept/painel-ept.json<br/>dados compactos"]
+    JSONP["lemeept/painel-ept.json<br/>contrato legado do widget"]
+    JSONV2["lemeept/painel-ept-v2.json<br/>defesas + producoes"]
     HTML["lemeept/index.html<br/>bloco do widget HTML do Elementor"]
     WP["Elementor / WordPress<br/>publicação manual"]
 
@@ -153,9 +154,12 @@ flowchart TD
     E3 --> REL
     XLS2 --> PIPE
     PIPE --> JSONP
+    PIPE -.-> JSONV2
     HTML -->|inserido/publicado no widget| WP
     JSONP -->|fetch HTTPS via data-json-url| HTML
 ```
+
+O contrato legado `painel-ept.json` continua alimentando o widget Elementor. `painel-ept-v2.json` é uma saída de transição com arrays independentes `defesas` e `producoes`; cada produção tem ID próprio e `defesaId`. O widget não consome o v2 até uma migração deliberada e validada no WordPress.
 
 ## 2. Diagrama de classes conceitual
 

@@ -11,5 +11,5 @@ from typing import Any, Dict, Iterable, List
 from lemeept.atualizar_dados import (
     ARQUIVO_PLANILHA,
     ARQUIVO_SAIDA,
-    enriquecer_registro if False else extrair_campos,
+    extrair_campos,
 )

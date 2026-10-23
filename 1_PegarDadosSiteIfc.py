@@ -359,7 +359,7 @@ def consultar_educapes(sessao: requests.Session, url: str, args: argparse.Namesp
             campos[match.group(1).casefold()].append(texto)
         elif re.search(r"Aparece\s+nas\s+cole[cç][oõ]es", rotulo_texto, re.I) and texto:
             for colecao in re.split(r"\s*[;|]\s*", texto):
-                colecao = limpar_texto(colecao, "")
+                colecao = limpar_texto(colecao)
                 if colecao and colecao not in colecoes:
                     colecoes.append(colecao)
     bitstreams = []

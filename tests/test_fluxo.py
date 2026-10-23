@@ -133,6 +133,7 @@ class TestEtapa1(unittest.TestCase):
                 recebido, metadados = etapa1.obter_pagina_oficial(sessao, args)
                 trabalhos = etapa1.extrair_trabalhos_html(recebido)
                 cache = Path(pasta) / "profept_dissertacoes.json"
+                self.assertTrue(cache.is_file())
 
         sessao.get.assert_called_once_with(
             etapa1.URL_API_PROFEPT,
@@ -141,7 +142,6 @@ class TestEtapa1(unittest.TestCase):
         )
         resposta.raise_for_status.assert_called_once_with()
         self.assertEqual(42, metadados["pagina_id"])
-        self.assertTrue(cache.is_file())
         self.assertEqual(1, len(trabalhos))
         self.assertEqual("Ana Exemplo", trabalhos[0]["autor"])
         self.assertEqual("2025", trabalhos[0]["ano"])

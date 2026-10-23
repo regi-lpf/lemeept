@@ -2,14 +2,14 @@
 
 Este arquivo é o ponto de entrada para continuar o projeto em outra máquina ou com outro agente. Leia na ordem: `CONTRATO_DADOS.md`, `DIAGRAMAS.md`, este documento e `LIMPEZA_TEMPORARIOS.md`.
 
-## Estado conhecido em 2026-10-23
+## Estado conhecido em 2026-10-23 (sessão de continuação)
 
 - Repositório: `https://github.com/regi-lpf/lemeept`.
 - PR #1, [Corrige contagens do painel e documenta continuidade](https://github.com/regi-lpf/lemeept/pull/1), aparece como **merged**. Merge SHA informado pelo GitHub: `395110bb4e5bda5ba5126a0f50b80ba89bc635d2`.
-- O checkout desta máquina está em `develop`, commit local `a653662` (`Corrige contagens do painel e documenta continuidade`), e aponta `origin/develop` em `6cc8d9c`. Portanto, o commit local está um commit à frente do tracking remoto neste checkout.
-- Atenção à integridade do PR: o diff do PR publicado pelo GitHub mostrou alterações de finais de linha CRLF em grande parte dos arquivos, embora a alteração real local seja pequena. Antes de continuar, comparar o estado remoto com o commit/arquivos locais e evitar aceitar um diff puramente de formatação como nova base. Não fazer reset/force push. Se o remoto realmente tiver conteúdo diferente, abrir uma correção pequena e revisável.
+- O checkout desta sessão foi atualizado por fast-forward para `develop`/`origin/develop`, commit `8c30bbe` (merge do PR #4), após identificar os PRs #1 e #4 como merged. Não houve reset nem force push.
+- Auditoria do PR #1 (`6cc8d9c` -> `33286fff`): diff normal 5.456 adições/5.195 remoções nos seis arquivos; ignorando CR no fim de linha, 279 adições/18 remoções. `lemeept/index.html` foi convertido de LF (1.086 linhas) para CRLF (1.128 linhas); diff funcional do widget com `--ignore-cr-at-eol`: +54/-12. O bloco atual conserva seções, parágrafos e quebras; futuras edições devem preservar CRLF e estrutura Elementor.
 - Branch de trabalho local: `develop`. Branch do PR: `codex/corrige-contagens-painel`.
-- Este handoff e `LIMPEZA_TEMPORARIOS.md` estão no PR #4 (`codex/documenta-handoff-e-limpeza`), aberto e aguardando revisão/merge. Outra máquina pode consultar os arquivos nessa branch; após o merge, usar `develop` atualizado.
+- Este handoff e `LIMPEZA_TEMPORARIOS.md` foram incorporados pelo PR #4 (`codex/documenta-handoff-e-limpeza`), merge `8c30bbe`.
 
 ## O que já foi feito
 
@@ -39,6 +39,17 @@ Em `lemeept/index.html`:
 - `git diff --check` passou.
 - `tests/test_fluxo.py` não importou no runtime usado por falta de `beautifulsoup4`; instalar dependências de `requirements.txt` antes de repetir.
 - Essas verificações correspondem ao estado local anterior. Na máquina nova, repetir após conferir o remoto.
+
+### Continuidade executada nesta sessão
+
+- Estado Git inicial foi conferido antes das edições; `develop` foi fast-forwardado a `origin/develop`. Referências em `dados/referencia/` permanecem intactas.
+- Validação estática do widget/JSON confirmou 110 defesas, 220 produções, 21 defesas MP3 e 42 produções MP3; orientadores e tipos são contados sobre entidades únicas pelo código do widget. A validação visual em WordPress/Elementor segue pendente: esta sessão não tinha URL/instância conectada.
+- O novo `lemeept/painel-ept-v2.json` expõe 110 defesas e 220 produções independentes, cada uma vinculada por `defesaId`; três dissertações têm resumo/palavras-chave com evidência de página. A saída permanece separada do JSON consumido pelo widget atual.
+- Amostra local de oito PDFs digitais preparada em `dados/local-sample-work/`; cinco PDFs adicionais (EPT-0001, 0025, 0050, 0075 e 0100) foram extraídos em até 20 páginas cada e combinados aos três casos anteriores. Os oito têm resumo com evidência de página; quatro dos cinco adicionais têm palavras-chave; nenhum trouxe coorientador na amostra. OCR não foi acionado porque o texto nativo bastou. Casos com coorientador, OCR necessário e ausência/divergência de metadados eduCAPES seguem pendentes.
+- As 110 dissertações do JSON legado foram baixadas/organizadas em `pdf/dissertacoes/` (incluindo cópias dos três PDFs já coletados). A pasta fica sob `/pdf/`, ignorada pelo Git. `baixar_dissertacoes.py` reproduz o download, valida assinatura PDF e grava `manifesto.json` com URL/tamanho/hash; por política do projeto, o fallback de certificado fica restrito ao host oficial `profept.ifc.edu.br`.
+- Os 37 testes do fluxo passaram na sessão anterior; nesta continuação os quatro testes focados do construtor v2 também passaram. A extração completa dos 110 PDFs e o enriquecimento integral ainda não foram feitos; estado pendente/parcial está registrado no JSON v2 (oito dissertações parciais).
+- Foram removidas cinco pastas `__pycache__/` regeneráveis do projeto, após confirmar que não havia processo Python ativo. PDFs, manifesto, relatórios de amostra, planilhas e caches de extração foram preservados.
+- Artefatos intermediários e PDFs usados no QA foram preservados. Consultar `LIMPEZA_TEMPORARIOS.md`; nada foi apagado.
 
 ## Regras do produto já acordadas
 
