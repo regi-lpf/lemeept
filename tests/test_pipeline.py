@@ -57,7 +57,7 @@ class TestPipelinePainel(unittest.TestCase):
         }
         self.assertTrue(obrigatorios.issubset(registro))
         self.assertLessEqual(len(registro["resumo"]), 283)
-        self.assertNotIn(resumo, registro["searchText"])
+        self.assertIn("texto de resumo longo", registro["searchText"])
         self.assertEqual(1, len({registro["id"]}))
 
     def test_preserva_classificacao_oficial_existente(self):
@@ -72,6 +72,34 @@ class TestPipelinePainel(unittest.TestCase):
         }])[0]
         self.assertEqual("MP4", registro["codigoMacroprojeto"])
         self.assertEqual("Linha revisada", registro["linhaPesquisa"])
+
+    def test_normaliza_rotulo_mp3_e_preserva_coorientador_e_metadados_educapes(self):
+        resumo = "Resumo integral com termos específicos de pesquisa. " * 20
+        registro = processar_registros([{
+            "id": "EPT-0108",
+            "codigoMacroprojeto": "MP3",
+            "macroprojeto": "Macroprojeto 3 – Práticas Educativas no Currículo Integrado",
+            "coorientador": "Dra. Maria Exemplo",
+            "titulo": "Dissertação de teste",
+            "produto": "Produto de teste",
+            "resumo": resumo,
+            "introducao": "Introdução com termos pesquisáveis.",
+            "palavrasChave": "trabalho; educação",
+            "colecoesEduCAPES": "Livros digitais",
+            "metadadosEduCAPES": json.dumps({"campos_dc": {"dc.type": ["livro digital"]}}),
+        }])[0]
+        with tempfile.TemporaryDirectory() as pasta:
+            destino = GeradorPainel(str(Path(pasta) / "painel.json")).salvar([registro])
+            publicado = json.loads(destino.read_text(encoding="utf-8"))[0]
+
+        self.assertTrue(publicado["macroprojeto"].startswith("MP3 –"))
+        self.assertEqual("Dra. Maria Exemplo", publicado["coorientador"])
+        self.assertEqual("maria exemplo", publicado["coorientadorChave"])
+        self.assertEqual(resumo.strip(), publicado["resumoCompleto"])
+        self.assertLess(len(publicado["resumo"]), len(publicado["resumoCompleto"]))
+        self.assertEqual(["Livros digitais"], publicado["colecoesEduCAPES"])
+        self.assertEqual("livro digital", publicado["metadadosEduCAPES"]["campos_dc"]["dc.type"][0])
+        self.assertIn("termos especificos de pesquisa", publicado["searchText"])
 
     def test_conta_dissertacao_e_produto_como_duas_producoes(self):
         registros = processar_registros([
@@ -99,3 +127,4 @@ class TestPipelinePainel(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

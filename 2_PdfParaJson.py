@@ -396,6 +396,38 @@ def trecho_por_termos(texto: str, termos: list[str], limite: int = 1800) -> str:
     return ""
 
 
+def extrair_coorientador(texto: str) -> str | None:
+    """Lê o nome identificado pelo rótulo de coorientação no PDF, sem inferir."""
+    rotulo = re.compile(
+        r"^\s*co[\s\u2010-\u2015-]*orientador(?:a)?\s*[:：-]?\s*(.*?)\s*$",
+        flags=re.IGNORECASE,
+    )
+    outro_rotulo = re.compile(
+        r"^\s*(?:orientador(?:a)?|autor(?:a)?|acad[eê]mic[oa]|disserta[cç][aã]o|"
+        r"produto\s+educacional)\b",
+        flags=re.IGNORECASE,
+    )
+    linhas = (texto or "").splitlines()
+    for indice, linha in enumerate(linhas):
+        match = rotulo.match(linha)
+        if not match:
+            continue
+        nome = limpar_texto_pdf(match.group(1)).strip(" :;-–—")
+        if not nome and indice + 1 < len(linhas):
+            proxima = limpar_texto_pdf(linhas[indice + 1]).strip()
+            if proxima and not outro_rotulo.match(proxima):
+                nome = proxima
+        nome = re.split(
+            r"\s+(?=(?:orientador(?:a)?|autor(?:a)?|disserta[cç][aã]o|produto\s+educacional)\s*[:：])",
+            nome,
+            maxsplit=1,
+            flags=re.IGNORECASE,
+        )[0].strip(" :;-–—")
+        if nome and normalizar_busca(nome) not in {"a revisar", "nao informado", "nao se aplica"}:
+            return nome
+    return None
+
+
 def extrair_campos(texto: str) -> dict:
     resumo = trecho_entre(
         texto,
@@ -417,6 +449,7 @@ def extrair_campos(texto: str) -> dict:
     return {
         "resumo": resumo or None,
         "palavras_chave": palavras,
+        "coorientador": extrair_coorientador(texto),
         "abstract": abstract or None,
         "objetivos": trecho_por_termos(texto, ["objetivo geral", "objetiva analisar", "tem como objetivo"], 1800) or None,
         "metodologia": trecho_por_termos(texto, ["procedimentos metodológicos", "metodologia", "pesquisa qualitativa"], 2200) or None,
@@ -840,6 +873,18 @@ def trabalho_para_gpt(
     historico: dict,
     vocabulario: dict,
 ) -> dict:
+    metadados_educapes = oficial.get("Metadados eduCAPES", {})
+    if isinstance(metadados_educapes, str):
+        try:
+            metadados_educapes = json.loads(metadados_educapes) if metadados_educapes.strip() else {}
+        except json.JSONDecodeError:
+            metadados_educapes = {}
+    if not isinstance(metadados_educapes, dict):
+        metadados_educapes = {}
+    colecoes_educapes = oficial.get("Coleções eduCAPES", "")
+    colecoes_educapes = [
+        item.strip() for item in re.split(r"\s*[;|]\s*", str(colecoes_educapes or "")) if item.strip()
+    ]
     valores = historico.get("dados", {}) if historico else classificacao_padrao()
     classificacao_atual = {}
     for chave, campo in CAMPOS_GPT.items():
@@ -860,6 +905,10 @@ def trabalho_para_gpt(
         "titulo": limpar_texto(oficial.get("Título da Dissertação")) or None,
         "autor": limpar_texto(oficial.get("Autor")) or None,
         "orientador_original": limpar_texto(oficial.get("Orientador")) or None,
+        "coorientador_site": limpar_texto(oficial.get("Coorientador")) or None,
+        "coorientador_pdf": campos.get("coorientador"),
+        "colecoes_educapes": colecoes_educapes or metadados_educapes.get("colecoes", []),
+        "metadados_educapes": metadados_educapes,
         "orientador_padronizado_atual": orientador_canonico(oficial.get("Orientador"), vocabulario),
         "instituicao": limpar_texto(oficial.get("Instituição")) or INSTITUICAO_CORPUS,
         "campus": limpar_texto(oficial.get("Campus")) or CAMPUS_CORPUS,
@@ -1037,3 +1086,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
