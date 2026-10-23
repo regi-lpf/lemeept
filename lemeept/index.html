@@ -1,0 +1,1128 @@
+<section id="leme-painel-ept" class="leme-painel-ept" data-json-url="https://raw.githubusercontent.com/regi-lpf/lemeept/refs/heads/develop/lemeept/painel-ept.json"><style>
+    #leme-painel-ept {
+      --leme-primary: #4d5aff;
+      --leme-primary-2: #4d5aff;
+      --leme-secondary: #833ca3;
+      --leme-primary-soft: #f0f1ff;
+      --leme-cyan: #833ca3;
+      --leme-green: #399f67;
+      --leme-green-soft: #e9f8ef;
+      --leme-red: #f45971;
+      --leme-red-soft: #fff0f3;
+      --leme-bg: #f7f8ff;
+      --leme-card: rgba(255,255,255,.96);
+      --leme-border: #e4e6f4;
+      --leme-border-strong: #cbd0ff;
+      --leme-text: #111827;
+      --leme-muted: #64748b;
+      --leme-shadow: 0 18px 50px rgba(15, 23, 42, .10);
+      --leme-shadow-soft: 0 10px 28px rgba(15, 23, 42, .07);
+      font-family: "Open Sans", "Segoe UI", Arial, sans-serif;
+      color: var(--leme-text);
+      background:
+        radial-gradient(circle at top left, rgba(77,90,255,.13), transparent 34%),
+        radial-gradient(circle at top right, rgba(131,60,163,.11), transparent 30%),
+        linear-gradient(180deg, #ffffff, var(--leme-bg));
+      border: 1px solid var(--leme-border);
+      border-radius: 28px;
+      padding: 26px;
+      box-sizing: border-box;
+      overflow: hidden;
+      scroll-behavior: smooth;
+    }
+    #leme-painel-ept * { box-sizing: border-box; }
+    #leme-painel-ept :focus-visible { outline: 4px solid rgba(77,90,255,.23); outline-offset: 3px; border-radius: 12px; }
+    #leme-painel-ept .leme-skip {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    #leme-painel-ept .leme-skip:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      display: inline-flex;
+      margin-bottom: 12px;
+      padding: 10px 14px;
+      background: var(--leme-primary);
+      color: #fff;
+      border-radius: 999px;
+      font-weight: 850;
+      text-decoration: none;
+    }
+    #leme-painel-ept .leme-header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: start;
+      margin-bottom: 18px;
+      padding: 24px;
+      border-radius: 24px;
+      color: #fff;
+      background: linear-gradient(135deg, var(--leme-primary) 0%, var(--leme-secondary) 100%);
+      box-shadow: 0 18px 42px rgba(77,90,255,.22);
+    }
+    #leme-painel-ept .leme-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.16);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.24);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .02em;
+      margin-bottom: 10px;
+    }
+    #leme-painel-ept h2 {
+      margin: 0;
+      color: #fff;
+      font-size: clamp(25px, 3vw, 38px);
+      line-height: 1.08;
+      font-weight: 900;
+      letter-spacing: -.04em;
+    }
+    #leme-painel-ept .leme-subtitle {
+      margin: 10px 0 0;
+      color: rgba(255,255,255,.9);
+      font-size: 15px;
+      line-height: 1.6;
+      max-width: 940px;
+    }
+    #leme-painel-ept .leme-update {
+      background: rgba(255,255,255,.14);
+      border: 1px solid rgba(255,255,255,.28);
+      border-radius: 18px;
+      padding: 13px 15px;
+      font-size: 12px;
+      color: #fff;
+      white-space: nowrap;
+      box-shadow: var(--leme-shadow-soft);
+      backdrop-filter: blur(10px);
+    }
+    #leme-painel-ept .leme-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 18px;
+      padding: 10px;
+      border-radius: 22px;
+      background: rgba(255,255,255,.72);
+      border: 1px solid var(--leme-border);
+      box-shadow: var(--leme-shadow-soft);
+      position: sticky;
+      top: 8px;
+      z-index: 15;
+      backdrop-filter: blur(12px);
+    }
+    #leme-painel-ept .leme-nav button,
+    #leme-painel-ept .leme-mini-nav button,
+    #leme-painel-ept .leme-head-btn,
+    #leme-painel-ept .leme-bottom-nav button,
+    #leme-painel-ept .leme-export-btn,
+    #leme-painel-ept .leme-view button,
+    #leme-painel-ept .leme-page-btn,
+    #leme-painel-ept .leme-card-detail-btn,
+    #leme-painel-ept .leme-chip button,
+    #leme-painel-ept .leme-modal-close {
+      border: 1px solid var(--leme-border-strong);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--leme-primary);
+      padding: 10px 14px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 850;
+      min-height: 40px;
+      transition: transform .16s ease, background .16s ease, border-color .16s ease, color .16s ease, box-shadow .16s ease;
+    }
+    #leme-painel-ept .leme-nav button:hover,
+    #leme-painel-ept .leme-mini-nav button:hover,
+    #leme-painel-ept .leme-head-btn:hover,
+    #leme-painel-ept .leme-bottom-nav button:hover,
+    #leme-painel-ept .leme-export-btn:hover,
+    #leme-painel-ept .leme-view button:hover,
+    #leme-painel-ept .leme-page-btn:hover,
+    #leme-painel-ept .leme-card-detail-btn:hover,
+    #leme-painel-ept .leme-modal-close:hover {
+      background: var(--leme-primary-soft);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(77,90,255,.10);
+    }
+    #leme-painel-ept .leme-nav button.is-primary,
+    #leme-painel-ept .leme-card-detail-btn,
+    #leme-painel-ept .leme-view button.is-active,
+    #leme-painel-ept .leme-page-btn.is-active {
+      background: var(--leme-primary-2);
+      color: #fff;
+      border-color: var(--leme-primary-2);
+    }
+    #leme-painel-ept .leme-stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    #leme-painel-ept .leme-stat,
+    #leme-painel-ept .leme-insight-card {
+      background: var(--leme-card);
+      border: 1px solid var(--leme-border);
+      border-radius: 22px;
+      padding: 18px;
+      box-shadow: var(--leme-shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+    #leme-painel-ept .leme-stat::after,
+    #leme-painel-ept .leme-insight-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -30px -42px auto;
+      width: 105px;
+      height: 105px;
+      border-radius: 999px;
+      background: rgba(77,90,255,.09);
+      pointer-events: none;
+    }
+    #leme-painel-ept .leme-stat strong,
+    #leme-painel-ept .leme-insight-card strong {
+      display: block;
+      color: var(--leme-primary);
+      font-size: 29px;
+      line-height: 1;
+      margin-bottom: 7px;
+      letter-spacing: -.03em;
+    }
+    #leme-painel-ept .leme-stat span,
+    #leme-painel-ept .leme-insight-card span {
+      color: var(--leme-muted);
+      font-size: 12px;
+      font-weight: 750;
+      line-height: 1.35;
+    }
+    #leme-painel-ept .leme-panel {
+      margin: 0 0 20px;
+      background: rgba(255,255,255,.95);
+      border: 1px solid var(--leme-border);
+      border-radius: 26px;
+      padding: 20px;
+      box-shadow: var(--leme-shadow);
+      backdrop-filter: blur(12px);
+      scroll-margin-top: 88px;
+    }
+    #leme-painel-ept .leme-panel-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    #leme-painel-ept .leme-panel-head h3,
+    #leme-painel-ept .leme-section-label {
+      margin: 0;
+      color: var(--leme-primary);
+      font-size: 22px;
+      line-height: 1.2;
+      font-weight: 900;
+      letter-spacing: -.025em;
+    }
+    #leme-painel-ept .leme-panel-head p {
+      margin: 6px 0 0;
+      color: var(--leme-muted);
+      font-size: 13px;
+      line-height: 1.55;
+      max-width: 800px;
+    }
+    #leme-painel-ept .leme-note {
+      background: var(--leme-primary-soft);
+      color: var(--leme-primary);
+      border: 1px solid #d9ddff;
+      border-radius: 999px;
+      padding: 9px 12px;
+      font-size: 12px;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+    #leme-painel-ept .leme-panel-head-actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    #leme-painel-ept .leme-mini-nav { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+    #leme-painel-ept .leme-bottom-nav {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 22px 0 0;
+      padding: 14px;
+      border: 1px solid var(--leme-border);
+      border-radius: 22px;
+      background: rgba(255,255,255,.82);
+      box-shadow: var(--leme-shadow-soft);
+    }
+    #leme-painel-ept .leme-insights {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    #leme-painel-ept .leme-insight-card strong { font-size: 21px; line-height: 1.18; word-break: break-word; }
+    #leme-painel-ept .leme-charts-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    #leme-painel-ept .leme-charts-grid > * { min-width: 0; }
+    #leme-painel-ept .leme-chart-card {
+      border: 1px solid var(--leme-border);
+      border-radius: 22px;
+      padding: 16px;
+      background: linear-gradient(180deg, #ffffff, #fbfdff);
+      min-height: 220px;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, .045);
+      min-width: 0;
+    }
+    #leme-painel-ept .leme-chart-card.is-wide { grid-column: 1 / -1; }
+    #leme-painel-ept .leme-chart-title { margin: 0 0 4px; color: var(--leme-text); font-size: 15px; font-weight: 900; }
+    #leme-painel-ept .leme-chart-subtitle { margin: 0 0 14px; color: var(--leme-muted); font-size: 12px; line-height: 1.45; }
+    #leme-painel-ept .leme-bars { display: grid; gap: 10px; }
+    #leme-painel-ept .leme-bar-row { display: grid; grid-template-columns: minmax(160px, 36%) 1fr auto; gap: 10px; align-items: center; }
+    #leme-painel-ept .leme-bar-label { color: #334155; font-size: 12px; line-height: 1.25; font-weight: 800; overflow-wrap: anywhere; }
+    #leme-painel-ept .leme-bar-track { height: 13px; border-radius: 999px; background: #eef2ff; overflow: hidden; border: 1px solid #e0e7ff; }
+    #leme-painel-ept .leme-bar-fill { height: 100%; width: 0%; border-radius: 999px; background: linear-gradient(90deg, var(--leme-primary-2), var(--leme-secondary)); transition: width .3s ease; }
+    #leme-painel-ept .leme-bar-value { color: var(--leme-primary); font-size: 12px; font-weight: 900; min-width: 24px; text-align: right; }
+    #leme-painel-ept .leme-year-chart { display: flex; align-items: end; gap: 12px; height: var(--chart-height, 220px); padding: 12px 6px 0; border-bottom: 1px solid #e2e8f0; }
+    #leme-painel-ept .leme-year-col { flex: 1; min-width: 42px; display: flex; flex-direction: column; align-items: center; justify-content: end; height: 100%; gap: 7px; }
+    #leme-painel-ept .leme-year-value { color: var(--leme-primary); font-weight: 900; font-size: 12px; }
+    #leme-painel-ept .leme-year-bar { width: min(52px, 78%); min-height: 6px; border-radius: 12px 12px 4px 4px; background: linear-gradient(180deg, var(--leme-primary-2), var(--leme-secondary)); box-shadow: 0 8px 18px rgba(77,90,255,.14); }
+    #leme-painel-ept .leme-year-label { color: #475569; font-size: 12px; font-weight: 850; }
+    #leme-painel-ept .leme-composition { display: grid; gap: 16px; align-content: center; min-height: 154px; }
+    #leme-painel-ept .leme-composition-track {
+      display: flex;
+      width: 100%;
+      height: 30px;
+      overflow: hidden;
+      border: 1px solid #dbe3ff;
+      border-radius: 999px;
+      background: #eef2ff;
+      box-shadow: inset 0 1px 3px rgba(15, 23, 42, .08);
+    }
+    #leme-painel-ept .leme-composition-segment { min-width: 3px; height: 100%; }
+    #leme-painel-ept .leme-composition-legend { display: grid; gap: 9px; }
+    #leme-painel-ept .leme-composition-item { display: grid; grid-template-columns: 11px minmax(0, 1fr) auto; gap: 8px; align-items: start; }
+    #leme-painel-ept .leme-composition-dot { width: 10px; height: 10px; margin-top: 3px; border-radius: 50%; }
+    #leme-painel-ept .leme-composition-label { color: #334155; font-size: 12px; line-height: 1.3; font-weight: 800; }
+    #leme-painel-ept .leme-composition-value { color: var(--leme-primary); font-size: 12px; font-weight: 900; white-space: nowrap; }
+    #leme-painel-ept .leme-chart-footnote { margin: 11px 0 0; color: var(--leme-muted); font-size: 11px; line-height: 1.4; }
+    #leme-painel-ept .leme-single-insight,
+    #leme-painel-ept .leme-empty-chart {
+      border: 1px dashed var(--leme-border-strong);
+      background: linear-gradient(180deg, #ffffff, #fbfdff);
+      border-radius: 18px;
+      padding: 18px;
+      color: var(--leme-muted);
+      font-size: 13px;
+      line-height: 1.55;
+      min-height: 116px;
+      display: grid;
+      align-content: center;
+    }
+    #leme-painel-ept .leme-empty-chart::before {
+      content: "Sem dados neste recorte";
+      display: block;
+      color: var(--leme-primary);
+      font-weight: 900;
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+    #leme-painel-ept .leme-single-insight strong { color: var(--leme-primary); font-size: 18px; display:block; margin-bottom: 6px; }
+    #leme-painel-ept .leme-search-row { display: grid; grid-template-columns: 1fr auto; gap: 12px; margin: 14px 0; }
+    #leme-painel-ept .leme-search {
+      width: 100%; border: 1px solid var(--leme-border-strong); border-radius: 18px; padding: 15px 16px;
+      font-size: 15px; color: var(--leme-text); outline: none; background: #fff; min-height: 48px;
+    }
+    #leme-painel-ept .leme-search:focus { border-color: var(--leme-primary-2); box-shadow: 0 0 0 4px rgba(77,90,255,.12); }
+    #leme-painel-ept .leme-clear {
+      border: none; border-radius: 18px; padding: 0 17px; min-height: 48px;
+      background: linear-gradient(135deg, var(--leme-primary-2), var(--leme-secondary)); color: #fff; font-weight: 850; cursor: pointer;
+      box-shadow: 0 12px 22px rgba(77,90,255,.16);
+    }
+    #leme-painel-ept .leme-filters { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 11px; }
+    #leme-painel-ept .leme-field { position: relative; }
+    #leme-painel-ept .leme-field label { display:flex; align-items:center; justify-content:space-between; gap:8px; font-size: 11px; font-weight: 850; color: var(--leme-muted); margin: 0 0 6px; text-transform: uppercase; letter-spacing:.045em; }
+    #leme-painel-ept .leme-field select { width:100%; border:1px solid var(--leme-border); border-radius:15px; padding: 11px 12px; background:#fff; color: var(--leme-text); font-size:13px; outline:none; min-height:44px; }
+    #leme-painel-ept .leme-field select:disabled { background:#f8fafc; color:#94a3b8; cursor:not-allowed; }
+    #leme-painel-ept .leme-field-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: max-content;
+      max-width: 100%;
+      margin-top: 6px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      color: #64748b;
+      font-size: 11px;
+      font-weight: 850;
+      line-height: 1.2;
+    }
+    #leme-painel-ept .leme-field-count.is-selected {
+      background: var(--leme-primary-soft);
+      border-color: #d9ddff;
+      color: var(--leme-primary);
+    }
+    #leme-painel-ept .leme-active-filters { display:flex; flex-wrap:wrap; gap:8px; margin: 12px 0 0; }
+    #leme-painel-ept .leme-chip { display:inline-flex; align-items:center; gap:6px; padding: 6px 8px 6px 11px; border:1px solid #d9ddff; border-radius:999px; background:var(--leme-primary-soft); color:var(--leme-primary); font-size:12px; font-weight:850; }
+    #leme-painel-ept .leme-chip button { min-height: 26px; padding:0 8px; border-color:transparent; background:#fff; }
+    #leme-painel-ept .leme-toolbar { display:flex; justify-content:space-between; align-items:center; gap:12px; margin: 16px 0; flex-wrap:wrap; scroll-margin-top: 88px; }
+    #leme-painel-ept .leme-count { font-size:14px; color:var(--leme-muted); font-weight:750; }
+    #leme-painel-ept .leme-count strong { color:var(--leme-primary); }
+    #leme-painel-ept .leme-actions-toolbar { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+    #leme-painel-ept .leme-view { display:inline-flex; gap:8px; align-items:center; }
+    #leme-painel-ept .leme-page-btn:disabled { opacity:.45; cursor:not-allowed; transform:none; }
+    #leme-painel-ept .leme-results { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items:stretch; grid-auto-rows: 1fr; }
+    #leme-painel-ept .leme-results.is-table { display:block; overflow-x:auto; background:#fff; border:1px solid var(--leme-border); border-radius:22px; box-shadow:var(--leme-shadow-soft); }
+    #leme-painel-ept .leme-card { min-height: 365px; height: 100%; background:var(--leme-card); border:1px solid var(--leme-border); border-radius:24px; padding:20px; box-shadow:var(--leme-shadow-soft); transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease; display:flex; flex-direction:column; }
+    #leme-painel-ept .leme-card:hover { transform:translateY(-3px); box-shadow:0 20px 44px rgba(15,23,42,.12); border-color:rgba(77,90,255,.34); }
+    #leme-painel-ept .leme-card .leme-eyebrow { background:var(--leme-primary-soft); color:var(--leme-primary); border-color:#daddff; }
+    #leme-painel-ept .leme-card-title { margin:0 0 12px; color:var(--leme-primary); font-size:16px; line-height:1.35; font-weight:900; letter-spacing:-.01em; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+    #leme-painel-ept .leme-meta { display:grid; gap:7px; margin:0 0 12px; color:var(--leme-muted); font-size:13px; line-height:1.35; }
+    #leme-painel-ept .leme-meta b { color:var(--leme-text); }
+    #leme-painel-ept .leme-badges, #leme-painel-ept .leme-tags, #leme-painel-ept .leme-actions { display:flex; flex-wrap:wrap; gap:8px; }
+    #leme-painel-ept .leme-badges { margin:12px 0; }
+    #leme-painel-ept .leme-tags { margin-top:10px; }
+    #leme-painel-ept .leme-actions { margin-top:15px; }
+    #leme-painel-ept .leme-badge, #leme-painel-ept .leme-tag { display:inline-flex; align-items:center; border-radius:999px; padding:6px 10px; font-size:11px; font-weight:850; background:var(--leme-primary-soft); color:var(--leme-primary); border:1px solid #d9ddff; }
+    #leme-painel-ept .leme-badge { max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    #leme-painel-ept .leme-badge.green { background:var(--leme-green-soft); color:#166534; border-color:#bbf7d0; }
+    #leme-painel-ept .leme-badge.red { background:var(--leme-red-soft); color:var(--leme-red); border-color:#fecdd3; }
+    #leme-painel-ept .leme-tag { background:#f8fafc; border-color:#e2e8f0; color:#475569; font-weight:750; }
+    #leme-painel-ept .leme-summary { color:#475569; font-size:13px; line-height:1.6; margin:13px 0; display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden; }
+    #leme-painel-ept .leme-card-footer { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-top: auto; padding-top: 13px; border-top:1px solid var(--leme-border); }
+    #leme-painel-ept .leme-link { display:inline-flex; align-items:center; justify-content:center; gap:6px; border-radius:999px; padding:9px 12px; text-decoration:none !important; font-size:12px; font-weight:900; border:1px solid transparent; min-height:40px; }
+    #leme-painel-ept .leme-link.pdf { color:#fff !important; background:var(--leme-red); }
+    #leme-painel-ept .leme-link.produto { color:#fff !important; background:var(--leme-green); }
+    #leme-painel-ept .leme-empty { grid-column:1/-1; background:#fff; border:1px dashed var(--leme-border-strong); border-radius:22px; padding:32px; text-align:center; color:var(--leme-muted); font-weight:800; }
+    #leme-painel-ept table.leme-table { width:100%; min-width:1150px; border-collapse:collapse; font-size:13px; }
+    #leme-painel-ept .leme-table caption { text-align:left; padding: 14px; font-weight:900; color:var(--leme-primary); }
+    #leme-painel-ept .leme-table th { background:var(--leme-primary-2); color:#fff; text-align:left; padding:14px; position:sticky; top:0; z-index:2; white-space:nowrap; }
+    #leme-painel-ept .leme-table td { padding:14px; border-bottom:1px solid var(--leme-border); vertical-align:top; }
+    #leme-painel-ept .leme-table-title { color:var(--leme-primary); font-weight:900; line-height:1.35; }
+    #leme-painel-ept .leme-pagination { display:flex; justify-content:center; align-items:center; gap:7px; flex-wrap:wrap; margin:20px 0 4px; }
+    #leme-painel-ept .leme-pagination-info { width:100%; text-align:center; color:var(--leme-muted); font-size:12px; font-weight:750; margin-top:4px; }
+    #leme-painel-ept mark.leme-highlight { background:#fef08a; color:inherit; border-radius:5px; padding:0 2px; box-decoration-break:clone; -webkit-box-decoration-break:clone; }
+    #leme-painel-ept .leme-modal-backdrop { position:fixed; inset:0; background:rgba(15,23,42,.55); z-index:9999; display:none; align-items:center; justify-content:center; padding:18px; }
+    #leme-painel-ept .leme-modal-backdrop.is-open { display:flex; }
+    #leme-painel-ept .leme-modal { width:min(920px, 100%); max-height:min(86vh, 900px); overflow:auto; background:#fff; border-radius:26px; border:1px solid var(--leme-border); box-shadow:0 25px 80px rgba(15,23,42,.28); padding:22px; }
+    #leme-painel-ept .leme-modal-head { display:flex; justify-content:space-between; align-items:flex-start; gap:14px; border-bottom:1px solid var(--leme-border); padding-bottom:14px; margin-bottom:14px; }
+    #leme-painel-ept .leme-modal-title { margin:0; color:var(--leme-primary); font-size:20px; line-height:1.25; font-weight:900; }
+    #leme-painel-ept .leme-detail-grid { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:10px 16px; }
+    #leme-painel-ept .leme-detail-item { padding:12px; border:1px solid #eef2ff; border-radius:16px; background:#fbfdff; color:#374151; font-size:13px; line-height:1.55; }
+    #leme-painel-ept .leme-detail-item.is-wide { grid-column:1/-1; }
+    #leme-painel-ept .leme-detail-item b { color:#111827; }
+    @media (max-width: 1180px) {
+      #leme-painel-ept .leme-filters { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      #leme-painel-ept .leme-insights { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 1024px) {
+      #leme-painel-ept .leme-stats, #leme-painel-ept .leme-insights { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      #leme-painel-ept .leme-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      #leme-painel-ept .leme-results { grid-template-columns: 1fr; }
+      #leme-painel-ept .leme-charts-grid { grid-template-columns: 1fr; }
+      #leme-painel-ept .leme-chart-card.is-wide { grid-column:auto; }
+    }
+    @media (max-width: 720px) {
+      #leme-painel-ept { padding:16px; border-radius:20px; }
+      #leme-painel-ept .leme-header { grid-template-columns:1fr; padding:18px; border-radius:20px; }
+      #leme-painel-ept .leme-update { white-space:normal; }
+      #leme-painel-ept .leme-stats, #leme-painel-ept .leme-insights { grid-template-columns:1fr; }
+      #leme-painel-ept .leme-search-row { grid-template-columns:1fr; }
+      #leme-painel-ept .leme-filters { grid-template-columns:1fr; }
+      #leme-painel-ept .leme-view { display:none; }
+      #leme-painel-ept .leme-actions-toolbar { width:100%; }
+      #leme-painel-ept .leme-export-btn { flex:1; }
+      #leme-painel-ept .leme-results { display:grid !important; grid-template-columns:1fr; overflow:visible !important; border:0 !important; background:transparent !important; grid-auto-rows:auto; }
+      #leme-painel-ept .leme-card { min-height: 0; }
+      #leme-painel-ept .leme-bar-row { grid-template-columns:1fr; gap:5px; }
+      #leme-painel-ept .leme-bar-value { text-align:left; }
+      #leme-painel-ept .leme-year-chart { overflow-x:auto; justify-content:flex-start; }
+      #leme-painel-ept .leme-year-col { min-width:58px; }
+      #leme-painel-ept .leme-detail-grid { grid-template-columns:1fr; }
+      #leme-painel-ept .leme-nav { position:static; }
+      #leme-painel-ept .leme-nav button, #leme-painel-ept .leme-bottom-nav button, #leme-painel-ept .leme-head-btn { flex: 1 1 150px; }
+      #leme-painel-ept .leme-panel { padding: 15px; border-radius: 20px; }
+      #leme-painel-ept .leme-panel-head-actions { width: 100%; justify-content: flex-start; }
+      #leme-painel-ept .leme-toolbar { align-items: stretch; }
+      #leme-painel-ept .leme-count { width: 100%; }
+    }
+    @media (max-width: 520px) {
+      #leme-painel-ept { padding: 12px; }
+      #leme-painel-ept .leme-actions-toolbar, #leme-painel-ept .leme-card-footer, #leme-painel-ept .leme-actions { width: 100%; }
+      #leme-painel-ept .leme-export-btn, #leme-painel-ept .leme-link, #leme-painel-ept .leme-card-detail-btn { flex: 1 1 auto; }
+      #leme-painel-ept .leme-modal { padding: 16px; border-radius: 20px; }
+      #leme-painel-ept .leme-modal-head { flex-direction: column; }
+      #leme-painel-ept .leme-modal-close { width: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #leme-painel-ept, #leme-painel-ept * { scroll-behavior:auto !important; transition:none !important; animation:none !important; }
+    }
+  </style><a class="leme-skip" href="#leme-controles">Pular para pesquisa e filtros</a>
+<div class="leme-header">
+<div>
+<div class="leme-eyebrow" aria-hidden="true">PAINEL BIBLIOMÉTRICO · EPT</div>
+<h2>Painel Bibliométrico da Produção ProfEPT</h2>
+<p class="leme-subtitle">Explore dissertações e produtos educacionais por tema, autor, orientador, ano, linha de pesquisa e macroprojeto.</p>
+
+</div>
+<div class="leme-update">Período analisado: <strong id="leme-periodo">Carregando...</strong></div>
+</div>
+<div class="leme-stats" aria-label="Indicadores gerais do painel">
+<div class="leme-stat"><strong id="leme-stat-total">110</strong>trabalhos analisados</div>
+<div class="leme-stat"><strong id="leme-stat-producoes">—</strong>produções consideradas</div>
+<div class="leme-stat"><strong id="leme-stat-orientadores">17</strong>orientadores</div>
+<div class="leme-stat"><strong id="leme-stat-macroprojetos">6</strong>macroprojetos</div>
+</div>
+<section id="leme-graficos" class="leme-panel" aria-label="Visualizações bibliométricas">
+<div class="leme-panel-head">
+<div>
+<h3>Gráficos do conjunto atual</h3>
+ Cada dissertação e cada produto educacional contam como uma produção; apresentações não entram na contagem. Orientadores contam uma vez por defesa, e tipos contam uma vez por produto educacional.
+
+</div>
+<div class="leme-panel-head-actions">
+<div id="leme-graficos-nota" class="leme-note">Todas as produções</div>
+</div>
+</div>
+<div id="leme-insights" class="leme-insights" aria-label="Resumo dinâmico dos dados filtrados"></div>
+<div class="leme-charts-grid">
+<div class="leme-chart-card is-wide">
+<h4 class="leme-chart-title">Produções por ano</h4>
+<p class="leme-chart-subtitle">Evolução temporal do conjunto filtrado.</p>
+
+<div id="leme-chart-ano" aria-live="polite"></div>
+</div>
+<div class="leme-chart-card">
+<h4 class="leme-chart-title">Linha de pesquisa</h4>
+<p class="leme-chart-subtitle">Participação percentual de cada linha no conjunto atual.</p>
+
+<div id="leme-chart-linha" aria-live="polite"></div>
+</div>
+<div class="leme-chart-card">
+<h4 class="leme-chart-title">Macroprojeto</h4>
+<p class="leme-chart-subtitle">Comparação por código e tema de cada macroprojeto.</p>
+
+<div id="leme-chart-macro" aria-live="polite"></div>
+</div>
+<div class="leme-chart-card">
+<h4 class="leme-chart-title">Orientadores</h4>
+<p class="leme-chart-subtitle">Número de alunos orientados; cada defesa conta uma vez.</p>
+
+<div id="leme-chart-orientador" aria-live="polite"></div>
+</div>
+<div class="leme-chart-card">
+<h4 class="leme-chart-title">Tipo de produto</h4>
+<p class="leme-chart-subtitle">Produtos educacionais por tipo; cada produto conta uma vez.</p>
+
+<div id="leme-chart-tipo" aria-live="polite"></div>
+</div>
+<div class="leme-chart-card">
+<h4 class="leme-chart-title">Nível de aplicação</h4>
+<p class="leme-chart-subtitle">Onde os produtos e pesquisas se concentram.</p>
+
+<div id="leme-chart-nivel" aria-live="polite"></div>
+</div>
+<div class="leme-chart-card">
+<h4 class="leme-chart-title">Base epistemológica</h4>
+<p class="leme-chart-subtitle">Bases mais frequentes. Uma produção pode aparecer em mais de uma base.</p>
+
+<div id="leme-chart-base" aria-live="polite"></div>
+</div>
+</div>
+</section><section id="leme-controles" class="leme-panel" aria-label="Pesquisa e filtros">
+<div class="leme-panel-head">
+<div>
+<h3>Pesquise no acervo</h3>
+Use a busca livre ou combine filtros. Os gráficos e os trabalhos encontrados serão atualizados automaticamente.
+
+</div>
+<div class="leme-note">Filtros inteligentes</div>
+</div>
+<div class="leme-search-row"><input id="leme-busca" class="leme-search" type="search" placeholder="Busque por tema, título, autor, orientador, resumo, palavra-chave, campus..." aria-label="Busca no painel EPT" /> <button id="leme-limpar" class="leme-clear" type="button">Limpar filtros</button></div>
+<div class="leme-filters">
+<div class="leme-field"><label for="leme-filtro-ano">Ano</label><select id="leme-filtro-ano" data-campo="ano" data-default="Todos"></select></div>
+<div class="leme-field"><label for="leme-filtro-nivel">Nível</label><select id="leme-filtro-nivel" data-campo="nivel" data-default="Todos"></select></div>
+<div class="leme-field"><label for="leme-filtro-linha">Linha de pesquisa</label><select id="leme-filtro-linha" data-campo="linhaPesquisa" data-default="Todas"></select></div>
+<div class="leme-field"><label for="leme-filtro-macro">Macroprojeto</label><select id="leme-filtro-macro" data-campo="macroprojeto" data-default="Todos"></select></div>
+<div class="leme-field"><label for="leme-filtro-area">Área temática</label><select id="leme-filtro-area" data-campo="area" data-default="Todas"></select></div>
+<div class="leme-field"><label for="leme-filtro-tipo">Tipo de produto</label><select id="leme-filtro-tipo" data-campo="tipoProduto" data-default="Todos"></select></div>
+<div class="leme-field"><label for="leme-filtro-orientador">Orientador</label><select id="leme-filtro-orientador" data-campo="orientador" data-default="Todos"></select></div>
+<div class="leme-field"><label for="leme-filtro-base">Base epistemológica</label><select id="leme-filtro-base" data-campo="base" data-default="Todas"></select></div>
+</div>
+<div id="leme-filtros-ativos" class="leme-active-filters" aria-live="polite"></div>
+</section>
+<div id="leme-resultados-area" class="leme-toolbar">
+<div id="leme-contador" class="leme-count" aria-live="polite">Carregando resultados...</div>
+<div class="leme-actions-toolbar">
+
+<button id="leme-exportar-csv" class="leme-export-btn" type="button">Baixar resultados (.CSV)</button>
+<div class="leme-view" aria-label="Alternar visualização"><button id="leme-view-cards" class="is-active" type="button" aria-pressed="true">Cartões</button> <button id="leme-view-table" type="button" aria-pressed="false">Tabela</button></div>
+</div>
+</div>
+<div id="leme-resultados" class="leme-results"></div>
+<nav id="leme-paginacao" class="leme-pagination" aria-label="Paginação de resultados"></nav>
+<div id="leme-modal-backdrop" class="leme-modal-backdrop" aria-hidden="true">
+<div class="leme-modal" role="dialog" aria-modal="true" aria-labelledby="leme-modal-title">
+<div class="leme-modal-head">
+<h3 id="leme-modal-title" class="leme-modal-title">Detalhes do trabalho</h3>
+<button id="leme-modal-close" class="leme-modal-close" type="button">Fechar</button>
+
+</div>
+<div id="leme-modal-content"></div>
+</div>
+</div>
+ <script>
+    (function() {
+      const raiz = document.getElementById("leme-painel-ept");
+      if (!raiz) return;
+
+      const controlesPainel = raiz.querySelector("#leme-controles");
+      const graficosPainel = raiz.querySelector("#leme-graficos");
+      if (controlesPainel && graficosPainel) raiz.insertBefore(controlesPainel, graficosPainel);
+
+      let dados = [];
+      const busca = raiz.querySelector("#leme-busca");
+      const limpar = raiz.querySelector("#leme-limpar");
+      const resultados = raiz.querySelector("#leme-resultados");
+      const paginacao = raiz.querySelector("#leme-paginacao");
+      const contador = raiz.querySelector("#leme-contador");
+      const filtros = Array.from(raiz.querySelectorAll("select[data-campo]"));
+      const filtrosAtivos = raiz.querySelector("#leme-filtros-ativos");
+      const graficosNota = raiz.querySelector("#leme-graficos-nota");
+      const insights = raiz.querySelector("#leme-insights");
+      const exportarCsv = raiz.querySelector("#leme-exportar-csv");
+      const btnCards = raiz.querySelector("#leme-view-cards");
+      const btnTable = raiz.querySelector("#leme-view-table");
+      const modalBackdrop = raiz.querySelector("#leme-modal-backdrop");
+      const modalContent = raiz.querySelector("#leme-modal-content");
+      const modalTitle = raiz.querySelector("#leme-modal-title");
+      const modalClose = raiz.querySelector("#leme-modal-close");
+
+      let resultadosAtuais = [];
+      let modo = "cards";
+      let paginaAtual = 1;
+      let debounceTimer = null;
+      const itensPorPagina = 12;
+      const camposBusca = ["ano", "autor", "orientador", "orientadorChave", "titulo", "produto", "resumo", "nivel", "base", "area", "finalidade", "publicoAlvo", "tipoProduto", "instituicao", "campus", "programa", "instituicaoCampus", "linhaPesquisa", "macroprojeto"];
+
+      function normalizarBusca(valor) {
+        return String(valor || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
+      }
+      function termosBusca() {
+        const termo = normalizarBusca(busca.value || "");
+        return termo ? termo.split(" ").filter(Boolean) : [];
+      }
+      function textoBusca(item) {
+        if (item.searchText) return item.searchText;
+        const partes = camposBusca.map(campo => item[campo] || "");
+        partes.push((item.palavrasChave || []).join(" "));
+        return normalizarBusca(partes.join(" "));
+      }
+      function escapeHtml(valor) {
+        return String(valor || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+      }
+      function limparRotulo(valor) {
+        const texto = String(valor || "").replace(/\s+/g, " ").trim();
+        return valorPublico(texto);
+      }
+      function ehValorPublico(valor) {
+        const texto = String(valor || "").replace(/\s+/g, " ").trim();
+        return Boolean(texto && texto !== "---" && normalizarBusca(texto) !== "a revisar");
+      }
+      function quantidadeProducoes(item) {
+        const quantidade = Number(item.quantidadeProducoes);
+        if (Number.isFinite(quantidade)) return quantidade;
+        const temDissertacao = ehValorPublico(item.titulo);
+        const temProduto = ehValorPublico(item.produto) || ehValorPublico(item.linkProduto);
+        return Number(temDissertacao) + Number(temProduto);
+      }
+      const rotulosMacroprojetos = {
+        MP1: "MP1 – Propostas metodológicas e recursos didáticos em espaços formais e não formais de ensino na EPT",
+        MP2: "MP2 – Inclusão e diversidade em espaços formais e não formais de ensino na EPT",
+        MP3: "MP3 – Práticas Educativas no Currículo Integrado",
+        MP4: "MP4 – História e memórias no contexto da EPT",
+        MP5: "MP5 – Organização do currículo integrado na EPT",
+        MP6: "MP6 – Organização de espaços pedagógicos na EPT"
+      };
+      function chaveDefesa(item) {
+        const id = String(item.id || "").trim();
+        if (id) return id;
+        const chave = [item.ano, item.autor, item.titulo].map(valor => String(valor || "").trim()).join("|");
+        return chave.replace(/[|\s]/g, "") ? chave : "";
+      }
+      function porDefesaUnica(lista) {
+        const vistos = new Set();
+        return lista.filter(item => {
+          const chave = chaveDefesa(item);
+          if (!chave || vistos.has(chave)) return false;
+          vistos.add(chave);
+          return true;
+        });
+      }
+      function rotuloMacroCanonico(item) {
+        const codigo = String(item.codigoMacroprojeto || "").trim().toUpperCase();
+        return rotulosMacroprojetos[codigo] || item.macroprojeto;
+      }
+      function atualizarIndicadores() {
+        const anos = dados.map(item => Number(item.ano)).filter(Number.isFinite);
+        const periodo = anos.length ? Math.min(...anos) + "–" + Math.max(...anos) : "Sem ano informado";
+        const producoes = dados.reduce((total, item) => total + quantidadeProducoes(item), 0);
+        raiz.querySelector("#leme-periodo").textContent = periodo;
+        raiz.querySelector("#leme-stat-total").textContent = dados.length.toLocaleString("pt-BR");
+        raiz.querySelector("#leme-stat-producoes").textContent = producoes.toLocaleString("pt-BR");
+        raiz.querySelector("#leme-stat-orientadores").textContent = new Set(porDefesaUnica(dados).map(item => item.orientadorChave || normalizarBusca(item.orientador)).filter(Boolean)).size.toLocaleString("pt-BR");
+        raiz.querySelector("#leme-stat-macroprojetos").textContent = new Set(dados.map(item => item.codigoMacroprojeto).filter(ehValorPublico)).size.toLocaleString("pt-BR");
+      }
+      function valorPublico(valor, fallback) {
+        return ehValorPublico(valor) ? String(valor).replace(/\s+/g, " ").trim() : (fallback || "Não classificado");
+      }
+      function finalidadePublica(valor) {
+        const texto = valorPublico(valor, "");
+        if (!texto || texto.length > 500 || /(?:n[ºo]\s*do protocolo|documentos comprobat[oó]rios|ficha catalogr[aá]fica)/i.test(texto)) {
+          return "Informação em revisão.";
+        }
+        return texto;
+      }
+      function labelCurto(valor, limite) {
+        const texto = limparRotulo(valor);
+        return texto.length > limite ? texto.slice(0, limite - 1).trim() + "…" : texto;
+      }
+      function highlightText(valor) {
+        const textoOriginal = String(valor || "");
+        const termos = termosBusca();
+        if (!termos.length || !textoOriginal) return escapeHtml(textoOriginal);
+        const textoNormalizado = normalizarBusca(textoOriginal);
+        const ranges = [];
+        termos.forEach(termo => {
+          let inicio = 0;
+          while (inicio < textoNormalizado.length) { const idx = textoNormalizado.indexOf(termo, inicio); if (idx === -1) break; ranges.push([idx, idx + termo.length]); inicio = idx + termo.length; } }); if (!ranges.length) return escapeHtml(textoOriginal); ranges.sort((a, b) => a[0] - b[0] || b[1] - a[1]);
+        const mesclados = [];
+        ranges.forEach(range => {
+          const ultimo = mesclados[mesclados.length - 1];
+          if (!ultimo || range[0] > ultimo[1]) mesclados.push(range);
+          else ultimo[1] = Math.max(ultimo[1], range[1]);
+        });
+        let saida = "";
+        let cursor = 0;
+        mesclados.forEach(([ini, fim]) => {
+          saida += escapeHtml(textoOriginal.slice(cursor, ini));
+          saida += '<mark class="leme-highlight">' + escapeHtml(textoOriginal.slice(ini, fim)) + '</mark>';
+          cursor = fim;
+        });
+        saida += escapeHtml(textoOriginal.slice(cursor));
+        return saida;
+      }
+
+      function filtrarDados(ignorarCampo) {
+        const termos = termosBusca();
+        return dados.filter(item => {
+          if (termos.length && !termos.every(t => textoBusca(item).includes(t))) return false;
+          for (const filtro of filtros) {
+            const campo = filtro.dataset.campo;
+            if (ignorarCampo && campo === ignorarCampo) continue;
+            if (filtro.value && item[campo] !== filtro.value) return false;
+          }
+          return true;
+        });
+      }
+
+      function contarOpcoes(lista, campo) {
+        const mapa = new Map();
+        lista.forEach(item => {
+          const valor = item[campo];
+          if (!ehValorPublico(valor)) return;
+          mapa.set(valor, (mapa.get(valor) || 0) + 1);
+        });
+        return Array.from(mapa.entries()).sort((a, b) => String(a[0]).localeCompare(String(b[0]), "pt-BR"));
+      }
+
+      function popularFiltrosDinamicos() {
+        filtros.forEach(select => {
+          const campo = select.dataset.campo;
+          const atual = select.value;
+          const base = filtrarDados(campo);
+          const opcoes = contarOpcoes(base, campo);
+          const padrao = select.dataset.default || "Todos";
+          let html = '<option value="">' + escapeHtml(padrao) + '</option>';
+          let existeAtual = !atual;
+          let qtdAtual = 0;
+          opcoes.forEach(([valor, qtd]) => {
+            if (valor === atual) { existeAtual = true; qtdAtual = qtd; }
+            html += '<option value="' + escapeHtml(valor) + '">' + escapeHtml(valor) + '</option>';
+          });
+          if (atual && !existeAtual) {
+            html += '<option value="' + escapeHtml(atual) + '">' + escapeHtml(atual) + '</option>';
+          }
+          select.innerHTML = html;
+          select.value = atual;
+          select.disabled = opcoes.length === 0 && !atual;
+          const field = select.closest(".leme-field");
+          if (field) {
+            let countEl = field.querySelector(".leme-field-count");
+            if (!countEl) {
+              countEl = document.createElement("div");
+              countEl.className = "leme-field-count";
+              field.appendChild(countEl);
+            }
+            countEl.classList.toggle("is-selected", Boolean(atual));
+            if (atual) {
+              countEl.textContent = (qtdAtual || 0) + " trabalho(s) nessa opção";
+            } else {
+              countEl.textContent = opcoes.length + " opção(ões) disponível(is)";
+            }
+          }
+        });
+      }
+
+      function renderFiltrosAtivos() {
+        const chips = [];
+        if (busca.value.trim()) chips.push('<span class="leme-chip">Busca: ' + escapeHtml(busca.value.trim()) + '<button type="button" data-clear-search="1" aria-label="Remover busca">×</button></span>');
+        filtros.forEach(filtro => {
+          if (filtro.value) {
+            const label = raiz.querySelector('label[for="' + filtro.id + '"]');
+            const qtd = filtrarDados().length;
+            chips.push('<span class="leme-chip">' + escapeHtml(label ? label.textContent : filtro.dataset.campo) + ': ' + escapeHtml(labelCurto(filtro.value, 46)) + ' · ' + qtd + ' trabalho(s)<button type="button" data-clear-filter="' + escapeHtml(filtro.dataset.campo) + '" aria-label="Remover filtro">×</button></span>');
+          }
+        });
+        filtrosAtivos.innerHTML = chips.join("");
+      }
+
+      function contarPorCampo(lista, campo) {
+        const mapa = new Map();
+        lista.forEach(item => {
+          const valorBruto = campo === "macroprojeto" ? rotuloMacroCanonico(item) : item[campo];
+          if (!ehValorPublico(valorBruto)) return;
+          const valor = limparRotulo(valorBruto);
+          mapa.set(valor, (mapa.get(valor) || 0) + quantidadeProducoes(item));
+        });
+        return Array.from(mapa.entries()).map(([label, valor]) => ({ label, valor })).sort((a, b) => b.valor - a.valor || String(a.label).localeCompare(String(b.label), "pt-BR"));
+      }
+      function contarTiposDeProduto(lista) {
+        const mapa = new Map();
+        porDefesaUnica(lista).forEach(item => {
+          if (!ehValorPublico(item.tipoProduto)) return;
+          const valor = limparRotulo(item.tipoProduto);
+          mapa.set(valor, (mapa.get(valor) || 0) + 1);
+        });
+        return Array.from(mapa.entries()).map(([label, valor]) => ({ label, valor })).sort((a, b) => b.valor - a.valor || String(a.label).localeCompare(String(b.label), "pt-BR"));
+      }
+      function contarBases(lista) {
+        const mapa = new Map();
+        lista.forEach(item => {
+          if (!ehValorPublico(item.base)) return;
+          String(item.base).split(/\s*\/\s*/).map(v => v.trim()).filter(ehValorPublico).forEach(base => {
+            mapa.set(base, (mapa.get(base) || 0) + quantidadeProducoes(item));
+          });
+        });
+        return Array.from(mapa.entries()).map(([label, valor]) => ({ label, valor })).sort((a, b) => b.valor - a.valor || String(a.label).localeCompare(String(b.label), "pt-BR"));
+      }
+      function contarOrientadores(lista, limite) {
+        const mapa = new Map();
+        porDefesaUnica(lista).forEach(item => {
+          if (!ehValorPublico(item.orientador)) return;
+          const chave = item.orientadorChave || normalizarBusca(item.orientador);
+          const nome = limparRotulo(item.orientador);
+          if (!chave) return;
+          if (!mapa.has(chave)) mapa.set(chave, { label: nome, valor: 0 });
+          mapa.get(chave).valor += 1;
+        });
+        return Array.from(mapa.values()).sort((a,b) => b.valor - a.valor || String(a.label).localeCompare(String(b.label), "pt-BR")).slice(0, limite || 10);
+      }
+      function agruparTop(lista, limite) {
+        if (lista.length <= limite) return lista; const top = lista.slice(0, limite); const outras = lista.slice(limite).reduce((soma, item) => soma + item.valor, 0);
+        if (outras) top.push({ label: "Outras", valor: outras });
+        return top;
+      }
+      function renderInsightCard(titulo, valor) {
+        return '   <div class="leme-insight-card"><strong>' + escapeHtml(valor || "---") + '</strong><span>' + escapeHtml(titulo) + '</span></div>   ';
+      }
+      function primeiroOuTraco(lista) { return lista && lista[0] ? lista[0].label : "---"; }
+      function renderInsights(lista) {
+        if (!lista.length) {
+          insights.innerHTML = '   <div class="leme-insight-card"><strong>0</strong><span>Nenhum resultado neste recorte. Limpe algum filtro ou use uma busca mais ampla.</span></div>   ';
+          return;
+        }
+        insights.innerHTML = [
+          renderInsightCard("trabalhos no conjunto atual", String(lista.length)),
+          renderInsightCard("tipo de produto mais comum", primeiroOuTraco(contarTiposDeProduto(lista))),
+          renderInsightCard("orientador em destaque", primeiroOuTraco(contarOrientadores(lista, 1))),
+          renderInsightCard("macroprojeto mais recorrente", primeiroOuTraco(contarPorCampo(lista, "macroprojeto")))
+        ].join("");
+      }
+      function rotuloMacroCurto(valor) {
+        const texto = limparRotulo(valor);
+        const partes = texto.split(/\s+[–—-]\s+/);
+        if (partes.length < 2) return labelCurto(texto, 46); return partes[0] + " · " + labelCurto(partes.slice(1).join(" – "), 36); } function rotuloLinhaCurto(valor) { const texto = limparRotulo(valor); if (/^Práticas Educativas/i.test(texto)) return "Práticas Educativas em EPT"; if (/^Organização e Memórias/i.test(texto)) return "Organização e Memórias de Espaços Pedagógicos"; return labelCurto(texto, 48); } function renderHorizontalChart(el, dadosGrafico, limite, opcoes) { const config = opcoes || {}; const dadosValidos = dadosGrafico.filter(d => d.valor > 0);
+        const limiteReal = limite || 8;
+        const lista = (config.agruparOutras === false ? dadosValidos.slice(0, limiteReal) : agruparTop(dadosValidos, limiteReal));
+        if (!lista.length) { el.innerHTML = '   <div class="leme-empty-chart">Limpe algum filtro ou faça uma busca mais ampla para voltar a comparar categorias.</div>   '; return; }
+        if (lista.length === 1) {
+          el.innerHTML = '   <div class="leme-single-insight"><strong>' + escapeHtml(lista[0].label) + '</strong>Todas as ' + lista[0].valor + ' produções deste recorte estão nesta categoria.</div>   ';
+          return;
+        }
+        const max = Math.max(...lista.map(d => d.valor), 1);
+        let html = '   <div class="leme-bars"> ' + lista.map(d => {
+          const pct = Math.max(4, Math.round((d.valor / max) * 100));
+          const rotulo = config.formatarRotulo ? config.formatarRotulo(d.label) : labelCurto(d.label, 56);
+          return '   <div class="leme-bar-row">  <div class="leme-bar-label" title="' + escapeHtml(d.label) + '">' + escapeHtml(rotulo) + '</div>   <div class="leme-bar-track">  <div class="leme-bar-fill" style="width:' + pct + '%"></div>  </div>   <div class="leme-bar-value">' + d.valor + '</div>  </div>   ';
+        }).join("") + '</div>   ';
+        if (config.agruparOutras === false && dadosValidos.length > limiteReal) {
+          const restantes = dadosValidos.slice(limiteReal);
+          const totalRestante = restantes.reduce((soma, item) => soma + item.valor, 0);
+          html += '   <p class="leme-chart-footnote">Mais ' + restantes.length + ' combinações somam ' + totalRestante + ' produções e não aparecem neste ranking.   ';
+        }
+        el.innerHTML = html;
+      }
+      function renderCompositionChart(el, dadosGrafico) {
+        const lista = dadosGrafico.filter(d => d.valor > 0);
+        if (!lista.length) { el.innerHTML = '   <div class="leme-empty-chart">Limpe algum filtro ou faça uma busca mais ampla para voltar a comparar as linhas.</div>   '; return; }
+        if (lista.length === 1) {
+          el.innerHTML = '   <div class="leme-single-insight"><strong>' + escapeHtml(rotuloLinhaCurto(lista[0].label)) + '</strong>Todas as ' + lista[0].valor + ' produções deste recorte estão nesta linha.</div>   ';
+          return;
+        }
+        const cores = ["#4d5aff", "#833ca3", "#f45971", "#399f67"];
+        const total = lista.reduce((soma, item) => soma + item.valor, 0) || 1;
+        const segmentos = lista.map((d, i) => '   <div class="leme-composition-segment" title="' + escapeHtml(d.label) + ': ' + d.valor + '" style="width:' + ((d.valor / total) * 100).toFixed(2) + '%;background:' + cores[i % cores.length] + '"></div>   ').join("");
+        const legenda = lista.map((d, i) => {
+          const percentual = ((d.valor / total) * 100).toFixed(1).replace(".0", "");
+          return '   <div class="leme-composition-item"><span class="leme-composition-dot" style="background:' + cores[i % cores.length] + '"></span><span class="leme-composition-label" title="' + escapeHtml(d.label) + '">' + escapeHtml(rotuloLinhaCurto(d.label)) + '</span><span class="leme-composition-value">' + d.valor + ' · ' + percentual + '%</span></div>   ';
+        }).join("");
+        el.innerHTML = '   <div class="leme-composition">  <div class="leme-composition-track" aria-hidden="true">' + segmentos + '</div>   <div class="leme-composition-legend">' + legenda + '</div>  </div>   ';
+      }
+      function renderYearChart(el, lista) {
+        const dadosAno = contarPorCampo(lista, "ano").sort((a,b) => String(a.label).localeCompare(String(b.label), "pt-BR"));
+        if (!dadosAno.length) { el.innerHTML = '   <div class="leme-empty-chart">Limpe algum filtro ou faça uma busca mais ampla para voltar a comparar os anos.</div>   '; return; }
+        if (dadosAno.length === 1) { el.innerHTML = '   <div class="leme-single-insight"><strong>' + escapeHtml(dadosAno[0].label) + '</strong>Todas as ' + dadosAno[0].valor + ' produções filtradas estão neste ano.</div>   '; return; }
+        const max = Math.max(...dadosAno.map(d => d.valor), 1);
+        const altura = Math.min(260, Math.max(150, 88 + dadosAno.length * 10));
+        el.innerHTML = '   <div class="leme-year-chart" style="--chart-height:' + altura + 'px"> ' + dadosAno.map(d => {
+          const h = Math.max(8, Math.round((d.valor / max) * (altura - 62)));
+          return '   <div class="leme-year-col">  <div class="leme-year-value">' + d.valor + '</div>   <div class="leme-year-bar" style="height:' + h + 'px"></div>   <div class="leme-year-label">' + escapeHtml(d.label) + '</div>  </div>   ';
+        }).join("") + '</div>   ';
+      }
+      function atualizarGraficos(lista) {
+        renderInsights(lista);
+        renderYearChart(raiz.querySelector("#leme-chart-ano"), lista);
+        renderCompositionChart(raiz.querySelector("#leme-chart-linha"), contarPorCampo(lista, "linhaPesquisa"));
+        renderHorizontalChart(raiz.querySelector("#leme-chart-macro"), contarPorCampo(lista, "macroprojeto"), 7, { formatarRotulo: rotuloMacroCurto });
+        renderHorizontalChart(raiz.querySelector("#leme-chart-orientador"), contarOrientadores(lista, 10), 10);
+        renderHorizontalChart(raiz.querySelector("#leme-chart-tipo"), contarTiposDeProduto(lista), 8);
+        renderHorizontalChart(raiz.querySelector("#leme-chart-nivel"), contarPorCampo(lista, "nivel"), 8);
+        renderHorizontalChart(raiz.querySelector("#leme-chart-base"), contarBases(lista), 8);
+        const producoesFiltradas = lista.reduce((total, item) => total + quantidadeProducoes(item), 0);
+        const totalProducoes = dados.reduce((total, item) => total + quantidadeProducoes(item), 0);
+        graficosNota.textContent = lista.length === dados.length
+          ? "Todas as " + totalProducoes.toLocaleString("pt-BR") + " produções"
+          : producoesFiltradas.toLocaleString("pt-BR") + " produções em " + lista.length + " trabalhos filtrados";
+      }
+
+      function renderBadges(item) {
+        const badges = [];
+        if (ehValorPublico(item.ano)) badges.push('<span class="leme-badge">' + escapeHtml(item.ano) + '</span>');
+        if (ehValorPublico(item.nivel)) badges.push('<span class="leme-badge green">' + escapeHtml(item.nivel) + '</span>');
+        if (ehValorPublico(item.linhaPesquisa)) badges.push('<span class="leme-badge">' + escapeHtml(labelCurto(item.linhaPesquisa, 42)) + '</span>');
+        if (ehValorPublico(item.tipoProduto)) badges.push('<span class="leme-badge red">' + escapeHtml(item.tipoProduto) + '</span>');
+        return badges.join("");
+      }
+      function renderTags(tags) {
+        if (!tags || !tags.length) return "";
+        return '   <div class="leme-tags">' + tags.slice(0, 12).map(t => '<span class="leme-tag">' + highlightText(t) + '</span>').join("") + '</div>   ';
+      }
+      function renderActions(item) {
+        const links = [];
+        if (item.linkPdf) links.push('<a class="leme-link pdf" href="' + escapeHtml(item.linkPdf) + '" target="_blank" rel="noopener" aria-label="Abrir dissertação em PDF em nova aba">Dissertação</a>');
+        if (item.linkProduto) links.push('<a class="leme-link produto" href="' + escapeHtml(item.linkProduto) + '" target="_blank" rel="noopener" aria-label="Abrir produto educacional em nova aba">Produto educacional</a>');
+        return links.length ? '   <div class="leme-actions">' + links.join("") + '</div>   ' : "";
+      }
+      function renderCards(lista) {
+        if (!lista.length) { resultados.innerHTML = '   <div class="leme-empty">Nenhum trabalho encontrado com os filtros selecionados.</div>   '; return; }
+        resultados.innerHTML = lista.map(item => {
+          const idx = dados.indexOf(item);
+          return '   <article class="leme-card">' +
+            '   <div class="leme-eyebrow">ProfEPT' + (ehValorPublico(item.ano) ? ' · ' + escapeHtml(item.ano) : '') + '</div>   ' +
+            '   <h3 class="leme-card-title">' + highlightText(item.titulo) + '</h3>   ' +
+            '   <div class="leme-meta">  <div><b>Autor:</b> ' + highlightText(item.autor) + '</div>   <div><b>Orientador:</b> ' + highlightText(item.orientador) + '</div>   <div><b>Instituição/Campus:</b> ' + highlightText(item.instituicaoCampus) + '</div>  </div>   ' +
+            '   <div class="leme-badges">' + renderBadges(item) + '</div>   ' +
+            '   <p class="leme-summary">' + highlightText(item.resumoCurto || "Resumo não disponível.") + '   ' +
+            '   <div class="leme-card-footer"><button type="button" class="leme-card-detail-btn" data-index="' + idx + '">Ver detalhes</button>' + renderActions(item) + '</div>   ' +
+          '</article>   ';
+        }).join("");
+      }
+      function renderTable(lista) {
+        if (!lista.length) { resultados.innerHTML = '   <div class="leme-empty">Nenhum trabalho encontrado com os filtros selecionados.</div>   '; return; }
+        resultados.innerHTML = '   <table class="leme-table">  <caption>Resultados filtrados do painel</caption>   <thead>  <tr>  <th scope="col">Título</th>   <th scope="col">Autor</th>   <th scope="col">Orientador</th>   <th scope="col">Ano</th>   <th scope="col">Nível</th>   <th scope="col">Base</th>   <th scope="col">Linha</th>   <th scope="col">Macroprojeto</th>   <th scope="col">Área</th>   <th scope="col">Links</th>  </tr>  </thead>   <tbody>' +
+          lista.map(item => '   <tr>  <td>  <div class="leme-table-title">' + highlightText(item.titulo) + '</div>  </td>   <td>' + highlightText(item.autor) + '</td>   <td>' + highlightText(item.orientador) + '</td>   <td>' + escapeHtml(valorPublico(item.ano)) + '</td>   <td>' + escapeHtml(valorPublico(item.nivel)) + '</td>   <td>' + escapeHtml(valorPublico(item.base)) + '</td>   <td>' + escapeHtml(valorPublico(item.linhaPesquisa)) + '</td>   <td>' + escapeHtml(valorPublico(item.macroprojeto)) + '</td>   <td>' + escapeHtml(valorPublico(item.area)) + '</td>   <td>' + renderActions(item) + '</td>  </tr>   ').join("") +
+          '</tbody>  </table>   ';
+      }
+      function paginaLista(lista) {
+        const totalPaginas = Math.max(1, Math.ceil(lista.length / itensPorPagina));
+        if (paginaAtual > totalPaginas) paginaAtual = totalPaginas;
+        const inicio = (paginaAtual - 1) * itensPorPagina;
+        return lista.slice(inicio, inicio + itensPorPagina);
+      }
+      function paginasVisiveis(totalPaginas) {
+        const paginas = new Set([1, totalPaginas, paginaAtual - 1, paginaAtual, paginaAtual + 1]);
+        if (paginaAtual <= 3) [1,2,3,4].forEach(p => paginas.add(p));
+        if (paginaAtual >= totalPaginas - 2) [totalPaginas - 3, totalPaginas - 2, totalPaginas - 1, totalPaginas].forEach(p => paginas.add(p));
+        return [...paginas].filter(p => p >= 1 && p <= totalPaginas).sort((a, b) => a - b);
+      }
+      function botaoPagina(rotulo, pagina, classe, disabled) {
+        const atual = classe && classe.includes("is-active");
+        return '<button type="button" class="leme-page-btn ' + (classe || "") + '" data-pagina="' + pagina + '" ' + (disabled ? "disabled" : "") + (atual ? ' aria-current="page"' : '') + ' aria-label="Página ' + escapeHtml(rotulo) + '">' + escapeHtml(rotulo) + '</button>';
+      }
+      function renderPaginacao(totalItens) {
+        const totalPaginas = Math.max(1, Math.ceil(totalItens / itensPorPagina));
+        if (!totalItens || totalPaginas <= 1) { paginacao.innerHTML = ""; return; } let html = botaoPagina("Anterior", Math.max(1, paginaAtual - 1), "", paginaAtual === 1); const visiveis = paginasVisiveis(totalPaginas); let anterior = 0; visiveis.forEach(p => {
+          if (anterior && p - anterior > 1) html += '<span class="leme-pagination-info" style="width:auto;margin:0;">...</span>';
+          html += botaoPagina(String(p), p, p === paginaAtual ? "is-active" : "", false);
+          anterior = p;
+        });
+        html += botaoPagina("Próximo", Math.min(totalPaginas, paginaAtual + 1), "", paginaAtual === totalPaginas);
+        const inicio = (paginaAtual - 1) * itensPorPagina + 1;
+        const fim = Math.min(paginaAtual * itensPorPagina, totalItens);
+        html += '   <div class="leme-pagination-info">Exibindo ' + inicio + '–' + fim + ' de ' + totalItens + ' trabalhos</div>   ';
+        paginacao.innerHTML = html;
+      }
+      function atualizarContador(total) {
+        contador.innerHTML = '<strong>' + total + '</strong> trabalho(s) encontrado(s)';
+      }
+      function atualizarVisualizacao() {
+        resultados.classList.toggle("is-table", modo === "table");
+        btnCards.classList.toggle("is-active", modo === "cards");
+        btnTable.classList.toggle("is-active", modo === "table");
+        btnCards.setAttribute("aria-pressed", modo === "cards" ? "true" : "false");
+        btnTable.setAttribute("aria-pressed", modo === "table" ? "true" : "false");
+        const pagina = paginaLista(resultadosAtuais);
+        if (modo === "cards") renderCards(pagina); else renderTable(pagina);
+        renderPaginacao(resultadosAtuais.length);
+      }
+      function aplicarFiltros(resetPagina) {
+        if (resetPagina) paginaAtual = 1;
+        popularFiltrosDinamicos();
+        resultadosAtuais = filtrarDados();
+        atualizarContador(resultadosAtuais.length);
+        renderFiltrosAtivos();
+        atualizarGraficos(resultadosAtuais);
+        atualizarVisualizacao();
+      }
+      function abrirModal(item) {
+        if (!item) return;
+        modalTitle.innerHTML = highlightText(item.titulo || "Detalhes do trabalho");
+        modalContent.innerHTML = '   <div class="leme-detail-grid"> ' +
+          '   <div class="leme-detail-item"><b>Autor:</b><br>' + highlightText(item.autor) + '</div>   ' +
+          '   <div class="leme-detail-item"><b>Orientador:</b><br>' + highlightText(item.orientador) + '</div>   ' +
+          '   <div class="leme-detail-item"><b>Ano:</b><br>' + escapeHtml(valorPublico(item.ano)) + '</div>   ' +
+          '   <div class="leme-detail-item"><b>Instituição/Campus:</b><br>' + highlightText(valorPublico(item.instituicaoCampus)) + '</div>   ' +
+          '   <div class="leme-detail-item"><b>Programa:</b><br>' + highlightText(valorPublico(item.programa)) + '</div>   ' +
+          '   <div class="leme-detail-item is-wide"><b>Produto educacional:</b><br>' + highlightText(valorPublico(item.produto)) + '</div>   ' +
+          '   <div class="leme-detail-item"><b>Área temática:</b><br>' + highlightText(valorPublico(item.area)) + '</div>   ' +
+          '   <div class="leme-detail-item"><b>Tipo de produto:</b><br>' + highlightText(valorPublico(item.tipoProduto)) + '</div>   ' +
+          '   <div class="leme-detail-item"><b>Nível de aplicação:</b><br>' + highlightText(valorPublico(item.nivel)) + '</div>   ' +
+          '   <div class="leme-detail-item"><b>Base epistemológica:</b><br>' + highlightText(valorPublico(item.base)) + '</div>   ' +
+          '   <div class="leme-detail-item is-wide"><b>Linha de pesquisa:</b><br>' + highlightText(valorPublico(item.linhaPesquisa)) + '</div>   ' +
+          '   <div class="leme-detail-item is-wide"><b>Macroprojeto:</b><br>' + highlightText(valorPublico(item.macroprojeto)) + '</div>   ' +
+          '   <div class="leme-detail-item is-wide"><b>Finalidade:</b><br>' + highlightText(finalidadePublica(item.finalidade)) + '</div>   ' +
+          '   <div class="leme-detail-item is-wide"><b>Público-alvo:</b><br>' + highlightText(valorPublico(item.publicoAlvo)) + '</div>   ' +
+          '   <div class="leme-detail-item is-wide"><b>Resumo:</b><br>' + highlightText(item.resumo || "Resumo não disponível.") + renderTags(item.palavrasChave) + renderActions(item) + '</div>   ' +
+        '</div>   ';
+        modalBackdrop.classList.add("is-open");
+        modalBackdrop.setAttribute("aria-hidden", "false");
+        modalClose.focus();
+      }
+      function fecharModal() {
+        modalBackdrop.classList.remove("is-open");
+        modalBackdrop.setAttribute("aria-hidden", "true");
+      }
+      function csvEscape(valor) { return '"' + String(valor || "").replace(/"/g, '""') + '"'; }
+      function baixarCsv() {
+        const cols = [["ano","Ano"],["titulo","Título"],["autor","Autor"],["orientador","Orientador"],["nivel","Nível"],["base","Base"],["linhaPesquisa","Linha de Pesquisa"],["macroprojeto","Macroprojeto"],["area","Área"],["tipoProduto","Tipo de Produto"],["linkPdf","PDF"],["linkProduto","Produto"]];
+        const camposPublicos = new Set(["ano", "nivel", "base", "linhaPesquisa", "macroprojeto", "area", "tipoProduto"]);
+        const linhas = [cols.map(c => csvEscape(c[1])).join(";")].concat(resultadosAtuais.map(item => cols.map(c => csvEscape(camposPublicos.has(c[0]) ? valorPublico(item[c[0]]) : item[c[0]])).join(";")));
+        const blob = new Blob(["\ufeff" + linhas.join("\n")], { type: "text/csv;charset=utf-8;" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "painel-leme-ept-filtrado.csv";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      }
+      raiz.addEventListener("click", function(e) {
+        const scrollBtn = e.target.closest("[data-scroll-to]");
+        if (scrollBtn) {
+          const alvo = raiz.querySelector("#" + scrollBtn.dataset.scrollTo);
+          if (alvo) alvo.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+        const pageBtn = e.target.closest(".leme-page-btn[data-pagina]");
+        if (pageBtn && !pageBtn.disabled) { paginaAtual = Number(pageBtn.dataset.pagina || 1); atualizarVisualizacao(); raiz.querySelector("#leme-resultados-area").scrollIntoView({ behavior: "smooth", block: "start" }); }
+        const detailBtn = e.target.closest(".leme-card-detail-btn[data-index]");
+        if (detailBtn) abrirModal(dados[Number(detailBtn.dataset.index)]);
+        const clearFilter = e.target.closest("[data-clear-filter]");
+        if (clearFilter) { const filtro = filtros.find(f => f.dataset.campo === clearFilter.dataset.clearFilter); if (filtro) filtro.value = ""; aplicarFiltros(true); }
+        const clearSearch = e.target.closest("[data-clear-search]");
+        if (clearSearch) { busca.value = ""; aplicarFiltros(true); busca.focus(); }
+      });
+      filtros.forEach(filtro => filtro.addEventListener("change", () => aplicarFiltros(true)));
+      busca.addEventListener("input", () => { clearTimeout(debounceTimer); debounceTimer = setTimeout(() => aplicarFiltros(true), 160); });
+      busca.addEventListener("keydown", e => { if (e.key === "Escape") { busca.value = ""; aplicarFiltros(true); } });
+      limpar.addEventListener("click", () => { busca.value = ""; filtros.forEach(f => f.value = ""); aplicarFiltros(true); });
+      btnCards.addEventListener("click", () => { modo = "cards"; atualizarVisualizacao(); });
+      btnTable.addEventListener("click", () => { modo = "table"; atualizarVisualizacao(); });
+      exportarCsv.addEventListener("click", baixarCsv);
+      modalClose.addEventListener("click", fecharModal);
+      modalBackdrop.addEventListener("click", e => { if (e.target === modalBackdrop) fecharModal(); });
+      document.addEventListener("keydown", e => { if (e.key === "Escape" && modalBackdrop.classList.contains("is-open")) fecharModal(); });
+
+      async function iniciarPainel() {
+        try {
+          const urlDados = raiz.dataset.jsonUrl;
+          if (!urlDados) throw new Error("A URL do JSON não foi configurada.");
+
+          const resposta = await fetch(urlDados, { cache: "no-cache" });
+          if (!resposta.ok) throw new Error("Falha HTTP ao carregar dados: " + resposta.status);
+
+          const payload = await resposta.json();
+          const registros = Array.isArray(payload) ? payload : payload.registros;
+          if (!Array.isArray(registros)) throw new Error("O JSON não contém uma lista de registros.");
+          dados = registros.map(item => {
+            const rotuloMacro = rotuloMacroCanonico(item);
+            return rotuloMacro ? { ...item, macroprojeto: rotuloMacro } : item;
+          });
+
+          atualizarIndicadores();
+          aplicarFiltros(true);
+        } catch (erro) {
+          console.error("Falha ao carregar o painel ProfEPT:", erro);
+          contador.textContent = "Não foi possível carregar os dados.";
+          resultados.innerHTML = '<div class="leme-empty">O catálogo está temporariamente indisponível. Tente novamente mais tarde.</div>';
+          graficosNota.textContent = "Dados indisponíveis";
+        }
+      }
+
+      iniciarPainel();
+    })();
+  </script>
+
+</section>
+

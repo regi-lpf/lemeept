@@ -67,6 +67,27 @@ def resposta_simulada(registros: list[dict], linhas: list[dict]) -> dict:
 
 
 class TestEtapa1(unittest.TestCase):
+    def test_educapes_guarda_colecao_separada_dos_campos_dc(self):
+        resposta = Mock()
+        resposta.text = """
+        <div class="metadataFieldLabel">Tipo: dc.type</div>
+        <div class="metadataFieldValue">livro digital</div>
+        <div class="metadataFieldLabel">Aparece nas coleções:</div>
+        <div class="metadataFieldValue">Livros digitais</div>
+        """
+        sessao = Mock()
+        sessao.get.return_value = resposta
+        args = SimpleNamespace(offline=False, inseguro_tls=False)
+
+        with tempfile.TemporaryDirectory() as pasta:
+            with patch.object(etapa1, "PASTA_CACHE", Path(pasta)):
+                metadados = etapa1.consultar_educapes(
+                    sessao, "https://educapes.capes.gov.br/handle/capes/123", args
+                )
+
+        self.assertEqual(["Livros digitais"], metadados["colecoes"])
+        self.assertEqual(["livro digital"], metadados["campos_dc"]["dc.type"])
+
     def test_certificado_ifc_faz_fallback_automatico(self):
         sessao = Mock()
         resposta = Mock()
@@ -86,6 +107,46 @@ class TestEtapa1(unittest.TestCase):
         self.assertIs(resposta, recebido)
         self.assertTrue(sessao.get.call_args_list[0].kwargs["verify"])
         self.assertFalse(sessao.get.call_args_list[1].kwargs["verify"])
+
+    def test_endpoint_rest_profepf_extrai_content_rendered_e_cacheia(self):
+        html = """
+        <h3>DEFESAS 2025</h3>
+        <ul><li>
+        Acadêmica: Ana Exemplo<br>
+        Orientadora: Dra. Maria Souza<br>
+        Dissertação: Trabalho de teste <a href="https://example.org/trabalho.pdf">PDF</a><br>
+        Produto Educacional: Guia de teste <a href="https://example.org/produto">Produto</a>
+        </li></ul>
+        """
+        resposta = Mock()
+        resposta.json.return_value = [{
+            "id": 42,
+            "modified": "2026-10-01T12:00:00",
+            "content": {"rendered": html},
+        }]
+        sessao = Mock()
+        sessao.get.return_value = resposta
+        args = SimpleNamespace(offline=False, inseguro_tls=False)
+
+        with tempfile.TemporaryDirectory() as pasta:
+            with patch.object(etapa1, "PASTA_CACHE", Path(pasta)):
+                recebido, metadados = etapa1.obter_pagina_oficial(sessao, args)
+                trabalhos = etapa1.extrair_trabalhos_html(recebido)
+                cache = Path(pasta) / "profept_dissertacoes.json"
+
+        sessao.get.assert_called_once_with(
+            etapa1.URL_API_PROFEPT,
+            verify=True,
+            timeout=90,
+        )
+        resposta.raise_for_status.assert_called_once_with()
+        self.assertEqual(42, metadados["pagina_id"])
+        self.assertTrue(cache.is_file())
+        self.assertEqual(1, len(trabalhos))
+        self.assertEqual("Ana Exemplo", trabalhos[0]["autor"])
+        self.assertEqual("2025", trabalhos[0]["ano"])
+        self.assertEqual("https://example.org/trabalho.pdf", trabalhos[0]["url_pdf"])
+        self.assertEqual("https://example.org/produto", trabalhos[0]["url_produto"])
 
     def test_campus_explicito_do_educapes_tem_prioridade(self):
         educapes = {
@@ -159,6 +220,18 @@ class TestEtapa1(unittest.TestCase):
 
 
 class TestEtapa2(unittest.TestCase):
+    def test_extrae_variantes_de_rotulo_de_coorientador(self):
+        for rotulo in (
+            "Coorientador:",
+            "Coorientadora:",
+            "Co-orientador:",
+            "Co-orientadora:",
+        ):
+            with self.subTest(rotulo=rotulo):
+                texto = f"Orientador: Prof. Nome Orientador\n{rotulo} Dra. Nome Coorientadora\nTítulo"
+                self.assertEqual("Dra. Nome Coorientadora", etapa2.extrair_coorientador(texto))
+        self.assertIsNone(etapa2.extrair_coorientador("Orientador: Prof. Nome Orientador"))
+
     def test_json_para_gpt_tem_um_registro_por_id(self):
         documento = json.loads((RAIZ / etapa2.ARQUIVO_SAIDA).read_text(encoding="utf-8"))
         ids = [item["id"] for item in documento["trabalhos"]]
@@ -400,3 +473,4 @@ class TestEtapa3E4(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

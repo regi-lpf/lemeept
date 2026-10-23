@@ -1,63 +1,53 @@
-# PAINEL EPT / LEME
+# Painel ProfEPT / LEME
 
-Coleta as dissertações do ProfEPT/IFC, executa OCR nos PDFs, prepara a classificação pelo GPT e gera o painel HTML.
+Este README documenta somente a atualização do painel estático. O fluxo antigo de coleta, OCR e classificação está separado em [README_LEGADO.md](README_LEGADO.md). A manutenção da pipeline e os diagramas estão em [GUIA_PIPELINE.md](GUIA_PIPELINE.md) e [DIAGRAMAS.md](DIAGRAMAS.md).
 
-A explicação completa para a continuidade do projeto está em [GUIA.md](GUIA.md).
-Os diagramas de arquitetura, dados e execução estão em [DIAGRAMAS.md](DIAGRAMAS.md).
-
-## Instalação
-
-É necessário ter Python 3.11+ e Tesseract OCR com o idioma português.
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-```
-
-## Uso
-
-Execute o primeiro script. Ele faz a coleta e chama o OCR automaticamente:
-
-```bash
-python 1_PegarDadosSiteIfc.py
-```
-
-Ao final, envie estes arquivos ao GPT:
+## Como os arquivos se relacionam
 
 ```text
-dados/GPT/PromptClassificacaoGPT.md
-dados/GPT/para_gpt.json
+dados/dados_finais_painel_ept.xlsx
+				-> lemeept/atualizar_dados.py
+				-> lemeept/pipeline/{normalizer,classifier,builder}.py
+				-> lemeept/painel-ept.json
+				-> lemeept/index-elementor-json.html faz fetch do JSON
 ```
 
-Salve a resposta como `dados/GPT/gpt.json` e conclua:
+O XLSX é a fonte revisada. O atualizador gera somente JSON; o HTML é shell estático e não é regenerado. Um registro do JSON representa um trabalho de um pesquisador. Os agregados contam 1 pela dissertação e mais 1 pelo produto quando houver título ou link. Apresentações não são incluídas.
+
+O JSON atual foi importado uma vez dos 110 registros que estavam embutidos no HTML do Elementor. Essa migração já terminou: as próximas versões devem vir da planilha final revisada, não do HTML nem do JSON gerado.
+
+## Atualizar dados
+
+Depois que a planilha final foi revisada:
 
 ```bash
-python 3_ArrumarPlanilha.py
-python 4_GerarPainelHtml.py
+python -m lemeept.atualizar_dados \
+	--entrada dados/dados_finais_painel_ept.xlsx \
+	--saida lemeept/painel-ept.json \
+	--estrito
 ```
 
-O resultado final fica em `painel/painel_leme_ept.html`.
+`--estrito` interrompe em linhas malformadas. Sem `--entrada`, o script usa `dados/dados_finais_painel_ept.xlsx`; se a planilha não existir, a execução falha em vez de publicar uma fonte antiga por engano.
 
-## Opções úteis
+## Testar localmente
+
+Sirva shell e dados pela mesma origem para simular o `fetch`:
 
 ```bash
-# usar os dados e PDFs já armazenados localmente
-python 1_PegarDadosSiteIfc.py --offline
-
-# pular somente a consulta complementar ao eduCAPES
-python 1_PegarDadosSiteIfc.py --sem-educapes
-
-# normalmente o fallback é automático; esta opção força o modo compatível
-python 1_PegarDadosSiteIfc.py --inseguro-tls
-
-# testar coleta + OCR com poucos registros
-python 1_PegarDadosSiteIfc.py --limite 2
+python -m http.server 8000 --directory lemeept
 ```
 
-## Testes
+Abra `http://localhost:8000/index-elementor-json.html`. Não use `file://`, porque o navegador bloqueia o carregamento local do JSON.
+
+## Publicar no Elementor
+
+Publique `lemeept/index-elementor-json.html` uma vez no widget HTML. Hospede `lemeept/painel-ept.json` em uma URL HTTPS que aceite GET anônimo, de preferência no mesmo domínio, e configure essa URL no atributo `data-json-url` do shell. Para outro domínio, o servidor do JSON precisa permitir CORS. Em atualizações seguintes, troque somente o JSON e invalide o cache/CDN se necessário.
+
+## Verificações
 
 ```bash
-python -m py_compile util.py 1_PegarDadosSiteIfc.py 2_PdfParaJson.py 3_ArrumarPlanilha.py 4_GerarPainelHtml.py
-python -m unittest discover -s tests -v
+python -m unittest discover -s tests -p test_pipeline.py -v
+python -m py_compile lemeept/atualizar_dados.py lemeept/pipeline/*.py
 ```
+
+Os testes do fluxo antigo dependem de artefatos locais de coleta/OCR/GPT; veja [README_LEGADO.md](README_LEGADO.md).
