@@ -1,72 +1,138 @@
 # Continuidade do trabalho — Projeto Leme EPT
 
-Este documento transfere o contexto para outro workspace ou agente de IA. Leia primeiro `CONTRATO_DADOS.md`, `DIAGRAMAS.md` e este arquivo. O escopo atual tem duas frentes: corrigir o painel publicado em Elementor e, em seguida, redesenhar o fluxo de extração para depender menos de GPT sem perder pesquisas específicas.
+Este arquivo é o ponto de entrada para continuar o projeto em outra máquina ou com outro agente. Leia na ordem: `CONTRATO_DADOS.md`, `DIAGRAMAS.md`, este documento e `LIMPEZA_TEMPORARIOS.md`.
 
-## Estado atual
+## Estado conhecido em 2026-10-23
 
-- Branch de trabalho: `develop`.
-- O painel embutido em Elementor está em `lemeept/index.html`. O trecho é um bloco completo com `<section>`, `<style>`, marcação e `<script>`; não é uma página HTML autônoma.
-- O JSON carregado pelo widget é `lemeept/painel-ept.json` (110 defesas, 220 produções representadas como `quantidadeProducoes: 2` por defesa).
-- A planilha, os PDFs de entrada e os artefatos locais de execução não estão presentes no checkout. A validação empírica do novo extrator depende de uma amostra real.
-- O contrato acordado está em `CONTRATO_DADOS.md`; o mapa do sistema está em `DIAGRAMAS.md`.
+- Repositório: `https://github.com/regi-lpf/lemeept`.
+- PR #1, [Corrige contagens do painel e documenta continuidade](https://github.com/regi-lpf/lemeept/pull/1), aparece como **merged**. Merge SHA informado pelo GitHub: `395110bb4e5bda5ba5126a0f50b80ba89bc635d2`.
+- O checkout desta máquina está em `develop`, commit local `a653662` (`Corrige contagens do painel e documenta continuidade`), e aponta `origin/develop` em `6cc8d9c`. Portanto, o commit local está um commit à frente do tracking remoto neste checkout.
+- Atenção à integridade do PR: o diff do PR publicado pelo GitHub mostrou alterações de finais de linha CRLF em grande parte dos arquivos, embora a alteração real local seja pequena. Antes de continuar, comparar o estado remoto com o commit/arquivos locais e evitar aceitar um diff puramente de formatação como nova base. Não fazer reset/force push. Se o remoto realmente tiver conteúdo diferente, abrir uma correção pequena e revisável.
+- Branch de trabalho local: `develop`. Branch do PR: `codex/corrige-contagens-painel`.
+- Este documento e o catálogo de temporários estão sendo preparados no checkout local; confirmar que ambos foram incluídos no remoto antes de depender deles na outra máquina.
 
-## Regras de produto já acordadas
+## O que já foi feito
 
-1. Cada defesa tem um acadêmico, um orientador, o link e título da dissertação e o link e título do produto educacional.
-2. Há sempre exatamente uma dissertação e um produto por defesa. No modelo final, devem ser produções acessíveis independentemente, cada qual ligada à defesa por `defesaId`.
-3. Cada produto tem um tipo principal. “Aparece nas coleções:” do eduCAPES é evidência útil, mas a coleção do repositório pode ser mais ampla que o tipo do produto; conservar os campos separados.
-4. Coorientadores, quando presentes, devem ser registrados e contados separadamente dos orientadores principais.
-5. Resumo, palavras-chave, introdução e títulos do sumário alimentam pesquisas específicas. Guardar texto completo, resumo de exibição e evidência/localizador de origem.
-6. Duas linhas oficiais: Práticas Educativas em EPT (MP1–MP3) e Organização e Memórias de Espaços Pedagógicos (MP4–MP6).
-7. “Macroprojeto 3” e “MP3” são a mesma categoria. O código `MP3` é canônico; não criar categoria adicional.
-8. Não reparar agora os resumos ausentes do JSON antigo. O pipeline novo deve tornar falhas de extração observáveis.
-9. O widget é código Elementor e requer mudanças pequenas e cuidadosas; preservar seu bloco e evitar reformatar/colar HTML processado pelo editor visual.
-
-## Implementações nesta branch
-
-### Painel Elementor
+### Painel Elementor — correções prioritárias
 
 Em `lemeept/index.html`:
 
-- Orientadores contam defesas únicas (alunos), não `quantidadeProducoes`.
-- Tipos de produto contam uma vez por defesa/produto.
-- Macroprojetos são apresentados e agregados pelo código canônico. A defesa EPT-0108 tem código `MP3` mas o rótulo legado “Macroprojeto 3”; agora se junta ao MP3.
-- A base atual soma 42 produções MP3 (21 defesas), antes divididas em dois rótulos. Total geral permanece 220 produções em 110 defesas.
-- Os textos auxiliares dos gráficos explicam as unidades de contagem.
+- Orientadores contam defesas/alunos únicos, sem duplicar dissertação e produto.
+- Tipos de produto contam uma vez por produto/defesa.
+- Macroprojetos usam `codigoMacroprojeto` canônico para agrupar `MP3` e o rótulo legado “Macroprojeto 3”.
+- Base conferida localmente: 110 defesas e 220 produções; MP3 consolida 42 produções (21 defesas).
+- Legendas dos gráficos explicitam a unidade contada.
+- O arquivo é um bloco de código para Elementor, não uma página HTML livre. Preservar sua estrutura de `<section>`, `<style>`, marcação e `<script>`; fazer mudanças focadas, revisar `<p>`/`<br>` e não substituir pelo HTML renderizado pelo editor.
 
-### Fluxo e contrato
+### Pipeline e contrato
 
-- `CONTRATO_DADOS.md` documenta entidades, campos, contagens e conferência inicial de fontes.
-- `DIAGRAMAS.md` foi ampliado com o fluxo e o modelo proposto.
-- Etapa 1 (`1_PegarDadosSiteIfc.py`) mantém coleção e metadados eduCAPES separados e reconhece variações do rótulo de coorientador.
-- Etapa 2 (`2_PdfParaJson.py`) tenta extrair o coorientador do PDF e transporta campos eduCAPES.
-- Etapa 3 (`3_ArrumarPlanilha.py`) prioriza o coorientador confirmado no PDF, registra divergências e carrega metadados até a planilha final.
-- A atualização e geração do próximo JSON carregam coorientador, metadados eduCAPES, coleção e resumo completo/curto.
-- Os testes focados de `tests/test_pipeline.py` passam. Os testes de `tests/test_fluxo.py` não puderam importar a etapa 1 no runtime usado por falta de `beautifulsoup4`.
+- `CONTRATO_DADOS.md` descreve entidades, campos, fontes, evidências e regras de contagem.
+- `DIAGRAMAS.md` registra o pipeline existente e o fluxo/modelo desejados.
+- As etapas de coleta, PDF e planilha foram ajustadas para transportar campos do eduCAPES e coorientador; os rótulos de coorientador são tratados em variantes.
+- A estrutura de pipeline em `lemeept/pipeline/` e o construtor do JSON existente foram preparados para normalização, classificação e busca.
+- O modelo de saída atualmente ainda representa defesa como registro com `quantidadeProducoes`; migrar para duas produções independentes é um objetivo posterior, não assumir que já foi implementado.
 
-## Próximos passos recomendados
+### Verificações anteriormente executadas
 
-1. Publicar e conferir o bloco atualizado no WordPress/Elementor. Validar no painel: 220 produções, 110 trabalhos/defesas, orientadores sem duplicação por dissertação+produto, tipos somando produtos uma vez e MP3 consolidado em 42 produções.
-2. Obter um pequeno conjunto representativo de PDFs e registros eduCAPES para desenvolvimento e QA do extrator. Não existe amostra local neste checkout.
-3. Implementar extração determinística incremental: metadados do eduCAPES; campos estáveis do PDF (ficha catalográfica, resumo, palavras-chave, sumário e introdução); coorientador com variações de rótulo; evidências com URL/página/campo.
-4. Reduzir GPT para pesquisas específicas e classificação ambígua, preservando evidências, confiança e revisão manual. Evitar depender do GPT para copiar campos estruturados previsíveis.
-5. Só após estabilizar o fluxo, migrar a saída para 220 registros de produção independentes, ligados às 110 defesas por `defesaId`; adaptar o widget em uma etapa própria e sem reformatar o bloco Elementor.
-6. Depois da migração, atualizar interface: Linha de Pesquisa antes de Macroprojeto; nomenclatura “trabalhos analisados”; campos e contagens sem duplicação; manter HTML do Elementor intacto fora das alterações necessárias.
-
-## Verificações feitas
-
-- JavaScript embutido em `lemeept/index.html` passou por compilação sintática com Node.
-- Conferência aritmética do JSON: 110 registros de defesa, 220 produções, seis códigos de macroprojeto e 42 produções com código MP3.
+- `tests/test_pipeline.py`: 8 testes passaram no runtime disponível.
+- Sintaxe do JavaScript embutido no painel foi validada com Node.
 - `git diff --check` passou.
-- O teste `python -m unittest discover -s tests -p test_pipeline.py -v` passou (8 testes).
-- Os testes de integração de `test_fluxo.py` exigem dependências de `requirements.txt`; no runtime disponível faltou `beautifulsoup4`.
+- `tests/test_fluxo.py` não importou no runtime usado por falta de `beautifulsoup4`; instalar dependências de `requirements.txt` antes de repetir.
+- Essas verificações correspondem ao estado local anterior. Na máquina nova, repetir após conferir o remoto.
 
-## Cuidados para a próxima pessoa/agente
+## Regras do produto já acordadas
 
-- Antes de alterar, confira `git status` e leia as instruções locais do repositório.
-- Não tratar cada defesa como se tivesse duas vezes o mesmo orientador ou o mesmo tipo de produto.
-- Não agrupar macroprojeto pelo rótulo bruto quando existe `codigoMacroprojeto`.
-- Não inferir o tipo específico somente da coleção eduCAPES.
-- Não colar no Elementor texto copiado de uma página renderizada: ele pode conter `<br />` e `<p>` injetados. Use o bloco-fonte do arquivo do repositório e preserve sua estrutura.
-- Não alterar nem reparar o JSON legado como parte da próxima etapa do extrator, salvo solicitação expressa; primeiro estabilizar a geração nova.
+1. Cada defesa tem acadêmico, orientador principal, dissertação (título/link) e produto educacional (título/link).
+2. Há sempre uma dissertação e um produto por defesa. O modelo final deve expor **220 produções independentes**, com vínculo por `defesaId`, para 110 defesas.
+3. Cada produto tem um tipo principal. “Aparece nas coleções:” do eduCAPES é evidência, mas a coleção e o tipo do produto são campos distintos.
+4. Coorientadores são registrados e contados separadamente; não entram na contagem de orientadores principais.
+5. Resumo, palavras-chave, introdução e títulos úteis do sumário apoiam busca específica. Guardar conteúdo e evidência/origem, sem depender de resumo truncado para busca.
+6. Linhas oficiais: “Práticas Educativas em EPT” (MP1, MP2 e MP3) e “Organização e Memórias de Espaços Pedagógicos” (MP4, MP5 e MP6).
+7. “Macroprojeto 3” e “MP3” são o mesmo macroprojeto. Não são categorias separadas; há uma defesa cuja classificação não foi consolidada corretamente no painel anterior.
+8. Os “Resumo não disponível” do JSON antigo não serão corrigidos nesta fase; o fluxo novo deve registrar falhas de extração para revisão.
+9. Bloco do painel publicado em Elementor deve ser alterado com cautela e em etapa separada da mudança de dados.
+
+## Plano de ação detalhado
+
+### 0. Preparar a máquina nova
+
+1. Clonar `https://github.com/regi-lpf/lemeept` ou atualizar o clone existente.
+2. Conferir `git status`, branch padrão e histórico de `develop`; localizar o merge do PR #1.
+3. Revisar o diff do merge e finais de linha nos arquivos alterados. A publicação do PR apresentou diff CRLF amplo; separar mudanças funcionais de ruído antes de continuar.
+4. Ler este guia, `CONTRATO_DADOS.md`, `DIAGRAMAS.md` e `LIMPEZA_TEMPORARIOS.md`.
+5. Criar ambiente virtual e instalar `requirements.txt`. Não copiar caches/pastas de execução da máquina antiga.
+6. Executar os testes existentes e registrar dependências/erros antes de alterar o pipeline.
+
+**Aceite:** checkout limpo e entendido; commit/PR de referência identificado; testes de base registrados.
+
+### 1. Fechar validação do painel atual
+
+1. Conferir no JSON a relação 110 defesas → 220 produções, hoje codificada por `quantidadeProducoes`.
+2. Conferir orientadores por defesa única, coorientadores separados, e tipos por produto único.
+3. Conferir MP3 consolidado (42 produções/21 defesas) e a defesa que estava sob rótulo “Macroprojeto 3”.
+4. Validar em ambiente de teste WordPress/Elementor com cache limpo; só então copiar o bloco para o site publicado.
+5. Fazer uma inspeção visual do bloco após salvar no Elementor, incluindo quebras e parágrafos, filtros, busca e contagens.
+
+**Aceite:** números e comportamento batem com o JSON e não há regressão no editor/renderização Elementor. Não considerar implementação local como publicação automática no WordPress.
+
+### 2. Preparar amostra de extração
+
+1. Obter um pequeno conjunto representativo de defesas reais, cobrindo PDF legível, variação de ficha/resumo/sumário, coorientador, campos eduCAPES ausentes e metadados divergentes.
+2. Guardar fixtures de teste em pasta dedicada e documentada, evitando redistribuir PDFs protegidos ou dados pessoais além do necessário. Preferir textos mínimos anonimizados quando bastarem.
+3. Registrar resultado esperado e evidências (campo, página/trecho ou URL) manualmente para esse conjunto.
+
+**Aceite:** existe amostra reproduzível que cobre casos comuns e casos-limite; origem e restrições estão documentadas.
+
+### 3. Implementar extração determinística primeiro
+
+1. Extrair metadados estruturados da página oficial e eduCAPES (autores/colaboradores, identificadores, publicação, tipo, palavras-chave e coleção).
+2. Baixar/ler PDF e extrair texto com prioridade para ficha catalográfica, resumo, palavras-chave, sumário e introdução.
+3. Extrair coorientador por rótulos conhecidos, com teste de variações de gênero/acentuação/hífen.
+4. Guardar evidência, método, confiança/estado e erro por campo, sem descartar conteúdo bruto útil para busca.
+5. Usar OCR como fallback somente quando a extração textual não cobrir o campo.
+
+**Aceite:** campos estáveis são obtidos sem GPT e cada campo extraído pode ser auditado até a fonte; falhas são explícitas.
+
+### 4. Adicionar classificação e pesquisa específica
+
+1. Definir vocabulários/aliases explícitos para linha de pesquisa e macroprojetos, incluindo MP3 canônico.
+2. Procurar evidências nos metadados, resumo, introdução e sumário; não confiar em uma única posição fixa do PDF.
+3. Usar regras determinísticas quando houver evidência direta; encaminhar ambiguidade para busca/classificador assistido e revisão humana.
+4. Preservar termos de busca específicos (resumo, palavras-chave, introdução e termos extraídos), separando-os do resumo curto de exibição.
+5. Comparar resultados com classificação histórica e registrar divergências, sem sobrescrever decisões validadas silenciosamente.
+
+**Aceite:** toda classificação tem evidência rastreável; casos duvidosos ficam marcados para revisão, não recebem certeza artificial.
+
+### 5. Migrar o contrato de saída e contagens
+
+1. Representar dissertação e produto como registros distintos com IDs próprios e `defesaId` comum.
+2. Manter uma dissertação e um produto por defesa; representar 220 produções mesmo quando certos metadados faltarem.
+3. Contar tipos de produto sobre produtos; orientadores/alunos sobre defesas; coorientadores em dimensão própria.
+4. Validar invariantes e IDs únicos no gerador de JSON; rejeitar duplicação estrutural.
+5. Só depois da saída estável adaptar o painel para o novo esquema.
+
+**Aceite:** 220 registros de produção, 110 vínculos de defesa completos, sem duplicação de orientador/tipo; painel e JSON concordam.
+
+### 6. Atualizar o site Elementor em etapa própria
+
+1. Planejar o novo painel com Linha de Pesquisa antes de Macroprojetos.
+2. Usar “trabalhos analisados” conforme a unidade e exibir contagens derivadas do JSON, sem números fixos em placeholders.
+3. Preservar filtros, acessibilidade e integração atual; editar o bloco Elementor com diff mínimo.
+4. Validar primeiro em staging/rascunho; depois publicar e verificar caches.
+
+**Aceite:** conteúdo e contagens são dinâmicos; Linha de Pesquisa está no local combinado; nenhuma estrutura Elementor foi quebrada.
+
+## Limpeza e preservação
+
+Consultar `LIMPEZA_TEMPORARIOS.md` antes de remover qualquer arquivo. O catálogo distingue caches regeneráveis de artefatos potencialmente revisados ou fontes que exigem cópia de segurança. Arquivos locais ignorados pelo Git não são sincronizados para outra máquina.
+
+## Instruções para agentes futuros
+
+- Comece verificando o estado do Git e lendo o contrato; não assuma que o diretório sincronizou dados não versionados.
+- Não fazer reset/force push para “limpar” o PR sem comparar conteúdo e obter um caminho de correção revisável.
+- Não contar cada defesa duas vezes como orientador ou tipo; as duas produções são unidades independentes apenas para a contagem de produções.
+- Canonicalizar macroprojeto por código, não por rótulo bruto.
+- Não inferir tipo específico somente pela coleção eduCAPES.
+- Não modificar o JSON legado nem corrigir os resumos ausentes durante a nova extração sem escopo específico.
+- Não colar no Elementor HTML renderizado/copiado do navegador; preservar `<br>`/`<p>` e a estrutura do widget.
 
