@@ -578,16 +578,8 @@ def construir_linha(
 
     autor_original = preferir(registro.get("autor"), "---")
     autor = padronizar_nome_pessoa(autor_original)
-    coorientador_pdf = preferir(conteudo.get("coorientador_extraido"), "---")
-    coorientador_site = preferir(registro.get("coorientador"), "---")
-    coorientador_original = preferir(coorientador_pdf, coorientador_site, "---")
+    coorientador_original = preferir(registro.get("coorientador"), "---")
     coorientador = padronizar_nome_pessoa(coorientador_original)
-    if (
-        coorientador_pdf != "---"
-        and coorientador_site != "---"
-        and chave_pessoa(coorientador_pdf) != chave_pessoa(coorientador_site)
-    ):
-        pendencias.append("coorientador divergente entre PDF e fonte oficial")
     titulo_original = preferir(registro.get("titulo"), "---")
     titulo = padronizar_titulo(titulo_original)
     produto_original = preferir(registro.get("produto_educacional"), "---")
@@ -716,12 +708,6 @@ def construir_linha(
         "Orientador Original": orientador_original,
         "Orientador": orientador,
         "Coorientador": coorientador,
-        "Coleções eduCAPES": "; ".join(
-            texto for valor in (conteudo.get("colecoes_educapes") or []) if (texto := limpar_texto(valor))
-        ),
-        "Metadados eduCAPES": json.dumps(
-            conteudo.get("metadados_educapes") or {}, ensure_ascii=False
-        ),
         "Ano": preferir(registro.get("ano"), "---"),
         "Produto Educacional": produto,
         "Link do PDF": preferir(registro.get("url_pdf")),
@@ -1426,9 +1412,6 @@ def carregar_registros_entrada() -> tuple[dict, list[dict]]:
         conteudo = {
             "resumo": trabalho.get("resumo"),
             "palavras_chave": trabalho.get("palavras_chave") or [],
-            "coorientador_extraido": trabalho.get("coorientador_pdf"),
-            "colecoes_educapes": trabalho.get("colecoes_educapes") or [],
-            "metadados_educapes": trabalho.get("metadados_educapes") or {},
             "objetivos": trabalho.get("objetivo_geral"),
             "metodologia": trabalho.get("metodologia"),
             "produto_educacional_extraido": trabalho.get("descricao_produto"),
@@ -1594,4 +1577,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
