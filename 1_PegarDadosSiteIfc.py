@@ -354,6 +354,11 @@ def consultar_educapes(sessao: requests.Session, url: str, args: argparse.Namesp
         texto = limpar_texto(valor.get_text(" ", strip=True))
         if match and texto and texto not in campos[match.group(1).casefold()]:
             campos[match.group(1).casefold()].append(texto)
+        elif re.search(r"Aparece\s+nas\s+cole[cç][oõ]es", rotulo_texto, re.I) and texto:
+            for colecao in re.split(r"\s*[;|]\s*", texto):
+                colecao = limpar_texto(colecao)
+                if colecao and colecao not in colecoes:
+                    colecoes.append(colecao)
     bitstreams = []
     for ancora in soup.select('a[href*="/bitstream/"]'):
         link = urljoin("https://educapes.capes.gov.br", ancora.get("href", ""))
