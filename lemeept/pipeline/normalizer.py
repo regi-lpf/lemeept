@@ -1,6 +1,7 @@
 import re
 import unicodedata
 import hashlib
+import json
 from typing import Any, Dict, List
 
 
@@ -52,6 +53,24 @@ def normalizar_chave_orientador(valor: Any) -> str:
     return nome
 
 
+def normalizar_rotulo_macroprojeto(codigo: Any, nome: Any) -> str:
+    """Gera um único rótulo público por código, mesmo com alias histórico no nome."""
+    codigo_limpo = limpar_texto(codigo, "")
+    nome_limpo = limpar_texto(nome, "")
+    if not re.fullmatch(r"MP[1-6]", codigo_limpo, flags=re.IGNORECASE):
+        return nome_limpo or "---"
+    codigo_limpo = codigo_limpo.upper()
+    descricao = re.sub(
+        rf"^(?:Macroprojeto\s*{codigo_limpo[2:]}|{codigo_limpo})\s*[–—-]\s*",
+        "",
+        nome_limpo,
+        flags=re.IGNORECASE,
+    ).strip()
+    if not descricao or normalizar_texto(descricao) == normalizar_texto(nome_limpo):
+        return nome_limpo or codigo_limpo
+    return f"{codigo_limpo} – {descricao}"
+
+
 def dividir_tags(texto: Any) -> List[str]:
     partes_entrada = texto if isinstance(texto, list) else [texto]
     if not partes_entrada:
@@ -71,15 +90,42 @@ def dividir_tags(texto: Any) -> List[str]:
     return tags
 
 
+def _texto_metadados_educapes(valor: Any) -> str:
+    if isinstance(valor, str):
+        try:
+            valor = json.loads(valor) if valor.strip() else {}
+        except json.JSONDecodeError:
+            return ""
+    if not isinstance(valor, dict):
+        return ""
+    campos_dc = valor.get("campos_dc", {})
+    if not isinstance(campos_dc, dict):
+        return ""
+    chaves_pesquisaveis = (
+        "dc.contributor", "dc.contributor.author", "dc.subject", "dc.description.abstract",
+        "dc.title", "dc.type", "dc.identifier", "dc.identifier.other", "dc.date.issued",
+    )
+    partes = []
+    for chave in chaves_pesquisaveis:
+        conteudos = campos_dc.get(chave, [])
+        if not isinstance(conteudos, (list, tuple)):
+            conteudos = [conteudos]
+        partes.extend(str(item) for item in conteudos if item)
+    return " ".join(partes)
+
+
 def montar_search_text(raw: Dict[str, Any]) -> str:
     campos = [
-        raw.get("ano"), raw.get("autor"), raw.get("orientador"), raw.get("titulo"),
-        raw.get("produto"), raw.get("resumoCurto", raw.get("resumo")), raw.get("base"), raw.get("nivel"),
+        raw.get("ano"), raw.get("autor"), raw.get("orientador"), raw.get("coorientador"), raw.get("titulo"),
+        raw.get("produto"), raw.get("resumoCompleto") or raw.get("resumo") or raw.get("resumoCurto"),
+        " ".join(dividir_tags(raw.get("palavrasChave") or [])), raw.get("introducao"),
+        raw.get("sumario"), raw.get("base"), raw.get("nivel"),
         raw.get("area"), raw.get("finalidade"), raw.get("publicoAlvo"),
         raw.get("tipoProduto"), raw.get("instituicaoCampus"), raw.get("linhaPesquisa"),
         raw.get("macroprojeto"), raw.get("codigoMacroprojeto"), raw.get("termosLinhaMacro"),
         raw.get("justificativaLinhaMacro"),
-        " ".join(dividir_tags(raw.get("palavrasChave") or []))
+        " ".join(dividir_tags(raw.get("colecoesEduCAPES") or [])),
+        _texto_metadados_educapes(raw.get("metadadosEduCAPES")),
     ]
     return normalizar_texto(" ".join(str(item or "") for item in campos))
 
@@ -94,12 +140,12 @@ def limitar_texto(texto: Any, limite: int = 280) -> str:
 def normalizar_registro(raw: Dict[str, Any]) -> Dict[str, Any]:
     registro = dict(raw)
     campos_texto = (
-        "id", "ano", "autor", "orientador", "titulo", "produto", "linkPdf", "linkProduto",
+        "id", "ano", "autor", "orientador", "coorientador", "titulo", "produto", "linkPdf", "linkProduto",
         "linhaPesquisa", "macroprojeto", "codigoMacroprojeto", "instituicaoCampus", "nivel",
         "base", "area", "finalidade", "publicoAlvo", "tipoProduto", "confiancaLinhaMacro",
         "termosLinhaMacro", "justificativaLinhaMacro", "revisaoManual", "resumo",
     )
-    campos_vazios = {"linkPdf", "linkProduto", "resumo"}
+    campos_vazios = {"linkPdf", "linkProduto", "resumo", "coorientador"}
     for campo in campos_texto:
         padrao = "" if campo in campos_vazios else "---"
         registro[campo] = limpar_texto(registro.get(campo), padrao)
@@ -107,10 +153,25 @@ def normalizar_registro(raw: Dict[str, Any]) -> Dict[str, Any]:
     registro["ano"] = extrair_ano(registro["ano"])
     registro["orientador"] = limpar_nome_orientador(registro["orientador"])
     registro["orientadorChave"] = normalizar_chave_orientador(registro["orientador"])
+    registro["coorientador"] = limpar_nome_orientador(registro["coorientador"]) if registro["coorientador"] else ""
+    registro["coorientadorChave"] = normalizar_chave_orientador(registro["coorientador"])
+    registro["macroprojeto"] = normalizar_rotulo_macroprojeto(
+        registro["codigoMacroprojeto"], registro["macroprojeto"]
+    )
     if registro["id"] == "---":
         base_id = "|".join((registro["ano"], registro["autor"], registro["titulo"]))
         registro["id"] = "AUTO-" + hashlib.sha1(base_id.encode("utf-8")).hexdigest()[:12]
     registro["palavrasChave"] = dividir_tags(registro.get("palavrasChave"))
+    registro["colecoesEduCAPES"] = dividir_tags(registro.get("colecoesEduCAPES"))
+    metadados_educapes = registro.get("metadadosEduCAPES")
+    if isinstance(metadados_educapes, str):
+        try:
+            metadados_educapes = json.loads(metadados_educapes) if metadados_educapes.strip() else {}
+        except json.JSONDecodeError:
+            metadados_educapes = {}
+    registro["metadadosEduCAPES"] = metadados_educapes if isinstance(metadados_educapes, dict) else {}
+    registro["resumoCompleto"] = registro["resumo"]
     registro["resumoCurto"] = limitar_texto(registro["resumo"])
     registro["searchText"] = montar_search_text(registro)
     return registro
+

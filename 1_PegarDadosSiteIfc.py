@@ -51,7 +51,7 @@ HOSTS_FALLBACK_TLS = {"profept.ifc.edu.br"}
 
 ROTULOS = re.compile(
     r"(?P<autor>\b(?:Acad[eê]mic[oa]s?|Alun[oa]s?|Autor(?:es)?|Mestrand[oa]s?)\s*:)|"
-    r"(?P<coorientador>\bCoorientador(?:a|es|as)?\s*:)|"
+    r"(?P<coorientador>\bCo[-\s]?orientador(?:a|es|as)?\s*:)|"
     r"(?P<orientador>\b(?:Orientador(?:a|es|as)?|Orietador(?:a|es|as)?|Orientatador)\s*:)|"
     r"(?P<dissertacao>(?<![-/_])\bDisserta[cç][aã]o(?:\s+Intitulada)?\s*:?\s*)|"
     r"(?P<produto>\bProdutos?\s+Educ(?:acional|ional)\s*:)",
@@ -347,14 +347,21 @@ def consultar_educapes(sessao: requests.Session, url: str, args: argparse.Namesp
 
     soup = BeautifulSoup(html, "html.parser")
     campos: defaultdict[str, list[str]] = defaultdict(list)
+    colecoes: list[str] = []
     for rotulo in soup.select(".metadataFieldLabel"):
         valor = rotulo.find_next(class_="metadataFieldValue")
         if valor is None:
             continue
-        match = re.search(r"\b(dc\.[a-z0-9_.-]+)", limpar_texto(rotulo.get_text(" ", strip=True)), re.I)
+        rotulo_texto = limpar_texto(rotulo.get_text(" ", strip=True))
+        match = re.search(r"\b(dc\.[a-z0-9_.-]+)", rotulo_texto, re.I)
         texto = limpar_texto(valor.get_text(" ", strip=True))
         if match and texto and texto not in campos[match.group(1).casefold()]:
             campos[match.group(1).casefold()].append(texto)
+        elif re.search(r"Aparece\s+nas\s+cole[cç][oõ]es", rotulo_texto, re.I) and texto:
+            for colecao in re.split(r"\s*[;|]\s*", texto):
+                colecao = limpar_texto(colecao, "")
+                if colecao and colecao not in colecoes:
+                    colecoes.append(colecao)
     bitstreams = []
     for ancora in soup.select('a[href*="/bitstream/"]'):
         link = urljoin("https://educapes.capes.gov.br", ancora.get("href", ""))
@@ -365,6 +372,7 @@ def consultar_educapes(sessao: requests.Session, url: str, args: argparse.Namesp
         "origem_consulta": origem,
         "handle": handle,
         "campos_dc": dict(sorted(campos.items())),
+        "colecoes": colecoes,
         "bitstreams": bitstreams,
     }
 
@@ -509,6 +517,12 @@ def registros_para_planilha(registros: list[dict]) -> pd.DataFrame:
                 "Link do PDF": registro.get("url_pdf"),
                 "Link do Produto": registro.get("url_produto"),
                 "Handle eduCAPES": registro.get("handle_educapes"),
+                "Coleções eduCAPES": "; ".join(
+                    registro.get("metadados_educapes", {}).get("colecoes", [])
+                ),
+                "Metadados eduCAPES": json.dumps(
+                    registro.get("metadados_educapes", {}), ensure_ascii=False
+                ),
                 "Nome do PDF": Path(arquivo.get("caminho", "")).name,
                 "SHA-256": arquivo.get("sha256"),
                 "Status do PDF": arquivo.get("status"),
@@ -670,3 +684,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

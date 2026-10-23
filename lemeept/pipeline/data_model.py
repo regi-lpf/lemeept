@@ -28,8 +28,14 @@ class Registro:
     quantidadeProducoes: int = 0
     instituicaoCampus: str = "---"
     orientadorChave: str = ""
+    coorientador: str = ""
+    coorientadorChave: str = ""
+    colecoesEduCAPES: List[str] = field(default_factory=list)
+    metadadosEduCAPES: Dict[str, Any] = field(default_factory=dict)
     palavrasChave: List[str] = field(default_factory=list)
     resumo: str = ""
+    resumoCompleto: str = ""
+    resumoCurto: str = ""
     nivel: str = "---"
     base: str = "---"
     area: str = "---"
@@ -61,8 +67,14 @@ class Registro:
             searchText=str(raw.get("searchText") or ""),
             instituicaoCampus=str(raw.get("instituicaoCampus") or "---"),
             orientadorChave=str(raw.get("orientadorChave") or ""),
+            coorientador=str(raw.get("coorientador") or ""),
+            coorientadorChave=str(raw.get("coorientadorChave") or ""),
+            colecoesEduCAPES=list(raw.get("colecoesEduCAPES") or []),
+            metadadosEduCAPES=dict(raw.get("metadadosEduCAPES") or {}),
             palavrasChave=list(raw.get("palavrasChave") or []),
             resumo=str(raw.get("resumoCurto") or raw.get("resumo") or ""),
+            resumoCompleto=str(raw.get("resumoCompleto") or raw.get("resumo") or ""),
+            resumoCurto=str(raw.get("resumoCurto") or raw.get("resumo") or ""),
             nivel=str(raw.get("nivel") or "---"),
             base=str(raw.get("base") or "---"),
             area=str(raw.get("area") or "---"),
@@ -77,3 +89,4 @@ class Registro:
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
+

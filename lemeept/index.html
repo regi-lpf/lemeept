@@ -497,7 +497,7 @@
 <div class="leme-panel-head">
 <div>
 <h3>Gráficos do conjunto atual</h3>
-Cada dissertação e cada produto educacional contam como uma produção; apresentações não entram na contagem. Os gráficos mostram produções, enquanto a busca lista trabalhos.
+ Cada dissertação e cada produto educacional contam como uma produção; apresentações não entram na contagem. Orientadores contam uma vez por defesa, e tipos contam uma vez por produto educacional.
 
 </div>
 <div class="leme-panel-head-actions">
@@ -526,13 +526,13 @@ Cada dissertação e cada produto educacional contam como uma produção; aprese
 </div>
 <div class="leme-chart-card">
 <h4 class="leme-chart-title">Orientadores</h4>
-<p class="leme-chart-subtitle">Ranking dos orientadores mais recorrentes.</p>
+<p class="leme-chart-subtitle">Número de alunos orientados; cada defesa conta uma vez.</p>
 
 <div id="leme-chart-orientador" aria-live="polite"></div>
 </div>
 <div class="leme-chart-card">
 <h4 class="leme-chart-title">Tipo de produto</h4>
-<p class="leme-chart-subtitle">Formatos de produtos educacionais mais encontrados.</p>
+<p class="leme-chart-subtitle">Produtos educacionais por tipo; cada produto conta uma vez.</p>
 
 <div id="leme-chart-tipo" aria-live="polite"></div>
 </div>
@@ -656,6 +656,33 @@ Use a busca livre ou combine filtros. Os gráficos e os trabalhos encontrados se
         const temProduto = ehValorPublico(item.produto) || ehValorPublico(item.linkProduto);
         return Number(temDissertacao) + Number(temProduto);
       }
+      const rotulosMacroprojetos = {
+        MP1: "MP1 – Propostas metodológicas e recursos didáticos em espaços formais e não formais de ensino na EPT",
+        MP2: "MP2 – Inclusão e diversidade em espaços formais e não formais de ensino na EPT",
+        MP3: "MP3 – Práticas Educativas no Currículo Integrado",
+        MP4: "MP4 – História e memórias no contexto da EPT",
+        MP5: "MP5 – Organização do currículo integrado na EPT",
+        MP6: "MP6 – Organização de espaços pedagógicos na EPT"
+      };
+      function chaveDefesa(item) {
+        const id = String(item.id || "").trim();
+        if (id) return id;
+        const chave = [item.ano, item.autor, item.titulo].map(valor => String(valor || "").trim()).join("|");
+        return chave.replace(/[|\s]/g, "") ? chave : "";
+      }
+      function porDefesaUnica(lista) {
+        const vistos = new Set();
+        return lista.filter(item => {
+          const chave = chaveDefesa(item);
+          if (!chave || vistos.has(chave)) return false;
+          vistos.add(chave);
+          return true;
+        });
+      }
+      function rotuloMacroCanonico(item) {
+        const codigo = String(item.codigoMacroprojeto || "").trim().toUpperCase();
+        return rotulosMacroprojetos[codigo] || item.macroprojeto;
+      }
       function atualizarIndicadores() {
         const anos = dados.map(item => Number(item.ano)).filter(Number.isFinite);
         const periodo = anos.length ? Math.min(...anos) + "–" + Math.max(...anos) : "Sem ano informado";
@@ -663,7 +690,7 @@ Use a busca livre ou combine filtros. Os gráficos e os trabalhos encontrados se
         raiz.querySelector("#leme-periodo").textContent = periodo;
         raiz.querySelector("#leme-stat-total").textContent = dados.length.toLocaleString("pt-BR");
         raiz.querySelector("#leme-stat-producoes").textContent = producoes.toLocaleString("pt-BR");
-        raiz.querySelector("#leme-stat-orientadores").textContent = new Set(dados.map(item => item.orientadorChave || normalizarBusca(item.orientador)).filter(Boolean)).size.toLocaleString("pt-BR");
+        raiz.querySelector("#leme-stat-orientadores").textContent = new Set(porDefesaUnica(dados).map(item => item.orientadorChave || normalizarBusca(item.orientador)).filter(Boolean)).size.toLocaleString("pt-BR");
         raiz.querySelector("#leme-stat-macroprojetos").textContent = new Set(dados.map(item => item.codigoMacroprojeto).filter(ehValorPublico)).size.toLocaleString("pt-BR");
       }
       function valorPublico(valor, fallback) {
@@ -783,9 +810,19 @@ Use a busca livre ou combine filtros. Os gráficos e os trabalhos encontrados se
       function contarPorCampo(lista, campo) {
         const mapa = new Map();
         lista.forEach(item => {
-          if (!ehValorPublico(item[campo])) return;
-          const valor = limparRotulo(item[campo]);
+          const valorBruto = campo === "macroprojeto" ? rotuloMacroCanonico(item) : item[campo];
+          if (!ehValorPublico(valorBruto)) return;
+          const valor = limparRotulo(valorBruto);
           mapa.set(valor, (mapa.get(valor) || 0) + quantidadeProducoes(item));
+        });
+        return Array.from(mapa.entries()).map(([label, valor]) => ({ label, valor })).sort((a, b) => b.valor - a.valor || String(a.label).localeCompare(String(b.label), "pt-BR"));
+      }
+      function contarTiposDeProduto(lista) {
+        const mapa = new Map();
+        porDefesaUnica(lista).forEach(item => {
+          if (!ehValorPublico(item.tipoProduto)) return;
+          const valor = limparRotulo(item.tipoProduto);
+          mapa.set(valor, (mapa.get(valor) || 0) + 1);
         });
         return Array.from(mapa.entries()).map(([label, valor]) => ({ label, valor })).sort((a, b) => b.valor - a.valor || String(a.label).localeCompare(String(b.label), "pt-BR"));
       }
@@ -801,13 +838,13 @@ Use a busca livre ou combine filtros. Os gráficos e os trabalhos encontrados se
       }
       function contarOrientadores(lista, limite) {
         const mapa = new Map();
-        lista.forEach(item => {
+        porDefesaUnica(lista).forEach(item => {
           if (!ehValorPublico(item.orientador)) return;
           const chave = item.orientadorChave || normalizarBusca(item.orientador);
           const nome = limparRotulo(item.orientador);
           if (!chave) return;
           if (!mapa.has(chave)) mapa.set(chave, { label: nome, valor: 0 });
-          mapa.get(chave).valor += quantidadeProducoes(item);
+          mapa.get(chave).valor += 1;
         });
         return Array.from(mapa.values()).sort((a,b) => b.valor - a.valor || String(a.label).localeCompare(String(b.label), "pt-BR")).slice(0, limite || 10);
       }
@@ -827,7 +864,7 @@ Use a busca livre ou combine filtros. Os gráficos e os trabalhos encontrados se
         }
         insights.innerHTML = [
           renderInsightCard("trabalhos no conjunto atual", String(lista.length)),
-          renderInsightCard("tipo de produto mais comum", primeiroOuTraco(contarPorCampo(lista, "tipoProduto"))),
+          renderInsightCard("tipo de produto mais comum", primeiroOuTraco(contarTiposDeProduto(lista))),
           renderInsightCard("orientador em destaque", primeiroOuTraco(contarOrientadores(lista, 1))),
           renderInsightCard("macroprojeto mais recorrente", primeiroOuTraco(contarPorCampo(lista, "macroprojeto")))
         ].join("");
@@ -889,7 +926,7 @@ Use a busca livre ou combine filtros. Os gráficos e os trabalhos encontrados se
         renderCompositionChart(raiz.querySelector("#leme-chart-linha"), contarPorCampo(lista, "linhaPesquisa"));
         renderHorizontalChart(raiz.querySelector("#leme-chart-macro"), contarPorCampo(lista, "macroprojeto"), 7, { formatarRotulo: rotuloMacroCurto });
         renderHorizontalChart(raiz.querySelector("#leme-chart-orientador"), contarOrientadores(lista, 10), 10);
-        renderHorizontalChart(raiz.querySelector("#leme-chart-tipo"), contarPorCampo(lista, "tipoProduto"), 8);
+        renderHorizontalChart(raiz.querySelector("#leme-chart-tipo"), contarTiposDeProduto(lista), 8);
         renderHorizontalChart(raiz.querySelector("#leme-chart-nivel"), contarPorCampo(lista, "nivel"), 8);
         renderHorizontalChart(raiz.querySelector("#leme-chart-base"), contarBases(lista), 8);
         const producoesFiltradas = lista.reduce((total, item) => total + quantidadeProducoes(item), 0);
@@ -1066,8 +1103,12 @@ Use a busca livre ou combine filtros. Os gráficos e os trabalhos encontrados se
           if (!resposta.ok) throw new Error("Falha HTTP ao carregar dados: " + resposta.status);
 
           const payload = await resposta.json();
-          dados = Array.isArray(payload) ? payload : payload.registros;
-          if (!Array.isArray(dados)) throw new Error("O JSON não contém uma lista de registros.");
+          const registros = Array.isArray(payload) ? payload : payload.registros;
+          if (!Array.isArray(registros)) throw new Error("O JSON não contém uma lista de registros.");
+          dados = registros.map(item => {
+            const rotuloMacro = rotuloMacroCanonico(item);
+            return rotuloMacro ? { ...item, macroprojeto: rotuloMacro } : item;
+          });
 
           atualizarIndicadores();
           aplicarFiltros(true);
@@ -1084,3 +1125,4 @@ Use a busca livre ou combine filtros. Os gráficos e os trabalhos encontrados se
   </script>
 
 </section>
+

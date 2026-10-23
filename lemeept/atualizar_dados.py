@@ -20,6 +20,9 @@ MAPEAMENTO_COLUNAS = {
     "ano": ("ano", "ano limpo", "ano de defesa", "ano defesa"),
     "autor": ("autor", "autora", "discente", "mestrando", "mestranda"),
     "orientador": ("orientador", "orientadora", "professor orientador", "professora orientadora"),
+    "coorientador": ("coorientador", "coorientadora", "co-orientador", "co-orientadora"),
+    "colecoesEduCAPES": ("coleções educapes", "colecoes educapes", "coleção educapes", "colecao educapes"),
+    "metadadosEduCAPES": ("metadados educapes", "metadados edu capes"),
     "titulo": ("titulo", "titulo da dissertacao", "titulo provavel", "nome do trabalho"),
     "produto": ("produto", "produto educacional", "titulo do produto", "nome do produto"),
     "linkPdf": ("link pdf", "link do pdf", "pdf", "link da dissertacao"),
@@ -143,3 +146,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
