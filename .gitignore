@@ -14,12 +14,15 @@ __pycache__/
 teste_json/
 
 # Tudo abaixo é gerado durante a execução.
+# Inventário, condições de limpeza e itens que exigem preservação: LIMPEZA_TEMPORARIOS.md.
 /pdf/
 /painel/
 /archive/
 /backups/
 /logs/
+# Dados locais de execução/cache; os JSONs de referência abaixo permanecem versionados.
 /dados/*
 !/dados/referencia/
 /dados/referencia/*
 !/dados/referencia/*.json
+
