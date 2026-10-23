@@ -61,6 +61,7 @@ VERSAO_ALIASES_ORIENTADORES = "confirmados_fontes_ifc_v1"
 VERSAO_TIPOS_PRODUTO = "tipos_controlados_semanticos_v3"
 MAX_PAGINAS_OCR = 15
 MAX_PAGINAS_OCR_HISTORICO = 3
+VERSAO_CACHE_EXTRACAO = "texto-pdf-v2"
 INSTITUICAO_CORPUS = "Instituto Federal Catarinense"
 CAMPUS_CORPUS = "Blumenau"
 PROGRAMA_CORPUS = "ProfEPT"
@@ -289,7 +290,10 @@ def limpar_texto_pdf(texto: str) -> str:
 def idioma_ocr() -> str:
     if pytesseract is None:
         return ""
-    instalados = set(pytesseract.get_languages(config=""))
+    try:
+        instalados = set(pytesseract.get_languages(config=""))
+    except Exception:
+        return ""
     if {"por", "eng"}.issubset(instalados):
         return "por+eng"
     if "por" in instalados:
@@ -304,44 +308,56 @@ def extrair_texto_ocr(
     max_paginas: int = MAX_PAGINAS_OCR,
     workers: int = 4,
 ) -> dict:
-    """Obtém conteúdo exclusivamente por OCR e registra falhas página a página."""
-    if fitz is None or pytesseract is None or Image is None:
-        raise RuntimeError("PyMuPDF, pytesseract e Pillow são obrigatórios para o OCR")
-    idioma = idioma_ocr()
-    if not idioma:
-        raise RuntimeError("Tesseract não possui idioma por ou eng instalado")
+    """Extrai texto nativo primeiro e usa OCR apenas quando a página precisa."""
+    if fitz is None:
+        raise RuntimeError("PyMuPDF é obrigatório para ler PDFs")
+    idioma = idioma_ocr() if pytesseract is not None and Image is not None else ""
     textos: list[str] = []
     erros: list[dict] = []
+    metodos: list[dict] = []
     with fitz.open(caminho) as documento:
         total = documento.page_count
         quantidade = total if max_paginas <= 0 else min(total, max_paginas)
-    def processar_pagina(numero: int) -> tuple[int, str, str]:
+
+    def processar_pagina(numero: int) -> tuple[int, str, str, str]:
         try:
             with fitz.open(caminho) as documento:
                 pagina = documento.load_page(numero)
+                texto_nativo = limpar_texto_pdf(pagina.get_text("text") or "")
+                if len(texto_nativo) >= 20:
+                    return numero, texto_nativo, "texto_pdf", ""
+                if not idioma:
+                    aviso = "Texto nativo insuficiente e OCR indisponível"
+                    return numero, texto_nativo, "texto_pdf_insuficiente", aviso
                 pixmap = pagina.get_pixmap(matrix=fitz.Matrix(1.7, 1.7), alpha=False)
                 imagem = Image.frombytes("RGB", (pixmap.width, pixmap.height), pixmap.samples)
-            texto = limpar_texto_pdf(
+            texto_ocr = limpar_texto_pdf(
                 pytesseract.image_to_string(imagem, lang=idioma, config="--psm 3")
             )
+            texto = texto_ocr if len(texto_ocr) >= len(texto_nativo) else texto_nativo
             aviso = "OCR retornou pouco ou nenhum texto" if len(texto) < 20 else ""
-            return numero, texto, aviso
+            return numero, texto, f"ocr_{idioma}", aviso
         except Exception as erro:  # uma página ruim não invalida todo o trabalho
-            return numero, "", f"{type(erro).__name__}: {erro}"
+            return numero, "", "falha", f"{type(erro).__name__}: {erro}"
 
     with ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
         resultados = list(executor.map(processar_pagina, range(quantidade)))
-    for numero, texto, erro in sorted(resultados):
+    for numero, texto, metodo, erro in sorted(resultados):
         textos.append(texto)
+        metodos.append({"pagina": numero + 1, "metodo": metodo})
         if erro:
             erros.append({"pagina": numero + 1, "erro": erro})
+    metodos_usados = sorted({item["metodo"] for item in metodos})
     return {
         "texto": limpar_texto_pdf("\n\n".join(textos)),
         "paginas_total_pdf": total,
         "paginas_processadas": quantidade,
         "paginas_nao_processadas": max(0, total - quantidade),
+        "paginas_texto_nativo": sum(item["metodo"] == "texto_pdf" for item in metodos),
+        "paginas_ocr": sum(item["metodo"].startswith("ocr_") for item in metodos),
+        "metodos_paginas": metodos,
         "erros_paginas": erros,
-        "metodo": f"ocr_{idioma}",
+        "metodo": "+".join(metodos_usados) if metodos_usados else "nenhum",
     }
 
 
@@ -354,10 +370,11 @@ def extrair_ocr_com_cache(
 ) -> dict:
     hash_pdf = sha256_arquivo(caminho)
     sufixo = "todas" if max_paginas <= 0 else str(max_paginas)
+    sufixo = f"{sufixo}_{VERSAO_CACHE_EXTRACAO}"
     cache = PASTA_CACHE_OCR / f"{identificador}_{hash_pdf[:16]}_{sufixo}.json"
     if cache.is_file() and not forcar:
         resultado = ler_json(cache)
-        if isinstance(resultado, dict) and resultado.get("sha256") == hash_pdf:
+        if isinstance(resultado, dict) and resultado.get("sha256") == hash_pdf and resultado.get("versao_extracao") == VERSAO_CACHE_EXTRACAO:
             resultado["origem"] = "cache"
             return resultado
     resultado = extrair_texto_ocr(caminho, max_paginas, workers)
@@ -367,6 +384,7 @@ def extrair_ocr_com_cache(
             "sha256": hash_pdf,
             "gerado_em": agora_utc(),
             "origem": "ocr_novo",
+            "versao_extracao": VERSAO_CACHE_EXTRACAO,
         }
     )
     salvar_json_atomico(resultado, cache)
