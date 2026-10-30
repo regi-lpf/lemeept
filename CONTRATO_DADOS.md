@@ -1,6 +1,6 @@
 # Contrato de dados do painel LEME / ProfEPT
 
-**Status:** proposta inicial baseada nas regras já definidas para o projeto.  
+**Status:** contrato de referência para a migração v2; o widget público ainda usa o JSON legado. A planilha de revisão e a amostra exploratória são artefatos de trabalho, não substituem o banco nem integram decisões automaticamente.
 **Objetivo:** separar a defesa acadêmica das duas produções que ela gera, mantendo dados pesquisáveis e rastreáveis.
 
 ## Regras já definidas
@@ -10,7 +10,7 @@
 - Cada defesa gera exatamente duas produções para o painel: dissertação e produto educacional.
 - As duas produções têm título e link e são acessíveis/listáveis individualmente.
 - Metadados obtidos nos links enriquecem a pesquisa: eduCAPES fornece dados do produto; o PDF fornece conteúdo selecionado da dissertação.
-- Cada produto educacional tem um único tipo principal; usar “Aparece nas coleções:” do eduCAPES quando disponível e compatível com o vocabulário do projeto.
+- Cada produto educacional tem um único tipo principal. O formato específico declarado na dissertação/ficha do produto é a evidência prioritária; `dc.type` e “Aparece nas coleções:” do eduCAPES são evidência complementar e podem ser categorias amplas.
 - Resumo, palavras-chave e introdução alimentam a pesquisa por termos específicos, incluindo base epistemológica, nível de aplicação, tipo de produto, linha e macroprojeto.
 - “Macroprojeto 3” e “MP3” são rótulos da mesma categoria. O código canônico é `MP3`; “Macroprojeto 3” é um alias a normalizar.
 
@@ -72,15 +72,32 @@ Os campos abaixo ampliam a especificidade da pesquisa. Em geral, a evidência es
 
 | Campo | Evidência prioritária | Regra quando não estiver explícito |
 | --- | --- | --- |
-| Base epistemológica | Resumo e introdução da dissertação | Classificar pelas evidências textuais e registrar como classificação, não como transcrição da fonte. |
+| Base epistemológica | Resumo, introdução, referencial teórico e citações relacionadas; referências bibliográficas apenas para corroborar as citações | Classificar com evidência conceitual do argumento da dissertação. A presença isolada de um autor/obra na bibliografia não prova a base epistemológica. Registrar como classificação, não como transcrição da fonte. |
 | Nível de aplicação | Resumo e introdução; contexto educacional descrito no trabalho | Inferir pelo contexto descrito, anexando trecho/página e sinalizando revisão quando ambíguo. |
 | Tipo de produto | “Aparece nas coleções:” e demais metadados do eduCAPES; ficha técnica/descrição do próprio produto quando disponível | Atribuir um único tipo principal. Guardar a coleção do repositório separadamente: ela pode ser mais ampla que o tipo educacional específico. Normalizar o tipo para vocabulário controlado, preservando rótulo e origem. Se a evidência não permitir decidir, deixar pendente de revisão em vez de criar múltiplos tipos. |
 | Linha de pesquisa | Resumo e introdução confrontados com as descrições oficiais das linhas | Atribuir por regra de classificação com evidência e confiança; encaminhar empates ou evidência fraca para revisão. |
 | Macroprojeto | Resumo e introdução confrontados com os critérios oficiais dos macroprojetos | Como o macroprojeto pode não aparecer no PDF ou não ter posição fixa, não exigir extração literal. Classificar por critérios versionados, guardar evidência e marcar inferência/revisão. |
 
-O resumo, suas palavras-chave e a introdução são a base de pesquisa por termos específicos. O sumário e a ficha catalográfica podem acrescentar pistas e localizar seções. Se essas partes não resolverem uma classificação, uma pesquisa textual focada pode procurar termos e trechos adicionais no PDF. A ausência de uma menção literal a linha ou macroprojeto não equivale a falha de extração.
+O resumo, suas palavras-chave e a introdução são a base de pesquisa por termos específicos. O sumário e a ficha catalográfica podem acrescentar pistas e localizar seções. Se essas partes não resolverem uma classificação, uma pesquisa textual focada pode procurar termos e trechos adicionais no PDF. A ausência de uma menção literal a linha ou macroprojeto não equivale a falha de extração. Resumo e palavras-chave são esperados segundo a estrutura acadêmica: se o extrator não os localizar, registrar lacuna/falha de extração e encaminhar para inspeção do PDF; não afirmar que o documento não os contém sem inspeção.
 
-Para decidir os campos técnicos sem exigir análise estatística especializada, adotar valores simples e auditáveis: confiança `alta`, `media` ou `baixa`; marcar baixa confiança para revisão humana; registrar método e evidência por classificação. A extração deve distinguir `encontrado`, `nao_encontrado`, `falha_extracao` e `nao_tentado`. O campo ausente na fonte não deve ser tratado como erro do extrator.
+Para decidir os campos técnicos sem exigir análise estatística especializada, adotar valores simples e auditáveis: confiança `alta`, `media` ou `baixa`; registrar método e evidência por classificação. Candidatos assistidos de confiança alta podem ser usados como valor corrente de trabalho para poupar revisão; confiança média/baixa, evidência contraditória ou abstenção ficam na fila humana. Isso não apaga o candidato, seu nível de confiança ou o rastro da decisão. A extração deve distinguir `encontrado`, `nao_encontrado`, `falha_extracao` e `nao_tentado`. O campo ausente na fonte não deve ser tratado como erro do extrator.
+
+### Regra específica da base epistemológica
+
+Base epistemológica é um campo interpretativo e não deve ser deduzido por lista de autores. O fluxo focado deve:
+
+1. procurar evidência no resumo, introdução, referencial/fundamentação teórica e seção metodológica;
+2. identificar autores/obras citados nos trechos que sustentam o argumento, com páginas;
+3. localizar na seção de referências apenas as entradas correspondentes a essas citações (autor e, quando possível, ano/título);
+4. pedir classificação assistida usando esses trechos e referências correspondentes, sem enviar o PDF inteiro;
+5. retornar valor canônico ou abstenção, confiança, justificativa curta e evidências de texto e referência;
+6. aceitar valor de alta confiança no JSON de trabalho; manter os demais para revisão na planilha.
+
+Uma referência bibliográfica que não esteja ligada a uma citação/argumento pertinente não sustenta a classificação. Se só houver tema geral, nome isolado ou associação implícita, usar abstenção ou confiança baixa.
+
+#### Uso de GPT na etapa de dissertação
+
+Quando a extração determinística não resolver a base, o GPT recebe somente o resumo e trechos localizados do referencial/fundamentação/metodologia, mais referências que correspondam a citações desses trechos. O modelo deve propor um candidato, justificar sua leitura e apontar evidência com página; não deve converter tema de pesquisa, linha/macroprojeto, objetivo do produto ou lista de referências em base epistemológica por associação. A saída é uma classificação assistida: só `alta` preenche `valor`; `media`, `baixa` ou abstenção mantêm `valor: null` e registram `candidato`, evidências e revisão pendente. Quando o texto sustenta mais de uma tradição sem declarar uma base dominante, registrar a formulação composta como hipótese ou abster-se, sem forçar uma categoria única.
 
 ### Proveniência por classificação
 
@@ -106,6 +123,10 @@ Cada valor classificatório deve ter informação de proveniência separada do r
 
 Valores válidos de `metodo` devem distinguir pelo menos metadado explícito, extração de texto, classificação por regra e revisão humana. Quando a fonte não disser explicitamente o valor, usar um método de classificação/inferência e nunca registrar a fonte como se tivesse fornecido aquele rótulo. Uma revisão humana pode confirmar ou substituir a sugestão sem apagar a evidência e o valor anterior da trilha de auditoria.
 
+Para uma sugestão assistida, preservar separadamente `valor` (valor adotado ou `null`), `candidato`, `confianca`, `revisao`, `justificativa` e evidências usadas. Ao adotar candidato de confiança alta, manter confiança/método/evidências; não reescrever o método como extração literal.
+
+Quando não for possível determinar uma base epistemológica com evidência suficiente, manter `valor: null` para revisão manual posterior. O rótulo “Outros” só pode ser usado quando a base foi identificada, mas não pertence ao vocabulário controlado; nunca deve significar “não determinado”.
+
 ## Campos propostos
 
 ### Defesa
@@ -122,7 +143,7 @@ Valores válidos de `metodo` devem distinguir pelo menos metadado explícito, ex
 | `linhaPesquisa` | Sim | Código/valor canônico controlado, mais rótulo de exibição. |
 | `macroprojeto.codigo` | Sim | Código canônico, por exemplo `MP3`. |
 | `macroprojeto.nome` | Sim | Nome de exibição canônico. |
-| `baseEpistemologica` | Classificação | Valor canônico ou pendente, com proveniência/confiança; evidência normalmente no resumo/introdução. |
+| `baseEpistemologica` | Classificação | Valor canônico ou pendente, com proveniência/confiança; evidência no argumento textual e citações relacionadas, corroboradas pelas referências correspondentes. |
 | `nivelAplicacao` | Classificação | Valor canônico ou pendente, com proveniência/confiança; evidência no contexto descrito pela dissertação. |
 
 ### Produção
@@ -158,10 +179,25 @@ Toda defesa deve ter exatamente estes dois objetos. Os IDs são estáveis e deri
 - `identificadores`: esquema, valor e URL, incluindo identificadores de outros hospedeiros;
 - `dataPublicacao`: data ISO `YYYY-MM-DD` ou precisão menor se a fonte só fornecer ano/mês;
 - `colecaoEduCAPES`: rótulo original de “Aparece nas coleções:”, separado do tipo educacional;
-- `tipoProduto`: exatamente um tipo principal canônico; usar “Aparece nas coleções:” como evidência quando for específico, e complementar com metadados/ficha do produto; preservar rótulo de origem e campo consultado;
+- `dcTypeEduCAPES`: valores originais de `dc.type`, separados da coleção e do tipo educacional canônico;
+- `tipoProduto`: exatamente um tipo principal canônico; priorizar formato explicitamente descrito na dissertação/ficha do produto. Preservar `dc.type`, coleção, rótulo original e campo consultado em campos separados;
 - `palavrasChave`: lista de termos fornecidos pelo eduCAPES.
 
 “Aparece nas coleções:” não é necessariamente o tipo pedagógico específico. Na amostra conferida, dois produtos diferentes (uma Cartilha e um E-book) aparecem ambos na coleção ampla “Livros digitais”. Portanto guardar essa coleção sem convertê-la automaticamente em tipo. Usar os demais metadados e a ficha/descrição do produto para atribuir exatamente um tipo principal. Se ainda houver ambiguidade, manter o tipo pendente de revisão.
+
+#### Processo de classificação do tipo de produto
+
+Guardar separadamente o formato declarado, os metadados eduCAPES e o tipo canônico. Aplicar esta precedência:
+
+1. Formato explicitamente nomeado na ficha ou no próprio produto (por exemplo, cartilha, podcast, portal, história em quadrinhos).
+2. Formato explicitamente nomeado na dissertação, especialmente na descrição do produto educacional.
+3. `dc.description.abstract` e demais campos específicos do registro eduCAPES, se nomearem o formato do produto.
+4. `dc.type` e coleção eduCAPES como evidência complementar; sozinhos não substituem o formato específico.
+5. Se as fontes específicas divergirem, ou houver apenas rótulo amplo/ambíguo, não escolher por maioria: manter `tipoProduto.valor: null`, registrar candidatos/conflito e enviar para revisão.
+
+Normalizar só depois de preservar o rótulo e a fonte originais. Equivalências já definidas: Portal → `portal`; Aula Digital → `guia_tutorial`; Áudio/Áudios → `podcast`; animação/Vídeos quando o conteúdo for audiovisual → `video_audiovisual`. “Livros digitais” e `dc.type = livro digital` são classes de suporte/hospedagem, não uma decisão automática entre e-book, cartilha, manual, guia ou outro formato. A designação explícita “E-book” pode normalizar para `ebook`; “História em quadrinhos” para `historia_em_quadrinhos`; “Infográfico” para `infografico`.
+
+Cada decisão guarda `valor` canônico ou `null`, `rotuloDeclarado`, `campoOrigem`, `metadadosEduCAPES` (`dc.type`, coleção e resumo separados), `confianca`, `conflito`, `evidencias` com página/campo, e `revisao`. A ausência de arquivo de bitstream não prova ausência do produto, mas reduz a evidência disponível para desempatar formato.
 
 ### Coorientador
 
@@ -180,8 +216,8 @@ O campo é opcional porque nem toda defesa informa coorientador. No PDF, procura
       "academico": {"nome": "Nome do acadêmico", "chave": "nome do academico"},
       "orientador": {"nome": "Nome do orientador", "chave": "nome do orientador"},
       "coorientador": {"nome": "Nome do coorientador", "chave": "nome do coorientador"},
-      "classificacoes": {
-        "baseEpistemologica": {"valor": "Educação Crítica / Emancipatória", "confianca": "media", "revisao": "necessaria"},
+"classificacoes": {
+        "baseEpistemologica": {"valor": null, "candidato": "Educação Crítica / Emancipatória", "confianca": "baixa", "metodo": "classificacao_assistida", "revisao": "necessaria", "evidencias": []},
         "nivelAplicacao": {"valor": "Ensino Médio Integrado", "confianca": "alta", "revisao": "nao_necessaria"}
       },
       "linhaPesquisa": {"codigo": "LP1", "nome": "Práticas Educativas em Educação Profissional e Tecnológica (EPT)"},

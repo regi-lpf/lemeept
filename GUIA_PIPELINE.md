@@ -1,6 +1,6 @@
 # Manutenção da pipeline do painel
 
-Este guia descreve somente o caminho entre a planilha final revisada e a página publicada. O fluxo de coleta, OCR e classificação manual está em [README_LEGADO.md](README_LEGADO.md).
+Este guia descreve o caminho legado entre a planilha final revisada e o JSON do painel v1. A coleta/revisão iniciada manualmente está em [GUIA_REVISAO.md](GUIA_REVISAO.md); o mapa atualizado dos fluxos está em [DIAGRAMAS.md](DIAGRAMAS.md). Os scripts de OCR/GPT seguem disponíveis como fallback, mas não são chamados por `sincronizar_revisao.py`.
 
 ## Visão operacional
 
@@ -20,7 +20,7 @@ Site ProfEPT/IFC -> etapa legada de coleta/OCR/GPT -> planilha revisada
                                                           |
                                             fetch(data-json-url)
                                                           v
-                                         lemeept/index-elementor-json.html
+                                         lemeept/index.html
 ```
 
 O atualizador **não coleta o site, não lê PDFs/OCR e não gera HTML**. Ele transforma uma tabela final existente em JSON. O HTML é mantido manualmente como shell estático e busca o JSON no navegador. O conjunto publicado atual foi migrado uma única vez do bloco de dados do HTML do Elementor; esse HTML não é mais fonte de atualizações.
@@ -50,7 +50,7 @@ Sem argumentos, a fonte padrão é `dados/dados_finais_painel_ept.xlsx`. Se ela 
 4. `processar_registros` preserva códigos oficiais MP1–MP6 já revisados; quando não há código reconhecido, aplica `classifier.py`. `--reclassificar` ignora essa preservação.
 5. `montar_search_text` pré-calcula o campo pesquisável normalizado.
 6. `Registro` define o contrato publicado; `GeradorPainel` serializa JSON compacto, valida IDs únicos e substitui o arquivo de destino atomicamente.
-7. `index-elementor-json.html` executa `fetch` para a URL declarada no atributo `data-json-url`. Não recebe nem armazena os dados dentro do HTML.
+7. `lemeept/index.html` executa `fetch` para a URL declarada no atributo `data-json-url`. Não recebe nem armazena os dados dentro do HTML.
 
 ## Unidade de contagem
 
@@ -70,7 +70,7 @@ Apresentações não são uma unidade de contagem e não são inferidas pelo nú
 | Regra de texto, ano, tags ou busca | funções em `lemeept/pipeline/normalizer.py` |
 | Regra oficial MP1–MP6 ou desempate | `lemeept/pipeline/classifier.py` e teste correspondente |
 | Campo publicado ou regra de produção | `Registro` em `lemeept/pipeline/data_model.py` e `tests/test_pipeline.py` |
-| Campos exibidos, filtros ou gráficos | `lemeept/index-elementor-json.html` |
+| Campos exibidos, filtros ou gráficos | `lemeept/index.html` |
 | Nova extensão/fonte de arquivo | `ler_registros` em `lemeept/atualizar_dados.py` |
 
 A cada mudança de contrato, atualize os testes e regenere o JSON. Não edite o JSON gerado à mão: corrija a planilha fonte ou a transformação responsável e rode novamente o comando.
@@ -84,10 +84,10 @@ python -m lemeept.atualizar_dados --entrada dados/dados_finais_painel_ept.xlsx -
 python -m http.server 8000 --directory lemeept
 ```
 
-Abra `http://localhost:8000/index-elementor-json.html`, confira o console e a aba Network: o shell e `painel-ept.json` devem responder com status 200. Verifique totais, busca, filtros, gráficos e links. O servidor local testa o `fetch`, mas não comprova permissões, CORS, cache ou CSP do WordPress publicado.
+Abra `http://localhost:8000/index.html`, confira o console e a aba Network: o shell e `painel-ept.json` devem responder com status 200. Verifique totais, busca, filtros, gráficos e links. O servidor local testa o `fetch`, mas não comprova permissões, CORS, cache ou CSP do WordPress publicado.
 
 ## Publicar
 
-Publique `lemeept/index-elementor-json.html` uma vez no widget HTML do Elementor. Hospede o JSON em URL HTTPS com GET anônimo; prefira o mesmo domínio do WordPress. Configure essa URL no atributo `data-json-url`. Para domínio diferente, configure CORS no servidor do JSON. Depois de atualizar dados, substitua somente o JSON e invalide o cache/CDN se necessário.
+Publique `lemeept/index.html` uma vez no widget HTML do Elementor. Hospede o JSON em URL HTTPS com GET anônimo; prefira o mesmo domínio do WordPress. Configure essa URL no atributo `data-json-url`. Para domínio diferente, configure CORS no servidor do JSON. Depois de atualizar dados, substitua somente o JSON e invalide o cache/CDN se necessário.
 
 O Elementor ou plugins de segurança podem restringir JavaScript inline, CSP e arquivos `.json` na biblioteca de mídia. Nesse caso, mantenha o shell no widget HTML e hospede o JSON em um caminho público/CDN aprovado. Faça a validação final na página publicada, fora do editor.
