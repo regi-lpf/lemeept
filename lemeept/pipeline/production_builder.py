@@ -108,13 +108,45 @@ def build_production_dataset(
         product_ids = _dc_values(dc, "dc.identifier")
         keywords = list(dict.fromkeys(_values(raw.get("palavrasChave")) + _dc_values(dc, "dc.subject")))
         collections = list(dict.fromkeys(_values(raw.get("colecoesEduCAPES")) + _values(dc_metadata.get("colecoes", []))))
-        product_type = _value(raw.get("tipoProduto"))
-        type_obj = ({
-            "codigo": normalizar_texto(product_type).replace(" ", "_"),
-            "nome": product_type,
-            "rotuloOrigem": product_type,
-            "campoOrigem": "classificacao_historica",
-        } if product_type else None)
+        dc_types = list(dict.fromkeys(_values(raw.get("dcTypeEduCAPES")) + _dc_values(dc, "dc.type")))
+        type_classification = raw.get("tipoProdutoClassificacao") or {}
+        proposed_value = type_classification.get("valor") if isinstance(type_classification, dict) else None
+        product_type = _value(proposed_value.get("nome") if isinstance(proposed_value, dict) else raw.get("tipoProduto"))
+        if product_type and isinstance(type_classification, dict) and type_classification:
+            type_obj = {
+                "codigo": _value(proposed_value.get("codigo")) if isinstance(proposed_value, dict) else normalizar_texto(product_type).replace(" ", "_"),
+                "nome": product_type,
+                "rotuloOrigem": _value(type_classification.get("rotuloOrigem")) or product_type,
+                "campoOrigem": _value(type_classification.get("campoOrigem")) or "PDF / descrição do produto educacional",
+                "metodo": _value(type_classification.get("metodo")) or "extracao_deterministica_pdf",
+                "confianca": _value(type_classification.get("confianca")) or "baixa",
+                "revisao": _value(type_classification.get("revisao")) or "necessaria",
+                "evidencias": type_classification.get("evidencias", []),
+            }
+        elif product_type:
+            type_obj = {
+                "codigo": normalizar_texto(product_type).replace(" ", "_"),
+                "nome": product_type,
+                "rotuloOrigem": product_type,
+                "campoOrigem": "classificacao_historica",
+                "metodo": "classificacao_historica",
+                "confianca": "baixa",
+                "revisao": "necessaria",
+                "evidencias": [],
+            }
+        elif isinstance(type_classification, dict) and type_classification:
+            type_obj = {
+                "codigo": None, "nome": None,
+                "rotuloOrigem": _value(type_classification.get("rotuloOrigem")) or None,
+                "campoOrigem": _value(type_classification.get("campoOrigem")) or None,
+                "metodo": _value(type_classification.get("metodo")) or "sem_evidencia_especifica",
+                "candidato": type_classification.get("candidato"),
+                "confianca": _value(type_classification.get("confianca")) or "baixa",
+                "revisao": _value(type_classification.get("revisao")) or "necessaria",
+                "evidencias": type_classification.get("evidencias", []),
+            }
+        else:
+            type_obj = None
 
         extraction = extractions.get(defense_id, {})
         summary = _value(extraction.get("resumo")) or None
@@ -140,13 +172,23 @@ def build_production_dataset(
                     "identificadores": [{"esquema": "dc.identifier", "valor": value, "url": value if value.startswith(("http://", "https://")) else None} for value in product_ids],
                     "dataPublicacao": (_dc_values(dc, "dc.date.issued") or [None])[0],
                     "colecaoEduCAPES": collections,
+                    "dcTypeEduCAPES": dc_types,
                     "tipoProduto": type_obj,
                     "palavrasChave": keywords,
                 },
-                "buscaTexto": _search_text(raw.get("produto"), product_type, keywords, collections, line_label, macro_name),
+                "buscaTexto": _search_text(raw.get("produto"), product_type, dc_types, keywords, collections, line_label, macro_name),
                 "estado": "parcial" if dc_metadata else "pendente",
                 "fontes": [{"url": _value(raw.get("linkProduto")), "tipo": "registro_educapes", "campos": sorted(dc.keys())}],
-                "proveniencia": {"titulo": {"metodo": "metadado_explicito", "fonte": "painel-ept.json"}, "metadadosEduCAPES": {"metodo": "metadado_explicito" if dc_metadata else "nao_consultado"}},
+                "proveniencia": {
+                    "titulo": {"metodo": "metadado_explicito", "fonte": "painel-ept.json"},
+                    "metadadosEduCAPES": {"metodo": "metadado_explicito" if dc_metadata else "nao_consultado", "campos": sorted(dc.keys())},
+                    "tipoProduto": {
+                        "metodo": type_obj.get("metodo") if type_obj else "nao_tentado",
+                        "confianca": type_obj.get("confianca") if type_obj else "baixa",
+                        "revisao": type_obj.get("revisao") if type_obj else "necessaria",
+                        "evidencias": type_obj.get("evidencias", []) if type_obj else [],
+                    },
+                },
             },
         ]
         for item in specs:
