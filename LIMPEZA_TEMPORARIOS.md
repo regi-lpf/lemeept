@@ -37,14 +37,6 @@ Inventário observado neste workspace em 2026-10-30. **Nenhum arquivo é removid
 | `*.tmp`, `*.tmp.xlsx`, `*.part` | Remover somente quando não houver execução ativa e o arquivo final correspondente estiver íntegro. |
 | `painel/`, `archive/`, `backups/`, `logs/`, `teste_json/` | Se aparecerem, inspecionar conteúdo antes de remover; backups nunca são descartados sem conferir retenção. |
 
-## Limpeza feita nesta atualização
-
-- Documentação que ainda apresentava o fluxo de 11 itens como padrão foi corrigida para apontar à amostra corrente de 6.
-- `DIAGRAMAS.md` foi substituído por diagramas alinhados aos scripts e arquivos realmente existentes; foram removidos desenhos antigos que apresentavam etapas legadas como atuais ou contradiziam regras já decididas (incluindo a consolidação MP3).
-- Foi acrescentado `extrair_contexto_base_epistemologica.py` e gerado um pacote local com texto teórico e referências da amostra atual; não há chamada GPT/OCR.
-- Foi gerada análise assistida v4 dos cinco casos de base epistemológica e a primeira classificação comparativa dos cinco produtos. Ambos os JSONs estão ignorados pelo Git e foram inventariados acima.
-- Não houve remoção de artefatos de dados: a amostra de 11 itens não foi apagada porque cobre IDs diferentes; as planilhas/JSONs ainda guardam comparação e evidência histórica. Também foram preservados PDFs, referências, caches e dados do fluxo OCR/GPT.
-
 ## Regras para futuras limpezas
 
 1. Consulte esta lista e inspecione o conteúdo real antes de apagar.
