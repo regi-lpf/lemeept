@@ -1,36 +1,30 @@
-# Orientações para o Codex — Projeto LEME EPT
+# Project Overview & Universal Rules — LEME EPT
 
-## Ordem de leitura
+## 1. High-Level Architecture & Goal
+- **System**: LEME is a WordPress (Elementor) portal preserving Professional & Technological Education (EPT) history and memory.
+- **This Repository**: Contains two coupled fronts:
+  1. **The Bibliometric Dashboard (`lemeept/index.html`)**: An embedded Elementor HTML/CSS/JS component (handling `fetch`, search filters, and metrics rendering) backed by static JSON databases (`painel-ept.json` legacy and `painel-ept-v2.json`).
+  2. **The Extraction Pipeline (`lemeept/pipeline/` & root scripts)**: Python scripts that extract metadata from ProfEPT dissertations and eduCAPES.
+- **Core Objective**: Transition from the legacy OCR + Generative AI (GPT) extraction workflow to a **deterministic, modular Python extraction pipeline** (native PDF text extraction + eduCAPES Handle API + heuristic classifiers + human review spreadsheets), reducing generative AI dependency to a strict fallback.
+- **Modularity Principle**: Keep logic split into small, single-responsibility modules so local LLM agents can load and edit specific components within a strict 12k token context budget.
 
-Ao iniciar uma tarefa neste repositório, leia nesta ordem:
+## 2. Domain & Pipeline Invariants
+- **Discovery Source**: ProfEPT site API is the primary source for defenses (`defesas`), triggered manually.
+- **New Review Flow**: Extracts native PDF text, queries eduCAPES Handle, and outputs JSON/spreadsheets. It MUST NOT run GPT/OCR automatically or auto-merge spreadsheet reviews into the final JSON. Use OCR strictly when native PDF text is missing. Keep the legacy OCR/GPT path available during transition.
+- **Classification Contract**: Every classification requires `valor`, `confianca`, localizable `evidencia`, and `metodo`. Auto-accept ONLY `alta` (high) confidence; route medium/low or missing evidence to human review.
+- **Epistemological Base (`base_epistemologica`)**: Requires conceptual evidence in the body text; mere presence in the bibliography is NOT proof.
+- **Abstract & Keywords (`resumo`, `palavras-chave`)**: Flag extraction gaps (`falha/lacuna de extracao`) for PDF inspection rather than assuming absence.
+- **Product Type (`tipo_produto`)**: Follow `GUIA_CLASSIFICACAO_PRODUTOS.md`. Preserve original labels/sources and log conflicts without destructive normalization.
 
-1. `CONTRATO_DADOS.md` — regras e proveniência dos dados.
-2. `DIAGRAMAS.md` — fluxos implementados e planejados.
-3. `CONTINUIDADE_TRABALHO.md` — estado atual, decisões recentes e próxima etapa.
-4. `LIMPEZA_TEMPORARIOS.md` — inventário e política de retenção.
-5. O guia operacional específico da tarefa (`GUIA_REVISAO.md`, `GUIA_CLASSIFICACAO_PRODUTOS.md` ou `GUIA_PIPELINE.md`).
+## 3. Strict File & Data Safety Constraints
+- **JSON Integrity**: Maintain the 220 production records linked to 110 defenses in `painel-ept-v2.json`. NEVER modify legacy `painel-ept.json` as a side effect. Never load full `.json`, `.csv`, or `.xlsx` data files into the LLM chat context.
+- **Elementor Block (`lemeept/index.html`)**: Apply minimal surgical diffs. Preserve `<p>`, `<br>`, DOM IDs, CSS selectors, and fetch structure.
+- **Artifact Protection**: Never auto-delete PDFs, spreadsheets, or human-reviewed files (`LIMPEZA_TEMPORARIOS.md`). Never `git push` without explicit confirmation.
 
-Se um documento divergir do código ou de uma decisão explícita mais recente do usuário, confira o estado real e atualize a documentação; não perpetue a divergência.
-
-## Regras de trabalho
-
-- A API do site ProfEPT é a fonte de descoberta de defesas. A coleta é iniciada manualmente; não existe monitoramento automático contínuo.
-- O fluxo novo de revisão extrai texto nativo do PDF, consulta o Handle eduCAPES quando possível e gera JSON/planilha. Ele não executa GPT/OCR nem integra decisões da planilha automaticamente ao banco final.
-- Use OCR somente como fallback quando o texto nativo não cobrir o campo. O fluxo legado OCR/GPT deve continuar disponível durante a transição.
-- Classificações precisam de valor, confiança, evidência localizável e método. Em campos interpretativos, aceite automaticamente apenas candidato de confiança alta; encaminhe média/baixa ou ausência de evidência para revisão.
-- Base epistemológica exige evidência conceitual no texto. Use referências bibliográficas para corroborar autores/obras citados no referencial teórico; a mera presença de uma obra na bibliografia não comprova a base.
-- Resumo e palavras-chave são esperados conforme a estrutura acadêmica. Se a extração não os localizar, sinalize falha/lacuna de extração e encaminhe ao PDF; não conclua que estão ausentes da dissertação sem inspeção.
-- eduCAPES `dc.type` e coleção são evidência complementar. Não substituem automaticamente o formato específico declarado na dissertação/ficha do produto.
-- Para tipo do produto, consulte `GUIA_CLASSIFICACAO_PRODUTOS.md`; preserve fonte e rótulo original e registre conflitos sem forçar normalização.
-- Mantenha os 220 registros de produção independentes vinculados a 110 defesas no JSON v2; não altere o JSON legado consumido pelo painel como efeito colateral.
-- `lemeept/index.html` é um bloco para Elementor. Faça diffs mínimos e preserve sua estrutura, especialmente `<p>`, `<br>`, IDs, seletores e carregamento do JSON.
-- Consulte `LIMPEZA_TEMPORARIOS.md` antes de remover qualquer arquivo. Não apague PDFs, referências, planilhas de revisão ou artefatos com evidência/revisão humana automaticamente.
-- Não publique/push sem confirmar que a mudança concreta está revisada e que quaisquer dados pessoais ou protegidos já estão cobertos pela autorização do usuário.
-
-## Fontes da verdade
-
-- Contrato e regras: `CONTRATO_DADOS.md`.
-- Modelo e fluxo: `DIAGRAMAS.md`.
-- Procedimento e estado do trabalho: `CONTINUIDADE_TRABALHO.md`.
-- Inventário/limpeza: `LIMPEZA_TEMPORARIOS.md`.
-- Execução da planilha visual: `GUIA_REVISAO.md`.
+## 4. On-Demand Documentation Map (Read Only When Needed)
+- Data contract & provenance: `CONTRATO_DADOS.md`
+- Current state & next steps: `CONTINUIDADE_TRABALHO.md`
+- Architecture flows: `DIAGRAMAS.md`
+- Product classification: `GUIA_CLASSIFICACAO_PRODUTOS.md`
+- Pipeline execution: `GUIA_PIPELINE.md`
+- Spreadsheet review: `GUIA_REVISAO.md`
