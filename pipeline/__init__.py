@@ -1,0 +1,1 @@
+from .product_classifier import classify_product_type
