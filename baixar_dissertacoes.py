@@ -13,6 +13,7 @@ from urllib.parse import urlsplit
 
 import requests
 from requests.exceptions import SSLError
+from util import sha256_arquivo
 
 
 ARQUIVO_PAINEL = Path("lemeept/painel-ept.json")
@@ -30,14 +31,6 @@ def requisicao_pdf(url: str):
             requests.packages.urllib3.exceptions.InsecureRequestWarning
         )
         return requests.get(url, timeout=(20, 180), stream=True, verify=False)
-
-
-def sha256_arquivo(caminho: Path) -> str:
-    digest = hashlib.sha256()
-    with caminho.open("rb") as arquivo:
-        for bloco in iter(lambda: arquivo.read(1024 * 1024), b""):
-            digest.update(bloco)
-    return digest.hexdigest()
 
 
 def baixar(registro: dict) -> dict:
