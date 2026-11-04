@@ -1,55 +1,44 @@
-# Painel ProfEPT / LEME
+# Documentation Overview
 
-Este README documenta a atualização do painel estático. Para o fluxo de coleta e revisão em desenvolvimento, veja [GUIA_REVISAO.md](GUIA_REVISAO.md); para o contrato de dados e arquitetura, veja [CONTRATO_DADOS.md](CONTRATO_DADOS.md), [DIAGRAMAS.md](DIAGRAMAS.md) e [AGENTS.md](AGENTS.md). [GUIA_PIPELINE.md](GUIA_PIPELINE.md) descreve a transformação legada da planilha revisada para o painel.
+This directory contains all the documentation for the LEME EPT project. The documentation is organized into several files, each covering a specific aspect of the project.
 
-Para consultar a API ProfEPT sob demanda e abrir a fila visual de lacunas/casos novos, veja [GUIA_REVISAO.md](GUIA_REVISAO.md) (`sincronizar_revisao.py`).
+## Files
 
-## Como os arquivos se relacionam
+- `CONTRATO_DADOS.md`: Describes the rules and provenance of the data.
+- `DIAGRAMAS.md`: Describes the implemented and planned workflows.
+- `CONTINUIDADE_TRABALHO.md`: Describes the current state of the work, recent decisions, and the next steps.
+- `LIMPEZA_TEMPORARIOS.md`: Describes the inventory and retention policy.
+- `GUIA_REVISAO.md`: Describes the manual review process.
+- `GUIA_CLASSIFICACAO_PRODUTOS.md`: Describes the classification process for product types.
+- `GUIA_PIPELINE.md`: Describes the pipeline transformation from the revised spreadsheet to the panel.
 
-```text
-dados/dados_finais_painel_ept.xlsx
-				-> lemeept/atualizar_dados.py
-				-> lemeept/pipeline/{normalizer,classifier,builder}.py
-				-> lemeept/painel-ept.json
-				-> lemeept/index.html faz fetch do JSON
-```
+## Contributing
 
-O XLSX é a fonte revisada. O atualizador gera somente JSON; o HTML é shell estático e não é regenerado. Um registro do JSON representa um trabalho de um pesquisador. Os agregados contam 1 pela dissertação e mais 1 pelo produto quando houver título ou link. Apresentações não são incluídas.
+When making changes to the documentation, please follow these guidelines:
 
-O JSON atual foi importado uma vez dos 110 registros que estavam embutidos no HTML do Elementor. Essa migração já terminou: as próximas versões devem vir da planilha final revisada, não do HTML nem do JSON gerado.
+1. **Order of Reading**: Read the documents in the following order:
+   1. `CONTRATO_DADOS.md`
+   2. `DIAGRAMAS.md`
+   3. `CONTINUIDADE_TRABALHO.md`
+   4. `LIMPEZA_TEMPORARIOS.md`
+   5. The specific guide for the task you are working on (`GUIA_REVISAO.md`, `GUIA_CLASSIFICACAO_PRODUTOS.md`, or `GUIA_PIPELINE.md`).
 
-## Atualizar dados
+2. **Rules of Work**: Ensure that the API of the ProfEPT website is the source of discovery for defenses. The collection is initiated manually; there is no continuous automatic monitoring.
+3. **OCR and GPT**: Use OCR only as a fallback when the native text does not cover the field. The legacy OCR/GPT flow should continue during the transition.
+4. **Classification**: Classifications must have a value, confidence, evidence locatable, and method. For interpretative fields, accept only the high-confidence candidate; forward medium/below or lack of evidence for human review.
+5. **Epistemological Basis**: Requires concept-based evidence in the text. Use bibliographic references to corroborate cited authors in the theoretical framework; the mere presence of a work in the bibliography does not prove the basis.
+6. **Resumos and Keywords**: Expected according to the academic structure. If the extraction does not find them, flag failure/lack of extraction and forward to the PDF; do not conclude that they are absent from the dissertation without inspection.
+7. **eduCAPES `dc.type` and Collection**: Are supplementary evidence. Do not automatically substitute the specific format declared in the dissertation/ficha do produto.
+8. **Product Type**: Consult `GUIA_CLASSIFICACAO_PRODUTOS.md`; preserve the source and original label and register conflicts without forcing normalization.
+9. **JSON and HTML**: Maintain the 220 independent records of production linked to 110 defenses in the JSON v2; do not alter the JSON consumed by the panel as a side effect.
+10. **Elementor Shell**: Ensure minimal diffs and preserve its structure, especially `<p>`, `<br>`, IDs, selectors, and JSON loading.
+11. **Inventory and Cleanup**: Consult `LIMPEZA_TEMPORARIOS.md` before removing any file. Do not delete PDFs, review spreadsheets, or historical artifacts with evidence/review human automatically.
+12. **Publishing**: Publish `lemeept/index.html` in the Elementor widget. Host `lemeept/painel-ept.json` in an HTTPS URL that accepts anonymous GET, preferably on the same domain, and configure this URL in the `data-json-url` attribute of the shell. For another domain, the JSON server must allow CORS. In subsequent updates, replace only the JSON and invalidate the cache/CDN if necessary.
 
-Depois que a planilha final foi revisada:
+## Sources of Truth
 
-```bash
-python -m lemeept.atualizar_dados \
-	--entrada dados/dados_finais_painel_ept.xlsx \
-	--saida lemeept/painel-ept.json \
-	--estrito
-```
-
-`--estrito` interrompe em linhas malformadas. Sem `--entrada`, o script usa `dados/dados_finais_painel_ept.xlsx`; se a planilha não existir, a execução falha em vez de publicar uma fonte antiga por engano.
-
-## Testar localmente
-
-Sirva shell e dados pela mesma origem para simular o `fetch`:
-
-```bash
-python -m http.server 8000 --directory lemeept
-```
-
-Abra `http://localhost:8000/index.html`. Não use `file://`, porque o navegador bloqueia o carregamento local do JSON.
-
-## Publicar no Elementor
-
-Publique `lemeept/index.html` no widget HTML. Hospede `lemeept/painel-ept.json` em uma URL HTTPS que aceite GET anônimo, de preferência no mesmo domínio, e configure essa URL no atributo `data-json-url` do shell. Para outro domínio, o servidor do JSON precisa permitir CORS. Em atualizações seguintes, troque somente o JSON e invalide o cache/CDN se necessário.
-
-## Verificações
-
-```bash
-python -m unittest discover -s tests -p test_pipeline.py -v
-python -m py_compile lemeept/atualizar_dados.py lemeept/pipeline/*.py
-```
-
-O fluxo OCR/GPT legado permanece disponível nos scripts numerados da raiz para fallback; não é executado pelo sincronizador novo. Veja [DIAGRAMAS.md](DIAGRAMAS.md) para a separação entre os dois fluxos.
+- **Contract and Rules**: `CONTRATO_DADOS.md`.
+- **Model and Workflow**: `DIAGRAMAS.md`.
+- **Procedure and Work Status**: `CONTINUIDADE_TRABALHO.md`.
+- **Inventory/Cleanup**: `LIMPEZA_TEMPORARIOS.md`.
+- **Spreadsheet Review Execution**: `GUIA_REVISAO.md`.
