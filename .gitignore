@@ -27,3 +27,4 @@ teste_json/
 /dados/referencia/*
 !/dados/referencia/*.json
 
+.aider*
