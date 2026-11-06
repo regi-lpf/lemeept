@@ -33,17 +33,18 @@
       "produto": {
         "id": "EPT-0001-PRO",
         "titulo": "Educação Financeira na EPT: uma Possibilidade Crítica e Emancipatória",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "carta_mapa",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/1171935",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 0.85
       },
       "coorientador": null,
-      "ano": 2026
+      "ano": 2026,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0002",
@@ -76,7 +77,7 @@
       "produto": {
         "id": "EPT-0002-PRO",
         "titulo": "Aprendizagem Crítica na EPT: a Aplicação dos Três Momentos Pedagógicos em um Curso Subsequente",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "curso_oficina",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/1171701",
         "nivel_aplicacao": "Curso Técnico",
@@ -84,10 +85,11 @@
           "estudantes",
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2026
+      "ano": 2026,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0003",
@@ -120,7 +122,7 @@
       "produto": {
         "id": "EPT-0003-PRO",
         "titulo": "Curricularização da Pesquisa: a Iniciação Científica como Componente Curricular no Contexto da Educação Profissional e Tecnológica",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/1133578",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -128,10 +130,11 @@
           "docentes",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 0.85
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0004",
@@ -164,7 +167,7 @@
       "produto": {
         "id": "EPT-0004-PRO",
         "titulo": "Do Quadro ao Clique: uma Oralitura Reflexiva em Multimídias Acessíveis",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "produto_comunicacao",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/1133518",
         "nivel_aplicacao": "EJA-EPT / PROEJA",
@@ -172,10 +175,11 @@
           "estudantes",
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0005",
@@ -208,15 +212,16 @@
       "produto": {
         "id": "EPT-0005-PRO",
         "titulo": "Articulando Ensino, Pesquisa e Extensão Através de Práticas Integradoras na Feira do Conhecimento.",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "eventos_organizados",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/1133227",
         "nivel_aplicacao": "Comunidade externa",
         "publico_alvo": null,
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0006",
@@ -249,17 +254,18 @@
       "produto": {
         "id": "EPT-0006-PRO",
         "titulo": "Entre e Sinta-Se em Casa: o Acolhimento aos Estudantes Através de Vídeos Curtos para as Redes Sociais.",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "produto_comunicacao",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/1133240",
         "nivel_aplicacao": "Curso Técnico",
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0007",
@@ -303,7 +309,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0008",
@@ -346,7 +353,8 @@
         "score_classificacao": 0.0
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0009",
@@ -379,7 +387,7 @@
       "produto": {
         "id": "EPT-0009-PRO",
         "titulo": "Falas, Histórias e Memórias",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "acervo",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/1132804",
         "nivel_aplicacao": "Comunidade externa",
@@ -388,10 +396,11 @@
           "servidores_profissionais",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0010",
@@ -424,7 +433,7 @@
       "produto": {
         "id": "EPT-0010-PRO",
         "titulo": "Implementação da Comissão Interna de Saúde do Servidor Público (CISSP) no Instituto Federal Catarinense (IFC)",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "manual_protocolo",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/1132271",
         "nivel_aplicacao": "Institucional / Educação Profissional e Tecnológica",
@@ -432,10 +441,11 @@
           "servidores_profissionais",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0011",
@@ -468,17 +478,18 @@
       "produto": {
         "id": "EPT-0011-PRO",
         "titulo": "ChatGPT Pra quê?",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "curso_oficina",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/1131798",
         "nivel_aplicacao": "Curso Técnico",
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 0.85
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0012",
@@ -522,7 +533,8 @@
         "score_classificacao": 0.0
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0013",
@@ -555,17 +567,18 @@
       "produto": {
         "id": "EPT-0013-PRO",
         "titulo": "Biblioteca, Lugar de Ser e Estar: Experienciar é Dar Sentido ao que Se Viveu",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "produto_comunicacao",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/1131723",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 0.85
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0014",
@@ -598,7 +611,7 @@
       "produto": {
         "id": "EPT-0014-PRO",
         "titulo": "Contribuições para o Debate sobre Agroecologia no Ensino Médio Integrado",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/1131104",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -606,10 +619,11 @@
           "estudantes",
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 0.85
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0015",
@@ -642,7 +656,7 @@
       "produto": {
         "id": "EPT-0015-PRO",
         "titulo": "Lendo Cinema – Letramento Audiovisual para Docentes.",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "produto_comunicacao",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/1001598",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -650,10 +664,11 @@
           "estudantes",
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0016",
@@ -696,7 +711,8 @@
         "score_classificacao": 0.0
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0017",
@@ -729,17 +745,18 @@
       "produto": {
         "id": "EPT-0017-PRO",
         "titulo": "Prevenção e Enfrentamento às Violências: um Estudo a Partir de uma Ação Educativa com Estudantes do Ensino Médio Integrado do Campus Jaraguá do Sul – Centro",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "curso_oficina",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/1081115",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0018",
@@ -782,7 +799,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0019",
@@ -815,17 +833,18 @@
       "produto": {
         "id": "EPT-0019-PRO",
         "titulo": "Formação Continuada Docente para a Educação Profissional e Tecnológica",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "curso_oficina",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/1001164",
         "nivel_aplicacao": "Formação de professores",
         "publico_alvo": [
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0020",
@@ -858,17 +877,18 @@
       "produto": {
         "id": "EPT-0020-PRO",
         "titulo": "Jornadas Integradas: Histórias do Ensino Médio no Instituto Federal",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "produto_comunicacao",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/1000164",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 0.85
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0021",
@@ -901,17 +921,18 @@
       "produto": {
         "id": "EPT-0021-PRO",
         "titulo": "Descomplicando o Ingresso nos Cursos Técnicos Integrados do IFSC Itajaí",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "acervo",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/984515",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 0.85
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0022",
@@ -952,7 +973,8 @@
         "score_classificacao": 0.0
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0023",
@@ -985,17 +1007,18 @@
       "produto": {
         "id": "EPT-0023-PRO",
         "titulo": "Literatura, Educação e Decolonialidade",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/973177",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 0.85
       },
       "coorientador": null,
-      "ano": 2025
+      "ano": 2025,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0024",
@@ -1038,7 +1061,8 @@
         "score_classificacao": 0.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0025",
@@ -1082,7 +1106,8 @@
         "score_classificacao": 0.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0026",
@@ -1115,7 +1140,7 @@
       "produto": {
         "id": "EPT-0026-PRO",
         "titulo": "Minuta dos Conselhos de Classe dos Cursos Técnicos Integrados ao Ensino Médio do IFSC – Campus Jaraguá do Sul – Centro",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "manual_protocolo",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/921221",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -1123,10 +1148,11 @@
           "docentes",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0027",
@@ -1169,7 +1195,8 @@
         "score_classificacao": 0.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0028",
@@ -1213,7 +1240,8 @@
         "score_classificacao": 0.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0029",
@@ -1258,7 +1286,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0030",
@@ -1302,7 +1331,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0031",
@@ -1346,7 +1376,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0032",
@@ -1389,7 +1420,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0033",
@@ -1432,7 +1464,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0034",
@@ -1465,17 +1498,18 @@
       "produto": {
         "id": "EPT-0034-PRO",
         "titulo": "Quiz – Integração Biblioteca – Aluno",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "software_aplicativo",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/870167",
         "nivel_aplicacao": "Curso Técnico Subsequente",
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0035",
@@ -1518,7 +1552,8 @@
         "score_classificacao": 0.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0036",
@@ -1561,7 +1596,8 @@
         "score_classificacao": 0.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0037",
@@ -1594,15 +1630,16 @@
       "produto": {
         "id": "EPT-0037-PRO",
         "titulo": "Retratos e Relatos: Memorial da Implantação do CEDUP Timbó",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "acervo",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/869426",
         "nivel_aplicacao": "Curso Técnico",
         "publico_alvo": null,
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0038",
@@ -1635,7 +1672,7 @@
       "produto": {
         "id": "EPT-0038-PRO",
         "titulo": "Prontuário Unificado e Cronograma de Ações de Educação em Saúde",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "manual_protocolo",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/778287",
         "nivel_aplicacao": "Educação Profissional e Tecnológica",
@@ -1643,10 +1680,11 @@
           "servidores_profissionais",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0039",
@@ -1690,7 +1728,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0040",
@@ -1723,17 +1762,18 @@
       "produto": {
         "id": "EPT-0040-PRO",
         "titulo": "Um Pouco da História do Grêmio Estudantil do Instituto Federal Catarinense – Campus Araquari",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "acervo",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/778430",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0041",
@@ -1766,17 +1806,18 @@
       "produto": {
         "id": "EPT-0041-PRO",
         "titulo": "Diálogos entre o Texto Científico e a Cultura Popular: Reflexões sobre o Trabalho como Princípio Educativo e a Formação Humana Integral na EPT",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/869999",
         "nivel_aplicacao": "Formação de professores",
         "publico_alvo": [
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0042",
@@ -1820,7 +1861,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0043",
@@ -1853,7 +1895,7 @@
       "produto": {
         "id": "EPT-0043-PRO",
         "titulo": "Orientações Gerais para Estudantes Surdos e Servidores do Ensino Técnico Integrado ao Médio do IFC",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "manual_protocolo",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/747436",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -1861,10 +1903,11 @@
           "estudantes",
           "servidores_profissionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0044",
@@ -1897,17 +1940,18 @@
       "produto": {
         "id": "EPT-0044-PRO",
         "titulo": "Capacitação de Servidores das Comissões do Programa de Auxílios Estudantis do Instituto Federal Catarinense",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "curso_oficina",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/868191",
         "nivel_aplicacao": "Institucional / Educação Profissional e Tecnológica",
         "publico_alvo": [
           "servidores_profissionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0045",
@@ -1951,7 +1995,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0046",
@@ -1994,7 +2039,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0047",
@@ -2038,7 +2084,8 @@
         "score_classificacao": 0.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0048",
@@ -2071,7 +2118,7 @@
       "produto": {
         "id": "EPT-0048-PRO",
         "titulo": "Repositório das Produções Científicas dos Docentes do IFC",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "acervo",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/778420",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -2079,10 +2126,11 @@
           "estudantes",
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0049",
@@ -2115,17 +2163,18 @@
       "produto": {
         "id": "EPT-0049-PRO",
         "titulo": "# Vou de Cotas",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "acervo",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/748846",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 0.85
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0050",
@@ -2169,7 +2218,8 @@
         "score_classificacao": 0.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0051",
@@ -2212,7 +2262,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0052",
@@ -2245,7 +2296,7 @@
       "produto": {
         "id": "EPT-0052-PRO",
         "titulo": "A Musicalidade no Teatro: a Agógica e a Dinâmica Musical no Processo de Formação do Ator",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/748078",
         "nivel_aplicacao": "Curso Técnico",
@@ -2253,10 +2304,11 @@
           "estudantes",
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 0.85
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0053",
@@ -2289,17 +2341,18 @@
       "produto": {
         "id": "EPT-0053-PRO",
         "titulo": "Nutrindo Ideias: Educação Alimentar e Nutricional no Ensino Médio Integrado",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "curso_oficina",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/748140",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 0.85
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0054",
@@ -2332,7 +2385,7 @@
       "produto": {
         "id": "EPT-0054-PRO",
         "titulo": "Minuta de Resolução de Afastamento Integral e Minuta de Edital para Afastamento Integral",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "manual_protocolo",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/748386",
         "nivel_aplicacao": "Institucional / Educação Profissional e Tecnológica",
@@ -2340,10 +2393,11 @@
           "servidores_profissionais",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0055",
@@ -2376,7 +2430,7 @@
       "produto": {
         "id": "EPT-0055-PRO",
         "titulo": "Juventude e Trabalho: Limites e Possibilidades do Projeto de Vida no Ensino Médio",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "carta_mapa",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/744439",
         "nivel_aplicacao": "Ensino Médio",
@@ -2384,10 +2438,11 @@
           "docentes",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 0.85
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0056",
@@ -2420,17 +2475,18 @@
       "produto": {
         "id": "EPT-0056-PRO",
         "titulo": "Desenho Universal para a Aprendizagem: Ensino para a Diversidade",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/744558",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 0.85
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0057",
@@ -2474,7 +2530,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0058",
@@ -2518,7 +2575,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0059",
@@ -2551,7 +2609,7 @@
       "produto": {
         "id": "EPT-0059-PRO",
         "titulo": "Curricularização da Pesquisa e Extensão em Cursos Técnicos Integrados ao Ensino Médio: Propostas de Práticas Curricularizadas para a Formação Integral do Estudante",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/748699",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -2559,10 +2617,11 @@
           "docentes",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2024
+      "ano": 2024,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0060",
@@ -2595,7 +2654,7 @@
       "produto": {
         "id": "EPT-0060-PRO",
         "titulo": "Curso – Conselho de Classe no Ensino Médio Integrado: Características e Possibilidades",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "curso_oficina",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/742895",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -2603,10 +2662,11 @@
           "docentes",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2023
+      "ano": 2023,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0061",
@@ -2639,7 +2699,7 @@
       "produto": {
         "id": "EPT-0061-PRO",
         "titulo": "Material Didático Instrucional – Lista Negra das Pessoas, das Ideias, das Coisas",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/742618",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -2647,10 +2707,11 @@
           "estudantes",
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2023
+      "ano": 2023,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0062",
@@ -2683,7 +2744,7 @@
       "produto": {
         "id": "EPT-0062-PRO",
         "titulo": "Infográfico – Ensino Médio Integrado à Educação Profissional na Rede Estadual de Santa Catarina: Reconstruindo Olhares a Partir da Concepção de Currículo Integrado",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "carta_mapa",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/742317",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -2691,10 +2752,11 @@
           "docentes",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2023
+      "ano": 2023,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0063",
@@ -2727,17 +2789,18 @@
       "produto": {
         "id": "EPT-0063-PRO",
         "titulo": "Relatório Técnico – o Trabalho como Princípio Educativo no Programa Jovem Aprendiz",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "manual_protocolo",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/740828",
         "nivel_aplicacao": "Aprendizagem Profissional",
         "publico_alvo": [
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2023
+      "ano": 2023,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0064",
@@ -2770,15 +2833,16 @@
       "produto": {
         "id": "EPT-0064-PRO",
         "titulo": "Animação – Mas Afinal, Oque é um Instituto Federal?",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "produto_comunicacao",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/742091",
         "nivel_aplicacao": "Institucional / Educação Profissional e Tecnológica",
         "publico_alvo": null,
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2023
+      "ano": 2023,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0065",
@@ -2811,17 +2875,18 @@
       "produto": {
         "id": "EPT-0065-PRO",
         "titulo": "Infográfico – Direitos Autorais para a Utilização de Composições Musicais nos Meios Digitais",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "carta_mapa",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/740516",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2023
+      "ano": 2023,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0066",
@@ -2854,15 +2919,16 @@
       "produto": {
         "id": "EPT-0066-PRO",
         "titulo": "Texto – Tour Pela História do IFC Ibirama",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "acervo",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/738915",
         "nivel_aplicacao": "Institucional / Educação Profissional e Tecnológica",
         "publico_alvo": null,
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2023
+      "ano": 2023,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0067",
@@ -2895,17 +2961,18 @@
       "produto": {
         "id": "EPT-0067-PRO",
         "titulo": "Curso – Curso Introdução à Produção Audiovisual",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "produto_comunicacao",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/737726",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2023
+      "ano": 2023,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0068",
@@ -2938,17 +3005,18 @@
       "produto": {
         "id": "EPT-0068-PRO",
         "titulo": "Livro Digital – Avaliação da Aprendizagem como Elemento Constituinte do Processo Educativo",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/738581",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2023
+      "ano": 2023,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0069",
@@ -2981,7 +3049,7 @@
       "produto": {
         "id": "EPT-0069-PRO",
         "titulo": "Texto – Práticas para Estilo de Vida Saudável",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/737714",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -2989,10 +3057,11 @@
           "estudantes",
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2023
+      "ano": 2023,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0070",
@@ -3036,7 +3105,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2023
+      "ano": 2023,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0071",
@@ -3079,7 +3149,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2023
+      "ano": 2023,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0072",
@@ -3124,7 +3195,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2022
+      "ano": 2022,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0073",
@@ -3167,7 +3239,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2022
+      "ano": 2022,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0074",
@@ -3200,7 +3273,7 @@
       "produto": {
         "id": "EPT-0074-PRO",
         "titulo": "Aprestação – Ensino Médio Integrado: Abordagem sobre os Elementos de Permanência dos Estudantes dos Cursos do IFC – Campus Blumenau",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/717938",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -3208,10 +3281,11 @@
           "estudantes",
           "servidores_profissionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2022
+      "ano": 2022,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0075",
@@ -3255,7 +3329,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2022
+      "ano": 2022,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0076",
@@ -3288,7 +3363,7 @@
       "produto": {
         "id": "EPT-0076-PRO",
         "titulo": "Livro Digital – na Trilha da Formação Humana Integral: um Conselho no Meio do Caminho.",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "carta_mapa",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/717900",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -3296,10 +3371,11 @@
           "docentes",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2022
+      "ano": 2022,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0077",
@@ -3343,7 +3419,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2022
+      "ano": 2022,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0078",
@@ -3376,7 +3453,7 @@
       "produto": {
         "id": "EPT-0078-PRO",
         "titulo": "Texto – Tutorial de Utilização de Informações de e sobre Egressos para o Acompanhamento, Avaliação e Reformulação de Cursos de Ensino Médio Integrado",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/600482",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -3384,10 +3461,11 @@
           "docentes",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2021
+      "ano": 2021,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0079",
@@ -3420,7 +3498,7 @@
       "produto": {
         "id": "EPT-0079-PRO",
         "titulo": "Livro Digital – Concepções Pedagógicas e Arquitetura Escolar: Diretrizes à Infraestrutura e aos Espaços dos Campi da Rede Federal de Educação Profissional, Científica e Tecnológica.",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "manual_protocolo",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/646593",
         "nivel_aplicacao": "Institucional / Educação Profissional e Tecnológica",
@@ -3428,10 +3506,11 @@
           "servidores_profissionais",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2021
+      "ano": 2021,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0080",
@@ -3476,7 +3555,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2021
+      "ano": 2021,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0081",
@@ -3509,7 +3589,7 @@
       "produto": {
         "id": "EPT-0081-PRO",
         "titulo": "Portal – as Origens do CEDUP Hermann Hering",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "software_aplicativo",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/644380",
         "nivel_aplicacao": "Ensino Médio",
@@ -3517,10 +3597,11 @@
           "estudantes",
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2021
+      "ano": 2021,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0082",
@@ -3563,7 +3644,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2021
+      "ano": 2021,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0083",
@@ -3607,7 +3689,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2021
+      "ano": 2021,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0084",
@@ -3640,17 +3723,18 @@
       "produto": {
         "id": "EPT-0084-PRO",
         "titulo": "Caderno Didático-Pedagógico – Compreensão Textual no Ensino Médio Integrado: Sugestões para o Desenvolvimento de Atividades",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/598410",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0085",
@@ -3683,17 +3767,18 @@
       "produto": {
         "id": "EPT-0085-PRO",
         "titulo": "Texto – (Re)construindo Olhares: Caminhos Metodológicos para Conhecer os Jovens do Ensino Médio Integrado",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/569564",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0086",
@@ -3726,7 +3811,7 @@
       "produto": {
         "id": "EPT-0086-PRO",
         "titulo": "Livro Digital – Altas Habilidades e Ensino Médio Integrado: Reflexões e Proposições",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "https://educapes.capes.gov.br/handle/capes/573116",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -3736,10 +3821,11 @@
           "servidores_profissionais",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0087",
@@ -3772,17 +3858,18 @@
       "produto": {
         "id": "EPT-0087-PRO",
         "titulo": "Livro Digital – uma História por Fazer-Se: o Sentido da Formação Profissional nos IFS",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/573120",
         "nivel_aplicacao": "Educação Profissional e Tecnológica",
         "publico_alvo": [
           "servidores_profissionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0088",
@@ -3815,17 +3902,18 @@
       "produto": {
         "id": "EPT-0088-PRO",
         "titulo": "Curso – Portfólio Formativo Inclusão de Estudantes Cegos no Ensino Médio Integrado: Conhecimentos Introdutórios sobre Práticas Pedagógicas e Materias Didáticos Acessíveis.",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "curso_oficina",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/574586",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0089",
@@ -3869,7 +3957,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0090",
@@ -3913,7 +4002,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0091",
@@ -3957,7 +4047,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0092",
@@ -3990,7 +4081,7 @@
       "produto": {
         "id": "EPT-0092-PRO",
         "titulo": "Texto – Acolher para Incluir: Caderno de Orientações para o Acolhimento de Estudantes Público-Alvo da Educação Especial e com Transtornos Funcionais Específicos do Instituto Federal de Santa Catarina.",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/574365",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -3999,10 +4090,11 @@
           "servidores_profissionais",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0093",
@@ -4035,17 +4127,18 @@
       "produto": {
         "id": "EPT-0093-PRO",
         "titulo": "Livro Digital – Metodologia do Processo Reflexivo sobre o Mundo do Trabalho para Jovens do Ensino Médio Integrado",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/585079",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0094",
@@ -4078,7 +4171,7 @@
       "produto": {
         "id": "EPT-0094-PRO",
         "titulo": "Textos – a Escolha de Mariana",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/584480",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -4087,10 +4180,11 @@
           "servidores_profissionais",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0095",
@@ -4134,7 +4228,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0096",
@@ -4167,17 +4262,18 @@
       "produto": {
         "id": "EPT-0096-PRO",
         "titulo": "Vídeos – Gamifiyng Your English Classes",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "produto_comunicacao",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/584995",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0097",
@@ -4221,7 +4317,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0098",
@@ -4254,17 +4351,18 @@
       "produto": {
         "id": "EPT-0098-PRO",
         "titulo": "Ferramenta de Avaliação – uma Possibilidade de Avaliação Interativa: Socrative",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "software_aplicativo",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/586884",
         "nivel_aplicacao": "Curso Técnico Subsequente",
         "publico_alvo": [
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0099",
@@ -4297,17 +4395,18 @@
       "produto": {
         "id": "EPT-0099-PRO",
         "titulo": "Texto – Compreender e Atuar sob a Luz dos Princípios Basilares da Proposta Curricular do Curso Formação de Docentes",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "curso_oficina",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/586253",
         "nivel_aplicacao": "Formação de professores",
         "publico_alvo": [
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0100",
@@ -4340,7 +4439,7 @@
       "produto": {
         "id": "EPT-0100-PRO",
         "titulo": "Tecnologias Assistivas: Texto – Tutorial Pedagógico como Ferramenta Formativa para Professores com Estudantes",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/597738",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -4348,10 +4447,11 @@
           "estudantes",
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0101",
@@ -4384,17 +4484,18 @@
       "produto": {
         "id": "EPT-0101-PRO",
         "titulo": "Vídeos – Ensino Médio Integrado no IFC Campus Ibirama",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "produto_comunicacao",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/584995",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0102",
@@ -4427,17 +4528,18 @@
       "produto": {
         "id": "EPT-0102-PRO",
         "titulo": "Texto – Memorial do Instituto Federal Catarinense – Campus Rio do Sul",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "acervo",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/702858",
         "nivel_aplicacao": "Educação Profissional e Tecnológica",
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0103",
@@ -4470,7 +4572,7 @@
       "produto": {
         "id": "EPT-0103-PRO",
         "titulo": "Apresentação – Iramuteq: Material de Apoio",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/586864",
         "nivel_aplicacao": "Educação Profissional e Tecnológica",
@@ -4479,10 +4581,11 @@
           "servidores_profissionais",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0104",
@@ -4515,7 +4618,7 @@
       "produto": {
         "id": "EPT-0104-PRO",
         "titulo": "Livro Digital – Pensando sobre os Desastres “Naturais”: o Caso de Rio Negrinho: SC.",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/644976",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -4523,10 +4626,11 @@
           "estudantes",
           "docentes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0105",
@@ -4559,7 +4663,7 @@
       "produto": {
         "id": "EPT-0105-PRO",
         "titulo": "Texto – Diversidade Sexual e de Gênero: Construir Conhecimentos para Desconstruir Preconceitos.",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/643836",
         "nivel_aplicacao": "Ensino Médio Integrado",
@@ -4569,10 +4673,11 @@
           "servidores_profissionais",
           "gestao_equipes_institucionais"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0106",
@@ -4616,7 +4721,8 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0107",
@@ -4649,17 +4755,18 @@
       "produto": {
         "id": "EPT-0107-PRO",
         "titulo": "Portal – Memorial da Indisciplina do IFC Campus Concórdia",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "software_aplicativo",
         "palavras_chave": [],
         "link": "http://educapes.capes.gov.br/handle/capes/601242",
         "nivel_aplicacao": "Ensino Médio Integrado",
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2020
+      "ano": 2020,
+      "palavras_chave": []
     },
     {
       "cod": "EPT-0108",
@@ -4696,7 +4803,7 @@
       "produto": {
         "id": "EPT-0108-PRO",
         "titulo": "Caminhos que Tecem: a História do Cooperativismo em Blumenau.",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "acervo",
         "palavras_chave": [
           "Cooperativismo",
           "Trabalho",
@@ -4707,10 +4814,15 @@
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2026
+      "ano": 2026,
+      "palavras_chave": [
+        "Cooperativismo",
+        "Trabalho",
+        "Educação Profissional e Tecnológica"
+      ]
     },
     {
       "cod": "EPT-0109",
@@ -4763,7 +4875,13 @@
         "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2026
+      "ano": 2026,
+      "palavras_chave": [
+        "Educação Física",
+        "Esporte",
+        "Ensino Médio Integrado",
+        "Formação"
+      ]
     },
     {
       "cod": "EPT-0110",
@@ -4799,7 +4917,7 @@
       "produto": {
         "id": "EPT-0110-PRO",
         "titulo": "Glossário Técnico em Libras — Modelagem do Vestuário",
-        "tipo_produto": "pendente_revisao",
+        "tipo_produto": "material_didatico_instrucional",
         "palavras_chave": [
           "Educação de Surdos",
           "Educação Profissional e Tecnológica"
@@ -4809,10 +4927,14 @@
         "publico_alvo": [
           "estudantes"
         ],
-        "score_classificacao": 0.0
+        "score_classificacao": 1.0
       },
       "coorientador": null,
-      "ano": 2026
+      "ano": 2026,
+      "palavras_chave": [
+        "Educação de Surdos",
+        "Educação Profissional e Tecnológica"
+      ]
     }
   ]
 }
