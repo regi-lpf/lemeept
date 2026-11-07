@@ -16,21 +16,16 @@ flowchart LR
 
 `lemeept/index.html` é código para o widget HTML do Elementor, não uma página HTML independente. Preserve contêineres, seletores, `<p>`/`<br>`, CSS isolado e inicialização do JavaScript. Não substitua o bloco pelo HTML renderizado/copiado do navegador.
 
-### Descoberta e revisão visual
+### Download local das dissertações
 
 ```mermaid
 flowchart TD
-    START["Pessoa inicia sincronizar_revisao.py"] --> API["API WordPress do ProfEPT\nlista de dissertações"]
-    API --> ID["resolver/comparar IDs\ncom painel-ept-v2.json"]
-    ID --> PDF["baixar PDFs novos\npara pdf/dissertacoes/\nfora do Git"]
-    PDF --> TXT["PyMuPDF: texto nativo\nlimite de páginas configurável"]
-    TXT --> XLSX["gerar_planilha_revisao.py\nrevisao_ept.xlsx"]
-    ID --> XLSX
-    XLSX --> HUMAN["revisão/correção humana"]
-    HUMAN -. "integração manual futura" .-> V2["painel-ept-v2.json"]
+    INDEX["painel-ept.json\nIDs e linkPdf"] --> DL["python -m pipeline.downloader\nvalidação do PDF"]
+    DL --> PDF["pdf/dissertações/{ID}.pdf\n+manifesto.json com link eduCAPES"]
+    PDF -. "entrada para extração posterior" .-> EX["Extração híbrida\nfora do downloader"]
 ```
 
-`sincronizar_revisao.py` consulta a API quando executado, mas não integra as decisões da planilha ao JSON. A chamada também não consulta eduCAPES nessa etapa. OCR e GPT não são acionados por esse comando.
+`pipeline/downloader.py` baixa somente as dissertações listadas no índice, preserva seus IDs `EPT-xxxx` e grava no manifesto o link eduCAPES associado. Não consulta eduCAPES nem aciona OCR/LLM; a extração híbrida ocorre em etapa posterior.
 
 ### Extração comparativa da amostra
 
@@ -130,7 +125,7 @@ sequenceDiagram
 | Responsabilidade | Arquivos |
 | --- | --- |
 | Coleta e compatibilidade do fluxo antigo | `1_PegarDadosSiteIfc.py`, `2_PdfParaJson.py`, `3_ArrumarPlanilha.py`, `4_GerarPainelHtml.py` |
-| Download local de PDFs | `baixar_dissertacoes.py`; corpus e manifesto em `pdf/dissertacoes/` (ignorados pelo Git) |
+| Download local de PDFs | `pipeline/downloader.py`; corpus em `pdf/dissertações/` (ignorado pelo Git) |
 | Amostra de extração/eduCAPES | `criar_amostra_comparativa.py` |
 | Evidência textual/bibliográfica de base epistemológica | `extrair_contexto_base_epistemologica.py` |
 | Sincronização manual com API e planilha de lacunas | `sincronizar_revisao.py`, `gerar_planilha_revisao.py`, `GUIA_REVISAO.md` |
