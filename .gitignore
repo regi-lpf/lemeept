@@ -3,3 +3,4 @@ pdf/
 data/
 __pycache__/
 .aider*
+.env
