@@ -1,0 +1,662 @@
+{
+  "schema_version": "4.0",
+  "gerado_em": "2026-11-13T21:40:15.654776+00:00",
+  "total_defesas": 6,
+  "total_producoes": 12,
+  "defesas": [
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0001",
+      "ano": 2026,
+      "autor": "Silvana de Oliveira Ribeiro da Silva",
+      "orientador": "Jorge da Cunha Dutra",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP1",
+      "macroprojeto": "MP3",
+      "dissertacao": {
+        "titulo": "EDUCAÇÃO FINANCEIRA COMO TEMA TRANSVERSAL NA EPT: UMA ANÁLISE DOS PPC´S DOS CURSOS TÉCNICOS INTEGRADOS AO ENSINO MÉDIO DO IFC",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2026/03/DISSERTACAO-E-PRODUTO-EDUCACIONAL-_-SILVANA-DE-OLIVEIRA-RIBEIRO-DA-SILVA.pdf",
+        "resumo": "[PÁG. 10]\nRESUMO \nEsta dissertação, desenvolvida no âmbito do Programa de Pós-Graduação em \nEducação Profissional e Tecnológica (ProfEPT), tem como objetivo geral analisar a \nabordagem da Educação Financeira nos Projetos Pedagógicos de Curso dos Cursos \nTécnicos Integrados ao Ensino Médio do Instituto Federal Catarinense. Trata-se de \numa pesquisa de natureza aplicada, com abordagem qualitativa e caráter exploratório, \nque adotou como procedimentos metodológicos a pesquisa bibliográfica e a análise \ndocumental. O corpus da investigação foi constituído por 38 PPCs, analisados à luz \nda técnica de Análise de Conteúdo possibilitando identificar recorrências, ausências e \nconcepções predominantes sobre a temática. Os resultados evidenciam que a \ninstitucionalização da Educação Financeira no IFC ocorre de forma incipiente e pouco \nsistematizada, sendo identificada como componente curricular obrigatório em apenas \numa pequena parcela dos cursos, enquanto a maioria dos documentos apresenta a \ntemática de maneira implícita e fragmentada, frequentemente subordinada a uma \nperspectiva instrumental e tecnicista. Apesar dessas limitações, a análise revelou um \nexpressivo potencial interdisciplinar da Educação Financeira, especialmente nas \náreas das Ciências Humanas, permitindo abordagens críticas que articulam \ndimensões econômicas, sociais, políticas e éticas. Como resposta à lacuna formativa \nidentificada, foi desenvolvido um produto educacional no formato de cartilha \npedagógica digital, intitulado \"Educação Financeira na EPT: Uma Possibilidade Crítica \ne Emancipatória\", avaliado positivamente por atores da Rede Federal de Educação \nProfissional, Científica e Tecnológica, que destacaram sua coerência teórica, clareza \ndidática e alinhamento aos princípios freireanos. Conclui-se que a inserção \nsistemática e crítica da Educação Financeira nos currículos da Educação Profissional \ne Tecnológica constitui um elemento fundamental para a promoção da autonomia, da \nformação omnilateral e da leitura crítica da realidade, ampliando o papel social do \nEnsino Médio Integrado na formação de sujeitos capazes de intervir de maneira \nconsciente e transformadora na sociedade. \n \nPalavras-chave: Educação Financeira. Ensino. Educação Profissional e Tecnológica. \nProfEPT. Produto Educacional.",
+        "palavras_chave": [
+          "Educação Financeira",
+          "Ensino",
+          "Educação Profissional e Tecnológica",
+          "ProfEPT",
+          "Produto Educacional"
+        ],
+        "base_epistemologica": {
+          "valor": "Materialismo Histórico-Dialético",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "A dissertação declara explicitamente que a pesquisa fundamenta-se em uma concepção epistemológica ancorada no materialismo histórico-dialético (página 59 do Corpo/Fundamentação), com referência a Gamboa (2003). Essa filiação epistemológica está ancorada em autores e conceitos do materialismo histórico-dialético, com página localizável nos recortes textuais.",
+          "evidencias": [
+            {
+              "secao": "Corpo/Fundamentação",
+              "pagina": 59,
+              "trecho": "a pesquisa fundamenta-se em uma concepção epistemológica ancorada no materialismo histórico-dialético, escolha que expressa opções teóricas e filosóficas que ultrapassam a aplicação meramente instrumental de técnicas de pesquisa (Gamboa, 2003).",
+              "referencia_correspondente": "GAMBOA, Silvio Ancisar Sánchez. Pesquisa Qualitativa: Superando os tecnicismos e falsos dualismos. Contrapontos, Itajaí, v. 3, n. 3, p. 393-405, set/dez 2003."
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "Educação Financeira na EPT: uma possibilidade crítica e emancipatória",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1171935",
+        "publico_alvo": [
+          "estudantes_alunos",
+          "docentes_professores"
+        ],
+        "nivel_aplicacao": "Ensino Médio Integrado",
+        "palavras_chave": [
+          "Educação Financeira",
+          "Educação Profissional e Tecnológica",
+          "Formação Integral",
+          "Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT"
+        ],
+        "data_publicacao": "2026-02",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense - IFC Campus Blumenau",
+            "papel": "contributor"
+          },
+          {
+            "nome": "Silva, Silvana de Oliveira Ribeiro da",
+            "papel": "creator"
+          },
+          {
+            "nome": "Dutra, Jorge da Cunha",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1171935",
+            "url": "https://educapes.capes.gov.br/handle/capes/1171935"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "Produto Educacional - \"Educação Financeira na EPT: uma possibilidade crítica e emancipatória\"",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "cartilha pedagógica digital",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "livro digital"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0001 2026 silvana de oliveira ribeiro da silva jorge da cunha dutra ifc blumenau lp1 mp3 educacao financeira como tema transversal na ept uma analise dos ppc s dos cursos tecnicos integrados ao ensino medio do ifc pag 10 resumo esta dissertacao desenvolvida no ambito do programa de pos graduacao em educacao profissional e tecnologica profept tem como objetivo geral analisar a abordagem da educacao financeira nos projetos pedagogicos de curso dos cursos tecnicos integrados ao ensino medio do instituto federal catarinense trata se de uma pesquisa de natureza aplicada com abordagem qualitativa e carater exploratorio que adotou como procedimentos metodologicos a pesquisa bibliografica e a analise documental o corpus da investigacao foi constituido por 38 ppcs analisados a luz da tecnica de analise de conteudo possibilitando identificar recorrencias ausencias e concepcoes predominantes sobre a tematica os resultados evidenciam que a institucionalizacao da educacao financeira no ifc ocorre de forma incipiente e pouco sistematizada sendo identificada como componente curricular obrigatorio em apenas uma pequena parcela dos cursos enquanto a maioria dos documentos apresenta a tematica de maneira implicita e fragmentada frequentemente subordinada a uma perspectiva instrumental e tecnicista apesar dessas limitacoes a analise revelou um expressivo potencial interdisciplinar da educacao financeira especialmente nas areas das ciencias humanas permitindo abordagens criticas que articulam dimensoes economicas sociais politicas e eticas como resposta a lacuna formativa identificada foi desenvolvido um produto educacional no formato de cartilha pedagogica digital intitulado educacao financeira na ept uma possibilidade critica e emancipatoria avaliado positivamente por atores da rede federal de educacao profissional cientifica e tecnologica que destacaram sua coerencia teorica clareza didatica e alinhamento aos principios freireanos conclui se que a insercao sistematica e critica da educacao financeira nos curriculos da educacao profissional e tecnologica constitui um elemento fundamental para a promocao da autonomia da formacao omnilateral e da leitura critica da realidade ampliando o papel social do ensino medio integrado na formacao de sujeitos capazes de intervir de maneira consciente e transformadora na sociedade palavras chave educacao financeira ensino educacao profissional e tecnologica profept produto educacional educacao financeira na ept uma possibilidade critica e emancipatoria material didatico instrucional ensino medio integrado educacao financeira ensino educacao profissional e tecnologica profept produto educacional formacao integral mestrado profissional em educacao profissional e tecnologica profept",
+        "termos_unificados": [
+          "Educação Financeira",
+          "Ensino",
+          "Educação Profissional e Tecnológica",
+          "ProfEPT",
+          "Produto Educacional",
+          "Formação Integral",
+          "Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0002",
+      "ano": 2026,
+      "autor": "Victor Meireles Aires",
+      "orientador": "Fátima Peres Zago de Oliveira",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP1",
+      "macroprojeto": "MP3",
+      "dissertacao": {
+        "titulo": "O USO DE MAQUETES NO PROCESSO DE APRENDIZAGEM CRÍTICA, DESENVOLVIMENTO DA PERCEPÇÃO ESPACIAL E SENSO DE ESCALA GEOMÉTRICA NO CURSO TÉCNICO EM EDIFICAÇÕES SUBSEQUENTE AO ENSINO MÉDIO DO IFC – CAMPUS FRAIBURGO",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2026/03/DISSERTACAO_VICTOR-MEIRELES-AIRES.pdf",
+        "resumo": "[PÁG. 11]\\nRESUMO \\n \\nO ensino técnico e, mais especificamente, os cursos técnicos subsequentes no Brasil, \\ncaracterizam-se por terem uma educação com traços bastante tecnicistas que a cada \\ndia dão mais valor às tecnologias digitais. Nos Cursos Técnicos em Edificações (CTE) \\nnão é diferente, pois a adoção, nas últimas décadas, do Computer Aided-Design (CAD \\n– Desenho Assistido por Computador) para a elaboração de projetos de construção \\ncivil tem ocupado o currículo destes cursos. Entretanto, a migração dos antigos \\ndesenhos feitos em papel para seus formatos digitais tem interferido nas ações de \\nensino, uma vez que, além dos estudantes terem de aprender a utilizar os softwares \\npara elaboração destes desenhos, eles também necessitam desenvolver \\nconhecimentos tradicionais de projetos, como a percepção espacial e o senso de \\nescala geométrica. Nesse sentido, pode-se inferir que a adoção de técnicas de ensino \\nque consigam facilitar este processo de aprendizagem, associando os conhecimentos \\ntradicionais às tecnologias digitais, é bem-vinda dentro dos currículos dos CTE. \\nTodavia, restringir este tipo de aprendizagem a questões puramente de Racionalidade \\nTécnica (RT) seria perpetuar, com o já mencionado ensino tecnicista. Logo, um dos \\nmeios possíveis de buscar a superação desta abordagem tecnicista é por meio da \\nassociação de uma Formação Crítica (FC) aos tradicionais métodos de ensino, ação \\nesta que pode possibilitar aos estudantes maior aproximação com os princípios da \\nEducação Profissional e Tecnológica (EPT). Sendo assim, esta pesquisa, \\ndesenvolvida no Mestrado ProfEPT, amparou-se em autores, como Skovsmose \\n(2014, 2015), que trata da Educação Matemática Crítica (EMC); Delizoicov, Angotti \\ne Pernambuco (2018), que versam sobre os Três Momentos Pedagógicos (3MP); \\nFreire (1981, 2022, 2024), que discute pedagogia, aprendizagem e criticização do \\nconhecimento; Ciavatta (2005), Frigotto (2001, 2009, 2012, 2015), Kuenzer (1989) e \\nRamos (2005, 2007), que discutem a EPT, politecnia, trabalho, educação, \\nomnilateralidade e formação humana integral, entre outros. Como objetivo principal \\nesta pesquisa buscou analisar os impactos da utilização de maquetes físicas de \\nedificações residenciais unifamiliares na aprendizagem de forma crítica, bem como da \\npercepção espacial e do senso de escala geométrica, nos estudantes da turma 2025/1 \\ndo CTESEM do IFC Campus Fraiburgo, entre fevereiro e dezembro de 2025. Dessa \\nforma, esperou-se desenvolver juntamente com esses estudantes uma educação",
+        "palavras_chave": [],
+        "base_epistemologica": {
+          "valor": null,
+          "candidato": "Materialismo Histórico-Dialético",
+          "confianca": "media",
+          "revisao_pendente": true,
+          "justificativa": "Forte convergência argumentativa com autores como Frigotto, Saviani, Marx e Ramos nos trechos de fundamentação teórica, porém sem declaração explícita de filiação epistemológica da pesquisa.",
+          "evidencias": [
+            {
+              "secao": "Corpo/Fundamentação",
+              "pagina": 34,
+              "trecho": "materialismo histórico e dialético 'fornece as bases para uma interpretação dinâmica e totalizante da realidade'",
+              "referencia_correspondente": "INSTITUTO FEDERAL CATARINENSE. Plano de Desenvolvimento Institucional – PDI 2024-2028 do Instituto Federal Catarinense. 2024."
+            },
+            {
+              "secao": "Corpo/Fundamentação",
+              "pagina": 35,
+              "trecho": "No plano educacional, insistimos na politecnia como uma utopia sempre em construção, como uma concepção que compreende o trabalhador como sujeito de realizações, de conhecimentos e de cultura",
+              "referencia_correspondente": "KUENZER, Acácia Zeneida. O trabalho como princípio educativo. Cadernos de pesquisa, n. 68, p. 21-28, 1989."
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "Aprendizagem Crítica na EPT: A aplicação dos três momentos pedagógicos em um curso subsequente",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1171701",
+        "publico_alvo": [
+          "estudantes_alunos",
+          "docentes_professores"
+        ],
+        "nivel_aplicacao": "Curso Técnico Subsequente",
+        "palavras_chave": [
+          "Educação Profissional e Tecnológica (EPT)",
+          "Inovação Social",
+          "Formação Docente",
+          "Prática Pedagógica",
+          "Tecnologia Social",
+          "Mestrado Profissional em Educação Profissional e Tecnológica - PROFEPT",
+          "Produto Educacional"
+        ],
+        "data_publicacao": "2026-03-03",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense",
+            "papel": "contributor"
+          },
+          {
+            "nome": "Meireles Aires, Victor",
+            "papel": "creator"
+          },
+          {
+            "nome": "Peres Zago de Oliveira, Fátima",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1171701",
+            "url": "https://educapes.capes.gov.br/handle/capes/1171701"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "Aprendizagem Crítica na EPT - Aplicação dos três momentos pedagógicos em um curso subsequente",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "Aprendizagem Crítica na EPT: A aplicação dos três momentos pedagógicos em um curso subsequente",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "livro digital"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0002 2026 victor meireles aires fatima peres zago de oliveira ifc blumenau lp1 mp3 o uso de maquetes no processo de aprendizagem critica desenvolvimento da percepcao espacial e senso de escala geometrica no curso tecnico em edificacoes subsequente ao ensino medio do ifc campus fraiburgo pag 11 nresumo n no ensino tecnico e mais especificamente os cursos tecnicos subsequentes no brasil ncaracterizam se por terem uma educacao com tracos bastante tecnicistas que a cada ndia dao mais valor as tecnologias digitais nos cursos tecnicos em edificacoes cte nnao e diferente pois a adocao nas ultimas decadas do computer aided design cad n desenho assistido por computador para a elaboracao de projetos de construcao ncivil tem ocupado o curriculo destes cursos entretanto a migracao dos antigos ndesenhos feitos em papel para seus formatos digitais tem interferido nas acoes de nensino uma vez que alem dos estudantes terem de aprender a utilizar os softwares npara elaboracao destes desenhos eles tambem necessitam desenvolver nconhecimentos tradicionais de projetos como a percepcao espacial e o senso de nescala geometrica nesse sentido pode se inferir que a adocao de tecnicas de ensino nque consigam facilitar este processo de aprendizagem associando os conhecimentos ntradicionais as tecnologias digitais e bem vinda dentro dos curriculos dos cte ntodavia restringir este tipo de aprendizagem a questoes puramente de racionalidade ntecnica rt seria perpetuar com o ja mencionado ensino tecnicista logo um dos nmeios possiveis de buscar a superacao desta abordagem tecnicista e por meio da nassociacao de uma formacao critica fc aos tradicionais metodos de ensino acao nesta que pode possibilitar aos estudantes maior aproximacao com os principios da neducacao profissional e tecnologica ept sendo assim esta pesquisa ndesenvolvida no mestrado profept amparou se em autores como skovsmose n 2014 2015 que trata da educacao matematica critica emc delizoicov angotti ne pernambuco 2018 que versam sobre os tres momentos pedagogicos 3mp nfreire 1981 2022 2024 que discute pedagogia aprendizagem e criticizacao do nconhecimento ciavatta 2005 frigotto 2001 2009 2012 2015 kuenzer 1989 e nramos 2005 2007 que discutem a ept politecnia trabalho educacao nomnilateralidade e formacao humana integral entre outros como objetivo principal nesta pesquisa buscou analisar os impactos da utilizacao de maquetes fisicas de nedificacoes residenciais unifamiliares na aprendizagem de forma critica bem como da npercepcao espacial e do senso de escala geometrica nos estudantes da turma 2025 1 ndo ctesem do ifc campus fraiburgo entre fevereiro e dezembro de 2025 dessa nforma esperou se desenvolver juntamente com esses estudantes uma educacao aprendizagem critica na ept a aplicacao dos tres momentos pedagogicos em um curso subsequente material didatico instrucional curso tecnico subsequente educacao profissional e tecnologica ept inovacao social formacao docente pratica pedagogica tecnologia social mestrado profissional em educacao profissional e tecnologica profept produto educacional",
+        "termos_unificados": [
+          "Educação Profissional e Tecnológica (EPT)",
+          "Inovação Social",
+          "Formação Docente",
+          "Prática Pedagógica",
+          "Tecnologia Social",
+          "Mestrado Profissional em Educação Profissional e Tecnológica - PROFEPT",
+          "Produto Educacional"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0003",
+      "ano": 2025,
+      "autor": "Letícia Bachmann Kurth",
+      "orientador": "Fátima Peres Zago de Oliveira",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP1",
+      "macroprojeto": "MP3",
+      "dissertacao": {
+        "titulo": "CURRICULARIZAÇÃO DA PESQUISA NO ENSINO MÉDIO INTEGRADO: PACTOS E PERSPECTIVAS DOCENTES NO IFC – CAMPUS RIO DO SUL",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/12/Dissertacao_IFC_-_LETCIA_BACHMANN_KURTH.pdf",
+        "resumo": "Esta pesquisa tem como objeto a curricularização da pesquisa no âmbito da Educação Profissional e Tecnológica, mais precisamente no Ensino Médio Integrado (EMI) do Instituto Federal Catarinense (IFC), campus Rio do Sul, contemplando os cursos técnicos em Agroecologia, Agropecuária e Informática para Internet. A motivação para o estudo decorre da trajetória da pesquisadora, marcada pela articulação entre ensino, pesquisa e extensão desde a graduação em Pedagogia no IFC e pela atuação na educação básica, que despertou o interesse em compreender o papel da pesquisa como eixo formativo articulador de teoria e prática. A pesquisa fundamenta-se em autores como Demo (2001), Oliveira (2017) e Freire (1996; 2020), que concebem a pesquisa como princípio pedagógico e caminho para uma educação crítica e emancipatória, contrapondo-se ao modelo reprodutivista e à concepção bancária. No contexto institucional, destacam-se as resoluções nº 16/2019 e nº 13/2022 do CONSUPER/IFC, que normatizam a inserção da pesquisa nos currículos. Nesse sentido, o componente de Iniciação Científica (IC), presente nos três cursos analisados, configura-se como estratégia central da curricularização, ainda que não seja a única. Com abordagem qualitativa e natureza translacional, a investigação envolve análise documental e entrevistas com docentes e coordenadores, buscando compreender pactos e perspectivas em torno da curricularização da pesquisa. Além disso, prevê a elaboração de um produto educacional, um e-book, destinado a apoiar professores da IC e gestão do campus na construção de uma pesquisa curricularizada e integrada. A relevância do estudo reside na escassez de produções acadêmicas sobre a temática no âmbito da Educação Profissional e Tecnológica, o que lhe confere caráter inovador. Os resultados demonstram haver docentes com perspectivas alinhadas ao eixo humanizador, porém também docentes alinhados ao eixo reducionista da pesquisa, levando em consideração as narrativas expostas no decorrer das entrevistas. Além disso, as perspectivas apontam para a necessidade de fortalecer o componente de IC, visto que os debates em torno de sua existência e continuidade são recorrentes, demonstrando não haver consenso acerca da curricularização da pesquisa de forma reflexiva e integrada no campus. Espera-se que os resultados contribuam para fortalecer a integração curricular no EMI e consolidar a pesquisa como princípio educativo capaz de promover autonomia, criticidade e protagonismo estudantil. Palavras-Chave: curricularização da pesquisa; iniciação científica; EPT.",
+        "palavras_chave": [
+          "Curricularização da pesquisa",
+          "Iniciação científica",
+          "EPT"
+        ],
+        "base_epistemologica": {
+          "valor": null,
+          "candidato": "Pedagogia Histórico-Crítica",
+          "confianca": "media",
+          "revisao_pendente": true,
+          "justificativa": "O texto da dissertação menciona aproximação com a Pedagogia Histórico-Crítica na seção 2.3 e fundamenta-se em autores críticos (Demo, Freire, Saviani), mas não declara explicitamente a matriz epistemológica desta pesquisa como PHC.",
+          "evidencias": [
+            {
+              "secao": "Introdução",
+              "pagina": 19,
+              "trecho": "a pesquisa fundamenta-se em Demo (2001)",
+              "referencia_correspondente": "DEMO, Pedro. Pesquisa: princípio científico e educativo. 8. ed. São Paulo: Cortez, 2001."
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "Curricularização da Pesquisa; A Iniciação Científica como componente curricular no contexto da Educação Profissional e Tecnológica",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1133578",
+        "publico_alvo": [
+          "docentes_professores",
+          "gestores_coordenadores"
+        ],
+        "nivel_aplicacao": "Ensino Médio Integrado",
+        "palavras_chave": [
+          "Educação Profissional e Tecnológica",
+          "EPT",
+          "Ensino Médio Integrado",
+          "EMI",
+          "Curricularização da Pesquisa",
+          "Mestrado em Educação Profissional e Tecnológica (PROFEPT)",
+          "Produto Educacional"
+        ],
+        "data_publicacao": "2025-12-10",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense",
+            "papel": "contributor"
+          },
+          {
+            "nome": "Kurth, Letícia",
+            "papel": "creator"
+          },
+          {
+            "nome": "Oliveira, Fátima",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1133578",
+            "url": "https://educapes.capes.gov.br/handle/capes/1133578"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "Produto Educacional: Curricularização da Pesquisa",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "Curricularização da Pesquisa; A Iniciação Científica como componente curricular no contexto da Educação Profissional e Tecnológica",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "livro digital"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0003 2025 leticia bachmann kurth fatima peres zago de oliveira ifc blumenau lp1 mp3 curricularizacao da pesquisa no ensino medio integrado pactos e perspectivas docentes no ifc campus rio do sul esta pesquisa tem como objeto a curricularizacao da pesquisa no ambito da educacao profissional e tecnologica mais precisamente no ensino medio integrado emi do instituto federal catarinense ifc campus rio do sul contemplando os cursos tecnicos em agroecologia agropecuaria e informatica para internet a motivacao para o estudo decorre da trajetoria da pesquisadora marcada pela articulacao entre ensino pesquisa e extensao desde a graduacao em pedagogia no ifc e pela atuacao na educacao basica que despertou o interesse em compreender o papel da pesquisa como eixo formativo articulador de teoria e pratica a pesquisa fundamenta se em autores como demo 2001 oliveira 2017 e freire 1996 2020 que concebem a pesquisa como principio pedagogico e caminho para uma educacao critica e emancipatoria contrapondo se ao modelo reprodutivista e a concepcao bancaria no contexto institucional destacam se as resolucoes no 16 2019 e no 13 2022 do consuper ifc que normatizam a insercao da pesquisa nos curriculos nesse sentido o componente de iniciacao cientifica ic presente nos tres cursos analisados configura se como estrategia central da curricularizacao ainda que nao seja a unica com abordagem qualitativa e natureza translacional a investigacao envolve analise documental e entrevistas com docentes e coordenadores buscando compreender pactos e perspectivas em torno da curricularizacao da pesquisa alem disso preve a elaboracao de um produto educacional um e book destinado a apoiar professores da ic e gestao do campus na construcao de uma pesquisa curricularizada e integrada a relevancia do estudo reside na escassez de producoes academicas sobre a tematica no ambito da educacao profissional e tecnologica o que lhe confere carater inovador os resultados demonstram haver docentes com perspectivas alinhadas ao eixo humanizador porem tambem docentes alinhados ao eixo reducionista da pesquisa levando em consideracao as narrativas expostas no decorrer das entrevistas alem disso as perspectivas apontam para a necessidade de fortalecer o componente de ic visto que os debates em torno de sua existencia e continuidade sao recorrentes demonstrando nao haver consenso acerca da curricularizacao da pesquisa de forma reflexiva e integrada no campus espera se que os resultados contribuam para fortalecer a integracao curricular no emi e consolidar a pesquisa como principio educativo capaz de promover autonomia criticidade e protagonismo estudantil palavras chave curricularizacao da pesquisa iniciacao cientifica ept curricularizacao da pesquisa a iniciacao cientifica como componente curricular no contexto da educacao profissional e tecnologica material didatico instrucional ensino medio integrado curricularizacao da pesquisa iniciacao cientifica ept educacao profissional e tecnologica ensino medio integrado emi mestrado em educacao profissional e tecnologica profept produto educacional",
+        "termos_unificados": [
+          "Curricularização da pesquisa",
+          "Iniciação científica",
+          "EPT",
+          "Educação Profissional e Tecnológica",
+          "Ensino Médio Integrado",
+          "EMI",
+          "Mestrado em Educação Profissional e Tecnológica (PROFEPT)",
+          "Produto Educacional"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0004",
+      "ano": 2025,
+      "autor": "Alexandre Veloso dos Santos",
+      "orientador": "Fátima Peres Zago de Oliveira",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP1",
+      "macroprojeto": "MP1",
+      "dissertacao": {
+        "titulo": "VIVÊNCIAS E EXPERIÊNCIAS COM O MOODLE NA EJA-EPT: UMA AUTOETNOGRAFIA NO CURSO DE ELETRICISTA INDUSTRIAL DO IFC BLUMENAU",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/12/Dissertacao_Alexandre_Veloso_dos_Santos.pdf",
+        "resumo": "[PÁG. 11] RESUMO Nesta dissertação, analiso, por meio da autoetnografia, a mediação pedagógica com a plataforma MOODLE na Educação de Jovens e Adultos integrada à Educação Profissional e Tecnológica (EJA-EPT), a partir da prática docente do pesquisador. Minha análise revela que a transposição acrítica de práticas presenciais para o ambiente virtual, ao ignorar as condições materiais de acesso dos estudantes-trabalhadores, tende a reproduzir um modelo de “educação bancária” adaptado ao meio digital. Concluo que a superação desse modelo exige uma práxis docente que articule os saberes escolares com as experiências de vida dos sujeitos, sendo este um desafio central para o Ensino no âmbito do ProfEPT. Como materialização da pesquisa, desenvolvi o Produto Educacional intitulado “Do Quadro ao Clique: uma Oralitura Reflexiva em Multimídias Acessíveis”. O recurso, em formato de narrativa audiovisual e textual, sintetiza os achados da investigação em estratégias e princípios para uma mediação pedagógica crítica e inclusiva com tecnologias na EJA-EPT. Esta pesquisa consubstancia, portanto, um percurso de práxis que documento e que converte a experiência docente analisada em conhecimento sistemático e aplicável. Palavras-chave: Autoetnografia. Educação de Jovens e Adultos. Educação Profissional e Tecnológica. MOODLE. Prática Docente.",
+        "palavras_chave": [
+          "Autoetnografia",
+          "Educação de Jovens e Adultos",
+          "Educação Profissional e Tecnológica",
+          "MOODLE",
+          "Prática Docente"
+        ],
+        "base_epistemologica": {
+          "valor": null,
+          "candidato": null,
+          "confianca": "media",
+          "revisao_pendente": true,
+          "justificativa": "A dissertação apresenta forte convergência argumentativa com autores como Freire, Saviani e Arroyo nos trechos epistemológicos analisados, porém não há declaração explícita da matriz epistemológica base da pesquisa no texto fornecido. As referências fundamentais estão em referencias_filtradas, mas a afirmação direta da base epistemológica não é encontrada nos recortes textuais.",
+          "evidencias": [
+            {
+              "secao": "Corpo/Fundamentacao",
+              "pagina": 10,
+              "trecho": "Ninguém educa ninguém, ninguém educa a si mesmo, os homens se educam entre si, mediatizados pelo mundo. (Freire, 2005, p. 79)",
+              "referencia_correspondente": "FREIRE, Paulo. Pedagogia do Oprimido. Rio de Janeiro: Paz e Terra, 2005."
+            },
+            {
+              "secao": "Corpo/Fundamentacao",
+              "pagina": 19,
+              "trecho": "essa prática, embora intuitiva, encontrou sua formalização teórica anos mais tarde, ao me deparar com o conceito de trabalho como princípio educativo de Dermeval Saviani (2007).",
+              "referencia_correspondente": "SAVIANI, Dermeval. Trabalho e educação: fundamentos ontológicos e históricos. Revista Brasileira de Educação, v. 12, n. 34, p. 152-180, jan./abr. 2007."
+            },
+            {
+              "secao": "Corpo/Fundamentacao",
+              "pagina": 39,
+              "trecho": "a autoetnografia representa uma decisão ético-nepistemológica de alinhar o método de pesquisa à própria pedagogia que se defende para a EJA.",
+              "referencia_correspondente": null
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "DO QUADRO AO CLIQUE: UMA ORALITURA REFLEXIVA EM MULTIMÍDIAS ACESSÍVEIS",
+        "tipo": "software_aplicativo",
+        "link": "https://educapes.capes.gov.br/handle/capes/1133518",
+        "publico_alvo": [
+          "docentes_professores",
+          "estudantes_alunos"
+        ],
+        "nivel_aplicacao": "EJA / PROEJA",
+        "palavras_chave": [
+          "Autoetnografia",
+          "Educação de Jovens e Adultos",
+          "Educação Profissional e Tecnológica",
+          "MOODLE",
+          "Prática Docente",
+          "Programa de Pós-Graduação em Educação Profissional e Tecnológica-ProfEPT"
+        ],
+        "data_publicacao": "2025-09-26",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense",
+            "papel": "contributor"
+          },
+          {
+            "nome": "SANTOS, ALEXANDRE VELOSO DOS",
+            "papel": "creator"
+          },
+          {
+            "nome": "Oliveira, Fátima Peres Zago de",
+            "papel": "creator"
+          },
+          {
+            "nome": "Custódio, Raquel Cardoso de Faria e",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1133518",
+            "url": "https://educapes.capes.gov.br/handle/capes/1133518"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "https://www.youtube.com/watch?v=N0TjtTxAZN0&list=PLV2rOThnbRojHfvo5YrlsKevBjDv_GzZi",
+            "url": ""
+          },
+          {
+            "esquema": "identifier",
+            "valor": "Do Quadro Ao Clique: Uma Oralitura Reflexiva Em Multimídias Acessíveis",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "DO QUADRO AO CLIQUE: UMA ORALITURA REFLEXIVA EM MULTIMÍDIAS ACESSÍVEIS",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "vídeo"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0004 2025 alexandre veloso dos santos fatima peres zago de oliveira ifc blumenau lp1 mp1 vivencias e experiencias com o moodle na eja ept uma autoetnografia no curso de eletricista industrial do ifc blumenau pag 11 resumo nesta dissertacao analiso por meio da autoetnografia a mediacao pedagogica com a plataforma moodle na educacao de jovens e adultos integrada a educacao profissional e tecnologica eja ept a partir da pratica docente do pesquisador minha analise revela que a transposicao acritica de praticas presenciais para o ambiente virtual ao ignorar as condicoes materiais de acesso dos estudantes trabalhadores tende a reproduzir um modelo de educacao bancaria adaptado ao meio digital concluo que a superacao desse modelo exige uma praxis docente que articule os saberes escolares com as experiencias de vida dos sujeitos sendo este um desafio central para o ensino no ambito do profept como materializacao da pesquisa desenvolvi o produto educacional intitulado do quadro ao clique uma oralitura reflexiva em multimidias acessiveis o recurso em formato de narrativa audiovisual e textual sintetiza os achados da investigacao em estrategias e principios para uma mediacao pedagogica critica e inclusiva com tecnologias na eja ept esta pesquisa consubstancia portanto um percurso de praxis que documento e que converte a experiencia docente analisada em conhecimento sistematico e aplicavel palavras chave autoetnografia educacao de jovens e adultos educacao profissional e tecnologica moodle pratica docente do quadro ao clique uma oralitura reflexiva em multimidias acessiveis software aplicativo eja proeja autoetnografia educacao de jovens e adultos educacao profissional e tecnologica moodle pratica docente programa de pos graduacao em educacao profissional e tecnologica profept",
+        "termos_unificados": [
+          "Autoetnografia",
+          "Educação de Jovens e Adultos",
+          "Educação Profissional e Tecnológica",
+          "MOODLE",
+          "Prática Docente",
+          "Programa de Pós-Graduação em Educação Profissional e Tecnológica-ProfEPT"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0005",
+      "ano": 2025,
+      "autor": "Luziana da Silva Dias",
+      "orientador": "Raquel Cardoso de Faria e Custódio",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP1",
+      "macroprojeto": "MP3",
+      "dissertacao": {
+        "titulo": "PRÁTICA PEDAGÓGICA INTEGRADORA EM ENSINO, PESQUISA E EXTENSÃO: UM ESTUDO NA FEIRA DO CONHECIMENTO DO INSTITUTO FEDERAL CATARINENSE.",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/12/DISSERTACAO-LUZIANA-DA-SILVA-DIAS.pdf",
+        "resumo": "[PÁG. 11]\\nRESUMO \\n \\nA presente pesquisa, inserida no tema “Práticas Pedagógicas Integradoras \\nvinculadas ao Ensino, à Pesquisa e à Extensão”, tem como delimitação a análise \\ndessas práticas nas publicações eletrônicas dos Anais da Feira do Conhecimento do \\nInstituto Federal Catarinense (IFC) - campus Ibirama, no período dos últimos cinco \\nanos. A investigação orienta-se pela questão norteadora: Quais são as práticas \\npedagógicas integradoras presentes nos projetos de ensino, pesquisa e extensão \\npublicados nos Anais da Feira do Conhecimento do IFC - campus Ibirama? A \\nrelevância desta pesquisa decorre da necessidade de compreender como a \\nintegração entre ensino, pesquisa e extensão se concretizam na prática integradora \\ne quais impactos ela gera na formação discente e na relação da instituição com a \\ncomunidade. Sendo assim, a pesquisa foi realizada no âmbito do Programa de Pós-\\nGraduação em Educação Profissional e Tecnológica (ProfEPT) do Instituto Federal \\nCatarinense – campus Blumenau. Está vinculada especificamente ao macroprojeto 3 \\n– Práticas Educativas no Currículo Integrado, o qual acolhe iniciativas voltadas à \\nintegração curricular com vistas ao aprimoramento dos métodos de ensino e \\navaliação, superando a tradicional fragmentação entre as diferentes atividades \\npedagógicas. A partir da análise, foi desenvolvido o Produto Educacional do \\nProfEPT, “Articulando Ensino, Pesquisa e Extensão através de Práticas Integradoras \\nna Feira do Conhecimento”, com o objetivo de apresentar exemplos de práticas \\npedagógicas integradoras aplicadas em projetos de ensino, pesquisa e extensão na \\nFeira do Conhecimento do IFC – campus Ibirama. Para atingir os objetivos da \\npesquisa seguiu-se as etapas: a) levantamento por meio de revisão bibliográfica e \\ndocumental sobre os conceitos e concepções de práticas pedagógicas integradoras. \\nb) identificar práticas aplicadas ao ensino, à pesquisa e à extensão no campus \\nIbirama, por meio da leitura dos projetos c) analisar as publicações dos Anais da \\nFeira do Conhecimento, categorizando as práticas pedagógicas identificadas, \\natravés da Análise do Conteúdo de Bardin d) compreender formas de \\nimplementação dessas práticas e seus impactos para a formação discente e a \\ncomunidade; e) elaborar um infográfico de instruções a partir dos projetos \\npublicados. \\nOs resultados \\napontaram \\nque \\nocorrem \\npráticas pedagógicas \\nintegradoras no ensino, pesquisa e extensão na Feira do Conhecimento, elas \\nrevelam potencial para promover protagonismo discente e fortalecer vínculos",
+        "palavras_chave": [],
+        "base_epistemologica": {
+          "valor": null,
+          "candidato": null,
+          "confianca": "abstencao",
+          "revisao_pendente": true,
+          "justificativa": "Nenhuma declaração explícita da filiação teórica/epistemológica da pesquisa encontrada nos recortes textuais; a dissertação menciona autores como Freire (2022) na discussão de práticas integradoras, mas não afirma a matriz epistemológica própria da pesquisa como base teórica explícita.",
+          "evidencias": [
+            {
+              "secao": "Introdução",
+              "pagina": 24,
+              "trecho": "Essa articulação encontra ressonância na concepção freireana de que 'não há ensino sem pesquisa e pesquisa sem ensino' (FREIRE, 2022, p. 30)",
+              "referencia_correspondente": "FREIRE, P. Pedagogia da Autonomia: saberes necessários à prática educativa. 74. ed. Rio de Janeiro: Paz e Terra, 2022."
+            },
+            {
+              "secao": "Corpo/Fundamentação",
+              "pagina": 33,
+              "trecho": "O projeto de ensino Projeto Peixário integra diferentes áreas do conhecimento, como tecnologia, química, economia e design.",
+              "referencia_correspondente": "FREIRE, P. Pedagogia do Oprimido. 84. ed. rev. e atual. Rio de Janeiro: Paz e Terra, 2022."
+            },
+            {
+              "secao": "Corpo/Fundamentação",
+              "pagina": 111,
+              "trecho": "Ao promover a articulação entre ensino, pesquisa e extensão, o material contribui para disseminar práticas inovadoras e fortalecer a integração entre os três eixos estruturantes da Rede Federal",
+              "referencia_correspondente": "FREIRE, P. Pedagogia da Autonomia: saberes necessários à prática educativa. 74. ed. Rio de Janeiro: Paz e Terra, 2022."
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "Articulando Pesquisa, Ensino e Extensão por meio das Práticas Integradoras na Feira do Conhecimento",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1133227",
+        "publico_alvo": [
+          "docentes_professores",
+          "estudantes_alunos",
+          "gestores_coordenadores"
+        ],
+        "nivel_aplicacao": "Formação de Professores",
+        "palavras_chave": [
+          "Ensino, Pesquisa, Extensão",
+          "Praticas Pedagógicas Integradoras",
+          "Feira do Conhecimento",
+          "Programa de Pós-graduação em Educação Profissional e Tecnológica",
+          "Dissertação"
+        ],
+        "data_publicacao": "2025-09-30",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense",
+            "papel": "contributor"
+          },
+          {
+            "nome": "Dias, Luziana da Silva",
+            "papel": "creator"
+          },
+          {
+            "nome": "Custódio, Raquel Cardoso de Faria e",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1133227",
+            "url": "https://educapes.capes.gov.br/handle/capes/1133227"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "PE Articulando EPE",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "infográfico",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "livro digital"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0005 2025 luziana da silva dias raquel cardoso de faria e custodio ifc blumenau lp1 mp3 pratica pedagogica integradora em ensino pesquisa e extensao um estudo na feira do conhecimento do instituto federal catarinense pag 11 nresumo n na presente pesquisa inserida no tema praticas pedagogicas integradoras nvinculadas ao ensino a pesquisa e a extensao tem como delimitacao a analise ndessas praticas nas publicacoes eletronicas dos anais da feira do conhecimento do ninstituto federal catarinense ifc campus ibirama no periodo dos ultimos cinco nanos a investigacao orienta se pela questao norteadora quais sao as praticas npedagogicas integradoras presentes nos projetos de ensino pesquisa e extensao npublicados nos anais da feira do conhecimento do ifc campus ibirama a nrelevancia desta pesquisa decorre da necessidade de compreender como a nintegracao entre ensino pesquisa e extensao se concretizam na pratica integradora ne quais impactos ela gera na formacao discente e na relacao da instituicao com a ncomunidade sendo assim a pesquisa foi realizada no ambito do programa de pos ngraduacao em educacao profissional e tecnologica profept do instituto federal ncatarinense campus blumenau esta vinculada especificamente ao macroprojeto 3 n praticas educativas no curriculo integrado o qual acolhe iniciativas voltadas a nintegracao curricular com vistas ao aprimoramento dos metodos de ensino e navaliacao superando a tradicional fragmentacao entre as diferentes atividades npedagogicas a partir da analise foi desenvolvido o produto educacional do nprofept articulando ensino pesquisa e extensao atraves de praticas integradoras nna feira do conhecimento com o objetivo de apresentar exemplos de praticas npedagogicas integradoras aplicadas em projetos de ensino pesquisa e extensao na nfeira do conhecimento do ifc campus ibirama para atingir os objetivos da npesquisa seguiu se as etapas a levantamento por meio de revisao bibliografica e ndocumental sobre os conceitos e concepcoes de praticas pedagogicas integradoras nb identificar praticas aplicadas ao ensino a pesquisa e a extensao no campus nibirama por meio da leitura dos projetos c analisar as publicacoes dos anais da nfeira do conhecimento categorizando as praticas pedagogicas identificadas natraves da analise do conteudo de bardin d compreender formas de nimplementacao dessas praticas e seus impactos para a formacao discente e a ncomunidade e elaborar um infografico de instrucoes a partir dos projetos npublicados nos resultados napontaram nque nocorrem npraticas pedagogicas nintegradoras no ensino pesquisa e extensao na feira do conhecimento elas nrevelam potencial para promover protagonismo discente e fortalecer vinculos articulando pesquisa ensino e extensao por meio das praticas integradoras na feira do conhecimento material didatico instrucional formacao de professores ensino pesquisa extensao praticas pedagogicas integradoras feira do conhecimento programa de pos graduacao em educacao profissional e tecnologica dissertacao",
+        "termos_unificados": [
+          "Ensino, Pesquisa, Extensão",
+          "Praticas Pedagógicas Integradoras",
+          "Feira do Conhecimento",
+          "Programa de Pós-graduação em Educação Profissional e Tecnológica",
+          "Dissertação"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0006",
+      "ano": 2025,
+      "autor": "Idce Ihlenfeldt Sejas",
+      "orientador": "Raquel Cardoso de Faria e Custódio",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP1",
+      "macroprojeto": "MP2",
+      "dissertacao": {
+        "titulo": "ACOLHIMENTO: UMA PRÁTICA PARA A PERMANÊNCIA E ÊXITO DOS ESTUDANTES DO CURSO TÉCNICO SUBSEQUENTE EM ADMINISTRAÇÃO DO IFSC CAMPUS GASPAR.",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/12/DISSERTACAO-E-PRODUTO-EDUCACIONAL-_-IDCE-SEJAS.pdf",
+        "resumo": "[PÁG. 11]\nRESUMO \nAcolher significa receber, admitir, dar guarida, oferecer refúgio, proteger, considerar e aceitar. Nesse sentido amplo e humanizador, esta dissertação tem como objetivo geral investigar as percepções dos estudantes sobre as práticas de acolhimento implementadas no curso Técnico Subsequente em Administração do IFSC, câmpus Gaspar, e propor novas ações com foco em sua contribuição para a permanência e êxito. A pesquisa foi desenvolvida no âmbito do Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT, do Instituto Federal Catarinense, campus Blumenau, vinculada à linha de pesquisa Práticas Educativas em Educação Profissional e Tecnológica e ao macroprojeto 2: Inclusão e diversidade em espaços formais e não formais de ensino na Educação Profissional Tecnológica. Buscou-se, neste estudo, compreender formas de acolhimento, que contribuam para a permanência e êxito dos estudantes, considerando as especificidades dos trabalhadores-estudantes. Quanto à metodologia, trata-se de uma pesquisa de natureza aplicada, com abordagem qualitativa. Para possibilitar a compreensão das ações de acolhimento e sua contribuição na vida dos estudantes, adotaram-se os objetivos de uma pesquisa explicativa. Quanto aos procedimentos técnicos, caracteriza-se como pesquisa participante e, para a construção dos dados empíricos, foram realizados grupos focais com estudantes das turmas de 1ª e 2ª fases do curso Técnico Subsequente em Administração, do ano de 2024. A análise dos dados foi conduzida por meio da Análise Textual Discursiva, o que permitiu compreender, a partir da visão dos estudantes, como propor ações de acolhimento que possam auxiliar na permanência e no êxito. Com base nas análises, elaboramos um produto educacional intitulado Entre e sinta-se em casa: o acolhimento aos estudantes através de vídeos curtos para as redes sociais, voltado ao acolhimento dos trabalhadores-estudantes, trazendo informações sobre o campus e o curso, visando orientar e apoiar estudantes ingressantes e veteranos por meio de vídeos curtos disponibilizados nas redes sociais Tiktok e Instragram. Como principais resultados, verificou-se que o acolhimento é percebido pelos estudantes como fator importante para a adaptação ao curso, gerando o fortalecimento de vínculos, impactando positivamente na motivação dos estudantes. O estudo se mostra relevante por abordar a realidade pouco visibilizada dos cursos subsequentes nos Institutos Federais, contribuindo para o debate sobre práticas inclusivas que articulam a Educação Profissional e Tecnológica com a perspectiva crítica e omnilateral de formação nesta modalidade de ensino.\n\nPalavras-Chave: Curso Técnico Subsequente. Acolhimento estudantil. Permanência e êxito.",
+        "palavras_chave": [
+          "Curso Técnico Subsequente",
+          "Acolhimento estudantil",
+          "Permanência e êxito"
+        ],
+        "base_epistemologica": {
+          "valor": "Pedagogia Histórico-Crítica",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "A dissertação explicitamente afirma: 'Esta pesquisa segue uma linha, proposta por autores que se apoiam em uma pedagogia histórico-crítica' (p. 34), fundamentada em referências como Saviani (2007), Kuenzer (1989, 2016), Ciavatta (2005-2014), Frigotto (1989, 2005), Ramos (2005, 2010) e Manacorda (2007), que são autores típicos da Pedagogia Histórico-Crítica.",
+          "evidencias": [
+            {
+              "secao": "Corpo/Fundamentação",
+              "pagina": 34,
+              "trecho": "Esta pesquisa segue uma linha, proposta por autores que se apoiam em uma pedagogia histórico-crítica5 e, a partir dessa perspectiva, compreende o trabalho como princípio educativo. Tomando como referência autores como Saviani (2007), Kuenzer (1989, 2016), Ciavatta (2005, 2009, 2011, 2014), Frigotto (1989, 2005), Ramos (2005, 2010) e Manacorda (2007), procuramos abordar o conceito de trabalho em sua dimensão ontológica.",
+              "referencia_correspondente": "RAMOS, Marise Nogueira. Trabalho, educação e correntes pedagógicas no Brasil: um estudo a partir da formação dos trabalhadores técnicos da saúde. Rio de Janeiro: EPSJV, UFRJ, 2010."
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "Entre e sinta-se em casa - O acolhimento aos estudantes através de vídeos curtos para as redes sociais.",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1133240",
+        "publico_alvo": [
+          "estudantes_alunos"
+        ],
+        "nivel_aplicacao": "Curso Técnico Subsequente",
+        "palavras_chave": [
+          "Acolhimento",
+          "Permanência e Êxito",
+          "Curso Técnico Subsequente",
+          "Programa de Pós-Graduação em Educação Profissional e Tecnológica-ProfEPT",
+          "Dissertação"
+        ],
+        "data_publicacao": "2025-09-18",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense",
+            "papel": "contributor"
+          },
+          {
+            "nome": "Sejas, Idce Ihlenfeldt",
+            "papel": "creator"
+          },
+          {
+            "nome": "Custódio, Raquel Cardoso de Faria e",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1133240",
+            "url": "https://educapes.capes.gov.br/handle/capes/1133240"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "Roteiro Produto Educacional - Entre e sinta-se em casa",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "Entre e sinta-se em casa - O acolhimento aos estudantes através de vídeos curtos para as redes sociais.",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "vídeo"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0006 2025 idce ihlenfeldt sejas raquel cardoso de faria e custodio ifc blumenau lp1 mp2 acolhimento uma pratica para a permanencia e exito dos estudantes do curso tecnico subsequente em administracao do ifsc campus gaspar pag 11 resumo acolher significa receber admitir dar guarida oferecer refugio proteger considerar e aceitar nesse sentido amplo e humanizador esta dissertacao tem como objetivo geral investigar as percepcoes dos estudantes sobre as praticas de acolhimento implementadas no curso tecnico subsequente em administracao do ifsc campus gaspar e propor novas acoes com foco em sua contribuicao para a permanencia e exito a pesquisa foi desenvolvida no ambito do mestrado profissional em educacao profissional e tecnologica profept do instituto federal catarinense campus blumenau vinculada a linha de pesquisa praticas educativas em educacao profissional e tecnologica e ao macroprojeto 2 inclusao e diversidade em espacos formais e nao formais de ensino na educacao profissional tecnologica buscou se neste estudo compreender formas de acolhimento que contribuam para a permanencia e exito dos estudantes considerando as especificidades dos trabalhadores estudantes quanto a metodologia trata se de uma pesquisa de natureza aplicada com abordagem qualitativa para possibilitar a compreensao das acoes de acolhimento e sua contribuicao na vida dos estudantes adotaram se os objetivos de uma pesquisa explicativa quanto aos procedimentos tecnicos caracteriza se como pesquisa participante e para a construcao dos dados empiricos foram realizados grupos focais com estudantes das turmas de 1a e 2a fases do curso tecnico subsequente em administracao do ano de 2024 a analise dos dados foi conduzida por meio da analise textual discursiva o que permitiu compreender a partir da visao dos estudantes como propor acoes de acolhimento que possam auxiliar na permanencia e no exito com base nas analises elaboramos um produto educacional intitulado entre e sinta se em casa o acolhimento aos estudantes atraves de videos curtos para as redes sociais voltado ao acolhimento dos trabalhadores estudantes trazendo informacoes sobre o campus e o curso visando orientar e apoiar estudantes ingressantes e veteranos por meio de videos curtos disponibilizados nas redes sociais tiktok e instragram como principais resultados verificou se que o acolhimento e percebido pelos estudantes como fator importante para a adaptacao ao curso gerando o fortalecimento de vinculos impactando positivamente na motivacao dos estudantes o estudo se mostra relevante por abordar a realidade pouco visibilizada dos cursos subsequentes nos institutos federais contribuindo para o debate sobre praticas inclusivas que articulam a educacao profissional e tecnologica com a perspectiva critica e omnilateral de formacao nesta modalidade de ensino palavras chave curso tecnico subsequente acolhimento estudantil permanencia e exito entre e sinta se em casa o acolhimento aos estudantes atraves de videos curtos para as redes sociais material didatico instrucional curso tecnico subsequente curso tecnico subsequente acolhimento estudantil permanencia e exito acolhimento programa de pos graduacao em educacao profissional e tecnologica profept dissertacao",
+        "termos_unificados": [
+          "Curso Técnico Subsequente",
+          "Acolhimento estudantil",
+          "Permanência e êxito",
+          "Acolhimento",
+          "Programa de Pós-Graduação em Educação Profissional e Tecnológica-ProfEPT",
+          "Dissertação"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    }
+  ]
+}

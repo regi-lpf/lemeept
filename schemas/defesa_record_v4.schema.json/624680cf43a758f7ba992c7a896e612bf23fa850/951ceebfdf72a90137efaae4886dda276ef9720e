@@ -1,0 +1,1 @@
+    ("produto_comunicacao", r"\b(podcast|r[aá]dio|tv|campanha|programa\s+de\s+m[ií]dia|boletim|jornal|revista\s+de\s+divulga[cç][aã]o)\b"),

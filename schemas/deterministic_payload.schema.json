@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ContratoExtracaoDeterministicaV4",
+  "type": "object",
+  "required": ["id", "metadados_resolvidos", "evidencias_educapes", "recortes_textuais"],
+  "properties": {
+    "id": { "type": "string" },
+    "metadados_resolvidos": {
+      "type": "object",
+      "required": ["ano", "autor", "orientador", "instituicao", "campus", "linha_pesquisa", "macroprojeto"],
+      "properties": {
+        "ano": { "type": "integer" },
+        "autor": { "type": "string" },
+        "orientador": { "type": "string" },
+        "coorientadores": { "type": "array", "items": { "type": "string" } },
+        "instituicao": { "type": "string" },
+        "campus": { "type": "string" },
+        "linha_pesquisa": { "type": "string", "enum": ["LP1", "LP2", "LP_INDEFINIDA"] },
+        "macroprojeto": { "type": "string", "enum": ["MP1", "MP2", "MP3", "MP4", "MP5", "MP6", "MP_INDEFINIDO"] }
+      }
+    },
+    "dissertacao_deterministica": {
+      "type": "object",
+      "required": ["titulo", "link", "palavras_chave"],
+      "properties": {
+        "titulo": { "type": "string" },
+        "link": { "type": "string" },
+        "palavras_chave": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "evidencias_educapes": {
+      "type": "object",
+      "properties": {
+        "handle_url": { "type": ["string", "null"] },
+        "titulo_produto": { "type": ["string", "null"] },
+        "data_publicacao": { "type": ["string", "null"] },
+        "autores_colaboradores": { "type": "array", "items": { "type": "object" } },
+        "identificadores": { "type": "array", "items": { "type": "object" } },
+        "colecao_educapes": { "type": ["string", "null"] },
+        "dc_type_educapes": { "type": "array", "items": { "type": "string" } },
+        "palavras_chave_educapes": { "type": "array", "items": { "type": "string" } },
+        "tipo_produto_regex": {
+          "type": ["string", "null"],
+          "enum": [
+            "material_didatico_instrucional", "curso_oficina", "tecnologia_social",
+            "software_aplicativo", "eventos_organizados", "acervo",
+            "produto_comunicacao", "manual_protocolo", "carta_mapa", null
+          ]
+        }
+      }
+    },
+    "recortes_textuais": {
+      "type": "object",
+      "required": ["capa", "ficha_catalografica", "resumo", "introducao", "trechos_epistemologicos", "referencias_filtradas"],
+      "properties": {
+        "capa": { "type": "string" },
+        "ficha_catalografica": { "type": "string" },
+        "sumario": { "type": "string" },
+        "resumo": { "type": "string" },
+        "introducao": { "type": "string" },
+        "descricao_produto_na_dissertacao": { "type": "string" },
+        "trechos_epistemologicos": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "secao": { "type": "string" },
+              "pagina": { "type": "integer" },
+              "texto": { "type": "string" },
+              "citacoes_detectadas": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        "referencias_filtradas": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}
+

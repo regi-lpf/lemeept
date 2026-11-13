@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ContratoPreExtracaoV4",
+  "type": "object",
+  "required": ["id", "coletado_em", "fonte_profept", "arquivos"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^EPT-[0-9]{4}$" },
+    "coletado_em": { "type": "string", "format": "date-time" },
+    "fonte_profept": {
+      "type": "object",
+      "required": ["titulo_bruto", "autor_bruto", "ano", "url_dissertacao"],
+      "properties": {
+        "titulo_bruto": { "type": "string" },
+        "autor_bruto": { "type": "string" },
+        "orientador_bruto": { "type": ["string", "null"] },
+        "ano": { "type": "integer" },
+        "campus": { "type": "string" },
+        "url_dissertacao": { "type": "string", "format": "uri" },
+        "handle_educapes": { "type": ["string", "null"] }
+      }
+    },
+    "arquivos": {
+      "type": "object",
+      "required": ["pdf_dissertacao_path", "sha256_dissertacao", "status_download"],
+      "properties": {
+        "pdf_dissertacao_path": { "type": "string" },
+        "sha256_dissertacao": { "type": "string" },
+        "pdf_produto_path": { "type": ["string", "null"] },
+        "status_download": { "type": "string", "enum": ["OK", "ERRO_HTTP", "CORROMPIDO"] }
+      }
+    }
+  }
+}
+
