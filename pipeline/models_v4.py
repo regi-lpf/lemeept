@@ -102,6 +102,7 @@ class DissertacaoDeterministica(BaseModel):
     titulo: str
     link: str
     palavras_chave: List[str] = Field(default_factory=list)
+    autores_referenciados: List[str] = Field(default_factory=list)
 
 
 class EvidenciasEduCAPES(BaseModel):
@@ -167,6 +168,7 @@ class DissertacaoFinalV4(BaseModel):
     link: str
     resumo: str
     palavras_chave: List[str] = Field(default_factory=list)
+    autores_referenciados: List[str] = Field(default_factory=list)
     base_epistemologica: BaseEpistemologicaV4
 
 
@@ -211,3 +213,32 @@ class ContratoDefesaV4(BaseModel):
     dissertacao: DissertacaoFinalV4
     produto: ProdutoFinalV4
     indice_busca: IndiceBuscaV4
+
+
+# =============================================================
+#  EXTRAS V4
+# =============================================================
+
+class EvidenciaCurtaLLM(BaseModel):
+    secao: str
+    pagina: int
+    trecho_curto: str = Field(..., description="Citação literal curta de até 180 caracteres")
+    referencia_correspondente: Optional[str] = None
+
+
+class BaseEpistemologicaLLM(BaseModel):
+    valor: Optional[str] = None
+    candidato: Optional[str] = None
+    confianca: ConfiancaEpistemologica
+    justificativa: str = Field(..., description="Explicação objetiva em no máximo 2 frases")
+    evidencias: List[EvidenciaCurtaLLM] = Field(default_factory=list)
+
+
+class RespostaInterpretativaLLM(BaseModel):
+    """Contrato enxuto de saída exclusiva da LLM (~400 tokens)."""
+    macroprojeto: MacroprojetoCode
+    produto_titulo: str
+    produto_tipo: TipoProdutoSlug
+    produto_publico_alvo: List[PublicoAlvoSlug] = Field(default_factory=list)
+    produto_nivel_aplicacao: str
+    base_epistemologica: BaseEpistemologicaLLM

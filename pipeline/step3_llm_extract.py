@@ -11,6 +11,7 @@ from pipeline.llm_provider import LLMClient
 from pipeline.models_v4 import (
     ContratoDefesaV4,
     ContratoExtracaoDeterministicaV4,
+    RespostaInterpretativaLLM,
 )
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -76,108 +77,156 @@ def construir_indice_busca(registro: Dict[str, Any]) -> Dict[str, Any]:
         pro.get("tipo", ""),
         pro.get("nivel_aplicacao", ""),
         " ".join(tags_unificadas),
+        " ".join(dis.get("autores_referenciados") or []),
     ]
 
-    texto_normalizado = normalizar_texto_busca(" ".join(filter(None, blocos)))
-
     return {
-        "texto_busca_normalizado": texto_normalizado,
+        "texto_busca_normalizado": normalizar_texto_busca(" ".join(filter(None, blocos))),
         "termos_unificados": tags_unificadas,
         "tem_produto_vinculado": bool(pro.get("link")),
         "tem_resumo": bool(dis.get("resumo") and len(dis.get("resumo", "").strip()) > 30),
     }
 
 
-def aplicar_governanca_pos_llm(
+def montar_prompt_enxuto(payload: ContratoExtracaoDeterministicaV4) -> str:
+    """
+    Filtra apenas os campos semanticamente relevantes e limita o volume textual
+    para caber com folga em 8k de contexto na GPU local (~5k-6k tokens).
+    """
+    rec = payload.recortes_textuais
+    edu = payload.evidencias_educapes
+
+    contexto_enxuto = {
+        "id": payload.id,
+        "titulo_dissertacao": payload.dissertacao_deterministica.titulo,
+        "macroprojeto_pre_detectado": payload.metadados_resolvidos.macroprojeto,
+        "evidencias_produto": {
+            "titulo_educapes": edu.titulo_produto,
+            "colecao_educapes": edu.colecao_educapes,
+            "dc_type_educapes": edu.dc_type_educapes,
+            "tipo_sugerido_regex": edu.tipo_produto_regex,
+            "descricao_na_dissertacao": rec.descricao_produto_na_dissertacao[:2500],
+        },
+        "resumo": rec.resumo[:3000],
+        "introducao_recorte": rec.introducao[:5500],
+        "trechos_epistemologicos": [
+            {
+                "secao": t.secao,
+                "pagina": t.pagina,
+                "texto": t.texto[:900],
+                "citacoes": t.citacoes_detectadas,
+            }
+            for t in rec.trechos_epistemologicos[:8]
+        ],
+        "referencias_filtradas": rec.referencias_filtradas[:25],
+    }
+
+    return (
+        f"Extraia os campos interpretativos do registro {payload.id}.\n"
+        f"Seja conciso: justificativa em até 2 frases e trecho_curto com no máximo 180 caracteres.\n"
+        f"{json.dumps(contexto_enxuto, ensure_ascii=False, separators=(',', ':'))}"
+    )
+
+
+def montar_registro_final(
     payload: ContratoExtracaoDeterministicaV4,
-    saida_llm: Dict[str, Any],
-) -> Dict[str, Any]:
+    resp: RespostaInterpretativaLLM,
+) -> ContratoDefesaV4:
+    """Mescla os dados determinísticos da Etapa 2 com a saída enxuta da LLM."""
     meta = payload.metadados_resolvidos
     dis_det = payload.dissertacao_deterministica
     edu = payload.evidencias_educapes
 
-    saida_llm["schema_version"] = "4.0"
-    saida_llm["id"] = payload.id
-    saida_llm["ano"] = meta.ano
-    saida_llm["autor"] = meta.autor
-    saida_llm["orientador"] = meta.orientador
-    saida_llm["coorientadores"] = list(meta.coorientadores)
-    saida_llm["instituicao"] = meta.instituicao
-    saida_llm["campus"] = meta.campus
-
-    # 1. Preservação e vínculo rígido MP -> LP
+    # 1. Vínculo rígido MP -> LP
     mp_final = (
         meta.macroprojeto
-        if meta.macroprojeto != "MP_INDEFINIDO"
-        else saida_llm.get("macroprojeto", "MP1")
+        if meta.macroprojeto in MP_PARA_LP
+        else resp.macroprojeto
     )
-    if mp_final not in MP_PARA_LP:
-        mp_final = "MP1"
-    saida_llm["macroprojeto"] = mp_final
-    saida_llm["linha_pesquisa"] = MP_PARA_LP[mp_final]
+    lp_final = MP_PARA_LP[mp_final]
 
-    # 2. Dissertação e Trava Epistemológica
-    dis_out = saida_llm.setdefault("dissertacao", {})
-    dis_out["titulo"] = dis_det.titulo
-    dis_out["link"] = dis_det.link
-    dis_out["palavras_chave"] = limpar_palavras_chave(
-        dis_det.palavras_chave or dis_out.get("palavras_chave") or []
-    )
-    if not dis_out.get("resumo") and payload.recortes_textuais.resumo:
-        dis_out["resumo"] = payload.recortes_textuais.resumo.strip()
-
-    base = dis_out.setdefault("base_epistemologica", {})
-    confianca = base.get("confianca", "abstencao")
-    evidencias = base.get("evidencias") or []
-
+    # 2. Trava de confiança da Base Epistemológica
+    base_llm = resp.base_epistemologica
     evidencias_validas = [
-        ev
-        for ev in evidencias
-        if isinstance(ev, dict) and ev.get("trecho") and isinstance(ev.get("pagina"), int)
+        {
+            "secao": ev.secao,
+            "pagina": ev.pagina,
+            "trecho": ev.trecho_curto[:220],
+            "referencia_correspondente": ev.referencia_correspondente,
+        }
+        for ev in base_llm.evidencias
+        if ev.trecho_curto.strip() and isinstance(ev.pagina, int)
     ]
-    base["evidencias"] = evidencias_validas
 
-    if confianca != "alta" or not evidencias_validas or not base.get("valor"):
-        if base.get("valor") and not base.get("candidato"):
-            base["candidato"] = base["valor"]
-        base["valor"] = None
-        base["revisao_pendente"] = True
-        if confianca == "alta":
-            base["confianca"] = "media" if evidencias_validas else "baixa"
+    if base_llm.confianca != "alta" or not evidencias_validas or not base_llm.valor:
+        valor_final = None
+        candidato_final = base_llm.candidato or base_llm.valor
+        revisao_pendente = True
+        confianca_final = (
+            "media"
+            if (base_llm.confianca == "alta" and evidencias_validas)
+            else ("baixa" if base_llm.confianca == "alta" else base_llm.confianca)
+        )
     else:
-        base["revisao_pendente"] = False
+        valor_final = base_llm.valor
+        candidato_final = None
+        revisao_pendente = False
+        confianca_final = "alta"
 
-    # 3. Produto Educacional e Proveniência (com serialização explícita dos submodelos)
-    pro_out = saida_llm.setdefault("produto", {})
-    if edu.titulo_produto and not pro_out.get("titulo"):
-        pro_out["titulo"] = edu.titulo_produto
-    pro_out["link"] = edu.handle_url or pro_out.get("link")
-    pro_out["data_publicacao"] = edu.data_publicacao
-    pro_out["autores_colaboradores"] = [a.model_dump() for a in edu.autores_colaboradores]
-    pro_out["identificadores"] = [i.model_dump() for i in edu.identificadores]
+    # 3. Produto Educacional e Proveniência
+    tipo_final = edu.tipo_produto_regex or resp.produto_tipo
+    fonte_tipo = "dissertacao_ficha" if edu.tipo_produto_regex else "inferencia_llm"
 
-    tags_pro = (
-        (edu.palavras_chave_educapes or [])
-        or (pro_out.get("palavras_chave") or [])
-        or dis_out["palavras_chave"]
-    )
-    pro_out["palavras_chave"] = limpar_palavras_chave(tags_pro)
+    tags_dis = limpar_palavras_chave(dis_det.palavras_chave)
+    tags_pro = limpar_palavras_chave(edu.palavras_chave_educapes or tags_dis)
 
-    prov = pro_out.setdefault("proveniencia", {})
-    if edu.tipo_produto_regex:
-        pro_out["tipo"] = edu.tipo_produto_regex
-        prov["fonte_tipo_escolhida"] = "dissertacao_ficha"
-    else:
-        prov.setdefault("fonte_tipo_escolhida", "inferencia_llm")
+    registro_dict: Dict[str, Any] = {
+        "schema_version": "4.0",
+        "id": payload.id,
+        "ano": meta.ano,
+        "autor": meta.autor,
+        "orientador": meta.orientador,
+        "coorientadores": list(meta.coorientadores),
+        "instituicao": meta.instituicao,
+        "campus": meta.campus,
+        "linha_pesquisa": lp_final,
+        "macroprojeto": mp_final,
+        "dissertacao": {
+            "titulo": dis_det.titulo,
+            "link": dis_det.link,
+            "resumo": payload.recortes_textuais.resumo.strip(),
+            "palavras_chave": tags_dis,
+            "autores_referenciados": list(dis_det.autores_referenciados),
+            "base_epistemologica": {
+                "valor": valor_final,
+                "candidato": candidato_final,
+                "confianca": confianca_final,
+                "revisao_pendente": revisao_pendente,
+                "justificativa": base_llm.justificativa.strip(),
+                "evidencias": evidencias_validas,
+            },
+        },
+        "produto": {
+            "titulo": edu.titulo_produto or resp.produto_titulo,
+            "tipo": tipo_final,
+            "link": edu.handle_url,
+            "publico_alvo": list(resp.produto_publico_alvo),
+            "nivel_aplicacao": resp.produto_nivel_aplicacao.strip(),
+            "palavras_chave": tags_pro,
+            "data_publicacao": edu.data_publicacao,
+            "autores_colaboradores": [a.model_dump() for a in edu.autores_colaboradores],
+            "identificadores": [i.model_dump() for i in edu.identificadores],
+            "proveniencia": {
+                "fonte_tipo_escolhida": fonte_tipo,
+                "rotulo_original_declarado": edu.titulo_produto,
+                "colecao_educapes": edu.colecao_educapes,
+                "dc_type_educapes": list(edu.dc_type_educapes),
+            },
+        },
+    }
 
-    prov["colecao_educapes"] = edu.colecao_educapes
-    prov["dc_type_educapes"] = list(edu.dc_type_educapes)
-    prov.setdefault("rotulo_original_declarado", edu.titulo_produto)
-
-    # 4. Índice de busca determinístico
-    saida_llm["indice_busca"] = construir_indice_busca(saida_llm)
-
-    return saida_llm
+    registro_dict["indice_busca"] = construir_indice_busca(registro_dict)
+    return ContratoDefesaV4.model_validate(registro_dict)
 
 
 def processar_payload(
@@ -196,22 +245,16 @@ def processar_payload(
         logger.info(f"[{payload.id}] Já processado. Pulando.")
         return None
 
-    logger.info(f"[{payload.id}] Processando via {llm.provider_name} ({llm.model})...")
-
-    user_message = (
-        f"Processe o registro {payload.id} abaixo e retorne estritamente o JSON conforme o schema.\n\n"
-        f"{payload.model_dump_json(indent=2)}"
-    )
+    user_message = montar_prompt_enxuto(payload)
 
     conteudo = llm.gerar_estruturado(
         system_prompt=system_prompt,
         user_prompt=user_message,
-        response_model=ContratoDefesaV4,
+        response_model=RespostaInterpretativaLLM,
     )
 
-    dados_brutos_llm = json.loads(conteudo)
-    dados_governados = aplicar_governanca_pos_llm(payload, dados_brutos_llm)
-    registro_validado = ContratoDefesaV4.model_validate(dados_governados)
+    resp_llm = RespostaInterpretativaLLM.model_validate_json(conteudo)
+    registro_validado = montar_registro_final(payload, resp_llm)
 
     RECORDS_DIR.mkdir(parents=True, exist_ok=True)
     with open(caminho_saida, "w", encoding="utf-8") as f:
@@ -256,4 +299,4 @@ def executar_etapa3(sobrescrever: bool = False, limite: Optional[int] = None):
 
 
 if __name__ == "__main__":
-    executar_etapa3(sobrescrever=False, limite=6)
+    executar_etapa3(sobrescrever=True, limite=None)

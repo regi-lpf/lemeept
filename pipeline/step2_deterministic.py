@@ -21,6 +21,17 @@ from pipeline.models_v4 import (
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+# Stopwords institucionais ou ruídos comuns no início de linhas ABNT que não são autores humanos
+IGNORAR_ENTRADAS_REF = {
+    "BRASIL", "SANTA CATARINA", "INSTITUTO FEDERAL", "MINISTERIO", "MINISTÉRIO",
+    "CONSELHO", "DECRETO", "LEI", "RESOLUCAO", "RESOLUÇÃO", "PORTARIA",
+    "DISPONIVEL", "DISPONÍVEL", "ACESSO", "IN", "IBID", "IDEM", "OP", "CIT",
+    "ORGANIZACAO", "ORGANIZAÇÃO", "UNESCO", "OCDE", "CAPES", "MEC", "CNE", "CEB"
+}
+
+# Partículas de sobrenome composto em português/espanhol
+PARTICULAS_SOBRENOME = {"DA", "DE", "DO", "DAS", "DOS", "DEL", "VON", "VAN"}
+
 # --- REGRAS CANÔNICAS PROFEPT ---
 MAPEAMENTO_MP_LP = {
     "MP1": "LP1",
@@ -83,8 +94,8 @@ def detectar_macroprojeto_e_linha(texto_completo_pdf: str) -> Tuple[str, str]:
     # 1. Padrão numérico explícito (evitando falso positivo de "mp4" formato de vídeo)
     padroes_num = [
         r"\bmacro\s*[-]?\s*projeto(?:\s+de\s+pesquisa(?:\s+e\s+desenvolvimento)?)?\s*[:\-–]?\s*([1-6]|i{1,3}|iv|v|vi)\b",
-        r"\bmp\s*[-]?\s*([1-35-6])\b",       # MP1, MP2, MP3, MP5, MP6
-        r"\bmp\s*[-]?\s*4(?!\s*(?:;|,|\)|\.|\b(?:video|formato|extensao|duracao|mb|audio)))\b",  # MP4 apenas se não for formato de vídeo
+        r"\bmp\s*[-]?\s*([1-35-6])\b",
+        r"\bmp\s*[-]?\s*(4)(?!\s*(?:;|,|\)|\.|\b(?:video|formato|extensao|duracao|mb|audio)))\b",
     ]
     romanos = {"i": "1", "ii": "2", "iii": "3", "iv": "4", "v": "5", "vi": "6"}
 
@@ -149,6 +160,45 @@ def extrair_palavras_chave_resumo(bloco_resumo: str) -> List[str]:
             tags.append(limpa)
     return tags
 
+def extrair_autores_referencias(texto_secao_referencias: str) -> List[str]:
+    """
+    Extrai sobrenomes de autores a partir das entradas bibliográficas no padrão ABNT
+    (ex: 'SAVIANI, Dermeval...' -> 'Saviani', 'SILVA, João da...' -> 'Silva').
+    """
+    if not texto_secao_referencias:
+        return []
+
+    autores_encontrados = set()
+
+    # Captura início de linha (ou após quebra) com SOBRENOME EM CAIXA ALTA seguido de vírgula
+    padrao_abnt = re.compile(
+        r"(?:^|\n)\s*([A-ZÁÉÍÓÚÂÊÔÃÕÇ]{2,}(?:\s+(?:DA|DE|DO|DAS|DOS|[A-ZÁÉÍÓÚÂÊÔÃÕÇ]{2,}))?)\s*,\s*[A-ZÁÉÍÓÚÂÊÔÃÕÇa-záéíóúâêôãõç]"
+    )
+
+    for match in padrao_abnt.finditer(texto_secao_referencias):
+        bruto = match.group(1).strip()
+        tokens = bruto.split()
+
+        # Remove partículas iniciais soltas (ex: "DE SOUZA" -> "SOUZA")
+        while tokens and tokens[0] in PARTICULAS_SOBRENOME:
+            tokens.pop(0)
+
+        if not tokens:
+            continue
+
+        sobrenome_principal = tokens[0]
+
+        if (
+            len(sobrenome_principal) < 3
+            or sobrenome_principal in IGNORAR_ENTRADAS_REF
+            or bruto in IGNORAR_ENTRADAS_REF
+        ):
+            continue
+
+        # Capitaliza mantendo padrão limpo (ex: "FRIGOTTO" -> "Frigotto")
+        autores_encontrados.add(sobrenome_principal.capitalize())
+
+    return sorted(autores_encontrados)
 
 # --- EXTRAÇÃO DE TEXTO E RECORTES DO PDF ---
 def ler_paginas_pdf(pdf_path: Path) -> List[Tuple[int, str]]:
@@ -161,7 +211,7 @@ def ler_paginas_pdf(pdf_path: Path) -> List[Tuple[int, str]]:
     return paginas
 
 
-def isolar_secoes_pdf(paginas: List[Tuple[int, str]]) -> RecortesTextuais:
+def isolar_secoes_pdf(paginas: List[Tuple[int, str]]) -> Tuple[RecortesTextuais, str]:
     if not paginas:
         return RecortesTextuais()
 
@@ -253,23 +303,24 @@ def isolar_secoes_pdf(paginas: List[Tuple[int, str]]) -> RecortesTextuais:
                 if len(trechos_epist) >= 12:
                     break
 
-    # 5. Filtrar na seção de Referências apenas as obras correspondentes às citações detectadas
+    # 5. Isolar seção de Referências integral (para autores_referenciados) e filtrar obras citadas
+    texto_refs = ""
     referencias_filtradas = []
-    if idx_refs is not None and citacoes_unicas:
-        texto_refs = "\n".join(t for _, t in paginas[idx_refs : idx_refs + 15])
-        # Divide entradas bibliográficas (linhas começando com SOBRENOME em caixa alta)
-        entradas = re.split(r"\n(?=[A-ZÁÉÍÓÚÂÊÔÃÕÇ]{2,}[,\s])", texto_refs)
-        for entrada in entradas:
-            entrada_limpa = re.sub(r"\s+", " ", entrada).strip()
-            if len(entrada_limpa) < 25:
-                continue
-            primeiro_token = re.split(r"[,.\s]", entrada_limpa)[0].upper()
-            if primeiro_token in citacoes_unicas:
-                referencias_filtradas.append(entrada_limpa[:400])
-                if len(referencias_filtradas) >= 25:
-                    break
+    if idx_refs is not None:
+        texto_refs = "\n".join(t for _, t in paginas[idx_refs : idx_refs + 25])
+        if citacoes_unicas:
+            entradas = re.split(r"\n(?=[A-ZÁÉÍÓÚÂÊÔÃÕÇ]{2,}[,\s])", texto_refs)
+            for entrada in entradas:
+                entrada_limpa = re.sub(r"\s+", " ", entrada).strip()
+                if len(entrada_limpa) < 25:
+                    continue
+                primeiro_token = re.split(r"[,.\s]", entrada_limpa)[0].upper()
+                if primeiro_token in citacoes_unicas:
+                    referencias_filtradas.append(entrada_limpa[:400])
+                    if len(referencias_filtradas) >= 25:
+                        break
 
-    return RecortesTextuais(
+    recortes = RecortesTextuais(
         capa=capa[:2500],
         ficha_catalografica=ficha[:2500],
         sumario=sumario[:3000],
@@ -279,6 +330,7 @@ def isolar_secoes_pdf(paginas: List[Tuple[int, str]]) -> RecortesTextuais:
         trechos_epistemologicos=trechos_epist,
         referencias_filtradas=referencias_filtradas,
     )
+    return recortes, texto_refs
 
 
 # --- SCRAPING RESILIENTE DO EDUCAPES ---
@@ -445,7 +497,7 @@ def executar_etapa2(
 
             paginas = ler_paginas_pdf(pdf_path)
             texto_full_pdf = "\n".join(txt for _, txt in paginas)
-            recortes = isolar_secoes_pdf(paginas)
+            recortes, texto_integral_referencias = isolar_secoes_pdf(paginas)
 
             bloco_preliminar = f"{recortes.capa}\n{recortes.ficha_catalografica}\n{recortes.resumo}"
             bloco_busca_mp = f"{recortes.capa}\n{recortes.ficha_catalografica}\n{recortes.resumo}\n{recortes.introducao}"
@@ -478,6 +530,7 @@ def executar_etapa2(
                     titulo=fonte["titulo_bruto"].strip(),
                     link=fonte["url_dissertacao"],
                     palavras_chave=kw_dissertacao,
+                    autores_referenciados=extrair_autores_referencias(texto_integral_referencias)
                 ),
                 evidencias_educapes=evidencias_capes,
                 recortes_textuais=recortes,
