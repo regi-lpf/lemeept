@@ -1,8 +1,8 @@
 {
   "schema_version": "4.0",
-  "gerado_em": "2026-11-13T21:40:15.654776+00:00",
-  "total_defesas": 6,
-  "total_producoes": 12,
+  "gerado_em": "2026-11-18T20:49:47.999021+00:00",
+  "total_defesas": 21,
+  "total_producoes": 42,
   "defesas": [
     {
       "schema_version": "4.0",
@@ -26,6 +26,7 @@
           "ProfEPT",
           "Produto Educacional"
         ],
+        "autores_referenciados": [],
         "base_epistemologica": {
           "valor": "Materialismo Histórico-Dialético",
           "candidato": null,
@@ -124,11 +125,12 @@
         "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2026/03/DISSERTACAO_VICTOR-MEIRELES-AIRES.pdf",
         "resumo": "[PÁG. 11]\\nRESUMO \\n \\nO ensino técnico e, mais especificamente, os cursos técnicos subsequentes no Brasil, \\ncaracterizam-se por terem uma educação com traços bastante tecnicistas que a cada \\ndia dão mais valor às tecnologias digitais. Nos Cursos Técnicos em Edificações (CTE) \\nnão é diferente, pois a adoção, nas últimas décadas, do Computer Aided-Design (CAD \\n– Desenho Assistido por Computador) para a elaboração de projetos de construção \\ncivil tem ocupado o currículo destes cursos. Entretanto, a migração dos antigos \\ndesenhos feitos em papel para seus formatos digitais tem interferido nas ações de \\nensino, uma vez que, além dos estudantes terem de aprender a utilizar os softwares \\npara elaboração destes desenhos, eles também necessitam desenvolver \\nconhecimentos tradicionais de projetos, como a percepção espacial e o senso de \\nescala geométrica. Nesse sentido, pode-se inferir que a adoção de técnicas de ensino \\nque consigam facilitar este processo de aprendizagem, associando os conhecimentos \\ntradicionais às tecnologias digitais, é bem-vinda dentro dos currículos dos CTE. \\nTodavia, restringir este tipo de aprendizagem a questões puramente de Racionalidade \\nTécnica (RT) seria perpetuar, com o já mencionado ensino tecnicista. Logo, um dos \\nmeios possíveis de buscar a superação desta abordagem tecnicista é por meio da \\nassociação de uma Formação Crítica (FC) aos tradicionais métodos de ensino, ação \\nesta que pode possibilitar aos estudantes maior aproximação com os princípios da \\nEducação Profissional e Tecnológica (EPT). Sendo assim, esta pesquisa, \\ndesenvolvida no Mestrado ProfEPT, amparou-se em autores, como Skovsmose \\n(2014, 2015), que trata da Educação Matemática Crítica (EMC); Delizoicov, Angotti \\ne Pernambuco (2018), que versam sobre os Três Momentos Pedagógicos (3MP); \\nFreire (1981, 2022, 2024), que discute pedagogia, aprendizagem e criticização do \\nconhecimento; Ciavatta (2005), Frigotto (2001, 2009, 2012, 2015), Kuenzer (1989) e \\nRamos (2005, 2007), que discutem a EPT, politecnia, trabalho, educação, \\nomnilateralidade e formação humana integral, entre outros. Como objetivo principal \\nesta pesquisa buscou analisar os impactos da utilização de maquetes físicas de \\nedificações residenciais unifamiliares na aprendizagem de forma crítica, bem como da \\npercepção espacial e do senso de escala geométrica, nos estudantes da turma 2025/1 \\ndo CTESEM do IFC Campus Fraiburgo, entre fevereiro e dezembro de 2025. Dessa \\nforma, esperou-se desenvolver juntamente com esses estudantes uma educação",
         "palavras_chave": [],
+        "autores_referenciados": [],
         "base_epistemologica": {
-          "valor": null,
-          "candidato": "Materialismo Histórico-Dialético",
-          "confianca": "media",
-          "revisao_pendente": true,
+          "valor": "Materialismo Histórico-Dialético",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
           "justificativa": "Forte convergência argumentativa com autores como Frigotto, Saviani, Marx e Ramos nos trechos de fundamentação teórica, porém sem declaração explícita de filiação epistemológica da pesquisa.",
           "evidencias": [
             {
@@ -235,11 +237,12 @@
           "Iniciação científica",
           "EPT"
         ],
+        "autores_referenciados": [],
         "base_epistemologica": {
-          "valor": null,
-          "candidato": "Pedagogia Histórico-Crítica",
-          "confianca": "media",
-          "revisao_pendente": true,
+          "valor": "Pedagogia Histórico-Crítica",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
           "justificativa": "O texto da dissertação menciona aproximação com a Pedagogia Histórico-Crítica na seção 2.3 e fundamenta-se em autores críticos (Demo, Freire, Saviani), mas não declara explicitamente a matriz epistemológica desta pesquisa como PHC.",
           "evidencias": [
             {
@@ -343,6 +346,7 @@
           "MOODLE",
           "Prática Docente"
         ],
+        "autores_referenciados": [],
         "base_epistemologica": {
           "valor": null,
           "candidato": null,
@@ -463,6 +467,7 @@
         "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/12/DISSERTACAO-LUZIANA-DA-SILVA-DIAS.pdf",
         "resumo": "[PÁG. 11]\\nRESUMO \\n \\nA presente pesquisa, inserida no tema “Práticas Pedagógicas Integradoras \\nvinculadas ao Ensino, à Pesquisa e à Extensão”, tem como delimitação a análise \\ndessas práticas nas publicações eletrônicas dos Anais da Feira do Conhecimento do \\nInstituto Federal Catarinense (IFC) - campus Ibirama, no período dos últimos cinco \\nanos. A investigação orienta-se pela questão norteadora: Quais são as práticas \\npedagógicas integradoras presentes nos projetos de ensino, pesquisa e extensão \\npublicados nos Anais da Feira do Conhecimento do IFC - campus Ibirama? A \\nrelevância desta pesquisa decorre da necessidade de compreender como a \\nintegração entre ensino, pesquisa e extensão se concretizam na prática integradora \\ne quais impactos ela gera na formação discente e na relação da instituição com a \\ncomunidade. Sendo assim, a pesquisa foi realizada no âmbito do Programa de Pós-\\nGraduação em Educação Profissional e Tecnológica (ProfEPT) do Instituto Federal \\nCatarinense – campus Blumenau. Está vinculada especificamente ao macroprojeto 3 \\n– Práticas Educativas no Currículo Integrado, o qual acolhe iniciativas voltadas à \\nintegração curricular com vistas ao aprimoramento dos métodos de ensino e \\navaliação, superando a tradicional fragmentação entre as diferentes atividades \\npedagógicas. A partir da análise, foi desenvolvido o Produto Educacional do \\nProfEPT, “Articulando Ensino, Pesquisa e Extensão através de Práticas Integradoras \\nna Feira do Conhecimento”, com o objetivo de apresentar exemplos de práticas \\npedagógicas integradoras aplicadas em projetos de ensino, pesquisa e extensão na \\nFeira do Conhecimento do IFC – campus Ibirama. Para atingir os objetivos da \\npesquisa seguiu-se as etapas: a) levantamento por meio de revisão bibliográfica e \\ndocumental sobre os conceitos e concepções de práticas pedagógicas integradoras. \\nb) identificar práticas aplicadas ao ensino, à pesquisa e à extensão no campus \\nIbirama, por meio da leitura dos projetos c) analisar as publicações dos Anais da \\nFeira do Conhecimento, categorizando as práticas pedagógicas identificadas, \\natravés da Análise do Conteúdo de Bardin d) compreender formas de \\nimplementação dessas práticas e seus impactos para a formação discente e a \\ncomunidade; e) elaborar um infográfico de instruções a partir dos projetos \\npublicados. \\nOs resultados \\napontaram \\nque \\nocorrem \\npráticas pedagógicas \\nintegradoras no ensino, pesquisa e extensão na Feira do Conhecimento, elas \\nrevelam potencial para promover protagonismo discente e fortalecer vínculos",
         "palavras_chave": [],
+        "autores_referenciados": [],
         "base_epistemologica": {
           "valor": null,
           "candidato": null,
@@ -577,6 +582,7 @@
           "Acolhimento estudantil",
           "Permanência e êxito"
         ],
+        "autores_referenciados": [],
         "base_epistemologica": {
           "valor": "Pedagogia Histórico-Crítica",
           "candidato": null,
@@ -653,6 +659,1634 @@
           "Acolhimento",
           "Programa de Pós-Graduação em Educação Profissional e Tecnológica-ProfEPT",
           "Dissertação"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0007",
+      "ano": 2025,
+      "autor": "Rafaela Kracik Siqueira",
+      "orientador": "Eder Aparecido de Carvalho",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP2",
+      "macroprojeto": "MP6",
+      "dissertacao": {
+        "titulo": "O ESTÁGIO CURRICULAR COMO ESPAÇO PEDAGÓGICO DE REFLEXÃO ACERCA DO MUNDO DO TRABALHO",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/12/DISSERTACAO_E_PRODUTO_EDUCACIONAL___RAFAELA_KRACIK_SIQUEIRA.pdf",
+        "resumo": "Este trabalho, desenvolvido no âmbito do Programa de Pós-Graduação em Educação Profissional e Tecnológica (ProfEPT), integra a linha de pesquisa \"Organização e Memórias de Espaços Pedagógicos na Educação Profissional e Tecnológica (EPT)\", vinculada ao macroprojeto 6: \"Organização de espaços pedagógicos na EPT\". A pesquisa desenvolvida se dedica a responder de quais formas o estágio curricular se constitui como um espaço para a reflexão crítica dos estudantes acerca do mundo do trabalho, a fim de verificar se o estágio como prática pedagógica contribui com o projeto educacional de educação integral disputado pelos Institutos Federais. Neste sentido, realizou-se um diálogo entre a experiência do estágio curricular no ensino médio integrado e as contribuições de Gramsci sobre educação, trabalho e hegemonia. A análise bibliográfica revelou que Gramsci concebe a educação como uma ferramenta para a transformação de trabalhadores em dirigentes, a fim de que possam construir uma nova hegemonia pautada pelas demandas da classe trabalhadora. Por meio da aplicação de questionários aos estudantes do terceiro ano do Curso Técnico em Agropecuária Integrado ao Ensino Médio do Instituto Federal Catarinense – Campus Camboriú e da análise do discurso contido na resposta dos estudantes, foi possível verificar que o estágio curricular tem se revelado como um espaço fecundo para reflexões acerca das dinâmicas do mundo do trabalho. Em suas respostas, os estudantes denunciaram injustiças, questionaram as condições da classe estagiária e se mostraram atentos às contradições do mundo do trabalho. Assim, concluiu-se que o estágio curricular, se inserido em um currículo com enfoque gramsciano, também pode se constituir como uma importante ferramenta pedagógica para a formação integral e a construção de uma nova hegemonia, posto que coloca os estudantes em contato direto com o mundo do trabalho, de modo que os estudantes podem entendê-lo para, enfim, transformá-lo. Como produto educacional derivado da pesquisa, foi elaborada uma história em quadrinhos destinada a estudantes da EPT, com o objetivo de potencializar seu protagonismo durante o estágio e promover uma experiência de estágio mais formativa no horizonte de uma educação integral, emancipatória e omnilateral.",
+        "palavras_chave": [
+          "Gramsci",
+          "Educação",
+          "Estágio Curricular",
+          "Ensino Médio Integrado",
+          "Mundo do trabalho"
+        ],
+        "autores_referenciados": [],
+        "base_epistemologica": {
+          "valor": "Materialismo Histórico-Dialético",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "A pesquisa fundamenta-se explicitamente na concepção materialista histórico-dialética da EPT, mobilizando categorias centrais como trabalho como princípio educativo, omnilateralidade, politecnia, escola unitária e contradições do capital a partir de autores fundamentais da matriz (Antonio Gramsci, Karl Marx, Gaudêncio Frigotto, Maria Ciavatta e Marise Ramos).",
+          "evidencias": [
+            {
+              "secao": "Marco Teórico",
+              "pagina": 21,
+              "trecho": "utilizar-se-á como referencial teórico autores como Antonio Gramsci, Karl Marx, Ricardo Antunes, Acacia Zeneida Kuenzer, Gaudêncio Frigotto, Maria Ciavatta e Marise Nogueira Ramos. A partir desses autores, o eixo principal de abordagem teórica será a concepção da EPT como um espaço educativo que deve ser disputado no sentido da promoção da educação omnilateral, integral, politécnica e emancipatória.",
+              "referencia_correspondente": "CIAVATTA, Maria. Ensino Integrado, a Politecnia e a Educação Omnilateral: por que lutamos? Revista Trabalho & Educação, v. 23, n. 1, p. 187 – 205, 2014. Disponível em: https://seer.ufmg.br/index.php/trabedu/article/view/9303. Acesso em 27/06/2023. Acesso em: 20 de dez. de 2023."
+            },
+            {
+              "secao": "Introdução",
+              "pagina": 17,
+              "trecho": "os estudantes do IFC Campus Camboriú também estão inseridos em uma rede de instituições de ensino que disputa um projeto de educação e de mundo no sentido de uma educação omnilateral a fim de formar o ser humano na sua integralidade física, mental, cultural, política e científico-tecnológica, ou seja, para sua emancipação (Ciavatta, 2014).",
+              "referencia_correspondente": "CIAVATTA, Maria. Ensino Integrado, a Politecnia e a Educação Omnilateral: por que lutamos? Revista Trabalho & Educação, v. 23, n. 1, p. 187 – 205, 2014. Disponível em: https://seer.ufmg.br/index.php/trabedu/article/view/9303. Acesso em 27/06/2023. Acesso em: 20 de dez. de 2023."
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "PEGA A VISÃO, ESTAGIÁRIO! Aprender, trabalhar e transformar: uma jornada em quadrinhos.",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1132102",
+        "publico_alvo": [
+          "estudantes_alunos"
+        ],
+        "nivel_aplicacao": "Ensino Médio Integrado",
+        "palavras_chave": [
+          "Educação",
+          "Estágio Curricular",
+          "Ensino Médio Integrado",
+          "Mundo do trabalho",
+          "Mestrado Profissional em Educação Profissional e Tecnológica em Rede Nacional (ProfEPT)"
+        ],
+        "data_publicacao": "2025-09-19",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense - IFC",
+            "papel": "contributor"
+          },
+          {
+            "nome": "Siqueira, Rafaela Kracik",
+            "papel": "creator"
+          },
+          {
+            "nome": "Carvalho, Eder Aparecido de",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1132102",
+            "url": "https://educapes.capes.gov.br/handle/capes/1132102"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "História em Quadrinhos: Pega a Visão",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "História em quadrinhos",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "animação"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0007 2025 rafaela kracik siqueira eder aparecido de carvalho ifc blumenau lp2 mp6 o estagio curricular como espaco pedagogico de reflexao acerca do mundo do trabalho este trabalho desenvolvido no ambito do programa de pos graduacao em educacao profissional e tecnologica profept integra a linha de pesquisa organizacao e memorias de espacos pedagogicos na educacao profissional e tecnologica ept vinculada ao macroprojeto 6 organizacao de espacos pedagogicos na ept a pesquisa desenvolvida se dedica a responder de quais formas o estagio curricular se constitui como um espaco para a reflexao critica dos estudantes acerca do mundo do trabalho a fim de verificar se o estagio como pratica pedagogica contribui com o projeto educacional de educacao integral disputado pelos institutos federais neste sentido realizou se um dialogo entre a experiencia do estagio curricular no ensino medio integrado e as contribuicoes de gramsci sobre educacao trabalho e hegemonia a analise bibliografica revelou que gramsci concebe a educacao como uma ferramenta para a transformacao de trabalhadores em dirigentes a fim de que possam construir uma nova hegemonia pautada pelas demandas da classe trabalhadora por meio da aplicacao de questionarios aos estudantes do terceiro ano do curso tecnico em agropecuaria integrado ao ensino medio do instituto federal catarinense campus camboriu e da analise do discurso contido na resposta dos estudantes foi possivel verificar que o estagio curricular tem se revelado como um espaco fecundo para reflexoes acerca das dinamicas do mundo do trabalho em suas respostas os estudantes denunciaram injusticas questionaram as condicoes da classe estagiaria e se mostraram atentos as contradicoes do mundo do trabalho assim concluiu se que o estagio curricular se inserido em um curriculo com enfoque gramsciano tambem pode se constituir como uma importante ferramenta pedagogica para a formacao integral e a construcao de uma nova hegemonia posto que coloca os estudantes em contato direto com o mundo do trabalho de modo que os estudantes podem entende lo para enfim transforma lo como produto educacional derivado da pesquisa foi elaborada uma historia em quadrinhos destinada a estudantes da ept com o objetivo de potencializar seu protagonismo durante o estagio e promover uma experiencia de estagio mais formativa no horizonte de uma educacao integral emancipatoria e omnilateral pega a visao estagiario aprender trabalhar e transformar uma jornada em quadrinhos material didatico instrucional ensino medio integrado gramsci educacao estagio curricular ensino medio integrado mundo do trabalho mestrado profissional em educacao profissional e tecnologica em rede nacional profept",
+        "termos_unificados": [
+          "Gramsci",
+          "Educação",
+          "Estágio Curricular",
+          "Ensino Médio Integrado",
+          "Mundo do trabalho",
+          "Mestrado Profissional em Educação Profissional e Tecnológica em Rede Nacional (ProfEPT)"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0008",
+      "ano": 2025,
+      "autor": "Valquíria Correia Campos",
+      "orientador": "Eder Aparecido de Carvalho",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP2",
+      "macroprojeto": "MP6",
+      "dissertacao": {
+        "titulo": "IMPACTO DO PAE (PROGRAMA DE AUXÍLIOS ESTUDANTIS) NA PERMANÊNCIA E ÊXITO ESCOLAR DE ESTUDANTES DO ENSINO MÉDIO INTEGRADO DO IFC CAMPUS BLUMENAU",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/12/DISSERTACAO_VALQUIRIA_CORRETA_pdfa_3.pdf",
+        "resumo": "Esta dissertação, desenvolvida no âmbito do Programa de Pós-Graduação em Educação Profissional e Tecnológica (ProfEPT), teve como objetivo avaliar o impacto do Programa de Auxílio Estudantil (PAE) na permanência e êxito dos estudantes do Ensino Médio Integrado no IFC Campus Blumenau, analisando como a assistência estudantil contribui para a redução da evasão e o sucesso acadêmico dos discentes. Buscou verificar se há diferenças significativas na permanência e no desempenho acadêmico entre estudantes que recebem auxílio do PAE e aqueles que não recebem. A pesquisa adotou uma abordagem qualitativa e quantitativa, buscando integrar a análise dos dados numéricos e as percepções dos participantes. Vinculada à linha de pesquisa “Organização e Memória de Espaços Pedagógicos na Educação Profissional e Tecnológica (EPT)”, utilizou estudo bibliográfico, análise documental de registros institucionais e questionários aplicados aos servidores responsáveis pelo Serviço Integrado de Suporte e Acompanhamento Educacional (SISAE) e Registro Acadêmico e Cadastro Institucional (RACI) em 2025. O embasamento teórico inclui autores como Leite (2013), Pacheco (2012) e Caldas (2006), além da legislação educacional que orienta a Educação Profissional e Tecnológica, como a LDB (Lei nº 9.394/1996), a Lei nº 11.741/2008, Lei 14914/2024 e o Decreto nº 7.234/2010, que regulamenta o PNAES. Esse referencial sustenta a compreensão do PAE como política pública de garantia do direito à educação e de redução das desigualdades sociais. A análise empírica contemplou estudantes ingressantes em 2022, com conclusão prevista para 2024, nos cursos técnicos integrados de Eletromecânica e Informática, comparando beneficiários e não beneficiários do programa. Os resultados indicam que 74% dos estudantes contemplados concluíram o curso, evidenciando que o PAE contribui de forma significativa para a permanência, a redução de evasão e a conclusão escolar. Como produto educacional, elaborou-se uma história em quadrinhos sobre o PAE, com o objetivo de aproximar os estudantes do conhecimento sobre seus direitos, tornando as informações mais acessíveis e favorecendo a utilização do programa. Conclui-se que o PAE, enquanto política de assistência estudantil, exerce papel estratégico na democratização do acesso, na garantia de condições de continuidade dos estudos e na promoção da equidade, reafirmando o compromisso dos Institutos Federais com a formação integral e a inclusão social.",
+        "palavras_chave": [
+          "Permanência",
+          "Êxito",
+          "Programa de Auxílios Estudantis",
+          "Evasão Escolar",
+          "Políticas Públicas"
+        ],
+        "autores_referenciados": [],
+        "base_epistemologica": {
+          "valor": "Materialismo Histórico-Dialético",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "A pesquisa mobiliza conceitos de formação humana integral e fundamenta a crítica à mercantilização da educação como direito social a partir de Frigotto (2009), sugerindo filiação ao Materialismo Histórico-Dialético, porém sem formalização nominal explícita da matriz epistemológica na introdução ou resumo.",
+          "evidencias": [
+            {
+              "secao": "Corpo/Fundamentação",
+              "pagina": 53,
+              "trecho": "Essa perspectiva dialoga diretamente com a crítica de Frigotto (2009), ao afirmar que a mercantilização da educação ocorre quando um direito social, como a própria escolarização, é tratado como mercadoria, adquirida no mercado.",
+              "referencia_correspondente": null
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "Estudar é Direito. O PAE é Caminho.",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1132116",
+        "publico_alvo": [
+          "estudantes_alunos"
+        ],
+        "nivel_aplicacao": "Ensino Médio Integrado",
+        "palavras_chave": [
+          "Permanência e Êxito",
+          "Programa de Auxílios Estudantis",
+          "Evasão Escolar",
+          "Políticas Públicas",
+          "Mestrado Profissional em Educação Profissional e Tecnológica em Rede Nacional (ProfEPT)"
+        ],
+        "data_publicacao": "2025-09-29",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense - IFC",
+            "papel": "contributor"
+          },
+          {
+            "nome": "Campos, Valquíria",
+            "papel": "creator"
+          },
+          {
+            "nome": "Carvalho, Eder Aparecido de",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1132116",
+            "url": "https://educapes.capes.gov.br/handle/capes/1132116"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "Estudar é Direito. O PAE é Caminho.",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "História em Quadrinhos",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "animação"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0008 2025 valquiria correia campos eder aparecido de carvalho ifc blumenau lp2 mp6 impacto do pae programa de auxilios estudantis na permanencia e exito escolar de estudantes do ensino medio integrado do ifc campus blumenau esta dissertacao desenvolvida no ambito do programa de pos graduacao em educacao profissional e tecnologica profept teve como objetivo avaliar o impacto do programa de auxilio estudantil pae na permanencia e exito dos estudantes do ensino medio integrado no ifc campus blumenau analisando como a assistencia estudantil contribui para a reducao da evasao e o sucesso academico dos discentes buscou verificar se ha diferencas significativas na permanencia e no desempenho academico entre estudantes que recebem auxilio do pae e aqueles que nao recebem a pesquisa adotou uma abordagem qualitativa e quantitativa buscando integrar a analise dos dados numericos e as percepcoes dos participantes vinculada a linha de pesquisa organizacao e memoria de espacos pedagogicos na educacao profissional e tecnologica ept utilizou estudo bibliografico analise documental de registros institucionais e questionarios aplicados aos servidores responsaveis pelo servico integrado de suporte e acompanhamento educacional sisae e registro academico e cadastro institucional raci em 2025 o embasamento teorico inclui autores como leite 2013 pacheco 2012 e caldas 2006 alem da legislacao educacional que orienta a educacao profissional e tecnologica como a ldb lei no 9 394 1996 a lei no 11 741 2008 lei 14914 2024 e o decreto no 7 234 2010 que regulamenta o pnaes esse referencial sustenta a compreensao do pae como politica publica de garantia do direito a educacao e de reducao das desigualdades sociais a analise empirica contemplou estudantes ingressantes em 2022 com conclusao prevista para 2024 nos cursos tecnicos integrados de eletromecanica e informatica comparando beneficiarios e nao beneficiarios do programa os resultados indicam que 74 dos estudantes contemplados concluiram o curso evidenciando que o pae contribui de forma significativa para a permanencia a reducao de evasao e a conclusao escolar como produto educacional elaborou se uma historia em quadrinhos sobre o pae com o objetivo de aproximar os estudantes do conhecimento sobre seus direitos tornando as informacoes mais acessiveis e favorecendo a utilizacao do programa conclui se que o pae enquanto politica de assistencia estudantil exerce papel estrategico na democratizacao do acesso na garantia de condicoes de continuidade dos estudos e na promocao da equidade reafirmando o compromisso dos institutos federais com a formacao integral e a inclusao social estudar e direito o pae e caminho material didatico instrucional ensino medio integrado permanencia exito programa de auxilios estudantis evasao escolar politicas publicas permanencia e exito mestrado profissional em educacao profissional e tecnologica em rede nacional profept",
+        "termos_unificados": [
+          "Permanência",
+          "Êxito",
+          "Programa de Auxílios Estudantis",
+          "Evasão Escolar",
+          "Políticas Públicas",
+          "Permanência e Êxito",
+          "Mestrado Profissional em Educação Profissional e Tecnológica em Rede Nacional (ProfEPT)"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0009",
+      "ano": 2025,
+      "autor": "Larissa Merlo Morales da Silva",
+      "orientador": "Reginaldo Leandro Plácido",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP2",
+      "macroprojeto": "MP4",
+      "dissertacao": {
+        "titulo": "A HISTÓRIA DA IMPLANTAÇÃO (2012-2022) DO IFC CAMPUS SÃO BENTO DO SUL E A SUA RELAÇÃO COM OS ARRANJOS PRODUTIVOS, SOCIAIS E CULTURAIS LOCAIS",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/11/DISSERTACAO_-E_PRODUTO_EDUCACIONAL___LARISSA_MERLO_MORALES_DA_SILVA-1.pdf",
+        "resumo": "[PÁG. 8]\\nRESUMO \\n\\nEsta pesquisa analisa a história da implantação do Instituto Federal Catarinense \\nCampus São Bento do Sul (IFC Campus São Bento do Sul) no período de \\n2012-2022, investigando suas relações com os arranjos produtivos, sociais e \\nculturais locais. O objetivo central foi compreender a formação da cultura escolar \\ninstitucional mediante o diálogo estabelecido entre escola e território. A questão \\nnorteadora indagou: como ocorreram as relações de diálogo e influência entre o IFC \\nCampus São Bento do Sul durante sua implantação e os arranjos produtivos locais? \\nMetodologicamente, \\nadotou-se \\nabordagem \\nqualitativa baseada em análise \\ndocumental e história oral, utilizando as categorias analíticas de porosidade e \\npermeabilidade institucional (Plácido; Benkendorf; Todorov, 2021) e cultura escolar \\n(Viñao Frago, 2007). O corpus empírico compreendeu documentos institucionais, \\ncomo atas de audiências públicas, projetos pedagógicos de cursos, notícias e \\nentrevistas semiestruturadas com gestores, servidores, estudantes e membros da \\ncomunidade. Os resultados evidenciaram que a implantação do campus estabeleceu \\nrelações de permeabilidade com os arranjos produtivos locais, especialmente com o \\nsetor moveleiro e metalmecânico, influenciando a definição dos cursos técnicos \\noferecidos e as práticas pedagógicas desenvolvidas. Identificou-se que a cultura \\nescolar do IFC Campus São Bento do Sul incorporou elementos da cultura industrial \\nregional, manifestando-se em projetos de extensão, parcerias empresariais e \\nmetodologias de ensino voltadas às demandas produtivas locais. Como produto \\neducacional, foi desenvolvido o projeto de extensão \\\"Falas, Histórias e Memórias da Escola\\\", utilizando narrativas audiovisuais para construção da memória institucional \\ncom protagonismo estudantil. A pesquisa contribui para a compreensão das \\ninterfaces entre educação profissional e desenvolvimento territorial, evidenciando \\ncomo as instituições de EPT se constituem mediante processos de diálogo com os \\narranjos produtivos locais. \\n\\nPalavras-chave: História das Instituições Escolares; Organização e Memória da \\nEducação Profissional e Tecnológica; Culturas Escolares; Arranjos produtivos locais; \\nPorosidade e Permeabilidade.",
+        "palavras_chave": [
+          "História das Instituições Escolares",
+          "Organização e Memória da Educação Profissional e Tecnológica",
+          "Culturas Escolares",
+          "Arranjos produtivos locais",
+          "Porosidade e Permeabilidade"
+        ],
+        "autores_referenciados": [],
+        "base_epistemologica": {
+          "valor": "Materialismo Histórico-Dialético e Pedagogia Histórico-Crítica",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "A dissertação desenvolve explicitamente categorias centrais do Materialismo Histórico-Dialético (trabalho como princípio educativo, formação humana integral, crítica da dualidade educacional com autores Frigotto, Ciavatta, Ramos, Kuenzer) e da Pedagogia Histórico-Crítica (Saviani 2007 sobre trabalho/educação como formação do ser), ancoradas em recortes textuais com páginas localizáveis e citações estruturantes, conforme evidências selecionadas dos trechos epistemológicos.",
+          "evidencias": [
+            {
+              "secao": "Corpo/Fundamentação",
+              "pagina": 29,
+              "trecho": "A articulação entre as dimensões trabalho, ciência, tecnologia e cultura são requisitos da formação humana integral. Conforme destaca Moura (2012), o trabalho como princípio educativo não se limita ao aprender fazendo, tampouco se reduz à preparação para o exercício do trabalho. Implica compreender o ser humano como sujeito histórico que, ao apropriar-se criticamente de saberes e experiências, torna-se capaz de construir e transformar a realidade (Moura, 2012).",
+              "referencia_correspondente": "MOURA, Dante Henrique. Educação básica e educação profissional e tecnológica: dualidade histórica e possibilidades de integração. Natal: IFRN Editora, 2012."
+            },
+            {
+              "secao": "Corpo/Fundamentação",
+              "pagina": 30,
+              "trecho": "Nesta perspectiva, o trabalho, enquanto formação do ser, assume-se como processo especificamente educativo. A educação, assim como o trabalho, também assume essa função de atividade notadamente humana, segundo o autor Saviani (2007).",
+              "referencia_correspondente": "SAVIANI, Dermeval. História das ideias pedagógicas no Brasil. 3. ed. Campinas: Autores Associados, 2013."
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "A história da implantação do IFC campus São Bento do Sul (2012-2022) e a sua relação com os arranjos produtivos, sociais e culturais locais",
+        "tipo": "software_aplicativo",
+        "link": "https://educapes.capes.gov.br/handle/capes/1132804",
+        "publico_alvo": [
+          "estudantes_alunos",
+          "comunidade_externa"
+        ],
+        "nivel_aplicacao": "Ensino Médio Integrado",
+        "palavras_chave": [
+          "História das Instituições Escolares",
+          "Organização e Memória da Educação Profissional e Tecnológica",
+          "Culturas Escolares",
+          "Arranjos produtivos locais",
+          "Porosidade e Permeabilidade",
+          "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+          "Organização e Memória da EPT"
+        ],
+        "data_publicacao": "2025-10-20",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense",
+            "papel": "contributor"
+          },
+          {
+            "nome": "da Silva, Larissa Merlo Morales",
+            "papel": "creator"
+          },
+          {
+            "nome": "Placido, Reginaldo Leandro",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1132804",
+            "url": "https://educapes.capes.gov.br/handle/capes/1132804"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "A história da implantação do IFC campus São Bento do Sul (2012-2022) e a sua relação com os arranjos produtivos, sociais e culturais locais",
+            "url": ""
+          },
+          {
+            "esquema": "identifier",
+            "valor": "Produto educacional \"Falas, histórias e memórias”",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "A história da implantação do IFC campus São Bento do Sul (2012-2022) e a sua relação com os arranjos produtivos, sociais e culturais locais",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "outro"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0009 2025 larissa merlo morales da silva reginaldo leandro placido ifc blumenau lp2 mp4 a historia da implantacao 2012 2022 do ifc campus sao bento do sul e a sua relacao com os arranjos produtivos sociais e culturais locais pag 8 nresumo n nesta pesquisa analisa a historia da implantacao do instituto federal catarinense ncampus sao bento do sul ifc campus sao bento do sul no periodo de n2012 2022 investigando suas relacoes com os arranjos produtivos sociais e nculturais locais o objetivo central foi compreender a formacao da cultura escolar ninstitucional mediante o dialogo estabelecido entre escola e territorio a questao nnorteadora indagou como ocorreram as relacoes de dialogo e influencia entre o ifc ncampus sao bento do sul durante sua implantacao e os arranjos produtivos locais nmetodologicamente nadotou se nabordagem nqualitativa baseada em analise ndocumental e historia oral utilizando as categorias analiticas de porosidade e npermeabilidade institucional placido benkendorf todorov 2021 e cultura escolar n vinao frago 2007 o corpus empirico compreendeu documentos institucionais ncomo atas de audiencias publicas projetos pedagogicos de cursos noticias e nentrevistas semiestruturadas com gestores servidores estudantes e membros da ncomunidade os resultados evidenciaram que a implantacao do campus estabeleceu nrelacoes de permeabilidade com os arranjos produtivos locais especialmente com o nsetor moveleiro e metalmecanico influenciando a definicao dos cursos tecnicos noferecidos e as praticas pedagogicas desenvolvidas identificou se que a cultura nescolar do ifc campus sao bento do sul incorporou elementos da cultura industrial nregional manifestando se em projetos de extensao parcerias empresariais e nmetodologias de ensino voltadas as demandas produtivas locais como produto neducacional foi desenvolvido o projeto de extensao falas historias e memorias da escola utilizando narrativas audiovisuais para construcao da memoria institucional ncom protagonismo estudantil a pesquisa contribui para a compreensao das ninterfaces entre educacao profissional e desenvolvimento territorial evidenciando ncomo as instituicoes de ept se constituem mediante processos de dialogo com os narranjos produtivos locais n npalavras chave historia das instituicoes escolares organizacao e memoria da neducacao profissional e tecnologica culturas escolares arranjos produtivos locais nporosidade e permeabilidade a historia da implantacao do ifc campus sao bento do sul 2012 2022 e a sua relacao com os arranjos produtivos sociais e culturais locais software aplicativo ensino medio integrado historia das instituicoes escolares organizacao e memoria da educacao profissional e tecnologica culturas escolares arranjos produtivos locais porosidade e permeabilidade mestrado em educacao profissional e tecnologica profept organizacao e memoria da ept",
+        "termos_unificados": [
+          "História das Instituições Escolares",
+          "Organização e Memória da Educação Profissional e Tecnológica",
+          "Culturas Escolares",
+          "Arranjos produtivos locais",
+          "Porosidade e Permeabilidade",
+          "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+          "Organização e Memória da EPT"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0010",
+      "ano": 2025,
+      "autor": "Maykon Donizete dos Santos",
+      "orientador": "Denise Fernandes",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP2",
+      "macroprojeto": "MP6",
+      "dissertacao": {
+        "titulo": "IDENTIFICAÇÃO DA REGULAMENTAÇÃO DAS NORMAS DE SEGURANÇA DO TRABALHO EM REGIME ESTATUTÁRIO NO ENSINO PROFISSIONAL E TECNOLÓGICO DO INSTITUTO FEDERAL CATARINENSE.",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/11/DISSERTACAO-E-PRODUTO-EDUCACIONAL-_MAYKON-DONIZETE-DOS-SANTOS.-1.pdf",
+        "resumo": "[PÁG. 10]\\nRESUMO\\nEsta pesquisa analisou a Política de Atenção à Saúde e Segurança do Trabalho do Instituto Federal Catarinense (PASST/IFC), verificando se suas diretrizes de Saúde e Segurança do Trabalho (SST) estão claramente definidas e efetivamente implementadas no contexto institucional. O estudo fundamentou-se na relação histórica entre trabalho e educação como dimensões essenciais para o desenvolvimento humano, destacando que, na Educação Profissional e Tecnológica (EPT), a formação integra saberes acadêmicos e práticas vinculadas ao mundo do trabalho. Oficinas e laboratórios, embora espaços pedagógicos, também expõem alunos e servidores a riscos ocupacionais, o que reforça a necessidade de políticas institucionais consistentes de SST. A pesquisa recupera o percurso histórico da SST, consolidado a partir da Revolução Industrial e que, no Brasil, culminou na implementação das Normas Regulamentadoras (NRs) em 1978. Considerando que o regime estatutário federal, regido pela Lei nº 8.112/1990, apresenta regulamentações fragmentadas, o governo criou, em 2006, o Sistema Integrado de Saúde Ocupacional do Servidor Público Federal (SISOSP), sucedido pela PASS (2009) e pelo SIASS. Contudo, a ausência de instrumentos operacionais específicos motivou a criação da Norma Operacional de Saúde do Servidor (NOSS), em 2010, que serviu de base para a PASST/IFC, instituída pela Resolução nº 56/2019. A metodologia adotada foi qualitativa, de caráter documental e bibliográfico, orientada pela análise de conteúdo (Bardin, 2016). As fontes incluíram legislações, normativas institucionais, documentos administrativos e produções acadêmicas sobre SST e EPT. Os resultados evidenciaram que, embora a PASST/IFC esteja alinhada às diretrizes nacionais, ela apresenta fragilidades quanto à efetiva implementação, sobretudo pela ausência de orientações técnicas detalhadas. Diante desse cenário, elaborou-se num Produto Educacional em formato de e-book, intitulado Implementação da Comissão Interna de Saúde do Servidor Público (CISSP) no Instituto Federal Catarinense, que utiliza as NRs como referência subsidiária ao regime estatutário, conforme previsão do artigo 12 da NOSS. O e-book foi avaliado por profissionais e gestores da área de SST do IFC, cujas respostas confirmaram sua pertinência e viabilidade para apoiar a consolidação da PASST/IFC. Conclui-se, portanto, que a PASST/IFC dispõe de diretrizes gerais de SST, mas carece de instrumentos normativos e operacionais específicos, lacuna que pode ser suprida pela criação da CISSP como instância institucional de apoio à gestão da saúde do servidor.\\n\\nPalavras-chave: Educação Profissional e Tecnológica. Saúde e Segurança do Trabalho. PASST/IFC. Regime estatutário. NOSS. Normas Regulamentadoras.",
+        "palavras_chave": [
+          "Educação Profissional e Tecnológica",
+          "Saúde e Segurança do Trabalho",
+          "PASST/IFC",
+          "Regime estatutário",
+          "NOSS",
+          "Normas Regulamentadoras"
+        ],
+        "autores_referenciados": [],
+        "base_epistemologica": {
+          "valor": "Pedagogia Histórico-Crítica",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "A dissertação desenvolve explicitamente a princípio do trabalho como fundamento educacional através de Saviani (2015) e Frigotto et al. (2005), articulando-o à formação de sujeitos críticos e à concepção de formação humana integral do IFC, configurando a matriz da Pedagogia Histórico-Crítica na EPT.",
+          "evidencias": [
+            {
+              "secao": "Corpo/Fundamentacao",
+              "pagina": 29,
+              "trecho": "No IFC, valoriza-se o trabalho como um processo criativo, reflexivo e transformador, promovendo experiências práticas que contribuem para a formação de profissionais éticos, competentes e comprometidos com o desenvolvimento social e econômico do país (IFC, 2024). Integrar o trabalho à ciência, à tecnologia e à cultura é fundamental para orientar o currículo e as práticas educativas, preparando os estudantes para o exercício pleno da cidadania e para a inserção crítica no mundo do trabalho. Essa abordagem pedagógica considera o ser humano em sua integralidade, visando uma formação omnilateral e politécnica (IFC, 2024).",
+              "referencia_correspondente": null
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "IMPLEMENTAÇÃO DA COMISSÃO INTERNA DE SAÚDE DO SERVIDOR PÚBLICO (CISSP) NO INSTITUTO FEDERAL CATARINENSE (IFC)",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1132271",
+        "publico_alvo": [
+          "gestores_coordenadores",
+          "tecnicos_profissionais_educacao"
+        ],
+        "nivel_aplicacao": "Gestão Institucional",
+        "palavras_chave": [
+          "Organização e Memória dos espaços pedagógicos",
+          "Educação Profissional e Tecnológica",
+          "Saúde e Segurança do Trabalho",
+          "Serviço Público Federal",
+          "Cultura de Prevenção",
+          "Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT) – IFC Campus Blumenau",
+          "Organização e Memórias de Espaços Pedagógicos na Educação Profissional e Tecnológica"
+        ],
+        "data_publicacao": "2025-11-05",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense",
+            "papel": "contributor"
+          },
+          {
+            "nome": "Santos, Maykon Donizete dos",
+            "papel": "creator"
+          },
+          {
+            "nome": "Fernandes, Denise",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1132271",
+            "url": "https://educapes.capes.gov.br/handle/capes/1132271"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "IMPLEMENTAÇÃO DA COMISSÃO INTERNA DE SAÚDE DO SERVIDOR PÚBLICO",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "IMPLEMENTAÇÃO DA COMISSÃO INTERNA DE SAÚDE DO SERVIDOR PÚBLICO (CISSP) NO INSTITUTO FEDERAL CATARINENSE (IFC)",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "livro digital"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0010 2025 maykon donizete dos santos denise fernandes ifc blumenau lp2 mp6 identificacao da regulamentacao das normas de seguranca do trabalho em regime estatutario no ensino profissional e tecnologico do instituto federal catarinense pag 10 nresumo nesta pesquisa analisou a politica de atencao a saude e seguranca do trabalho do instituto federal catarinense passt ifc verificando se suas diretrizes de saude e seguranca do trabalho sst estao claramente definidas e efetivamente implementadas no contexto institucional o estudo fundamentou se na relacao historica entre trabalho e educacao como dimensoes essenciais para o desenvolvimento humano destacando que na educacao profissional e tecnologica ept a formacao integra saberes academicos e praticas vinculadas ao mundo do trabalho oficinas e laboratorios embora espacos pedagogicos tambem expoem alunos e servidores a riscos ocupacionais o que reforca a necessidade de politicas institucionais consistentes de sst a pesquisa recupera o percurso historico da sst consolidado a partir da revolucao industrial e que no brasil culminou na implementacao das normas regulamentadoras nrs em 1978 considerando que o regime estatutario federal regido pela lei no 8 112 1990 apresenta regulamentacoes fragmentadas o governo criou em 2006 o sistema integrado de saude ocupacional do servidor publico federal sisosp sucedido pela pass 2009 e pelo siass contudo a ausencia de instrumentos operacionais especificos motivou a criacao da norma operacional de saude do servidor noss em 2010 que serviu de base para a passt ifc instituida pela resolucao no 56 2019 a metodologia adotada foi qualitativa de carater documental e bibliografico orientada pela analise de conteudo bardin 2016 as fontes incluiram legislacoes normativas institucionais documentos administrativos e producoes academicas sobre sst e ept os resultados evidenciaram que embora a passt ifc esteja alinhada as diretrizes nacionais ela apresenta fragilidades quanto a efetiva implementacao sobretudo pela ausencia de orientacoes tecnicas detalhadas diante desse cenario elaborou se num produto educacional em formato de e book intitulado implementacao da comissao interna de saude do servidor publico cissp no instituto federal catarinense que utiliza as nrs como referencia subsidiaria ao regime estatutario conforme previsao do artigo 12 da noss o e book foi avaliado por profissionais e gestores da area de sst do ifc cujas respostas confirmaram sua pertinencia e viabilidade para apoiar a consolidacao da passt ifc conclui se portanto que a passt ifc dispoe de diretrizes gerais de sst mas carece de instrumentos normativos e operacionais especificos lacuna que pode ser suprida pela criacao da cissp como instancia institucional de apoio a gestao da saude do servidor n npalavras chave educacao profissional e tecnologica saude e seguranca do trabalho passt ifc regime estatutario noss normas regulamentadoras implementacao da comissao interna de saude do servidor publico cissp no instituto federal catarinense ifc material didatico instrucional gestao institucional educacao profissional e tecnologica saude e seguranca do trabalho passt ifc regime estatutario noss normas regulamentadoras organizacao e memoria dos espacos pedagogicos servico publico federal cultura de prevencao mestrado profissional em educacao profissional e tecnologica profept ifc campus blumenau organizacao e memorias de espacos pedagogicos na educacao profissional e tecnologica",
+        "termos_unificados": [
+          "Educação Profissional e Tecnológica",
+          "Saúde e Segurança do Trabalho",
+          "PASST/IFC",
+          "Regime estatutário",
+          "NOSS",
+          "Normas Regulamentadoras",
+          "Organização e Memória dos espaços pedagógicos",
+          "Serviço Público Federal",
+          "Cultura de Prevenção",
+          "Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT) – IFC Campus Blumenau",
+          "Organização e Memórias de Espaços Pedagógicos na Educação Profissional e Tecnológica"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0011",
+      "ano": 2025,
+      "autor": "Kassandra Coelho Waltrich",
+      "orientador": "Eduardo Augusto Werneck Ribeiro",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP1",
+      "macroprojeto": "MP1",
+      "dissertacao": {
+        "titulo": "INTELIGÊNCIA ARTIFICIAL GENERATIVA NA EPT: EXPLORANDO O USO DO CHATGPT SOB A PERSPECTIVA DA PESQUISA COMO PRINCÍPIO PEDAGÓGICO.",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/10/DISSERTACAO-E-PRODUTO-EDUCACIONAL_KASSANDRA-COELHO-WALTRICH.pdf",
+        "resumo": "[PÁG. 11]\nRESUMO \n \nEm um mundo cada vez mais digitalizado, a integração crescente de tecnologias de \nInteligência Artificial Generativa na educação, a exemplo do ChatGPT (uma \nferramenta capaz de gerar texto a partir de comandos do usuário), tem suscitado \ngrande interesse e amplo debate sobre suas potencialidades e limitações no contexto \neducacional. Diante desse cenário, esta pesquisa, desenvolvida junto ao Programa \nde Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT) do \nInstituto Federal Catarinense e aplicada com estudantes de todas as séries do Curso \nTécnico de Informática do Instituto Federal Catarinense, Campus Camboriú, tem como \nobjetivo geral avaliar a utilização do ChatGPT por estudantes no apoio às atividades \nescolares, considerando a pesquisa como princípio pedagógico. Especificamente \nbuscamos: i) identificar as principais modalidades de utilização do ChatGPT pelos \nestudantes no desenvolvimento de suas atividades escolares; ii) explorar as \npercepções desses estudantes acerca dos benefícios, desafios e limitações do \nemprego da ferramenta em ambiente educacional; iii) contextualizar o uso do \nChatGPT sob a ótica da pesquisa como princípio pedagógico, examinando suas \npotencialidades no contexto da EPT; e iv) com base nos resultados obtidos, elaborar \num folder educativo, cuja finalidade foi promover o uso crítico, ético e responsável da \nferramenta na EPT. A metodologia é de caráter qualitativo e os dados coletados foram \nanalisados à luz da Análise de Conteúdo de Bardin (2016). Como requisito do \nProfEPT, foi desenvolvido um produto educacional, classificado como produto \ncomunicacional, no formato de folder educativo intitulado ‘ChatGPT pra Quê?’. A \nelaboração do folder, a partir das contribuições dos próprios estudantes, representa \num importante passo na direção da conscientização da comunidade escolar sobre o \nuso responsável do ChatGPT. O estudo se insere na linha de pesquisa ‘Práticas \nEducativas em Educação Profissional e Tecnológica’, com ênfase na Formação \nIntegrada, vinculado ao Macroprojeto 1 – ‘Propostas metodológicas e recursos \ndidáticos em espaços formais e não formais de ensino na EPT’. Os resultados \ndemonstram que o uso ético, crítico e responsável da ferramenta demanda a criação \nde estratégias pedagógicas e diretrizes institucionais de uso que promovam o uso \nconsciente da IA na educação. \n \nPalavras-Chave: ChatGPT. Inteligência Artificial Generativa. Cursos Técnicos. \nEducação Profissional e Tecnológica. Pesquisa Como Princípio Pedagógico.",
+        "palavras_chave": [
+          "ChatGPT",
+          "Inteligência Artificial Generativa",
+          "Cursos Técnicos",
+          "Educação Profissional e Tecnológica",
+          "Pesquisa Como Princípio Pedagógico"
+        ],
+        "autores_referenciados": [],
+        "base_epistemologica": {
+          "valor": "Teoria Histórico-Cultural / Sociointeracionismo",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "A seção Referencial Teórico (p. 24) declara explicitamente a incorporação da 'Teoria Histórico-Cultural' como matriz fundamental para o enquadramento da EPT, com desenvolvimento conceitual ao longo de todo o trabalho, incluindo citações de Vygotsky (p. 39), Gramsci (pp. 29-31) e Freire (p. 35), ancoradas em páginas localizáveis.",
+          "evidencias": [
+            {
+              "secao": "Corpo/Fundamentação",
+              "pagina": 39,
+              "trecho": "a natureza do próprio desenvolvimento transforma-se, do biológico no sócio-histórico. [...] teremos que o considerar sujeito a todas as premissas do materialismo histórico [...] (Vygotsky, 2013, p. 83). Essa afirmação sintetiza a ideia de Vygotsky de que o desenvolvimento humano não é apenas resultado de fatores biológicos, mas também de fatores sociais e históricos.",
+              "referencia_correspondente": "VYGOTSKY, Lev S. A formação social da mente: o desenvolvimento dos 114 processos psicológicos superiores. São Paulo: Martins Fontes, 2007."
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "Folder Educativo: ChatGPT pra Quê?",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1131798",
+        "publico_alvo": [
+          "estudantes_alunos"
+        ],
+        "nivel_aplicacao": "Ensino Médio Integrado",
+        "palavras_chave": [
+          "ChatGPT",
+          "Inteligência Artificial Generativa",
+          "Cursos Técnicos",
+          "Profissional e Tecnológica",
+          "Pesquisa Como Princípio Pedagógico",
+          "Programa de Pós-graduação em Educação Profissional e Tecnológica (ProfEPT)"
+        ],
+        "data_publicacao": "2025-10-16",
+        "autores_colaboradores": [
+          {
+            "nome": "IFC - Blumenau",
+            "papel": "contributor"
+          },
+          {
+            "nome": "Waltrich, Kassandra",
+            "papel": "creator"
+          },
+          {
+            "nome": "Ribeiro, Eduardo Augusto",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1131798",
+            "url": "https://educapes.capes.gov.br/handle/capes/1131798"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "Folder Educativo: ChatGPT pra Quê?",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "Folder Educativo: ChatGPT pra Quê?",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "imagem",
+            "texto"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0011 2025 kassandra coelho waltrich eduardo augusto werneck ribeiro ifc blumenau lp1 mp1 inteligencia artificial generativa na ept explorando o uso do chatgpt sob a perspectiva da pesquisa como principio pedagogico pag 11 resumo em um mundo cada vez mais digitalizado a integracao crescente de tecnologias de inteligencia artificial generativa na educacao a exemplo do chatgpt uma ferramenta capaz de gerar texto a partir de comandos do usuario tem suscitado grande interesse e amplo debate sobre suas potencialidades e limitacoes no contexto educacional diante desse cenario esta pesquisa desenvolvida junto ao programa de mestrado profissional em educacao profissional e tecnologica profept do instituto federal catarinense e aplicada com estudantes de todas as series do curso tecnico de informatica do instituto federal catarinense campus camboriu tem como objetivo geral avaliar a utilizacao do chatgpt por estudantes no apoio as atividades escolares considerando a pesquisa como principio pedagogico especificamente buscamos i identificar as principais modalidades de utilizacao do chatgpt pelos estudantes no desenvolvimento de suas atividades escolares ii explorar as percepcoes desses estudantes acerca dos beneficios desafios e limitacoes do emprego da ferramenta em ambiente educacional iii contextualizar o uso do chatgpt sob a otica da pesquisa como principio pedagogico examinando suas potencialidades no contexto da ept e iv com base nos resultados obtidos elaborar um folder educativo cuja finalidade foi promover o uso critico etico e responsavel da ferramenta na ept a metodologia e de carater qualitativo e os dados coletados foram analisados a luz da analise de conteudo de bardin 2016 como requisito do profept foi desenvolvido um produto educacional classificado como produto comunicacional no formato de folder educativo intitulado chatgpt pra que a elaboracao do folder a partir das contribuicoes dos proprios estudantes representa um importante passo na direcao da conscientizacao da comunidade escolar sobre o uso responsavel do chatgpt o estudo se insere na linha de pesquisa praticas educativas em educacao profissional e tecnologica com enfase na formacao integrada vinculado ao macroprojeto 1 propostas metodologicas e recursos didaticos em espacos formais e nao formais de ensino na ept os resultados demonstram que o uso etico critico e responsavel da ferramenta demanda a criacao de estrategias pedagogicas e diretrizes institucionais de uso que promovam o uso consciente da ia na educacao palavras chave chatgpt inteligencia artificial generativa cursos tecnicos educacao profissional e tecnologica pesquisa como principio pedagogico folder educativo chatgpt pra que material didatico instrucional ensino medio integrado chatgpt inteligencia artificial generativa cursos tecnicos educacao profissional e tecnologica pesquisa como principio pedagogico profissional e tecnologica programa de pos graduacao em educacao profissional e tecnologica profept",
+        "termos_unificados": [
+          "ChatGPT",
+          "Inteligência Artificial Generativa",
+          "Cursos Técnicos",
+          "Educação Profissional e Tecnológica",
+          "Pesquisa Como Princípio Pedagógico",
+          "Profissional e Tecnológica",
+          "Programa de Pós-graduação em Educação Profissional e Tecnológica (ProfEPT)"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0012",
+      "ano": 2025,
+      "autor": "Cristiane Vieira dos Santos Fürst",
+      "orientador": "Denise Fernandes",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP1",
+      "macroprojeto": "MP3",
+      "dissertacao": {
+        "titulo": "FAMÍLIA E ESCOLA: INFLUÊNCIAS SOCIAIS NA TRANSIÇÃO ENTRE O ENSINO FUNDAMENTAL AO ENSINO MÉDIO INTEGRADO NO IFSC (2018 A 2025)",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/10/DISSERTACAO-E-PRODUTO-EDUCACIONAL-_-CRISTIANE-FURST.pdf",
+        "resumo": "Esta investigação analisou a dinâmica entre família, escola e sociedade na transição do Ensino Fundamental para o Ensino Médio Integrado (EMI) nos Institutos Federais, focando no Instituto Federal de Santa Catarina (IFSC) como campo empírico. O ponto de partida foi o reconhecimento de que essa passagem escolar representa uma etapa sensível, marcada por desigualdades sociais e culturais que influenciam o acesso, especialmente para estudantes oriundos de escolas públicas.",
+        "palavras_chave": [
+          "Transição Escolar",
+          "Ensino Médio Integrado",
+          "Família-Escola",
+          "Educação Profissional e Tecnológica",
+          "Produto Educacional"
+        ],
+        "autores_referenciados": [],
+        "base_epistemologica": {
+          "valor": "Educação Libertadora / Freireana",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "A dissertação fundamenta-se explicitamente na pedagogia freireana, com desenvolvimentos conceituais sobre educação para a decisão, responsabilidade social e política (Freire, 1967, p.88), e na análise das desigualdades estruturais na EPT (Ramos, 2007, 2017). Os recortes dos capítulos de Introdução e Referencial Teórico articulam categorias centrais da pedagogia freireana com a crítica às lógicas meritocráticas dos processos seletivos.",
+          "evidencias": [
+            {
+              "secao": "Introdução",
+              "pagina": 10,
+              "trecho": "\"Ensinar não é transferir conhecimento, mas criar as possibilidades para a sua própria produção ou a sua construção.” Paulo Freire (1996, p.47)",
+              "referencia_correspondente": null
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "Construindo Pontes na Educação Básica : O Educador como Agente de Transformação na Transição para o Ensino Técnico Integrado",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1131906",
+        "publico_alvo": [
+          "docentes_professores"
+        ],
+        "nivel_aplicacao": "Ensino Médio Integrado",
+        "palavras_chave": [
+          "Transição escolar",
+          "Educação Profissional e Tecnológica",
+          "Formação de educadores",
+          "Inclusão e permanência escolar",
+          "Ensino Médio Integrado",
+          "Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT) – IFC Campus Blumenau",
+          "Organização e Memórias de Espaços Pedagógicos na Educação Profissional e Tecnológica"
+        ],
+        "data_publicacao": "2025-10-21",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense",
+            "papel": "contributor"
+          },
+          {
+            "nome": "Fürst, Cristiane Vieira dos Santos",
+            "papel": "creator"
+          },
+          {
+            "nome": "Fernandes, Denise",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1131906",
+            "url": "https://educapes.capes.gov.br/handle/capes/1131906"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "PRODUTO EDUCACIONAL - CRISTIANE FURST.pdf",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "Construindo Pontes na Educação Básica : O Educador como Agente de Transformação na Transição para o Ensino Técnico Integrado",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "apresentação",
+            "curso",
+            "livro digital"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0012 2025 cristiane vieira dos santos furst denise fernandes ifc blumenau lp1 mp3 familia e escola influencias sociais na transicao entre o ensino fundamental ao ensino medio integrado no ifsc 2018 a 2025 esta investigacao analisou a dinamica entre familia escola e sociedade na transicao do ensino fundamental para o ensino medio integrado emi nos institutos federais focando no instituto federal de santa catarina ifsc como campo empirico o ponto de partida foi o reconhecimento de que essa passagem escolar representa uma etapa sensivel marcada por desigualdades sociais e culturais que influenciam o acesso especialmente para estudantes oriundos de escolas publicas construindo pontes na educacao basica o educador como agente de transformacao na transicao para o ensino tecnico integrado material didatico instrucional ensino medio integrado transicao escolar ensino medio integrado familia escola educacao profissional e tecnologica produto educacional formacao de educadores inclusao e permanencia escolar mestrado profissional em educacao profissional e tecnologica profept ifc campus blumenau organizacao e memorias de espacos pedagogicos na educacao profissional e tecnologica",
+        "termos_unificados": [
+          "Transição Escolar",
+          "Ensino Médio Integrado",
+          "Família-Escola",
+          "Educação Profissional e Tecnológica",
+          "Produto Educacional",
+          "Formação de educadores",
+          "Inclusão e permanência escolar",
+          "Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT) – IFC Campus Blumenau",
+          "Organização e Memórias de Espaços Pedagógicos na Educação Profissional e Tecnológica"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0013",
+      "ano": 2025,
+      "autor": "Joselice Lemes de Oliveira Rodrigues",
+      "orientador": "Sara Nunes",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP2",
+      "macroprojeto": "MP6",
+      "dissertacao": {
+        "titulo": "BIBLIOTECA EDUCATIVA PÚBLICA E A EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA: EXPERIÊNCIAS NA FORMAÇÃO INTEGRAL",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/10/DISSERTACAO_JOSELICE_LEMES_DE_OLIVEIRA_RODRIGUES.pdf",
+        "resumo": "[PÁG. 12] RESUMO \n \nEste estudo, desenvolvido no âmbito do Programa de Pós – Graduação em Educação \nProfissional e Tecnológica (ProfEPT), inserido na linha de pesquisa Organização e \nMemórias de espaços pedagógicos na Educação Profissional e Tecnológica (EPT), \nalinhado ao macroprojeto 6 (Organização de espaços pedagógicos na EPT), teve \ncomo objetivo investigar de que modo a Biblioteca do Instituto Federal Catarinense – \nCampus Blumenau se articula com o projeto político da instituição, proporcionando \nexperiências educacionais que dialogam com o conceito de formação integral no \nEnsino Médio Integrado. A investigação centrou-se na Biblioteca Educativa Pública \n(BEP), compreendida como espaço formativo e cultural no contexto da Educação \nProfissional e Tecnológica (EPT), analisando sua atuação à luz das categorias \nexperiência, saber-poder e capital cultural. Metodologicamente, adotou-se abordagem \nqualitativa, com análise documental de instrumentos institucionais (PDI, PPC e \nregulamento e regimento internos), revisão bibliográfica e aplicação de questionário \nsemiestruturado com discentes da terceira série do ensino médio integrado ao curso \nTécnico em Informática. Os referenciais teóricos utilizados incluíram Michel Foucault, \nEdward Palmer Thompson, Jorge Larrosa Bondía e Pierre Bourdieu, permitindo a \nanálise crítica das práticas institucionais e das percepções dos estudantes. Como \nprincipal resultado, identificou-se que as experiências vividas na Biblioteca contribuem \nsignificativamente para a formação integral dos discentes, sobretudo ao valorizar suas \ntrajetórias, seus saberes prévios e seu capital cultural. Constatou-se também que a \nBiblioteca tem potencial para se constituir em um espaço contra-hegemônico, \npromovendo práticas inclusivas e de subjetivação, quando organizada de forma \npermeável e porosa às realidades dos estudantes. Além desses importantes achados, \no trabalho resultou na elaboração de um produto educacional, em formato de vídeo, \ndesenvolvido a partir das percepções estudantis, com o objetivo de divulgar os \nachados da pesquisa e fomentar reflexões sobre o papel da Biblioteca na EPT. O \nestudo se mostra relevante ao abordar a Biblioteca no contexto dos Institutos Federais \na partir da perspectiva da formação omnilateral, contribuindo para o debate sobre a \nfunção mediadora da Biblioteca no fortalecimento de uma educação crítica e \nemancipatória. \n \nPalavras-Chave: Biblioteca Educativa Pública. Formação Integral. Educação \nProfissional e Tecnológica. Instituto Federal. Experiência.",
+        "palavras_chave": [
+          "Biblioteca Educativa Pública",
+          "Formação Integral",
+          "Educação Profissional e Tecnológica",
+          "Instituto Federal",
+          "Experiência"
+        ],
+        "autores_referenciados": [],
+        "base_epistemologica": {
+          "valor": "Pedagogia Histórico-Crítica",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "A dissertação adota explicitamente a formação integral como princípio norteador da EPT, com referências a Saviani (2007, p.161) e Frigotto (2009), articulando-se com a Pedagogia Histórico-Crítica. Os trechos de introdução e fundamentação teórica desenvolvem categorias conceituais centrais (formação integral, omnilateralidade, politecnia, saber-poder, capital cultural) ancoradas em citações de autores estruturantes (Saviani, Foucault, Bourdieu) com páginas localizáveis nos recortes textuais.",
+          "evidencias": [
+            {
+              "secao": "Introdução",
+              "pagina": 23,
+              "trecho": "instituições como os IFs, cujo princípio norteador da EPT é a formação integral, necessita de espaços potencialmente capazes de dialogar com a diversidade de experiências vividas pelos estudantes",
+              "referencia_correspondente": "BONDÍA, Jorge L. Notas sobre a experiência e o saber de experiência. Rev. Bras. Educ. [online]. 2002, n.19, p. 20-28. Disponível em: http://educa.fcc.org.br/scielo.php?script=sci_abstract&pid=S1413- 24782002000100003&lng=es&nrm=iso&tlng=pt. Acesso em: 20 abr. 2023."
+            },
+            {
+              "secao": "Introdução",
+              "pagina": 24,
+              "trecho": "A Biblioteca desempenha papel central na promoção da cultura, e as experiências de formação integral vivenciadas nesse espaço contribuem para a autonomia dos sujeitos por meio do acesso ao conhecimento não fragmentado.",
+              "referencia_correspondente": "GOMES, Henriette F. A biblioteca pública e os domínios da memória, da mediação e da identidade social. Perspectivas em Ciência da Informação. Belo Horizonte, v.19, número especial, out./dez. 2014, p.151-163. Disponível em: https://www.scielo.br/j/pci/a/t4k6pt7pb4gTPXt5yWDszqD/?format=pdf&lang=pt. Acesso em: 15 jul.2023."
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "Biblioteca, Lugar de ser e estar: experienciar é dar sentido ao que se viveu",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1131723",
+        "publico_alvo": [
+          "estudantes_alunos",
+          "docentes_professores"
+        ],
+        "nivel_aplicacao": "Ensino Médio Integrado",
+        "palavras_chave": [
+          "Biblioteca",
+          "Educação integral",
+          "Poder",
+          "Mestrado em educação profissional e tecnológica",
+          "Elaboraçaõ de pesquisa/ dissertação"
+        ],
+        "data_publicacao": "2025-09-12",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense",
+            "papel": "contributor"
+          },
+          {
+            "nome": "RODRIGUES, Joselice Lemes de Oliveira",
+            "papel": "creator"
+          },
+          {
+            "nome": "NUNES, Sara",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1131723",
+            "url": "https://educapes.capes.gov.br/handle/capes/1131723"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "https://www.youtube.com/watch?feature=shared&v=xNkex0dm-s4",
+            "url": ""
+          },
+          {
+            "esquema": "identifier",
+            "valor": "Biblioteca, lugar de ser e estar: experienciar é dar sentido ao que se viveu!",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "Biblioteca, Lugar de ser e estar: experienciar é dar sentido ao que se viveu",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "imagem"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0013 2025 joselice lemes de oliveira rodrigues sara nunes ifc blumenau lp2 mp6 biblioteca educativa publica e a educacao profissional e tecnologica experiencias na formacao integral pag 12 resumo este estudo desenvolvido no ambito do programa de pos graduacao em educacao profissional e tecnologica profept inserido na linha de pesquisa organizacao e memorias de espacos pedagogicos na educacao profissional e tecnologica ept alinhado ao macroprojeto 6 organizacao de espacos pedagogicos na ept teve como objetivo investigar de que modo a biblioteca do instituto federal catarinense campus blumenau se articula com o projeto politico da instituicao proporcionando experiencias educacionais que dialogam com o conceito de formacao integral no ensino medio integrado a investigacao centrou se na biblioteca educativa publica bep compreendida como espaco formativo e cultural no contexto da educacao profissional e tecnologica ept analisando sua atuacao a luz das categorias experiencia saber poder e capital cultural metodologicamente adotou se abordagem qualitativa com analise documental de instrumentos institucionais pdi ppc e regulamento e regimento internos revisao bibliografica e aplicacao de questionario semiestruturado com discentes da terceira serie do ensino medio integrado ao curso tecnico em informatica os referenciais teoricos utilizados incluiram michel foucault edward palmer thompson jorge larrosa bondia e pierre bourdieu permitindo a analise critica das praticas institucionais e das percepcoes dos estudantes como principal resultado identificou se que as experiencias vividas na biblioteca contribuem significativamente para a formacao integral dos discentes sobretudo ao valorizar suas trajetorias seus saberes previos e seu capital cultural constatou se tambem que a biblioteca tem potencial para se constituir em um espaco contra hegemonico promovendo praticas inclusivas e de subjetivacao quando organizada de forma permeavel e porosa as realidades dos estudantes alem desses importantes achados o trabalho resultou na elaboracao de um produto educacional em formato de video desenvolvido a partir das percepcoes estudantis com o objetivo de divulgar os achados da pesquisa e fomentar reflexoes sobre o papel da biblioteca na ept o estudo se mostra relevante ao abordar a biblioteca no contexto dos institutos federais a partir da perspectiva da formacao omnilateral contribuindo para o debate sobre a funcao mediadora da biblioteca no fortalecimento de uma educacao critica e emancipatoria palavras chave biblioteca educativa publica formacao integral educacao profissional e tecnologica instituto federal experiencia biblioteca lugar de ser e estar experienciar e dar sentido ao que se viveu material didatico instrucional ensino medio integrado biblioteca educativa publica formacao integral educacao profissional e tecnologica instituto federal experiencia biblioteca educacao integral poder mestrado em educacao profissional e tecnologica elaboracao de pesquisa dissertacao",
+        "termos_unificados": [
+          "Biblioteca Educativa Pública",
+          "Formação Integral",
+          "Educação Profissional e Tecnológica",
+          "Instituto Federal",
+          "Experiência",
+          "Biblioteca",
+          "Educação integral",
+          "Poder",
+          "Mestrado em educação profissional e tecnológica",
+          "Elaboraçaõ de pesquisa/ dissertação"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0014",
+      "ano": 2025,
+      "autor": "Jainara Pacheco de Braga",
+      "orientador": "Cloves Alexandre de Castro",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP1",
+      "macroprojeto": "MP3",
+      "dissertacao": {
+        "titulo": "ENSINO AGRÍCOLA, AGRICULTURA FAMILIAR E AGROECOLOGIA: UMA APROXIMAÇÃO NECESSÁRIA",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/09/DISSERTACAO-E-PRODUTO-EDUCACIONAL_JAINARA.pdf",
+        "resumo": "[PÁG. 11]\nRESUMO\nA presente pesquisa, de natureza básica e abordagem qualitativa, desenvolvida no\nPrograma de Mestrado Profissional em Educação Profissional e Tecnológica\n(ProfEPT) ofertado pelo IFC campus Blumenau está vinculada à linha de pesquisa\n“Organização e memória de Espaços Pedagógicos na Educação Profissional e\nTecnológica”. O estudo objetivou compreender como a Agroecologia e a Agricultura\nFamiliar estão presentes no currículo dos Cursos Técnicos em Agropecuária\nIntegrados ao Ensino Médio de sete campi do IFC. Para tanto, mergulhou-se no\naprofundamento teórico acerca da Educação Profissional (EPT) e Tecnológica, do\ncurrículo do ensino integrado, do histórico da EPT e do ensino agrícola, da\nAgroecologia e da Agricultura Familiar. Os procedimentos técnicos para a coleta de\ndados foram a pesquisa bibliográfica e análise documental. O corpus documental da\npesquisa consistiu nos Projetos Pedagógicos de todos os cursos Técnicos em\nAgropecuária Integrados ao Ensino Médio ofertados no IFC, nas resoluções que\norientam a operação do ensino médio integrado no IFC e no documento de\n(Re)ssignificação do Ensino Agrícola da Rede Federal de Educação Profissional e\nTecnológica. Tendo o materialismo histórico-dialético como campo teórico, foi\nutilizada a Análise de Conteúdo como metodologia para analisar os dados. O\nresultado da pesquisa indica, sobretudo, que não há uma abordagem agroecológica\nnos currículos dos cursos estudados e que, apesar da Agricultura Familiar estar\npresente na justificativa dos cursos, ainda há uma primazia pelas formas patronais\nde produção. A pesquisa revelou também uma incipiência na formação voltada a\nextensão rural participativa na maior parte dos cursos analisados. Como produto\neducacional, foi desenvolvido um material didático contendo uma abordagem\npossível acerca da Agroecologia e da Agricultura Familiar para professores e\nestudantes dos cursos de Ciências agrárias, sobretudo dos Cursos Técnicos em\nAgropecuária Integrados ao Ensino Médio. O produto educacional foi avaliado\npositivamente por docentes e discentes.\nPalavras-Chave: Currículo. Formação integral. Ensino agrotécnico. Agroecologia.\nAgricultura Familiar.",
+        "palavras_chave": [
+          "Currículo",
+          "Formação integral",
+          "Ensino agrotécnico",
+          "Agroecologia",
+          "Agricultura Familiar"
+        ],
+        "autores_referenciados": [],
+        "base_epistemologica": {
+          "valor": "Materialismo Histórico-Dialético",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "O texto da Introdução declara nominalmente o materialismo histórico-dialético como campo teórico da pesquisa (página 18).",
+          "evidencias": [
+            {
+              "secao": "Introdução",
+              "pagina": 18,
+              "trecho": "Tendo o materialismo histórico-dialético como campo teórico, foi utilizada a Análise de Conteúdo como metodologia para analisar os dados.",
+              "referencia_correspondente": null
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "Contribuições para o debate sobre agroecologia no ensino médio integrado",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1131104",
+        "publico_alvo": [
+          "docentes_professores",
+          "estudantes_alunos"
+        ],
+        "nivel_aplicacao": "Ensino Médio Integrado",
+        "palavras_chave": [
+          "Currículo",
+          "Formação Integral",
+          "Agroecologia",
+          "Agricultura Familiar",
+          "Mestrado em Educação Profissional e Tecnológica-PROFEPT"
+        ],
+        "data_publicacao": "2025-09-16",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense",
+            "papel": "contributor"
+          },
+          {
+            "nome": "Braga, Jainara Pacheco de",
+            "papel": "creator"
+          },
+          {
+            "nome": "Castro, Cloves Alexandre de",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1131104",
+            "url": "https://educapes.capes.gov.br/handle/capes/1131104"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "Contribuições para o debate sobre agroecologia no ensino médio integrado",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "Contribuições para o debate sobre agroecologia no ensino médio integrado",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "livro digital"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0014 2025 jainara pacheco de braga cloves alexandre de castro ifc blumenau lp1 mp3 ensino agricola agricultura familiar e agroecologia uma aproximacao necessaria pag 11 resumo a presente pesquisa de natureza basica e abordagem qualitativa desenvolvida no programa de mestrado profissional em educacao profissional e tecnologica profept ofertado pelo ifc campus blumenau esta vinculada a linha de pesquisa organizacao e memoria de espacos pedagogicos na educacao profissional e tecnologica o estudo objetivou compreender como a agroecologia e a agricultura familiar estao presentes no curriculo dos cursos tecnicos em agropecuaria integrados ao ensino medio de sete campi do ifc para tanto mergulhou se no aprofundamento teorico acerca da educacao profissional ept e tecnologica do curriculo do ensino integrado do historico da ept e do ensino agricola da agroecologia e da agricultura familiar os procedimentos tecnicos para a coleta de dados foram a pesquisa bibliografica e analise documental o corpus documental da pesquisa consistiu nos projetos pedagogicos de todos os cursos tecnicos em agropecuaria integrados ao ensino medio ofertados no ifc nas resolucoes que orientam a operacao do ensino medio integrado no ifc e no documento de re ssignificacao do ensino agricola da rede federal de educacao profissional e tecnologica tendo o materialismo historico dialetico como campo teorico foi utilizada a analise de conteudo como metodologia para analisar os dados o resultado da pesquisa indica sobretudo que nao ha uma abordagem agroecologica nos curriculos dos cursos estudados e que apesar da agricultura familiar estar presente na justificativa dos cursos ainda ha uma primazia pelas formas patronais de producao a pesquisa revelou tambem uma incipiencia na formacao voltada a extensao rural participativa na maior parte dos cursos analisados como produto educacional foi desenvolvido um material didatico contendo uma abordagem possivel acerca da agroecologia e da agricultura familiar para professores e estudantes dos cursos de ciencias agrarias sobretudo dos cursos tecnicos em agropecuaria integrados ao ensino medio o produto educacional foi avaliado positivamente por docentes e discentes palavras chave curriculo formacao integral ensino agrotecnico agroecologia agricultura familiar contribuicoes para o debate sobre agroecologia no ensino medio integrado material didatico instrucional ensino medio integrado curriculo formacao integral ensino agrotecnico agroecologia agricultura familiar mestrado em educacao profissional e tecnologica profept",
+        "termos_unificados": [
+          "Currículo",
+          "Formação integral",
+          "Ensino agrotécnico",
+          "Agroecologia",
+          "Agricultura Familiar",
+          "Mestrado em Educação Profissional e Tecnológica-PROFEPT"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0015",
+      "ano": 2025,
+      "autor": "Lucas Neto",
+      "orientador": "Eduardo Augusto Werneck Ribeiro",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP1",
+      "macroprojeto": "MP3",
+      "dissertacao": {
+        "titulo": "CINEMA PARA UMA FORMAÇÃO HUMANA INTEGRAL CONTEMPORÂNEA: CONTRIBUIÇÕES PARA O ENSINO MÉDIO INTEGRADO NOS INSTITUTOS FEDERAIS",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/09/DISSERTAO_E_PRODUTO_EDUCACIONAL___LUCAS_NETO.pdf",
+        "resumo": "A presente pesquisa foi desenvolvida no âmbito do programa de Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT), na linha de pesquisa Práticas Educativas em Educação Profissional e Tecnológica (EPT), no Macroprojeto 3 – Práticas Educativas no Currículo Integrado. O objetivo geral da pesquisa foi avaliar como o letramento audiovisual e a educação midiática podem auxiliar o uso do Cinema na prática docente e contribuir para a formação humana integral de estudantes do Ensino Médio Integrado (EMI) do Câmpus Jaraguá do Sul – Centro do Instituto Federal de Santa Catarina (IFSC), desenvolvendo o pensamento crítico e olhares mais reflexivos diante das mídias audiovisuais. A discussão teórica se estruturou a partir dos seguintes conceitos centrais: letramento audiovisual (Fantin, 2014; Barbosa, 2014), educação midiática (Fantin, 2011; Buckingham, 2022), formação humana integral (Manacorda, 2007; Ramos, 2008; 2010; Ciavatta, 2012) e currículo integrado (Santomé, 1998; Ramos, 2012; Araujo; Frigotto, 2015). A metodologia envolveu primeiro uma revisão de literatura, seguida de uma fase investigativa sobre a realidade do locus da pesquisa, sobre as práticas didáticas com filmes no EMI do câmpus. A construção dos dados para análise se deu através de entrevistas com docentes, observação de aula e também uma proposta de intervenção pedagógica através de uma oficina com uma turma do curso Técnico em Modelagem do Vestuário. Para análise dos dados foi escolhida a técnica de Análise de Conteúdo (Bardin, 1977), optando-se pela análise categorial temática. Os achados da pesquisa constataram um domínio do uso instrumental do Cinema como recurso didático na prática docente, mas os resultados da oficina também demonstraram impactos positivos de uma educação do olhar: para docentes, como caminho para superação do uso instrumental; para discentes, como importante aspecto da formação integral na contemporaneidade e no desenvolvimento do pensamento crítico. Também se observou que essa inclusão crítico-reflexiva do audiovisual no EMI precisa fazer parte do currículo, porém necessita de condições para sua materialização, que passam pela disputa nas políticas curriculares, por condições de trabalho docente e por espaço institucional para práticas integradoras. Dessas constatações, concluiu-se que é através da prática docente a forma mais dinâmica do letramento audiovisual alcançar os estudantes, sendo assim indispensável a capacitação dos docentes nesse sentido.",
+        "palavras_chave": [
+          "Cinema",
+          "EPT",
+          "Letramento Audiovisual",
+          "Educação Midiática"
+        ],
+        "autores_referenciados": [],
+        "base_epistemologica": {
+          "valor": "Materialismo Histórico-Dialético",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "A dissertação explicitamente articula matriz materialista-histórica-dialética com referências a Manacorda (2007), Ramos (2008/2010) e Ciavatta (2012) no contexto de formação humana integral, trabalho como princípio educativo e politecnia nos IFs.",
+          "evidencias": [
+            {
+              "secao": "Introdução",
+              "pagina": 24,
+              "trecho": "Os Institutos Federais de Educação Profissional, Científica e Tecnológica, criados pela Lei nº 11.892/2008, que também instituiu a Rede Federal de Educação Profissional, Científica e Tecnológica (RFEPCT), são escolas com autonomia institucional e uma perspectiva educacional que possibilitam a efetivação de ações no sentido da educação midiática e do letramento audiovisual, principalmente nos seus cursos de Ensino Médio Integrado.",
+              "referencia_correspondente": "CICHACZEWSKI, João Carlos. Uma história a ser feita: os sentidos da formação profissional nos IFs. Blumenau: Editora IFC, 2023."
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "LENDO CINEMA – Letramento Audiovisual para docentes",
+        "tipo": "software_aplicativo",
+        "link": "https://educapes.capes.gov.br/handle/capes/1001598",
+        "publico_alvo": [
+          "docentes_professores"
+        ],
+        "nivel_aplicacao": "Formação de Professores",
+        "palavras_chave": [
+          "Cinema",
+          "EPT",
+          "Letramento Audiovisual",
+          "Educação Midiática"
+        ],
+        "data_publicacao": "2025",
+        "autores_colaboradores": [
+          {
+            "nome": "Neto, Lucas",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1001598",
+            "url": "https://educapes.capes.gov.br/handle/capes/1001598"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "https://lucasnetto4.wixsite.com/my-site/",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "material didático",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "portal"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0015 2025 lucas neto eduardo augusto werneck ribeiro ifc blumenau lp1 mp3 cinema para uma formacao humana integral contemporanea contribuicoes para o ensino medio integrado nos institutos federais a presente pesquisa foi desenvolvida no ambito do programa de mestrado profissional em educacao profissional e tecnologica profept na linha de pesquisa praticas educativas em educacao profissional e tecnologica ept no macroprojeto 3 praticas educativas no curriculo integrado o objetivo geral da pesquisa foi avaliar como o letramento audiovisual e a educacao midiatica podem auxiliar o uso do cinema na pratica docente e contribuir para a formacao humana integral de estudantes do ensino medio integrado emi do campus jaragua do sul centro do instituto federal de santa catarina ifsc desenvolvendo o pensamento critico e olhares mais reflexivos diante das midias audiovisuais a discussao teorica se estruturou a partir dos seguintes conceitos centrais letramento audiovisual fantin 2014 barbosa 2014 educacao midiatica fantin 2011 buckingham 2022 formacao humana integral manacorda 2007 ramos 2008 2010 ciavatta 2012 e curriculo integrado santome 1998 ramos 2012 araujo frigotto 2015 a metodologia envolveu primeiro uma revisao de literatura seguida de uma fase investigativa sobre a realidade do locus da pesquisa sobre as praticas didaticas com filmes no emi do campus a construcao dos dados para analise se deu atraves de entrevistas com docentes observacao de aula e tambem uma proposta de intervencao pedagogica atraves de uma oficina com uma turma do curso tecnico em modelagem do vestuario para analise dos dados foi escolhida a tecnica de analise de conteudo bardin 1977 optando se pela analise categorial tematica os achados da pesquisa constataram um dominio do uso instrumental do cinema como recurso didatico na pratica docente mas os resultados da oficina tambem demonstraram impactos positivos de uma educacao do olhar para docentes como caminho para superacao do uso instrumental para discentes como importante aspecto da formacao integral na contemporaneidade e no desenvolvimento do pensamento critico tambem se observou que essa inclusao critico reflexiva do audiovisual no emi precisa fazer parte do curriculo porem necessita de condicoes para sua materializacao que passam pela disputa nas politicas curriculares por condicoes de trabalho docente e por espaco institucional para praticas integradoras dessas constatacoes concluiu se que e atraves da pratica docente a forma mais dinamica do letramento audiovisual alcancar os estudantes sendo assim indispensavel a capacitacao dos docentes nesse sentido lendo cinema letramento audiovisual para docentes software aplicativo formacao de professores cinema ept letramento audiovisual educacao midiatica",
+        "termos_unificados": [
+          "Cinema",
+          "EPT",
+          "Letramento Audiovisual",
+          "Educação Midiática"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0016",
+      "ano": 2025,
+      "autor": "Lucélio Beletti",
+      "orientador": "Raquel Cardoso de Faria e Custódio",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP1",
+      "macroprojeto": "MP2",
+      "dissertacao": {
+        "titulo": "A PRESENÇA DO PÚBLICO FEMININO NA ÁREA ELÉTRICA: UM ESTUDO DE CASO A PARTIR DA EVASÃO NO CURSO TÉCNICO EM ELETROTÉCNICA DO SENAI BLUMENAU",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/09/DISSERTACAO_E_PRODUTO_EDUCACIONAL___LUCELIO_BELLETTI.pdf",
+        "resumo": "[PÁG. 9]\nRESUMO \n \nA presença do público feminino na Educação Profissional e Tecnológica, \nespecialmente nas áreas de maior afinidade com a elétrica, apresenta especificidades \nrelacionadas às trajetórias de formação e atuação profissional. Na base dessa \nformação encontra-se o curso Técnico em Eletrotécnica. Pesquisar sobre a presença \ndas mulheres nesse curso, na condição de estudantes, concluintes ou desistentes, foi \na base desta pesquisa. A problemática consistiu em compreender o público feminino \nda área elétrica a partir do estudo de caso da evasão no curso técnico em \nEletrotécnica do SENAI de Blumenau. Esta pesquisa foi desenvolvida no âmbito do \nMestrado Profissional em Educação Profissional e Tecnológica - ProfEPT, na linha de \nPráticas Educativas, no macroprojeto Inclusão e Diversidade em Espaços Formais e \nNão Formais de Ensino na EPT. Caracteriza-se como de natureza aplicada, de \nabordagem qualitativa e objetivo de ser explicativa. As entrevistas semiestruturadas \ncom as estudantes, concluintes e desistentes do curso Técnico em Eletrotécnica \nsubsidiaram a construção dos dados. A análise de discurso de matriz francesa foi o \nmétodo escolhido para analisar os dados com o objetivo de interpretar os sentidos \npara além das palavras, considerando as condições de produção, ideologias e os \nlugares sociais e simbólicos das falas das entrevistadas. Os achados da pesquisa \nrevelam a influência da família nas escolhas profissionais, a importância dos(as) \ndocentes na permanência, a presença marcante do machismo na área e as \ndificuldades enfrentadas pelas mulheres, sobretudo nos espaços de atuação \nprofissional. Como proposta de prática educativa objetivando à permanência das \nmulheres na área elétrica, foi desenvolvido um produto educacional direcionado a \nestudantes dos anos finais do ensino fundamental e do ensino médio, com o objetivo \nde apresentar e desmistificar a área para as meninas, além de contribuir para a \ndesconstrução da cultura machista entre os estudantes. \n \nPalavras-chave: mulheres na elétrica; educação profissional e tecnológica; inclusão.",
+        "palavras_chave": [
+          "Mulheres na elétrica",
+          "Educação profissional e tecnológica",
+          "Inclusão"
+        ],
+        "autores_referenciados": [],
+        "base_epistemologica": {
+          "valor": "Materialismo Histórico-Dialético",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "The text explicitly analyzes social duality and class division in education, referencing Marx and Engels (2006) as the theoretical framework.",
+          "evidencias": [
+            {
+              "secao": "Corpo/Fundamentação",
+              "pagina": 44,
+              "trecho": "A dualidade social se intensificou a partir do fim do feudalismo, e foi com o surgimento da sociedade burguesa que o antagonismo de classes se fortificou.",
+              "referencia_correspondente": null
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "MENINAS NA ELÉTRICA: A INCLUSÃO DAS MULHERES  E A DESCONSTRUÇÃO DE PRECONCEITOS",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1131192",
+        "publico_alvo": [
+          "estudantes_alunos"
+        ],
+        "nivel_aplicacao": "Ensino Médio",
+        "palavras_chave": [
+          "Mulheres na Elétrica",
+          "Educação Profissional e Tecnológica",
+          "Inclusão",
+          "Programa de Pós-Graduação em Educação Profissional e Tecnológica-ProfEPT",
+          "Dissertação"
+        ],
+        "data_publicacao": "2025-09",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense",
+            "papel": "contributor"
+          },
+          {
+            "nome": "Belletti, Lucélio",
+            "papel": "creator"
+          },
+          {
+            "nome": "Custódio, Raquel Cardoso de Faria e",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1131192",
+            "url": "https://educapes.capes.gov.br/handle/capes/1131192"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "FICHA_PRODUTO_EDUCACIONAL_CICLO DE PALESTRAS",
+            "url": ""
+          },
+          {
+            "esquema": "identifier",
+            "valor": "APRESENTACAO - MENINAS NA ELETRICA",
+            "url": ""
+          },
+          {
+            "esquema": "identifier",
+            "valor": "P",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "MENINAS NA ELÉTRICA: A INCLUSÃO DAS MULHERES  E A DESCONSTRUÇÃO DE PRECONCEITOS",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "imagem",
+            "texto",
+            "vídeo"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0016 2025 lucelio beletti raquel cardoso de faria e custodio ifc blumenau lp1 mp2 a presenca do publico feminino na area eletrica um estudo de caso a partir da evasao no curso tecnico em eletrotecnica do senai blumenau pag 9 resumo a presenca do publico feminino na educacao profissional e tecnologica especialmente nas areas de maior afinidade com a eletrica apresenta especificidades relacionadas as trajetorias de formacao e atuacao profissional na base dessa formacao encontra se o curso tecnico em eletrotecnica pesquisar sobre a presenca das mulheres nesse curso na condicao de estudantes concluintes ou desistentes foi a base desta pesquisa a problematica consistiu em compreender o publico feminino da area eletrica a partir do estudo de caso da evasao no curso tecnico em eletrotecnica do senai de blumenau esta pesquisa foi desenvolvida no ambito do mestrado profissional em educacao profissional e tecnologica profept na linha de praticas educativas no macroprojeto inclusao e diversidade em espacos formais e nao formais de ensino na ept caracteriza se como de natureza aplicada de abordagem qualitativa e objetivo de ser explicativa as entrevistas semiestruturadas com as estudantes concluintes e desistentes do curso tecnico em eletrotecnica subsidiaram a construcao dos dados a analise de discurso de matriz francesa foi o metodo escolhido para analisar os dados com o objetivo de interpretar os sentidos para alem das palavras considerando as condicoes de producao ideologias e os lugares sociais e simbolicos das falas das entrevistadas os achados da pesquisa revelam a influencia da familia nas escolhas profissionais a importancia dos as docentes na permanencia a presenca marcante do machismo na area e as dificuldades enfrentadas pelas mulheres sobretudo nos espacos de atuacao profissional como proposta de pratica educativa objetivando a permanencia das mulheres na area eletrica foi desenvolvido um produto educacional direcionado a estudantes dos anos finais do ensino fundamental e do ensino medio com o objetivo de apresentar e desmistificar a area para as meninas alem de contribuir para a desconstrucao da cultura machista entre os estudantes palavras chave mulheres na eletrica educacao profissional e tecnologica inclusao meninas na eletrica a inclusao das mulheres e a desconstrucao de preconceitos material didatico instrucional ensino medio mulheres na eletrica educacao profissional e tecnologica inclusao programa de pos graduacao em educacao profissional e tecnologica profept dissertacao",
+        "termos_unificados": [
+          "Mulheres na elétrica",
+          "Educação profissional e tecnológica",
+          "Inclusão",
+          "Programa de Pós-Graduação em Educação Profissional e Tecnológica-ProfEPT",
+          "Dissertação"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0017",
+      "ano": 2025,
+      "autor": "Luciana da Cruz Moraes Magarão Alves",
+      "orientador": "Viviane Grimm",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP1",
+      "macroprojeto": "MP3",
+      "dissertacao": {
+        "titulo": "PREVENÇÃO E ENFRENTAMENTO ÀS VIOLÊNCIAS: UM ESTUDO A PARTIR DE UMA AÇÃO EDUCATIVA COM ESTUDANTES DO ENSINO MÉDIO INTEGRADO DO IFSC – JARAGUÁ DO SUL CENTRO",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/09/DISSERTACAO_E_PRODUTO_EDUCACIONAL___LUCIANA_ALVESpdfa-2.pdf",
+        "resumo": "[PÁG. 12]\nRESUMO \n \nEsta pesquisa, desenvolvida no Programa de Mestrado Profissional em Educação \nProfissional e Tecnológica (ProfEPT), do IFC Campus Blumenau, na linha de pesquisa \nPráticas Educativas em Educação Profissional e Tecnológica no Macroprojeto \nPráticas Educativas no Currículo Integrado, buscou analisar as contribuições de uma \nação educativa de prevenção e enfrentamento às violências, desenvolvida com \nestudantes dos cursos de Ensino Médio Integrado do Instituto Federal de Santa \nCatarina – Campus Jaraguá do Sul Centro. A pesquisa ancorou-se na compreensão \nde que as violências são fenômenos multidimensionais, determinadas por fatores \nsociais, históricos e culturais, conforme a perspectiva de Minayo (2007). Partindo da \nconcepção de formação humana integral no contexto do Ensino Médio Integrado \n(Ciavatta, 2005; Ramos, 2007; Araújo e Silva, 2017) compreende-se a escola como \nespaço de contradições, mas também de possibilidades para ações educativas que \npromovam a cidadania e o enfrentamento às violências. Trata-se de uma pesquisa de \nnatureza aplicada e de abordagem qualitativa, desenvolvida por meio de uma \npesquisa-ação. Os dados empíricos foram coletados por meio dos registros no diário \nde campo e materiais produzidos pelos estudantes em oficinas. Estes foram \nanalisados à luz da Análise de Conteúdo Bardin (2011). Por meio da análise observou-\nse que as oficinas contribuíram para o fortalecimento do diálogo e da escuta ativa no \nambiente escolar; ampliou-se o repertório de conhecimento dos estudantes sobre \nredes de apoio, proteção e prevenção das violências. Neste sentido, elaboramos um \nproduto educacional em formato de roteiro de oficina, intitulado: “(Re) conhecendo \nredes que protegem: acolhimento, escuta e diálogo no Ensino Médio Integrado”, que \nfoi aplicado e avaliado junto aos estudantes do Ensino Médio Integrado. Como \nresultado, considera-se que as oficinas têm potencial para contribuir na formação \nhumana integral dos estudantes, ao ampliar sua capacidade de ler criticamente a \nrealidade, exercer a cidadania e se posicionarem diante das situações de violências. \n \nPalavras-Chave: Prevenção e enfrentamento às Violências. Ensino Médio Integrado. \nEducação Profissional e Tecnológica. Ações educativas.",
+        "palavras_chave": [
+          "Prevenção e enfrentamento às Violências",
+          "Ensino Médio Integrado",
+          "Educação Profissional e Tecnológica",
+          "Ações educativas"
+        ],
+        "autores_referenciados": [],
+        "base_epistemologica": {
+          "valor": "Educação Libertadora / Freireana",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "A dissertação fundamenta-se explicitamente na proposta freireana de educação problematizadora, citando Freire (1970) como referência central para a formação crítica dos estudantes. Além disso, articula-se com Saviani (2010) sobre a educação como mecanismo de emancipação.",
+          "evidencias": [
+            {
+              "secao": "Corpo/Fundamentação",
+              "pagina": 62,
+              "trecho": "a educação problematizadora, se faz num esforço permanente através do qual os homens vão percebendo, criticamente, como estão sendo no mundo",
+              "referencia_correspondente": null
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "Oficina (re)conhecendo redes que protegem: acolhimento, escuta e diálogo no Ensino Médio Integrado",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1081115",
+        "publico_alvo": [
+          "estudantes_alunos"
+        ],
+        "nivel_aplicacao": "Ensino Médio Integrado",
+        "palavras_chave": [
+          "Ensino Médio Integrado",
+          "Violências",
+          "Ação educativa",
+          "Proteção e enfrentamento às violências",
+          "Mestrado em Educação Profissional e Tecnológica",
+          "Dissertação"
+        ],
+        "data_publicacao": "2025-06-12",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense",
+            "papel": "contributor"
+          },
+          {
+            "nome": "ALVES, LUCIANA",
+            "papel": "creator"
+          },
+          {
+            "nome": "GRIMM, VIVIANE",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1081115",
+            "url": "https://educapes.capes.gov.br/handle/capes/1081115"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "Guia Oficina (re)conhecendo redes que protegem: acolhimento, escuta e diálogo no Ensino Médio Integrado",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "Oficina (re)conhecendo redes que protegem: acolhimento, escuta e diálogo no Ensino Médio Integrado",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "texto"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0017 2025 luciana da cruz moraes magarao alves viviane grimm ifc blumenau lp1 mp3 prevencao e enfrentamento as violencias um estudo a partir de uma acao educativa com estudantes do ensino medio integrado do ifsc jaragua do sul centro pag 12 resumo esta pesquisa desenvolvida no programa de mestrado profissional em educacao profissional e tecnologica profept do ifc campus blumenau na linha de pesquisa praticas educativas em educacao profissional e tecnologica no macroprojeto praticas educativas no curriculo integrado buscou analisar as contribuicoes de uma acao educativa de prevencao e enfrentamento as violencias desenvolvida com estudantes dos cursos de ensino medio integrado do instituto federal de santa catarina campus jaragua do sul centro a pesquisa ancorou se na compreensao de que as violencias sao fenomenos multidimensionais determinadas por fatores sociais historicos e culturais conforme a perspectiva de minayo 2007 partindo da concepcao de formacao humana integral no contexto do ensino medio integrado ciavatta 2005 ramos 2007 araujo e silva 2017 compreende se a escola como espaco de contradicoes mas tambem de possibilidades para acoes educativas que promovam a cidadania e o enfrentamento as violencias trata se de uma pesquisa de natureza aplicada e de abordagem qualitativa desenvolvida por meio de uma pesquisa acao os dados empiricos foram coletados por meio dos registros no diario de campo e materiais produzidos pelos estudantes em oficinas estes foram analisados a luz da analise de conteudo bardin 2011 por meio da analise observou se que as oficinas contribuiram para o fortalecimento do dialogo e da escuta ativa no ambiente escolar ampliou se o repertorio de conhecimento dos estudantes sobre redes de apoio protecao e prevencao das violencias neste sentido elaboramos um produto educacional em formato de roteiro de oficina intitulado re conhecendo redes que protegem acolhimento escuta e dialogo no ensino medio integrado que foi aplicado e avaliado junto aos estudantes do ensino medio integrado como resultado considera se que as oficinas tem potencial para contribuir na formacao humana integral dos estudantes ao ampliar sua capacidade de ler criticamente a realidade exercer a cidadania e se posicionarem diante das situacoes de violencias palavras chave prevencao e enfrentamento as violencias ensino medio integrado educacao profissional e tecnologica acoes educativas oficina re conhecendo redes que protegem acolhimento escuta e dialogo no ensino medio integrado material didatico instrucional ensino medio integrado prevencao e enfrentamento as violencias ensino medio integrado educacao profissional e tecnologica acoes educativas violencias acao educativa protecao e enfrentamento as violencias mestrado em educacao profissional e tecnologica dissertacao",
+        "termos_unificados": [
+          "Prevenção e enfrentamento às Violências",
+          "Ensino Médio Integrado",
+          "Educação Profissional e Tecnológica",
+          "Ações educativas",
+          "Violências",
+          "Ação educativa",
+          "Proteção e enfrentamento às violências",
+          "Mestrado em Educação Profissional e Tecnológica",
+          "Dissertação"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0018",
+      "ano": 2025,
+      "autor": "Gabriela Boemer Amaral Moretto",
+      "orientador": "Viviane Grimm",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP1",
+      "macroprojeto": "MP3",
+      "dissertacao": {
+        "titulo": "A PERSPECTIVA ESTUDANTIL SOBRE A AFILIAÇÃO NO ENSINO MÉDIO INTEGRADO À EDUCAÇÃO PROFISSIONAL: UM ESTUDO COM ESTUDANTES DO INSTITUTO FEDERAL CATARINENSE (IFC) CAMPUS BLUMENAU",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/08/DISSERTACAO-E-PRODUTO-EDUCACIONAL-_-GABRIELA-BOEMER-AMARAL-MORETTO-2.pdf",
+        "resumo": "[PÁG. 10]\nRESUMO\nEsta pesquisa está vinculada à linha de pesquisa Práticas Educativas em Educação \nProfissional e Tecnológica e ao Macroprojeto 3 – Práticas Educativas no Currículo \nIntegrado do ProfEPT. Parte da concepção de Educação Profissional e Tecnológica \n(EPT) como uma proposta formativa que integra trabalho, ciência, cultura e \ntecnologia, e do currículo integrado como princípio educativo orientado à formação \nomnilateral dos sujeitos. Nessa perspectiva, considera-se que a construção de \nvínculos institucionais e intelectuais — isto é, a afiliação estudantil — é elemento \ncentral para a permanência e o êxito dos estudantes no Ensino Médio Integrado à \nEducação Profissional e Tecnológica (EMIEP). O objetivo da pesquisa foi analisar o \nprocesso de afiliação estudantil de estudantes do Instituto Federal Catarinense (IFC) \n– Campus Blumenau, considerando os desafios enfrentados na transição escolar e \nas estratégias utilizadas por eles durante o processo de adaptação e integração \ninstitucional. Trata-se de uma pesquisa qualitativa, de natureza aplicada e caráter \ndescritivo. Participaram 27 estudantes dos cursos técnicos integrados em \nEletromecânica e Informática, além de dois ex - coordenadores de curso e três \nservidores do Serviço Integrado de Suporte e Acompanhamento Educacional \n(SISAE). A geração de dados ocorreu por meio de questionários e entrevistas \nsemiestruturadas, organizadas em eixos temáticos. A análise, com base na Análise \nde Conteúdo (Bardin, 1977), considerou categorias a priori, fundamentadas no \nreferencial teórico “tempo de estranhamento”, “tempo de aprendizagem” e “tempo de \nafiliação”, e a posteriori, como a categoria emergente “tempo de hesitação”. Os \nresultados evidenciaram que a transição para o EMIEP representa uma travessia \ncomplexa, marcada por exigências pedagógicas e pelos desafios próprios da \njuventude. As narrativas dos estudantes revelaram sentimentos ambivalentes e \ndestacaram tanto o reconhecimento do IFC como espaço de desenvolvimento \nquanto as fragilidades institucionais no acolhimento. A afiliação estudantil mostrou-se \ncomo um processo contínuo que depende do engajamento dos estudantes e do \nsuporte institucional, sendo influenciado por fatores como organização curricular, \npráticas pedagógicas e atuação dos setores de apoio. Ressalta-se, ainda, a \nnecessidade de políticas permanentes de acolhimento que reconheçam os \nestudantes em sua integralidade. A partir da análise foi elaborado o guia “Acolhe \nIFC: um guia de orientação para ingressantes do Ensino Médio Integrado”, com o \nintuito de apoiar a transição escolar, promover o acolhimento e fortalecer a \nidentificação dos estudantes com a instituição. O guia foi aplicado em oficinas \npresenciais com estudantes ingressantes em 2025 dos cursos de Informática, \nEletromecânica e Mecatrônica. A avaliação do produto educacional foi realizada: \npelos estudantes participantes da pesquisa e os ingressantes de 2025, por meio de \nformulário eletrônico, apontando a utilidade, clareza e pertinência do material como \ninstrumento de acolhimento, orientação e integração institucional. Os resultados \nindicam que o guia atende sua finalidade e também pode ser útil a familiares e \npessoas interessadas em conhecer os cursos e a estrutura do IFC - Campus \nBlumenau.\nPalavras-Chave: Ensino médio integrado à educação profissional. Educação \nProfissional e Tecnológica. Transição escolar. Juventude. Afiliação estudantil.",
+        "palavras_chave": [
+          "Ensino médio integrado à educação profissional",
+          "Educação Profissional e Tecnológica",
+          "Transição escolar",
+          "Juventude",
+          "Afiliação estudantil"
+        ],
+        "autores_referenciados": [],
+        "base_epistemologica": {
+          "valor": "Pedagogia Histórico-Crítica",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "The text references Saviani (1989) and develops concepts of formation integration and omnilateral education central to Historical-Critical Pedagogy in EPT, though the epistemological framework is not explicitly declared as a single matrix.",
+          "evidencias": [
+            {
+              "secao": "Introdução",
+              "pagina": 26,
+              "trecho": "habilitar as pessoas para o exercício autônomo e crítico de profissões",
+              "referencia_correspondente": "MOURA, Dante Henrique; LIMA FILHO, Domingos Leite; SILVA, Mônica Ribeiro. Politecnia e formação integrada: confrontos conceituais, projetos políticos e contradições históricas da educação brasileira. Revista Brasileira de Educação, v. 20, n. 63, out.-dez. 2015. DOI: https://doi.org/10.1590/s1413-24782015206313"
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "Acolhe IFC: um guia de orientações para estudantes ingressantes no Ensino Médio Integrado",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1043482",
+        "publico_alvo": [
+          "estudantes_alunos"
+        ],
+        "nivel_aplicacao": "Ensino Médio Integrado",
+        "palavras_chave": [
+          "Ensino Médio Integrado",
+          "Afiliação estudantil",
+          "Transição escolar",
+          "Educação Profissional e Tecnológica",
+          "Mestrado em Educação Profissional e Tecnológica",
+          "Dissertação"
+        ],
+        "data_publicacao": "2025-06-12",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense",
+            "papel": "contributor"
+          },
+          {
+            "nome": "MORETTO, GABRIELA BOEMER AMARAL",
+            "papel": "creator"
+          },
+          {
+            "nome": "GRIMM, VIVIANE",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1043482",
+            "url": "https://educapes.capes.gov.br/handle/capes/1043482"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "https://drive.google.com/file/d/1EGMQ41cA0ppczG822bCU_QjWLgk64U9R/view?usp=sharing",
+            "url": ""
+          },
+          {
+            "esquema": "identifier",
+            "valor": "Guia - Acolhe IFC",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "Acolhe IFC: um guia de orientações para estudantes ingressantes no Ensino Médio Integrado",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "texto"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0018 2025 gabriela boemer amaral moretto viviane grimm ifc blumenau lp1 mp3 a perspectiva estudantil sobre a afiliacao no ensino medio integrado a educacao profissional um estudo com estudantes do instituto federal catarinense ifc campus blumenau pag 10 resumo esta pesquisa esta vinculada a linha de pesquisa praticas educativas em educacao profissional e tecnologica e ao macroprojeto 3 praticas educativas no curriculo integrado do profept parte da concepcao de educacao profissional e tecnologica ept como uma proposta formativa que integra trabalho ciencia cultura e tecnologia e do curriculo integrado como principio educativo orientado a formacao omnilateral dos sujeitos nessa perspectiva considera se que a construcao de vinculos institucionais e intelectuais isto e a afiliacao estudantil e elemento central para a permanencia e o exito dos estudantes no ensino medio integrado a educacao profissional e tecnologica emiep o objetivo da pesquisa foi analisar o processo de afiliacao estudantil de estudantes do instituto federal catarinense ifc campus blumenau considerando os desafios enfrentados na transicao escolar e as estrategias utilizadas por eles durante o processo de adaptacao e integracao institucional trata se de uma pesquisa qualitativa de natureza aplicada e carater descritivo participaram 27 estudantes dos cursos tecnicos integrados em eletromecanica e informatica alem de dois ex coordenadores de curso e tres servidores do servico integrado de suporte e acompanhamento educacional sisae a geracao de dados ocorreu por meio de questionarios e entrevistas semiestruturadas organizadas em eixos tematicos a analise com base na analise de conteudo bardin 1977 considerou categorias a priori fundamentadas no referencial teorico tempo de estranhamento tempo de aprendizagem e tempo de afiliacao e a posteriori como a categoria emergente tempo de hesitacao os resultados evidenciaram que a transicao para o emiep representa uma travessia complexa marcada por exigencias pedagogicas e pelos desafios proprios da juventude as narrativas dos estudantes revelaram sentimentos ambivalentes e destacaram tanto o reconhecimento do ifc como espaco de desenvolvimento quanto as fragilidades institucionais no acolhimento a afiliacao estudantil mostrou se como um processo continuo que depende do engajamento dos estudantes e do suporte institucional sendo influenciado por fatores como organizacao curricular praticas pedagogicas e atuacao dos setores de apoio ressalta se ainda a necessidade de politicas permanentes de acolhimento que reconhecam os estudantes em sua integralidade a partir da analise foi elaborado o guia acolhe ifc um guia de orientacao para ingressantes do ensino medio integrado com o intuito de apoiar a transicao escolar promover o acolhimento e fortalecer a identificacao dos estudantes com a instituicao o guia foi aplicado em oficinas presenciais com estudantes ingressantes em 2025 dos cursos de informatica eletromecanica e mecatronica a avaliacao do produto educacional foi realizada pelos estudantes participantes da pesquisa e os ingressantes de 2025 por meio de formulario eletronico apontando a utilidade clareza e pertinencia do material como instrumento de acolhimento orientacao e integracao institucional os resultados indicam que o guia atende sua finalidade e tambem pode ser util a familiares e pessoas interessadas em conhecer os cursos e a estrutura do ifc campus blumenau palavras chave ensino medio integrado a educacao profissional educacao profissional e tecnologica transicao escolar juventude afiliacao estudantil acolhe ifc um guia de orientacoes para estudantes ingressantes no ensino medio integrado material didatico instrucional ensino medio integrado ensino medio integrado a educacao profissional educacao profissional e tecnologica transicao escolar juventude afiliacao estudantil ensino medio integrado mestrado em educacao profissional e tecnologica dissertacao",
+        "termos_unificados": [
+          "Ensino médio integrado à educação profissional",
+          "Educação Profissional e Tecnológica",
+          "Transição escolar",
+          "Juventude",
+          "Afiliação estudantil",
+          "Ensino Médio Integrado",
+          "Mestrado em Educação Profissional e Tecnológica",
+          "Dissertação"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0019",
+      "ano": 2025,
+      "autor": "Rafael Vinícius Martins",
+      "orientador": "Eduardo Augusto Werneck Ribeiro",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP1",
+      "macroprojeto": "MP1",
+      "dissertacao": {
+        "titulo": "SABERES COMPLEMENTARES PARA A FORMAÇÃO DE DOCENTES BACHARÉIS NA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA (EPT)",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/07/DISSERTACAO-E-PRODUTO-EDUCACIONAL_RAFAEL-VINICIUS-MARTINS-2.pdf",
+        "resumo": "[PÁG. 9]\nRESUMO \n \nComo aspectos distintivos da condição humana, trabalho e educação são, até os dias atuais, \nobjetos de profundas análises. Em especial, o trabalho do professor como profissional da \neducação suscita, igualmente, intenso debate, inclusive a respeito das questões relativas à \nformação docente. Em uma realidade onde é cada vez mais comum e incentivada uma \neducação básica integrada ao ensino técnico, torna-se natural a admissão de professores \noriundos de bacharelados, cursos que não contemplam em sua formação a dimensão \npedagógica. Para subsidiar ações que visam remediar tal carência, é fundamental a \nimplementação consciente e intencional de programas eficazes de formação continuada que \natendam a essa especificidade dos profissionais docentes. Este trabalho tem por objetivo a \ndiscussão dessa problemática, e a proposta de um produto educacional em forma de e-book \ndestinado a educadores atuantes na EPT, que aborda três de seus princípios fundamentais - \nFormação Humana Integral, Interdisciplinaridade e Indissociabilidade das Dimensões do \nProcesso Educativo, com o intuito de contribuir para a construção de uma atuação profissional \nconsciente desse público. \nPalavras-chave: Educação. Formação Docente. Formação Integral. Interdisciplinaridade. \nIndissociabilidade.",
+        "palavras_chave": [
+          "Educação",
+          "Formação Docente",
+          "Formação Integral",
+          "Interdisciplinaridade",
+          "Indissociabilidade"
+        ],
+        "autores_referenciados": [],
+        "base_epistemologica": {
+          "valor": "Materialismo Histórico-Dialético e Pedagogia Histórico-Crítica",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "A dissertação fundamenta-se explicitamente nos conceitos de formação humana integral, omnilateralidade e indissociabilidade das dimensões educativas, com desenvolvido teórico-citativo de Saviani, Frigotto e Ciavatta, articulando trabalho e educação como princípios ontológicos da EPT.",
+          "evidencias": [
+            {
+              "secao": "Corpo/Fundamentação",
+              "pagina": 19,
+              "trecho": "Apenas o ser humano trabalha e educa",
+              "referencia_correspondente": "SAVIANI, Dermeval. Trabalho e educação: fundamentos ontológicos e históricos. Revista Brasileira de Educação, Rio de Janeiro. v.12, n. 34, p. 152-180, jan./abr. 2007."
+            },
+            {
+              "secao": "Corpo/Fundamentação",
+              "pagina": 31,
+              "trecho": "a definição da educação como formação humana pode ser considerada consensual",
+              "referencia_correspondente": "SAVIANI, Dermeval; DUARTE, Newton (Orgs.). Pedagogia histórico- crítico e a luta de classes na educação escolar. Campinas: Autores Associados, 2012."
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "FORMAÇÃO INTEGRAL INTERDISCIPLINARIDADE INDISSOCIABILIDADE NA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1001164",
+        "publico_alvo": [
+          "docentes_professores"
+        ],
+        "nivel_aplicacao": "Formação de Professores",
+        "palavras_chave": [
+          "EPT",
+          "PROFEPT"
+        ],
+        "data_publicacao": "2025",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense",
+            "papel": "contributor"
+          },
+          {
+            "nome": "Martins, Rafael",
+            "papel": "creator"
+          },
+          {
+            "nome": "Ribeiro, Eduardo",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1001164",
+            "url": "https://educapes.capes.gov.br/handle/capes/1001164"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "documento",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "FORMAÇÃO INTEGRAL INTERDISCIPLINARIDADE INDISSOCIABILIDADE NA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "texto"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0019 2025 rafael vinicius martins eduardo augusto werneck ribeiro ifc blumenau lp1 mp1 saberes complementares para a formacao de docentes bachareis na educacao profissional e tecnologica ept pag 9 resumo como aspectos distintivos da condicao humana trabalho e educacao sao ate os dias atuais objetos de profundas analises em especial o trabalho do professor como profissional da educacao suscita igualmente intenso debate inclusive a respeito das questoes relativas a formacao docente em uma realidade onde e cada vez mais comum e incentivada uma educacao basica integrada ao ensino tecnico torna se natural a admissao de professores oriundos de bacharelados cursos que nao contemplam em sua formacao a dimensao pedagogica para subsidiar acoes que visam remediar tal carencia e fundamental a implementacao consciente e intencional de programas eficazes de formacao continuada que atendam a essa especificidade dos profissionais docentes este trabalho tem por objetivo a discussao dessa problematica e a proposta de um produto educacional em forma de e book destinado a educadores atuantes na ept que aborda tres de seus principios fundamentais formacao humana integral interdisciplinaridade e indissociabilidade das dimensoes do processo educativo com o intuito de contribuir para a construcao de uma atuacao profissional consciente desse publico palavras chave educacao formacao docente formacao integral interdisciplinaridade indissociabilidade formacao integral interdisciplinaridade indissociabilidade na educacao profissional e tecnologica material didatico instrucional formacao de professores educacao formacao docente formacao integral interdisciplinaridade indissociabilidade ept profept",
+        "termos_unificados": [
+          "Educação",
+          "Formação Docente",
+          "Formação Integral",
+          "Interdisciplinaridade",
+          "Indissociabilidade",
+          "EPT",
+          "PROFEPT"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0020",
+      "ano": 2025,
+      "autor": "Aline Buss Cardoso",
+      "orientador": "Sara Nunes",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP2",
+      "macroprojeto": "MP5",
+      "dissertacao": {
+        "titulo": "ENSINO MÉDIO INTEGRADO PARA QUÊ E PARA QUEM: MOTIVAÇÕES E EXPECTATIVAS DOS ESTUDANTES INGRESSANTES NA ESCOLHA PELO EMI DO IFC SÃO BENTO DO SUL.",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/06/DISSERTACAO-E-PRODUTO-EDUCACIONAL_ALINE-BUSS-CARDOSO-1.pdf",
+        "resumo": "[PÁG. 10]\nRESUMO \n \nEsta dissertação, desenvolvida no âmbito do Programa de Pós-Graduação em \nEducação Profissional e Tecnológica (ProfEPT), tem como objetivo identificar os \npropósitos do aluno ingressante para o ensino médio integrado do IFC Campus São \nBento do Sul. A pesquisa adotou uma abordagem qualitativa, de natureza \ntranslacional, com objetivo exploratório, de procedimentos técnicos pesquisa de \ncampo e documental e utilizou como instrumento de coleta de dados o questionário \naplicado à estudantes ingressantes no EMI no ano de 2024. Para embasar essa \ninvestigação, a pesquisa teórica sobre as conexões entre trabalho e educação ao \nlongo da história e a forma como essa relação promoveu consequências na \nformação para o trabalho em nosso país, demonstrou que a educação profissional e \ntecnológica no Brasil é sublinhada por uma dualidade entre uma formação \ninstrumental para atender as necessidades da cadeia produtiva e uma formação de \ncaráter integral, que considere todos os aspectos da vida humana. Os resultados \nobtidos indicam que os estudantes percebem o EMI como uma oportunidade de \nformação de valor, ao oferecer o ensino técnico em conjunto a uma formação geral. \nEntre as expectativas que se destacam estão a possibilidade de inserção no \nmercado de trabalho, a continuidade dos estudos no ensino superior e a busca por \numa educação pública de qualidade. Todavia, a pesquisa também evidencia \ndesafios de inclusão, acesso e permanência no interior dessa política pública de \neducação. O estudo aponta que o EMI cumpre um papel estratégico na EPT, ao \noferecer uma formação que transcende a instrumentalização e fragmentação da \neducação profissional tradicional. Ao mesmo tempo, essa investigação destaca a \nrelevância de políticas públicas que garantam a permanência dos estudantes. A \npesquisa revela a importância do EMI como uma alternativa de formação que \ncorresponde às necessidades dos jovens do país, oferecendo uma educação crítica \ne emancipadora. Além desses importantes achados, o trabalho resultou na \nelaboração de um produto educacional, um vídeo documentário intitulado <Jornadas \nIntegradas: histórias do Ensino Médio no Instituto Federal=. Esse material tem o \nobjetivo de dar voz aos estudantes e a partir desses relatos, gerar reflexões sobre o \nEMI como uma proposta educacional importante para os jovens. Por fim, este estudo \nintensifica o compromisso da Educação Profissional e Tecnológica dos Institutos \nFederais com a formação integral, ressaltando que o EMI, quando fortalecido, pode \nse constituir como um caminho que promove mudanças tanto pessoais como \nsociais. \nPalavras-chave: Ensino Médio Integrado; Educação Profissional e Tecnológica \nInstituto Federal.",
+        "palavras_chave": [
+          "Ensino Médio Integrado",
+          "Educação Profissional e Tecnológica Instituto Federal"
+        ],
+        "autores_referenciados": [],
+        "base_epistemologica": {
+          "valor": "Materialismo Histórico-Dialético",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "A dissertação adota perspectiva Materialismo Histórico-Dialético, fundamentada na polissemia do trabalho segundo Gaudêncio Frigotto. Essa abordagem analisa a relação entre trabalho e educação como princípio formador na EPT, articulada por autores como Saviani e Ramos com numeração de página localizável.",
+          "evidencias": [
+            {
+              "secao": "Corpo/Fundamentação",
+              "pagina": 23,
+              "trecho": "O termo trabalho é polissêmico, ou seja, possui mais de um significado, de acordo com a concepção de Gaudêncio Frigotto (2009).",
+              "referencia_correspondente": "FRIGOTTO, 2009"
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "ENSINO MÉDIO INTEGRADO PARA QUÊ E PARA QUEM: MOTIVAÇÕES E EXPECTATIVAS DOS ESTUDANTES INGRESSANTES NA ESCOLHA PELO EMI DO IFC SÃO BENTO DO SUL",
+        "tipo": "material_didatico_instrucional",
+        "link": "https://educapes.capes.gov.br/handle/capes/1000164",
+        "publico_alvo": [
+          "estudantes_alunos"
+        ],
+        "nivel_aplicacao": "Ensino Médio Integrado",
+        "palavras_chave": [
+          "Ensino médio Integradoado",
+          "Educação Profissional",
+          "E tecnológica no ensino médio integral",
+          "Mestrado em educação profissional e tecnológica",
+          "Elaboraçaõ de pesquisa/ dissertação"
+        ],
+        "data_publicacao": "2025-06-05",
+        "autores_colaboradores": [
+          {
+            "nome": "Instituto Federal Catarinense",
+            "papel": "contributor"
+          },
+          {
+            "nome": "Buss Cardoso, Aline",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/1000164",
+            "url": "https://educapes.capes.gov.br/handle/capes/1000164"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "https://www.youtube.com/watch?v=Nl5kRoKJaTM",
+            "url": ""
+          },
+          {
+            "esquema": "identifier",
+            "valor": "Jornadas Integradas: histórias do Ensino Médio no Instituto Federal”",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "ENSINO MÉDIO INTEGRADO PARA QUÊ E PARA QUEM: MOTIVAÇÕES E EXPECTATIVAS DOS ESTUDANTES INGRESSANTES NA ESCOLHA PELO EMI DO IFC SÃO BENTO DO SUL",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "texto"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0020 2025 aline buss cardoso sara nunes ifc blumenau lp2 mp5 ensino medio integrado para que e para quem motivacoes e expectativas dos estudantes ingressantes na escolha pelo emi do ifc sao bento do sul pag 10 resumo esta dissertacao desenvolvida no ambito do programa de pos graduacao em educacao profissional e tecnologica profept tem como objetivo identificar os propositos do aluno ingressante para o ensino medio integrado do ifc campus sao bento do sul a pesquisa adotou uma abordagem qualitativa de natureza translacional com objetivo exploratorio de procedimentos tecnicos pesquisa de campo e documental e utilizou como instrumento de coleta de dados o questionario aplicado a estudantes ingressantes no emi no ano de 2024 para embasar essa investigacao a pesquisa teorica sobre as conexoes entre trabalho e educacao ao longo da historia e a forma como essa relacao promoveu consequencias na formacao para o trabalho em nosso pais demonstrou que a educacao profissional e tecnologica no brasil e sublinhada por uma dualidade entre uma formacao instrumental para atender as necessidades da cadeia produtiva e uma formacao de carater integral que considere todos os aspectos da vida humana os resultados obtidos indicam que os estudantes percebem o emi como uma oportunidade de formacao de valor ao oferecer o ensino tecnico em conjunto a uma formacao geral entre as expectativas que se destacam estao a possibilidade de insercao no mercado de trabalho a continuidade dos estudos no ensino superior e a busca por uma educacao publica de qualidade todavia a pesquisa tambem evidencia desafios de inclusao acesso e permanencia no interior dessa politica publica de educacao o estudo aponta que o emi cumpre um papel estrategico na ept ao oferecer uma formacao que transcende a instrumentalizacao e fragmentacao da educacao profissional tradicional ao mesmo tempo essa investigacao destaca a relevancia de politicas publicas que garantam a permanencia dos estudantes a pesquisa revela a importancia do emi como uma alternativa de formacao que corresponde as necessidades dos jovens do pais oferecendo uma educacao critica e emancipadora alem desses importantes achados o trabalho resultou na elaboracao de um produto educacional um video documentario intitulado jornadas integradas historias do ensino medio no instituto federal esse material tem o objetivo de dar voz aos estudantes e a partir desses relatos gerar reflexoes sobre o emi como uma proposta educacional importante para os jovens por fim este estudo intensifica o compromisso da educacao profissional e tecnologica dos institutos federais com a formacao integral ressaltando que o emi quando fortalecido pode se constituir como um caminho que promove mudancas tanto pessoais como sociais palavras chave ensino medio integrado educacao profissional e tecnologica instituto federal ensino medio integrado para que e para quem motivacoes e expectativas dos estudantes ingressantes na escolha pelo emi do ifc sao bento do sul material didatico instrucional ensino medio integrado ensino medio integrado educacao profissional e tecnologica instituto federal ensino medio integradoado educacao profissional e tecnologica no ensino medio integral mestrado em educacao profissional e tecnologica elaboracao de pesquisa dissertacao",
+        "termos_unificados": [
+          "Ensino Médio Integrado",
+          "Educação Profissional e Tecnológica Instituto Federal",
+          "Ensino médio Integradoado",
+          "Educação Profissional",
+          "E tecnológica no ensino médio integral",
+          "Mestrado em educação profissional e tecnológica",
+          "Elaboraçaõ de pesquisa/ dissertação"
+        ],
+        "tem_produto_vinculado": true,
+        "tem_resumo": true
+      }
+    },
+    {
+      "schema_version": "4.0",
+      "id": "EPT-0021",
+      "ano": 2025,
+      "autor": "Glaucia Raquel Spindler",
+      "orientador": "Cloves Alexandre de Castro",
+      "coorientadores": [],
+      "instituicao": "Instituto Federal Catarinense (IFC)",
+      "campus": "IFC Blumenau",
+      "linha_pesquisa": "LP2",
+      "macroprojeto": "MP6",
+      "dissertacao": {
+        "titulo": "DESAFIOS NO INGRESSO AOS CURSOS TÉCNICOS INTEGRADOS AO ENSINO MÉDIO NO INSTITUTO FEDERAL DE SANTA CATARINA – CÂMPUS ITAJAÍ: DA INSCRIÇÃO À EFETIVAÇÃO DA MATRÍCULA",
+        "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/06/DISSERTACAO-GLAUCIA-RAQUEL-SPINDLER.pdf",
+        "resumo": "[PÁG. 11]\nRESUMO\nEsta pesquisa de mestrado foi realizada no âmbito do Programa de Mestrado Profissional em \nRede Nacional em Educação Profissional Tecnológica - PROFEPT. na linha de pesquisa \nOrganização e Memórias de Espaços Pedagógicos na Educação Profissional e Tecnológica \n(EPT) no macroprojeto 6: Organização de espaços pedagógicos na EPT, que aborda \nquestões relacionadas à gestão da EPT e dos diálogos entre a instituição e a comunidade. O \nestudo aborda os desafios no que diz respeito ao ingresso aos cursos técnicos integrados do \nIFSC Itajaí. A motivação da pesquisa se deu pela problemática evidenciada nos processos de \ningresso nos cursos técnicos integrados ao ensino médio do IFSC Itajaí. O referencial \nteórico discutiu o papel do ensino médio integrado como princípio educativo do trabalho. A \neducação profissional e tecnológica no contexto dos Institutos Federais e o seu papel como \npolítica pública considerando a mudança demográfica na sociedade brasileira. E por último, \na democracia na educação, com reflexões sobre determinantes sociais e gestão escolar. \nDestaca-se a importância da educação integrada nos Institutos Federais, rompendo com a \ntradicional dicotomia entre ensino médio e educação profissional/ensino técnico. E isso \nocorre por meio do princípio educativo do trabalho, que resgata o sentido ontológico dessa \natividade humana. Para construção dos dados, através de uma abordagem qualitativa, foram \nconduzidos grupos focais e questionário com os setores do Departamento de Ingresso, \nDiretoria de Comunicação e servidores do Câmpus Itajaí, além de questionário com os \nestudantes e responsáveis inscritos e convocados no semestre de 2024.2. Bem como, \npesquisa documental e bibliográfica. O objetivo foi compreender as dificuldades enfrentadas \npelos estudantes e seus responsáveis nos processos de ingresso. Os resultados indicam que \nocorrem dificuldades na efetivação das matrículas devido à certa complexidade dos editais, \nbarreiras tecnológicas, falta de compreensão das etapas do processo e dos fundamentos do \nensino médio integrado. A análise sinalizou que o público que procura o IFSC é bastante \ndiversificado, tanto em termos socioeconômicos quanto no nível de instrução educacional \ndas famílias. Assim, a adoção de uma comunicação inclusiva é essencial para garantir que \ntodos os candidatos interessados em ingressar no IFSC Itajaí possam participar plenamente \ndo processo de ingresso, independentemente de suas habilidades tecnológicas ou condições \nsocioeconômicas. O produto educacional criado é portador de uma linguagem clara e \nobjetiva afim de aprimorar essa comunicação institucional.\nPalavras-Chave: Ingresso. Comunicação. Cursos técnicos integrados ao ensino médio - \nIFSC Itajaí. Organização e Memória da Educação Profissional e Tecnológica.",
+        "palavras_chave": [
+          "Ingresso",
+          "Comunicação",
+          "Cursos técnicos integrados ao ensino médio - IFSC Itajaí",
+          "Organização e Memória da Educação Profissional e Tecnológica"
+        ],
+        "autores_referenciados": [],
+        "base_epistemologica": {
+          "valor": "Materialismo Histórico-Dialético",
+          "candidato": null,
+          "confianca": "alta",
+          "revisao_pendente": false,
+          "justificativa": "O Materialismo Histórico-Dialético fundamenta a dissertação através das concepções de Saviani (2007) e Ciavatta (2014) sobre trabalho como princípio educativo e omnilateralidade. Essa base teórica articula-se com Ramos (2017) e Kuenzer (2000) na crítica à dualidade educacional e na defesa da escola unitária.",
+          "evidencias": [
+            {
+              "secao": "Introdução",
+              "pagina": 23,
+              "trecho": "O referencial teórico fundamenta-se na formação integral, destacando o trabalho como princípio educativo e a omnilateralidade (Saviani, 2007; Ciavatta, 2014).",
+              "referencia_correspondente": null
+            }
+          ]
+        }
+      },
+      "produto": {
+        "titulo": "DESCOMPLICANDO O INGRESSO NOS CURSOS TÉCNICOS INTEGRADOS DO IFSC ITAJAÍ",
+        "tipo": "material_didatico_instrucional",
+        "link": "http://educapes.capes.gov.br/handle/capes/984515",
+        "publico_alvo": [
+          "estudantes_alunos"
+        ],
+        "nivel_aplicacao": "Ensino Médio Integrado",
+        "palavras_chave": [
+          "IFSC, Ingresso, Formação Integral, Ensino Médio Integrado ao Técnico",
+          "PROFEPT",
+          "Produto Educacional resultado de pesquisa de dissertação de Mestrado"
+        ],
+        "data_publicacao": "2025-05-31",
+        "autores_colaboradores": [
+          {
+            "nome": "INSTITUTO FEDERAL CATARINENSE-IFC",
+            "papel": "contributor"
+          },
+          {
+            "nome": "Spindler, Glaucia Raquel",
+            "papel": "creator"
+          },
+          {
+            "nome": "CASTRO, Cloves Alexandre de",
+            "papel": "creator"
+          }
+        ],
+        "identificadores": [
+          {
+            "esquema": "handle",
+            "valor": "capes/984515",
+            "url": "http://educapes.capes.gov.br/handle/capes/984515"
+          },
+          {
+            "esquema": "identifier",
+            "valor": "DESCOMPLICANDO O INGRESSO NOS CURSOS TÉCNICOS INTEGRADOS DO IFSC ITAJAÍ",
+            "url": ""
+          }
+        ],
+        "proveniencia": {
+          "fonte_tipo_escolhida": "dissertacao_ficha",
+          "rotulo_original_declarado": "DESCOMPLICANDO O INGRESSO NOS CURSOS TÉCNICOS INTEGRADOS DO IFSC ITAJAÍ",
+          "colecao_educapes": null,
+          "dc_type_educapes": [
+            "apresentação",
+            "vídeo"
+          ]
+        }
+      },
+      "indice_busca": {
+        "texto_busca_normalizado": "ept 0021 2025 glaucia raquel spindler cloves alexandre de castro ifc blumenau lp2 mp6 desafios no ingresso aos cursos tecnicos integrados ao ensino medio no instituto federal de santa catarina campus itajai da inscricao a efetivacao da matricula pag 11 resumo esta pesquisa de mestrado foi realizada no ambito do programa de mestrado profissional em rede nacional em educacao profissional tecnologica profept na linha de pesquisa organizacao e memorias de espacos pedagogicos na educacao profissional e tecnologica ept no macroprojeto 6 organizacao de espacos pedagogicos na ept que aborda questoes relacionadas a gestao da ept e dos dialogos entre a instituicao e a comunidade o estudo aborda os desafios no que diz respeito ao ingresso aos cursos tecnicos integrados do ifsc itajai a motivacao da pesquisa se deu pela problematica evidenciada nos processos de ingresso nos cursos tecnicos integrados ao ensino medio do ifsc itajai o referencial teorico discutiu o papel do ensino medio integrado como principio educativo do trabalho a educacao profissional e tecnologica no contexto dos institutos federais e o seu papel como politica publica considerando a mudanca demografica na sociedade brasileira e por ultimo a democracia na educacao com reflexoes sobre determinantes sociais e gestao escolar destaca se a importancia da educacao integrada nos institutos federais rompendo com a tradicional dicotomia entre ensino medio e educacao profissional ensino tecnico e isso ocorre por meio do principio educativo do trabalho que resgata o sentido ontologico dessa atividade humana para construcao dos dados atraves de uma abordagem qualitativa foram conduzidos grupos focais e questionario com os setores do departamento de ingresso diretoria de comunicacao e servidores do campus itajai alem de questionario com os estudantes e responsaveis inscritos e convocados no semestre de 2024 2 bem como pesquisa documental e bibliografica o objetivo foi compreender as dificuldades enfrentadas pelos estudantes e seus responsaveis nos processos de ingresso os resultados indicam que ocorrem dificuldades na efetivacao das matriculas devido a certa complexidade dos editais barreiras tecnologicas falta de compreensao das etapas do processo e dos fundamentos do ensino medio integrado a analise sinalizou que o publico que procura o ifsc e bastante diversificado tanto em termos socioeconomicos quanto no nivel de instrucao educacional das familias assim a adocao de uma comunicacao inclusiva e essencial para garantir que todos os candidatos interessados em ingressar no ifsc itajai possam participar plenamente do processo de ingresso independentemente de suas habilidades tecnologicas ou condicoes socioeconomicas o produto educacional criado e portador de uma linguagem clara e objetiva afim de aprimorar essa comunicacao institucional palavras chave ingresso comunicacao cursos tecnicos integrados ao ensino medio ifsc itajai organizacao e memoria da educacao profissional e tecnologica descomplicando o ingresso nos cursos tecnicos integrados do ifsc itajai material didatico instrucional ensino medio integrado ingresso comunicacao cursos tecnicos integrados ao ensino medio ifsc itajai organizacao e memoria da educacao profissional e tecnologica ifsc ingresso formacao integral ensino medio integrado ao tecnico profept produto educacional resultado de pesquisa de dissertacao de mestrado",
+        "termos_unificados": [
+          "Ingresso",
+          "Comunicação",
+          "Cursos técnicos integrados ao ensino médio - IFSC Itajaí",
+          "Organização e Memória da Educação Profissional e Tecnológica",
+          "IFSC, Ingresso, Formação Integral, Ensino Médio Integrado ao Técnico",
+          "PROFEPT",
+          "Produto Educacional resultado de pesquisa de dissertação de Mestrado"
         ],
         "tem_produto_vinculado": true,
         "tem_resumo": true
