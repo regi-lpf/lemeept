@@ -1,3 +1,4 @@
+import argparse
 import json
 import re
 import time
@@ -14,6 +15,7 @@ from pipeline.models_v4 import (
     ContratoExtracaoDeterministicaV4,
     DissertacaoDeterministica,
     EvidenciasEduCAPES,
+    FonteTipoProduto,
     MetadadosResolvidos,
     RecortesTextuais,
     TrechoEpistemologico,
@@ -21,16 +23,24 @@ from pipeline.models_v4 import (
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+_CONTROLE_INVISIVEL_RE = re.compile(r"[\u200b-\u200f\u202a-\u202e\ufeff\x00-\x08\x0b\x0c\x0e-\x1f]")
+
 # Stopwords institucionais ou ruídos comuns no início de linhas ABNT que não são autores humanos
 IGNORAR_ENTRADAS_REF = {
-    "BRASIL", "SANTA CATARINA", "INSTITUTO FEDERAL", "MINISTERIO", "MINISTÉRIO",
-    "CONSELHO", "DECRETO", "LEI", "RESOLUCAO", "RESOLUÇÃO", "PORTARIA",
-    "DISPONIVEL", "DISPONÍVEL", "ACESSO", "IN", "IBID", "IDEM", "OP", "CIT",
-    "ORGANIZACAO", "ORGANIZAÇÃO", "UNESCO", "OCDE", "CAPES", "MEC", "CNE", "CEB"
+    "BRASIL", "SANTA CATARINA", "INSTITUTO", "FEDERAL", "CATARINENSE", "BLUMENAU",
+    "INSTITUTO FEDERAL", "MINISTERIO", "MINISTÉRIO", "CONSELHO", "DECRETO", "LEI",
+    "RESOLUCAO", "RESOLUÇÃO", "PORTARIA", "DISPONIVEL", "DISPONÍVEL", "ACESSO",
+    "IN", "IBID", "IDEM", "OP", "CIT", "ORGANIZACAO", "ORGANIZAÇÃO", "UNESCO",
+    "OCDE", "CAPES", "MEC", "CNE", "CEB", "REFERÊNCIAS", "REFERENCIAS",
+    "EDUCAÇÃO", "EDUCACAO", "ANEXO", "APÊNDICE", "APENDICE", "TABELA", "FIGURA",
+    "QUADRO", "SITE", "HTTP", "HTTPS", "REVISTA", "PROGRAMA", "PROFEPT",
+    "UNIVERSIDADE", "SECRETARIA", "GOVERNO", "PRESIDÊNCIA", "PRESIDENCIA",
+    "SENADO", "CÂMARA", "CAMARA", "IBGE", "INEP", "CNPQ", "FNDE",
 }
 
-# Partículas de sobrenome composto em português/espanhol
+# Partículas de sobrenome composto e agnomes em português/espanhol
 PARTICULAS_SOBRENOME = {"DA", "DE", "DO", "DAS", "DOS", "DEL", "VON", "VAN"}
+AGNOMES = {"JUNIOR", "JÚNIOR", "FILHO", "NETO", "SOBRINHO", "SEGUNDO", "TERCEIRO"}
 
 # --- REGRAS CANÔNICAS PROFEPT ---
 MAPEAMENTO_MP_LP = {
@@ -43,19 +53,33 @@ MAPEAMENTO_MP_LP = {
 }
 
 REGRAS_TIPO_PRODUTO: List[Tuple[str, str]] = [
-    ("software_aplicativo", r"\b(software|aplicativo|app|plataforma\s+virtual|sistema\s+web|portal|website|ambiente\s+virtual|ava|moodle)\b"),
+    (
+        "software_aplicativo",
+        r"(?:^\s*aplicativo\b|\b(?:software|aplicativo\s+(?:m[oó]vel|web|educacional|de\s+\w+)|app|sistema\s+web|programa\s+de\s+computador|simulador|plataforma\s+virtual)\b)",
+    ),
     ("manual_protocolo", r"\b(manual|protocolo|guia\s+de\s+instru[cç][oõ]es|procedimento\s+operacional)\b"),
     ("carta_mapa", r"\b(carta\s+pedag[oó]gica|mapa\s+conceitual|mapa\s+interativo|atlas)\b"),
     ("eventos_organizados", r"\b(exposi[cç][aã]o|mostra\s+cient[ií]fica|feira\s+de|olimp[ií]ada|semin[aá]rio|evento\s+cient[ií]fico)\b"),
     ("acervo", r"\b(acervo|curadoria|cole[cç][aã]o\s+digital|reposit[oó]rio|banco\s+de\s+dados)\b"),
-    ("produto_comunicacao", r"\b(podcast|programa\s+de\s+r[aá]dio|programa\s+de\s+tv|campanha\s+publicit[aá]ria|boletim|jornal|revista\s+de\s+divulga[cç][aã]o)\b"),
+    ("produto_comunicacao", r"\b(produto\s+comunicacional|programa\s+de\s+r[aá]dio|programa\s+de\s+tv|campanha\s+publicit[aá]ria|boletim|jornal|revista\s+de\s+divulga[cç][aã]o)\b"),
     ("tecnologia_social", r"\b(tecnologia\s+social|dispositivo|equipamento|inova[cç][aã]o\s+social|prot[oó]tipo)\b"),
-    ("material_didatico_instrucional", r"\b(material\s+did[aá]tico|sequ[eê]ncia\s+did[aá]tica|cartilha|e-?book|livro\s+digital|caderno|roteiro|proposta\s+pedag[oó]gica|proposta\s+de\s+interven[cç][aã]o|jogo|hist[oó]ria\s+em\s+quadrinhos|hq|gloss[aá]rio|v[ií]deo|videoaula|anima[cç][aã]o|guia|texto\s+de\s+apoio|objeto\s+de\s+aprendizagem)\b"),
+    (
+        "material_didatico_instrucional",
+        r"\b(material\s+did[aá]tico|material\s+de\s+apoio|sequ[eê]ncia\s+did[aá]tica|unidade\s+did[aá]tica|cartilha|e-?book|livro\s+digital|caderno|roteiro|proposta\s+pedag[oó]gica|proposta\s+de\s+interven[cç][aã]o|jogo|hist[oó]ria\s+em\s+quadrinhos|hq|gloss[aá]rio|v[ií]deo|videoaula|anima[cç][aã]o|guia|texto\s+de\s+apoio|objeto\s+de\s+aprendizagem|folder\s+educativo|portf[oó]lio\s+formativo|podcast|ambiente\s+virtual|ava|moodle|website|site\s+educativo|blog)\b",
+    ),
     ("curso_oficina", r"\b(curso\s+de\s+forma[cç][aã]o|curso\s+livre|curso\s+fic|curso\s+online|curso\s+autoformativo|oficina|minicurso|workshop)\b"),
 ]
 
+# Regras restritas apenas a dc.type do eduCAPES sem ambiguidade (ignora genéricos como 'texto', 'portal', 'vídeo', etc.)
+REGRAS_DC_TYPE_EDUCAPES: List[Tuple[str, str]] = [
+    ("software_aplicativo", r"\b(aplicativo\s+m[oó]vel|software)\b"),
+    ("curso_oficina", r"\bcurso\b"),
+    ("material_didatico_instrucional", r"\b(podcast|jogo)\b"),
+]
+
 def normalizar_espacos(texto: str) -> str:
-    return re.sub(r"[ \t]+", " ", re.sub(r"\n{3,}", "\n\n", texto)).strip()
+    texto_limpo = _CONTROLE_INVISIVEL_RE.sub("", texto)
+    return re.sub(r"[ \t]+", " ", re.sub(r"\n{3,}", "\n\n", texto_limpo)).strip()
 
 
 def remover_acentos(texto: str) -> str:
@@ -70,7 +94,7 @@ def extrair_sentenca_produto(texto: str) -> str:
     return " ".join(relevantes)
 
 def classificar_produto_regex(*fontes_texto: Optional[str]) -> Optional[str]:
-    """Aplica regex em ordem de prioridade (dissertação/rótulo bruto primeiro, eduCAPES depois)."""
+    """Aplica regex de produto sobre fontes textuais em ordem de prioridade."""
     for fonte in fontes_texto:
         if not fonte:
             continue
@@ -79,6 +103,34 @@ def classificar_produto_regex(*fontes_texto: Optional[str]) -> Optional[str]:
             if re.search(padrao, limpo, flags=re.IGNORECASE):
                 return tipo_canonico
     return None
+
+
+def classificar_produto_com_fonte(
+    titulo_produto_bruto: Optional[str],
+    sentenca_resumo: str,
+    sentenca_corpo: str,
+    titulo_capes: Optional[str],
+    dc_types: List[str],
+) -> Tuple[Optional[str], Optional[FonteTipoProduto]]:
+    """
+    Classifica o produto preservando a proveniência exata ('dissertacao_ficha' vs 'educapes_dc_type').
+    """
+    tipo_dissertacao = classificar_produto_regex(
+        titulo_produto_bruto,
+        sentenca_resumo,
+        sentenca_corpo,
+        titulo_capes,
+    )
+    if tipo_dissertacao:
+        return tipo_dissertacao, "dissertacao_ficha"
+
+    dc_texto = " ".join(dc_types).strip().lower()
+    if dc_texto:
+        for tipo_canonico, padrao in REGRAS_DC_TYPE_EDUCAPES:
+            if re.search(padrao, dc_texto, flags=re.IGNORECASE):
+                return tipo_canonico, "educapes_dc_type"
+
+    return None, None
 
 
 def detectar_macroprojeto_e_linha(texto_completo_pdf: str) -> Tuple[str, str]:
@@ -95,7 +147,6 @@ def detectar_macroprojeto_e_linha(texto_completo_pdf: str) -> Tuple[str, str]:
     padroes_num = [
         r"\bmacro\s*[-]?\s*projeto(?:\s+de\s+pesquisa(?:\s+e\s+desenvolvimento)?)?\s*[:\-–]?\s*([1-6]|i{1,3}|iv|v|vi)\b",
         r"\bmp\s*[-]?\s*([1-35-6])\b",
-        r"\bmp\s*[-]?\s*(4)(?!\s*(?:;|,|\)|\.|\b(?:video|formato|extensao|duracao|mb|audio)))\b",
     ]
     romanos = {"i": "1", "ii": "2", "iii": "3", "iv": "4", "v": "5", "vi": "6"}
 
@@ -106,6 +157,18 @@ def detectar_macroprojeto_e_linha(texto_completo_pdf: str) -> Tuple[str, str]:
             num = romanos.get(val, val)
             mp = f"MP{num}"
             return mp, MAPEAMENTO_MP_LP[mp]
+
+    for m in re.finditer(r"(?<!\.)\bmp\s*[-]?\s*(4)\b", txt_limpo):
+        antes = txt_limpo[max(0, m.start() - 25) : m.start()]
+        depois = txt_limpo[m.end() : min(len(txt_limpo), m.end() + 45)]
+        if re.search(r"(?:formato|arquivo|extensao|video|audio|midia|em)\s*[:(]?\s*$", antes):
+            continue
+        if re.match(
+            r"^\s*(?:;|,|\)|\.|[-–—]?\s*(?:um\s+)?(?:padrao|formato|extensao|video|audio|duracao|mb|gb|kb)|\bde\s+\d+\s*(?:mb|gb|kb)\b)",
+            depois,
+        ):
+            continue
+        return "MP4", MAPEAMENTO_MP_LP["MP4"]
 
     # 2. Match pelos títulos canônicos dos Macroprojetos (tolerante a preposições e PDF sem espaço)
     assinaturas_mp = [
@@ -144,7 +207,7 @@ def extrair_coorientador(texto_preliminar: str) -> List[str]:
 
 def extrair_palavras_chave_resumo(bloco_resumo: str) -> List[str]:
     match = re.search(
-        r"Palavras-chave\s*:\s*(.+?)(?=\n\s*\n|Abstract|Keywords|$)",
+        r"(?:^|\n)\s*Palavras[\s\-–]+chaves?\s*:?\s*(.+?)(?=\n\s*\n|(?:^|\n)\s*(?:Abstract|Keywords)\b|$)",
         bloco_resumo,
         flags=re.IGNORECASE | re.DOTALL,
     )
@@ -160,6 +223,11 @@ def extrair_palavras_chave_resumo(bloco_resumo: str) -> List[str]:
             tags.append(limpa)
     return tags
 
+
+_MAIUSCULAS_PT = "A-ZÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ"
+_MINUSCULAS_PT = "a-zàáâãäåçèéêëìíîïñòóôõöùúûüý"
+
+
 def extrair_autores_referencias(texto_secao_referencias: str) -> List[str]:
     """
     Extrai sobrenomes de autores a partir das entradas bibliográficas no padrão ABNT
@@ -172,31 +240,40 @@ def extrair_autores_referencias(texto_secao_referencias: str) -> List[str]:
 
     # Captura início de linha (ou após quebra) com SOBRENOME EM CAIXA ALTA seguido de vírgula
     padrao_abnt = re.compile(
-        r"(?:^|\n)\s*([A-ZÁÉÍÓÚÂÊÔÃÕÇ]{2,}(?:\s+(?:DA|DE|DO|DAS|DOS|[A-ZÁÉÍÓÚÂÊÔÃÕÇ]{2,}))?)\s*,\s*[A-ZÁÉÍÓÚÂÊÔÃÕÇa-záéíóúâêôãõç]"
+        rf"(?:^|\n)\s*([{_MAIUSCULAS_PT}]{{2,}}(?:\s+(?:DA|DE|DO|DAS|DOS|[{_MAIUSCULAS_PT}]{{2,}}))*)\s*,\s*[{_MAIUSCULAS_PT}{_MINUSCULAS_PT}]"
     )
 
     for match in padrao_abnt.finditer(texto_secao_referencias):
-        bruto = match.group(1).strip()
+        bruto = re.sub(r"\s+", " ", match.group(1)).strip()
         tokens = bruto.split()
 
         # Remove partículas iniciais soltas (ex: "DE SOUZA" -> "SOUZA")
         while tokens and tokens[0] in PARTICULAS_SOBRENOME:
             tokens.pop(0)
+        while tokens and tokens[-1] in AGNOMES:
+            tokens.pop()
 
         if not tokens:
             continue
 
-        sobrenome_principal = tokens[0]
-
-        if (
-            len(sobrenome_principal) < 3
-            or sobrenome_principal in IGNORAR_ENTRADAS_REF
-            or bruto in IGNORAR_ENTRADAS_REF
-        ):
+        # Descarta se o bloco inteiro ou qualquer token principal for stopword institucional/editorial
+        if bruto in IGNORAR_ENTRADAS_REF or any(t in IGNORAR_ENTRADAS_REF for t in tokens):
             continue
 
-        # Capitaliza mantendo padrão limpo (ex: "FRIGOTTO" -> "Frigotto")
-        autores_encontrados.add(sobrenome_principal.capitalize())
+        if len(tokens[0]) < 3:
+            continue
+
+        # Mantém até 2 tokens relevantes para preservar sobrenomes compostos reais (ex.: Espírito Santo)
+        if len(tokens) > 2 and tokens[1] not in PARTICULAS_SOBRENOME:
+            tokens = tokens[:2]
+        elif len(tokens) > 3:
+            tokens = tokens[:3]
+
+        formatado = " ".join(
+            t.lower() if t in PARTICULAS_SOBRENOME else t.capitalize()
+            for t in tokens
+        )
+        autores_encontrados.add(formatado)
 
     return sorted(autores_encontrados)
 
@@ -211,43 +288,86 @@ def ler_paginas_pdf(pdf_path: Path) -> List[Tuple[int, str]]:
     return paginas
 
 
+def _eh_pagina_sumario(txt: str) -> bool:
+    if re.search(r"(^|\n)\s*SUM[ÁA]RIO\s*(\n|$)", txt, flags=re.IGNORECASE):
+        return True
+    return len(re.findall(r"\.{4,}", txt)) >= 3
+
+
+_PADRAO_INTRO = re.compile(
+    r"(^|\n)\s*(?:\d+(?:\.\d+)*\.?\s+)?INTRODU[ÇC][ÃA]O\s*$",
+    flags=re.IGNORECASE | re.MULTILINE,
+)
+
+_PADRAO_REFS = re.compile(
+    r"(?:^|\n)\s*(?:\d+(?:\.\d+)*\.?\s+)?"
+    r"(?:"
+    r"REFER[ÊE]NCIAS(?:\s+(?:BIBLIOGR[ÁA]FICAS|BIBLOGR[ÁA]FICAS|CONSULTADAS))?"
+    r"|Refer[êe]ncias(?:\s+(?:Bibliogr[áa]ficas|Consultadas))?"
+    r"|BIBLIOGRAFIA(?:\s*/\s*FONTES\s+DE\s+REFER[ÊE]NCIAS?)?"
+    r"|Bibliografia(?:\s*/\s*Fontes\s+de\s+Refer[êe]ncias?)?"
+    r"|OBRAS\s+QUE\s+EMBASARAM(?:\s+ESTA\s+COMPOSI[ÇC][ÃA]O)?"
+    r")\s*[:|\-]?(?:\s*\d+)?\s*(?=\n|$)",
+    flags=re.MULTILINE,
+)
+
+
 def isolar_secoes_pdf(paginas: List[Tuple[int, str]]) -> Tuple[RecortesTextuais, str]:
     if not paginas:
-        return RecortesTextuais()
+        return RecortesTextuais(), ""
 
-    # 1. Pré-textuais (primeiras 14 páginas cobrem capa, folha de rosto, ficha, ata, resumo e sumário)
-    pre_textuais = paginas[:14]
+    paginas = [(num_pag, _CONTROLE_INVISIVEL_RE.sub("", txt)) for num_pag, txt in paginas]
+
+    # 1. Pré-textuais (primeiras 18 páginas cobrem capa, folha de rosto, ficha, ata, resumo e sumário)
+    pre_textuais = paginas[:18]
     capa = "\n\n".join(txt for _, txt in pre_textuais[:2])
 
     ficha = ""
     resumo = ""
     sumario = ""
 
-    for num_pag, txt in pre_textuais:
+    for idx_pre, (num_pag, txt) in enumerate(pre_textuais):
         upper = txt.upper()
         if not ficha and ("FICHA CATALOGRÁFICA" in upper or "CDD" in upper or "CDU" in upper):
             ficha = f"[PÁG. {num_pag}]\n{txt}"
-        if not resumo and re.search(r"(^|\n)\s*RESUMO\s*(\n|$)", upper):
-            resumo = f"[PÁG. {num_pag}]\n{txt}"
+        if not resumo and re.search(r"(^|\n)\s*RESUMO\s*[:\-–—]?\s*(\n|$)", upper):
+            bloco_resumo = txt
+            # Se Palavras-chave estiver na página seguinte antes do Abstract, incorpora ao recorte
+            if not re.search(r"(?:^|\n)\s*palavras[\s\-–]+chaves?", bloco_resumo, flags=re.IGNORECASE) and idx_pre + 1 < len(paginas):
+                prox_txt = paginas[idx_pre + 1][1]
+                if not re.match(r"^\s*ABSTRACT\b", prox_txt, flags=re.IGNORECASE) and re.search(
+                    r"(?:^|\n)\s*palavras[\s\-–]+chaves?", prox_txt, flags=re.IGNORECASE
+                ):
+                    corte = re.split(r"(?:^|\n)\s*ABSTRACT\b", prox_txt, maxsplit=1, flags=re.IGNORECASE)[0]
+                    bloco_resumo = f"{bloco_resumo}\n{corte.strip()}"
+            resumo = f"[PÁG. {num_pag}]\n{bloco_resumo}"
         if not sumario and re.search(r"(^|\n)\s*SUM[ÁA]RIO\s*(\n|$)", upper):
             # Captura página do sumário e a seguinte caso seja longo
-            prox = paginas[num_pag][1] if num_pag < len(paginas) else ""
+            prox = paginas[idx_pre + 1][1] if idx_pre + 1 < len(paginas) else ""
             sumario = f"[PÁG. {num_pag}]\n{txt}\n{prox[:1500]}"
 
     # 2. Localizar início da Introdução e das Referências
     idx_intro = None
-    idx_refs = None
-
     for i, (num_pag, txt) in enumerate(paginas):
-        if num_pag <= 5:
+        if num_pag <= 5 or _eh_pagina_sumario(txt):
             continue
-        linhas_topo = "\n".join(txt.splitlines()[:8])
-        if idx_intro is None and re.search(r"(^|\n)\s*(?:[1-3]\.?\s+)?INTRODU[ÇC][ÃA]O\s*$", linhas_topo, flags=re.IGNORECASE | re.MULTILINE):
-            # Garante que não é a linha do Sumário (que contém pontos ".....")
-            if "...." not in linhas_topo:
-                idx_intro = i
-        if re.search(r"(^|\n)\s*REFER[ÊE]NCIAS(?:\s+BIBLIOGR[ÁA]FICAS)?\s*$", linhas_topo, flags=re.IGNORECASE | re.MULTILINE):
+        linhas_topo = "\n".join(txt.splitlines()[:10])
+        if _PADRAO_INTRO.search(linhas_topo):
+            idx_intro = i
+            break
+
+    min_idx_refs = (idx_intro + 1) if idx_intro is not None else min(5, len(paginas) // 2)
+    idx_refs = None
+    refs_match_pos = 0
+    for i in range(min_idx_refs, len(paginas)):
+        _, txt = paginas[i]
+        if _eh_pagina_sumario(txt):
+            continue
+        match_ref = _PADRAO_REFS.search(txt)
+        if match_ref:
             idx_refs = i
+            refs_match_pos = match_ref.start()
+            break
 
     introducao_paginas = paginas[idx_intro : idx_intro + 5] if idx_intro is not None else paginas[8:13]
     introducao = "\n\n".join(f"[PÁG. {p}]\n{t}" for p, t in introducao_paginas)[:8000]
@@ -307,9 +427,11 @@ def isolar_secoes_pdf(paginas: List[Tuple[int, str]]) -> Tuple[RecortesTextuais,
     texto_refs = ""
     referencias_filtradas = []
     if idx_refs is not None:
-        texto_refs = "\n".join(t for _, t in paginas[idx_refs : idx_refs + 25])
+        primeira_pag_refs = paginas[idx_refs][1][refs_match_pos:]
+        paginas_restantes = [t for _, t in paginas[idx_refs + 1 : idx_refs + 25]]
+        texto_refs = "\n".join([primeira_pag_refs, *paginas_restantes])
         if citacoes_unicas:
-            entradas = re.split(r"\n(?=[A-ZÁÉÍÓÚÂÊÔÃÕÇ]{2,}[,\s])", texto_refs)
+            entradas = re.split(rf"\n(?=[{_MAIUSCULAS_PT}]{{2,}}[,\s])", texto_refs)
             for entrada in entradas:
                 entrada_limpa = re.sub(r"\s+", " ", entrada).strip()
                 if len(entrada_limpa) < 25:
@@ -324,13 +446,44 @@ def isolar_secoes_pdf(paginas: List[Tuple[int, str]]) -> Tuple[RecortesTextuais,
         capa=capa[:2500],
         ficha_catalografica=ficha[:2500],
         sumario=sumario[:3000],
-        resumo=resumo[:3500],
+        resumo=resumo[:4500],
         introducao=introducao,
         descricao_produto_na_dissertacao=descricao_produto,
         trechos_epistemologicos=trechos_epist,
         referencias_filtradas=referencias_filtradas,
     )
     return recortes, texto_refs
+
+
+def _adicionar_unico(lista: List[str], valor: str) -> None:
+    chave = valor.strip().lower()
+    if chave and all(item.strip().lower() != chave for item in lista):
+        lista.append(valor.strip())
+
+
+def _adicionar_colaborador_unico(lista: List[Dict[str, Optional[str]]], nome: str, papel: Optional[str]) -> None:
+    chave = (nome.strip().lower(), (papel or "").strip().lower())
+    if not chave[0]:
+        return
+    for item in lista:
+        if (item.get("nome", "").strip().lower(), (item.get("papel") or "").strip().lower()) == chave:
+            return
+    lista.append({"nome": nome.strip(), "papel": papel})
+
+
+def _adicionar_identificador_unico(
+    lista: List[Dict[str, str]],
+    esquema: str,
+    valor: str,
+    url: str = "",
+) -> None:
+    chave = (esquema.strip().lower(), valor.strip().lower())
+    if not chave[1]:
+        return
+    for item in lista:
+        if (item.get("esquema", "").strip().lower(), item.get("valor", "").strip().lower()) == chave:
+            return
+    lista.append({"esquema": esquema.strip(), "valor": valor.strip(), "url": url})
 
 
 # --- SCRAPING RESILIENTE DO EDUCAPES ---
@@ -341,11 +494,22 @@ def coletar_evidencias_educapes(
     descricao_produto_pdf: str,
     cache_dir: Path,
 ) -> EvidenciasEduCAPES:
+    sentenca_resumo = extrair_sentenca_produto(resumo_pdf)
+    sentenca_corpo = extrair_sentenca_produto(descricao_produto_pdf)
+
     if not handle_url:
-        tipo_regex = classificar_produto_regex(titulo_produto_bruto, descricao_produto_pdf)
+        tipo_regex, fonte_tipo = classificar_produto_com_fonte(
+            titulo_produto_bruto=titulo_produto_bruto,
+            sentenca_resumo=sentenca_resumo,
+            sentenca_corpo=sentenca_corpo,
+            titulo_capes=None,
+            dc_types=[],
+        )
         return EvidenciasEduCAPES(
             titulo_produto=titulo_produto_bruto,
+            titulo_produto_bruto=titulo_produto_bruto,
             tipo_produto_regex=tipo_regex,
+            fonte_tipo_regex=fonte_tipo,
         )
 
     # Normaliza URL para carregar a página completa (?show=full no DSpace revela todos os campos Dublin Core)
@@ -377,8 +541,10 @@ def coletar_evidencias_educapes(
     data_pub = None
     dc_types: List[str] = []
     keywords: List[str] = []
-    autores_colab: List[Dict[str, str]] = []
-    identificadores: List[Dict[str, str]] = [{"esquema": "handle", "valor": base_url.split("handle/")[-1], "url": base_url}]
+    autores_colab: List[Dict[str, Optional[str]]] = []
+    identificadores: List[Dict[str, str]] = [
+        {"esquema": "handle", "valor": base_url.split("handle/")[-1], "url": base_url}
+    ]
     colecao = None
 
     if html:
@@ -395,15 +561,15 @@ def coletar_evidencias_educapes(
                 titulo_capes = conteudo
             elif nome_meta in ("dcterms.issued", "dc.date.issued") and not data_pub:
                 data_pub = conteudo[:10]
-            elif nome_meta == "dc.type" and conteudo not in dc_types:
-                dc_types.append(conteudo)
-            elif nome_meta in ("dc.subject", "dcterms.subject") and conteudo not in keywords:
-                keywords.append(conteudo)
+            elif nome_meta == "dc.type":
+                _adicionar_unico(dc_types, conteudo)
+            elif nome_meta in ("dc.subject", "dcterms.subject"):
+                _adicionar_unico(keywords, conteudo)
             elif nome_meta in ("dc.contributor", "dc.creator"):
                 papel = meta.get("scheme") or nome_meta.replace("dc.", "")
-                autores_colab.append({"nome": conteudo, "papel": papel})
+                _adicionar_colaborador_unico(autores_colab, conteudo, papel)
             elif nome_meta in ("dc.identifier", "dcterms.identifier") and "handle" not in conteudo:
-                identificadores.append({"esquema": "identifier", "valor": conteudo, "url": ""})
+                _adicionar_identificador_unico(identificadores, "identifier", conteudo, "")
 
         # 2. Tabela Dublin Core do DSpace (?show=full)
         for tr in soup.select("table tr"):
@@ -420,15 +586,14 @@ def coletar_evidencias_educapes(
             elif campo == "dc.date.issued" and not data_pub:
                 data_pub = valor[:10]
             elif campo == "dc.type":
-                dc_types.append(valor)
+                _adicionar_unico(dc_types, valor)
             elif campo in ("dc.subject", "dc.subject.other"):
-                if valor not in keywords:
-                    keywords.append(valor)
+                _adicionar_unico(keywords, valor)
             elif campo.startswith("dc.contributor"):
                 papel = campo.replace("dc.contributor.", "") if "." in campo[14:] else "colaborador"
-                autores_colab.append({"nome": valor, "papel": papel})
+                _adicionar_colaborador_unico(autores_colab, valor, papel)
             elif campo.startswith("dc.identifier.") and campo != "dc.identifier.uri":
-                identificadores.append({"esquema": campo.replace("dc.identifier.", ""), "valor": valor, "url": ""})
+                _adicionar_identificador_unico(identificadores, campo.replace("dc.identifier.", ""), valor, "")
 
         # Coleção ("Aparece nas coleções:")
         for li in soup.select("ul.ds-referenceSet-list li a, .item-page-field-wrapper a[href*='/handle/']"):
@@ -439,21 +604,18 @@ def coletar_evidencias_educapes(
                 break
 
     # Hierarquia de fontes: Rótulo/dissertação primeiro, dc.type do eduCAPES apenas como evidência complementar
-    sentenca_resumo = extrair_sentenca_produto(resumo_pdf)
-    sentenca_corpo = extrair_sentenca_produto(descricao_produto_pdf)
-    
-    # Lembre-se de usar também na branch `if not handle_url:` no topo da função!
-    tipo_regex = classificar_produto_regex(
-        titulo_produto_bruto,
-        sentenca_resumo,
-        sentenca_corpo,
-        titulo_capes,
-        " ".join(dc_types),
+    tipo_regex, fonte_tipo = classificar_produto_com_fonte(
+        titulo_produto_bruto=titulo_produto_bruto,
+        sentenca_resumo=sentenca_resumo,
+        sentenca_corpo=sentenca_corpo,
+        titulo_capes=titulo_capes,
+        dc_types=dc_types,
     )
 
     return EvidenciasEduCAPES(
         handle_url=base_url,
         titulo_produto=titulo_capes or titulo_produto_bruto,
+        titulo_produto_bruto=titulo_produto_bruto,
         data_publicacao=data_pub,
         autores_colaboradores=autores_colab,
         identificadores=identificadores,
@@ -461,6 +623,7 @@ def coletar_evidencias_educapes(
         dc_type_educapes=dc_types,
         palavras_chave_educapes=keywords,
         tipo_produto_regex=tipo_regex,
+        fonte_tipo_regex=fonte_tipo,
     )
 
 
@@ -469,6 +632,7 @@ def executar_etapa2(
     manifest_path: Path = Path("data/stage1_manifest.json"),
     output_dir: Path = Path("data/stage2_payloads"),
     cache_dir: Path = Path("data/cache_educapes"),
+    target_id: Optional[str] = None,
 ):
     if not manifest_path.exists():
         raise FileNotFoundError(f"Manifesto da Etapa 1 não encontrado: {manifest_path}")
@@ -480,6 +644,8 @@ def executar_etapa2(
         manifesto = json.load(f)
 
     registros = manifesto if isinstance(manifesto, list) else manifesto.get("registros", manifesto.get("defesas", []))
+    if target_id:
+        registros = [r for r in registros if r.get("id") == target_id]
     print(f"Iniciando Etapa 2 para {len(registros)} defesas...")
 
     processados = 0
@@ -500,7 +666,6 @@ def executar_etapa2(
             recortes, texto_integral_referencias = isolar_secoes_pdf(paginas)
 
             bloco_preliminar = f"{recortes.capa}\n{recortes.ficha_catalografica}\n{recortes.resumo}"
-            bloco_busca_mp = f"{recortes.capa}\n{recortes.ficha_catalografica}\n{recortes.resumo}\n{recortes.introducao}"
             mp, lp = detectar_macroprojeto_e_linha(texto_full_pdf)
             coorientadores = extrair_coorientador(bloco_preliminar)
             kw_dissertacao = extrair_palavras_chave_resumo(recortes.resumo)
@@ -554,6 +719,21 @@ def executar_etapa2(
         print(f"Falhas ({len(erros)}): {erros}")
 
 
+def _build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description="Etapa 2: Extração determinística de PDFs e eduCAPES.")
+    parser.add_argument("--manifesto", type=Path, default=Path("data/stage1_manifest.json"))
+    parser.add_argument("--saida-dir", type=Path, default=Path("data/stage2_payloads"))
+    parser.add_argument("--cache-dir", type=Path, default=Path("data/cache_educapes"))
+    parser.add_argument("--id", dest="target_id", default=None, help="Processar apenas um ID específico (ex: EPT-0001).")
+    return parser
+
+
 if __name__ == "__main__":
-    executar_etapa2()
+    args = _build_parser().parse_args()
+    executar_etapa2(
+        manifest_path=args.manifesto,
+        output_dir=args.saida_dir,
+        cache_dir=args.cache_dir,
+        target_id=args.target_id,
+    )
 

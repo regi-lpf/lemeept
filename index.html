@@ -1,50 +1,81 @@
-<section id="leme-painel-ept" class="leme-painel-ept" data-json-url="./dist/painel-ept-v4.json">
+<section id="leme-painel-ept" class="leme-painel-ept"
+    data-json-url="https://raw.githubusercontent.com/regi-lpf/lemeept/refs/heads/main/dist/painel-ept-v4.json"
+    data-json-url-local="./dist/painel-ept-v4.json">
     <style>
         #leme-painel-ept {
-            --leme-primary: #4d5aff;
-            --leme-primary-2: #4d5aff;
-            --leme-secondary: #833ca3;
+            --leme-primary: #3b47e5;
+            --leme-secondary: #7b359c;
             --leme-primary-soft: #f0f1ff;
-            --leme-cyan: #833ca3;
-            --leme-green: #399f67;
+            --leme-green: #1f7a49;
             --leme-green-soft: #e9f8ef;
-            --leme-red: #f45971;
+            --leme-green-text: #166534;
+            --leme-red: #d62849;
             --leme-red-soft: #fff0f3;
+            --leme-red-text: #b91c3a;
             --leme-bg: #f7f8ff;
-            --leme-card: rgba(255, 255, 255, .96);
+            --leme-card: #ffffff;
             --leme-border: #e4e6f4;
-            --leme-border-strong: #cbd0ff;
+            --leme-border-strong: #c2c8ff;
             --leme-text: #111827;
-            --leme-muted: #64748b;
-            --leme-shadow: 0 18px 50px rgba(15, 23, 42, .10);
-            --leme-shadow-soft: 0 10px 28px rgba(15, 23, 42, .07);
+            --leme-muted: #526075;
+            --leme-shadow: 0 10px 28px rgba(15, 23, 42, .07);
+            --leme-shadow-soft: 0 4px 14px rgba(15, 23, 42, .05);
             font-family: "Open Sans", "Segoe UI", Arial, sans-serif;
             color: var(--leme-text);
             background:
-                radial-gradient(circle at top left, rgba(77, 90, 255, .13), transparent 34%),
-                radial-gradient(circle at top right, rgba(131, 60, 163, .11), transparent 30%),
+                radial-gradient(circle at top left, rgba(59, 71, 229, .10), transparent 34%),
+                radial-gradient(circle at top right, rgba(123, 53, 156, .09), transparent 30%),
                 linear-gradient(180deg, #ffffff, var(--leme-bg));
             border: 1px solid var(--leme-border);
             border-radius: 28px;
             padding: 26px;
             box-sizing: border-box;
             overflow: hidden;
+            overflow: clip;
             scroll-behavior: smooth;
+            text-align: left;
         }
 
         #leme-painel-ept * {
             box-sizing: border-box;
         }
 
+        #leme-painel-ept button,
+        #leme-painel-ept input,
+        #leme-painel-ept select {
+            font-family: inherit;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+
+        #leme-painel-ept h2,
+        #leme-painel-ept h3,
+        #leme-painel-ept h4,
+        #leme-painel-ept p {
+            text-transform: none;
+        }
+
         #leme-painel-ept :focus-visible {
-            outline: 4px solid rgba(77, 90, 255, .23);
-            outline-offset: 3px;
-            border-radius: 12px;
+            outline: 3px solid rgba(59, 71, 229, .45);
+            outline-offset: 2px;
+            border-radius: 10px;
+        }
+
+        #leme-painel-ept .leme-sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
         }
 
         #leme-painel-ept .leme-skip {
             position: absolute;
-            left: -999px;
+            left: -9999px;
             top: auto;
             width: 1px;
             height: 1px;
@@ -61,7 +92,7 @@
             background: var(--leme-primary);
             color: #fff;
             border-radius: 999px;
-            font-weight: 850;
+            font-weight: 800;
             text-decoration: none;
         }
 
@@ -75,20 +106,20 @@
             border-radius: 24px;
             color: #fff;
             background: linear-gradient(135deg, var(--leme-primary) 0%, var(--leme-secondary) 100%);
-            box-shadow: 0 18px 42px rgba(77, 90, 255, .22);
+            box-shadow: 0 12px 28px rgba(59, 71, 229, .18);
         }
 
         #leme-painel-ept .leme-eyebrow {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            padding: 7px 12px;
+            padding: 6px 12px;
             border-radius: 999px;
-            background: rgba(255, 255, 255, .16);
+            background: rgba(255, 255, 255, .18);
             color: #fff;
-            border: 1px solid rgba(255, 255, 255, .24);
+            border: 1px solid rgba(255, 255, 255, .28);
             font-size: 12px;
-            font-weight: 850;
+            font-weight: 800;
             letter-spacing: .02em;
             margin-bottom: 10px;
         }
@@ -96,43 +127,47 @@
         #leme-painel-ept h2 {
             margin: 0;
             color: #fff;
-            font-size: clamp(25px, 3vw, 38px);
-            line-height: 1.08;
-            font-weight: 900;
-            letter-spacing: -.04em;
+            font-size: clamp(24px, 3vw, 36px);
+            line-height: 1.1;
+            font-weight: 800;
+            letter-spacing: -.03em;
         }
 
         #leme-painel-ept .leme-subtitle {
             margin: 10px 0 0;
-            color: rgba(255, 255, 255, .9);
+            color: rgba(255, 255, 255, .95);
             font-size: 15px;
             line-height: 1.6;
             max-width: 940px;
         }
 
         #leme-painel-ept .leme-update {
-            background: rgba(255, 255, 255, .14);
-            border: 1px solid rgba(255, 255, 255, .28);
+            background: rgba(255, 255, 255, .18);
+            border: 1px solid rgba(255, 255, 255, .30);
             border-radius: 18px;
             padding: 13px 15px;
             font-size: 12px;
+            line-height: 1.45;
             color: #fff;
             white-space: nowrap;
             box-shadow: var(--leme-shadow-soft);
-            backdrop-filter: blur(10px);
         }
 
-        #leme-painel-ept .leme-nav button,
-        #leme-painel-ept .leme-mini-nav button,
-        #leme-painel-ept .leme-head-btn,
-        #leme-painel-ept .leme-bottom-nav button,
+        #leme-painel-ept .leme-update-meta {
+            margin-top: 4px;
+            font-size: 11px;
+            color: rgba(255, 255, 255, .92);
+        }
+
         #leme-painel-ept .leme-export-btn,
         #leme-painel-ept .leme-view button,
         #leme-painel-ept .leme-scope button,
         #leme-painel-ept .leme-page-btn,
         #leme-painel-ept .leme-card-detail-btn,
+        #leme-painel-ept .leme-table-detail-btn,
         #leme-painel-ept .leme-chip button,
-        #leme-painel-ept .leme-modal-close {
+        #leme-painel-ept .leme-modal-close,
+        #leme-painel-ept .leme-retry-btn {
             border: 1px solid var(--leme-border-strong);
             border-radius: 999px;
             background: #fff;
@@ -140,34 +175,55 @@
             padding: 10px 14px;
             cursor: pointer;
             font-size: 12px;
-            font-weight: 850;
+            font-weight: 800;
+            line-height: 1.2;
             min-height: 40px;
-            transition: transform .16s ease, background .16s ease, border-color .16s ease, color .16s ease, box-shadow .16s ease;
+            margin: 0;
+            box-shadow: none;
+            transition: transform .15s ease, background .15s ease, border-color .15s ease, color .15s ease, box-shadow .15s ease;
         }
 
-        #leme-painel-ept .leme-nav button:hover,
-        #leme-painel-ept .leme-mini-nav button:hover,
-        #leme-painel-ept .leme-head-btn:hover,
-        #leme-painel-ept .leme-bottom-nav button:hover,
-        #leme-painel-ept .leme-export-btn:hover,
-        #leme-painel-ept .leme-view button:hover,
-        #leme-painel-ept .leme-scope button:hover,
-        #leme-painel-ept .leme-page-btn:hover,
-        #leme-painel-ept .leme-card-detail-btn:hover,
-        #leme-painel-ept .leme-modal-close:hover {
+        #leme-painel-ept .leme-export-btn:hover:not(:disabled),
+        #leme-painel-ept .leme-view button:hover:not(:disabled),
+        #leme-painel-ept .leme-scope button:hover:not(:disabled),
+        #leme-painel-ept .leme-page-btn:hover:not(:disabled),
+        #leme-painel-ept .leme-card-detail-btn:hover:not(:disabled),
+        #leme-painel-ept .leme-table-detail-btn:hover:not(:disabled),
+        #leme-painel-ept .leme-modal-close:hover:not(:disabled),
+        #leme-painel-ept .leme-retry-btn:hover:not(:disabled) {
             background: var(--leme-primary-soft);
             transform: translateY(-1px);
-            box-shadow: 0 8px 18px rgba(77, 90, 255, .10);
+            box-shadow: 0 6px 14px rgba(59, 71, 229, .12);
         }
 
-        #leme-painel-ept .leme-nav button.is-primary,
         #leme-painel-ept .leme-card-detail-btn,
         #leme-painel-ept .leme-view button.is-active,
         #leme-painel-ept .leme-scope button.is-active,
-        #leme-painel-ept .leme-page-btn.is-active {
-            background: var(--leme-primary-2);
+        #leme-painel-ept .leme-page-btn.is-active,
+        #leme-painel-ept .leme-retry-btn {
+            background: var(--leme-primary);
             color: #fff;
-            border-color: var(--leme-primary-2);
+            border-color: var(--leme-primary);
+        }
+
+        #leme-painel-ept .leme-card-detail-btn:hover:not(:disabled),
+        #leme-painel-ept .leme-view button.is-active:hover:not(:disabled),
+        #leme-painel-ept .leme-scope button.is-active:hover:not(:disabled),
+        #leme-painel-ept .leme-page-btn.is-active:hover:not(:disabled),
+        #leme-painel-ept .leme-retry-btn:hover:not(:disabled) {
+            background: #2f3bd4;
+            color: #fff;
+        }
+
+        #leme-painel-ept .leme-export-btn:disabled,
+        #leme-painel-ept .leme-view button:disabled,
+        #leme-painel-ept .leme-scope button:disabled,
+        #leme-painel-ept .leme-page-btn:disabled,
+        #leme-painel-ept .leme-clear:disabled {
+            opacity: .5;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
         }
 
         #leme-painel-ept .leme-stats {
@@ -196,7 +252,7 @@
             width: 105px;
             height: 105px;
             border-radius: 999px;
-            background: rgba(77, 90, 255, .09);
+            background: rgba(59, 71, 229, .08);
             pointer-events: none;
         }
 
@@ -205,28 +261,28 @@
             display: block;
             color: var(--leme-primary);
             font-size: 29px;
-            line-height: 1;
+            line-height: 1.05;
             margin-bottom: 7px;
             letter-spacing: -.03em;
+            font-weight: 800;
         }
 
         #leme-painel-ept .leme-stat span,
         #leme-painel-ept .leme-insight-card span {
             color: var(--leme-muted);
             font-size: 12px;
-            font-weight: 750;
+            font-weight: 700;
             line-height: 1.35;
         }
 
         #leme-painel-ept .leme-panel {
             margin: 0 0 20px;
-            background: rgba(255, 255, 255, .95);
+            background: #ffffff;
             border: 1px solid var(--leme-border);
             border-radius: 26px;
             padding: 20px;
             box-shadow: var(--leme-shadow);
-            backdrop-filter: blur(12px);
-            scroll-margin-top: 88px;
+            scroll-margin-top: 24px;
         }
 
         #leme-painel-ept .leme-panel-head {
@@ -238,14 +294,13 @@
             flex-wrap: wrap;
         }
 
-        #leme-painel-ept .leme-panel-head h3,
-        #leme-painel-ept .leme-section-label {
+        #leme-painel-ept .leme-panel-head h3 {
             margin: 0;
             color: var(--leme-primary);
             font-size: 22px;
             line-height: 1.2;
-            font-weight: 900;
-            letter-spacing: -.025em;
+            font-weight: 800;
+            letter-spacing: -.02em;
         }
 
         #leme-painel-ept .leme-panel-head p {
@@ -259,11 +314,11 @@
         #leme-painel-ept .leme-note {
             background: var(--leme-primary-soft);
             color: var(--leme-primary);
-            border: 1px solid #d9ddff;
+            border: 1px solid #d4d8ff;
             border-radius: 999px;
             padding: 9px 12px;
             font-size: 12px;
-            font-weight: 850;
+            font-weight: 800;
             white-space: nowrap;
         }
 
@@ -285,12 +340,12 @@
             margin-bottom: 14px;
             border-radius: 18px;
             background: var(--leme-primary-soft);
-            border: 1px solid #d9ddff;
+            border: 1px solid #d4d8ff;
         }
 
         #leme-painel-ept .leme-scope-label {
             font-size: 12px;
-            font-weight: 850;
+            font-weight: 800;
             color: var(--leme-primary);
             text-transform: uppercase;
             letter-spacing: .04em;
@@ -310,8 +365,8 @@
         }
 
         #leme-painel-ept .leme-insight-card strong {
-            font-size: 21px;
-            line-height: 1.18;
+            font-size: 20px;
+            line-height: 1.2;
             word-break: break-word;
         }
 
@@ -331,7 +386,7 @@
             padding: 16px;
             background: linear-gradient(180deg, #ffffff, #fbfdff);
             min-height: 220px;
-            box-shadow: 0 8px 20px rgba(15, 23, 42, .045);
+            box-shadow: 0 4px 12px rgba(15, 23, 42, .04);
             min-width: 0;
         }
 
@@ -347,7 +402,7 @@
             margin: 0 0 4px;
             color: var(--leme-text);
             font-size: 15px;
-            font-weight: 900;
+            font-weight: 800;
         }
 
         #leme-painel-ept .leme-chart-subtitle {
@@ -369,51 +424,66 @@
             align-items: center;
         }
 
-        #leme-painel-ept .leme-bar-row.is-clickable {
+        #leme-painel-ept button.leme-bar-row.is-clickable {
+            width: 100%;
+            border: 1px solid transparent;
+            background: transparent;
+            text-align: left;
+            font-size: inherit;
+            color: inherit;
             cursor: pointer;
-            padding: 4px 6px;
-            margin: -4px -6px;
+            padding: 6px 8px;
+            margin: 0;
             border-radius: 10px;
-            transition: background .15s ease;
+            box-shadow: none;
+            transition: background .15s ease, border-color .15s ease;
         }
 
-        #leme-painel-ept .leme-bar-row.is-clickable:hover {
+        #leme-painel-ept button.leme-bar-row.is-clickable:hover {
             background: var(--leme-primary-soft);
         }
 
-        #leme-painel-ept .leme-bar-row.is-clickable:hover .leme-bar-label {
+        #leme-painel-ept button.leme-bar-row.is-clickable:hover .leme-bar-label,
+        #leme-painel-ept button.leme-bar-row.is-clickable.is-active .leme-bar-label {
             color: var(--leme-primary);
             text-decoration: underline;
+        }
+
+        #leme-painel-ept button.leme-bar-row.is-clickable.is-active {
+            background: var(--leme-primary-soft);
+            border-color: var(--leme-border-strong);
         }
 
         #leme-painel-ept .leme-bar-label {
             color: #334155;
             font-size: 12px;
             line-height: 1.25;
-            font-weight: 800;
+            font-weight: 700;
             overflow-wrap: anywhere;
         }
 
         #leme-painel-ept .leme-bar-track {
+            display: block;
             height: 13px;
             border-radius: 999px;
             background: #eef2ff;
             overflow: hidden;
-            border: 1px solid #e0e7ff;
+            border: 1px solid #dce2ff;
         }
 
         #leme-painel-ept .leme-bar-fill {
+            display: block;
             height: 100%;
             width: 0%;
             border-radius: 999px;
-            background: linear-gradient(90deg, var(--leme-primary-2), var(--leme-secondary));
-            transition: width .3s ease;
+            background: linear-gradient(90deg, var(--leme-primary), var(--leme-secondary));
+            transition: width .25s ease;
         }
 
         #leme-painel-ept .leme-bar-value {
             color: var(--leme-primary);
             font-size: 12px;
-            font-weight: 900;
+            font-weight: 800;
             min-width: 24px;
             text-align: right;
         }
@@ -440,7 +510,7 @@
 
         #leme-painel-ept .leme-year-value {
             color: var(--leme-primary);
-            font-weight: 900;
+            font-weight: 800;
             font-size: 12px;
         }
 
@@ -448,14 +518,14 @@
             width: min(52px, 78%);
             min-height: 6px;
             border-radius: 12px 12px 4px 4px;
-            background: linear-gradient(180deg, var(--leme-primary-2), var(--leme-secondary));
-            box-shadow: 0 8px 18px rgba(77, 90, 255, .14);
+            background: linear-gradient(180deg, var(--leme-primary), var(--leme-secondary));
+            box-shadow: 0 6px 14px rgba(59, 71, 229, .14);
         }
 
         #leme-painel-ept .leme-year-label {
             color: #475569;
             font-size: 12px;
-            font-weight: 850;
+            font-weight: 800;
         }
 
         #leme-painel-ept .leme-composition {
@@ -470,7 +540,7 @@
             width: 100%;
             height: 30px;
             overflow: hidden;
-            border: 1px solid #dbe3ff;
+            border: 1px solid #d4dcff;
             border-radius: 999px;
             background: #eef2ff;
             box-shadow: inset 0 1px 3px rgba(15, 23, 42, .08);
@@ -504,21 +574,21 @@
             color: #334155;
             font-size: 12px;
             line-height: 1.3;
-            font-weight: 800;
+            font-weight: 700;
         }
 
         #leme-painel-ept .leme-composition-value {
             color: var(--leme-primary);
             font-size: 12px;
-            font-weight: 900;
+            font-weight: 800;
             white-space: nowrap;
         }
 
         #leme-painel-ept .leme-chart-footnote {
-            margin: 11px 0 0;
+            margin: 12px 0 0;
             color: var(--leme-muted);
-            font-size: 11px;
-            line-height: 1.4;
+            font-size: 12px;
+            line-height: 1.45;
         }
 
         #leme-painel-ept .leme-single-insight,
@@ -539,7 +609,7 @@
             content: "Sem dados neste recorte";
             display: block;
             color: var(--leme-primary);
-            font-weight: 900;
+            font-weight: 800;
             font-size: 15px;
             margin-bottom: 5px;
         }
@@ -562,29 +632,34 @@
             width: 100%;
             border: 1px solid var(--leme-border-strong);
             border-radius: 18px;
-            padding: 15px 16px;
+            padding: 14px 16px;
             font-size: 15px;
+            line-height: 1.35;
             color: var(--leme-text);
             outline: none;
             background: #fff;
             min-height: 48px;
+            margin: 0;
+            box-shadow: none;
         }
 
         #leme-painel-ept .leme-search:focus {
-            border-color: var(--leme-primary-2);
-            box-shadow: 0 0 0 4px rgba(77, 90, 255, .12);
+            border-color: var(--leme-primary);
+            box-shadow: 0 0 0 4px rgba(59, 71, 229, .14);
         }
 
         #leme-painel-ept .leme-clear {
             border: none;
             border-radius: 18px;
-            padding: 0 17px;
+            padding: 0 18px;
             min-height: 48px;
-            background: linear-gradient(135deg, var(--leme-primary-2), var(--leme-secondary));
+            margin: 0;
+            background: linear-gradient(135deg, var(--leme-primary), var(--leme-secondary));
             color: #fff;
-            font-weight: 850;
+            font-size: 13px;
+            font-weight: 800;
             cursor: pointer;
-            box-shadow: 0 12px 22px rgba(77, 90, 255, .16);
+            box-shadow: 0 8px 18px rgba(59, 71, 229, .16);
         }
 
         #leme-painel-ept .leme-filters {
@@ -603,28 +678,44 @@
             justify-content: space-between;
             gap: 8px;
             font-size: 11px;
-            font-weight: 850;
+            font-weight: 800;
             color: var(--leme-muted);
             margin: 0 0 6px;
             text-transform: uppercase;
             letter-spacing: .045em;
         }
 
-        #leme-painel-ept .leme-field select {
+        #leme-painel-ept .leme-field select,
+        #leme-painel-ept .leme-sort-select {
             width: 100%;
-            border: 1px solid var(--leme-border);
+            border: 1px solid var(--leme-border-strong);
             border-radius: 15px;
-            padding: 11px 12px;
+            padding: 10px 12px;
             background: #fff;
             color: var(--leme-text);
             font-size: 13px;
+            line-height: 1.3;
             outline: none;
             min-height: 44px;
+            margin: 0;
+            box-shadow: none;
         }
 
-        #leme-painel-ept .leme-field select:disabled {
-            background: #f8fafc;
-            color: #94a3b8;
+        #leme-painel-ept .leme-sort-select {
+            width: auto;
+            min-height: 40px;
+            border-radius: 999px;
+            padding: 8px 14px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--leme-primary);
+        }
+
+        #leme-painel-ept .leme-field select:disabled,
+        #leme-painel-ept .leme-sort-select:disabled {
+            background: #f1f5f9;
+            color: #475569;
+            border-color: #cbd5e1;
             cursor: not-allowed;
         }
 
@@ -638,16 +729,16 @@
             padding: 4px 8px;
             border-radius: 999px;
             background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            color: #64748b;
+            border: 1px solid #dce3ee;
+            color: #475569;
             font-size: 11px;
-            font-weight: 850;
+            font-weight: 700;
             line-height: 1.2;
         }
 
         #leme-painel-ept .leme-field-count.is-selected {
             background: var(--leme-primary-soft);
-            border-color: #d9ddff;
+            border-color: #cfd6ff;
             color: var(--leme-primary);
         }
 
@@ -662,18 +753,19 @@
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            padding: 6px 8px 6px 11px;
-            border: 1px solid #d9ddff;
+            padding: 5px 7px 5px 11px;
+            border: 1px solid #cfd6ff;
             border-radius: 999px;
             background: var(--leme-primary-soft);
             color: var(--leme-primary);
             font-size: 12px;
-            font-weight: 850;
+            font-weight: 800;
         }
 
         #leme-painel-ept .leme-chip button {
             min-height: 26px;
-            padding: 0 8px;
+            min-width: 26px;
+            padding: 0 7px;
             border-color: transparent;
             background: #fff;
         }
@@ -685,13 +777,13 @@
             gap: 12px;
             margin: 16px 0;
             flex-wrap: wrap;
-            scroll-margin-top: 88px;
+            scroll-margin-top: 24px;
         }
 
         #leme-painel-ept .leme-count {
             font-size: 14px;
             color: var(--leme-muted);
-            font-weight: 750;
+            font-weight: 700;
         }
 
         #leme-painel-ept .leme-count strong {
@@ -705,16 +797,16 @@
             flex-wrap: wrap;
         }
 
+        #leme-painel-ept .leme-sort-wrap {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
         #leme-painel-ept .leme-view {
             display: inline-flex;
             gap: 8px;
             align-items: center;
-        }
-
-        #leme-painel-ept .leme-page-btn:disabled {
-            opacity: .45;
-            cursor: not-allowed;
-            transform: none;
         }
 
         #leme-painel-ept .leme-results {
@@ -735,28 +827,28 @@
         }
 
         #leme-painel-ept .leme-card {
-            min-height: 365px;
+            min-height: 350px;
             height: 100%;
             background: var(--leme-card);
             border: 1px solid var(--leme-border);
             border-radius: 24px;
             padding: 20px;
             box-shadow: var(--leme-shadow-soft);
-            transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+            transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
             display: flex;
             flex-direction: column;
         }
 
         #leme-painel-ept .leme-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 20px 44px rgba(15, 23, 42, .12);
-            border-color: rgba(77, 90, 255, .34);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 26px rgba(15, 23, 42, .09);
+            border-color: rgba(59, 71, 229, .38);
         }
 
         #leme-painel-ept .leme-card .leme-eyebrow {
             background: var(--leme-primary-soft);
             color: var(--leme-primary);
-            border-color: #daddff;
+            border-color: #cfd6ff;
         }
 
         #leme-painel-ept .leme-card-title {
@@ -764,7 +856,7 @@
             color: var(--leme-primary);
             font-size: 16px;
             line-height: 1.35;
-            font-weight: 900;
+            font-weight: 800;
             letter-spacing: -.01em;
             display: -webkit-box;
             -webkit-line-clamp: 3;
@@ -778,7 +870,7 @@
             margin: 0 0 12px;
             color: var(--leme-muted);
             font-size: 13px;
-            line-height: 1.35;
+            line-height: 1.38;
         }
 
         #leme-painel-ept .leme-meta b {
@@ -794,7 +886,7 @@
         }
 
         #leme-painel-ept .leme-badges {
-            margin: 12px 0;
+            margin: 10px 0;
         }
 
         #leme-painel-ept .leme-tags {
@@ -802,7 +894,11 @@
         }
 
         #leme-painel-ept .leme-actions {
-            margin-top: 15px;
+            margin-top: 0;
+        }
+
+        #leme-painel-ept .leme-modal .leme-actions {
+            margin-top: 14px;
         }
 
         #leme-painel-ept .leme-badge,
@@ -812,10 +908,10 @@
             border-radius: 999px;
             padding: 6px 10px;
             font-size: 11px;
-            font-weight: 850;
+            font-weight: 800;
             background: var(--leme-primary-soft);
             color: var(--leme-primary);
-            border: 1px solid #d9ddff;
+            border: 1px solid #cfd6ff;
         }
 
         #leme-painel-ept .leme-badge {
@@ -827,28 +923,41 @@
 
         #leme-painel-ept .leme-badge.green {
             background: var(--leme-green-soft);
-            color: #166534;
+            color: var(--leme-green-text);
             border-color: #bbf7d0;
         }
 
         #leme-painel-ept .leme-badge.red {
             background: var(--leme-red-soft);
-            color: var(--leme-red);
+            color: var(--leme-red-text);
             border-color: #fecdd3;
+        }
+
+        #leme-painel-ept .leme-badge.curated {
+            background: var(--leme-green-soft);
+            color: var(--leme-green-text);
+            border-color: #bbf7d0;
+            margin-left: 8px;
+        }
+
+        #leme-painel-ept .leme-badge.pending {
+            background: #f1f5f9;
+            color: #475569;
+            border-color: #cbd5e1;
         }
 
         #leme-painel-ept .leme-tag {
             background: #f8fafc;
-            border-color: #e2e8f0;
-            color: #475569;
-            font-weight: 750;
+            border-color: #dbe3ee;
+            color: #334155;
+            font-weight: 700;
         }
 
         #leme-painel-ept .leme-summary {
-            color: #475569;
+            color: #334155;
             font-size: 13px;
             line-height: 1.6;
-            margin: 13px 0;
+            margin: 12px 0;
             display: -webkit-box;
             -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;
@@ -859,7 +968,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 12px;
+            gap: 10px;
             flex-wrap: wrap;
             margin-top: auto;
             padding-top: 13px;
@@ -875,7 +984,7 @@
             padding: 9px 12px;
             text-decoration: none !important;
             font-size: 12px;
-            font-weight: 900;
+            font-weight: 800;
             border: 1px solid transparent;
             min-height: 40px;
         }
@@ -898,44 +1007,85 @@
             padding: 32px;
             text-align: center;
             color: var(--leme-muted);
-            font-weight: 800;
+            font-weight: 700;
+        }
+
+        #leme-painel-ept .leme-empty p {
+            margin: 0 0 14px;
         }
 
         #leme-painel-ept table.leme-table {
             width: 100%;
-            min-width: 1150px;
+            min-width: 1100px;
             border-collapse: collapse;
             font-size: 13px;
+            margin: 0;
+            border: 0;
+            background: #fff;
+            color: var(--leme-text);
         }
 
         #leme-painel-ept .leme-table caption {
             text-align: left;
             padding: 14px;
-            font-weight: 900;
+            font-weight: 800;
             color: var(--leme-primary);
         }
 
         #leme-painel-ept .leme-table th {
-            background: var(--leme-primary-2);
+            background: var(--leme-primary);
             color: #fff;
             text-align: left;
-            padding: 14px;
+            padding: 13px 14px;
+            border: 0;
             position: sticky;
             top: 0;
             z-index: 2;
             white-space: nowrap;
+            font-weight: 800;
         }
 
         #leme-painel-ept .leme-table td {
-            padding: 14px;
+            padding: 13px 14px;
+            border: 0;
             border-bottom: 1px solid var(--leme-border);
             vertical-align: top;
+            background: #fff;
+            color: var(--leme-text);
+        }
+
+        #leme-painel-ept .leme-table tbody tr:nth-child(even) td {
+            background: #fbfcff;
         }
 
         #leme-painel-ept .leme-table-title {
             color: var(--leme-primary);
-            font-weight: 900;
+            font-weight: 800;
             line-height: 1.35;
+        }
+
+        #leme-painel-ept .leme-table-sub {
+            margin-top: 4px;
+            color: var(--leme-muted);
+            font-size: 12px;
+            line-height: 1.35;
+        }
+
+        #leme-painel-ept .leme-table-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            align-items: center;
+        }
+
+        #leme-painel-ept .leme-table-detail-btn {
+            min-height: 36px;
+            padding: 7px 11px;
+        }
+
+        #leme-painel-ept .leme-table-actions .leme-link {
+            min-height: 36px;
+            padding: 7px 11px;
         }
 
         #leme-painel-ept .leme-pagination {
@@ -947,19 +1097,27 @@
             margin: 20px 0 4px;
         }
 
+        #leme-painel-ept .leme-pagination-info,
+        #leme-painel-ept .leme-pagination-ellipsis {
+            color: var(--leme-muted);
+            font-size: 12px;
+            font-weight: 700;
+        }
+
         #leme-painel-ept .leme-pagination-info {
             width: 100%;
             text-align: center;
-            color: var(--leme-muted);
-            font-size: 12px;
-            font-weight: 750;
             margin-top: 4px;
+        }
+
+        #leme-painel-ept .leme-pagination-ellipsis {
+            padding: 0 4px;
         }
 
         #leme-painel-ept mark.leme-highlight {
             background: #fef08a;
-            color: inherit;
-            border-radius: 5px;
+            color: #111827;
+            border-radius: 4px;
             padding: 0 2px;
             box-decoration-break: clone;
             -webkit-box-decoration-break: clone;
@@ -968,8 +1126,8 @@
         #leme-painel-ept .leme-modal-backdrop {
             position: fixed;
             inset: 0;
-            background: rgba(15, 23, 42, .55);
-            z-index: 9999;
+            background: rgba(15, 23, 42, .58);
+            z-index: 100000;
             display: none;
             align-items: center;
             justify-content: center;
@@ -985,9 +1143,11 @@
             max-height: min(86vh, 900px);
             overflow: auto;
             background: #fff;
+            color: var(--leme-text);
+            text-align: left;
             border-radius: 26px;
             border: 1px solid var(--leme-border);
-            box-shadow: 0 25px 80px rgba(15, 23, 42, .28);
+            box-shadow: 0 24px 64px rgba(15, 23, 42, .26);
             padding: 22px;
         }
 
@@ -1005,8 +1165,8 @@
             margin: 0;
             color: var(--leme-primary);
             font-size: 20px;
-            line-height: 1.25;
-            font-weight: 900;
+            line-height: 1.28;
+            font-weight: 800;
         }
 
         #leme-painel-ept .leme-detail-grid {
@@ -1017,10 +1177,10 @@
 
         #leme-painel-ept .leme-detail-item {
             padding: 12px;
-            border: 1px solid #eef2ff;
+            border: 1px solid #e4e9ff;
             border-radius: 16px;
             background: #fbfdff;
-            color: #374151;
+            color: #334155;
             font-size: 13px;
             line-height: 1.55;
         }
@@ -1040,7 +1200,59 @@
             background: #fff;
             border-radius: 8px;
             font-size: 12px;
-            color: #475569;
+            color: #334155;
+        }
+
+        #leme-painel-ept .leme-details {
+            border: 1px solid #d4dcff;
+            border-radius: 16px;
+            background: #f8faff;
+            padding: 10px 14px;
+        }
+
+        #leme-painel-ept .leme-details-summary {
+            cursor: pointer;
+            color: var(--leme-primary);
+            font-weight: 800;
+            font-size: 13px;
+            list-style-position: inside;
+            padding: 2px 0;
+        }
+
+        #leme-painel-ept .leme-details-body {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #e2e8f0;
+            display: grid;
+            gap: 12px;
+        }
+
+        #leme-painel-ept .leme-evidence-list {
+            margin: 6px 0 0;
+            padding-left: 18px;
+            display: grid;
+            gap: 8px;
+        }
+
+        #leme-painel-ept .leme-evidence-item {
+            font-size: 12px;
+            line-height: 1.5;
+            color: #334155;
+        }
+
+        #leme-painel-ept .leme-meta-list {
+            margin: 6px 0 0;
+            padding-left: 18px;
+            display: grid;
+            gap: 4px;
+            font-size: 12px;
+            color: #334155;
+        }
+
+        #leme-painel-ept .leme-meta-list a {
+            color: var(--leme-primary);
+            text-decoration: underline !important;
+            word-break: break-all;
         }
 
         @media (max-width: 1180px) {
@@ -1054,7 +1266,6 @@
         }
 
         @media (max-width: 1024px) {
-
             #leme-painel-ept .leme-stats,
             #leme-painel-ept .leme-insights {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1114,8 +1325,10 @@
                 width: 100%;
             }
 
+            #leme-painel-ept .leme-sort-wrap,
+            #leme-painel-ept .leme-sort-select,
             #leme-painel-ept .leme-export-btn {
-                flex: 1;
+                flex: 1 1 auto;
             }
 
             #leme-painel-ept .leme-results {
@@ -1125,6 +1338,7 @@
                 border: 0 !important;
                 background: transparent !important;
                 grid-auto-rows: auto;
+                box-shadow: none !important;
             }
 
             #leme-painel-ept .leme-card {
@@ -1204,7 +1418,6 @@
         }
 
         @media (prefers-reduced-motion: reduce) {
-
             #leme-painel-ept,
             #leme-painel-ept * {
                 scroll-behavior: auto !important;
@@ -1212,21 +1425,23 @@
                 animation: none !important;
             }
         }
-    </style><a class="leme-skip" href="#leme-controles">Pular para pesquisa e filtros</a>
+    </style>
+    <a class="leme-skip" href="#leme-controles">Pular para pesquisa e filtros</a>
     <div class="leme-header">
         <div>
-            <div class="leme-eyebrow" aria-hidden="true">PAINEL BIBLIOMÉTRICO · EPT · IFC BLUMENAU</div>
+            <div class="leme-eyebrow" aria-hidden="true">PAINEL BIBLIOMÉTRICO · EPT · PROFEPT</div>
             <h2>Painel Bibliométrico da Produção ProfEPT</h2>
             <p class="leme-subtitle">Explore dissertações e produtos educacionais por tema, autor, orientador, autores
                 referenciados, ano, linha de pesquisa e macroprojeto.</p>
         </div>
-        <div class="leme-update">Período analisado: <strong id="leme-periodo">Carregando...</strong></div>
+        <div class="leme-update">
+            <div>Período analisado: <strong id="leme-periodo">Carregando...</strong></div>
+            <div id="leme-gerado-em" class="leme-update-meta"></div>
+        </div>
     </div>
     <div class="leme-stats" aria-label="Indicadores gerais do painel">
-        <div class="leme-stat"><strong id="leme-stat-total">—</strong><span id="leme-stat-total-label">defesas
-                analisadas</span></div>
-        <div class="leme-stat"><strong id="leme-stat-producoes">—</strong><span id="leme-stat-producoes-label">produções
-                bibliográficas e técnicas</span></div>
+        <div class="leme-stat"><strong id="leme-stat-total">—</strong><span>defesas analisadas</span></div>
+        <div class="leme-stat"><strong id="leme-stat-producoes">—</strong><span>produções bibliográficas e técnicas</span></div>
         <div class="leme-stat"><strong id="leme-stat-orientadores">—</strong><span>orientadores</span></div>
         <div class="leme-stat"><strong id="leme-stat-macroprojetos">—</strong><span>macroprojetos</span></div>
     </div>
@@ -1249,10 +1464,12 @@
                 <button type="button" data-escopo="produtos" aria-pressed="false">Produtos Educacionais</button>
             </div>
         </div>
-        <div class="leme-search-row"><input id="leme-busca" class="leme-search" type="search"
+        <div class="leme-search-row">
+            <input id="leme-busca" class="leme-search" type="search"
                 placeholder="Busque por tema, título, autor, orientador, autor referenciado (ex.: Saviani, Freire), palavra-chave..."
-                aria-label="Busca no painel EPT" /> <button id="leme-limpar" class="leme-clear" type="button">Limpar
-                filtros</button></div>
+                aria-label="Busca no painel EPT" />
+            <button id="leme-limpar" class="leme-clear" type="button">Limpar filtros</button>
+        </div>
         <div class="leme-filters">
             <div class="leme-field"><label for="leme-filtro-ano">Ano</label><select id="leme-filtro-ano"
                     data-campo="ano" data-default="Todos"></select></div>
@@ -1271,7 +1488,7 @@
             <div class="leme-field"><label for="leme-filtro-base">Base epistemológica</label><select
                     id="leme-filtro-base" data-campo="base_epistemologica" data-default="Todas"></select></div>
         </div>
-        <div id="leme-filtros-ativos" class="leme-active-filters" aria-live="polite"></div>
+        <div id="leme-filtros-ativos" class="leme-active-filters"></div>
     </section>
     <section id="leme-graficos" class="leme-panel" aria-label="Visualizações bibliométricas">
         <div class="leme-panel-head">
@@ -1289,60 +1506,70 @@
             <div class="leme-chart-card is-wide" data-chart-scope="todas dissertacoes produtos">
                 <h4 class="leme-chart-title" id="leme-chart-ano-title">Produções por ano</h4>
                 <p class="leme-chart-subtitle">Evolução temporal do conjunto filtrado.</p>
-                <div id="leme-chart-ano" aria-live="polite"></div>
+                <div id="leme-chart-ano"></div>
             </div>
             <div class="leme-chart-card" data-chart-scope="todas dissertacoes">
                 <h4 class="leme-chart-title">Linha de pesquisa</h4>
                 <p class="leme-chart-subtitle">Participação percentual de cada linha no conjunto atual.</p>
-                <div id="leme-chart-linha" aria-live="polite"></div>
+                <div id="leme-chart-linha"></div>
             </div>
             <div class="leme-chart-card" data-chart-scope="todas dissertacoes">
                 <h4 class="leme-chart-title">Macroprojeto</h4>
                 <p class="leme-chart-subtitle">Distribuição por código e tema de cada macroprojeto.</p>
-                <div id="leme-chart-macro" aria-live="polite"></div>
+                <div id="leme-chart-macro"></div>
             </div>
             <div class="leme-chart-card" data-chart-scope="todas dissertacoes">
                 <h4 class="leme-chart-title">Orientadores</h4>
                 <p class="leme-chart-subtitle">Top 10 orientadores por número de defesas orientadas.</p>
-                <div id="leme-chart-orientador" aria-live="polite"></div>
+                <div id="leme-chart-orientador"></div>
             </div>
             <div class="leme-chart-card" data-chart-scope="todas dissertacoes">
                 <h4 class="leme-chart-title">Base epistemológica (consolidadas)</h4>
-                <p class="leme-chart-subtitle">Contabiliza apenas bases validadas (exclui registros em curadoria).</p>
-                <div id="leme-chart-base" aria-live="polite"></div>
+                <p class="leme-chart-subtitle">Contabiliza bases validadas e sinaliza registros ainda em curadoria.</p>
+                <div id="leme-chart-base"></div>
             </div>
             <div class="leme-chart-card is-wide" data-chart-scope="todas dissertacoes">
                 <h4 class="leme-chart-title">Autores mais referenciados (Top 12)</h4>
                 <p class="leme-chart-subtitle">Autores teóricos mais citados nas dissertações do recorte atual. Clique
-                    em uma barra para filtrar pelo autor.</p>
-                <div id="leme-chart-autores-ref" aria-live="polite"></div>
+                    ou pressione Enter em uma barra para filtrar pelo autor.</p>
+                <div id="leme-chart-autores-ref"></div>
             </div>
             <div class="leme-chart-card" data-chart-scope="todas produtos">
                 <h4 class="leme-chart-title">Tipo de produto (CAPES)</h4>
                 <p class="leme-chart-subtitle">Classificação tipológica dos produtos educacionais.</p>
-                <div id="leme-chart-tipo" aria-live="polite"></div>
+                <div id="leme-chart-tipo"></div>
             </div>
             <div class="leme-chart-card" data-chart-scope="todas produtos">
                 <h4 class="leme-chart-title">Público-alvo</h4>
                 <p class="leme-chart-subtitle">Destinatários dos produtos educacionais (um produto pode atender
                     múltiplos públicos).</p>
-                <div id="leme-chart-publico" aria-live="polite"></div>
+                <div id="leme-chart-publico"></div>
             </div>
             <div class="leme-chart-card is-wide" data-chart-scope="todas produtos">
                 <h4 class="leme-chart-title">Nível de aplicação</h4>
                 <p class="leme-chart-subtitle">Etapas e modalidades de ensino onde os produtos educacionais são
                     aplicados.</p>
-                <div id="leme-chart-nivel" aria-live="polite"></div>
+                <div id="leme-chart-nivel"></div>
             </div>
         </div>
     </section>
     <div id="leme-resultados-area" class="leme-toolbar">
         <div id="leme-contador" class="leme-count" aria-live="polite">Carregando resultados...</div>
         <div class="leme-actions-toolbar">
+            <div class="leme-sort-wrap">
+                <label class="leme-sr-only" for="leme-ordenar">Ordenar resultados</label>
+                <select id="leme-ordenar" class="leme-sort-select" aria-label="Ordenar resultados">
+                    <option value="ano_desc">Mais recentes</option>
+                    <option value="ano_asc">Mais antigos</option>
+                    <option value="titulo_asc">Título (A–Z)</option>
+                    <option value="autor_asc">Autor(a) (A–Z)</option>
+                </select>
+            </div>
             <button id="leme-exportar-csv" class="leme-export-btn" type="button">Baixar resultados (.CSV)</button>
-            <div class="leme-view" aria-label="Alternar visualização"><button id="leme-view-cards" class="is-active"
-                    type="button" aria-pressed="true">Cartões</button> <button id="leme-view-table" type="button"
-                    aria-pressed="false">Tabela</button></div>
+            <div class="leme-view" role="group" aria-label="Alternar visualização">
+                <button id="leme-view-cards" class="is-active" type="button" aria-pressed="true">Cartões</button>
+                <button id="leme-view-table" type="button" aria-pressed="false">Tabela</button>
+            </div>
         </div>
     </div>
     <div id="leme-resultados" class="leme-results"></div>
@@ -1359,7 +1586,8 @@
     <script>
         (function () {
             const raiz = document.getElementById("leme-painel-ept");
-            if (!raiz) return;
+            if (!raiz || raiz.dataset.lemeInit === "1") return;
+            raiz.dataset.lemeInit = "1";
 
             const I18N = {
                 linha_pesquisa: {
@@ -1391,26 +1619,62 @@
                     gestores_coordenadores: "Gestores e Coordenadores Escolares",
                     tecnicos_profissionais_educacao: "Técnicos e Profissionais da Educação",
                     comunidade_externa: "Comunidade Externa"
+                },
+                fonte_tipo: {
+                    dissertacao_ficha: "Ficha / texto da dissertação",
+                    educapes_dc_type: "Metadado dc.type (eduCAPES)",
+                    inferencia_llm: "Inferência assistida (LLM)"
                 }
             };
 
+            const HTML_ESCAPE_MAP = {
+                "&": "\u0026amp;",
+                "<": "\u0026lt;",
+                ">": "\u0026gt;",
+                '"': "\u0026quot;",
+                "'": "\u0026#39;"
+            };
+
             let dados = [];
-            let metaRaiz = { total_defesas: 0, total_producoes: 0 };
+            let dadosPorId = new Map();
+            let orientadoresPorChave = new Map();
+            let metaRaiz = { total_defesas: 0, total_producoes: 0, gerado_em: "" };
             let resultadosAtuais = [];
             let escopo = "todas";
+            let ordenacao = "ano_desc";
             let modo = "cards";
+            let autorReferenciadoAtivo = "";
             let paginaAtual = 1;
             let debounceTimer = null;
+            let ultimoFocoAntesModal = null;
+            let bodyOverflowAnterior = "";
             const itensPorPagina = 12;
+            const mqMobile = window.matchMedia("(max-width: 720px)");
 
             const busca = raiz.querySelector("#leme-busca");
             const limpar = raiz.querySelector("#leme-limpar");
+            const ordenarSelect = raiz.querySelector("#leme-ordenar");
             const resultados = raiz.querySelector("#leme-resultados");
             const paginacao = raiz.querySelector("#leme-paginacao");
             const contador = raiz.querySelector("#leme-contador");
+            const periodoEl = raiz.querySelector("#leme-periodo");
+            const geradoEmEl = raiz.querySelector("#leme-gerado-em");
+            const statTotalEl = raiz.querySelector("#leme-stat-total");
+            const statProducoesEl = raiz.querySelector("#leme-stat-producoes");
+            const statOrientadoresEl = raiz.querySelector("#leme-stat-orientadores");
+            const statMacroprojetosEl = raiz.querySelector("#leme-stat-macroprojetos");
             const filtros = Array.from(raiz.querySelectorAll("select[data-campo]"));
             const botoesEscopo = Array.from(raiz.querySelectorAll(".leme-scope button[data-escopo]"));
             const chartCards = Array.from(raiz.querySelectorAll(".leme-chart-card[data-chart-scope]"));
+            const chartAnoEl = raiz.querySelector("#leme-chart-ano");
+            const chartLinhaEl = raiz.querySelector("#leme-chart-linha");
+            const chartMacroEl = raiz.querySelector("#leme-chart-macro");
+            const chartOrientadorEl = raiz.querySelector("#leme-chart-orientador");
+            const chartBaseEl = raiz.querySelector("#leme-chart-base");
+            const chartAutoresRefEl = raiz.querySelector("#leme-chart-autores-ref");
+            const chartTipoEl = raiz.querySelector("#leme-chart-tipo");
+            const chartPublicoEl = raiz.querySelector("#leme-chart-publico");
+            const chartNivelEl = raiz.querySelector("#leme-chart-nivel");
             const filtrosAtivos = raiz.querySelector("#leme-filtros-ativos");
             const graficosNota = raiz.querySelector("#leme-graficos-nota");
             const graficosDesc = raiz.querySelector("#leme-graficos-desc");
@@ -1420,6 +1684,7 @@
             const btnCards = raiz.querySelector("#leme-view-cards");
             const btnTable = raiz.querySelector("#leme-view-table");
             const modalBackdrop = raiz.querySelector("#leme-modal-backdrop");
+            const modalEl = raiz.querySelector(".leme-modal");
             const modalContent = raiz.querySelector("#leme-modal-content");
             const modalTitle = raiz.querySelector("#leme-modal-title");
             const modalClose = raiz.querySelector("#leme-modal-close");
@@ -1440,12 +1705,19 @@
             }
 
             function escapeHtml(valor) {
-                return String(valor || "")
-                    .replace(/&/g, "&")
-                    .replace(/</g, "<")
-                    .replace(/>/g, ">")
-                    .replace(/"/g, '"')
-                    .replace(/'/g, "'");
+                if (valor === null || valor === undefined) return "";
+                return String(valor).replace(/[&<>"']/g, ch => HTML_ESCAPE_MAP[ch]);
+            }
+
+            function sanitizarUrl(valor) {
+                const texto = String(valor || "").trim();
+                if (!texto) return "";
+                try {
+                    const parsed = new URL(texto);
+                    return (parsed.protocol === "https:" || parsed.protocol === "http:") ? parsed.href : "";
+                } catch (_) {
+                    return "";
+                }
             }
 
             function ehValorPublico(valor) {
@@ -1456,6 +1728,10 @@
 
             function limparRotulo(valor) {
                 return String(valor || "").replace(/\s+/g, " ").trim();
+            }
+
+            function limparNomePessoa(valor) {
+                return limparRotulo(valor).replace(/^[:;.,\-\s]+|[:;.,\-\s]+$/g, "").trim();
             }
 
             function valorPublico(valor, fallback) {
@@ -1473,81 +1749,227 @@
                 return texto.length > limite ? texto.slice(0, limite - 1).trim() + "…" : texto;
             }
 
+            function formatarInstituicaoCampus(instituicao, campus) {
+                const inst = limparRotulo(instituicao);
+                let camp = limparRotulo(campus);
+                if (!inst && !camp) return "Não informada";
+                if (!camp) return inst;
+                if (!inst) return camp;
+                if (normalizarBusca(inst) === normalizarBusca(camp)) return inst;
+                if (/\bIFC\b/i.test(inst)) {
+                    camp = camp.replace(/^IFC\s*[-–—:]?\s*/i, "").trim();
+                }
+                if (camp && !/^campus\b/i.test(camp)) {
+                    camp = "Campus " + camp;
+                }
+                return camp ? inst + " – " + camp : inst;
+            }
+
+            function formatarDataIsoBr(valor) {
+                const texto = String(valor || "").trim();
+                if (!texto) return "";
+                const dt = new Date(texto);
+                if (Number.isNaN(dt.getTime())) return "";
+                return new Intl.DateTimeFormat("pt-BR", { day: "2-digit", month: "2-digit", year: "numeric" }).format(dt);
+            }
+
+            function formatarDataPublicacao(valor) {
+                const texto = String(valor || "").trim();
+                if (!texto) return "";
+                if (/^\d{4}-\d{2}-\d{2}$/.test(texto)) {
+                    const p = texto.split("-");
+                    return p[2] + "/" + p[1] + "/" + p[0];
+                }
+                if (/^\d{4}-\d{2}$/.test(texto)) {
+                    const p = texto.split("-");
+                    return p[1] + "/" + p[0];
+                }
+                return texto;
+            }
+
             function normalizarRegistroV4(d) {
                 const diss = d.dissertacao || {};
                 const prod = d.produto || {};
                 const baseObj = diss.base_epistemologica || {};
                 const indice = d.indice_busca || {};
+                const prov = prod.proveniencia || {};
 
-                const baseAprovada = baseObj.revisao_pendente !== true && ehValorPublico(baseObj.valor)
+                const revisaoPendente = Boolean(baseObj.revisao_pendente);
+                const curadoHumano = Boolean(baseObj.curado_humano);
+                const baseAprovada = !revisaoPendente && ehValorPublico(baseObj.valor)
                     ? limparRotulo(baseObj.valor)
                     : "";
+                const baseStatusLabel = baseAprovada || (revisaoPendente ? "Em curadoria" : "Não declarada explicitamente");
+
+                const evidencias = baseAprovada && Array.isArray(baseObj.evidencias)
+                    ? baseObj.evidencias
+                        .filter(ev => ev && ehValorPublico(ev.trecho))
+                        .map(ev => ({
+                            secao: limparRotulo(ev.secao),
+                            pagina: ev.pagina,
+                            trecho: limparRotulo(ev.trecho),
+                            referencia_correspondente: ehValorPublico(ev.referencia_correspondente) ? limparRotulo(ev.referencia_correspondente) : ""
+                        }))
+                    : [];
 
                 const publicosSlugs = Array.isArray(prod.publico_alvo)
                     ? prod.publico_alvo.filter(ehValorPublico)
                     : [];
+                const publicosLabels = publicosSlugs.map(s => traduzirSlug("publico_alvo", s));
 
                 const autoresRef = Array.isArray(diss.autores_referenciados)
                     ? diss.autores_referenciados.map(limparRotulo).filter(ehValorPublico)
                     : [];
 
-                const termosUnificados = Array.isArray(indice.termos_unificados) && indice.termos_unificados.length
+                const termosUnificados = (Array.isArray(indice.termos_unificados) && indice.termos_unificados.length
                     ? indice.termos_unificados
-                    : Array.from(new Set([...(diss.palavras_chave || []), ...(prod.palavras_chave || [])]));
+                    : Array.from(new Set([...(diss.palavras_chave || []), ...(prod.palavras_chave || [])]))
+                ).map(limparRotulo).filter(ehValorPublico);
 
-                const instituicaoCampus = [d.instituicao, d.campus].filter(ehValorPublico).join(" – ");
+                const autorLimpo = limparNomePessoa(d.autor);
+                const orientadorLimpo = limparNomePessoa(d.orientador);
+                const coorientadores = Array.isArray(d.coorientadores)
+                    ? d.coorientadores.map(limparNomePessoa).filter(ehValorPublico)
+                    : [];
+
+                const linhaSlug = ehValorPublico(d.linha_pesquisa) ? String(d.linha_pesquisa).trim() : "";
+                const linhaLabel = traduzirSlug("linha_pesquisa", linhaSlug);
+                const macroSlug = ehValorPublico(d.macroprojeto) ? String(d.macroprojeto).trim() : "";
+                const macroLabel = traduzirSlug("macroprojeto", macroSlug);
+                const tipoSlug = ehValorPublico(prod.tipo) ? String(prod.tipo).trim() : "";
+                const tipoLabel = traduzirSlug("tipo_produto", tipoSlug);
+                const nivelAplicacao = ehValorPublico(prod.nivel_aplicacao) ? limparRotulo(prod.nivel_aplicacao) : "";
+                const instituicaoCampus = formatarInstituicaoCampus(d.instituicao, d.campus);
+
+                const extrasBusca = normalizarBusca([
+                    d.instituicao,
+                    d.campus,
+                    instituicaoCampus,
+                    orientadorLimpo,
+                    linhaSlug,
+                    linhaLabel,
+                    macroSlug,
+                    macroLabel,
+                    tipoSlug,
+                    tipoLabel,
+                    publicosSlugs.join(" "),
+                    publicosLabels.join(" "),
+                    baseAprovada,
+                    nivelAplicacao
+                ].join(" "));
 
                 let textoBuscaNorm = String(indice.texto_busca_normalizado || "").trim();
                 if (!textoBuscaNorm) {
                     textoBuscaNorm = normalizarBusca([
-                        d.id, d.ano, d.autor, d.orientador,
-                        (d.coorientadores || []).join(" "),
-                        d.linha_pesquisa, traduzirSlug("linha_pesquisa", d.linha_pesquisa),
-                        d.macroprojeto, traduzirSlug("macroprojeto", d.macroprojeto),
+                        d.id, d.ano, autorLimpo, orientadorLimpo,
+                        coorientadores.join(" "),
+                        d.instituicao, d.campus, instituicaoCampus,
+                        linhaSlug, linhaLabel,
+                        macroSlug, macroLabel,
                         diss.titulo, diss.resumo, autoresRef.join(" "), baseAprovada,
-                        prod.titulo, prod.tipo, traduzirSlug("tipo_produto", prod.tipo),
-                        publicosSlugs.map(s => traduzirSlug("publico_alvo", s)).join(" "),
-                        prod.nivel_aplicacao, termosUnificados.join(" ")
+                        prod.titulo, tipoSlug, tipoLabel,
+                        publicosSlugs.join(" "), publicosLabels.join(" "),
+                        nivelAplicacao, termosUnificados.join(" ")
                     ].join(" "));
+                } else if (extrasBusca) {
+                    textoBuscaNorm = textoBuscaNorm + " " + extrasBusca;
                 }
 
+                const identificadores = Array.isArray(prod.identificadores)
+                    ? prod.identificadores
+                        .filter(i => i && ehValorPublico(i.valor))
+                        .map(i => ({
+                            esquema: limparRotulo(i.esquema),
+                            valor: limparRotulo(i.valor),
+                            url: sanitizarUrl(i.url)
+                        }))
+                    : [];
+
+                const autoresColaboradores = Array.isArray(prod.autores_colaboradores)
+                    ? prod.autores_colaboradores
+                        .filter(a => a && ehValorPublico(a.nome))
+                        .map(a => ({
+                            nome: limparRotulo(a.nome),
+                            papel: ehValorPublico(a.papel) ? limparRotulo(a.papel) : ""
+                        }))
+                    : [];
+
                 return {
-                    raw: d,
-                    id: d.id || "",
+                    id: limparRotulo(d.id),
                     ano: d.ano != null ? String(d.ano) : "",
-                    autor: limparRotulo(d.autor),
-                    orientador: limparRotulo(d.orientador),
-                    orientadorChave: normalizarBusca(d.orientador),
-                    coorientadores: Array.isArray(d.coorientadores) ? d.coorientadores.filter(ehValorPublico) : [],
-                    instituicaoCampus: instituicaoCampus || "IFC – Blumenau",
-                    linha_pesquisa: ehValorPublico(d.linha_pesquisa) ? String(d.linha_pesquisa).trim() : "",
-                    linha_pesquisa_label: traduzirSlug("linha_pesquisa", d.linha_pesquisa),
-                    macroprojeto: ehValorPublico(d.macroprojeto) ? String(d.macroprojeto).trim() : "",
-                    macroprojeto_label: traduzirSlug("macroprojeto", d.macroprojeto),
+                    anoNum: Number.isFinite(Number(d.ano)) ? Number(d.ano) : 0,
+                    autor: autorLimpo,
+                    orientador: orientadorLimpo,
+                    orientadorChave: normalizarBusca(orientadorLimpo),
+                    coorientadores: coorientadores,
+                    instituicaoCampus: instituicaoCampus,
+                    linha_pesquisa: linhaSlug,
+                    linha_pesquisa_label: linhaLabel,
+                    macroprojeto: macroSlug,
+                    macroprojeto_label: macroLabel,
                     dissertacao_titulo: limparRotulo(diss.titulo),
-                    dissertacao_link: ehValorPublico(diss.link) ? String(diss.link).trim() : "",
+                    dissertacao_link: sanitizarUrl(diss.link),
                     dissertacao_resumo: limparRotulo(diss.resumo),
                     autores_referenciados: autoresRef,
                     base_epistemologica: baseAprovada,
-                    base_epistemologica_obj: baseObj,
+                    base_revisao_pendente: revisaoPendente,
+                    base_curado_humano: curadoHumano,
+                    base_status_label: baseStatusLabel,
+                    base_justificativa: baseAprovada && ehValorPublico(baseObj.justificativa) ? limparRotulo(baseObj.justificativa) : "",
+                    base_evidencias: evidencias,
                     produto_titulo: limparRotulo(prod.titulo),
-                    tipo_produto: ehValorPublico(prod.tipo) ? String(prod.tipo).trim() : "",
-                    tipo_produto_label: traduzirSlug("tipo_produto", prod.tipo),
-                    produto_link: ehValorPublico(prod.link) ? String(prod.link).trim() : "",
+                    tipo_produto: tipoSlug,
+                    tipo_produto_label: tipoLabel,
+                    produto_link: sanitizarUrl(prod.link),
                     publico_alvo: publicosSlugs,
-                    publico_alvo_labels: publicosSlugs.map(s => traduzirSlug("publico_alvo", s)),
-                    nivel_aplicacao: ehValorPublico(prod.nivel_aplicacao) ? limparRotulo(prod.nivel_aplicacao) : "",
-                    data_publicacao: prod.data_publicacao || "",
-                    proveniencia: prod.proveniencia || {},
-                    termos_unificados: termosUnificados.filter(ehValorPublico),
+                    publico_alvo_labels: publicosLabels,
+                    nivel_aplicacao: nivelAplicacao,
+                    data_publicacao: limparRotulo(prod.data_publicacao),
+                    autores_colaboradores: autoresColaboradores,
+                    identificadores: identificadores,
+                    proveniencia: {
+                        fonte_tipo_escolhida: limparRotulo(prov.fonte_tipo_escolhida),
+                        rotulo_original_declarado: ehValorPublico(prov.rotulo_original_declarado) ? limparRotulo(prov.rotulo_original_declarado) : "",
+                        colecao_educapes: ehValorPublico(prov.colecao_educapes) ? limparRotulo(prov.colecao_educapes) : "",
+                        dc_type_educapes: Array.isArray(prov.dc_type_educapes) ? prov.dc_type_educapes.map(limparRotulo).filter(ehValorPublico) : []
+                    },
+                    termos_unificados: termosUnificados,
                     texto_busca_normalizado: textoBuscaNorm
                 };
             }
 
-            function highlightText(valor) {
+            function consolidarOrientadores(lista) {
+                const contagens = new Map();
+                lista.forEach(item => {
+                    if (!item.orientadorChave || !ehValorPublico(item.orientador)) return;
+                    if (!contagens.has(item.orientadorChave)) contagens.set(item.orientadorChave, new Map());
+                    const mapaGrafias = contagens.get(item.orientadorChave);
+                    mapaGrafias.set(item.orientador, (mapaGrafias.get(item.orientador) || 0) + 1);
+                });
+
+                orientadoresPorChave = new Map();
+                contagens.forEach((mapaGrafias, chave) => {
+                    const melhor = Array.from(mapaGrafias.entries())
+                        .sort((a, b) => b[1] - a[1] || a[0].length - b[0].length)[0][0];
+                    orientadoresPorChave.set(chave, melhor);
+                });
+
+                lista.forEach(item => {
+                    if (item.orientadorChave && orientadoresPorChave.has(item.orientadorChave)) {
+                        item.orientador = orientadoresPorChave.get(item.orientadorChave);
+                    }
+                });
+            }
+
+            function highlightText(valor, termos) {
                 const textoOriginal = String(valor || "");
-                const termos = termosBusca();
-                if (!termos.length || !textoOriginal) return escapeHtml(textoOriginal);
+                const listaTermos = termos || termosBusca();
+                if (!listaTermos.length || !textoOriginal) return escapeHtml(textoOriginal);
+
+                const normRapido = normalizarBusca(textoOriginal);
+                if (!listaTermos.some(t => normRapido.includes(t))) {
+                    return escapeHtml(textoOriginal);
+                }
 
                 const chars = Array.from(textoOriginal);
                 let normStr = "";
@@ -1562,7 +1984,7 @@
                 });
 
                 const ranges = [];
-                termos.forEach(termo => {
+                listaTermos.forEach(termo => {
                     let inicio = 0;
                     while (inicio < normStr.length) {
                         const idx = normStr.indexOf(termo, inicio);
@@ -1595,23 +2017,51 @@
                 return saida;
             }
 
+            function trechoResumoCard(resumo, termos, limite) {
+                const texto = limparRotulo(resumo);
+                const max = limite || 380;
+                if (!texto || texto.length <= max) return texto;
+                if (!termos || !termos.length) return labelCurto(texto, max);
+
+                const norm = normalizarBusca(texto);
+                let menorPos = -1;
+                termos.forEach(t => {
+                    const pos = norm.indexOf(t);
+                    if (pos !== -1 && (menorPos === -1 || pos < menorPos)) menorPos = pos;
+                });
+
+                if (menorPos === -1 || menorPos < Math.floor(max * 0.65)) {
+                    return labelCurto(texto, max);
+                }
+
+                const approxOrig = Math.floor((menorPos / Math.max(norm.length, 1)) * texto.length);
+                let ini = Math.max(0, approxOrig - 110);
+                if (ini > 0) {
+                    const espaco = texto.lastIndexOf(" ", ini);
+                    if (espaco > ini - 30) ini = espaco + 1;
+                }
+                const fim = Math.min(texto.length, ini + max);
+                const miolo = texto.slice(ini, fim).trim();
+                return (ini > 0 ? "… " : "") + miolo + (fim < texto.length ? "…" : "");
+            }
+
             function multiplicadorEscopo() {
                 return escopo === "todas" ? 2 : 1;
             }
 
             function atualizarIndicadores() {
-                const anos = dados.map(item => Number(item.ano)).filter(Number.isFinite);
+                const anos = dados.map(item => item.anoNum).filter(n => n > 0);
                 const periodo = anos.length ? Math.min(...anos) + "–" + Math.max(...anos) : "Sem ano informado";
                 const totalDefesas = metaRaiz.total_defesas || dados.length;
                 const totalProducoes = metaRaiz.total_producoes || (totalDefesas * 2);
+                const dataGeracao = formatarDataIsoBr(metaRaiz.gerado_em);
 
-                raiz.querySelector("#leme-periodo").textContent = periodo;
-                raiz.querySelector("#leme-stat-total").textContent = totalDefesas.toLocaleString("pt-BR");
-                raiz.querySelector("#leme-stat-producoes").textContent = totalProducoes.toLocaleString("pt-BR");
-                raiz.querySelector("#leme-stat-orientadores").textContent = new Set(
-                    dados.map(item => item.orientadorChave).filter(Boolean)
-                ).size.toLocaleString("pt-BR");
-                raiz.querySelector("#leme-stat-macroprojetos").textContent = new Set(
+                periodoEl.textContent = periodo;
+                geradoEmEl.textContent = dataGeracao ? ("Atualizado em " + dataGeracao) : "";
+                statTotalEl.textContent = totalDefesas.toLocaleString("pt-BR");
+                statProducoesEl.textContent = totalProducoes.toLocaleString("pt-BR");
+                statOrientadoresEl.textContent = orientadoresPorChave.size.toLocaleString("pt-BR");
+                statMacroprojetosEl.textContent = new Set(
                     dados.map(item => item.macroprojeto).filter(ehValorPublico)
                 ).size.toLocaleString("pt-BR");
             }
@@ -1619,56 +2069,80 @@
             function itemCorrespondeFiltro(item, campo, valor) {
                 if (!valor) return true;
                 if (campo === "publico_alvo") {
-                    return Array.isArray(item.publico_alvo) && item.publico_alvo.includes(valor);
+                    return item.publico_alvo.includes(valor);
+                }
+                if (campo === "orientador") {
+                    return item.orientadorChave === valor;
                 }
                 return item[campo] === valor;
             }
 
-            function filtrarDados(ignorarCampo) {
-                const termos = termosBusca();
+            function filtrarBaseBusca(termos) {
+                const listaTermos = termos || termosBusca();
+                if (!listaTermos.length && !autorReferenciadoAtivo) return dados;
                 return dados.filter(item => {
-                    if (termos.length && !termos.every(t => item.texto_busca_normalizado.includes(t))) return false;
-                    for (const filtro of filtros) {
-                        const campo = filtro.dataset.campo;
-                        if (ignorarCampo && campo === ignorarCampo) continue;
-                        if (filtro.value && !itemCorrespondeFiltro(item, campo, filtro.value)) return false;
+                    if (autorReferenciadoAtivo && !item.autores_referenciados.includes(autorReferenciadoAtivo)) return false;
+                    if (listaTermos.length && !listaTermos.every(t => item.texto_busca_normalizado.includes(t))) return false;
+                    return true;
+                });
+            }
+
+            function filtrarDados(ignorarCampo, basePreFiltrada, termosPreCalculados) {
+                const base = basePreFiltrada || filtrarBaseBusca(termosPreCalculados);
+                const ativos = filtros.filter(f => f.value && (!ignorarCampo || f.dataset.campo !== ignorarCampo));
+                if (!ativos.length) return base;
+                return base.filter(item => {
+                    for (let i = 0; i < ativos.length; i++) {
+                        if (!itemCorrespondeFiltro(item, ativos[i].dataset.campo, ativos[i].value)) return false;
                     }
                     return true;
                 });
             }
 
-            function formatarOpcaoFiltro(campo, slug) {
-                if (campo === "linha_pesquisa") return traduzirSlug("linha_pesquisa", slug);
-                if (campo === "macroprojeto") return traduzirSlug("macroprojeto", slug);
-                if (campo === "tipo_produto") return traduzirSlug("tipo_produto", slug);
-                if (campo === "publico_alvo") return traduzirSlug("publico_alvo", slug);
-                return slug;
+            function formatarOpcaoFiltro(campo, valor) {
+                if (campo === "linha_pesquisa") return traduzirSlug("linha_pesquisa", valor);
+                if (campo === "macroprojeto") return traduzirSlug("macroprojeto", valor);
+                if (campo === "tipo_produto") return traduzirSlug("tipo_produto", valor);
+                if (campo === "publico_alvo") return traduzirSlug("publico_alvo", valor);
+                if (campo === "orientador") return orientadoresPorChave.get(valor) || valor;
+                return valor;
             }
 
             function contarOpcoes(lista, campo) {
                 const mapa = new Map();
                 lista.forEach(item => {
                     if (campo === "publico_alvo") {
-                        (item.publico_alvo || []).forEach(slug => {
+                        item.publico_alvo.forEach(slug => {
                             if (!ehValorPublico(slug)) return;
                             mapa.set(slug, (mapa.get(slug) || 0) + 1);
                         });
+                        return;
+                    }
+                    if (campo === "orientador") {
+                        if (!item.orientadorChave) return;
+                        mapa.set(item.orientadorChave, (mapa.get(item.orientadorChave) || 0) + 1);
                         return;
                     }
                     const valor = item[campo];
                     if (!ehValorPublico(valor)) return;
                     mapa.set(valor, (mapa.get(valor) || 0) + 1);
                 });
+                if (campo === "ano") {
+                    return Array.from(mapa.entries()).sort((a, b) => Number(b[0]) - Number(a[0]));
+                }
                 return Array.from(mapa.entries()).sort((a, b) =>
                     formatarOpcaoFiltro(campo, a[0]).localeCompare(formatarOpcaoFiltro(campo, b[0]), "pt-BR")
                 );
             }
 
-            function popularFiltrosDinamicos() {
+            function popularFiltrosDinamicos(termos) {
+                const baseBusca = filtrarBaseBusca(termos);
+                const temFiltroAtivo = filtros.some(f => Boolean(f.value));
+
                 filtros.forEach(select => {
                     const campo = select.dataset.campo;
                     const atual = select.value;
-                    const base = filtrarDados(campo);
+                    const base = temFiltroAtivo ? filtrarDados(campo, baseBusca, termos) : baseBusca;
                     const opcoes = contarOpcoes(base, campo);
                     const padrao = select.dataset.default || "Todos";
 
@@ -1676,10 +2150,10 @@
                     let existeAtual = !atual;
                     let qtdAtual = 0;
 
-                    opcoes.forEach(([slug, qtd]) => {
-                        if (slug === atual) { existeAtual = true; qtdAtual = qtd; }
-                        const rotulo = formatarOpcaoFiltro(campo, slug);
-                        html += '<option value="' + escapeHtml(slug) + '">' + escapeHtml(rotulo) + '</option>';
+                    opcoes.forEach(([chave, qtd]) => {
+                        if (chave === atual) { existeAtual = true; qtdAtual = qtd; }
+                        const rotulo = formatarOpcaoFiltro(campo, chave);
+                        html += '<option value="' + escapeHtml(chave) + '">' + escapeHtml(rotulo) + '</option>';
                     });
 
                     if (atual && !existeAtual) {
@@ -1709,21 +2183,50 @@
             function renderFiltrosAtivos() {
                 const chips = [];
                 if (busca.value.trim()) {
-                    chips.push('<span class="leme-chip">Busca: ' + escapeHtml(busca.value.trim()) + '<button type="button" data-clear-search="1" aria-label="Remover busca">×</button></span>');
+                    const val = busca.value.trim();
+                    chips.push(
+                        '<span class="leme-chip">Busca: ' + escapeHtml(val) +
+                        '<button type="button" data-clear-search="1" aria-label="Remover busca ' + escapeHtml(val) + '">×</button></span>'
+                    );
+                }
+                if (autorReferenciadoAtivo) {
+                    chips.push(
+                        '<span class="leme-chip">Autor referenciado: ' + escapeHtml(autorReferenciadoAtivo) +
+                        '<button type="button" data-clear-author-ref="1" aria-label="Remover filtro de autor referenciado ' + escapeHtml(autorReferenciadoAtivo) + '">×</button></span>'
+                    );
                 }
                 filtros.forEach(filtro => {
                     if (filtro.value) {
                         const label = raiz.querySelector('label[for="' + filtro.id + '"]');
+                        const nomeFiltro = label ? label.textContent : filtro.dataset.campo;
                         const rotuloValor = formatarOpcaoFiltro(filtro.dataset.campo, filtro.value);
                         chips.push(
                             '<span class="leme-chip">' +
-                            escapeHtml(label ? label.textContent : filtro.dataset.campo) + ': ' +
+                            escapeHtml(nomeFiltro) + ': ' +
                             escapeHtml(labelCurto(rotuloValor, 46)) +
-                            '<button type="button" data-clear-filter="' + escapeHtml(filtro.dataset.campo) + '" aria-label="Remover filtro">×</button></span>'
+                            '<button type="button" data-clear-filter="' + escapeHtml(filtro.dataset.campo) + '" aria-label="Remover filtro ' + escapeHtml(nomeFiltro + ": " + rotuloValor) + '">×</button></span>'
                         );
                     }
                 });
                 filtrosAtivos.innerHTML = chips.join("");
+            }
+
+            function ordenarResultados(lista) {
+                const copia = lista.slice();
+                if (ordenacao === "ano_asc") {
+                    return copia.sort((a, b) => (a.anoNum - b.anoNum) || a.id.localeCompare(b.id, "pt-BR"));
+                }
+                if (ordenacao === "titulo_asc") {
+                    return copia.sort((a, b) => {
+                        const ta = escopo === "produtos" ? (a.produto_titulo || a.dissertacao_titulo) : a.dissertacao_titulo;
+                        const tb = escopo === "produtos" ? (b.produto_titulo || b.dissertacao_titulo) : b.dissertacao_titulo;
+                        return ta.localeCompare(tb, "pt-BR");
+                    });
+                }
+                if (ordenacao === "autor_asc") {
+                    return copia.sort((a, b) => (a.autor || "").localeCompare(b.autor || "", "pt-BR"));
+                }
+                return copia.sort((a, b) => (b.anoNum - a.anoNum) || b.id.localeCompare(a.id, "pt-BR"));
             }
 
             function contarAgregado(lista, extrator, peso) {
@@ -1746,7 +2249,7 @@
             function contarOrientadores(lista, limite) {
                 const mapa = new Map();
                 lista.forEach(item => {
-                    if (!ehValorPublico(item.orientador)) return;
+                    if (!item.orientadorChave || !ehValorPublico(item.orientador)) return;
                     const chave = item.orientadorChave;
                     if (!mapa.has(chave)) mapa.set(chave, { label: item.orientador, valor: 0 });
                     mapa.get(chave).valor += 1;
@@ -1820,11 +2323,13 @@
                 const lista = config.agruparOutras === false ? dadosValidos.slice(0, limiteReal) : agruparTop(dadosValidos, limiteReal);
 
                 if (!lista.length) {
-                    el.innerHTML = '<div class="leme-empty-chart">Limpe algum filtro ou faça uma busca mais ampla para comparar categorias.</div>';
+                    el.innerHTML = '<div class="leme-empty-chart">' + escapeHtml(config.emptyText || "Limpe algum filtro ou faça uma busca mais ampla para comparar categorias.") + '</div>';
                     return;
                 }
                 if (lista.length === 1 && !config.clicavel) {
-                    el.innerHTML = '<div class="leme-single-insight"><strong>' + escapeHtml(lista[0].label) + '</strong>Todos os ' + lista[0].valor + ' registros deste recorte pertencem a esta categoria.</div>';
+                    let singleHtml = '<div class="leme-single-insight"><strong>' + escapeHtml(lista[0].label) + '</strong>' + lista[0].valor + ' registro(s) neste recorte nesta categoria.</div>';
+                    if (config.footnote) singleHtml += '<p class="leme-chart-footnote">' + escapeHtml(config.footnote) + '</p>';
+                    el.innerHTML = singleHtml;
                     return;
                 }
 
@@ -1832,16 +2337,24 @@
                 let html = '<div class="leme-bars">' + lista.map(d => {
                     const pct = Math.max(4, Math.round((d.valor / max) * 100));
                     const rotulo = config.formatarRotulo ? config.formatarRotulo(d.label) : labelCurto(d.label, 56);
-                    const clickAttr = config.clicavel ? ' class="leme-bar-row is-clickable" data-search-term="' + escapeHtml(d.label) + '" title="Clique para filtrar por ' + escapeHtml(d.label) + '"' : ' class="leme-bar-row"';
-                    return '<div' + clickAttr + '>' +
+                    if (config.clicavel) {
+                        const ativo = config.valorAtivo === d.label;
+                        return '<button type="button" class="leme-bar-row is-clickable' + (ativo ? ' is-active' : '') + '" data-author-ref="' + escapeHtml(d.label) + '" aria-pressed="' + (ativo ? 'true' : 'false') + '" title="' + (ativo ? 'Remover filtro de ' : 'Filtrar pelo autor referenciado ') + escapeHtml(d.label) + '">' +
+                            '<span class="leme-bar-label">' + escapeHtml(rotulo) + '</span>' +
+                            '<span class="leme-bar-track"><span class="leme-bar-fill" style="width:' + pct + '%"></span></span>' +
+                            '<span class="leme-bar-value">' + d.valor + '</span>' +
+                            '</button>';
+                    }
+                    return '<div class="leme-bar-row">' +
                         '<div class="leme-bar-label" title="' + escapeHtml(d.label) + '">' + escapeHtml(rotulo) + '</div>' +
                         '<div class="leme-bar-track"><div class="leme-bar-fill" style="width:' + pct + '%"></div></div>' +
                         '<div class="leme-bar-value">' + d.valor + '</div>' +
                         '</div>';
                 }).join("") + '</div>';
 
-                if (config.agruparOutras === false && dadosValidos.length > limiteReal) {
-                    const restantes = dadosValidos.slice(limiteReal);
+                if (config.footnote) {
+                    html += '<p class="leme-chart-footnote">' + escapeHtml(config.footnote) + '</p>';
+                } else if (config.agruparOutras === false && dadosValidos.length > limiteReal) {
                     html += '<p class="leme-chart-footnote">Exibindo os ' + limiteReal + ' primeiros de ' + dadosValidos.length + ' itens distintos neste recorte.</p>';
                 }
                 el.innerHTML = html;
@@ -1858,7 +2371,7 @@
                     return;
                 }
 
-                const cores = ["#4d5aff", "#833ca3", "#f45971", "#399f67"];
+                const cores = ["#3b47e5", "#7b359c", "#d62849", "#1f7a49"];
                 const total = lista.reduce((soma, item) => soma + item.valor, 0) || 1;
                 const segmentos = lista.map((d, i) =>
                     '<div class="leme-composition-segment" title="' + escapeHtml(d.label) + ': ' + d.valor + '" style="width:' + ((d.valor / total) * 100).toFixed(2) + '%;background:' + cores[i % cores.length] + '"></div>'
@@ -1878,7 +2391,7 @@
             function renderYearChart(el, lista) {
                 const peso = multiplicadorEscopo();
                 const dadosAno = contarAgregado(lista, i => i.ano, peso)
-                    .sort((a, b) => String(a.label).localeCompare(String(b.label), "pt-BR"));
+                    .sort((a, b) => Number(a.label) - Number(b.label));
 
                 if (!dadosAno.length) {
                     el.innerHTML = '<div class="leme-empty-chart">Limpe algum filtro ou faça uma busca mais ampla para comparar os anos.</div>';
@@ -1909,7 +2422,7 @@
 
                 if (escopo === "dissertacoes") {
                     chartAnoTitle.textContent = "Dissertações defendidas por ano";
-                    graficosDesc.textContent = "Indicadores específicos das dissertações defendidas no ProfEPT (IFC Blumenau).";
+                    graficosDesc.textContent = "Indicadores específicos das dissertações defendidas no programa ProfEPT.";
                 } else if (escopo === "produtos") {
                     chartAnoTitle.textContent = "Produtos educacionais por ano";
                     graficosDesc.textContent = "Indicadores específicos dos produtos educacionais vinculados às defesas.";
@@ -1922,56 +2435,44 @@
             function atualizarGraficos(lista) {
                 atualizarVisibilidadeGraficos();
                 renderInsights(lista);
-
-                renderYearChart(raiz.querySelector("#leme-chart-ano"), lista);
+                renderYearChart(chartAnoEl, lista);
 
                 if (escopo === "todas" || escopo === "dissertacoes") {
-                    renderCompositionChart(
-                        raiz.querySelector("#leme-chart-linha"),
-                        contarAgregado(lista, i => i.linha_pesquisa_label, 1)
-                    );
-                    renderHorizontalChart(
-                        raiz.querySelector("#leme-chart-macro"),
-                        contarAgregado(lista, i => i.macroprojeto_label, 1),
-                        6,
-                        { formatarRotulo: rotuloMacroCurto }
-                    );
-                    renderHorizontalChart(
-                        raiz.querySelector("#leme-chart-orientador"),
-                        contarOrientadores(lista, 10),
-                        10,
-                        { agruparOutras: false }
-                    );
-                    renderHorizontalChart(
-                        raiz.querySelector("#leme-chart-base"),
-                        contarAgregado(lista, i => i.base_epistemologica, 1),
-                        8
-                    );
-                    renderHorizontalChart(
-                        raiz.querySelector("#leme-chart-autores-ref"),
-                        contarAgregado(lista, i => i.autores_referenciados, 1),
-                        12,
-                        { agruparOutras: false, clicavel: true }
-                    );
+                    renderCompositionChart(chartLinhaEl, contarAgregado(lista, i => i.linha_pesquisa_label, 1));
+                    renderHorizontalChart(chartMacroEl, contarAgregado(lista, i => i.macroprojeto_label, 1), 6, { formatarRotulo: rotuloMacroCurto });
+                    renderHorizontalChart(chartOrientadorEl, contarOrientadores(lista, 10), 10, { agruparOutras: false });
+
+                    const totalRecorte = lista.length;
+                    const pendentes = lista.filter(i => i.base_revisao_pendente).length;
+                    const naoDeclaradas = lista.filter(i => !i.base_epistemologica && !i.base_revisao_pendente).length;
+                    const consolidadas = totalRecorte - pendentes - naoDeclaradas;
+                    const partesNota = [];
+                    if (totalRecorte > 0 && (pendentes > 0 || naoDeclaradas > 0)) {
+                        partesNota.push(consolidadas + " de " + totalRecorte + " defesas consolidadas");
+                        if (pendentes > 0) partesNota.push(pendentes + " em curadoria pendente");
+                        if (naoDeclaradas > 0) partesNota.push(naoDeclaradas + " sem base declarada");
+                    }
+                    const footnoteBase = partesNota.length ? (partesNota.join(" · ") + ".") : "";
+                    const emptyBase = pendentes > 0
+                        ? "Nenhuma base consolidada neste recorte (" + pendentes + " registro(s) em curadoria pendente)."
+                        : "Nenhuma base epistemológica consolidada neste recorte.";
+
+                    renderHorizontalChart(chartBaseEl, contarAgregado(lista, i => i.base_epistemologica, 1), 8, {
+                        footnote: footnoteBase,
+                        emptyText: emptyBase
+                    });
+
+                    renderHorizontalChart(chartAutoresRefEl, contarAgregado(lista, i => i.autores_referenciados, 1), 12, {
+                        agruparOutras: false,
+                        clicavel: true,
+                        valorAtivo: autorReferenciadoAtivo
+                    });
                 }
 
                 if (escopo === "todas" || escopo === "produtos") {
-                    renderHorizontalChart(
-                        raiz.querySelector("#leme-chart-tipo"),
-                        contarAgregado(lista, i => i.tipo_produto_label, 1),
-                        9
-                    );
-                    renderHorizontalChart(
-                        raiz.querySelector("#leme-chart-publico"),
-                        contarAgregado(lista, i => i.publico_alvo_labels, 1),
-                        6,
-                        { agruparOutras: false }
-                    );
-                    renderHorizontalChart(
-                        raiz.querySelector("#leme-chart-nivel"),
-                        contarAgregado(lista, i => i.nivel_aplicacao, 1),
-                        8
-                    );
+                    renderHorizontalChart(chartTipoEl, contarAgregado(lista, i => i.tipo_produto_label, 1), 9);
+                    renderHorizontalChart(chartPublicoEl, contarAgregado(lista, i => i.publico_alvo_labels, 1), 6, { agruparOutras: false });
+                    renderHorizontalChart(chartNivelEl, contarAgregado(lista, i => i.nivel_aplicacao, 1), 8);
                 }
 
                 const totalItensEscopo = lista.length * multiplicadorEscopo();
@@ -1991,20 +2492,24 @@
                 if (escopo === "produtos") {
                     if (ehValorPublico(item.tipo_produto_label)) badges.push('<span class="leme-badge red">' + escapeHtml(item.tipo_produto_label) + '</span>');
                     if (ehValorPublico(item.nivel_aplicacao)) badges.push('<span class="leme-badge green">' + escapeHtml(item.nivel_aplicacao) + '</span>');
-                    (item.publico_alvo_labels || []).slice(0, 2).forEach(pub => {
+                    item.publico_alvo_labels.slice(0, 2).forEach(pub => {
                         badges.push('<span class="leme-badge">' + escapeHtml(pub) + '</span>');
                     });
                     return badges.join("");
                 }
 
                 if (escopo === "dissertacoes") {
-                    if (ehValorPublico(item.linha_pesquisa)) badges.push('<span class="leme-badge">' + escapeHtml(item.linha_pesquisa) + '</span>');
-                    if (ehValorPublico(item.macroprojeto)) badges.push('<span class="leme-badge">' + escapeHtml(item.macroprojeto) + '</span>');
-                    if (ehValorPublico(item.base_epistemologica)) badges.push('<span class="leme-badge green">' + escapeHtml(item.base_epistemologica) + '</span>');
+                    if (ehValorPublico(item.linha_pesquisa)) badges.push('<span class="leme-badge" title="' + escapeHtml(item.linha_pesquisa_label) + '">' + escapeHtml(item.linha_pesquisa) + '</span>');
+                    if (ehValorPublico(item.macroprojeto)) badges.push('<span class="leme-badge" title="' + escapeHtml(item.macroprojeto_label) + '">' + escapeHtml(item.macroprojeto) + '</span>');
+                    if (item.base_epistemologica) {
+                        badges.push('<span class="leme-badge green">' + escapeHtml(item.base_epistemologica) + '</span>');
+                    } else if (item.base_revisao_pendente) {
+                        badges.push('<span class="leme-badge pending">Em curadoria</span>');
+                    }
                     return badges.join("");
                 }
 
-                if (ehValorPublico(item.linha_pesquisa)) badges.push('<span class="leme-badge">' + escapeHtml(item.linha_pesquisa) + '</span>');
+                if (ehValorPublico(item.linha_pesquisa)) badges.push('<span class="leme-badge" title="' + escapeHtml(item.linha_pesquisa_label) + '">' + escapeHtml(item.linha_pesquisa) + '</span>');
                 if (ehValorPublico(item.nivel_aplicacao)) badges.push('<span class="leme-badge green">' + escapeHtml(item.nivel_aplicacao) + '</span>');
                 if (ehValorPublico(item.tipo_produto_label)) badges.push('<span class="leme-badge red">' + escapeHtml(item.tipo_produto_label) + '</span>');
                 return badges.join("");
@@ -2013,73 +2518,95 @@
             function renderActions(item) {
                 const links = [];
                 if ((escopo === "todas" || escopo === "dissertacoes") && item.dissertacao_link) {
-                    links.push('<a class="leme-link pdf" href="' + escapeHtml(item.dissertacao_link) + '" target="_blank" rel="noopener" aria-label="Abrir dissertação em nova aba">Dissertação</a>');
+                    links.push('<a class="leme-link pdf" href="' + escapeHtml(item.dissertacao_link) + '" target="_blank" rel="noopener noreferrer" aria-label="Abrir dissertação em nova aba">Dissertação</a>');
                 }
                 if ((escopo === "todas" || escopo === "produtos") && item.produto_link) {
-                    links.push('<a class="leme-link produto" href="' + escapeHtml(item.produto_link) + '" target="_blank" rel="noopener" aria-label="Abrir produto educacional no eduCAPES em nova aba">Produto educacional</a>');
+                    links.push('<a class="leme-link produto" href="' + escapeHtml(item.produto_link) + '" target="_blank" rel="noopener noreferrer" aria-label="Abrir produto educacional no eduCAPES em nova aba">Produto educacional</a>');
                 }
                 return links.length ? '<div class="leme-actions">' + links.join("") + '</div>' : "";
             }
 
-            function renderCards(lista) {
+            function renderCards(lista, termos) {
                 if (!lista.length) {
                     resultados.innerHTML = '<div class="leme-empty">Nenhum registro encontrado com os filtros selecionados.</div>';
                     return;
                 }
 
                 resultados.innerHTML = lista.map(item => {
-                    const idx = dados.indexOf(item);
                     const ehProduto = escopo === "produtos";
                     const tituloPrincipal = ehProduto ? (item.produto_titulo || item.dissertacao_titulo) : item.dissertacao_titulo;
                     const eyebrow = ehProduto
                         ? 'PRODUTO EDUCACIONAL' + (ehValorPublico(item.ano) ? ' · ' + escapeHtml(item.ano) : '')
-                        : (escopo === "dissertacoes" ? 'DISSERTAÇÃO' : 'DEFESA · ' + escapeHtml(item.id)) + (ehValorPublico(item.ano) ? ' · ' + escapeHtml(item.ano) : '');
+                        : (escopo === "dissertacoes" ? 'DISSERTAÇÃO · ' + escapeHtml(item.id) : 'DEFESA · ' + escapeHtml(item.id)) + (ehValorPublico(item.ano) ? ' · ' + escapeHtml(item.ano) : '');
 
-                    let metaHtml = '<div><b>Autor(a):</b> ' + highlightText(item.autor) + '</div>' +
-                        '<div><b>Orientador(a):</b> ' + highlightText(item.orientador) + '</div>';
+                    let metaHtml = '<div><b>Autor(a):</b> ' + highlightText(valorPublico(item.autor), termos) + '</div>' +
+                        '<div><b>Orientador(a):</b> ' + highlightText(valorPublico(item.orientador), termos) + '</div>';
 
                     if (ehProduto) {
-                        metaHtml += '<div><b>Público-alvo:</b> ' + highlightText(item.publico_alvo_labels.join(", ") || "Não informado") + '</div>';
+                        metaHtml += '<div><b>Público-alvo:</b> ' + highlightText(item.publico_alvo_labels.join(", ") || "Não informado", termos) + '</div>';
                     } else if (escopo === "dissertacoes") {
-                        metaHtml += '<div><b>Base epistemológica:</b> ' + highlightText(item.base_epistemologica || "Em curadoria / Não declarada") + '</div>';
+                        metaHtml += '<div><b>Base epistemológica:</b> ' + highlightText(item.base_status_label, termos) + '</div>';
                     } else {
-                        metaHtml += '<div><b>Produto:</b> ' + highlightText(labelCurto(item.produto_titulo, 72) || "Não informado") + '</div>';
+                        metaHtml += '<div><b>Produto:</b> ' + highlightText(labelCurto(item.produto_titulo, 72) || "Não informado", termos) + '</div>';
                     }
 
                     const corpoTexto = ehProduto
                         ? ('Dissertação vinculada: ' + (item.dissertacao_titulo || "Não informada") + (item.termos_unificados.length ? ' · Palavras-chave: ' + item.termos_unificados.slice(0, 5).join(", ") : ''))
-                        : (item.dissertacao_resumo || "Resumo não disponível.");
+                        : (trechoResumoCard(item.dissertacao_resumo, termos, 380) || "Resumo não disponível.");
 
                     return '<article class="leme-card">' +
                         '<div class="leme-eyebrow">' + eyebrow + '</div>' +
-                        '<h3 class="leme-card-title">' + highlightText(tituloPrincipal) + '</h3>' +
+                        '<h3 class="leme-card-title">' + highlightText(tituloPrincipal, termos) + '</h3>' +
                         '<div class="leme-meta">' + metaHtml + '</div>' +
                         '<div class="leme-badges">' + renderBadgesCard(item) + '</div>' +
-                        '<p class="leme-summary">' + highlightText(corpoTexto) + '</p>' +
-                        '<div class="leme-card-footer"><button type="button" class="leme-card-detail-btn" data-index="' + idx + '">Ver detalhes</button>' + renderActions(item) + '</div>' +
+                        '<p class="leme-summary">' + highlightText(corpoTexto, termos) + '</p>' +
+                        '<div class="leme-card-footer"><button type="button" class="leme-card-detail-btn" data-id="' + escapeHtml(item.id) + '" aria-label="Ver detalhes de ' + escapeHtml(labelCurto(tituloPrincipal, 80)) + '">Ver detalhes</button>' + renderActions(item) + '</div>' +
                         '</article>';
                 }).join("");
             }
 
-            function renderTable(lista) {
+            function renderTable(lista, termos) {
                 if (!lista.length) {
                     resultados.innerHTML = '<div class="leme-empty">Nenhum registro encontrado com os filtros selecionados.</div>';
                     return;
                 }
 
+                const btnDetalhes = (item, titulo) =>
+                    '<button type="button" class="leme-table-detail-btn" data-id="' + escapeHtml(item.id) + '" aria-label="Ver detalhes de ' + escapeHtml(labelCurto(titulo, 80)) + '">Ver detalhes</button>';
+
                 if (escopo === "produtos") {
                     resultados.innerHTML = '<table class="leme-table">' +
                         '<caption>Produtos Educacionais filtrados</caption>' +
-                        '<thead><tr><th scope="col">Produto Educacional</th><th scope="col">Tipo (CAPES)</th><th scope="col">Público-Alvo</th><th scope="col">Nível de Aplicação</th><th scope="col">Autor(a)</th><th scope="col">Ano</th><th scope="col">Link</th></tr></thead>' +
+                        '<thead><tr><th scope="col">Produto Educacional</th><th scope="col">Tipo (CAPES)</th><th scope="col">Público-Alvo</th><th scope="col">Nível de Aplicação</th><th scope="col">Autor(a)</th><th scope="col">Ano</th><th scope="col">Ações</th></tr></thead>' +
+                        '<tbody>' + lista.map(item => {
+                            const titulo = item.produto_titulo || item.dissertacao_titulo || "Não informado";
+                            return '<tr>' +
+                                '<td><div class="leme-table-title">' + highlightText(titulo, termos) + '</div></td>' +
+                                '<td>' + escapeHtml(valorPublico(item.tipo_produto_label)) + '</td>' +
+                                '<td>' + escapeHtml(item.publico_alvo_labels.join(", ") || "Não informado") + '</td>' +
+                                '<td>' + escapeHtml(valorPublico(item.nivel_aplicacao)) + '</td>' +
+                                '<td>' + highlightText(valorPublico(item.autor), termos) + '</td>' +
+                                '<td>' + escapeHtml(valorPublico(item.ano)) + '</td>' +
+                                '<td><div class="leme-table-actions">' + btnDetalhes(item, titulo) + renderActions(item) + '</div></td>' +
+                                '</tr>';
+                        }).join("") + '</tbody></table>';
+                    return;
+                }
+
+                if (escopo === "dissertacoes") {
+                    resultados.innerHTML = '<table class="leme-table">' +
+                        '<caption>Dissertações filtradas</caption>' +
+                        '<thead><tr><th scope="col">Dissertação</th><th scope="col">Autor(a)</th><th scope="col">Orientador(a)</th><th scope="col">Ano</th><th scope="col">Linha</th><th scope="col">Macroprojeto</th><th scope="col">Base Epistemológica</th><th scope="col">Ações</th></tr></thead>' +
                         '<tbody>' + lista.map(item =>
                             '<tr>' +
-                            '<td><div class="leme-table-title">' + highlightText(item.produto_titulo || "Não informado") + '</div></td>' +
-                            '<td>' + escapeHtml(valorPublico(item.tipo_produto_label)) + '</td>' +
-                            '<td>' + escapeHtml(item.publico_alvo_labels.join(", ") || "Não informado") + '</td>' +
-                            '<td>' + escapeHtml(valorPublico(item.nivel_aplicacao)) + '</td>' +
-                            '<td>' + highlightText(item.autor) + '</td>' +
+                            '<td><div class="leme-table-title">' + highlightText(item.dissertacao_titulo, termos) + '</div></td>' +
+                            '<td>' + highlightText(valorPublico(item.autor), termos) + '</td>' +
+                            '<td>' + highlightText(valorPublico(item.orientador), termos) + '</td>' +
                             '<td>' + escapeHtml(valorPublico(item.ano)) + '</td>' +
-                            '<td>' + renderActions(item) + '</td>' +
+                            '<td>' + escapeHtml(valorPublico(item.linha_pesquisa_label)) + '</td>' +
+                            '<td title="' + escapeHtml(item.macroprojeto_label) + '">' + escapeHtml(valorPublico(item.macroprojeto)) + '</td>' +
+                            '<td>' + escapeHtml(item.base_status_label) + '</td>' +
+                            '<td><div class="leme-table-actions">' + btnDetalhes(item, item.dissertacao_titulo) + renderActions(item) + '</div></td>' +
                             '</tr>'
                         ).join("") + '</tbody></table>';
                     return;
@@ -2087,18 +2614,19 @@
 
                 resultados.innerHTML = '<table class="leme-table">' +
                     '<caption>Resultados filtrados do painel</caption>' +
-                    '<thead><tr><th scope="col">Dissertação</th><th scope="col">Autor(a)</th><th scope="col">Orientador(a)</th><th scope="col">Ano</th><th scope="col">Linha</th><th scope="col">Macroprojeto</th><th scope="col">Base Epistemológica</th><th scope="col">Tipo de Produto</th><th scope="col">Links</th></tr></thead>' +
+                    '<thead><tr><th scope="col">Dissertação / Produto</th><th scope="col">Autor(a)</th><th scope="col">Orientador(a)</th><th scope="col">Ano</th><th scope="col">Linha</th><th scope="col">Macroprojeto</th><th scope="col">Base Epistemológica</th><th scope="col">Tipo de Produto</th><th scope="col">Ações</th></tr></thead>' +
                     '<tbody>' + lista.map(item =>
                         '<tr>' +
-                        '<td><div class="leme-table-title">' + highlightText(item.dissertacao_titulo) + '</div></td>' +
-                        '<td>' + highlightText(item.autor) + '</td>' +
-                        '<td>' + highlightText(item.orientador) + '</td>' +
+                        '<td><div class="leme-table-title">' + highlightText(item.dissertacao_titulo, termos) + '</div>' +
+                        (item.produto_titulo ? '<div class="leme-table-sub"><b>Produto:</b> ' + highlightText(labelCurto(item.produto_titulo, 90), termos) + '</div>' : '') + '</td>' +
+                        '<td>' + highlightText(valorPublico(item.autor), termos) + '</td>' +
+                        '<td>' + highlightText(valorPublico(item.orientador), termos) + '</td>' +
                         '<td>' + escapeHtml(valorPublico(item.ano)) + '</td>' +
                         '<td>' + escapeHtml(valorPublico(item.linha_pesquisa_label)) + '</td>' +
-                        '<td>' + escapeHtml(valorPublico(item.macroprojeto)) + '</td>' +
-                        '<td>' + escapeHtml(item.base_epistemologica || "Em curadoria") + '</td>' +
+                        '<td title="' + escapeHtml(item.macroprojeto_label) + '">' + escapeHtml(valorPublico(item.macroprojeto)) + '</td>' +
+                        '<td>' + escapeHtml(item.base_status_label) + '</td>' +
                         '<td>' + escapeHtml(valorPublico(item.tipo_produto_label)) + '</td>' +
-                        '<td>' + renderActions(item) + '</td>' +
+                        '<td><div class="leme-table-actions">' + btnDetalhes(item, item.dissertacao_titulo) + renderActions(item) + '</div></td>' +
                         '</tr>'
                     ).join("") + '</tbody></table>';
             }
@@ -2117,23 +2645,23 @@
                 return [...paginas].filter(p => p >= 1 && p <= totalPaginas).sort((a, b) => a - b);
             }
 
-            function botaoPagina(rotulo, pagina, classe, disabled) {
+            function botaoPagina(rotulo, pagina, classe, disabled, ariaLabel) {
                 const atual = classe && classe.includes("is-active");
-                return '<button type="button" class="leme-page-btn ' + (classe || "") + '" data-pagina="' + pagina + '" ' + (disabled ? "disabled" : "") + (atual ? ' aria-current="page"' : '') + ' aria-label="Página ' + escapeHtml(rotulo) + '">' + escapeHtml(rotulo) + '</button>';
+                return '<button type="button" class="leme-page-btn ' + (classe || "") + '" data-pagina="' + pagina + '" ' + (disabled ? "disabled" : "") + (atual ? ' aria-current="page"' : '') + ' aria-label="' + escapeHtml(ariaLabel || ("Página " + rotulo)) + '">' + escapeHtml(rotulo) + '</button>';
             }
 
             function renderPaginacao(totalItens) {
                 const totalPaginas = Math.max(1, Math.ceil(totalItens / itensPorPagina));
                 if (!totalItens || totalPaginas <= 1) { paginacao.innerHTML = ""; return; }
-                let html = botaoPagina("Anterior", Math.max(1, paginaAtual - 1), "", paginaAtual === 1);
+                let html = botaoPagina("Anterior", Math.max(1, paginaAtual - 1), "", paginaAtual === 1, "Página anterior");
                 const visiveis = paginasVisiveis(totalPaginas);
                 let anterior = 0;
                 visiveis.forEach(p => {
-                    if (anterior && p - anterior > 1) html += '<span class="leme-pagination-info" style="width:auto;margin:0;">...</span>';
-                    html += botaoPagina(String(p), p, p === paginaAtual ? "is-active" : "", false);
+                    if (anterior && p - anterior > 1) html += '<span class="leme-pagination-ellipsis" aria-hidden="true">…</span>';
+                    html += botaoPagina(String(p), p, p === paginaAtual ? "is-active" : "", false, "Página " + p);
                     anterior = p;
                 });
-                html += botaoPagina("Próximo", Math.min(totalPaginas, paginaAtual + 1), "", paginaAtual === totalPaginas);
+                html += botaoPagina("Próximo", Math.min(totalPaginas, paginaAtual + 1), "", paginaAtual === totalPaginas, "Próxima página");
                 const inicio = (paginaAtual - 1) * itensPorPagina + 1;
                 const fim = Math.min(paginaAtual * itensPorPagina, totalItens);
                 html += '<div class="leme-pagination-info">Exibindo ' + inicio + '–' + fim + ' de ' + totalItens + ' registros</div>';
@@ -2150,109 +2678,222 @@
                 }
             }
 
-            function atualizarVisualizacao() {
-                resultados.classList.toggle("is-table", modo === "table");
-                btnCards.classList.toggle("is-active", modo === "cards");
-                btnTable.classList.toggle("is-active", modo === "table");
-                btnCards.setAttribute("aria-pressed", modo === "cards" ? "true" : "false");
-                btnTable.setAttribute("aria-pressed", modo === "table" ? "true" : "false");
+            function atualizarVisualizacao(termosPreCalculados) {
+                const termos = termosPreCalculados || termosBusca();
+                const modoEfetivo = mqMobile.matches ? "cards" : modo;
+                resultados.classList.toggle("is-table", modoEfetivo === "table");
+                btnCards.classList.toggle("is-active", modoEfetivo === "cards");
+                btnTable.classList.toggle("is-active", modoEfetivo === "table");
+                btnCards.setAttribute("aria-pressed", modoEfetivo === "cards" ? "true" : "false");
+                btnTable.setAttribute("aria-pressed", modoEfetivo === "table" ? "true" : "false");
                 const pagina = paginaLista(resultadosAtuais);
-                if (modo === "cards") renderCards(pagina); else renderTable(pagina);
+                if (modoEfetivo === "cards") renderCards(pagina, termos);
+                else renderTable(pagina, termos);
                 renderPaginacao(resultadosAtuais.length);
             }
 
             function aplicarFiltros(resetPagina) {
                 if (resetPagina) paginaAtual = 1;
-                popularFiltrosDinamicos();
-                resultadosAtuais = filtrarDados();
+                const termos = termosBusca();
+                popularFiltrosDinamicos(termos);
+                resultadosAtuais = ordenarResultados(filtrarDados(null, null, termos));
                 atualizarContador(resultadosAtuais.length);
+                exportarCsv.disabled = resultadosAtuais.length === 0;
                 renderFiltrosAtivos();
                 atualizarGraficos(resultadosAtuais);
-                atualizarVisualizacao();
+                atualizarVisualizacao(termos);
             }
 
-            function renderTags(tags) {
+            function renderTags(tags, termos) {
                 if (!tags || !tags.length) return "";
-                return '<div class="leme-tags">' + tags.map(t => '<span class="leme-tag">' + highlightText(t) + '</span>').join("") + '</div>';
+                return '<div class="leme-tags">' + tags.map(t => '<span class="leme-tag">' + highlightText(t, termos) + '</span>').join("") + '</div>';
+            }
+
+            function renderSecaoDetalhesRecolhivel(item, termos) {
+                const blocos = [];
+
+                if (item.base_epistemologica && item.base_evidencias.length) {
+                    const itensEv = item.base_evidencias.map(ev => {
+                        const cab = [ev.secao, ev.pagina != null ? ("p. " + ev.pagina) : ""].filter(Boolean).join(" · ");
+                        return '<li class="leme-evidence-item">' +
+                            (cab ? '<b>' + escapeHtml(cab) + ':</b> ' : '') +
+                            '“' + highlightText(ev.trecho, termos) + '”' +
+                            (ev.referencia_correspondente ? ' <span class="leme-table-sub">(' + highlightText(ev.referencia_correspondente, termos) + ')</span>' : '') +
+                            '</li>';
+                    }).join("");
+                    blocos.push('<div><b>Evidências textuais da base epistemológica:</b><ul class="leme-evidence-list">' + itensEv + '</ul></div>');
+                }
+
+                const metaProd = [];
+                if (item.data_publicacao) {
+                    metaProd.push('<li><b>Data de publicação do produto:</b> ' + escapeHtml(formatarDataPublicacao(item.data_publicacao)) + '</li>');
+                }
+                if (item.proveniencia.fonte_tipo_escolhida) {
+                    metaProd.push('<li><b>Fonte da tipologia do produto:</b> ' + escapeHtml(traduzirSlug("fonte_tipo", item.proveniencia.fonte_tipo_escolhida)) + '</li>');
+                }
+                if (item.proveniencia.rotulo_original_declarado &&
+                    normalizarBusca(item.proveniencia.rotulo_original_declarado) !== normalizarBusca(item.produto_titulo)) {
+                    metaProd.push('<li><b>Rótulo original declarado:</b> ' + escapeHtml(item.proveniencia.rotulo_original_declarado) + '</li>');
+                }
+                if (item.proveniencia.colecao_educapes) {
+                    metaProd.push('<li><b>Coleção eduCAPES:</b> ' + escapeHtml(item.proveniencia.colecao_educapes) + '</li>');
+                }
+                if (item.proveniencia.dc_type_educapes.length) {
+                    metaProd.push('<li><b>dc.type (eduCAPES):</b> ' + escapeHtml(item.proveniencia.dc_type_educapes.join(", ")) + '</li>');
+                }
+                if (item.autores_colaboradores.length) {
+                    const colabs = item.autores_colaboradores
+                        .map(c => c.nome + (c.papel ? " (" + c.papel + ")" : ""))
+                        .join("; ");
+                    metaProd.push('<li><b>Autores e colaboradores (eduCAPES):</b> ' + escapeHtml(colabs) + '</li>');
+                }
+                if (item.identificadores.length) {
+                    const idsHtml = item.identificadores.map(idObj => {
+                        const rot = (idObj.esquema ? idObj.esquema + ": " : "") + idObj.valor;
+                        return idObj.url
+                            ? '<a href="' + escapeHtml(idObj.url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(rot) + '</a>'
+                            : escapeHtml(rot);
+                    }).join(" · ");
+                    metaProd.push('<li><b>Identificadores:</b> ' + idsHtml + '</li>');
+                }
+
+                if (metaProd.length) {
+                    blocos.push('<div><b>Proveniência e metadados do produto:</b><ul class="leme-meta-list">' + metaProd.join("") + '</ul></div>');
+                }
+
+                if (!blocos.length) return "";
+                return '<div class="leme-detail-item is-wide"><details class="leme-details">' +
+                    '<summary class="leme-details-summary">Evidências e metadados técnicos (v4)</summary>' +
+                    '<div class="leme-details-body">' + blocos.join("") + '</div>' +
+                    '</details></div>';
             }
 
             function abrirModal(item) {
                 if (!item) return;
-                const baseObj = item.base_epistemologica_obj || {};
-                const textoBase = item.base_epistemologica
-                    ? escapeHtml(item.base_epistemologica)
-                    : "Em curadoria / Não declarada explicitamente";
+                const termos = termosBusca();
+                ultimoFocoAntesModal = document.activeElement instanceof HTMLElement ? document.activeElement : null;
 
-                const justificativaHtml = item.base_epistemologica && ehValorPublico(baseObj.justificativa)
-                    ? '<div class="leme-evidence-box"><b>Fundamentação identificada:</b> ' + highlightText(baseObj.justificativa) + '</div>'
+                const textoBase = item.base_epistemologica
+                    ? highlightText(item.base_epistemologica, termos) +
+                      (item.base_curado_humano ? '<span class="leme-badge curated">Validado por curadoria</span>' : '')
+                    : '<span class="leme-badge pending">' + escapeHtml(item.base_status_label) + '</span>';
+
+                const justificativaHtml = item.base_epistemologica && item.base_justificativa
+                    ? '<div class="leme-evidence-box"><b>Fundamentação identificada:</b> ' + highlightText(item.base_justificativa, termos) + '</div>'
                     : "";
 
                 const autoresRefHtml = item.autores_referenciados.length
-                    ? item.autores_referenciados.map(a => '<span class="leme-tag">' + highlightText(a) + '</span>').join("")
+                    ? item.autores_referenciados.map(a => '<span class="leme-tag">' + highlightText(a, termos) + '</span>').join("")
                     : "Não extraídos";
 
                 const linksModal = [];
                 if (item.dissertacao_link) {
-                    linksModal.push('<a class="leme-link pdf" href="' + escapeHtml(item.dissertacao_link) + '" target="_blank" rel="noopener">Abrir Dissertação</a>');
+                    linksModal.push('<a class="leme-link pdf" href="' + escapeHtml(item.dissertacao_link) + '" target="_blank" rel="noopener noreferrer">Abrir Dissertação</a>');
                 }
                 if (item.produto_link) {
-                    linksModal.push('<a class="leme-link produto" href="' + escapeHtml(item.produto_link) + '" target="_blank" rel="noopener">Abrir Produto no eduCAPES</a>');
+                    linksModal.push('<a class="leme-link produto" href="' + escapeHtml(item.produto_link) + '" target="_blank" rel="noopener noreferrer">Abrir Produto no eduCAPES</a>');
                 }
 
-                modalTitle.innerHTML = highlightText(item.dissertacao_titulo || "Detalhes da defesa");
+                const tituloModal = escopo === "produtos"
+                    ? (item.produto_titulo || item.dissertacao_titulo || "Detalhes do produto")
+                    : (item.dissertacao_titulo || "Detalhes da defesa");
+
+                const blocoDissertacaoVinculada = escopo === "produtos"
+                    ? '<div class="leme-detail-item is-wide"><b>Dissertação vinculada:</b><br>' + highlightText(valorPublico(item.dissertacao_titulo), termos) + '</div>'
+                    : '';
+
+                modalTitle.innerHTML = highlightText(tituloModal, termos);
                 modalContent.innerHTML = '<div class="leme-detail-grid">' +
                     '<div class="leme-detail-item"><b>Identificador / Ano:</b><br>' + escapeHtml(item.id) + ' · ' + escapeHtml(valorPublico(item.ano)) + '</div>' +
-                    '<div class="leme-detail-item"><b>Instituição / Campus:</b><br>' + highlightText(item.instituicaoCampus) + '</div>' +
-                    '<div class="leme-detail-item"><b>Autor(a):</b><br>' + highlightText(item.autor) + '</div>' +
-                    '<div class="leme-detail-item"><b>Orientador(a):</b><br>' + highlightText(item.orientador) + (item.coorientadores.length ? '<br><small>Coorientação: ' + highlightText(item.coorientadores.join(", ")) + '</small>' : '') + '</div>' +
-                    '<div class="leme-detail-item is-wide"><b>Linha de pesquisa:</b><br>' + highlightText(valorPublico(item.linha_pesquisa_label)) + '</div>' +
-                    '<div class="leme-detail-item is-wide"><b>Macroprojeto:</b><br>' + highlightText(valorPublico(item.macroprojeto_label)) + '</div>' +
+                    '<div class="leme-detail-item"><b>Instituição / Campus:</b><br>' + highlightText(item.instituicaoCampus, termos) + '</div>' +
+                    '<div class="leme-detail-item"><b>Autor(a):</b><br>' + highlightText(valorPublico(item.autor), termos) + '</div>' +
+                    '<div class="leme-detail-item"><b>Orientador(a):</b><br>' + highlightText(valorPublico(item.orientador), termos) + (item.coorientadores.length ? '<br><small>Coorientação: ' + highlightText(item.coorientadores.join(", "), termos) + '</small>' : '') + '</div>' +
+                    blocoDissertacaoVinculada +
+                    '<div class="leme-detail-item is-wide"><b>Linha de pesquisa:</b><br>' + highlightText(valorPublico(item.linha_pesquisa_label), termos) + '</div>' +
+                    '<div class="leme-detail-item is-wide"><b>Macroprojeto:</b><br>' + highlightText(valorPublico(item.macroprojeto_label), termos) + '</div>' +
                     '<div class="leme-detail-item is-wide"><b>Base epistemológica:</b><br>' + textoBase + justificativaHtml + '</div>' +
                     '<div class="leme-detail-item is-wide"><b>Autores referenciados:</b><div class="leme-tags">' + autoresRefHtml + '</div></div>' +
-                    '<div class="leme-detail-item is-wide"><b>Produto educacional:</b><br>' + highlightText(valorPublico(item.produto_titulo)) + '</div>' +
-                    '<div class="leme-detail-item"><b>Tipo de produto (CAPES):</b><br>' + highlightText(valorPublico(item.tipo_produto_label)) + '</div>' +
-                    '<div class="leme-detail-item"><b>Nível de aplicação:</b><br>' + highlightText(valorPublico(item.nivel_aplicacao)) + '</div>' +
-                    '<div class="leme-detail-item is-wide"><b>Público-alvo:</b><br>' + highlightText(item.publico_alvo_labels.join(", ") || "Não informado") + '</div>' +
-                    '<div class="leme-detail-item is-wide"><b>Resumo da dissertação:</b><br>' + highlightText(item.dissertacao_resumo || "Resumo não disponível.") + renderTags(item.termos_unificados) + (linksModal.length ? '<div class="leme-actions">' + linksModal.join("") + '</div>' : '') + '</div>' +
+                    '<div class="leme-detail-item is-wide"><b>Produto educacional:</b><br>' + highlightText(valorPublico(item.produto_titulo), termos) + '</div>' +
+                    '<div class="leme-detail-item"><b>Tipo de produto (CAPES):</b><br>' + highlightText(valorPublico(item.tipo_produto_label), termos) + '</div>' +
+                    '<div class="leme-detail-item"><b>Nível de aplicação:</b><br>' + highlightText(valorPublico(item.nivel_aplicacao), termos) + '</div>' +
+                    '<div class="leme-detail-item is-wide"><b>Público-alvo:</b><br>' + highlightText(item.publico_alvo_labels.join(", ") || "Não informado", termos) + '</div>' +
+                    '<div class="leme-detail-item is-wide"><b>Resumo da dissertação:</b><br>' + highlightText(item.dissertacao_resumo || "Resumo não disponível.", termos) + renderTags(item.termos_unificados, termos) + (linksModal.length ? '<div class="leme-actions">' + linksModal.join("") + '</div>' : '') + '</div>' +
+                    renderSecaoDetalhesRecolhivel(item, termos) +
                     '</div>';
 
+                if (!modalBackdrop.classList.contains("is-open")) {
+                    bodyOverflowAnterior = document.body.style.overflow;
+                    document.body.style.overflow = "hidden";
+                }
                 modalBackdrop.classList.add("is-open");
                 modalBackdrop.setAttribute("aria-hidden", "false");
                 modalClose.focus();
             }
 
             function fecharModal() {
+                if (!modalBackdrop.classList.contains("is-open")) return;
                 modalBackdrop.classList.remove("is-open");
                 modalBackdrop.setAttribute("aria-hidden", "true");
+                document.body.style.overflow = bodyOverflowAnterior;
+                if (ultimoFocoAntesModal && ultimoFocoAntesModal.isConnected) {
+                    ultimoFocoAntesModal.focus();
+                }
+                ultimoFocoAntesModal = null;
+            }
+
+            function manterFocoNoModal(e) {
+                const focaveis = Array.from(modalEl.querySelectorAll(
+                    'a[href], button:not([disabled]), summary, input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+                )).filter(el => el.offsetParent !== null);
+                if (!focaveis.length) return;
+                const primeiro = focaveis[0];
+                const ultimo = focaveis[focaveis.length - 1];
+                if (e.shiftKey && (document.activeElement === primeiro || !modalEl.contains(document.activeElement))) {
+                    e.preventDefault();
+                    ultimo.focus();
+                } else if (!e.shiftKey && (document.activeElement === ultimo || !modalEl.contains(document.activeElement))) {
+                    e.preventDefault();
+                    primeiro.focus();
+                }
             }
 
             function csvEscape(valor) {
-                return '"' + String(valor || "").replace(/"/g, '""') + '"';
+                let texto = String(valor == null ? "" : valor).replace(/\r\n|\r|\n/g, " ");
+                if (/^[=+\-@\t\r]/.test(texto)) {
+                    texto = "'" + texto;
+                }
+                return '"' + texto.replace(/"/g, '""') + '"';
             }
 
             function baixarCsv() {
+                if (!resultadosAtuais.length) return;
                 let cols = [];
                 if (escopo === "dissertacoes") {
                     cols = [
                         ["id", "ID"], ["ano", "Ano"], ["dissertacao_titulo", "Título da Dissertação"],
-                        ["autor", "Autor"], ["orientador", "Orientador"], ["linha_pesquisa_label", "Linha de Pesquisa"],
-                        ["macroprojeto_label", "Macroprojeto"], ["base_epistemologica", "Base Epistemológica"],
+                        ["autor", "Autor"], ["orientador", "Orientador"], ["coorientadores_str", "Coorientadores"],
+                        ["instituicaoCampus", "Instituição / Campus"],
+                        ["linha_pesquisa_label", "Linha de Pesquisa"], ["macroprojeto_label", "Macroprojeto"],
+                        ["base_status_label", "Base Epistemológica"],
                         ["autores_ref_str", "Autores Referenciados"], ["dissertacao_link", "Link Dissertação"]
                     ];
                 } else if (escopo === "produtos") {
                     cols = [
                         ["id", "ID"], ["ano", "Ano"], ["produto_titulo", "Título do Produto Educacional"],
                         ["tipo_produto_label", "Tipo de Produto"], ["publico_alvo_str", "Público-Alvo"],
-                        ["nivel_aplicacao", "Nível de Aplicação"], ["autor", "Autor"], ["orientador", "Orientador"],
-                        ["produto_link", "Link eduCAPES"]
+                        ["nivel_aplicacao", "Nível de Aplicação"], ["data_publicacao", "Data de Publicação"],
+                        ["autor", "Autor"], ["orientador", "Orientador"], ["produto_link", "Link eduCAPES"]
                     ];
                 } else {
                     cols = [
                         ["id", "ID"], ["ano", "Ano"], ["dissertacao_titulo", "Dissertação"],
-                        ["produto_titulo", "Produto Educacional"], ["autor", "Autor"], ["orientador", "Orientador"],
+                        ["produto_titulo", "Produto Educacional"], ["autor", "Autor"],
+                        ["orientador", "Orientador"], ["coorientadores_str", "Coorientadores"],
+                        ["instituicaoCampus", "Instituição / Campus"],
                         ["linha_pesquisa_label", "Linha de Pesquisa"], ["macroprojeto_label", "Macroprojeto"],
-                        ["base_epistemologica", "Base Epistemológica"], ["tipo_produto_label", "Tipo de Produto"],
-                        ["publico_alvo_str", "Público-Alvo"], ["nivel_aplicacao", "Nível de Aplicação"],
+                        ["base_status_label", "Base Epistemológica"], ["autores_ref_str", "Autores Referenciados"],
+                        ["tipo_produto_label", "Tipo de Produto"], ["publico_alvo_str", "Público-Alvo"],
+                        ["nivel_aplicacao", "Nível de Aplicação"], ["data_publicacao", "Data de Publicação"],
                         ["dissertacao_link", "Link Dissertação"], ["produto_link", "Link eduCAPES"]
                     ];
                 }
@@ -2261,7 +2902,9 @@
                     resultadosAtuais.map(item => {
                         const serializado = {
                             ...item,
-                            base_epistemologica: item.base_epistemologica || "Em curadoria",
+                            autor: valorPublico(item.autor),
+                            orientador: valorPublico(item.orientador),
+                            coorientadores_str: item.coorientadores.join(", "),
                             autores_ref_str: item.autores_referenciados.join(", "),
                             publico_alvo_str: item.publico_alvo_labels.join(", ")
                         };
@@ -2280,9 +2923,36 @@
                 URL.revokeObjectURL(url);
             }
 
+            function definirControlesDesabilitados(disabled) {
+                busca.disabled = disabled;
+                limpar.disabled = disabled;
+                ordenarSelect.disabled = disabled;
+                btnCards.disabled = disabled;
+                btnTable.disabled = disabled;
+                botoesEscopo.forEach(b => { b.disabled = disabled; });
+                filtros.forEach(f => { f.disabled = disabled; });
+                exportarCsv.disabled = disabled || resultadosAtuais.length === 0;
+            }
+
+            function resolverUrlsDados() {
+                const urlProd = (raiz.dataset.jsonUrl || "").trim();
+                const urlLocal = (raiz.dataset.jsonUrlLocal || "").trim();
+                const host = (window.location && window.location.hostname || "").toLowerCase();
+                const proto = (window.location && window.location.protocol || "").toLowerCase();
+                const ehLocal = proto === "file:" || host === "localhost" || host === "127.0.0.1" || host === "[::1]" || host === "::1";
+                const candidatos = ehLocal ? [urlLocal, urlProd] : [urlProd];
+                return candidatos.filter((u, idx, arr) => Boolean(u) && arr.indexOf(u) === idx);
+            }
+
             raiz.addEventListener("click", function (e) {
+                const retryBtn = e.target.closest("[data-retry-load]");
+                if (retryBtn) {
+                    iniciarPainel();
+                    return;
+                }
+
                 const scopeBtn = e.target.closest(".leme-scope button[data-escopo]");
-                if (scopeBtn) {
+                if (scopeBtn && !scopeBtn.disabled) {
                     escopo = scopeBtn.dataset.escopo || "todas";
                     botoesEscopo.forEach(btn => {
                         const ativo = btn === scopeBtn;
@@ -2293,11 +2963,11 @@
                     return;
                 }
 
-                const authorBar = e.target.closest(".leme-bar-row[data-search-term]");
+                const authorBar = e.target.closest(".leme-bar-row[data-author-ref]");
                 if (authorBar) {
-                    busca.value = authorBar.dataset.searchTerm || "";
+                    const autor = authorBar.dataset.authorRef || "";
+                    autorReferenciadoAtivo = autorReferenciadoAtivo === autor ? "" : autor;
                     aplicarFiltros(true);
-                    raiz.querySelector("#leme-controles").scrollIntoView({ behavior: "smooth", block: "start" });
                     return;
                 }
 
@@ -2309,9 +2979,16 @@
                     return;
                 }
 
-                const detailBtn = e.target.closest(".leme-card-detail-btn[data-index]");
+                const detailBtn = e.target.closest("[data-id].leme-card-detail-btn, [data-id].leme-table-detail-btn");
                 if (detailBtn) {
-                    abrirModal(dados[Number(detailBtn.dataset.index)]);
+                    abrirModal(dadosPorId.get(detailBtn.dataset.id));
+                    return;
+                }
+
+                const clearAuthor = e.target.closest("[data-clear-author-ref]");
+                if (clearAuthor) {
+                    autorReferenciadoAtivo = "";
+                    aplicarFiltros(true);
                     return;
                 }
 
@@ -2332,16 +3009,23 @@
             });
 
             filtros.forEach(filtro => filtro.addEventListener("change", () => aplicarFiltros(true)));
+            ordenarSelect.addEventListener("change", () => {
+                ordenacao = ordenarSelect.value || "ano_desc";
+                paginaAtual = 1;
+                resultadosAtuais = ordenarResultados(resultadosAtuais);
+                atualizarVisualizacao();
+            });
             busca.addEventListener("input", () => {
                 clearTimeout(debounceTimer);
-                debounceTimer = setTimeout(() => aplicarFiltros(true), 160);
+                debounceTimer = setTimeout(() => aplicarFiltros(true), 200);
             });
             busca.addEventListener("keydown", e => {
                 if (e.key === "Escape") { busca.value = ""; aplicarFiltros(true); }
             });
             limpar.addEventListener("click", () => {
                 busca.value = "";
-                filtros.forEach(f => f.value = "");
+                autorReferenciadoAtivo = "";
+                filtros.forEach(f => { f.value = ""; });
                 aplicarFiltros(true);
             });
             btnCards.addEventListener("click", () => { modo = "cards"; atualizarVisualizacao(); });
@@ -2349,36 +3033,79 @@
             exportarCsv.addEventListener("click", baixarCsv);
             modalClose.addEventListener("click", fecharModal);
             modalBackdrop.addEventListener("click", e => { if (e.target === modalBackdrop) fecharModal(); });
+            if (typeof mqMobile.addEventListener === "function") {
+                mqMobile.addEventListener("change", () => { if (dados.length) atualizarVisualizacao(); });
+            } else if (typeof mqMobile.addListener === "function") {
+                mqMobile.addListener(() => { if (dados.length) atualizarVisualizacao(); });
+            }
             document.addEventListener("keydown", e => {
-                if (e.key === "Escape" && modalBackdrop.classList.contains("is-open")) fecharModal();
+                if (!raiz.isConnected || !modalBackdrop.classList.contains("is-open")) return;
+                if (e.key === "Escape") {
+                    e.preventDefault();
+                    fecharModal();
+                } else if (e.key === "Tab") {
+                    manterFocoNoModal(e);
+                }
             });
 
+            async function carregarPayloadJson(urls) {
+                let ultimoErro = null;
+                for (let i = 0; i < urls.length; i++) {
+                    try {
+                        const resposta = await fetch(urls[i], { cache: "no-cache" });
+                        if (!resposta.ok) throw new Error("Falha HTTP " + resposta.status + " em " + urls[i]);
+                        return await resposta.json();
+                    } catch (err) {
+                        ultimoErro = err;
+                    }
+                }
+                throw ultimoErro || new Error("Nenhuma URL de dados configurada.");
+            }
+
             async function iniciarPainel() {
+                definirControlesDesabilitados(true);
+                contador.textContent = "Carregando resultados...";
+                graficosNota.textContent = "Carregando indicadores...";
                 try {
-                    const urlDados = raiz.dataset.jsonUrl;
-                    if (!urlDados) throw new Error("A URL do JSON não foi configurada.");
+                    const urls = resolverUrlsDados();
+                    if (!urls.length) throw new Error("A URL do JSON não foi configurada.");
 
-                    const resposta = await fetch(urlDados, { cache: "no-cache" });
-                    if (!resposta.ok) throw new Error("Falha HTTP ao carregar dados: " + resposta.status);
-
-                    const payload = await resposta.json();
+                    const payload = await carregarPayloadJson(urls);
+                    if (!payload || typeof payload !== "object") {
+                        throw new Error("O JSON v4 retornou um formato inválido.");
+                    }
                     const defesas = Array.isArray(payload) ? payload : payload.defesas;
                     if (!Array.isArray(defesas)) throw new Error("O JSON v4 não contém a lista 'defesas'.");
 
+                    const totalDefesasNum = Number(payload.total_defesas);
+                    const totalProducoesNum = Number(payload.total_producoes);
                     metaRaiz = {
-                        total_defesas: Number(payload.total_defesas) || defesas.length,
-                        total_producoes: Number(payload.total_producoes) || (defesas.length * 2)
+                        total_defesas: Number.isFinite(totalDefesasNum) ? totalDefesasNum : defesas.length,
+                        total_producoes: Number.isFinite(totalProducoesNum) ? totalProducoesNum : (defesas.length * 2),
+                        gerado_em: typeof payload.gerado_em === "string" ? payload.gerado_em : ""
                     };
 
                     dados = defesas.map(normalizarRegistroV4);
+                    consolidarOrientadores(dados);
+                    dadosPorId = new Map(dados.map(item => [item.id, item]));
 
+                    definirControlesDesabilitados(false);
                     atualizarIndicadores();
                     aplicarFiltros(true);
                 } catch (erro) {
                     console.error("Falha ao carregar o painel ProfEPT v4:", erro);
+                    definirControlesDesabilitados(true);
+                    periodoEl.textContent = "Indisponível";
+                    geradoEmEl.textContent = "";
                     contador.textContent = "Não foi possível carregar os dados.";
-                    resultados.innerHTML = '<div class="leme-empty">O catálogo está temporariamente indisponível. Verifique a disponibilidade do arquivo JSON v4.</div>';
                     graficosNota.textContent = "Dados indisponíveis";
+                    insights.innerHTML = '<div class="leme-insight-card"><strong>Indisponível</strong><span>Não foi possível carregar os indicadores bibliométricos.</span></div>';
+                    [chartAnoEl, chartLinhaEl, chartMacroEl, chartOrientadorEl, chartBaseEl, chartAutoresRefEl, chartTipoEl, chartPublicoEl, chartNivelEl]
+                        .forEach(el => {
+                            if (el) el.innerHTML = '<div class="leme-empty-chart">Dados indisponíveis no momento.</div>';
+                        });
+                    paginacao.innerHTML = "";
+                    resultados.innerHTML = '<div class="leme-empty"><p>O catálogo está temporariamente indisponível. Verifique a disponibilidade do arquivo JSON v4.</p><button type="button" class="leme-retry-btn" data-retry-load="1">Tentar novamente</button></div>';
                 }
             }
 

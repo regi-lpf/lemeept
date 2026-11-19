@@ -1,7 +1,6 @@
+import argparse
 import json
 import logging
-import re
-import unicodedata
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -12,6 +11,13 @@ from pipeline.models_v4 import (
     ContratoDefesaV4,
     ContratoExtracaoDeterministicaV4,
     RespostaInterpretativaLLM,
+)
+from pipeline.normalizers import (
+    limpar_palavras_chave,
+    limpar_resumo_publico,
+    normalizar_base_epistemologica,
+    normalizar_nivel_aplicacao,
+    normalizar_texto_busca,
 )
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -31,32 +37,10 @@ MP_PARA_LP = {
 }
 
 
-def normalizar_texto_busca(texto: str) -> str:
-    if not texto:
-        return ""
-    nfkd = unicodedata.normalize("NFKD", texto.lower())
-    sem_acentos = "".join(c for c in nfkd if not unicodedata.combining(c))
-    limpo = re.sub(r"[^a-z0-9\s]", " ", sem_acentos)
-    return re.sub(r"\s+", " ", limpo).strip()
-
-
-def limpar_palavras_chave(tags: List[str]) -> List[str]:
-    vistas: Dict[str, str] = {}
-    for tag in tags:
-        if not isinstance(tag, str):
-            continue
-        limpa = re.sub(r"^[\s\-–—.;:]+|[\s\-–—.;:]+$", "", tag).strip()
-        if len(limpa) < 2:
-            continue
-        chave = normalizar_texto_busca(limpa)
-        if chave and chave not in vistas:
-            vistas[chave] = limpa[0].upper() + limpa[1:]
-    return list(vistas.values())
-
-
 def construir_indice_busca(registro: Dict[str, Any]) -> Dict[str, Any]:
     dis = registro.get("dissertacao", {})
     pro = registro.get("produto", {})
+    base = dis.get("base_epistemologica") or {}
 
     tags_unificadas = limpar_palavras_chave(
         (dis.get("palavras_chave") or []) + (pro.get("palavras_chave") or [])
@@ -73,6 +57,7 @@ def construir_indice_busca(registro: Dict[str, Any]) -> Dict[str, Any]:
         registro.get("macroprojeto", ""),
         dis.get("titulo", ""),
         dis.get("resumo", ""),
+        base.get("valor") or "",
         pro.get("titulo", ""),
         pro.get("tipo", ""),
         pro.get("nivel_aplicacao", ""),
@@ -100,6 +85,7 @@ def montar_prompt_enxuto(payload: ContratoExtracaoDeterministicaV4) -> str:
         "id": payload.id,
         "titulo_dissertacao": payload.dissertacao_deterministica.titulo,
         "macroprojeto_pre_detectado": payload.metadados_resolvidos.macroprojeto,
+        "linha_pesquisa_pre_detectada": payload.metadados_resolvidos.linha_pesquisa,
         "evidencias_produto": {
             "titulo_educapes": edu.titulo_produto,
             "colecao_educapes": edu.colecao_educapes,
@@ -138,14 +124,18 @@ def montar_registro_final(
     edu = payload.evidencias_educapes
 
     # 1. Vínculo rígido MP -> LP
-    mp_final = (
-        meta.macroprojeto
-        if meta.macroprojeto in MP_PARA_LP
-        else resp.macroprojeto
-    )
+    if meta.macroprojeto in MP_PARA_LP:
+        mp_final = meta.macroprojeto
+    else:
+        mp_final = resp.macroprojeto
+        if meta.linha_pesquisa in ("LP1", "LP2") and MP_PARA_LP[mp_final] != meta.linha_pesquisa:
+            logger.warning(
+                f"[{payload.id}] LLM escolheu {mp_final} ({MP_PARA_LP[mp_final]}) "
+                f"divergente da LP pré-detectada {meta.linha_pesquisa}."
+            )
     lp_final = MP_PARA_LP[mp_final]
 
-    # 2. Trava de confiança da Base Epistemológica
+    # 2. Normalização + Trava de confiança da Base Epistemológica
     base_llm = resp.base_epistemologica
     evidencias_validas = [
         {
@@ -158,27 +148,34 @@ def montar_registro_final(
         if ev.trecho_curto.strip() and isinstance(ev.pagina, int)
     ]
 
-    if base_llm.confianca != "alta" or not evidencias_validas or not base_llm.valor:
-        valor_final = None
-        candidato_final = base_llm.candidato or base_llm.valor
-        revisao_pendente = True
-        confianca_final = (
-            "media"
-            if (base_llm.confianca == "alta" and evidencias_validas)
-            else ("baixa" if base_llm.confianca == "alta" else base_llm.confianca)
-        )
-    else:
-        valor_final = base_llm.valor
+    valor_norm, eh_canonico = normalizar_base_epistemologica(base_llm.valor)
+    cand_norm, _ = normalizar_base_epistemologica(base_llm.candidato)
+
+    if base_llm.confianca == "alta" and evidencias_validas and valor_norm and eh_canonico:
+        valor_final = valor_norm
         candidato_final = None
         revisao_pendente = False
         confianca_final = "alta"
+    else:
+        valor_final = None
+        candidato_final = cand_norm or valor_norm
+        revisao_pendente = True
+        if base_llm.confianca == "alta":
+            confianca_final = "media" if evidencias_validas else "baixa"
+        else:
+            confianca_final = base_llm.confianca
 
     # 3. Produto Educacional e Proveniência
     tipo_final = edu.tipo_produto_regex or resp.produto_tipo
-    fonte_tipo = "dissertacao_ficha" if edu.tipo_produto_regex else "inferencia_llm"
+    if edu.tipo_produto_regex:
+        fonte_tipo = edu.fonte_tipo_regex or "dissertacao_ficha"
+    else:
+        fonte_tipo = "inferencia_llm"
 
     tags_dis = limpar_palavras_chave(dis_det.palavras_chave)
     tags_pro = limpar_palavras_chave(edu.palavras_chave_educapes or tags_dis)
+    resumo_limpo = limpar_resumo_publico(payload.recortes_textuais.resumo)
+    nivel_aplicacao_norm = normalizar_nivel_aplicacao(resp.produto_nivel_aplicacao)
 
     registro_dict: Dict[str, Any] = {
         "schema_version": "4.0",
@@ -194,7 +191,7 @@ def montar_registro_final(
         "dissertacao": {
             "titulo": dis_det.titulo,
             "link": dis_det.link,
-            "resumo": payload.recortes_textuais.resumo.strip(),
+            "resumo": resumo_limpo,
             "palavras_chave": tags_dis,
             "autores_referenciados": list(dis_det.autores_referenciados),
             "base_epistemologica": {
@@ -202,6 +199,7 @@ def montar_registro_final(
                 "candidato": candidato_final,
                 "confianca": confianca_final,
                 "revisao_pendente": revisao_pendente,
+                "curado_humano": False,
                 "justificativa": base_llm.justificativa.strip(),
                 "evidencias": evidencias_validas,
             },
@@ -211,14 +209,14 @@ def montar_registro_final(
             "tipo": tipo_final,
             "link": edu.handle_url,
             "publico_alvo": list(resp.produto_publico_alvo),
-            "nivel_aplicacao": resp.produto_nivel_aplicacao.strip(),
+            "nivel_aplicacao": nivel_aplicacao_norm,
             "palavras_chave": tags_pro,
             "data_publicacao": edu.data_publicacao,
             "autores_colaboradores": [a.model_dump() for a in edu.autores_colaboradores],
             "identificadores": [i.model_dump() for i in edu.identificadores],
             "proveniencia": {
                 "fonte_tipo_escolhida": fonte_tipo,
-                "rotulo_original_declarado": edu.titulo_produto,
+                "rotulo_original_declarado": edu.titulo_produto_bruto or edu.titulo_produto,
                 "colecao_educapes": edu.colecao_educapes,
                 "dc_type_educapes": list(edu.dc_type_educapes),
             },
@@ -234,16 +232,30 @@ def processar_payload(
     system_prompt: str,
     llm: LLMClient,
     sobrescrever: bool = False,
+    forcar_curados: bool = False,
+    records_dir: Path = RECORDS_DIR,
 ) -> Optional[ContratoDefesaV4]:
     with open(caminho_payload, "r", encoding="utf-8") as f:
         bruto = json.load(f)
 
     payload = ContratoExtracaoDeterministicaV4.model_validate(bruto)
-    caminho_saida = RECORDS_DIR / f"{payload.id}.json"
+    caminho_saida = records_dir / f"{payload.id}.json"
 
-    if caminho_saida.exists() and not sobrescrever:
-        logger.info(f"[{payload.id}] Já processado. Pulando.")
-        return None
+    if caminho_saida.exists():
+        if not sobrescrever:
+            logger.info(f"[{payload.id}] Já processado. Pulando.")
+            return None
+        if not forcar_curados:
+            try:
+                existente = json.loads(caminho_saida.read_text(encoding="utf-8"))
+                if existente.get("dissertacao", {}).get("base_epistemologica", {}).get("curado_humano"):
+                    logger.warning(
+                        f"[{payload.id}] Registro possui curadoria humana (curado_humano=true). "
+                        f"Pulando sobrescrita (use --forcar-curados para substituir)."
+                    )
+                    return None
+            except (json.JSONDecodeError, OSError):
+                pass
 
     user_message = montar_prompt_enxuto(payload)
 
@@ -256,7 +268,7 @@ def processar_payload(
     resp_llm = RespostaInterpretativaLLM.model_validate_json(conteudo)
     registro_validado = montar_registro_final(payload, resp_llm)
 
-    RECORDS_DIR.mkdir(parents=True, exist_ok=True)
+    records_dir.mkdir(parents=True, exist_ok=True)
     with open(caminho_saida, "w", encoding="utf-8") as f:
         f.write(registro_validado.model_dump_json(indent=2))
 
@@ -268,14 +280,154 @@ def processar_payload(
     return registro_validado
 
 
-def executar_etapa3(sobrescrever: bool = False, limite: Optional[int] = None):
-    if not SKILL_PATH.exists():
-        raise FileNotFoundError(f"Arquivo de instruções não encontrado: {SKILL_PATH}")
+def ressincronizar_registros_deterministico(
+    stage2_dir: Path = STAGE2_DIR,
+    records_dir: Path = RECORDS_DIR,
+    ids: Optional[List[str]] = None,
+) -> Dict[str, int]:
+    """
+    Atualiza campos determinísticos da Etapa 2 e normalizadores da Etapa 3 nos JSONs
+    existentes em data/records/ sem chamar a LLM e preservando curadorias humanas.
+    """
+    arquivos_stage2 = sorted(stage2_dir.glob("EPT-*.json"))
+    if ids:
+        alvo = set(ids)
+        arquivos_stage2 = [p for p in arquivos_stage2 if p.stem in alvo]
 
-    system_prompt = SKILL_PATH.read_text(encoding="utf-8")
+    stats = {
+        "sincronizados": 0,
+        "ignorados": 0,
+        "rebaixados_nao_canonicos": 0,
+        "erros": 0,
+    }
+
+    for caminho_s2 in arquivos_stage2:
+        cod = caminho_s2.stem
+        caminho_rec = records_dir / f"{cod}.json"
+        if not caminho_rec.exists():
+            stats["ignorados"] += 1
+            continue
+
+        try:
+            payload = ContratoExtracaoDeterministicaV4.model_validate_json(
+                caminho_s2.read_text(encoding="utf-8")
+            )
+            raw = json.loads(caminho_rec.read_text(encoding="utf-8"))
+
+            meta = payload.metadados_resolvidos
+            dis_det = payload.dissertacao_deterministica
+            edu = payload.evidencias_educapes
+
+            raw["ano"] = meta.ano
+            raw["autor"] = meta.autor
+            raw["orientador"] = meta.orientador
+            raw["coorientadores"] = list(meta.coorientadores)
+            raw["instituicao"] = meta.instituicao
+            raw["campus"] = meta.campus
+
+            if meta.macroprojeto in MP_PARA_LP:
+                raw["macroprojeto"] = meta.macroprojeto
+                raw["linha_pesquisa"] = MP_PARA_LP[meta.macroprojeto]
+            else:
+                if meta.linha_pesquisa in ("LP1", "LP2") and raw.get("linha_pesquisa") != meta.linha_pesquisa:
+                    logger.warning(
+                        f"[{cod}] Discrepância entre linha_pesquisa determinística ({meta.linha_pesquisa}) "
+                        f"e registro atual ({raw.get('macroprojeto')}/{raw.get('linha_pesquisa')}); "
+                        f"considere reprocessar via --id {cod} --sobrescrever."
+                    )
+                if raw.get("macroprojeto") in MP_PARA_LP:
+                    raw["linha_pesquisa"] = MP_PARA_LP[raw["macroprojeto"]]
+
+            dis = raw["dissertacao"]
+            dis["titulo"] = dis_det.titulo
+            dis["link"] = dis_det.link
+            dis["resumo"] = limpar_resumo_publico(payload.recortes_textuais.resumo)
+            tags_dis = limpar_palavras_chave(dis_det.palavras_chave)
+            dis["palavras_chave"] = tags_dis
+            dis["autores_referenciados"] = list(dis_det.autores_referenciados)
+
+            base = dis["base_epistemologica"]
+            base.setdefault("curado_humano", False)
+            if base.get("curado_humano"):
+                if base.get("valor"):
+                    val_norm, eh_canon = normalizar_base_epistemologica(base["valor"])
+                    if eh_canon and val_norm:
+                        base["valor"] = val_norm
+            else:
+                if base.get("valor"):
+                    val_norm, eh_canon = normalizar_base_epistemologica(base["valor"])
+                    if eh_canon and val_norm:
+                        base["valor"] = val_norm
+                    else:
+                        base["candidato"] = (
+                            normalizar_base_epistemologica(base.get("candidato"))[0] or val_norm
+                        )
+                        base["valor"] = None
+                        base["revisao_pendente"] = True
+                        if base.get("confianca") == "alta":
+                            base["confianca"] = "media" if base.get("evidencias") else "baixa"
+                        stats["rebaixados_nao_canonicos"] += 1
+                if base.get("candidato"):
+                    base["candidato"] = normalizar_base_epistemologica(base["candidato"])[0]
+
+            pro = raw["produto"]
+            pro["titulo"] = edu.titulo_produto or pro.get("titulo", "")
+            pro["link"] = edu.handle_url
+            pro["nivel_aplicacao"] = normalizar_nivel_aplicacao(pro.get("nivel_aplicacao"))
+            pro["palavras_chave"] = limpar_palavras_chave(edu.palavras_chave_educapes or tags_dis)
+            pro["data_publicacao"] = edu.data_publicacao
+            pro["autores_colaboradores"] = [a.model_dump() for a in edu.autores_colaboradores]
+            pro["identificadores"] = [i.model_dump() for i in edu.identificadores]
+
+            prov = pro.setdefault("proveniencia", {})
+            prov["rotulo_original_declarado"] = edu.titulo_produto_bruto or edu.titulo_produto
+            prov["colecao_educapes"] = edu.colecao_educapes
+            prov["dc_type_educapes"] = list(edu.dc_type_educapes)
+
+            if edu.tipo_produto_regex:
+                pro["tipo"] = edu.tipo_produto_regex
+                prov["fonte_tipo_escolhida"] = edu.fonte_tipo_regex or "dissertacao_ficha"
+            elif prov.get("fonte_tipo_escolhida") == "dissertacao_ficha":
+                logger.info(
+                    f"[{cod}] tipo_produto_regex ficou ausente após atualização das regras; "
+                    f"mantendo tipo atual '{pro.get('tipo')}' para revisão/inferência."
+                )
+
+            raw["indice_busca"] = construir_indice_busca(raw)
+            validado = ContratoDefesaV4.model_validate(raw)
+            caminho_rec.write_text(validado.model_dump_json(indent=2), encoding="utf-8")
+            stats["sincronizados"] += 1
+
+        except Exception as e:
+            logger.error(f"[{cod}] Erro na ressincronização determinística: {e}")
+            stats["erros"] += 1
+
+    logger.info(
+        f"Ressincronização concluída | Sincronizados={stats['sincronizados']} "
+        f"| Ignorados={stats['ignorados']} | Rebaixados={stats['rebaixados_nao_canonicos']} "
+        f"| Erros={stats['erros']}"
+    )
+    return stats
+
+
+def executar_etapa3(
+    sobrescrever: bool = False,
+    forcar_curados: bool = False,
+    limite: Optional[int] = None,
+    target_id: Optional[str] = None,
+    skill_path: Path = SKILL_PATH,
+    stage2_dir: Path = STAGE2_DIR,
+    records_dir: Path = RECORDS_DIR,
+):
+    if not skill_path.exists():
+        raise FileNotFoundError(f"Arquivo de instruções não encontrado: {skill_path}")
+
+    system_prompt = skill_path.read_text(encoding="utf-8")
     llm = LLMClient()
 
-    arquivos = sorted(STAGE2_DIR.glob("EPT-*.json"))
+    arquivos = sorted(stage2_dir.glob("EPT-*.json"))
+    if target_id:
+        arquivos = [a for a in arquivos if a.stem == target_id]
     if limite:
         arquivos = arquivos[:limite]
 
@@ -286,7 +438,14 @@ def executar_etapa3(sobrescrever: bool = False, limite: Optional[int] = None):
 
     for arq in arquivos:
         try:
-            res = processar_payload(arq, system_prompt, llm, sobrescrever=sobrescrever)
+            res = processar_payload(
+                arq,
+                system_prompt,
+                llm,
+                sobrescrever=sobrescrever,
+                forcar_curados=forcar_curados,
+                records_dir=records_dir,
+            )
             if res is not None:
                 sucessos += 1
         except (ValidationError, json.JSONDecodeError, Exception) as e:
@@ -298,5 +457,42 @@ def executar_etapa3(sobrescrever: bool = False, limite: Optional[int] = None):
         logger.error(f"  - {cod}: {erro}")
 
 
+def _build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        description="Etapa 3: Inferência semântica LLM, hidratação e ressincronização determinística."
+    )
+    parser.add_argument(
+        "--sobrescrever",
+        action="store_true",
+        default=False,
+        help="Reprocessa registros já existentes na LLM (preserva curados, salvo --forcar-curados).",
+    )
+    parser.add_argument(
+        "--forcar-curados",
+        action="store_true",
+        default=False,
+        help="Permite sobrescrever até registros com curado_humano=true (exige --sobrescrever).",
+    )
+    parser.add_argument("--limite", type=int, default=None, help="Limita quantidade de payloads.")
+    parser.add_argument("--id", dest="target_id", default=None, help="Processa apenas um ID (ex: EPT-0001).")
+    parser.add_argument(
+        "--sync-deterministico",
+        action="store_true",
+        default=False,
+        help="Ressincroniza campos da Etapa 2 e normalizadores nos registros atuais sem chamar a LLM.",
+    )
+    return parser
+
+
 if __name__ == "__main__":
-    executar_etapa3(sobrescrever=True, limite=None)
+    args = _build_parser().parse_args()
+    if args.sync_deterministico:
+        ids_filtro = [args.target_id] if args.target_id else None
+        ressincronizar_registros_deterministico(ids=ids_filtro)
+    else:
+        executar_etapa3(
+            sobrescrever=args.sobrescrever,
+            forcar_curados=args.forcar_curados,
+            limite=args.limite,
+            target_id=args.target_id,
+        )

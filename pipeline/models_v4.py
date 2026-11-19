@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import List, Literal, Optional
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -58,14 +58,14 @@ class ArquivosDefesaV4(BaseModel):
 
 class PreExtracaoItemV4(BaseModel):
     id: str = Field(..., pattern=r"^EPT-[0-9]{4}$")
-    coletado_em: str = Field(default_factory=lambda: datetime.now().astimezone().isoformat())
+    coletado_em: str = Field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
     fonte_profept: FonteProfeptV4
     arquivos: ArquivosDefesaV4
 
 
 class Stage1ManifestV4(BaseModel):
     schema_version: str = "4.0"
-    gerado_em: str = Field(default_factory=lambda: datetime.now().astimezone().isoformat())
+    gerado_em: str = Field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
     total_registros: int
     registros: List[PreExtracaoItemV4]
 
@@ -108,6 +108,7 @@ class DissertacaoDeterministica(BaseModel):
 class EvidenciasEduCAPES(BaseModel):
     handle_url: Optional[str] = None
     titulo_produto: Optional[str] = None
+    titulo_produto_bruto: Optional[str] = None
     data_publicacao: Optional[str] = None
     autores_colaboradores: List[AutorColaboradorV4] = Field(default_factory=list)
     identificadores: List[IdentificadorProdutoV4] = Field(default_factory=list)
@@ -115,6 +116,7 @@ class EvidenciasEduCAPES(BaseModel):
     dc_type_educapes: List[str] = Field(default_factory=list)
     palavras_chave_educapes: List[str] = Field(default_factory=list)
     tipo_produto_regex: Optional[str] = None
+    fonte_tipo_regex: Optional[FonteTipoProduto] = None
 
 
 class TrechoEpistemologico(BaseModel):
@@ -159,6 +161,7 @@ class BaseEpistemologicaV4(BaseModel):
     candidato: Optional[str] = None
     confianca: ConfiancaEpistemologica
     revisao_pendente: bool
+    curado_humano: bool = False
     justificativa: str
     evidencias: List[EvidenciaEpistemologicaV4] = Field(default_factory=list)
 
@@ -242,3 +245,12 @@ class RespostaInterpretativaLLM(BaseModel):
     produto_publico_alvo: List[PublicoAlvoSlug] = Field(default_factory=list)
     produto_nivel_aplicacao: str
     base_epistemologica: BaseEpistemologicaLLM
+
+
+class PainelEptV4Output(BaseModel):
+    """Envelope raiz do artefato compilado para publicação (dist/painel-ept-v4.json)."""
+    schema_version: str = "4.0"
+    gerado_em: str = Field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
+    total_defesas: int
+    total_producoes: int
+    defesas: List[ContratoDefesaV4]

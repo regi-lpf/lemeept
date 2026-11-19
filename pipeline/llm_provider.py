@@ -2,9 +2,10 @@ import copy
 import logging
 import os
 import time
-from dotenv import load_dotenv
-from typing import Any, Dict, Type
+from pathlib import Path
+from typing import Any, Dict, Optional, Type
 
+from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 from google.genai.errors import APIError as GeminiAPIError
@@ -12,8 +13,26 @@ from openai import APIError as OpenAIAPIError
 from openai import OpenAI, RateLimitError
 from pydantic import BaseModel
 
-load_dotenv(dotenv_path="../.env")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+load_dotenv(dotenv_path=PROJECT_ROOT / ".env")
 logger = logging.getLogger("llm_provider")
+
+
+def _parse_optional_int(valor: Optional[str]) -> Optional[int]:
+    if valor is None or not valor.strip():
+        return None
+    return int(valor.strip())
+
+
+def _parse_optional_bool(valor: Optional[str]) -> Optional[bool]:
+    if valor is None or not valor.strip():
+        return None
+    norm = valor.strip().lower()
+    if norm in ("false", "0", "no", "nao", "não"):
+        return False
+    if norm in ("true", "1", "yes", "sim"):
+        return True
+    raise ValueError(f"Valor booleano inválido em variável de ambiente: '{valor}'")
 
 
 def _resolver_refs_schema(schema: Dict[str, Any]) -> Dict[str, Any]:
@@ -80,50 +99,48 @@ class LLMClient:
     """
 
     OPENAI_COMPAT_PRESETS = {
-        "groq": {
-            "base_url": "https://api.groq.com/openai/v1",
-            "env_key": os.getenv("GROQ_API_KEY"),
-            "default_model": "llama-3.3-70b-versatile",
-            "default_delay": 35.0,  # Evita estourar TPM (tokens/minuto) com payloads de 15k
-        },
         "openrouter": {
             "base_url": "https://openrouter.ai/api/v1",
-            "env_key": os.getenv("OPENROUTER_API_KEY"),
+            "env_key": "OPENROUTER_API_KEY",
             "default_model": "meta-llama/llama-3.3-70b-instruct:free",
             "default_delay": 4.5,
         },
         "ollama": {
             "base_url": "http://localhost:11434/v1",
             "env_key": None,
-            "default_model": "qwen3.5:9b",
+            "default_model": "qwen2.5:7b-instruct",
             "default_delay": 0.0,
         },
     }
 
     def __init__(self):
-        self.provider_name = os.getenv("LLM_PROVIDER", "groq").lower()
+        self.provider_name = os.getenv("LLM_PROVIDER").strip().lower()
+        self.num_ctx = _parse_optional_int(os.getenv("LLM_NUM_CTX"))
+        self.think = _parse_optional_bool(os.getenv("LLM_THINK"))
 
         if self.provider_name == "gemini":
-            api_key = os.getenv("GEMINI_API_KEY")
+            api_key = os.getenv("GEMINI_API_KEY") or os.getenv("LLM_API_KEY")
             if not api_key:
-                raise EnvironmentError("GEMINI_API_KEY não definida.")
-            self.model = os.getenv("LLM_MODEL", "gemini-2.5-flash")
-            self.delay = float(os.getenv("LLM_DELAY", "4.2"))
+                raise EnvironmentError("Variável de ambiente GEMINI_API_KEY (ou LLM_API_KEY) não definida.")
+            self.model = os.getenv("LLM_MODEL") or "gemini-2.5-flash"
+            self.delay = float(os.getenv("LLM_DELAY") or "4.2")
             self.gemini_client = genai.Client(api_key=api_key)
             self.openai_client = None
 
         elif self.provider_name in self.OPENAI_COMPAT_PRESETS:
             preset = self.OPENAI_COMPAT_PRESETS[self.provider_name]
-            base_url = os.getenv("LLM_BASE_URL", preset["base_url"])
-            self.model = os.getenv("LLM_MODEL", preset["default_model"])
-            self.delay = float(os.getenv("LLM_DELAY", str(preset["default_delay"])))
+            base_url = os.getenv("LLM_BASE_URL") or preset["base_url"]
+            self.model = os.getenv("LLM_MODEL") or preset["default_model"]
+            self.delay = float(os.getenv("LLM_DELAY") or str(preset["default_delay"]))
 
             if preset["env_key"]:
                 api_key = os.getenv(preset["env_key"]) or os.getenv("LLM_API_KEY")
                 if not api_key:
-                    raise EnvironmentError(f"{preset['env_key']} não definida.")
+                    raise EnvironmentError(
+                        f"Variável de ambiente {preset['env_key']} (ou LLM_API_KEY) não definida."
+                    )
             else:
-                api_key = os.getenv("LLM_API_KEY", "ollama")
+                api_key = os.getenv("LLM_API_KEY") or "ollama"
 
             self.openai_client = OpenAI(base_url=base_url, api_key=api_key)
             self.gemini_client = None
@@ -145,12 +162,12 @@ class LLMClient:
         max_retries: int,
     ) -> str:
         schema_limpo = _limpar_schema_gemini(response_model.model_json_schema())
-        config = types.GenerateContentConfig(
-            system_instruction=system_prompt,
-            temperature=0.0,
-            response_mime_type="application/json",
-            response_schema=schema_limpo,
-        )
+        config_kwargs: Dict[str, Any] = {
+            "system_instruction": system_prompt,
+            "temperature": 0.0,
+            "response_mime_type": "application/json",
+            "response_schema": schema_limpo,
+        }
 
         for tentativa in range(1, max_retries + 1):
             try:
@@ -202,22 +219,35 @@ class LLMClient:
                 f"{schema_estrito}"
             )
 
+        extra_body: Dict[str, Any] = {}
+        if self.provider_name == "ollama":
+            if self.num_ctx is not None:
+                extra_body["options"] = {"num_ctx": self.num_ctx}
+            if self.think is not None:
+                extra_body["think"] = self.think
+
         for tentativa in range(1, max_retries + 1):
             try:
-                response = self.openai_client.chat.completions.create(
-                    model=self.model,
-                    temperature=0.0,
-                    messages=[
+                request_kwargs: Dict[str, Any] = {
+                    "model": self.model,
+                    "temperature": 0.0,
+                    "messages": [
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": prompt_final},
                     ],
-                    response_format=response_format,
-                )
+                    "response_format": response_format,
+                }
+                if extra_body:
+                    request_kwargs["extra_body"] = extra_body
+
+                response = self.openai_client.chat.completions.create(**request_kwargs)
                 if self.delay > 0:
                     time.sleep(self.delay)
                 return response.choices[0].message.content
 
             except RateLimitError as e:
+                if tentativa == max_retries:
+                    raise
                 espera = (2**tentativa) * 15
                 logger.warning(f"Rate limit ({self.provider_name}). Aguardando {espera}s... ({e})")
                 time.sleep(espera)

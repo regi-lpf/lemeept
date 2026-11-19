@@ -331,7 +331,3 @@ Com o artefato `dist/painel-ept-v4.json` validado pelo contrato `ContratoDefesaV
 3. **Separação de Escopo (Todas / Dissertações / Produtos) e Métricas:**
 * Separar visualmente e metricamente as **Dissertações** (resumo, orientador, autores referenciados, base epistemológica aprovada e link do PDF) dos **Produtos Educacionais** (tipo CAPES, nível de aplicação, público-alvo e link do eduCAPES).
 * Tratar registros com `base_epistemologica.valor == null` (`revisao_pendente: true`) de forma graciosa nos gráficos e nos detalhes do modal.
-
-
-
-```

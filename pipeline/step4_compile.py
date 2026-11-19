@@ -1,3 +1,4 @@
+import argparse
 import csv
 import json
 import logging
@@ -6,7 +7,8 @@ from enum import Enum
 from pathlib import Path
 from typing import List
 
-from pipeline.models_v4 import ContratoDefesaV4
+from pipeline.models_v4 import ContratoDefesaV4, PainelEptV4Output
+from pipeline.normalizers import normalizar_base_epistemologica
 from pipeline.step3_llm_extract import construir_indice_busca
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -24,16 +26,19 @@ class StatusCuradoria(str, Enum):
     MANTER_NULO = "MANTER_NULO"
 
 
-def aplicar_curadoria_csv() -> int:
+def aplicar_curadoria_csv(
+    records_dir: Path = RECORDS_DIR,
+    relatorio_revisao: Path = RELATORIO_REVISAO,
+) -> int:
     """
     Lê dist/revisao_epistemologica_pendente.csv (se existir) e aplica aos JSONs
     individuais em data/records/ as revisões marcadas como APROVADO ou MANTER_NULO.
     """
-    if not RELATORIO_REVISAO.exists():
+    if not relatorio_revisao.exists():
         return 0
 
     atualizados = 0
-    with open(RELATORIO_REVISAO, "r", encoding="utf-8-sig", newline="") as f:
+    with open(relatorio_revisao, "r", encoding="utf-8-sig", newline="") as f:
         reader = csv.DictReader(f, delimiter=";")
         for row in reader:
             cod = (row.get("id") or "").strip()
@@ -60,7 +65,7 @@ def aplicar_curadoria_csv() -> int:
             if status == StatusCuradoria.PENDENTE:
                 continue
 
-            caminho_record = RECORDS_DIR / f"{cod}.json"
+            caminho_record = records_dir / f"{cod}.json"
             if not caminho_record.exists():
                 logger.warning(f"[{cod}] Registro não encontrado em {caminho_record} durante importação do CSV.")
                 continue
@@ -74,6 +79,7 @@ def aplicar_curadoria_csv() -> int:
                 base["valor"] = None
                 base["candidato"] = None
                 base["revisao_pendente"] = False
+                base["curado_humano"] = True
                 if justificativa_editada:
                     base["justificativa"] = justificativa_editada
             elif status == StatusCuradoria.APROVADO:
@@ -82,10 +88,12 @@ def aplicar_curadoria_csv() -> int:
                     logger.warning(f"[{cod}] Marcado como {StatusCuradoria.APROVADO.value}, mas sem valor definido. Ignorando.")
                     continue
 
-                base["valor"] = valor_final
+                valor_norm, _ = normalizar_base_epistemologica(valor_final)
+                base["valor"] = valor_norm
                 base["candidato"] = None
                 base["confianca"] = "alta"
                 base["revisao_pendente"] = False
+                base["curado_humano"] = True
                 if justificativa_editada:
                     base["justificativa"] = justificativa_editada
 
@@ -102,18 +110,24 @@ def aplicar_curadoria_csv() -> int:
     return atualizados
 
 
-def compilar_pipeline_v4():
+def compilar_pipeline_v4(
+    records_dir: Path = RECORDS_DIR,
+    dist_dir: Path = DIST_DIR,
+) -> PainelEptV4Output:
+    arquivo_final = dist_dir / "painel-ept-v4.json"
+    relatorio_revisao = dist_dir / "revisao_epistemologica_pendente.csv"
+
     # 1. Incorpora revisões humanas antes de compilar
-    qtd_curados = aplicar_curadoria_csv()
+    qtd_curados = aplicar_curadoria_csv(records_dir=records_dir, relatorio_revisao=relatorio_revisao)
     if qtd_curados:
         logger.info(f"Total de registros atualizados a partir da planilha de curadoria: {qtd_curados}")
 
     # 2. Lê e valida todos os registros individuais
-    arquivos = sorted(RECORDS_DIR.glob("EPT-*.json"))
+    arquivos = sorted(records_dir.glob("EPT-*.json"))
     if not arquivos:
-        raise RuntimeError(f"Nenhum registro encontrado em {RECORDS_DIR}")
+        raise RuntimeError(f"Nenhum registro encontrado em {records_dir}")
 
-    defesas_validadas: List[dict] = []
+    registros_validados: List[ContratoDefesaV4] = []
     pendentes_revisao: List[dict] = []
 
     for arq in arquivos:
@@ -121,8 +135,7 @@ def compilar_pipeline_v4():
             raw = json.load(f)
 
         registro = ContratoDefesaV4.model_validate(raw)
-        dump = registro.model_dump(mode="json")
-        defesas_validadas.append(dump)
+        registros_validados.append(registro)
 
         base = registro.dissertacao.base_epistemologica
         if base.revisao_pendente:
@@ -146,35 +159,43 @@ def compilar_pipeline_v4():
                 }
             )
 
-    DIST_DIR.mkdir(parents=True, exist_ok=True)
+    dist_dir.mkdir(parents=True, exist_ok=True)
 
-    # 3. Gera artefato final
-    artefato_final = {
-        "schema_version": "4.0",
-        "gerado_em": datetime.now(timezone.utc).isoformat(),
-        "total_defesas": len(defesas_validadas),
-        "total_producoes": len(defesas_validadas) * 2,
-        "defesas": defesas_validadas,
-    }
+    # 3. Gera e valida artefato final via PainelEptV4Output
+    artefato_final = PainelEptV4Output(
+        schema_version="4.0",
+        gerado_em=datetime.now(timezone.utc).isoformat(),
+        total_defesas=len(registros_validados),
+        total_producoes=len(registros_validados) * 2,
+        defesas=registros_validados,
+    )
 
-    with open(ARQUIVO_FINAL, "w", encoding="utf-8") as f:
-        json.dump(artefato_final, f, ensure_ascii=False, indent=2)
+    arquivo_final.write_text(artefato_final.model_dump_json(indent=2), encoding="utf-8")
 
     # 4. Reescreve planilha apenas com o que ainda está pendente (ou remove se zerou)
     if pendentes_revisao:
-        with open(RELATORIO_REVISAO, "w", encoding="utf-8-sig", newline="") as f:
+        with open(relatorio_revisao, "w", encoding="utf-8-sig", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=list(pendentes_revisao[0].keys()), delimiter=";")
             writer.writeheader()
             writer.writerows(pendentes_revisao)
-    elif RELATORIO_REVISAO.exists():
-        RELATORIO_REVISAO.unlink()
+    elif relatorio_revisao.exists():
+        relatorio_revisao.unlink()
 
-    logger.info(f"Artefato final compilado: {ARQUIVO_FINAL} ({len(defesas_validadas)} defesas)")
+    logger.info(f"Artefato final compilado: {arquivo_final} ({len(registros_validados)} defesas)")
     logger.info(
-        f"Status epistemológico: {len(defesas_validadas) - len(pendentes_revisao)} definidos | "
-        f"{len(pendentes_revisao)} pendentes em {RELATORIO_REVISAO}"
+        f"Status epistemológico: {len(registros_validados) - len(pendentes_revisao)} definidos | "
+        f"{len(pendentes_revisao)} pendentes em {relatorio_revisao}"
     )
+    return artefato_final
+
+
+def _build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description="Etapa 4: Curadoria CSV e compilação do artefato final v4.")
+    parser.add_argument("--records-dir", type=Path, default=RECORDS_DIR)
+    parser.add_argument("--dist-dir", type=Path, default=DIST_DIR)
+    return parser
 
 
 if __name__ == "__main__":
-    compilar_pipeline_v4()
+    args = _build_parser().parse_args()
+    compilar_pipeline_v4(records_dir=args.records_dir, dist_dir=args.dist_dir)

@@ -1,76 +1,75 @@
-# PAINEL EPT / LEME
+# Painel Bibliométrico LEME / ProfEPT (v4)
 
-Este README documenta a atualização do painel estático. Para o fluxo de coleta e revisão em desenvolvimento, veja [GUIA_REVISAO.md](GUIA_REVISAO.md); para o contrato de dados e arquitetura, veja [CONTRATO_DADOS.md](CONTRATO_DADOS.md), [DIAGRAMAS.md](DIAGRAMAS.md) e [AGENTS.md](AGENTS.md). [GUIA_PIPELINE.md](GUIA_PIPELINE.md) descreve a transformação legada da planilha revisada para o painel.
+Repositório da pipeline de coleta, extração híbrida (determinística + LLM), curadoria epistemológica e visualização bibliométrica das defesas do Mestrado Profissional em Educação Profissional e Tecnológica (**ProfEPT — IFC Campus Blumenau**).
 
-Para consultar a API ProfEPT sob demanda e abrir a fila visual de lacunas/casos novos, veja [GUIA_REVISAO.md](GUIA_REVISAO.md) (`sincronizar_revisao.py`).
+## Documentação do Projeto
 
-A explicação completa para a continuidade do projeto está em [GUIA.md](GUIA.md).
-Os diagramas de arquitetura, dados e execução estão em [DIAGRAMAS.md](DIAGRAMAS.md).
+- **[DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md):** Referência técnica completa dos módulos, contratos Pydantic v2 (`pipeline/models_v4.py`), normalizadores, provedores LLM e operação da Pipeline v4.
+- **[AUDITORIA_E_REFATORACAO.md](AUDITORIA_E_REFATORACAO.md):** Auditoria técnica e registro da refatoração executada (`AUD-01` a `AUD-25`).
+- **[ARQUITETURA.md](ARQUITETURA.md):** Visão resumida da arquitetura em 4 etapas e regras de governança.
+- **[CONTRATO_DADOS.md](CONTRATO_DADOS.md):** Definições conceituais originais de domínio CAPES (Linhas, Macroprojetos, 9 Tipos de Produto e Públicos-Alvo).
+- **[RELATORIOS.md](RELATORIOS.md):** Histórico consolidado de desenvolvimento da v4.
 
-## Instalação
-
-É necessário ter Python 3.11+ e Tesseract OCR com o idioma português.
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-```
-
-## Uso
-
-Execute o primeiro script. Ele faz a coleta e chama o OCR automaticamente:
-
-```bash
-python 1_PegarDadosSiteIfc.py
-```
-
-Ao final, envie estes arquivos ao GPT:
+## Fluxo da Pipeline v4 (`pipeline/`)
 
 ```text
-dados/dados_finais_painel_ept.xlsx
-				-> lemeept/atualizar_dados.py
-				-> lemeept/pipeline/{normalizer,classifier,builder}.py
-				-> lemeept/painel-ept.json
-				-> lemeept/index.html faz fetch do JSON
+API WordPress ProfEPT + PDFs + eduCAPES
+  ├── Etapa 1 (step1_collect.py)       -> data/stage1_manifest.json + pdf/dissertacoes/
+  ├── Etapa 2 (step2_deterministic.py) -> data/stage2_payloads/EPT-*.json
+  ├── Etapa 3 (step3_llm_extract.py)   -> data/records/EPT-*.json
+  └── Etapa 4 (step4_compile.py)       <-> dist/revisao_epistemologica_pendente.csv
+                                       -> dist/painel-ept-v4.json -> index.html
 ```
 
-Salve a resposta como `dados/GPT/gpt.json` e conclua:
+## Ambiente e Execução
+
+O projeto utiliza Python `>=3.14` gerenciado com `uv`. Crie/sincronize o ambiente e copie `.env.dev` para `.env` caso vá executar chamadas LLM na Etapa 3:
 
 ```bash
-python 3_ArrumarPlanilha.py
-python 4_GerarPainelHtml.py
+uv sync
+cp .env.dev .env
 ```
 
-O resultado final fica em `painel/painel_leme_ept.html`.
-
-## Opções úteis
+Execute as etapas a partir da raiz do repositório:
 
 ```bash
-# usar os dados e PDFs já armazenados localmente
-python 1_PegarDadosSiteIfc.py --offline
+# Etapa 1: Coleta manifesto e baixa novos PDFs
+uv run python -m pipeline.step1_collect
 
-# pular somente a consulta complementar ao eduCAPES
-python 1_PegarDadosSiteIfc.py --sem-educapes
+# Etapa 2: Extração determinística (PDFs locais + cache/scraping eduCAPES)
+uv run python -m pipeline.step2_deterministic
 
-# normalmente o fallback é automático; esta opção força o modo compatível
-python 1_PegarDadosSiteIfc.py --inseguro-tls
+# Etapa 3 (modo incremental padrão — não sobrescreve registros já processados)
+uv run python -m pipeline.step3_llm_extract
 
-# testar coleta + OCR com poucos registros
-python 1_PegarDadosSiteIfc.py --limite 2
+# Etapa 3 (ressincronização determinística sem chamar LLM e preservando curadoria)
+uv run python -m pipeline.step3_llm_extract --sync-deterministico
+
+# Etapa 4: Importa revisões do CSV (se houver) e compila dist/painel-ept-v4.json
+uv run python -m pipeline.step4_compile
 ```
 
-Abra `http://localhost:8000/index.html`. Não use `file://`, porque o navegador bloqueia o carregamento local do JSON.
+Para filtrar um registro específico durante testes ou reprocessamento, utilize `--id EPT-0001` nas Etapas 2 e 3. Na Etapa 3, o reprocessamento via LLM de registros existentes requer `--sobrescrever` (e `--forcar-curados` para substituir registros já revisados por humanos).
 
-## Publicar no Elementor
+## Curadoria Humana
 
-Publique `lemeept/index.html` no widget HTML. Hospede `lemeept/painel-ept.json` em uma URL HTTPS que aceite GET anônimo, de preferência no mesmo domínio, e configure essa URL no atributo `data-json-url` do shell. Para outro domínio, o servidor do JSON precisa permitir CORS. Em atualizações seguintes, troque somente o JSON e invalide o cache/CDN se necessário.
+1. Abra [dist/revisao_epistemologica_pendente.csv](dist/revisao_epistemologica_pendente.csv) (UTF-8-SIG, delimitador `;`).
+2. Preencha `base_epistemologica_aprovada` com um termo canônico e ajuste `status_curadoria` para `APROVADO` ou `MANTER_NULO`.
+3. Execute `uv run python -m pipeline.step4_compile` para persistir as decisões em `data/records/` (marcando `curado_humano: true`) e regenerar `dist/painel-ept-v4.json`.
 
-## Verificações
+## Visualização Local do Frontend (`index.html`)
+
+Sirva a raiz do repositório via HTTP para evitar bloqueio CORS de `file://` ao carregar `./dist/painel-ept-v4.json` (selecionado automaticamente em `localhost` via `data-json-url-local`, mantendo `data-json-url` apontando para a publicação em produção):
 
 ```bash
-python -m py_compile util.py 1_PegarDadosSiteIfc.py 2_PdfParaJson.py 3_ArrumarPlanilha.py 4_GerarPainelHtml.py
-python -m unittest discover -s tests -v
+python3 -m http.server 8000
 ```
 
-O fluxo OCR/GPT legado permanece disponível nos scripts numerados da raiz para fallback; não é executado pelo sincronizador novo. Veja [DIAGRAMAS.md](DIAGRAMAS.md) para a separação entre os dois fluxos.
+Acesse `http://localhost:8000/index.html` (o widget legado v3 permanece preservado em [index-v3.html](index-v3.html)).
+
+## Testes Automatizados
+
+```bash
+uv run python -m py_compile pipeline/*.py tests/*.py
+uv run python -m unittest discover -s tests -v
+```
