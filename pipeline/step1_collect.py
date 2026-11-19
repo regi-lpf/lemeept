@@ -1,16 +1,14 @@
+import argparse
 import hashlib
 import json
 import re
-import ssl
 import unicodedata
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
-from urllib.parse import urlparse
+from typing import Dict, List, Optional, Sequence, Tuple, Union
 
 import requests
-from bs4 import BeautifulSoup
-
 import urllib3
+from bs4 import BeautifulSoup
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 SSL_VERIFY = False
@@ -61,45 +59,63 @@ def limpar_prefixo_orientador(texto: str) -> str:
     return formatar_nome_proprio(txt)
 
 
-def carregar_mapeamento_ids_existentes(caminho_legado: Optional[Path]) -> Tuple[Dict[str, str], int]:
+DEFAULT_REF_IDS: Tuple[Path, ...] = (
+    Path("data/stage1_manifest.json"),
+    Path("dist/painel-ept-v4.json"),
+    Path("painel-ept-v3.json"),
+)
+
+
+def carregar_mapeamento_ids_existentes(
+    caminho_legado: Union[Optional[Path], Sequence[Path]],
+) -> Tuple[Dict[str, str], int]:
     """
-    Lê um JSON anterior (v3 ou manifest v4) para manter os mesmos IDs (EPT-XXXX)
-    para autores/URLs já catalogados. Retorna (mapa_chave_para_id, maior_numero_id).
+    Lê JSONs anteriores (manifesto v4, dist v4 ou legado v3) em ordem de prioridade
+    para preservar os mesmos IDs (EPT-XXXX) de autores/URLs já catalogados.
+    Retorna (mapa_chave_para_id, maior_numero_id).
     """
     mapa: Dict[str, str] = {}
     max_num = 0
 
-    if not caminho_legado or not caminho_legado.exists():
+    if caminho_legado is None:
         return mapa, max_num
 
-    with open(caminho_legado, "r", encoding="utf-8") as f:
-        dados = json.load(f)
+    caminhos = [caminho_legado] if isinstance(caminho_legado, Path) else list(caminho_legado)
 
-    lista = dados.get("defesas") or dados.get("registros") or []
-    for item in lista:
-        cod = item.get("cod") or item.get("id") or ""
-        match = re.match(r"^EPT-(\d{4})$", cod)
-        if match:
+    for caminho in caminhos:
+        if not caminho or not caminho.exists():
+            continue
+
+        with open(caminho, "r", encoding="utf-8") as f:
+            dados = json.load(f)
+
+        lista = dados.get("defesas") or dados.get("registros") or []
+        for item in lista:
+            cod = item.get("cod") or item.get("id") or ""
+            match = re.match(r"^EPT-(\d{4})$", cod)
+            if not match:
+                continue
+
             num = int(match.group(1))
             if num > max_num:
                 max_num = num
 
-        # Mapeia tanto pela URL do PDF quanto pelo nome do autor
-        url = (
-            item.get("dissertacao", {}).get("link")
-            or item.get("fonte_profept", {}).get("url_dissertacao")
-            or ""
-        )
-        autor = (
-            item.get("autor", {}).get("nome")
-            if isinstance(item.get("autor"), dict)
-            else (item.get("autor") or item.get("fonte_profept", {}).get("autor_bruto") or "")
-        )
+            # Mapeia tanto pela URL do PDF quanto pelo nome do autor
+            url = (
+                item.get("dissertacao", {}).get("link")
+                or item.get("fonte_profept", {}).get("url_dissertacao")
+                or ""
+            )
+            autor = (
+                item.get("autor", {}).get("nome")
+                if isinstance(item.get("autor"), dict)
+                else (item.get("autor") or item.get("fonte_profept", {}).get("autor_bruto") or "")
+            )
 
-        if url:
-            mapa[url.strip()] = cod
-        if autor:
-            mapa[normalizar_chave_busca(autor)] = cod
+            if url:
+                mapa.setdefault(url.strip(), cod)
+            if autor:
+                mapa.setdefault(normalizar_chave_busca(autor), cod)
 
     return mapa, max_num
 
@@ -228,9 +244,9 @@ def baixar_pdf_com_validacao(url: str, destino: Path) -> Tuple[str, str]:
 
 
 def executar_etapa1(
-    caminho_manifesto_saida: Path,
-    diretorio_pdfs: Path,
-    caminho_referencia_ids: Optional[Path] = None,
+    caminho_manifesto_saida: Path = Path("data/stage1_manifest.json"),
+    diretorio_pdfs: Path = Path("pdf/dissertacoes"),
+    caminho_referencia_ids: Union[Optional[Path], Sequence[Path]] = DEFAULT_REF_IDS,
 ):
     print("1. Consultando API do WordPress ProfEPT...")
     resp = requests.get(WP_API_URL, headers=HEADERS, timeout=30, verify=SSL_VERIFY)
@@ -250,7 +266,7 @@ def executar_etapa1(
     # Processa em ordem reversa (mais antigas para mais recentes) para manter numeração cronológica
     for fonte in reversed(fontes):
         chave_autor = normalizar_chave_busca(fonte.autor_bruto)
-        cod_existente = mapa_ids.get(fonte.url_dissertacao) or mapa_ids.get(chave_autor)
+        cod_existente = mapa_ids.get(fonte.url_dissertacao.strip()) or mapa_ids.get(chave_autor)
 
         if cod_existente:
             cod_defesa = cod_existente
@@ -294,10 +310,36 @@ def executar_etapa1(
     print(f"Total catalogado: {len(registros_v4)} | PDFs prontos (OK): {ok_count}")
 
 
+def _build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description="Etapa 1: Coleta ProfEPT e download de PDFs.")
+    parser.add_argument(
+        "--saida",
+        type=Path,
+        default=Path("data/stage1_manifest.json"),
+        help="Caminho do manifesto JSON de saída.",
+    )
+    parser.add_argument(
+        "--pdfs-dir",
+        type=Path,
+        default=Path("pdf/dissertacoes"),
+        help="Diretório de destino dos PDFs baixados.",
+    )
+    parser.add_argument(
+        "--ref-ids",
+        type=Path,
+        action="append",
+        dest="ref_ids",
+        default=None,
+        help="Arquivo(s) de referência para preservação de IDs (pode repetir).",
+    )
+    return parser
+
+
 if __name__ == "__main__":
+    args = _build_parser().parse_args()
     executar_etapa1(
-        caminho_manifesto_saida=Path("data/stage1_manifest.json"),
-        diretorio_pdfs=Path("pdf/dissertacoes"),
-        caminho_referencia_ids=Path("painel-ept-v3.json"),  # Preserva os 110 IDs atuais
+        caminho_manifesto_saida=args.saida,
+        diretorio_pdfs=args.pdfs_dir,
+        caminho_referencia_ids=args.ref_ids if args.ref_ids is not None else DEFAULT_REF_IDS,
     )
 
