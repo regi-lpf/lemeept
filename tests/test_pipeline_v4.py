@@ -37,6 +37,7 @@ from pipeline.normalizers import (
     normalizar_base_epistemologica,
     normalizar_chave_busca,
     normalizar_espacos,
+    normalizar_formato_produto,
     normalizar_nivel_aplicacao,
     normalizar_nome_orientador,
     normalizar_texto_busca,
@@ -54,6 +55,7 @@ from pipeline.step1_collect import (
     limpar_prefixo_orientador,
 )
 from pipeline.step2_deterministic import (
+    classificar_formato_produto_com_fonte,
     classificar_produto_com_fonte,
     coletar_evidencias_educapes,
     detectar_macroprojeto_e_linha,
@@ -79,6 +81,8 @@ def _make_sample_payload(
     titulo_produto_bruto: str = "Sequência Didática: Ensino Integrado",
     tipo_produto_regex: str = "material_didatico_instrucional",
     fonte_tipo_regex: str = "dissertacao_ficha",
+    formato_produto_regex: str = "Sequência Didática",
+    fonte_formato_regex: str = "dissertacao_ficha",
     resumo: str = "[PÁG. 10]\nRESUMO\nTexto do resumo.\nPalavras-chave: EPT; Currículo.",
     autores_ref=None,
 ) -> ContratoExtracaoDeterministicaV4:
@@ -108,6 +112,8 @@ def _make_sample_payload(
             palavras_chave_educapes=["Educação Profissional"],
             tipo_produto_regex=tipo_produto_regex,
             fonte_tipo_regex=fonte_tipo_regex,
+            formato_produto_regex=formato_produto_regex,
+            fonte_formato_regex=fonte_formato_regex,
         ),
         recortes_textuais=RecortesTextuais(
             resumo=resumo,
@@ -402,6 +408,74 @@ class TestStep2Deterministic(unittest.TestCase):
         self.assertIsNone(t4)
         self.assertIsNone(f4)
 
+    def test_classificar_formato_produto_com_fonte(self):
+        # Resumo ancorado prevalece sobre prefixo ruidoso ou título enganoso
+        fmt1, src1 = classificar_formato_produto_com_fonte(
+            resumo_pdf="Construímos um produto educacional em formato de e-book sobre ensino de línguas.",
+            descricao_produto_pdf="",
+            titulo_produto_bruto="Vídeos – GAMIFYING ENGLISH",
+            titulo_capes=None,
+            dc_types=["outro"],
+        )
+        self.assertEqual((fmt1, src1), ("E-book / Livro Digital", "dissertacao_ficha"))
+
+        fmt2, src2 = classificar_formato_produto_com_fonte(
+            resumo_pdf="Foi desenvolvido um Produto Educacional no formato de folder, intitulado: Um guia para estudantes.",
+            descricao_produto_pdf="",
+            titulo_produto_bruto="NAVEGANDO: UM GUIA PARA ESTUDANTES",
+            titulo_capes=None,
+            dc_types=["texto"],
+        )
+        self.assertEqual((fmt2, src2), ("Folder / Panfleto", "dissertacao_ficha"))
+
+        # Ignora mídia citada como conteúdo e ferramenta externa ('software IRAMUTEQ')
+        fmt3, src3 = classificar_formato_produto_com_fonte(
+            resumo_pdf="Fotografias, vídeos e jornais possibilitaram a elaboração do produto educacional na forma de site.",
+            descricao_produto_pdf="",
+            titulo_produto_bruto="Texto – MEMORIAL",
+            titulo_capes=None,
+            dc_types=["vídeo", "texto"],
+        )
+        self.assertEqual((fmt3, src3), ("Site / Portal", "dissertacao_ficha"))
+
+        fmt4, src4 = classificar_formato_produto_com_fonte(
+            resumo_pdf="Desenvolveu-se um produto educacional para apoiar gestores.",
+            descricao_produto_pdf="O produto educacional foi elaborado a partir da utilização do software IRAMUTEQ.",
+            titulo_produto_bruto="Apresentação – IRAMUTEQ: MATERIAL DE APOIO",
+            titulo_capes=None,
+            dc_types=["apresentação"],
+        )
+        self.assertEqual((fmt4, src4), ("Palestra / Apresentação", "dissertacao_ficha"))
+
+        fmt5, src5 = classificar_formato_produto_com_fonte(
+            resumo_pdf="",
+            descricao_produto_pdf="",
+            titulo_produto_bruto="Curso – PRODUÇÃO AUDIOVISUAL",
+            titulo_capes=None,
+            dc_types=[],
+        )
+        self.assertEqual((fmt5, src5), ("Curso", "dissertacao_ficha"))
+
+        # Plural 'produtos educacionais' + sentença imediatamente seguinte
+        fmt6, src6 = classificar_formato_produto_com_fonte(
+            resumo_pdf="Entre os produtos educacionais, destaca-se a proposta. O recurso, em formato de narrativa audiovisual, sintetiza os achados.",
+            descricao_produto_pdf="",
+            titulo_produto_bruto="ORALITURA REFLEXIVA",
+            titulo_capes=None,
+            dc_types=["vídeo"],
+        )
+        self.assertEqual((fmt6, src6), ("Vídeo / Audiovisual", "dissertacao_ficha"))
+
+        # Fallback menos prioritário via dc_type do eduCAPES
+        fmt7, src7 = classificar_formato_produto_com_fonte(
+            resumo_pdf="Estudo concluído sem detalhamento de formato.",
+            descricao_produto_pdf="",
+            titulo_produto_bruto="TÍTULO NEUTRO",
+            titulo_capes=None,
+            dc_types=["livro digital"],
+        )
+        self.assertEqual((fmt7, src7), ("E-book / Livro Digital", "educapes_dc_type"))
+
     def test_coletar_evidencias_sem_handle_e_deduplicacao_educapes(self):
         with tempfile.TemporaryDirectory() as tmp:
             cache_dir = Path(tmp)
@@ -501,6 +575,10 @@ class TestNormalizersAndStep3(unittest.TestCase):
         self.assertEqual(normalizar_nivel_aplicacao("educacional_academico"), "Educação Profissional e Tecnológica")
         self.assertEqual(normalizar_nivel_aplicacao("ensino_superior"), "Educação Superior")
         self.assertEqual(normalizar_nivel_aplicacao("Curso Técnico Integrado ao Ensino Médio"), "Ensino Médio Integrado")
+        self.assertEqual(normalizar_formato_produto("livro_digital"), "E-book / Livro Digital")
+        self.assertIsNone(normalizar_formato_produto("formato_desconhecido"))
+        self.assertEqual(normalizar_formato_produto("ebook"), "E-book / Livro Digital")
+        self.assertEqual(normalizar_formato_produto("  Sequência Didática. "), "Sequência Didática")
         self.assertEqual(limpar_resumo_publico("[PÁG. 11]\nRESUMO \n\nConteúdo principal."), "Conteúdo principal.")
         self.assertEqual(normalizar_texto_busca("Educação Crítica!"), "educacao critica")
         self.assertEqual(limpar_palavras_chave([" ept ", "EPT", "a"]), ["Ept"])
@@ -704,7 +782,9 @@ class TestNormalizersAndStep3(unittest.TestCase):
             self.assertEqual(atualizado.dissertacao.base_epistemologica.valor, "Educação Libertadora / Freireana")
             self.assertTrue(atualizado.dissertacao.base_epistemologica.curado_humano)
             self.assertEqual(atualizado.produto.tipo, "material_didatico_instrucional")
+            self.assertEqual(atualizado.produto.formato, "Sequência Didática")
             self.assertEqual(atualizado.produto.nivel_aplicacao, "Educação Profissional e Tecnológica")
+            self.assertIn("sequencia didatica", atualizado.indice_busca.texto_busca_normalizado)
             self.assertIn("educacao libertadora freireana", atualizado.indice_busca.texto_busca_normalizado)
 
 
@@ -816,6 +896,8 @@ class TestCatalogsAndModularity(unittest.TestCase):
 
         self.assertEqual(catalogs.MP_PARA_LP["MP1"], "LP1")
         self.assertEqual(catalogs.MP_PARA_LP["MP6"], "LP2")
+        self.assertIn("E-book / Livro Digital", catalogs.FORMATOS_PRODUTO_CANONICOS)
+        self.assertEqual(catalogs.ALIASES_FORMATO_PRODUTO["hq"], "História em Quadrinhos (HQ)")
 
         raw_ref = json.loads((catalogs.RESOURCES_DIR / "referencias.json").read_text(encoding="utf-8"))
         self.assertEqual(
@@ -830,6 +912,7 @@ class TestCatalogsAndModularity(unittest.TestCase):
         # Garante que step2_deterministic reexporta os módulos especializados sem reescrita
         self.assertIs(extrair_autores_referencias, extrair_autores_ref_direto)
         self.assertIs(detectar_macroprojeto_e_linha, classifiers.detectar_macroprojeto_e_linha)
+        self.assertIs(classificar_formato_produto_com_fonte, classifiers.classificar_formato_produto_com_fonte)
         self.assertIs(extrair_coorientador, metadata.extrair_coorientador)
         self.assertIs(isolar_secoes_pdf, pdf_sections.isolar_secoes_pdf)
         self.assertIs(coletar_evidencias_educapes, educapes.coletar_evidencias_educapes)

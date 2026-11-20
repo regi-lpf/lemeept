@@ -1,7 +1,9 @@
 from pipeline.extractors.classifiers import (
+    classificar_formato_produto_com_fonte,
     classificar_produto_com_fonte,
     classificar_produto_regex,
     detectar_macroprojeto_e_linha,
+    extrair_contexto_produto,
     extrair_sentenca_produto,
 )
 from pipeline.extractors.educapes import coletar_evidencias_educapes
@@ -12,10 +14,12 @@ from pipeline.extractors.metadata import (
 from pipeline.extractors.pdf_sections import isolar_secoes_pdf, ler_paginas_pdf
 
 __all__ = [
+    "classificar_formato_produto_com_fonte",
     "classificar_produto_com_fonte",
     "classificar_produto_regex",
     "coletar_evidencias_educapes",
     "detectar_macroprojeto_e_linha",
+    "extrair_contexto_produto",
     "extrair_coorientador",
     "extrair_palavras_chave_resumo",
     "extrair_sentenca_produto",

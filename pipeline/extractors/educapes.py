@@ -8,6 +8,7 @@ import urllib3
 from bs4 import BeautifulSoup
 
 from pipeline.extractors.classifiers import (
+    classificar_formato_produto_com_fonte,
     classificar_produto_com_fonte,
     extrair_sentenca_produto,
 )
@@ -158,11 +159,20 @@ def coletar_evidencias_educapes(
             titulo_capes=None,
             dc_types=[],
         )
+        formato_regex, fonte_formato = classificar_formato_produto_com_fonte(
+            resumo_pdf=resumo_pdf,
+            descricao_produto_pdf=descricao_produto_pdf,
+            titulo_produto_bruto=titulo_produto_bruto,
+            titulo_capes=None,
+            dc_types=[],
+        )
         return EvidenciasEduCAPES(
             titulo_produto=titulo_produto_bruto,
             titulo_produto_bruto=titulo_produto_bruto,
             tipo_produto_regex=tipo_regex,
             fonte_tipo_regex=fonte_tipo,
+            formato_produto_regex=formato_regex,
+            fonte_formato_regex=fonte_formato,
         )
 
     base_url = handle_url.strip().rstrip("/")
@@ -197,6 +207,13 @@ def coletar_evidencias_educapes(
         titulo_capes=meta["titulo_capes"],
         dc_types=meta["dc_types"],
     )
+    formato_regex, fonte_formato = classificar_formato_produto_com_fonte(
+        resumo_pdf=resumo_pdf,
+        descricao_produto_pdf=descricao_produto_pdf,
+        titulo_produto_bruto=titulo_produto_bruto,
+        titulo_capes=meta["titulo_capes"],
+        dc_types=meta["dc_types"],
+    )
 
     return EvidenciasEduCAPES(
         handle_url=base_url,
@@ -210,4 +227,6 @@ def coletar_evidencias_educapes(
         palavras_chave_educapes=meta["keywords"],
         tipo_produto_regex=tipo_regex,
         fonte_tipo_regex=fonte_tipo,
+        formato_produto_regex=formato_regex,
+        fonte_formato_regex=fonte_formato,
     )

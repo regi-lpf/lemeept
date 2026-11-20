@@ -117,6 +117,8 @@ class EvidenciasEduCAPES(BaseModel):
     palavras_chave_educapes: List[str] = Field(default_factory=list)
     tipo_produto_regex: Optional[str] = None
     fonte_tipo_regex: Optional[FonteTipoProduto] = None
+    formato_produto_regex: Optional[str] = None
+    fonte_formato_regex: Optional[FonteTipoProduto] = None
 
 
 class TrechoEpistemologico(BaseModel):
@@ -185,6 +187,7 @@ class ProvenienciaProdutoV4(BaseModel):
 class ProdutoFinalV4(BaseModel):
     titulo: str
     tipo: TipoProdutoSlug
+    formato: Optional[str] = None
     link: Optional[str] = None
     publico_alvo: List[PublicoAlvoSlug] = Field(default_factory=list)
     nivel_aplicacao: str
@@ -242,6 +245,7 @@ class RespostaInterpretativaLLM(BaseModel):
     macroprojeto: MacroprojetoCode
     produto_titulo: str
     produto_tipo: TipoProdutoSlug
+    produto_formato: Optional[str] = None
     produto_publico_alvo: List[PublicoAlvoSlug] = Field(default_factory=list)
     produto_nivel_aplicacao: str
     base_epistemologica: BaseEpistemologicaLLM

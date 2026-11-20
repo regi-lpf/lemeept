@@ -1,3 +1,0 @@
-Sem LP e MP (12): ["EPT-0054", "EPT-0059", "EPT-0069", "EPT-0070", "EPT-0072", "EPT-0073", "EPT-0077", "EPT-0090", "EPT-0091", "EPT-0095", "EPT-0098", "EPT-0103"]
-Apenas sem LP (0): []
-Apenas sem MP (6): ["EPT-0030", "EPT-0096", "EPT-0097", "EPT-0099", "EPT-0100", "EPT-0108"]

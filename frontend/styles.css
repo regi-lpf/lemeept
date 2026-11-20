@@ -460,7 +460,15 @@
 }
 
 #leme-painel-ept .leme-charts-grid.is-scope-produtos {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+#leme-painel-ept .leme-charts-grid.is-scope-produtos>.leme-chart-card {
+    grid-column: span 2;
+}
+
+#leme-painel-ept .leme-charts-grid.is-scope-produtos>.leme-chart-card.is-produtos-half {
+    grid-column: span 3;
 }
 
 #leme-painel-ept .leme-charts-grid>* {
@@ -479,7 +487,9 @@
     flex-direction: column;
 }
 
-#leme-painel-ept .leme-chart-card.is-hidden {
+#leme-painel-ept .leme-chart-card.is-hidden,
+#leme-painel-ept .leme-chart-card-head.is-hidden,
+#leme-painel-ept .leme-chart-expand-btn.is-hidden {
     display: none;
 }
 
@@ -1918,6 +1928,11 @@
     #leme-painel-ept .leme-charts-grid,
     #leme-painel-ept .leme-charts-grid.is-scope-produtos {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #leme-painel-ept .leme-charts-grid.is-scope-produtos>.leme-chart-card,
+    #leme-painel-ept .leme-charts-grid.is-scope-produtos>.leme-chart-card.is-produtos-half {
+        grid-column: auto;
     }
 
     #leme-painel-ept .leme-insights {

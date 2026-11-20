@@ -10,7 +10,7 @@
   * `id` (`EPT-XXXX`), `ano`, `autor`, `orientador`, `coorientadores[]` *(contabilizados de forma estritamente separada do orientador principal)*, `instituicao`, `campus`
   * `linha_pesquisa` (`LP1` | `LP2`) e `macroprojeto` (`MP1`..`MP6`)
   * **`dissertacao`**: `titulo`, `link`, `resumo`, `palavras_chave[]`, `autores_referenciados[]`, `base_epistemologica` (`valor`, `candidato`, `confianca`, `revisao_pendente`, `curado_humano`, `justificativa`, `evidencias[]`)
-  * **`produto`**: `titulo`, `tipo` (1 dos 9 slugs CAPES), `link`, `publico_alvo[]` (1 ou mais dos 5 slugs), `nivel_aplicacao`, `palavras_chave[]`, `data_publicacao`, `autores_colaboradores[]`, `identificadores[]`, `proveniencia` (`fonte_tipo_escolhida`, `rotulo_original_declarado`, `colecao_educapes`, `dc_type_educapes[]`)
+  * **`produto`**: `titulo`, `tipo` (1 dos 9 slugs CAPES), `formato` *(formato específico normalizado em Title Case)*, `link`, `publico_alvo[]` (1 ou mais dos 5 slugs), `nivel_aplicacao`, `palavras_chave[]`, `data_publicacao`, `autores_colaboradores[]`, `identificadores[]`, `proveniencia` (`fonte_tipo_escolhida`, `rotulo_original_declarado`, `colecao_educapes`, `dc_type_educapes[]`)
   * **`indice_busca`**: `texto_busca_normalizado`, `termos_unificados[]`, `tem_produto_vinculado`, `tem_resumo`
 
 ---
@@ -28,9 +28,9 @@
 
 ---
 
-## 3. Tipos Oficiais de Produto Educacional CAPES (`TipoProdutoSlug`)
+## 3. Tipos Oficiais de Produto Educacional CAPES (`TipoProdutoSlug`) e Formato Específico (`produto.formato`)
 
-A todo produto educacional aplica-se **exatamente um** tipo principal canônico. Os metadados `dc.type` e coleção do eduCAPES são preservados separadamente em `proveniencia` como evidência complementar e não substituem automaticamente o formato específico declarado na dissertação/ficha do produto (`dissertacao_ficha` > `educapes_dc_type` > `inferencia_llm`).
+A todo produto educacional aplica-se **exatamente um** tipo principal canônico (`produto.tipo`) segundo a taxonomia CAPES e, de forma complementar, o formato específico normalizado em Title Case (`produto.formato`, ex.: *E-book / Livro Digital*, *Sequência Didática*, *Guia*, *Vídeo / Audiovisual*, *Site / Portal*). Os metadados `dc.type` e coleção do eduCAPES são preservados separadamente em `proveniencia` como evidência complementar e têm menor prioridade frente ao formato declarado no resumo/descrição da dissertação e no título ProfEPT (`dissertacao_ficha` > `educapes_dc_type` > `inferencia_llm`).
 
 1. **`material_didatico_instrucional` — Material Didático ou Instrucional:** Propostas de ensino (sugestões de experimentos, atividades práticas, sequências didáticas, propostas de intervenção, roteiros de oficinas); material textual (manuais didáticos, guias, textos de apoio, artigos em revistas técnicas/divulgação, livros didáticos/paradidáticos, histórias em quadrinhos, dicionários, folders educativos, portfólios formativos); mídias e ambientes educacionais (vídeos, podcasts, simulações, animações, videoaulas, experimentos virtuais, áudios, objetos e ambientes virtuais de aprendizagem como Moodle/AVA, páginas de internet, sites educativos, blogs, jogos educacionais de mesa ou virtuais e afins).
 2. **`curso_oficina` — Curso ou Oficina de Formação Profissional:** Cursos, oficinas e formações estruturadas com proposta pedagógica detalhada vinculada à APCN.
@@ -92,4 +92,4 @@ A todo produto educacional aplica-se **exatamente um** tipo principal canônico.
 ## 6. Metadados Determinísticos de Origem (Etapa 2)
 
 * **Da Dissertação (`RecortesTextuais` + `DissertacaoDeterministica`):** `capa` (instituição, campus, autor, título, orientador, ano), `ficha_catalografica`, `sumario`, `resumo`, `introducao`, `palavras_chave` (extraídas do resumo), `autores_referenciados` (nomes completos normalizados e reconciliados extraídos das referências ABNT) e `coorientadores` (extraídos das páginas preliminares e ficha catalográfica).
-* **Do Produto Educacional (`EvidenciasEduCAPES`):** `autores_colaboradores` (nomes e papéis `creator`/`contributor`), `identificadores` (esquema, valor e URL), `data_publicacao` (`YYYY-MM-DD`, `YYYY-MM` ou `YYYY`), `colecao_educapes`, `dc_type_educapes` e `palavras_chave_educapes`.
+* **Do Produto Educacional (`EvidenciasEduCAPES`):** `autores_colaboradores` (nomes e papéis `creator`/`contributor`), `identificadores` (esquema, valor e URL), `data_publicacao` (`YYYY-MM-DD`, `YYYY-MM` ou `YYYY`), `colecao_educapes`, `dc_type_educapes`, `palavras_chave_educapes` e detecção determinística de tipologia/formato (`tipo_produto_regex`, `formato_produto_regex`).

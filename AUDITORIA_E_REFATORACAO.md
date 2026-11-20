@@ -1,6 +1,6 @@
 # Auditoria Técnica e Registro de Refatorações — Pipeline & Frontend v4
 
-> **Escopo deste documento:** Registro rastreável de todas as auditorias e correções aplicadas na pipeline (`AUD-01` a `AUD-25`) e no frontend (`FE-01` a `FE-28`), além do backlog futuro. Para a especificação técnica atual dos módulos, consulte [DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md); para resultados empíricos do acervo, consulte [RELATORIOS.md](RELATORIOS.md).
+> **Escopo deste documento:** Registro rastreável de todas as auditorias e correções aplicadas na pipeline (`AUD-01` a `AUD-25`) e no frontend (`FE-01` a `FE-30`), além do backlog futuro. Para a especificação técnica atual dos módulos, consulte [DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md); para resultados empíricos do acervo, consulte [RELATORIOS.md](RELATORIOS.md).
 
 ---
 
@@ -54,22 +54,22 @@
 
 ---
 
-## 2. Auditoria e Refatoração do Frontend (`FE-01` a `FE-28`)
+## 2. Auditoria e Refatoração do Frontend (`FE-01` a `FE-30`)
 
-> **Arquitetura e Regra de Deploy no Elementor:** O código-fonte foi modularizado em [index.html](index.html) + [frontend/styles.css](frontend/styles.css) + [frontend/app.js](frontend/app.js) e compilado via [scripts/build_frontend.py](scripts/build_frontend.py) em [dist/widget-elementor.html](dist/widget-elementor.html). **No Elementor, cole o bundle exclusivamente no Widget HTML (`</>`)** — nunca no **Editor de Texto** (TinyMCE/`wpautop` injeta `<p>`/`<span>` e corrompe scripts).
+> **Arquitetura e Regra de Deploy no Elementor:** O código-fonte foi modularizado em [index.html](index.html) + [frontend/styles.css](frontend/styles.css) + [frontend/app.js](frontend/app.js) e compilado via [scripts/build_frontend.py](scripts/build_frontend.py) em [dist/widget-elementor.html](dist/widget-elementor.html), com publicação automatizada pela branch `main` via [.github/workflows/pages.yml](.github/workflows/pages.yml) e carregamento via [dist/loader-elementor.html](dist/loader-elementor.html). **No Elementor, cole o snippet/bundle exclusivamente no Widget HTML (`</>`)** — nunca no **Editor de Texto** (TinyMCE/`wpautop` injeta `<p>`/`<span>` e corrompe scripts).
 
 ### Resumo Comparativo do Frontend (Antes vs. Depois)
 
 | Aspecto do Frontend | Pré-Refatoração (`index-new.html` / `index.html` v3) | Pós-Refatoração ([index.html](index.html) + `frontend/` → [dist/widget-elementor.html](dist/widget-elementor.html)) |
 | :--- | :--- | :--- |
-| Estrutura e Empacotamento | Monólito de 4.732 linhas (209 KB) / `index.html` v3 + `index-new.html` | Fontes modulares (`index.html` 212L + `frontend/*`) + bundle validado `dist/widget-elementor.html` (`152,3 KB` / `32,6 KB` gzip, `0` linhas em branco, `FE-26..28`) |
+| Estrutura, Empacotamento e Deploy | Monólito de 4.732 linhas (209 KB) / `index.html` v3 + `index-new.html` | Fontes modulares (`index.html` 237L + `frontend/*`), bundle validado `dist/widget-elementor.html` (`158,2 KB` / `33,5 KB` gzip, `0` linhas em branco, `FE-26`) e deploy via GitHub Pages + `dist/loader-elementor.html` (`FE-29`) |
 | Sanitização HTML, URLs e CSV | `escapeHtml` *no-op* (`<`→`<`) com DOM-XSS e quebra em `EPT-0020`/`EPT-0029`; links/CSV sem proteção | `HTML_ESCAPE_MAP` com escapes Unicode; `sanitizarUrl` (`http:`/`https:` + `rel="noopener noreferrer"`); `csvEscape` anti-*Formula Injection* |
-| Orientadores, Coorientação e Campus | `30` entradas com `:`/`.`, coorientação sem métrica/filtro próprio, `"IFC – IFC Blumenau"` | Orientadores consolidados + **`coorientador` como 10ª faceta autônoma** (`FE-25`: toggle no card, subtexto em `.leme-stats`, aba/CSV no modal); `"IFC – Campus Blumenau"` |
-| Cobertura do Contrato v4 e Busca | Busca sem rótulos `I18N`/`publico_alvo`; omitia `gerado_em`, `evidencias`, `proveniencia`, `data_publicacao` | Busca enriquecida com `I18N`/`publico_alvo`/`instituicao`/coorientadores; `gerado_em` no topo; `<details>` recolhido no modal |
-| Dashboard BI, Rankings e Filtros (`FE-22..24`, `FE-27..28`) | Apenas barras de autores filtravam (por substring); cards altos sem `ellipsis`; filtro único e só Top 12/Top 10 | Grade compacta `3 × 3` com truncamento `ellipsis` nos selecionáveis, animações BI, índice de **10 facetas**, seleção múltipla (**OU** intra-faceta / **E** entre facetas) com base disjuntiva e chips no topo do dashboard, além de modal `"Ver todos"` com seleção contínua (`30`/pág.) e CSV |
+| Orientadores, Coorientação e Campus | `30` entradas com `:`/`.`, coorientação sem métrica/filtro próprio, `"IFC – IFC Blumenau"` | Orientadores consolidados + **`coorientador` como faceta autônoma** (`FE-25`: toggle no card, subtexto em `.leme-stats`, aba/CSV no modal); `"IFC – Campus Blumenau"` |
+| Cobertura do Contrato v4 e Busca | Busca sem rótulos `I18N`/`publico_alvo`; omitia `gerado_em`, `evidencias`, `proveniencia`, `data_publicacao` | Busca enriquecida com `I18N`/`publico_alvo`/`formato_produto`/`instituicao`/coorientadores; `gerado_em` no topo; `<details>` recolhido no modal |
+| Dashboard BI, Rankings e Filtros (`FE-22..24`, `FE-27..28`, `FE-30`) | Apenas barras de autores filtravam (por substring); cards altos sem `ellipsis`; filtro único e só Top 12/Top 10 | Grade compacta (`3 × 3` em `todas`, `2 + 3` em `produtos` com card dedicado `Formato do produto`), switch `Tipo (CAPES) \| Formato` em `todas`, `ellipsis` nos selecionáveis, animações BI, índice de **11 facetas**, seleção múltipla (**OU** intra-faceta / **E** entre facetas) com base disjuntiva e modal `"Ver todos"` para autores, orientadores/coorientadores e formatos (`30`/pág., seleção contínua e CSV) |
 | Ordenação, Responsividade e WCAG AA | Sem ordenação (2026 no fim); armadilha Tabela em `<= 720px`; contrastes `< 3.5:1` e `backdrop-filter` | Ordenação `ano_desc` padrão + seletor; Tabela com `"Ver detalhes"` e fallback `matchMedia`; contraste `>= 4.5:1`; sem `backdrop-filter` |
 
-### Quadro Consolidado dos Achados do Frontend (`FE-01` a `FE-28`)
+### Quadro Consolidado dos Achados do Frontend (`FE-01` a `FE-30`)
 
 | ID | Sev. | Status | Resumo da Solução Aplicada |
 | :--- | :--- | :--- | :--- |
@@ -101,6 +101,8 @@
 | `FE-26` | Melhoria | **Resolvido** | Modularização em [index.html](index.html) + [frontend/styles.css](frontend/styles.css) + [frontend/app.js](frontend/app.js) e build via [scripts/build_frontend.py](scripts/build_frontend.py) (`--check`) gerando [dist/widget-elementor.html](dist/widget-elementor.html) (`0` linhas em branco, `wpautop`-safe). |
 | `FE-27` | Melhoria | **Resolvido** | Truncamento com reticências (`text-overflow: ellipsis`) nos selecionáveis dos cards do dashboard (`.leme-bars` e `.leme-composition-legend` com `minmax(0, 1fr)`, `min-width: 0` nos rótulos e texto integral em `title` via `rotuloMacroCurto` e `renderHorizontalChart`). |
 | `FE-28` | Melhoria | **Resolvido** | Seleção múltipla de filtros no dashboard e no modal `"Ver todos"` (`filtrosSelecionados` com **OU** intra-faceta e **E** entre facetas, facetamento disjuntivo com `.is-filtered` WCAG AA, promoção de selecionados fora do Top N/`"Outras"`, barra compacta `#leme-graficos-filtros`, remoção unitária de chips, sincronização dos `<select>` via `MULTI_SELECT_SENTINEL` e seleção múltipla contínua sem fechamento automático no modal). |
+| `FE-29` | Melhoria | **Resolvido** | Automação de deploy estático via [.github/workflows/pages.yml](.github/workflows/pages.yml) (branch `main`, validando `--check` e publicando apenas artefatos públicos) + snippet enxuto [dist/loader-elementor.html](dist/loader-elementor.html) para colagem única no Widget HTML (`</>`) do Elementor. |
+| `FE-30` | Melhoria | **Resolvido** | Integração de `produto.formato` como 11ª faceta (`formato_produto`): card dedicado `Formato do produto` exclusivo em `produtos` (grade desktop `2 + 3` via `.is-scope-produtos`/`.is-produtos-half`), mini-switch `Tipo (CAPES) \| Formato` exclusivo em `todas`, botão `"Ver todos"` nas duas versões (Top 10 no card + modal `RANKING_CONFIGS.formato_produto` com busca, cortes, seleção múltipla contínua e CSV), além de badges, tabela, modal de detalhes, busca e `.CSV`. |
 
 ---
 
