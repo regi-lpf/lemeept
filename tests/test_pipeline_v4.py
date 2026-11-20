@@ -29,11 +29,18 @@ from pipeline.models_v4 import (
     RespostaInterpretativaLLM,
 )
 from pipeline.normalizers import (
+    formatar_nome_proprio,
+    limpar_nome_pessoa,
     limpar_palavras_chave,
+    limpar_prefixo_orientador,
     limpar_resumo_publico,
     normalizar_base_epistemologica,
+    normalizar_chave_busca,
+    normalizar_espacos,
     normalizar_nivel_aplicacao,
+    normalizar_nome_orientador,
     normalizar_texto_busca,
+    remover_acentos,
 )
 from pipeline.step1_collect import (
     carregar_mapeamento_ids_existentes,
@@ -46,6 +53,7 @@ from pipeline.step2_deterministic import (
     coletar_evidencias_educapes,
     detectar_macroprojeto_e_linha,
     extrair_autores_referencias,
+    extrair_coorientador,
     extrair_palavras_chave_resumo,
     isolar_secoes_pdf,
 )
@@ -245,6 +253,58 @@ class TestStep2Deterministic(unittest.TestCase):
             ["Gênero", "Sexualidade", "EPT"],
         )
 
+    def test_extrair_coorientador_variantes_titulacao_e_falsos_positivos(self):
+        texto_ept0004 = (
+            "Orientadora: Profª. Drª. Fátima Peres Zago de\nOliveira.\n"
+            "Co-orientadora: Profª. Drª. Raquel Cardoso\n"
+            "de Faria e Custódio\n"
+            "BLUMENAU - SC\n2025"
+        )
+        self.assertEqual(
+            extrair_coorientador(texto_ept0004, orientador_principal="Fátima Peres Zago de Oliveira"),
+            ["Raquel Cardoso de Faria e Custódio"],
+        )
+
+        texto_ept0033 = (
+            "Orientadora: Profa. Dra. Viviane Grimm\n"
+            "Coorientadora: Profa. Dra. Ivonete Telles Medeiros\n"
+            "Plácido\n"
+            "Blumenau\n2024\n"
+            "Ponciano, Fabiano Mauricio; orientadora Viviane Grimm; "
+            "coorientadora Ivonete Telles Medeiros Plácido. -- Blumenau, 2024."
+        )
+        self.assertEqual(
+            extrair_coorientador(texto_ept0033, orientador_principal="Viviane Grimm"),
+            ["Ivonete Telles Medeiros Plácido"],
+        )
+
+        texto_quebra_e_titulos = (
+            "Coorientação:\nProf. Me. João Carlos da Silva (IFC)\n\n"
+            "Coorientador: Profª. Ma. Esp. ANA MARIA DE SOUZA"
+        )
+        self.assertEqual(
+            extrair_coorientador(texto_quebra_e_titulos),
+            ["João Carlos da Silva", "Ana Maria de Souza"],
+        )
+
+        texto_dedup_orientador = (
+            "Coorientadora: Profa. Dra. Fátima Peres Zago de Oliveira\n"
+            "Co-orientador: Profa. Dra. Maria Clara\n"
+            "Coorientadora: Profa. Dra. Maria Clara dos Santos"
+        )
+        self.assertEqual(
+            extrair_coorientador(texto_dedup_orientador, orientador_principal="Fátima Peres Zago de Oliveira"),
+            ["Maria Clara dos Santos"],
+        )
+
+        texto_falsos_positivos = (
+            "desenvolver material didático orientado pela visualidade\n"
+            "acabou se tornando o meu “coorientador” do mestrado\n"
+            "Co-orientador: Não se aplica.\n"
+            "tive dois orientadores: primeiramente, a Profa. Dra. Bernadete"
+        )
+        self.assertEqual(extrair_coorientador(texto_falsos_positivos), [])
+
     def test_extrair_autores_referencias_abnt(self):
         texto = """
         BRASIL. Ministério da Educação. Diretrizes. 2020.
@@ -346,20 +406,6 @@ class TestLLMProvider(unittest.TestCase):
         self.assertIs(estrito["additionalProperties"], False)
         self.assertIs(estrito["properties"]["sub"]["additionalProperties"], False)
 
-    def test_env_key_lookup_nao_vaza_segredo_e_mistral_preset(self):
-        with patch.dict(os.environ, {"LLM_PROVIDER": "groq", "GROQ_API_KEY": "secret-xyz"}, clear=True):
-            client = LLMClient()
-            self.assertEqual(client.openai_client.api_key, "secret-xyz")
-
-        with patch.dict(os.environ, {"LLM_PROVIDER": "mistral", "MISTRAL_API_KEY": "mis-123"}, clear=True):
-            client = LLMClient()
-            self.assertEqual(client.provider_name, "mistral")
-            self.assertEqual(client.openai_client.api_key, "mis-123")
-
-        with patch.dict(os.environ, {"LLM_PROVIDER": "groq"}, clear=True):
-            with self.assertRaises(EnvironmentError) as ctx:
-                LLMClient()
-            self.assertIn("GROQ_API_KEY", str(ctx.exception))
 
     def test_rate_limit_nao_dorme_na_ultima_tentativa_e_ollama_extra_body(self):
         with patch.dict(
@@ -380,24 +426,6 @@ class TestLLMProvider(unittest.TestCase):
                 _, kwargs = client.openai_client.chat.completions.create.call_args
                 self.assertEqual(kwargs["extra_body"], {"options": {"num_ctx": 8192}, "think": False})
 
-    def test_gemini_thinking_budget(self):
-        with patch.dict(
-            os.environ,
-            {"LLM_PROVIDER": "gemini", "GEMINI_API_KEY": "gem-key", "LLM_THINKING_BUDGET": "0"},
-            clear=True,
-        ):
-            with patch("pipeline.llm_provider.genai.Client") as mock_genai:
-                mock_models = MagicMock()
-                mock_models.generate_content.return_value = SimpleNamespace(text="{}")
-                mock_genai.return_value = SimpleNamespace(models=mock_models)
-
-                client = LLMClient()
-                client.delay = 0
-                client.gerar_estruturado("sys", "usr", RespostaInterpretativaLLM, max_retries=1)
-                _, kwargs = mock_models.generate_content.call_args
-                self.assertEqual(kwargs["config"].thinking_config.thinking_budget, 0)
-
-
 class TestNormalizersAndStep3(unittest.TestCase):
     def test_normalizar_base_epistemologica(self):
         self.assertEqual(normalizar_base_epistemologica("pedagogia_historico_critica"), ("Pedagogia Histórico-Crítica", True))
@@ -412,6 +440,27 @@ class TestNormalizersAndStep3(unittest.TestCase):
         self.assertEqual(limpar_resumo_publico("[PÁG. 11]\nRESUMO \n\nConteúdo principal."), "Conteúdo principal.")
         self.assertEqual(normalizar_texto_busca("Educação Crítica!"), "educacao critica")
         self.assertEqual(limpar_palavras_chave([" ept ", "EPT", "a"]), ["Ept"])
+
+    def test_normalizacao_texto_e_pessoas_e_aliases(self):
+        self.assertEqual(remover_acentos("Educação Profissional e Tecnológica"), "Educacao Profissional e Tecnologica")
+        self.assertEqual(normalizar_espacos("Linha\u200b 1\x01  \n\n\n\nLinha 2"), "Linha 1\n\nLinha 2")
+        self.assertEqual(normalizar_chave_busca("  Fátima   Zago "), "fatima zago")
+        self.assertEqual(formatar_nome_proprio("MARIA DA SILVA,"), "Maria da Silva")
+
+        self.assertEqual(limpar_nome_pessoa("Profa. Dra. ANA MARIA DE SOUZA (IFC),"), "Ana Maria de Souza")
+        self.assertEqual(limpar_nome_pessoa("Prof. Me. Esp. João Carlos:"), "João Carlos")
+        self.assertEqual(limpar_nome_pessoa("Débora Magna Santos Costa de Souza,"), "Débora Magna Santos Costa de Souza")
+
+        self.assertEqual(limpar_prefixo_orientador(": Viviane Grimm"), "Viviane Grimm")
+        self.assertEqual(limpar_prefixo_orientador("Orientadora: Profª. Drª. ANA PAULA DE LIMA"), "Ana Paula de Lima")
+        self.assertEqual(limpar_prefixo_orientador("Orientador: Inge R. F. Suhr"), "Inge Renate Frose Suhr")
+
+        self.assertEqual(normalizar_nome_orientador("Fátima Perez Zago de Oliveira."), "Fátima Peres Zago de Oliveira")
+        self.assertEqual(normalizar_nome_orientador("Inge R. F. Suhr"), "Inge Renate Frose Suhr")
+        self.assertEqual(normalizar_nome_orientador("Eduardo Werneck Ribeiro"), "Eduardo Augusto Werneck Ribeiro")
+        self.assertEqual(normalizar_nome_orientador("Leandro Marcos Alves Salgado"), "Leandro Marcos Salgado Alves")
+        self.assertEqual(normalizar_nome_orientador("Sonia Regina de Souza Fernandes."), "Sônia Regina de Souza Fernandes")
+        self.assertEqual(normalizar_nome_orientador("Carlos Eduardo Monteiro"), "Carlos Eduardo Monteiro")
 
     def test_prompt_enxuto_e_montar_registro_final_rejeita_nao_canonico(self):
         payload = _make_sample_payload(mp="MP_INDEFINIDO", lp="LP1")

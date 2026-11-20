@@ -111,6 +111,12 @@ class LLMClient:
             "default_model": "qwen2.5:7b-instruct",
             "default_delay": 0.0,
         },
+        "llama": {
+            "base_url": "http://localhost:8080/v1",
+            "env_key": None,
+            "default_model": "qwen3:8b",
+            "default_delay": 0.0,
+        },
     }
 
     def __init__(self):
@@ -220,7 +226,7 @@ class LLMClient:
             )
 
         extra_body: Dict[str, Any] = {}
-        if self.provider_name == "ollama":
+        if self.provider_name == "ollama" or self.provider_name == "llama":
             if self.num_ctx is not None:
                 extra_body["options"] = {"num_ctx": self.num_ctx}
             if self.think is not None:

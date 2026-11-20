@@ -2,7 +2,6 @@ import argparse
 import json
 import re
 import time
-import unicodedata
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
@@ -20,10 +19,17 @@ from pipeline.models_v4 import (
     RecortesTextuais,
     TrechoEpistemologico,
 )
+from pipeline.normalizers import (
+    CONTROLE_INVISIVEL_RE,
+    PREPOSICOES_NOME,
+    limpar_nome_pessoa,
+    normalizar_chave_busca,
+    normalizar_espacos,
+    normalizar_nome_orientador,
+    remover_acentos,
+)
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
-_CONTROLE_INVISIVEL_RE = re.compile(r"[\u200b-\u200f\u202a-\u202e\ufeff\x00-\x08\x0b\x0c\x0e-\x1f]")
 
 # Stopwords institucionais ou ruídos comuns no início de linhas ABNT que não são autores humanos
 IGNORAR_ENTRADAS_REF = {
@@ -76,15 +82,6 @@ REGRAS_DC_TYPE_EDUCAPES: List[Tuple[str, str]] = [
     ("curso_oficina", r"\bcurso\b"),
     ("material_didatico_instrucional", r"\b(podcast|jogo)\b"),
 ]
-
-def normalizar_espacos(texto: str) -> str:
-    texto_limpo = _CONTROLE_INVISIVEL_RE.sub("", texto)
-    return re.sub(r"[ \t]+", " ", re.sub(r"\n{3,}", "\n\n", texto_limpo)).strip()
-
-
-def remover_acentos(texto: str) -> str:
-    nfkd = unicodedata.normalize("NFKD", texto)
-    return "".join(c for c in nfkd if not unicodedata.combining(c))
 
 def extrair_sentenca_produto(texto: str) -> str:
     if not texto:
@@ -192,16 +189,217 @@ def detectar_macroprojeto_e_linha(texto_completo_pdf: str) -> Tuple[str, str]:
 
     return "MP_INDEFINIDO", "LP_INDEFINIDA"
 
-def extrair_coorientador(texto_preliminar: str) -> List[str]:
-    padrao = re.compile(
-        r"Coorientador(?:a|\(a\))?\s*:\s*(?:Prof\.?\s*(?:Dr\.?|Me\.?|Ma\.?|Esp\.?)\s*)*([^\n\r]+)",
+_PLACEHOLDERS_COORIENTADOR = {
+    "nao se aplica",
+    "nao ha",
+    "nenhum",
+    "nenhuma",
+    "n a",
+    "na",
+    "sem coorientador",
+    "sem coorientadora",
+    "sem coorientacao",
+    "inexistente",
+    "a definir",
+    "nao informado",
+    "nao informada",
+}
+
+_STOPWORDS_CONTINUACAO_NOME = {
+    "blumenau",
+    "camboriu",
+    "concordia",
+    "ibirama",
+    "rio",
+    "sao",
+    "santa",
+    "catarina",
+    "brasil",
+    "instituto",
+    "federal",
+    "campus",
+    "programa",
+    "mestrado",
+    "dissertacao",
+    "orientador",
+    "orientadora",
+    "coorientador",
+    "coorientadora",
+    "coorientacao",
+    "linha",
+    "macroprojeto",
+    "area",
+    "banca",
+    "aprovada",
+    "ficha",
+    "cdd",
+    "cdu",
+    "profept",
+    "ifc",
+    "ifsc",
+}
+
+_STOPWORDS_PROSA_NOME = {
+    "pela",
+    "pelo",
+    "para",
+    "como",
+    "com",
+    "que",
+    "esta",
+    "este",
+    "mestrado",
+    "trabalho",
+    "pesquisa",
+    "dissertacao",
+    "projeto",
+    "visualidade",
+    "material",
+    "didatico",
+    "ensino",
+    "estudante",
+    "estudantes",
+    "curso",
+    "area",
+}
+
+
+def _eh_linha_continuacao_nome(linha: str, primeira_all_caps: bool) -> bool:
+    candidato = linha.strip().rstrip(".")
+    if not candidato:
+        return False
+    if re.search(r"[\d:;()\"'/\-–—]", candidato):
+        return False
+    if "." in candidato:
+        return False
+    tokens = candidato.split()
+    if not (1 <= len(tokens) <= 4):
+        return False
+
+    norm_linha = normalizar_chave_busca(candidato)
+    if norm_linha in _STOPWORDS_CONTINUACAO_NOME or norm_linha in _PLACEHOLDERS_COORIENTADOR:
+        return False
+
+    tem_nome_proprio = False
+    for tok in tokens:
+        tok_norm = normalizar_chave_busca(tok)
+        if tok_norm in _STOPWORDS_CONTINUACAO_NOME or tok_norm in _STOPWORDS_PROSA_NOME:
+            return False
+        if tok_norm in PREPOSICOES_NOME:
+            continue
+        if not tok[0].isupper():
+            return False
+        if len(tok) > 1 and tok == tok.upper() and not primeira_all_caps:
+            return False
+        tem_nome_proprio = True
+
+    return tem_nome_proprio
+
+
+def _eh_nome_pessoa_valido(nome: str) -> bool:
+    if not (4 <= len(nome) <= 90):
+        return False
+    if re.search(r"\d", nome):
+        return False
+
+    norm = normalizar_chave_busca(nome)
+    if norm in _PLACEHOLDERS_COORIENTADOR or any(p in norm for p in ("nao se aplica", "sem coorient")):
+        return False
+    if norm.startswith(("instituto federal", "campus ", "programa de ", "blumenau")):
+        return False
+
+    tokens = nome.split()
+    if not (2 <= len(tokens) <= 9):
+        return False
+
+    nomes_capitalizados = 0
+    for tok in tokens:
+        tok_norm = normalizar_chave_busca(tok)
+        if tok_norm in _STOPWORDS_PROSA_NOME:
+            return False
+        if tok_norm in PREPOSICOES_NOME:
+            continue
+        if not tok[0].isupper():
+            return False
+        nomes_capitalizados += 1
+
+    return nomes_capitalizados >= 2
+
+
+def _registrar_candidato_pessoa(
+    encontrados: List[str],
+    candidato: str,
+    orientador_norm: str,
+) -> None:
+    limpo = normalizar_nome_orientador(candidato)
+    if not _eh_nome_pessoa_valido(limpo):
+        return
+    cand_norm = normalizar_chave_busca(limpo)
+    if orientador_norm and cand_norm == orientador_norm:
+        return
+
+    for idx, existente in enumerate(encontrados):
+        ex_norm = normalizar_chave_busca(existente)
+        if cand_norm == ex_norm or ex_norm.startswith(cand_norm + " "):
+            return
+        if cand_norm.startswith(ex_norm + " "):
+            encontrados[idx] = limpo
+            return
+
+    encontrados.append(limpo)
+
+
+def extrair_coorientador(
+    texto_preliminar: str,
+    orientador_principal: Optional[str] = None,
+) -> List[str]:
+    texto = CONTROLE_INVISIVEL_RE.sub("", texto_preliminar or "")
+    if not texto:
+        return []
+
+    orient_limpo = normalizar_nome_orientador(orientador_principal or "")
+    orient_norm = normalizar_chave_busca(orient_limpo)
+    encontrados: List[str] = []
+
+    # 1. Rótulo explícito com dois-pontos (capa, folha de rosto, ficha com ':')
+    padrao_rotulo = re.compile(
+        r"(?:^|\n|;)\s*co[\-–—]?orienta(?:dor(?:a|\(a\))?|[çc][ãa]o)\s*:\s*([^\n\r]*)",
         flags=re.IGNORECASE,
     )
-    encontrados = []
-    for m in padrao.finditer(texto_preliminar):
-        nome = re.sub(r"\s*\(.*?\)", "", m.group(1)).strip(" .;-")
-        if 4 <= len(nome) <= 90 and nome not in encontrados:
-            encontrados.append(nome)
+    for m in padrao_rotulo.finditer(texto):
+        linha1 = m.group(1).strip()
+        pos_fim = m.end()
+
+        if not linha1:
+            resto = texto[pos_fim:]
+            m_prox = re.match(r"^\r?\n[ \t]*([^\n\r]+)", resto)
+            if m_prox:
+                linha1 = m_prox.group(1).strip()
+                pos_fim += m_prox.end()
+
+        if not linha1:
+            continue
+
+        capturado = linha1
+        if not linha1.endswith((".", ";")):
+            resto = texto[pos_fim:]
+            m_cont = re.match(r"^\r?\n(?![ \t]*\r?\n)[ \t]*([^\n\r]+)", resto)
+            if m_cont:
+                linha2 = m_cont.group(1).strip()
+                primeira_all_caps = linha1 == linha1.upper() and any(c.isalpha() for c in linha1)
+                if _eh_linha_continuacao_nome(linha2, primeira_all_caps):
+                    capturado = f"{linha1} {linha2}"
+
+        _registrar_candidato_pessoa(encontrados, capturado, orient_norm)
+
+    # 2. Ficha catalográfica ABNT sem dois-pontos (ex.: '; coorientadora Nome Sobrenome. -- Blumenau')
+    padrao_ficha = re.compile(
+        r";\s*(?i:co[\-–—]?orientador(?:a|\(a\))?)\s+([A-ZÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ].*?)(?=\.\s*--|\.|;|\n\s*\n|$)",
+        flags=re.DOTALL,
+    )
+    for m in padrao_ficha.finditer(texto):
+        _registrar_candidato_pessoa(encontrados, m.group(1), orient_norm)
+
     return encontrados
 
 
@@ -316,7 +514,7 @@ def isolar_secoes_pdf(paginas: List[Tuple[int, str]]) -> Tuple[RecortesTextuais,
     if not paginas:
         return RecortesTextuais(), ""
 
-    paginas = [(num_pag, _CONTROLE_INVISIVEL_RE.sub("", txt)) for num_pag, txt in paginas]
+    paginas = [(num_pag, CONTROLE_INVISIVEL_RE.sub("", txt)) for num_pag, txt in paginas]
 
     # 1. Pré-textuais (primeiras 18 páginas cobrem capa, folha de rosto, ficha, ata, resumo e sumário)
     pre_textuais = paginas[:18]
@@ -665,9 +863,15 @@ def executar_etapa2(
             texto_full_pdf = "\n".join(txt for _, txt in paginas)
             recortes, texto_integral_referencias = isolar_secoes_pdf(paginas)
 
-            bloco_preliminar = f"{recortes.capa}\n{recortes.ficha_catalografica}\n{recortes.resumo}"
+            paginas_prelim = "\n".join(txt for _, txt in paginas[:5])
+            bloco_coorientador = f"{paginas_prelim}\n{recortes.ficha_catalografica}".strip()
+            autor_limpo = limpar_nome_pessoa(fonte["autor_bruto"])
+            orientador_limpo = normalizar_nome_orientador(fonte.get("orientador_bruto"))
             mp, lp = detectar_macroprojeto_e_linha(texto_full_pdf)
-            coorientadores = extrair_coorientador(bloco_preliminar)
+            coorientadores = extrair_coorientador(
+                bloco_coorientador,
+                orientador_principal=orientador_limpo,
+            )
             kw_dissertacao = extrair_palavras_chave_resumo(recortes.resumo)
 
             titulo_bruto_prod = fonte.get("titulo_produto_bruto")
@@ -683,8 +887,8 @@ def executar_etapa2(
                 id=cod,
                 metadados_resolvidos=MetadadosResolvidos(
                     ano=int(fonte["ano"]),
-                    autor=fonte["autor_bruto"].strip(),
-                    orientador=(fonte.get("orientador_bruto") or "").strip(),
+                    autor=autor_limpo,
+                    orientador=orientador_limpo,
                     coorientadores=coorientadores,
                     instituicao="Instituto Federal Catarinense (IFC)",
                     campus=fonte.get("campus") or "Blumenau",

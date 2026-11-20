@@ -1,6 +1,6 @@
-# Auditoria Técnica, Discrepâncias e Backlog de Refatoração — Pipeline v4
+# Auditoria Técnica, Discrepâncias e Backlog de Refatoração — Pipeline & Frontend v4
 
-> **Status Atual:** **Refatoração Concluída (25/25 itens resolvidos).** Todas as fases do roteiro (`Fase 1` a `Fase 4`) foram implementadas em `pipeline/`, `pyproject.toml`, `.env.dev`, `tests/test_pipeline_v4.py` e documentação, e validadas offline nos 111 registros do acervo (`step2_deterministic` -> `step3_llm_extract --sync-deterministico` -> `step4_compile`).
+> **Status Atual:** **Pipeline (`AUD-01` a `AUD-25`) e Frontend (`FE-01` a `FE-24`) Concluídos.** As fases da pipeline foram implementadas e validadas nos registros do acervo; o frontend consolidado em [index.html](index.html) teve todas as 24 melhorias aplicadas e aprovadas em checagem estática.
 
 ---
 
@@ -92,3 +92,56 @@
 * **`AUD-23`:** Adicionada interface CLI `argparse` em `step1`–`step4`, criado `PainelEptV4Output` em [pipeline/models_v4.py](pipeline/models_v4.py), unificados timestamps em UTC e padronizado `campus="Blumenau"`.
 * **`AUD-24`:** Atualizados [DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md), [README.md](README.md), [ARQUITETURA.md](ARQUITETURA.md) e removida cerca ```` ``` ```` órfã em [RELATORIOS.md](RELATORIOS.md).
 * **`AUD-25`:** Criada suíte de testes unitários em [tests/test_pipeline_v4.py](tests/test_pipeline_v4.py) (19 casos cobrindo todos os módulos da pipeline v4).
+
+---
+
+## 4. Auditoria e Refatoração do Frontend (`FE-01` a `FE-24`)
+
+> **Consolidação:** O widget v4 em andamento (`index-new.html`) foi consolidado e refatorado diretamente em [index.html](index.html), preservando o widget legado v3 sem alterações em [index-v3.html](index-v3.html).
+
+### Resumo Comparativo (Antes vs. Depois)
+
+| Aspecto do Frontend | Pré-Refatoração (`index-new.html` / `index.html` v3) | Pós-Refatoração ([index.html](index.html) v4) |
+| :--- | :--- | :--- |
+| Estrutura de arquivos e URL JSON | `index.html` (v3) + `index-new.html` (`./dist/painel-ept-v4.json` relativo) | Consolidado em `index.html` (`data-json-url` produção + `data-json-url-local` em `localhost`); legado em `index-v3.html` |
+| Sanitização HTML (`escapeHtml`) e URLs | *No-op* (`<`→`<`, `"`→`"`) com DOM-XSS ativo e quebra em `EPT-0020`/`EPT-0029`; links sem checagem | `HTML_ESCAPE_MAP` com escapes Unicode; `sanitizarUrl` (`http:`/`https:` + `rel="noopener noreferrer"`); `csvEscape` anti-fórmula |
+| Orientadores e Instituição/Campus | `30` entradas com `:`/`.`, `": Juliene Marques Bogo"` no gráfico, `"IFC – IFC Blumenau"` | **21** orientadores canônicos consolidados (`orientadorChave`); `"Instituto Federal Catarinense (IFC) – Campus Blumenau"` |
+| Busca e Cobertura do Contrato v4 | Busca sem rótulos `I18N`/`publico_alvo`; omitia `gerado_em`, `evidencias`, `proveniencia`, `data_publicacao` | Busca enriquecida com `I18N`/`publico_alvo`/`instituicao`; `gerado_em` no topo; `<details>` recolhido no modal |
+| Interatividade do Dashboard e Layout BI | Apenas barras de `"Autores mais referenciados"` filtravam (por substring via `#leme-busca`); cards altos | Grade compacta `3 × 3` (`2 × 2` em `produtos`), animações BI via reconciliação DOM + índice facetado (`FE-23`) e *cross-filtering* nos **9 gráficos** + **3 cards categóricos** (`FE-22`) |
+| Exploração de Rankings Longos (`FE-24`) | Apenas Top 12 autores e Top 10 orientadores visíveis no card; sem busca, corte nem exportação do ranking | Botão `"Ver todos"` abre modal unificado (autores em `≥ 5` e orientadores em `Todos`) com busca por nome, cortes adaptáveis, ordenação, paginação (`30`/pág.), clique para filtrar e CSV do ranking |
+| Ordenação, Responsividade e WCAG AA | Sem ordenação (2026 no fim); armadilha Tabela em `<= 720px`; contrastes `< 3.5:1` e `backdrop-filter` | Ordenação `ano_desc` padrão + seletor; Tabela com `"Ver detalhes"` e fallback `matchMedia`; contraste `>= 4.5:1`; sem `backdrop-filter` |
+
+### Quadro Resumo dos Achados do Frontend (`FE-01` a `FE-24`)
+
+| ID | Severidade | Status | Resumo |
+| :--- | :--- | :--- | :--- |
+| `FE-01` | Crítico | **Resolvido** | Reescrita de `escapeHtml` com `HTML_ESCAPE_MAP` Unicode (`\u0026amp;`..`\u0026#39;`), corrigindo DOM-XSS e quebras de DOM em resumos/títulos. |
+| `FE-02` | Crítico | **Resolvido** | Adicionada `sanitizarUrl` (`http:`/`https:` apenas) e `rel="noopener noreferrer"` em todos os links de card, tabela e modal. |
+| `FE-03` | Alto | **Resolvido** | `limparNomePessoa` e `consolidarOrientadores` eliminaram pontuação residual (`:`/`.`) e unificaram KPI, gráfico e filtro em 21 chaves. |
+| `FE-04` | Alto | **Resolvido** | `texto_busca_normalizado` enriquecido com rótulos `I18N`, `publico_alvo`, `instituicao` e `campus`. |
+| `FE-05` | Alto | **Resolvido** | Exibição de `gerado_em`, 3 estados claros para `base_epistemologica`, nota de pendências no gráfico e `<details>` recolhido com `base_evidencias` e metadados eduCAPES. |
+| `FE-06` | Alto | **Resolvido** | Ordenação padrão `ano_desc` + seletor `#leme-ordenar` (`ano_desc`, `ano_asc`, `titulo_asc`, `autor_asc`). |
+| `FE-07` | Alto | **Resolvido** | `csvEscape` protege contra *Formula Injection* (`=`, `+`, `-`, `@`, `\t`, `\r`), botão desabilita com 0 resultados e colunas incluem `autores_referenciados`/`coorientadores`/`data_publicacao`. |
+| `FE-08` | Alto | **Resolvido** | Filtro de `"Autores mais referenciados"` migrado para estado dedicado + `<button type="button">` acessível por teclado (posteriormente unificado em `FE-22`). |
+| `FE-09` | Alto | **Resolvido** | Cores ajustadas (`#3b47e5`, `#1f7a49`, `#d62849`, `#b91c3a`, `#526075`) atingindo contraste `>= 4.5:1` (WCAG 2.1 AA). |
+| `FE-10` | Médio | **Resolvido** | `formatarInstituicaoCampus` remove redundância `"IFC – IFC Blumenau"` e remove textos de campus hardcoded. |
+| `FE-11` | Médio | **Resolvido** | `matchMedia("(max-width: 720px)")` garante fallback automático da Tabela para Cartões em telas pequenas. |
+| `FE-12` | Médio | **Resolvido** | Botão `"Ver detalhes"` na Tabela, colunas próprias no escopo `dissertacoes`, `title` nos códigos e título do modal adaptado em `produtos`. |
+| `FE-13` | Médio | **Resolvido** | *Focus trap* e restauração de foco no modal, bloqueio de scroll no `body`, `role="group"` e remoção de 10 `aria-live` excedentes. |
+| `FE-14` | Médio | **Resolvido** | Blindagem Elementor/WordPress (`data-leme-init`, `overflow: clip`, `z-index: 100000`, resets escopados em `#leme-painel-ept`, `mqMobile.addListener`). |
+| `FE-15` | Médio | **Resolvido** | `data-json-url` (produção) + `data-json-url-local` (local) e estado completo de erro com botão `"Tentar novamente"`. |
+| `FE-16` | Médio | **Resolvido** | Fallbacks `valorPublico` em autor/orientador vazios e filtro `Ano` ordenado em ordem decrescente (`2026..2020`). |
+| `FE-17` | Médio | **Resolvido** | Consolidação final em [index.html](index.html) preservando legado v3 intacto em [index-v3.html](index-v3.html). |
+| `FE-18` | Baixo | **Resolvido** | Remoção de classes CSS mortas, variáveis duplicadas, IDs não lidos e retenção desnecessária de `item.raw`. |
+| `FE-19` | Baixo | **Resolvido** | Padronização em `LF` com quebra final em EOF e `font-weight` padrão (`700`/`800`). |
+| `FE-20` | Baixo | **Resolvido** | Lookup O(1) por `Map(id)`, *fast-path* em `highlightText`, recorte `trechoResumoCard`, cache de referências DOM e ordenação sem recalcular gráficos. |
+| `FE-21` | Baixo | **Resolvido** | Validação defensiva do envelope JSON em `iniciarPainel` e remoção de `backdrop-filter` para fluidez de compositor. |
+| `FE-22` | Melhoria | **Resolvido** | Dashboard 100% interativo (`data-filter-campo` / `data-filter-valor` + `alternarFiltroInterativo`): clique/teclado em qualquer um dos **9 gráficos** ou **3 cards categóricos de destaque** alterna o filtro em sincronia bidirecional com os `<select>` e chips. |
+| `FE-23` | Melhoria | **Resolvido** | Dashboard compacto `3 × 3` fullscreen em `>= 1080px` (`2 × 2` em `produtos`), animações estilo BI via reconciliação de DOM (`dataset.barKey`, barras GPU `scaleX`) + modal/chips suaves e índice facetado em memória (`indiceFacetas` / `construirIndiceFacetas` / `intersecarSets`). |
+| `FE-24` | Melhoria | **Resolvido** | Modais expansíveis unificados (`abrirModalRanking` / `RANKING_CONFIGS`) acionados via `"Ver todos"` nos cards **Autores mais referenciados** (corte inicial adaptável `≥ 5`) e **Orientadores** (corte inicial `Todos`), com busca por nome (+ resgate em `Todos`), pills adaptáveis (`Todos`, `≥ 2`, `≥ 5`, `≥ 10`), ordenação (`Frequência` / `A–Z`), paginação simples (`rankingPorPagina = 30` via `data-ranking-pagina`, oculta automaticamente quando `<= 30`), clique para filtrar + fechamento automático e exportação `.CSV` do ranking (`baixarCsvRanking` com `csvEscape`). |
+
+* **Status de verificação:** Checagem estática automatizada em [index.html](index.html) **100% aprovada**.
+
+### Backlog Futuro (Fora do Escopo Atual)
+
+* **Otimização do Artefato JSON (`Opção C` — Etapa 4):** Minificar `dist/painel-ept-v4.json` e omitir `indice_busca.texto_busca_normalizado` do arquivo publicado (~34,8% do JSON compacto, reduzindo de `~1.171 KB` / `~241 KB` gzip para `~643 KB` / `~159 KB` gzip), reconstruindo o índice textual em ~3 ms no boot do frontend — além de eventual *split* entre catálogo leve e detalhes sob demanda caso o acervo supere ~400–500 defesas.

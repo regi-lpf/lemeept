@@ -5,7 +5,7 @@ Repositório da pipeline de coleta, extração híbrida (determinística + LLM),
 ## Documentação do Projeto
 
 - **[DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md):** Referência técnica completa dos módulos, contratos Pydantic v2 (`pipeline/models_v4.py`), normalizadores, provedores LLM e operação da Pipeline v4.
-- **[AUDITORIA_E_REFATORACAO.md](AUDITORIA_E_REFATORACAO.md):** Auditoria técnica e registro da refatoração executada (`AUD-01` a `AUD-25`).
+- **[AUDITORIA_E_REFATORACAO.md](AUDITORIA_E_REFATORACAO.md):** Auditoria técnica e registro das refatorações executadas (`AUD-01` a `AUD-25` na pipeline e `FE-01` a `FE-24` no frontend).
 - **[ARQUITETURA.md](ARQUITETURA.md):** Visão resumida da arquitetura em 4 etapas e regras de governança.
 - **[CONTRATO_DADOS.md](CONTRATO_DADOS.md):** Definições conceituais originais de domínio CAPES (Linhas, Macroprojetos, 9 Tipos de Produto e Públicos-Alvo).
 - **[RELATORIOS.md](RELATORIOS.md):** Histórico consolidado de desenvolvimento da v4.
@@ -66,6 +66,13 @@ python3 -m http.server 8000
 ```
 
 Acesse `http://localhost:8000/index.html` (o widget legado v3 permanece preservado em [index-v3.html](index-v3.html)).
+
+Recursos principais do widget v4 ([index.html](index.html)):
+- **Dashboard interativo compacto (*cross-filtering*) e índice facetado:** grade `3 × 3` compacta em tela cheia (`2 × 2` em *Produtos*), animações estilo BI por reconciliação de DOM e filtragem via índice facetado em memória; clique (ou acione via teclado) qualquer barra, coluna de ano, segmento de linha ou card de destaque para adicionar/remover filtros em sincronia com os seletores e chips ativos.
+- **Modais de ranking completo (`Ver todos`):** expanda os cards de *Autores mais referenciados* (iniciando no corte adaptável `≥ 5`) e *Orientadores* (iniciando em `Todos`) para pesquisar por nome, alternar cortes adaptáveis (`Todos`, `≥ 2`, `≥ 5`, `≥ 10`), ordenar (`Frequência` / `A–Z`), navegar com paginação (`30` itens/página), clicar para filtrar fechando o modal e exportar o ranking em `.CSV`.
+- **Escopos e ordenação:** alterne entre *Todas*, *Dissertações* e *Produtos Educacionais*, ordene por ano/título/autor e alterne entre Cartões e Tabela (com botão *Ver detalhes* e fallback responsivo automático abaixo de `720px`).
+- **Modal e metadados v4:** exibe `base_epistemologica` (distinguindo consolidadas vs. *Em curadoria*), autores referenciados e um bloco recolhível (`<details>`) com evidências textuais e proveniência/identificadores eduCAPES.
+- **Pronto para Elementor / WordPress:** fragmento `<section id="leme-painel-ept">` autocontido com CSS isolado, sanitização XSS/URL, exportação `.CSV` protegida contra *Formula Injection* e acessibilidade WCAG 2.1 AA.
 
 ## Testes Automatizados
 
