@@ -1,0 +1,238 @@
+{
+  "id": "EPT-0052",
+  "metadados_resolvidos": {
+    "ano": 2024,
+    "autor": "Claudenor Fávero",
+    "orientador": "Sara Nunes",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP3"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "A MUSICALIDADE NO TEATRO: PERSPECTIVAS SOBRE O APRENDIZADO DA AGÓGICA E DA DINÂMICA MUSICAL NO DESENVOLVIMENTO DA PERFORMANCE DOS ALUNOS DE TEATRO DO INSTITUTO FEDERAL DE SANTA CATARINA – CAMPUS JOINVILLE",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/07/Dissertacao-Claudenor-Favero.pdf",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Musicalidade",
+      "Teatro",
+      "Agógica",
+      "Dinâmica Musical"
+    ],
+    "autores_referenciados": [
+      "A. B. P. Cavalcante",
+      "A. C. Barbosa",
+      "A. C. M. Dias",
+      "A. D. S. Júnior",
+      "A. Favaretto",
+      "A. L. L. Magela",
+      "A. Severino",
+      "Antônio Carlos Gil",
+      "Antonio Gramsci",
+      "Arlete Cavalieri",
+      "C. Caregnato",
+      "D. A. Laranjeira",
+      "D. L. Lima Filho",
+      "Dante Henrique Moura",
+      "Dermeval Saviani",
+      "E. H. N. Borges",
+      "Ernani C. Maletta",
+      "F. C. M. Cintra",
+      "F. F. Couto",
+      "F. J. Rauen",
+      "G. Rôças",
+      "G. S. Martins",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "J. C. B. Tortella",
+      "J. C. Oliveira",
+      "Jacyan Castilho",
+      "L. A. Maffioletti",
+      "L. C. F. Silva",
+      "L. P. Horta",
+      "M. Borja",
+      "M. C. Caetano",
+      "M. Coelho",
+      "M. E. Oliveira",
+      "M. R. Silva",
+      "M. Ramos",
+      "Maria Ciavatta",
+      "O. P. Soares",
+      "P. G. C. Ferreira",
+      "Priscila de Souza Chisté Leite",
+      "R. Antunes",
+      "R. B. Cerveira",
+      "R. C. Bogdan",
+      "R. C. Figueiredo",
+      "R. C. Souza",
+      "R. D. D. Silveira",
+      "R. K. Gomes",
+      "Raquel Castro",
+      "S. Garcia",
+      "S. K. Biklen",
+      "S. M. G. Araújo",
+      "S. N. Rasslan",
+      "T. Ferreira",
+      "Tania Stoltz",
+      "V. A. Forner",
+      "V. B. Freire",
+      "W. S. Oliveira"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/748078",
+    "titulo_produto": "A MUSICALIDADE NO TEATRO: A AGÓGICA E A DINÂMICA MUSICAL NO PROCESSO DE FORMAÇÃO DO ATOR",
+    "titulo_produto_bruto": "A MUSICALIDADE NO TEATRO: A AGÓGICA E A DINÂMICA MUSICAL NO PROCESSO DE FORMAÇÃO DO ATOR",
+    "data_publicacao": "2023-12-01",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Fávero, Claudenor",
+        "papel": "creator"
+      },
+      {
+        "nome": "Nunes, Sara",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/748078",
+        "url": "https://educapes.capes.gov.br/handle/capes/748078"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "E-book A MUSICALIDADE NO TEATRO",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "livro digital"
+    ],
+    "palavras_chave_educapes": [
+      "Educação Profissional e Tecnológica.",
+      "Musicalidade",
+      "Teatro",
+      "Integração",
+      "Mestrado Profissional em Educação Profissional e Tecnológica",
+      "Dissertação"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "E-book / Livro Digital",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "Instituto Federal Catarinense\n Programa de Pós-graduação em Educação Profissional e Tecnológica\nCampus Blumenau\n\nCLAUDENOR FÁVERO\n\nA MUSICALIDADE NO TEATRO: PERSPECTIVAS SOBRE O APRENDIZADO DA\nAGÓGICA E DA DINÂMICA MUSICAL NO DESENVOLVIMENTO DA\nPERFORMANCE DOS ALUNOS DE TEATRO DO INSTITUTO FEDERAL DE\nSANTA CATARINA – CAMPUS JOINVILLE\n\nJoinville\n2024\n\nCLAUDENOR FÁVERO\n\nA MUSICALIDADE NO TEATRO: PERSPECTIVAS SOBRE O APRENDIZADO DA\nAGÓGICA E DA DINÂMICA MUSICAL NO DESENVOLVIMENTO DA\nPERFORMANCE DOS ALUNOS DE TEATRO DO INSTITUTO FEDERAL DE\nSANTA CATARINA – CAMPUS JOINVILLE\n\nDissertação de Conclusão de Mestrado,\nsubmetida ao Programa de Pós-graduação\nem Educação Profissional e Tecnológica,\ndo Instituto Federal Catarinense – Campus\nBlumenau para a obtenção do título de\nMestre em Educação\nProfissional e\nTecnológica.\n\nOrientadora: Profª. Sara Nunes, Doutora.\n\nJoinville\n2024",
+    "ficha_catalografica": "",
+    "sumario": "[PÁG. 17]\nSUMÁRIO\n\nAPRESENTAÇÃO ................................................................................................. 17\n1 INTRODUÇÃO ................................................................................................... 20\n2 REFERENCIAL TEÓRICO ................................................................................. 25\n2.1 AS RELAÇÕES ENTRE A ARTE, O TRABALHO, A ESCOLA E A\nSOCIEDADE ...................................................................................................... 25\n2.2 O TEATRO E OS DESAFIOS NA FORMAÇÃO DO ATOR ......................... 28\n2.3 A MUSICALIDADE COMO ELEMENTO ESSENCIAL NO TEATRO ........... 32\n2.4 O RITMO, A AGÓGICA E A DINÂMICA MUSICAL APLICADOS NO TEATRO\n ........................................................................................................................... 37\n2.5 A FORMAÇÃO INTEGRAL DO ESTUDANTE DE TEATRO DO IFSC –\nCAMPUS JOINVILLE ......................................................................................... 40\n3 METODOLOGIA ................................................................................................. 43\n4 ANÁLISE DOS RESULTADOS .......................................................................... 49\n4.1 ANÁLISE INICIAL......................................................................................... 49\n4.2 PARTICIPAÇÃO DOS ALUNOS .................................................................. 52\n4.3 PERSPECTIVAS SOBRE A OFICINA APLICADA ....................................... 59\n4.4 PRODUTO EDUCACIONAL ........................................................................ 62\n4.5 AVALIAÇÃO DO PRODUTO EDUCACIONAL ............................................. 64\n5 CONSIDERAÇÕES FINAIS ............................................................................... 70\n6 REFERÊNCIAS .................................................................................................. 73\nAPÊNDICE A – QUESTIONÁRIO Nº 01 (para professores) .................................. 80\nAPÊNDICE B – QUESTIONÁRIO Nº 02 (para alunos) .......................................... 83\nAPÊNDICE C – QUESTIONÁRIO Nº 03 (pós oficina) ........................................... 88\nAPÊNDICE D – PRODUTO EDUCACIONAL (e-book – apresentação) ................ 92\nAPÊNDICE E – QUESTIONÁRIO Nº 04 ................................................................ 97\nAPÊNDICE F – TALE .......................................................................................... 100\nAPÊNDICE G – TCLE ......................................................................................... 103\nANEXO A – PARECER CONSUBSTANCIADO .................................................. 106\n17\n\nAPRESENTAÇÃO\n\nNeste trabalho, buscou-se pela aproximação de duas importantes linguagens\nda Arte, o teatro e a música. Com a união destas linguagens artísticas, levou-se aos\nalunos de teatro do IFSC – Campus Joinville, meios para se explorar alguns elementos\nmusicais nas aulas de ",
+    "resumo": "[PÁG. 10]\nRESUMO\n\nA dissertação a seguir é acerca da musicalidade no teatro e sobre o uso da agógica e\nda dinâmica musical na formação e no desenvolvimento dos alunos do Curso Técnico\nConcomitante em Teatro e dos alunos de teatro do Ensino Médio Integrado dos\nCursos Técnico em Eletroeletrônica e Técnico em Mecânica do Instituto Federal de\nSanta Catarina (IFSC) – Campus Joinville. Esta pesquisa foi aprovada pelo Comitê de\nÉtica em Pesquisa com Seres Humanos do Instituto Federal Catarinense (IFC), pelo\nparecer nº 6.090.270. É uma pesquisa de natureza aplicada, de abordagem qualitativa\ne que ocorreu entre os anos de 2022 e 2023. Está inserida na linha de “Práticas\nEducativas em Educação Profissional e Tecnológica” no âmbito do macroprojeto 3\n“Práticas Educativas no Currículo Integrado” e desenvolveu-se através do Programa\nde Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT) do IFC\n– Campus Blumenau. O objetivo deste estudo é compreender de que forma a\naprendizagem da agógica e da dinâmica musical influencia no desenvolvimento da\nperformance dos alunos de teatro do IFSC – Campus Joinville. A formação integral\ndos alunos de teatro do ensino médio integrado do IFSC – Joinville, com ênfase no\ntrabalho e na produção social, cultural, econômica e política, através do aprendizado\nda música, com foco na agógica e na dinâmica musical, são pontos nevrálgicos neste\nestudo. São temas enriquecidos por autores como Ricardo Antunes, Gaudêncio\nFrigotto, Marise Ramos e Dermeval Saviani, Márcio Coelho e Ana Favaretto, Vanda\nB. Freire, Jacyan Castilho, Ernani Maletta, Fábio C. M. Cintra, Alex B. P. Cavalcante\ne Fernanda F. Couto e Raquel C. Souza, que elevam o debate sobre os conceitos\ncitados para além da academia. Como metodologia de pesquisa, foram realizados\nquestionários no formato on-line com os professores que lecionam disciplinas de\nteatro na instituição e também com os alunos do Curso Técnico Concomitante em\nTeatro e alunos dos 7º e 8º períodos dos Cursos Técnico Integrado em\nEletroeletrônica e Técnico Integrado em Mecânica, que têm aulas de teatro na\ndisciplina de Arte/Teatro. Houve a realização de uma oficina sobre a musicalidade no\nteatro com os alunos participantes da pesquisa. Os resultados das análises deste\nestudo indicam que a música é fundamental para o teatro e que é importante para o\nestudante das artes cênicas, vivenciar a musicalidade para desenvolver sua\nperformance e ampliar seus conhecimentos ao longo da carreira profissional. Como\nproduto educacional (PE), foi elaborado um material em formato de e-book que\ncontém exemplos e exercícios em áudios e vídeos, que poderá ser utilizado pelos\nprofessores e alunos do IFSC – Joinville e também por outras instituições que\ndemonstrem interesse em desenvolver essa experiência com seus alunos.\n\nPalavras-Chave: Educação Profissional e Tecnológica. Musicalidade. Teatro.\nAgógica. Dinâmica Musical.",
+    "introducao": "[PÁG. 21]\n20\n\n1 INTRODUÇÃO\n\nCavalcante e Couto (2018), afirmam que a música e o teatro são indissociáveis.\nA partir dessa asserção, entende-se que o estudante da arte teatral necessita\nintroduzir no seu desenvolvimento, noções elementares sobre a música e\ncompreender como ela pode contribuir na construção da encenação. Esse\nconhecimento pode proporcionar ao ator/atriz, momentos de maior interação durante\na cena, além de incluí-lo integralmente à peça teatral.\nO teatro é muito presente na cidade de Joinville. Há na cidade, diversas\ncompanhias teatrais que destacam importantes atores e atrizes que atuam em peças\nde teatro, musicais, documentários, filmes, campanhas publicitárias etc. Apesar de\nhaver na sociedade, uma demanda considerável de pessoas que buscam conhecer e\naprender teatro, por outro lado, há ainda pouca oferta de cursos técnicos ou\nprofissionalizantes nesta área, o que dificulta o acesso da comunidade às artes\ncênicas. Mesmo na escola regular, há pouco interesse por parte da maioria dos\ngestores educacionais na inclusão do teatro nos currículos escolares e isso acaba\ndesestimulando aqueles alunos que se identificam com esta arte. Assim, com a\nimplantação do CTCT pelo IFSC – Campus Joinville em fevereiro de 2020, a instituição\npassa a contribuir ativamente na formação de novos atores e atrizes que pretendam\natuar profissionalmente. Nessa instituição, há aulas de teatro também na disciplina de\nArte/Teatro, nos 7º e 8º períodos do Curso Técnico Integrado em Mecânica (CTIM) e\ndo Curso Técnico Integrado em Eletroeletrônica (CTIE).\nDiante de tamanha importância do CTCT do IFSC para a cidade de Joinville e\nregião, essa pesquisa pretende aproximar os alunos de teatro dos conhecimentos\nmusicais possíveis de serem aplicados ao teatro. Propõe-se desenvolver com os\nalunos, experiências com elementos musicais como a agógica e a dinâmica musical,\npara que esses conhecimentos possam ser agregados aos aprendizados já\nestabelecidos na grade curricular dos cursos. Tais fundamentos podem contribuir com\ninformações importantes na construção e no desenvolvimento da performance do\nator/atriz.\nÉ importante lembrar também que os Institutos Federais de Educação (IF),\nprezam pela formação humana integral dos seus discentes. Isso quer dizer que o\nestudante do ensino médio integrado não deve ter uma formação fragmentada e\nvoltada apenas para satisfazer o mercado de trabalho. Nesse sentido, o IFSC –\n\n[PÁG. 22]\n21\n\nJoinville deve promover também a formação de alunos criticamente conscientes da\nluta pela superação da hegemonia do sistema capitalista de produção, a fim de se\nromper o dualismo existente entre o trabalho manual e o trabalho intelectual.\nAo se fazer uma consulta inicial ao Projeto Pedagógico dos Cursos (PPC)\nConcomitante em Teatro e dos CTIM e CTIE do IFSC – Joinville, observou-se que nas\ndisciplinas de Técnica e Linguagem Corporal, Representação Teatral e Técnica e\nExpressão Vocal, lecionadas pela professora Dra. Luciana Cesconetto, algumas\npropostas de exercícios são formuladas com termos vinculados à música. Assim,\nbuscou-se contato com a professora, para apresentar o projeto de pesquisa e pedir\npermissão para realizar algumas observações em suas aulas. Inicialmente, a turma\nobservada foi do CTCT e contava com 12 alunos. Depois das observações iniciais,\nconstatou-se que os exercícios trabalhados nas aulas poderiam ser melhor\naproveitados se houvesse um aprofundamento dos conteúdos musicais estudados em\nsala.\nEm seguida, foi elaborado um questionário com 14 questões, destinado aos 5\nprofessores que lecionam disciplinas de teatro na instituição. Com o questionário,\npretendia-se descobrir se havia algum ensino musical voltado para os alunos de teatro\ndo IFSC – Joinville. Buscava-se também conhecer se havia algum conhecimento\nmusical prévio entre os professores de teatro e se eles aplicavam qualquer elemento\nde música nas suas aulas. A partir das respostas enviadas pelos professores,\npercebeu-se interesse por parte dos mesmos, no sentido de haver uma aproximação\nou integração de disciplinas da música ao curso de teatro. Pelo questionário,\nconstatou-se que apenas dois dos professores já realizam em suas aulas, algum tipo\nde exercício relacionado com a música.\n\nNa observação das aulas de Técnica e Linguagem Corporal e Representação\nTeatral, viu-se que alguns alunos tinham dificuldade de organizar suas ações\nseguindo o tempo/ritmo determinado pela professora. Dos elementos musicais usados\nnos exercícios aplicados pela professora, observou-se que o ritmo e a dinâmica\nmusical poderiam ser explorados na teoria e na prática durante a aplicação dos\nexercícios.\nCom base nessas descobertas iniciais, o pesquisador entendeu que seria\nmelhor delimitar a Agógica e a Dinâmica Musical, como os dois principais elementos\nmusicais para se aprofundar com os alunos de teatro. A agógica é responsável pela\nliberdade do intérprete em relação a aplicação do ritmo na música durante a sua\n\n[PÁG. 23]\n22\n\nperformance e a dinâmica musical refere-se à intensidade aplicada durante a\nexecução do som (HORTA, 1985). Compreendeu-se que estes dois elementos da\nmúsica poderiam ser usados no movimento cênico do ator/atriz.\nDesejou-se então, como objetivo deste estudo, compreender de que forma a\naprendizagem da agógica e da dinâmica musical influencia no desenvolvimento da\nperformance dos alunos de teatro do IFSC – Joinville. Para isso, elaborou-se um\nquestionário, na intenção de se conhecer o histórico musical de cada aluno que\nparticipava das aulas de teatro, ou seja, os alunos do CTCT e os alunos dos 7º e 8º\nperíodos dos CTIM e CTIE. Assim, pôde-se identificar quais as maiores carências\nmusicais dos estudantes. Após essa etapa, realizou-se a análise dos dados obtidos\ncom os questionários, para enfim, elaborar uma oficina sobre música com as turmas.\nO intuito, era de fornecer aos alunos, elementos básicos da linguagem musical e\natravés disso, realizar experimentações práticas com base no conteúdo aplicado na\noficina.\nEssa dissertação está organizada por capítulos. No capítulo 2, do referencial\nteórico, trata-se de temas referentes a educação profissional e técnica e de temas\nespecíficos sobre a relação entre o teatro e a música. O capítulo 3 refere-se sobre a\nmetodologia aplicada na pesquisa. O 4º capítulo é sobre as análises dos resultados\ndo estudo. Por fim, o capitulo 5 traz as considerações finais realizadas pelo\npesquisador.\nNo referencial teórico, aborda-se temas como o homem e o trabalho, a escola\ne o conhecimento, o Ensino Médio (EM), Educação Profissional e Tecnológica (EPT)\ne questões sobre a formação integral. Nesse sentido, buscou-se autores como\nRicardo Antunes (2009) e Gaudêncio Frigotto (2001), que veem o trabalho não só para\no mercado de trabalho, mas como meio de produção econômica, social, cultural e\npolítica. Para além destes autores, Marise Ramos (2005), Dermeval Saviani (2007) e\nGramsci (2004), que entendem o trabalho como princípio educativo em um processo\nhistórico e ontológico na produção da existência humana e na formação politécnica\ndos alunos, apontando que os estudantes necessitam amadurecer intelectualmente e\nna prática antes de serem inseridos na sociedade.\nNesse sentido, busca-se sempre deixar em evidência a necessidade de se\nofertar aos alunos uma formação integral, voltada a desenvolver um cidadão\nomnilateral, consciente e ativo na sociedade em que vive, estruturado para participar\ndos ambientes culturais propostos na vida social. Assim, espera-se a formação de um\n\n[PÁG. 24]\n23\n\nsujeito crítico participativo e transformador do corpo coletivo em que atue.\nPara se falar sobre a música e o teatro, usou-se como referência autores como\nMárcio Coelho e Ana Favaretto (2010) e Vanda B. Freire (2010), que percebem na\nmúsica, um meio de transformação do homem e da sociedade para que haja a\nrealização plena do ser humano. Jacyan Castilho (2008), Ernani Maletta (2014) e\nFábio C. M. Cintra (2006), observam a importância de trazer para o teatro, elementos\ndo meio musical, c",
+    "descricao_produto_na_dissertacao": "[PÁG. 24] sujeito crítico participativo e transformador do corpo coletivo em que atue.\nPara se falar sobre a música e o teatro, usou-se como referência autores como\nMárcio Coelho e Ana Favaretto (2010) e Vanda B. Freire (2010), que percebem na\nmúsica, um meio de transformação do homem e da sociedade para que haja a\nrealização plena do ser humano. Jacyan Castilho (2008), Ernani Maletta (2014) e\nFábio C. M. Cintra (2006), observam a importância de trazer para o teatro, elementos\ndo meio musical, como o ritmo, o tempo e a intensidade e como estes elementos\ninfluenciam na dinâmica da trama teatral, organizando e estruturando a cena. Para\nAlex B. P. Cavalcante e Fernanda F. Couto (2018) e Raquel C. Souza (2018), existe\numa ligação imanente entre a cena teatral e a imagem sonora, numa relação entre o\ncorpo dos atores e a música, que revelam a importância de o ator dominar a linguagem\nmusical para o desenvolvimento da sua performance.\nEssa pesquisa foi aprovada pelo Comitê de Ética em Pesquisa com Seres\nHumanos do IFC (CEPSH), pelo parecer nº 6.090.270. É uma pesquisa de natureza\naplicada em que se usou a abordagem qualitativa e ocorreu durante os anos de 2022\ne 2023. Classifica-se ainda como descritiva e exploratória e houve, durante a\npesquisa, procedimentos em estudo de campo. Essa pesquisa está inserida na linha\nde “Práticas Educativas em Educação Profissional e Tecnológica” no âmbito do\nmacroprojeto 3 “Práticas Educativas no Currículo Integrado” no Mestrado Profissional\nem Educação Profissional e Tecnológica (ProfEPT).\nA coleta de dados ocorreu através da aplicação de três questionários. O\nprimeiro questionário foi realizado com os professores de teatro da instituição, outros\ndois questionários foram aplicados com as turmas participantes, sendo um antes e\noutro após a execução da oficina de música nas turmas. Houve ainda um quarto e\núltimo questionário que foi realizado no final do estudo para que se pudesse avaliar o\nProduto Educacional (PE) proposto.\nCom os dados iniciais obtidos através do questionário realizado com os\nprofessores e com o primeiro questionário feito com os alunos, organizou-se um\nmaterial com conteúdo musical para ser trabalhado com os alunos durante a\nrealização da oficina. A oficina teve como objetivo transmitir aos estudantes\nconhecimentos elementares da música, com foco na agógica e na dinâmica musical\nna busca pela melhoria da performance cênica dos alunos. Após a aplicação da\noficina, realizou-se um novo questionário para que os participantes respondessem e\n\n[PÁG. 48] O material de apoio que foi desenvolvido durante a estruturação da oficina, foi\nrevisitado e reorganizado pelo pesquisador a partir da análise das respostas do\nquestionário nº 03. Assim, esse material resultou em um e-book digital contendo\nexemplos e exercícios com os conteúdos da música, em especial a agógica e a\ndinâmica musical, que podem ser estudados por qualquer pessoa de forma prática e\ninstintiva. O material reformulado pelo pesquisador, tornou-se o Produto Educacional\n(Apêndice D), que é parte desta pesquisa. O PE é um e-book em PDF e que contém\nexplicações, exemplos e exercícios em formato de áudios e vídeos que estão\nhospedados na plataforma Youtube e que podem ser acessados por meio de link ou\nQR-code. Este PE foi disponibilizado como material de apoio para os alunos e\nprofessores de teatro do IFSC – Joinville e entende-se desejável que possa ficar\ndisponível para outros cursos dos Institutos Federais ou mesmo de outras instituições\nque,",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 23,
+        "texto": "performance e a dinâmica musical refere-se à intensidade aplicada durante a\nexecução do som (HORTA, 1985). Compreendeu-se que estes dois elementos da\nmúsica poderiam ser usados no movimento cênico do ator/atriz.\nDesejou-se então, como objetivo deste estudo, compreender de que forma a\naprendizagem da agógica e da dinâmica musical influencia no desenvolvimento da\nperformance dos alunos de teatro do IFSC – Joinville. Para isso, elaborou-se um\nquestionário, na intenção de se conhecer o histórico musical de cada aluno que\nparticipava das aulas de teatro, ou seja, os alunos do CTCT e os alunos dos 7º e 8º\nperíodos dos CTIM e CTIE. Assim, pôde-se identificar quais as maiores carências\nmusicais dos estudantes. Após essa etapa, realizou-se a análise dos dados obtidos\ncom os questionários, para enfim, elaborar uma oficina sobre música com as turmas.\nO intuito, era de fornecer aos alunos, elementos básicos da linguagem musical e\natravés disso, realizar experimentações práticas com base no conteúdo aplicado na\noficina.\nEssa dissertação está organizada por capítulos. No capítulo 2, do referencial\nteórico, trata-se de temas referentes a educação profissional e técnica e de temas\nespecíficos sobr",
+        "citacoes_detectadas": [
+          "HORTA, 1985"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 24,
+        "texto": "sujeito crítico participativo e transformador do corpo coletivo em que atue.\nPara se falar sobre a música e o teatro, usou-se como referência autores como\nMárcio Coelho e Ana Favaretto (2010) e Vanda B. Freire (2010), que percebem na\nmúsica, um meio de transformação do homem e da sociedade para que haja a\nrealização plena do ser humano. Jacyan Castilho (2008), Ernani Maletta (2014) e\nFábio C. M. Cintra (2006), observam a importância de trazer para o teatro, elementos\ndo meio musical, como o ritmo, o tempo e a intensidade e como estes elementos\ninfluenciam na dinâmica da trama teatral, organizando e estruturando a cena. Para\nAlex B. P. Cavalcante e Fernanda F. Couto (2018) e Raquel C. Souza (2018), existe\numa ligação imanente entre a cena teatral e a imagem sonora, numa relação entre o\ncorpo dos atores e a música, que revelam a importância de o ator dominar a linguagem\nmusical para o desenvolvimento da sua performance.\nEssa pesquisa foi aprovada pelo Comitê de Ética em Pesquisa com Seres\nHumanos do IFC (CEPSH), pelo parecer nº 6.090.270. É uma pesquisa de natureza\naplicada em que se usou a abordagem qualitativa e ocorreu durante os anos de 2022\ne 2023. Classifica-se ainda como descr",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 26,
+        "texto": "Quando Santiago Garcia (2021) diz que a arte pode alterar a percepção dos\nindivíduos diante da sociedade e assim mudar a relação entre os seres sociais, ele\nnos dá uma dimensão da importância que a arte tem na vida das pessoas. As artes e\na cultura em geral, mantém estreita relação com o mundo do trabalho e com outros\nelementos da sociedade como a produção econômica, social e política (ANTUNES,\n2009).\nNo seu processo de formação, o ser humano precisa se estabelecer tendo\nplena consciência do papel que deve assumir na sociedade. Para isso, as artes, assim\ncomo as demais ciências humanas, contribuem para o desenvolvimento dessa\nconsciência social (OLIVEIRA; BORGES, 2017).\nTodo artista é um trabalhador, um produtor de arte e por essa razão, a arte se\ninsere no mundo do trabalho. Desse modo, ao se reconhecer como um trabalhador\nda arte, o artista, assim como qualquer outro profissional, deve ter o direito de poder\nse especializar dentro da área artística que deseja para satisfazer as suas\nnecessidades biológicas, sociais e culturais como ser humano. A EPT, se estrutura\natravés dessas diversas relações sociais que ocorrem no mundo do trabalho.\nNessa linha de raciocínio, Gaudêncio Frigot",
+        "citacoes_detectadas": [
+          "ANTUNES,\n2009",
+          "OLIVEIRA; BORGES, 2017"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 26,
+        "texto": "Um dever a ser aprendido, socializado desde a infância. Trata-se de\napreender que o ser humano enquanto ser da natureza necessita elaborar a\nnatureza, transformá-la, pelo trabalho, em bens úteis para satisfazer as suas\nnecessidades vitais, biológicas, sociais, culturais etc. Mas é também um\ndireito, pois é por ele que pode recriar, reproduzir permanentemente sua\nexistência humana (FRIGOTTO, 2001, p. 74).",
+        "citacoes_detectadas": [
+          "FRIGOTTO, 2001, p. 74"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 26,
+        "texto": "Marise Ramos (2008) esclarece que o trabalho é a mediação entre o homem e\no objeto conhecido. Ela entende o trabalho como princípio educativo em um processo",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 27,
+        "texto": "histórico e ontológico na produção da existência humana. Acrescenta ainda, dizendo\nque “o ser humano se apropria da sua realidade pela mediação do trabalho e do\nconhecimento” (RAMOS, 2008, p. 22). Frigotto (2009), complementa conceituando o\ntrabalho como princípio educativo em um processo de socialização e de produção de\nvalores nas massas, na luta pela superação do sistema capitalista e que esses valores\nsão postos com a união de trabalho e ensino desde a infância.\nA escola é um dos primeiros alicerces na formação humana e é responsável\ntambém pelo processo formativo do trabalho como princípio educativo. Ela desponta\ncomo um local de intermediação entre o sujeito e o conhecimento. Antonio Gramsci\n(2004) entende que a escola precisa estar diretamente relacionada à vida do aluno e\npropõe que se constitua a “escola unitária”. Para Gramsci, a escola unitária deve\natender os alunos referentes aos níveis fundamental e médio e tem como objetivo,\namadurecer intelectualmente e na prática os jovens, inserindo-os ativamente na\nsociedade. Gramsci sugere ainda, que a escola unitária seja “desinteressada”, tendo\no trabalho como princípio educativo e que possa integrar trabalho, ciência e cultur",
+        "citacoes_detectadas": [
+          "RAMOS, 2008, p. 22"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 27,
+        "texto": "De fato, nesse período, o estudo ou a maior parte dele deve ser (ou assim\naparecer aos discentes) desinteressado, ou seja, não deve ter finalidades\npráticas imediatas ou muito imediatas, deve ser formativo ainda que\n“instrutivo”, isto é, rico de noções concretas (GRAMSCI, 2004, p. 48).",
+        "citacoes_detectadas": [
+          "GRAMSCI, 2004, p. 48"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 27,
+        "texto": "Para Saviani (2007), a escola básica (níveis fundamental e médio de hoje),\nseria equivalente à escola unitária de Gramsci, onde há o princípio educativo do\ntrabalho. Nesse sentido, o objetivo do ensino médio de educação geral, seria inserir\nfundamentos do processo de produção no ensino, dando inteira autonomia para o\naluno na sua descoberta profissional. Saviani diz que para Gramsci, o estudante, ao\nfindar o ensino básico, poderia dedicar-se a uma profissão em sua introdução ao\nprocesso produtivo ou adentrar em uma especialização universitária participando\nativamente da vida cultural da sociedade.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 28,
+        "texto": "No ensino médio, a escola deve oferecer aos alunos, uma formação integral,\nque tenha como objetivo, a capacitação de um sujeito apto para o trabalho, mas sem\ndeixar de lado a sua formação humana básica plena e omnilateral. Por isso, é\nnecessário que se organize o ensino médio de forma em que haja a integração entre\ntrabalho, ciência e cultura, visando atender às necessidades culturais, econômicas e\nintelectuais dos alunos, levando-os a serem agentes transformadores da sociedade e\nconscientes da realidade em que vivem (RAMOS, 2008).\nDessa maneira, entende-se que os estudantes do IFSC – Joinville, devem\nreceber o mesmo tipo de educação pensado por Gramsci, através de um ensino médio\nintegral que forme alunos conscientes de suas obrigações e direitos na sociedade em\nque vivem. Segundo Dante H. Moura, Domingos L. L. Filho e Mônica R. Silva (2015),\no ensino médio tem papel fundamental na formação dos jovens para o seu ingresso\nna vida em sociedade. Sendo assim, é importante que se lute por um ensino médio\nque “garanta uma base unitária para todos, fundamentada na concepção de formação\nhumana integral, omnilateral ou politécnica, tendo como eixo estruturante o trabalho,\na ciência, a tecn",
+        "citacoes_detectadas": [
+          "RAMOS, 2008"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 35,
+        "texto": "que tem importância fundamental na formação humana. Coelho e Favaretto (2010,\np.4), dizem que “a música é [...] essencial para o desenvolvimento da sensibilidade e\nda realização plena do ser humano”. No entanto, o seguinte conceito sobre a música\nexposto por Freire (2010), se encaixa perfeitamente na perspectiva de uma educação\nomnilateral proposta pelos IF’s. Para Vanda B. Freire, a música é:",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 35,
+        "texto": "[...] dotada de uma dimensão política, como instrumento potencial de\ntransformação do homem e da sociedade, na medida em que, como as\ndemais formas de arte, ela contribui para a elaboração de um saber crítico e\nde conscientização, propulsor da ação social, assim como para um\naperfeiçoamento ético individual (FREIRE, 2010, p. 22).",
+        "citacoes_detectadas": [
+          "FREIRE, 2010, p. 22"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 41,
+        "texto": "Nos Institutos Federais de Educação, busca-se a formação de um indivíduo\ncompleto, que seja autônomo e emancipado e que se desenvolva como um sujeito\nomnilateral e com formação politécnica, consciente de seus direitos e obrigações\nenquanto cidadão, porém com capacidade crítica e transformadora na sociedade.\nO aluno do IF, ao terminar o curso, deve estar preparado para ser um sujeito\nativo e crítico na sociedade em que viverá. Para isso, é necessário que ele tenha a\ncompreensão de como proceder no seu modo de atuar na coletividade social, seja de\ndentro do mundo do trabalho ou fora dele. Marise Ramos (2005), explica que o sujeito\nprecisa se entender como um ser histórico-social, produtor de conhecimento e que",
+        "citacoes_detectadas": []
+      }
+    ],
+    "referencias_filtradas": [
+      "ANTUNES, R. Os sentidos do trabalho: ensaio sobre a qualificação e a negação do trabalho. 2. ed. São Paulo: Boitempo, 2009.",
+      "FREIRE, V. B. Música e sociedade: Uma perspectiva histórica e uma reflexão aplicada ao Ensino Superior de Música. 2ª ed. Florianópolis: Associação Brasileira de Educação Musical, 2010. Disponível em: https://minerva .ufrj.br/F/?func=direct&doc_number=000527711&local_base=UFR01. Acesso em: 02.08.2023.",
+      "FRIGOTTO, G. A polissemia da categoria trabalho e a batalha das ideias nas sociedades de classe. Revista Brasileira de Educação, Rio de Janeiro. v. 14, n. 40, p. 168-194, jan./abr. 2009. Disponível em: https://www.scielo.br/j/ rbedu/a/QFXsLx9gvgFvHTcmfNbQKQL/abstract/?lang=pt. Acesso em: 30.05.2021. https://doi.org/10.1590/S1413-24782009000100014",
+      "RAMOS, M. (Orgs.). Ensino médio integrado: concepção e contradições. São Paulo: Cortez, 2005.",
+      "FRIGOTTO, G. Educação e Trabalho: Bases para debater a Educação Profissional Emancipadora. Perspectiva, Florianópolis. v. 19, n. 1. 2001. Disponível em: https://periodicos.ufsc.br/index.php/perspectiva/article/view/8463 Acesso em: 28.07.2021. https://doi.org/10.5007/%25x",
+      "GRAMSCI, Antonio. Cadernos do Cárcere, vol 2: Os intelectuais. O princípio educativo. Jornalismo. 3. ed. Rio de Janeiro: Civilização Brasileira, 2004. 76",
+      "HORTA, L. P. Dicionário de Música. Zahar editores, Rio de Janeiro. 1985.",
+      "RAMOS, M. Concepção do Ensino Médio Integrado. 2008. Disponível em: http://forumeja.org.br/go/sites/forumeja.org.br.go/files/concepcao_do_ensino_medio_ integrado5.pdf. Acesso em: 10.04.2021."
+    ]
+  }
+}

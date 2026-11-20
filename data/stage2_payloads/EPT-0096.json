@@ -1,0 +1,177 @@
+{
+  "id": "EPT-0096",
+  "metadados_resolvidos": {
+    "ano": 2020,
+    "autor": "Alana Mota Gerlach",
+    "orientador": "Bruno Nunes Batista",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP_INDEFINIDO"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "GAMIFICATION: UMA PROPOSTA PARA O ENSINO DE LÍNGUA INGLESA NO ENSINO MÉDIO INTEGRADO",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/DISSERTACAO-ALANA-PDF-A.pdf",
+    "palavras_chave": [
+      "Gamificação",
+      "Games e educação",
+      "TBLT",
+      "Ensino de Língua Inglesa",
+      "Ensino Médio Integrado"
+    ],
+    "autores_referenciados": [
+      "A. Shehadeh",
+      "A. Zabala",
+      "Augusto Nibaldo Silva Triviños",
+      "B. D. Berry",
+      "B. Schneuwly",
+      "C. M. Pinto",
+      "Carlos Walter Porto-Gonçalves",
+      "D. Hunter",
+      "D. S. Bezerra",
+      "D. Tan Ai Lin",
+      "E. E. Fulkerson",
+      "Filomena Lucia Gossler Rodrigues da Silva",
+      "G. Gaskell",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "J. Dolz",
+      "J. P. Gee",
+      "J. Willis",
+      "K. Kapp",
+      "K. Werbach",
+      "Karl M. Kapp",
+      "M. Ganapathy",
+      "M. Kaur",
+      "M. L. Fardo",
+      "M. Noverraz",
+      "M. Prensky",
+      "M. Ramos",
+      "M. Rost",
+      "M. Warschauer",
+      "Maria Ciavatta",
+      "Paulo Freire",
+      "R. M. L. Araújo",
+      "S. Boller",
+      "S. Deterding",
+      "S. Krashen",
+      "S. M. G. Gondim",
+      "T. Wijman",
+      "U. Flick",
+      "V. Leffa"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "http://educapes.capes.gov.br/handle/capes/584995",
+    "titulo_produto": "de vídeo com o título: Ensino Médio Integrado no IFC Campus Ibirama",
+    "titulo_produto_bruto": "Vídeos – GAMIFIYNG YOUR ENGLISH CLASSES",
+    "data_publicacao": "2020-12-14",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Gonçalves, Luana Cristina",
+        "papel": "creator"
+      },
+      {
+        "nome": "Cesaro, Humberto Luis",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/584995",
+        "url": "http://educapes.capes.gov.br/handle/capes/584995"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://www.youtube.com/watch?v=q7ua7VmGczY&feature=youtu.be",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "O Ensino Médio Integrado no IFC Campus Ibirama",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "outro"
+    ],
+    "palavras_chave_educapes": [
+      "Ensino Médio Integrado",
+      "Discentes",
+      "Percepções",
+      "Todas"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "E-book / Livro Digital",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "\n\nALANA MOTTA GERLACH\n\nGAMIFICATION: UMA PROPOSTA PARA O ENSINO DE LÍNGUA INGLESA NO\nENSINO MÉDIO INTEGRADO\n\nDissertação apresentada ao Programa de Pós-\ngraduação em Educação Profissional e Tecnológica,\nofertado pelo campus Blumenau do Instituto\nFederal Catarinense, como parte dos requisitos\npara a obtenção do título de Mestra em Educação\nProfissional e Tecnológica.\n\nOrientador: Dr. Bruno Nunes Batista\n\nBlumenau\nJulho de 2020",
+    "ficha_catalografica": "",
+    "sumario": "[PÁG. 11]\nSUMÁRIO\n\n1 INTRODUÇÃO ....................................................................................................... 11\n2 A ERA DIGITAL E SUA INFLUÊNCIA NO ENSINO DE LÍNGUA INGLESA ......... 15\n3 A GAMIFICAÇÃO E OS ELEMENTOS DOS JOGOS: CONCEITO E APLICAÇÃO\nEM PROCESSOS DE ENSINO E APRENDIZAGEM ............................................... 17\n4 A PROPOSTA DO TBLT – TASK-BASED LANGUAGE TEACHING APPROACH\n(ABORDAGEM DE ENSINO DE LÍNGUAS BASEADA EM TAREFAS) .................. 20\n5 METODOLOGIA .................................................................................................... 22\n5.1 O CAMINHO DA CONSTRUÇÃO E IMPLEMENTAÇÃO DA SEQUÊNCIA\nDIDÁTICA E DO GUIA DIDÁTICO GAMIFICADO ................................................... 24\n6 RESULTADOS E DISCUSSÕES DA INTERAÇÃO ENTRE ALUNOS E PRODUTO\nDIDÁTICO ................................................................................................................. 28\n7 CONSIDERAÇÕES FINAIS ................................................................................... 38\n8 REFERÊNCIAS ...................................................................................................... 41\n9 APÊNDICE A – PRODUTO EDUCACIONAL ........................................................ 45\n10 APÊNDICE B – QUESTIONÁRIO DE COLETA DE DADOS 1 ............................ 46\n11 APÊNDICE C – QUESTIONÁRIO DE COLETA DE DADOS 2 ............................ 47\n11\n\n1 INTRODUÇÃO\n\nEste trabalho pertence à linha de pesquisa de Práticas Educativas em\nEducação Profissional e Tecnológica, que compõe o Mestrado em Educação\nProfissional e Tecnológica (ProfEPT), programa de pós-graduação stricto sensu do\nInstituto Federal Catarinense (IFC). Ele foi realizado com alunos de uma das turmas\ndo 1º ano do curso Técnico em Química Integrado ao ensino médio, do IFC – campus\nBrusque. Os diálogos e as reflexões aqui traçados são discutidos a partir dos\nresultados dessa pesquisa.\nAo passar dos últimos anos de docência, dos 15 anos atuando como professora\nde Língua Inglesa, foram surgindo inquietações a respeito dos processos de ensino-\naprendizagem de Língua Inglesa (LI) no contexto atual. A experiência docente tem\ndemonstrado uma necessidade de buscarmos novas maneiras e práticas de ensinar\nos indivíduos que pertencem a uma era digital1.\nNesse percurso, encontramos muitos alunos que não acreditam em sua\ncapacidade de compreender a LI por vários motivos, entre eles estão experiências\nque os desmotivaram no decorrer desse percurso de aprendizagem.\nCom isso, intentamos, a partir desta pesquisa, refletir sobre essas inquietações\ne construir possibilidades que venham contribuir com a motivação e o engajamento\ndesses indivíduos junto aos processos de ensino-aprendizagem de LI.\nPara isso acontecer, acreditamos que o ensino-aprendizado de línguas deve\nser significativo aos sujeitos da atualidade, sendo que um dos fatores importantes para\nque isso aconteça é l",
+    "resumo": "[PÁG. 8]\nRESUMO\n\nEste trabalho apresenta a aplicação de uma sequência didática gamificada, voltada\npara o desenvolvimento da habilidade auditiva, ancorada na abordagem de ensino de\nlínguas baseada em tarefas (TBLT – Task-Based Language Teaching) com mediações\nde recursos tecnológicos digitais. A intenção foi descobrir, a partir da construção e da\naplicação dessa proposta didática, se o fenômeno da gamificação contribui para o\naumento da motivação e do engajamento discente nas aulas de Língua Inglesa no\nEnsino Médio Integrado, sob a perspectiva da Educação Profissional e Tecnológica.\nEssa pesquisa foi embasada na metodologia da pesquisa qualitativa, sendo que os\ndados foram coletados por meio de grupos focais realizados em encontros planejados,\njunto a um grupo de alunos do 1º ano do curso Técnico em Química Integrado ao\nEnsino Médio, do Instituto Federal Catarinense – campus Brusque. Por fim, a partir\ndos resultados desta pesquisa apresentou-se uma reflexão sobre as potencialidades\ne as possibilidades da inclusão da gamificação nos processos de ensino de Língua\nInglesa, com intuito de promover um maior engajamento discente a partir de um\nambiente de aprendizagem mais interativo e colaborativo. Discorreu-se, ainda, sobre\nas vantagens oferecidas por essa mediação dos recursos tecnológicos disponíveis\npara a implementação desse fenômeno no ensino de Língua Inglesa, com vistas a\nimpulsionar os indivíduos a uma participação mais autônoma e crítica perante a\nsociedade. Como resultado dessas interações e reflexões construímos um produto\neducacional em formato de e-book, voltado aos professores do Ensino Médio\nIntegrado, intitulado como “GEC - Gamifying your English Classes: estratégias para o\nensino de Língua Inglesa no Ensino Médio Integrado”.\n\nPalavras-chave: Gamificação. Games e educação. TBLT. Ensino de Língua Inglesa.\nEnsino Médio Integrado.",
+    "introducao": "[PÁG. 12]\n11\n\n1 INTRODUÇÃO\n\nEste trabalho pertence à linha de pesquisa de Práticas Educativas em\nEducação Profissional e Tecnológica, que compõe o Mestrado em Educação\nProfissional e Tecnológica (ProfEPT), programa de pós-graduação stricto sensu do\nInstituto Federal Catarinense (IFC). Ele foi realizado com alunos de uma das turmas\ndo 1º ano do curso Técnico em Química Integrado ao ensino médio, do IFC – campus\nBrusque. Os diálogos e as reflexões aqui traçados são discutidos a partir dos\nresultados dessa pesquisa.\nAo passar dos últimos anos de docência, dos 15 anos atuando como professora\nde Língua Inglesa, foram surgindo inquietações a respeito dos processos de ensino-\naprendizagem de Língua Inglesa (LI) no contexto atual. A experiência docente tem\ndemonstrado uma necessidade de buscarmos novas maneiras e práticas de ensinar\nos indivíduos que pertencem a uma era digital1.\nNesse percurso, encontramos muitos alunos que não acreditam em sua\ncapacidade de compreender a LI por vários motivos, entre eles estão experiências\nque os desmotivaram no decorrer desse percurso de aprendizagem.\nCom isso, intentamos, a partir desta pesquisa, refletir sobre essas inquietações\ne construir possibilidades que venham contribuir com a motivação e o engajamento\ndesses indivíduos junto aos processos de ensino-aprendizagem de LI.\nPara isso acontecer, acreditamos que o ensino-aprendizado de línguas deve\nser significativo aos sujeitos da atualidade, sendo que um dos fatores importantes para\nque isso aconteça é levarmos em conta o cotidiano em que esses alunos se\nencontram inseridos. Nisso, consideramos o que Freire (1996) destaca, quando fala\nque os conteúdos ministrados pela escola devem respeitar os saberes dos educandos,\nsendo socialmente construídos na prática, fazendo junção desse conhecimento de\nmundo com aquilo que se trabalha em sala de aula.\nPartindo desse pensamento, observamos a necessidade de inclusão dos\nrecursos tecnológicos digitais2 , doravante denominados (RT), para tornar nossas\n\n1 Prensky (2001) considera que os alunos atuais nasceram em uma era digital e, por isso, as\ntecnologias fazem parte do seu cotidiano.\n\n2 Utilizaremos essa definição, ou recursos tecnológicos como sinônimos, ao invés de Tecnologias de\nInformação e Comunicação (TICs), pois essas tecnologias vão além da comunicação e informação\n(FARDO, 2013).\n\n[PÁG. 13]\n12\n\naulas mais significativas e pautadas na realidade de indivíduos imersos nessa cultura\ndigital.\nEsse crescente aumento do interesse dos jovens pelas tecnologias digitais, tem\naumentado a procura pelos games3, o que motiva vários estudos sobre possibilidades\nde utilização dos elementos dos games em processos de ensino-aprendizagem (GEE,\n2003; LEFFA, 2014; PRENSKY, 2001; 2002).\nCorroborando com isso, o último Censo da Indústria Brasileira de Jogos Digitais\ncomprova esse crescente interesse pelos games na atualidade, indicando que, de\n2014 a 2018, houve um crescimento no mercado de jogos eletrônicos brasileiros em\ntodas as regiões do país. Ainda segundo a pesquisa, houve um crescimento das\ndesenvolvedoras de games de 164%, sendo que não há uma idade ou região\nbrasileira específica para definir esse crescimento.\nAdemais, a última pesquisa sobre o Mercado de Jogos Mundial do Global\nGames Market 2018 relata que os jogos são o passatempo favorito de bilhões de\npessoas ao redor do mundo. A mesma pesquisa, tratando-se do mercado de jogos no\nBrasil, afirma que 50% dos homens e 51% das mulheres jogam algum jogo no celular,\nsendo que 83% desses jogadores gastaram dinheiro em itens do jogo ou bens virtuais\nnos últimos meses da pesquisa (FULKERSON, 2018; WIJMAN, 2018).\nDiante desse cenário, pode-se compreender porque Leffa e Pinto (2014) já\nafirmavam que os alunos atuais possuem certo “vício pelos games” e que precisamos\nlidar com alunos cada vez mais dispersos em aulas que seguem o ensino tradicional.\nPerante essas pesquisas, chegamos ao fenômeno da gamificação, o qual vem\nsendo estudado e utilizado nas mais diversas áreas da sociedade, inclusive na\neducação (FARDO, 2013; GEE, 2003; 2008; KAPP, 2012; LEFFA; PINTO, 2014;\nPRENSKY, 2001; 2002; 2003; PRENSKY; BERRY, 2001; WARSCHAUER, 2002).\nApós revisar esses e outros estudos, resolvemos investigar os possíveis benefícios\noferecidos pelos games no que tange a tornar os processos de ensino-aprendizagem\nmais motivadores.\nDentro desse contexto e de diversas outras possibilidades, resolvemos focar\nem alguns pesquisadores que mais se destacam ao discutir sobre a relação entre\ngames e aprendizagem e das contribuições dos games para esses processos (BERRY,\n2001; GEE, 2003; 2008; KAPP, 2012; LEFFA, 2014; PRENSKY, 2001; 2002;\n\n3 Utilizaremos a palavra games, no lugar da palavra jogo, ou como sinônimo, neste trabalho, por\nacreditarmos que ela expressa melhor o vocabulário dos jogos entre os adolescentes.\n\n[PÁG. 14]\n13\n\nPRENSKY; BERRY, 2001; WARSCHAUER, 2002; WERBACH; HUNTER, 2012).\nConstatamos que a gamificação consiste no uso de elementos, estratégias e\npensamentos dos games fora do contexto de um game (FARDO, 2013; KAPP, 2012;\nWERBACH; HUNTER, 2012) e poderia ser uma possibilidade de tornar nossas aulas\nmais voltadas para a realidade dos alunos da atualidade.\nHaja vista a percepção da importância em buscarmos novas alternativas para\nobtermos a chance de conduzir nossas aulas de maneira mais significativa e mais\npróxima da realidade desses alunos, surgem os questionamentos a serem\ninvestigados neste trabalho: 1. A gamificação aplicada a ambientes de aprendizagem\nde LI poderia contribuir com o aumento da motivação e do engajamento de alunos no\ncontexto do Ensino Médio Integrado? 2. Quais elementos dos games poderiam ser\nutilizados para que isso aconteça em aulas de Língua Inglesa?\nA partir dos estudos teóricos, consideramos que a gamificação poderia nos\noferecer uma diversidade de possibilidades que poderiam contribuir para que os\nprocessos de ensino de LI sejam mais engajadores e motivadores.\nCom base nos questionamentos levantados, construímos uma sequência\ndidática gamificada, a qual mescla tarefas de compreensão auditiva mediadas por RT,\nancorada na abordagem de ensino baseada em tarefas – TBLT – Task-Based\nLanguage Teaching (KRASHEN, 2009; RICHARDS; RODGERS, 2014; WILLIS, 1996;\nSHEHADEH, 2005). O objetivo principal desta pesquisa é compreender se a\ngamificação pode ser considerada uma ferramenta potencializadora na motivação e\nno engajamento discente junto aos processos de ensino-aprendizagem de LI no\ncontexto do Ensino Médio Integrado4.\nPara alcançarmos o objetivo principal, traçamos os seguintes objetivos\nespecíficos: 1. Investigar as potencialidades da gamificação quanto à motivação e ao\nengajamento discente ao realizar tarefas gamificadas de compreensão auditiva em\nLíngua Inglesa. 2. Analisar de que forma os RT podem contribuir para a aplicação da\ngamificação. 3. Analisar as possibilidades de contribuição da abordagem do TBLT\npara a implementação da gamificação.\n\n4 “O primeiro sentido que atribuímos à integração expressa uma concepção de formação humana que\npreconiza a integração de todas as dimensões da vida – o trabalho, a ciência e a cultura – no processo\nformativo. Tal concepção pode orientar tanto a educação geral quanto a profissional,\nindependentemente da forma como são ofertadas. O horizonte da formação, nessa perspectiva, é a\nformação politécnica e omnilateral dos trabalhadores e teria como propósito fundamental proporcionar-\nlhes a compreensão das relações sociais de produção e do processo histórico e contraditório de\ndesenvolvimento das forças produtivas” (CIAVATTA; RAMOS, 2011, p. 31).\n\n[PÁG. 15]\n14\n\nConquanto, optamos por construir uma proposta que envolvesse um conteúdo\ntemático de relevância social, cujo intuito fosse promover o desenvolvimento da\nautonomia e da capacidade de agir criticamente sobre a realidade.\nA partir da construção dessa sequência didática, concebemos ainda a proposta\ndo GEC – Gamifyng your English Classes: estratégias para o ensino de LI no Ensino\nMédio Integrado, ",
+    "descricao_produto_na_dissertacao": "[PÁG. 41] favoreçam o diálogo entre educandos e educadores, uma maior participação crítica\ndesses alunos nos processos de ensino-aprendizagem e, consequentemente, na\nsociedade atual.\nPor fim, neste trabalho, apresentamos os resultados de uma pesquisa sobre as\npotencialidades e possibilidades da inclusão da gamificação em processos de ensino-\naprendizagem de LI, com intuito de promover um maior engajamento e motivação de\nalunos do Ensino Médio Integrado. Discorremos, ainda, sobre as vantagens e\ndificuldades encontradas na mediação da implementação da gamificação pelos RT\ndisponíveis, no ensino de LI.\nAdemais, traçamos reflexões acerca de como construir sequências didáticas\ngamificadas com vistas a impulsionar os indivíduos a uma formação autônoma e\ncrítica, possibilitando uma participação mais efetiva perante a sociedade atual. Como\nresultado dessas interações e reflexões, construímos um produto educacional em\nformato de e-book, voltado aos professores do Ensino Médio Integrado, intitulado GEC\n– Gamifying your English Classes: estratégias para o ensino de Língua Inglesa no\nEnsino Médio Integrado.\nConquanto, sabemos que não será a partir de um produto educacional ou de\nalgum guia didático que mudaremos a forma de pensar a educação atual, mas\nacreditamos que, de alguma maneira, este material, o qual foi pesquisado, pensado,\nanalisado e aplicado na prática, pode gerar reflexões e contribuições para a\nconstrução de futuras experiências empíricas na área da gamificação e ensino de LI,\ndirecionadas à formação integral.",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 12,
+        "texto": "Este trabalho pertence à linha de pesquisa de Práticas Educativas em\nEducação Profissional e Tecnológica, que compõe o Mestrado em Educação\nProfissional e Tecnológica (ProfEPT), programa de pós-graduação stricto sensu do\nInstituto Federal Catarinense (IFC). Ele foi realizado com alunos de uma das turmas\ndo 1º ano do curso Técnico em Química Integrado ao ensino médio, do IFC – campus\nBrusque. Os diálogos e as reflexões aqui traçados são discutidos a partir dos\nresultados dessa pesquisa.\nAo passar dos últimos anos de docência, dos 15 anos atuando como professora\nde Língua Inglesa, foram surgindo inquietações a respeito dos processos de ensino-\naprendizagem de Língua Inglesa (LI) no contexto atual. A experiência docente tem\ndemonstrado uma necessidade de buscarmos novas maneiras e práticas de ensinar\nos indivíduos que pertencem a uma era digital1.\nNesse percurso, encontramos muitos alunos que não acreditam em sua\ncapacidade de compreender a LI por vários motivos, entre eles estão experiências\nque os desmotivaram no decorrer desse percurso de aprendizagem.\nCom isso, intentamos, a partir desta pesquisa, refletir sobre essas inquietações\ne construir possibilidades que venham contribuir c",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 14,
+        "texto": "4 “O primeiro sentido que atribuímos à integração expressa uma concepção de formação humana que\npreconiza a integração de todas as dimensões da vida – o trabalho, a ciência e a cultura – no processo\nformativo. Tal concepção pode orientar tanto a educação geral quanto a profissional,\nindependentemente da forma como são ofertadas. O horizonte da formação, nessa perspectiva, é a\nformação politécnica e omnilateral dos trabalhadores e teria como propósito fundamental proporcionar-\nlhes a compreensão das relações sociais de produção e do processo histórico e contraditório de\ndesenvolvimento das forças produtivas” (CIAVATTA; RAMOS, 2011, p. 31).",
+        "citacoes_detectadas": [
+          "CIAVATTA; RAMOS, 2011, p. 31"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 22,
+        "texto": "O último ciclo é o relato de uma discussão sobre os resultados das atividades,\nno qual devem comparar o que conseguiram realizar e discutir sobre isso.\n2.1 Post-task – pós-tarefa: essa fase serve como um complemento ou um\nacréscimo da tarefa principal. Pode ser em forma de áudio – listening – com\numa experiência real da língua-alvo, por exemplo. Ela é importante para ampliar\na experiência dos alunos na linguagem utilizada na tarefa.\n3. Focus on form – foco na linguagem: essa última etapa tem a função de\noportunizar uma instrução mais explícita sobre a forma, já que nas etapas\nanteriores do ciclo de tarefas a preocupação estava em atingir os objetivos\ncomunicativos da tarefa, do significado. Nesse momento, os alunos podem\nanalisar certas formas linguísticas que eles tenham ou não utilizado na\nexecução da tarefa.\nEmbora a autora sugira essas etapas, ela salienta que elas podem ser\nalteradas, dependendo da necessidade dos alunos e do objetivo. Inclusive ela cita as\ntarefas criativas, que podem englobar ou misturar diferentes tipos de tarefas, sendo\nessas curtas ou longas (WILLIS, 1996).\nPor isso, intentamos construir tarefas gamificadas ancoradas por essa\nabordagem, visto que essa jun",
+        "citacoes_detectadas": [
+          "WILLIS, 1996"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 27,
+        "texto": "d) Respostas que falam da importância de avançar em níveis (sendo que isso\ndepende do feedback - níveis) fazem parte dos componentes dos jogos.\nAlguns dos sujeitos do grupo citaram que, quanto mais se joga, mais se\naprende e, com isso, mais se avança nos jogos, mais se conquista e mais se busca\nmelhorar para alcançar as outras pessoas.\nVisto que as articulações e seleção dos conteúdos, além da organização,\ndevem se dar a partir de uma análise mais aprofundada do contexto ao qual os sujeitos\nestão inseridos e para os quais o material será destinado, é de extrema importância\nesse diálogo obtido na coleta de dados (KAPLÚN, 1998).\nIsso posto, escolhemos o conteúdo temático para a sequência de acordo com\numa proposta que envolvesse um tema de relevância para a sociedade atual e o\nEnsino Médio Integrado, com vistas ao desenvolvimento da autonomia e da\ncapacidade de agir criticamente sobre a realidade (ARAÚJO; FRIGOTTO, 2015).\nPara tanto, visto o crescente aumento da poluição e suas consequências\nclimáticas, entre outras situações relacionadas ao meio ambiente, devido à influência\ndo crescimento exacerbado da indústria, percebe-se a necessidade de formar\nindivíduos que busquem soluções pa",
+        "citacoes_detectadas": [
+          "KAPLÚN, 1998",
+          "ARAÚJO; FRIGOTTO, 2015",
+          "PORTO-\nGONÇALVES, 2004"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 38,
+        "texto": "interferir de maneira crítica na sociedade atual, o que faz parte de uma formação\ncompleta e integral (ARAÚJO; FRIGOTTO, 2015; BEZERRA, 2012; CIAVATTA;\nRAMOS, 2011).\nÀ vista disto, acreditamos que uma maior participação e motivação no ensino-\naprendizagem de LI, a partir da gamificação, concomitante a outras abordagens de\nensino de línguas-culturas e temas que possibilitem a esses sujeitos um maior acesso\ne uma compreensão do mundo em que vivem, pode contribuir positivamente com os\nprocessos de ensino-aprendizagem na educação profissional e tecnológica.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 40,
+        "texto": "disponíveis facilitam a implementação desse fenômeno em sequências didáticas, com\nvistas a uma educação mais participativa e autônoma, sendo de suma importância.\nNo entanto, percebemos que ainda existem muitas barreiras para que a\naplicação desses recursos se efetivem. Uma delas, no próprio Ensino Médio\nIntegrado, ainda estaria relacionada à acessibilidade aos RT, visto que a maioria dos\nIFs têm laboratório de informática, porém estes são utilizados para as aulas técnicas\nde Informática, as quais fazem parte do currículo da educação técnica, por isso não\nhá um laboratório específico disponível aos alunos para uso de outras disciplinas.\nAlém de ser difícil o acesso aos computadores, nas salas de aula não há acesso\nà internet disponível aos alunos. Ou seja, a conexão com a internet e o uso dos\ncomputadores na escola ainda continua sendo um problema e faz parte também da\nrealidade do IFC. Por isso, existe uma urgência nessa discussão: a do acesso à\ninclusão dos RT em aulas de línguas, no Brasil.\nNo que tange aos participantes da pesquisa, percebemos que muitos dos\nalunos do Ensino Médio Integrado já têm certo conhecimento básico em LI, o que\ncontribuiu para que os resultados dessa apl",
+        "citacoes_detectadas": [
+          "SILVA, 2012"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "KAPLÚN, Gabriel. Material educativo: a experiência de aprendizado. Comunicação & Educação, n. 27, p. 46-60, 2003. Disponível em: <http://www.revistas.usp.br/comueduc/article/view/37491/40205>. Acesso em: 05 nov. 2019.",
+      "SILVA, Filomena Lucia Gossler Rodrigues da. A docência nos cursos de ensino médio integrado à educação profissional: desafios para as políticas de formação de professores. VII Colóquio Ensino Médio, História e Cidadania. Universidade do Estado de Santa Catarina. Maio-Junho de 2012. ISSN 2236-7977",
+      "WILLIS, J. A flexible framework for task-based learning. In: WILLIS, J.; WILLIS, D. Challenge and change in language teaching. Madri [?]: Macmillan Education, 1996. p. 52-62."
+    ]
+  }
+}

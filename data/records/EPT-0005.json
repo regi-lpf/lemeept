@@ -1,0 +1,126 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0005",
+  "ano": 2025,
+  "autor": "Luziana da Silva Dias",
+  "orientador": "Raquel Cardoso de Faria e Custódio",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP3",
+  "dissertacao": {
+    "titulo": "PRÁTICA PEDAGÓGICA INTEGRADORA EM ENSINO, PESQUISA E EXTENSÃO: UM ESTUDO NA FEIRA DO CONHECIMENTO DO INSTITUTO FEDERAL CATARINENSE.",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/12/DISSERTACAO-LUZIANA-DA-SILVA-DIAS.pdf",
+    "resumo": "A presente pesquisa, inserida no tema “Práticas Pedagógicas Integradoras\nvinculadas ao Ensino, à Pesquisa e à Extensão”, tem como delimitação a análise\ndessas práticas nas publicações eletrônicas dos Anais da Feira do Conhecimento do\nInstituto Federal Catarinense (IFC) - campus Ibirama, no período dos últimos cinco\nanos. A investigação orienta-se pela questão norteadora: Quais são as práticas\npedagógicas integradoras presentes nos projetos de ensino, pesquisa e extensão\npublicados nos Anais da Feira do Conhecimento do IFC - campus Ibirama? A\nrelevância desta pesquisa decorre da necessidade de compreender como a\nintegração entre ensino, pesquisa e extensão se concretizam na prática integradora\ne quais impactos ela gera na formação discente e na relação da instituição com a\ncomunidade. Sendo assim, a pesquisa foi realizada no âmbito do Programa de Pós-\nGraduação em Educação Profissional e Tecnológica (ProfEPT) do Instituto Federal\nCatarinense – campus Blumenau. Está vinculada especificamente ao macroprojeto 3\n– Práticas Educativas no Currículo Integrado, o qual acolhe iniciativas voltadas à\nintegração curricular com vistas ao aprimoramento dos métodos de ensino e\navaliação, superando a tradicional fragmentação entre as diferentes atividades\npedagógicas. A partir da análise, foi desenvolvido o Produto Educacional do\nProfEPT, “Articulando Ensino, Pesquisa e Extensão através de Práticas Integradoras\nna Feira do Conhecimento”, com o objetivo de apresentar exemplos de práticas\npedagógicas integradoras aplicadas em projetos de ensino, pesquisa e extensão na\nFeira do Conhecimento do IFC – campus Ibirama. Para atingir os objetivos da\npesquisa seguiu-se as etapas: a) levantamento por meio de revisão bibliográfica e\ndocumental sobre os conceitos e concepções de práticas pedagógicas integradoras.\nb) identificar práticas aplicadas ao ensino, à pesquisa e à extensão no campus\nIbirama, por meio da leitura dos projetos c) analisar as publicações dos Anais da\nFeira do Conhecimento, categorizando as práticas pedagógicas identificadas,\natravés da Análise do Conteúdo de Bardin d) compreender formas de\nimplementação dessas práticas e seus impactos para a formação discente e a\ncomunidade; e) elaborar um infográfico de instruções a partir dos projetos\npublicados.\nOs resultados\napontaram\nque\nocorrem\npráticas pedagógicas\nintegradoras no ensino, pesquisa e extensão na Feira do Conhecimento, elas\nrevelam potencial para promover protagonismo discente e fortalecer vínculos\ninstitucionais com a comunidade. Em síntese, as conclusões indicam que a Feira do\nConhecimento representa espaço relevante de difusão científica e valorização de\npráticas pedagógicas integradoras e pode consolidar-se como um espaço de\nreferência na integração entre ensino, pesquisa e extensão, ampliando seus\nimpactos na comunidade acadêmica e na sociedade.\nPalavras-Chave: Ensino. Extensão. Pesquisa. Feira do Conhecimento. Práticas\nPedagógicas Integradoras.",
+    "palavras_chave": [
+      "Ensino",
+      "Extensão",
+      "Pesquisa",
+      "Feira do Conhecimento",
+      "Práticas Pedagógicas Integradoras"
+    ],
+    "autores_referenciados": [
+      "A. L. S. Henrique",
+      "Antônio Carlos Gil",
+      "Eliezer Moreira Pacheco",
+      "F. Almeida",
+      "G. Sonia",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "H. Japiassu",
+      "J. M. Nascimento",
+      "L. Gonçalves",
+      "M. Ramos",
+      "Paulo Freire",
+      "Priscila de Souza Chisté Leite",
+      "R. M. L. Araújo"
+    ],
+    "base_epistemologica": {
+      "valor": "Educação Libertadora / Freireana",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "A pesquisa fundamenta-se na filosofia freireana de diálogo e integração entre ensino, pesquisa e extensão, citando diretamente Freire (2022, p. 30).",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 24,
+          "trecho": "não há ensino sem pesquisa e pesquisa sem ensino (FREIRE, 2022, p. 30)",
+          "referencia_correspondente": "FREIRE, P. Pedagogia da Autonomia: saberes necessários à prática educativa. 74. ed. Rio de Janeiro: Paz e Terra, 2022."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Articulando Pesquisa, Ensino e Extensão por meio das Práticas Integradoras na Feira do Conhecimento",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Infográfico",
+    "link": "https://educapes.capes.gov.br/handle/capes/1133227",
+    "publico_alvo": [
+      "docentes_professores",
+      "estudantes_alunos",
+      "gestores_coordenadores",
+      "comunidade_externa"
+    ],
+    "nivel_aplicacao": "Educação Profissional e Tecnológica",
+    "palavras_chave": [
+      "Ensino, Pesquisa, Extensão",
+      "Praticas Pedagógicas Integradoras",
+      "Feira do Conhecimento",
+      "Programa de Pós-graduação em Educação Profissional e Tecnológica",
+      "Dissertação"
+    ],
+    "data_publicacao": "2025-09-30",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Dias, Luziana da Silva",
+        "papel": "creator"
+      },
+      {
+        "nome": "Custódio, Raquel Cardoso de Faria e",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1133227",
+        "url": "https://educapes.capes.gov.br/handle/capes/1133227"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "PE Articulando EPE",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "inferencia_llm",
+      "rotulo_original_declarado": "ARTICULANDO ENSINO, PESQUISA E EXTENSÃO ATRAVÉS DE PRÁTICAS INTEGRADORAS NA FEIRA DO CONHECIMENTO.",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "livro digital"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0005 2025 luziana da silva dias raquel cardoso de faria e custodio ifc blumenau lp1 mp3 pratica pedagogica integradora em ensino pesquisa e extensao um estudo na feira do conhecimento do instituto federal catarinense a presente pesquisa inserida no tema praticas pedagogicas integradoras vinculadas ao ensino a pesquisa e a extensao tem como delimitacao a analise dessas praticas nas publicacoes eletronicas dos anais da feira do conhecimento do instituto federal catarinense ifc campus ibirama no periodo dos ultimos cinco anos a investigacao orienta se pela questao norteadora quais sao as praticas pedagogicas integradoras presentes nos projetos de ensino pesquisa e extensao publicados nos anais da feira do conhecimento do ifc campus ibirama a relevancia desta pesquisa decorre da necessidade de compreender como a integracao entre ensino pesquisa e extensao se concretizam na pratica integradora e quais impactos ela gera na formacao discente e na relacao da instituicao com a comunidade sendo assim a pesquisa foi realizada no ambito do programa de pos graduacao em educacao profissional e tecnologica profept do instituto federal catarinense campus blumenau esta vinculada especificamente ao macroprojeto 3 praticas educativas no curriculo integrado o qual acolhe iniciativas voltadas a integracao curricular com vistas ao aprimoramento dos metodos de ensino e avaliacao superando a tradicional fragmentacao entre as diferentes atividades pedagogicas a partir da analise foi desenvolvido o produto educacional do profept articulando ensino pesquisa e extensao atraves de praticas integradoras na feira do conhecimento com o objetivo de apresentar exemplos de praticas pedagogicas integradoras aplicadas em projetos de ensino pesquisa e extensao na feira do conhecimento do ifc campus ibirama para atingir os objetivos da pesquisa seguiu se as etapas a levantamento por meio de revisao bibliografica e documental sobre os conceitos e concepcoes de praticas pedagogicas integradoras b identificar praticas aplicadas ao ensino a pesquisa e a extensao no campus ibirama por meio da leitura dos projetos c analisar as publicacoes dos anais da feira do conhecimento categorizando as praticas pedagogicas identificadas atraves da analise do conteudo de bardin d compreender formas de implementacao dessas praticas e seus impactos para a formacao discente e a comunidade e elaborar um infografico de instrucoes a partir dos projetos publicados os resultados apontaram que ocorrem praticas pedagogicas integradoras no ensino pesquisa e extensao na feira do conhecimento elas revelam potencial para promover protagonismo discente e fortalecer vinculos institucionais com a comunidade em sintese as conclusoes indicam que a feira do conhecimento representa espaco relevante de difusao cientifica e valorizacao de praticas pedagogicas integradoras e pode consolidar se como um espaco de referencia na integracao entre ensino pesquisa e extensao ampliando seus impactos na comunidade academica e na sociedade palavras chave ensino extensao pesquisa feira do conhecimento praticas pedagogicas integradoras educacao libertadora freireana articulando pesquisa ensino e extensao por meio das praticas integradoras na feira do conhecimento material didatico instrucional infografico educacao profissional e tecnologica ensino extensao pesquisa feira do conhecimento praticas pedagogicas integradoras ensino pesquisa extensao programa de pos graduacao em educacao profissional e tecnologica dissertacao a l s henrique antonio carlos gil eliezer moreira pacheco f almeida g sonia gabriel kaplun gaudencio frigotto h japiassu j m nascimento l goncalves m ramos paulo freire priscila de souza chiste leite r m l araujo",
+    "termos_unificados": [
+      "Ensino",
+      "Extensão",
+      "Pesquisa",
+      "Feira do Conhecimento",
+      "Práticas Pedagógicas Integradoras",
+      "Ensino, Pesquisa, Extensão",
+      "Programa de Pós-graduação em Educação Profissional e Tecnológica",
+      "Dissertação"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

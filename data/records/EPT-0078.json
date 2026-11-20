@@ -1,0 +1,162 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0078",
+  "ano": 2021,
+  "autor": "Alessandra Nitschke",
+  "orientador": "Reginaldo Leandro Plácido",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP6",
+  "dissertacao": {
+    "titulo": "EGRESSOS E NDB EM DIÁLOGO: O ACOMPANHAMENTO DE EGRESSOS COMO SUBSÍDIO EM PROCESSOS DE REFORMULAÇÃO DE CURSOS DE ENSINO MÉDIO INTEGRADO DO INSTITUTO FEDERAL CATARINENSE – CAMPUS CONCÓRDIA",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/DISSERTACAO-ALESSANDRA-NITSCHKE.pdf",
+    "resumo": "A presente pesquisa foi desenvolvida no Mestrado Profissional em Educação\nProfissional e Tecnológica (ProfEPT), se insere na linha de pesquisa “Organização e\nMemórias de Espaços Pedagógicos na Educação Profissional e Tecnológica (EPT)”,e\nobjetivou compreender se e como o Núcleo Docente Básico (NDB) utiliza as\ninformações dos egressos nos processos de avaliação e acompanhamento dos\ncursos técnicos integrados ao ensino médio do Instituto Federal Catarinense –\nCampus Concórdia. Trata-se de uma pesquisa participante, qualitativa, de natureza\naplicada, que se utilizou de entrevista semiestruturada com representantes dos NDBs\ndos três cursos ofertados na instituição, além de pesquisa documental e bibliográfica.\nA pesquisa subsidiou o desenvolvimento do produto educacional “Tutorial de utilização\nde informações de e sobre egressos para o acompanhamento, avaliação e\nreformulação de cursos de Ensino Médio Integrado”. Os resultados demonstraram que\nos NDBs são estruturas importantes para pensar e discutir os rumos dos cursos\ntécnicos integrados ao ensino médio, mas que não utilizam dados sistematizados em\nrelação aos egressos. Em relação ao produto educacional, constatou-se que ele pode\npossibilitar o início da construção de uma cultura de diálogo com o egresso a fim de a\ninstituição não romper o relacionamento com o estudante quando ele recebe o\ndiploma.\n\nPalavras-Chave: Núcleo Docente Básico (NDB). Egressos. Ensino Médio Integrado\n(EMI). Educação Profissional e Tecnológica (EPT). Currículo.",
+    "palavras_chave": [
+      "Núcleo Docente Básico (NDB)",
+      "Egressos",
+      "Ensino Médio Integrado (EMI)",
+      "Educação Profissional e Tecnológica (EPT)",
+      "Currículo"
+    ],
+    "autores_referenciados": [
+      "A. Pereira",
+      "Alboni Marisa Dudeque Pianovski Vieira",
+      "Antoni Zabala",
+      "Antônio Carlos Gil",
+      "C. V. Sales",
+      "Carolina Nozella Gama",
+      "Cladecir Alberto Schenkel",
+      "Cloves Alexandre de Castro",
+      "D. J. Ferreira",
+      "Dante Henrique Moura",
+      "Denise Matiola Todorov",
+      "Dermeval Saviani",
+      "Egre Padoin",
+      "Eliezer Moreira Pacheco",
+      "G. S. Faria",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "H. M. B. Grangeiro",
+      "Ivanise Maria Rizzatti",
+      "Jaqueline Moll",
+      "José Gimeno Sacristán",
+      "Juarina Ana da Silveira Souza",
+      "Julia Malanchen",
+      "Juliana Favretto",
+      "K. G. Fagundes",
+      "K. R. de Sá",
+      "L. B. Espartel",
+      "L. M. S. Alves",
+      "Laurence Bardin",
+      "M. A. D. M. Vasconcelos",
+      "M. D. C. Pena",
+      "M. R. D. Dias",
+      "M. R. Sakr",
+      "M. Ramos",
+      "M. S. Ribeiro",
+      "Maria Angélica dos Santos",
+      "Maria Ciavatta",
+      "Mário Lopes Amorim",
+      "Newton Duarte",
+      "Priscila de Souza Chisté Leite",
+      "Reginaldo Leandro Plácido",
+      "Shyrlei Karyna Jagielski Benkendorf"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explicita a referência à pedagogia histórico-crítica em seção de referencial teórico, citando Saviani e Ramos como fundamentação.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 18,
+          "trecho": "O currículo depende do contexto em que se desenvolve e dos suj...",
+          "referencia_correspondente": "SACRISTÁN, 2000; RAMOS, 2014"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Tutorial de utilização de informações de e sobre egressos para o acompanhamento, avaliação e reformulação de cursos de ensino médio integrado",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Manual / Protocolo",
+    "link": "http://educapes.capes.gov.br/handle/capes/600482",
+    "publico_alvo": [
+      "gestores_coordenadores",
+      "tecnicos_profissionais_educacao",
+      "docentes_professores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "Egressos",
+      "Núcleo Docente Básico",
+      "Currículo",
+      "Mestrado Profissional em Educação Tecnológica",
+      "Organização e Memória da EPT"
+    ],
+    "data_publicacao": "2021-06-24",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Nitschke, A.",
+        "papel": "creator"
+      },
+      {
+        "nome": "Placido, R. L.",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/600482",
+        "url": "http://educapes.capes.gov.br/handle/capes/600482"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Tutorial de utilização de informações de e sobre egressos para o acompanhamento, avaliação e reformulação de cursos de ensino médio integrado",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "EGRESSOS E NDB EM DIÁLOGO: O ACOMPANHAMENTO DE EGRESSOS COMO SUBSÍDIO EM PROCESSOS DE REFORMULAÇÃO DE CURSOS DE ENSINO MÉDIO INTEGRADO DO INSTITUTO FEDERAL CATARINENSE - CAMPUS CONCÓRDIA",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "inferencia_llm",
+      "rotulo_original_declarado": "Texto – TUTORIAL DE UTILIZAÇÃO DE INFORMAÇÕES DE E SOBRE EGRESSOS PARA O ACOMPANHAMENTO, AVALIAÇÃO E REFORMULAÇÃO DE CURSOS DE ENSINO MÉDIO INTEGRADO",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0078 2021 alessandra nitschke reginaldo leandro placido ifc blumenau lp2 mp6 egressos e ndb em dialogo o acompanhamento de egressos como subsidio em processos de reformulacao de cursos de ensino medio integrado do instituto federal catarinense campus concordia a presente pesquisa foi desenvolvida no mestrado profissional em educacao profissional e tecnologica profept se insere na linha de pesquisa organizacao e memorias de espacos pedagogicos na educacao profissional e tecnologica ept e objetivou compreender se e como o nucleo docente basico ndb utiliza as informacoes dos egressos nos processos de avaliacao e acompanhamento dos cursos tecnicos integrados ao ensino medio do instituto federal catarinense campus concordia trata se de uma pesquisa participante qualitativa de natureza aplicada que se utilizou de entrevista semiestruturada com representantes dos ndbs dos tres cursos ofertados na instituicao alem de pesquisa documental e bibliografica a pesquisa subsidiou o desenvolvimento do produto educacional tutorial de utilizacao de informacoes de e sobre egressos para o acompanhamento avaliacao e reformulacao de cursos de ensino medio integrado os resultados demonstraram que os ndbs sao estruturas importantes para pensar e discutir os rumos dos cursos tecnicos integrados ao ensino medio mas que nao utilizam dados sistematizados em relacao aos egressos em relacao ao produto educacional constatou se que ele pode possibilitar o inicio da construcao de uma cultura de dialogo com o egresso a fim de a instituicao nao romper o relacionamento com o estudante quando ele recebe o diploma palavras chave nucleo docente basico ndb egressos ensino medio integrado emi educacao profissional e tecnologica ept curriculo pedagogia historico critica tutorial de utilizacao de informacoes de e sobre egressos para o acompanhamento avaliacao e reformulacao de cursos de ensino medio integrado material didatico instrucional manual protocolo ensino medio integrado nucleo docente basico ndb egressos ensino medio integrado emi educacao profissional e tecnologica ept curriculo educacao profissional e tecnologica ensino medio integrado nucleo docente basico mestrado profissional em educacao tecnologica organizacao e memoria da ept a pereira alboni marisa dudeque pianovski vieira antoni zabala antonio carlos gil c v sales carolina nozella gama cladecir alberto schenkel cloves alexandre de castro d j ferreira dante henrique moura denise matiola todorov dermeval saviani egre padoin eliezer moreira pacheco g s faria gabriel kaplun gaudencio frigotto h m b grangeiro ivanise maria rizzatti jaqueline moll jose gimeno sacristan juarina ana da silveira souza julia malanchen juliana favretto k g fagundes k r de sa l b espartel l m s alves laurence bardin m a d m vasconcelos m d c pena m r d dias m r sakr m ramos m s ribeiro maria angelica dos santos maria ciavatta mario lopes amorim newton duarte priscila de souza chiste leite reginaldo leandro placido shyrlei karyna jagielski benkendorf",
+    "termos_unificados": [
+      "Núcleo Docente Básico (NDB)",
+      "Egressos",
+      "Ensino Médio Integrado (EMI)",
+      "Educação Profissional e Tecnológica (EPT)",
+      "Currículo",
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "Núcleo Docente Básico",
+      "Mestrado Profissional em Educação Tecnológica",
+      "Organização e Memória da EPT"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

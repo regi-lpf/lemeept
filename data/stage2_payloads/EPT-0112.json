@@ -1,0 +1,279 @@
+{
+  "id": "EPT-0112",
+  "metadados_resolvidos": {
+    "ano": 2026,
+    "autor": "Josiane Brito Kerber Ferreira de Moraes",
+    "orientador": "Reginaldo Leandro Plácido",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP2",
+    "macroprojeto": "MP6"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "EVASÃO ESCOLAR NA EPT: TRAJETÓRIAS INTERROMPIDAS NO CURSO TÉCNICO SUBSEQUENTE EM ADMINISTRAÇÃO DO IFC CAMPUS SÃO FRANCISCO DO SUL",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2026/11/DISSERTACAO-E-PRODUTO-EDUCACIONAL_JOSIANE-BRITO-KERBER-FERREIRA-DE-MORAES.pdf",
+    "palavras_chave": [
+      "Evasão escolar",
+      "Educação Profissional e Tecnológica",
+      "Educação Profissional Subsequente",
+      "Permanência e êxito escolar",
+      "Instituto Federal Catarinense"
+    ],
+    "autores_referenciados": [
+      "Acácia Zeneida Kuenzer",
+      "Adriana Regina de Jesus Santos",
+      "Alain Coulon",
+      "Ana Lúcia Petrocione Jardim",
+      "Ana Zuleima Lüscher",
+      "Andy Field",
+      "Antônio Carlos Gil",
+      "Antônio Cláudio Lopes de Faria",
+      "Antônio Joaquim Severino",
+      "Bernard Lahire",
+      "Candido Alberto Gomes",
+      "Celia Regina Otranto",
+      "Cladecir Alberto Schenkel",
+      "Cloves Alexandre de Castro",
+      "Cristiane Aparecida dos Santos Baggi",
+      "Cristiane Cabral Johann",
+      "Daniela Finco",
+      "Dante Henrique Moura",
+      "Denise Todorov",
+      "Dermeval Saviani",
+      "Domingos Leite Lima Filho",
+      "Dominique Julia",
+      "Doraci Alves Lopes",
+      "Egre Padoin",
+      "Elen Cristina da Silva Ferreira",
+      "Eliezer Moreira Pacheco",
+      "Elivânia Ferreira da Costa",
+      "Estela Caroline Freitas Melo",
+      "Eva Maria Lakatos",
+      "Evandro Camargos Teixeira",
+      "Flávia Alves de Castro Oliveira",
+      "François Dubet",
+      "Gaudêncio Frigotto",
+      "Gilvan da Costa Santana",
+      "Helena Hirata",
+      "Inge Renate Frose Suhr",
+      "Ivonete Telles Medeiros",
+      "Jeane de Lima Silva",
+      "Jéssica de Lima Santos",
+      "João Carlos Cichaczewski",
+      "João Henrique da Silva",
+      "John Creswell",
+      "Jonas Magno dos Santos Cesário",
+      "José Alexandre Gonçalves",
+      "José Matias Pereira",
+      "Juarina Ana da Silveira Souza",
+      "Judith Victoria Castilho Mejia",
+      "Julliana Pena de Carvalho Santos",
+      "Karel Kosík",
+      "Kimberlé Crenshaw",
+      "Leda Maria Pereira da Silveira",
+      "Luana A. L. Souza",
+      "Lucas Adriano Silva",
+      "Marcelo Côrtes Neri",
+      "Maria A. L. Mendes",
+      "Maria Beatriz de Carvalho Melo Lobo",
+      "Maria Cecília de Souza Minayo",
+      "Maria Ciavatta",
+      "Maria Clara Di Pierro",
+      "Maria da Graça Jacintho Setton",
+      "Marina de Andrade Marconi",
+      "Mário Lopes Amorim",
+      "Marise Nogueira Ramos",
+      "Mateus D. Santos",
+      "Miguel Gonzáles Arroyo",
+      "Moacir Gadotti",
+      "Mônica Ribeiro da Silva",
+      "Natália Aparecida Morato Fernandes",
+      "Nayara Maria de Oliveira",
+      "Oliver Guimarães Armando Bastos",
+      "Oscar Hipólito",
+      "Paulo Freire",
+      "Paulo Roberto Motejunas",
+      "Paulo Rogério Santos e Silva",
+      "Pedro Alberto Barbetta",
+      "Pierre Bourdieu",
+      "Rafaely Karolynne do Nascimento Campos",
+      "Reginaldo Leandro Plácido",
+      "Renato Cislaghi",
+      "Rensis Likert",
+      "Roberto Leal Lobo e Silva Filho",
+      "Romeu Gomes",
+      "Rose Samyra Guedes Zahn",
+      "Rosemary Dore",
+      "Samuel de Oliveira Rodrigues",
+      "Sérgio Haddad",
+      "Shyrlei Benkendorf",
+      "Suely F. Deslandes",
+      "Thiago de Faria e Silva",
+      "Victor Hugo de Paula Flauzino",
+      "Vitor Henrique Paro",
+      "Xênia de Castro Barbosa"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/1190628",
+    "titulo_produto": "Guia de acolhimento para estudantes ingressantes do Curso Técnico Subsequente em Administração",
+    "titulo_produto_bruto": "GUIA DE ACOLHIMENTO PARA ESTUDANTES INGRESSANTES DO CURSO TÉCNICO SUBSEQUENTE EM ADMINISTRAÇÃO.",
+    "data_publicacao": "2026-08",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Moraes, JOSIANE BRITO KERBER FERREIRA",
+        "papel": "creator"
+      },
+      {
+        "nome": "Placido, Reginaldo Leandro",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1190628",
+        "url": "https://educapes.capes.gov.br/handle/capes/1190628"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Produto Educacional: Guia de acolhimento para estudantes ingressantes do Curso Técnico Subsequente em Administração",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Dissertação: EVASÃO ESCOLAR NA EPT: TRAJETÓRIAS INTERROMPIDAS NO CURSO TÉCNICO SUBSEQUENTE EM ADMINISTRAÇÃO DO IFC CAMPUS SÃO  FRANCISCO DO SUL",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "texto"
+    ],
+    "palavras_chave_educapes": [
+      "Evasão escolar",
+      "Educação Profissional e Tecnológica",
+      "Educação Profissional Subsequente",
+      "Permanência e êxito escolar",
+      "Organização e Memória da EPT",
+      "Mestrado em Educação Profissional e Tecnológica (ProfEPT)"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Guia",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\n\nJOSIANE BRITO KERBER FERREIRA DE MORAES\n\nEVASÃO ESCOLAR NA EPT: TRAJETÓRIAS INTERROMPIDAS NO CURSO\nTÉCNICO SUBSEQUENTE EM ADMINISTRAÇÃO DO IFC CAMPUS SÃO\nFRANCISCO DO SUL\n\nBlumenau\nAgosto 2026\n\nJOSIANE BRITO KERBER FERREIRA DE MORAES\n\nEVASÃO ESCOLAR NA EPT: TRAJETÓRIAS INTERROMPIDAS NO CURSO\nTÉCNICO SUBSEQUENTE EM ADMINISTRAÇÃO DO IFC CAMPUS SÃO\nFRANCISCO DO SUL\n\nDissertação\napresentada\nao\nPrograma\nde\nPós-graduação\nem\nEducação\nProfissional e\nTecnológica, ofertado pelo campus Blumenau, do\nInstituto Federal Catarinense, como parte dos\nrequisitos\npara\na\nobtenção\ndo\ntítulo\nde\nMestre/Mestra\nem\nEducação\nProfissional\ne\nTecnológica.\n\nOrientador: Reginaldo Leandro Plácido\n\nBlumenau\nAgosto 2026",
+    "ficha_catalografica": "[PÁG. 3]\nFICHA CATALOGRÁFICA DISSERTAÇÃO\n\n Moraes, Josiane Brito Kerber Ferreira de\n\nM828e Evasão escolar na EPT: trajetórias interrompidas no curso técnico\nsubsequente em administração do IFC campus São Francisco do Sul /\nJosiane Brito Kerber Ferreira de Moraes; orientador: Reginaldo Leandro\nPlácido. -- Blumenau, 2026.\n 185 p.\n\n Dissertação (mestrado) – Instituto Federal Catarinense, campus\nBlumenau, Mestrado Profissional em Educação Profissional Tecnológica\n(PROFEPT), Blumenau, 2026.\n Inclui referências.\n\n 1. Educação Profissional e Tecnológica. 2. Evasão Escolar.\n 3. Permanência Escolar. 4. Êxito Escolar. 5 Instituto Federal Catarinense.\nI. Plácido, Reginaldo Leandro. II. Instituto Federal Catarinense. Mestrado\nProfissional em Educação Profissional e Tecnológica. III. Título.\n\nCDD: 373.246\n\nFicha catalográfica elaborada pela bibliotecária\n Shyrlei K. Jagielski Benkendorf - CRB 14/662",
+    "sumario": "[PÁG. 16]\nSUMÁRIO\n\n1 INTRODUÇÃO\n19\n2 REFERENCIAL TEÓRICO\n30\n2.1 TRABALHO E EDUCAÇÃO: FUNDAMENTOS DA EDUCAÇÃO\nPROFISSIONAL\n30\n2.1.1 O trabalho como princípio educativo\n30\n2.2 A EDUCAÇÃO PROFISSIONAL NO BRASIL: CONTRADIÇÕES\nHISTÓRICAS\n32\n2.3 OS INSTITUTOS FEDERAIS: POLÍTICA PÚBLICA DE DEMOCRATIZAÇÃO\nDA EPT\n33\n2.3.1 Caracterização dos Cursos Técnicos Subsequentes na EPT\n35\n2.3.2 Os Institutos Federais em Santa Catarina\n37\n2.4 O INSTITUTO FEDERAL CATARINENSE CAMPUS SÃO FRANCISCO DO\nSUL\n38\n2.4.1 Cursos oferecidos na Instituição\n39\n2.4.2 Espaços pedagógicos na EPT e suas implicações para\npermanência e evasão\n41\n2.5 EVASÃO ESCOLAR NA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA:\nMARCOS TEÓRICOS E CONCEITUAIS\n43\n2.5.1 Conceituação e tipologia da evasão\n43\n2.5.2 Teorias explicativas da evasão escolar\n44\n2.5.2.1 Teorias sociológicas da evasão escolar\n48\n2.5.3 Permanência e êxito na EPT: marcos conceituais\n52\n2.6 A EVASÃO NA MODALIDADE SUBSEQUENTE: ESPECIFICIDADES E\nDESAFIOS\n55\n2.6.1 O estudante trabalhador na Educação Profissional e Tecnológica58\n3 METODOLOGIA\n60\n3.1 MÉTODO DA PESQUISA\n60\n3.1.1 Quanto à natureza\n60\n3.1.2 Quanto à abordagem\n60\n3.1.3 Quanto à natureza das fontes utilizadas\n61\n3.1.4 Quanto aos objetivos\n62\n3.1.5 Fundamentação e aplicação do método dialético\n62\n3.2 DEFINIÇÕES E CARACTERÍSTICAS DAS TAREFAS NA COLETA DE\nDADOS\n63\n3.2.1 População e amostra\n63\n3.2.2 Coleta de dados\n64\n3.2.3 Possíveis riscos, providências propostas e benefícios\n66\n3.2.4 Armazenamento dos dados coletados\n67\n3.2.5 Segurança e transferência no armazenamento de dados coletados\n68\n3.2.6 Análise dos dados\n68\n4 ANÁLISE DOS DADOS (RESULTADOS E DISCUSSÕES)\n71\n4.1 PANORAMA GERAL DA EVASÃO NO IFC CAMPUS SÃO FRANCISCO DO\nSUL\n71\n4.2 A EVASÃO ESCOLAR NO CURSO TÉCNICO SUBSEQUENTE EM\nADMINISTRAÇÃO DO IFC CAMPUS SÃO FRANCISCO DO SUL\n74\n4.3 FORMAS DE EVASÃO NO CURSO TÉCNICO SUBSEQUENTE EM\nADMINISTRAÇÃO DO IFC CAMPUS SÃO FRANCISCO DO SUL\n76\n4.4 EVASÃO POR ANO DE INGRESSO NO CURSO TÉCNICO SUBSEQUENTE\nEM ADMINISTRAÇÃO DO IFC CAMPUS SÃO FRANCISCO DO SUL\n77\n4.5 A INFLUÊNCIA DA PANDEMIA DE COVID-19 NAS TAXAS DE EVASÃO\nDAS TURMAS INGRESSANTES\n79\n4.6 DEMONSTRATIVO DA EVASÃO ESCOLAR\n82\n4.6.1 A evasão por semestre letivo\n83\n4.6.2 A evasão por gênero\n85\n4.6.3 A evasão por faixa etária do aluno\n87\n4.6.4 A evasão por renda per capita\n90\n4.6.5 A evasão por forma de ingresso\n93\n4.6.6 Evasão escolar por cor/raça declarada no momento da matrícula 95\n4.6.7 Evasão segundo a naturalidade/lugar de origem\n98\n4.6.8 A influência da localização do campus\n99\n4.6.9 Análise integrada dos resultados\n100\n4.7 EVASÃO OU MOBILIDADE ACADÊMICA? OS CASOS DE TRANSIÇÃO\nPARA O ENSINO SUPERIOR\n101\n4.8 PROGRAMAS E AÇÕES INSTITUCIONAIS DE COMBATE À EVASÃO\nESCOLAR\n103\n4.8.1 Programa de Auxílios Estudantis (PAE)\n104\n4.8.2 Apoio didático-pedagógico\n105\n4.8.3 Atendimento Educacional Especializado\n105\n4.8.4 Práticas pedagógicas inovadoras\n106\n4.9 MOTIVOS E CONDICIONANTES DA EVASÃO ESCOLAR\n106\n4.9.1 Análise documental: formulários de desis",
+    "resumo": "[PÁG. 8]\nRESUMO\n\nA evasão escolar na Educação Profissional e Tecnológica (EPT) constitui-se como\nfenômeno complexo que compromete os objetivos formativos dos Institutos\nFederais. Esta pesquisa tem como objetivo compreender os motivos que levam à\nelevada taxa de evasão escolar (77,8%) entre os alunos matriculados no Curso\nTécnico Subsequente em Administração do Instituto Federal Catarinense campus\nSão Francisco do Sul, no período de 2018 a 2024. A análise fundamenta-se na\nperspectiva teórica que entende a evasão escolar como fenômeno multifatorial,\nconsiderando\ndimensões\nsociais,\nculturais,\ninstitucionais\ne\npedagógicas.\nMetodologicamente, trata-se de pesquisa de abordagem mista, natureza básica e\nobjetivo exploratório, utilizando procedimentos de pesquisa bibliográfica, análise\ndocumental e aplicação de questionário eletrônico com questões abertas e\nfechadas. A pesquisa volta-se à produção de conhecimento situado sobre o\nfenômeno da evasão, articulada à dimensão aplicada expressa no desenvolvimento\ne na validação de um produto educacional que intervém concretamente na realidade\ninstitucional investigada. A população pesquisada contempla os alunos ingressantes\nno período delimitado, considerando os diferentes contextos históricos vivenciados\npor essas turmas, incluindo o período pré-pandemia, pandêmico e pós-pandemia da\nCovid-19. A pesquisa desenvolveu-se na linha de pesquisa Organização e Memórias\ndos Espaços Pedagógicos da Educação Profissional e Tecnológica, macroprojeto 6,\nno âmbito do Laboratório de Espaços e Memórias da Educação Profissional e\nTecnológica de Santa Catarina (LEME). A análise quantitativa, realizada por meio do\nteste qui-quadrado, identificou associação estatisticamente significativa entre a faixa\netária dos estudantes e os índices de evasão, evidenciando que as diferentes fases\nda vida impõem demandas e dificuldades específicas que condicionam a\npermanência no curso. As demais variáveis analisadas: gênero, renda per capita,\nforma de ingresso e cor/raça não apresentaram associação estatisticamente\nsignificativa com a evasão no conjunto dos dados, embora as análises descritivas\nindiquem diferenças percentuais relevantes entre os grupos. A análise qualitativa,\norientada pela análise temática de conteúdo, revelou que os principais\ndeterminantes da evasão são de natureza socioeconômica, especialmente a\nnecessidade de conciliar trabalho e estudo, somados à influência da pandemia de\nCovid-19 sobre a trajetória formativa das turmas de 2020 a 2022. Como produto\neducacional, foi desenvolvido e validado um Guia de Acolhimento para estudantes\ningressantes, cujos resultados preliminares indicam recepção positiva e potencial\ncontribuição para o fortalecimento do sentimento de pertencimento institucional.\n\nPalavras-chave: Evasão escolar. Educação Profissional e Tecnológica. Educação\nProfissional\nSubsequente.\nPermanência\ne\nêxito\nescolar. Instituto Federal\nCatarinense.",
+    "introducao": "[PÁG. 19]\n19\n1 INTRODUÇÃO\n\nA evasão escolar constitui-se como uma das preocupações das instituições\neducacionais brasileiras, particularmente na Educação Profissional e Tecnológica\n(EPT), onde assume contornos específicos que demandam análise aprofundada.\nEsse fenômeno, caracterizado pela interrupção dos estudos antes da conclusão do\ncurso (Brasil, 2022), representa não apenas uma perda individual para o estudante,\nmas um desafio às políticas públicas educacionais e ao cumprimento da função\nsocial das instituições de ensino.\nPara fins deste estudo, adota-se a definição de evasão escolar conforme o\nDecreto n. 11.079/2022, que a caracteriza como a situação em que o discente não\nefetua a matrícula para dar continuidade aos estudos no ano seguinte, incluindo\ntambém o abandono escolar, entendido como a interrupção da frequência antes do\ntérmino do ano letivo, sem solicitação formal de transferência.\nA criação dos Institutos Federais de Educação, Ciência e Tecnologia, por\nmeio da Lei n. 11.892/2008, representou uma significativa expansão e interiorização\nda\nRede\nFederal\nde\nEducação\nProfissional,\nCientífica\ne\nTecnológica,\ndemocratizando o acesso ao ensino técnico e superior para milhares de jovens e\nadultos de diferentes culturas e condições socioeconômicas. No entanto, a\nampliação do acesso à educação não garante, por si só, a permanência e o êxito\ndos estudantes, configurando um desafio para as instituições de ensino.\nA expansão e a interiorização da Rede Federal de Educação Profissional,\nCientífica e Tecnológica têm proporcionado a ampliação física, a democratização da\noferta de vagas e a possibilidade de acesso ao Ensino Médio Técnico, Ensino\nSuperior e a formação profissional subsequente ao ensino médio a uma significativa\nparcela da população, com a inclusão de milhares de jovens e de adultos de\ndiferentes culturas e condições socioeconômicas a um ensino gratuito e de\nqualidade. Entretanto, temos a realidade desafiadora do abandono escolar.\nÉ preciso entender a evasão como fenômeno que envolve múltiplos fatores e\npara isso se requer articulações de ações que atendam a esse público diversificado\nque, em sua maioria, é socioeconomicamente vulnerável e egresso de sistemas\npúblicos de ensino em regiões com baixo índice de desenvolvimento educacional.\nCom isso, para fortalecer a ação educacional, torna-se necessário um olhar sobre a\n\n[PÁG. 20]\n20\nqualidade do ensino, o atendimento à diversidade, a permanência e o êxito dos\nestudantes no processo educativo (Brasil, 2014).\nNesse sentido, esta pesquisa busca aprofundar a compreensão sobre a\nquestão da evasão escolar na EPT, mais especificamente, aquela evidenciada no\nCurso Técnico Subsequente em Administração do Instituto Federal Catarinense\n(IFC), campus São Francisco do Sul.\nA evasão escolar na EPT constitui-se como fenômeno complexo e\nmultifatorial que desafia as políticas educacionais brasileiras e compromete o\ncumprimento da função social dos Institutos Federais, estabelecida pela Lei n.\n11.892/2008. Esse fenômeno assume particular relevância quando consideramos\nque\nos\nInstitutos\nFederais\nforam\nconcebidos\ncomo política pública de\ndemocratização do acesso à educação profissional, visando à formação de\ntrabalhadores qualificados e ao desenvolvimento regional.\nA literatura especializada sobre evasão na EPT aponta para a confluência de\nfatores internos e externos às instituições educacionais. Dore e Lüscher (2011)\nidentificaram que as causas da evasão na educação técnica envolvem dimensões\nsocioeconômicas, culturais e institucionais, destacando que estudantes de menor\nrenda apresentam maiores índices de abandono. Silva Filho et al. (2007)\ncomplementam essa análise, ao demonstrarem que a evasão no ensino profissional\nestá intrinsecamente relacionada às desigualdades sociais e às dificuldades de\nconciliação entre trabalho e estudo.\nNo contexto dos Institutos Federais, o Documento Orientador para a\nSuperação da Evasão e Retenção na Rede Federal (Brasil, 2014) reconhece que\nessas instituições atendem a um público diversificado, em sua maioria\nsocioeconomicamente vulnerável e egresso de sistemas públicos de ensino em\nregiões com baixo índice de desenvolvimento educacional. Essa realidade evidencia\na complexidade dos desafios relacionados à permanência estudantil.\nNo âmbito da EPT, a evasão escolar deve ser compreendida a partir da\nrelação entre educação e trabalho. Conforme Moura, Lima Filho e Silva (2015), a\nformação humana não ocorre de forma isolada no espaço escolar, mas está\ndiretamente condicionada pelas relações sociais e pelas exigências do mundo do\ntrabalho em uma sociedade marcada por desigualdades estruturais. Nesse contexto,\na escola reflete as contradições da organização social e produtiva, impondo limites\nconcretos à permanência estudantil, especialmente para sujeitos que precisam\n\n[PÁG. 21]\n21\nconciliar estudo e trabalho. Essa condição assume particular relevância na\nmodalidade subsequente, composta majoritariamente por estudantes trabalhadores.\nNo debate sobre a EPT, o modo como a formação é concebida e organizada\nassume papel central para a permanência dos estudantes. Conforme argumenta\nCiavatta (2005), a noção de formação integrada expressa uma disputa de\nconcepções educacionais, especialmente no que se refere à superação da\nfragmentação entre educação geral e educação profissional.\nA autora critica a redução da formação para o trabalho ao seu aspecto\nmeramente operacional, desvinculado dos conhecimentos científicos, tecnológicos e\ndas relações sociais que lhe dão sentido. Para jovens e adultos trabalhadores,\npúblico predominante da modalidade subsequente da EPT, propostas formativas que\nesvaziam o sentido educativo da escolarização tendem a fragilizar o vínculo com a\ninstituição e a intensificar processos de desengajamento, aspecto que se articula à\ncompreensão da evasão escolar nesse campo.\nSob a perspectiva da sociologia da educação, a evasão não pode ser\nexplicada apenas por decisões individuais ou dificuldades pedagógicas isoladas.\nTrata-se de um fenômeno socialmente produzido, processual e multifatorial (Dore;\nLüscher, 2011). A saída do estudante da instituição representa o estágio final de um\npercurso de desengajamento, marcado por desigualdades socioeconômicas,\ntrajetórias escolares interrompidas e pela condição de estudante trabalhador.\nAlém dos fatores socioeconômicos amplamente discutidos na literatura, a\nevasão escolar pode estar relacionada também a aspectos pedagógicos. Nesse\nsentido, Kuenzer (2003) destaca que a desarticulação entre teoria e prática nos\nprocessos formativos tende a gerar perda de significado dos conteúdos para os\nestudantes trabalhadores. Quando os conhecimentos apresentados não dialogam\ncom a realidade vivida, há maior probabilidade de desengajamento, o que pode\nculminar na evasão escolar. Assim, compreender a evasão na EPT exige considerar\nnão apenas as condições externas ao estudante, mas também a organização\npedagógica dos cursos.\nEssa dimensão pedagógica não se dissocia das condições concretas de vida\ndos estudantes, mas se articula a elas, potencializando ou atenuando os processos\nde permanência e evasão. As contribuições de Neri (2009) reforçam essa\ncompreensão, ao evidenciar que a evasão está associada às condições concretas\nde vida dos estudantes. Fatores, como necessidade de trabalhar, restrições\n\n[PÁG. 22]\n22\neconômicas e percepção de baixa atratividade da escola influenciam diretamente as\ndecisões de abandono. Além disso, os estudantes tendem a priorizar benefícios\nimediatos, como a inserção no mercado de trabalho, em detrimento dos ganhos\nfuturos proporcionados pela escolarização, aspecto relevante para a análise da\nevasão na EPT, especialmente na modalidade subsequente.\nAlém disso, a literatura aponta que a evasão escolar deve ser compreendida\ntambém como problema institucional, uma vez que a ausência ou fragilidade de\npolíticas sistemáticas de permanência e êxito contribui para a saída prematura dos\nestudantes. Silva Filho et al. (2007) destacam q",
+    "descricao_produto_na_dissertacao": "[PÁG. 24] 24\nevadidos; identificar barreiras estruturais e institucionais que dificultam a\npermanência; analisar estratégias institucionais de prevenção à evasão; e\ndesenvolver um produto educacional que contribua para o enfrentamento do\nproblema.\nPara alcançar esse propósito, busca-se fundamentar teoricamente o\nfenômeno da evasão na Educação Profissional e Tecnológica (EPT) a partir das\ncontribuições da sociologia da educação e das políticas educacionais para a EPT no\nBrasil.\nAlém disso, pretende-se identificar e analisar os principais fatores\ndeterminantes da evasão no curso investigado, considerando dimensões sociais,\neconômicas, culturais, institucionais e pedagógicas. Também se propõe a\ncaracterizar o perfil socioeconômico e demográfico dos estudantes evadidos,\nconsiderando variáveis, como gênero, faixa etária, renda per capita, forma de\ningresso, cor/raça e naturalidade. Busca-se ainda mapear e avaliar as barreiras\nestruturais, institucionais e pedagógicas que dificultam a permanência dos\nestudantes no curso;\nOutro foco é analisar o impacto dos diferentes contextos históricos\n(pré-pandemia, pandemia e pós-pandemia da Covid-19) nas taxas de evasão das\ndiferentes turmas. Pretende-se, ainda, identificar e analisar as estratégias e\nprogramas institucionais existentes de combate à evasão e promoção da\npermanência estudantil. Por fim, objetiva-se desenvolver um produto educacional\nque contribua para o enfrentamento da evasão e para a promoção da permanência e\nêxito dos estudantes na modalidade subsequente da EPT.\nDelimitação temporal: O estudo abrange o período de 2018 a 2024, recorte\nque permite analisar diferentes contextos históricos vivenciados pelas turmas\ninvestigadas:\no período pré-pandemia (2018-2019), o período pandêmico\n(2020-2021)\ne\no\nperíodo\npós-pandemia\n(2022-2024),\npossibilitando\numa\ncompreensão mais ampla dos fatores que influenciam a evasão escolar na EPT.\nDelimitação espacial: A pesquisa tem como locus o IFC campus São\nFrancisco do Sul, instituição criada em 2013, que atende a uma região litorânea com\ncaracterísticas socioeconômicas e culturais específicas que podem influenciar na\npermanência estudantil.\nDelimitação do curso: O estudo focaliza especificamente o Curso Técnico\nSubsequente em Administração, modalidade destinada a pessoas que já concluíram\n\n[PÁG. 28] a) a identificação de barreiras específicas enfrentadas pelos estudantes da\nmodalidade subsequente;\nb) a compreensão dos impactos de fatores contextuais (localização, transporte,\ncaracterísticas socioeconômicas regionais) na permanência estudantil;\nc) a análise da efetividade das estratégias institucionais existentes de combate à\nevasão;\nd) o desenvolvimento de um produto educacional que contribua concretamente\npara a melhoria dos índices de permanência e êxito.\n\n[PÁG. 28] O produto educacional desenvolvido atendeu a uma demanda institucional\nreal, podendo ser aplicado não apenas no campus investigado, mas em outros\ncontextos similares da Rede Federal, multiplicando o impacto da pesquisa.\nA escolha deste tema vincula-se diretamente à trajetória profissional da\npesquisadora no IFC campus São Francisco do Sul desde 2014, especificamente no\nsetor de Registros Acadêmicos e Cadastro Institucional (RACI). Essa experiência de\numa década proporcionou observação sistemática do fenômeno da evasão,\npermitindo identificação empírica de sua magnitude e complexidade.\nA vivência cotidiana com situações de abandono, desistência e cancelamento\nde matrículas sensibilizou para a ",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 21,
+        "texto": "21\nconciliar estudo e trabalho. Essa condição assume particular relevância na\nmodalidade subsequente, composta majoritariamente por estudantes trabalhadores.\nNo debate sobre a EPT, o modo como a formação é concebida e organizada\nassume papel central para a permanência dos estudantes. Conforme argumenta\nCiavatta (2005), a noção de formação integrada expressa uma disputa de\nconcepções educacionais, especialmente no que se refere à superação da\nfragmentação entre educação geral e educação profissional.\nA autora critica a redução da formação para o trabalho ao seu aspecto\nmeramente operacional, desvinculado dos conhecimentos científicos, tecnológicos e\ndas relações sociais que lhe dão sentido. Para jovens e adultos trabalhadores,\npúblico predominante da modalidade subsequente da EPT, propostas formativas que\nesvaziam o sentido educativo da escolarização tendem a fragilizar o vínculo com a\ninstituição e a intensificar processos de desengajamento, aspecto que se articula à\ncompreensão da evasão escolar nesse campo.\nSob a perspectiva da sociologia da educação, a evasão não pode ser\nexplicada apenas por decisões individuais ou dificuldades pedagógicas isoladas.\nTrata-se de um fenômeno soci",
+        "citacoes_detectadas": [
+          "Dore;\nLüscher, 2011"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "A compreensão da relação entre trabalho e educação constitui-se como\nelemento fundamental para a análise da EPT. Para Frigotto (2001), o trabalho pode\nser considerado uma categoria fundante da humanidade, influenciando e integrando\ntodos os elementos essenciais das relações humanas, como a linguagem, cultura,\npolítica, educação, ciência e técnica.\nEssa perspectiva é aprofundada por Saviani (2007), que considera trabalho e\neducação como atividades especificamente humanas, pois somente o homem\ntrabalha e educa. Diferentemente dos animais, que se adaptam à natureza, os\nhomens adaptam a natureza a si, agindo sobre ela e transformando-a para ajustar\nàs suas necessidades.\nParo (2016) complementa essa perspectiva, ao enfatizar que é o trabalho que\nempresta ao homem sua característica histórica, na qual somente o homem é capaz\nde estabelecer objetivos, calcados em valores, e buscar sua concretização. Ao\ntranscender a mera natureza (aquilo que não depende de sua vontade e de sua\nação), o homem ultrapassa o nível da necessidade e avança no âmbito da liberdade,\nque é o oposto do espontaneísmo, da necessidade natural; é algo construído pelo\nhomem à medida que constrói sua própria humanidade. O",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 31,
+        "texto": "31\n Com o avanço da produção houve a divisão do trabalho e, com isso, a\napropriação privada da terra, ocasionando a divisão de classes entre os proprietários\ne não proprietários de terra. No entanto, com a divisão de classes veio também a\ndivisão na educação. Iniciou-se assim uma separação na unidade da educação,\npassando a ter duas modalidades distintas: uma para a classe proprietária (homens\nlivres), focada nas atividades intelectuais, e outra para a classe não proprietária\n(escravos e serviçais), voltada ao próprio processo de trabalho (Saviani, 2007).\nEssa divisão entre formação intelectual e formação voltada ao trabalho\nmanual consolidou uma estrutura educacional marcada pela desigualdade social.\nNesse sentido, Moura, Lima Filho e Silva (2015) aprofundam essa análise, ao\nassociarem a divisão de classes à estrutura do modo de produção capitalista,\nrefletindo sobre a forma como esse sistema influencia na divisão social e técnica do\ntrabalho, ocasionando um sistema educacional classista, que separa o trabalho\nintelectual e trabalho manual, trabalho simples e trabalho complexo, cultura geral e\ncultura técnica, em outras palavras, uma escola que forma seres humanos\nunilaterais, mut",
+        "citacoes_detectadas": [
+          "Saviani, 2007"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 41,
+        "texto": "A EPT trata dos processos de concepção e organização do espaço\npedagógico, com foco nas estratégias transversais e interdisciplinares, que\npossibilitem formação integral e significativa do estudante, sustentados no trabalho\ncomo princípio educativo e na pesquisa como princípio pedagógico, em espaços\nformais e não formais que contribuem para a constituição da experiência escolar na\nEPT.\nEsses espaços não se limitam à sala de aula, mas abrangem diferentes\ninstâncias institucionais que mediam a relação do estudante com o conhecimento,\ncom a instituição e com sua trajetória formativa. Além dessa dimensão organizativa,\na EPT também se constitui como uma construção temporal, por meio dos estudos de\nmemória da Educação Profissional e Tecnológica, que, ao longo do tempo, vem\nconfigurando os processos de ensino e de organização de seus espaços\npedagógicos.\nParte-se da compreensão de que os espaços pedagógicos expressam uma\ncultura escolar historicamente construída. Conforme aponta Julia (2001), a cultura\nescolar é formada por um conjunto de normas que definem os conhecimentos a\nserem ensinados e as condutas a serem inculcadas, bem como por práticas que\npossibilitam a transmissão desses sabe",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 47,
+        "texto": "Ainda conforme Brasil (2014), as causas da evasão e da retenção incluem:\ndificuldades de relacionamento com professores, diretores ou colegas; condições\nsocioeconômicas; frustração com o curso; fatores intraescolares (currículo, carga\nhorária, horários); motivação e interesse pelo curso; necessidade de trabalhar;\nproblemas de aprendizagem; repetência; inadequação de programas de estágio;\npráticas pedagógicas; perfil do corpo docente; excesso de disciplinas; exigências\ndos professores; características estruturais da escola; enfraquecimento de vínculos;\nformação precária; resistência às normas da Educação Profissional, entre outros.\nAlém de mapear as causas da evasão, o Documento Orientador para a\nSuperação da Evasão e Retenção na Rede Federal de Educação Profissional,\nCientífica e Tecnológica (Brasil, 2014) apresenta um conjunto de ações e\nintervenções implementadas pelas instituições da Rede Federal com o objetivo de\npromover a permanência e o êxito dos estudantes.\nEntre essas ações, destacam-se: o acompanhamento de alunos na fase final\ndo curso, monitoramento de frequência, aproximação das famílias, constituição de\nequipes pedagógicas e colegiados, reuniões com estudantes em risco",
+        "citacoes_detectadas": [
+          "Brasil, 2014"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 49,
+        "texto": "49\nvários fatores associados, sociais, econômicos e institucionais. Para entender o\nmotivo de um estudante abandonar a escola é preciso um olhar atento à sua\nrealidade e percurso, não considerando a evasão somente como um desinteresse\npelos estudos.\nPierre Bourdieu (1996, p. 183), em A ilusão biográfica, critica a ideia de que a\nvida é uma narrativa linear e coerente. “Uma vida é inseparavelmente o conjunto dos\nacontecimentos de uma existência individual com uma história e o relato dessa\nhistória”.\nNo contexto educacional, a trajetória escolar resulta não apenas de escolhas\nindividuais, mas da posição que o estudante ocupa no campo educacional, do\ncapital que possui (cultural, social e econômico) e das relações que mantém com\noutros agentes (professores, colegas e familiares).\nCom isso, para compreender a evasão escolar é necessário considerar as\ndesigualdades sociais e estruturais que influenciam no acesso e permanência dos\nestudantes na Instituição, superando a ideia de responsabilizar apenas o aluno e\nreconhecendo que fatores sociais interferem em seu trajeto educacional.\nBourdieu e Passeron (2014) refletem a respeito das facilidades de acesso dos\nestudantes provenientes das cla",
+        "citacoes_detectadas": [
+          "Bourdieu, 1999, p. 332"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 52,
+        "texto": "52\nhabilidades socioculturais, realizando-se não apenas no espaço escolar, mas na\nfamília, nos locais de trabalho, nos espaços de convívio sociocultural e religioso,\nbem como por meio dos recursos de informação e comunicação a distância\n(Haddad; Di Pierro, 2000).\nDessa forma, as contribuições de Bourdieu, Lahire, Charlot e Dubet permitem\ncompreender a evasão escolar como um fenômeno complexo e multidimensional,\nresultante da articulação entre desigualdades estruturais, configurações sociais\nsingulares, relações construídas com o saber e mecanismos institucionais de\nexclusão. A evasão deixa de ser interpretada como falha individual e passa a ser\ncompreendida como processo social e educacional, produzido no interior das\ninstituições e das experiências vividas pelos estudantes.\nÀ luz dessas contribuições teóricas, a evasão escolar na modalidade\nsubsequente da EPT pode ser compreendida como um fenômeno que se materializa\nna trajetória individual, mas que tem raízes nas condições estruturais que\ncondicionam o acesso e a permanência dos estudantes no campo escolar.\nAo mesmo tempo, o capital cultural diferencial dos estudantes e a distribuição\ndesigual do capital temporal, que a dupla jor",
+        "citacoes_detectadas": [
+          "Haddad; Di Pierro, 2000"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 55,
+        "texto": "De acordo com artigo 36-b da Lei de Diretrizes e Bases (LDB), a Educação\nProfissional Técnica de nível médio poderá ser desenvolvida de duas formas:\narticulada com o ensino médio e subsequente em cursos destinados a quem já\ntenha concluído o ensino médio (Brasil, 1996).\nOs cursos técnicos subsequentes são destinados às pessoas que buscam\naprofundar suas habilidades profissionais. Esses cursos proporcionam uma\nformação técnica especializada, preparando o indivíduo para ingressar de maneira\nqualificada no mundo do trabalho.\nRamos (2008) destaca a importância do acesso a esses cursos e outros\nníveis de formação técnica, sendo importante assegurar o acesso ao conhecimento\nem todos os níveis de ensino, onde a Educação Profissional deve ser vista como um\nprocesso contínuo, permitindo que jovens e adultos, após o fim do ensino médio,\npossam se especializar e atualizar suas habilidades ou se capacitar para outras\nprofissões. A forma de Educação Profissional subsequente deve ser uma parte\nimportante das responsabilidades dos sistemas de ensino, porém não pode ser\nconfundida como alternativa compensatória ao ensino superior.\nApesar do avanço de matrícula nos cursos técnicos profissionais, o ",
+        "citacoes_detectadas": [
+          "Brasil, 1996",
+          "Souza, 2014"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 63,
+        "texto": "63\nencontrando-se sempre em via de se transformar, desenvolver; o fim de um\nprocesso é sempre o começo de outro” (Marconi; Lakatos, 2011, p. 83).\nNesse sentido, a dialética contribui para uma leitura do fenômeno da evasão\nescolar considerando as contradições que existem no campo educacional, inclusive\nna EPT que tem ideais de democratização do acesso, porém ainda com práticas que\nreproduzem desigualdades sociais. Essa visão combina com a perspectiva de Pierre\nBourdieu, que considera que a escola também reproduz as desigualdades da\nsociedade.",
+        "citacoes_detectadas": [
+          "Marconi; Lakatos, 2011, p. 83"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 65,
+        "texto": "65\nPara a coleta de dados, foram considerados os dados do Sistema Integrado\nde Gestão de Atividades Acadêmicas (SIGAA).\nInicialmente, realizou-se o levantamento de dados no sistema institucional,\ncom o objetivo de identificar os estudantes evadidos. Posteriormente, foram\nconsultadas, no arquivo institucional, as pastas dos estudantes que formalizaram\nseu desligamento do curso, a fim de verificar os motivos da desistência. Isso porque,\nno momento da solicitação formal de desligamento, os estudantes preenchem um\nformulário no qual registram as razões que motivaram sua saída do curso. Esses\nformulários foram então analisados.\nPara os estudantes que abandonaram o curso sem formalizar o desligamento,\na coleta de dados qualitativa foi realizada por meio de questionário com questões\nfechadas e abertas, aplicado em formato digital e assíncrono, encaminhado\nindividualmente por e-mail ou WhatsApp. A opção por esse formato justifica-se pelas\ncaracterísticas da população investigada: estudantes que já não frequentavam a\ninstituição, com disponibilidade de tempo restrita em razão de jornadas de trabalho e\nresponsabilidades familiares, e, muitas vezes, residindo em localidades distantes do\ncampu",
+        "citacoes_detectadas": [
+          "Comissão Nacional de Ética em Pesquisa, 2021"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 69,
+        "texto": "69\nApós a identificação dos grupos e dos núcleos, eles são agrupados em\ncategorias analíticas. Essas categorias ajudam a interpretar o significado das falas\ndos participantes.\nO discurso não é visto somente como algo pessoal e individual. O que o\nestudante diz também pode estar relacionado com as condições reais de vida, como\ndificuldades econômicas, trajetória escolar, acesso a oportunidades, conforme a\ncontribuição de Pierre Bourdieu.\nDo ponto de vista metodológico, a análise foi conduzida à luz do método\ndialético, compreendendo a evasão escolar como um fenômeno complexo e\ncontraditório. Essa forma de análise está em consonância com Gadotti (2012), que\nse refere a forma de entender a realidade como em constante relação e\ntransformação, em que o modo de pensar das pessoas é influenciado por condições\nconcretas em que vivem, como renda, trabalho, acesso à educação, entre outros.\nSegundo Kosik (1976), a realidade não se revela de forma imediata aos\nindivíduos, pois o primeiro contato com o mundo ocorre por meio da prática social e\nda ação concreta. Assim, os sujeitos constroem representações iniciais da realidade\na partir de sua experiência cotidiana, apreendendo, em um primeiro mo",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 70,
+        "texto": "70\ndos relatos dos estudantes. Depois, procurou-se identificar as unidades de sentido\nrecorrentes, observando também nas falas as percepções, dificuldades, expectativas\ne estratégias utilizadas ao longo da trajetória escolar.\nPosteriormente, as unidades de sentido foram organizadas em categorias\nanalíticas, as quais surgiram a partir do material coletado, ou seja, a fala dos\nestudantes. Após a organização, os dados foram comparados com os conceitos\nteóricos utilizados.\nApós a organização das categorias, iniciou-se a análise utilizando os\nconceitos teóricos, como capital cultural, capital social, habitus e trajetória escolar,\nassociados a Pierre Bourdieu. Buscou-se interpretar como os fatores mais amplos\npodem influenciar o modo como esses estudantes vivenciam sua trajetória escolar.\nA validação das categorias analíticas considerou critérios metodológicos\nespecíficos. Observaram-se os temas que aparecem com frequência nas falas dos\nparticipantes (falas recorrentes), indicando que não são casos isolados. Além disso,\nanalisou-se se as categorias dialogam com o referencial teórico utilizado na\npesquisa.\nA articulação entre a análise temática de conteúdo, o método dialético e o\nreferenc",
+        "citacoes_detectadas": []
+      }
+    ],
+    "referencias_filtradas": [
+      "BOURDIEU, Pierre. A escola conservadora: as desigualdades frente à escola e à cultura. Tradução de Aparecida Joly Gouveia. Revisão técnica de Maria Alice Nogueira. In: NOGUEIRA, Maria Alice; CATANI, Afrânio (org.). Escritos de educação. 2. ed. Petrópolis: Vozes, 1999. p. 325-347.",
+      "BOURDIEU, Pierre. A ilusão biográfica. In: FERREIRA, Marieta de Moraes; AMADO, Janaína (org.). Usos e abusos da história oral. 5. ed. Rio de Janeiro: Editora FGV, 1996. p. 183–191.",
+      "BOURDIEU, Pierre. A miséria do mundo. 8. ed. Petrópolis: Vozes, 2001.",
+      "BOURDIEU, Pierre; PASSERON, Jean-Claude. Os herdeiros: os estudantes e a cultura. Tradução de Ione Ribeiro Valle e Nilton Valle. Florianópolis: Editora da",
+      "COMISSÃO NACIONAL DE ÉTICA EM PESQUISA. Ofício Circular n. 2, de 2021. Brasília, DF: Secretaria de Vigilância em Saúde, Ministério da Saúde, 2021. Disponível em: https://cepsh.ifc.edu.br/wp-content/uploads/sites/69/2023/06/9.-ORIENTACOES-PAR A-PROCEDIMENTOS-EM-PESQUISAS-COM-QUALQUER-ETAPA-EM-AMBIENTE- VIRTUAL.pdf. Acesso em: 10 out. 2024.",
+      "SAVIANI, Dermeval. Trabalho e educação: fundamentos ontológicos e históricos. Revista Brasileira de Educação, Rio de Janeiro, v. 12, n. 34, p. 152-180, jan./abr. 2007.",
+      "SOUZA, Juarina Ana da Silveira. Permanência e Evasão Escolar: um estudo de caso em uma Instituição de Ensino Profissional. 2014. 152 f. Dissertação (Mestrado em Gestão e Avaliação da Educação Pública) – Universidade Federal de Juiz de Fora, Minas Gerais, 2014."
+    ]
+  }
+}

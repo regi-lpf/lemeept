@@ -1,0 +1,163 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0036",
+  "ano": 2024,
+  "autor": "Lausivan Grangeiro Corrêa",
+  "orientador": "Juliene Marques Bogo",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP3",
+  "dissertacao": {
+    "titulo": "A CONTRIBUIÇÃO DO RITMO PARA A FORMAÇÃO INTEGRAL NO CURSO TÉCNICO EM TEATRO DO IFSC CAMPUS JOINVILLE: UMA ANÁLISE A PARTIR DA PERCEPÇÃO DOCENTE",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/10/Dissertacao-Lausivan.pdf",
+    "resumo": "Esta pesquisa surgiu pela interseção de dois itinerários distintos e historicamente construídos.\nO primeiro foi construído pelo contato profissional com o ambiente de montagens teatrais\ncom contribuições sobre a formação em música. Nesse ambiente, o Ritmodestacou-se como\num dos principais pilares de conhecimento musical, demandado como conteúdo na formação\ndos profissionais do campo teatral. O segundo itinerário foi engendrado pelo contato com os\nconceitos em Educação Profissional e Tecnológica, no qual se estabeleceu as noções sobre a\nimportância da Formação Integral. Nesse cruzamentos de itinerários surgiram as condições\npara que fosse possível realizar essa pesquisa, que é voltada para o contexto escolar presente\nno Curso Técnico em Teatro do Instituto Federal de Educação, Ciência e Tecnologia de Santa\nCatarina - IFSC, Campus Joinville e os sujeitos são os professores desse curso. Nessas\ncondições foi formulado o problema que resultou na seguinte questão: Na percepção dos\nprofessores do Curso Técnico em Teatro do IFSC Campus Joinville, como o estudo do Ritmo\npode contribuir na busca pela Formação Integral? Para responder a essa pergunta,\nfoi\nproposto o seguinte objetivo geral: analisar a contribuição do Ritmo para a Formação Integral\nno Curso Técnico em Teatro do IFSC Campus Joinville a partir da percepção docente. A\nmetodologia de coleta de dados foi realizada utilizando-se a técnica de questionário e os\ndados interpretados por meio da Análise do Discurso. Com base na interação com o corpo\ndocente, foi construído um produto educacional no formato audiovisual, na modalidade de\nlives registradas como projeto de extensão do IFC, campus Blumenau, disponibilizado para as\ndiversas\ncomunidades escolares que dialogam com os conceitos de Ritmo e Formação\nIntegral.\nPalavras-Chave: Educação Profissional e Tecnológica. Ritmo Musical. Teatro.\nOmnilateralidade.",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Ritmo Musical",
+      "Teatro",
+      "Omnilateralidade"
+    ],
+    "autores_referenciados": [
+      "Adriana Hoffmann Fernandes",
+      "Ana Cristina Martins Dias",
+      "Andréia Aparecida Paris",
+      "Antônio Carlos Gil",
+      "Arnold Schoenberg",
+      "Beatriz Ilari",
+      "Charles Rosen",
+      "D. Bruno",
+      "Dante Henrique Moura",
+      "Dermeval Saviani",
+      "Domingos Leite Lima Filho",
+      "Egre Padoin",
+      "Emile Jaques Dalcrose",
+      "Eni Puccinelli Orlandi",
+      "Enny Parejo",
+      "Eva Maria Lakatos",
+      "F. Demonte",
+      "Fábio Cintra",
+      "Fábio José Rauen",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "Jacyan Castilho de Oliveira",
+      "Jussara Rodrigues Fernandino",
+      "Karlheinz Stockhausen",
+      "Kelmara Mendes Vieira",
+      "Konstantin Stanislavski",
+      "L. Motta",
+      "L. Ruiz",
+      "L. Tufró",
+      "Marina de Andrade Marconi",
+      "Mário Lopes Amorim",
+      "Marise Nogueira Ramos",
+      "Marlon Dalmoro",
+      "Melita Bona",
+      "Mônica Ribeiro da Silva",
+      "Paolo Nosella",
+      "Raquel Castro de Souza",
+      "Roberto C. Bogdan",
+      "Sari Knoop Biklen",
+      "Sérgio Augusto Freire de Souza",
+      "Silvana Mariani",
+      "Stanley Sadie",
+      "Thiago Henrique Bragato Barros",
+      "Vera Borges",
+      "Vera Corrêa",
+      "Walênia Marília Silva"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explora a relação entre trabalho e educação, citando Saviani e Gramsci, fundamentais para a Pedagogia Histórico-Crítica. O foco na Formação Integral como emancipatória alinha-se à matriz teórica.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 23,
+          "trecho": "O trabalho e a educação estariam entrelaçados na mesma trajetória de construção do próprio ser humano...",
+          "referencia_correspondente": "Saviani, 2007"
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 26,
+          "trecho": "A Escola Unitária, de Gramsci, e a Educação Politécnica, de Marx, seriam as precursoras da proposta da Formação Integral...",
+          "referencia_correspondente": "Moura; Lima; Silva, 2015"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "As contribuições do ritmo musical para a formação integral",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Vídeo / Audiovisual",
+    "link": "https://educapes.capes.gov.br/handle/capes/870151",
+    "publico_alvo": [
+      "docentes_professores",
+      "estudantes_alunos"
+    ],
+    "nivel_aplicacao": "Educação Profissional e Tecnológica",
+    "palavras_chave": [
+      "EPT",
+      "Formação Integral",
+      "Ritmo",
+      "Teatro",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica",
+      "Dissertação"
+    ],
+    "data_publicacao": "2024-07-31",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Grangeiro Corrêa, Lausivan",
+        "papel": "creator"
+      },
+      {
+        "nome": "Marques Bogo, Juliene",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/870151",
+        "url": "https://educapes.capes.gov.br/handle/capes/870151"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://www.youtube.com/watch?v=ohNvWxrarSA",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "inferencia_llm",
+      "rotulo_original_declarado": "AS CONTRIBUIÇÕES DO RITMO MUSICAL PARA A FORMAÇÃO INTEGRAL",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "vídeo"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0036 2024 lausivan grangeiro correa juliene marques bogo ifc blumenau lp1 mp3 a contribuicao do ritmo para a formacao integral no curso tecnico em teatro do ifsc campus joinville uma analise a partir da percepcao docente esta pesquisa surgiu pela intersecao de dois itinerarios distintos e historicamente construidos o primeiro foi construido pelo contato profissional com o ambiente de montagens teatrais com contribuicoes sobre a formacao em musica nesse ambiente o ritmodestacou se como um dos principais pilares de conhecimento musical demandado como conteudo na formacao dos profissionais do campo teatral o segundo itinerario foi engendrado pelo contato com os conceitos em educacao profissional e tecnologica no qual se estabeleceu as nocoes sobre a importancia da formacao integral nesse cruzamentos de itinerarios surgiram as condicoes para que fosse possivel realizar essa pesquisa que e voltada para o contexto escolar presente no curso tecnico em teatro do instituto federal de educacao ciencia e tecnologia de santa catarina ifsc campus joinville e os sujeitos sao os professores desse curso nessas condicoes foi formulado o problema que resultou na seguinte questao na percepcao dos professores do curso tecnico em teatro do ifsc campus joinville como o estudo do ritmo pode contribuir na busca pela formacao integral para responder a essa pergunta foi proposto o seguinte objetivo geral analisar a contribuicao do ritmo para a formacao integral no curso tecnico em teatro do ifsc campus joinville a partir da percepcao docente a metodologia de coleta de dados foi realizada utilizando se a tecnica de questionario e os dados interpretados por meio da analise do discurso com base na interacao com o corpo docente foi construido um produto educacional no formato audiovisual na modalidade de lives registradas como projeto de extensao do ifc campus blumenau disponibilizado para as diversas comunidades escolares que dialogam com os conceitos de ritmo e formacao integral palavras chave educacao profissional e tecnologica ritmo musical teatro omnilateralidade pedagogia historico critica as contribuicoes do ritmo musical para a formacao integral material didatico instrucional video audiovisual educacao profissional e tecnologica educacao profissional e tecnologica ritmo musical teatro omnilateralidade ept formacao integral ritmo programa de pos graduacao em educacao profissional e tecnologica dissertacao adriana hoffmann fernandes ana cristina martins dias andreia aparecida paris antonio carlos gil arnold schoenberg beatriz ilari charles rosen d bruno dante henrique moura dermeval saviani domingos leite lima filho egre padoin emile jaques dalcrose eni puccinelli orlandi enny parejo eva maria lakatos f demonte fabio cintra fabio jose rauen gabriel kaplun gaudencio frigotto jacyan castilho de oliveira jussara rodrigues fernandino karlheinz stockhausen kelmara mendes vieira konstantin stanislavski l motta l ruiz l tufro marina de andrade marconi mario lopes amorim marise nogueira ramos marlon dalmoro melita bona monica ribeiro da silva paolo nosella raquel castro de souza roberto c bogdan sari knoop biklen sergio augusto freire de souza silvana mariani stanley sadie thiago henrique bragato barros vera borges vera correa walenia marilia silva",
+    "termos_unificados": [
+      "Educação Profissional e Tecnológica",
+      "Ritmo Musical",
+      "Teatro",
+      "Omnilateralidade",
+      "EPT",
+      "Formação Integral",
+      "Ritmo",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica",
+      "Dissertação"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0004",
+  "ano": 2025,
+  "autor": "Alexandre Veloso dos Santos",
+  "orientador": "Fátima Peres Zago de Oliveira",
+  "coorientadores": [
+    "Raquel Cardoso de Faria e Custódio"
+  ],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP1",
+  "dissertacao": {
+    "titulo": "VIVÊNCIAS E EXPERIÊNCIAS COM O MOODLE NA EJA-EPT: UMA AUTOETNOGRAFIA NO CURSO DE ELETRICISTA INDUSTRIAL DO IFC BLUMENAU",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/12/Dissertacao_Alexandre_Veloso_dos_Santos.pdf",
+    "resumo": "Nesta dissertação, analiso, por meio da autoetnografia, a mediação pedagógica com\na plataforma MOODLE na Educação de Jovens e Adultos integrada à Educação\nProfissional e Tecnológica (EJA-EPT), a partir da prática docente do pesquisador.\nMinha análise revela que a transposição acrítica de práticas presenciais para o\nambiente virtual, ao ignorar as condições materiais de acesso dos estudantes-\ntrabalhadores, tende a reproduzir um modelo de “educação bancária” adaptado ao\nmeio digital. Concluo que a superação desse modelo exige uma práxis docente que\narticule os saberes escolares com as experiências de vida dos sujeitos, sendo este\num desafio central para o Ensino no âmbito do ProfEPT. Como materialização da\npesquisa, desenvolvi o Produto Educacional intitulado “Do Quadro ao Clique: uma\nOralitura Reflexiva em Multimídias Acessíveis”. O recurso, em formato de narrativa\naudiovisual e textual, sintetiza os achados da investigação em estratégias e princípios\npara uma mediação pedagógica crítica e inclusiva com tecnologias na EJA-EPT. Esta\npesquisa consubstancia, portanto, um percurso de práxis que documento e que\nconverte a experiência docente analisada em conhecimento sistemático e aplicável.\n\nPalavras-chave: Autoetnografia. Educação de Jovens e Adultos. Educação\nProfissional e Tecnológica. MOODLE. Prática Docente.",
+    "palavras_chave": [
+      "Autoetnografia",
+      "Educação de Jovens e Adultos",
+      "Educação Profissional e Tecnológica",
+      "MOODLE",
+      "Prática Docente"
+    ],
+    "autores_referenciados": [
+      "Acácia Zeneida Kuenzer",
+      "Álvaro Vieira Pinto",
+      "António Nóvoa",
+      "Bruna P. Salton",
+      "Carles Monereo",
+      "Carlos Rodrigues Brandão",
+      "César Coll",
+      "Clément Gauthier",
+      "Conceição Evaristo",
+      "Dante Henrique Moura",
+      "Dermeval Saviani",
+      "Elizeu C. de Souza",
+      "Fernando R. Silva",
+      "Gaudêncio Frigotto",
+      "Jaqueline Moll",
+      "Juarez Tarcísio Dayrell",
+      "Karin Anami",
+      "Leda Maria Martins",
+      "Manuel Castells",
+      "Mara Cristina C. Barbosa",
+      "Maria Ciavatta",
+      "Maria da C. Passeggi",
+      "Marília Pontes Spósito",
+      "Marise Nogueira Ramos",
+      "Marli André",
+      "Menga Lüdke",
+      "Miguel González Arroyo",
+      "Myrian Sepúlveda dos Santos",
+      "Nelson de Luca Pretto",
+      "Ole Skovsmose",
+      "Paula Perin Vicentini",
+      "Paulo Freire",
+      "Pierre Lévy",
+      "René Barbier",
+      "Silvio Matheus Alves Santos",
+      "Tânia Mara Collyer Pinheiro",
+      "Walter Antônio Bazzo"
+    ],
+    "base_epistemologica": {
+      "valor": "Educação Libertadora / Freireana",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": true,
+      "justificativa": "O trecho cita Freire (2005) sobre educação como processo coletivo, alinhando-se à educação libertadora. O produto critica a 'educação bancária' digital, refletindo a filosofia freireana.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 10,
+          "trecho": "Ninguém educa ninguém, ninguém educa a si mesmo, os homens se educam entre si, mediatizados pelo mundo.",
+          "referencia_correspondente": "Freire, 2005, p. 79"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "DO QUADRO AO CLIQUE: UMA ORALITURA REFLEXIVA EM MULTIMÍDIAS ACESSÍVEIS",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Vídeo / Audiovisual",
+    "link": "https://educapes.capes.gov.br/handle/capes/1133518",
+    "publico_alvo": [
+      "docentes_professores",
+      "estudantes_alunos",
+      "tecnicos_profissionais_educacao"
+    ],
+    "nivel_aplicacao": "Educação Profissional e Tecnológica",
+    "palavras_chave": [
+      "Autoetnografia",
+      "Educação de Jovens e Adultos",
+      "Educação Profissional e Tecnológica",
+      "MOODLE",
+      "Prática Docente",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica-ProfEPT"
+    ],
+    "data_publicacao": "2025-09-26",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "SANTOS, ALEXANDRE VELOSO DOS",
+        "papel": "creator"
+      },
+      {
+        "nome": "Oliveira, Fátima Peres Zago de",
+        "papel": "creator"
+      },
+      {
+        "nome": "Custódio, Raquel Cardoso de Faria e",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1133518",
+        "url": "https://educapes.capes.gov.br/handle/capes/1133518"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://www.youtube.com/watch?v=N0TjtTxAZN0&list=PLV2rOThnbRojHfvo5YrlsKevBjDv_GzZi",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Do Quadro Ao Clique: Uma Oralitura Reflexiva Em Multimídias Acessíveis",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "DO QUADRO AO CLIQUE: UMA ORALITURA REFLEXIVA EM MULTIMÍDIAS ACESSÍVEIS",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "vídeo"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0004 2025 alexandre veloso dos santos fatima peres zago de oliveira raquel cardoso de faria e custodio ifc blumenau lp1 mp1 vivencias e experiencias com o moodle na eja ept uma autoetnografia no curso de eletricista industrial do ifc blumenau nesta dissertacao analiso por meio da autoetnografia a mediacao pedagogica com a plataforma moodle na educacao de jovens e adultos integrada a educacao profissional e tecnologica eja ept a partir da pratica docente do pesquisador minha analise revela que a transposicao acritica de praticas presenciais para o ambiente virtual ao ignorar as condicoes materiais de acesso dos estudantes trabalhadores tende a reproduzir um modelo de educacao bancaria adaptado ao meio digital concluo que a superacao desse modelo exige uma praxis docente que articule os saberes escolares com as experiencias de vida dos sujeitos sendo este um desafio central para o ensino no ambito do profept como materializacao da pesquisa desenvolvi o produto educacional intitulado do quadro ao clique uma oralitura reflexiva em multimidias acessiveis o recurso em formato de narrativa audiovisual e textual sintetiza os achados da investigacao em estrategias e principios para uma mediacao pedagogica critica e inclusiva com tecnologias na eja ept esta pesquisa consubstancia portanto um percurso de praxis que documento e que converte a experiencia docente analisada em conhecimento sistematico e aplicavel palavras chave autoetnografia educacao de jovens e adultos educacao profissional e tecnologica moodle pratica docente educacao libertadora freireana do quadro ao clique uma oralitura reflexiva em multimidias acessiveis material didatico instrucional video audiovisual educacao profissional e tecnologica autoetnografia educacao de jovens e adultos educacao profissional e tecnologica moodle pratica docente programa de pos graduacao em educacao profissional e tecnologica profept acacia zeneida kuenzer alvaro vieira pinto antonio novoa bruna p salton carles monereo carlos rodrigues brandao cesar coll clement gauthier conceicao evaristo dante henrique moura dermeval saviani elizeu c de souza fernando r silva gaudencio frigotto jaqueline moll juarez tarcisio dayrell karin anami leda maria martins manuel castells mara cristina c barbosa maria ciavatta maria da c passeggi marilia pontes sposito marise nogueira ramos marli andre menga ludke miguel gonzalez arroyo myrian sepulveda dos santos nelson de luca pretto ole skovsmose paula perin vicentini paulo freire pierre levy rene barbier silvio matheus alves santos tania mara collyer pinheiro walter antonio bazzo",
+    "termos_unificados": [
+      "Autoetnografia",
+      "Educação de Jovens e Adultos",
+      "Educação Profissional e Tecnológica",
+      "MOODLE",
+      "Prática Docente",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica-ProfEPT"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

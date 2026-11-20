@@ -1,0 +1,172 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0001",
+  "ano": 2026,
+  "autor": "Silvana de Oliveira Ribeiro da Silva",
+  "orientador": "Jorge da Cunha Dutra",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP3",
+  "dissertacao": {
+    "titulo": "EDUCAÇÃO FINANCEIRA COMO TEMA TRANSVERSAL NA EPT: UMA ANÁLISE DOS PPC´S DOS CURSOS TÉCNICOS INTEGRADOS AO ENSINO MÉDIO DO IFC",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2026/03/DISSERTACAO-E-PRODUTO-EDUCACIONAL-_-SILVANA-DE-OLIVEIRA-RIBEIRO-DA-SILVA.pdf",
+    "resumo": "Esta dissertação, desenvolvida no âmbito do Programa de Pós-Graduação em\nEducação Profissional e Tecnológica (ProfEPT), tem como objetivo geral analisar a\nabordagem da Educação Financeira nos Projetos Pedagógicos de Curso dos Cursos\nTécnicos Integrados ao Ensino Médio do Instituto Federal Catarinense. Trata-se de\numa pesquisa de natureza aplicada, com abordagem qualitativa e caráter exploratório,\nque adotou como procedimentos metodológicos a pesquisa bibliográfica e a análise\ndocumental. O corpus da investigação foi constituído por 38 PPCs, analisados à luz\nda técnica de Análise de Conteúdo possibilitando identificar recorrências, ausências e\nconcepções predominantes sobre a temática. Os resultados evidenciam que a\ninstitucionalização da Educação Financeira no IFC ocorre de forma incipiente e pouco\nsistematizada, sendo identificada como componente curricular obrigatório em apenas\numa pequena parcela dos cursos, enquanto a maioria dos documentos apresenta a\ntemática de maneira implícita e fragmentada, frequentemente subordinada a uma\nperspectiva instrumental e tecnicista. Apesar dessas limitações, a análise revelou um\nexpressivo potencial interdisciplinar da Educação Financeira, especialmente nas\náreas das Ciências Humanas, permitindo abordagens críticas que articulam\ndimensões econômicas, sociais, políticas e éticas. Como resposta à lacuna formativa\nidentificada, foi desenvolvido um produto educacional no formato de cartilha\npedagógica digital, intitulado \"Educação Financeira na EPT: Uma Possibilidade Crítica\ne Emancipatória\", avaliado positivamente por atores da Rede Federal de Educação\nProfissional, Científica e Tecnológica, que destacaram sua coerência teórica, clareza\ndidática e alinhamento aos princípios freireanos. Conclui-se que a inserção\nsistemática e crítica da Educação Financeira nos currículos da Educação Profissional\ne Tecnológica constitui um elemento fundamental para a promoção da autonomia, da\nformação omnilateral e da leitura crítica da realidade, ampliando o papel social do\nEnsino Médio Integrado na formação de sujeitos capazes de intervir de maneira\nconsciente e transformadora na sociedade.\n\nPalavras-chave: Educação Financeira. Ensino. Educação Profissional e Tecnológica.\nProfEPT. Produto Educacional.",
+    "palavras_chave": [
+      "Educação Financeira",
+      "Ensino",
+      "Educação Profissional e Tecnológica",
+      "ProfEPT",
+      "Produto Educacional"
+    ],
+    "autores_referenciados": [
+      "Amarildo Melchiades da Silva",
+      "Ana Karina Cancian Baroni",
+      "Ana Paula Santos de Melo Fiori",
+      "Ana Quitéria Nunes Martins",
+      "Anderson Clayton Ferreira Brettas",
+      "André Bernardo Campos",
+      "André Taue Saito",
+      "Antônio Carlos Gil",
+      "Arioane Primon Soares",
+      "Arthur Belford Powell",
+      "Benjamin Grahan",
+      "Celle Cristianne Mendes Evangelista Belchior",
+      "Cleber Cristiano Prodanov",
+      "Daiana de Fátima Moreira Cavalcante",
+      "Diana Cris Fernandes Gomes",
+      "Eliezer Moreira Pacheco",
+      "Elio Carlos Ricardo",
+      "Elizabeth Fernandes",
+      "Emmanuelle Arnaud Almeida",
+      "Erica Marlúcia Leite Pagani",
+      "Ernani Cesar de Freitas",
+      "Flávia de Angelis Santana",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "Geovani Alves da Costa",
+      "Gerson Lucas Padilha de Lima",
+      "Henrique Feldmann",
+      "Jessyca Mayara Nunes dos Santos",
+      "João Carlos Cichaczewski",
+      "José Gimeno Sacristán",
+      "José Roberto Ferreira Savoia",
+      "Katy Jacob",
+      "Lais Macedo de Almeida Nunes",
+      "Laurence Bardin",
+      "Línlya Sachs",
+      "Lucas Gabriel dos Santos Tolomeotti",
+      "Luiz Claudio de Almeida Teodoro",
+      "Malcolm Bush",
+      "Marcus Vinicius Maltempi",
+      "Maria Ciavatta",
+      "Maria de Fátima Abud Olivieri",
+      "Maria de Fátima da Silva",
+      "Marina Gonçalves",
+      "Mário Sérgio Pedroza Lobão",
+      "Marise Nogueira Ramos",
+      "Morgan Housel",
+      "Paulo Cesar Possar",
+      "Paulo Freire",
+      "Paulo Roberto Santana Borges",
+      "Rafael Felipe Coelho Neves",
+      "Renata Gomes de Abreu Freitas",
+      "Richarles de Araújo Sousa",
+      "Rodolfo Junqueira Tavares",
+      "Sharyl Hudson",
+      "Silvio Ancisar Sánchez Gamboa",
+      "Susiany Mirela Machado",
+      "Zygmunt Bauman"
+    ],
+    "base_epistemologica": {
+      "valor": "Educação Libertadora / Freireana",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O produto fundamenta-se na crítica freireana à educação bancária, promovendo emancipação e diálogo. O resumo e referências explicitam sua vinculação ao pensamento crítico de Freire.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 51,
+          "trecho": "Freire destaca o papel do diálogo na prática pedagógica, estabelecendo uma relação dialética entre educador e educando.",
+          "referencia_correspondente": "Freire, 1989, p. 9"
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 52,
+          "trecho": "A formação integral não se limita à aquisição de conhecimentos acadêmicos, mas envolve o desenvolvimento humano em dimensões sociais, éticas, culturais e cidadãs.",
+          "referencia_correspondente": "Instituto Federal Catarinense, 2023c"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Educação Financeira na EPT: uma possibilidade crítica e emancipatória",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Cartilha",
+    "link": "https://educapes.capes.gov.br/handle/capes/1171935",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "docentes_professores",
+      "gestores_coordenadores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Educação Financeira",
+      "Educação Profissional e Tecnológica",
+      "Formação Integral",
+      "Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT"
+    ],
+    "data_publicacao": "2026-02",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense - IFC Campus Blumenau",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Silva, Silvana de Oliveira Ribeiro da",
+        "papel": "creator"
+      },
+      {
+        "nome": "Dutra, Jorge da Cunha",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1171935",
+        "url": "https://educapes.capes.gov.br/handle/capes/1171935"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Produto Educacional - \"Educação Financeira na EPT: uma possibilidade crítica e emancipatória\"",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "EDUCAÇÃO FINANCEIRA NA EPT: UMA POSSIBILIDADE CRÍTICA E EMANCIPATÓRIA",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "livro digital"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0001 2026 silvana de oliveira ribeiro da silva jorge da cunha dutra ifc blumenau lp1 mp3 educacao financeira como tema transversal na ept uma analise dos ppc s dos cursos tecnicos integrados ao ensino medio do ifc esta dissertacao desenvolvida no ambito do programa de pos graduacao em educacao profissional e tecnologica profept tem como objetivo geral analisar a abordagem da educacao financeira nos projetos pedagogicos de curso dos cursos tecnicos integrados ao ensino medio do instituto federal catarinense trata se de uma pesquisa de natureza aplicada com abordagem qualitativa e carater exploratorio que adotou como procedimentos metodologicos a pesquisa bibliografica e a analise documental o corpus da investigacao foi constituido por 38 ppcs analisados a luz da tecnica de analise de conteudo possibilitando identificar recorrencias ausencias e concepcoes predominantes sobre a tematica os resultados evidenciam que a institucionalizacao da educacao financeira no ifc ocorre de forma incipiente e pouco sistematizada sendo identificada como componente curricular obrigatorio em apenas uma pequena parcela dos cursos enquanto a maioria dos documentos apresenta a tematica de maneira implicita e fragmentada frequentemente subordinada a uma perspectiva instrumental e tecnicista apesar dessas limitacoes a analise revelou um expressivo potencial interdisciplinar da educacao financeira especialmente nas areas das ciencias humanas permitindo abordagens criticas que articulam dimensoes economicas sociais politicas e eticas como resposta a lacuna formativa identificada foi desenvolvido um produto educacional no formato de cartilha pedagogica digital intitulado educacao financeira na ept uma possibilidade critica e emancipatoria avaliado positivamente por atores da rede federal de educacao profissional cientifica e tecnologica que destacaram sua coerencia teorica clareza didatica e alinhamento aos principios freireanos conclui se que a insercao sistematica e critica da educacao financeira nos curriculos da educacao profissional e tecnologica constitui um elemento fundamental para a promocao da autonomia da formacao omnilateral e da leitura critica da realidade ampliando o papel social do ensino medio integrado na formacao de sujeitos capazes de intervir de maneira consciente e transformadora na sociedade palavras chave educacao financeira ensino educacao profissional e tecnologica profept produto educacional educacao libertadora freireana educacao financeira na ept uma possibilidade critica e emancipatoria material didatico instrucional cartilha ensino medio integrado educacao financeira ensino educacao profissional e tecnologica profept produto educacional formacao integral mestrado profissional em educacao profissional e tecnologica profept amarildo melchiades da silva ana karina cancian baroni ana paula santos de melo fiori ana quiteria nunes martins anderson clayton ferreira brettas andre bernardo campos andre taue saito antonio carlos gil arioane primon soares arthur belford powell benjamin grahan celle cristianne mendes evangelista belchior cleber cristiano prodanov daiana de fatima moreira cavalcante diana cris fernandes gomes eliezer moreira pacheco elio carlos ricardo elizabeth fernandes emmanuelle arnaud almeida erica marlucia leite pagani ernani cesar de freitas flavia de angelis santana gabriel kaplun gaudencio frigotto geovani alves da costa gerson lucas padilha de lima henrique feldmann jessyca mayara nunes dos santos joao carlos cichaczewski jose gimeno sacristan jose roberto ferreira savoia katy jacob lais macedo de almeida nunes laurence bardin linlya sachs lucas gabriel dos santos tolomeotti luiz claudio de almeida teodoro malcolm bush marcus vinicius maltempi maria ciavatta maria de fatima abud olivieri maria de fatima da silva marina goncalves mario sergio pedroza lobao marise nogueira ramos morgan housel paulo cesar possar paulo freire paulo roberto santana borges rafael felipe coelho neves renata gomes de abreu freitas richarles de araujo sousa rodolfo junqueira tavares sharyl hudson silvio ancisar sanchez gamboa susiany mirela machado zygmunt bauman",
+    "termos_unificados": [
+      "Educação Financeira",
+      "Ensino",
+      "Educação Profissional e Tecnológica",
+      "ProfEPT",
+      "Produto Educacional",
+      "Formação Integral",
+      "Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

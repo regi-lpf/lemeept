@@ -1,0 +1,169 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0010",
+  "ano": 2025,
+  "autor": "Maykon Donizete dos Santos",
+  "orientador": "Denise Fernandes",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP6",
+  "dissertacao": {
+    "titulo": "IDENTIFICAÇÃO DA REGULAMENTAÇÃO DAS NORMAS DE SEGURANÇA DO TRABALHO EM REGIME ESTATUTÁRIO NO ENSINO PROFISSIONAL E TECNOLÓGICO DO INSTITUTO FEDERAL CATARINENSE.",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/11/DISSERTACAO-E-PRODUTO-EDUCACIONAL-_MAYKON-DONIZETE-DOS-SANTOS.-1.pdf",
+    "resumo": "Esta pesquisa analisou a Política de Atenção à Saúde e Segurança do Trabalho do\nInstituto Federal Catarinense (PASST/IFC), verificando se suas diretrizes de Saúde e\nSegurança do Trabalho (SST) estão claramente definidas e efetivamente\nimplementadas no contexto institucional. O estudo fundamentou-se na relação\nhistórica entre trabalho e educação como dimensões essenciais para o\ndesenvolvimento humano, destacando que, na Educação Profissional e Tecnológica\n(EPT), a formação integra saberes acadêmicos e práticas vinculadas ao mundo do\ntrabalho. Oficinas e laboratórios, embora espaços pedagógicos, também expõem\nalunos e servidores a riscos ocupacionais, o que reforça a necessidade de políticas\ninstitucionais consistentes de SST. A pesquisa recupera o percurso histórico da SST,\nconsolidado a partir da Revolução Industrial e que, no Brasil, culminou na\nimplementação das Normas Regulamentadoras (NRs) em 1978. Considerando que\no\nregime\nestatutário\nfederal,\nregido\npela Lei nº 8.112/1990, apresenta\nregulamentações fragmentadas, o governo criou, em 2006, o Sistema Integrado de\nSaúde Ocupacional do Servidor Público Federal (SISOSP), sucedido pela PASS\n(2009) e pelo SIASS. Contudo, a ausência de instrumentos operacionais específicos\nmotivou a criação da Norma Operacional de Saúde do Servidor (NOSS), em 2010,\nque serviu de base para a PASST/IFC, instituída pela Resolução nº 56/2019. A\nmetodologia adotada foi qualitativa, de caráter documental e bibliográfico, orientada\npela análise de conteúdo (Bardin, 2016). As fontes incluíram legislações, normativas\ninstitucionais, documentos administrativos e produções acadêmicas sobre SST e\nEPT. Os resultados evidenciaram que, embora a PASST/IFC esteja alinhada às\ndiretrizes nacionais, ela apresenta fragilidades quanto à efetiva implementação,\nsobretudo pela ausência de orientações técnicas detalhadas. Diante desse cenário,\nelaborou-se\num\nProduto\nEducacional\nem\nformato\nde\ne-book,\nintitulado\nImplementação da Comissão Interna de Saúde do Servidor Público (CISSP) no\nInstituto Federal Catarinense, que utiliza as NRs como referência subsidiária ao\nregime estatutário, conforme previsão do artigo 12 da NOSS. O e-book foi avaliado\npor profissionais e gestores da área de SST do IFC, cujas respostas confirmaram\nsua pertinência e viabilidade para apoiar a consolidação da PASST/IFC. Conclui-se,\nportanto, que a PASST/IFC dispõe de diretrizes gerais de SST, mas carece de\ninstrumentos normativos e operacionais específicos, lacuna que pode ser suprida\npela criação da CISSP como instância institucional de apoio à gestão da saúde do\nservidor.\n\nPalavras-chave: Educação Profissional e Tecnológica. Saúde e Segurança do\nTrabalho. PASST/IFC. Regime estatutário. NOSS. Normas Regulamentadoras.",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Saúde e Segurança do Trabalho",
+      "PASST/IFC",
+      "Regime estatutário",
+      "NOSS",
+      "Normas Regulamentadoras"
+    ],
+    "autores_referenciados": [
+      "A. V. de Almeida",
+      "Adolfo Roberto Moreira Santos",
+      "Alex Pizzio",
+      "Ana Beatriz Ribeiro Barros Silva",
+      "Antônio Carlos Gil",
+      "Antônio Jackson Alcântara Frota",
+      "Bernardino Ramazzini",
+      "Carlos Pompe",
+      "Carlos Sérgio da Silva",
+      "Carta Magna",
+      "Cezar Augusto Uliana",
+      "Cleiton Faria Lima",
+      "Cristiane Oliveira Reimberg",
+      "Daniela Rosim",
+      "Danielle Gimenes",
+      "Dermeval Saviani",
+      "E. R. B. Jesus",
+      "Edilene Maria de Oliveira",
+      "Eva Maria Lakatos",
+      "Fabiana Pinto de Almeida Bizarria",
+      "Fábio Goulart Villela",
+      "Fabio Previdelli",
+      "Frida Marina Fischer",
+      "Gabriel Kaplún",
+      "Gabriela Viana",
+      "Gaudêncio Frigotto",
+      "Glauciene Ferreira dos Santos",
+      "Gustavo Caetano Torres",
+      "Igor Natusch",
+      "Isaura Alberton de Lima",
+      "Ivanise Maria Rizzatti",
+      "Jefferson Peixoto da Silva",
+      "Junior Cesar de Almeida",
+      "Karla Klein",
+      "Laurence Bardin",
+      "Letícia Moura Mulatinho",
+      "Luiz Claudio Gonçalves Gomes",
+      "Mara Queiroga Camisassa",
+      "Maria Ciavatta",
+      "Maria Martha Gibellini",
+      "Marina Dal Maso Coelho",
+      "Marina de Andrade Marconi",
+      "Marise Nogueira Ramos",
+      "Renata Paparelli",
+      "Ricardo Antunes",
+      "Ricardo Luiz Lorenzi",
+      "Robson Mendes Neves Tsuboi"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": true,
+      "justificativa": "O texto discute a formação crítica e a relação entre trabalho e educação, citando Saviani e Frigotto, associados à Pedagogia Histórico-Crítica.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 22,
+          "trecho": "A primeira parte aborda a concepção histórica do trabalho como princípio educativo, destacando autores que discutem sua função formativa.",
+          "referencia_correspondente": "SAVIANI, D. SOBRE A NATUREZA E ESPECIFICIDADE DA EDUCAÇÃO."
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 66,
+          "trecho": "Frigotto (2001) reforça essa perspectiva ao afirmar que 'o princípio educativo do trabalho deriva desta sua especificidade de ser uma atividade necessária desde sempre a todos os seres humanos'.",
+          "referencia_correspondente": "SAVIANI, D. SOBRE A NATUREZA E ESPECIFICIDADE DA EDUCAÇÃO."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "IMPLEMENTAÇÃO DA COMISSÃO INTERNA DE SAÚDE DO SERVIDOR PÚBLICO (CISSP) NO INSTITUTO FEDERAL CATARINENSE (IFC)",
+    "tipo": "material_didatico_instrucional",
+    "formato": "E-book / Livro Digital",
+    "link": "https://educapes.capes.gov.br/handle/capes/1132271",
+    "publico_alvo": [
+      "tecnicos_profissionais_educacao",
+      "gestores_coordenadores"
+    ],
+    "nivel_aplicacao": "Educação Profissional e Tecnológica",
+    "palavras_chave": [
+      "Organização e Memória dos espaços pedagógicos",
+      "Educação Profissional e Tecnológica",
+      "Saúde e Segurança do Trabalho",
+      "Serviço Público Federal",
+      "Cultura de Prevenção",
+      "Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT) – IFC Campus Blumenau",
+      "Organização e Memórias de Espaços Pedagógicos na Educação Profissional e Tecnológica"
+    ],
+    "data_publicacao": "2025-11-05",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Santos, Maykon Donizete dos",
+        "papel": "creator"
+      },
+      {
+        "nome": "Fernandes, Denise",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1132271",
+        "url": "https://educapes.capes.gov.br/handle/capes/1132271"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "IMPLEMENTAÇÃO DA COMISSÃO INTERNA DE SAÚDE DO SERVIDOR PÚBLICO",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "IMPLEMENTAÇÃO DA COMISSÃO INTERNA DE SAÚDE DO SERVIDOR PÚBLICO (CISSP) NO INSTITUTO FEDERAL CATARINENSE (IFC)",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "livro digital"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0010 2025 maykon donizete dos santos denise fernandes ifc blumenau lp2 mp6 identificacao da regulamentacao das normas de seguranca do trabalho em regime estatutario no ensino profissional e tecnologico do instituto federal catarinense esta pesquisa analisou a politica de atencao a saude e seguranca do trabalho do instituto federal catarinense passt ifc verificando se suas diretrizes de saude e seguranca do trabalho sst estao claramente definidas e efetivamente implementadas no contexto institucional o estudo fundamentou se na relacao historica entre trabalho e educacao como dimensoes essenciais para o desenvolvimento humano destacando que na educacao profissional e tecnologica ept a formacao integra saberes academicos e praticas vinculadas ao mundo do trabalho oficinas e laboratorios embora espacos pedagogicos tambem expoem alunos e servidores a riscos ocupacionais o que reforca a necessidade de politicas institucionais consistentes de sst a pesquisa recupera o percurso historico da sst consolidado a partir da revolucao industrial e que no brasil culminou na implementacao das normas regulamentadoras nrs em 1978 considerando que o regime estatutario federal regido pela lei no 8 112 1990 apresenta regulamentacoes fragmentadas o governo criou em 2006 o sistema integrado de saude ocupacional do servidor publico federal sisosp sucedido pela pass 2009 e pelo siass contudo a ausencia de instrumentos operacionais especificos motivou a criacao da norma operacional de saude do servidor noss em 2010 que serviu de base para a passt ifc instituida pela resolucao no 56 2019 a metodologia adotada foi qualitativa de carater documental e bibliografico orientada pela analise de conteudo bardin 2016 as fontes incluiram legislacoes normativas institucionais documentos administrativos e producoes academicas sobre sst e ept os resultados evidenciaram que embora a passt ifc esteja alinhada as diretrizes nacionais ela apresenta fragilidades quanto a efetiva implementacao sobretudo pela ausencia de orientacoes tecnicas detalhadas diante desse cenario elaborou se um produto educacional em formato de e book intitulado implementacao da comissao interna de saude do servidor publico cissp no instituto federal catarinense que utiliza as nrs como referencia subsidiaria ao regime estatutario conforme previsao do artigo 12 da noss o e book foi avaliado por profissionais e gestores da area de sst do ifc cujas respostas confirmaram sua pertinencia e viabilidade para apoiar a consolidacao da passt ifc conclui se portanto que a passt ifc dispoe de diretrizes gerais de sst mas carece de instrumentos normativos e operacionais especificos lacuna que pode ser suprida pela criacao da cissp como instancia institucional de apoio a gestao da saude do servidor palavras chave educacao profissional e tecnologica saude e seguranca do trabalho passt ifc regime estatutario noss normas regulamentadoras pedagogia historico critica implementacao da comissao interna de saude do servidor publico cissp no instituto federal catarinense ifc material didatico instrucional e book livro digital educacao profissional e tecnologica educacao profissional e tecnologica saude e seguranca do trabalho passt ifc regime estatutario noss normas regulamentadoras organizacao e memoria dos espacos pedagogicos servico publico federal cultura de prevencao mestrado profissional em educacao profissional e tecnologica profept ifc campus blumenau organizacao e memorias de espacos pedagogicos na educacao profissional e tecnologica a v de almeida adolfo roberto moreira santos alex pizzio ana beatriz ribeiro barros silva antonio carlos gil antonio jackson alcantara frota bernardino ramazzini carlos pompe carlos sergio da silva carta magna cezar augusto uliana cleiton faria lima cristiane oliveira reimberg daniela rosim danielle gimenes dermeval saviani e r b jesus edilene maria de oliveira eva maria lakatos fabiana pinto de almeida bizarria fabio goulart villela fabio previdelli frida marina fischer gabriel kaplun gabriela viana gaudencio frigotto glauciene ferreira dos santos gustavo caetano torres igor natusch isaura alberton de lima ivanise maria rizzatti jefferson peixoto da silva junior cesar de almeida karla klein laurence bardin leticia moura mulatinho luiz claudio goncalves gomes mara queiroga camisassa maria ciavatta maria martha gibellini marina dal maso coelho marina de andrade marconi marise nogueira ramos renata paparelli ricardo antunes ricardo luiz lorenzi robson mendes neves tsuboi",
+    "termos_unificados": [
+      "Educação Profissional e Tecnológica",
+      "Saúde e Segurança do Trabalho",
+      "PASST/IFC",
+      "Regime estatutário",
+      "NOSS",
+      "Normas Regulamentadoras",
+      "Organização e Memória dos espaços pedagógicos",
+      "Serviço Público Federal",
+      "Cultura de Prevenção",
+      "Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT) – IFC Campus Blumenau",
+      "Organização e Memórias de Espaços Pedagógicos na Educação Profissional e Tecnológica"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

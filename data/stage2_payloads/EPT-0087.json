@@ -1,0 +1,280 @@
+{
+  "id": "EPT-0087",
+  "metadados_resolvidos": {
+    "ano": 2020,
+    "autor": "João Carlos Cichaczewski",
+    "orientador": "Cloves Alexandre de Castro",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP2",
+    "macroprojeto": "MP5"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "CIDADÃOS PARA O MUNDO DO TRABALHO: OS IFS E O PROJETO SOCIETÁRIO DE DESENVOLVIMENTO",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/VERSAO-FINAL-DISSERTACAO-E-PRODUTO-EDUCACIONAL-JOAO-CARLOS-CICHACZEWSKI.pdf",
+    "palavras_chave": [
+      "Educação Profissional Tecnológica",
+      "Institutos Federais de Ciência e Tecnologia",
+      "Estado",
+      "burguesia brasileira",
+      "classe trabalhadora"
+    ],
+    "autores_referenciados": [
+      "Adolfo Sánchez Vásquez",
+      "Alberto Passos Guimarães",
+      "Alysson Leandro Mascaro",
+      "Ana Paula Furtado Soares Pontes",
+      "André Vianna Dantas",
+      "André Villela",
+      "Andréa Cristina de Almeida",
+      "Antônio Carlos Mazzeo",
+      "Antônio José Marques",
+      "Arthur Rezende da Silva",
+      "Boaventura de Sousa Santos",
+      "Caio Prado Junior",
+      "Camila Mendes Pinheiro",
+      "Carlos Antônio Barbosa Firmino",
+      "Claudino Ortigara",
+      "Dante Henrique Moura",
+      "Denise Cunha Tavares Terra",
+      "Dermeval Saviani",
+      "Domingos Leite Lima Filho",
+      "Ebenezer Takuno de Menezes",
+      "Eder Sader",
+      "Ednéia Alves de Oliveira",
+      "Elaine Rossetti Behring",
+      "Eliezer Moreira Pacheco",
+      "Emir Sader",
+      "Eric J. Hobsbawm",
+      "Fabiano Duarte Machado",
+      "Fabio Giambiagi",
+      "Fernando A. Veloso",
+      "Florestan Fernandes",
+      "Francisco Cristiano da Silva Macêdo",
+      "Francisco de Oliveira",
+      "Francisco José M. Sobral",
+      "Friederich Engels",
+      "Friedrich Engels",
+      "Gaudêncio Frigotto",
+      "Inge Renate Frose Suhr",
+      "Jailson Alves dos Santos",
+      "João Carlos Cichaczewski",
+      "José Álvaro Moisés",
+      "José Dirceu",
+      "José Luiz Fiori",
+      "José Paulo Netto",
+      "Josué Vidal Pereira",
+      "Juarez Nelson Alves de Lima",
+      "Karl Marx",
+      "Lecir Jacinto Barbacovi",
+      "Liamara Teresinha Fornari",
+      "Luana M. Andrade",
+      "Luís Gushiken",
+      "Luiz Antônio Cunha",
+      "M. F. C. Félix",
+      "M. G. Gohn",
+      "Manoel de Jesus Araujo Soares",
+      "Marcela Alejandra Pronko",
+      "Márcio Luis Bastos da Silva",
+      "Maria Ciavatta",
+      "Marilena Chauí",
+      "Marise Nogueira Ramos",
+      "Moacir Gadotti",
+      "Morena Gomes Marques",
+      "Nelson Duarte da Silva",
+      "Nilson Araújo de Souza",
+      "Otaviano Pereira",
+      "Pe Souza",
+      "Pedro Ganzeli",
+      "Pedro L. de Araújo Costa",
+      "Plínio de Arruda Sampaio",
+      "Ricardo J. de Azevedo Marinho",
+      "Roscelino Quintão Barbosa",
+      "Thais Helena dos Santos",
+      "V. I. Lenin",
+      "Vladmir I. Lênin"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "http://educapes.capes.gov.br/handle/capes/573120",
+    "titulo_produto": "UMA HISTÓRIA POR FAZER-SE: O sentido da formação profissional nos IFs",
+    "titulo_produto_bruto": "Livro Digital – UMA HISTÓRIA POR FAZER-SE: O SENTIDO DA FORMAÇÃO PROFISSIONAL NOS IFS",
+    "data_publicacao": "2020-07-09",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "João Carlos Cichaczewski, Cloves Alexandre de Castro",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/573120",
+        "url": "http://educapes.capes.gov.br/handle/capes/573120"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Ebook Uma História por fazer-se",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "livro digital"
+    ],
+    "palavras_chave_educapes": [
+      "Educação Profissional Tecnológica",
+      "Institutos Federais de Ciência e Tecnologia",
+      "classe trabalhadora",
+      "estado",
+      "Mestrado Profissional em Educação Profissional e Tecnológica",
+      "Orientação"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "E-book / Livro Digital",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "Blumenau\nJulho/2020\n\nINSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\n\nJOÃO CARLOS CICHACZEWSKI\n\nCIDADÃOS PARA O MUNDO DO TRABALHO: OS IF's E O PROJETO\nSOCIETÁRIO DE DESENVOLVIMENTO\n\nBlumenau\nJulho/2020\n\nJOÃO CARLOS CICHACZEWSKI\n\nCIDADÃOS PARA O MUNDO DO TRABALHO: OS IF's E O PROJETO\nSOCIETÁRIO DE DESENVOLVIMENTO\n\nDissertação apresentada ao Programa de Pós-\ngraduação\nem\nEducação\nProfissional\ne\nTecnológica, ofertado pelo campus Blumenau do\nInstituto Federal Catarinense, como parte dos\nrequisitos\npara\na\nobtenção\ndo\ntítulo\nde\nMestre/Mestra\nem\nEducação\nProfissional\ne\nTecnológica.\n\nOrientador: Prof. Dr. Cloves Alexandre de Castro",
+    "ficha_catalografica": "",
+    "sumario": "[PÁG. 15]\nSUMÁRIO\nAPRESENTAÇÃO ................................................................................................................. 13\n1 INTRODUÇÃO .................................................................................................................... 14\n2 REFERENCIAL TEÓRICO ................................................................................................ 16\n3 METODOLOGIA ................................................................................................................. 29\n4 ANÁLISE DOS DADOS (RESULTADOS E DISCUSSÕES) ....................................... 32\n5 CONCLUSÕES (CONSIDERAÇÕES FINAIS) .............................................................. 39\nREFERÊNCIAS ...................................................................................................................... 42\nAPÊNDICE A – PRODUTO EDUCACIONAL .................................................................... 45\nAPÊNDICE B – POLOS DO PROFEPT CONSULTADOS .......................................... 133\nAPÊNDICE C – FORMULÁRIO DE AVALIAÇÃO .......................................................... 134\nAPÊNDICE D – RESPOSTAS ÀS QUESTÕES ABERTAS ......................................... 141\nAPÊNDICE E – RESPOSTAS ÀS QUESTÕES FECHADAS...................................... 145\nANEXO 1 – ROTEIRO PARA CLASSIFICAÇÃO DE LIVROS CAPES ..................... 153\n13\nAPRESENTAÇÃO\nEste texto é resultado do projeto de pesquisa “Cidadãos para o Mundo do\nTrabalho: os IFs e o Projeto Societário de Desenvolvimento”, realizado no curso de\nmestrado em Educação Profissional e Tecnológica, polo Blumenau, no âmbito do\nGrupo de Pesquisa e Estudos em Gestão, Políticas e História da Educação\nProfissional e Tecnológica (GPHEPT), na linha de pesquisa “Políticas, História e\nMemória da Educação Profissional e Tecnológica, sob orientação do Prof. Dr. Cloves\nAlexandre de Castro.\nNosso objetivo com o presente trabalho foi o de desenvolver uma ferramenta\ndidática que pudesse auxiliar os servidores dos Institutos Federais de Educação,\nCiência e Tecnologia (IFs) a compreenderem melhor a política pública da qual são\nagentes. Nesse sentido, achamos por bem realizar uma investigação buscando\nlocalizar na dinâmica histórica as bases sobre as quais se assenta essa política\npública.\nPara tanto, procuramos estudar as experiências de políticas de Educação\nProfissional e Tecnológica (EPT) desenvolvidas pelo Estado brasileiro no decorrer do\ntempo, o que nos fez perceber a experiência do IFs como uma ruptura se\ncomparada às políticas anteriores. Ao buscar os fundamentos histórico-políticos\ndessa ruptura, chegamos às experiências de luta da classe trabalhadora brasileira,\nda década de 1970 e começo da década de 1980. Para além disso, buscamos\ntambém realizar uma análise de como a criação – em termos legais – e implantação\ndos IFs foi realizada.\nTodo esse processo de inve",
+    "resumo": "[PÁG. 11]\nRESUMO\n\nEste trabalho versa sobre a Educação Profissional, Científica e Tecnológica no\nBrasil, e as contradições que a possibilitou chegar à forma a qual se encontra na\natualidade, expressa nos Institutos Federais de Educação Científica e Tecnológica,\nproduto de uma política pública do Estado brasileiro constituída no apagar das luzes\ndo ano de 2008 cuja genealogia reside nas experiências de lutas da classe\ntrabalhadora brasileira a partir dos anos de 1970, enquanto a essência que as\nestruturaram, encontra-se na proposta societária que constituiu a crítica à sociedade\nburguesa do século XIX e que possibilitou condições reflexivas para a elaboração da\nproposta de educação politécnica enquanto contraponto à formação burguesa\nunilateral, tendo como perspectiva a formação omnilateral junto em uma nova\nsociedade. Ao longo do texto que se apresenta, o leitor vai se deparar, no primeiro\nmomento, com a introdução e a apresentação do artigo expandido, cujo significado,\né o da dissertação de mestrado. O conteúdo do artigo é essencialmente o dos\ncaminhos teórico-metodológico da pesquisa, os problemas e as mudanças de\nrumos, o processo de constituição do produto educacional e os impasses durante a\naplicação e avaliação análise dos dados. Ao final defendemos a continuidade e\nexpansão dessa experiência educacional com acesso prioritário às classes\ntrabalhadoras. No segundo momento, no apêndice “A”, o leitor tem a sua disposição\no conteúdo do produto educacional, o e-book “Uma história por fazer-se: o sentido\nda formação profissional nos IFs”. Neste trabalho o leitor vai se deparar com a\ntrajetória da educação profissional no Brasil de modo indissociável aos processos\npolíticos que disputaram e determinaram os rumos da nação seja na forma das\nconvergências, seja na da ruptura que deu origem a Rede Federal de Educação\nCientífica e Tecnológica. Para entender tais disputas, encruzilhadas, rupturas e\nconciliações, se fez necessário mergulhar nas origens e particularidades do Estado\nbrasileiro e identificar a característica mandonista do campo hegemônico da\nburguesia brasileira, a qual a posiciona mais próxima de concepções constitutivas do\nantigo regime que à concepções de caráter liberal democrático, concepções essas\nconstruídas por meio de uma estratégia de caráter democrático e popular onde o\nmaior dos consensos é o de “enterrar” o velho e a perspectiva de que o novo amplie\ne melhore as condições de ação da vida que emergiu com o parto da lei 11.892.\n\nPalavras-Chave: Educação Profissional Tecnológica, Institutos Federais de Ciência\ne Tecnologia, Estado, burguesia brasileira, classe trabalhadora.",
+    "introducao": "[PÁG. 17]\n1 INTRODUÇÃO\nOs Institutos Federais de Educação, Ciência e Tecnologia (IFs), criados pela\nlei 11.892 no final do ano de 2008, como política pública, têm como prioridade a\nformação profissional e de nível médio de jovens brasileiros, por meio da oferta da\nmodalidade de ensino médio integrado à educação profissional. Para além disso,\ntêm por objetivo contribuir com a promoção do avanço técnico e tecnológico no país,\natravés de políticas de pesquisa e extensão. Também objetivam formar professores,\nmediante oferta de licenciaturas, e jovens e adultos por intermédio de cursos\nespecíficos para esse público. Assim como estão autorizados a ofertar cursos de\npós-graduação lato e stricto-sensu, equiparados às universidades.\nPor se tratar de uma política pública relativamente recente e que produz\ngrandes inovações, há ainda inúmeras incompreensões sobre os objetivos e\nconcepções dos IFs, especialmente entre aqueles que estão diretamente vinculados\nà sua realização: servidores docentes e técnico-administrativos. Pacheco enumera 5\ndesses elementos inovadores na criação dos IFs em comparação com as políticas\nde EPT desenvolvidas até então, são elas:\na. A verticalidade, atuando em todos os níveis do ensino; b. A certificação de\nsaberes não formais, rompendo com a hierarquia de saberes e o\nacademicismo; c. A formação de professores em uma instituição\ntécnica/tecnológica; d. A capilaridade e a adequação aos arranjos produtivos;\ne. O compromisso com as políticas públicas (PACHECO, 2015, p. 12).\n\nSecretário de Educação Profissional e Tecnológica do Ministério da Educação\nno período de criação e implementação dos IFs, Pacheco deixa clara sua postura\nem relação aos projetos anteriores:\nRecusamo-nos a formar consumidores no lugar de cidadãos, a submeter a\neducação à lógica do capital, colocando o currículo como instrumento do\nsimples treinamento de habilidades e técnicas a serviço da reprodução\ncapitalista (PACHECO, 2015, p.08).\n\nPorém, essas inovações estão distantes de serem efetivadas por conta da\nausência, até o momento, de uma identidade que produza a compreensão da\nmissão do IFs no imaginário daqueles que estão na ponta da execução dessa\npolítica pública. Sobre isso, Frigotto (2018) aponta que:\nO que se pode afirmar certamente é que os IFs ainda não constituíram uma\nidentidade similar ao que definia a RFEPCT e, mesmo, a rede de CEFETs.\nPor ora, sua identidade é apenas jurídica e administrativa, cujos traços\ncomuns são formalmente a verticalidade e o status de universidade\n(FRIGOTTO, 2018, p. 136).\n\nNão há dúvidas sobre o fato de que a implantação dos Institutos Federais foi\num marco histórico nas políticas públicas do Estado Brasileiro com relação à\n\n[PÁG. 18]\n15\nformação profissional, técnica e tecnológica. Nunca antes na história do Brasil houve\numa expansão e uma interiorização tão grande da EPT. Do mesmo modo, os IFs são\numa experiência singular no que diz repeito ao seu projeto político-pedagógico, que\nretoma a integração do ensino profissional com a formação geral.\nDessa forma duas questões se colocam. Primeiramente, é preciso entender o\nprocesso histórico que culmina na criação dos IFs, no que diz respeito aos seus\nobjetivos e concepções. Não é possível compreender o produto sem um movimento\nanterior de apreensão das determinações que o produziram. Nesse sentido,\nlocalizamos nosso objeto no contexto de uma conjuntura singular, onde um\ndeterminado projeto societário chega à direção do Estado brasileiro. Esse projeto\napresenta compreensões e objetivos desenvolvidos no decorrer da história e que\nrepresentam os fundamentos das políticas que desenvolve. Portanto, sendo o todo o\ncontentor das partes e a parte veículo de realização do todo, torna-se fundamental a\ncompreensão do projeto que funda a realização de determinada política pública.\nA segunda questão é o problema da efetivação dessa política pública. Isso é\ndiscutido por Pacheco (2015, p.39), que admite a importância em se “distinguir os\nideais para os quais os Institutos foram criados, da realidade que neles se\nconcretiza”. Frigotto (2018, p. 135) aponta para o fato de que “a expansão rápida\ndos IFs abriu espaço para centenas e centenas de concursos públicos”, porém “há\ncasos em que empregados nos IFs continuam fazendo concursos em busca de um\nespaço profissional que avaliam que lhes dá mais futuro” (FRIGOTTO, 2018, p.136).\nNesse sentido, há um problema concreto de que uma nova institucionalidade foi\ncriada sem, todavia, prover a formação dos sujeitos que a executam. Grande parte\ndos docentes e técnicos-administrativos que trabalham hoje nos IFs desconhecem a\norigem e a missão a que essas instituições se propõe.\nÉ importante pontuar com isso que não foi nosso objetivo com a presente\npesquisa e com o produto educacional que desenvolvemos, resolver o problema da\ninstitucionalização dos IFs. Mas, a partir dos elementos fundadores dessa política\npública, procuramos promover uma reflexão crítica sobre o papel da EPT na\nsociedade brasileira no passado e no presente, de modo a subsidiar a discussão da\nforma e conteúdo dessa política educacional sem prescindir de suas contradições\npróprias.\nDessa forma, nosso objetivo geral foi o de analisar os fundamentos teóricos e\npolíticos da política pública consubstanciada nos Institutos Federais de Educação,\nCiência e Tecnologia (IFs). Enquanto que os objetivos específicos foram a\n\n[PÁG. 19]\nproblematização das políticas de EPT desenvolvidas pelo Estado brasileiro no\ndecorrer da história e aquelas desenvolvidas a partir de 2003, destacando: 1.\nAnalisar os diferentes aspectos relativos ao projeto de sociedade que se pretendia\ncolocar em curso em cada período; 2. Analisar o projeto político ao qual essa nova\npolítica de EPT está vinculada e a relação que esse projeto faz com aspectos sociais\ne econômicos que fundamentam a sociedade brasileira; 3. Identificar continuidades\ne descontinuidades presentes na política de EPT desenvolvida pelo Estado brasileiro\na partir de 2003 em comparação com os objetivos e concepções apresentados pelo\nprojeto societário desse período; e, por fim, 4. Desenvolver um produto educacional\nno formato de e-book a ser disponibilizado aos servidores dos Institutos Federais de\nEducação, Ciência e Tecnologia.\nA primeira parte deste trabalho está apresentada no formato de artigo\nexpandido e tem por objetivo a análise e interpretação dos dados coletados através\nde questionário aplicado à docentes do Mestrado Profissional em Educação\nProfissional em Rede Nacional (ProfEPT), onde estes puderam avaliar o produto\neducacional a partir dos critérios de classificação de livros propostos pela\nCoordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES). A\nsegunda parte é a íntegra do e-book, desenvolvido como produto educacional e\nsubmetido à avaliação desses docentes.\n\n2 REFERENCIAL TEÓRICO\nEm termos legais, os Institutos Federais de Educação, Ciência e Tecnologia\n(IFs) foram criados no dia 29 de dezembro de 2008, pela Lei nº 11.892. Com\n“natureza jurídica de autarquia e detentoras de autonomia administrativa,\npatrimonial, financeira, didático-pedagógica e disciplinar” (BRASIL, 2008a, art. 1º),\nos IFs foram caracterizados como “instituições de educação superior, básica e\nprofissional, pluricurriculares e multicampi, especializados na oferta de educação\nprofissional e tecnológica nas diferentes modalidades de ensino, com base na\nconjugação de conhecimentos técnicos e tecnológicos com as suas práticas\npedagógicas” (BRASIL, 2008a, art. 2º) e “equiparados às universidades federais”\n(BRASIL, 2008a, art. 3º). No momento da aprovação da lei essas instituições não\npoderiam ser chamadas propriamente de instituições novas, pois foram criadas a\npartir da junção de 39 Escolas Agrotécnicas Federais, 31 Centros Federais de\nEducação Tecnológica (CEFETs), 8 Escolas Técnicas Federais (BRASIL, 2008a, art.\n5º) e 8 Escolas Técnicas vinculadas às universidades federais (BRASIL, 2008a,\n\n[PÁG. 20]\n17\nAnexo II), distribuídas nos 26 estados brasileiros e no Distrito Feder",
+    "descricao_produto_na_dissertacao": "[PÁG. 18] 15\nformação profissional, técnica e tecnológica. Nunca antes na história do Brasil houve\numa expansão e uma interiorização tão grande da EPT. Do mesmo modo, os IFs são\numa experiência singular no que diz repeito ao seu projeto político-pedagógico, que\nretoma a integração do ensino profissional com a formação geral.\nDessa forma duas questões se colocam. Primeiramente, é preciso entender o\nprocesso histórico que culmina na criação dos IFs, no que diz respeito aos seus\nobjetivos e concepções. Não é possível compreender o produto sem um movimento\nanterior de apreensão das determinações que o produziram. Nesse sentido,\nlocalizamos nosso objeto no contexto de uma conjuntura singular, onde um\ndeterminado projeto societário chega à direção do Estado brasileiro. Esse projeto\napresenta compreensões e objetivos desenvolvidos no decorrer da história e que\nrepresentam os fundamentos das políticas que desenvolve. Portanto, sendo o todo o\ncontentor das partes e a parte veículo de realização do todo, torna-se fundamental a\ncompreensão do projeto que funda a realização de determinada política pública.\nA segunda questão é o problema da efetivação dessa política pública. Isso é\ndiscutido por Pacheco (2015, p.39), que admite a importância em se “distinguir os\nideais para os quais os Institutos foram criados, da realidade que neles se\nconcretiza”. Frigotto (2018, p. 135) aponta para o fato de que “a expansão rápida\ndos IFs abriu espaço para centenas e centenas de concursos públicos”, porém “há\ncasos em que empregados nos IFs continuam fazendo concursos em busca de um\nespaço profissional que avaliam que lhes dá mais futuro” (FRIGOTTO, 2018, p.136).\nNesse sentido, há um problema concreto de que uma nova institucionalidade foi\ncriada sem, todavia, prover a formação dos sujeitos que a executam. Grande parte\ndos docentes e técnicos-administrativos que trabalham hoje nos IFs desconhecem a\norigem e a missão a que essas instituições se propõe.\nÉ importante pontuar com isso que não foi nosso objetivo com a presente\npesquisa e com o produto educacional que desenvolvemos, resolver o problema da\ninstitucionalização dos IFs. Mas, a partir dos elementos fundadores dessa política\npública, procuramos promover uma reflexão crítica sobre o papel da EPT na\nsociedade brasileira no passado e no presente, de modo a subsidiar a discussão da\nforma e conteúdo dessa política educacional sem prescindir de suas contradições\npróprias.\nDessa forma, nosso objetivo geral foi o de analisar os fundamentos teóricos e\npolíticos da política pública consubstanciada nos Institutos Federais de Educação,\nCiência e Tecnologia (IFs). Enquanto que os objetivos específicos foram a\n\n[PÁG. 19] problematização das políticas de EPT desenvolvidas pelo Estado brasileiro no\ndecorrer da história e aquelas desenvolvidas a partir de 2003, destacando: 1.\nAnalisar os diferentes aspectos relativos ao projeto de sociedade que se pretendia\ncolocar em curso em cada período; 2. Analisar o projeto político ao qual essa nova\npolítica de EPT está vinculada e a relação que esse projeto faz com aspectos sociais\ne econômicos que fundamentam a sociedade brasileira; 3. Identificar continuidades\ne descontinuidades presentes na política de EPT desenvolvida pelo Estado brasileiro\na partir de 2003 em comparação com os objetivos e concepções apresentados pelo\nprojeto societário desse período; e, por fim, 4. Desenvolver um produto educacional\nno formato de e-book a ser disponibilizado aos servidores dos Institutos Federai",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 17,
+        "texto": "Porém, essas inovações estão distantes de serem efetivadas por conta da\nausência, até o momento, de uma identidade que produza a compreensão da\nmissão do IFs no imaginário daqueles que estão na ponta da execução dessa\npolítica pública. Sobre isso, Frigotto (2018) aponta que:\nO que se pode afirmar certamente é que os IFs ainda não constituíram uma\nidentidade similar ao que definia a RFEPCT e, mesmo, a rede de CEFETs.\nPor ora, sua identidade é apenas jurídica e administrativa, cujos traços\ncomuns são formalmente a verticalidade e o status de universidade\n(FRIGOTTO, 2018, p. 136).",
+        "citacoes_detectadas": [
+          "FRIGOTTO, 2018, p. 136"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 18,
+        "texto": "15\nformação profissional, técnica e tecnológica. Nunca antes na história do Brasil houve\numa expansão e uma interiorização tão grande da EPT. Do mesmo modo, os IFs são\numa experiência singular no que diz repeito ao seu projeto político-pedagógico, que\nretoma a integração do ensino profissional com a formação geral.\nDessa forma duas questões se colocam. Primeiramente, é preciso entender o\nprocesso histórico que culmina na criação dos IFs, no que diz respeito aos seus\nobjetivos e concepções. Não é possível compreender o produto sem um movimento\nanterior de apreensão das determinações que o produziram. Nesse sentido,\nlocalizamos nosso objeto no contexto de uma conjuntura singular, onde um\ndeterminado projeto societário chega à direção do Estado brasileiro. Esse projeto\napresenta compreensões e objetivos desenvolvidos no decorrer da história e que\nrepresentam os fundamentos das políticas que desenvolve. Portanto, sendo o todo o\ncontentor das partes e a parte veículo de realização do todo, torna-se fundamental a\ncompreensão do projeto que funda a realização de determinada política pública.\nA segunda questão é o problema da efetivação dessa política pública. Isso é\ndiscutido por Pacheco ",
+        "citacoes_detectadas": [
+          "FRIGOTTO, 2018, p.136"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 21,
+        "texto": "Já sobre o segundo grupo, os CEFETs, a matriz dos IFs significou a\ninterrupção parcial de um processo onde “a comunidade e a infraestrutura desses\nespaços apontavam para a potencialidade de se tornar Universidades” (PACHECO,\n2015, p. 50). Parcial pois, como previsto na Lei 11.892/08, os IFs têm status de\nuniversidade e o organograma expresso em seus estatutos segue esse mesmo\npadrão. Ao citar o caso da Universidade Tecnológica Federal do Paraná (UTFPR),\nFrigotto (2018) aponta que “o status de universidade dos IFs foi uma solução\nnegociada para impedir que grande parte dos CEFETs pressionassem politicamente\nnaquela direção” (FRIGOTTO, 2018, p.130), ou seja, na direção de tornarem-se\nuniversidades tecnológicas. Para Pacheco a consequência disso seria a perda de\nespaço por parte da inovação, da extensão tecnológica, da verticalidade e da\nautonomia das unidades para um modelo de simples reprodução do sistema\nuniversitário e, dessa forma, correr-se-ia o risco de perder “o contato com o mundo\ndo trabalho ou mesmo a característica da pesquisa aplicada, ou ainda a produção de\nprodutos inovadores para geração de patentes” (PACHECO, 2015, p. 50).\nSobre essa questão, Frigotto (2018) também re",
+        "citacoes_detectadas": [
+          "PACHECO,\n2015, p. 50",
+          "FRIGOTTO, 2018, p.130",
+          "PACHECO, 2015, p. 50",
+          "FRIGOTTO, 2018, p.131"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 22,
+        "texto": "19\nescolas técnicas federais, mais ainda dos Centros Federais de Educação\nTecnológica e, agora, com a estrutura dos Institutos Federais de Educação, Ciência\ne Tecnologia” (FRIGOTTO, 2018, p.131). Ao ilustrar essa situação, o autor ainda\ndescreve a assimetria entre a percepção de um docente recente e outro com vários\nanos de trabalho em uma instituição que assumiu variadas identidades no decorrer\ndo tempo:\nNo Instituto Federal Espírito Santo (IFES), um antigo professor afirmava:\n'Convivo com esta instituição há mais de quarenta anos e conheço a sua\nhistória em detalhes'. Sendo retrucado imediatamente por um jovem\nprofessor de um dos campi: 'Colega, eu tenho a experiência de três meses e\nquase nada sei sobre esta história (FRIGOTTO, 2018, p.132).",
+        "citacoes_detectadas": [
+          "FRIGOTTO, 2018, p.131",
+          "FRIGOTTO, 2018, p.132"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 24,
+        "texto": "Pereira (2011), ao pesquisar a implantação do PROEJA no Instituto Federal\nde Goiás – Campus Goiânia, também constatou algumas assimetrias entre aquilo\nque foi idealizado e seu processo de implantação prática. O autor aponta quatro\nfatores responsáveis por essa situação:\na) a falta de clareza do que venha a ser a integração curricular; b) a não\ncompreensão do trabalho como princípio educativo; c) a resistência\ninstitucional em relação à admissão de um público estranho ao perfil\nhistoricamente atendido e, d) o baixo nível político-pedagógico de seus\nquadros para a atuação com o publico específico da EJA (PEREIRA, 2011,\np. 134).",
+        "citacoes_detectadas": [
+          "PEREIRA, 2011,\np. 134"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 24,
+        "texto": "Ainda sobre o caso da implantação do PROEJA nos IFs, Frigotto et al. (2018)\nreferindo-se ao estudo de Macêdo (2011), indicam que:\nA adoção abrupta e obrigatória ao programa por parte dos IFs surpreendeu\ntodos os profissionais da referida instituição, que possui polos espalhados\npelo Brasil. Esse desenrolar do programa, com vistas a transformar a",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 25,
+        "texto": "educação brasileira, tornou-se, ao mesmo tempo, um dado complicador para\no seu sucesso, seja pela aceitação do corpo docente, seja pela capacitação\ndeles, que podem se considerar muito qualificados para atuar em tal campo,\nou podem se sentir sem capacitação para isso (FRIGOTTO et al., 2018,\np.98).",
+        "citacoes_detectadas": [
+          "FRIGOTTO et al., 2018,\np.98"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 26,
+        "texto": "23\nno Rio de Janeiro.\nNilo Peçanha, então presidente do Estado do Rio de Janeiro, em 1906 institui\nquatro escolas profissionais nas cidades de Campos, Petrópolis, Niterói e Paraíba\ndo Sul. Assumindo a presidência da república em 1909, por ocasião do falecimento\nde Afonso Pena, Peçanha institui dezenove “Escolas de Aprendizes Artífices”, que\nseriam dirigidas pelo Ministério da Agricultura, Indústria e Comércio, uma em cada\nunidade da federação. Trata-se da primeira experiência a nível nacional de ensino\nprofissional, onde o Estado brasileiro assume para si a EPT como política pública\nvoltada às “classes menos protegidas da fortuna” e mantendo um caráter correcional\n(SOARES, 1981, p. 75). Todas as experiências anteriores tinham uma abrangência\nlocal ou, no máximo, regional.\nA partir da década de 1930, esse caráter formativo é alterado e deixa de ser\numa medida exclusivamente social de formação de trabalhadores disciplinados,\ntransformando-se numa necessidade de cunho econômico para subsidiar o processo\nde industrialização que estava em curso. Ramos (2014, p. 14) aponta esse período\ncomo sendo aquele que instaura “o modo de produção propriamente capitalista e,\ncom ele, o processo de i",
+        "citacoes_detectadas": [
+          "SOARES, 1981, p. 75",
+          "MOURA, 2010, p.63",
+          "BRASIL, 2009, p.5"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 27,
+        "texto": "salários. Para Ramos esse foi o período “em que a Teoria do Capital Humano é mais\ndifundida e que tomam força os princípios da economia da educação” e “ocupou um\nlugar estratégico na composição da força de trabalho industrial brasileira” (RAMOS,\n2014, p.44). Além de consolidar a rede de Escolas Técnicas Federais que teve sua\ngênese nos períodos anteriores, já em 1978, a ditadura militar transformou algumas\ndessas escolas em Centros Federais de Educação Tecnológica (CEFET), que\npassaram a ser dotados de autonomia administrativa, patrimonial, financeira,\ndidático-pedagógica e disciplinar.\nDentre outros fatores, com a crise do petróleo iniciada na década de 1970, o\npaís entrou na década de 1980 com altíssima dívida externa e baixas taxas de\ncrescimento. Nesse período também ocorreram as grandes greves do ABCD\npaulista, que recolocaram a classe trabalhadora brasileira como sujeito político após\nter sido massacrada violentamente nos anos anteriores. Esses e outros elementos\ncolocaram em xeque a manutenção do regime militar, e viabilizaram: a eleição, no\ncolégio eleitoral, da chapa de Tancredo Neves e José Sarney em 1985; a\nAssembleia Nacional Constituinte em 1988; e, as eleições diretas",
+        "citacoes_detectadas": [
+          "RAMOS,\n2014, p.44"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 28,
+        "texto": "25\nrumos dessas políticas na década de 1990, descrevem duas perspectivas\nconflitantes:\nA questão da educação tecnológica está presente no campo da educação\nsob duas perspectivas. Uma que a identifica com a educação que aborda\nconhecimentos associados às tecnologias utilizadas nos processos de\nprodução e, assim, pode formar pessoas para o manejo social e profissional\ndessas tecnologias para ocuparem um espaço específico na divisão social e\ntécnica do trabalho. […] Outra perspectiva é aquela que fundamentou a\ndefesa de uma nova Lei de Diretrizes e Bases da Educação Nacional na\ndécada de 1980 (rejeitada por uma manobra do Senado) que, em seus\ntermos teóricos e práticos, propiciasse a superação da concepção\neducacional burguesa que se pauta pela dicotomia entre trabalho manual e\ntrabalho intelectual e entre instrução profissional e instrução geral\n(FRIGOTTO, CIAVATTA, e RAMOS, 2012, p.40).",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 28,
+        "texto": "Dessa forma havia, por um lado uma defesa da EPT como mero aprendizado\nde técnicas para o exercício profissional e, por outro, uma perspectiva de formação\nprofissional centrada no desenvolvimento humano, onde o estudante, muito além de\nconhecer as técnicas e tecnologias, deveria compreender as bases sobre as quais\nse assentam o desenvolvimento dessas técnicas, pois “o homem não é somente um\nser cognitivo (capaz de desenvolver esquemas mentais) mas também epistêmico\n(cuja natureza compreende a capacidade e a necessidade de conhecer)” (RAMOS,\n2012, p.119). Assim com “conhecimentos gerais e conhecimentos profissionais\nsomente se distinguem metodologicamente e em suas finalidades situadas\nhistoricamente; porém, epistemologicamente, esses conhecimentos formam uma\nunidade” (RAMOS, 2012, p.121). Nessa mesma perspectiva, Ciavatta (2012) ainda\naponta que “este é o sentido da história da formação profissional no Brasil, uma luta\npolítica permanente entre duas alternativas: a implementação do assistencialismo e\nda aprendizagem operacional versus a proposta da introdução dos fundamentos da\ntécnica e das tecnologias, o preparo intelectual” (CIAVATTA, 2012, p.88).\nContrapondo-se a essas reformas",
+        "citacoes_detectadas": [
+          "RAMOS,\n2012, p.119",
+          "RAMOS, 2012, p.121",
+          "CIAVATTA, 2012, p.88",
+          "FRIGOTTO, 2012, p.73",
+          "GOHN,\n2001, p. 78"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 29,
+        "texto": "congregava diferentes setores organizados da classe trabalhadora e intelectuais da\nárea, com o intuito de promover debates acerca das possibilidades do\ndesenvolvimento de uma formação técnica integrada à formação geral. Frigotto,\nCiavatta e Ramos (2012) nos apresentam, de forma resumida, esse contexto:\nA origem recente da ideia de integração entre a formação geral e a\neducação profissional, no Brasil, está na busca da superação do tradicional\ndualismo da sociedade e da educação brasileira e nas lutas pela\ndemocracia e em defesa da escola pública nos anos 1980, particularmente,\nno primeiro projeto de LDB, elaborado logo após e em consonância com os\nprincípios de educação na Constituição de 1988. Com a volta da\ndemocracia representativa nos anos 1980, recomeça a luta política pela\ndemocratização da educação com o primeiro projeto de LDB que, sob a\nliderança do Fórum Nacional em Defesa da Escola Pública, teve intensa\nparticipação da comunidade acadêmica e o apoio de parlamentares de\nvários partidos progressistas. Nele se buscava assegurar uma formação\nbásica que superasse a dualidade entre cultura geral e cultura técnica,\nassumindo o conceito de politecnia (FRIGOTTO, CIAVATTA, e RAMOS",
+        "citacoes_detectadas": []
+      }
+    ],
+    "referencias_filtradas": [
+      "CIAVATTA, Maria. A formação integrada: a escola eu trabalho como lugares de memória e identidade. In: FRIGOTTO, Gaudêncio; CIAVATTA, Maria; RAMOS, Marise. Ensino Médio Integrado: Concepção e contradições. São Paulo: Cortez, 2012. p. 83-106.",
+      "FRIGOTTO, Gaudêncio. Concepções e Mudanças no mundo do trabalho e o ensino médio. In: FRIGOTTO, Gaudêncio; CIAVATTA, Maria; RAMOS, Marise. Ensino Médio Integrado: Concepção e contradições. São Paulo: Cortez, 2012. p. 57- 82. . Indeterminação de identidade e reflexos nas políticas institucionais formativas dos IFs. In: FRIGOTTO, Gaudêncio (Org.). Institutos Federais de Educação, Ciência e Tecnologi",
+      "FRIGOTTO, Gaudêncio; CIAVATTA, Maria. Educação básica no Brasil na década de 1990: subordinação ativa e consentida à lógica do mercado. Educação & Sociedade, [s.l.], v. 24, n. 82, p.93-130, abr. 2003.",
+      "FRIGOTTO, Gaudêncio; CIAVATTA, Maria; RAMOS, Marise. A gênese do decreto n. 5.154/2004: um debate no contexto controverso da democracia restrita. In:",
+      "FRIGOTTO, Gaudêncio; CIAVATTA, Maria; RAMOS, Marise. Ensino Médio Integrado: Concepção e contradições. São Paulo: Cortez, 2012. p. 21-56.",
+      "GOHN, M. G. Movimentos Sociais e Educação. 5 . ed. São Paulo: Cortez. 2001. apud PINHEIRO, Camila Mendes. O Fórum Nacional em Defesa da Escola Pública e o Princípio de Gestão Democrática na Constituição Federal de 1988 . 2015. 234 f. Dissertação (Mestrado) - Curso de Educação, Unesp, Marília/sp, 2015. Disponível em: <https://repositorio.unesp.br/handle/ 11449/124369>. Acesso em: 07 jul. 2019.",
+      "MOURA, Dante Henrique. Ensino Médio e Educação Profissional: Dualidade histórica e possibilidades de integração. In: MOLL, Jaqueline. Educação Profissional e Tecnológica no Brasil Contemporâneo: Desafios, tensões e possibilidades. Porto Alegre: Artmed, 2010. p. 58-79.",
+      "PACHECO, Eliezer. Fundamentos políticos-pedagógicos dos Institutos Federais: diretrizes para uma educação profissional e tecnológica transformadora. Natal/RN: Editora IFRN, 2015.",
+      "PEREIRA, Josué Vidal. O PROEJA no Instituto Federal de Goiás - Campus Goiânia : um estudo sobre os fatores de acesso e permanência na escola. 2011. 154 f., il. Dissertação (Mestrado em Educação). Universidade de Brasília, Brasília, 2011.",
+      "RAMOS, Marise. Possibilidades e desafios na organização do currículo integrado. In: FRIGOTTO, Gaudêncio; CIAVATTA, Maria; RAMOS, Marise. Ensino Médio Integrado: Concepção e contradições. São Paulo: Cortez, 2012. p. 107-128.",
+      "RAMOS, Marise Nogueira. História e Política da Educação Profissional. Curitiba: Ifpr-ead, 2014. 121 p. (Coleção Formação Pedagógica, vol. V).",
+      "SOARES, Manoel de Jesus Araujo. As Escolas de Aprendizes Artífices e suas fontes inspiradoras. Fórum Educacional, Rio de Janeiro, v. 5, n. 4, p.69-77, dez. 1981. Disponível em: <http://bibliotecadigital.fgv.br/ojs/index.php/fe/article/ download/ 60571/58817>. Acesso em: 26 mar. 2019.",
+      "CIAVATTA, Maria. A formação integrada: a escola eu trabalho como lugares de memória e identidade. In: FRIGOTTO, Gaudêncio; CIAVATTA, Maria; RAMOS, Marise. Ensino Médio Integrado: Concepção e contradições. São Paulo: Cortez, 2012. p. 83-106.",
+      "FRIGOTTO, Gaudêncio. Concepções e Mudanças no mundo do trabalho e o ensino médio. In:",
+      "FRIGOTTO, Gaudêncio; CIAVATTA, Maria; RAMOS, Marise. Ensino Médio Integrado: Concepção e contradições. São Paulo: Cortez, 2012. p. 57-82. . Educação e trabalho: bases para debater a educação profissional emancipadora. Perspectiva, Florianópolis, v. 19, n. 1, p.71-87, jun. 2001. Disponível em: <https://periodicos.ufsc.br/index.php/perspectiva/article/view/8463>. Acesso em: 22 nov. 2018. . Apresenta",
+      "FRIGOTTO, Gaudêncio et al. O \"estado da arte\" das pesquisas sobre os IFs no Brasil: A produção discente da pós-graduação - de 2008 a 2014. In: FRIGOTTO, Gaudêncio (Org.). Institutos Federais de Educação, Ciência e Tecnologia: Relação com o ensino médio integrado e o projeto societário de desenvolvimento. Rio de Janeiro: LPP-UERJ, 2018. Cap. 4. p. 83-112.",
+      "FRIGOTTO, Gaudêncio; CIAVATTA, Maria. Educação básica no Brasil na década de 1990: subordinação ativa e consentida à lógica do mercado. Educação & Sociedade, [s.l.], v. 24, n. 82, p.93-130, abr. 2003.",
+      "FRIGOTTO, Gaudêncio; CIAVATTA, Maria; RAMOS, Marise. A gênese do decreto n. 5.154/2004: um debate no contexto controverso da democracia restrita. In: FRIGOTTO, Gaudêncio;",
+      "CIAVATTA, Maria; RAMOS, Marise. Ensino Médio Integrado: Concepção e contradições. São Paulo: Cortez, 2012. p. 21-56.",
+      "GOHN, M. G. Movimentos Sociais e Educação. 5 . ed. São Paulo: Cortez. 2001. apud",
+      "MOURA, Dante Henrique. Ensino Médio e Educação Profissional: Dualidade histórica e possibilidades de integração. In: MOLL, Jaqueline. Educação Profissional e Tecnológica no Brasil Contemporâneo: Desafios, tensões e possibilidades. Porto Alegre: Artmed, 2010. p. 58-79.",
+      "PACHECO, Eliezer. Fundamentos políticos-pedagógicos dos Institutos Federais: diretrizes para uma educação profissional e tecnológica transformadora. Natal/RN: Editora IFRN, 2015. Partido Comunista Brasileiro (PCB). As estratégias revolucionárias ao longo da história. 85 Resoluções do XIV Congresso. 2009.",
+      "PEREIRA, Josué Vidal. O PROEJA no Instituto Federal de Goiás - Campus Goiânia : um estudo sobre os fatores de acesso e permanência na escola. 2011. 154 f., il. Dissertação (Mestrado em Educação). Universidade de Brasília, Brasília, 2011.",
+      "RAMOS, Marise. Possibilidades e desafios na organização do currículo integrado. In:",
+      "FRIGOTTO, Gaudêncio; CIAVATTA, Maria; RAMOS, Marise. Ensino Médio Integrado: Concepção e contradições. São Paulo: Cortez, 2012. p. 107-128."
+    ]
+  }
+}

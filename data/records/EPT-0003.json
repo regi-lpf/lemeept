@@ -1,0 +1,154 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0003",
+  "ano": 2025,
+  "autor": "Letícia Bachmann Kurth",
+  "orientador": "Fátima Peres Zago de Oliveira",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP3",
+  "dissertacao": {
+    "titulo": "CURRICULARIZAÇÃO DA PESQUISA NO ENSINO MÉDIO INTEGRADO: PACTOS E PERSPECTIVAS DOCENTES NO IFC – CAMPUS RIO DO SUL",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/12/Dissertacao_IFC_-_LETCIA_BACHMANN_KURTH.pdf",
+    "resumo": "Esta pesquisa tem como objeto a curricularização da pesquisa no âmbito da Educação\nProfissional e Tecnológica, mais precisamente no Ensino Médio Integrado (EMI) do\nInstituto Federal Catarinense (IFC), campus Rio do Sul, contemplando os cursos\ntécnicos em Agroecologia, Agropecuária e Informática para Internet. A motivação para\no estudo decorre da trajetória da pesquisadora, marcada pela articulação entre ensino,\npesquisa e extensão desde a graduação em Pedagogia no IFC e pela atuação na\neducação básica, que despertou o interesse em compreender o papel da pesquisa\ncomo eixo formativo articulador de teoria e prática. A pesquisa fundamenta-se em\nautores como Demo (2001), Oliveira (2017) e Freire (1996; 2020), que concebem a\npesquisa como princípio pedagógico e caminho para uma educação crítica e\nemancipatória, contrapondo-se ao modelo reprodutivista e à concepção bancária. No\ncontexto institucional, destacam-se as resoluções nº 16/2019 e nº 13/2022 do\nCONSUPER/IFC, que normatizam a inserção da pesquisa nos currículos. Nesse\nsentido, o componente de Iniciação Científica (IC), presente nos três cursos\nanalisados, configura-se como estratégia central da curricularização, ainda que não\nseja a única. Com abordagem qualitativa e natureza translacional, a investigação\nenvolve análise documental e entrevistas com docentes e coordenadores, buscando\ncompreender pactos e perspectivas em torno da curricularização da pesquisa. Além\ndisso, prevê a elaboração de um produto educacional, um e-book, destinado a apoiar\nprofessores da IC e gestão do campus na construção de uma pesquisa curricularizada\ne integrada. A relevância do estudo reside na escassez de produções acadêmicas\nsobre a temática no âmbito da Educação Profissional e Tecnológica, o que lhe confere\ncaráter inovador. Os resultados demonstram haver docentes com perspectivas\nalinhadas ao eixo humanizador, porém também docentes alinhados ao eixo\nreducionista da pesquisa, levando em consideração as narrativas expostas no\ndecorrer das entrevistas. Além disso, as perspectivas apontam para a necessidade de\nfortalecer o componente de IC, visto que os debates em torno de sua existência e\ncontinuidade são recorrentes, demonstrando não haver consenso acerca da\ncurricularização da pesquisa de forma reflexiva e integrada no campus. Espera-se que\nos resultados contribuam para fortalecer a integração curricular no EMI e consolidar a\npesquisa como princípio educativo capaz de promover autonomia, criticidade e\nprotagonismo estudantil.\n\nPalavras-Chave: curricularização da pesquisa; iniciação científica; EPT.",
+    "palavras_chave": [
+      "Curricularização da pesquisa",
+      "Iniciação científica",
+      "EPT"
+    ],
+    "autores_referenciados": [
+      "Altino F. Morais",
+      "Amurabi Oliveira",
+      "Ana Carolina R. Carmo",
+      "Andressa Freire Ramos Couto",
+      "Ângela Brognoli",
+      "Antonio Gramsci",
+      "Antônio Joaquim Severino",
+      "Antônio R. da S. P. Rodrigues",
+      "Cristiane de Almeida",
+      "Dermeval Saviani",
+      "Dirceia Aparecida Silva Anjos",
+      "Evandro G. Leite",
+      "Fátima P. Z. de Oliveira",
+      "Fernanda C. L. Coimbra",
+      "Gaudêncio Frigotto",
+      "Haroldo V. Bentes",
+      "Irineu Mario Colombo",
+      "João A. M. T. R. Gonçalves",
+      "João Carlos Cichaczewski",
+      "José Gimeno Sacristán",
+      "Jovana Ritter Antunes",
+      "Juliana Favretto",
+      "Laura Lima",
+      "Leonardo L. Brito",
+      "Marcelo P. Cigales",
+      "Maria Cecília de Souza Minayo",
+      "Maria Ciavatta",
+      "Maria do Carmo Galiazzi",
+      "Maria do Socorro M. F. Barbosa",
+      "Marise Nogueira Ramos",
+      "Maurice Jacques Bazin",
+      "Nelson O. Alencar",
+      "Paula Andréa Grawieski Civiero",
+      "Paulo Freire",
+      "Pedro Demo",
+      "Raquel Elisabete de Oliveira Santos",
+      "Regina C. M. Pereira",
+      "Robson Simplicio de Sousa",
+      "Roque Moraes",
+      "Salete Valer",
+      "Shirley de L. F. Arantes",
+      "Simone O. Peres",
+      "Tomaz Tadeu da Silva",
+      "Viviane P. C. Araújo"
+    ],
+    "base_epistemologica": {
+      "valor": "Educação Libertadora / Freireana",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explora a pesquisa como princípio educativo emancipador, alinhado à educação crítica e reflexiva, com referências a Freire e Demo.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 19,
+          "trecho": "A pesquisa, segundo Demo (2001), pode ser utilizada na escola básica como um hábito de vida crítico e como caminho necessário para a emancipação humana.",
+          "referencia_correspondente": "DEMO, Pedro. Pesquisa: princípio científico e educativo. 8. ed. São Paulo: Cortez, 2001."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Curricularização da Pesquisa; A Iniciação Científica como componente curricular no contexto da Educação Profissional e Tecnológica",
+    "tipo": "material_didatico_instrucional",
+    "formato": "E-book / Livro Digital",
+    "link": "https://educapes.capes.gov.br/handle/capes/1133578",
+    "publico_alvo": [
+      "docentes_professores",
+      "gestores_coordenadores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "EPT",
+      "Ensino Médio Integrado",
+      "EMI",
+      "Curricularização da Pesquisa",
+      "Mestrado em Educação Profissional e Tecnológica (PROFEPT)",
+      "Produto Educacional"
+    ],
+    "data_publicacao": "2025-12-10",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Kurth, Letícia",
+        "papel": "creator"
+      },
+      {
+        "nome": "Oliveira, Fátima",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1133578",
+        "url": "https://educapes.capes.gov.br/handle/capes/1133578"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Produto Educacional: Curricularização da Pesquisa",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "CURRICULARIZAÇÃO DA PESQUISA: A INICIAÇÃO CIENTÍFICA COMO COMPONENTE CURRICULAR NO CONTEXTO DA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "livro digital"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0003 2025 leticia bachmann kurth fatima peres zago de oliveira ifc blumenau lp1 mp3 curricularizacao da pesquisa no ensino medio integrado pactos e perspectivas docentes no ifc campus rio do sul esta pesquisa tem como objeto a curricularizacao da pesquisa no ambito da educacao profissional e tecnologica mais precisamente no ensino medio integrado emi do instituto federal catarinense ifc campus rio do sul contemplando os cursos tecnicos em agroecologia agropecuaria e informatica para internet a motivacao para o estudo decorre da trajetoria da pesquisadora marcada pela articulacao entre ensino pesquisa e extensao desde a graduacao em pedagogia no ifc e pela atuacao na educacao basica que despertou o interesse em compreender o papel da pesquisa como eixo formativo articulador de teoria e pratica a pesquisa fundamenta se em autores como demo 2001 oliveira 2017 e freire 1996 2020 que concebem a pesquisa como principio pedagogico e caminho para uma educacao critica e emancipatoria contrapondo se ao modelo reprodutivista e a concepcao bancaria no contexto institucional destacam se as resolucoes no 16 2019 e no 13 2022 do consuper ifc que normatizam a insercao da pesquisa nos curriculos nesse sentido o componente de iniciacao cientifica ic presente nos tres cursos analisados configura se como estrategia central da curricularizacao ainda que nao seja a unica com abordagem qualitativa e natureza translacional a investigacao envolve analise documental e entrevistas com docentes e coordenadores buscando compreender pactos e perspectivas em torno da curricularizacao da pesquisa alem disso preve a elaboracao de um produto educacional um e book destinado a apoiar professores da ic e gestao do campus na construcao de uma pesquisa curricularizada e integrada a relevancia do estudo reside na escassez de producoes academicas sobre a tematica no ambito da educacao profissional e tecnologica o que lhe confere carater inovador os resultados demonstram haver docentes com perspectivas alinhadas ao eixo humanizador porem tambem docentes alinhados ao eixo reducionista da pesquisa levando em consideracao as narrativas expostas no decorrer das entrevistas alem disso as perspectivas apontam para a necessidade de fortalecer o componente de ic visto que os debates em torno de sua existencia e continuidade sao recorrentes demonstrando nao haver consenso acerca da curricularizacao da pesquisa de forma reflexiva e integrada no campus espera se que os resultados contribuam para fortalecer a integracao curricular no emi e consolidar a pesquisa como principio educativo capaz de promover autonomia criticidade e protagonismo estudantil palavras chave curricularizacao da pesquisa iniciacao cientifica ept educacao libertadora freireana curricularizacao da pesquisa a iniciacao cientifica como componente curricular no contexto da educacao profissional e tecnologica material didatico instrucional e book livro digital ensino medio integrado curricularizacao da pesquisa iniciacao cientifica ept educacao profissional e tecnologica ensino medio integrado emi mestrado em educacao profissional e tecnologica profept produto educacional altino f morais amurabi oliveira ana carolina r carmo andressa freire ramos couto angela brognoli antonio gramsci antonio joaquim severino antonio r da s p rodrigues cristiane de almeida dermeval saviani dirceia aparecida silva anjos evandro g leite fatima p z de oliveira fernanda c l coimbra gaudencio frigotto haroldo v bentes irineu mario colombo joao a m t r goncalves joao carlos cichaczewski jose gimeno sacristan jovana ritter antunes juliana favretto laura lima leonardo l brito marcelo p cigales maria cecilia de souza minayo maria ciavatta maria do carmo galiazzi maria do socorro m f barbosa marise nogueira ramos maurice jacques bazin nelson o alencar paula andrea grawieski civiero paulo freire pedro demo raquel elisabete de oliveira santos regina c m pereira robson simplicio de sousa roque moraes salete valer shirley de l f arantes simone o peres tomaz tadeu da silva viviane p c araujo",
+    "termos_unificados": [
+      "Curricularização da pesquisa",
+      "Iniciação científica",
+      "EPT",
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "EMI",
+      "Mestrado em Educação Profissional e Tecnológica (PROFEPT)",
+      "Produto Educacional"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

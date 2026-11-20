@@ -1,0 +1,218 @@
+{
+  "id": "EPT-0080",
+  "metadados_resolvidos": {
+    "ano": 2021,
+    "autor": "Karin Tyeko Anami",
+    "orientador": "Fátima Peres Zago de Oliveira",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP2"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "CENÁRIOS E BASTIDORES DA IMPLANTAÇÃO DO PROEJA NO INSTITUTO FEDERAL CATARINENSE",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/Versao-Final-Dissertacao-PDF-A-Karin.pdf",
+    "palavras_chave": [
+      "Proeja",
+      "educação profissional e tecnológica (EPT)",
+      "Instituto Federal Catarinense",
+      "permanência",
+      "inclusão"
+    ],
+    "autores_referenciados": [
+      "Acácia Z. Kuenzer",
+      "Antonio Gramsci",
+      "Bráulio Bessa",
+      "Caldas Aulete",
+      "Dante Henrique Moura",
+      "Ebenezer Takuno de Menezes",
+      "Edna Castro de Oliveira",
+      "Erving Goffman",
+      "Eva Maria Lakatos",
+      "Fátima Peres Zago Oliveira",
+      "Francisco de Oliveira",
+      "Gaudêncio Frigotto",
+      "Jacqueline Maria Barbosa Vitorette",
+      "Karla Ribeiro de Assis Cezarino",
+      "Lídia Mercedes Rodriguez",
+      "M. Horkheimer",
+      "Maria Cecília de Souza Minayo",
+      "Maria Ciavatta",
+      "Maria Clara Di Pierro",
+      "Maria de Andrade Marconi",
+      "Maria Luzinete da Silva",
+      "Marise Nogueira Ramos",
+      "Paulo Freire",
+      "Pierre Bourdieu",
+      "R. M. G. Silva",
+      "Roque Moraes",
+      "Sérgio Haddad",
+      "T. Ferreira",
+      "Tatiana Engel Gerhardt",
+      "Thais Helena dos Santos",
+      "Theodor W. Adorno",
+      "Thomas Gounet",
+      "Valdinei Marcolla",
+      "Vânia do Carmo Nóbile Silva",
+      "Waldomiro Vergueiro"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "http://educapes.capes.gov.br/handle/capes/644220",
+    "titulo_produto": "Dos cenários aos bastidores da EJA-EPT: uma história de resiliências, (re)começos e ressignificações.",
+    "titulo_produto_bruto": "HQ – HISTÓRIA EM QUADRINHOS : DOS CENÁRIOS AOS BASTIDORES DA EJA-EPT: UMA HISTÓRIA DE RESILIÊNCIAS, (RE)COMEÇOS E RESSIGNIFICAÇÕES",
+    "data_publicacao": "2021-12-20",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense - IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "ANAMI, OLIVEIRA, Fátima Peres Zago de Karin Tyeko",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/644220",
+        "url": "http://educapes.capes.gov.br/handle/capes/644220"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "HISTÓRIA EM QUADRINHOS",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "texto",
+      "outro"
+    ],
+    "palavras_chave_educapes": [
+      "PROEJA",
+      "EJA",
+      "EPT",
+      "Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT."
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "História em Quadrinhos (HQ)",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "1 \n \n \n \n  \n \n \n \n \n \nINSTITUTO FEDERAL CATARINENSE \nCAMPUS BLUMENAU \nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA \n \n \n \n \n \nKARIN TYEKO ANAMI \n \n \n \n \nCENÁRIOS E BASTIDORES DA IMPLANTAÇÃO DO PROEJA NO INSTITUTO\nFEDERAL CATARINENSE \n \n \n \n Blumenau \n2021\n\nKARIN TYEKO ANAMI \n \n \n \n \n \n \n \n \n \n \nCENÁRIOS E BASTIDORES DA IMPLANTAÇÃO DO PROEJA NO INSTITUTO\nFEDERAL CATARINENSE \n \n \n \n \nDissertação apresentada ao Programa de Pós-\ngraduação em Educação Profissional e Tecnológica,\nofertado pelo Campus Blumenau do Instituto\nFederal Catarinense, como parte dos requisitos para\na obtenção do título de Mestra em Educação\nProfissional e Tecnológica. \n \nOrientadora: Drª. Fatima Peres Zago De Oliveira \n \n \n \n \n \n \n \n \n \n \nBlumenau-SC \nAgosto-2021",
+    "ficha_catalografica": "[PÁG. 3]\nA533c\nAnami, Karin Tyeko.\n\n Cenários e bastidores da implantação do Proeja no Instituto Federal Catarinense / Karin Tyeko\nAnami – Blumenau, 2021. \n  \n \n 78 p.: il., color.\n \n Artigo (Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT) – Instituto\nFederal Catarinense, Blumenau, 2021. \n \n Orientadora: Profª. Drª. Fátima Peres Zago de Oliveira \n \n 1. Educação Profissional e Tecnológica. 2. Proeja. 3. Inclusão. 4. Permanência. I. Oliveira, Fátima\nPeres Zago de. II. Instituto Federal Catarinense. III. Título. \n \nCDD 534\nFicha catalográfica elaborada pela bibliotecária: Shyrlei K. Jagielski Benkendorf – CRB 14/662",
+    "sumario": "[PÁG. 11]\nSUMÁRIO \n \nAPRESENTAÇÃO ............................................................................................................. 12\n2 TRABALHO E A SUA RELAÇÃO COM A EDUCAÇÃO PROFISSIONAL ............. 18\n4 BREVE CENÁRIO E BASTIDORES DA EJA E PROEJA NO BRASIL .................... 24\n5 ANÁLISE DOS DADOS: OS RESULTADOS E SUAS DISCUSSÕES ........................ 31\n6 CONSIDERAÇÕES FINAIS .......................................................................................... 41\nREFERÊNCIAS ................................................................................................................. 45\nAPÊNDICE A – PRODUTO EDUCACIONAL ................................................................ 50 \nAPÊNDICE B – ROTEIRO DE ENTREVISTA CAMPUS RIO DO SUL........................67 \n \nAPÊNDICE C – ROTEIRO DE ENTREVISTA CAMPUS SANTA ROSA DO SUL ..... 68\nAPÊNDICE D – ROTEIRO DE ENTREVISTA CAMPUS CAMBORIÚ....................... 69\nAPÊNDICE E – ROTEIRO DE ENTREVISTA EGRESSOS PROEJA ......................... 71\nAPÊNDICE F – QUESTIONÁRIO DE AVALIAÇÃO VALIDAÇÃO DO PRODUTO\nEDUCACIONAL ........................................................................................................ 72\nAPÊNDICE G – TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO .......... 76\nAPRESENTAÇÃO \n \nDesde que o mundo é mundo, as histórias permeiam a vida das pessoas. Contamos\nhistórias o tempo todo para crianças, jovens e adultos. As mães leitoras procuram incentivar\nseus filhos ao caminho dos livros e das narrativas. Contar uma história ou um conto envolve\npreencher essas narrativas com personagens e fatos, os cenários, os bastidores, a criatividade e\na imaginação, a entonação da voz. E, por esse motivo, iniciaremos esta apresentação com uma\nnarrativa por sugestão dos professores na banca de qualificação do mestrado em 2020, buscando\napoio no poeta, cordelista e declamador, Bráulio Bessa Uchoa (BESSA, 2021). \nEra uma vez, há muito tempo, uma menina moça que não terminou os estudos na\neducação básica porque precisou trabalhar. “Quando a vida bater forte e a sua alma sangrar,\nquando esse mundo pesado lhe ferir, lhe esmagar... É hora do recomeço. Recomece a LUTAR”.\n(BESSA, 2021). A menina moça cresceu e constituiu família. Permaneceu 17 anos se dedicando\nà educação dos filhos e aos afazeres da casa. Em meio a dificuldades financeiras, percebeu que\no tempo havia passado e que não tinha experiência alguma de trabalho e tampouco carteira\nassinada. “Quando tudo for escuro e nada iluminar, quando tudo for incerto e você só duvidar...\nÉ hora do recomeço. Recomece a ACREDITAR” (BESSA, 2021, grifo do autor). E nesse\nmomento decidiu que estudar era fundamental para fortalecer a base com condições de melhoria\ne qualidade de vida, e, dessa maneira, decidiu voltar aos ",
+    "resumo": "[PÁG. 8]\nRESUMO \n \nEsta pesquisa, intitulada “Cenários e bastidores da implantação do Proeja no Instituto Federal\nCatarinense”, foi desenvolvida no Mestrado Profissional em Educação Profissional e\nTecnológica (ProfEPT), tendo por objetivo compreender e analisar os motivos que levaram o\nIFC, a partir do estudo de três campi (de Rio do Sul, Santa Rosa do Sul e Camboriú), a não\natingir os índices preconizados pelo Decreto 5.840/2006. Integra a linha de pesquisa “Práticas\neducativas em educação profissional e tecnológica”, dentro do macroprojeto “Inclusão e\ndiversidade em espaços formais e não formais de ensino na educação profissional e\ntecnológica”. O termo “cenários” condiz com a atual oferta do Programa Nacional de Integração\nda Educação Profissional com a Educação Básica, na modalidade de jovens e adultos (Proeja)\nintegrada à educação profissional e tecnológica (EJA-EPT) no IFC, incluindo sua divulgação,\no contato com o público-alvo e o (des)cumprimento ao supracitado Decreto. Já “bastidores”\nfazem alusão à implantação do curso na modalidade de jovens e adultos, compreendendo neste\ncontexto a elaboração do Projeto Político Pedagógico (PPP), as tratativas, a definição, a criação\ndo curso, como também a inclusão e a permanência dos estudantes no Proeja (EJA-EPT). A\nmetodologia utilizada nesta pesquisa foi qualitativa, de cunho exploratório e empírico, com\nentrevistas semiestruturadas com gestores, docentes e egressos do Proeja, em três campi do\nInstituto Federal Catarinense (IFC), sendo os de Camboriú, Rio do Sul e Santa Rosa do Sul.\nPara a análise dos dados, optamos por uma aproximação da análise textual discursiva (ATD),\nfazendo uso de categorias. Os resultados demonstraram a necessidade de formação para os\ndocentes, as (in)disposições de gestores, servidores e docentes para a implantação do curso, o\npreconceito com o público da EJA e a divulgação não dialógica dos cursos na modalidade\njovens e adultos. O produto educacional definido neste estudo foi relacionado e direcionado ao\npúblico da EJA-EPT, tendo como propósito o acolhimento, o incentivo e o esclarecimento das\ndúvidas frequentes referente ao curso por meio de uma História em quadrinhos (HQ) em\nformato digital. Seu roteiro foi inspirado em entrevistas com egressos do EJA-EPT (Proeja) dos\ntrês campi em estudo, e está diretamente relacionado com trajetórias de vida de trabalhadores e\ntrabalhadoras da educação de jovens e adultos na EPT. \n \nPalavras-Chave: Proeja; educação profissional e tecnológica (EPT); Instituto Federal\nCatarinense; permanência; inclusão.",
+    "introducao": "[PÁG. 15]\n1 INTRODUÇÃO \n \nA EJA, desde sua origem, proporciona oportunidade de término dos estudos àqueles que \nnão tiveram como concluir o Ensino Fundamental e Médio nas idades previstas pela legislação. \nÉ garantida pela LDB e alicerçada pela Constituição Federal como direito de todos e todas à \neducação, na perspectiva do pleno desenvolvimento da pessoa, seu preparo para o exercício da \ncidadania e sua qualificação para o trabalho. (BRASIL, art. 205, 1988). \nPossibilitar o acesso à educação é direito à inclusão e aceitação de todos aqueles que \ntiveram de optar entre estudar ou trabalhar, pois a educação é um caminho para possibilitar as \ntransformações sociais e é pela relação com os outros que o ser humano compreende o mundo \ne a si mesmo, num compartilhamento constante, assim como nos ensina Freire (1987).  \nA  luta  por  uma  educação  de  qualidade  no  Brasil  possui  em  sua  história  avanços  e \nretrocessos. E, apesar de esforços por meio das políticas públicas, o país possui 11,3 milhões \nde pessoas com 15 anos (ou mais) de idade e analfabetos, correspondendo a 6,8%. Na pesquisa \ndo IBGE­PNAD ano 2019, eram quase 6 milhões de analfabetos com 60 anos ou mais, com \numa taxa de analfabetismo de 18,0%. Verificamos então, que, quanto mais velho o grupo, maior \né  a  proporção  de  analfabetos.  (IBGE­PNAD,  2018)  Os  dados  estatísticos  do  PNAD  ainda \nrevelaram que, em 2018, 47,4% das pessoas de 25 anos ou mais de idade haviam concluído a \neducação básica. Entretanto, apesar dos avanços, mais da metade da população nessa faixa \netária não concluiu a educação básica escolar obrigatória e na idade apropriada. \nA  Rede  Federal  de  Educação  Profissional,  Científica  e  Tecnológica  tem  a \nresponsabilidade  da  implantação  de  programas  de  EJA,  como  inserido  no  art.7º  da  Lei \n11.892/2008: “ministrar  educação  profissional  técnica  de  nível  médio,  prioritariamente  na \nforma de cursos integrados, para os concluintes do ensino fundamental e para o público da \neducação de jovens e adultos”. E o Decreto nº 5.840/2006 já instituía, 2 anos antes, que a oferta \ndo Proeja deveria alcançar 10% do total das vagas de ingresso das Escolas Técnicas Federais e \nAgrotécnicas Federais, tomando como referência o quantitativo de matrículas do ano anterior, \nampliando essa oferta a partir do ano de 2007. (BRASIL, 2006). \nÀ vista disso e por meio da análise dos dados da Plataforma Nilo Peçanha (PNP 2019 \nbase 2018), o IFC possui 15 campi com 214 cursos e 17.528 matrículas, sendo que alcança \nsomente 1% para os alunos EJA­EPT. Em uma nova busca, na mesma plataforma (PNP 2020, \nano  base  2019),  encontramos,  especificamente  no  item  5.1,  o  quesito  atendimento  aos \npercentuais estabelecidos na Lei 11.892/2008 e ao Decreto 5.840/2006, sendo que o IFC alcança \n1,4% em atendimento ao Proeja (EJA­EPT).\n\n[PÁG. 16]\nE  os  percentuais  alcançados  nos  Campus  do  IFC  (PNP  2019  base  2018)  foram:  o \nCampus de Abelardo Luz 7,3 % da legislação, o Campus Camboriú 4,9%, Campus Ibirama \n0,7%  e  o  Campus  São  Francisco  do  Sul  9,4%.  Essa  constatação  foi  provocadora,  gerando \ninquietudes, pois o IFC é uma instituição pública com a missão de “proporcionar educação\nprofissional, atuando em ensino, pesquisa e extensão, comprometida com a formação cidadã, a \ninclusão social, a inovação e o desenvolvimento regional” (IFC, 2019).  \nDiante dos fatos apurados e pesquisados, vieram os apontamentos: Por que o IFC não \natinge o índice mínimo de oferta do Proeja? Por que alguns Campi nunca ofertaram o Proeja e \nporque outros ofertaram e não ofertam mais? Quais as causas que levam o IFC a não alcançar \nos índices de matrícula na EJA­EPT preconizados nas normas vigentes e quais saberes sobre a \nrelação educação e trabalho permeiam as gestões dos campi?   \nCom  tantas  indagações  a  serem  respondidas,  partimos  para  definição  do  objetivo \nproposto nesta pesquisa: compreender e analisar os motivos para o IFC não atingir os índices \nde matrícula em Proeja (EJA­EPT) preconizados pelo Decreto 5.840/2006, bem como produzir \num produto educacional que auxiliasse na elevação dos índices de oferta para os cursos na \nmodalidade de jovens e adultos na Instituição. Para a realização do estudo acerca do tema em \ndiscussão, foram avaliados três Campi do IFC: o Campus Rio do Sul, o Campus de Santa Rosa \ndo Sul e o Campus Camboriú. \nComo  elementos auxiliadores para atingir o objetivo geral, delineamos os seguintes \nobjetivos  específicos:  compreender  a  relação  entre  trabalho  e  Educação  Profissional \nTecnológica,  no  seu  processo  histórico;  traduzir  uma  compreensão  referente  aos  estudos \nrealizados sobre o Proeja (EJA­EPT) inseridos na Rede Federal  e o cenário  das pesquisas, \nconsiderando:  conceito,  oferta,  divulgação,  ingresso,  e  ensino  integrado.  Para  o  momento \nempírico, análise e discussões: historicizar, de forma sucinta, a EJA e o Proeja (EJA­EPT) no \nBrasil;  detectar  as  causas  da  (des)continuidade  de  oferta  do  curso  nos  campi  em  estudo,  e \nproduzir um Produto Educacional intimamente relacionado e direcionado ao público do Proeja \n(EJA­EPT),  com  o  propósito  de  acolher,  incentivar,  e  dirimir  as  dúvidas  frequentes  dos \ndiscentes referentes ao curso em estudo.\n\n[PÁG. 17]\n2 TRABALHO E A SUA RELAÇÃO COM A EDUCAÇÃO PROFISSIONAL \n \nO trabalho faz parte do homem para assegurar sua sobrevivência desde o início dos \ntempos, ou seja, o ser humano pensa, cria e (re)cria utensílios e artefatos necessários para sua \nsubsistência. E isso significa que é a partir da consciência nas ações que o homem modifica a \nnatureza a sua volta. \n Concebemos o trabalho como princípio fundante na constituição do gênero humano e, \nquando relacionado com a educação, ocorre a afirmação do caráter formativo do trabalho e da \neducação como ação humanizadora mediante o desenvolvimento de todas as potencialidades \ndo ser humano. (FRIGOTTO; CIAVATTA; RAMOS, 2005).  \nPorém, o trabalho ganha um sentido ambivalente quando o ser humano suplanta relações \ndo  trabalho  escravocrata  e  servil  nas  formas  sociais  de  dominação,  em  uma  sociedade \ncapitalista. O capitalismo induz que a força de trabalho seja vendida para quem detém os meios \nde produção. Assim, na estruturação da propriedade e na forma de manipulação dos meios de \nprodução, acontece a divisão dos homens em classes, e, inserido neste cenário, predomina a \ndicotomia  na  educação,  ou  seja,  para  os  trabalhadores  continuam  a  ser  repassados  os \nensinamentos básicos e para a classe dominante permanecem os conhecimentos para a formação \nde dirigentes. \nA Educação Profissional no Brasil tem origem na formação dos “menos favorecidos e \ndesvalidos da sorte”1 para as demandas do mercado capitalista em ascensão, apoiadas em um \ngoverno progressista, com a intenção de habilitar os filhos dos desfavorecidos com preparo \nfísico e intelectual não no sentido de instá­los a adquirir conhecimentos, mas sim como uma \nforma de afastá­los do ócio, do vício e do crime. (BRASIL, 1909). \nCom a I Revolução Industrial e a introdução da maquinaria, o homem passa do campo \npara  cidade  e  da  agricultura  para  o  manuseio  das  máquinas.  Começa  então  o  modelo  de \nprodução em massa que se espalhou pelo mundo inteiro e que, nas palavras de Gounet (1999, \np. 17), significa: “[…] símbolo da exploração capitalista: sem qualificação o operário da linha\nde produção aparece como uma máquina de dar lucro para a empresa, seus acionistas e diretores \n[…]”. Com o crescimento desse poderio industrial, aumentou também a necessidade de uma \neducação voltada aos trabalhadores da linha de produção, com disciplina e controle de tempo. \nUm trabalho alienado, resultado de uma divisão de classes e subordinado ao capital vigente.  \n \n1  A rede federal nasceu em 1909, no Governo Nilo Peçanha, com 19 escolas de aprendizes e artífices, destinadas\naos “pobres e humildes desvalidos da sorte” (BRASIL, 1909).\n\n[P",
+    "descricao_produto_na_dissertacao": "[PÁG. 16] E  os  percentuais  alcançados  nos  Campus  do  IFC  (PNP  2019  base  2018)  foram:  o \nCampus de Abelardo Luz 7,3 % da legislação, o Campus Camboriú 4,9%, Campus Ibirama \n0,7%  e  o  Campus  São  Francisco  do  Sul  9,4%.  Essa  constatação  foi  provocadora,  gerando \ninquietudes, pois o IFC é uma instituição pública com a missão de “proporcionar educação\nprofissional, atuando em ensino, pesquisa e extensão, comprometida com a formação cidadã, a \ninclusão social, a inovação e o desenvolvimento regional” (IFC, 2019).  \nDiante dos fatos apurados e pesquisados, vieram os apontamentos: Por que o IFC não \natinge o índice mínimo de oferta do Proeja? Por que alguns Campi nunca ofertaram o Proeja e \nporque outros ofertaram e não ofertam mais? Quais as causas que levam o IFC a não alcançar \nos índices de matrícula na EJA­EPT preconizados nas normas vigentes e quais saberes sobre a \nrelação educação e trabalho permeiam as gestões dos campi?   \nCom  tantas  indagações  a  serem  respondidas,  partimos  para  definição  do  objetivo \nproposto nesta pesquisa: compreender e analisar os motivos para o IFC não atingir os índices \nde matrícula em Proeja (EJA­EPT) preconizados pelo Decreto 5.840/2006, bem como produzir \num produto educacional que auxiliasse na elevação dos índices de oferta para os cursos na \nmodalidade de jovens e adultos na Instituição. Para a realização do estudo acerca do tema em \ndiscussão, foram avaliados três Campi do IFC: o Campus Rio do Sul, o Campus de Santa Rosa \ndo Sul e o Campus Camboriú. \nComo  elementos auxiliadores para atingir o objetivo geral, delineamos os seguintes \nobjetivos  específicos:  compreender  a  relação  entre  trabalho  e  Educação  Profissional \nTecnológica,  no  seu  processo  histórico;  traduzir  uma  compreensão  referente  aos  estudos \nrealizados sobre o Proeja (EJA­EPT) inseridos na Rede Federal  e o cenário  das pesquisas, \nconsiderando:  conceito,  oferta,  divulgação,  ingresso,  e  ensino  integrado.  Para  o  momento \nempírico, análise e discussões: historicizar, de forma sucinta, a EJA e o Proeja (EJA­EPT) no \nBrasil;  detectar  as  causas  da  (des)continuidade  de  oferta  do  curso  nos  campi  em  estudo,  e \nproduzir um Produto Educacional intimamente relacionado e direcionado ao público do Proeja \n(EJA­EPT),  com  o  propósito  de  acolher,  incentivar,  e  dirimir  as  dúvidas  frequentes  dos \ndiscentes referentes ao curso em estudo.\n\n[PÁG. 20] 3 METODOLOGIA \n \nSegundo Minayo (2007), metodologia e método são conceitos diferentes. Enquanto a\nmetodologia percorre o caminho escolhido para o fim proposto, o método abrange os\nprocedimentos a serem usados pelo pesquisador. \nEsta pesquisa se constituiu em dois momentos: o momento exploratório e o empírico.\nSegundo Marconi e Lakatos, a pesquisa não parte da estaca zero e, sendo exploratória de uma\navaliação ou de uma situação concreta desconhecida, alguém ou um grupo, em algum lugar, já\nfez pesquisas semelhantes de certos aspectos da pesquisa pretendida (MARCONI; LAKATOS,\n2003, p. 225). \nDessa maneira, o momento exploratório envolveu o estudo da historicidade da EJA no\nBrasil com revisão bibliográfica sobre o tema Educação de Jovens e Adultos articulada com a\neducação profissional e tecnológica (EJA-EPT), e as informações sobre a oferta do Proeja entre\nos anos de 2006 e 2019. No momento empírico, realizaram-se as entrevistas semiestruturadas\ndirecionadas aos sujeitos que vivenciaram os cursos na modalidade de jovens e adultos -P",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 15,
+        "texto": "1 INTRODUÇÃO \n \nA EJA, desde sua origem, proporciona oportunidade de término dos estudos àqueles que \nnão tiveram como concluir o Ensino Fundamental e Médio nas idades previstas pela legislação. \nÉ garantida pela LDB e alicerçada pela Constituição Federal como direito de todos e todas à \neducação, na perspectiva do pleno desenvolvimento da pessoa, seu preparo para o exercício da \ncidadania e sua qualificação para o trabalho. (BRASIL, art. 205, 1988). \nPossibilitar o acesso à educação é direito à inclusão e aceitação de todos aqueles que \ntiveram de optar entre estudar ou trabalhar, pois a educação é um caminho para possibilitar as \ntransformações sociais e é pela relação com os outros que o ser humano compreende o mundo \ne a si mesmo, num compartilhamento constante, assim como nos ensina Freire (1987).  \nA  luta  por  uma  educação  de  qualidade  no  Brasil  possui  em  sua  história  avanços  e \nretrocessos. E, apesar de esforços por meio das políticas públicas, o país possui 11,3 milhões \nde pessoas com 15 anos (ou mais) de idade e analfabetos, correspondendo a 6,8%. Na pesquisa \ndo IBGE­PNAD ano 2019, eram quase 6 milhões de analfabetos com 60 anos ou mais, com \numa taxa de ana",
+        "citacoes_detectadas": [
+          "BRASIL, 2006"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 17,
+        "texto": "2 TRABALHO E A SUA RELAÇÃO COM A EDUCAÇÃO PROFISSIONAL \n \nO trabalho faz parte do homem para assegurar sua sobrevivência desde o início dos \ntempos, ou seja, o ser humano pensa, cria e (re)cria utensílios e artefatos necessários para sua \nsubsistência. E isso significa que é a partir da consciência nas ações que o homem modifica a \nnatureza a sua volta. \n Concebemos o trabalho como princípio fundante na constituição do gênero humano e, \nquando relacionado com a educação, ocorre a afirmação do caráter formativo do trabalho e da \neducação como ação humanizadora mediante o desenvolvimento de todas as potencialidades \ndo ser humano. (FRIGOTTO; CIAVATTA; RAMOS, 2005).  \nPorém, o trabalho ganha um sentido ambivalente quando o ser humano suplanta relações \ndo  trabalho  escravocrata  e  servil  nas  formas  sociais  de  dominação,  em  uma  sociedade \ncapitalista. O capitalismo induz que a força de trabalho seja vendida para quem detém os meios \nde produção. Assim, na estruturação da propriedade e na forma de manipulação dos meios de \nprodução, acontece a divisão dos homens em classes, e, inserido neste cenário, predomina a \ndicotomia  na  educação,  ou  seja,  para  os  trabalhadores  co",
+        "citacoes_detectadas": [
+          "BRASIL, 1909",
+          "BRASIL, 1909"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 19,
+        "texto": "Com a promulgação da Constituição Federal em 1988, a educação passou a ser direito \nde todos e dever do Estado e da família (BRASIL, 1988, art. 205), assegurando os direitos \nfundamentais, individuais, sociais, políticos e jurídicos. Porém, foi necessária a elaboração de \numa nova Lei de Diretrizes e Bases da Educação Nacional (LDB) que desse suporte à educação. \nSegundo  Frigotto  (2015),  as  reformas  da  educação  que  ocorreram  na  década  de  1990 \ncaracterizaram  a  regressão  da  regressão,  com  um  pensamento  educacional  orientado  pelo \npragmatismo, o tecnicismo e o economicismo. \nEm 1996, é sancionada a nova LDB (Lei n.º 9.394/1996) e, no ano seguinte, 1997, o \nDecreto n.º 2.208, tendo por objetivo regulamentar o §2 º do art. 36, art. 39 a 42 da LDB.  Esse \ndecreto determinou que a educação profissional de nível técnico fosse concomitante ao Ensino \nMédio, com organização curricular própria e independente, com oferta apenas nas modalidades \nconcomitante ou subsequente, emergindo de forma oficial e novamente a dualidade entre a \nformação propedêutica e a formação profissional. Frigotto (2001) esclarece que a LDB, em \nconjunto com seus pareceres e portarias, colocou a ",
+        "citacoes_detectadas": [
+          "FRIGOTTO, 2001,\np. 74"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 23,
+        "texto": "4 BREVE CENÁRIO E BASTIDORES DA EJA E PROEJA NO BRASIL \n \nA EJA, tal qual denominamos atualmente, era conhecida como educação popular, sendo \ndesenvolvida  pelos  movimentos  populares  e  de  trabalhadores  com  objetivo  primordial  de \nerradicar o analfabetismo no Brasil. \nNo início da década de 1960, Paulo Freire, com a propagação de sua práxis, inspirou os \nprincipais programas de alfabetização e de educação popular no país. Ele foi (e ainda é) um dos \neducadores que mais ativamente participou dos movimentos em prol da educação popular, além \nde  (re)formular  a  concepção  de  alfabetização  como  ato  de  conhecimento,  processo  de \nconscientização, de emancipação e de libertação. Nos seus argumentos, trouxe que não existe \neducação  fora  da  sociedade;  os  homens  somente  sobrevivem  com  o  auxílio  dos  outros. \n(FREIRE, 1987). \nSeguindo as propostas de Freire, e por meio do Decreto 53.465/64, o Plano Nacional de \nAlfabetização foi aprovado, estabelecendo programas de alfabetização pelo Brasil. Entretanto, \ncom Golpe Militar de 1964, esses programas passaram a serem vistos como uma ameaça à \nordem  pública,  o  Plano  Nacional  de  Alfabetização  foi  extinto  e  Frei",
+        "citacoes_detectadas": [
+          "FREIRE, 1987"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 25,
+        "texto": "além do compromisso firmado daqueles que trabalham para seu desenvolvimento, a exemplo \nde  educadores  e  gestores.  Assim,  a  educação  profissional  e  tecnológica  e  a  qualificação \nprofissional técnica de nível médio ofertadas pelos Institutos Federais são os espaços profícuos \npara a formação e a qualificação da classe trabalhadora, incluindo a EJA­EPT. \nAinda,  nos  reportamos  aos  fundamentos  político­pedagógicos  que  norteiam  a \norganização curricular para a EJA: associar, de forma integrada, a relação entre a escolaridade \ne o mundo do trabalho. Ciavatta (2005, p. 146) nos esclarece que o termo “integrar” possui o\nsentido  de  completude  e  de  compreensão  das  partes  no  todo,  de  tratar  a  educação  como \ntotalidade social, enfocar o trabalho como princípio educativo e assim superar a dicotomia entre \ntrabalho manual e intelectual. E, nesse sentido, Gramsci (2004, p. 53) assevera: “não há\natividade humana da qual se possa excluir toda a intervenção intelectual, não se pode separar o \nhomo  faber  do homo sapiens”, ou seja, não existem não­intelectuais;  todos os homens são \npossuidores de ideais, mesmo não exercendo atividade intelectual socialmente. \nPelo  ",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 26,
+        "texto": "refinamento das buscas, com o tema Proeja e EJA, foram selecionados  as pesquisas que mais \nse aproximaram com o tema desta dissertação: dois artigos, duas dissertações e uma tese que \ndiscorriam sobre o descumprimento do Decreto 5.840/2006 para o atendimento da modalidade \nEJA­EPT (Proeja) na Rede Federal. \nA  dissertação  de  mestrado  da  autora  Maria  Luzinete  da  Silva,  defendida  em  2011, \ndiscutiu “Currículo integrado e formação continuada de professores: entre desafios e sonhos no \nProeja IFPA” e revelou as dificuldades da implantação e o percurso da formação docente do \nProeja  no  IFPA,  com  uma  metodologia  qualitativa  pautada  no  estudo  de  caso.  A  autora \ndiscorreu  sobre  as  conclusões  obtidas  na  pesquisa:  o  Proeja  foi  implantado  somente  por \ndeterminação  governamental  sob  o  Decreto  nº.  5.840/06;  a  formação  dos  professores  não \ncorrespondeu às expectativas e especificidades da EJA; destacou a ausência de sensibilização \ndo corpo docente para com discentes EJA, além da falta de currículo integrado pautado em um \nprojeto político­pedagógico estruturado. \nO artigo intitulado “Os sentidos do Proeja: possibilidade e impasses na produção de u",
+        "citacoes_detectadas": [
+          "OLIVEIRA;\nCEZARINO, 2007, p. 7",
+          "FREIRE, 1996, p. 103"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 27,
+        "texto": "Silva (2010), discutiu a gestão do Proeja no que tange às políticas públicas e as estratégicas que \nforam adotadas na implantação da modalidade através do Decreto nº 5.840/2006 nos Institutos \nFederais nos Campi Pelotas, Boa Vista, Florianópolis e Goytacazes.  O título da dissertação \nmencionou a “implementação” do Proeja, que significa “pôr em prática” ou “executar”, mas a\nautora discutiu também a “implantação do Proeja” das políticas públicas da EJA­EPT, \nsignificando “introduzir” ou “estabelecer”, ou seja, são palavras parônimas, com forma de\nescrita semelhante e significados diferentes.  \nVânia Silva (2010) mencionou ainda que, na maioria das instituições da Rede Federal, \na inserção do Proeja ocasionada via Decreto nº 5.840/2006 transcorreu em um contexto de \nresistência de gestores e docentes. Concluiu ainda que as formas de acesso à modalidade EJA­\nEPT, além de um desafio para a Rede Federal, necessitam ser específicas para o público­alvo, \ncom  estratégias  de  acesso  voltadas  para  a  verticalização  da  escolaridade  e  não  somente  à \nformação profissional. \nVerificamos que tanto nas dissertações “Currículo integrado e formação continuada de\nprofessores: entre desafio",
+        "citacoes_detectadas": [
+          "BOURDIEU, 2007, p. 162"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 28,
+        "texto": "cinco cumpriam a meta estabelecida pela legislação vigente. Vitorette (2014) observou ainda \nque o não cumprimento das normas e da não consolidação do Proeja como política pública \ntornou­se o seguinte: \n \nTravestidos  de  novos  programas,  a  cada  governo  são  ressuscitados  ou  dão­se \ncontinuidade a concepções antigas de educação destinada à classe dos trabalhadores \nseguindo a lógica de ações políticas focais, fragmentadas, na forma de parcerias, frágeis \npara  se  consolidar  políticas  públicas  que  permitam  a  universalização  da  educação \nbásica.  Mantém­se  uma  parcela  significativa  da  população  brasileira  no  limite  do \nprocesso escolar, trocando­o por aparatos de certificação com reduzido financiamento, \nnegando aos jovens e adultos trabalhadores o conhecimento historicamente construído. \n(VITORETTE, 2014, p. 86). \n \nJá o artigo: “O processo de implantação do Proeja na cultura escolar da Educação\nprofissional”, de Marcolla (2012), apresentado na 35ª Reunião Anual da Associação Nacional\nde Pós­Graduação e Pesquisa em Educação (Anped), foi encontrado em mais de uma busca, \nsendo  também  um  artigo  que  abordou  o  Decreto  nº  5.840/2006.  A  pesquisa  abord",
+        "citacoes_detectadas": [
+          "VITORETTE, 2014, p. 86",
+          "BOURDIEU,1998, \np. 53"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 29,
+        "texto": "gerando muitas vezes os impasses para a implantação de cursos. \nPor  fim,  os  trabalhos  encontrados  nesta  pesquisa  bibliográfica  abordaram  algumas \nquestões  do  projeto  de  pesquisa  quando  reverenciaram  o  Decreto  nº  5.840/2006  e  a \nobrigatoriedade de ofertar 10% das matrículas para a modalidade EJA­EPT, como também os \nimpasses  da  gestão  em  ofertar  o  EJA­EPT,  a  formação  docente,  as  formas  de  acesso,  as \nestratégias de divulgação, o planejamento dos cursos e o currículo integrado.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "5 ANÁLISE DOS DADOS: OS RESULTADOS E SUAS DISCUSSÕES \n \nNeste tópico, apresentaremos a análise dos dados obtidos na pesquisa com as categorias \ndefinidas  como  humanizadora  e  racionalidade  técnica,  levando  para  esta  discussão  autores \ncomo Freire (1987, 1996), Adorno e Horkheimer (1985), Almeida (2001), Schön (2000) e Silva \ne Ferreira (2006). Cada categoria tem suas características, conforme demonstram as Figuras 1 e 2. \nEntendemos  que  as  características  emergentes  foram  identificadas  a  partir  do  levantamento \nbibliográfico e das falas dos sujeitos, enquanto as consideradas a priori advêm da base teórica \nutilizada para a análise dos dados. \nO termo “humanizadora”, uma das categorias desta análise, está fundamentada em\nFreire  (1987)  e  busca  conscientizar  e  libertar  homens  e  mulheres  da  acomodação  e  da \ndesumanização por meio de uma educação voltada à dialogicidade, para assim se perceberem \ncomo seres humanos “no” e “com” o mundo e, desse modo, se tornarem seres humanos livres\nda opressão e mais críticos do mundo, com a perspectiva progressista da educação. \n \nFigura 1 – Categoria Humanizadora e suas características. \n \nFonte: criado pela autora. \n ",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 33,
+        "texto": "de ofertar cursos que realmente formem esses jovens e adultos, uma dívida a ser minimizada. \nEssa visão é ratificada pelas falas seguintes:  \nEntão por que tem que ser feita essa oferta? Pra gente tentar minimizar essa dívida, essa\nnossa falta enquanto instituição de ensino, enquanto MEC, enfim… Porque: para tentar\nminimizar essa dívida, né. (CG 05). \n \nPorque a gente tem uma história que foi excludente. A maior parte das pessoas que não\nestudaram, não estudaram porque não havia políticas educacionais que pudessem\ncontemplar a realidade brasileira. (CD 06). \n \nEntão o Proeja vem justamente nessa perspectiva, de tentar sanar um pouco dessas\nlacunas, de uma população que ficou à margem do sistema por várias razões. (S 02). \n \n É para esse público que foi excluído. Que não foi escolarizado é que é extremamente\nDISCRIMINADO. E é essa discriminação que eles sofrem até dentro da própria\ninstituição. (CG 05). \n \nNeste último excerto, CG 05 menciona a discriminação da sociedade para com jovens e \nadultos que não concluíram os estudos, e, quando estes sujeitos retornam ao sistema escolar, \ncontinuam  sofrendo  esse  preconceito.  Pontuamos  que  a  discriminação  é  uma  prática \npreconceit",
+        "citacoes_detectadas": [
+          "FREIRE, 1987",
+          "FREIRE, 1987"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 34,
+        "texto": "Então a relevância é justamente proporcionar a esses jovens e adultos que não tiveram\nacesso, a ter acesso na educação gratuita, com qualidade e com formação profissional\npara além da formação básica, e com formação básica para além da formação\nprofissional. (RG 08). \n \nTotal. E falta compreensão sobre. Quando foi criada a lei dos Institutos, ali ficava bem\nclaro que 50% eram destinados aos cursos de ensino médio e 10% de Proeja. É a base\ndos institutos federais… Eles foram criados para isso… (CG 05). \n \nRG 08 e CG 05, numa visão humanizadora, apresentam conhecimento acerca das\nlegislações e sobre a obrigatoriedade de ofertar 10% do total da matrícula para os cursos na\nmodalidade de EJA, sendo relevante a inclusão de mais cursos para integrar essa parcela da\npopulação, considerada à margem da sociedade. Concebem o Proeja como um espaço de\ninclusão para que os marginalizados possam integrar-se e incorporar-se à sociedade de onde\n“partiram”. A solução não estaria em “integrar-se” ou “incorporar-se” a uma estrutura que os\noprime, mas transformá-la para que possam se tornar “seres para si” através da humanização\n(FREIRE, 1987, p. 35). \nPara além da legislação, SD 02 mencionou que a ofe",
+        "citacoes_detectadas": [
+          "FREIRE, 1987, p. 35"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "BOURDIEU, Pierre. Escritos da Educação. Tradução: Maria Alice Nogueira; Afrânio Catani. 9. ed. Petrópolis: Vozes, 1998.",
+      "BOURDIEU, Pierre A Distinção: crítica social do julgamento. Tradução: Daniela Kern; Guilherme. F. Teixeira. São Paulo: Edusp; Porto Alegre: Zouk, 2007. 560 p. BRASIL. [Constituição (1988)]. Constituição da República Federativa do Brasil: promulgada em 5 de outubro de 1988. 4. ed. São Paulo: Saraiva, 1990. BRASIL. Constituição dos Estados Unidos do Brasil, de 10 de novembro de 1937. Rio de Janeiro:",
+      "FREIRE, Paulo. Pedagogia do oprimido. 17. ed. Rio de Janeiro: Paz e Terra,1987.",
+      "FREIRE, Paulo. Pedagogia da Autonomia: saberes necessários à prática educativa. São Paulo: Paz e Terra, 1996.",
+      "FRIGOTTO, Gaudêncio. Educação e trabalho: bases para debater a Educação Profissional Emancipatória. Perspectiva, Florianópolis, v. 19, n. 1, p. 71-87, jan./jun. 2001. Disponível em: https://periodicos.ufsc.br/index.php/perspectiva/arti cle/view/8463/7770. Acesso em: 25 jun. 2021.",
+      "FRIGOTTO, Gaudêncio. Contexto e sentido ontológico, epistemológico e político da inversão da relação educação e trabalho para trabalho e educação. Revista Contemporânea de Educação, Rio de Janeiro, v. 10, n. 20, p. 228-248, jul./dez. 2015. Disponível em: https://revistas.ufrj.br/index.php/rce/article/view/2729/2296. Acesso em: 25 jun. 2021.",
+      "FRIGOTTO, G.; CIAVATTA, M.; RAMOS, M. N. (org.). Ensino médio integrado: concepção e contradições. São Paulo: Cortez, 2005.",
+      "VITORETTE, Jacqueline Maria Barbosa. A não consolidação do Proeja como política pública de Estado. 2014. 253 f. Tese (Doutorado em Educação) – Faculdade de Educação, Universidade Federal de Goiás, Goiânia, 2014."
+    ]
+  }
+}

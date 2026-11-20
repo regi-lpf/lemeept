@@ -1,0 +1,231 @@
+{
+  "id": "EPT-0017",
+  "metadados_resolvidos": {
+    "ano": 2025,
+    "autor": "Luciana da Cruz Moraes Magarão Alves",
+    "orientador": "Viviane Grimm",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP3"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "PREVENÇÃO E ENFRENTAMENTO ÀS VIOLÊNCIAS: UM ESTUDO A PARTIR DE UMA AÇÃO EDUCATIVA COM ESTUDANTES DO ENSINO MÉDIO INTEGRADO DO IFSC – JARAGUÁ DO SUL CENTRO",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/09/DISSERTACAO_E_PRODUTO_EDUCACIONAL___LUCIANA_ALVESpdfa-2.pdf",
+    "palavras_chave": [
+      "Prevenção e enfrentamento às Violências",
+      "Ensino Médio Integrado",
+      "Educação Profissional e Tecnológica",
+      "Ações educativas"
+    ],
+    "autores_referenciados": [
+      "Adelaide Alves Dias",
+      "Ana Silva",
+      "Antônio Soares",
+      "Audre Lorde",
+      "Beatriz Takeiti",
+      "Benedito Medrado",
+      "Benedito Rodrigues dos Santos",
+      "Boaventura de Sousa Santos",
+      "Carla C. O. de J. Lima",
+      "Cátula Pelisoli",
+      "Cléo Fante",
+      "David Tripp",
+      "Débora Dell'Aglio",
+      "Djamila Ribeiro",
+      "Émina Santos",
+      "Etienne Krug",
+      "Flávia Abade",
+      "Gaudêncio Frigotto",
+      "Geraldo Leão",
+      "Gislaine G. Saueressig",
+      "Heleieth Saffioti",
+      "Helen Cristina do Carmo",
+      "Ivan Pedroso",
+      "João Guimarães Rosa",
+      "Juarez Dayrell",
+      "Laísa Rodrigues Moreira",
+      "Laurence Bardin",
+      "Lygia M. P. Silva",
+      "M. A. Cesar",
+      "Marc Prensky",
+      "Marcelo Urresti",
+      "Marcos Dayrell",
+      "Maria Cecília de Souza Minayo",
+      "Maria Ciavatta",
+      "Maria Franco",
+      "Maria L. P. Leal",
+      "Maria Lúcia M. Afonso",
+      "Maria Soares",
+      "Maria T. Maldonado",
+      "Marilda Iamamoto",
+      "Marilena Chauí",
+      "Marilena Ristum",
+      "Marília P. Sposito",
+      "Mario Margulis",
+      "Marise Nogueira Ramos",
+      "Martha L. C. O. Ramos",
+      "Mary J. Spink",
+      "Maycoln Teodoro",
+      "Michel Thiollent",
+      "Miriam Abramovay",
+      "Norberto Bobbio",
+      "Paulo Carrano",
+      "Paulo Freire",
+      "Pierre Bourdieu",
+      "Priscila de Souza Chisté",
+      "R. Cardoso",
+      "Roberto S. Macedo",
+      "Ronaldo Marcos de L. Araujo",
+      "Sergio Adorno",
+      "Simone dos Santos Paludo",
+      "Suely Almeida",
+      "Thais Tezani",
+      "Vera M. Menegon",
+      "Vera Maria Candau",
+      "Viviane Guerra"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/1081115",
+    "titulo_produto": "Oficina (re)conhecendo redes que protegem: acolhimento, escuta e diálogo no Ensino Médio Integrado",
+    "titulo_produto_bruto": "PREVENÇÃO E ENFRENTAMENTO ÀS VIOLÊNCIAS: UM ESTUDO A PARTIR DE UMA AÇÃO EDUCATIVA COM ESTUDANTES DO ENSINO MÉDIO INTEGRADO DO CAMPUS JARAGUÁ DO SUL – CENTRO",
+    "data_publicacao": "2025-06-12",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "ALVES, LUCIANA",
+        "papel": "creator"
+      },
+      {
+        "nome": "GRIMM, VIVIANE",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1081115",
+        "url": "https://educapes.capes.gov.br/handle/capes/1081115"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Guia Oficina (re)conhecendo redes que protegem: acolhimento, escuta e diálogo no Ensino Médio Integrado",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "texto"
+    ],
+    "palavras_chave_educapes": [
+      "Ensino Médio Integrado",
+      "Violências",
+      "Ação educativa",
+      "Proteção e enfrentamento às violências",
+      "Mestrado em Educação Profissional e Tecnológica",
+      "Dissertação"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Roteiro / Proposta Pedagógica",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "Instituto Federal Catarinense\n Programa de Pós-graduação em Educação Profissional e Tecnológica\nCampus Blumenau\n\nLUCIANA DA CRUZ MORAES MAGARÃO ALVES\n\nPREVENÇÃO E ENFRENTAMENTO ÀS VIOLÊNCIAS: UM ESTUDO A PARTIR\nDE UMA AÇÃO EDUCATIVA COM ESTUDANTES DO ENSINO MÉDIO\nINTEGRADO DO IFSC - JARAGUÁ DO SUL CENTRO\n\nBlumenau\n2025\n\nLUCIANA DA CRUZ MORAES MAGARÃO ALVES\n\nPREVENÇÃO E ENFRENTAMENTO ÀS VIOLÊNCIAS: UM ESTUDO A PARTIR\nDE UMA AÇÃO EDUCATIVA COM ESTUDANTES DO ENSINO MÉDIO\nINTEGRADO DO IFSC - JARAGUÁ DO SUL CENTRO\n\nDissertação submetida ao Programa de\nPós-graduação em Educação Profissional\ne\nTecnológica\ndo\nInstituto\nFederal\nCatarinense – Campus Blumenau para a\nobtenção do título de Mestre em Educação\nProfissional e Tecnológica.\nOrientadora: Prof.ª Dra. Viviane Grimm.\n\nBlumenau\n2025",
+    "ficha_catalografica": "[PÁG. 3]\nAlves, Luciana da Cruz Moraes Magarão.\nA474p Prevenção e enfrentamento às violências: um estudo a partir de uma ação\neducativa com estudantes do ensino médio integrado do IFSC – Jaraguá do\nSul Centro / Luciana da Cruz Moraes Magarão Alves; orientadora Viviane\nGrimm. -- Blumenau, 2025.\n 147 p.\n Dissertação (mestrado) – Instituto Federal Catarinense, campus Blumenau,\nMestrado Profissional em Educação Profissional Tecnológica (PROFEPT),\nBlumenau, 2025.\n\n Inclui referências.\n\n 1. Educação Profissional e Tecnológica. 2. Violência - Prevenção. 3.\nViolência-Enfrentamento. 4.Práticas Educativas. 5. Ensino Médio Integrado. I.\nGrimm, Viviane. II. Instituto Federal Catarinense. Mestrado Profissional em\nEducação Profissional e Tecnológica. III. Título.\n\nCDD: 374.013\n\nFicha catalográfica elaborada pela bibliotecária\nShyrlei K. Jagielski Benkendorf - CRB 14/662",
+    "sumario": "[PÁG. 17]\nSUMÁRIO\n\n1 INTRODUÇÃO ....................................................................................................... 18\n2 FUNDAMENTAÇÃO TEÓRICA ............................................................................. 27\n2.1 A VIOLÊNCIA E AS SUAS MÚLTIPLAS DETERMINAÇÕES ............................. 27\n2.1.1 FORMAS DE VIOLÊNCIAS CONTRA CRIANÇA E ADOLESCENTES ........... 36\n2.2 JUVENTUDES, ESCOLA E VIOLÊNCIAS: A ESCOLA COMO LUGAR DE\nPREVENÇÃO E DESENVOLVIMENTO DE UM ENSINO MÉDIO INTEGRADO EM\nSINTONIA COM OS DIREITOS HUMANOS ............................................................. 49\n3 METODOLOGIA .................................................................................................... 62\n3.1 CLASSIFICAÇÃO DA PESQUISA ...................................................................... 62\n3.2 LÓCUS DA PESQUISA ....................................................................................... 64\n3.3 COLETA E ANÁLISE DE DADOS ....................................................................... 66\n4 ANÁLISE DOS DADOS: RESULTADOS E DISCUSSÕES .................................. 74\n4.1 PERCEPÇÃO DOS ESTUDANTES SOBRE VIOLÊNCIAS: Violência não dá\nrespeito, dá medo. Bater não é educar ..................................................................... 75\n4.2 EXPERIÊNCIAS DOS ESTUDANTES COM RELAÇÃO AS VIOLÊNCIAS: Foi\napenas um sonho! Não é fantasia. É crime contra a infância.................................... 79\n4.3 CONHECER E RECONHECER AS REDES DE APOIO E PROTEÇÃO NA\nPREVENÇÃO ÀS VIOLÊNCIAS: Ser ativo pela causa e disseminar informações sobre\na rede de apoio ......................................................................................................... 84\n4.4 COMPREENSÃO DO PAPEL DA ESCOLA NA PREVENÇÃO AS VIOLÊNCIAS:\nDeveriam ampliar esse conhecimento para os estudantes saberem dessas leis, pois\nmuitos não devem saber ........................................................................................... 89\n4.5 CONSCIÊNCIA CRÍTICA E EDUCAÇÃO PARA O ENFRENTAMENTO DAS\nVIOLÊNCIAS: Entender e respeitar a nossa própria existência e a do outro ............ 92\n4.6 PROCESSO DE DESENVOLVIMENTO E AVALIAÇÃO DO PRODUTO\nEDUCACIONAL: ROTEIRO DA OFICINA “(RE)CONHECENDO REDES QUE\nPROTEGEM” ............................................................................................................. 97\n5 CONSIDERAÇÕES ..............................................................................................104\nREFERÊNCIAS .......................................................................................................108\nAPÊNDICE A - TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO (TCLE):\nPARA PARTICIPANTES MAIORES E PAIS E/OU RESPONSÁVEIS– OFICINAS\n ................................................................................................................................117\nAPÊNDICE B – TERMO DE ASSENTIMENTO LIVRE E ESCLARECIDO (TALE) –\nPARA ESTUDANTES MENORES DE IDADE – OFICINAS ..................",
+    "resumo": "[PÁG. 12]\nRESUMO\n\nEsta pesquisa, desenvolvida no Programa de Mestrado Profissional em Educação\nProfissional e Tecnológica (ProfEPT), do IFC Campus Blumenau, na linha de pesquisa\nPráticas Educativas em Educação Profissional e Tecnológica no Macroprojeto\nPráticas Educativas no Currículo Integrado, buscou analisar as contribuições de uma\nação educativa de prevenção e enfrentamento às violências, desenvolvida com\nestudantes dos cursos de Ensino Médio Integrado do Instituto Federal de Santa\nCatarina – Campus Jaraguá do Sul Centro. A pesquisa ancorou-se na compreensão\nde que as violências são fenômenos multidimensionais, determinadas por fatores\nsociais, históricos e culturais, conforme a perspectiva de Minayo (2007). Partindo da\nconcepção de formação humana integral no contexto do Ensino Médio Integrado\n(Ciavatta, 2005; Ramos, 2007; Araújo e Silva, 2017) compreende-se a escola como\nespaço de contradições, mas também de possibilidades para ações educativas que\npromovam a cidadania e o enfrentamento às violências. Trata-se de uma pesquisa de\nnatureza aplicada e de abordagem qualitativa, desenvolvida por meio de uma\npesquisa-ação. Os dados empíricos foram coletados por meio dos registros no diário\nde campo e materiais produzidos pelos estudantes em oficinas. Estes foram\nanalisados à luz da Análise de Conteúdo Bardin (2011). Por meio da análise observou-\nse que as oficinas contribuíram para o fortalecimento do diálogo e da escuta ativa no\nambiente escolar; ampliou-se o repertório de conhecimento dos estudantes sobre\nredes de apoio, proteção e prevenção das violências. Neste sentido, elaboramos um\nproduto educacional em formato de roteiro de oficina, intitulado: “(Re) conhecendo\nredes que protegem: acolhimento, escuta e diálogo no Ensino Médio Integrado”, que\nfoi aplicado e avaliado junto aos estudantes do Ensino Médio Integrado. Como\nresultado, considera-se que as oficinas têm potencial para contribuir na formação\nhumana integral dos estudantes, ao ampliar sua capacidade de ler criticamente a\nrealidade, exercer a cidadania e se posicionarem diante das situações de violências.\n\nPalavras-Chave: Prevenção e enfrentamento às Violências. Ensino Médio Integrado.\nEducação Profissional e Tecnológica. Ações educativas.",
+    "introducao": "[PÁG. 19]\n18\n\n1 INTRODUÇÃO\n\nA violência contra o público juvenil é uma realidade que afeta toda a sociedade,\ndireta ou indiretamente. Sendo crianças e adolescentes pessoas em peculiar condição\nde desenvolvimento, seus direitos devem ser garantidos com absoluta prioridade pela\nfamília, comunidade, sociedade e poder público. Para combater os mais diversos tipos\nde violências, torna-se urgente a necessidade de criar e ampliar as práticas de\nprevenção e enfrentamento às violências que envolvam o público juvenil.\nConsiderando que práticas violentas se espraiam no cotidiano escolar, o\ninteresse no tema de pesquisa surgiu da experiência profissional da pesquisadora,\nque atua como Assistente Social, lotada na Coordenadoria pedagógica do Instituto\nFederal Ciência e Tecnologia (IFSC) do campus Jaraguá do Sul – Centro. No dia a\ndia da instituição, surgem demandas dos estudantes atendidos pela assistência\nestudantil junto ao Programa de Atendimento ao Estudante em Vulnerabilidade Social\n(PAEVS)[1] e dos atendimentos universais oferecidos a todos os estudantes que\ndemandarem, independente de sua vinculação ao programa.\nEsses atendimentos (realizados com os estudantes e suas famílias), são ações\nvoltadas à orientação, acompanhamento, encaminhamentos e contribuem para a\npermanência dos jovens na instituição. O acolhimento das demandas juvenis advém\nde conselhos de classe, demandas espontâneas ou por intermédio dos docentes. Ao\nacolher os relatos, deflagram-se as mais diversas violências: física, psicológica,\nabuso sexual, bullying, cyberbullying, contato físico sem consentimento, e outros.\nDiante da complexidade e diversidade das situações que chegam até a escola,\né fundamental que busquemos referenciais que nos auxiliem a compreender as\nmúltiplas formas pelas quais as agressões se manifestam. Neste sentido, Silva (2008,\np.7) afirma que: “[...]é preciso reconhecer que a violência se apresenta heterogênea e\nmultifacetada e se particulariza atingindo diferentes segmentos sociais […]”. Essas\nviolências por vezes são sutis e seu reconhecimento sem sempre é imediato.\nA esse respeito, Faleiros e Faleiros (2008, p.61) contribuem esclarecendo que:\n\n1 O Programa de Atendimento ao Estudante em Vulnerabilidade Social (PAEVS) disponibiliza auxílio\nfinanceiro para contribuir no atendimento às necessidades de estudantes em vulnerabilidade social,\nvisando a sua permanência e êxito acadêmico. Acesso em 29/02/2024. Disponível em\nhttps://www.ifsc.edu.br/en/paevs.\n\n[PÁG. 20]\n19\n\n“[…] muitos adolescentes frequentam escolas e é para o seu interior que levam suas\nangústias, tensões e marcas resultantes da violência a que são submetidas no\nambiente familiar”. Segundo Guerra e Azevedo (2003) muitas pessoas acreditam que\nsituações violentas são a única forma de resolver seus problemas, como se fosse um\ncenário natural, uma parte do cotidiano. Para as autoras, essa normalização faz com\nque os indivíduos não enxerguem as agressões como algo ruim ou sequer percebam\nque as praticam. O reconhecimento dessas ações exige de nós educadores uma\nescuta atenta e sensível.\nConsiderando a educação como mecanismo de emancipação dos sujeitos,\nconforme aponta (Saviani, 2010), parte-se do pressuposto de que o espaço escolar\npossa ser um ambiente acolhedor, livre de preconceitos, discriminações e que\ntrabalhe preventivamente contra as manifestações violentas e pelo fortalecimento do\nenfrentamento destas. Neste sentido, as aprendizagens desenvolvidas no Ensino\nMédio podem contribuir em ações de paz, visto que é uma etapa fundamental na vida\ndo adolescente, na qual há significativo desenvolvimento e construção do saber crítico\ne reflexivo acerca de sua realidade e seu papel na sociedade (Chisté, 2017). No\nEnsino Médio Integrado- EMI, tais ações podem ter resultados promissores.\nAraújo e Frigotto (2015) ressaltam que a importância da formação humana\nintegral no EMI vai além da transmissão fragmentada de uma cultura sistematizada,\nreduzida subordinada à lógica do mercado ou à mera transmissão de conteúdo. Trata-\nse de um modelo educacional que compreende a educação como um direito de todos,\ngarantindo acesso a uma formação que favoreça o desenvolvimento das capacidades\nfísicas e intelectuais. De acordo com Saviani e Duarte (2010, p. 654), “[...]queremos\numa escola que forme indivíduos autônomos, capazes de iniciativa, o que implica que\nsejam conhecedores da situação para poderem tomar decisões, interferindo\nativamente na vida social”.\nPortanto, considera-se que a escola tem potencial em contribuir com ações de\nprevenção e enfrentamento às violências junto aos estudantes, buscando colaborar\npara sua formação integral. Neste sentido, o questionamento que norteia essa\npesquisa é: quais as contribuições das ações educativas de prevenção e\nenfrentamento às violências com os estudantes do Ensino Médio Integrado?\nNo que se refere as produções recentes sobre o tema “prevenção às violências\nno Ensino Médio Integrado”, observa-se a existência de um número reduzido de\n\n[PÁG. 21]\n20\n\nestudos. Em levantamento bibliográfico em diferentes plataformas: Observatório do\nPrograma de Pós-Graduação em Educação Profissional e Tecnológica – ProfEPT;\nBanco de Dissertações e Teses da Capes - Coordenação de Aperfeiçoamento de\nPessoal de Nível Superior; artigos da Scientific Eletronic Library Online- Scielo e\nRevista Katálysis, utilizando os descritores: “prevenção às violências”, “violências” e\n“violência contra adolescentes”, priorizando os últimos cinco anos (2019-2023 ), foram\nencontradas 168 pesquisas.\nA partir da leitura do título destas pesquisas, foram selecionadas oito que se\nrelacionavam com o tema deste estudo. O quadro 1 - apresenta os documentos\nescolhidos encontrados, sendo que 2 (duas) pesquisas trabalham com a temática\nsobre violência no contexto de intervenção na EPT.\n\nQuadro 1 – Dissertações relacionadas ao tema no projeto no Observatório do PROFEPT\nAutor/Ano\nTipo\nTítulo\nObjetivo\nIvan Pedroso\n(2019)\nDissertação\nEducação\nProfissional e\nTecnológica\ngênero e\nsexualidade: uma\nsequência didática\npara o ensino\nmédio integrado\nElaborar e aplicar uma SD que seja\ncapaz de intervir no ambiente\nescolar, na temática de gênero e\nsexualidade, com enfoque nas\nquestões\nde\ndiscriminações\ne\nviolências e nas relações entre\ngênero, sexualidade e modo de\nprodução, abordando o tema a\npartir seus cruzamentos com a\nEPT, contribuindo com a formação\nintegral.\nGislaine\nGabriele\nSaueressig\n(2020)\nDissertação\nRelações de\ngênero na\neducação\nprofissional e\ntecnológica:\nmapeamento das\nviolências sofridas\npor mulheres no\ncampus sapucaia\ndo sul do IFSUL\nAnalisar violências de gênero\ncontra\nmulheres\nno\nCampus\nSapucaia\ndo\nSul\ndo\nIFSul,\npropondo\ncomo\nproduto\neducacional\num\nvídeo\nque\npromova\na\ndiscussão\nsobre\nviolências de gênero presentes no\nIFSul Campus Sapucaia do Sul.\n\nFonte: elaborado pela autora, 2025.\n\nAs pesquisas de Pedroso (2019) e Saueressig (2020) abordam a temática das\nrelações de gênero, propondo sua problematização no contexto da Educação\nProfissional Tecnológica - EPT. Esses autores concordam que a EPT é um espaço\npropício para promover ações acolhedoras visando à redução de violências,\npreconceitos e discriminações. Para os autores, a violência e o sexismo estão\n\n[PÁG. 22]\n21\n\npresentes em diversas dinâmicas sociais, destacando sua conexão com o mundo do\ntrabalho. Uma vez que o ambiente educacional de escolas com abordagem EPT\nabrange diferentes áreas de conhecimento predominantemente masculinas, isso pode\nresultar na reprodução de comportamentos violentos (Saueressig, 2020).\nAs duas investigações encontradas se aproximam da presente pesquisa, pois\nvisam articular os conceitos de formação integral dos Institutos Federais – IFs, com\nas ações educativas contextualizadas, contribuindo para a construção do pensamento\ncrítico e democrático dos estudantes. Destaca-se ainda, que as pesquisas\nmencionadas, desenvolveram produtos educacionais que promovem discussão e\nreflexão sobre as violências sofridas nos espaços institucionais. Esses produtos,\n",
+    "descricao_produto_na_dissertacao": "[PÁG. 21] Quadro 1 – Dissertações relacionadas ao tema no projeto no Observatório do PROFEPT\nAutor/Ano\nTipo\nTítulo\nObjetivo\nIvan Pedroso\n(2019)\nDissertação\nEducação\nProfissional e\nTecnológica\ngênero e\nsexualidade: uma\nsequência didática\npara o ensino\nmédio integrado\nElaborar e aplicar uma SD que seja\ncapaz de intervir no ambiente\nescolar, na temática de gênero e\nsexualidade, com enfoque nas\nquestões\nde\ndiscriminações\ne\nviolências e nas relações entre\ngênero, sexualidade e modo de\nprodução, abordando o tema a\npartir seus cruzamentos com a\nEPT, contribuindo com a formação\nintegral.\nGislaine\nGabriele\nSaueressig\n(2020)\nDissertação\nRelações de\ngênero na\neducação\nprofissional e\ntecnológica:\nmapeamento das\nviolências sofridas\npor mulheres no\ncampus sapucaia\ndo sul do IFSUL\nAnalisar violências de gênero\ncontra\nmulheres\nno\nCampus\nSapucaia\ndo\nSul\ndo\nIFSul,\npropondo\ncomo\nproduto\neducacional\num\nvídeo\nque\npromova\na\ndiscussão\nsobre\nviolências de gênero presentes no\nIFSul Campus Sapucaia do Sul.\n\n[PÁG. 26] possibilidade de investir em um projeto de vida também aumentam a confiança das\nvítimas e são fatores decisivos para romper com o ciclo de violência.\nNo âmbito dessa discussão, enfatiza-se que o levantamento dialoga com as\nconcepções teóricas, no entanto, carece de pesquisas sobre prevenção e\nenfrentamento das violências na Educação Profissional Tecnológica, sobretudo com\numa abordagem mais ativa dos estudantes e dos profissionais da educação na\nconstrução coletiva de soluções.\nDiante do exposto, definiu-se como objetivo geral: analisar as contribuições,\npara a formação integral, de uma ação educativa de prevenção e enfrentamento às\nviolências contra adolescentes, a ser desenvolvida com estudantes dos cursos de\nEnsino Médio Integrado do IFSC – Campus Jaraguá do Sul Centro. Para alcançar\nesse objetivo, elegemos os seguintes objetivos específicos:\na) contextualizar as múltiplas determinações da violência no cenário\nbrasileiro as diferentes formas de violência enfrentadas pelas crianças e\nadolescentes no espaço social;\nb) analisar as percepções dos estudantes sobre o fenômeno das\nviolências;\nc) discutir os limites e possibilidades de uma ação educativa na prevenção\ne enfrentamento às violências;\nd) desenvolver, aplicar e avaliar um produto educacional que contribua na\nprevenção e enfrentamento às violências.\nOrganizamos esta dissertação em capítulos. Na introdução, apresentamos a\njustificativa, o problema de pesquisa, o objetivo geral e os objetivos específicos. Em\nseguida, abordamos os referenciais teóricos e discutimos o desenvolvimento do\nprocesso investigativo com a abordagem sobre as violências e suas múltiplas\ndeterminações no cenário brasileiro. Posteriormente, tratamos das diversas formas de\nviolências e como podem ser praticadas contra crianças e adolescentes. Na\nsequência, apresentamos o diálogo sobre juventudes, escola e violências: a escola\ncomo lugar de prevenção e desenvolvimento de um Ensino Médio Integrado em\nsintonia com os direitos humanos.\nAdiante, descrevemos a metodologia utilizada no desenvolvimento da\npesquisa, que contou uma abordagem qualitativa e sua natureza aplicada. Para coleta\nde dados, realizamos oficinas que contaram com questionários e diário de campo.\n\n[PÁG. 75] Neste tópico, apresentaremos os resultados obtidos a partir dos dados\ncoletados e das interações realizadas em campo, por meio de instrumentos como\nquestionários, roda de conversa, diário de campo e atividades interativas realizadas\nnas oficinas. Para preservar",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 20,
+        "texto": "“[…] muitos adolescentes frequentam escolas e é para o seu interior que levam suas\nangústias, tensões e marcas resultantes da violência a que são submetidas no\nambiente familiar”. Segundo Guerra e Azevedo (2003) muitas pessoas acreditam que\nsituações violentas são a única forma de resolver seus problemas, como se fosse um\ncenário natural, uma parte do cotidiano. Para as autoras, essa normalização faz com\nque os indivíduos não enxerguem as agressões como algo ruim ou sequer percebam\nque as praticam. O reconhecimento dessas ações exige de nós educadores uma\nescuta atenta e sensível.\nConsiderando a educação como mecanismo de emancipação dos sujeitos,\nconforme aponta (Saviani, 2010), parte-se do pressuposto de que o espaço escolar\npossa ser um ambiente acolhedor, livre de preconceitos, discriminações e que\ntrabalhe preventivamente contra as manifestações violentas e pelo fortalecimento do\nenfrentamento destas. Neste sentido, as aprendizagens desenvolvidas no Ensino\nMédio podem contribuir em ações de paz, visto que é uma etapa fundamental na vida\ndo adolescente, na qual há significativo desenvolvimento e construção do saber crítico\ne reflexivo acerca de sua realidade e seu papel na soci",
+        "citacoes_detectadas": [
+          "Saviani, 2010",
+          "Chisté, 2017"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 33,
+        "texto": "Os autores acrescentam, ainda, que é possível afirmar que o modo de\nprodução capitalista contribui, conjuntamente com o Estado, para a reprodução e\nnaturalização da violência estrutural. Essa junção consiste na omissão de respostas\nno sentido de responder a esse fenômeno tanto em sua raiz sócio-histórica, quanto\nna construção de respostas que reforçam a subordinação e os estigmas das pessoas,\nagindo de maneira superficial e dispersa, sem considerar os fatores históricos,\neconômicos, políticos e sociais que perpassam as diversas expressões que fomentam\na violência estrutural.\n Ampliando essa análise, Bourdieu (1999, p.50) conceitua a força simbólica\ncomo uma forma de poder que se exerce sobre os corpos” […], mas essa magia só\natua com o apoio de predisposições colocadas, como molas propulsoras, na zona\nmais profunda dos corpos […]”. Para o autor, a formação e transformação duradoura\ndos indivíduos depende de um trabalho anterior significativo, que opera de forma\ninvisível e insidiosa. Esse processo envolve a familiarização com um ambiente\nfisicamente estruturado e simbolicamente carregado, além de experiências contínuas\nde interações sociais permeadas por estruturas de dominação. No",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 33,
+        "texto": "[...] seja ela de etnia, de gênero, de cultura, de língua etc.) se exerce\nnão na lógica pura das consciências cognoscentes, mas através dos\nesquemas de percepção, de avaliação e de ação que são constitutivos\ndos habitus e que fundamentam, aquém das decisões da consciência\ne dos controles da vontade [...] a lógica paradoxal da dominação\nmasculina e da submissão feminina, que se pode dizer ser, ao mesmo\ntempo e sem contradição, espontânea e extorquida, só pode ser\ncompreendida se nos mantivermos atentos aos efeitos duradouros\nque a ordem social exerce sobre as mulheres (e os homens)\n(Bourdieu, 1999, p. 49-50).",
+        "citacoes_detectadas": [
+          "Bourdieu, 1999, p. 49-50"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 56,
+        "texto": "É importante compreender que a escola pode ser esse espaço rico e profícuo\nde material social, que contribui significamente na constituição da identidade juvenil e\npode agir expressivamente no desenvolvimento do indivíduo, não de forma\nautomática, mas como um processo social que ocorre nas relações com outros\nindivíduos inseridos em uma dinâmica histórico-cultural.\nOs autores Carrano e Dayrell (2014) alertam que é preciso que tomemos\ncuidado para que esse jovem não seja visto como problema da sociedade, para que\nesse tipo de ação não comprometa a apreensão e investimento em ações baseadas\nnas perspectivas de direitos. Para os autores, deve-se enxergar esses problemas,\ncomo necessidades não atendidas, para que sejam propostas novas formas de\npolíticas públicas que atendam às suas reais necessidades.\n Reconhecer suas experiências e identidades é essencial para conseguirmos\nestabelecer diálogo. Freire (2019, p. 10 - 11), nos provoca pensar que “é necessário\nsaber escutar”, afinal, o diálogo não ocorre “[...] de cima para baixo, sobretudo, como\nse fôssemos os portadores da verdade a ser transmitida aos demais, que aprendemos\na escutar, mas é escutando que aprendemos”. Portanto, é impor",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 58,
+        "texto": "A escola deve considerar os estudantes em suas diversidades e compreender\no propósito e as consequências das mudanças. Para isso é imprescindível que todos\nos atores envolvidos no espaço escolar contribuam para uma nova cultura, uma\ncultura que coopere para prevenção e enfrentamento das violências no âmbito escolar\ne fora dela. Nesse sentido, a educação “visa oferecer condições de acesso e de\nampliação de cidadania mediante práticas educativas de sistematização dos\nconhecimentos socialmente acumulados pela humanidade” segundo, Dias (2007,\np.1). Educação essa, que tem um papel fundamental em contribuir para a construção\nde uma sociedade, na qual as injustiças sociais e humanas sejam enfrentadas da\nmelhor maneira.\nNa história da educação do Brasil, a dualidade faz parte de uma disputa do\nsistema capitalista dividida entre os que produzem a riqueza com sua força de\ntrabalho, e as elites. Assim, a trajetória educacional e social brasileira é demarcada\ncom funções específicas de acordo com a lógica produtiva que separa capital e\ntrabalho. Essa divisão reflete a clara distinção entre aqueles que planejam e\nsupervisionam e aqueles que executam para Ciavatta (2005).\nMarcada por disputas e ",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 59,
+        "texto": "que não se confunde com o ―aprender fazendo‖, nem é sinônimo de\nformar para o exercício do trabalho. Considerar o trabalho como\nprincípio educativo equivale dizer que o ser humano é produtor de sua\nrealidade e, por isto, se apropria dela e pode transformá-la. Equivale\ndizer, ainda, que nós somos sujeitos de nossa história e de nossa\nrealidade (Ramos, 2007, p.90. Grifos da autora).",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 59,
+        "texto": "A esse respeito, para Ciavatta (2005), a formação humana integral é constituída\npela formação geral associada à educação profissional. A formação integrada sugere\ntornar íntegro, inteiro, o ser humano dividido pela divisão social do trabalho entre a\nação de executar e de pensar, dirigir ou planejar, não se limitando apenas a uma\npreparação para o trabalho em seu aspecto operacional, simplificado, livre dos\nconhecimentos que estão na sua gênese científico- tecnológica e na sua apropriação\nhistórico-social. O que se busca é o trabalho “enfocado como princípio educativo, a\nfim de superar a dicotomia do trabalho manual/intelectual, de incorporar a dimensão\nintelectual ao trabalho produtivo, de formar trabalhadores capazes de se formar\ndirigentes e cidadãos” Ciavatta (2005, p.84).\nNessa perspectiva, como formação humana, o Ensino integrado busca garantir\nao adolescente, ao jovem e ao adulto trabalhador o direito a uma formação completa\nna qual seja possível desenvolver uma leitura do mundo como sujeito atuante, cidadão\npertencente a um país, integrado dignamente à sua sociedade política. Formação que,\nneste sentido, ‘’supõe a compreensão das relações sociais subjacentes a todos os\nfenôm",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 62,
+        "texto": "Neste sentido, o Ensino Médio Integrado, ao se consolidar como um modelo\nque propõe uma formação integrada dos sujeitos, se apresenta como um caminho\nnecessário para o enfrentamento das violências no espaço escolar e social. A\nintegração dos conhecimentos, como já citados, e o desenvolvimento do pensamento\ncrítico, possibilita que os estudantes compreendam a sociedade em sua\ncomplexidade, e assim, assumam um papel ativo como sujeitos independentes,\ncapazes de atuar nas suas realidades e na defesa dos direitos humanos. Esse\nentendimento está em consonância com a proposta de Freire (1970, p.41), ao afirmar\nque “a educação problematizadora, se faz num esforço permanente através do qual\nos homens vão percebendo, criticamente, como estão sendo no mundo com quem e\nem que se acham”.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 65,
+        "texto": "Neste estudo, a pesquisa ação, se materializou por meio da realização de\noficinas do projeto ‘(Re)conhecendo redes que protegem’, desenvolvidas a partir da\nconcepção de educação dialógica e crítica de Freire (2005), que valoriza a relação\nhorizontal educador e educando, promovendo um aprendizado ativo e participativo.\nEssa proposta possibilitou diálogos, nos quais os participantes puderam refletir sobre\nsuas realidades, questionar as estruturas sociais que os cercam, e, por meio dessa\nreflexão crítica, desenvolver uma consciência transformadora.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 88,
+        "texto": "quando entendida em sua perspectiva integrada, tal como propõe Ciavatta (2005) ao\narticular a formação humana, científica e técnica, favorece o desenvolvimento de\nsujeitos críticos e participativos e conscientes do seu papel na transformação da\nrealidade.\nIdentificamos também que ao menos uma figura religiosa foi mencionada como\nparte da rede de apoio de alguns. Esse reconhecimento é de suma importância, pois\ndiversos espaços, para além da família e escola, também podem ser ambientes de\nacolhimento, segurança e podem se constituir como rede de apoio. Em Suma, essa\ndiversidade de respostas sugere que os estudantes reconhecem múltiplos espaços\nprotetivos e referências de apoio em situações decisivas e difíceis.\nAo propormos o exercício reflexivo em forma de estudo de caso, apareceram\ntensões importantes sobre o papel dos jovens em situações de violência.\nPerguntamos para eles: como ajudar um colega que vive em uma situação de\nviolência intrafamiliar e sofre bullying no ambiente escolar? Em resposta, um\nestudante mencionou que: “os estudantes deveriam contar para o diretor da escola\nsobre a situação\" (Marcelo- Diário de campo). Outro participante retrucou a fala do\ncolega dizendo que:",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 92,
+        "texto": "alinhada a perspectiva de bell hooks (2021) e Freire (1970). Para hooks (2021), é pelo\ndiálogo que podemos ultrapassar as diversas fronteiras. Nessa mesma linha de\nraciocínio, Freire (1970) situa que é por meio do diálogo que as transformações\nacontecem. Compreendemos, portanto, que o diálogo na escola é um caminho, que\nas decisões coletivas são um instrumento que permite que mudanças aconteçam,\nsobretudo, rompe as fronteiras.\nOutras sugestões foram incluídas como: “Um meio de comunicações anônimas\nligadas a violências e palestras ou meios de informar para que assim possam\nidentificar” (Participante não identificado - Questionário 1).\nNesse relato, é possível reconhecer algumas estratégias para prevenção e\nenfrentamento às violências no ambiente escolar, apontadas pelos estudantes. Entre\nas sugestões, destaca-se: a criação de canais para denúncia nos quais se permita\nque as vítimas relatem casos sem medo de retaliação. Proporcionando, assim, um\nambiente seguro, protetivo e com atividades educativas voltadas para conscientização\nque ajudem na identificação e violências.\nÉ importante que a escola divulgue os canais de atendimento e políticas\ninstitucionais de prevenção e enfretamento",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 95,
+        "texto": "A percepção de Luís Antônio ressoa com as discussões de Bourdieu (1999) e\nChauí (1980), que apontam a relação intrínseca entre violência e poder. Recuperando\no que dizem os autores, podemos compreender que a violência não é um fenômeno",
+        "citacoes_detectadas": []
+      }
+    ],
+    "referencias_filtradas": [
+      "BOURDIEU, Pierre. A dominação masculina. Tradução de Maria Helena Kühner. 4 ed. Rio de Janeiro: Bertrand Brasil, 1999. BRASIL. Fórum Brasileiro de Segurança Pública; Instituto de Pesquisa Econômica Aplicada (IPEA). Atlas da Violência 2023. Brasília, 2023. Disponível em: https://repositorio.ipea.gov.br/handle/11058/12614. Acesso em: 21 maio 2025. BRASIL. Lei nº 13.431, de 4 de abril de 2017. Estabe",
+      "CHISTÉ, Priscila de S. Formação do adolescente no Ensino Médio Integrado:",
+      "SAVIANI Dermeval; DUARTE Newton. A formação humana na perspectiva histórico ontológica. Revista Brasileira de Educação, Rio de janeiro, v. 15 n. 45, set./dez. 2010. Disponível em: https://www.scielo.br/j/rbedu/a/yXjXQvzWfhSp5VNhX6KqKLh/?format=pdf. Acesso em: 12 jan. 2023.",
+      "CHISTÉ, Priscila de Souza. Formação do adolescente no Ensino Médio Integrado: Contribuições dos estudos de Vigotski. Germinal: Marxismo e Educação em Debate, Salvador, v. 9, n. 2, p. 121-131, ago. 2017. Disponível em: https://pdfs.semanticscholar.org/b8de/ eb774c51153867bb638493bfcbf31d2ea5d3.pdf. Acesso em: 28 mar. 2024."
+    ]
+  }
+}

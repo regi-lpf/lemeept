@@ -1,0 +1,203 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0049",
+  "ano": 2024,
+  "autor": "Maria do Socorro Almeida de Assunção Vasconcelos",
+  "orientador": "Denise Fernandes",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP6",
+  "dissertacao": {
+    "titulo": "CONHECER PARA USUFRUIR: A COMPREENSÃO DOS ESTUDANTES SOBRE O SISTEMA DE RESERVA DE VAGAS (COTAS) NO PROCESSO SELETIVO DE INGRESSO NOS CURSOS DO ENSINO MÉDIO INTEGRADO DO INSTITUTO FEDERAL CATARINENSE",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/10/Dissertacao-Maria-Vasconcelos.pdf",
+    "resumo": "A presente pesquisa foi desenvolvida no Mestrado Profissional em Educação\nProfissional e Tecnológica (ProfEPT), inserida na linha de pesquisa “Organização e\nMemórias de Espaços Pedagógicos na Educação Profissional e Tecnológica (EPT)” e\nteve como objetivo analisar a compreensão dos estudantes acerca do Sistema de\nReserva de Vagas (cotas) durante o Processo Seletivo de Ingresso (PSI) nos cursos\ndo Ensino Médio Integrado (EMI) do Instituto Federal Catarinense (IFC). O estudo foi\nde natureza translacional, com abordagem quali-quantitativa e com levantamento\nbibliográfico e pesquisa de campo através da aplicação de questionário semiaberto. A\nanálise desta investigação, à luz da teoria, indicou que, ainda que as legislações\ngarantam a ocupação das vagas, os estudantes se depararam com vários desafios\npara atender às regras que regem o processo seletivo em sua totalidade, sobretudo\npara compreender os critérios de enquadramento no sistema de reservas de vagas\n(cotas). Também foi possível constatar a importância da Lei das Cotas como\nprovedora de debates sobre a redução das desigualdades sociais e a promoção da\ninclusão, ao possibilitar a uma parcela da sociedade o acesso à educação de modo\nmais igualitário. Além disso, verificou-se, ao longo do trabalho, que as tecnologias\nmidiáticas foram apontadas pelos estudantes como as mais atrativas na obtenção de\ninformações ou orientações sobre o PSI e, consequentemente, sobre o Sistema de\nReserva de Vagas (cotas). Mediante essa constatação, foi desenvolvido um produto\neducacional em formato digital: um site denominado #VOUDECOTAS. Verificou-se\nque o site tem potencial para auxiliar os estudantes a compreender como usufruir da\npolítica de cotas para acesso aos cursos do EMI do IFC.\n\nPalavras-Chave: Educação Profissional e Tecnológica; Institutos Federais de\nEducação, Ciência e Tecnologia; Ensino Médio Integrado; Processo Seletivo de\nIngresso; Sistema de Reserva de Vagas (Cotas).",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Institutos Federais de Educação, Ciência e Tecnologia",
+      "Ensino Médio Integrado",
+      "Processo Seletivo de Ingresso",
+      "Sistema de Reserva de Vagas (Cotas)"
+    ],
+    "autores_referenciados": [
+      "A. C. S. Muniz",
+      "A. Ferreira Filho",
+      "A. L. M. Silva",
+      "A. L. T. Rosa",
+      "A. Lázaro",
+      "A. Melo",
+      "A. P. Sonza",
+      "Alboni Marisa Dudeque Pianovski Vieira",
+      "Antônio Carlos Gil",
+      "Antonio de Souza Junior",
+      "B. B. Narios",
+      "B. P. Salton",
+      "C. Castro",
+      "C. M. Rosa",
+      "C. Reis",
+      "Cladecir Alberto Schenkel",
+      "D. A. da Silva",
+      "D. C. L. Barbosa",
+      "D. J. Fonseca",
+      "D. Ribeiro",
+      "D. S. Santos",
+      "D. S. Vicente",
+      "Dante Henrique Moura",
+      "Dermeval Saviani",
+      "E. S. Iizuka",
+      "Egre Padoin",
+      "Eliezer Moreira Pacheco",
+      "Eva Maria Lakatos",
+      "F. Piovesan",
+      "Francieli Marchesan",
+      "G. M. Maia",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "H. H. Peregrino",
+      "I. T. N. Cavalcanti",
+      "Ivanise Maria Rizzatti",
+      "J. A. A. Gama",
+      "J. A. Alves",
+      "J. A. Strapazzon",
+      "J. B. B. Gomes",
+      "Juliana Favretto",
+      "K. I. Beltrão",
+      "L. R. A. Silva",
+      "Leandro Vendrami",
+      "Liamara Teresinha Fornari",
+      "Lúcia Maria Wanderley Neves",
+      "Lucília Regina de Souza Machado",
+      "M. A. Marconi",
+      "M. I. B. Tamboril",
+      "M. J. J. A. Cordeiro",
+      "M. M. Barth",
+      "M. M. T. Amorim",
+      "M. R. S. Moura",
+      "M. S. Novellino",
+      "Marcela Alejandra Pronko",
+      "Marcelo Soares Tavares de Melo",
+      "Maria Cecília de Souza Minayo",
+      "Maria Ciavatta",
+      "Mário Lopes Amorim",
+      "Marise Nogueira Ramos",
+      "N. M. F. Auler",
+      "Oséias Santos de Oliveira",
+      "P. G. G. B. Souza",
+      "Priscila de Souza Chisté Leite",
+      "R. Montechiare",
+      "R. P. Alves",
+      "Rensis Likert",
+      "S. Moehlecke",
+      "S. Vasconcelos",
+      "T. C. Carvalho",
+      "Tiago Felipe Ambrosini",
+      "V. P. Mesquita",
+      "V. S. Almeida",
+      "W. L. Magalhães",
+      "X. M. Kostrycki"
+    ],
+    "base_epistemologica": {
+      "valor": "Materialismo Histórico-Dialético",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto vincula educação à transformação social e cita Frigotto, Ciavatta e Ramos, associados ao materialismo histórico-dialético. O site #VOUDECOTAS é apresentado como ferramenta para democratizar o acesso à educação.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 19,
+          "trecho": "A educação constitui-se como o primeiro passo para a inclusão de grupos sociais com evidências sócio-históricas de injustiça e exclusões.",
+          "referencia_correspondente": "Frigotto, 2001"
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 27,
+          "trecho": "O EMI possibilita a formação integral do jovem, na sua integralidade física, mental, cultural, política, científica e tecnológica.",
+          "referencia_correspondente": "Ramos, 2008"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "#VOU DE COTAS",
+    "tipo": "software_aplicativo",
+    "formato": "Site / Portal",
+    "link": "https://educapes.capes.gov.br/handle/capes/748846",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "comunidade_externa"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Sistema de Reserva de Vagas",
+      "Ensino tecnico integrado ao ensino médio",
+      "Educação Profissional e Tecnológica",
+      "ProfEPT",
+      "Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT)",
+      "Pratica de pesquisa orientada II"
+    ],
+    "data_publicacao": "2024-03-22",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Vasconcelos, Maria do Socorro Almeida de Assunção",
+        "papel": "creator"
+      },
+      {
+        "nome": "Camargo, Rafaela Zorzetto",
+        "papel": "creator"
+      },
+      {
+        "nome": "Fernandes, Denise",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/748846",
+        "url": "https://educapes.capes.gov.br/handle/capes/748846"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://voudecotas.com.br/",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "#VOU DE COTAS",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "inferencia_llm",
+      "rotulo_original_declarado": "# VOU DE COTAS",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "portal"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0049 2024 maria do socorro almeida de assuncao vasconcelos denise fernandes ifc blumenau lp2 mp6 conhecer para usufruir a compreensao dos estudantes sobre o sistema de reserva de vagas cotas no processo seletivo de ingresso nos cursos do ensino medio integrado do instituto federal catarinense a presente pesquisa foi desenvolvida no mestrado profissional em educacao profissional e tecnologica profept inserida na linha de pesquisa organizacao e memorias de espacos pedagogicos na educacao profissional e tecnologica ept e teve como objetivo analisar a compreensao dos estudantes acerca do sistema de reserva de vagas cotas durante o processo seletivo de ingresso psi nos cursos do ensino medio integrado emi do instituto federal catarinense ifc o estudo foi de natureza translacional com abordagem quali quantitativa e com levantamento bibliografico e pesquisa de campo atraves da aplicacao de questionario semiaberto a analise desta investigacao a luz da teoria indicou que ainda que as legislacoes garantam a ocupacao das vagas os estudantes se depararam com varios desafios para atender as regras que regem o processo seletivo em sua totalidade sobretudo para compreender os criterios de enquadramento no sistema de reservas de vagas cotas tambem foi possivel constatar a importancia da lei das cotas como provedora de debates sobre a reducao das desigualdades sociais e a promocao da inclusao ao possibilitar a uma parcela da sociedade o acesso a educacao de modo mais igualitario alem disso verificou se ao longo do trabalho que as tecnologias midiaticas foram apontadas pelos estudantes como as mais atrativas na obtencao de informacoes ou orientacoes sobre o psi e consequentemente sobre o sistema de reserva de vagas cotas mediante essa constatacao foi desenvolvido um produto educacional em formato digital um site denominado voudecotas verificou se que o site tem potencial para auxiliar os estudantes a compreender como usufruir da politica de cotas para acesso aos cursos do emi do ifc palavras chave educacao profissional e tecnologica institutos federais de educacao ciencia e tecnologia ensino medio integrado processo seletivo de ingresso sistema de reserva de vagas cotas materialismo historico dialetico vou de cotas software aplicativo site portal ensino medio integrado educacao profissional e tecnologica institutos federais de educacao ciencia e tecnologia ensino medio integrado processo seletivo de ingresso sistema de reserva de vagas cotas sistema de reserva de vagas ensino tecnico integrado ao ensino medio profept mestrado profissional em educacao profissional e tecnologica profept pratica de pesquisa orientada ii a c s muniz a ferreira filho a l m silva a l t rosa a lazaro a melo a p sonza alboni marisa dudeque pianovski vieira antonio carlos gil antonio de souza junior b b narios b p salton c castro c m rosa c reis cladecir alberto schenkel d a da silva d c l barbosa d j fonseca d ribeiro d s santos d s vicente dante henrique moura dermeval saviani e s iizuka egre padoin eliezer moreira pacheco eva maria lakatos f piovesan francieli marchesan g m maia gabriel kaplun gaudencio frigotto h h peregrino i t n cavalcanti ivanise maria rizzatti j a a gama j a alves j a strapazzon j b b gomes juliana favretto k i beltrao l r a silva leandro vendrami liamara teresinha fornari lucia maria wanderley neves lucilia regina de souza machado m a marconi m i b tamboril m j j a cordeiro m m barth m m t amorim m r s moura m s novellino marcela alejandra pronko marcelo soares tavares de melo maria cecilia de souza minayo maria ciavatta mario lopes amorim marise nogueira ramos n m f auler oseias santos de oliveira p g g b souza priscila de souza chiste leite r montechiare r p alves rensis likert s moehlecke s vasconcelos t c carvalho tiago felipe ambrosini v p mesquita v s almeida w l magalhaes x m kostrycki",
+    "termos_unificados": [
+      "Educação Profissional e Tecnológica",
+      "Institutos Federais de Educação, Ciência e Tecnologia",
+      "Ensino Médio Integrado",
+      "Processo Seletivo de Ingresso",
+      "Sistema de Reserva de Vagas (Cotas)",
+      "Sistema de Reserva de Vagas",
+      "Ensino tecnico integrado ao ensino médio",
+      "ProfEPT",
+      "Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT)",
+      "Pratica de pesquisa orientada II"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

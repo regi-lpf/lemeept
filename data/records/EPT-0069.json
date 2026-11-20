@@ -1,0 +1,216 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0069",
+  "ano": 2023,
+  "autor": "Denise de Castro Insaurriaga Silva",
+  "orientador": "Eduardo Augusto Werneck Ribeiro",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP1",
+  "dissertacao": {
+    "titulo": "ANÁLISE DO PERFIL DE ESTILO DE VIDA DOS ESTUDANTES DO ENSINO MÉDIO INTEGRADO: UM ESTUDO NO CAMPUS SÃO FRANCISCO DO SUL",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/11/Dissertacao-Denise-de-Castro-Insaurriaga-Silva.pdf",
+    "resumo": "14\n\nRESUMO\n\nEste trabalho se apresenta como um dos requisitos obrigatórios para a conclusão do\nmestrado profissional em educação profissional e tecnológica (PROFEPT) realizado\nno campus da cidade de Blumenau/SC. Na perspetiva desses estudos, a proposta\nde educação integrada no Ensino Médio, que inclui o trabalho como princípio\neducativo, visa preparar os estudantes para a continuidade dos estudos e no mundo\nprofissional. No entanto, é essencial considerar não apenas o desenvolvimento\nacadêmico, mas também a qualidade de vida destes alunos. Sob esta perspectiva, o\nobjetivo central deste estudo é compreender o estilo de vida dos estudantes do\nEnsino Médio integrado do campus São Francisco do Sul. Para atingir esta meta,\nforam analisadas as relações sociais, os hábitos alimentares, a prática de exercícios\nfísicos, a capacidade de controlar o próprio estresse e a qualidade dos\nrelacionamentos na escola, na família e em sociedade. O alcance da pesquisa\nobteve a participação de 98% dos alunos matriculados em 2023 e a análise dos\ndados ocorreu de forma qualitativa e quantitativa. Os resultados indicaram\ndesconhecimento sobre indicadores básicos de saúde e baixa adesão a programas\nde exercícios físicos regulares. Além de hábitos alimentares prejudiciais à saúde,\ndificuldade de controlar o estresse e uma relação de proximidade com a escola, que\nvai diminuindo à medida que o aluno avança no curso. Com base nessa realidade,\nforam desenvolvidos dois materiais, sendo um Produto Educacional destinado a\nprofessores do Ensino Médio integrado em educação profissional e tecnológica, na\nforma de uma sequência didática sob o formato de e-book, e uma cartilha eletrônica\ndestinada aos jovens que aborda, por meio de uma linguagem direcionada a este\npúblico e de forma mais lúdica, a importância de bons hábitos para o\ndesenvolvimento de uma vida saudável e feliz, seja no cafofo, seja na cola, seja no\ntrampo. Estes materiais visam auxiliar na melhora da qualidade de vida dos alunos,\ntanto nas relações interpessoais dentro da escola, da empresa, da família, quanto\ncom eles próprios através da compreensão e a conscientização acerca da\nimportância em adotar um estilo de vida saudável. Retificamos a imperatividade da\nabordagem sobre qualidade de vida como componente curricular obrigatório na\nformação dos alunos, contribuindo, assim, para uma formação integral destes\ncidadãos diante dos desafios da atualidade.\n15\n\nPalavras-Chaves: PROFEPT. Educação Integrada. Estilo de Vida. Jovem. Produto\nEducacional.",
+    "palavras_chave": [
+      "PROFEPT",
+      "Educação Integrada",
+      "Estilo de Vida",
+      "Jovem",
+      "Produto Educacional"
+    ],
+    "autores_referenciados": [
+      "Acácia Zeneida Kuenzer",
+      "Adriana Aparecida Souza",
+      "Affonso Manoel Righi Lang",
+      "Airton José Rombaldi",
+      "Aline Soares Campos",
+      "Alison Pereira Batista",
+      "Alynne Christian Ribeiro Andaki",
+      "Amal K. Mitra",
+      "Ana Paula V. Silva",
+      "Ana Sara Castaman",
+      "Anderson Cristopher dos Santos",
+      "Andre de Oliveira Dantas",
+      "André dos Santos Costa",
+      "Andréia Bonatto",
+      "Andressa Silveira Soares",
+      "Angeline Santos Castro",
+      "Anton Semionovich Makarenko",
+      "Antônio Carlos Gil",
+      "Antonio Gramsci",
+      "Azad R. Bhuiyan",
+      "Beatriz Tosé Agathão",
+      "Carine Silvestrini Sena Lima da Silva",
+      "Carla Franciela Spohr",
+      "Carmem Cristina Beck",
+      "Carmem Lúcia Soares",
+      "Cesar Araujo",
+      "Claudeir Germano Oliveira",
+      "Cláudia Elizandra Lemke",
+      "Claudia Leite de Moraes",
+      "Claudio Alberto Gellis de Mattos Dias",
+      "Cláudio Nei Nascimento da Silva",
+      "Cleidilaine Lima Ferreira Marinho",
+      "Cristiano Penas Seara Pitanga",
+      "Dante Henrique Moura",
+      "Denise de Castro Insaurriaga Silva",
+      "Denise Tolfo Silveira",
+      "Dermeval Saviani",
+      "Diamantina Maria Gonçalves Dias",
+      "Eduardo Augusto Werneck Ribeiro",
+      "Eliezer Moreira Pacheco",
+      "Elizabeth A. K. Jones",
+      "Fabricio Doring Martins",
+      "Felipe Valentini",
+      "Francisco José Costa",
+      "Francisco José Gondim Pitanga",
+      "Gaudêncio Frigotto",
+      "Gina Tomé",
+      "Giselle Capistano Reis",
+      "Givanildo de Oliveira Santos",
+      "Guilherme Fonseca Vilela",
+      "Heleise F. R. Oliveira",
+      "Ivan Carlos Bagnara",
+      "Jamerson Murillo Anunciação Souza",
+      "Janekeyla Gomes de Sousa",
+      "José Augusto Ferreira da Silva",
+      "José Celi Neto",
+      "José Henrique Duarte Neto",
+      "Josiane Rosa da Silva Higo",
+      "Juliane Albernás Borges",
+      "Juliano Daniel Boscatto",
+      "Karl Marx",
+      "L. M. T. Garcia",
+      "Leiny Cristina Flores Parreira",
+      "Letícia Lacerda Bailão",
+      "Lucas Soares Ribeiro",
+      "Lúcia Maria Wanderley Neves",
+      "Luciano de Almeida",
+      "Luciene Cavalcanti Rodrigues",
+      "M. C. B. Galvão",
+      "M. Nahas",
+      "M. V. Nahas",
+      "Marcelo Cozzensa da Silva",
+      "Marcelo Nunes Sayão",
+      "Marina Pavão Battaglini",
+      "Marise Nogueira Ramos",
+      "Mateus Cardoso Colares",
+      "Matheus Bernardo Silva",
+      "Michael Eduardo Reichenheim",
+      "Nelson Hauck Filho",
+      "Neusa Maria John Scheid",
+      "Patricia Becker Engers",
+      "Patrícia Moreno Pereira",
+      "Paulo Freire",
+      "Paulo Sergio Tumolo",
+      "Pedro Reis",
+      "Priscila Missaki Nakamura",
+      "Públio Gomes Florêncio Júnior",
+      "Regina Candida Führ",
+      "Renata da Silva Rossi",
+      "Ricardo Antônio Rodrigues",
+      "Ricardo Primi",
+      "Rodrigo de Oliveira Gomes",
+      "Ronê Paiano",
+      "Sabrina Bonzi da Conceição",
+      "Sebastião Cláudio Barbosa",
+      "Sebastião Lobo da Silva",
+      "Taís de Ávila Cazotto",
+      "Tatiana Engel Gerhardt",
+      "Tiago Amaral Silva",
+      "Tiago Nunes Medeiros",
+      "Valderi Nascimento Viana",
+      "Vinícius Silva Bagestão",
+      "Vladmir Ilyich Ulianov Lênin",
+      "Weysla Paula de Souza Lopes Dutra",
+      "Zaida Aurora Sperli Geraldes Soler"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explora a formação integral do aluno como crítica à reprodução social e defensora da educação emancipatória, alinhando-se à Pedagogia Histórico-Crítica.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 26,
+          "trecho": "A educação integral busca formação do educando em diversas áreas, contemplando dimensões técnicas, políticas, culturais e sociais.",
+          "referencia_correspondente": "KUENZER, 2002; SAVIANI, 2007"
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 31,
+          "trecho": "A escola deve promover formação integral, contemplando dimensões técnicas e sociais, atendendo ao mundo do trabalho.",
+          "referencia_correspondente": "NAHAS, 2017"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Qualidade de Vida e Estilo  de Vida",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Sequência Didática",
+    "link": "https://educapes.capes.gov.br/handle/capes/737714#:~:text=http%3A//educapes.capes.gov.br/handle/capes/737714",
+    "publico_alvo": [
+      "docentes_professores",
+      "estudantes_alunos"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Estilo de vida",
+      "Pentáculo",
+      "Ensino médio integrado",
+      "Mestrado em Educação Profissional e Tecnológica em Rede Nacional"
+    ],
+    "data_publicacao": "2023",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "SILVA, DENISE DE CASTRO INSAURRIAGA",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/737714",
+        "url": "https://educapes.capes.gov.br/handle/capes/737714#:~:text=http%3A//educapes.capes.gov.br/handle/capes/737714"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "produto educacional",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "Texto – PRÁTICAS PARA ESTILO DE VIDA SAUDÁVEL",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0069 2023 denise de castro insaurriaga silva eduardo augusto werneck ribeiro ifc blumenau lp1 mp1 analise do perfil de estilo de vida dos estudantes do ensino medio integrado um estudo no campus sao francisco do sul 14 resumo este trabalho se apresenta como um dos requisitos obrigatorios para a conclusao do mestrado profissional em educacao profissional e tecnologica profept realizado no campus da cidade de blumenau sc na perspetiva desses estudos a proposta de educacao integrada no ensino medio que inclui o trabalho como principio educativo visa preparar os estudantes para a continuidade dos estudos e no mundo profissional no entanto e essencial considerar nao apenas o desenvolvimento academico mas tambem a qualidade de vida destes alunos sob esta perspectiva o objetivo central deste estudo e compreender o estilo de vida dos estudantes do ensino medio integrado do campus sao francisco do sul para atingir esta meta foram analisadas as relacoes sociais os habitos alimentares a pratica de exercicios fisicos a capacidade de controlar o proprio estresse e a qualidade dos relacionamentos na escola na familia e em sociedade o alcance da pesquisa obteve a participacao de 98 dos alunos matriculados em 2023 e a analise dos dados ocorreu de forma qualitativa e quantitativa os resultados indicaram desconhecimento sobre indicadores basicos de saude e baixa adesao a programas de exercicios fisicos regulares alem de habitos alimentares prejudiciais a saude dificuldade de controlar o estresse e uma relacao de proximidade com a escola que vai diminuindo a medida que o aluno avanca no curso com base nessa realidade foram desenvolvidos dois materiais sendo um produto educacional destinado a professores do ensino medio integrado em educacao profissional e tecnologica na forma de uma sequencia didatica sob o formato de e book e uma cartilha eletronica destinada aos jovens que aborda por meio de uma linguagem direcionada a este publico e de forma mais ludica a importancia de bons habitos para o desenvolvimento de uma vida saudavel e feliz seja no cafofo seja na cola seja no trampo estes materiais visam auxiliar na melhora da qualidade de vida dos alunos tanto nas relacoes interpessoais dentro da escola da empresa da familia quanto com eles proprios atraves da compreensao e a conscientizacao acerca da importancia em adotar um estilo de vida saudavel retificamos a imperatividade da abordagem sobre qualidade de vida como componente curricular obrigatorio na formacao dos alunos contribuindo assim para uma formacao integral destes cidadaos diante dos desafios da atualidade 15 palavras chaves profept educacao integrada estilo de vida jovem produto educacional pedagogia historico critica qualidade de vida e estilo de vida material didatico instrucional sequencia didatica ensino medio integrado profept educacao integrada estilo de vida jovem produto educacional pentaculo ensino medio integrado mestrado em educacao profissional e tecnologica em rede nacional acacia zeneida kuenzer adriana aparecida souza affonso manoel righi lang airton jose rombaldi aline soares campos alison pereira batista alynne christian ribeiro andaki amal k mitra ana paula v silva ana sara castaman anderson cristopher dos santos andre de oliveira dantas andre dos santos costa andreia bonatto andressa silveira soares angeline santos castro anton semionovich makarenko antonio carlos gil antonio gramsci azad r bhuiyan beatriz tose agathao carine silvestrini sena lima da silva carla franciela spohr carmem cristina beck carmem lucia soares cesar araujo claudeir germano oliveira claudia elizandra lemke claudia leite de moraes claudio alberto gellis de mattos dias claudio nei nascimento da silva cleidilaine lima ferreira marinho cristiano penas seara pitanga dante henrique moura denise de castro insaurriaga silva denise tolfo silveira dermeval saviani diamantina maria goncalves dias eduardo augusto werneck ribeiro eliezer moreira pacheco elizabeth a k jones fabricio doring martins felipe valentini francisco jose costa francisco jose gondim pitanga gaudencio frigotto gina tome giselle capistano reis givanildo de oliveira santos guilherme fonseca vilela heleise f r oliveira ivan carlos bagnara jamerson murillo anunciacao souza janekeyla gomes de sousa jose augusto ferreira da silva jose celi neto jose henrique duarte neto josiane rosa da silva higo juliane albernas borges juliano daniel boscatto karl marx l m t garcia leiny cristina flores parreira leticia lacerda bailao lucas soares ribeiro lucia maria wanderley neves luciano de almeida luciene cavalcanti rodrigues m c b galvao m nahas m v nahas marcelo cozzensa da silva marcelo nunes sayao marina pavao battaglini marise nogueira ramos mateus cardoso colares matheus bernardo silva michael eduardo reichenheim nelson hauck filho neusa maria john scheid patricia becker engers patricia moreno pereira paulo freire paulo sergio tumolo pedro reis priscila missaki nakamura publio gomes florencio junior regina candida fuhr renata da silva rossi ricardo antonio rodrigues ricardo primi rodrigo de oliveira gomes rone paiano sabrina bonzi da conceicao sebastiao claudio barbosa sebastiao lobo da silva tais de avila cazotto tatiana engel gerhardt tiago amaral silva tiago nunes medeiros valderi nascimento viana vinicius silva bagestao vladmir ilyich ulianov lenin weysla paula de souza lopes dutra zaida aurora sperli geraldes soler",
+    "termos_unificados": [
+      "PROFEPT",
+      "Educação Integrada",
+      "Estilo de Vida",
+      "Jovem",
+      "Produto Educacional",
+      "Pentáculo",
+      "Ensino médio integrado",
+      "Mestrado em Educação Profissional e Tecnológica em Rede Nacional"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

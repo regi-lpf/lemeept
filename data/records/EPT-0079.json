@@ -1,0 +1,121 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0079",
+  "ano": 2021,
+  "autor": "Pierri Eduardo Batista Rodrigues",
+  "orientador": "Viviane Grimm",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP6",
+  "dissertacao": {
+    "titulo": "ARQUITETURA ESCOLAR E CONCEPÇÕES PEDAGÓGICAS DA REDE FEDERAL DE EDUCAÇÃO PROFISSIONAL, CIENTÍFICA E TECNOLÓGICA: UM ESTUDO A PARTIR DO DESENVOLVIMENTO DE UM MANUAL",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/Artigo-Consolidado-Trabalho-de-Conclusao-Mestrado-Pierri-Rodrigues-PDF-A.pdf",
+    "resumo": "Esta pesquisa, desenvolvida no Mestrado Profissional em Educação Profissional em\nRede Nacional (ProfEPT), vinculada à linha Organização e Memórias de Espaços\nPedagógicos na Educação Profissional e Tecnológica e ao macroprojeto 6\n(Organização de espaços pedagógicos na EPT), busca analisar a concepção\npedagógica que passou a orientar a Rede Federal de Educação Profissional,\nCientífica e Tecnológica (RFEPCT) nos anos 2000 e possíveis implicações dela na\narquitetura escolar. Para tal, realizou-se uma pesquisa documental, com etapa em\ncampo e de natureza aplicada. Utilizaram-se como material empírico documentos do\nperíodo que antecedeu a criação da Rede, em que se buscava um rompimento com\no dualismo até então consolidado na Educação Profissional e Tecnológica (EPT) no\nBrasil, tais como as concepções, experiências, problemas e propostas à EPT (BRASIL,\n2003) e a proposta que então se discutia para as políticas públicas para esta\nmodalidade educacional (BRASIL, 2004a). Também foram analisados os Planos de\nDesenvolvimento Institucional (PDIs) dos períodos de 2014 a 2018 e de 2019 a 2023\ndo Instituto Federal Catarinense (IFC), bem como atas do Colégio de Dirigentes\n(CODIR) da instituição, que compõe a Rede. Partindo de uma análise textual\nestruturada por meio da busca de termos condizentes com concepções pedagógicas\npresentes nos documentos, produziu-se um manual, em formato e-book, que procura\nelucidar um conjunto de aspectos a serem considerados na arquitetura escolar da\nRFEPCT para que se privilegie uma concepção pedagógica crítica. Esse produto\neducacional foi aplicado em um curso EaD, do qual os participantes avaliaram o\nconteúdo por meio de formulários on-line, evidenciando que o estudo sobre\ncaracterísticas arquitetônicas específicas pode favorecer a implementação de uma\nconcepção pedagógica crítica na RFEPCT.\n\nPalavras-Chave: \r\r \r9 $ profissional e tecnológica9\nConcepções pedagógicas9()\r.",
+    "palavras_chave": [
+      "9 $ profissional e tecnológica9 Concepções pedagógicas9()"
+    ],
+    "autores_referenciados": [
+      "Amarildo Luiz Trevisan",
+      "Ana Beatriz Goulart de Faria",
+      "Ana Paula Pupo Correia",
+      "Carlos Dunham Maciel Siaines de Castro",
+      "Célia Rosângela Dantas Dórea",
+      "Dermeval Saviani",
+      "Doris Catharine Cornelie Knatz Kowaltowski",
+      "Eliezer Moreira Pacheco",
+      "Eliza Ferreira",
+      "Gaudêncio Frigotto",
+      "José Carlos Libâneo",
+      "Liane Carly Hermes Zanella",
+      "Manoel de Jesus Araújo Soares",
+      "Marcus Levy Bencostta",
+      "Maria Ciavatta",
+      "Mariana Martinez Wilderom",
+      "Marise Nogueira Ramos",
+      "Paolo Nosella"
+    ],
+    "base_epistemologica": {
+      "valor": "Teoria Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto discute a divisão entre concepções pedagógicas liberal e progressista, alinhando-se à crítica da educação como instrumento de dominação (RAMOS, 2008).",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 19,
+          "trecho": "Concepções pedagógicas que relativizam o conhecimento sistematizado e desconfiam da própria ciência (LIBÂNEO, 1992).",
+          "referencia_correspondente": "LIBÂNEO, José Carlos. Democratização da escola pública: a pedagogia crítico-social dos conteúdos. São Paulo: Loyola, 1992."
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 22,
+          "trecho": "A educação moderna nas sociedades ocidentais capitalistas é uma educação só para o trabalho manual e para os segmentos menos favorecidos (RAMOS, 2008).",
+          "referencia_correspondente": "RAMOS, Marise. Trabalho, educação e correntes pedagógicas no Brasil: um estudo a partir da formação dos trabalhadores técnicos da saúde. Rio de Janeiro: "
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Concepções Pedagógicas e arquitetura escolar: diretrizes à infraestrutura e aos espaços dos campi da Rede Federal de Educação profissional, Científica e Tecnológica.",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Manual / Protocolo",
+    "link": "http://educapes.capes.gov.br/handle/capes/646593",
+    "publico_alvo": [
+      "docentes_professores",
+      "gestores_coordenadores",
+      "tecnicos_profissionais_educacao"
+    ],
+    "nivel_aplicacao": "Educação Profissional e Tecnológica",
+    "palavras_chave": [
+      "Arquitetura escolar; Educação profissional e tecnológica; Concepções pedagógicas; Institutos Federais",
+      "Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT",
+      "Parte do requisito para obtenção do grau de Mestre em Educação Profissional Tecnológica"
+    ],
+    "data_publicacao": "2022-02-02",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense - IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Rodrigues, Grimm, Viviane Pierri",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/646593",
+        "url": "http://educapes.capes.gov.br/handle/capes/646593"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Livro Digital",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "Livro Digital – CONCEPÇÕES PEDAGÓGICAS E ARQUITETURA ESCOLAR: DIRETRIZES À INFRAESTRUTURA E AOS ESPAÇOS DOS CAMPI DA REDE FEDERAL DE EDUCAÇÃO PROFISSIONAL, CIENTÍFICA E TECNOLÓGICA.",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "livro digital"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0079 2021 pierri eduardo batista rodrigues viviane grimm ifc blumenau lp2 mp6 arquitetura escolar e concepcoes pedagogicas da rede federal de educacao profissional cientifica e tecnologica um estudo a partir do desenvolvimento de um manual esta pesquisa desenvolvida no mestrado profissional em educacao profissional em rede nacional profept vinculada a linha organizacao e memorias de espacos pedagogicos na educacao profissional e tecnologica e ao macroprojeto 6 organizacao de espacos pedagogicos na ept busca analisar a concepcao pedagogica que passou a orientar a rede federal de educacao profissional cientifica e tecnologica rfepct nos anos 2000 e possiveis implicacoes dela na arquitetura escolar para tal realizou se uma pesquisa documental com etapa em campo e de natureza aplicada utilizaram se como material empirico documentos do periodo que antecedeu a criacao da rede em que se buscava um rompimento com o dualismo ate entao consolidado na educacao profissional e tecnologica ept no brasil tais como as concepcoes experiencias problemas e propostas a ept brasil 2003 e a proposta que entao se discutia para as politicas publicas para esta modalidade educacional brasil 2004a tambem foram analisados os planos de desenvolvimento institucional pdis dos periodos de 2014 a 2018 e de 2019 a 2023 do instituto federal catarinense ifc bem como atas do colegio de dirigentes codir da instituicao que compoe a rede partindo de uma analise textual estruturada por meio da busca de termos condizentes com concepcoes pedagogicas presentes nos documentos produziu se um manual em formato e book que procura elucidar um conjunto de aspectos a serem considerados na arquitetura escolar da rfepct para que se privilegie uma concepcao pedagogica critica esse produto educacional foi aplicado em um curso ead do qual os participantes avaliaram o conteudo por meio de formularios on line evidenciando que o estudo sobre caracteristicas arquitetonicas especificas pode favorecer a implementacao de uma concepcao pedagogica critica na rfepct palavras chave 9 profissional e tecnologica9 concepcoes pedagogicas9 teoria critica concepcoes pedagogicas e arquitetura escolar diretrizes a infraestrutura e aos espacos dos campi da rede federal de educacao profissional cientifica e tecnologica material didatico instrucional manual protocolo educacao profissional e tecnologica 9 profissional e tecnologica9 concepcoes pedagogicas9 arquitetura escolar educacao profissional e tecnologica concepcoes pedagogicas institutos federais mestrado profissional em educacao profissional e tecnologica profept parte do requisito para obtencao do grau de mestre em educacao profissional tecnologica amarildo luiz trevisan ana beatriz goulart de faria ana paula pupo correia carlos dunham maciel siaines de castro celia rosangela dantas dorea dermeval saviani doris catharine cornelie knatz kowaltowski eliezer moreira pacheco eliza ferreira gaudencio frigotto jose carlos libaneo liane carly hermes zanella manoel de jesus araujo soares marcus levy bencostta maria ciavatta mariana martinez wilderom marise nogueira ramos paolo nosella",
+    "termos_unificados": [
+      "9 $ profissional e tecnológica9 Concepções pedagógicas9()",
+      "Arquitetura escolar; Educação profissional e tecnológica; Concepções pedagógicas; Institutos Federais",
+      "Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT",
+      "Parte do requisito para obtenção do grau de Mestre em Educação Profissional Tecnológica"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

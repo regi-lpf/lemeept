@@ -1,0 +1,142 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0076",
+  "ano": 2022,
+  "autor": "Débora Magna Santos Costa de Souza",
+  "orientador": "Viviane Grimm",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP3",
+  "dissertacao": {
+    "titulo": "O CONSELHO DE CLASSE NA PERCEPÇÃO DE CONSELHEIROS DE UM CURSO DE ENSINO MÉDIO INTEGRADO: NA TRILHA DA FORMAÇÃO HUMANA INTEGRAL",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/Artigo-Debora-PDFA.pdf",
+    "resumo": "Este artigo é resultado de uma pesquisa realizada no Mestrado Profissional em\nEducação Profissional e Tecnológica (ProfEPT) do Instituto Federal Catarinense -\nCampus Blumenau, inserida na linha de pesquisa “Práticas Educativas em Educação\nProfissional e Tecnológica”, no “Macroprojeto 3 - Práticas Educativas no Currículo\nIntegrado”, que teve como objeto de investigação o conselho de classe na proposta\nde Ensino Médio Integrado (EMI). O estudo buscou analisar a percepção dos\nconselheiros sobre a concepção e a função do conselho de classe em um curso do\nInstituto Federal de Santa Catarina (IFSC), a fim de criar um produto educacional que\ncontribua para a qualificação dessa prática pedagógica avaliativa como constituinte\nde um processo de formação humana integral na Educação Profissional e\nTecnológica. Em interlocução com Dalben (2010), Cruz (2005), Hoffmann (2009),\nPizoli (2009), Luckesi (2011), Vasconcellos (1998), Freire (2005), Ramos (2014) e\nSaviani (2013; 2014), discute-se a concepção de Conselho de Classe alinhada à\nproposta de Ensino Médio Integrado, considerando o lugar de seus agentes no\ndesenvolvimento desse processo. Assim, em pesquisa de caráter instrumental e\ndocumental, o conselho é considerado não como espaço estanque com um fim em si\nmesmo, mas como parte integrante de um movimento que pode ampliar a visão de\ntotalidade do trabalho educativo, deixando entrever representações e saberes dos\nsujeitos. Quanto à metodologia, trata-se de um estudo de caso, de abordagem\nqualitativa, sendo os dados coletados por meio de questionário online aplicado com\nestudantes, docentes e servidores da coordenadoria pedagógica envolvidos com o\ncurso. Conclui-se que os conselhos, ressaltando-se a relevância a eles atribuída por\nesses conselheiros, têm dificultado aos estudantes a tomada de consciência de seu\ndesenvolvimento e, aos docentes e equipe pedagógica, a realização de um trabalho\npedagógico crítico e integrado. Quanto ao produto educacional, o e-book “Na trilha da\nformação humana integral: um conselho no meio do caminho”, revela seu potencial\nno sentido de ampliar a compreensão de docentes e equipe pedagógica sobre o\nconselho de classe como práxis emancipatória, à medida em que acolhe e aponta\nnecessidades e possibilidades de um trabalho pedagógico na perspectiva da\nformação humana integral.\n\nPalavras-Chave: Conselho de Classe. Avaliação. Ensino Médio Integrado. Educação\nProfissional e Tecnológica.",
+    "palavras_chave": [
+      "Conselho de Classe",
+      "Avaliação",
+      "Ensino Médio Integrado",
+      "Educação Profissional e Tecnológica"
+    ],
+    "autores_referenciados": [
+      "A. Faundez",
+      "Acácia Zeneida Kuenzer",
+      "Adilson Cesar Araújo",
+      "Ângela Imaculada Loreiro de Freitas Dalben",
+      "Antoni Zabala",
+      "Antonio Gramsci",
+      "Any Dutra Coelho da Rocha",
+      "Arilda Schmidt Godoy",
+      "Carlos Henrique Carrilho Cruz",
+      "Celso dos Santos Vasconcellos",
+      "Cipriano Carlos Luckesi",
+      "D. S. Rodrigues",
+      "Dante Henrique Moura",
+      "Dermeval Saviani",
+      "Eliezer Moreira Pacheco",
+      "Fátima Peres Zago de Oliveira",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "Ilma Passos Alencastro Veiga",
+      "Juliana Favretto",
+      "Jurjo Torres Santomé",
+      "Jussara Maria Lerch Hoffmann",
+      "Karel Kosík",
+      "L. Ruiz",
+      "Lucília Regina de Souza Machado",
+      "Maria Ciavatta",
+      "Maria do Carmo Galiazzi",
+      "Maria Hermínia Lage Fernandes Laffin",
+      "Marise Nogueira Ramos",
+      "Marli André",
+      "Paulo Freire",
+      "Priscila de Souza Chisté Leite",
+      "R. M. L. Araújo",
+      "Rita de C. Pizoli",
+      "Roque Moraes",
+      "Vitor Henrique Paro"
+    ],
+    "base_epistemologica": {
+      "valor": "Educação Libertadora / Freireana",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": true,
+      "justificativa": "O texto alinha práticas educacionais à emancipação e formação humana integral, citando Freire (2005) e Saviani (2013; 2014), mas não explicita a matriz teórica de forma conclusiva.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 12,
+          "trecho": "O conselho é considerado parte integrante de um movimento que amplia a visão de totalidade do trabalho educativo.",
+          "referencia_correspondente": "Freire (2005), Saviani (2013; 2014)"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Na trilha da formação humana integral: Um Conselho no meio do caminho",
+    "tipo": "material_didatico_instrucional",
+    "formato": "E-book / Livro Digital",
+    "link": "http://educapes.capes.gov.br/handle/capes/717900",
+    "publico_alvo": [
+      "docentes_professores",
+      "tecnicos_profissionais_educacao"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Conselho de classe, Gestão democrática, Educação Profissional e Tecnológica, Ensino Médio Integrado, E-book",
+      "PROFEPT",
+      "Produto Educacional resultado de pesquisa de dissertação de Mestrado"
+    ],
+    "data_publicacao": "2022-09-02",
+    "autores_colaboradores": [
+      {
+        "nome": "INSTITUTO FEDERAL CATARINENSE-IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "SOUZA, Débora Magna Santos Costa de",
+        "papel": "creator"
+      },
+      {
+        "nome": "GRIMM, Viviane",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/717900",
+        "url": "http://educapes.capes.gov.br/handle/capes/717900"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Na trilha da formação humana integral: um conselho no meio do caminho",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "Livro Digital – NA TRILHA DA FORMAÇÃO HUMANA INTEGRAL: UM CONSELHO NO MEIO DO CAMINHO.",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "livro digital"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0076 2022 debora magna santos costa de souza viviane grimm ifc blumenau lp1 mp3 o conselho de classe na percepcao de conselheiros de um curso de ensino medio integrado na trilha da formacao humana integral este artigo e resultado de uma pesquisa realizada no mestrado profissional em educacao profissional e tecnologica profept do instituto federal catarinense campus blumenau inserida na linha de pesquisa praticas educativas em educacao profissional e tecnologica no macroprojeto 3 praticas educativas no curriculo integrado que teve como objeto de investigacao o conselho de classe na proposta de ensino medio integrado emi o estudo buscou analisar a percepcao dos conselheiros sobre a concepcao e a funcao do conselho de classe em um curso do instituto federal de santa catarina ifsc a fim de criar um produto educacional que contribua para a qualificacao dessa pratica pedagogica avaliativa como constituinte de um processo de formacao humana integral na educacao profissional e tecnologica em interlocucao com dalben 2010 cruz 2005 hoffmann 2009 pizoli 2009 luckesi 2011 vasconcellos 1998 freire 2005 ramos 2014 e saviani 2013 2014 discute se a concepcao de conselho de classe alinhada a proposta de ensino medio integrado considerando o lugar de seus agentes no desenvolvimento desse processo assim em pesquisa de carater instrumental e documental o conselho e considerado nao como espaco estanque com um fim em si mesmo mas como parte integrante de um movimento que pode ampliar a visao de totalidade do trabalho educativo deixando entrever representacoes e saberes dos sujeitos quanto a metodologia trata se de um estudo de caso de abordagem qualitativa sendo os dados coletados por meio de questionario online aplicado com estudantes docentes e servidores da coordenadoria pedagogica envolvidos com o curso conclui se que os conselhos ressaltando se a relevancia a eles atribuida por esses conselheiros tem dificultado aos estudantes a tomada de consciencia de seu desenvolvimento e aos docentes e equipe pedagogica a realizacao de um trabalho pedagogico critico e integrado quanto ao produto educacional o e book na trilha da formacao humana integral um conselho no meio do caminho revela seu potencial no sentido de ampliar a compreensao de docentes e equipe pedagogica sobre o conselho de classe como praxis emancipatoria a medida em que acolhe e aponta necessidades e possibilidades de um trabalho pedagogico na perspectiva da formacao humana integral palavras chave conselho de classe avaliacao ensino medio integrado educacao profissional e tecnologica educacao libertadora freireana na trilha da formacao humana integral um conselho no meio do caminho material didatico instrucional e book livro digital ensino medio integrado conselho de classe avaliacao ensino medio integrado educacao profissional e tecnologica conselho de classe gestao democratica educacao profissional e tecnologica ensino medio integrado e book profept produto educacional resultado de pesquisa de dissertacao de mestrado a faundez acacia zeneida kuenzer adilson cesar araujo angela imaculada loreiro de freitas dalben antoni zabala antonio gramsci any dutra coelho da rocha arilda schmidt godoy carlos henrique carrilho cruz celso dos santos vasconcellos cipriano carlos luckesi d s rodrigues dante henrique moura dermeval saviani eliezer moreira pacheco fatima peres zago de oliveira gabriel kaplun gaudencio frigotto ilma passos alencastro veiga juliana favretto jurjo torres santome jussara maria lerch hoffmann karel kosik l ruiz lucilia regina de souza machado maria ciavatta maria do carmo galiazzi maria herminia lage fernandes laffin marise nogueira ramos marli andre paulo freire priscila de souza chiste leite r m l araujo rita de c pizoli roque moraes vitor henrique paro",
+    "termos_unificados": [
+      "Conselho de Classe",
+      "Avaliação",
+      "Ensino Médio Integrado",
+      "Educação Profissional e Tecnológica",
+      "Conselho de classe, Gestão democrática, Educação Profissional e Tecnológica, Ensino Médio Integrado, E-book",
+      "PROFEPT",
+      "Produto Educacional resultado de pesquisa de dissertação de Mestrado"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0059",
+  "ano": 2024,
+  "autor": "André Eduardo Konell",
+  "orientador": "Fátima Peres Zago de Oliveira",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP3",
+  "dissertacao": {
+    "titulo": "CURRICULARIZAÇÃO DA PESQUISA E EXTENSÃO NOS CURSOS TÉCNICOS DE INFORMÁTICA DO INSTITUTO FEDERAL CATARINENSE NOS CAMPI BLUMENAU E CAMBORIÚ",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/07/Dissertacao-Andre-Eduardo-Konell.pdf",
+    "resumo": "A curricularização da pesquisa e extensão ganha espaço nos estudos educacionais,\nsobretudo quando se considera sua aplicabilidade no Ensino Médio, como forma de\naumentar o protagonismo discente. Este estudo, intitulado \"Integração da Pesquisa e\nExtensão nos Cursos Técnicos de Informática do Instituto Federal Catarinense nos\nCampi Blumenau e Camboriú\", foi conduzido no âmbito do Mestrado Profissional em\nEducação Profissional e Tecnológica (ProfEPT). Seu propósito consistiu na análise do\nprocesso de curricularização da pesquisa e extensão nos cursos técnicos de\nInformática integrados ao Ensino Médio do IFC, nos campi Blumenau e Camboriú e,\nao mesmo tempo, vislumbrando a construção de um roteiro orientativo que visa\nsubsidiar a compreensão do processo de curricularização da pesquisa e extensão\npelos professores. A metodologia empregada nesta pesquisa é de natureza qualitativa,\nconstituída de dois momentos: o exploratório e o empírico. Houve a análise de\ndocumentos e utilização de entrevistas semiestruturadas, realizadas com os docentes\nligados às disciplinas envolvidas no processo de curricularização dos cursos e campi\nfoco do estudo. Para a análise dos dados, optou-se pela abordagem da Análise Textual\nDiscursiva (ATD), utilizando categorias específicas. O projeto está inserido na linha de\npesquisa \"Práticas educativas em Educação Profissional e Tecnológica\", integrante do\nmacroprojeto \"Práticas educativas no currículo integrado\". Os resultados destacaram\na necessidade de disseminação e multiplicação das melhores práticas dos docentes.\nO produto educacional desenvolvido destina-se os docentes do IFC, baseando-se na\nestrutura curricular\njá existente em todos os cursos da instituição. Sua elaboração foi\ninspirada nas entrevistas realizadas com professores dos dois campi em estudo,\nestando diretamente relacionado a práticas que concretizam o propósito da Formação\nIntegral do Estudante. Os resultados obtidos estão ligados às atividades conduzidas\npelos professores, evidenciando uma forte ênfase no aspecto prático de \"como\"\nrealizar as tarefas, em detrimento das questões fundamentais de \"por que\", \"para que\"\ne \"para quem”. Isso destaca a importância de compreender a pesquisa e a extensão\nsob a ótica da curricularização para a formação integral dos alunos do Ensino Médio.\nPalavras-Chave: Curricularização. Pesquisa. Extensão. Ensino Médio Integrado. EPT.",
+    "palavras_chave": [
+      "Curricularização",
+      "Pesquisa",
+      "Extensão",
+      "Ensino Médio Integrado",
+      "EPT"
+    ],
+    "autores_referenciados": [
+      "Adelina Baldisera",
+      "Adriana Casavechia Fragalli",
+      "Adriano de Oliveira",
+      "Alves Rubem",
+      "Ana Elisa Spaolonzi Queiroz Assis",
+      "Ana Maria Nunes Gimenez",
+      "Antonio Fernando Gouvêa Silva",
+      "Antônio Flávio Barbosa Moreira",
+      "Antonio Gramsci",
+      "C. dos S. Fernandes",
+      "Cláudia Maria Bezerra da Silva",
+      "Claudio de Moura Castro",
+      "Clayton Hillig",
+      "Daiane Loreto de Vargas",
+      "Demétrio Delizoicov",
+      "Fábio Alexandre Araújo Santos",
+      "Fátima Peres Zago de Oliveira",
+      "Gaudêncio Frigotto",
+      "Ivani C. A. Fazenda",
+      "John Ward Creswell",
+      "José André Angoti",
+      "José Manuel Moran",
+      "Joseane Duarte Santos",
+      "Josimar de Aparecido Vieira",
+      "Karl Marx",
+      "Larissa Marcelle Vaz Barbosa",
+      "Larissa Reducino Silva",
+      "Lucídio Bianchetti",
+      "Luis Fernando Tosta Barbato",
+      "Maria Beatriz Machado Bonacelli",
+      "Maria do Carmo Galiazzi",
+      "Maurice Jacques Bazin",
+      "Muriel de Oliveira Gavira",
+      "Paolo Nosella",
+      "Paula Andréa Grawieski Civiero",
+      "Paulo Freire",
+      "Paulo Martins Pio",
+      "Paulo Sergio Tumolo",
+      "Priscila de Souza Chisté Leite",
+      "Roque Moraes",
+      "Sandra Maria Gadelha de Carvalho",
+      "Sara Maria Souza Nogueira",
+      "Sergio Buarque de Holanda",
+      "Sérgio Lessa",
+      "Sinara Monica Vitalino de Alnmeida",
+      "Taiane Lucas Pontel",
+      "Tatiane Almeida Netto",
+      "Tomaz Tadeu da Silva",
+      "Wallace Pereira Santana",
+      "Walter Antônio Bazzo",
+      "Wanderley Azevedo de Brito"
+    ],
+    "base_epistemologica": {
+      "valor": "Educação Libertadora / Freireana",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explicita a filiação teórica à educação libertadora, com citações de Freire sobre diálogo e emancipação. O trecho curto demonstra a crítica à educação bancária e a valorização da práxis.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 14,
+          "trecho": "A educação como prática da liberdade não é a transferência do saber, mas uma situação gnosiológica de comunicação entre sujeitos cognoscentes.",
+          "referencia_correspondente": "FREIRE, Paulo. Educação como prática da liberdade."
+        },
+        {
+          "secao": "Introdução",
+          "pagina": 18,
+          "trecho": "É fundamental a conscientização de que é necessário abrir mão da definição assistencialista de extensão e trabalhar a partir do diálogo.",
+          "referencia_correspondente": "FREIRE, Paulo. Pedagogia do Oprimido."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Curricularização da pesquisa e da extensão em Cursos Técnicos integrados ao Ensino Médio: propostas de práticas curricularizadas para a formação integral do estudante",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Roteiro / Proposta Pedagógica",
+    "link": "https://educapes.capes.gov.br/handle/capes/748699",
+    "publico_alvo": [
+      "docentes_professores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Curricularização da pesquisa e da extensão",
+      "Documento orientativo",
+      "EPT",
+      "Ensino Médio Integrado",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica - PROFEPT",
+      "Defesa de Mestrado"
+    ],
+    "data_publicacao": "2024-06-13",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Konell, André Eduardo",
+        "papel": "creator"
+      },
+      {
+        "nome": "Oliveira, Fátima Peres Zago de",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/748699",
+        "url": "https://educapes.capes.gov.br/handle/capes/748699"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Produto Educacional - Curricularização da Pesquisa e Extensão em Cursos Técnicos Integrados ao Ensino Médio - propostas de práticas curricularizadas para a formação integral do estudante",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "inferencia_llm",
+      "rotulo_original_declarado": "CURRICULARIZAÇÃO DA PESQUISA E EXTENSÃO EM CURSOS TÉCNICOS INTEGRADOS AO ENSINO MÉDIO: PROPOSTAS DE PRÁTICAS CURRICULARIZADAS PARA A FORMAÇÃO INTEGRAL DO ESTUDANTE",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0059 2024 andre eduardo konell fatima peres zago de oliveira ifc blumenau lp1 mp3 curricularizacao da pesquisa e extensao nos cursos tecnicos de informatica do instituto federal catarinense nos campi blumenau e camboriu a curricularizacao da pesquisa e extensao ganha espaco nos estudos educacionais sobretudo quando se considera sua aplicabilidade no ensino medio como forma de aumentar o protagonismo discente este estudo intitulado integracao da pesquisa e extensao nos cursos tecnicos de informatica do instituto federal catarinense nos campi blumenau e camboriu foi conduzido no ambito do mestrado profissional em educacao profissional e tecnologica profept seu proposito consistiu na analise do processo de curricularizacao da pesquisa e extensao nos cursos tecnicos de informatica integrados ao ensino medio do ifc nos campi blumenau e camboriu e ao mesmo tempo vislumbrando a construcao de um roteiro orientativo que visa subsidiar a compreensao do processo de curricularizacao da pesquisa e extensao pelos professores a metodologia empregada nesta pesquisa e de natureza qualitativa constituida de dois momentos o exploratorio e o empirico houve a analise de documentos e utilizacao de entrevistas semiestruturadas realizadas com os docentes ligados as disciplinas envolvidas no processo de curricularizacao dos cursos e campi foco do estudo para a analise dos dados optou se pela abordagem da analise textual discursiva atd utilizando categorias especificas o projeto esta inserido na linha de pesquisa praticas educativas em educacao profissional e tecnologica integrante do macroprojeto praticas educativas no curriculo integrado os resultados destacaram a necessidade de disseminacao e multiplicacao das melhores praticas dos docentes o produto educacional desenvolvido destina se os docentes do ifc baseando se na estrutura curricular ja existente em todos os cursos da instituicao sua elaboracao foi inspirada nas entrevistas realizadas com professores dos dois campi em estudo estando diretamente relacionado a praticas que concretizam o proposito da formacao integral do estudante os resultados obtidos estao ligados as atividades conduzidas pelos professores evidenciando uma forte enfase no aspecto pratico de como realizar as tarefas em detrimento das questoes fundamentais de por que para que e para quem isso destaca a importancia de compreender a pesquisa e a extensao sob a otica da curricularizacao para a formacao integral dos alunos do ensino medio palavras chave curricularizacao pesquisa extensao ensino medio integrado ept educacao libertadora freireana curricularizacao da pesquisa e da extensao em cursos tecnicos integrados ao ensino medio propostas de praticas curricularizadas para a formacao integral do estudante material didatico instrucional roteiro proposta pedagogica ensino medio integrado curricularizacao pesquisa extensao ensino medio integrado ept curricularizacao da pesquisa e da extensao documento orientativo programa de pos graduacao em educacao profissional e tecnologica profept defesa de mestrado adelina baldisera adriana casavechia fragalli adriano de oliveira alves rubem ana elisa spaolonzi queiroz assis ana maria nunes gimenez antonio fernando gouvea silva antonio flavio barbosa moreira antonio gramsci c dos s fernandes claudia maria bezerra da silva claudio de moura castro clayton hillig daiane loreto de vargas demetrio delizoicov fabio alexandre araujo santos fatima peres zago de oliveira gaudencio frigotto ivani c a fazenda john ward creswell jose andre angoti jose manuel moran joseane duarte santos josimar de aparecido vieira karl marx larissa marcelle vaz barbosa larissa reducino silva lucidio bianchetti luis fernando tosta barbato maria beatriz machado bonacelli maria do carmo galiazzi maurice jacques bazin muriel de oliveira gavira paolo nosella paula andrea grawieski civiero paulo freire paulo martins pio paulo sergio tumolo priscila de souza chiste leite roque moraes sandra maria gadelha de carvalho sara maria souza nogueira sergio buarque de holanda sergio lessa sinara monica vitalino de alnmeida taiane lucas pontel tatiane almeida netto tomaz tadeu da silva wallace pereira santana walter antonio bazzo wanderley azevedo de brito",
+    "termos_unificados": [
+      "Curricularização",
+      "Pesquisa",
+      "Extensão",
+      "Ensino Médio Integrado",
+      "EPT",
+      "Curricularização da pesquisa e da extensão",
+      "Documento orientativo",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica - PROFEPT",
+      "Defesa de Mestrado"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

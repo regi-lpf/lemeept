@@ -1,0 +1,138 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0085",
+  "ano": 2020,
+  "autor": "Simone Voltolini Olczyk",
+  "orientador": "Inge Renate Frose Suhr",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP1",
+  "dissertacao": {
+    "titulo": "(RE)CONSTRUINDOOLHARES:CAMINHOS METODOLÓGICOS PARA CONHECER OS JOVENS DO ENSINO MÉDIO INTEGRADO",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/09/Dissertacao-Simone.pdf",
+    "resumo": "Historicamente a educação brasileira é marcada pela dualidade estrutural, com\nescolase/oucursosdirigidosaosqueusamsuaforçadetrabalhonaconstruçãoda\nvida e da riqueza e outros, destinados às elites dirigentes. A luta contra essa\ndualidade na educação é permanente e contra hegemônica, tendo por objetivo\nfavoreceratransformaçãodasociedade.Aeducaçãointegral,umadascolunasde\nsustentaçãodoensinomédiointegradoàEducaçãoProfissionaleTecnológica,é\nparteimportantedestalutae,porissomesmo,devetercomofocooestudante,\ncompreendidocomosujeitohistoricamentesituado,dialeticamentedeterminadoe\ndeterminantedarealidadeemquevive.Compreendendoaformaçãointegralcomo\nhorizonteaperseguir,apesquisaorarelatadaestávinculadaalinhadepesquisa\nde Formação de Práticas Educativas em Educação Profissional e Tecnológica\n(EPT), macroprojeto Propostas metodológicas e recursos didáticos em espaços\nformaisenãoformaisdeensinonaEPT.Comcaracterísticasdepesquisa-açãode\ncaráter qualitativo, se constituiu com o objetivo de proporcionar, por meio da\nelaboraçãodeumasequênciadidática,estratégiasquepossamserutilizadaspelos\ndocentesatuantesnoensinomédiointegradoàeducaçãoprofissionalparamelhor\nconheceremosjovenscomosquaisatuam.Apósaelaboraçãodeumreferencial\nteórico que permitisse interpretar os dados coletados, ocorreu a aplicação de\nquestionárioaestudanteseprofessoresdeprimeiroanodeensinomédiointegrado\nda instituição lócus da pesquisa. Buscou-se compreender as semelhanças e\ndiferenças desses dois grupos em relação às seguintes temáticas: i. quem é o\nestudante,doquegosta,oquevaloriza;ii.comoesteestudanteestávivenciandoo\nensinomédiointegradoàEPT;ii.quaisseussonhoseprojetosparaofuturo.Os\ndados coletados demonstraram que realmente há diferençasmarcantes entre a\nformacomoosestudanteseseusprofessorescompreendemessaetapadavida,\nreforçando a importância da sequência didática, formato eleito para o produto\neducacional.Aaplicaçãodasequênciadidáticaressaltouaspotencialidadesdeseu\nusoparaaproximarapercepçãodosprofessoresàsrealidadesvividaspelosjovens.\nPor fim, o estudo reforçou a importância do aprofundamento teórico para\ncompreender,tantoasrealidadesvividaspelosestudantesquantoasdosdocentes.\n\nPalavras-Chave:EducaçãoProfissionaleTecnológica.Juventude.Adolescência.\nEnsinoMédioIntegrado.EducaçãoIntegral.",
+    "palavras_chave": [
+      "EducaçãoProfissionaleTecnológica",
+      "Juventude",
+      "Adolescência",
+      "EnsinoMédioIntegrado",
+      "EducaçãoIntegral"
+    ],
+    "autores_referenciados": [
+      "Adilson Luiz Tiecher",
+      "Ana Amélia Camarano",
+      "Ana Paula Serrata Malfitano",
+      "Carla Linhares Maia",
+      "Carlos Henrique dos Santos Martins",
+      "Clecí Korbes",
+      "Dermeval Saviani",
+      "Gaudêncio Frigotto",
+      "Juarez Tarcísio Dayrell",
+      "Laurence Bardin",
+      "Licinia Maria Correa",
+      "M. Ramos",
+      "Margarida Serrão",
+      "Maria Cecília de Souza Minayo",
+      "Maria Ciavatta",
+      "Maria Virgínia de Freitas",
+      "Maria Zenaide Alves",
+      "Michel Jean Marie Thiollent",
+      "Miriam Abramovay",
+      "Paulo Cesar Rodrigues Carrano"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explora a formação integral como horizonte, alinhada a Saviani (2014) e Ciavatta (2008), com foco na educação como transformação social.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 24,
+          "trecho": "A educação é inerente ao homem, que, diferentemente dos outros animais que se adaptam à natureza, é obrigado a adaptá-la, agindo sobre ela e transformando-a para atender às necessidades humanas.",
+          "referencia_correspondente": "SAVIANI, Dermeval. A Pedagogia Histórico-Crítica."
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 16,
+          "trecho": "A escola deve levar em consideração quem são os jovens, compreendendo a multiplicidade de fatores que os levam a viver essa etapa da vida de um ou outro modo.",
+          "referencia_correspondente": "CIAVATTA, Maria. A FORMAÇÃO INTEGRADA A ESCOLA E O TRABALHO"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "(RE) CONSTRUINDO OLHARES: CAMINHOS METODOLÓGICOS P ARA CONHECER OS JOVENS DO ENSINO MÉDIO INTEGRADO",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Sequência Didática",
+    "link": "http://educapes.capes.gov.br/handle/capes/569564",
+    "publico_alvo": [
+      "docentes_professores",
+      "estudantes_alunos"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Juventude(s)",
+      "Ensino Médio Integrado",
+      "Educação Integral",
+      "Mestrado profissional em Educação Profissional e Tecnológica (ProfEPT)",
+      "Trabalho final de curso"
+    ],
+    "data_publicacao": "2020-05-19",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal de Educação",
+        "papel": "contributor"
+      },
+      {
+        "nome": "OLCZYK, Simone",
+        "papel": "creator"
+      },
+      {
+        "nome": "SUHR, Inge",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/569564",
+        "url": "http://educapes.capes.gov.br/handle/capes/569564"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "sd 28042020 reduzida",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "Texto – (RE)CONSTRUINDO OLHARES:CAMINHOS METODOLÓGICOS PARA CONHECER OS JOVENS DO ENSINO MÉDIO INTEGRADO",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0085 2020 simone voltolini olczyk inge renate frose suhr ifc blumenau lp1 mp1 re construindoolhares caminhos metodologicos para conhecer os jovens do ensino medio integrado historicamente a educacao brasileira e marcada pela dualidade estrutural com escolase oucursosdirigidosaosqueusamsuaforcadetrabalhonaconstrucaoda vida e da riqueza e outros destinados as elites dirigentes a luta contra essa dualidade na educacao e permanente e contra hegemonica tendo por objetivo favoreceratransformacaodasociedade aeducacaointegral umadascolunasde sustentacaodoensinomediointegradoaeducacaoprofissionaletecnologica e parteimportantedestalutae porissomesmo devetercomofocooestudante compreendidocomosujeitohistoricamentesituado dialeticamentedeterminadoe determinantedarealidadeemquevive compreendendoaformacaointegralcomo horizonteaperseguir apesquisaorarelatadaestavinculadaalinhadepesquisa de formacao de praticas educativas em educacao profissional e tecnologica ept macroprojeto propostas metodologicas e recursos didaticos em espacos formaisenaoformaisdeensinonaept comcaracteristicasdepesquisa acaode carater qualitativo se constituiu com o objetivo de proporcionar por meio da elaboracaodeumasequenciadidatica estrategiasquepossamserutilizadaspelos docentesatuantesnoensinomediointegradoaeducacaoprofissionalparamelhor conheceremosjovenscomosquaisatuam aposaelaboracaodeumreferencial teorico que permitisse interpretar os dados coletados ocorreu a aplicacao de questionarioaestudanteseprofessoresdeprimeiroanodeensinomediointegrado da instituicao locus da pesquisa buscou se compreender as semelhancas e diferencas desses dois grupos em relacao as seguintes tematicas i quem e o estudante doquegosta oquevaloriza ii comoesteestudanteestavivenciandoo ensinomediointegradoaept ii quaisseussonhoseprojetosparaofuturo os dados coletados demonstraram que realmente ha diferencasmarcantes entre a formacomoosestudanteseseusprofessorescompreendemessaetapadavida reforcando a importancia da sequencia didatica formato eleito para o produto educacional aaplicacaodasequenciadidaticaressaltouaspotencialidadesdeseu usoparaaproximarapercepcaodosprofessoresasrealidadesvividaspelosjovens por fim o estudo reforcou a importancia do aprofundamento teorico para compreender tantoasrealidadesvividaspelosestudantesquantoasdosdocentes palavras chave educacaoprofissionaletecnologica juventude adolescencia ensinomediointegrado educacaointegral pedagogia historico critica re construindo olhares caminhos metodologicos p ara conhecer os jovens do ensino medio integrado material didatico instrucional sequencia didatica ensino medio integrado educacaoprofissionaletecnologica juventude adolescencia ensinomediointegrado educacaointegral juventude s ensino medio integrado educacao integral mestrado profissional em educacao profissional e tecnologica profept trabalho final de curso adilson luiz tiecher ana amelia camarano ana paula serrata malfitano carla linhares maia carlos henrique dos santos martins cleci korbes dermeval saviani gaudencio frigotto juarez tarcisio dayrell laurence bardin licinia maria correa m ramos margarida serrao maria cecilia de souza minayo maria ciavatta maria virginia de freitas maria zenaide alves michel jean marie thiollent miriam abramovay paulo cesar rodrigues carrano",
+    "termos_unificados": [
+      "EducaçãoProfissionaleTecnológica",
+      "Juventude",
+      "Adolescência",
+      "EnsinoMédioIntegrado",
+      "EducaçãoIntegral",
+      "Juventude(s)",
+      "Ensino Médio Integrado",
+      "Educação Integral",
+      "Mestrado profissional em Educação Profissional e Tecnológica (ProfEPT)",
+      "Trabalho final de curso"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

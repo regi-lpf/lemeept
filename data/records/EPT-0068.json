@@ -1,0 +1,162 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0068",
+  "ano": 2023,
+  "autor": "José Luis Machado",
+  "orientador": "Reginaldo Leandro Plácido",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP5",
+  "dissertacao": {
+    "titulo": "CONCEPÇÕES DOS EDUCADORES DO IFC-BRUSQUE SOBRE A AVALIAÇÃO DA APRENDIZAGEM DOS ESTUDANTES NO ENSINO MÉDIO INTEGRADO",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/11/Dissertacao-Jose-Luis-Machado.pdf",
+    "resumo": "Os Projetos Pedagógicos dos Cursos Técnicos integrados ao Ensino Médio do IFC-Brusque\napresentam, como um de seus parâmetros, o conceito da avaliação contínua e cumulativa da\naprendizagem, com ênfase nos aspectos qualitativos. Nesse sentido, o presente estudo buscou\ncompreender\nas\nconcepções\ndos educadores do IFC-Brusque sobre a avaliação da\naprendizagem dos estudantes no Ensino Médio Integrado (EMI), bem como, realizou uma\noficina, como Produto Educacional. Dessa forma, elaborou-se a seguinte pergunta de\npesquisa: quais são as concepções dos educadores do IFC-Brusque sobre a avaliação da\naprendizagem dos estudantes no EMI? Respondendo esse questionamento, foi desenvolvida\numa pesquisa exploratória, qualitativa e de natureza básica, sendo utilizados para a coleta dos\ndados os seguintes procedimentos: pesquisa bibliográfica e documental, aplicação de\nquestionários, anotações em diário de bordo e aplicação do Produto Educacional. Para\ncompreensão\ndas\ninformações\ncoletadas\nfoi\nutilizada\na\nAnálise Textual Discursiva\n(MORAES, 2003). Os resultados apontam que os educadores apresentam concepções\navaliativas\nclassificatórias,\ndiagnósticas\ne\nformativas.\nAinda\nfoi\nevidenciado\ncerto\npredomínio da avaliação formativa de inspiração behaviorista e da avaliação formativa\nfundamentada em concepções cognitivistas e construtivistas. Tais aspectos apontam para uma\ndissociação entre o ensino e as ações avaliativas, ou seja, a concepção da avaliação como\nelemento desvinculado do processo de ensino-aprendizagem. Além disso, os educadores\nentendem ser necessário intensificar as devolutivas ao discente sobre seu desempenho nas\natividades avaliativas, para promover uma maior responsabilização do estudante por sua\naprendizagem e desenvolvimento, bem como, por seu “fracasso escolar”.\nPalavras-chave: Currículo Integrado; Educação Integral; Avaliação da Aprendizagem;\nEducação Profissional e Tecnológica; Concepções dos Educadores.",
+    "palavras_chave": [
+      "Currículo Integrado",
+      "Educação Integral",
+      "Avaliação da Aprendizagem",
+      "Educação Profissional e Tecnológica",
+      "Concepções dos Educadores"
+    ],
+    "autores_referenciados": [
+      "A. M. B. Bock",
+      "A. M. Lakomy",
+      "Acácia Zeneida Kuenzer",
+      "Alessandra Nitschke",
+      "Antoni Zabala",
+      "Antonio Gramsci",
+      "C. Cerezuela",
+      "Cipriano Carlos Luckesi",
+      "D. Fernandes",
+      "Denise Tolfo Silveira",
+      "Dermeval Saviani",
+      "E. S. Silva",
+      "Eliezer Moreira Pacheco",
+      "Gaudêncio Frigotto",
+      "Henrique Pitt",
+      "Inge Renate Frose Suhr",
+      "J. C. Luckesi",
+      "J. D. Silva Júnior",
+      "J. F. Oliveira",
+      "José Carlos Libâneo",
+      "José Luis Machado",
+      "Jussara Maria Lerch Hoffmann",
+      "Kelmara Mendes Vieira",
+      "L. da C. Campolin",
+      "Lana de Souza Cavalcanti",
+      "Lev Vygotsky",
+      "M. L. L. Oliveira",
+      "Maria Ciavatta",
+      "Maria do Carmo Galiazzi",
+      "Mario Alighiero Manacorda",
+      "Marise Nogueira Ramos",
+      "Marlon Dalmoro",
+      "N. N. R. Mori",
+      "Paulo Freire",
+      "Priscila de Souza Chisté Leite",
+      "R. Moraes",
+      "R. Schaefer",
+      "Reginaldo Leandro Plácido",
+      "Tatiana Engel Gerhardt"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explora a Pedagogia Histórico-Crítica com referências a Saviani e Freire, discutindo avaliação como processo dialógico e crítico. O referencial teórico é explicitamente alinhado a essa matriz.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 18,
+          "trecho": "A avaliação da aprendizagem se configura como um processo histórico, a partir da promoção de um debate criticizante no ambiente escolar.",
+          "referencia_correspondente": "Saviani, 1999"
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 22,
+          "trecho": "A pedagogia Histórico-Crítica propõe um novo modelo de instrução escolar, ao compreender que 'o aprendizado deve ser orientado para o futuro, e não para o passado'.",
+          "referencia_correspondente": "Saviani, 1991"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "CONCEPÇÕES DOS EDUCADORES DO IFC-BRUSQUE SOBRE A AVALIAÇÃO DA APRENDIZAGEM DOS ESTUDANTES NO ENSINO MÉDIO INTEGRADO",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Oficina",
+    "link": "https://educapes.capes.gov.br/handle/capes/738581#:~:text=http%3A//educapes.capes.gov.br/handle/capes/738581",
+    "publico_alvo": [
+      "docentes_professores",
+      "estudantes_alunos"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Currículo Integrado",
+      "Educação Integral",
+      "Avaliação da Aprendizagem",
+      "Educação Profissional e Tecnológica",
+      "Organização da EPT",
+      "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+      "Organização e Memória da EPT"
+    ],
+    "data_publicacao": "2023-09",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Machado, José Luis",
+        "papel": "creator"
+      },
+      {
+        "nome": "Placido, Reginaldo Leandro",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/738581",
+        "url": "https://educapes.capes.gov.br/handle/capes/738581#:~:text=http%3A//educapes.capes.gov.br/handle/capes/738581"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "CONCEPÇÕES DOS EDUCADORES DO IFC-BRUSQUE SOBRE A AVALIAÇÃO DA APRENDIZAGEM DOS ESTUDANTES NO ENSINO MÉDIO INTEGRADO",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Avaliação da aprendizagem como elemento constituinte do processo educativo Oficina temática: Fundamentos e recomendações",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "Livro Digital – AVALIAÇÃO DA APRENDIZAGEM COMO ELEMENTO CONSTITUINTE DO PROCESSO EDUCATIVO",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "livro digital"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0068 2023 jose luis machado reginaldo leandro placido ifc blumenau lp2 mp5 concepcoes dos educadores do ifc brusque sobre a avaliacao da aprendizagem dos estudantes no ensino medio integrado os projetos pedagogicos dos cursos tecnicos integrados ao ensino medio do ifc brusque apresentam como um de seus parametros o conceito da avaliacao continua e cumulativa da aprendizagem com enfase nos aspectos qualitativos nesse sentido o presente estudo buscou compreender as concepcoes dos educadores do ifc brusque sobre a avaliacao da aprendizagem dos estudantes no ensino medio integrado emi bem como realizou uma oficina como produto educacional dessa forma elaborou se a seguinte pergunta de pesquisa quais sao as concepcoes dos educadores do ifc brusque sobre a avaliacao da aprendizagem dos estudantes no emi respondendo esse questionamento foi desenvolvida uma pesquisa exploratoria qualitativa e de natureza basica sendo utilizados para a coleta dos dados os seguintes procedimentos pesquisa bibliografica e documental aplicacao de questionarios anotacoes em diario de bordo e aplicacao do produto educacional para compreensao das informacoes coletadas foi utilizada a analise textual discursiva moraes 2003 os resultados apontam que os educadores apresentam concepcoes avaliativas classificatorias diagnosticas e formativas ainda foi evidenciado certo predominio da avaliacao formativa de inspiracao behaviorista e da avaliacao formativa fundamentada em concepcoes cognitivistas e construtivistas tais aspectos apontam para uma dissociacao entre o ensino e as acoes avaliativas ou seja a concepcao da avaliacao como elemento desvinculado do processo de ensino aprendizagem alem disso os educadores entendem ser necessario intensificar as devolutivas ao discente sobre seu desempenho nas atividades avaliativas para promover uma maior responsabilizacao do estudante por sua aprendizagem e desenvolvimento bem como por seu fracasso escolar palavras chave curriculo integrado educacao integral avaliacao da aprendizagem educacao profissional e tecnologica concepcoes dos educadores pedagogia historico critica concepcoes dos educadores do ifc brusque sobre a avaliacao da aprendizagem dos estudantes no ensino medio integrado material didatico instrucional oficina ensino medio integrado curriculo integrado educacao integral avaliacao da aprendizagem educacao profissional e tecnologica concepcoes dos educadores organizacao da ept mestrado em educacao profissional e tecnologica profept organizacao e memoria da ept a m b bock a m lakomy acacia zeneida kuenzer alessandra nitschke antoni zabala antonio gramsci c cerezuela cipriano carlos luckesi d fernandes denise tolfo silveira dermeval saviani e s silva eliezer moreira pacheco gaudencio frigotto henrique pitt inge renate frose suhr j c luckesi j d silva junior j f oliveira jose carlos libaneo jose luis machado jussara maria lerch hoffmann kelmara mendes vieira l da c campolin lana de souza cavalcanti lev vygotsky m l l oliveira maria ciavatta maria do carmo galiazzi mario alighiero manacorda marise nogueira ramos marlon dalmoro n n r mori paulo freire priscila de souza chiste leite r moraes r schaefer reginaldo leandro placido tatiana engel gerhardt",
+    "termos_unificados": [
+      "Currículo Integrado",
+      "Educação Integral",
+      "Avaliação da Aprendizagem",
+      "Educação Profissional e Tecnológica",
+      "Concepções dos Educadores",
+      "Organização da EPT",
+      "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+      "Organização e Memória da EPT"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

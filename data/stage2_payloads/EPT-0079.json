@@ -1,0 +1,239 @@
+{
+  "id": "EPT-0079",
+  "metadados_resolvidos": {
+    "ano": 2021,
+    "autor": "Pierri Eduardo Batista Rodrigues",
+    "orientador": "Viviane Grimm",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP2",
+    "macroprojeto": "MP6"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "ARQUITETURA ESCOLAR E CONCEPÇÕES PEDAGÓGICAS DA REDE FEDERAL DE EDUCAÇÃO PROFISSIONAL, CIENTÍFICA E TECNOLÓGICA: UM ESTUDO A PARTIR DO DESENVOLVIMENTO DE UM MANUAL",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/Artigo-Consolidado-Trabalho-de-Conclusao-Mestrado-Pierri-Rodrigues-PDF-A.pdf",
+    "palavras_chave": [
+      "9 $ profissional e tecnológica9 Concepções pedagógicas9()"
+    ],
+    "autores_referenciados": [
+      "Amarildo Luiz Trevisan",
+      "Ana Beatriz Goulart de Faria",
+      "Ana Paula Pupo Correia",
+      "Carlos Dunham Maciel Siaines de Castro",
+      "Célia Rosângela Dantas Dórea",
+      "Dermeval Saviani",
+      "Doris Catharine Cornelie Knatz Kowaltowski",
+      "Eliezer Moreira Pacheco",
+      "Eliza Ferreira",
+      "Gaudêncio Frigotto",
+      "José Carlos Libâneo",
+      "Liane Carly Hermes Zanella",
+      "Manoel de Jesus Araújo Soares",
+      "Marcus Levy Bencostta",
+      "Maria Ciavatta",
+      "Mariana Martinez Wilderom",
+      "Marise Nogueira Ramos",
+      "Paolo Nosella"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "http://educapes.capes.gov.br/handle/capes/646593",
+    "titulo_produto": "Concepções Pedagógicas e arquitetura escolar: diretrizes à infraestrutura e aos espaços dos campi da Rede Federal de Educação profissional, Científica e Tecnológica.",
+    "titulo_produto_bruto": "Livro Digital – CONCEPÇÕES PEDAGÓGICAS E ARQUITETURA ESCOLAR: DIRETRIZES À INFRAESTRUTURA E AOS ESPAÇOS DOS CAMPI DA REDE FEDERAL DE EDUCAÇÃO PROFISSIONAL, CIENTÍFICA E TECNOLÓGICA.",
+    "data_publicacao": "2022-02-02",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense - IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Rodrigues, Grimm, Viviane Pierri",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/646593",
+        "url": "http://educapes.capes.gov.br/handle/capes/646593"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Livro Digital",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "livro digital"
+    ],
+    "palavras_chave_educapes": [
+      "Arquitetura escolar; Educação profissional e tecnológica; Concepções pedagógicas; Institutos Federais.",
+      "Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT.",
+      "Parte do requisito para obtenção do grau de Mestre em Educação Profissional Tecnológica."
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Manual / Protocolo",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "\n\nPIERRI EDUARDO BATISTA RODRIGUES\n\nARQUITETURA ESCOLAR E CONCEPÇÕES PEDAGÓGICAS DA REDE\nFEDERAL DE EDUCAÇÃO PROFISSIONAL, CIENTÍFICA E TECNOLÓGICA: UM\nESTUDO A PARTIR DO DESENVOLVIMENTO DE UM MANUAL\n\nDissertação apresentada ao Programa de Pós-\ngraduação em Educação Profissional e Tecnológica,\nofertado pelo campus Blumenau do Instituto\nFederal Catarinense, como parte dos requisitos\npara a obtenção do título de Mestre em Educação\nProfissional e Tecnológica.\n\nOrientadora: Profa. Dra. Viviane Grimm\n\nBlumenau\n2021",
+    "ficha_catalografica": "[PÁG. 3]\nFicha catalográfica elaborada pela Bibliotecária Viviane da Rosa Matos (CRB 14/1185)\nR696a\nRodrigues, Pierri Eduardo Batista\nArquitetura escolar e concepções pedagógicas da Rede\nFederal de Educação Profissional, Científica e Tecnológica :\num estudo a partir do desenvolvimento de um manual. / Pierri\nEduardo Batista Rodrigues. - Blumenau, 2021.\n Disponível somente na versão eletrônica.\nDissertação (Mestrado) – Instituto Federal Catarinense,\nPrograma de Pós Graduação em Educação Profissional e\nTecnológica, Campus Blumenau.\nOrientação: Profa. Viviane Grimm, Dra.\n\n1. Escola. 2. Arquitetura. 3. Edifícios escolares. 4. Rede\nFederal de Educação Profissional, Científica e Tecnológica\n(Brasil)I. Grimm,Viviane. II. Título.\n CDD 370",
+    "sumario": "[PÁG. 11]\nSUMÁRIO\n\nAPRESENTAÇÃO ...................................................................................................... 9\n1 INTRODUÇÃO ....................................................................................................... 11\n2 REFERENCIAL TEÓRICO ..................................................................................... 13\n2.1 Arquitetura escolar e concepções pedagógicas ......................................... 13\n2.2 A RFEPCT e o IFC .......................................................................................... 18\n3 METODOLOGIA .................................................................................................... 21\n4 RESULTADOS E DISCUSSÕES ........................................................................... 25\n4.1 Concepção pedagógica orientadora da RFEPCT e implicações à\narquitetura escolar .............................................................................................. 25\n4.2 Análise da relação entre as concepções pedagógicas e a arquitetura\nescolar no IFC ...................................................................................................... 31\n4.3 Desenvolvimento de produto educacional: manual sobre características\narquitetônicas e a concepção pedagógica que orienta a RFEPCT e o IFC .... 34\n4.4 Aplicação do produto educacional por meio de curso EaD e avaliação do\nmanual .................................................................................................................. 35\n5 CONSIDERAÇÕES FINAIS ................................................................................... 39\nREFERÊNCIAS ......................................................................................................... 42\nAPÊNDICE A – PRODUTO EDUCACIONAL ........................................................... 46\nAPÊNDICE B – PLANO DE ENSINO ....................................................................... 47\nAPÊNDICE C – FORMULÁRIO DE AVALIAÇÃO DO MANUAL .............................. 49\nAPÊNDICE D – ATIVIDADE EM QUE OS PARTICIPANTES DISCORRIAM SOBRE\nA RELAÇÃO DE SEUS TRABALHOS À ARQUITETURA ESCOLAR .................... 52\nAPÊNDICE E – ATIVIDADE DO CURSO ON-LINE EM QUE OS PARTICIPANTES\nAVALIAVAM, À DISTÂNCIA, O ESPAÇO DE UM CAMPUS ................................... 53\nAPÊNDICE F – MANUAL SOBRE CARACTERÍSTICAS ARQUITETÔNICAS E A\nCONCEPÇÃO PEDAGÓGICA QUE ORIENTA A RFEPCT E O IFC ........................ 58\n9\n\nAPRESENTAÇÃO\n\nA arquitetura escolar pode representar não apenas as características de um\nperíodo histórico e seus valores dominantes, mas também as concepções\npedagógicas. Esta pesquisa se propõe a analisar as relações entre essas concepções\n– especificamente aquela que passou a orientar a Rede Federal de Educação\nProfissional, Científica e Tecnológica (RFEPCT) e o Instituto Federal Catarinense (IFC)\na partir dos anos 2000 – e a referida arquitetura.\nO autor desta pesquisa, que é bacharel em Engenharia Civil e em\nAdministração Públ",
+    "resumo": "[PÁG. 8]\nRESUMO\n\nEsta pesquisa, desenvolvida no Mestrado Profissional em Educação Profissional em\nRede Nacional (ProfEPT), vinculada à linha Organização e Memórias de Espaços\nPedagógicos na Educação Profissional e Tecnológica e ao macroprojeto 6\n(Organização de espaços pedagógicos na EPT), busca analisar a concepção\npedagógica que passou a orientar a Rede Federal de Educação Profissional,\nCientífica e Tecnológica (RFEPCT) nos anos 2000 e possíveis implicações dela na\narquitetura escolar. Para tal, realizou-se uma pesquisa documental, com etapa em\ncampo e de natureza aplicada. Utilizaram-se como material empírico documentos do\nperíodo que antecedeu a criação da Rede, em que se buscava um rompimento com\no dualismo até então consolidado na Educação Profissional e Tecnológica (EPT) no\nBrasil, tais como as concepções, experiências, problemas e propostas à EPT (BRASIL,\n2003) e a proposta que então se discutia para as políticas públicas para esta\nmodalidade educacional (BRASIL, 2004a). Também foram analisados os Planos de\nDesenvolvimento Institucional (PDIs) dos períodos de 2014 a 2018 e de 2019 a 2023\ndo Instituto Federal Catarinense (IFC), bem como atas do Colégio de Dirigentes\n(CODIR) da instituição, que compõe a Rede. Partindo de uma análise textual\nestruturada por meio da busca de termos condizentes com concepções pedagógicas\npresentes nos documentos, produziu-se um manual, em formato e-book, que procura\nelucidar um conjunto de aspectos a serem considerados na arquitetura escolar da\nRFEPCT para que se privilegie uma concepção pedagógica crítica. Esse produto\neducacional foi aplicado em um curso EaD, do qual os participantes avaliaram o\nconteúdo por meio de formulários on-line, evidenciando que o estudo sobre\ncaracterísticas arquitetônicas específicas pode favorecer a implementação de uma\nconcepção pedagógica crítica na RFEPCT.\n\nPalavras-Chave: \r\r \r9 $ profissional e tecnológica9\nConcepções pedagógicas9()\r.",
+    "introducao": "[PÁG. 14]\n11\n\n1 INTRODUÇÃO\n\nO estudo da arquitetura escolar revela sua importância para a compreensão da\neducação e dos valores dominantes de um determinado período histórico. Toma-se\ncomo exemplo o período do advento da república brasileira, no final do século XIX,\nem que a escola, como instituição, passa a ser tomada como modelo republicano,\nvisando a um sentimento de progresso de estado, de ordem e de disciplina. Os prédios\nescolares, não por acaso, eram edificados nas áreas nobres da cidade. Até mesmo\npor sua função vista como essencial à reconstrução nacional, a arquitetura de outras\nedificações inspirava-se nos traços que a escola inaugurou (DÓREA, 2013).\nAssim como tem seu valor histórico, em que representou a então nova forma\nde estado, a arquitetura reflete também as concepções pedagógicas que orientam as\natividades da escola. Essas relações se dão desde o currículo, em que a arquitetura\nescolar se enquadra como um elemento dele, \r-+-<)5019\nESCOLANO, 2001). A configuração de salas de aula em que as cadeiras são voltadas\na um quadro-negro e a uma mesa de professor, por exemplo, valoriza a autoridade,\nnão o indivíduo – ela interfere no relacionamento dos alunos, ao não permitir com que\nse olhe para os colegas e que se troquem ideias (KOWALTOWSKI, 2011).\nAs concepções pedagógicas referem-se à orientação da prática educacional\n(LIBÂNEO, 1992). Para este texto, considera-se a divisão delas entre dois grupos: um\nde perspectiva liberal (ou não crítica) e outro de perspectiva progressista (ou crítica).\nCada grupo divide-se em diferentes abordagens <(A@$1'\n95,17'\n ;\nA constitucionalidade atual da RFEPCT, que se dá em meados dos anos 2000,\napoia-se em uma longa trajetória histórica da educação profissional. A concepção\npedagógica então vigente – a liberal, ou não-crítica – teve seu papel questionado com\nmais força a partir do final dos anos 1990 e do início dos anos 2000. Assim, em meio\na contradições, a instituição alinhou-se a uma concepção pedagógica progressista –\ncrítica. Consideramos que as consequentes alterações na concepção pedagógica da\nRFEPCT e, por consequência, do IFC (que a integra e serviu de fonte de dados à\npesquisa), requerem uma arquitetura escolar com quesitos específicos. Assim, o\nproblema de pesquisa é: quais as especificidades da arquitetura escolar na educação\nprofissional a partir da concepção pedagógica que orienta a RFEPCT e o IFC?\nMuito embora localizem-se em plataformas como o SciELO e a BDTD dezenas\nde publicações científicas a respeito da arquitetura escolar, predominam outros\n\n[PÁG. 15]\nenfoques – em especial, o historiográfico. A arquitetura de espaços voltados à\nEducação Profissional e Tecnológica (EPT) tem sido um objeto de pesquisa pouco\nexplorado. Procura-se, neste artigo, dar visibilidade e discutir as especificidades de\num tipo de arquitetura escolar, partindo do estudo da concepção pedagógica que\norienta a RFEPCT.\nO objetivo geral desta pesquisa, portanto, é compreender as especificidades\nda arquitetura escolar na educação profissional a partir da concepção pedagógica que\norienta a RFEPCT e o IFC.\nDelimitaram-se os objetivos específicos:\n• Analisar a concepção pedagógica que passou a orientar a educação\nprofissional pública no Brasil no início dos anos 2000, em especial a RFEPCT\ne o IFC, bem como suas relações à arquitetura escolar9\n• Identificar relações entre concepções pedagógicas e arquitetura escolar no IFC9\n• Desenvolver produto educacional na forma de manual didático, que explicite a\nrelação entre características arquitetônicas e a concepção pedagógica que\norienta 5)$ *&()*9\n• Aplicar e avaliar o produto educacional, visando ao seu aperfeiçoamento.\nA pesquisa foi desenvolvida por meio da análise textual de documentos que\nrefletem as discussões ocorridas entre o início dos anos 2000 e o ano de 2007,\nperíodo que antecede a criação dos Institutos Federais. Com base nessa análise,\nbuscou-se analisar as concepções pedagógicas envolvidas e especificar quesitos\npara que os prédios escolares privilegiem a educação a que se almeja na RFEPCT. A\nmaterialização desses quesitos em produto educacional se deu por meio do\ndesenvolvimento de um manual em formato e-book (retratado no apêndice F desta\npesquisa), que passou por uma transposição dos conteúdos elencados na pesquisa\npara um curso on-line que, por sua vez, proporcionou a aplicação dos conteúdos e\nconsequente verificação da relevância do material, bem como seus eventuais ajustes\ne adições.\n\n[PÁG. 16]\n13\n\n2 REFERENCIAL TEÓRICO\n\n2.1 Arquitetura escolar e concepções pedagógicas\n\nNo Brasil, a preocupação com prédios exclusivamente escolares só apareceu\nentre o fim do século XIX e o início do século XX (DÓREA, 2013). Era uma época de\nenaltecimento de valores republicanos, com escolas ostentando símbolos dessa\nforma de governo e visando aos princípios do higienismo – corrente que se\npreocupava desde em se posicionarem as escolas longe de locais ditos viciosos da\ncidade até ao isolamento dos alunos em relação às ruas que cercavam o prédio\n\r@B!\r'-\r\r9\nincorporaram ginásios e auditórios (BENCOSTTA, 20199 CORREIA, 2013).\nTodavia, a escola ainda gravita ao redor da sala de aula. Há 200 anos se\nmodificam os conceitos de educação e as propostas pedagógicas e, com eles, mudam\nos professores, os estudantes e todos que transitam na escola, mas a estrutura do\nespaço escolar parece continuar a mesma (FARIA, 2012). Isso faz sentido quando\nobservamos que a arquitetura escolar atual nos remete a uma divisão taylorista de\nseu espaço, inserida em uma política social que controla os movimentos e os\n<)5019$7*1@1'\n;\nNos últimos 50 anos, experimentaram-se diversos novos layouts para as salas\nde aula, mas, mesmo assim, predomina na atualidade um formato ainda tradicional\n(KOWALTOWSKI, 2011). A explicação para isso pode estar relacionada ao imobilismo\narquitetônico, ao tradicionalismo didático ou ao economicismo da política educacional,\nque fazem com que mesmo uma edificação escolar centenária ainda siga servindo a\nseus fins – consideradas devidas reciclagens prediais que não alteram profundamente\n\r!\r\rC\r!<)5019$7*1@1'\n;\nNos anos 1920, as políticas transmitidas pela materialidade da arquitetura eram\naquelas voltadas a um sistema de valores de ordem, de disciplina e de vigilância,\nhavendo ainda símbolos estéticos, culturais e ideológicos. Mostra-se que a arquitetura\npode ser um programa educador, relacionando-se a um elemento do currículo, embora\ninvisível ou silencioso. E silenciosamente o espaço escolar continua transmitindo, em\nsua “planificação panóptica e taylorista” ()5019 $7*1@1'\n' p. 27), uma\npolítica social que controla movimentos e costumes. Faz parte dessa prática também\na espacialização disciplinar – disciplina da arquitetura escolar que se reflete na\n\n[PÁG. 17]\nclassificação de uma sala de acordo com graus, sexos e demais características dos\n<)5019$7*1@1'\n;\nDurante o IV Congresso Internacional de Arquitetura (Atenas, 1933), havia\norientação para que as escolas se localizassem na cidade “entre as grandes vias de\ncomunicação” ()5019$7*1@1'\n'p. 33). Assim, em posição privilegiada,\nprojetar-se-ia pela escola “seu exemplo e influência geral sobre toda a sociedade,\ncomo um edifício estrategicamente situado e dotado de uma inteligência invisível que\ninformaria culturalmente o meio humano-social que o rodeia” (idem).\nEssa prática também foi vista no Brasil. Aqui, nos anos de incipiência da\nRepública (final do século XIX e início do século XX), a escola básica era vista como\nveículo para uma desejada reconstrução nacional e única instituição capaz de\ntransformar o homem comum (DÓREA, 2013).\nConsideramos, nesta pesquisa, que diferentes currículos de ensino requerem\ncaracterísticas arquitetônicas singulares para si. Essas características podem ser\nbásicas, como a disposição do mobiliário, passando por características médias, como\no tamanho dos espaços, até características arquitetônicas avançadas, como o próprio\nestilo arquitetônico da escola. Como resultado, surgem diferenças significativa",
+    "descricao_produto_na_dissertacao": "[PÁG. 15] enfoques – em especial, o historiográfico. A arquitetura de espaços voltados à\nEducação Profissional e Tecnológica (EPT) tem sido um objeto de pesquisa pouco\nexplorado. Procura-se, neste artigo, dar visibilidade e discutir as especificidades de\num tipo de arquitetura escolar, partindo do estudo da concepção pedagógica que\norienta a RFEPCT.\nO objetivo geral desta pesquisa, portanto, é compreender as especificidades\nda arquitetura escolar na educação profissional a partir da concepção pedagógica que\norienta a RFEPCT e o IFC.\nDelimitaram-se os objetivos específicos:\n• Analisar a concepção pedagógica que passou a orientar a educação\nprofissional pública no Brasil no início dos anos 2000, em especial a RFEPCT\ne o IFC, bem como suas relações à arquitetura escolar9\n• Identificar relações entre concepções pedagógicas e arquitetura escolar no IFC9\n• Desenvolver produto educacional na forma de manual didático, que explicite a\nrelação entre características arquitetônicas e a concepção pedagógica que\norienta 5)$ *&()*9\n• Aplicar e avaliar o produto educacional, visando ao seu aperfeiçoamento.\nA pesquisa foi desenvolvida por meio da análise textual de documentos que\nrefletem as discussões ocorridas entre o início dos anos 2000 e o ano de 2007,\nperíodo que antecede a criação dos Institutos Federais. Com base nessa análise,\nbuscou-se analisar as concepções pedagógicas envolvidas e especificar quesitos\npara que os prédios escolares privilegiem a educação a que se almeja na RFEPCT. A\nmaterialização desses quesitos em produto educacional se deu por meio do\ndesenvolvimento de um manual em formato e-book (retratado no apêndice F desta\npesquisa), que passou por uma transposição dos conteúdos elencados na pesquisa\npara um curso on-line que, por sua vez, proporcionou a aplicação dos conteúdos e\nconsequente verificação da relevância do material, bem como seus eventuais ajustes\ne adições.\n\n[PÁG. 24] Esta pesquisa caracteriza-se como qualitativa e aplicada. A análise das\nespecificidades da arquitetura escolar na educação profissional e tecnológica a partir\nda concepção pedagógica que orienta a RFEPCT ancorou-se em conhecimentos\nteórico-empíricos. Ainda, por direcionar-se à criação de um produto educacional,\nevidencia-se a finalidade da pesquisa em solucionar problemas humanos – daí\ncaracterizando-se como aplicada (ZANELLA, 2013).\nA fim de identificar a nova concepção pedagógica que passou a orientar a\nRFEPCT, bem como seus possíveis desdobramentos na arquitetura escolar,\nelencaram-se diversos documentos como objeto de uma pesquisa documental. A\nseleção desses documentos (quadro 1) buscou privilegiar aqueles que justamente\nrefletiam as referidas discussões no período que antecede a criação dos Institutos\nFederais, entre o início dos anos 2000 e o ano de 2007.\n\n[PÁG. 26] arquitetura escolar e as concepções pedagógicas, foi realizada, nos mesmos moldes,\numa pesquisa documental que elencou os Planos de Desenvolvimento Institucional\n(PDIs) dos períodos de 2014 a 2018 e de 2019 a 2023. Subsidiariamente, o\nenvolvimento do autor da pesquisa com os projetos dos ambientes em que se dão as\natividades escolares proporcionou um contato com a forma com que acontecem as\ndecisões sobre as obras. A origem delas parece se dar no CODIR, o Colégio de\nDirigentes da instituição (composto pelo Reitor, pró-Reitores e diretores gerais). Assim,\nas atas das reuniões desse colegiado também foram objeto da referida pesquisa\ndocumental.\nA partir da análise decorrente da pesquisa do",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 19,
+        "texto": "teóricas que buscam compreender e orientar a prática educacional (LIBÂNEO, 1992).\nAlém de concepções – termo que será aqui adotado –, a literatura nacional e\ninternacional também aborda o tema como tendências, correntes ou paradigmas\n(LIBÂNEO, 2005).\nTrevisan (2006) entende que divisões entre correntes e tendências\npedagógicas limitam e dividem o tema. Libâneo (2005), por sua vez, considera\nconcepções pedagógicas que relativizam o conhecimento sistematizado e desconfiam\nda própria ciência. Para esta pesquisa, no entanto, considera-se a divisão que\nperpassa Libâneo (1992) e Ramos (2010), situando as concepções pedagógicas em\ndois grupos: um, de perspectiva liberal (ou não crítica) e, outro, de perspectiva\nprogressista (ou crítica). Cada grupo divide-se em diferentes manifestações: o\nprimeiro, em manifestações tradicional, - 9 !' em\nmanifestações libertadora e histórico-crítica. Essas nomenclaturas sofrem diferenças\nentre os diferentes autores, mas mantêm, em linhas gerais, suas características.\nPara Libâneo (1992) e para Ramos (2010), a concepção não crítica contribui\npara a justificação do sistema capitalista e para a privatização de meios de produção.\nÉ a concepção que marca a tra",
+        "citacoes_detectadas": [
+          "LIBÂNEO, 1992",
+          "LIBÂNEO, 2005",
+          "RAMOS, 2010, p. 98",
+          "RAMOS, 2008"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 20,
+        "texto": "ontológico do trabalho. Como reflexo disso, a marca da educação moderna nas\nsociedades ocidentais capitalistas é “(...) uma educação só para o trabalho manual e\npara os segmentos menos favorecidos, ao lado de uma educação de qualidade e\nintelectual para o outro grupo” (RAMOS, 2008, p. 2).\nSaviani (2007a, p. 154) relaciona o trabalho à educação de forma tal que não\npoderiam ser separados. Lembra-nos que, “diferentemente dos animais, que se\nadaptam à natureza, os homens têm de adaptar a natureza a si”. Esse conceito de\nadaptação da natureza pelo homem às suas necessidades é o próprio trabalho que,\nassim, torna-se essência do ser humano. No entanto, o autor observa que essa\nessência do homem não seria recebida por dádiva divina, mas sim por produção dos\npróprios homens. Há, aí, a conclusão de que, se não recebe naturalmente sua\nessência, o homem não nasce homem – e só o será quando aprender a produzir sua\nprópria existência. Sua produção será sua própria formação. Esse processo educativo\n– a educação em si – coincidiria com a origem do homem.\nHá que se ressaltar a incompatibilidade entre esse conceito de trabalho –\nvoltado à própria adaptação da natureza – e um ensino enciclopédico, q",
+        "citacoes_detectadas": [
+          "RAMOS, 2008, p. 2",
+          "RAMOS, 2008, p.\n9",
+          "RAMOS, 2008"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 21,
+        "texto": "Para aproximarmos essa discussão sobre a arquitetura escolar à educação\nprofissional e tecnológica é importante considerarmos a história da RFEPCT e do IFC.\nA história da Rede começa no início do século XX: em 23 de setembro de 1909, o\nentão presidente Nilo Peçanha edita o decreto nº 7.566 – são criadas 19 Escolas de\nAprendizes Artífices nas capitais dos estados da república (BRASIL, 1909). Neste\nperíodo sequer havia um Ministério da Educação (ele só surgiria, vinculado à saúde,\nem 1930). Assim, as referidas escolas se vinculavam ao então Ministério dos Negócios\nda Agricultura, Indústria e Comércio (BRASIL, 2009).\nA educação profissional da Rede, àquela época, tinha concepção\npredominantemente assistencialista, voltada aos ditos filhos dos desfavorecidos. Só a\npartir do final da década de 1920 há um sutil novo passo na concepção pedagógica\nda Rede: foi quando o Projeto Fidélis Reis procurou tornar obrigatório o ensino\nprofissional. O deputado mineiro que dava nome à lei conclamava o aprendizado de\numa profissão manual para todos os estratos da população. No entanto, a lei, mesmo\naprovada no Congresso Nacional, nunca foi executada (SOARES, 1995). Mais tarde\n– a partir de 1930 – o mo",
+        "citacoes_detectadas": [
+          "BRASIL, 1909",
+          "BRASIL, 2009",
+          "SOARES, 1995",
+          "RAMOS, 2014",
+          "BRASIL, 2009"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 22,
+        "texto": "Tecnológica – os CEFETs. Diversas outras unidades da Rede transformaram-se em\nCEFETs gradativamente até os anos 1990.\nA vigência predominante da concepção pedagógica liberal, que marcava a\nhistória da Rede e formava alunos segundo os desígnios do setor produtivo, acentuou-\nse com o surgimento do decreto 2.208/97 (BRASIL, 1997), uma vez que esse marco\nlegal separava a educação profissional do ensino médio. Ainda que antes do referido\ndecreto já houvesse uma proposta de EPT como formação humana integral\n(FRIGOTTO, 1991 apud NOSELLA, 200795,17'\n=), foi essa legislação que\nsuscitou diversas discussões a respeito de uma educação emancipadora. Essas\ndiscussões, durante o primeiro governo Lula, culminaram na edição do decreto\n5.154/04 (BRASIL, 2004c) e da lei 11.892/08 (BRASIL, 2008).\nDo ponto de vista de concepções pedagógicas, ganhou espaço na RFEPCT a\nconcepção crítica, conceituada no capítulo anterior, sobretudo a defesa de uma\nformação integrada, que diz respeito à “(...) integração de conhecimentos gerais e\n+%9\r8\r8'E\n\r9 (...) superar a dominação dos trabalhadores” (RAMOS, 2007, p. 551). Tal\nconcepção pedagógica passou a ser uma referência importante para os Institutos\nFederais e, en",
+        "citacoes_detectadas": [
+          "BRASIL, 1997",
+          "BRASIL, 2004c",
+          "BRASIL, 2008",
+          "RAMOS, 2007, p. 551",
+          "RAMOS, 2007"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 23,
+        "texto": "Pedro II e as escolas técnicas vinculadas às universidades federais.\nA criação dos Institutos Federais, assim a consolidação da Rede, apoia-se nas\nreferidas discussões sobre a educação. Elas encontraram terreno fértil durante o\nprimeiro governo Lula, o qual previamente havia firmado compromisso em revogar o\ndecreto 2.208/97 (RAMOS, 2007). No entanto, em se falando da arquitetura escolar,\nao passo que instituições existentes passaram a fazer parte da Rede, assim o fizeram\nseus prédios, sem uma preocupação com o encontro entre a estrutura física e as\nconcepções pedagógicas. Essa ausência se reflete nos documentos que discutem a\nnecessidade de uma nova concepção pedagógica e naqueles que discutem a Rede,\nanalisados nesta pesquisa. Trata-se de uma invisibilidade que acaba por ressaltar a\npouca atenção dada à arquitetura escolar nos debates pedagógicos.\nGeograficamente, a Rede se espalhava por todo o Brasil – para cada estado\nhavia um novo instituto federal. Alguns, no entanto, acabaram por receber dois\ninstitutos federais diferentes e independentes – ou até mais: em Minas Gerais, por\nexemplo, são cinco instituições, além do já citado CEFET. Santa Catarina foi um\ndesses estados em que f",
+        "citacoes_detectadas": [
+          "RAMOS, 2007"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 25,
+        "texto": "A obra Fundamentos político-pedagógicos dos institutos federais: diretrizes\npara uma educação profissional e tecnológica transformadora (PACHECO, 2015) foi\nanalisada de modo complementar, pelo fato de o autor ter exercido um papel político\ne intelectual central no desenvolvimento da política de expansão da RFEPCT.\nA análise textual dos documentos buscou ocorrências neles para termos\nrelacionados às concepções pedagógicas. Os referidos termos foram frutos de\ninternalizações de diversas obras abordadas no Mestrado Profissional em Educação\nProfissional e Tecnológica (ProfEPT), em etapa que antecedeu a análise textual em\nsi. Outros termos se definiram a partir da percepção de repetidas ocorrências deles\nnos próprios documentos analisados. Alguns dos exemplos de termos são: educação\nprofissional, formação integrada, currículo e trabalho como princípio educativo.\nOs termos foram organizados em planilha eletrônica, possibilitando a análise a\npartir de agrupamentos (de acordo com determinada concepção pedagógica) ou por\nnúmero de ocorrências (facilitando com que fossem identificados os termos mais\ncomuns nos documentos). Em se localizando um termo em algum dos documentos,\nregistrava-se o r",
+        "citacoes_detectadas": [
+          "PACHECO, 2015"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 28,
+        "texto": "Encontraram-se, no texto dos documentos analisados, diversas ocorrências\npara termos relacionados a diferentes concepções pedagógicas. Depreende-se,\ndesde o início da análise textual, que os documentos selecionados abordam um largo\nespectro de conteúdo, o que endossa a seleção deles. Assim também o faz a relação\nde autores mencionados: há diversos nomes consolidados pela literatura da educação\nbrasileira, como Maria Ciavatta, Paulo Freire, Gaudêncio Frigotto, Acácia Kuenzer,\nDante Moura, Marise Ramos e Dermeval Saviani, assim como nomes clássicos de\nigual eminência, como Antonio Gramsci e Karel Kosik. Trata-se de autores situados\nem uma perspectiva teórica crítica, o que indicou inicialmente uma tendência à\ncorrespondente concepção pedagógica nos documentos analisados.\nA origem das discussões que permeavam o mundo da educação profissional\nno final dos anos 1990 e no início dos anos 2000 balizava-se pelo advento do decreto\n2.208/97. Essa legislação, ao regulamentar trecho da Lei de Diretrizes e Bases da\nEducação Nacional (9.394/96), reformou o ensino profissional de forma a se\naprofundar um dualismo entre ele e o ensino médio, havendo uma divisão entre a\neducação daqueles que produz",
+        "citacoes_detectadas": [
+          "RAMOS, 2008"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 29,
+        "texto": "Aquele era um movimento condizente com a ascensão do neoliberalismo que marcava\na política contemporânea, essencialmente reduzindo a responsabilidade do papel do\nestado perante à sociedade e, assim, também perante à educação.\nO decreto de 1997 foi eventualmente revogado em prol do decreto 5.154/04 e\nda lei 11.892/08. Trata-se de legislações conciliadoras que proporcionaram avanços\nno enfrentamento ao dualismo – afinal, o decreto em questão volta a permitir a\nintegração entre ensino médio e ensino profissional. No entanto, não há que se falar\nem superação definitiva do dualismo, mesmo porque há contradições envolvidas no\nteor dessas legislações. O decreto 5.154/04, apesar de recriar cursos médios\nintegrados, ainda incorpora, mesmo que com pequenas mudanças de nomenclatura,\nmodalidades de educação profissional propostas pelo decreto de 1997 (concomitante\ne sequencial, que se tornou o subsequente). Em relação ao nível superior, o decreto\nde 2004 definiu que a educação profissional seria desenvolvida por meio de cursos e\nprogramas de educação profissional tecnológica de graduação e de pós-graduação,\nmantendo a separação em relação às outras modalidades do mesmo nível. Ainda em\nse falan",
+        "citacoes_detectadas": [
+          "RAMOS, 2007",
+          "BRASIL, 2004a, p. 8",
+          "BRASIL, 2004a",
+          "PACHECO, 2015"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "que se baliza pelo sentido ontológico do termo, a Rede aborda não apenas\nexclusivamente aquilo que os tornará técnicos, mas também aborda aquilo que os\npoderá tornar filósofos ou escritores (PACHECO, 2015). Possibilita-se com que sejam\nformados profissionais como sujeitos autônomos, que não apenas são aptos a\nresponder às demandas da base científica da produção, mas principalmente às\nquestões políticas. É proporcionada uma cidadania ativa (BRASIL, 2004b).\nEssa formação a que se refere apoia-se no trabalho como princípio educativo,\nque aqui não se refere a aprender fazendo, mas sim à produção, pelo ser humano, de\nsua realidade, apropriando-se dela e a transformando. Isso é, trata-se da mediação,\npelo trabalho, entre o homem e a realidade material e social (RAMOS, 2008). Isso\nimplica a superação da visão utilitarista e reducionista de trabalho (FRIGOTTO, 1989\napud RAMOS, 2008). Justamente por esse mérito, contrastando a uma simples\ntransmissão de conhecimento aos alunos, a pesquisa, como princípio pedagógico\n(RAMOS, 2014), proporciona uma necessária autonomia intelectual que será\nessencial mais tarde, também no trabalho (BRASIL, 2007).\nAinda, na RFEPCT, a pesquisa revela sua importân",
+        "citacoes_detectadas": [
+          "PACHECO, 2015",
+          "BRASIL, 2004b",
+          "RAMOS, 2008",
+          "RAMOS, 2014",
+          "BRASIL, 2007",
+          "PACHECO, 2015",
+          "BRASIL, 2008",
+          "PACHECO,\n2015"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 31,
+        "texto": "modo de produção da sociedade capitalista se afasta do sentido ontológico do\ntrabalho (que visa à produção da vida humana) e, assim busca transcender a\ndualidade entre o trabalho manual e o intelectual (RAMOS, 2008)9 %'\nconsideramos a conceituação da concepção pedagógica crítica, as constatações\npreviamente apresentadas revelam o encontro entre o teor dos documentos e as\npremissas dessa concepção pedagógica. Fortaleceu-se um caminho centrado na\nconcepção pedagógica crítica para a educação profissional na RFEPCT, destacando-\nse, na análise dos documentos, os seguintes aspectos: %\r !\r9 o\n\r8 \r+ -9 \r-\r -\r9 a gestão\ndemocrática e a inclusão da comunidade. Embora sejam raros os momentos em que\nos documentos façam menção direta à infraestrutura escolar, buscou-se discutir a\nseguir as possíveis implicações desses aspectos à arquitetura escolar de forma a\norientar a organização dos espaços na RFEPCT considerando uma concepção\npedagógica crítica.\nA formação integrada, entendida como a integração entre conhecimentos\ngerais e específicos e a construção do conhecimento pela mediação do trabalho\n(RAMOS, 2007), é um conceito que \"(...) sugere superar o ser humano dividido\nhistoricamente pela divi",
+        "citacoes_detectadas": [
+          "RAMOS, 2008",
+          "RAMOS, 2007",
+          "BRASIL, 2007, p. 41",
+          "RAMOS, 2008",
+          "PACHECO, 2015"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 32,
+        "texto": "porque a conjuntura da sociedade como se encontra não permite tal rompimento\n(RAMOS, 2007).\nO trabalho como princípio educativo é compreendido por meio da relação\nindissociável entre trabalho, ciência, tecnologia e cultura (BRASIL, 2007) que se torna\nelemento básico para a organização curricular da RFEPCT, definindo seus conteúdos\ne estabelecendo sua metodologia (PACHECO, 2015). Esse princípio educativo\npresente nos documentos analisados aproxima-se da concepção pedagógica crítica\npor transcender o sentido econômico em prol da relação indissociável entre trabalho,\nciência e cultura (RAMOS, 2008). Essa relação não ignora as atividades materiais e\nprodutivas, mas inclui também os processos de criação cultural que o trabalho gera,\ncomo reprodução da vida que é em seu sentido ontológico (CIAVATTA, 2005), em mais\numa relação com a concepção pedagógica crítica.\nEm se falando da arquitetura, essa relação pode ser enaltecida principalmente\nem laboratórios, em bibliotecas e nos já mencionados ambientes que possibilitem a\nvivência cultural e esportiva. Trata-se de ambientes que vão ao encontro de cada uma\ndas dimensões fundamentais de vida que estruturam a prática social –\nrespectivamente (m",
+        "citacoes_detectadas": [
+          "RAMOS, 2007",
+          "BRASIL, 2007",
+          "PACHECO, 2015",
+          "RAMOS, 2008",
+          "CIAVATTA, 2005",
+          "RAMOS, 2008",
+          "PACHECO, 2010, p. 20",
+          "PACHECO, 2015, p. 21"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 33,
+        "texto": "para o curso técnico, no ensino profissional, e um outro mundo independente para o\nensino superior – situação na qual os cursos estariam logicamente afastados. No\nentanto, mesmo sendo um quesito que fortalece a RFEPCT no enfrentamento ao\ndualismo, a verticalização pode ser reflexo de questões políticas que cercavam a\nRede à época em que se consolidava sua configuração atual – afinal, havia o debate\nsobre a transformação dos CEFETs em universidades tecnológicas e/ou em institutos\nfederais (RAMOS, 2007).\nDo ponto de vista da arquitetura, a transversalidade e a verticalização requerem\nespaços projetados de forma a privilegiar a educação de diversos graus de ensino e\ncursos diferentes. Um exemplo prático de como esses aspectos podem se refletir na\narquitetura é o investimento em um laboratório de construção civil em um campus que\noferece tanto um curso de curta duração para pedreiros quanto um curso técnico de\nnível médio de edificações e um curso superior de engenharia civil. Esse investimento\nocorreria em detrimento de, por exemplo, um laboratório de gastronomia para atender\na um único curso dessa área.\nA gestão democrática traduz-se na organização de conselhos democráticos\npara a co",
+        "citacoes_detectadas": [
+          "RAMOS, 2007",
+          "BRASIL, 2003",
+          "LIBÂNEO, 2009",
+          "RAMOS, 2008",
+          "RAMOS, 2008, p. 96-97"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "CIAVATTA, Maria. A formação integrada: a escola e o trabalho como lugares de memória e de identidade. Trabalho Necessário, Rio de Janeiro, número 3, ano3, 43 2005.",
+      "CIAVATTA, Maria. Trabalho como Princípio Educativo. Dicionário de Educação Profissional em Saúde. Rio de Janeiro: Fundação FioCruz, 2009.",
+      "LIBÂNEO, José Carlos. Democratização da escola pública: a pedagogia crítico- social dos conteúdos. São Paulo: Loyola, 1992.",
+      "LIBÂNEO, José Carlos. As Teorias Pedagógicas Modernas Revisitadas pelo Debate Contemporâneo na Educação. In LIBÂNEO, José Carlos9 7@&17' kiko (org.). Educação na era do conhecimento em rede e transdisciplinaridade. São Paulo: Alínea, 2005.",
+      "LIBÂNEO, José Carlos. Educação escolar: políticas, estrutura e organização. São Paulo: Cortez, 2009.",
+      "PACHECO, Eliezer Moreira. Os Institutos Federais: uma revolução na educação profissional e tecnológica. Natal: IFRN, 2010.",
+      "PACHECO, Eliezer Moreira. Fundamentos político-pedagógicos dos institutos federais: diretrizes para uma educação profissional e tecnológica transformadora. Natal: IFRN, 2015.",
+      "RAMOS, Marise. Reforma da educação profissional: contradições na disputa por hegemonia no regime de acumulação flexível. Trabalho, Educação e Saúde, Rio de Janeiro, v. 5, n. 3, p. 545-558, nov. 2007/fev. 2008.",
+      "RAMOS, Marise. Concepção do Ensino Médio Integrado. 2008. Disponível em: forumeja.org.br/sites/forumeja.org.br.go/files/concepcao_do_ensino_medio_integrad o5.pdf. Acesso em: 14 dez. 2021.",
+      "RAMOS, Marise. Trabalho, educação e correntes pedagógicas no Brasil: um estudo a partir da formação dos trabalhadores técnicos da saúde. Rio de Janeiro:",
+      "RAMOS, Marise. História e política da educação profissional. Curitiba: IFPR, 2014.",
+      "SOARES, Manoel de Jesus Araújo. Uma nova ética do trabalho nos anos 20. Série Documental: Relatos de Pesquisa, [S.l.], n. 33, p. 22-30, jul. 1995. Disponível em: http://rbep.inep.gov.br/ojs3/index.php/relatos/article/view/4070. Acesso em: 12 ago. 2020. 71>?' ) *8!7-9 *17& $ 7(/' 7- H 7 Institutos Federais: expansão, perspectivas e desafios. Revista Ensino Interdisciplinar, Mossoró, v. 2, n. 05, 20"
+    ]
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "id": "EPT-0002",
+  "metadados_resolvidos": {
+    "ano": 2026,
+    "autor": "Victor Meireles Aires",
+    "orientador": "Fátima Peres Zago de Oliveira",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP3"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "O USO DE MAQUETES NO PROCESSO DE APRENDIZAGEM CRÍTICA, DESENVOLVIMENTO DA PERCEPÇÃO ESPACIAL E SENSO DE ESCALA GEOMÉTRICA NO CURSO TÉCNICO EM EDIFICAÇÕES SUBSEQUENTE AO ENSINO MÉDIO DO IFC – CAMPUS FRAIBURGO",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2026/03/DISSERTACAO_VICTOR-MEIRELES-AIRES.pdf",
+    "palavras_chave": [
+      "Três Momentos Pedagógicos",
+      "Formação Integral",
+      "Omnilateralidade",
+      "Educação Crítica",
+      "EPT"
+    ],
+    "autores_referenciados": [
+      "Acácia Zeneida Kuenzer",
+      "Adilson Ribeiro de Oliveira",
+      "Adriano Pinto Gomes",
+      "Alex Júnior da Silva",
+      "Aline Santos Pereira Rodrigues",
+      "Ana Luiza Coelho Neto",
+      "Anair Araújo de Freitas Silva",
+      "Andréa Pereira Mendonça",
+      "Anny Carolina de Oliveira",
+      "Antônio Carlos Gil",
+      "Antônio Fernandes Nascimento Júnior",
+      "Antônio Joaquim Severino",
+      "Arilda Schmidt Godoy",
+      "Arlis Buhl Peres",
+      "Armando Amorim Simões",
+      "Arthur Rezende Silva",
+      "Avani Maria de Campos Corrêa",
+      "Bianca Beatriz Roqué",
+      "Branca Jurema Ponce",
+      "Carla Cristiane Silva",
+      "Carlinda Leite",
+      "Cibele Yahn de Andrade",
+      "Cidiane Figueira Cardoso",
+      "Cipriano Carlos Luckesi",
+      "Cormac Mcgrath",
+      "Criss B. Mills",
+      "Cristiano André Teixeira",
+      "Daniele Cristina Souza",
+      "Dante Henrique Moura",
+      "Deise Miranda Vianna",
+      "Demétrio Delizoicov",
+      "Denise Sayuri Oda Nampo",
+      "Dermeval Saviani",
+      "Dilvo Peruzzo",
+      "Dirceia Aparecida Silva Anjos",
+      "Domingos Leite Lima Filho",
+      "Eduardo Henrique Santos",
+      "Elizabete Rodrigues Silva",
+      "Emerson Alves de Carvalho",
+      "Emerson Augusto Medeiros",
+      "Fabrício Reimes Neves Rodrigues",
+      "Felipe Comitre",
+      "Fernanda Barros Ataídes",
+      "Fernando Luís de Sousa Correia",
+      "Frederico Braida Rodrigues de Paula",
+      "Friedrich Engels",
+      "Gabriel Kaplún",
+      "Gabriele Polato Sachinski",
+      "Gaudêncio Frigotto",
+      "Geraldo Gonçalves de Lima",
+      "Gidélia Alencar",
+      "Giovana Carla Cardoso Amorim",
+      "Guilherme Saramago de Oliveira",
+      "György Lukács",
+      "Heloisa Damasceno Diniz",
+      "Irineu Mario Colombo",
+      "Ivani Fazenda",
+      "J. Dachs",
+      "Janine Lessan",
+      "Jéssica Ragonha",
+      "Jéssica Silva Lima",
+      "José André Angotti",
+      "José Eulálio Cabral Filho",
+      "José Paulo Netto",
+      "José Roberto da Silva Júnior",
+      "José Santos Pereira",
+      "Jovana Ritter Antunes",
+      "Juan Ignácio Pozo",
+      "Juliana Rezende Torres",
+      "Júlio Emílio Diniz-Pereira",
+      "Karine Ferreira Agra",
+      "Karl Marx",
+      "Laurence Bardin",
+      "Lígia Márcia Martins",
+      "Loçandra Borges de Moraes",
+      "Lorenzo Consalez",
+      "Luciana K. Souza",
+      "Mafalda Nesi Francischett",
+      "Marcella Sarah Filgueiras Farias",
+      "Marcelo Barz",
+      "Márcio Antônio Cardoso Lima",
+      "Marco Antonio Batista Carvalho",
+      "Marco Antônio Moreira",
+      "Marco Aurélio Dias Zózimo",
+      "Maria Cecília de Souza Minayo",
+      "Maria Ciavatta",
+      "Maria do Carmo Galiazzi",
+      "Maria Lúcia Batezat Duarte",
+      "Maricéia Ana Pickler",
+      "Marília Freitas de Campos Pires",
+      "Marise Nogueira Ramos",
+      "Martin Hechinger",
+      "Matilda Liljedahl",
+      "Michel Thiollent",
+      "Mônica Ribeiro da Silva",
+      "Naomar de Almeida Filho",
+      "Nelson Studart",
+      "Nick Dunn",
+      "Ole Skovsmose",
+      "Paula Teixeira Nakamoto",
+      "Paulo Freire",
+      "Paulo Márcio Leal Menezes",
+      "Pedro Demo",
+      "Per J. Palmgren",
+      "Pura Lúcia Oliver Martins",
+      "R. Barbier",
+      "Rafael César Costa Silva",
+      "Regina Mazzocato Nacca",
+      "Renata França Marangoni",
+      "Ricardo Martucci",
+      "Rodrigo Otávio Santos",
+      "Roque Moraes",
+      "Sandra Cristina Schram",
+      "Sandro de Castro Pitano",
+      "Simone Helena Tanoue Vizioli",
+      "Sobral Sobral",
+      "Sonia de Fátima Radvanskei",
+      "Susanna Abbott",
+      "Suzana Carolina dos Santos Dutra de Macedo Costa",
+      "Suzana Nery Viana",
+      "Tatiana Regina da Silva Simão",
+      "Tiago Silva Borges",
+      "Tony Buzan",
+      "Uwe Flick",
+      "Valéria de Souza Marcelino",
+      "Vanessa da Silveira Bachmann",
+      "Vanessa Manfio",
+      "Wolfgang Knoll"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/1171701",
+    "titulo_produto": "Aprendizagem Crítica na EPT: A aplicação dos três momentos pedagógicos em um curso subsequente",
+    "titulo_produto_bruto": "APRENDIZAGEM CRÍTICA NA EPT: A APLICAÇÃO DOS TRÊS MOMENTOS PEDAGÓGICOS EM UM CURSO SUBSEQUENTE",
+    "data_publicacao": "2026-03-03",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Meireles Aires, Victor",
+        "papel": "creator"
+      },
+      {
+        "nome": "Peres Zago de Oliveira, Fátima",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1171701",
+        "url": "https://educapes.capes.gov.br/handle/capes/1171701"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Aprendizagem Crítica na EPT - Aplicação dos três momentos pedagógicos em um curso subsequente",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "livro digital"
+    ],
+    "palavras_chave_educapes": [
+      "Educação Profissional e Tecnológica (EPT)",
+      "Inovação Social",
+      "Formação Docente",
+      "Prática Pedagógica",
+      "Tecnologia Social",
+      "Mestrado Profissional em Educação Profissional e Tecnológica - PROFEPT",
+      "Produto Educacional"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "E-book / Livro Digital",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "Instituto Federal Catarinense\n Programa de Pós-graduação em Educação Profissional e Tecnológica\nCampus Blumenau\n\nVICTOR MEIRELES AIRES\n\nO USO DE MAQUETES NO PROCESSO DE APRENDIZAGEM CRÍTICA,\nDESENVOLVIMENTO DA PERCEPÇÃO ESPACIAL E SENSO DE ESCALA\nGEOMÉTRICA NO CURSO TÉCNICO EM EDIFICAÇÕES SUBSEQUENTE AO\nENSINO MÉDIO DO IFC – CAMPUS FRAIBURGO\n\nBlumenau/SC\n2026\n\nVICTOR MEIRELES AIRES\n\nO USO DE MAQUETES NO PROCESSO DE APRENDIZAGEM CRÍTICA,\nDESENVOLVIMENTO DA PERCEPÇÃO ESPACIAL E SENSO DE ESCALA\nGEOMÉTRICA NO CURSO TÉCNICO EM EDIFICAÇÕES SUBSEQUENTE AO\nENSINO MÉDIO DO IFC – CAMPUS FRAIBURGO\n\nDissertação submetida ao Programa de\nPós-graduação em Educação Profissional\ne Tecnológica, ofertado pelo Instituto\nFederal Catarinense – Campus Blumenau\npara a obtenção do título de Mestre em\nEducação Profissional e Tecnológica.\nOrientadora: Profª. Phd. Fátima Peres\nZago de Oliveira\n\nBlumenau/SC\n2026",
+    "ficha_catalografica": "[PÁG. 3]\nFICHA CATALOGRÁFICA DISSERTAÇÃO\n\n Aires, Victor Meireles\n\nA298u O uso de maquetes no processo de aprendizagem crítica, desenvolvi-\nmento da percepção espacial e senso de escala geométrica no curso técnico\nem edificações subsequente ao ensino médio do IFC – Campus Fraiburgo /\nVictor Meireles Aires ; orientadora: Fátima Peres Zago de Oliveira. -- Blume-\nnau, 2026.\n 155 p.\n\n Dissertação (mestrado) – Instituto Federal Catarinense, campus Blume-\nnau, Mestrado Profissional em Educação Profissional Tecnológica (PRO-\nFEPT), Blumenau, 2026.\n Inclui referências.\n\n 1. Educação Profissional e Tecnológica. 2. Omnilateralidade.\n3. Formação Crítica. 4. Educação Matemática. I. Oliveira, Fátima Peres Zago\nde. II. Instituto Federal Catarinense. Mestrado Profissional em Educação Pro-\nfissional e Tecnológica. III. Título.\n\nCDD: 373.246\n\nFicha catalográfica elaborada pela bibliotecária\n Shyrlei K. Jagielski Benkendorf - CRB 14/662",
+    "sumario": "",
+    "resumo": "[PÁG. 11]\nRESUMO\n\nO ensino técnico e, mais especificamente, os cursos técnicos subsequentes no Brasil,\ncaracterizam-se por terem uma educação com traços bastante tecnicistas que a cada\ndia dão mais valor às tecnologias digitais. Nos Cursos Técnicos em Edificações (CTE)\nnão é diferente, pois a adoção, nas últimas décadas, do Computer Aided-Design (CAD\n– Desenho Assistido por Computador) para a elaboração de projetos de construção\ncivil tem ocupado o currículo destes cursos. Entretanto, a migração dos antigos\ndesenhos feitos em papel para seus formatos digitais tem interferido nas ações de\nensino, uma vez que, além dos estudantes terem de aprender a utilizar os softwares\npara elaboração destes desenhos, eles também necessitam desenvolver\nconhecimentos tradicionais de projetos, como a percepção espacial e o senso de\nescala geométrica. Nesse sentido, pode-se inferir que a adoção de técnicas de ensino\nque consigam facilitar este processo de aprendizagem, associando os conhecimentos\ntradicionais às tecnologias digitais, é bem-vinda dentro dos currículos dos CTE.\nTodavia, restringir este tipo de aprendizagem a questões puramente de Racionalidade\nTécnica (RT) seria perpetuar, com o já mencionado ensino tecnicista. Logo, um dos\nmeios possíveis de buscar a superação desta abordagem tecnicista é por meio da\nassociação de uma Formação Crítica (FC) aos tradicionais métodos de ensino, ação\nesta que pode possibilitar aos estudantes maior aproximação com os princípios da\nEducação Profissional e Tecnológica (EPT). Sendo assim, esta pesquisa,\ndesenvolvida no Mestrado ProfEPT, amparou-se em autores, como Skovsmose\n(2014, 2015), que trata da Educação Matemática Crítica (EMC); Delizoicov, Angotti\ne Pernambuco (2018), que versam sobre os Três Momentos Pedagógicos (3MP);\nFreire (1981, 2022, 2024), que discute pedagogia, aprendizagem e criticização do\nconhecimento; Ciavatta (2005), Frigotto (2001, 2009, 2012, 2015), Kuenzer (1989) e\nRamos (2005, 2007), que discutem a EPT, politecnia, trabalho, educação,\nomnilateralidade e formação humana integral, entre outros. Como objetivo principal\nesta pesquisa buscou analisar os impactos da utilização de maquetes físicas de\nedificações residenciais unifamiliares na aprendizagem de forma crítica, bem como da\npercepção espacial e do senso de escala geométrica, nos estudantes da turma 2025/1\ndo CTESEM do IFC Campus Fraiburgo, entre fevereiro e dezembro de 2025. Dessa\nforma, esperou-se desenvolver juntamente com esses estudantes uma educação\nintegral, politécnica e omnilateral. A investigação utilizou a Pesquisa-ação,\nfundamentada em Thiollent (2011), como procedimento metodológico, e a Análise\nTextual Discursiva (ATD), de Moraes e Galiazzi (2016), para a análise de dados. Como\nresultados, a pesquisa possibilitou, sob um Eixo de RT, o desenvolvimento\nsignificativo da aprendizagem de escalas geométricas e da percepção espacial dos\nestudantes. Já sob um Eixo da Formação Crítica (FC), a pesquisa ampliou a visão da\nmaioria dos estudantes quanto à criticização de temas, presentes em categorias da\nATD relacionadas na pesquisa, como educação, política, economia, mercado\nimobiliário, edificações e sua relação com a segmentação social e o capitalismo, entre\noutros. Por fim, a pesquisa gerou um Produto Educacional que consiste em um e-book\nque discute tanto a RT quanto a aprendizagem por meio da RC na EPT, tomando\ncomo base os 3MP mencionados, ao mesmo tempo que traz reflexões sobre a\nformação docente dentro dos princípios balizadores da EPT.\n\nPalavras-chave: Três Momentos Pedagógicos. Formação Integral. Omnilateralidade.\nEducação Crítica. EPT.",
+    "introducao": "[PÁG. 22]\n18\n\n1 INTRODUÇÃO\n\nAs\nconstantes\nmudanças,\nonipresentes\ne\nvelozes\nda\nsociedade\ncontemporânea, a sociedade do imponderável, transformam antigas certezas em\ndúvidas, cujos edifícios teóricos da modernidade não dão conta de interpretar. Modos\nde pensar mostram-se insuficientes para o enfrentamento de questões emergentes\npresentes na vida das pessoas. É um tempo de transformações intensas, processadas\nem velocidade sem igual, de avanços velozes na tecnologia e na ciência, de\ncontrovérsias, de diversidade, de reestruturação produtiva, de redefinição das\nestruturas políticas e regulatórias internacionais.\nNo âmbito da educação, as Instituições de Ensino (IE), independentemente de\nsua esfera, têm sido frequentemente expostas e desafiadas a acompanhar e refletir\nsobre essas transformações. Na Educação Profissional e Tecnológica (EPT) não é\ndiferente e, ao mesmo tempo que se busca acompanhar o ritmo das mudanças, a EPT\nnão deve se descolar de uma construção significativa do conhecimento com os\nestudantes. Nesse sentido, é fundamental que a EPT seja delineada pela formação\nintegral dos estudantes para que estes, por meio de uma educação que seja\nlibertadora e transformadora, possam viver com o imponderável. Além disso, a EPT,\nalinhada com estes avanços da tecnologia, deve ter como base a politecnia, a\nformação omnilateral, interdisciplinar, participativa e, ao mesmo tempo, deve buscar\nalternativas que aliem uma aprendizagem significativa e crítica.\nNo que concerne à EPT, os Institutos Federais de Educação, Ciência e\nTecnologia (IFs), criados pela Lei n. 11.892/2008 e fundamentados nos pilares do\nEnsino, Pesquisa e Extensão, buscam, em sua essência, ofertar a seus estudantes\numa educação omnilateral, politécnica, crítica e reflexiva. Portanto, observa-se que os\nIFs, desde o alvorecer de sua criação, foram concebidos para ter um papel\nfundamental no processo formativo em EPT.\nJá dentre os IFs, o Instituto Federal Catarinense (IFC), cuja missão é\n“Proporcionar Educação Profissional, Científica e Tecnológica gratuita, por meio do\nEnsino, Pesquisa e Extensão, comprometida com o desenvolvimento sustentável e\ncom a formação inclusiva, integral e cidadã” (Instituto Federal Catarinense, 2024, p.\n259), também se alinha aos preceitos balizadores presentes na EPT.\nO campus Fraiburgo, localizado no meio-oeste catarinense, também\ncompartilha dos mesmos ideais do IFC, oferecendo diferentes cursos voltados à EPT\n\n[PÁG. 23]\n19\n\ne, dentre estes cursos, tem-se o Curso Técnico em Edificações Subsequente ao\nEnsino Médio (CTESEM), o qual servirá de curso base para a aplicação desta\npesquisa.\nCabe frisar que o CTESEM, por ser um curso subsequente ao ensino médio,\npossui desafios peculiares dentro da promoção da EPT, sobretudo em termos da\nformação integral e educação omnilateral. Tais peculiaridades se devem à presença,\nno Projeto Pedagógico de Curso Educação Profissional Técnica de Nível Médio\n(PPCTM) do CTESEM, de um forte caráter tecnicista que acaba, à primeira vista,\n“pendendo” o curso mais para o mercado do que para o mundo do trabalho. Contudo,\no referido PPCTM versa a respeito da formação integral, amparada na\nindissociabilidade presente no tripé Ensino, Pesquisa e Extensão, o que possibilita\nabertura para a discussão, busca e construção de uma EPT, em seu sentido mais\namplo, associando teoria e prática rumo a uma formação integral, dentro de um curso\nsubsequente.\nAinda, a formação integral pressupõe a presença de um currículo integrado,\npautado na interdisciplinaridade, entretanto, na realidade do CTESEM bem como na\nestrutura de seu PPCTM, a integração de áreas do conhecimento ainda parece\nembrionária. Já nos IFs como um todo, o ensino muitas vezes permeia pela\nmultidisciplinaridade, interdisciplinaridade ou transdisciplinaridade.\nPelas percepções de Almeida Filho (1997), a Multidisciplinaridade aparenta se\nesgotar em tentativas de trabalho conjunto dos professores, no qual as disciplinas,\nembora versem a respeito de temas comuns, cada docente as observa sobre suas\npróprias óticas, ou seja, estão próximas entre si, mas não juntas e sim justapostas. Já\na Interdisciplinaridade, muito presente dentro do IFC, “caracteriza-se pela intensidade\ndas trocas entre os especialistas e pelo grau de integração real das disciplinas no\ninterior de um mesmo projeto de pesquisa” (Fazenda, 2002, p. 51).\nPor fim, a Transdisciplinaridade dá um passo além, à medida que:\n\n[...] reside na postura de reconhecimento de que não há espaço nem tempo\nculturais privilegiados que permitam julgar e hierarquizar como mais corretos\n– ou mais certos ou mais verdadeiros – os diversos complexos de explicações\ne de convivência com a realidade.\n[...] A transdisciplinaridade é transcultural na sua essência (D’Ambrosio, 2001,\np. 79).\n\nConceituações à parte, deve-se entender que teoria e prática são indissociáveis\n\n[PÁG. 24]\n20\n\nno processo de ensino-aprendizagem, ou seja, toda reflexão teórica parte de uma\nação prática e vice-versa, sendo fundamental avaliar sua presença dentro dos\ndiferentes níveis de formação acadêmica.\nEntretanto, antes de se avançar nessas discussões creio ser importante trazer\nà tona as motivações pessoais que me conduziram ao desenvolvimento desta\npesquisa. Na condição de docente do CTESEM, desde setembro de 2023, identifiquei\nnos Componentes Curriculares ligados a desenhos e projetos que os estudantes\ntinham dificuldades de compreensão de temas, como a percepção espacial e o senso\nde escala geométrica. Essa dificuldade de trazer conceitos teóricos, como as escalas\ngeométricas, para atividades práticas, como a elaboração de desenhos e projetos,\nprejudica o processo de aprendizagem dos estudantes, ou seja, evidenciou-se um\ndescompasso entre a prática e a teoria durante o processo de ensino.\nTambém se observou descompasso em relacionar o real e o idealizado, ou\nseja, os estudantes demonstraram dificuldades em conceber projetos virtuais de\nedificações, com auxílio do software de desenho assistido por computador Autodesk\nAutoCAD, sem a presença concreta (no mundo real) destas edificações.\nDiante dos desafios de ensino e aprendizagem apresentados, conjecturei que\na adoção de elementos reais, que representassem edificações, poderia contribuir para\na aproximação entre teoria e prática, entre virtual e real e, por consequência, melhorar\na aprendizagem de escalas geométricas e da percepção espacial dos estudantes.\nNão obstante, outro ponto identificado durante as aulas foi a carência de\nreflexões mais críticas dos estudantes quanto à conjuntura da sociedade na qual\nvivem e quanto ao papel que possuem como estudantes e futuros técnicos em\nedificações dentro desta sociedade, o que vai ao encontro de questões, como\nformação integral e omnilateralidade.\nTal constatação levou-me à busca por meios de implementar formas de\nreflexão e criticização dentro das aulas, almejando assim construir uma educação que\nfosse libertadora, transformadora.\nPortanto, diante da necessidade de melhoria na concepção de projetos de\nconstrução civil via softwares de desenho digital identificados, pressupõe-se que a\nadoção de uma forma de ensino, que intensifique a relação entre teoria e prática, pode\ncontribuir para o desenvolvimento de projetos de construção civil.\nAinda, a teoria, atrelada às futuras construções projetadas, e a prática, atrelada\nà concretização real destas construções e sua relação com a sociedade na qual\n\n[PÁG. 25]\n21\n\nestarão inseridas, proporcionam a construção de conhecimentos tanto técnicos\nquanto críticos. Diante desse cenário, os estudantes podem ser motivados para os\nfuturos desafios técnico-profissionais no mundo do trabalho, além de serem motivados\na entender, de forma crítica, seu papel na sociedade, o que os conduz para uma\neducação transformadora.\nSendo assim, pode-se pressupor que a adoção de maquetes físicas de\nedificações é uma forma de desenvolver a prática durante o processo de concepção\nteórica e de elaboração digital de projetos de construção civil, promovendo assim a\nindissociabi",
+    "descricao_produto_na_dissertacao": "[PÁG. 27] b) Prototipar, em escala, maquetes físicas de 2 (dois) diferentes padrões constru-\ntivos de edificações residenciais unifamiliares, de forma a promover a partici-\npação, o trabalho em equipe e as habilidades técnicas dos estudantes;\nc) Empregar as maquetes físicas, de forma crítica e integrada, em conjunto com\no processo de elaboração digital de projetos, nos CC de Desenho Técnico e\nDesenho de Construção Civil;\nd) Avaliar a aprendizagem crítica dos estudantes do curso CTESEM acerca da\npercepção espacial e senso de escala geométrica nos CC de Desenho Técnico\ne Desenho de Construção Civil;\ne) Elaborar, como Produto Educacional (PE), um e-book que discuta, por meio da\nconstrução e aplicação de maquetes, a criticização do conhecimento técnico\nem EPT.\n\n[PÁG. 28] o problema idealizado. As principais características do Produto Educacional, sob\nforma de e-book, resultante do processo de pesquisa, são descritas na quinta seção.\nPor fim, a sexta e última seção, intitulada Considerações Finais, sintetiza as\nconclusões obtidas e as lições aprendidas durante o processo de investigação. Além\ndisso, apresenta as percepções do autor acerca das contribuições do estudo e aponta\nnovos e possíveis caminhos futuros que podem ser explorados por outros\npesquisadores.\nDiante do exposto, esta pesquisa se justifica por apresentar uma possível\nalternativa para a resolução de problemas de ordem técnica, como a percepção\nespacial e o senso de escala geométrica em projetos de construção civil, por meio da\nadoção de maquetes físicas de residências unifamiliares, com estudantes do\nCTESEM. Além disso, a aplicação de uma contextualização social das diferentes\ntipologias destas maquetes físicas, aliada às Oficinas de Estudos propostas, visa\npromover uma aprendizagem contextualizada e crítica dos estudantes participantes\nacerca de seu papel dentro da sociedade que pertencem.\nPortanto, tais considerações fazem com que a pesquisa esteja em consonância\ncom a linha de pesquisa Práticas Educativas em Educação Profissional e Tecnológica,\nque compõe o programa de Mestrado Profissional em EPT, da qual o pesquisador\nestá vinculado e adequa-se ao Macroprojeto 3 – Práticas Educativas no Currículo\nIntegrado.\n\n[PÁG. 135] questões silenciadas, como os estereótipos de gênero na construção civil e a visão\nutilitarista da educação, fossem debatidas. A percepção crítica dos estudantes sobre\na educação como agente de transformação social confirma que é possível promover\numa formação humanizadora mesmo em cursos subsequentes e com forte apelo\ntécnico.\nPara o quinto e último objetivo específico – Elaborar, como Produto\nEducacional (PE), um e-book que discuta, por meio da construção e aplicação de\nmaquetes, a criticização do conhecimento técnico em EPT –, a meta foi alcançada\ncom a materialização de um material didático que sistematiza a aplicação dos 3MP\nassociados às maquetes. Ele foi construído abordando questões relativas às\nmaquetes, ao mesmo tempo que, por meio das Oficinas de Estudos, idealizadas e\namparadas nos 3MP, possibilitaram a criticização do conhecimento em termos dos já\ndispostos princípios balizadores da EPT. O PE serve como instrumento de\nmultiplicabilidade da pesquisa, oferecendo a outros docentes ferramentas para\ninstigar a criticização do conhecimento técnico.\n Diante das constatações anteriores e da pesquisa como um todo, acreditamos\nque objetivo principal – Analisar os impactos da utilização de maquetes físicas de\nedificações residenciais unifamiliares na apren",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 22,
+        "texto": "As\nconstantes\nmudanças,\nonipresentes\ne\nvelozes\nda\nsociedade\ncontemporânea, a sociedade do imponderável, transformam antigas certezas em\ndúvidas, cujos edifícios teóricos da modernidade não dão conta de interpretar. Modos\nde pensar mostram-se insuficientes para o enfrentamento de questões emergentes\npresentes na vida das pessoas. É um tempo de transformações intensas, processadas\nem velocidade sem igual, de avanços velozes na tecnologia e na ciência, de\ncontrovérsias, de diversidade, de reestruturação produtiva, de redefinição das\nestruturas políticas e regulatórias internacionais.\nNo âmbito da educação, as Instituições de Ensino (IE), independentemente de\nsua esfera, têm sido frequentemente expostas e desafiadas a acompanhar e refletir\nsobre essas transformações. Na Educação Profissional e Tecnológica (EPT) não é\ndiferente e, ao mesmo tempo que se busca acompanhar o ritmo das mudanças, a EPT\nnão deve se descolar de uma construção significativa do conhecimento com os\nestudantes. Nesse sentido, é fundamental que a EPT seja delineada pela formação\nintegral dos estudantes para que estes, por meio de uma educação que seja\nlibertadora e transformadora, possam viver com o imponderável. Al",
+        "citacoes_detectadas": [
+          "Instituto Federal Catarinense, 2024, p.\n259"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 23,
+        "texto": "e, dentre estes cursos, tem-se o Curso Técnico em Edificações Subsequente ao\nEnsino Médio (CTESEM), o qual servirá de curso base para a aplicação desta\npesquisa.\nCabe frisar que o CTESEM, por ser um curso subsequente ao ensino médio,\npossui desafios peculiares dentro da promoção da EPT, sobretudo em termos da\nformação integral e educação omnilateral. Tais peculiaridades se devem à presença,\nno Projeto Pedagógico de Curso Educação Profissional Técnica de Nível Médio\n(PPCTM) do CTESEM, de um forte caráter tecnicista que acaba, à primeira vista,\n“pendendo” o curso mais para o mercado do que para o mundo do trabalho. Contudo,\no referido PPCTM versa a respeito da formação integral, amparada na\nindissociabilidade presente no tripé Ensino, Pesquisa e Extensão, o que possibilita\nabertura para a discussão, busca e construção de uma EPT, em seu sentido mais\namplo, associando teoria e prática rumo a uma formação integral, dentro de um curso\nsubsequente.\nAinda, a formação integral pressupõe a presença de um currículo integrado,\npautado na interdisciplinaridade, entretanto, na realidade do CTESEM bem como na\nestrutura de seu PPCTM, a integração de áreas do conhecimento ainda parece\nembrionária.",
+        "citacoes_detectadas": [
+          "Fazenda, 2002, p. 51"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 25,
+        "texto": "estarão inseridas, proporcionam a construção de conhecimentos tanto técnicos\nquanto críticos. Diante desse cenário, os estudantes podem ser motivados para os\nfuturos desafios técnico-profissionais no mundo do trabalho, além de serem motivados\na entender, de forma crítica, seu papel na sociedade, o que os conduz para uma\neducação transformadora.\nSendo assim, pode-se pressupor que a adoção de maquetes físicas de\nedificações é uma forma de desenvolver a prática durante o processo de concepção\nteórica e de elaboração digital de projetos de construção civil, promovendo assim a\nindissociabilidade entre teoria e prática. Outro ponto relevante é que, além das\nhabilidades de caráter técnico, voltadas para uma formação com viés para o trabalho\ncomo princípio educativo, é importante que os estudantes possuam uma educação\nque seja integral, unificando seus conhecimentos científicos e tecnológicos à\ncriticidade.\nDessa forma, buscou-se possibilitar a formação de um indivíduo amplo em seus\naspectos cognitivos, físicos, éticos, políticos, culturais e sociológicos e, por\nconsequência, críticos, o que se alinha a uma educação omnilateral. Tal constatação\nalinha-se a Frigotto, o qual entende que:",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 25,
+        "texto": "Educação omnilateral significa a concepção de educação ou de formação\nhumana que busca levar em consideração todas as dimensões que\nconstituem as especificidades do ser humano e as condições objetivas e\nsubjetivas reais para o seu pleno desenvolvimento humano (Frigotto, 2012,\np. 265).",
+        "citacoes_detectadas": [
+          "Frigotto, 2012,\np. 265"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 25,
+        "texto": "Diante destas considerações, esta pesquisa se estruturou sob dois pilares\nfundamentais: o técnico e o social. Sob o pilar técnico, a pesquisa buscou, por meio\nda adoção e construção de maquetes físicas de edificações residenciais unifamiliares,\nassociar prática e teoria, físico e digital, objetividade e subjetividade, na busca por\nmelhorar o processo de aprendizagem no que diz respeito à percepção espacial e\nsenso de escala geométrica dos estudantes. Já sob o pilar social, a pesquisa prezou\npela busca de uma educação que seja integral e omnilateral, posto que não basta\napenas dominar as técnicas, é fundamental que a aprendizagem seja sistêmica e\nhumanizadora.\nPortanto, esta pesquisa, embora tenha se desenvolvido em boa parte pautada\nem processos de natureza prática, não se desvinculou da teoria presente nestes\nprocessos e da reflexão crítica sobre a prática. Tal compreensão alinha-se ao exposto",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 26,
+        "texto": "por Freire (2022, p. 24), quando afirma que “A reflexão crítica sobre a prática se torna\numa exigência da relação Teoria/Prática sem a qual a teoria pode ir virando blá-blá-\nblá e a prática ativismo”, ou seja, prática e teoria são indissociáveis na busca pela\nconstrução do conhecimento criticizado.\nSendo assim, esta pesquisa objetivou reforçar a indissociabilidade entre prática\ne a teoria, tendo no trabalho como princípio educativo uma forma de promover uma\nreflexão crítica. Para tanto, adotou-se a pré-concepção e construção de maquetes\nfísicas de edificações residenciais, seguidas da elaboração de projetos digitais de uma\ndestas maquetes, contextualizando-os com os diferentes padrões de construção e\ncom a segmentação em classes de nossa sociedade. À vista disso, buscou-se\nresponder ao seguinte problema de pesquisa: Quais são os impactos da utilização\nde maquetes físicas de edificações residenciais unifamiliares na aprendizagem\nde forma crítica, bem como da percepção espacial e do senso de escala\ngeométrica, nos estudantes da turma 2025/1 do CTESEM do IFC Campus\nFraiburgo, entre fevereiro e dezembro de 2025?\nDestarte, o tema da pesquisa baseou-se na utilização de maquetes no\nproces",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 28,
+        "texto": "o problema idealizado. As principais características do Produto Educacional, sob\nforma de e-book, resultante do processo de pesquisa, são descritas na quinta seção.\nPor fim, a sexta e última seção, intitulada Considerações Finais, sintetiza as\nconclusões obtidas e as lições aprendidas durante o processo de investigação. Além\ndisso, apresenta as percepções do autor acerca das contribuições do estudo e aponta\nnovos e possíveis caminhos futuros que podem ser explorados por outros\npesquisadores.\nDiante do exposto, esta pesquisa se justifica por apresentar uma possível\nalternativa para a resolução de problemas de ordem técnica, como a percepção\nespacial e o senso de escala geométrica em projetos de construção civil, por meio da\nadoção de maquetes físicas de residências unifamiliares, com estudantes do\nCTESEM. Além disso, a aplicação de uma contextualização social das diferentes\ntipologias destas maquetes físicas, aliada às Oficinas de Estudos propostas, visa\npromover uma aprendizagem contextualizada e crítica dos estudantes participantes\nacerca de seu papel dentro da sociedade que pertencem.\nPortanto, tais considerações fazem com que a pesquisa esteja em consonância\ncom a linha de pesqu",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 29,
+        "texto": "Estruturalmente, o Referencial Teórico desta pesquisa divide-se em duas\npartes distintas: o Marco Conceitual, responsável por embasar os estudos\npreliminares e clássicos sobre a EPT; e o Marco Referencial, constituído por estudos\nmais aprofundados acerca dos temas que são objetos deste estudo.\nPara o Marco Conceitual, foram realizadas leituras preliminares, sobretudo em\ntermos do conceito de trabalho na perspectiva da EPT proposta pelo IFC (2024),\nutilizando-se de autores, como Karl Marx e Friedrich Engels, no que se refere ao\nMaterialismo Histórico e Dialético e Politecnia. Ainda, tais conhecimentos alinham-se\nao expresso por autores, como Dermeval Saviani, Gaudêncio Frigotto, Marise\nNogueira Ramos, Maria Ciavatta e Acácia Zeneida Kuenzer, que tratam de aspectos\nrelacionados\nà\nPedagogia\nHistórico-Crítica\n(PHC),\ntrabalho,\neducação,\nomnilateralidade e formação humana integral. Por fim, os autores citados são\ncomplementados por estudos de Dante Henrique Moura, Domingos Leite Lima Filho,\nMônica Ribeiro Silva, José Paulo Netto, Marcelo Barz, Dilvo Peruzzo, entre outros.\nJá o Marco Referencial visa contextualizar o CTESEM do IFC Campus\nFraiburgo em termos de suas principais característi",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "Discutir a formação do homem e, por consequência, da sociedade a qual ele\npertence, costuma envolver o estudo do trabalho, pois é pelo trabalho que o homem\nse forma, conforme afirma Saviani (2007, p. 154):",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "Tal afirmação de Saviani alinha-se ao anteriormente exposto por Marx (2013,\np. 167), que afirma: “o trabalho é, assim, uma condição de existência do homem,\nindependente de todas as formas sociais, eterna necessidade natural de mediação do\nmetabolismo entre homem e natureza e, portanto, da vida humana”, assim, o homem\ne o trabalho são indissociáveis entre si.\nAo longo do tempo, diferentes foram os autores que buscaram ou buscam\nentender o significado do termo “trabalho”, desde conceitos marxistas, passando por\naspectos históricos do pensamento ocidental da Grécia antiga, até a moderna\nburguesia capitalista. Contudo, independentemente da análise feita, há um consenso\nde que o trabalho é um elemento constituinte da essência do homem, ou seja, o\nhomem se constrói por meio do trabalho.\nNessa busca, cabe destacar autores, como Lukács (1978), que vê o trabalho\nem sua dimensão ontocriativa, o que se opõe ao trabalho nas formas históricas\nescravocratas ou servis capitalistas. Frigotto (2009, p. 175) cita que “Raymond\nWilliams, ao tratar a teoria da cultura construindo o que denominou materialismo\ncultural, indica a tarefa por fazer para entender como as categorias trabalho, emprego\ne classe",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 31,
+        "texto": "À sombra destas considerações, percebe-se o papel do trabalho e suas\ncategorias com as relações sociais que se permeiam ao longo de toda a construção\nhistórica humana.\nAinda sobre o trabalho, Frigotto (2015, p. 237) reforça que “O sentido ontológico\nou ontocriativo expressa que é no próprio processo histórico de tornar-se humano que\nsurge a atividade que denominamos de trabalho como algo específico do homem”.\nPortanto, é historicamente que, por intermédio do trabalho, o homem modifica\na natureza, ou seja, o trabalho é o elemento responsável pela formação do homem\nsocial e, por consequência, pela transformação da própria sociedade, tanto que os\nautores Netto e Barz corroboram isto, ao afirmarem que:",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 31,
+        "texto": "Já Lukács (1978) escreveu que nós, seres humanos, diferentemente dos\nanimais, podemos criar e recriar nossa existência por meio da ação consciente de\nnosso trabalho. Indo ao encontro disso, Marx (2004) aborda o aspecto da dupla\ncentralidade do trabalho, ora como valor de uso e mantenedor da vida, ora como\nprincípio educativo. Portanto, “Nessa concepção de trabalho também está implícito o\nconceito ontológico de propriedade – intercâmbio material entre o ser humano e a\nnatureza, para poder manter a vida humana” (Frigotto, 2001, p. 73).\nFrigotto também procura conceituar a propriedade em seu conceito ontológico\ncomo sendo o direito que o ser humano, em comum acordo com seus pares, possui\nde se apropriar da natureza e dos bens que produz, tanto de forma física e biológica\nquanto social, cultural, afetiva e simbólica.\nPercebe-se esta dualidade do trabalho e sua relação direta com a natureza\natrelada ao conhecimento e sobrevivência responsáveis pela formação e\ntransformação do próprio homem. Ainda, sobre o trabalho e suas dimensões, Frigotto\nreforça que:",
+        "citacoes_detectadas": [
+          "Frigotto, 2001, p. 73"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "FAZENDA, Ivani. Integração e interdisciplinaridade no ensino brasileiro: efetividade ou ideologia. 5. ed. São Paulo: Loyola, 2002.",
+      "FRIGOTTO, Gaudêncio. A polissemia da categoria trabalho e a batalha das ideias nas sociedades de classe. Revista brasileira de Educação, v. 14, p. 168-194, 2009.",
+      "FRIGOTTO, Gaudêncio; CIAVATTA, Maria; RAMOS, Marise Nogueira. Ensino médio integrado: concepções e contradições. São Paulo: Cortez, 2005.",
+      "FRIGOTTO, Gaudêncio. Contexto e sentido ontológico, epistemológico e político da inversão da relação educação e trabalho para trabalho e educação. Revista Contemporânea de Educação, v. 10, n. 20, p. 228-248, 2015.",
+      "FRIGOTTO, Gaudêncio. Educação e trabalho: bases para debater a Educação Profissional Emancipatória. Perspectiva, Florianópolis. v. 19, n. 1, p. 71-87, jan./jun. 2001.",
+      "FRIGOTTO, Gaudêncio. Educação Omnilateral. In: CALDART, R. S. et al. (org.). Dicionário da Educação do Campo. Rio de Janeiro, São Paulo: Escola Politécnica Joaquim Venâncio, Expressão Popular, 2012.",
+      "INSTITUTO FEDERAL CATARINENSE. Campus Fraiburgo. Projeto Pedagógico do Curso – Educação Profissional Técnica de Nível Médio (PPCTM) – Curso Técnico em Edificações Subsequente ao Ensino Médio. Fraiburgo: IFC - Campus Fraiburgo, 2022. Disponível em: https://edificacoes.fraiburgo.ifc.edu.br/wp- 137 content/uploads/sites/24/2019/11/PPC-2022-T%C3%A9cnico-em- Edifica%C3%A7%C3%B5es.pdf. Acesso em: 2 ago.",
+      "INSTITUTO FEDERAL CATARINENSE. IFC recebe doação de terreno federal para construção do novo Campus Mafra. Disponível em: https://ifc.edu.br/noticia- geral/ifc-recebe-doacao-de-terreno-federal-para-construcao-do-novo-campus-mafra/. Acesso em: 2 jan. 2025.",
+      "INSTITUTO FEDERAL CATARINENSE. Plano de Desenvolvimento Institucional – PDI 2024-2028 do Instituto Federal Catarinense. 2024. Disponível em: https://pdi.ifc.edu.br/wp-content/uploads/sites/80/2024/01/Resolucao-03.2024-IFC- Aprova-PDI-2024-2028-Anexo.pdf. Acesso em: 2 ago. 2024."
+    ]
+  }
+}

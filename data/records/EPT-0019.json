@@ -1,0 +1,171 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0019",
+  "ano": 2025,
+  "autor": "Rafael Vinícius Martins",
+  "orientador": "Eduardo Augusto Werneck Ribeiro",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP1",
+  "dissertacao": {
+    "titulo": "SABERES COMPLEMENTARES PARA A FORMAÇÃO DE DOCENTES BACHARÉIS NA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA (EPT)",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/07/DISSERTACAO-E-PRODUTO-EDUCACIONAL_RAFAEL-VINICIUS-MARTINS-2.pdf",
+    "resumo": "Como aspectos distintivos da condição humana, trabalho e educação são, até os dias atuais,\nobjetos de profundas análises. Em especial, o trabalho do professor como profissional da\neducação suscita, igualmente, intenso debate, inclusive a respeito das questões relativas à\nformação docente. Em uma realidade onde é cada vez mais comum e incentivada uma\neducação básica integrada ao ensino técnico, torna-se natural a admissão de professores\noriundos de bacharelados, cursos que não contemplam em sua formação a dimensão\npedagógica. Para subsidiar ações que visam remediar tal carência, é fundamental a\nimplementação consciente e intencional de programas eficazes de formação continuada que\natendam a essa especificidade dos profissionais docentes. Este trabalho tem por objetivo a\ndiscussão dessa problemática, e a proposta de um produto educacional em forma de e-book\ndestinado a educadores atuantes na EPT, que aborda três de seus princípios fundamentais -\nFormação Humana Integral, Interdisciplinaridade e Indissociabilidade das Dimensões do\nProcesso Educativo, com o intuito de contribuir para a construção de uma atuação profissional\nconsciente desse público.\nPalavras-chave: Educação. Formação Docente. Formação Integral. Interdisciplinaridade.\nIndissociabilidade.",
+    "palavras_chave": [
+      "Educação",
+      "Formação Docente",
+      "Formação Integral",
+      "Interdisciplinaridade",
+      "Indissociabilidade"
+    ],
+    "autores_referenciados": [
+      "A. C. Alonzo",
+      "A. Pérez Gómez",
+      "A. S. Sousa",
+      "Acácia Zeneida Kuenzer",
+      "Alderlândia da Silva Maciel",
+      "Antônio Carlos Gil",
+      "Antonio Gramsci",
+      "Arilda Schmidt Godoy",
+      "C. Kuhn",
+      "Carlos A. Mourão Júnior",
+      "Carlos Marcelo",
+      "Cyntia L. Rosário",
+      "D. Prata",
+      "Dante Henrique Moura",
+      "Délcio Vieira Salomon",
+      "Dermeval Saviani",
+      "Domingos Leite Lima Filho",
+      "Edilza A. Damascena",
+      "Eliezer Moreira Pacheco",
+      "Fernando C. B. Andrade",
+      "Filomena Mgsc Moita",
+      "Francisco Pires de Júnior",
+      "G. Barbosa",
+      "G. G. Freire",
+      "Gaudêncio Frigotto",
+      "Ivani Fazenda",
+      "J. Paviani",
+      "Jair José Maldaner",
+      "Jerry Adriano Raimundo",
+      "José Ângelo Gariglio",
+      "José Carlos Libâneo",
+      "Karl Marx",
+      "L. H. Alves",
+      "Marcia de Souza Hobold",
+      "Maria Ciavatta",
+      "Mario Alighiero Manacorda",
+      "Marise Nogueira Ramos",
+      "Marli André",
+      "Maurice Tardif",
+      "Maurício Cesar Vitória Fagundes",
+      "Mônica Ribeiro da Silva",
+      "Newton Duarte",
+      "Nicole C. Faria",
+      "O. Pombo",
+      "O. Zlatkin-Troitschanskaia",
+      "Oswaldo Alonso Rays",
+      "P. Andersson",
+      "Patrícia M. Stryhalski",
+      "Paula Regina Corrêa",
+      "Paulo Freire",
+      "Pedro Demo",
+      "Roberta Pasqualli",
+      "Rosaline Barbour",
+      "Rosita Edler Carvalho",
+      "S. O. Oliveira",
+      "Suzana Burnier",
+      "T. Costa",
+      "Tatiane Cristina dos Santos da Maia",
+      "Vera Regina Casari Boccato",
+      "Verônica Gesser"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto cita Saviani (2007) e Frigotto (2001) sobre formação humana integral e interdisciplinaridade, fundamentos da Pedagogia Histórico-Crítica. A referência direta à formação como processo de humanização e crítica ao capitalismo confirma a matriz teórica.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 17,
+          "trecho": "A formação humana integral, na interdisciplinaridade e na indissociabilidade das dimensões do processo educativo.",
+          "referencia_correspondente": "SAVIANI, Dermeval. Trabalho e educação: fundamentos ontológicos e históricos."
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 19,
+          "trecho": "A educação, dever da família e do Estado, inspirada nos princípios de liberdade e nos ideais de solidariedade humana.",
+          "referencia_correspondente": "SAVIANI, Dermeval; DUARTE, Newton (Orgs.). Pedagogia histórico-crítica e a luta de classes na educação escolar."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "FORMAÇÃO INTEGRAL INTERDISCIPLINARIDADE INDISSOCIABILIDADE NA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA",
+    "tipo": "material_didatico_instrucional",
+    "formato": "E-book / Livro Digital",
+    "link": "https://educapes.capes.gov.br/handle/capes/1001164",
+    "publico_alvo": [
+      "docentes_professores"
+    ],
+    "nivel_aplicacao": "Educação Profissional e Tecnológica",
+    "palavras_chave": [
+      "EPT",
+      "PROFEPT"
+    ],
+    "data_publicacao": "2025",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Martins, Rafael",
+        "papel": "creator"
+      },
+      {
+        "nome": "Ribeiro, Eduardo",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1001164",
+        "url": "https://educapes.capes.gov.br/handle/capes/1001164"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "documento",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "FORMAÇÃO CONTINUADA DOCENTE PARA A EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0019 2025 rafael vinicius martins eduardo augusto werneck ribeiro ifc blumenau lp1 mp1 saberes complementares para a formacao de docentes bachareis na educacao profissional e tecnologica ept como aspectos distintivos da condicao humana trabalho e educacao sao ate os dias atuais objetos de profundas analises em especial o trabalho do professor como profissional da educacao suscita igualmente intenso debate inclusive a respeito das questoes relativas a formacao docente em uma realidade onde e cada vez mais comum e incentivada uma educacao basica integrada ao ensino tecnico torna se natural a admissao de professores oriundos de bacharelados cursos que nao contemplam em sua formacao a dimensao pedagogica para subsidiar acoes que visam remediar tal carencia e fundamental a implementacao consciente e intencional de programas eficazes de formacao continuada que atendam a essa especificidade dos profissionais docentes este trabalho tem por objetivo a discussao dessa problematica e a proposta de um produto educacional em forma de e book destinado a educadores atuantes na ept que aborda tres de seus principios fundamentais formacao humana integral interdisciplinaridade e indissociabilidade das dimensoes do processo educativo com o intuito de contribuir para a construcao de uma atuacao profissional consciente desse publico palavras chave educacao formacao docente formacao integral interdisciplinaridade indissociabilidade pedagogia historico critica formacao integral interdisciplinaridade indissociabilidade na educacao profissional e tecnologica material didatico instrucional e book livro digital educacao profissional e tecnologica educacao formacao docente formacao integral interdisciplinaridade indissociabilidade ept profept a c alonzo a perez gomez a s sousa acacia zeneida kuenzer alderlandia da silva maciel antonio carlos gil antonio gramsci arilda schmidt godoy c kuhn carlos a mourao junior carlos marcelo cyntia l rosario d prata dante henrique moura delcio vieira salomon dermeval saviani domingos leite lima filho edilza a damascena eliezer moreira pacheco fernando c b andrade filomena mgsc moita francisco pires de junior g barbosa g g freire gaudencio frigotto ivani fazenda j paviani jair jose maldaner jerry adriano raimundo jose angelo gariglio jose carlos libaneo karl marx l h alves marcia de souza hobold maria ciavatta mario alighiero manacorda marise nogueira ramos marli andre maurice tardif mauricio cesar vitoria fagundes monica ribeiro da silva newton duarte nicole c faria o pombo o zlatkin troitschanskaia oswaldo alonso rays p andersson patricia m stryhalski paula regina correa paulo freire pedro demo roberta pasqualli rosaline barbour rosita edler carvalho s o oliveira suzana burnier t costa tatiane cristina dos santos da maia vera regina casari boccato veronica gesser",
+    "termos_unificados": [
+      "Educação",
+      "Formação Docente",
+      "Formação Integral",
+      "Interdisciplinaridade",
+      "Indissociabilidade",
+      "EPT",
+      "PROFEPT"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

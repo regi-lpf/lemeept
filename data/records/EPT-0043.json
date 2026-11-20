@@ -1,0 +1,160 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0043",
+  "ano": 2024,
+  "autor": "Samara dos Santos",
+  "orientador": "Jorge da Cunha Dutra",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP2",
+  "dissertacao": {
+    "titulo": "EDUCAÇÃO DE SURDOS NO INSTITUTO FEDERAL CATARINENSE: POR UMA EDUCAÇÃO EMANCIPADORA NO ENSINO TÉCNICO INTEGRADO AO ENSINO MÉDIO",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/10/Dissertacao-Samara.pdf",
+    "resumo": "Este estudo faz parte do Programa de Mestrado Profissional em Educação\nProfissional e Tecnológica (ProfEPT), está vinculado à linha de pesquisa de Práticas\nEducativas em Educação Profissional e Tecnológica (EPT) e foca na educação de\nestudantes Surdos no Instituto Federal Catarinense (IFC). Inserido no Macroprojeto\n2 – Inclusão e diversidade em espaços formais e não formais de ensino na EPT, o\nobjetivo geral foi elaborar um guia digital a partir da análise das percepções de\nSurdos vinculados ao ensino técnico integrado ao ensino médio do IFC, sinalizantes\nem Libras, visando a melhoria na educação de Surdos na EPT. A pesquisa é de\nnatureza aplicada, abordagem qualitativa e do tipo exploratória, desenvolvida por\nmeio de entrevistas semiestruturadas e submetidas a análise de discurso. Foram\nanalisados recortes discursivos de três estudantes Surdos matriculados, um egresso\ne dois servidores Surdos do IFC, todos inseridos no contexto sócio-histórico da\ninclusão educacional em escolas regulares e no IFC vinculados ao ensino técnico\nintegrado\nao\nmédio.\nConstatou-se\nque\nos\nestudantes apresentam distorção\nidade/série e todos possuem formações imaginárias perpassando, entre elas, a\nposição de Surdos de famílias ouvintes e estudantes em salas de aula de ouvintes,\nespaços onde a Língua Brasileira de Sinais (Libras) não possui o mesmo status que\na língua portuguesa, dessa forma, mantendo-os distantes de modelos identitários de\nreferências Surdas. Os estudantes trouxeram diversas condições de produção, como\na falta de conhecimento da Libras por parte dos ouvintes, dificuldade com conteúdos\ncomplexos em português, limitações na compreensão de textos longos, preferência\npor permanecer em silêncio nas aulas, desafios em se adaptar ao formato das aulas\npara ouvintes, dependência de intérpretes, entre outros. Essas características\nrefletem um sentimento comum entre eles, de desconforto e sensação de não\npertencimento ao ambiente educacional, indicando uma falta de afirmação de sua\nidentidade Surda e afastamento de um protagonismo Surdo. A pesquisa culminou na\ncriação de um produto educacional no formato de guia digital bilíngue em Libras e\nportuguês, intitulado “Orientações gerais para estudantes Surdos e servidores do\nEnsino Técnico Integrado ao Médio do IFC”. Este guia aborda temas relevantes para\naprimorar a educação de Surdos no contexto da EPT do IFC. Com as informações\npresentes no guia, os estudantes Surdos têm autonomia para saber onde buscar\nrespostas sobre as ações presentes na instituição, favorecendo sua participação\nefetiva. Para os servidores, o guia traz orientações para qualificar sua atuação e\ncompreensão em relação aos estudantes Surdos. O produto foi amplamente aceito\npelos\nusuários,\ncom\navaliações\ndestacando\nsua acessibilidade, clareza das\ninformações e organização do conteúdo, ressaltando sua importância na promoção\ndo protagonismo dos estudantes Surdos, proporcionando assim uma melhoria na\neducação de Surdos na EPT, em direção a uma autonomia e emancipação desses\nsujeitos. Os resultados da pesquisa apontam para possibilidades de replicar o\nmaterial em outros níveis de ensino, bem como direcionar futuras pesquisas para\ninvestigar a viabilidade e os benefícios de introduzir classes bilíngues para Surdos\nna EPT.\nPalavras-Chave:\nEducação\nProfissional\ne\nTecnológica.\nSurdos.\nEducação\nEmancipadora. Instituto Federal Catarinense.",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Surdos",
+      "Educação Emancipadora",
+      "Instituto Federal Catarinense"
+    ],
+    "autores_referenciados": [
+      "Adriany de Ávila Melo Sampaio",
+      "Alastair Pennycook",
+      "André Ribeiro Reichert",
+      "Antoni Zabala",
+      "Antônio Carlos Gil",
+      "Beatriz Ignatius Nogueira Soares",
+      "Boaventura de Sousa Santos",
+      "Carlos Henrique Rodrigues",
+      "Christian Laville",
+      "Cladecir Alberto Schenkel",
+      "Claudia Pereira Dutra",
+      "Cleber Cristiano Prodanov",
+      "Cloves Alexandre de Castro",
+      "Cristiane Albano Marquetti",
+      "Dermeval Saviani",
+      "Djamila Ribeiro",
+      "Eni P. Orlandi",
+      "Ernani Cesar de Freitas",
+      "Eva Maria Lakatos",
+      "Ewerton Carlos Marques",
+      "Francisco Horácio Pereira de Oliveira",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "Gildete da Silva Amorin",
+      "Gladis Dalcin",
+      "Gladis Perlin",
+      "Humberto Luis de Cesaro",
+      "Jean Dionne",
+      "Karin Strobel",
+      "Keller Batista de Souza",
+      "Margareth Kayser Pereira",
+      "Maria Ciavatta",
+      "Marianne Rossi Stumpf",
+      "Marina de Andrade Marconi",
+      "Marisa Dias Lima",
+      "Marise Nogueira Ramos",
+      "Melissa Rossana de Oliveira Menezes",
+      "Neri da Silva Xavier",
+      "Patrícia Luiza Rezende",
+      "Paulo Freire",
+      "Reginaldo Leandro Plácido",
+      "Ricardo Antunes",
+      "Ronice Müller de Quadros",
+      "Rosa Maria da Silva",
+      "Sérgio Augusto Freire de Souza",
+      "Sílvia Andreis-Witkoski",
+      "Sinfree Makoni",
+      "Teresa Cristina Leança Soares Alves",
+      "Timótheo Machado Henrique"
+    ],
+    "base_epistemologica": {
+      "valor": "Educação Libertadora / Freireana",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explora educação emancipadora e formação integral, citando Freire (1987) e discutindo práticas pedagógicas que promovem protagonismo Surdo.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 40,
+          "trecho": "A educação emancipadora para Surdos busca promover uma formação integral e libertadora, que permita aos estudantes surdos desenvolver uma consciência crítica sobre sua própria realidade.",
+          "referencia_correspondente": "FREIRE, Paulo. Pedagogia do oprimido. 13. ed. Rio de Janeiro: Paz e Terra, 1987."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Orientações gerais para estudantes Surdos e servidores do Ensino Técnico Integrado ao Médio do IFC",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Guia",
+    "link": "https://educapes.capes.gov.br/handle/capes/747436",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "tecnicos_profissionais_educacao"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Surdos",
+      "Educação Emancipadora",
+      "Instituto Federal Catarinense",
+      "Mestrado Profissional em Educação Profissional Tecnológica (PROFEPT)"
+    ],
+    "data_publicacao": "2024-05",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense - IFC Campus Blumenau",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Santos, Samara dos",
+        "papel": "creator"
+      },
+      {
+        "nome": "Dutra, Jorge da Cunha",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/747436",
+        "url": "https://educapes.capes.gov.br/handle/capes/747436"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://guiasurdosifc.my.canva.site/orientacoesgerais",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Roteiro dos vídeos do PE: Orientações gerais para estudantes Surdos e servidores do Ensino Técnico Integrado ao Médio do IFC",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "ORIENTAÇÕES GERAIS PARA ESTUDANTES SURDOS E SERVIDORES DO ENSINO TÉCNICO INTEGRADO AO MÉDIO DO IFC",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "portal"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0043 2024 samara dos santos jorge da cunha dutra ifc blumenau lp1 mp2 educacao de surdos no instituto federal catarinense por uma educacao emancipadora no ensino tecnico integrado ao ensino medio este estudo faz parte do programa de mestrado profissional em educacao profissional e tecnologica profept esta vinculado a linha de pesquisa de praticas educativas em educacao profissional e tecnologica ept e foca na educacao de estudantes surdos no instituto federal catarinense ifc inserido no macroprojeto 2 inclusao e diversidade em espacos formais e nao formais de ensino na ept o objetivo geral foi elaborar um guia digital a partir da analise das percepcoes de surdos vinculados ao ensino tecnico integrado ao ensino medio do ifc sinalizantes em libras visando a melhoria na educacao de surdos na ept a pesquisa e de natureza aplicada abordagem qualitativa e do tipo exploratoria desenvolvida por meio de entrevistas semiestruturadas e submetidas a analise de discurso foram analisados recortes discursivos de tres estudantes surdos matriculados um egresso e dois servidores surdos do ifc todos inseridos no contexto socio historico da inclusao educacional em escolas regulares e no ifc vinculados ao ensino tecnico integrado ao medio constatou se que os estudantes apresentam distorcao idade serie e todos possuem formacoes imaginarias perpassando entre elas a posicao de surdos de familias ouvintes e estudantes em salas de aula de ouvintes espacos onde a lingua brasileira de sinais libras nao possui o mesmo status que a lingua portuguesa dessa forma mantendo os distantes de modelos identitarios de referencias surdas os estudantes trouxeram diversas condicoes de producao como a falta de conhecimento da libras por parte dos ouvintes dificuldade com conteudos complexos em portugues limitacoes na compreensao de textos longos preferencia por permanecer em silencio nas aulas desafios em se adaptar ao formato das aulas para ouvintes dependencia de interpretes entre outros essas caracteristicas refletem um sentimento comum entre eles de desconforto e sensacao de nao pertencimento ao ambiente educacional indicando uma falta de afirmacao de sua identidade surda e afastamento de um protagonismo surdo a pesquisa culminou na criacao de um produto educacional no formato de guia digital bilingue em libras e portugues intitulado orientacoes gerais para estudantes surdos e servidores do ensino tecnico integrado ao medio do ifc este guia aborda temas relevantes para aprimorar a educacao de surdos no contexto da ept do ifc com as informacoes presentes no guia os estudantes surdos tem autonomia para saber onde buscar respostas sobre as acoes presentes na instituicao favorecendo sua participacao efetiva para os servidores o guia traz orientacoes para qualificar sua atuacao e compreensao em relacao aos estudantes surdos o produto foi amplamente aceito pelos usuarios com avaliacoes destacando sua acessibilidade clareza das informacoes e organizacao do conteudo ressaltando sua importancia na promocao do protagonismo dos estudantes surdos proporcionando assim uma melhoria na educacao de surdos na ept em direcao a uma autonomia e emancipacao desses sujeitos os resultados da pesquisa apontam para possibilidades de replicar o material em outros niveis de ensino bem como direcionar futuras pesquisas para investigar a viabilidade e os beneficios de introduzir classes bilingues para surdos na ept palavras chave educacao profissional e tecnologica surdos educacao emancipadora instituto federal catarinense educacao libertadora freireana orientacoes gerais para estudantes surdos e servidores do ensino tecnico integrado ao medio do ifc material didatico instrucional guia ensino medio integrado educacao profissional e tecnologica surdos educacao emancipadora instituto federal catarinense mestrado profissional em educacao profissional tecnologica profept adriany de avila melo sampaio alastair pennycook andre ribeiro reichert antoni zabala antonio carlos gil beatriz ignatius nogueira soares boaventura de sousa santos carlos henrique rodrigues christian laville cladecir alberto schenkel claudia pereira dutra cleber cristiano prodanov cloves alexandre de castro cristiane albano marquetti dermeval saviani djamila ribeiro eni p orlandi ernani cesar de freitas eva maria lakatos ewerton carlos marques francisco horacio pereira de oliveira gabriel kaplun gaudencio frigotto gildete da silva amorin gladis dalcin gladis perlin humberto luis de cesaro jean dionne karin strobel keller batista de souza margareth kayser pereira maria ciavatta marianne rossi stumpf marina de andrade marconi marisa dias lima marise nogueira ramos melissa rossana de oliveira menezes neri da silva xavier patricia luiza rezende paulo freire reginaldo leandro placido ricardo antunes ronice muller de quadros rosa maria da silva sergio augusto freire de souza silvia andreis witkoski sinfree makoni teresa cristina leanca soares alves timotheo machado henrique",
+    "termos_unificados": [
+      "Educação Profissional e Tecnológica",
+      "Surdos",
+      "Educação Emancipadora",
+      "Instituto Federal Catarinense",
+      "Mestrado Profissional em Educação Profissional Tecnológica (PROFEPT)"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "id": "EPT-0051",
+  "metadados_resolvidos": {
+    "ano": 2024,
+    "autor": "Igor de Oliveira Insaurriaga Silva",
+    "orientador": "Juliene Marques Bogo",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP3"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "EGRESSOS DO ENSINO MÉDIO INTEGRADO DO IFC: ANÁLISE DOS RELATÓRIOS DE ACOMPANHAMENTO",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/07/Dissertacao-Igor.pdf",
+    "palavras_chave": [
+      "Egresso",
+      "Ensino Médio Integrado",
+      "Instituto Federal Catarinense"
+    ],
+    "autores_referenciados": [
+      "Ada Raquel da Fonseca Vasconcelos",
+      "Adilson Cesar de Araujo",
+      "Alessandra Nitschke",
+      "Antônio Carlos Gil",
+      "Antônio de Souza Machado",
+      "Antonio Thiago Benedete Silva",
+      "Avaetê de Lunetta e Rodrigues Guerra",
+      "Caroline da Silva Torres",
+      "Célia Regina Appio",
+      "Christiani Bortoloto Lopes",
+      "Cipriano Carlos Luckesi",
+      "Claudimara Cassoli Bortoloto",
+      "Cláudio Nei Nascimento da Silva",
+      "Cristiane Rodrigues de Freitas",
+      "Daniele dos Santos Rosa",
+      "Dante Henrique Moura",
+      "Dayvison Bandeira de Moura",
+      "Dermeval Saviani",
+      "Domingos Leite Lima Filho",
+      "Eder Marcio Araujo Sobrinho",
+      "Eliezer Moreira Pacheco",
+      "Erik Gregersen",
+      "Etiene Santiago Carneiro",
+      "Fábio Rauen",
+      "Gaudêncio Frigotto",
+      "Georges Souto Rocha",
+      "Geraldo Ribas Machado",
+      "Izilene Conceição Amaro Ewald",
+      "James Terence Coulter Wright",
+      "Jaqueline Moll",
+      "Jeferson della Boscatto",
+      "Joana Alexandre",
+      "José Anglada Rivera",
+      "José Carlos Libâneo",
+      "Lisiane Bender da Silveira",
+      "Luciana Karine de Souza",
+      "Luis Lourenço",
+      "Marcel Proust",
+      "Maria Amélia do Rosario Santoro Franco",
+      "Maria Ciavatta",
+      "Maria de Lourdes da Silva Marques Ferreira",
+      "Maria José Andrade",
+      "Maria Raimunda Lima Valle",
+      "Marise Nogueira Ramos",
+      "Marli André",
+      "Menga Lüdke",
+      "Mônica Ribeiro da Silva",
+      "Nádia Maciel Falcão",
+      "Nieysila Simara da Silva Castro Borges",
+      "Paulo Freire",
+      "Renata Giovinazzo Spers",
+      "Roberto Hernández Sampieri",
+      "Ronaldo Marcos de Lima Araujo",
+      "Rosa Oliveira Marins Azevedo",
+      "Sara Ramos",
+      "Shiderlene Vieira Almeida",
+      "Shirlei Pereira de Souza",
+      "Soraya Farias Aquino",
+      "Valdelino de Carvalho Silva"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/748196",
+    "titulo_produto": "Navegando no Caminho do Conhecimento: Um Guia para Estudantes do Ensino Médio Integrado",
+    "titulo_produto_bruto": "NAVEGANDO NO CAMINHO DO CONHECIMENTO: UM GUIA PARA ESTUDANTES DO EMI",
+    "data_publicacao": "2024-04-18",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Silva, IGOR DE OLIVEIRA INSAURRIAGA",
+        "papel": "creator"
+      },
+      {
+        "nome": "Bogo, Juliene Marques",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/748196",
+        "url": "https://educapes.capes.gov.br/handle/capes/748196"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "FOLDER - Navegando",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "texto"
+    ],
+    "palavras_chave_educapes": [
+      "Portal do Egresso",
+      "Ensino Médio Integrado",
+      "Trajetória Formativa",
+      "Construção Profissional",
+      "Mundo do Trabalho",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica - ProfEPT",
+      "Produto Educacional resultado de pesquisa de dissertação de Mestrado."
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Folder / Panfleto",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\n\nIGOR DE OLIVEIRA INSAURRIAGA SILVA\n\nEGRESSOS DO ENSINO MÉDIO INTEGRADO DO IFC: ANÁLISE DOS\nRELATÓRIOS DE ACOMPANHAMENTO\n\nBlumenau/SC\n2024\n\nIGOR DE OLIVEIRA INSAURRIAGA SILVA\n\nEGRESSOS DO ENSINO MÉDIO INTEGRADO DO IFC: ANÁLISE DOS\nRELATÓRIOS DE ACOMPANHAMENTO\n\nDissertação submetida ao Programa de Pós-\ngraduação\nem\nEducação\nProfissional\ne\nTecnológica, ofertado pelo campus Blumenau do\nInstituto Federal Catarinense, como parte dos\nrequisitos para a obtenção do título de Mestre em\nEducação Profissional e Tecnológica.\n\nOrientadora: Profa. Juliene Marques Bogo, Dra.\n\nBlumenau/SC\n2024",
+    "ficha_catalografica": "",
+    "sumario": "[PÁG. 13]\nSUMÁRIO\n\nAPRESENTAÇÃO\n13\n1. INTRODUÇÃO\n15\n2. REFERENCIAL TEÓRICO\n21\n2.1 CONCEPÇÃO DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA\nVINCULADA À PERSPECTIVA DA FORMAÇÃO INTEGRAL\n21\n2.2 POLÍTICA DE ACOMPANHAMENTO AO EGRESSO\n25\n3. METODOLOGIA\n29\n4. RESULTADOS E DISCUSSÕES\n35\n4.1 ANÁLISE DOS DADOS\n36\n4.2 PRODUTO EDUCACIONAL A PARTIR DA ANÁLISE REALIZADA\n42\n5. CONSIDERAÇÕES FINAIS\n50\nREFERÊNCIAS\n52\nAPÊNDICE A – PRODUTO EDUCACIONAL\n58\nAPÊNDICE B – QUESTIONÁRIO DE AVALIAÇÃO DO PE\n61\nANEXO A – QUESTIONÁRIO DO EGRESSO 2022 (FORMULÁRIO GOOGLE)\n63\n13\n\nAPRESENTAÇÃO\n\nOi, sou o Igor, graduado em Educação Física pela Universidade Federal de\nPelotas e Especialista em Psicomotricidade e Jogos Cooperativos pela FAFIPA e em\nEducação a Distância: Gestão e Tutoria pela Uniasselvi. Atualmente, sou Docente nos\ncursos de Licenciatura e Bacharelado em Educação Física do Centro Universitário\nLeonardo da Vinci (Uniasselvi). Possuo experiência em Educação Física Escolar,\nParadesporto, Treinamento Esportivo, Organização de Eventos, Inclusão, Educação\ne Tecnologias, EAD, Tutoria, Gestão Esportiva e Ensino Superior. Atuo como\nconteudista de material instrucional acadêmico (Livros didáticos, trilhas de\naprendizagem,\nvídeos\netc.),\nna\norientação\nde\niniciação\ncientífica\n(UNIASSELVI/UNIEDU/FUMDES) e no desenvolvimento de projetos de extensão.\nMas antes de chegar até aqui, também passei pelo Ensino Médio Integrado, do\ncurso Técnico em Alimentos do Conjunto Agrotécnico Visconde da Graça (CAVG),\nque hoje integra um dos campi do Instituto Federal Sul-rio-grandense. Praticamente\nnão atuei como técnico, no entanto, visto que os objetivos do Ensino Médio Integrado\nvão além de ensinar uma profissão, o ensino integral desenvolveu habilidades e\ncompetências que me prepararam para seguir, com segurança, os caminhos e\nescolhas que julguei ser o melhor para a minha vida.\nE, agora, de forma vinculada ao Programa de Pós-graduação em Educação\nProfissional e Tecnológica, do Instituto Federal Catarinense, campus Blumenau, pude\nestudar a concepção de Ensino Médi",
+    "resumo": "[PÁG. 8]\nRESUMO\n\nOs portais do egresso de instituições de ensino atuam como ferramenta para\naprimoramento das atividades institucionais. De posse dos dados coletados nos\nquestionários dos portais, a instituição de ensino poderá efetuar uma análise crítica\ndos processos educacionais em relação às exigências do mundo do trabalho e\npromover adequações pertinentes nesses processos. Diante disso, o objetivo geral da\npesquisa visou analisar a apresentação da trajetória formativa do estudante do EMI\nnos relatórios de acompanhamento dos egressos de 2022 do IFC. A pesquisa foi\nnorteada pela análise documental dos relatórios de acompanhamento de egressos\ndos 15 campi do IFC, do ano de 2022. Os indicadores encontrados abrangem diversos\naspectos, como o desempenho dos egressos no mundo do trabalho, sua satisfação\ncom a formação acadêmica recebida no IFC, o impacto do curso no desenvolvimento\nde suas habilidades e competências, entre outros. Com base nesses resultados, a\ninstituição pode identificar pontos fortes e áreas de melhoria, o que auxilia na tomada\nde decisões estratégicas para o aprimoramento contínuo dos cursos e programas\neducacionais. Fruto da pesquisa, foi desenvolvido um Produto Educacional no formato\nde folder, intitulado: Navegando no Caminho do Conhecimento: Um guia para\nestudantes do EMI. A presente dissertação e o produto educacional se enquadram na\nlinha de pesquisa de Práticas Educativas em Educação Profissional e Tecnológica,\nmais especificamente relacionada ao Macroprojeto 3 – Práticas Educativas no\nCurrículo Integrado.\n\nPalavras-Chave: Egresso. Ensino Médio Integrado. Instituto Federal Catarinense.",
+    "introducao": "[PÁG. 16]\n15\n\n1 INTRODUÇÃO\n\nO Instituto Federal Catarinense (IFC) é uma instituição de Educação\nProfissional e Tecnológica (EPT) e oferta os seguintes níveis/etapas de ensino:\nqualificação profissional, Educação de jovens e adultos articulada à EPT; educação\nprofissional técnica de nível médio; e educação profissional tecnológica de graduação\ne de pós-graduação (IFC, 2021). A educação profissional técnica de nível médio e o\nensino médio apresentam-se em três modalidades distintas: a integrada, voltada para\nalunos que concluíram o ensino fundamental, combinando a habilitação técnica de\nnível médio e o ensino médio em uma única instituição de ensino; a concomitante,\noferecida a estudantes que já concluíram o ensino fundamental e estão cursando o\nensino médio, com matrículas separadas para cada curso, podendo ocorrer na mesma\ninstituição\nou\nem\ndiferentes\ninstituições,\npor\nmeio\nde\nconvênios\nde\nintercomplementaridade; e a subsequente, destinada a quem já finalizou o ensino\nmédio, focada na formação técnica de nível médio como complemento à formação\ngeral (Brasil, 2004).\nO IFC, como instituto multicampi, possui 15 campi distribuídos em diferentes\ncidades do estado de Santa Catarina. Cada campus é uma unidade descentralizada\ndo IFC, responsável pela oferta de cursos e programas de EPT em sua respectiva\nregião.\nA oferta do Ensino Médio Integrado (EMI) se vincula a uma proposta de\nformação integral, que tem como objetivo proporcionar uma educação mais ampla e\nabrangente aos estudantes, buscando promover o desenvolvimento de habilidades\ncognitivas, socioemocionais e práticas, de forma integrada e articulada, para que os\nalunos possam enfrentar os desafios da vida pessoal, acadêmica e profissional de\nmaneira mais preparada (Frigotto; Ciavatta; Ramos, 2012). Ainda de acordo com os\nautores, o EMI visa formar cidadãos mais completos, aptos a compreender e atuar de\nforma crítica e criativa na sociedade, além de prepará-los para o mundo do trabalho,\nsuperando a dicotomia entre educação geral e profissional, fornecendo aos\nestudantes uma formação abrangente que atenda às necessidades atuais e promova\numa educação de qualidade relevante.\nDe acordo com seu Plano de Desenvolvimento Institucional (PDI) quinquenal\n(2019 a 2023), elaborado tendo como base a Lei nº 11.892/2008, Art 6º, o IFC é uma\ninstituição de ensino que oferece uma variedade de cursos voltados para a EPT. Seus\n\n[PÁG. 17]\n16\n\ncursos abrangem diversas áreas de conhecimento e eixos tecnológicos, visando\npreparar os estudantes para o mundo do trabalho e contribuir para o desenvolvimento\nsocioeconômico local, regional e nacional (IFC, 2019).\nAinda de acordo com a referida Lei, os Institutos Federais (IFs) são instituições\nde ensino pluricurriculares e multicampi que oferecem EPT no Brasil. Eles têm uma\nabordagem abrangente de ensino, cobrindo diversos níveis de escolaridade e\noferecendo cursos voltados para a formação técnica, profissional e tecnológica, desde\no ensino médio até a pós-graduação (Brasil, 2008a).\nEm consonância com as diretrizes desta Lei, o IFC tem como missão, descrita\nno seu PDI, “[...] proporcionar educação profissional, atuando em Ensino, Pesquisa e\nExtensão, comprometida com a formação cidadã, a inclusão social, a inovação e o\ndesenvolvimento regional” (IFC, 2019, p. 14).\nIncluso no PDI, o IFC conta com a Política de Atendimento aos Estudantes\n(PAE) que:\n\n[...] é voltada ao desenvolvimento de programas e ações que venham ao\nencontro da vida estudantil em sentido mais amplo. Por um lado, promove\natividades com vistas à identidade juvenil, à integração dos estudantes, por\nmeio do esporte, da cultura e do lazer, e à aprendizagem a partir da\ndiversificação de espaços/metodologias e da participação em eventos\ntécnico-científico-esportivos e culturais. Por outro lado, possibilita a\nidentificação das necessidades do corpo discente, em suas demandas\neconômicas e de estrutura institucional, que viabilizem sua vida escolar que\nse constituam, por sua vez, de estratégias para acesso, permanência e êxito\ndestes na instituição. (IFC, 2019, p.82)\n\nAinda, de acordo com o PDI (IFC, 2019), o IFC possui a Política de\nAcompanhamento dos Egressos, que tem como objetivo acompanhar e avaliar a\ntrajetória dos estudantes que concluíram os cursos oferecidos pelo Instituto, nos seus\n15 campi.\nO estudante egresso, de acordo com a Pesquisa Nacional de Egressos dos\nCursos Técnicos da Rede Federal de EPT é definido como “[...] o aluno que\nefetivamente concluiu os estudos regulares, estágios e outras atividades previstas no\nplano de curso e está apto a receber ou já recebeu o diploma” (Brasil, 2008b, p. 12).\nSua avaliação a respeito da instituição e de seu percurso formativo pode ser uma\nferramenta para aprimoramento das atividades institucionais, bem como é uma\nimportante conexão entre o indivíduo que já não faz mais parte do quadro de alunos\ncursistas e sua instituição de ensino de origem, pois poderá fornecer informações\n\n[PÁG. 18]\n17\n\nrelevantes em relação a sua percepção quanto às práticas educativas durante a\npermanência na instituição e sua atual situação em relação aos estudos e trabalho\n(Carneiro; Souza; Rocha, 2020; Machado, 2001; Machado, 2010; Torres, 2020).\nSaber o que os egressos pensam em relação a sua trajetória formativa é válido,\nna medida em que, de posse desses dados, a instituição de ensino poderá efetuar\nadequações pertinentes em seus processos educacionais e em suas práticas\neducativas. Somando-se a isso, conhecer os caminhos percorridos na sua construção\nprofissional também possibilita à instituição de ensino uma análise crítica desses\nprocessos em relação às exigências do mundo do trabalho.\nO egresso, mais do que seus professores, alunos e estrutura física, é o que\ncredencia uma boa instituição de ensino (Hoyos, 1998 apud Machado, 2001). Assim,\né função das instituições formar cidadãos qualificados e, mais além, acompanhá-los\nem relação aos caminhos percorridos no processo da sua construção profissional.\nA partir dessa perspectiva, o acompanhamento de egressos é um mecanismo\nque passou a ser implementado, nas Instituições Federais de Educação Tecnológica,\na partir da Portaria do Ministério da Educação (MEC) nº 646, de 14 de maio de 1997\n(Brasil, 1997), que regulamenta a implementação dos elementos mencionados nos\nartigos 39 a 42 da Lei Federal nº 9.394/96 – Lei de Diretrizes e Bases (Brasil, 1996),\nalém de incluir medidas adicionais, focando na rede federal de educação tecnológica,\nno Art. 9º:\n\nAs instituições federais de educação tecnológica implantarão, em articulação\ncom a SEMTEC e com os órgãos de desenvolvimento econômico e social dos\nEstados e Municípios, mecanismos permanentes de consulta aos setores\ninteressados na formação de recursos humanos, objetivando:\nI - identificação de novos perfis de profissionais demandados pelos setores\nprodutivos;\nII - adequação da oferta de cursos às demandas dos setores produtivos.\nParágrafo único. Os mecanismos permanentes deverão incluir sistema de\nacompanhamento de egressos e de estudos de demanda de profissionais.\n(Brasil, 1997)\n\nNo contexto do IFC, no qual esta pesquisa se realiza, a resolução Nº008/2020\naprova a política institucional e regulamenta as atividades e procedimentos gerais do\nPrograma de Acompanhamento dos Egressos - IFC-PróEgresso (IFC, 2020).\nA avaliação do percurso formativo é essencial para entender os fatores que\nlevam à retenção e ao sucesso dos alunos. Nesse contexto, destaca-se a importância\ndas pesquisas realizadas com egressos do EMI, seja para a sociedade e para a\n\n[PÁG. 19]\n18\n\ninstituição, seja para o profissional formado, pois trazem resultados que podem\napontar os pontos fortes e fracos do currículo, assim como as necessidades\nindividuais dos alunos, permitindo uma intervenção mais eficaz (Carneiro; Souza;\nRocha, 2020).\nDiante do exposto, este trabalho apresenta como problemática a seguinte\nquestão: como os relatórios de acompanhamento do egresso do IFC, apresentam a\ntrajetória formativa dos estudantes do EMI?\nDesta forma",
+    "descricao_produto_na_dissertacao": "[PÁG. 20] egressos de 2022 do IFC. Em consonância com o objetivo geral, pretendem-se\nalcançar os seguintes objetivos específicos:\na) discutir a formação omnilateral na trajetória educativa de egressos do ensino\nmédio integrado;\nb) compreender as perspectivas dos egressos do EMI quanto a trajetória\nacadêmica e profissional;\nc) analisar as impressões dos egressos do EMI quanto a avaliação sobre a\ninstituição;\nd) desenvolver, aplicar e avaliar um Produto Educacional (PE), no formato de\num Folder, que divulgue as atividades de ensino, pesquisa e extensão como forma de\ndar continuidade ao processo formativo dos discentes do ensino médio integrado, com\no título: \"Navegando no Caminho do Conhecimento: Um Guia para Estudantes do\nEMI\".\nPara a compreensão do estado do conhecimento da temática e da delimitação\naqui abordadas, foram realizadas buscas nas bases de dados periódicos Capes,\nScielo, Biblioteca Digital Brasileira de Teses e Dissertações e Observatório do\nPrograma de Pós-graduação em Educação Profissional e Tecnológica (ProfEPT).\nUtilizaram-se os seguintes termos de busca: “Portal do Egresso Ensino Médio\nIntegrado”; “Portal do Egresso Instituto Federal Catarinense”; “Egresso Ensino Médio\nIntegrado”; “Egresso Instituto Federal Catarinense”. Como resultados, não foram\nencontradas pesquisas referentes aos dados gerados pelos portais dos campi do IFC\ne,\nconsequentemente,\ncarece\nde\nestudos\nreferentes\naos\nrelatórios\nde\nacompanhamento do egresso, no que diz respeito à apresentação da trajetória\nformativa do estudante do EMI do IFC.\nNo entanto, em busca realizada na plataforma do Observatório do ProfEPT2,\nhá uma pesquisa realizada, por Alessandra Nitschke (2021), sobre se e como são\nutilizadas as informações dos egressos nos processos de avaliação e\nacompanhamento dos cursos do EMI do IFC - Campus Concórdia. A principal\ndiferença entre o presente estudo e a pesquisa supracitada é que, em sua pesquisa,\nNitschke buscou compreender a atuação do Núcleo Docente Básico somente do\ncampus Concórdia, sem levar em conta, a existência do Portal do Egresso e de seus\nrelatórios gerados a partir da participação dos egressos em responder a pesquisa",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 16,
+        "texto": "O Instituto Federal Catarinense (IFC) é uma instituição de Educação\nProfissional e Tecnológica (EPT) e oferta os seguintes níveis/etapas de ensino:\nqualificação profissional, Educação de jovens e adultos articulada à EPT; educação\nprofissional técnica de nível médio; e educação profissional tecnológica de graduação\ne de pós-graduação (IFC, 2021). A educação profissional técnica de nível médio e o\nensino médio apresentam-se em três modalidades distintas: a integrada, voltada para\nalunos que concluíram o ensino fundamental, combinando a habilitação técnica de\nnível médio e o ensino médio em uma única instituição de ensino; a concomitante,\noferecida a estudantes que já concluíram o ensino fundamental e estão cursando o\nensino médio, com matrículas separadas para cada curso, podendo ocorrer na mesma\ninstituição\nou\nem\ndiferentes\ninstituições,\npor\nmeio\nde\nconvênios\nde\nintercomplementaridade; e a subsequente, destinada a quem já finalizou o ensino\nmédio, focada na formação técnica de nível médio como complemento à formação\ngeral (Brasil, 2004).\nO IFC, como instituto multicampi, possui 15 campi distribuídos em diferentes\ncidades do estado de Santa Catarina. Cada campus é uma unidade descen",
+        "citacoes_detectadas": [
+          "IFC, 2021",
+          "Brasil, 2004",
+          "Frigotto; Ciavatta; Ramos, 2012"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 20,
+        "texto": "egressos de 2022 do IFC. Em consonância com o objetivo geral, pretendem-se\nalcançar os seguintes objetivos específicos:\na) discutir a formação omnilateral na trajetória educativa de egressos do ensino\nmédio integrado;\nb) compreender as perspectivas dos egressos do EMI quanto a trajetória\nacadêmica e profissional;\nc) analisar as impressões dos egressos do EMI quanto a avaliação sobre a\ninstituição;\nd) desenvolver, aplicar e avaliar um Produto Educacional (PE), no formato de\num Folder, que divulgue as atividades de ensino, pesquisa e extensão como forma de\ndar continuidade ao processo formativo dos discentes do ensino médio integrado, com\no título: \"Navegando no Caminho do Conhecimento: Um Guia para Estudantes do\nEMI\".\nPara a compreensão do estado do conhecimento da temática e da delimitação\naqui abordadas, foram realizadas buscas nas bases de dados periódicos Capes,\nScielo, Biblioteca Digital Brasileira de Teses e Dissertações e Observatório do\nPrograma de Pós-graduação em Educação Profissional e Tecnológica (ProfEPT).\nUtilizaram-se os seguintes termos de busca: “Portal do Egresso Ensino Médio\nIntegrado”; “Portal do Egresso Instituto Federal Catarinense”; “Egresso Ensino Médio\nInteg",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 21,
+        "texto": "Na primeira seção, Introdução, está contextualizado o tema da pesquisa,\nproblematizada a temática, apresentado o objeto de pesquisa e revisado o estado do\nconhecimento, destacando pesquisas semelhantes e justificando a necessidade da\npresente investigação. Além disso, são delineados os objetivos gerais e específicos\nque norteiam este trabalho.\nA segunda seção, Referencial Teórico, está dividida em duas subseções. Na\nprimeira subseção é abordada a concepção de EPT dos IFs, com ênfase no trabalho\ncomo princípio educativo e na formação integral do estudante. Na segunda subseção,\nfaz-se a relação da Avaliação Institucional à política de acompanhamento ao egresso,\nconsiderando a missão e os objetivos do IFCo.\nNa terceira seção, Metodologia, são apresentadas as classificações da\npesquisa, seguidas da retomada do objeto de pesquisa (relatórios) e sua delimitação.\nDetalham-se a seleção e apresentação dos dados.\nA quarta seção, Resultados e Discussões, está dividida em duas subseções.\nNa primeira subseção é realizada a análise dos dados obtidos. No segundo, é\napresentado o PE desenvolvido.\nPor fim, a quinta seção, Considerações Finais, sintetiza as reflexões gerais e\nespecíficas da pesquisa",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 22,
+        "texto": "Esta seção conta com duas subseções: a primeira trata da concepção de EPT\ndos IFs, com ênfase no trabalho como princípio educativo e na formação integral do\nestudante; a segunda subseção trata da relação da Avaliação Institucional à política\nde acompanhamento ao egresso, considerando a missão e os objetivos do IFC.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 22,
+        "texto": "Para esta pesquisa, é preciso que se considere o trabalho como princípio\neducativo, compreendido na perspectiva da revolução social que visa à promoção e\nao desenvolvimento das diversas capacidades humanas, intelectuais e práticas de\numa formação omnilateral (Frigotto; Araujo, 2018). A formação omnilateral refere-se a\numa abordagem educacional que busca promover a formação integral do indivíduo,\nintegrando várias dimensões importantes da vida, como trabalho, ciência e cultura\n(Ciavatta, 2014).",
+        "citacoes_detectadas": [
+          "Frigotto; Araujo, 2018",
+          "Ciavatta, 2014"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 22,
+        "texto": "O conceito de Formação Integral é central nesta discussão. Segundo Freire\n(2011), a educação deve ser entendida como um processo contínuo que visa não\napenas à aquisição de conhecimentos técnicos, mas também ao desenvolvimento\nhumano em sua integralidade. Nesse sentido, é fundamental considerar aspectos\ncomo o desenvolvimento emocional, social e ético dos estudantes.\nJá o conceito de trabalho como princípio educativo, de acordo com Frigotto\n(2008), parte da ideia de que o trabalho não é apenas uma atividade para gerar renda\nou suprir necessidades materiais, mas também desempenha um papel crucial na\nformação e no desenvolvimento integral de indivíduos na sociedade. Ele se baseia na\ncompreensão de que todos os seres humanos têm necessidades básicas, como\nalimentação, abrigo e segurança, que são atendidas por meio do trabalho. Além disso,\no trabalho é uma atividade pela qual as pessoas podem contribuir para a sociedade,\ndesenvolver habilidades, aprender valores e construir relações interpessoais,\npromovendo uma sociedade mais justa e equitativa\nTambém há de se considerar o trabalho como condição ontológica,\ncompreendido como realização humana inerente ao ser, visto que somos capazes d",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 23,
+        "texto": "existência (Frigotto, Ciavatta e Ramos, 2012), mas não como mercadoria que objetiva\nsomente a geração de lucro aos proprietários dos meios de produção, pois:",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 23,
+        "texto": "Um projeto de ensino médio integrado ao ensino técnico, tendo como eixos o\ntrabalho, a ciência e a cultura, necessita superar o histórico conflito existente\nem torno do papel da escola, de formar para a cidadania ou para o trabalho\nprodutivo e, assim, o dilema de um currículo voltado para as humanidades ou\npara a ciência e tecnologia. (Frigotto, Ciavatta e Ramos, 2012, p. 17)",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 23,
+        "texto": "Cabe destacar, que o “Mercado de Trabalho” se concentra nas oportunidades\nde emprego e nas relações entre empregadores e empregados, enquanto que o\n“Mundo do Trabalho” abrange uma visão mais ampla das experiências e significados\ndo trabalho na sociedade (Wright; Silva; Spers, 2010).\nComo bem retrata Nitschke (2021), a educação profissional brasileira, desde\nsempre, foi pensada e desenvolvida para o filho do trabalhador, que deve se inserir\nno mercado de trabalho rapidamente, pois deve ajudar na renda familiar. Isso reflete\na divisão da educação “[...] entre aquela destinada aos que produzem a vida e a\nriqueza da sociedade usando sua força de trabalho e aquela destinada aos dirigentes,\nàs elites, aos grupos e segmentos que dão orientação e direção à sociedade” (Ramos,\n2008, p. 2). Essa abordagem prejudica a classe trabalhadora, limitando seu\ndesenvolvimento e potencial criativo em favor da adaptação ao sistema capitalista\n(Freitas et al, 2018).\nEssa concepção caracteriza a dualidade educacional a qual deve ser revertida,\ntravando com força coletiva uma luta contra hegemônica, numa concepção de escola\nunitária, ou seja, de acesso a todos aos conhecimentos, à cultura e educação de\nqua",
+        "citacoes_detectadas": [
+          "Wright; Silva; Spers, 2010",
+          "Ramos,\n2008, p. 2",
+          "Freitas et al, 2018"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 24,
+        "texto": "Conforme Silva e Rosa (2021), a concepção de EPT, de formação omnilateral\ne do trabalho como princípio educativo (Moll, 2010; Ramos, 2008), vinculada à\nperspectiva da formação integral, tendo como dimensões indissociáveis da vida\nhumana a integração entre ciência, tecnologia e cultura (Pacheco, 2010; Ramos,\n2008), se caracteriza por valorizar o potencial criativo do sujeito em suas dimensões\nintelectual e prática, estruturando-se a partir do eixo trabalho, ciência, tecnologia e\ncultura, adotando o trabalho como princípio educativo e a pesquisa como princípio\npedagógico.\nVisando a articulação entre o Ensino Médio e a Educação Profissional, foi\ninstituído, no Brasil, o EMI, numa tentativa de integrar os conhecimentos das ciências,\ntecnologia e cultura aos conhecimentos do trabalho (Sobrinho; Rivera, 2021).\nSegundo Frigotto, Ciavatta e Ramos (2012), o EMI ao ensino técnico, sob uma base\nunitária de formação geral, é uma condição necessária para se fazer a “travessia” para\numa nova realidade. Os autores complementam que, além disso, a possibilidade de\nintegrar a formação geral e a formação técnica no Ensino Médio, visando à uma\nformação integral do ser humano, é vista como uma condição",
+        "citacoes_detectadas": [
+          "Sobrinho; Rivera, 2021",
+          "Frigotto; Ciavatta; Ramos,\n2012",
+          "Torres, 2020"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 25,
+        "texto": "No foco em consolidar um projeto de educação profissional contra hegemônico,\no Brasil tem passado por uma transformação sem igual com a criação dos IFs, através\nda Lei nº 11.892, que, em simultâneo, instituiu a Rede Federal de Educação\nProfissional, Científica e Tecnológica (Nitschke, 2021), visando um EMI que objetiva\n“[...] a formação de cidadãos como agentes políticos capazes de ultrapassar\nobstáculos, pensar e agir em favor de transformações políticas, econômicas e sociais\nimprescindíveis para a construção de um outro mundo possível” (Pacheco, 2010, p.\n24), ao contrário do caráter assistencialista e de formação de mão de obra\nespecializada para atender as demandas da indústria.\nEntendendo a importância da continuidade desse projeto de educação\nprofissional contra hegemônico, faz-se necessário que haja um constante\nacompanhamento dos processos de ensino e aprendizagem na garantia de estarmos\nsempre na busca de uma educação unitária, de acesso amplo a conhecimentos, “[...]\nque propicie a realização de escolhas e a construção de caminhos para a produção\nda vida” (Ramos, 2008, p. 2).\nA formação integral, como mencionado, vai além do desenvolvimento\nintelectual e busca preparar o es",
+        "citacoes_detectadas": [
+          "Nitschke, 2021",
+          "Pacheco, 2010, p.\n24",
+          "Ramos, 2008, p. 2",
+          "Appio; Ewald; Silva,\n2020",
+          "Brasil, 2008b",
+          "Vasconcelos; Falcão, 2022"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 26,
+        "texto": "Nitschke (2021, p. 27) complementa afirmando que “A realização de um\nacompanhamento periódico e sistematizado gera dados que podem embasar a\ntomada de decisões”, tanto ao ouvir os recém-formados, quanto ao ouvirmos os\negressos mais antigos, que poderão trazer maiores contribuições em relação a sua\ninserção no mundo do trabalho ou na continuidade dos estudos.\nA avaliação da trajetória formativa do Egresso do EMI do IFC é um tema\ncomplexo e multidimensional. No âmbito da EPT, a avaliação da trajetória formativa\ndos estudantes é um processo fundamental para o aprimoramento das práticas\npedagógicas e para a promoção do desenvolvimento integral dos estudantes (Franco,\n2016).\nA proposta de Formação Integral, defendida por autores como Libâneo (2004)\ne Freire (2019), considera que o processo educativo deve visar ao desenvolvimento\npleno do indivíduo, em suas dimensões cognitivas, socioemocionais e ético-políticas.",
+        "citacoes_detectadas": [
+          "Franco,\n2016"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "CIAVATTA, Maria. O Ensino Integrado, A Politecnia E A Educação Omnilateral. Por Que Lutamos? / The integrated education, the polytechnic and the omnilateral education. Why do we fight?. Trabalho & Educação, Belo Horizonte, v. 23, n. 1, p. 187–205, 2014. Disponível em: https://periodicos.ufmg.br/index.php/trabedu/article/view/9303. Acesso em: 30 set. 2023.",
+      "FRANCO, Maria Amélia do Rosario Santoro. Prática pedagógica e docência: um olhar a partir da epistemologia do conceito. Revista Brasileira de Estudos Pedagógicos, v. 97, n. 247, p. 534–551, set. 2016.",
+      "FREITAS,Cristiane Rodrigues de ; VALLE, Maria Raimunda Lima; AZEVEDO, Rosa Oliveira Marins; AQUINO, Soraya Farias. O Trabalho Como Princípio Educativo Na Educação Profissional Técnica De Nível Médio Para Uma Formação Omnilateral. Educação Profissional e Tecnológica em Revista, [S. l.], v. 2, n. 2, p. 28-42, 2018. 54 DOI: 10.36524/profept.v2i2.386. Disponível em: https://ojs.ifes.edu.br/index.php/e",
+      "NITSCHKE, Alessandra. Egressos E NDB Em Diálogo: O acompanhamento de egressos como subsídio em processos de reformulação de cursos de ensino médio integrado do Instituto Federal Catarinense - Campus Concórdia. 2021. Dissertação (Mestrado em Educação Profissional e Tecnológica) – Programa de Pós-graduação em Educação Profissional e Tecnológica do Instituto Federal Catarinense, Blumenau, 2021. Dispo",
+      "PACHECO, Eliezer. Os Institutos Federais: uma revolução na educação profissional e tecnológica. Brasília: MEC/SETEC, 2010. Disponível em: https://memoria.ifrn.edu.br/bitstream/handle/1044/1013/Os%20institutos%20federais %20-%20Ebook.pdf?sequence=1&isAllowed=y. Acesso em: 25 jun. 2022.",
+      "RAMOS, Marise. Concepção do Ensino Médio Integrado (2008). Disponível em: http://forumeja.org.br/go/sites/forumeja.org.br.go/files/concepcao_do_ensino_medio_ integrado5.pdf. Acesso em: 31 maio 2023.",
+      "TORRES, Caroline da Silva. Experiência formativa e inserção no mundo do trabalho de egressos do ensino médio integrado. 2020. Dissertação (Mestrado) – Programa de Pós-Graduação em Educação Profissional e Tecnológica, Instituto Federal de Educação, Ciência e Tecnologia do Sertão Pernambucano (IF Sertão PE) 57 / Campus Salgueiro, Salgueiro, PE, 2020. Disponível em: <https://releia.ifsertao- pe.edu.b"
+    ]
+  }
+}

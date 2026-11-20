@@ -1,0 +1,165 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0037",
+  "ano": 2024,
+  "autor": "Rafaela Alessandra Schneider Hinsching",
+  "orientador": "Reginaldo Leandro Plácido",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP4",
+  "dissertacao": {
+    "titulo": "HISTÓRIA DA IMPLANTAÇÃO DO CEDUP TIMBÓ (2000 A 2004): DIÁLOGO ENTRE A HISTÓRIA E A CULTURA ESCOLAR",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/10/Dissertacao-Rafaela.pdf",
+    "resumo": "Esta pesquisa investigou a história e a cultura escolar na implantação do Centro de\nEducação Profissional Timbó (CEDUP Timbó), entre os anos 2000 e 2004. Está\nvinculada à linha de pesquisa Organização e Memórias de espaços pedagógicos na\nEPT, no macro projeto 4- História e Memória no contexto da Educação Profissional e\nTecnológica (EPT), no Programa de Mestrado Profissional em Educação Profissional\ne Tecnológica (ProfEPT), no Instituto Federal de Educação, Ciência e Tecnologia\nCatarinense (IFC), polo Blumenau, área de ensino. A pergunta problema desta\npesquisa é: “qual história é possível construir da implantação do CEDUP Timbó e qual\na cultura escolar nos anos 2000 a 2004?”. O objetivo foi compreender a história da\nimplantação do CEDUP Timbó na perspectiva da cultura escolar. Os estudos foram\nbaseados a partir de autores sobre cultura escolar, concepção de história da educação\nprofissional no Brasil, história de instituição escolar, legislação sobre a EPT no estado\nde Santa Catarina. Trata-se de uma pesquisa qualitativa, com uma abordagem\nexploratória, com coleta de dados em fontes bibliográficas e documentais, além de\nrealização de entrevistas semiestruturadas. Como método de análise, optou-se pela\nAnálise Textual Discursiva, por permitir uma interpretação dos textos e documentos.\nA partir da análise dos dados, foram definidas categorias que auxiliaram na\ncompreensão da história da implantação do CEDUP Timbó. Durante a pesquisa, foi\ndesenvolvido um Produto Educacional denominado “Retratos e Relatos: memorial da\nimplantação do CEDUP Timbó”. O memorial virtual apresenta essa história a partir\ndas fotografias, dos recortes de jornais e dos documentos do período de implantação\ndo CEDUP Timbó. O objetivo desse memorial foi registrar essa história para preservar\na memória da instituição escolar, atender finalidades pedagógicas institucionais e\nservir como fonte de pesquisa na história de instituições escolares da EPT.\n\nPalavras-Chave: História da Educação; História e memória da Educação Profissional\ne Tecnológica; Instituição escolar; Cultura escolar; CEDUP Timbó.",
+    "palavras_chave": [
+      "História da Educação",
+      "História e memória da Educação Profissional e Tecnológica",
+      "Instituição escolar",
+      "Cultura escolar",
+      "CEDUP Timbó"
+    ],
+    "autores_referenciados": [
+      "A. L. S. Silva",
+      "Acácia Zeneida Kuenzer",
+      "Agustín Escolano",
+      "Antônio Carlos Gil",
+      "Antônio Viñao Frago",
+      "C. A. A. Toledo",
+      "C. L. Sousa",
+      "Celso João Ferreti",
+      "Cladecir Alberto Schenkel",
+      "Cleber Cristiano Prodonov",
+      "Cloves Alexandre de Castro",
+      "Cristina Ferreira",
+      "D. F. Lima",
+      "Daniel Fabrício Koepsel",
+      "Dante Henrique Moura",
+      "Denise Matiola Todorov",
+      "Denise Tolfo Silveira",
+      "Dermeval Saviani",
+      "Diogo Soga",
+      "Dominique Julia",
+      "Eliseu Costacurta Benachio",
+      "Evaldo Piolli",
+      "F. L. G. R. Silva",
+      "F. O. C. Werle",
+      "Fernanda Peixoto Córdova",
+      "G. S. Lopes",
+      "J. Ribeiro",
+      "Jacques Le Goff",
+      "Justino Pereira de Magalhães",
+      "L. M. T. Britto Sá",
+      "Lauro Mattei",
+      "Lélia P. Lima",
+      "M. V. Silva",
+      "Maria do Carmo Galiazzi",
+      "Mauro Sala",
+      "Mikiya Muramatsu",
+      "Mônica Ribeiro da Silva",
+      "Peter Burke",
+      "R. F. Souza",
+      "R. P. Andrade",
+      "Rebeca Omelczuk",
+      "Reginaldo Leandro Plácido",
+      "Ronaldo Marcos de Lima Araújo",
+      "Roque Moraes",
+      "Shyrlei Karyna Jagielski Benkendorf",
+      "Silvia Maria Manfredi",
+      "V. T. Valdemarin",
+      "Vanderlei Wosniak"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto desenvolve categorias como 'trabalho como princípio educativo' e 'formação humana integral', alinhadas à Pedagogia Histórico-Crítica, com citações de Saviani (2007).",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 32,
+          "trecho": "O trabalho na Educação Profissional é concebido como mediação de primeira ordem no processo de produção da existência e da objetivação da vida humana.",
+          "referencia_correspondente": "SAVIANI, 2007"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "História da implantação do CEDUP Timbó (2000-2004): diálogo entre a história e a cultura escolar",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Memorial / Acervo",
+    "link": "https://educapes.capes.gov.br/handle/capes/869426",
+    "publico_alvo": [
+      "docentes_professores",
+      "gestores_coordenadores",
+      "comunidade_externa"
+    ],
+    "nivel_aplicacao": "Educação Profissional e Tecnológica",
+    "palavras_chave": [
+      "História da Educação",
+      "História e memória da Educação Profissional e Tecnológica",
+      "Instituição escolar",
+      "Cultura Escolar",
+      "CEDUP Timbó",
+      "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+      "Organização e Memória da EPT"
+    ],
+    "data_publicacao": "2024-08",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Hinsching, Rafaela Alessandra Schneider",
+        "papel": "creator"
+      },
+      {
+        "nome": "Placido, Reginaldo Leandro",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/869426",
+        "url": "https://educapes.capes.gov.br/handle/capes/869426"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "História da implantação do CEDUP Timbó (2000-2004): diálogo entre a história e a cultura escolar",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Retratos e Relatos: memorial da implantação do CEDUP TIMBÓ",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "inferencia_llm",
+      "rotulo_original_declarado": "RETRATOS E RELATOS: MEMORIAL DA IMPLANTAÇÃO DO CEDUP TIMBÓ",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0037 2024 rafaela alessandra schneider hinsching reginaldo leandro placido ifc blumenau lp2 mp4 historia da implantacao do cedup timbo 2000 a 2004 dialogo entre a historia e a cultura escolar esta pesquisa investigou a historia e a cultura escolar na implantacao do centro de educacao profissional timbo cedup timbo entre os anos 2000 e 2004 esta vinculada a linha de pesquisa organizacao e memorias de espacos pedagogicos na ept no macro projeto 4 historia e memoria no contexto da educacao profissional e tecnologica ept no programa de mestrado profissional em educacao profissional e tecnologica profept no instituto federal de educacao ciencia e tecnologia catarinense ifc polo blumenau area de ensino a pergunta problema desta pesquisa e qual historia e possivel construir da implantacao do cedup timbo e qual a cultura escolar nos anos 2000 a 2004 o objetivo foi compreender a historia da implantacao do cedup timbo na perspectiva da cultura escolar os estudos foram baseados a partir de autores sobre cultura escolar concepcao de historia da educacao profissional no brasil historia de instituicao escolar legislacao sobre a ept no estado de santa catarina trata se de uma pesquisa qualitativa com uma abordagem exploratoria com coleta de dados em fontes bibliograficas e documentais alem de realizacao de entrevistas semiestruturadas como metodo de analise optou se pela analise textual discursiva por permitir uma interpretacao dos textos e documentos a partir da analise dos dados foram definidas categorias que auxiliaram na compreensao da historia da implantacao do cedup timbo durante a pesquisa foi desenvolvido um produto educacional denominado retratos e relatos memorial da implantacao do cedup timbo o memorial virtual apresenta essa historia a partir das fotografias dos recortes de jornais e dos documentos do periodo de implantacao do cedup timbo o objetivo desse memorial foi registrar essa historia para preservar a memoria da instituicao escolar atender finalidades pedagogicas institucionais e servir como fonte de pesquisa na historia de instituicoes escolares da ept palavras chave historia da educacao historia e memoria da educacao profissional e tecnologica instituicao escolar cultura escolar cedup timbo pedagogia historico critica historia da implantacao do cedup timbo 2000 2004 dialogo entre a historia e a cultura escolar material didatico instrucional memorial acervo educacao profissional e tecnologica historia da educacao historia e memoria da educacao profissional e tecnologica instituicao escolar cultura escolar cedup timbo mestrado em educacao profissional e tecnologica profept organizacao e memoria da ept a l s silva acacia zeneida kuenzer agustin escolano antonio carlos gil antonio vinao frago c a a toledo c l sousa celso joao ferreti cladecir alberto schenkel cleber cristiano prodonov cloves alexandre de castro cristina ferreira d f lima daniel fabricio koepsel dante henrique moura denise matiola todorov denise tolfo silveira dermeval saviani diogo soga dominique julia eliseu costacurta benachio evaldo piolli f l g r silva f o c werle fernanda peixoto cordova g s lopes j ribeiro jacques le goff justino pereira de magalhaes l m t britto sa lauro mattei lelia p lima m v silva maria do carmo galiazzi mauro sala mikiya muramatsu monica ribeiro da silva peter burke r f souza r p andrade rebeca omelczuk reginaldo leandro placido ronaldo marcos de lima araujo roque moraes shyrlei karyna jagielski benkendorf silvia maria manfredi v t valdemarin vanderlei wosniak",
+    "termos_unificados": [
+      "História da Educação",
+      "História e memória da Educação Profissional e Tecnológica",
+      "Instituição escolar",
+      "Cultura escolar",
+      "CEDUP Timbó",
+      "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+      "Organização e Memória da EPT"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

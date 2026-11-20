@@ -1,0 +1,233 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0035",
+  "ano": 2024,
+  "autor": "Jonas Felácio Júnior",
+  "orientador": "Reginaldo Leandro Plácido",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP5",
+  "dissertacao": {
+    "titulo": "A PERCEPÇÃO DOS ESTUDANTES DO ENSINO MÉDIO INTEGRADO DO INSTITUTO FEDERAL CATARINENSE – CAMPUS RIO DO SUL – SOBRE O TRABALHO PARA O POVO XOKLENG LAKLÃNÕ DO ALTO VALE DO ITAJAÍ",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/11/Dissertacao-Jonas-Felacio-Junior.pdf",
+    "resumo": "Esta dissertação é resultado da pesquisa “A Percepção dos estudantes do Ensino\nMédio Integrado do Instituto Federal Catarinense, campus Rio do Sul, sobre o trabalho\npara o povo Xokleng Laklãnõ do Alto Vale do Itajaí”, desenvolvida no Mestrado em\nEducação Profissional e Tecnológica (ProfEPT) do Instituto Federal Catarinense. A\npesquisa se insere na linha de Organização e Memórias de Espaços Pedagógicos na\nEPT, no Macroprojeto 5 - Organização do currículo integrado na EPT. Trata-se de uma\npesquisa básica, com procedimentos técnicos de uma pesquisa participante e\naplicação do Produto Educacional (PE) “Sequência Didática: o trabalho para o povo\nXokleng Laklãnõ”, bem como, coleta de dados bibliográficos e documentais. Os\nresultados indicam que, a partir da aplicação do PE, os participantes demonstraram\ninteresse sobre o trabalho a partir da perspectiva indígena, sendo que o preconceito\ndemonstrado nos encontros iniciais, foi se dissipando ao longo da aplicação das\natividades propostas na pesquisa.\n\nPalavras-Chave: Organização da Educação Profissional e Tecnológica; Xokleng\nLaklãnõ; Produto Educacional; ensino; trabalho.",
+    "palavras_chave": [
+      "Organização da Educação Profissional e Tecnológica",
+      "Xokleng Laklãnõ",
+      "Produto Educacional",
+      "Ensino",
+      "Trabalho"
+    ],
+    "autores_referenciados": [
+      "A. A. Cardoso",
+      "Acácia Zeneida Kuenzer",
+      "Adriana Oliveira dos Santos Siqueira",
+      "Alex Jordane",
+      "Alexandro Machado Namem",
+      "Alice Ribeiro Casimiro Lopes",
+      "Aline Cristina Silva Lima",
+      "Allan Andrei Steimbach",
+      "Ana Elisa de Castro Freitas",
+      "Ana Lúcia Vulfe Nötzold",
+      "Ana Sara Castaman",
+      "Antônio Carlos Gil",
+      "Antônio Carlos Maciel",
+      "Antonio Gramsci",
+      "Antônio Joaquim Severino",
+      "Augusto Nibaldo Silva Triviños",
+      "Bruno Kilian Kadletz",
+      "Carla Beatriz Meinerz",
+      "Carlos Alberto Lucena",
+      "Catia Dagnoni",
+      "Celestino Sachet",
+      "Cintia Regia Rodrigues",
+      "Cláudia Helena dos Santos Araújo",
+      "Cristiane Rodrigues de Freitas",
+      "Daniel Munduruku",
+      "Darcy Ribeiro",
+      "Dermeval Saviani",
+      "Edna Elza Vieira",
+      "Eduardo Gdes Neves",
+      "Eduardo Gomes da Silva Filho",
+      "Eliezer Moreira Pacheco",
+      "Elinilze Guedes Teodoro",
+      "Elizabeth Macedo",
+      "Fábio José Rauen",
+      "Fernando Roque Fernandes",
+      "Friedrich Engels",
+      "Gaudêncio Frigotto",
+      "Gersem dos Santos Luciano",
+      "Gilberto Schmidt Gerlach",
+      "Giovani José da Silva",
+      "Giralda Seyferth",
+      "Helen Estefany dos Santos Pinheiro",
+      "Ireno Antônio Berticelli",
+      "Ismael Martinez",
+      "Ivan Carlos Serpa",
+      "Ivo Marcos Theis",
+      "Jackson Alexsandro Peres",
+      "João Klug",
+      "John Manuel Monteiro",
+      "José Deeke",
+      "José Deribaldo Gomes dos Santos",
+      "José Gimeno Sacristán",
+      "José Moisés Nunes da Silva",
+      "José Paulo Netto",
+      "Juliana Schneider Medeiros",
+      "Karine Martins Sobral",
+      "Karl Marx",
+      "Karla Lucia Bento",
+      "Karla Rodrigues Mota",
+      "Klaus Richter",
+      "Lauro Chagas e Sá",
+      "Lilian Blanck de Oliveira",
+      "Lilian Blank de Oliveira",
+      "Luciano Félix Florit",
+      "Lúcio Tadeu Mota",
+      "Luís Claudio Machado Ferreira",
+      "Luís Donizete Benzi Grupioni",
+      "Luisa Tombini Wittmann",
+      "Marcondes Marchetti",
+      "Maria Ciavatta",
+      "Maria da Paz Cavalcante",
+      "Maria Izabel de Bortoli Hentz",
+      "Maria Lúcia de Arruda Aranha",
+      "Maria Margarida de Andrade",
+      "Maria Raimunda Lima Valle",
+      "Mario Alighiero Manacorda",
+      "Mario Borges Netto",
+      "Marisa Vorraber Costa",
+      "Marise Nogueira Ramos",
+      "Marta Ferreira da Silva Severo",
+      "Mauro Titton",
+      "Moisey Mikhaylovich Pistrak",
+      "Nanblá Gakran",
+      "Olivia Morais Medeiros Neta",
+      "Oswaldo Rodrigues Cabral",
+      "Paulo César",
+      "Reinaldo Matias Fleuri",
+      "Ricardo Antônio Rodrigues",
+      "Ricardo Antunes",
+      "Ricardo Ribeiro",
+      "Rodolfo Santos Nunes",
+      "Rodrigo Lavina",
+      "Rodrigo Wartha",
+      "Rosa Oliveira Marins Azevedo",
+      "Rosângela Célia Faustino",
+      "Rosemary Dore",
+      "Rosiane Magalhães de Lima",
+      "Rosineide Lourinho Santos",
+      "Sandra Maria Assis",
+      "Sérgio Sachet",
+      "Sílvio Coelho dos Santos",
+      "Soraya Farias Aquino",
+      "Tolfo Silveira",
+      "Valberto Dirksen",
+      "Vânia Maria Alves",
+      "Walderes Priprá",
+      "Walter F. Piazza",
+      "Wanusa Aparecida Scheimann",
+      "Zilfran Varela Fontenele"
+    ],
+    "base_epistemologica": {
+      "valor": "Materialismo Histórico-Dialético",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto cita Marx e Frigotto, associando trabalho à formação humana integral e superação da dicotomia manual/intelectual.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 21,
+          "trecho": "O trabalho é um conceito do âmbito da EPT. [...] formar trabalhadores capazes de atuar como dirigentes e cidadãos.",
+          "referencia_correspondente": "Frigotto; Ciavatta; Ramos, 2005"
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 24,
+          "trecho": "O trabalho é um processo em que participam o homem e a natureza: [...] controla seu metabolismo com a natureza.",
+          "referencia_correspondente": "Marx, 2013"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Sequência Didática: o trabalho para o povo Xokleng Laklãnõ",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Sequência Didática",
+    "link": "http://educapes.capes.gov.br/handle/capes/917643",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "docentes_professores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Organização da Educação Profissional e Tecnológica",
+      "Xokleng Laklãnõ",
+      "Produto Educacional",
+      "Sequência Didática",
+      "Trabalho como princípio educativo",
+      "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+      "Organização e Memória da EPT"
+    ],
+    "data_publicacao": "2024-10",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Felácio Junior, Jonas",
+        "papel": "creator"
+      },
+      {
+        "nome": "Placido, Reginaldo Leandro",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/917643",
+        "url": "http://educapes.capes.gov.br/handle/capes/917643"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "A Percepção dos estudantes do Ensino Médio Integrado do Instituto Federal Catarinense, campus Rio do Sul, sobre o trabalho para o povo Xokleng Laklãnõ do Alto Vale do Itajaí",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Sequência Didática: o trabalho para o povo Xokleng Laklãnõ",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "O TRABALHO PARA O POVO XOKLENG LAKLÃNÕ",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "livro digital"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0035 2024 jonas felacio junior reginaldo leandro placido ifc blumenau lp2 mp5 a percepcao dos estudantes do ensino medio integrado do instituto federal catarinense campus rio do sul sobre o trabalho para o povo xokleng laklano do alto vale do itajai esta dissertacao e resultado da pesquisa a percepcao dos estudantes do ensino medio integrado do instituto federal catarinense campus rio do sul sobre o trabalho para o povo xokleng laklano do alto vale do itajai desenvolvida no mestrado em educacao profissional e tecnologica profept do instituto federal catarinense a pesquisa se insere na linha de organizacao e memorias de espacos pedagogicos na ept no macroprojeto 5 organizacao do curriculo integrado na ept trata se de uma pesquisa basica com procedimentos tecnicos de uma pesquisa participante e aplicacao do produto educacional pe sequencia didatica o trabalho para o povo xokleng laklano bem como coleta de dados bibliograficos e documentais os resultados indicam que a partir da aplicacao do pe os participantes demonstraram interesse sobre o trabalho a partir da perspectiva indigena sendo que o preconceito demonstrado nos encontros iniciais foi se dissipando ao longo da aplicacao das atividades propostas na pesquisa palavras chave organizacao da educacao profissional e tecnologica xokleng laklano produto educacional ensino trabalho materialismo historico dialetico sequencia didatica o trabalho para o povo xokleng laklano material didatico instrucional sequencia didatica ensino medio integrado organizacao da educacao profissional e tecnologica xokleng laklano produto educacional ensino trabalho sequencia didatica trabalho como principio educativo mestrado em educacao profissional e tecnologica profept organizacao e memoria da ept a a cardoso acacia zeneida kuenzer adriana oliveira dos santos siqueira alex jordane alexandro machado namem alice ribeiro casimiro lopes aline cristina silva lima allan andrei steimbach ana elisa de castro freitas ana lucia vulfe notzold ana sara castaman antonio carlos gil antonio carlos maciel antonio gramsci antonio joaquim severino augusto nibaldo silva trivinos bruno kilian kadletz carla beatriz meinerz carlos alberto lucena catia dagnoni celestino sachet cintia regia rodrigues claudia helena dos santos araujo cristiane rodrigues de freitas daniel munduruku darcy ribeiro dermeval saviani edna elza vieira eduardo gdes neves eduardo gomes da silva filho eliezer moreira pacheco elinilze guedes teodoro elizabeth macedo fabio jose rauen fernando roque fernandes friedrich engels gaudencio frigotto gersem dos santos luciano gilberto schmidt gerlach giovani jose da silva giralda seyferth helen estefany dos santos pinheiro ireno antonio berticelli ismael martinez ivan carlos serpa ivo marcos theis jackson alexsandro peres joao klug john manuel monteiro jose deeke jose deribaldo gomes dos santos jose gimeno sacristan jose moises nunes da silva jose paulo netto juliana schneider medeiros karine martins sobral karl marx karla lucia bento karla rodrigues mota klaus richter lauro chagas e sa lilian blanck de oliveira lilian blank de oliveira luciano felix florit lucio tadeu mota luis claudio machado ferreira luis donizete benzi grupioni luisa tombini wittmann marcondes marchetti maria ciavatta maria da paz cavalcante maria izabel de bortoli hentz maria lucia de arruda aranha maria margarida de andrade maria raimunda lima valle mario alighiero manacorda mario borges netto marisa vorraber costa marise nogueira ramos marta ferreira da silva severo mauro titton moisey mikhaylovich pistrak nanbla gakran olivia morais medeiros neta oswaldo rodrigues cabral paulo cesar reinaldo matias fleuri ricardo antonio rodrigues ricardo antunes ricardo ribeiro rodolfo santos nunes rodrigo lavina rodrigo wartha rosa oliveira marins azevedo rosangela celia faustino rosemary dore rosiane magalhaes de lima rosineide lourinho santos sandra maria assis sergio sachet silvio coelho dos santos soraya farias aquino tolfo silveira valberto dirksen vania maria alves walderes pripra walter f piazza wanusa aparecida scheimann zilfran varela fontenele",
+    "termos_unificados": [
+      "Organização da Educação Profissional e Tecnológica",
+      "Xokleng Laklãnõ",
+      "Produto Educacional",
+      "Ensino",
+      "Trabalho",
+      "Sequência Didática",
+      "Trabalho como princípio educativo",
+      "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+      "Organização e Memória da EPT"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

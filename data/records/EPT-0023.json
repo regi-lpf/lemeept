@@ -1,0 +1,161 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0023",
+  "ano": 2025,
+  "autor": "Ana Cláudia de Oliveira",
+  "orientador": "Raquel Cardoso de Faria e Custódio",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP3",
+  "dissertacao": {
+    "titulo": "O ENSINO DE LITERATURA NUMA PERSPECTIVA DECOLONIAL: UM OLHAR A RESPEITO DO ENSINO MÉDIO INTEGRADO DO INSTITUTO FEDERAL CATARINENSE.",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/05/Dissertacao_Ana_Claudia_de_Oliveira.pdf",
+    "resumo": "A Literatura desempenha um papel importante na formação dos cidadãos,\ncontribuindo para o desenvolvimento de diversas áreas da vida. No Ensino Médio\nIntegrado, ela está presente no componente curricular de Língua Portuguesa. Dentro\ndesse espaço dos textos literários, para além do cânone, encontra-se a Literatura\nnuma perspectiva decolonial, uma abordagem que valoriza vozes que foram\nhistoricamente marginalizadas, assim como revisita e problematiza obras clássicas.\nNesse sentido, é que se construiu a problemática da pesquisa: compreender o espaço\nda Literatura numa perspectiva decolonial na Educação Profissional e Tecnológica, a\npartir das percepções dos docentes de Língua Portuguesa do Ensino Médio Integrado\ndo Instituto Federal Catarinense. Esta pesquisa pertence ao Programa de Pós-\ngraduação em Educação Profissional e Tecnológica, inserida na linha de Práticas\nEducativas em Educação Profissional e Tecnológica, no macroprojeto 3: Práticas\nEducativas no Curriculo Integrado e possui as seguintes características: natureza\naplicada, com abordagem qualitativa, objetivos exploratórios e descritivos. Para a\ncoleta de dados, foi aplicado um questionário com professores de Língua Portuguesa\ndo Ensino Médio Integrado do Instituto Federal Catarinense. Posteriormente, a análise\ndos dados coletados foi feita com a utilização da Análise de Discurso pecheutiana. Os\nresultados observados foram que os docentes têm uma percepção da Literatura como\nelemento essencial para a formação integral e compreendem a discussão da\nLiteratura numa perspectiva decolonial, assim como as obrigações estipuladas na\nLDB, no entanto, enfrentam dificuldades e resistências ao trabalhar as Literaturas\nindígenas e afro-brasileiras em sala de aula no espaço do EMI. A partir deste cenário\né que se construiu um guia educacional voltado aos docentes de Língua Portuguesa\nda EPT.\nPalavras-chave: Educação Profissional e Tecnológica. Análise do Discurso.\nDecolonialidade. Ensino Médio Integrado. Literaturas Indígenas e Afro-brasileiras",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Análise do Discurso",
+      "Decolonialidade",
+      "Ensino Médio Integrado",
+      "Literaturas Indígenas e Afro-brasileiras"
+    ],
+    "autores_referenciados": [
+      "Adilson Cesar Araújo",
+      "Ana Margarida Campello",
+      "Angélica Maria Vieira Cruz",
+      "Antonio Candido",
+      "Antônio Carlos Gil",
+      "Bell Hooks",
+      "Bernardo Aguiar",
+      "Carla Akotirene",
+      "Chimamanda Ngozi Adichie",
+      "Cláudio Nei Nascimento da Silva",
+      "Eliana Márcia dos Santos Carvalho",
+      "Fabiana Claudia Viana Borges",
+      "Fábio Campos",
+      "Gaudêncio Frigotto",
+      "Graça Graúna",
+      "Ira Shor",
+      "Joaze Bernardino-Costa",
+      "Louis Althusser",
+      "Luís Donisete Benzi Grupioni",
+      "Luiz Silva Cuti",
+      "Marcelo Andrade",
+      "Maria Amélia Dalvi",
+      "Maria Ciavatta",
+      "Marise Nogueira Ramos",
+      "Michael Apple",
+      "Neide Luzia de Rezende",
+      "Nelson Maldonado-Torres",
+      "Paulo Freire",
+      "Raimundo Nonato Ferreira do Nascimento",
+      "Ramón Grosfoguel",
+      "Raymond Aron",
+      "Reinaldo Matias Fleuri",
+      "Renata Lourenço dos Santos",
+      "Renato Almeida de Oliveira",
+      "Rildo Cosson",
+      "Rita Jover-Faleiros",
+      "Tom Bottomore",
+      "Vera Maria Candau",
+      "Walter Correia"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explora conceitos de Freire e Marx, vinculados à crítica da educação colonial e à formação integral, com referências explícitas a Saviani e Frigotto.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 16,
+          "trecho": "A decolonialidade é uma proposta de desobedecer a ótica colonial e criar novas formas de conhecimento, identidade e justiça.",
+          "referencia_correspondente": "FREIRE, Paulo. Pedagogia do oprimido. 44. ed. Rio de Janeiro: Paz e Terra, 2005."
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 36,
+          "trecho": "A cultura popular que representa o 'outro' é inferiorizada e os saberes apagados.",
+          "referencia_correspondente": "FREIRE, Paulo. Pedagogia da autonomia: saberes necessários à prática educativa."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "LITERATURA, EDUCAÇÃO E DECOLONIALIDADE",
+    "tipo": "material_didatico_instrucional",
+    "formato": "E-book / Livro Digital",
+    "link": "https://educapes.capes.gov.br/handle/capes/973177",
+    "publico_alvo": [
+      "docentes_professores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Ensino de Literatura",
+      "Literatura Afro-brasileira",
+      "Literaturas Indígenas",
+      "Ensino Médio Integrado",
+      "Decolonial",
+      "EPT",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica - Mestrado ProfEPT",
+      "Dissertação"
+    ],
+    "data_publicacao": "2025-05-09",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Oliveira, Ana Cláudia de",
+        "papel": "creator"
+      },
+      {
+        "nome": "Custódio, Raquel Cardoso de Faria e",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/973177",
+        "url": "https://educapes.capes.gov.br/handle/capes/973177"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "LITERATURA, EDUCAÇÃO E DECOLONIALIDADE",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "inferencia_llm",
+      "rotulo_original_declarado": "LITERATURA, EDUCAÇÃO E DECOLONIALIDADE",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "livro digital"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0023 2025 ana claudia de oliveira raquel cardoso de faria e custodio ifc blumenau lp1 mp3 o ensino de literatura numa perspectiva decolonial um olhar a respeito do ensino medio integrado do instituto federal catarinense a literatura desempenha um papel importante na formacao dos cidadaos contribuindo para o desenvolvimento de diversas areas da vida no ensino medio integrado ela esta presente no componente curricular de lingua portuguesa dentro desse espaco dos textos literarios para alem do canone encontra se a literatura numa perspectiva decolonial uma abordagem que valoriza vozes que foram historicamente marginalizadas assim como revisita e problematiza obras classicas nesse sentido e que se construiu a problematica da pesquisa compreender o espaco da literatura numa perspectiva decolonial na educacao profissional e tecnologica a partir das percepcoes dos docentes de lingua portuguesa do ensino medio integrado do instituto federal catarinense esta pesquisa pertence ao programa de pos graduacao em educacao profissional e tecnologica inserida na linha de praticas educativas em educacao profissional e tecnologica no macroprojeto 3 praticas educativas no curriculo integrado e possui as seguintes caracteristicas natureza aplicada com abordagem qualitativa objetivos exploratorios e descritivos para a coleta de dados foi aplicado um questionario com professores de lingua portuguesa do ensino medio integrado do instituto federal catarinense posteriormente a analise dos dados coletados foi feita com a utilizacao da analise de discurso pecheutiana os resultados observados foram que os docentes tem uma percepcao da literatura como elemento essencial para a formacao integral e compreendem a discussao da literatura numa perspectiva decolonial assim como as obrigacoes estipuladas na ldb no entanto enfrentam dificuldades e resistencias ao trabalhar as literaturas indigenas e afro brasileiras em sala de aula no espaco do emi a partir deste cenario e que se construiu um guia educacional voltado aos docentes de lingua portuguesa da ept palavras chave educacao profissional e tecnologica analise do discurso decolonialidade ensino medio integrado literaturas indigenas e afro brasileiras pedagogia historico critica literatura educacao e decolonialidade material didatico instrucional e book livro digital ensino medio integrado educacao profissional e tecnologica analise do discurso decolonialidade ensino medio integrado literaturas indigenas e afro brasileiras ensino de literatura literatura afro brasileira literaturas indigenas decolonial ept programa de pos graduacao em educacao profissional e tecnologica mestrado profept dissertacao adilson cesar araujo ana margarida campello angelica maria vieira cruz antonio candido antonio carlos gil bell hooks bernardo aguiar carla akotirene chimamanda ngozi adichie claudio nei nascimento da silva eliana marcia dos santos carvalho fabiana claudia viana borges fabio campos gaudencio frigotto graca grauna ira shor joaze bernardino costa louis althusser luis donisete benzi grupioni luiz silva cuti marcelo andrade maria amelia dalvi maria ciavatta marise nogueira ramos michael apple neide luzia de rezende nelson maldonado torres paulo freire raimundo nonato ferreira do nascimento ramon grosfoguel raymond aron reinaldo matias fleuri renata lourenco dos santos renato almeida de oliveira rildo cosson rita jover faleiros tom bottomore vera maria candau walter correia",
+    "termos_unificados": [
+      "Educação Profissional e Tecnológica",
+      "Análise do Discurso",
+      "Decolonialidade",
+      "Ensino Médio Integrado",
+      "Literaturas Indígenas e Afro-brasileiras",
+      "Ensino de Literatura",
+      "Literatura Afro-brasileira",
+      "Literaturas Indígenas",
+      "Decolonial",
+      "EPT",
+      "Programa de Pós-Graduação em Educação Profissional e Tecnológica - Mestrado ProfEPT",
+      "Dissertação"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

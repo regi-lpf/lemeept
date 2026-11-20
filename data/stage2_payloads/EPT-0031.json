@@ -1,0 +1,222 @@
+{
+  "id": "EPT-0031",
+  "metadados_resolvidos": {
+    "ano": 2024,
+    "autor": "Silvia da Silva",
+    "orientador": "Cloves Alexandre de Castro",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP2",
+    "macroprojeto": "MP4"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "PRETOS, PARDOS E INDÍGENAS E A LEI DE COTAS: ACESSO DOS ESTUDANTES PPI NOS CURSOS DO ENSINO MÉDIO INTEGRADO NO INSTITUTO FEDERAL CATARINENSE – IFC CAMPUS CONCÓRDIA (2018-2022)",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/12/Dissertacao-Silvia-da-Silva.pdf",
+    "palavras_chave": [
+      "Ensino Médio Integrado",
+      "Programas de ação afirmativa na educação",
+      "Movimentos Sociais - Raças"
+    ],
+    "autores_referenciados": [
+      "A. P. Sonza",
+      "Alessandro Melo",
+      "Andréia Cristina de Almeida",
+      "Antoni Zabala",
+      "Antônio Carlos Gil",
+      "Antonio Gramsci",
+      "B. P. Salton",
+      "Celso Furtado",
+      "Cloves Alexandre de Castro",
+      "Dante Henrique Moura",
+      "David Harvey",
+      "Denise Tolfo Silveira",
+      "Dermeval Saviani",
+      "Eder Sader",
+      "Edgar Salvadori de Decca",
+      "Ennio Brauns",
+      "Fernanda Peixoto Córdova",
+      "Gabriel Kaplún",
+      "Gevanilda Santos",
+      "Inge Renate Frose Suhr",
+      "Ivonete Telles Medeiros",
+      "J. A. Strapazzon",
+      "Jayro Gonçalves Melo",
+      "João Carlos Cichaczewski",
+      "José Adão de Oliveira",
+      "José Rodrigues",
+      "Karl Marx",
+      "Laurentino Gomes",
+      "Manoel de Jesus Araujo Soares",
+      "Marcos Antônio Cardoso",
+      "Marise Nogueira Ramos",
+      "Michael Löwy",
+      "Milton Barbosa",
+      "Milton Santos",
+      "Moisey Mikhaylovick Pistrak",
+      "Nilson de Souza Leal",
+      "Petrônio Domingues",
+      "R. Likert",
+      "Reginaldo Leandro Plácido",
+      "Ricardo Antunes",
+      "Silvio Luiz de Almeida",
+      "Sueli Carneiro"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/918375",
+    "titulo_produto": "“OBSERVATÓRIO DA LEI DE COTAS DO IFC CAMPUS CONCÓRDIA”",
+    "titulo_produto_bruto": "SOFTWARE/APLICATIVO OBSERVATÓRIO DA LEI DE COTAS DO IFC CAMPUS CONCÓRDIA",
+    "data_publicacao": "2024-10-30",
+    "autores_colaboradores": [
+      {
+        "nome": "INSTITUTO FEDERAL CATARINENSE-IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Silvia, Silvia da",
+        "papel": "creator"
+      },
+      {
+        "nome": "CASTRO, Cloves Alexandre de",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/918375",
+        "url": "https://educapes.capes.gov.br/handle/capes/918375"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://public.tableau.com/app/profile/silvia.da.silva/viz/OBSERVATRIODALEIDECOTASIFCCONCRDIA/CAPA_1",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "OBSERVATÓRIO DA LEI DE COTAS IFC CONCÓRDIA",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "portal"
+    ],
+    "palavras_chave_educapes": [
+      "Lei de Cotas, Ensino Médio Integrado, Organização e Memórias dos Espaços Pedagógicos da EPT.",
+      "PROFEPT",
+      "Produto Educacional resultado de pesquisa de dissertação de Mestrado."
+    ],
+    "tipo_produto_regex": "software_aplicativo",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Aplicativo / Software",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "Instituto Federal Catarinense\nPrograma de Pós-Graduação em Educação Profissional e Tecnológica\nCampus Blumenau\nSILVIA DA SILVA\nPRETOS, PARDOS E INDÍGENAS E A LEI DE CONTAS: ACESSO DOS\nESTUDANTES PPI NOS CURSOS DO ENSINO MÉDIO INTEGRADO NO\nINSTITUTO FEDERAL CATARINENSE- IFC CAMPUS CONCÓRDIA (2018-2022)\nBlumenau\n2024\n\nSILVIA DA SILVA\nPRETOS, PARDOS E INDÍGENAS E A LEI DE CONTAS: ACESSO DOS\nESTUDANTES PPI NOS CURSOS DO ENSINO MÉDIO INTEGRADO NO\nINSTITUTO FEDERAL CATARINENSE- IFC CAMPUS CONCÓRDIA (2018-2022)\nDissertação, submetida ao Programa de\nPós-Graduação em Educação Profissional\ne\nTecnológica\ndo\nInstituto\nFederal\nCatarinense – Campus Blumenau para a\nobtenção do título de Mestra em Ensino.\nOrientador: Prof. Cloves Alexandre de\nCastro. Doutor em Geografia Humana.\nBlumenau\n2024",
+    "ficha_catalografica": "[PÁG. 3]\nFICHA CATALOGRÁFICA DISSERTAÇÃO\nSilva, Silvia da.\nS586p\nPretos, pardos e indígenas e a Lei de Cotas: acesso dos estudantes PPI\nnos cursos do Ensino Médio Integrado no Instituto Federal Catarinense – IFC\ncampus Concórdia (2018-2022) / Silvia da Silva; orientador Cloves Alexandre\nde Castro. -- Blumenau, 2024.\n73 p.\nDissertação (mestrado) – Instituto Federal Catarinense, campus Blumenau,\nMestrado Profissional em Educação Profissional Tecnológica (PROFEPT),\nBlumenau, 2024.\nInclui referências.\n1. Ensino Médio Integrado. 2. Programas de ação afirmativa na educação.\n3. Movimentos Sociais - Raças. I. Castro, Cloves Alexandre de. II. Instituto\nFederal Catarinense. Mestrado Profissional em Educação Profissional e\nTecnológica. III. Título\nCDD: 370.96081\nFicha catalográfica elaborada pela bibliotecária\nShyrlei K. Jagielski Benkendorf - CRB 14/662",
+    "sumario": "[PÁG. 17]\nSUMÁRIO\n1 INTRODUÇÃO........................................................................................................ 15\n2 REFERENCIAL TEÓRICO......................................................................................21\n2.1 Marco teórico: reconstituição das partes e totalidade em movimento............ 21\n2.2 Movimento Negro e as políticas públicas antirracistas do início do\nséculo-XXI.............................................................................................................29\n3 METODOLOGIA..................................................................................................... 36\n3.1 Aspectos metodológicos............................................................................................. 36\n4 ANÁLISE DOS DADOS (RESULTADOS E DISCUSSÕES).................................. 41\n4.1 Análise dos dados de matrículas do IFC Campus Concórdia, no período\n2018-2022.........................................................................................................................41\n4.2 Apresentação do produto educacional....................................................................... 45\n5 PRODUTO EDUCACIONAL...................................................................................58\n6 CONCLUSÕES (CONSIDERAÇÕES FINAIS)....................................................... 63\nREFERÊNCIAS..........................................................................................................65\nAPÊNDICE A – FORMULÁRIO DE AVALIAÇÃO DO PRODUTO EDUCACIONAL 69\n15\n1 INTRODUÇÃO\n\nO cenário educacional brasileiro é profundamente marcado por desigualdades\nhistóricas, refletindo a estrutura social excludente que permeia o país desde a\ncolonização. O acesso à educação pública de qualidade sempre foi limitado a um\npequeno grupo, enquanto a maioria da população enfrentou séculos de exclusão\ndos espaços formais de aprendizado. Em resposta a essas questões, foi instituída a\nLei 12.711/2012, conhecida como Lei de Cotas, promulgada pela presidenta Dilma\nRousseff, que se apresenta como uma das principais políticas públicas de ação\nafirmativa no Brasil contemporâneo. Essa legislação visa corrigir as desigualdades\nraciais e sociais no acesso ao ensino superior e técnico de nível médio nas\ninstituições federais, oferecendo maior equidade de oportunidades para grupos\nhistoricamente marginalizados.\nO estabelecimento da Lei de Cotas não ocorreu de maneira isolada, mas\ncomo resultado de um longo processo de luta dos movimentos sociais, e de\nintelectuais comprometidos com a emancipação social. Durante grande parte do\nséculo XX, as discussões sobre desigualdade racial e acesso à educação pública\npermaneciam à margem do debate público. No entanto, a ascensão de movimentos\nsociais, a exemplo do Movimento Negro Unificado (MNU) e a mobilização das\nclasses trabalhadoras, trouxe essas pautas ao centro das discussões políticas. A\npartir de então, a educação passa a ser concebida não apenas como um direito,\nm",
+    "resumo": "[PÁG. 11]\nRESUMO\nEsta dissertação resulta de uma pesquisa de natureza básica, com abordagem\nqualitativa e objetivos exploratórios. Os procedimentos metodológicos adotados\nincluem pesquisa bibliográfica e documental. O objeto de estudo é o Campus\nConcórdia do Instituto Federal Catarinense, e o problema investigado refere-se ao\nimpacto da Lei de Cotas no ingresso aos cursos de ensino médio integrado. Para\ninvestigar essa questão, foi necessário contextualizar o problema, que está\nenraizado no processo de formação estrutural da sociedade brasileira. Utilizando o\nmétodo materialista histórico-dialético, traçamos os percursos que moldam tanto o\nobjeto quanto o problema de pesquisa. Observou-se que essas realidades são\nprodutos das contradições do movimento estrutural, que historicamente reproduz a\nforma colonial no Brasil. Na década de 1970, novos atores surgem no cenário\npolítico brasileiro, reorganizando movimentos sociais e o novo sindicalismo. Esse\nprocesso abriu espaço para que, três décadas depois, as representações desses\natores assumissem a gestão do Estado brasileiro, implementando políticas públicas\nafirmativas e compensatórias, fruto das lutas anteriores. Entre essas políticas estão\na Lei 10.639/03, a Lei 11.892/08 e a Lei 12.711/12, indissociáveis dos movimentos\nsociais\ndos\nanos\n1970.\nPor\nmeio\ndo\nProduto\nEducacional,\ndenominado\n“OBSERVATÓRIO DA LEI DE COTAS DO IFC CAMPUS CONCÓRDIA”, foi possível\ndemonstrar que os mais dependentes de uma oferta pública por ensino médio\nintegrado ao profissional técnico e tecnológico estejam entre os mais excluídos no\nprocesso de ingresso, como são os casos das pessoas pretas, pardas, dos povos\nindígenas e das pessoas com deficiência.\nPalavras-Chave:\nEnsino\nMédio Integrado. Programas de ação afirmativa na educação.\nMovimentos Sociais - Raças.",
+    "introducao": "[PÁG. 18]\n15\n1 INTRODUÇÃO\n\nO cenário educacional brasileiro é profundamente marcado por desigualdades\nhistóricas, refletindo a estrutura social excludente que permeia o país desde a\ncolonização. O acesso à educação pública de qualidade sempre foi limitado a um\npequeno grupo, enquanto a maioria da população enfrentou séculos de exclusão\ndos espaços formais de aprendizado. Em resposta a essas questões, foi instituída a\nLei 12.711/2012, conhecida como Lei de Cotas, promulgada pela presidenta Dilma\nRousseff, que se apresenta como uma das principais políticas públicas de ação\nafirmativa no Brasil contemporâneo. Essa legislação visa corrigir as desigualdades\nraciais e sociais no acesso ao ensino superior e técnico de nível médio nas\ninstituições federais, oferecendo maior equidade de oportunidades para grupos\nhistoricamente marginalizados.\nO estabelecimento da Lei de Cotas não ocorreu de maneira isolada, mas\ncomo resultado de um longo processo de luta dos movimentos sociais, e de\nintelectuais comprometidos com a emancipação social. Durante grande parte do\nséculo XX, as discussões sobre desigualdade racial e acesso à educação pública\npermaneciam à margem do debate público. No entanto, a ascensão de movimentos\nsociais, a exemplo do Movimento Negro Unificado (MNU) e a mobilização das\nclasses trabalhadoras, trouxe essas pautas ao centro das discussões políticas. A\npartir de então, a educação passa a ser concebida não apenas como um direito,\nmas como uma ferramenta fundamental para a transformação social e a construção\nde uma sociedade mais justa.\nA exclusão educacional no Brasil, todavia, não pode ser analisada fora do\ncontexto das contradições sociais mais amplas. A dualidade educacional, que\ndistingue\na\neducação\noferecida\nàs\nelites\ndaquela\ndestinada\nàs\nclasses\ntrabalhadoras, é um reflexo direto das desigualdades de classe que permeiam a\nsociedade capitalista.\nA história da educação revela uma profunda relação com as estruturas\nsociais. Saviani (2007) já apontava para a divisão da sociedade em classes e a\nconsequente desigualdade na oferta educacional. Essa divisão se manifestava na\ndistinção entre a educação para as elites, voltada para a formação intelectual e o\nexercício do poder, e a educação para as classes populares, direcionada ao trabalho\nmanual e à reprodução das relações sociais de produção. Castro, et al. (2023)\n\n[PÁG. 19]\ncorroboram essa análise, evidenciando que a educação profissional, muitas vezes\nde caráter assistencial, era oferecida aos pobres, enquanto a educação superior era\nprivilégio das classes dominantes. Essa dicotomia na oferta educacional, segundo\nMoura (2010), é um traço marcante da história da educação brasileira, perpetuando\nas desigualdades sociais e reforçando a ordem estabelecida.\nAlém disso, a estrutura de ensino brasileiro está intimamente ligada às\nnecessidades do mercado e do capital. O desenvolvimento da educação técnica,\nespecialmente durante o governo Vargas, foi motivado pela necessidade de formar\nforças de trabalho para impulsionar o processo de industrialização que o Brasil\natravessava na primeira metade do século XX. Como resultado, instituiu-se uma\nforte divisão entre a Educação Profissional Tecnológica (EPT), destinado à classe\ntrabalhadora, e o ensino propedêutico, voltado para as elites, como denuncia Ramos\n(2014). Essa dualidade, longe de ser superada, é um reflexo das contradições\ninerentes ao sistema capitalista, que precisa tanto da exploração de trabalhadores\nquanto de uma elite que controle os meios de produção e o poder político.\nNesse contexto, a Lei de Cotas emerge como uma tentativa de romper com\nessa tradição de exclusão e segregação educacional. Ao reservar 50% das vagas\nem universidades e institutos federais para estudantes oriundos de escolas públicas,\ncom subcotas para pretos, pardos, indígenas (PPI), pessoas com deficiência (PcD) e\nestudantes de baixa renda, a lei busca não apenas democratizar o acesso à\neducação pública e de qualidade, mas também oferecer uma reparação histórica às\npopulações que, por séculos, foram marginalizadas. Contudo, a implementação da\nlei não foi uma tarefa fácil e encontrou resistência por parte de setores da sociedade\nque, muitas vezes, justificam a meritocracia como único critério justo para ingresso\nno ensino superior. Tal discurso ignora, no entanto, as desigualdades estruturais que\nmarcam o ponto de partida de muitos estudantes, tornando a competição por vagas\numa corrida desigual.\nA relação entre educação e transformação social, entretanto, não é uma\nnovidade trazida pela Lei de Cotas. A pedagogia histórico-crítica, desenvolvida no\nBrasil a partir das ideias de Dermeval Saviani e ancorada no marxismo, já defendia\nque\na\neducação\ndeveria\nser\num\ninstrumento\nde\nemancipação\nda\nclasse\ntrabalhadora. Para Saviani (2003), a educação é uma atividade intencionalmente\nvoltada para a transmissão dos conhecimentos historicamente acumulados, mas, ao\nmesmo tempo, deve possibilitar a apropriação crítica desses saberes pelas classes\n\n[PÁG. 20]\n17\npopulares, de modo que elas possam transformar a realidade material em que estão\ninseridas. Nesse sentido, essa ação que envolve teoria e prática, práxis, propõe uma\nruptura com a concepção tradicional de educação, que se limita a reproduzir a\nordem social vigente, e defende uma educação que permita a emancipação do\ntrabalhador por meio da educação.\nAo adotar o método dialético, a pedagogia histórico-crítica compreende que\nas desigualdades educacionais não são fenômenos isolados, mas parte das\ncontradições do modo de produção capitalista. O sistema educacional, tal como o\nconhecemos, está intrinsecamente ligado às relações de produção e poder que\ncaracterizam a sociedade capitalista. Assim, a educação, em sua forma atual,\ncontribui para a perpetuação das desigualdades sociais ao oferecer uma formação\ndiferenciada para os diferentes grupos sociais. Como bem destaca Saviani (2003), a\neducação pode ser tanto um meio de manutenção do status quo quanto uma\nferramenta de luta para a superação das contradições sociais.\nAo mesmo tempo, o debate sobre as cotas raciais e sociais no Brasil revela\nas tensões presentes na sociedade em relação às questões de meritocracia e justiça\nsocial. Setores conservadores argumentam que a reserva de vagas representa uma\nforma de discriminação às avessas, defendendo que todos deveriam competir\nigualmente pelas vagas. No entanto, esse argumento ignora as barreiras estruturais\nque impedem muitos jovens de escolas públicas, especialmente os de origem negra,\nde competir em pé de igualdade com estudantes das elites. Como argumentam\nSonza, Salton e Strapazzon (2015), a meritocracia, em um sistema tão desigual\nquanto o brasileiro, apenas reforça as distorções sociais, perpetuando o ciclo de\nexclusão.\nPor outro lado, os defensores das cotas argumentam que a medida é uma\nreparação necessária para corrigir séculos de desigualdade e injustiça. As cotas\npermitem que estudantes de grupos marginalizados tenham a oportunidade de\nacessar o ensino superior, quebrando o ciclo de exclusão que marcou a história da\neducação no Brasil. Além disso, ao introduzir maior diversidade nas universidades e\ninstitutos federais, a Lei de Cotas enriquece o espaço acadêmico, permitindo que\ndiferentes perspectivas e experiências sejam incorporadas ao debate científico.\nNesse cenário, o Instituto Federal Catarinense (IFC), a partir da instituição da\nRede Federal de Educação Profissional, Científica e Tecnológica (RFEPCT), por\nmeio da Lei 11.892/2008, foi originado na integração das escolas agrotécnicas de\n\n[PÁG. 21]\nConcórdia, Rio do Sul e Sombrio, mais os colégios agrícolas de Araquari e\nCamboriú, que eram vinculados à Universidade Federal de Santa Catarina. Em\nrelação\naos\nprincípios\npolítico-pedagógico,\no\nIFC\napresenta concepções de\nindissociabilidade entre ensino, extensão e pesquisa; pesquisa como princípio\npedagógico;\ntrabalho\ncomo\nprincípio\neducativo;\ngestão\ndemocrática;\nresponsabilidade e desenvolvimento social, econômico e ambiental; inclusã",
+    "descricao_produto_na_dissertacao": "[PÁG. 23] Dessa forma, o objetivo deste estudo reside na necessidade de uma análise\naprofundada sobre o impacto das cotas na EPT, um tema ainda pouco explorado na\nliteratura acadêmica, que foca predominantemente nas universidades. Ao examinar\no IFC Campus Concórdia, esta pesquisa busca preencher essa lacuna, fornecendo\ndados e análises que podem contribuir para o debate nacional sobre as políticas de\nação afirmativa, sua eficácia e os desafios que ainda precisam ser superados,\noferecendo subsídios para o aprimoramento e ampliação dessas políticas.\nPara tanto, os procedimentos metodológicos adotados foram a pesquisa\nbibliográfica e documental. A pesquisa explorou dados de relatórios de matrículas,\nextraídos do Sistema de Gestão Acadêmica (SIGAA) disponibilizados pelo setor de\nRegistro Acadêmico do IFC Campus Concórdia. A revisão bibliográfica incluiu\nestudos sobre desigualdades sociais, racismo estrutural e políticas educacionais no\nBrasil, fornecendo o embasamento teórico necessário para a análise crítica dos\ndados. Para a apresentação dos resultados da pesquisa, foi elaborado um Produto\nEducacional (PE) denominado “OBSERVATÓRIO DA LEI DE COTAS DO IFC\nCAMPUS\nCONCÓRDIA”\nna\nplataforma\nTableau,\ncom\na\napresentação\ndos\nindicadores em forma de gráficos dinâmicos.\nA análise dos dados de matrícula revela como a política de reserva de vagas\ntem possibilitado o acesso dos estudantes cotistas a uma educação de qualidade. O\nimpacto dessa política no Campus Concórdia reflete a importância das cotas para a\ndemocratização do ensino, mas também revela os desafios que ainda precisam ser\nenfrentados para garantir a permanência e o sucesso acadêmico desses estudantes.\nConsiderando esta introdução, a dissertação está organizada em seis\ncapítulos. No segundo capítulo, é apresentado o referencial teórico. O terceiro\ncapítulo\né\ndedicado\nà\nmetodologia\nutilizada\nna\npesquisa,\ndetalhando\nos\nprocedimentos de coleta e análise de dados para a elaboração do produto\neducacional. No quarto capítulo, são discutidos os resultados da pesquisa e\napresentados as análises dos dados coletados. O capítulo cinco apresenta o produto\neducacional e os resultados da avaliação. Por fim, o sexto capítulo traz as\nconsiderações finais e as sugestões para pesquisas futuras.\n\n[PÁG. 43] A partir da compilação e organização dessas informações por categorias de\ncotas, elaboramos representações na forma de gráficos e os problematizamos por\nmeio de conhecimentos da realidade concreta sobre a nossa temática de estudo.\nCom a discussão, optamos por elaborar um produto educacional que contribua para\nque o ingresso de estudantes por meio das cotas seja permanentemente discutido e\navaliado, tal como deve ser uma política pública de combate à exclusão social e de\nreparação.\nEste produto é um Observatório dinâmico construído na plataforma Tableau,\nonde os resultados da pesquisa estão apresentados por meio dos dados em forma\nde gráficos. O painel interativo permite filtrar os dados, de forma personalizada, por\nvariáveis como ano de ingresso, curso, tipo cota, facilitando a identificação de\npadrões e tendências. Essa ferramenta visual possibilitou uma análise mais intuitiva\ne contribuiu significativamente para a compreensão das relações entre as variáveis e\npara a interpretação dos resultados da pesquisa.\n4 ANÁLISE DOS DADOS (RESULTADOS E DISCUSSÕES)\nD\nDeficiência - Pessoa com deficiência (PcD) autodeclarada preta,\nparda ou indígena (PPI), com renda familiar bruta per capita igual ou\ninferior a 1,5 sal",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 18,
+        "texto": "O cenário educacional brasileiro é profundamente marcado por desigualdades\nhistóricas, refletindo a estrutura social excludente que permeia o país desde a\ncolonização. O acesso à educação pública de qualidade sempre foi limitado a um\npequeno grupo, enquanto a maioria da população enfrentou séculos de exclusão\ndos espaços formais de aprendizado. Em resposta a essas questões, foi instituída a\nLei 12.711/2012, conhecida como Lei de Cotas, promulgada pela presidenta Dilma\nRousseff, que se apresenta como uma das principais políticas públicas de ação\nafirmativa no Brasil contemporâneo. Essa legislação visa corrigir as desigualdades\nraciais e sociais no acesso ao ensino superior e técnico de nível médio nas\ninstituições federais, oferecendo maior equidade de oportunidades para grupos\nhistoricamente marginalizados.\nO estabelecimento da Lei de Cotas não ocorreu de maneira isolada, mas\ncomo resultado de um longo processo de luta dos movimentos sociais, e de\nintelectuais comprometidos com a emancipação social. Durante grande parte do\nséculo XX, as discussões sobre desigualdade racial e acesso à educação pública\npermaneciam à margem do debate público. No entanto, a ascensão de movimentos\nsocia",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 19,
+        "texto": "corroboram essa análise, evidenciando que a educação profissional, muitas vezes\nde caráter assistencial, era oferecida aos pobres, enquanto a educação superior era\nprivilégio das classes dominantes. Essa dicotomia na oferta educacional, segundo\nMoura (2010), é um traço marcante da história da educação brasileira, perpetuando\nas desigualdades sociais e reforçando a ordem estabelecida.\nAlém disso, a estrutura de ensino brasileiro está intimamente ligada às\nnecessidades do mercado e do capital. O desenvolvimento da educação técnica,\nespecialmente durante o governo Vargas, foi motivado pela necessidade de formar\nforças de trabalho para impulsionar o processo de industrialização que o Brasil\natravessava na primeira metade do século XX. Como resultado, instituiu-se uma\nforte divisão entre a Educação Profissional Tecnológica (EPT), destinado à classe\ntrabalhadora, e o ensino propedêutico, voltado para as elites, como denuncia Ramos\n(2014). Essa dualidade, longe de ser superada, é um reflexo das contradições\ninerentes ao sistema capitalista, que precisa tanto da exploração de trabalhadores\nquanto de uma elite que controle os meios de produção e o poder político.\nNesse contexto, a Lei de Co",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 20,
+        "texto": "17\npopulares, de modo que elas possam transformar a realidade material em que estão\ninseridas. Nesse sentido, essa ação que envolve teoria e prática, práxis, propõe uma\nruptura com a concepção tradicional de educação, que se limita a reproduzir a\nordem social vigente, e defende uma educação que permita a emancipação do\ntrabalhador por meio da educação.\nAo adotar o método dialético, a pedagogia histórico-crítica compreende que\nas desigualdades educacionais não são fenômenos isolados, mas parte das\ncontradições do modo de produção capitalista. O sistema educacional, tal como o\nconhecemos, está intrinsecamente ligado às relações de produção e poder que\ncaracterizam a sociedade capitalista. Assim, a educação, em sua forma atual,\ncontribui para a perpetuação das desigualdades sociais ao oferecer uma formação\ndiferenciada para os diferentes grupos sociais. Como bem destaca Saviani (2003), a\neducação pode ser tanto um meio de manutenção do status quo quanto uma\nferramenta de luta para a superação das contradições sociais.\nAo mesmo tempo, o debate sobre as cotas raciais e sociais no Brasil revela\nas tensões presentes na sociedade em relação às questões de meritocracia e justiça\nsocial. Set",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 21,
+        "texto": "Concórdia, Rio do Sul e Sombrio, mais os colégios agrícolas de Araquari e\nCamboriú, que eram vinculados à Universidade Federal de Santa Catarina. Em\nrelação\naos\nprincípios\npolítico-pedagógico,\no\nIFC\napresenta concepções de\nindissociabilidade entre ensino, extensão e pesquisa; pesquisa como princípio\npedagógico;\ntrabalho\ncomo\nprincípio\neducativo;\ngestão\ndemocrática;\nresponsabilidade e desenvolvimento social, econômico e ambiental; inclusão,\ndireitos humanos e diversidade; interdisciplinaridade e verticalização.\nAtualmente, o IFC possui 15 campi, distribuídos nas cidades de Abelardo Luz,\nAraquari, Blumenau, Brusque, Camboriú, Concórdia, Fraiburgo, Ibirama, Luzerna,\nRio do Sul, Santa Rosa do Sul, São Bento do Sul, São Francisco do Sul, Sombrio e\nVideira, além de uma Unidade Urbana e uma Unidade Tecnológica em Rio do Sul e\nda Reitoria instalada na cidade de Blumenau. A instituição oferece cursos de\neducação profissional e tecnológica de forma verticalizada: qualificação profissional,\neducação profissional técnica de nível médio, graduação e pós-graduação – lato e\nstricto sensu. Esses cursos são desenvolvidos para atender às demandas sociais e\naos arranjos produtivos locais/regionais.\nO",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 24,
+        "texto": "2.1 Marco teórico: reconstituição das partes e totalidade em movimento\nParte deste texto que compõem nosso marco teórico está inserida em artigo\nsubmetido em um dossiê de revista científica sobre a temática da nossa pesquisa.\nO campo teórico que orientou nossa investigação é o do materialismo\nhistórico-dialético. Uma teoria é caminho de abordagem do mundo sensível, pelo\nmétodo científico, sustentada por um dado campo conceitual (MELO, 2003). Isso faz\ndo materialismo histórico-dialético teoria, mas, fundamentalmente, método, pois foi\npor meio do método de buscar as determinações que dão forma a aparência, para\ncompreender o capitalismo do século XIX, que Marx chegou à teoria da revolução\n(LÖWY, 2002).\nPor isso, o movimento do nosso pensamento nesta pesquisa foi o de\ndemarcar\nteoricamente\no\nnosso\nobjeto,\nmas\ntambém,\nos\nfenômenos\nque\ncaracterizam o nosso problema, sem desvinculá-los de problemas estruturais do\nBrasil. Um problema estrutural está relacionado à estrutura fundante do que abriga o\nobjeto, neste caso o país.\nNesse sentido, este marco teórico conceitual aborda, em um primeiro\nmomento, o campus do IFC-Concórdia na qualidade de política pública do Estado\nbrasileiro. Em seguid",
+        "citacoes_detectadas": [
+          "MELO, 2003",
+          "LÖWY, 2002"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 28,
+        "texto": "25\nNesse sentido, a dualidade na oferta de educação diferenciada para as classes\nsociais também potencializa a pobreza de quem vende a força de trabalho e a\nriqueza de quem as compra por serem proprietários dos meios de produção.\nAs\nreformas\neducacionais\na\npartir\nde\n1930\nfortaleceram\no dualismo\neducacional e operaram para organizar a educação em duas grandes categorias.\nUma pautada em atividades de humanidades e ciências, de natureza mais\nintelectual, e outra em cursos de caráter técnico e manual (MOURA, 2010, p. 63).\nPosteriormente, na década de 1940, Gustavo Capanema, Ministro da Educação e\nSaúde Pública, tentou romper com o tipo de organização vigente e unificar as\npolíticas educativas federais por meio do movimento que ficou conhecido como\n“Reforma Capanema”. Até aquele momento as políticas voltadas à educação\nestavam a cargo dos estados da federação, e, com a reforma veio uma legislação\núnica para a educação no Brasil. Almeida e Suhr (2012, p.88) pontuam que “as Leis\nOrgânicas se constituíram em um conjunto de seis Decretos-Leis para a reforma dos\nensinos primário, secundário, industrial, comercial, normal e agrícola”.\nTodavia além da rígida dualidade também estava presente a ",
+        "citacoes_detectadas": [
+          "MOURA, 2010, p. 63",
+          "CICHACZEWSKI, 2023, p. 36",
+          "MELO, 2010"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 29,
+        "texto": "desenvolvimento dependente resultou para a educação profissional a instituição da\nplena equivalência entre os cursos profissionais e propedêuticos para fins de\nprosseguimento nos estudos através da Lei 4.024/61. Marise Ramos diz que\nPara a educação profissional o fato mais relevante foi a equivalência entre\neste e o ensino médio. Organizado em dois ciclos – o ginasial de 4 anos e o\ncolegial de 3 anos – ambos compreendiam o ensino secundário e o ensino\ntécnico (industrial, agrícola, comercial e de formação de professores). A\npartir disto, os concluintes do colegial técnico podiam se candidatar a\nqualquer curso de nível superior. Quebrou-se, também, a rigidez das\nnormas\ncurriculares,\nabrindo-se\na possibilidade de os Estados e os\nestabelecimentos\nanexarem\ndisciplinas\noptativas\nao\ncurrículo\nmínimo\nestabelecido pelo Conselho Nacional de Educação (RAMOS, 2014, p. 28).\nA dinâmica mundial na ordem imediatamente posterior à Segunda Guerra\nMundial, denominada de Guerra Fria, determinou alinhamentos regionais, áreas de\ninfluências e estratégias de aprofundamentos de dependências de países que\npassaram pela condição colonial e que, a partir do final dos anos da década de 1950\nse viram diante d",
+        "citacoes_detectadas": [
+          "RAMOS, 2014, p. 28",
+          "ANTUNES, 1999",
+          "CASTRO; PLÁCIDO; SCHENKEL,\n2020"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "27\nmanutenção dos baixos salários. Ramos (2014, p. 44), assevera ter se tratado do\nperíodo “em que a Teoria do Capital Humano é mais difundida e que tomam força os\nprincípios da economia da educação” que “ocupou um lugar estratégico na\ncomposição da força de trabalho industrial brasileira”.\nAquele período de desenvolvimento do capitalismo e das forças produtivas\nbrasileiras também foi o momento de consolidação da rede de CEFETs do país.\nCriados em 1978, essa rede tornou-se referência importante na oferta de ensino\ntecnológico. Todavia o mais significativo de todo esse processo foi a maturidade que\na classe trabalhadora brasileira adquiriu durante aquele contexto de repressão\npolítica, superexploração do trabalho e tecnicismo na sua formação profissional\n(SADER, 1988).\nTal maturidade resultou nas lutas e greves da década de 1970 cujo acúmulo\nde forças resultou na criação do Partido dos Trabalhadores (PT), em 1980, e, quatro\nanos depois, na Central Única dos Trabalhadores (CUT). Foi no 5º Congresso\nNacional da CUT, em 1991, que foi apresentada a tese da necessidade de àquela\nCentral trabalhar para construir uma escola para trabalhadores. Essa proposta tem\ncomo\nnatureza\nos\nprincípios\n",
+        "citacoes_detectadas": [
+          "SADER, 1988"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 31,
+        "texto": "Primeiramente: educação mental. Segundo: Educação física, tal como é\ndada em escolas de ginástica e pelo exército militar. Terceiro: Instrução\ntecnológica, que transmite os princípios gerais de todos os processos de\nprodução e, simultaneamente, inicia a criança, o jovem no uso prático e\nmanejo dos instrumentos elementares de todos os ofícios (MARX, p. 6,\n1982).\nEssa concepção de educação foi sendo reelaborada na mesma dimensão\nque a luta pela revolução socialista foi se ampliando. No processo da Revolução\nRussa e a formação da ex-União das Repúblicas Socialistas Soviéticas (URSS), a\neducação politécnica se fez presente por meio da escola do trabalho, de Moisey\nPistrak, que tinha como princípio o conhecimento do mundo natural, as leis do\ntrabalho\nhumano,\nas\nestruturas\npsicológicas\ne\nfísicas\ndos\nestudantes,\ne,\nfundamentalmente, do método dialético como força organizadora do mundo.\n(PRISTRAK, 2018).\nGramsci (2000) também refletiu acerca da importância da educação e cultura\nno contexto do seu debate sobre hegemonia. Para ele, a educação dos jovens tinha\nque ser humanista e a escola unitária desinteressada do trabalho, estruturada na\nfilosofia da práxis e que contraporia os princípios d",
+        "citacoes_detectadas": [
+          "PRISTRAK, 2018",
+          "SAVIANI, 2003",
+          "SADER, 1988"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 39,
+        "texto": "3 METODOLOGIA\n3.1 Aspectos metodológicos\nCompreende-se por metodologia os caminhos da pesquisa nos quais a/o\npesquisador(a) coloca em movimento o seu objeto com o fito de desvendar o seu\nproblema de pesquisa. Esse movimento só é possível quando está claro para o/a\npesquisador(a) o seu objeto, o seu problema, os fenômenos que os circundam, e,\nfundamentalmente, o método que orientará a pesquisa. Por isso, metodologia\ntambém pode ser compreendida como caminhos do método, pois não há pesquisa\nde fato, sem método, ou seja, sem um arcabouço teórico que nos guie para a\ncompreensão do mundo sensível, da realidade percebível. Nesse sentido, o nosso\nmétodo é o materialismo histórico-dialético e a metodologia é o caminho para\ndesvendarmos o problema identificado no nosso objeto, por meio desse método, que\nbusca as determinações que dão formas aparentes ao objeto, ao problema e aos\nfenômenos que os circundam.\nIsso encaminhou nossa investigação, no momento inicial, para uma pesquisa\nbibliográfica, buscando o estado da arte do debate acerca da lei de cotas, mas,\nfundamentalmente, sobre os processos que resultaram nesta lei, o que implicou no\nmergulho sobre os movimentos de luta e resistência dos",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 66,
+        "texto": "O\nobjetivo\nda\npesquisa\nque\ndeu\nvida\nao\nProduto\nEducacional\n“OBSERVATÓRIO DA LEI DE COTAS DO IFC CAMPUS CONCÓRDIA” foi o de\naveriguar o impacto da Lei de Cota no acesso ao ensino profissional e tecnológico\nintegrado ao ensino de nível médio no IFC Campus Concórdia. Para isso se recorreu\nao método materialista histórico-dialético e recuperaram-se as determinações que\nderam formas aos IFs, o objeto desta pesquisa, e à Lei 12.711/12.\nA busca por essas determinações fez percorrer por caminhos da formação\nestrutural do Brasil e a perceber e identificar nesses percursos os processos de lutas\ne resistências a uma estrutura de origem colonial e que historicamente se reproduz\nno Brasil, mudando de forma, mas mantendo e ocultando os conteúdos. São nas\nresistências a essa estrutura que reside a gênese das políticas afirmativas e\ncompensatórias, que passaram a povoar a legislação brasileira, de forma mais\nsignificativa, a partir de 2003.\nA essas resistências também reside a gênese da proposta da oferta de um\nensino básico profissional e tecnológico integrado ao ensino médio. Nessa proposta,\no trabalho emerge na sua dimensão ontológica e figura como princípio educativo e a\nformação omnilateral c",
+        "citacoes_detectadas": []
+      }
+    ],
+    "referencias_filtradas": [
+      "ANTUNES, Ricardo. Os sentidos do trabalho: Ensaio sobre a afirmação e a negação do trabalho. 4ª ed. – São Paulo: Boitempo, 1999, 258 p.",
+      "CICHACZEWSKI, João Carlos. Uma história a ser feita: os sentidos da formação profissional nos IFs. – Blumenau: Editora IFC, 2023, E-book: 161 p.",
+      "LÖWY, Michael. A teoria da revolução no jovem Marx. Petrópolis, RJ: Vozes, 2002, 245p.",
+      "MELO, Jayro Gonçalves. Geografia, História e teoria e a teoria das escalas geográfica. In:.Espiral do Espaço/ Melo, Jayro Gonçalves (org.). Presidente Prudente: [s.n], 2003.",
+      "MELO, Alessandro. O projeto pedagógico da Confederação Nacional da Indústria para a educação básica nos anos 2000. Tese de doutorado – Universidade Federal do Paraná, PPGE. Curitiba, 2010, 260 f.",
+      "MOURA, D. H. Educação básica e educação profissional e tecnológica: dualidade histórica e perspectiva de integração. Holos, Natal, v. 2, p. 1-27, 2007.",
+      "MOURA, D. H. Ensino médio e educação profissional: dualidade histórica e possibilidades de integração. In: MOLL, J. et al. (org.). Educação profissional e tecnológica no Brasil contemporâneo. Porto Alegre: Artmed, 2010, p. 58-79.",
+      "RAMOS, Marise Nogueira. História e Política da Educação Profissional. Curitiba: ifpr-ead, 2014, 121p. (Coleção Formação Pedagógica, vol. V).",
+      "SADER, Eder. Quando novos personagens entram em cena: Experiências e lutas dos trabalhadores da Grande São Paulo 1970-1980. São Paulo: Paz e Terra, 1988, 329 p.",
+      "SAVIANI, Dermeval. Pedagogia histórico-crítica: primeiras aproximações. – 8ª ed. Revista e ampliada – Campinas, SP: Autores Associados, 2003, 153 p.",
+      "SAVIANI, Dermeval. História das Ideias Pedagógicas no Brasil. – 4ª ed. – Campinas, SP: Autores Associados, 2013, 472 p."
+    ]
+  }
+}

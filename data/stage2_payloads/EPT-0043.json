@@ -1,0 +1,261 @@
+{
+  "id": "EPT-0043",
+  "metadados_resolvidos": {
+    "ano": 2024,
+    "autor": "Samara dos Santos",
+    "orientador": "Jorge da Cunha Dutra",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP2"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "EDUCAÇÃO DE SURDOS NO INSTITUTO FEDERAL CATARINENSE: POR UMA EDUCAÇÃO EMANCIPADORA NO ENSINO TÉCNICO INTEGRADO AO ENSINO MÉDIO",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/10/Dissertacao-Samara.pdf",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Surdos",
+      "Educação Emancipadora",
+      "Instituto Federal Catarinense"
+    ],
+    "autores_referenciados": [
+      "A. Zabala",
+      "Adriany de Ávila Melo Sampaio",
+      "Alastair Pennycook",
+      "André Ribeiro Reichert",
+      "Antônio Carlos Gil",
+      "Beatriz Ignatius Nogueira Soares",
+      "Boaventura de Sousa Santos",
+      "Carlos Henrique Rodrigues",
+      "Christian Laville",
+      "Cladecir Alberto Schenkel",
+      "Claudia Pereira Dutra",
+      "Cleber Cristiano Prodanov",
+      "Cloves Alexandre de Castro",
+      "Cristiane Albano Marquetti",
+      "Dermeval Saviani",
+      "Djamila Ribeiro",
+      "Eni P. Orlandi",
+      "Ernani Cesar de Freitas",
+      "Eva Lakatos",
+      "Ewerton Carlos Marques",
+      "Francisco de Oliveira",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "Gildete da Silva Amorin",
+      "Gladis Dalcin",
+      "Gladis Perlin",
+      "Humberto Luis de Cesaro",
+      "Jean Dionne",
+      "Karin Strobel",
+      "Keller Batista de Souza",
+      "Margareth Kayser Pereira",
+      "Maria Ciavatta",
+      "Marianne Rossi Stumpf",
+      "Marina Marconi",
+      "Marisa Dias Lima",
+      "Marise Nogueira Ramos",
+      "Melissa Rossana de Oliveira Menezes",
+      "Neri da Silva Xavier",
+      "Patrícia Luiza Rezende",
+      "Paulo Freire",
+      "Reginaldo Leandro Plácido",
+      "Ricardo Antunes",
+      "Ronice Muller de Quadros",
+      "Rosa Maria da Silva",
+      "Sérgio Augusto Freire de Souza",
+      "Sílvia Andreis-Witkoski",
+      "Sinfree Makoni",
+      "Teresa Cristina Leança Soares Alves",
+      "Timótheo Machado Henrique"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/747436",
+    "titulo_produto": "Orientações gerais para estudantes Surdos e servidores do Ensino Técnico Integrado ao Médio do IFC",
+    "titulo_produto_bruto": "ORIENTAÇÕES GERAIS PARA ESTUDANTES SURDOS E SERVIDORES DO ENSINO TÉCNICO INTEGRADO AO MÉDIO DO IFC",
+    "data_publicacao": "2024-05",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense - IFC Campus Blumenau",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Santos, Samara dos",
+        "papel": "creator"
+      },
+      {
+        "nome": "Dutra, Jorge da Cunha",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/747436",
+        "url": "https://educapes.capes.gov.br/handle/capes/747436"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://guiasurdosifc.my.canva.site/orientacoesgerais",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Roteiro dos vídeos do PE: Orientações gerais para estudantes Surdos e servidores do Ensino Técnico Integrado ao Médio do IFC",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "portal"
+    ],
+    "palavras_chave_educapes": [
+      "Educação Profissional e Tecnológica",
+      "Surdos",
+      "Educação Emancipadora",
+      "Instituto Federal Catarinense",
+      "Mestrado Profissional em Educação Profissional Tecnológica (PROFEPT)"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Guia",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "Instituto Federal Catarinense\nPrograma de Pós-Graduação em Educação Profissional e Tecnológica\nCampus Blumenau\nSAMARA DOS SANTOS\nEDUCAÇÃO DE SURDOS NO INSTITUTO FEDERAL CATARINENSE: POR UMA\nEDUCAÇÃO EMANCIPADORA NO ENSINO TÉCNICO INTEGRADO AO ENSINO\nMÉDIO\nBlumenau\n2024\n\nSAMARA DOS SANTOS\nEDUCAÇÃO DE SURDOS NO INSTITUTO FEDERAL CATARINENSE: POR UMA\nEDUCAÇÃO EMANCIPADORA NO ENSINO TÉCNICO INTEGRADO AO ENSINO\nMÉDIO\nDissertação\nsubmetida\nao\nPrograma\nde\nPós-graduação\nem\nEducação\nProfissional\ne\nTecnológica, do Instituto Federal Catarinense –\nCampus Blumenau, para a obtenção do título de\nMestre em Educação Profissional e Tecnológica.\nOrientador: Dr. Jorge da Cunha Dutra.\nBlumenau\n2024",
+    "ficha_catalografica": "[PÁG. 3]\nFICHA CATALOGRÁFICA DISSERTAÇÃO\n\n Santos, Samara dos.\nS237e Educação de surdos no Instituto Federal Catarinense: por uma educação\nemancipadora no ensino técnico integrado ao ensino médio / Samara dos\nSantos; orientador Jorge da Cunha Dutra. -- Blumenau, 2024.\n 128 p.\n Dissertação (mestrado) – Instituto Federal Catarinense, campus Blumenau,\nMestrado Profissional em Educação Profissional Tecnológica (PROFEPT),\nBlumenau, 2024.\n\n Inclui referências.\n\n1.Educação Profissional e Tecnológica. 2. Surdos. 3. Educação\nEmancipatória. I. Dutra, Jorge da Cunha. II. Instituto Federal Catarinense.\nMestrado Profissional em Educação Profissional e Tecnológica. III. Título.\n\nCDD: 371.912\n\nFicha catalográfica elaborada pela bibliotecária\nShyrlei K. Jagielski Benkendorf - CRB 14/662",
+    "sumario": "[PÁG. 17]\nSUMÁRIO\n1 INTRODUÇÃO.................................................................................................................. 13\n2 UM PARALELO ENTRE A HISTÓRIA DA EDUCAÇÃO DE\nSURDOS E DA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA........................14\n3 EPISTEMICÍDIOS NA EDUCAÇÃO DE SURDOS E A BUSCA\nPOR UMA EDUCAÇÃO EMANCIPADORA NA EPT..............................................26\n3.1 A Educação de Surdos no IFC........................................................................36\n4 PROCEDIMENTOS METODOLÓGICOS............................................................. 43\n4.1 Análise de Discurso............................................................................................45\n4.1.1 Esquecimentos discursivos.............................................................................46\n4.1.2 Paráfrases e Polissemia..................................................................................47\n4.1.3 Formações Imaginárias..................................................................................48\n4.1.4 Formações Discursivas...................................................................................50\n4.1.5 A Ideologia e o Sujeito.................................................................................... 50\n4.1.6 O Sujeito e Sua Forma Histórica.....................................................................51\n4.1.7 Incompletude..................................................................................................52\n4.2 A ideologia, a forma-sujeito e as formações discursivas:\nonde cabem os Surdos no capitalismo?............................................................. 53\n4.3 Recortes Discursivos e Análise do Corpus...................................................55\n4.3.1 Análise do discurso dos estudantes e egressos Surdos............................................. 57\n4.3.2 Análise do discurso dos docentes Surdos...................................................................75\n4.4 As condições de produção dos Surdos vinculados ao IFC.........................88\n5 PRODUTO EDUCACIONAL.................................................................................91\n5.1 Avaliação do produto pelos participantes...................................................101\n6 CONSIDERAÇÕES FINAIS................................................................................118\nREFERÊNCIAS......................................................................................................122\n13\n1 INTRODUÇÃO\nEsta investigação está vinculada à linha de pesquisa de Práticas Educativas\nem Educação Profissional e Tecnológica - EPT, pois trata sobre a EPT para\nestudantes Surdos1. Neste sentido, está inserido no Macroprojeto 2 – Inclusão e\ndiversidade em espaços formais e não formais de ensino na EPT, do Programa de\nMestrado Profissional em Educação Profissional e Tecnológica - ProfEPT polo\nBlumenau, na área do Ensino.\nO tema delimita-se em investigar os sujeitos Surdos (a saber: ",
+    "resumo": "[PÁG. 8]\nRESUMO\nEste estudo faz parte do Programa de Mestrado Profissional em Educação\nProfissional e Tecnológica (ProfEPT), está vinculado à linha de pesquisa de Práticas\nEducativas em Educação Profissional e Tecnológica (EPT) e foca na educação de\nestudantes Surdos no Instituto Federal Catarinense (IFC). Inserido no Macroprojeto\n2 – Inclusão e diversidade em espaços formais e não formais de ensino na EPT, o\nobjetivo geral foi elaborar um guia digital a partir da análise das percepções de\nSurdos vinculados ao ensino técnico integrado ao ensino médio do IFC, sinalizantes\nem Libras, visando a melhoria na educação de Surdos na EPT. A pesquisa é de\nnatureza aplicada, abordagem qualitativa e do tipo exploratória, desenvolvida por\nmeio de entrevistas semiestruturadas e submetidas a análise de discurso. Foram\nanalisados recortes discursivos de três estudantes Surdos matriculados, um egresso\ne dois servidores Surdos do IFC, todos inseridos no contexto sócio-histórico da\ninclusão educacional em escolas regulares e no IFC vinculados ao ensino técnico\nintegrado\nao\nmédio.\nConstatou-se\nque\nos\nestudantes apresentam distorção\nidade/série e todos possuem formações imaginárias perpassando, entre elas, a\nposição de Surdos de famílias ouvintes e estudantes em salas de aula de ouvintes,\nespaços onde a Língua Brasileira de Sinais (Libras) não possui o mesmo status que\na língua portuguesa, dessa forma, mantendo-os distantes de modelos identitários de\nreferências Surdas. Os estudantes trouxeram diversas condições de produção, como\na falta de conhecimento da Libras por parte dos ouvintes, dificuldade com conteúdos\ncomplexos em português, limitações na compreensão de textos longos, preferência\npor permanecer em silêncio nas aulas, desafios em se adaptar ao formato das aulas\npara ouvintes, dependência de intérpretes, entre outros. Essas características\nrefletem um sentimento comum entre eles, de desconforto e sensação de não\npertencimento ao ambiente educacional, indicando uma falta de afirmação de sua\nidentidade Surda e afastamento de um protagonismo Surdo. A pesquisa culminou na\ncriação de um produto educacional no formato de guia digital bilíngue em Libras e\nportuguês, intitulado “Orientações gerais para estudantes Surdos e servidores do\nEnsino Técnico Integrado ao Médio do IFC”. Este guia aborda temas relevantes para\naprimorar a educação de Surdos no contexto da EPT do IFC. Com as informações\npresentes no guia, os estudantes Surdos têm autonomia para saber onde buscar\nrespostas sobre as ações presentes na instituição, favorecendo sua participação\nefetiva. Para os servidores, o guia traz orientações para qualificar sua atuação e\ncompreensão em relação aos estudantes Surdos. O produto foi amplamente aceito\npelos\nusuários,\ncom\navaliações\ndestacando\nsua acessibilidade, clareza das\ninformações e organização do conteúdo, ressaltando sua importância na promoção\ndo protagonismo dos estudantes Surdos, proporcionando assim uma melhoria na\neducação de Surdos na EPT, em direção a uma autonomia e emancipação desses\nsujeitos. Os resultados da pesquisa apontam para possibilidades de replicar o\nmaterial em outros níveis de ensino, bem como direcionar futuras pesquisas para\ninvestigar a viabilidade e os benefícios de introduzir classes bilíngues para Surdos\nna EPT.\nPalavras-Chave:\nEducação\nProfissional\ne\nTecnológica.\nSurdos.\nEducação\nEmancipadora. Instituto Federal Catarinense.",
+    "introducao": "[PÁG. 18]\n13\n1 INTRODUÇÃO\nEsta investigação está vinculada à linha de pesquisa de Práticas Educativas\nem Educação Profissional e Tecnológica - EPT, pois trata sobre a EPT para\nestudantes Surdos1. Neste sentido, está inserido no Macroprojeto 2 – Inclusão e\ndiversidade em espaços formais e não formais de ensino na EPT, do Programa de\nMestrado Profissional em Educação Profissional e Tecnológica - ProfEPT polo\nBlumenau, na área do Ensino.\nO tema delimita-se em investigar os sujeitos Surdos (a saber: estudantes,\negressos e servidores), sinalizantes em Língua Brasileira de Sinais - Libras, que\nestão/estavam vinculados institucionalmente ao Ensino Médio Integrado do Instituto\nFederal Catarinense - IFC, no período compreendido entre os anos de 2014 a\n2022.\nO interesse em desenvolver esta pesquisa partiu das experiências desta\nautora, mediante sua atuação como tradutora e intérprete de Libras/Português no\nIFC e as suas observações quanto ao atendimento dos estudantes Surdos em\nâmbito institucional relacionado com o movimento da comunidade Surda por uma\neducação de qualidade.\nAssim, o problema da pesquisa é movido pela seguinte\npergunta: quais as percepções dos sujeitos Surdos vinculados ao ensino técnico\nintegrado ao ensino médio do IFC, sinalizantes em Libras, com relação às\nnecessidades de melhoria na educação de Surdos na EPT? Nesse sentido, o\nobjetivo geral deste trabalho foi elaborar um guia com orientações para estudantes\nSurdos e para servidores sobre o atendimento a este público no IFC, a partir da\nanálise das percepções dos sujeitos Surdos vinculados ao ensino técnico integrado\nao ensino médio do IFC, sinalizantes em Libras, com relação às necessidades de\nmelhoria na educação de Surdos na EPT. Os objetivos específicos deste estudo\nsão: verificar os motivos que levaram os Surdos egressos a concluírem o curso;\nverificar os motivos que levam os estudantes Surdos a permanecerem no curso;\nconhecer a percepção dos Professores Surdos do IFC sobre o ensino, as\n1 Uso o termo com letra maiúscula para me referir àqueles que se identificam com a identidade e\ncultura Surdas, que usam a língua de sinais para se comunicar.\n\n[PÁG. 19]\n14\ncondições de aprendizagem e o suporte pedagógico de estudantes Surdos na\ninstituição; e identificar as necessidades para uma educação de Surdos na EPT.\nEsta pesquisa foi classificada a partir do ponto de vista da sua natureza\ncomo aplicada, de abordagem qualitativa, do tipo exploratória e se desenvolveu a\npartir de entrevistas semiestruturadas com os sujeitos deste estudo. Para o\ntratamento dos dados foi utilizada a análise de discurso.\nPara contextualizar a estrutura desta dissertação, ela está organizada da\nseguinte forma: no primeiro capítulo, será traçado um paralelo entre a história da\neducação de surdos e a história da educação profissional e tecnológica, buscando\nidentificar pontos de convergência e divergência que possam lançar luz sobre a\nsituação atual. No segundo capítulo, serão discutidos os epistemicídios na\neducação de surdos e a busca por uma educação emancipadora na educação\nprofissional e tecnológica, com foco na experiência específica da educação de\nsurdos no Instituto Federal Catarinense (IFC). O terceiro capítulo abordará os\nprocedimentos metodológicos adotados, incluindo uma análise de discurso que\nexamina esquecimentos discursivos, paráfrases, formações imaginárias, formações\ndiscursivas, ideologia e sujeito, sujeito e sua forma histórica, e incompletude. Além\ndisso, será explorada a relação entre ideologia, forma-sujeito e formações\ndiscursivas, com uma análise dos recortes discursivos e do corpus utilizado. No\nquarto capítulo, serão apresentadas as condições de produção dos surdos\nvinculados ao IFC. O quinto capítulo discutirá o produto educacional desenvolvido\ncomo resultado desta pesquisa, incluindo uma avaliação pelos participantes. Por\nfim, as considerações finais, no sexto capítulo, encerrarão esta dissertação,\noferecendo reflexões sobre os resultados obtidos e suas implicações para a prática\neducacional. Essa estrutura visa fornecer uma análise abrangente e aprofundada\nda educação de surdos e sua relação com a educação profissional e tecnológica,\ncom o objetivo de contribuir para o avanço do conhecimento nesta área.\n2 UM PARALELO ENTRE A HISTÓRIA DA EDUCAÇÃO DE SURDOS E DA\nEDUCAÇÃO PROFISSIONAL E TECNOLÓGICA\n\n[PÁG. 20]\n15\nO início da Educação de Surdos surgiu por interesses econômicos, pelo fato\nde que, ante não considerados humanos, logo não tinham direito de receber\nherança; porém, nasciam Surdos em famílias nobres, fruto de casamentos\nconsanguíneos já no intuito de manter a herança no mesmo grupo familiar. Para\nsolucionar este problema, em 528, com a criação do Código Justiniano, durante o\nperíodo do Império Romano, definiu-se que caso o Surdo fosse oralizado ou\ndirigisse seus assuntos por meio da leitura e da escrita, este teria direito à herança.\nAssim, as famílias nobres buscaram estratégias para educar seus filhos Surdos\n(Andreis-Witkoski, 2015).\nAdemais, durante a revolução industrial, com o surgimento do conglomerado\nde pessoas trabalhadoras das fábricas e também do aumento de pessoas\ndesempregadas\nnesses\nmesmos\nespaços\n(Amorin\net\nal,\n2017),\nforam\nconstituindo-se os grupos de Surdos, pois identificavam-se pela sua diferença.\nAssim, houve mais interesse de profissionais da área médica e da educação pela\naprendizagem dos Surdos.\nDiante desses dois contextos principais surgiram várias teorias de educação\npara Surdos e muitos Surdos ascenderam a postos de professores. Também foram\ncriadas escolas e universidades de Surdos, incluindo o atual Instituto Nacional de\nEducação de Surdos - INES, localizado no estado do Rio de Janeiro, fundado em\n1856 (Brasil, 2021), que continha para o ensino as disciplinas de Língua\nPortuguesa, Aritmética, Geografia, História do Brasil, Escrituração Mercantil,\nLinguagem Articulada, Doutrina Cristã e Leitura sobre os Lábios, por exemplo; ou\nseja, uma formação para o trabalho. Em 1880, ocorreu o Congresso de Milão, na\nItália, e, por imposição ouvintista, o método oralista foi definido para a educação de\nSurdos. Segundo Strobel (2009, p. 26),\no método oral foi votado o mais adequado a ser adotado pelas escolas de\nsurdos e a língua de sinais foi proibida oficialmente alegando que a\nmesma destruía a capacidade da fala dos surdos, argumentando que os\nsurdos são “preguiçosos” para falar, preferindo a usar a língua de sinais. O\nAlexander Graham Bell teve grande influência neste congresso. Este\ncongresso\nfoi\norganizado,\npatrocinado\ne\nconduzido\npor\nmuitos\nespecialistas ouvintes na área de surdez, todos defensores do oralismo\npuro (a maioria já havia empenhado muito antes do congresso em fazer\nprevalecer o método oral puro no ensino dos surdos). Na ocasião de\nvotação na assembléia geral realizada no congresso todos os professores\nsurdos\nforam\nnegados\no\ndireito\nde\nvotar\ne\nexcluídos,\ndos\n164\n\n[PÁG. 21]\n16\nrepresentantes presentes ouvintes, apenas 5 dos Estados Unidos votaram\ncontra o oralismo puro.\nEsse foi um marco fortemente opressor para a vida das pessoas Surdas de\ntodo o mundo, impactando também na estrutura organizacional e didática do INES,\ne suas consequências estão presentes até hoje na visão da sociedade e nos\npróprios relatos de pessoas Surdas que viveram este período de proibição do uso\nda língua de sinais (Soares, 2019). O método oralista estava vinculado a um\nparadigma clínico terapêutico da surdez, ou seja, na correção para atingir o padrão\nouvinte. Essa fase durou quase cem anos e “foi permeada por imensos abusos\nfísicos e simbólicos” (Andreis-Witkoski, 2015, p. 44), porém, de modo discreto, a\nlíngua de sinais permaneceu presente nas vidas dos Surdos.\nAvançando no tempo da história do Brasil, a proclamação da República, em\n1889, estava embasada por um ideário positivista, de concepção liberal e\nprogressista, trouxe a educação como um viés de formar o cidadão para promover\na paz, a liberdade, a ordem e o progresso social, afastando-os das superstições e\ncrenças relig",
+    "descricao_produto_na_dissertacao": "[PÁG. 19] 14\ncondições de aprendizagem e o suporte pedagógico de estudantes Surdos na\ninstituição; e identificar as necessidades para uma educação de Surdos na EPT.\nEsta pesquisa foi classificada a partir do ponto de vista da sua natureza\ncomo aplicada, de abordagem qualitativa, do tipo exploratória e se desenvolveu a\npartir de entrevistas semiestruturadas com os sujeitos deste estudo. Para o\ntratamento dos dados foi utilizada a análise de discurso.\nPara contextualizar a estrutura desta dissertação, ela está organizada da\nseguinte forma: no primeiro capítulo, será traçado um paralelo entre a história da\neducação de surdos e a história da educação profissional e tecnológica, buscando\nidentificar pontos de convergência e divergência que possam lançar luz sobre a\nsituação atual. No segundo capítulo, serão discutidos os epistemicídios na\neducação de surdos e a busca por uma educação emancipadora na educação\nprofissional e tecnológica, com foco na experiência específica da educação de\nsurdos no Instituto Federal Catarinense (IFC). O terceiro capítulo abordará os\nprocedimentos metodológicos adotados, incluindo uma análise de discurso que\nexamina esquecimentos discursivos, paráfrases, formações imaginárias, formações\ndiscursivas, ideologia e sujeito, sujeito e sua forma histórica, e incompletude. Além\ndisso, será explorada a relação entre ideologia, forma-sujeito e formações\ndiscursivas, com uma análise dos recortes discursivos e do corpus utilizado. No\nquarto capítulo, serão apresentadas as condições de produção dos surdos\nvinculados ao IFC. O quinto capítulo discutirá o produto educacional desenvolvido\ncomo resultado desta pesquisa, incluindo uma avaliação pelos participantes. Por\nfim, as considerações finais, no sexto capítulo, encerrarão esta dissertação,\noferecendo reflexões sobre os resultados obtidos e suas implicações para a prática\neducacional. Essa estrutura visa fornecer uma análise abrangente e aprofundada\nda educação de surdos e sua relação com a educação profissional e tecnológica,\ncom o objetivo de contribuir para o avanço do conhecimento nesta área.\n2 UM PARALELO ENTRE A HISTÓRIA DA EDUCAÇÃO DE SURDOS E DA\nEDUCAÇÃO PROFISSIONAL E TECNOLÓGICA\n\n[PÁG. 49] 44\ncoletados dos sujeitos Surdos foram utilizados e transformadas em um produto\neducacional aplicado a este mesmo público a fim de sanar um problema específico.\nO ponto de vista da forma de abordagem do problema, esta pesquisa é\nqualitativa, pois “considera que há uma relação dinâmica entre o mundo real e o\nsujeito, isto é, um vínculo indissociável entre o mundo objetivo e a subjetividade do\nsujeito que não pode ser traduzido em números” (Prodanov; Freitas, 2013, p. 70).\nEm relação ao objetivo, a pesquisa é classificada como exploratória, porque\n“Tem como propósito proporcionar maior familiaridade com o problema, com vistas\na torná-lo mais explícito ou a construir hipóteses.” (Gil, 2010, p. 27).\nA\nconstrução\ndos\ndados\ndesenvolveu-se\na\npartir\nde\nentrevistas\nsemiestruturadas com os sujeitos deste estudo. É importante considerar que esse\ntipo de entrevista consiste na elaboração de uma “série de perguntas abertas feitas\noralmente em uma ordem prevista, mas na qual o entrevistador tem a possibilidade\nde acrescentar questões de esclarecimento” (Laville; Dionne, 1999, p. 188).\nDiante dessas considerações, em busca de responder a pergunta: “quais as\npercepções dos sujeitos Surdos vinculados ao ensino técnico integrado ao ensino\nmédio do IFC, sinalizantes em Libras, com relação às necess",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 22,
+        "texto": "17\nescola do vicio e do crime; Que é um dos primeiros deveres do Governo\nda Republica formar cidadãos uteis á Nação: [...] (Brasil, 1909, s/p)\nCom a expansão do capitalismo em escala global, o Brasil torna-se periferia\ndo capitalismo (Oliveira, 2003). Após a revolução burguesa no Brasil, na década de\n1930, “a formação dos trabalhadores torna-se uma necessidade econômica e não\nmais uma medida exclusivamente social como em sua gênese” (Ramos, 2014, p.\n14), pois surge “o modo de produção propriamente capitalista e, com ele, o\nprocesso de industrialização” (Ramos, 2014, p. 14).\nNessa perspectiva, Schenkel (2012) explica que no início dos anos de 1930\nforam criados os Ministérios da Educação e Saúde Pública e do Trabalho, Indústria\ne Comércio, e, também, o Conselho Nacional de Educação – CNE. Francisco\nCampos assumiu o Ministério da Educação e Saúde Pública e iniciou uma série de\nreformas na educação, em todos os níveis. Essa reforma educacional ficou\nconhecida como a “Reforma Francisco Campos”, com destaque aos Decretos\nFederais\nnº.\n19.890/1931\ne\nnº.\n21.241/32,\nque\nregulamentaram\no\nensino\nsecundário, e o Decreto Federal nº. 20.158/31, que organizou o ensino profissional\ncomercial, cuja",
+        "citacoes_detectadas": [
+          "Oliveira, 2003",
+          "Ramos, 2014, p.\n14",
+          "Ramos, 2014, p. 14"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 24,
+        "texto": "19\n“comprovaram que a Língua de Sinais se constitui legitimamente em uma língua,\nassim como as línguas de modalidade oral” (Andreis-Witkoski, 2015, p. 50).\nNa década seguinte, os estudos de Stokoe impulsionaram um novo modelo\npara educação de Surdos, a Comunicação Total, que consistia no “uso simultâneo\nda língua de sinais, língua falada, imagens, escritas, mímicas etc” (Henrique, 2021,\np. 3). Este modelo se espalhou pelo mundo, mas não foi um processo que\nproporcionou a descolonização do corpo Surdo, ou a descontinuidade da visão\npatológica da surdez, por consequência não se obteve êxito (Henrique, 2021), foi\napenas um método para facilitar a comunicação (Andreis-Witkoski, 2015).\nNo Brasil, em 1987, foi fundada a Federação Nacional de Educação e\nIntegração dos Deficientes Auditivos - FENEIDA, atual Federação Nacional de\nEducação e Integração dos Surdos - FENEIS, entidade filantrópica de grande\nrepresentatividade e importância para a comunidade Surda ainda hoje, pois “tem\npor finalidade a defesa de políticas linguísticas, educação, cultura, emprego,\nsaúde e assistência social, em favor da comunidade surda brasileira, bem\ncomo a defesa de seus direitos” (FENEIS, 2021, n/p).\nNo perío",
+        "citacoes_detectadas": [
+          "Andreis-Witkoski, 2015, p. 50",
+          "Henrique, 2021,\np. 3",
+          "Henrique, 2021",
+          "Andreis-Witkoski, 2015",
+          "Ramos, 2014",
+          "Ramos, 2014",
+          "Castro; Plácido; Schenkel, 2020",
+          "Schenkel, 2012"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 33,
+        "texto": "28\ndenúncias contra o sistema educacional nacional, já contou com significativos\navanços nas políticas públicas.\nNessa perspectiva, Rezende investigou “como os discursos enunciados nas\ncenas e nos espaços das Políticas Públicas em Educação de Surdos podem ser\nconsiderados um epistemicídio surdo” (Rezende, 2022, 01:20:462). Para tanto, a\nautora buscou notas técnicas, Atas, discursos proferidos por parlamentares na\nCâmara de Deputados e no Senado, requerimentos de audiência pública, bem\ncomo notas de repúdio contra o projeto de lei que tratava sobre a modalidade de\nEducação Bilíngue para Surdos. Segundo a autora,\nEstes\ndiscursos\nenunciados\n[inclusivistas] são muito recorrentes na\nacademia, na mídia e nos espaços parlamentares e públicos. São\ndeclarações\nconstantemente\nreplicadas\npor\neducadores\nadeptos\nda\ninclusão radical, ou seja, inclusivistas que não respeitam o protagonismo\ndos\npesquisadores\nsurdos,\nem\nespecial\ndos\ndoutores\nsurdos,\nque\nexpediram\ncartas-abertas\npara\nos\nMinistros\ndo\nSTF,\nSenadores\ne\nDeputados Federais, exigindo que respeitassem o protagonismo dos\nsujeitos surdos nas políticas públicas em educação (Rezende, 2022,\n01:27:33).\nEla\nexplica\nque os enunciados proferidos re",
+        "citacoes_detectadas": [
+          "Marques, 2021"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 37,
+        "texto": "32\nmaioria votante, foi necessário um representante originário da maioria linguística\npara validar o que os Surdos estavam reivindicando.\nEm vista das argumentações apresentadas pelos pesquisadores Surdos, em\nbusca de uma educação emancipadora, esta pesquisa considera o trabalho como\nprincípio educativo no sentido trazido por Saviani (2007, p. 154), o qual afirma que\n“os homens aprendiam a produzir sua existência no próprio ato de produzi-la. Eles\naprendiam a trabalhar trabalhando. Lidando com a natureza, relacionando-se uns\ncom os outros, os homens educavam-se e educavam as novas gerações”. Ainda\nassim, não se descarta o fato de que, com o surgimento dos sistemas de mediação\nde segunda ordem, advinda do processo de modificação social para a preservação\ndo metabolismo do capital (Antunes, 2009), houve uma nova formulação de\ntrabalho e consequentemente de educação.\nHoje, a luta por uma Educação integrada, unitária, politécnica e omnilateral,\né pauta de movimento contra-hegemônico dos interesses do Capital (Ramos,\n2008). Então, partimos da concepção de EPT numa perspectiva emancipadora, a\nqual pode ser definida como “Uma educação omnilateral, tecnológica ou politécnica\nformadora de s",
+        "citacoes_detectadas": [
+          "Antunes, 2009",
+          "Ramos,\n2008",
+          "Frigotto, 2001, p. 72-73"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 38,
+        "texto": "33\nPor unitária, entende-se a escola que “visa superar a dualidade da formação\npara o trabalho manual e para o trabalho intelectual” (Ramos, 2008, p. 2), ou seja,\nrecuperando o sentido do trabalho como algo inerente ao ser humano.\nPor politécnico uma educação “que possibilita o acesso à cultura, a ciência,\nao trabalho, por meio de uma educação básica e profissional” (Ramos, 2008, p. 3).\nNesse sentido, é uma educação “[...] que propicia a compreensão dos princípios\ncientífico-tecnológicos e históricos da produção moderna, de modo a orientar os\nestudantes à realização de múltiplas escolhas” (Ramos, 2008, p. 3). Ainda, para\ncomplementar o entendimento:\npolitécnica; isto é, uma educação que, ao propiciar aos sujeitos o acesso\naos conhecimentos e à cultura construídos pela humanidade, propicie a\nrealização de escolhas e a construção de caminhos para a produção da\nvida. Esse caminho é o trabalho. O trabalho no seu sentido mais amplo,\ncomo realização e produção humana, mas também o trabalho como práxis\neconômica (Ramos, 2008, p. 3).\nPor educação omnilateral entende-se\neducação ou [...] formação humana que busca levar em conta todas as\ndimensões que constituem a especificidade do ser human",
+        "citacoes_detectadas": [
+          "Ramos, 2008, p. 2",
+          "Ramos, 2008, p. 3",
+          "Ramos, 2008, p. 3",
+          "Ramos, 2008, p. 3",
+          "Frigotto, 2012, p. 267",
+          "Freire, 1987"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 40,
+        "texto": "35\nAo fazermos esta afirmação, não queremos dizer que os oprimidos, neste\ncaso, não se saibam oprimidos. O seu conhecimento de si mesmos, como\noprimidos, se encontra, contudo, prejudicado pela “imersão” em que se\nacham na realidade opressora. “Re conhecer-se” a este nível, contrários\nao outro, não significa ainda lutar pela superação da contradição. Daí esta\nquase aberração: um dos pólos da contradição pretendendo não a\nlibertação, mas a identificação com o seu contrário (Freire, 1987, p. 18).\nA educação emancipadora para Surdos busca promover uma formação\nintegral e libertadora, que permita aos estudantes surdos não apenas acessar o\nconhecimento socialmente construído, mas também desenvolver uma consciência\ncrítica sobre sua própria realidade e de seus semelhantes participando ativamente\nna transformação da sociedade.\nEssa abordagem filosófica e educacional reconhece a importância da língua\nde sinais e da cultura surda como elementos centrais na identidade e no\ndesenvolvimento\ndos\nSurdos.\nEla\nvisa\nromper\ncom\npráticas\neducacionais\ntradicionais que muitas vezes marginalizam ou desvalorizam a experiência e os\nconhecimentos dos Surdos, e ao invés disso, busca valorizar e empoderar ess",
+        "citacoes_detectadas": [
+          "Freire, 1987, p. 18"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 41,
+        "texto": "36\neducacionais em formatos acessíveis, a criação de espaços de diálogo e reflexão\nsobre questões relacionadas ao povo Surdo e ao seu direito linguístico, e o apoio à\nparticipação ativa de estudantes Surdos na vida acadêmica e comunitária do\ninstituto. Ao adotar uma abordagem que reconhece os direitos linguísticos e a\nautonomia dos Surdos, o IFC pode contribuir significativamente para a promoção\nde uma educação verdadeiramente emancipadora.\nÀ medida em que, aos estudantes Surdos, se busca ser ofertada uma\neducação\nintegrada, unitária, politécnica e omnilateral, é preciso levar em\nconsideração a sua cultura, sua identidade, o contexto em que está inserido, as\nepistemologias das comunidades Surdas e as possibilidades que estão para além\nde um saber construído pelas lentes do mundo ouvinte.\nAssim é preciso pensar no lugar de fala desse estudante, que condiz com a\nacepção utilizada por Djamila Ribeiro, “pensar lugar de fala seria romper com o\nsilêncio instituído para quem foi subalternizado, um movimento no sentido de\nromper com a hierarquia, muito bem classificada por Derrida como violenta”\n(Ribeiro, 2017, p. 50-51).\nNa próxima seção, abordo a educação de Surdos no IFC, destacando as\n",
+        "citacoes_detectadas": [
+          "Ribeiro, 2017, p. 50-51"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 58,
+        "texto": "53\npara atribuir novos sentidos. Contudo, a linguagem se produz em um campo de\nsignificados, que pode ser deslocado para outros campos.\nQuando o sentido fica estagnado em um único campo, o sujeito precisa ter\nacesso a um outro, a um lugar diferente, ou dizeres diferentes, para atribuir novos\nsentidos. Por exemplo, a Educação de Surdos ficou há muitos anos a cargo da\nEducação Especial, esse sentido já estava estagnado. Foi necessário buscar outro\nlugar, o da diferença, o do direito linguístico, para dar à Educação de Surdos um\nnovo sentido.\nPosto isso, no discurso existem deslocamentos, rupturas e movimentos\n(Orlandi, 2007). Conceitos podem ser internalizados em cada pessoa a partir de\nsuas relações em dado contexto e situação. Também os sentidos mudam com o\nprocesso sócio-histórico de produção, porque as ideologias, para a AD são os\ndiscursos em curso.\nApós abordar sobre os elementos da AD e antes de adentrar às análises do\ncorpus, na próxima seção vamos localizar a pessoa Surda dentro do materialismo\nhistórico e das relações capitalistas as quais estamos subordinados.\n4.2 A ideologia, a forma-sujeito e as formações discursivas: onde cabem os Surdos\nno capitalismo?\nDesde que a huma",
+        "citacoes_detectadas": [
+          "Orlandi, 2007",
+          "Antunes,\n2009",
+          "Amorin et al., 2017"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 59,
+        "texto": "54\nsocial. Nesse contexto, o sentido do trabalho difundido historicamente é aquele\ntrabalho que gera mais-valia, que separa o intelectual do manual, e não mais o seu\nsentido ontológico (Antunes, 2009).\nO sentido ontológico é aquele que impossibilita separar trabalho e educação,\npois, na origem, segundo Saviani (2007, p. 154) “os homens aprendiam a produzir\nsua\nexistência\nno\npróprio\nato\nde\nproduzi-la.\nEles\naprendiam\na\ntrabalhar\ntrabalhando. Lidando com a natureza, relacionando-se uns com os outros, os\nhomens educavam-se e educavam as novas gerações”, este é o trabalho como\nprincípio educativo.\nCom\na\nexpansão\ndo\ncapitalismo,\nnovos territórios e culturas foram\nexplorados, a fim de serem extraídas deles matérias primas e mão de obra de\ntrabalho. Nesse sentido, há uma reflexão a considerar sobre a relação do valor das\nlínguas humanas e como as línguas dominantes intervêm na cultura dos indivíduos\npertencentes a outro grupo minoritário. Sinfree Makoni, professor associado de\nlinguística aplicada e estudos africanos da Pennsylvania State University, e Alastair\nPennycook, professor de estudos linguísticos da University of Technology, de\nSydney, publicaram um artigo em que remontam o proces",
+        "citacoes_detectadas": [
+          "Antunes, 2009",
+          "Makoni;\nPennycook,\n2015",
+          "Andreis-Witkoski, 2015",
+          "Rezende, 2022"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 65,
+        "texto": "60\nque vão para além do ensino das disciplinas propedêuticas, mas um currículo\nintegrado que traga a identidade Surda, os movimentos culturais, o ensino da\ngramática da Libras, o ensino da língua portuguesa como segunda língua, entre\noutros elementos significativos.\nAinda, para compreender as condições de produção, perguntamos aos\nestudantes sobre seu envolvimento com a comunidade Surda, se por meio de\nassociações de Surdos, amigos e/ou familiares Surdos e eventos promovidos pelo\nIFC, que possivelmente trouxesse a eles as trocas entre os pares Surdos\nsinalizantes. As respostas foram resumidas do quadro abaixo:\nQuadro 03 - Relacionamento com outros Surdos\nEstudante\nParticipa de Associação de\nSurdos, sai com amigos\nSurdos?\nTem familiares\nSurdos?\nIFC promoveu\nalgum espaço*\nA\nNão\nNão\nNão\nB\nSim\nNão\nNão\nC\nNão\nNão\nNão\nD\nNão\nSim\nNão\n*O IFC já abriu espaço para outros Surdos falarem com você e com os ouvintes sobre o Dia da\nLibras ou o Dia Nacional do povo Surdo?\nFonte: Elaboração própria, 2024.\nA partir do quadro 3, podemos notar que as formações ideológicas dos\nestudantes participantes ficaram restritas às poucas relações com outros Surdos,\nestando distante de referências identitárias, de",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 103,
+        "texto": "98\n- SISAE, Coordenação de Registro Acadêmico e Cadastro Institucional - CRACI,\nentre outros.\nNa\nseção\ndestinada\naos\ndocentes\né\nressaltada\na\nimportância\nde\ncompreender as perspectivas clínica e sócio-antropológica em relação às pessoas\nSurdas, destacando a necessidade de reconhecimento de sua identidade e cultura.\nPara garantir o acesso igualitário dos estudantes Surdos, são sugeridas práticas\npedagógicas mais adequadas, adaptações de materiais e a colaboração com o\nNuBi para orientação e apoio.\nA seção dedicada aos intérpretes de Libras, oferece um guia abrangente\npara conhecer os documentos regulatórios que orientam o trabalho desses\nprofissionais e relevância do conhecimento do regulamento do serviço de tradução\ndo IFC, bem como do papel do NuBi para com os intérpretes, lhes oferecendo\norientação, apoio nas atividades de tradução, formação continuada e contribui com\npolíticas de acessibilidade no ambiente educacional e institucional, buscando\ngarantir que os intérpretes tenham condições adequadas para realizar seu trabalho\ne que os estudantes Surdos tenham acesso igualitário à comunicação, informação\ne educação.\nA seção destinada aos TAEs de outros cargos oferece orientações sob",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 104,
+        "texto": "99\nbilíngue, apresentando tanto Libras quanto português escrito em todos os\nelementos, incluindo os menus. Além disso, o design do site e dos vídeos prioriza o\nuso de um fundo escuro com letras, símbolos e legendas amarelo-claras,\nproporcionando melhor conforto visual para o público surdocego. Os vídeos\nmantêm um formato uniforme em que pessoa sinalizante veste camiseta preta.\nEssas medidas foram adotadas com base nas orientações de Surdocegos do Brasil\n(2022). Além disso, todos os vídeos incluem tradução para português na\nmodalidade oral-auditiva.\nPara a criação do PE, resgatou-se a problematização da pesquisa: qual é a\npercepção dos sujeitos Surdos vinculados ao ensino técnico integrado ao ensino\nmédio do IFC, sinalizantes em Libras, sobre a formação oferecida pela instituição e\nquais são as necessidades de melhoria na educação profissional e tecnológica\npara Surdos? A partir da coleta de dados da pesquisa, as necessidades de\nmelhoria foram se revelando por meio da análise do discurso, onde questões\nliterais reais emergiram, bem como formações ideológicas que necessitam de\nrupturas, de novos sentidos, para uma emancipação humana omnilateral dos\nestudantes Surdos. Dessa forma, o p",
+        "citacoes_detectadas": []
+      }
+    ],
+    "referencias_filtradas": [
+      "AMORIN, Gildete da Silva et al. A Inclusão dos Surdos no Capitalismo e o Avanço das Políticas Públicas Brasileiras. In.: Jornada Científica e Tecnológica de Língua Brasileira de Sinais: Produzindo Conhecimento E Integrando Saberes, I, 2017, Niterói - RJ. Anais de evento. Rio de Janeiro: UFF, 2017. ANDREIS-WITKOSKI, Sílvia. Introdução à libras: língua, história e cultura. 1. ed. Curitiba: UTFPR, 20",
+      "ANTUNES, Ricardo. Os sentidos do trabalho: ensaio sobre a afirmação e a negação do trabalho. 2. ed. São Paulo: Boitempo, 2009.",
+      "FREIRE, Paulo. Pedagogia do oprimido. 13. ed. Rio de Janeiro: Paz e Terra, 1987.",
+      "FRIGOTTO, Gaudêncio. Educação e trabalho: bases para debater a Educação Profissional Emancipatória. Perspectiva, Florianópolis. v. 19, n. 1, p. 71-87, jan./jun. 2001. ______. Educação omnilateral. In: CALDART, Roseli Salete et al. (orgs.). Dicionário da Educação do Campo. Rio de Janeiro: Escola Politécnica de Saúde Joaquim Venâncio, Expressão Popular, 2012. p. 265 - 272.",
+      "HENRIQUE, Timótheo Machado. A (des)colonização do corpo surdo - breve histórico dos modelos educacionais e as representações do ser surdo. Revista Educação Pública, v. 21, nº 36, 28 set 2021. Disponível em: https://educacaopublica.cecierj.edu.br/artigos/21/36/a-descolonizacao-do-corpo-sur do-breve-historico-dos-modelos-educacionais-e-as-representacoes-do-ser-surdo. Acesso em 02 mar. 2023. IFC. Con",
+      "MARQUES, Ewerton Carlos. Educação Bilíngue de Surdos na LDB. Youtube. 2021. Disponível em: https://www.youtube.com/watch?v=orOPzwLE-FA. Acesso em 20 mar. 2023.",
+      "OLIVEIRA, Francisco de. Crítica à razão dualista o ornitorrinco. 1. ed. São Paulo: Boitempo, 2003.",
+      "ORLANDI, Eni P. Análise de discurso: princípios e procedimentos. Campinas, SP: Pontes, 2007. ______. Recortar ou segmentar? In: Linguística: Questões e Controvérsias. Série Estudos. Uberaba: Faculdades Integradas de Uberaba, 1984. p. 09-26.",
+      "RAMOS, Marise Nogueira. Concepção do Ensino Médio Integrado. 2008. Disponível em: https://tecnicadmiwj.files.wordpress.com/2008/09/texto-concepcao-do-ensino-medio -integrado-marise-ramos1.pdf. Acesso em: 15 ago. 2022. ______. História e política da educação profissional. 1 ed. Curitiba: Instituto Federal do Paraná, v. 5, 2014. ______. Reforma da Educação Profissional: contradições na disputa por h",
+      "REZENDE, Patrícia Luiza. Apresentação Pública de Pós-Doutorado: Epistemicídio nas políticas públicas em educação de surdos. Campinas, [s. n], 23 maio 2022. 1 vídeo (3h 26 min 25 s). Publicado pelo canal Faculdade de Educação da Unicamp. Disponível em: https://www.youtube.com/watch?v=DYDn045EfuU. Acesso em: 28 fev. 2023. ______. Implante coclear na constituição dos sujeitos surdos. Tese (doutorado)",
+      "RIBEIRO, Djamila. O que é lugar de fala? Belo Horizonte: Letramento. 112 p. 2017.",
+      "SCHENKEL, Cladecir Alberto. Gestão ambiental: perfil profissional e formação em cursos superiores de tecnologia e de bacharelado. 2012. 346 f. Tese (Doutorado em Educação). Universidade Federal de Uberlândia, Minas Gerais, 2012."
+    ]
+  }
+}

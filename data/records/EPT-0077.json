@@ -1,0 +1,149 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0077",
+  "ano": 2022,
+  "autor": "Mara Cristina Chaves Barbosa",
+  "orientador": "Fátima Peres Zago de Oliveira",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP2",
+  "dissertacao": {
+    "titulo": "O PAPEL DA MEDIAÇÃO PEDAGÓGICA NO CURSO DE EJA INTEGRADA À EPT – FORMAÇÃO BÁSICA EM ELETRICISTA – DO CAMPUS BLUMENAU",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/ARTIGO-MARA-CRISTINA-CHAVES-BARBOSA-PDFA.pdf",
+    "resumo": "Este trabalho é fruto do Programa de Mestrado em Educação Profissional e\nTecnológica (ProfEPT), Instituição Associada Instituto Federal Catarinense - IFC,\ncampus Blumenau-SC. A pesquisa, de natureza básica, seguiu a abordagem\nqualitativa. O objetivo foi investigar os papéis da mediação pedagógica no curso de\nEducação de Jovens e Adultos – EJA - integrada à Educação Profissional e\nTecnológica - EPT - formação básica em eletricista industrial – do campus\nBlumenau-SC e sua relação com a identidade dos estudantes. A oferta ocorre na\nmodalidade semipresencial (entendida como Educação a Distância EaD). Mister\ndestacar que, adaptada ao contexto da sindemia covídica (Covid-19), a pesquisa\nenvolveu dois momentos: o exploratório e o empírico. Contribuíram como\ninstrumentos de pesquisa as entrevistas semiestruturadas, os questionários, bem\ncomo as análises do referencial teórico, que foi construído por meio de levantamento\nbibliográfico e documental. Os sujeitos de pesquisa foram as professoras\nmediadoras e os estudantes envolvidos na aplicação do Produto Educacional. Para\na análise dos dados, optou-se por uma aproximação à Análise Textual Discursiva\n(ATD). Como parte desse processo de desconstruções e construções e com base\nnas análises realizadas, foi desenvolvido um Produto Educacional na forma de uma\nSequência Didática -SD, considerando a educação como fator principal para\nemancipação humana, através de uma prática pedagógica para o reconhecimento e\nfortalecimento da identidade dos sujeitos que transitam pela Educação de Jovens e\nAdultos. Os resultados demonstraram que a mediação pedagógica se constitui por\num conjunto de atividades que favorece a aprendizagem e está diretamente\nvinculada ao professor mediador. Por outro lado, a análise mostrou que o conceito\nde mediação pedagógica está em constante construção e é preciso buscar na\nidentidade dos sujeitos alunos da EJA-EPT elementos para seu desenvolvimento.\nPalavras-chave: Mediação. Identidade. Educação de Jovens e Adultos. Educação\nProfissional e Tecnológica.",
+    "palavras_chave": [
+      "Mediação",
+      "Identidade",
+      "Educação de Jovens e Adultos",
+      "Educação Profissional e Tecnológica"
+    ],
+    "autores_referenciados": [
+      "Adriana Regina Sancerino",
+      "Alexander R. Luria",
+      "Antonio Amorim",
+      "Antonio Gramsci",
+      "Antonis Silva",
+      "Dermeval Saviani",
+      "Edite Maria da Silva de Faria",
+      "Erving Goffman",
+      "Fátima Oliveira",
+      "Gabriela Silva",
+      "Gaudêncio Frigotto",
+      "José Carlos Libâneo",
+      "Karin Anami",
+      "Karl Marx",
+      "Lev Vygotsky",
+      "Marcos Suel Zanette",
+      "Maria Clara Di Pierro",
+      "Maria de Fátima Cardoso Gomes",
+      "Maria Margarida Machado",
+      "Marinaide Lima Freitas",
+      "Marise Nogueira Ramos",
+      "Miguel Gaudêncio Arroyo",
+      "Patrícia Guimarães Vargas",
+      "Paulo Bezerra",
+      "Paulo Freire",
+      "Poliana Santos",
+      "Regiane Ibanhês Gimenes Berni",
+      "Renata Luiza da Costa",
+      "Ricardo Antunes",
+      "Roque Moraes",
+      "S. J. Quaresma",
+      "Sérgio Haddad",
+      "Stuart Hall",
+      "Sulanita Santos",
+      "Tânia Regina Dantas",
+      "V. Boni",
+      "Valéria Campos Cavalcante"
+    ],
+    "base_epistemologica": {
+      "valor": "Educação Libertadora / Freireana",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto cita diretamente Freire (1987) sobre diálogo e emancipação, alinhando-se à base epistemológica freireana. Também menciona Vygotsky (2005) na mediação pedagógica.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 21,
+          "trecho": "Ensinar exige respeito aos saberes dos educandos (FREIRE, 1987, p.31).",
+          "referencia_correspondente": "FREIRE, Paulo. Pedagogia do oprimido. Rio de Janeiro: Paz e Terra, 1987."
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 24,
+          "trecho": "A mediação está presente na relação do homem com o mundo, através da utilização de elementos intermediários (VYGOTSKY, 2005).",
+          "referencia_correspondente": "VYGOTSKY, Lev S. Pensamento e linguagem. São Paulo: Martins Fontes, 2005."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "SEQUÊNCIA DIDÁTICA: EM BUSCA DA IDENTIDADE CULTURAL DE ALUNOS DA  EDUCAÇÃO DE JOVENS E ADULTOS INTEGRADA À EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Sequência Didática",
+    "link": "http://educapes.capes.gov.br/handle/capes/717857",
+    "publico_alvo": [
+      "docentes_professores",
+      "estudantes_alunos"
+    ],
+    "nivel_aplicacao": "Educação Profissional e Tecnológica",
+    "palavras_chave": [
+      "Educação de Jovens  e Adultos, Educação Profissional e Tecnológica, Ensino Médio Integrado, Sequência Didática",
+      "PROFEPT",
+      "Produto Educacional resultado de pesquisa de dissertação de Mestrado"
+    ],
+    "data_publicacao": "2022-10-01",
+    "autores_colaboradores": [
+      {
+        "nome": "INSTITUTO FEDERAL CATARINENSE-IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "BARBOSA, Mara Cristina Chaves",
+        "papel": "creator"
+      },
+      {
+        "nome": "OLIVEIRA, Fátima Peres Zago de",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/717857",
+        "url": "http://educapes.capes.gov.br/handle/capes/717857"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "SEQUÊNCIA DIDÁTICA: EM BUSCA DA IDENTIDADE CULTURAL DE ALUNOS DA  EDUCAÇÃO DE JOVENS E ADULTOS INTEGRADA À EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "SEQUÊNCIA DIDÁTICA – EM BUSCA DA IDENTIDADE CULTURAL DOS ALUNOS DA EDUCAÇÃO DE JOVENS E ADULTOS INTEGRADAS À EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA.",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0077 2022 mara cristina chaves barbosa fatima peres zago de oliveira ifc blumenau lp1 mp2 o papel da mediacao pedagogica no curso de eja integrada a ept formacao basica em eletricista do campus blumenau este trabalho e fruto do programa de mestrado em educacao profissional e tecnologica profept instituicao associada instituto federal catarinense ifc campus blumenau sc a pesquisa de natureza basica seguiu a abordagem qualitativa o objetivo foi investigar os papeis da mediacao pedagogica no curso de educacao de jovens e adultos eja integrada a educacao profissional e tecnologica ept formacao basica em eletricista industrial do campus blumenau sc e sua relacao com a identidade dos estudantes a oferta ocorre na modalidade semipresencial entendida como educacao a distancia ead mister destacar que adaptada ao contexto da sindemia covidica covid 19 a pesquisa envolveu dois momentos o exploratorio e o empirico contribuiram como instrumentos de pesquisa as entrevistas semiestruturadas os questionarios bem como as analises do referencial teorico que foi construido por meio de levantamento bibliografico e documental os sujeitos de pesquisa foram as professoras mediadoras e os estudantes envolvidos na aplicacao do produto educacional para a analise dos dados optou se por uma aproximacao a analise textual discursiva atd como parte desse processo de desconstrucoes e construcoes e com base nas analises realizadas foi desenvolvido um produto educacional na forma de uma sequencia didatica sd considerando a educacao como fator principal para emancipacao humana atraves de uma pratica pedagogica para o reconhecimento e fortalecimento da identidade dos sujeitos que transitam pela educacao de jovens e adultos os resultados demonstraram que a mediacao pedagogica se constitui por um conjunto de atividades que favorece a aprendizagem e esta diretamente vinculada ao professor mediador por outro lado a analise mostrou que o conceito de mediacao pedagogica esta em constante construcao e e preciso buscar na identidade dos sujeitos alunos da eja ept elementos para seu desenvolvimento palavras chave mediacao identidade educacao de jovens e adultos educacao profissional e tecnologica educacao libertadora freireana sequencia didatica em busca da identidade cultural de alunos da educacao de jovens e adultos integrada a educacao profissional e tecnologica material didatico instrucional sequencia didatica educacao profissional e tecnologica mediacao identidade educacao de jovens e adultos educacao profissional e tecnologica educacao de jovens e adultos educacao profissional e tecnologica ensino medio integrado sequencia didatica profept produto educacional resultado de pesquisa de dissertacao de mestrado adriana regina sancerino alexander r luria antonio amorim antonio gramsci antonis silva dermeval saviani edite maria da silva de faria erving goffman fatima oliveira gabriela silva gaudencio frigotto jose carlos libaneo karin anami karl marx lev vygotsky marcos suel zanette maria clara di pierro maria de fatima cardoso gomes maria margarida machado marinaide lima freitas marise nogueira ramos miguel gaudencio arroyo patricia guimaraes vargas paulo bezerra paulo freire poliana santos regiane ibanhes gimenes berni renata luiza da costa ricardo antunes roque moraes s j quaresma sergio haddad stuart hall sulanita santos tania regina dantas v boni valeria campos cavalcante",
+    "termos_unificados": [
+      "Mediação",
+      "Identidade",
+      "Educação de Jovens e Adultos",
+      "Educação Profissional e Tecnológica",
+      "Educação de Jovens  e Adultos, Educação Profissional e Tecnológica, Ensino Médio Integrado, Sequência Didática",
+      "PROFEPT",
+      "Produto Educacional resultado de pesquisa de dissertação de Mestrado"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

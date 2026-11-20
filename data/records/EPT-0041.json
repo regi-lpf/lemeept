@@ -1,0 +1,170 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0041",
+  "ano": 2024,
+  "autor": "Paula Antônia Ferreira de Souza",
+  "orientador": "Simão Alberto",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP5",
+  "dissertacao": {
+    "titulo": "FORMAÇÃO DE PROFESSORES E EPT NO CURSO DE LICENCIATURA EM QUÍMICA NO IFC – CAMPUS BRUSQUE",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/10/Dissertacao-Paula-Souza.pdf",
+    "resumo": "Este estudo emerge das discussões e inquietações promovidas durante o Programa de Mestrado\nProfissional em Educação Profissional e Tecnológica (PROFEPT) do Instituto Federal\nCatarinense (IFC), Campus Blumenau. O estudo visa investigar como a formação inicial de\nprofessores no curso de Licenciatura em Química do IFC, Campus Brusque, contempla os\nconceitos da Educação Profissional e Tecnológica (EPT) em seu currículo. A questão problema\nque norteia este estudo é: Como a formação inicial de professores, oferecida no curso de\nLicenciatura em Química por uma Instituição de Educação Profissional e Tecnológica,\ncontempla os conceitos da EPT enquanto modalidade educacional em seu currículo? Inserida\nna linha de Organização e Memórias de Espaços Pedagógicos na EPT, a pesquisa integra-se ao\nmacroprojeto 5 - Organização do currículo integrado na EPT. Autores como Dante Enrique\nMoura, Marise Nogueira Ramos, Maria Ciavatta e a Lucília Regina de Souza Machado\ncontribuem para uma reflexão sobre o modelo de desenvolvimento socioeconômico do país e o\npapel da EPT. Os resultados indicam a necessidade de uma maior incorporação dos princípios\nda EPT na matriz curricular do curso, embora elementos como ensino integrado, pesquisa e\nextensão possam contribuir para a formação de docentes alinhados a esses princípios, não há\numa menção explícita de formar licenciandos para atuarem na EPT. Além disso, o produto\neducacional elaborado, consistiu na realização de uma oficina pedagógica que proporcionou\naos participantes uma formação continuada, promovendo reflexões sobre temas cruciais como\no trabalho como princípio educativo e a formação integral. Essa pesquisa oferece uma\ncontribuição significativa para a articulação da formação de professores com os princípios da\nEPT, visando atender às demandas do mundo do trabalho e fortalecer a missão dos Institutos\nFederais na formação de profissionais comprometidos com a transformação social.\n\nPalavras-Chave: Educação Profissional e Tecnológica. Formação de Professores. Licenciatura\nem Química. Trabalho como Princípio Educativo. Formação Humana Integral.",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Formação de Professores",
+      "Licenciatura em Química",
+      "Trabalho como Princípio Educativo",
+      "Formação Humana Integral"
+    ],
+    "autores_referenciados": [
+      "A. Boing",
+      "A. J. Gouveia",
+      "A. S. Godoy",
+      "Acácia Zeneida Kuenzer",
+      "Antônio Carlos Gil",
+      "Antônio Flávio Barbosa Moreira",
+      "Antonio Gramsci",
+      "António Nóvoa",
+      "Augusto Nibaldo Silva Triviños",
+      "B. A. Gatti",
+      "C. Silva",
+      "D. E. Moura",
+      "Dante Henrique Moura",
+      "Dermeval Saviani",
+      "E. S. S. Barretto",
+      "Eliezer Moreira Pacheco",
+      "Eva Maria Lakatos",
+      "F. B. G. Lima",
+      "F. Carvalho",
+      "Francisco Chagas Silva Souza",
+      "Gaudêncio Frigotto",
+      "I. S. Rodrigues",
+      "Ilma Passos Alencastro Veiga",
+      "István Mészáros",
+      "Ivonete Telles Medeiros Plácido",
+      "J. Martins Junior",
+      "Jair José Maldaner",
+      "José Gimeno Sacristán",
+      "Karl Marx",
+      "Laurence Bardin",
+      "Lucília Regina de Souza Machado",
+      "M. A. Marconi",
+      "M. C. Roldão",
+      "Maria Cecília de Souza Minayo",
+      "Maria Ciavatta",
+      "Marise Nogueira Ramos",
+      "Maurice Tardif",
+      "Menga Lüdke",
+      "Neires Maria Soldatelli Paviani",
+      "Niura Maria Fontana",
+      "O. Maldaner",
+      "Odília Fachin",
+      "Paulo Freire",
+      "R. Antunes",
+      "R. M. L. Araújo",
+      "Reginaldo Leandro Plácido",
+      "Sandra Regina de Oliveira García",
+      "Selma Garrido Pimenta",
+      "Simão Alberto",
+      "T. Gerhardt",
+      "T. Oliveira",
+      "Tomás Tadeu da Silva",
+      "U. Kelle",
+      "V. M. F. Candau"
+    ],
+    "base_epistemologica": {
+      "valor": "Educação Libertadora / Freireana",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto enfatiza a formação humana integral e o trabalho como princípio educativo, alinhado à educação libertadora. Referências como Saviani e Machado sustentam a crítica à formação docente tradicional.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 20,
+          "trecho": "O trabalho como princípio educativo e a formação integral são centrais para a educação profissional e tecnológica.",
+          "referencia_correspondente": "SAVIANI, 2007"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "FORMAÇÃO DE PROFESSORES EM EPT NO CURSO DE LICENCIATURA EM QUÍMICA NO IFC – CAMPUS BRUSQUE",
+    "tipo": "curso_oficina",
+    "formato": "Oficina",
+    "link": "https://educapes.capes.gov.br/handle/capes/869999",
+    "publico_alvo": [
+      "docentes_professores",
+      "gestores_coordenadores"
+    ],
+    "nivel_aplicacao": "Formação de Professores",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Formação de Professores",
+      "Licenciatura em Química",
+      "Trabalho como Princípio Educativo",
+      "Formação Humana Integral",
+      "Mestrado",
+      "Organização e Memórias"
+    ],
+    "data_publicacao": "2024-09-23",
+    "autores_colaboradores": [
+      {
+        "nome": "ProfEPT - IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "SOUZA, Paula Antônia Ferreira de.",
+        "papel": "creator"
+      },
+      {
+        "nome": "ALBERTO, Simão",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/869999",
+        "url": "https://educapes.capes.gov.br/handle/capes/869999"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "FORMAÇÃO DE PROFESSORES E EPT NO CURSO DE LICENCIATURA EM QUÍMICA NO IFC – CAMPUS BRUSQUE",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "DIÁLOGOS ENTRE O TEXTO CIENTÍFICO E A CULTURA POPULAR: REFLEXÕES SOBRE O TRABALHO COMO PRINCÍPIO EDUCATIVO E A FORMAÇÃO HUMANA INTEGRAL NA EPT",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "DIÁLOGOS ENTRE O TEXTO CIENTÍFICO E A CULTURA POPULAR: REFLEXÕES SOBRE O TRABALHO COMO PRINCÍPIO EDUCATIVO E A FORMAÇÃO HUMANA INTEGRAL NA EPT",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0041 2024 paula antonia ferreira de souza simao alberto ifc blumenau lp2 mp5 formacao de professores e ept no curso de licenciatura em quimica no ifc campus brusque este estudo emerge das discussoes e inquietacoes promovidas durante o programa de mestrado profissional em educacao profissional e tecnologica profept do instituto federal catarinense ifc campus blumenau o estudo visa investigar como a formacao inicial de professores no curso de licenciatura em quimica do ifc campus brusque contempla os conceitos da educacao profissional e tecnologica ept em seu curriculo a questao problema que norteia este estudo e como a formacao inicial de professores oferecida no curso de licenciatura em quimica por uma instituicao de educacao profissional e tecnologica contempla os conceitos da ept enquanto modalidade educacional em seu curriculo inserida na linha de organizacao e memorias de espacos pedagogicos na ept a pesquisa integra se ao macroprojeto 5 organizacao do curriculo integrado na ept autores como dante enrique moura marise nogueira ramos maria ciavatta e a lucilia regina de souza machado contribuem para uma reflexao sobre o modelo de desenvolvimento socioeconomico do pais e o papel da ept os resultados indicam a necessidade de uma maior incorporacao dos principios da ept na matriz curricular do curso embora elementos como ensino integrado pesquisa e extensao possam contribuir para a formacao de docentes alinhados a esses principios nao ha uma mencao explicita de formar licenciandos para atuarem na ept alem disso o produto educacional elaborado consistiu na realizacao de uma oficina pedagogica que proporcionou aos participantes uma formacao continuada promovendo reflexoes sobre temas cruciais como o trabalho como principio educativo e a formacao integral essa pesquisa oferece uma contribuicao significativa para a articulacao da formacao de professores com os principios da ept visando atender as demandas do mundo do trabalho e fortalecer a missao dos institutos federais na formacao de profissionais comprometidos com a transformacao social palavras chave educacao profissional e tecnologica formacao de professores licenciatura em quimica trabalho como principio educativo formacao humana integral educacao libertadora freireana formacao de professores em ept no curso de licenciatura em quimica no ifc campus brusque curso oficina oficina formacao de professores educacao profissional e tecnologica formacao de professores licenciatura em quimica trabalho como principio educativo formacao humana integral mestrado organizacao e memorias a boing a j gouveia a s godoy acacia zeneida kuenzer antonio carlos gil antonio flavio barbosa moreira antonio gramsci antonio novoa augusto nibaldo silva trivinos b a gatti c silva d e moura dante henrique moura dermeval saviani e s s barretto eliezer moreira pacheco eva maria lakatos f b g lima f carvalho francisco chagas silva souza gaudencio frigotto i s rodrigues ilma passos alencastro veiga istvan meszaros ivonete telles medeiros placido j martins junior jair jose maldaner jose gimeno sacristan karl marx laurence bardin lucilia regina de souza machado m a marconi m c roldao maria cecilia de souza minayo maria ciavatta marise nogueira ramos maurice tardif menga ludke neires maria soldatelli paviani niura maria fontana o maldaner odilia fachin paulo freire r antunes r m l araujo reginaldo leandro placido sandra regina de oliveira garcia selma garrido pimenta simao alberto t gerhardt t oliveira tomas tadeu da silva u kelle v m f candau",
+    "termos_unificados": [
+      "Educação Profissional e Tecnológica",
+      "Formação de Professores",
+      "Licenciatura em Química",
+      "Trabalho como Princípio Educativo",
+      "Formação Humana Integral",
+      "Mestrado",
+      "Organização e Memórias"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

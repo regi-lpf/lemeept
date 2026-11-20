@@ -1,0 +1,150 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0083",
+  "ano": 2021,
+  "autor": "Daniela Thomas Rauber",
+  "orientador": "Viviane Grimm",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP6",
+  "dissertacao": {
+    "titulo": "DISSERTAÇÃO DANIELA THOMAS RAUBER",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/DISSERTACAO-DANIELA-THOMAS-RAUBER-PDF-A.pdf",
+    "resumo": "O artigo é o resultado de pesquisa realizada no Mestrado Profissional em Educação\nProfissional e Tecnológica (ProfEPT) do campus Blumenau do Instituto Federal Catarinense\n(IFC), inserida na linha de pesquisa \"Organização e Memórias de Espaços Pedagógicos na\nEducação Profissional e Tecnológica (EPT)\", no \"Macroprojeto 6: Organização de espaços\npedagógicos na EPT\". Esta pesquisa tem como tema o Programa de Auxílios Estudantis\n(PAE) do Instituto Federal Catarinense (IFC), que faz parte da política de assistência\nestudantil desta instituição. O objetivo geral é analisar o entendimento que os estudantes do\nEnsino Médio Integrado (EMI), usuários do Programa de Auxílios Estudantis no IFC,\npossuem em relação aos limites e possibilidades desse programa, a fim de criar um produto\neducacional que os auxilie na compreensão da política e de seus direitos. A fundamentação\nteórica utilizada apresenta a história da assistência estudantil no Brasil e contextualiza o leitor\nsobre a assistência estudantil no IFC, assim como discute sobre conceitos relacionados ao\nensino médio integrado. Quanto à metodologia, trata-se de um estudo de caso, de abordagem\nqualitativa, sendo os dados coletados por questionário on-line, com estudantes do ensino\nmédio integrado do IFC, usuários do PAE e com servidores que trabalham nas comissões de\nPAE dos 15 campi do IFC. A partir dos dados coletados, foi desenvolvido o aplicativo\n“Descomplica PAE”, avaliado por servidores e estudantes. Como resultado, traz-se a\nperspectiva dos estudantes usuários do PAE e dos servidores atuantes nas comissões de PAE.\nUma das principais limitações apontadas é a dificuldade de compreensão dos editais por parte\ndos estudantes. Quanto ao aplicativo “Descomplica PAE”, observou-se que ele tem potencial\npara auxiliar as comissões de PAE do IFC e amplia a compreensão dos estudantes sobre a\npolítica de assistência estudantil.\n\nPalavras-Chave: Assistência Estudantil; Programa de Auxílios Estudantis; Educação\nProfissional e Tecnológica; Ensino Médio Integrado; Produto Educacional.",
+    "palavras_chave": [
+      "Assistência Estudantil",
+      "Programa de Auxílios Estudantis",
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "Produto Educacional"
+    ],
+    "autores_referenciados": [
+      "A. J. Scher",
+      "Aline Viero Kowalski",
+      "Amanda Marques de Oliveira Gomes",
+      "Ana Lúcia Marran",
+      "Andriara Ponte Casarotto Soares",
+      "Antonio Bosco de Lima",
+      "Aparecido Portela da Silva",
+      "Carlos Artexes Simões",
+      "Caroline Stéphanie Campos Arimateia Magalhães",
+      "Clara Martins do Nascimento",
+      "Daniela Thomas Rauber",
+      "Daniella Araujo Facchini Viana",
+      "Dante Henrique Moura",
+      "Dermeval Saviani",
+      "Edilene Maria de Oliveira",
+      "Eloísa de Mattos Höfling",
+      "Eloisa Diehl Bigaran Xavier",
+      "Fernanda Martini de Andrade",
+      "Gabriel Kaplún",
+      "Guiomar de Oliveira Passos",
+      "Ivanise Maria Rizzatti",
+      "Ivo Tonet",
+      "Jacqueline Domiense Almeida de Souza",
+      "Jaqueline Dutra de Oliveira",
+      "Jociane Marthendal Oliveira Santos",
+      "José Luiz Borges Horta",
+      "Josiela Silveira Cavalheiro",
+      "Larissa Cavalcanti de Albuquerque",
+      "Maria Ciavatta",
+      "Maria de Fátima de Souza Santos",
+      "Mercia Santana Mathias",
+      "Natália Gomes dos Reis Dutra",
+      "Patrick Champagne",
+      "Paulo Gomes Lima",
+      "Pierre Bourdieu",
+      "Polyana Imolesi Silveira de França",
+      "Priscila de Souza Chisté Leite",
+      "Raquel Raichelis",
+      "Ricardo Rodrigues Magalhães",
+      "Robert E. Stake",
+      "Roseli Bonfante",
+      "Viviane Grimm"
+    ],
+    "base_epistemologica": {
+      "valor": "Teoria Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": true,
+      "justificativa": "O texto discute políticas sociais e participação social, alinhando-se à Teoria Crítica, mas sem citação explícita de autores. A ênfase em divulgação de informações e ampliação de espaços de representação social sugere abordagem crítica.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 20,
+          "trecho": "os espaços de representação social na organização e gestão das políticas sociais devem ser alargados para permitir a participação de novos e diversificados sujeitos sociais",
+          "referencia_correspondente": null
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "APLICATIVO DESCOMPLICA PAE",
+    "tipo": "software_aplicativo",
+    "formato": "Aplicativo / Software",
+    "link": "http://educapes.capes.gov.br/handle/capes/647817",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "tecnicos_profissionais_educacao"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Assistência Estudantil; Programa de Auxílios Estudantis; Educação Profissional e Tecnológica; Ensino Médio Integrado; Produto Educacional",
+      "Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT",
+      "Parte do requisito para obtenção do grau de Mestre em Educação Profissional Tecnológica"
+    ],
+    "data_publicacao": "2021-11-26",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense - IFC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "RAUBER, Daniela Thomas",
+        "papel": "creator"
+      },
+      {
+        "nome": "GRIMM, Viviane",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/647817",
+        "url": "http://educapes.capes.gov.br/handle/capes/647817"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Produto Educacional",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "Aplicativo Móvel – DESCOMPLICA PAE",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "aplicativo móvel"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0083 2021 daniela thomas rauber viviane grimm ifc blumenau lp2 mp6 dissertacao daniela thomas rauber o artigo e o resultado de pesquisa realizada no mestrado profissional em educacao profissional e tecnologica profept do campus blumenau do instituto federal catarinense ifc inserida na linha de pesquisa organizacao e memorias de espacos pedagogicos na educacao profissional e tecnologica ept no macroprojeto 6 organizacao de espacos pedagogicos na ept esta pesquisa tem como tema o programa de auxilios estudantis pae do instituto federal catarinense ifc que faz parte da politica de assistencia estudantil desta instituicao o objetivo geral e analisar o entendimento que os estudantes do ensino medio integrado emi usuarios do programa de auxilios estudantis no ifc possuem em relacao aos limites e possibilidades desse programa a fim de criar um produto educacional que os auxilie na compreensao da politica e de seus direitos a fundamentacao teorica utilizada apresenta a historia da assistencia estudantil no brasil e contextualiza o leitor sobre a assistencia estudantil no ifc assim como discute sobre conceitos relacionados ao ensino medio integrado quanto a metodologia trata se de um estudo de caso de abordagem qualitativa sendo os dados coletados por questionario on line com estudantes do ensino medio integrado do ifc usuarios do pae e com servidores que trabalham nas comissoes de pae dos 15 campi do ifc a partir dos dados coletados foi desenvolvido o aplicativo descomplica pae avaliado por servidores e estudantes como resultado traz se a perspectiva dos estudantes usuarios do pae e dos servidores atuantes nas comissoes de pae uma das principais limitacoes apontadas e a dificuldade de compreensao dos editais por parte dos estudantes quanto ao aplicativo descomplica pae observou se que ele tem potencial para auxiliar as comissoes de pae do ifc e amplia a compreensao dos estudantes sobre a politica de assistencia estudantil palavras chave assistencia estudantil programa de auxilios estudantis educacao profissional e tecnologica ensino medio integrado produto educacional teoria critica aplicativo descomplica pae software aplicativo aplicativo software ensino medio integrado assistencia estudantil programa de auxilios estudantis educacao profissional e tecnologica ensino medio integrado produto educacional assistencia estudantil programa de auxilios estudantis educacao profissional e tecnologica ensino medio integrado produto educacional mestrado profissional em educacao profissional e tecnologica profept parte do requisito para obtencao do grau de mestre em educacao profissional tecnologica a j scher aline viero kowalski amanda marques de oliveira gomes ana lucia marran andriara ponte casarotto soares antonio bosco de lima aparecido portela da silva carlos artexes simoes caroline stephanie campos arimateia magalhaes clara martins do nascimento daniela thomas rauber daniella araujo facchini viana dante henrique moura dermeval saviani edilene maria de oliveira eloisa de mattos hofling eloisa diehl bigaran xavier fernanda martini de andrade gabriel kaplun guiomar de oliveira passos ivanise maria rizzatti ivo tonet jacqueline domiense almeida de souza jaqueline dutra de oliveira jociane marthendal oliveira santos jose luiz borges horta josiela silveira cavalheiro larissa cavalcanti de albuquerque maria ciavatta maria de fatima de souza santos mercia santana mathias natalia gomes dos reis dutra patrick champagne paulo gomes lima pierre bourdieu polyana imolesi silveira de franca priscila de souza chiste leite raquel raichelis ricardo rodrigues magalhaes robert e stake roseli bonfante viviane grimm",
+    "termos_unificados": [
+      "Assistência Estudantil",
+      "Programa de Auxílios Estudantis",
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "Produto Educacional",
+      "Assistência Estudantil; Programa de Auxílios Estudantis; Educação Profissional e Tecnológica; Ensino Médio Integrado; Produto Educacional",
+      "Mestrado Profissional em Educação Profissional e Tecnológica - ProfEPT",
+      "Parte do requisito para obtenção do grau de Mestre em Educação Profissional Tecnológica"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

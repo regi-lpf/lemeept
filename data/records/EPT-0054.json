@@ -1,0 +1,103 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0054",
+  "ano": 2024,
+  "autor": "Bruno Dutra Vieira",
+  "orientador": "Eduardo Augusto Werneck Ribeiro",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP1",
+  "dissertacao": {
+    "titulo": "IMPACTO DA QUALIFICAÇÃO STRICTO SENSU NO TRABALHO DE SERVIDORES DO IFC",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/07/Dissertacao-Bruno_Dutra.pdf",
+    "resumo": "Este estudo investiga a contribuição da formação continuada stricto sensu dos\nservidores públicos na qualidade da educação profissional e tecnológica, com foco\nno Instituto Federal Catarinense (IFC). Destaca-se a importância dos conceitos da\nEducação Profissional e Tecnológica (EPT) e sua relevância para a formação\ncontinuada dos servidores. A pesquisa, que incluiu uma revisão bibliográfica e um\nestudo empírico com 321 servidores do IFC, revelou a necessidade de repensar a\nabordagem da formação continuada, visando alinhar os esforços com os objetivos\nmais amplos da educação profissional e tecnológica, e garantir uma melhor\ncoordenação entre os diversos atores envolvidos para uma prestação de serviço\npúblico de qualidade na esfera educacional. Resultado da pesquisa, o produto\neducacional versa sobre uma proposta de atualização da resolução 006/2021\nCONSUPER IFC e proposta de minuta de edital de afastamento, buscando integrar\na formação dos servidores com os objetivos estratégicos do IFC.\nPalavras-Chave: Formação continuada, Educação Profissional e Tecnológica,\nServidores.",
+    "palavras_chave": [
+      "Formação continuada",
+      "Educação Profissional e Tecnológica",
+      "Servidores"
+    ],
+    "autores_referenciados": [
+      "Eliezer Moreira Pacheco"
+    ],
+    "base_epistemologica": {
+      "valor": "Materialismo Histórico-Dialético",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto explora a integração entre formação e prática social, alinhada ao materialismo histórico-dialético, com referência a Marx e Gramsci.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 18,
+          "trecho": "Argumenta-se que a politecnia não deve se restringir apenas aos processos de ensino-aprendizagem das disciplinas no currículo, mas deve ser incorporada em todas as esferas organizacionais da instituição.",
+          "referencia_correspondente": "IFC,2021"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "ORMA DE AFASTAMENTO PARA AÇÕES DE CAPACITAÇÃO E PARA LICENÇA CAPACITAÇÃO DOS SERVIDORES DO INSTITUTO DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA CATARINENSE",
+    "tipo": "manual_protocolo",
+    "formato": "Minuta / Norma",
+    "link": "https://educapes.capes.gov.br/handle/capes/748386",
+    "publico_alvo": [
+      "gestores_coordenadores",
+      "tecnicos_profissionais_educacao"
+    ],
+    "nivel_aplicacao": "Educação Profissional e Tecnológica",
+    "palavras_chave": [
+      "Afastamento",
+      "Formação",
+      "PROFEPT"
+    ],
+    "data_publicacao": "2024-01-02",
+    "autores_colaboradores": [
+      {
+        "nome": "Insitutto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Vieira, Bruno Dutra",
+        "papel": "creator"
+      },
+      {
+        "nome": "Ribeiro, Eduardo Augusto Werneck",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/748386",
+        "url": "https://educapes.capes.gov.br/handle/capes/748386"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "proposta",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "inferencia_llm",
+      "rotulo_original_declarado": "MINUTA DE RESOLUÇÃO DE AFASTAMENTO INTEGRAL E MINUTA DE EDITAL PARA AFASTAMENTO INTEGRAL",
+      "colecao_educapes": null,
+      "dc_type_educapes": []
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0054 2024 bruno dutra vieira eduardo augusto werneck ribeiro ifc blumenau lp1 mp1 impacto da qualificacao stricto sensu no trabalho de servidores do ifc este estudo investiga a contribuicao da formacao continuada stricto sensu dos servidores publicos na qualidade da educacao profissional e tecnologica com foco no instituto federal catarinense ifc destaca se a importancia dos conceitos da educacao profissional e tecnologica ept e sua relevancia para a formacao continuada dos servidores a pesquisa que incluiu uma revisao bibliografica e um estudo empirico com 321 servidores do ifc revelou a necessidade de repensar a abordagem da formacao continuada visando alinhar os esforcos com os objetivos mais amplos da educacao profissional e tecnologica e garantir uma melhor coordenacao entre os diversos atores envolvidos para uma prestacao de servico publico de qualidade na esfera educacional resultado da pesquisa o produto educacional versa sobre uma proposta de atualizacao da resolucao 006 2021 consuper ifc e proposta de minuta de edital de afastamento buscando integrar a formacao dos servidores com os objetivos estrategicos do ifc palavras chave formacao continuada educacao profissional e tecnologica servidores materialismo historico dialetico orma de afastamento para acoes de capacitacao e para licenca capacitacao dos servidores do instituto de educacao ciencia e tecnologia catarinense manual protocolo minuta norma educacao profissional e tecnologica formacao continuada educacao profissional e tecnologica servidores afastamento formacao profept eliezer moreira pacheco",
+    "termos_unificados": [
+      "Formação continuada",
+      "Educação Profissional e Tecnológica",
+      "Servidores",
+      "Afastamento",
+      "Formação",
+      "PROFEPT"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

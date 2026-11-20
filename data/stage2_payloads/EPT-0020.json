@@ -1,0 +1,288 @@
+{
+  "id": "EPT-0020",
+  "metadados_resolvidos": {
+    "ano": 2025,
+    "autor": "Aline Buss Cardoso",
+    "orientador": "Sara Nunes",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP2",
+    "macroprojeto": "MP5"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "ENSINO MÉDIO INTEGRADO PARA QUÊ E PARA QUEM: MOTIVAÇÕES E EXPECTATIVAS DOS ESTUDANTES INGRESSANTES NA ESCOLHA PELO EMI DO IFC SÃO BENTO DO SUL.",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2025/06/DISSERTACAO-E-PRODUTO-EDUCACIONAL_ALINE-BUSS-CARDOSO-1.pdf",
+    "palavras_chave": [
+      "Ensino Médio Integrado",
+      "Educação Profissional e Tecnológica Instituto Federal"
+    ],
+    "autores_referenciados": [
+      "Aaron F. de Paula",
+      "Acacia Z. Kuenzer",
+      "Alessandra S. Souza",
+      "Alessandro E. Paixão",
+      "Alexandre A. Tomporoski",
+      "Ana L. S. Henrique",
+      "Ana P. M. Miranda",
+      "Anelise Volkweiss",
+      "Angelina Peralva",
+      "Antônio C. Gil",
+      "Bruna T. M. Queirós",
+      "Carlos R. R. Silva",
+      "Cladecir A. Schenkel",
+      "Cláudio M. Nogueira",
+      "Daniela A. Alves",
+      "Débora C. Piotto",
+      "Débora M. Artiaga",
+      "Denise T. Silveira",
+      "Dermeval Saviani",
+      "E. Durkheim",
+      "Eliezer Moreira Pacheco",
+      "Fernanda T. Córdova",
+      "Filomena L. G. R. da Silva",
+      "Flávia A. P. Ledur",
+      "Francisco Horácio Pereira de Oliveira",
+      "Gaudêncio Frigotto",
+      "Geraldo Leão",
+      "Graciela F. Rodrigues",
+      "Hellen V. M. Anjos",
+      "Inge Renate Frose Suhr",
+      "Ione R. Valle",
+      "Jairo Marchesan",
+      "Jeferson E. Silva",
+      "João C. Cichaczewski",
+      "João K. C. Morais",
+      "José Luís Schifino Ferraro",
+      "Juarez Dayrell",
+      "Juarez T. Dayrell",
+      "Juliana B. Reis",
+      "Laurence Bardin",
+      "Liliana S. Ferreira",
+      "Luiz A. C. Pereira",
+      "Márcio L. Bernardim",
+      "Marcos F. Martins",
+      "Maria A. Loyola",
+      "Maria Adélia Costa",
+      "Maria Alice Nogueira",
+      "Maria C. Corrochano",
+      "Maria C. S. L. Oliveira",
+      "Maria Ciavatta",
+      "Maria Luiza Milani",
+      "Marise Nogueira Ramos",
+      "Maurivan G. Ramos",
+      "Michelle Paranhos",
+      "Miguel González Arroyo",
+      "Moisés Domingos Sobrinho",
+      "Monica R. da Silva",
+      "Mônica Sparta",
+      "Nara L. S. Carlos",
+      "Nathan M. Buba",
+      "Nora Krawczyk",
+      "Paulo Carrano",
+      "Pierre Bourdieu",
+      "Priscila S. C. Leite",
+      "Raquel G. Pinto",
+      "Ricardo Antunes",
+      "Rildson A. S. Grunow",
+      "Rolf R. Souza",
+      "Rosiane R. Almeida",
+      "Simone V. Olczyk",
+      "Taise T. Cezar",
+      "Tamiris Possamai",
+      "Tânia F. Resende",
+      "Tatiana E. Gerhardt",
+      "Ulisses Pereira dos Santos",
+      "Vanessa Mendes de Lima",
+      "Wanderson L. Bermudes",
+      "William B. Gomes",
+      "Wivian Weller"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/1000164",
+    "titulo_produto": "ENSINO MÉDIO INTEGRADO PARA QUÊ E PARA QUEM: MOTIVAÇÕES E EXPECTATIVAS DOS ESTUDANTES INGRESSANTES NA ESCOLHA PELO EMI DO IFC SÃO BENTO DO SUL",
+    "titulo_produto_bruto": "JORNADAS INTEGRADAS: HISTÓRIAS DO ENSINO MÉDIO NO INSTITUTO FEDERAL",
+    "data_publicacao": "2025-06-05",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Buss Cardoso, Aline",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1000164",
+        "url": "https://educapes.capes.gov.br/handle/capes/1000164"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://www.youtube.com/watch?v=Nl5kRoKJaTM",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Jornadas Integradas: histórias do Ensino Médio no Instituto Federal”",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "texto"
+    ],
+    "palavras_chave_educapes": [
+      "Ensino médio Integradoado",
+      "Educação Profissional",
+      "e tecnológica no ensino médio integral",
+      "Mestrado em educação profissional e tecnológica",
+      "elaboraçaõ de pesquisa/ dissertação"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Vídeo / Audiovisual",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\nCAMPUS BLUMENAU\n\nALINE BUSS CARDOSO\n\nENSINO MÉDIO INTEGRADO PARA QUÊ E PARA QUEM: MOTIVAÇÕES E\nEXPECTATIVAS DOS ESTUDANTES INGRESSANTES NA ESCOLHA PELO EMI\nDO IFC SÃO BENTO DO SUL\n\nBlumenau\nFevereiro de 2025\n\nALINE BUSS CARDOSO\n\nENSINO MÉDIO INTEGRADO PARA QUÊ E PARA QUEM: MOTIVAÇÕES E\nEXPECTATIVAS DOS ESTUDANTES INGRESSANTES NA ESCOLHA PELO EMI\nDO IFC SÃO BENTO DO SUL\n\nDissertação\napresentada\nao\nPrograma\nde\nPós-graduação\nem\nEducação Profissional e\nTecnológica, ofertado pelo campus Blumenau do\nInstituto Federal Catarinense, como parte dos\nrequisitos para a obtenção do título de Mestra em\nEducação Profissional e Tecnológica.\n\nOrientadora: Dra. Sara Nunes\n\nBlumenau\nFevereiro de 2025",
+    "ficha_catalografica": "[PÁG. 3]\nFICHA CATALOGRÁFICA DISSERTAÇÃO\n\n Cardoso, Aline Buss.\nC268e Ensino Médio Integrado para quê e para quem: motivações e expectativas\ndos estudantes ingressantes na escolha pelo EMI do IFC São Bento do Sul /\nAline Buss Cardoso; orientadora Sara Nunes. -- Blumenau, 2025.\n 184 p.\n Dissertação (mestrado) – Instituto Federal Catarinense, campus Blumenau,\nMestrado Profissional em Educação Profissional Tecnológica (PROFEPT),\nBlumenau, 2025.\n Inclui referências.\n\n 1. Ensino Médio Integrado 2. Educação Profissional e Tecnológica - IFC.\nI. Nunes, Sara. II. Instituto Federal Catarinense. Mestrado Profissional em\nEducação Profissional e Tecnológica. III. Título.\n\nCDD: 373.246\nFicha catalográfica elaborada pela bibliotecária\nShyrlei K. Jagielski Benkendorf - CRB 14/662",
+    "sumario": "[PÁG. 16]\nSUMÁRIO\n\n1 INTRODUÇÃO\n17\n2 REFERENCIAL TEÓRICO\n21\n2.1 TRABALHO, EDUCAÇÃO E CAPITAL\n22\n2.1.1 A perspectiva de Bourdieu sobre educação e dominação social\n29\n2.2 EDUCAÇÃO PROFISSIONAL NO BRASIL\n34\n2.3 A CONCEPÇÃO DO ENSINO MÉDIO INTEGRADO\n46\n2.3.1 Novo Ensino Médio: disputas em torno da formação dos jovens no Brasil\n52\n2.4 OS INSTITUTOS FEDERAIS: PRINCÍPIOS E CONCEPÇÕES NORTEADORAS\n57\n2.4.1 O Instituto Federal Catarinense\n63\n2.4.1.1 O Campus São Bento do Sul\n67\n2.4.1.1.1 Um recorte sobre os aspectos históricos da colonização do Planalto Norte\nCatarinense\n69\n2.5 ENSINO MÉDIO: DECISÕES E CAMINHOS PARA A JUVENTUDE\n75\n3 METODOLOGIA\n81\n3.1 ABORDAGEM METODOLÓGICA\n81\n3.2 PÚBLICO ALVO\n82\n3.3 INSTRUMENTOS PARA COLETA, CONSTRUÇÃO E ANÁLISE DOS DADOS 82\n3.4 ASPECTOS ÉTICOS E LEGAIS\n84\n4 ANÁLISE DOS DADOS, RESULTADOS E DISCUSSÕES\n86\n4.1 DADOS BÁSICOS DOS ESTUDANTES\n87\n4.2 PERFIL SOCIOECONÔMICO DOS ESTUDANTES\n94\n4.3 O PROPÓSITO DOS ESTUDANTES AO CURSAR O ENSINO MÉDIO\nINTEGRADO\n104\n4.4 FATORES DETERMINANTES NA ESCOLHA PELO IFC CAMPUS SÃO BENTO\nDO SUL\n112\n4.5 RESULTADOS E DISCUSSÕES\n119\n5 PRODUTO EDUCACIONAL\n122\n5.1 METODOLOGIA\n124\n5.2 APLICAÇÃO E AVALIAÇÃO\n125\n6 CONCLUSÕES (CONSIDERAÇÕES FINAIS)\n131\nREFERÊNCIAS\n134\nAPÊNDICE A - QUESTIONÁRIO\n144\nAPÊNDICE B - TERMO DE ASSENTIMENTO LIVRE E ESCLARECIDO\n150\nAPÊNDICE C - TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO\n155\nAPÊNDICE D - AUTORIZAÇÃO DE GRAVAÇÃO E DIVULGAÇÃO DE VOZ,\nIMAGEM E NOME\n161\nAPÊNDICE E - QUESTIONÁRIO DE AVALIAÇÃO DO PRODUTO EDUCACIONAL\n163\nANEXO A - PARECER DE APROVAÇÃO DO COMITÊ DE ÉTICA EM PESQUISAS\nCOM SERES HUMANOS - CEPSH\n166\nANEXO B - ATA DE DEFESA DE DISSERTAÇÃO\n172\nANEXO C - FICHA DE VALIDAÇÃO DA PRODUÇÃO TÉCNICA TECNOLÓGICA\n(PTT)\n176\nANEXO D - FICHA TÉCNICA DA PRODUÇÃO TÉCNICA TECNOLÓGICA (PTT)\n182",
+    "resumo": "[PÁG. 10]\nRESUMO\n\nEsta dissertação, desenvolvida no âmbito do Programa de Pós-Graduação em\nEducação Profissional e Tecnológica (ProfEPT), tem como objetivo identificar os\npropósitos do aluno ingressante para o ensino médio integrado do IFC Campus São\nBento do Sul. A pesquisa adotou uma abordagem qualitativa, de natureza\ntranslacional, com objetivo exploratório, de procedimentos técnicos pesquisa de\ncampo e documental e utilizou como instrumento de coleta de dados o questionário\naplicado à estudantes ingressantes no EMI no ano de 2024. Para embasar essa\ninvestigação, a pesquisa teórica sobre as conexões entre trabalho e educação ao\nlongo da história e a forma como essa relação promoveu consequências na\nformação para o trabalho em nosso país, demonstrou que a educação profissional e\ntecnológica no Brasil é sublinhada por uma dualidade entre uma formação\ninstrumental para atender as necessidades da cadeia produtiva e uma formação de\ncaráter integral, que considere todos os aspectos da vida humana. Os resultados\nobtidos indicam que os estudantes percebem o EMI como uma oportunidade de\nformação de valor, ao oferecer o ensino técnico em conjunto a uma formação geral.\nEntre as expectativas que se destacam estão a possibilidade de inserção no\nmercado de trabalho, a continuidade dos estudos no ensino superior e a busca por\numa educação pública de qualidade. Todavia, a pesquisa também evidencia\ndesafios de inclusão, acesso e permanência no interior dessa política pública de\neducação. O estudo aponta que o EMI cumpre um papel estratégico na EPT, ao\noferecer uma formação que transcende a instrumentalização e fragmentação da\neducação profissional tradicional. Ao mesmo tempo, essa investigação destaca a\nrelevância de políticas públicas que garantam a permanência dos estudantes. A\npesquisa revela a importância do EMI como uma alternativa de formação que\ncorresponde às necessidades dos jovens do país, oferecendo uma educação crítica\ne emancipadora. Além desses importantes achados, o trabalho resultou na\nelaboração de um produto educacional, um vídeo documentário intitulado <Jornadas\nIntegradas: histórias do Ensino Médio no Instituto Federal=. Esse material tem o\nobjetivo de dar voz aos estudantes e a partir desses relatos, gerar reflexões sobre o\nEMI como uma proposta educacional importante para os jovens. Por fim, este estudo\nintensifica o compromisso da Educação Profissional e Tecnológica dos Institutos\nFederais com a formação integral, ressaltando que o EMI, quando fortalecido, pode\nse constituir como um caminho que promove mudanças tanto pessoais como\nsociais.\nPalavras-chave: Ensino Médio Integrado; Educação Profissional e Tecnológica\nInstituto Federal.",
+    "introducao": "[PÁG. 18]\n17\n\n1 INTRODUÇÃO\n\nOs Institutos Federais foram criados pela Lei n° 11.892, de 29 de dezembro\nde 2008, e possuem como um de seus objetivos <ministrar educação profissional\ntécnica de nível médio, prioritariamente na forma de cursos integrados, para os\nconcluintes do ensino fundamental e para o público da educação de jovens e\nadultos= (BRASIL, 2008). Ou seja, dentre as modalidades que esta política pública\nde educação profissional e tecnológica oferece à comunidade, está a formação no\nEnsino Médio Integrado a um curso técnico, que atende uma demanda social e\neconômica da população jovem brasileira que é a profissionalização já no nível\nmédio de ensino (RAMOS, 2008).\nO Campus São Bento do Sul do Instituto Federal Catarinense, situado na\nregião do Planalto Norte Catarinense, foi inaugurado em 2016 e oferece três cursos\nde Ensino Médio Integrado ao técnico: Automação Industrial, Segurança do Trabalho\ne Informática. Segundo o PDI - Plano de Desenvolvimento Institucional 2019-2023\ndo Instituto Federal Catarinense (2019, p. 29),\n\nO Campus São Bento do Sul nasceu em 2012, fruto da união de esforços\nrealizados pelo poder público, comunidade e por diversas entidades\norganizadas da região, através da cessão de um terreno, com área de\n42.547,18 m², dentro do ambiente do Parque Científico e Tecnológico de\nSão Bento do Sul, localizado no bairro Centenário. Desta forma, em 2014,\nforam iniciadas as obras do campus. Em 2016, com o fim das obras,\nobteve-se a autorização de funcionamento por meio da Portaria nº 378, de\n09/05/2016/MEC, publicada no DOU de 10/05/2016, iniciando as atividades\nno segundo semestre de 2016 [...]. A unidade organiza a oferta de\neducação profissional, voltada para as áreas de Controle e Processos\nIndustriais, Informação e Comunicação, Segurança e Formação de\nProfessores, desde a qualificação profissional até a pós-graduação.\n\nComo Assistente em Administração lotada nesta unidade desde 2014,\nacompanhei os desafios da implantação do IFC Campus São Bento do Sul. Ao\nobservar os adolescentes iniciarem no 1º ano do Ensino Médio Integrado, ocorreu o\ndespertar de uma curiosidade: no importante percurso de escolha entre as diferentes\nconcepções de ensino médio disponíveis no município e região, quais os motivos\nque levaram esses jovens a escolher o Ensino Médio Integrado do Instituto Federal?\nQuais os seus maiores propósitos para esta etapa do ensino médio? Visam um\nensino que facilite o acesso ao ensino superior? Ou buscam simplesmente a\n\n[PÁG. 19]\n18\nformação para o trabalho técnico e ingresso no mercado de trabalho1? Ou, até\nmesmo, desejam apenas o diploma de ensino médio completo? Qual o perfil\nsocioeconômico do público atingido pelo Ensino Médio Integrado do IFC Campus\nSão Bento do Sul? São algumas hipóteses e questionamentos que motivaram esta\npesquisa.\nOs jovens ao concluírem o ensino fundamental estão diante de uma\nimportante decisão: em qual instituição de ensino irão cursar o ensino médio? Essa\nbusca está em acordo com seus interesses e possibilidades socioeconômicas? O\nensino médio integrado ofertado no campus do IFC em São Bento do Sul\napresenta-se como possibilidade diante de quais expectativas?\nNesse contexto a pesquisa apresentada é sobre o Ensino Médio Integrado,\npara quê e para quem2: motivações e expectativas dos estudantes ingressantes na\nescolha pelo EMI do IFC São Bento do Sul. No presente estudo foram pesquisados\nos alunos ingressos de 2024 do Ensino Médio Integrado ao técnico dos três cursos\ndo IFC Campus São Bento do Sul. Este trabalho está vinculado à linha de pesquisa\nOrganização e Memórias de Espaços Pedagógicos na Educação Profissional e ao\nMacroprojeto 5 - Organização do currículo integrado na EPT.\nO estudo da temática juventude e ensino médio é relevante na medida em\nque proporciona compreender cientificamente os motivos que levam os jovens a\ningressarem no Ensino Médio Integrado do IFC Campus São Bento do Sul. Ao\nrealizar essa investigação sobre as expectativas dos jovens ao procurarem o ensino\nmédio a pesquisa contribui também para elucidar se estamos permitindo o acesso\nao público-alvo para o qual a lei de criação dos Institutos Federais determina a\noferta: 50%3 das suas vagas para o Ensino Médio Integrado ao técnico. Observa-se\nainda que os jovens, oriundos de um contexto de pouca oportunidade de ascensão\nsocial, necessitam de uma profissionalização já no ensino médio para uma inserção\nmais digna no mundo do trabalho e que essa condição os permita, inclusive,\nvislumbrar o acesso e permanência no ensino superior.\nEsta pesquisa permite, também, um entendimento de como os alunos\n3 Conforme Art. 8º da Lei 11.892/08.\n2 A expressão para quê e para quem é inspirada no artigo Ensino Médio Integrado: fundamentos e\nintencionalidade formativa, de Morais e Henrique (2017).\n1 Refere-se, nesse primeiro momento, ao termo mercado de trabalho dentro da concepção capitalista,\npois considera-se a impressão inicial que podem ter os alunos ingressos sobre o mundo do trabalho.\nEste último tem um conceito mais amplo que vai além da ideia de emprego, mas considera outros\naspectos da construção da vida e existência do homem, com as demais relações políticas e culturais\nque as permeiam (CIAVATTA, 2012).\n\n[PÁG. 20]\n19\nconcluintes do ensino fundamental compreendem o papel do Ensino Médio\nIntegrado desta instituição de ensino. Não menos importante, estudar os desejos\ndos alunos ingressantes é um caminho para construir uma relação entre os anseios\nda comunidade discente e as propostas político pedagógicas dos Institutos Federais.\nA pesquisa contribui também para fomentar o conhecimento científico sobre o tema,\nvisto que foram encontradas nos repositórios poucas produções acadêmicas que\ndebatem sobre os jovens e a escolha pelo Ensino Médio Integrado proposto pelos\nInstitutos Federais.\nA pesquisa justifica-se também, sob o ponto de vista da pesquisadora, pelo\nanseio de compreender de forma mais ampla o papel desempenhado pela proposta\ndos Institutos Federais e seu impacto na realidade dos jovens. Posto que lotada em\num setor que realiza atividades administrativas bem específicas, o pouco contato\ncom os estudantes e com os demais setores da instituição limitava um entendimento\nmaior sobre as aspirações dos alunos no contexto educacional dos Institutos\nFederais.\nSob essas perspectivas abordadas, essa pesquisa possui como objetivo geral\nidentificar os propósitos do aluno ingressante para o ensino médio integrado do IFC\nCampus São Bento do Sul.\nCom vistas a alcançar o objetivo geral desta pesquisa, foram elencados os\nseguintes objetivos específicos: a) Contextualizar, por meio da revisão de literatura,\na relação entre o capitalismo, o trabalho e a educação profissional; b) Identificar o\nperfil socioeconômico dos alunos atendidos pelo Ensino Médio Integrado do IFC\nCampus São Bento do Sul; c) Identificar a percepção dos alunos ingressantes sobre\no papel do Ensino Médio Integrado dos Institutos Federais; d) Identificar os aspectos\nque influenciaram os alunos a optarem pelo Ensino Médio Integrado do IFC Campus\nSão Bento do Sul e e) Desenvolver e aplicar um produto educacional do tipo vídeo\ndocumentário onde os estudantes pesquisados narrem suas impressões e\nexperiências sobre suas jornadas no ensino médio integrado do IFC Campus São\nBento do Sul.\nConsiderando os objetivos gerais e específicos descritos, traçou-se o\nseguinte caminho metodológico: esta é uma pesquisa de abordagem qualitativa, de\nnatureza translacional, com objetivo exploratório, de procedimentos técnicos\npesquisa de campo e documental, utiliza como instrumento de dados o questionário.\nOs dados coletados foram analisados de forma qualitativa por meio da análise de\n\n[PÁG. 21]\n20\nconteúdo de Bardin (1977).\nCom base nos dados coletados e de forma a valorizar o protagonismo dos\nestudantes, permitindo que eles próprios relatem suas histórias, vivências e\nexperiências com o EMI e com a instituição, foi desenvolvido o produto educacional\ndo tipo vídeo documentário <Jornadas Integradas: hist",
+    "descricao_produto_na_dissertacao": "[PÁG. 20] 19\nconcluintes do ensino fundamental compreendem o papel do Ensino Médio\nIntegrado desta instituição de ensino. Não menos importante, estudar os desejos\ndos alunos ingressantes é um caminho para construir uma relação entre os anseios\nda comunidade discente e as propostas político pedagógicas dos Institutos Federais.\nA pesquisa contribui também para fomentar o conhecimento científico sobre o tema,\nvisto que foram encontradas nos repositórios poucas produções acadêmicas que\ndebatem sobre os jovens e a escolha pelo Ensino Médio Integrado proposto pelos\nInstitutos Federais.\nA pesquisa justifica-se também, sob o ponto de vista da pesquisadora, pelo\nanseio de compreender de forma mais ampla o papel desempenhado pela proposta\ndos Institutos Federais e seu impacto na realidade dos jovens. Posto que lotada em\num setor que realiza atividades administrativas bem específicas, o pouco contato\ncom os estudantes e com os demais setores da instituição limitava um entendimento\nmaior sobre as aspirações dos alunos no contexto educacional dos Institutos\nFederais.\nSob essas perspectivas abordadas, essa pesquisa possui como objetivo geral\nidentificar os propósitos do aluno ingressante para o ensino médio integrado do IFC\nCampus São Bento do Sul.\nCom vistas a alcançar o objetivo geral desta pesquisa, foram elencados os\nseguintes objetivos específicos: a) Contextualizar, por meio da revisão de literatura,\na relação entre o capitalismo, o trabalho e a educação profissional; b) Identificar o\nperfil socioeconômico dos alunos atendidos pelo Ensino Médio Integrado do IFC\nCampus São Bento do Sul; c) Identificar a percepção dos alunos ingressantes sobre\no papel do Ensino Médio Integrado dos Institutos Federais; d) Identificar os aspectos\nque influenciaram os alunos a optarem pelo Ensino Médio Integrado do IFC Campus\nSão Bento do Sul e e) Desenvolver e aplicar um produto educacional do tipo vídeo\ndocumentário onde os estudantes pesquisados narrem suas impressões e\nexperiências sobre suas jornadas no ensino médio integrado do IFC Campus São\nBento do Sul.\nConsiderando os objetivos gerais e específicos descritos, traçou-se o\nseguinte caminho metodológico: esta é uma pesquisa de abordagem qualitativa, de\nnatureza translacional, com objetivo exploratório, de procedimentos técnicos\npesquisa de campo e documental, utiliza como instrumento de dados o questionário.\nOs dados coletados foram analisados de forma qualitativa por meio da análise de\n\n[PÁG. 21] 20\nconteúdo de Bardin (1977).\nCom base nos dados coletados e de forma a valorizar o protagonismo dos\nestudantes, permitindo que eles próprios relatem suas histórias, vivências e\nexperiências com o EMI e com a instituição, foi desenvolvido o produto educacional\ndo tipo vídeo documentário <Jornadas Integradas: histórias do Ensino Médio no\nInstituto Federal= que contou com depoimentos de 11 estudantes matriculados no 1º\nano do ensino médio integrado do IFC Campus São Bento do Sul.\nEsta dissertação está organizada em seis capítulos. O primeiro capítulo\napresenta a introdução com a contextualização geral da pesquisa em termos de\ntema, questão problema, justificativa e objetivos gerais e específicos. No segundo\ncapítulo há uma contextualização, a partir do referencial teórico, com as\nperspectivas de autores relevantes que debatem sob uma ótica crítica a educação\npara a classe que vive do trabalho, temáticas essas que se relacionam com o tema\nda pesquisa: a relação entre trabalho, educação e capital; a história da educação",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 18,
+        "texto": "Os Institutos Federais foram criados pela Lei n° 11.892, de 29 de dezembro\nde 2008, e possuem como um de seus objetivos <ministrar educação profissional\ntécnica de nível médio, prioritariamente na forma de cursos integrados, para os\nconcluintes do ensino fundamental e para o público da educação de jovens e\nadultos= (BRASIL, 2008). Ou seja, dentre as modalidades que esta política pública\nde educação profissional e tecnológica oferece à comunidade, está a formação no\nEnsino Médio Integrado a um curso técnico, que atende uma demanda social e\neconômica da população jovem brasileira que é a profissionalização já no nível\nmédio de ensino (RAMOS, 2008).\nO Campus São Bento do Sul do Instituto Federal Catarinense, situado na\nregião do Planalto Norte Catarinense, foi inaugurado em 2016 e oferece três cursos\nde Ensino Médio Integrado ao técnico: Automação Industrial, Segurança do Trabalho\ne Informática. Segundo o PDI - Plano de Desenvolvimento Institucional 2019-2023\ndo Instituto Federal Catarinense (2019, p. 29),",
+        "citacoes_detectadas": [
+          "BRASIL, 2008",
+          "RAMOS, 2008"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 19,
+        "texto": "18\nformação para o trabalho técnico e ingresso no mercado de trabalho1? Ou, até\nmesmo, desejam apenas o diploma de ensino médio completo? Qual o perfil\nsocioeconômico do público atingido pelo Ensino Médio Integrado do IFC Campus\nSão Bento do Sul? São algumas hipóteses e questionamentos que motivaram esta\npesquisa.\nOs jovens ao concluírem o ensino fundamental estão diante de uma\nimportante decisão: em qual instituição de ensino irão cursar o ensino médio? Essa\nbusca está em acordo com seus interesses e possibilidades socioeconômicas? O\nensino médio integrado ofertado no campus do IFC em São Bento do Sul\napresenta-se como possibilidade diante de quais expectativas?\nNesse contexto a pesquisa apresentada é sobre o Ensino Médio Integrado,\npara quê e para quem2: motivações e expectativas dos estudantes ingressantes na\nescolha pelo EMI do IFC São Bento do Sul. No presente estudo foram pesquisados\nos alunos ingressos de 2024 do Ensino Médio Integrado ao técnico dos três cursos\ndo IFC Campus São Bento do Sul. Este trabalho está vinculado à linha de pesquisa\nOrganização e Memórias de Espaços Pedagógicos na Educação Profissional e ao\nMacroprojeto 5 - Organização do currículo integrado na EPT.",
+        "citacoes_detectadas": [
+          "CIAVATTA, 2012"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 22,
+        "texto": "Para\ndesenvolver\na\npresente\npesquisa,\nfaz-se\nnecessário\numa\ncontextualização dos conceitos apresentados à luz de alguns autores que discutem\na educação profissional e tecnológica numa perspectiva de formação integral, com o\nintuito de fundamentar a construção deste estudo.\nPor ser o Ensino Médio Integrado uma modalidade que abarca a formação\npara o labor, julgou-se necessário trazer as discussões sobre educação, trabalho e\ncapital pela perspectiva dos autores Gaudêncio Frigotto, Demerval Saviani, Ricardo\nAntunes e Marise Ramos, que dialogam com a formação humana no sentido que\ntranscende a simples preparação para o mercado de trabalho. Em continuidade a\nessa reflexão sobre as conexões entre educação, trabalho e capital, são\napresentadas contribuições do filósofo, etnólogo e sociólogo Pierre Bourdieu para o\ncampo da educação.\nAo considerar o Ensino Médio Integrado uma das possibilidades da educação\nprofissional e tecnológica, buscou-se promover um resgate histórico da EPT no\nBrasil a partir da análise, principalmente, dos autores João Cichaczewski, Eliezer\nPacheco e Marise Ramos, que evidenciam as principais alterações desta política de\neducação brasileira e como elas estiveram asso",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 23,
+        "texto": "O termo trabalho é polissêmico, ou seja, possui mais de um significado, de\nacordo com a concepção de Gaudêncio Frigotto (2009). Este autor faz referência às\nvárias formas de se referir ao trabalho, e como essa multiplicidade de significados\nestá relacionada com a história do homem, com fatores sociais, éticos e políticos\nque transformaram o conceito de trabalho como forma do homem transformar a\nnatureza ao seu redor para manter-se vivo para um conceito de venda de mão de\nobra em troca de salário.\nDemerval Saviani (2007) corrobora com o entendimento de Frigotto (2009)\npara o conceito de trabalho, como sendo o homem em seu processo histórico de\ngarantir sua existência num ato de produzir sua própria vida material e transformar o\nmeio natural às suas próprias necessidades. Esse é, então, o sentido ontológico do\ntrabalho. É exatamente isso que torna o homem distinto dos demais animais, ao que\ndamos o nome de trabalho e que cria a essência humana (SAVIANI, 2007).\nAinda sobre essa variação de conceitos para a categoria trabalho, Frigotto\n(2009) aponta que a redução do significado de trabalho para emprego como\n<quantidade de tempo pago por uma determinada atividade= (FRIGOTTO, 2009, p.\n17",
+        "citacoes_detectadas": [
+          "SAVIANI, 2007",
+          "FRIGOTTO, 2009, p.\n174",
+          "FRIGOTTO, 2009, p. 174"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 24,
+        "texto": "23\ndinamicidade da categoria trabalho histórico, que se reformula para corresponder às\norganizações sociais e econômicas de cada momento (SAVIANI, 2007).\nHá, então, mais de um significado quando nos referimos ao trabalho. É\npreciso ampliarmos nosso ponto de vista quando esse tema é posto à discussão\npara não condensar o trabalho apenas à sua perspectiva de emprego, profissões e\ncargos no sistema produtivo capitalista. Trabalho pode ser entendido como todas as\natividades que o homem, de forma intencional e planejada, desempenha para\nsobreviver e aperfeiçoar o meio em que vive. Os movimentos por ele\ndesempenhados com objetivo de atender as necessidades e anseios das\ncomunidades humanas.\nSobre a relação entre trabalho e educação, Saviani (2007) ainda discorre que\no homem se forma e se educa por meio do trabalho, pois, desde os tempos remotos\nda humanidade, o homem desenvolve habilidades de dominar a natureza, nesse\nprocesso constrói e acumula conhecimentos úteis para a transformação de sua\nrealidade e os repassa para outros indivíduos de sua geração e das gerações\nfuturas. Esse ato é possível enquadrar como fenômeno educativo.\nDessa breve introdução ao conceito de trabalho e como ele ",
+        "citacoes_detectadas": [
+          "SAVIANI, 2007",
+          "SAVIANI, 2007"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 25,
+        "texto": "24\nNeste momento da história, principalmente Grécia e Roma introduzem o\nmodo de exploração escravista na produção de sua existência e, com isso,\nsegmentam a sociedade da época em duas classes: a aristocracia que detinha a\npropriedade de terras e os escravos, que realizavam o trabalho nesses solos. Essa\ndivisão em classes provocou consequências da educação dos indivíduos conforme\nsua origem: os proprietários das terras recebiam uma educação intelectual e\nlúdico-militar, já os escravos e serviçais eram instruídos apenas para o trabalho\ndedicado à aristocracia (SAVIANI, 2007). A divisão do homem em classes também\nse apresenta na sociedade feudal.\nO modo de produção feudal perpetua a posse privada da terra que resultou\nna cisão dos homens em classes e na divisão do trabalho, o que possibilitou aos\ndonos das terras o não-trabalho. A partir desse ponto da história, eles poderiam\nsobreviver da exploração do trabalho dos servos não detentores de terra, que para\nproduzir, utilizavam-se de ferramentas produzidas por artesãos e produziam apenas\naquilo que era necessário para a sobrevivência dos homens (SAVIANI, 2007). Nesse\ncontexto, há uma segmentação entre duas formas diferentes de educação",
+        "citacoes_detectadas": [
+          "SAVIANI, 2007",
+          "SAVIANI, 2007",
+          "SAVIANI, 2007, p. 155",
+          "SAVIANI,\n2007, p. 155"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 26,
+        "texto": "25\nvender sua única moeda de troca: a mão de obra. Nessa espécie de mercado de\ntrocas, as relações entre os homens passaram a ter um carácter contratual, torna-se\ninteressante então a ampliação dos espaços em que fosse possível o ensinar o\ndomínio da escrita. Essa transformação de produção com função de sobrevivência\npara produção com função de troca marca um período de transição ao modo de\nprodução capitalista (SAVIANI, 2014).\nUm pouco mais à frente na história da humanidade, a Revolução Industrial\ntraçou profundas mudanças nos fenômenos produtivo e educativo e solidificou o\nsistema econômico capitalista. Com a inserção da maquinaria, emergiu a\nnecessidade de maior instrução do operário para manuseá-la e, com a fragmentação\ndas tarefas na fabricação dos materiais ocorre uma divisão do trabalho entre o\npensar e o fazer, entre o trabalho intelectual e o manual (RAMOS, 2017). Perde-se a\naproximação entre o homem e o objeto fruto do seu trabalho, uma relação muito\nestreita quando os meios de produção eram artesanais e o se detinha os\nconhecimentos e controle sobre o que se produzia (RAMOS, 2017).\nNa visão de Ramos (2017), a educação passa a ter, pela primeira vez na\nhistória, uma funç",
+        "citacoes_detectadas": [
+          "SAVIANI, 2014",
+          "RAMOS, 2017",
+          "RAMOS, 2017",
+          "SAVIANI, 2007"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 27,
+        "texto": "26\nmaquinarias, e a escola, como seu principal meio de propagação, é definida como\nelementar forma de educação (SAVIANI, 2007). Neste cenário constituído, a escola\ncumpre, também, uma função de socialização dos sujeitos ao torná-los aptos a vida\nnessa sociedade reconfigurada pela industrialização e aptos também para lidar na\nmatriz produtiva baseada na maquinaria, o que leva a sedimentar a fusão da escola\nà produção (SAVIANI, 2007).\nCom o avanço da industrialização e maquinização, emerge a necessidade de\nalgumas formações específicas particulares. Surgem, nesse contexto, os cursos\nprofissionais oferecidos pelo próprio ambiente de produção ou no sistema de ensino,\nporém sempre com a finalidade de atender uma demanda da produção, assim\n<sobre a base comum da escola primária o sistema de ensino bifurcou-se entre as\nescolas de formação geral e as escolas profissionais= (SAVIANI, 2007, p. 159).\nRicardo Antunes (2009) elabora um entendimento de que há distintas formas\nde educação para o trabalho incutidas no sistema de produção capitalista. Forma\nque sustentou o capitalismo durante o século XX, a organização industrial do tipo\ntaylorista/fordista se caracterizava pela produção em série, ",
+        "citacoes_detectadas": [
+          "SAVIANI, 2007",
+          "SAVIANI, 2007",
+          "SAVIANI, 2007, p. 159",
+          "ANTUNES, 2009, p. 29"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 29,
+        "texto": "28\ncontexto atual o ato de formar-se tende muito mais a atender a outros interesses. A\npartir da visão de Antunes (2009) e Kuenzer (2011), presume-se que as\nnecessidades formativas para o homem otimizar as condições do contexto em que\nestá inserido são, em sua maioria, definidas não por eles, mas por uma minoria\ndominante que preservará os seus interesses em prejuízo dos propósitos da classe\nque vive do trabalho.\nMas é possível identificar algo benigno ao trabalhador nesse processo?\nFrigotto (2009) faz uma inserção de que por mais que as escolas sejam servis aos\ninteresses da burguesia e por mais alienante que possa ser o trabalho dentro do\nsistema de produção capitalista, ainda pode-se encontrar um sentido educativo no\nseu interior. Pois, para o autor o sentido positivo do trabalho incutido é que através\ndo trabalho que o homem constrói a si mesmo.\nAssim como Ramos (2017) também afirma que a partir da crítica a\napropriação da educação como instrumento de alavancagem do modo de produção\ncapitalista surgiram novas perspectivas para a transmissão e construção do\nconhecimento, baseadas na contradição principal: o acesso à educação pela classe\ntrabalhadora caminha junto com os benefíci",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "29\nabordagem de Saviani (2011), abrem brechas para a educação ser instrumento de\nemancipação e luta da classe trabalhadora pela transformação social e à superação\ndas desigualdades estruturais, por meio de uma formação mais completa que\narticule formação geral e técnica, teoria e prática, trabalho manual e intelectual .\nA formação que tem por foco a atuação no mercado de trabalho adquire um\nsentido unilateral, visa aperfeiçoar apenas uma via, a do trabalho, da multiplicidade\nde vias que conformam a vida humana. Mas, é possível que a partir dessa educação\ne do conhecimento por ela proporcionado, seja aberta uma fenda pela qual seja\npossível se movimentar a caminho de uma concepção de formação humana em sua\nplenitude.\nO conceito de plenitude neste contexto representa a formação omnilateral,\nintegrada e politécnica dos indivíduos, que será abordada, mais adiante, em tópico\nespecífico neste referencial teórico. O Ensino Médio Integrado dentro da proposta\nviabilizada pelos Institutos Federais é um movimento em direção a esse avanço na\neducação ofertada à classe trabalhadora sob a perspectiva dos próprios\ntrabalhadores.\nEssa perspectiva entre educação e capital pode, ainda, ser ampliada ",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "Nascido em 1930, na França, em família de posses limitadas, Pierre\nBourdieu, embora tenha enfrentado barreiras típicas de sua origem social para\nprosseguir seus estudos, alcançou alguns espaços destinados a formar intelectuais\nfranceses. Porém, com o passar do tempo, demonstrou-se desconfortável ao\npertencimento à camada intelectual francesa, pois lhe incomodava a autoridade da\nfala inerente a este grupo, comportamento muito distante das origens simples do\nsociólogo (VALLE, 2007).",
+        "citacoes_detectadas": [
+          "VALLE, 2007"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 31,
+        "texto": "30\nFormado em filosofia, Bourdieu se aproxima da sociologia num movimento de\ncompreensão da necessidade de aproximar a ciência dos problemas sociais e\npolíticos, transição vivida não só por ele, mas por outros filósofos que vivenciaram\nas transformações do Ensino Superior francês no período pós segunda guerra\nmundial (VALLE, 2007).\nBourdieu participou de movimentos anti-neoliberalistas e defendia um elo\nentre teoria, pesquisa e projeto intelectual na compreensão do mundo social\n(LOYOLA, 2002). O sociólogo produziu contribuições inovadoras no campo das\nciências sociais do século XX na busca por compreender a ordem social e os\nmecanismos de dominação nela presentes (NOGUEIRA e NOGUEIRA, 2017).",
+        "citacoes_detectadas": [
+          "VALLE, 2007",
+          "LOYOLA, 2002",
+          "NOGUEIRA e NOGUEIRA, 2017"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "ANTUNES, Ricardo. Da pragmática da especialização fragmentada à pragmática da liofilização flexibilizada: as formas da educação no modo de produção capitalista. Revista Germinal: marxismo e educação em debate, Salvador, v. 1, n. 1, p. 25-33, 2009.",
+      "CIAVATTA, Maria. A formação integrada: a escolar e o trabalho como lugares de memória e de identidade. In: FRIGOTTO, Gaudêncio; CIAVATTA, Maria; RAMOS, Marise N. (Org.). Ensino Médio Integrado: Concepção e Contradições. 3. ed. São Paulo: Cortez, p. 83-107, 2012.",
+      "FRIGOTTO, Gaudêncio et al. Concepções e mudanças no mundo do trabalho e o ensino médio In: FRIGOTTO, Gaudêncio; CIAVATTA, Maria RAMOS, Marise N.. (Org.). Ensino médio integrado: concepção e contradições. São Paulo: Cortez, p. 57-82, 2005.",
+      "FRIGOTTO, Gaudêncio. A polissemia da categoria trabalho e a batalha das ideias nas sociedades de classe. Revista Brasileira de Educação, Rio de Janeiro, v. 14, n. 40, p. 168-194, jan./abr. 2009. 137",
+      "FRIGOTTO, Gaudêncio. Educação omnilateral. In: CALDART, Roseli S. et al. (Org.). Dicionário da educação do campo. Rio de Janeiro, São Paulo: Editora Escola Politécnica de Saúde Joaquim Venâncio, Editora Expressão Popular, 2012.",
+      "FRIGOTTO, Gaudêncio. Formação profissional no 2º. grau: em busca do horizonte da Educação Politécnica. Cadernos de Saúde Pública, v. 4, p. 435-445, 1988.",
+      "FRIGOTTO, Gaudêncio; CIAVATTA, Maria; RAMOS, Marise N. A gênese do decreto N. 5.154/2004 um debate no contexto controverso da democracia restrita. Revista Trabalho Necessário, Niterói, v. 3, n. 3, p. dez. 2005.",
+      "LOYOLA, Maria A. Bourdieu e a sociologia. BOURDIEU, Pierre. Pierre Bourdieu entrevistado por Maria Andréa Loyola. Rio de Janeiro: EdUERJ, 2002.",
+      "NOGUEIRA, Cláudio M.; NOGUEIRA, Maria Alice. Bourdieu & a educação. Autêntica, 2017.",
+      "RAMOS, Marise N. Concepção do Ensino Médio Integrado . Texto apresentado em seminário promovido pela Secretaria de Educação do Estado do Pará nos dias, v. 8, 2008. Disponível em http://forumeja.org.br/go/sites/forumeja.org.br.go/files/concepcao_do_ensino_medio_ integrado5.pdf. Acesso em: 28 jun. 2023.",
+      "RAMOS, Marise N. Ensino Médio Integrado: ciência, trabalho e cultura na relação entre educação profissional e educação básica In: MOLL, Jaqueline et al. (Org). Educação profissional e tecnológica no Brasil contemporâneo: desafios, tensões e possibilidades. Porto Alegre: Editora Artmed, p. 42-57, 2010.",
+      "RAMOS, Marise N. Ensino médio integrado: lutas históricas e resistências em tempos de regressão. Educação Profissional e Tecnológica em Revista, v. 1, n. 1, p. 27-49, 2017.",
+      "RAMOS, Marise N. Reforma da educação profissional: contradições na disputa por hegemonia no regime de acumulação flexível. Revista Trabalho, Educação e Saúde, Rio de Janeiro, v. 5, n. 3, p. 545-558, nov.2007/fev. 2008.",
+      "RAMOS, Marise N.; FRIGOTTO, Gaudêncio. <Resistir é preciso, fazer não é preciso=: as contrarreformas do ensino médio no Brasil. Cadernos de Pesquisa em Educação, n. 46, p. 26-47, 2017.",
+      "RAMOS, Marise; PARANHOS, Michelle. Contrarreforma do ensino médio: dimensão renovada da pedagogia das competências?. Retratos da Escola, v. 16, n. 34, p. 71-88, 2022.",
+      "SAVIANI, Demerval. Educação em diálogo . Campinas: Autores associados , 2011. (Coleção memória da educação).",
+      "SAVIANI, Demerval. Trabalho e educação: fundamentos ontológicos e históricos. Revista Brasileira de Educação, Rio de Janeiro, v. 12, n. 34, p. 152-180, jan./abr. 2007.",
+      "SAVIANI, Dermeval. A lei da educação: LDB: trajetória, limites e perspectivas. Autores associados, 2019.",
+      "SAVIANI, Dermeval. A pedagogia histórico-crítica. Revista Binacional Brasil-Argentina: diálogo entre as ciências, Vitória da Conquista, v. 3, n. 2, p. 11-36, 2014. 142",
+      "VALLE, Ione R. A obra do sociólogo Pierre Bourdieu: uma irradiação incontestável. Educação e Pesquisa, v. 33, p. 117-134, 2007.",
+      "VALLE, Ione R. O lugar da educação (escolar) na sociologia de Pierre Bourdieu. Revista Diálogo Educacional, p. 411-437, 2013. 143"
+    ]
+  }
+}

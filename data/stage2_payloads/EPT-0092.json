@@ -1,0 +1,150 @@
+{
+  "id": "EPT-0092",
+  "metadados_resolvidos": {
+    "ano": 2020,
+    "autor": "Cátia Maria Alves Monteiro",
+    "orientador": "Reginaldo Leandro Plácido",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP2",
+    "macroprojeto": "MP6"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "ACOLHER PARA INCLUIR: O ACOLHIMENTO COMO ARTICULADOR DAS PRÁTICAS EDUCACIONAIS INCLUSIVAS",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/VERSAO-FINAL-DISSERTACAO-E-PRODUTO-EDUCACIONAL-CATIA-MARIA-ALVES-MONTEIRO.pdf",
+    "palavras_chave": [
+      "Educação Inclusiva",
+      "Acolhimento",
+      "Educação Integral",
+      "Educação Profissional e Tecnológica"
+    ],
+    "autores_referenciados": [
+      "A. A. O. Roveda",
+      "A. Cury",
+      "A. M. L. Padilha",
+      "A. M. L. Weiss",
+      "C. C. Prodanov",
+      "C. Laville",
+      "C. R. Brandão",
+      "D. Diniz",
+      "D. M. Z. Kanofre",
+      "Dermeval Saviani",
+      "E. A. Ropoli",
+      "E. C. Freitas",
+      "E. M. Lakatos",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "J. Dionne",
+      "K. W. Simon",
+      "Laura Cavalcanti de Farias Brehmer",
+      "M. A. Marconi",
+      "M. C. Borges",
+      "M. E. Nabuco",
+      "M. M. Cruz",
+      "M. Ramos",
+      "M. T. E. Mantoan",
+      "Maria Ciavatta",
+      "Marta Rejane Proença Filietaz",
+      "Marta Verdi",
+      "Paulo Freire",
+      "Priscila de Souza Chisté Leite",
+      "R. Glat",
+      "R. K. Sassaki",
+      "R. Likert",
+      "V. G. Caires"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "http://educapes.capes.gov.br/handle/capes/574365",
+    "titulo_produto": "ACOLHER PARA INCLUIR: CADERNO DE ORIENTAÇÕES PARA O ACOLHIMENTO DE ESTUDANTES PÚBLICO-ALVO DA EDUCAÇÃO ESPECIAL E/OU COM TRANSTORNOS FUNCIONAIS ESPECÍFICOS DO  INSTITUTO FEDERAL DE SANTA CATARINA - IFSC",
+    "titulo_produto_bruto": "Texto – ACOLHER PARA INCLUIR : CADERNO DE ORIENTAÇÕES PARA O ACOLHIMENTO DE ESTUDANTES PÚBLICO-ALVO DA EDUCAÇÃO ESPECIAL E COM TRANSTORNOS FUNCIONAIS ESPECÍFICOS DO INSTITUTO FEDERAL DE SANTA CATARINA.",
+    "data_publicacao": "2020-08-07",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Monteiro, C. M. A.",
+        "papel": "creator"
+      },
+      {
+        "nome": "Placido, R. L.",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/574365",
+        "url": "http://educapes.capes.gov.br/handle/capes/574365"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Acolher para incluir: caderno de orientações para o acolhimento de Estudantes Público-alvo da Educação Especial e/ou com Transtornos Funcionais Específicos do Instituto Federal de Santa Catarina",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "texto"
+    ],
+    "palavras_chave_educapes": [
+      "Educação Profissional e Tecnológica",
+      "Educação Inclusiva",
+      "Acolhimento",
+      "Educação Integral",
+      "Mestrado Profissional em Educação Tecnológica",
+      "Organização e Memória da EPT"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Caderno Pedagógico",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\n\nCÁTIA MARIA ALVES MONTEIRO\n\nACOLHER\nPARA\nINCLUIR:\nO\nACOLHIMENTO\nCOMO\nARTICULADOR DAS PRÁTICAS EDUCACIONAIS INCLUSIVAS\n\nBlumenau/SC\n2020\n\nCÁTIA MARIA ALVES MONTEIRO\n\nACOLHER PARA INCLUIR: O ACOLHIMENTO COMO ARTICULADOR\nDAS PRÁTICAS EDUCACIONAIS INCLUSIVAS\n\nArtigo apresentado ao Programa de Pós-\ngraduação\nem\nEducação\nProfissional\ne\nTecnológica, ofertado pelo campus Blumenau do\nInstituto Federal Catarinense, como parte dos\nrequisitos para a obtenção do título de Mestra em\nEducação Profissional e Tecnológica.\nOrientador: Prof. Dr. Reginaldo Leandro Plácido\n\nBlumenau/SC\n2020",
+    "ficha_catalografica": "[PÁG. 3]\nFicha catalográfica elaborada pela bibliotecária: Shyrlei K. Jagielski Benkendorf –\nCRB 14/662\nM775a\nMonteiro, Cátia Maria Alves.\nAcolher para incluir: o acolhimento como articulador das práticas educacionais\ninclusivas / Cátia Maria Alves Monteiro. - Blumenau, 2020.\n87 p.\nArtigo (Mestrado Profissional em Educação Profissional e Tecnológica) –\nInstituto Federal Catarinense, Blumenau, 2020.\nOrientador: Prof. Dr. Reginaldo Leandro Plácido\n1. Educação Inclusiva. 2. Acolhimento. 3. Educação Integral. 4. Educação\nProfissional e Tecnológica. I. Plácido, Reginaldo Leandro. II. Título.\nCDD 371.9046",
+    "sumario": "[PÁG. 17]\nSUMÁRIO\nAPRESENTAÇÃO ........................................................................................................ 16\n1 INTRODUÇÃO ........................................................................................................... 19\n2 REFERENCIAL TEÓRICO....................................................................................... 22\n2.1 Da dualidade estrutural à proposta de uma formação humana integral ....... 22\n2.2 Educação Inclusiva: para além da Educação Especial ................................... 24\n2.3 O acolhimento como articulador das práticas educacionais inclusivas......... 28\n3 METODOLOGIA ........................................................................................................ 32\n4 ANÁLISE DOS DADOS (RESULTADOS E DISCUSSÕES) .............................. 35\n5 CONCLUSÕES (CONSIDERAÇÕES FINAIS) ..................................................... 46\nREFERÊNCIAS ............................................................................................................. 49\nAPÊNDICE A – PRODUTO EDUCACIONAL ........................................................... 53\nAPÊNDICE B – TABELAS E QUADROS .................................................................. 61\nAPÊNDICE C – TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO-\nCOORDENADORES DOS NAE ................................................................................. 75\nAPÊNDICE D – QUESTIONÁRIO APLICADO AOS COORDENADORES DOS\nNAE ....................................................................................................................... 78\nAPÊNDICE E – TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO-\nSERVIDORES DAS COORDENADORIAS PEDAGÓGICAS DOS CAMPI ITAJAÍ\nE GASPAR ..................................................................................................................... 81\nAPRESENTAÇÃO\n\nO Mestrado Profissional em Educação Profissional e Tecnológica\n(ProfEPT) me proporcionou significativas vivências. As disciplinas alicerçadas\nteoricamente no materialismo histórico-dialético e na Pedagogia Histórico-Crítica,\nalém de ampliarem o meu conhecimento acerca da Educação Profissional e\nsobre o papel social do Instituto Federal de Santa Catarina (IFSC), enquanto\ninstituição pública federal, me propiciaram uma visão mais crítica e reflexiva. Isso\nrepercutiu na minha atuação na Secretaria Acadêmica e no Núcleo de\nAcessibilidade Educacional (NAE) do campus Itajaí, do IFSC, no qual atuo\natualmente, suscitando um novo olhar sobre as realidades que se configuram no\ncotidiano escolar.\nNesta perspectiva de ação e reflexão, fundamentada numa concepção\ndialética da realidade, a proposta deste estudo vinculado à Linha de Pesquisa\nOrganizações e Memórias de Espaços Pedagógicos na EPT, busca refletir sobre\nsituações cotidianas observadas no meu âmbito de atuação, com vistas a\nproporcionar reflexões e mudanças. Nessa perspectiva, o contexto institucional\nque suscitou o presente estudo está relacionado à minha atuação em dois\nset",
+    "resumo": "[PÁG. 11]\nRESUMO\n\nO paradoxo exclusão/inclusão é o pano de fundo do presente estudo, que tem como\ntema central, o acolhimento como articulador das práticas educacionais inclusivas.\nA partir dessa temática, busca-se repensar as concepções da educação inclusiva e\ndo paradigma da educação para todos na Educação Profissional e Tecnológica. O\ncaráter interdisciplinar do Mestrado Profissional em Educação Profissional e\nTecnológica (ProfEPT), vinculando teoria à prática, requer que o trabalho de\nconclusão do curso ocorra de forma integrada ao desenvolvimento e aplicação de\num produto educacional. Assim, o estudo teórico e a pesquisa realizada inserida na\nLinha de Pesquisa Organizações e Memórias de Espaços Pedagógicos na EPT,\nsubsidiaram o desenvolvimento do Produto Educacional “Acolher para Incluir:\nCaderno de orientações para o acolhimento de estudantes público-alvo da\nEducação Especial e/ou com Transtornos Funcionais Específicos, do Instituto\nFederal de Santa Catarina”. A metodologia utilizada foi de pesquisa do tipo\nparticipante, por meio de pesquisa bibliográfica e documental. Como instrumento\npara a coleta de dados foi aplicado questionário aos coordenadores dos Núcleos de\nAcessibilidade Educacional (NAE) dos campi do IFSC que ofertam cursos técnicos\nintegrados ao Ensino Médio. Os dados coletados foram sistematizados e analisados\na partir da construção iterativa de uma explicação, proposta enquanto parte da\nanálise qualitativa de conteúdo. Os resultados da pesquisa apontam que a aplicação\ndo produto educacional apresenta importantes contribuições para o processo de\ninclusão dos estudantes. Todavia, a proposta de acolhimento não encerra por si só\ntodo esse processo, haja vista que corresponde à etapa inicial e que a inclusão deve\nser construída de forma contínua e permanente, considerando a singularidade do\nsujeito.\n\nPalavras-Chave: Educação Inclusiva. Acolhimento. Educação Integral. Educação\nProfissional e Tecnológica.",
+    "introducao": "[PÁG. 21]\n19\n\n1. INTRODUÇÃO\n\nTendo em vista que o direito a uma educação de qualidade para todos está\nassegurado e expresso nas várias leis do nosso país, poder-se-ia dizer que a\nuniversalização da escola e a democratização do acesso ao ensino, superaria o\nparadoxo exclusão/inclusão. Contudo, o percurso histórico da Educação\nProfissional denota que a ausência de articulação entre formação geral e\nformação profissional, contribuiu para cristalizar concepções e práticas escolares\ndualistas. Esta ausência de articulação também é presente na educação às\npessoas com deficiência.\nAs relações entre inclusão e educação integrada permearam a\nproblematização da pesquisa que deu origem a este trabalho, que teve o IFSC\ncomo seu campo de análise. Nesse sentido, a problematização, considerou a\nperspectiva inclusiva do IFSC voltada para o acolhimento e atendimento dos\nestudantes público-alvo da Educação Especial, bem como, a constatação de que\nos documentos norteadores do IFSC não mencionam a articulação voltada ao\natendimento das necessidades dos estudantes com TFE e que as estratégias\nrelacionadas ao acolhimento dos estudantes ainda não estão institucionalizadas.\nDesta forma, o presente estudo propõe o acolhimento como uma estratégia para\nidentificar as necessidades dos estudantes público-alvo da Educação Especial e\ncom TFE, com vistas a propor ações para o seu atendimento e o desenvolvimento\ndas suas potencialidades e favorecer a articulação do seu processo de ensino-\naprendizagem, abrindo perspectivas para a efetivação da sua inclusão\neducacional.\nPartindo desse viés, o principal objetivo deste trabalho foi elaborar como\nproduto educacional um caderno de orientações para o acolhimento de\nestudantes público-alvo da Educação Especial e/ou com Transtornos Funcionais\nEspecíficos ingressantes nos cursos técnicos integrados ao Ensino Médio do\nInstituto Federal de Santa Catarina.\nVisando direcionar os principais pontos da mudança necessária para o\nprocesso de inclusão dos estudantes ingressantes no Ensino Médio Integrado,\npúblico-alvo da Educação Especial e que declaram e/ou apresentam algum\nTranstorno Funcional Específico (TFE), se propôs a alcançar os seguintes\nobjetivos específicos:\n\n[PÁG. 22]\n20\n\na) Identificar os campi do IFSC que ofertam cursos técnicos integrados ao\nEnsino Médio;\nb) Identificar através do Sistema Integrado de Gestão de Atividades\nAcadêmicas - SIGAA os estudantes que declararam alguma necessidade\neducacional específica no ato da matrícula durante o seu ingresso nos\ncursos técnicos integrados ao Ensino Médio do IFSC, no período\ncompreendido entre o primeiro semestre de 2018 e o primeiro semestre\nde 2019, período no qual o SIGAA já havia sido implantado;\nc) Investigar ações aplicadas pelo IFSC no que concerne ao acolhimento\ndesses estudantes;\nd) Analisar a relação entre o número de estudantes que declararam\nnecessidades educacionais específicas durante o seu ingresso no IFSC e\nos registros de acolhimento realizados pelos campi;\ne) Identificar com base na literatura e legislação vigente os conhecimentos\nnecessários para a elaboração do Produto Educacional, um caderno de\norientações para o acolhimento de estudantes público-alvo da Educação\nEspecial e/ou com Transtornos Funcionais Específicos ingressantes nos\ncursos técnicos integrados ao Ensino Médio do Instituto Federal de Santa\nCatarina;\nf) Aplicar o Produto Educacional aos servidores que compõem a\nCoordenadoria Pedagógica dos campi Itajaí e Gaspar, no período que\nantecede o ingresso do primeiro semestre de 2020.\nCom o propósito de discutir as concepções da educação inclusiva, a partir\nde uma abordagem histórico-crítica, o presente artigo apresenta no primeiro\ncapítulo um breve histórico das relações que foram se entretecendo entre\ntrabalho e educação na sociedade brasileira, bem como, uma retrospectiva da\ninclusão educacional. Partindo desse viés, o estudo propõe que a discussão entre\nensino médio e educação profissional vai além dos sentidos da integração, mas\ntrata-se de uma discussão sobre exclusão e inclusão. Também buscou-se\ncompreender como se configura a política inclusiva do IFSC atualmente e apontar\nquestões que incidem diretamente sobre o objeto de estudo: o acolhimento como\narticulador das práticas educacionais inclusivas.\nEducação e inclusão referem-se a relações humanas, especialmente em\ninstituições escolares. Por isso a importância de destacar o diálogo, conforme\n\n[PÁG. 23]\n21\n\nproposto por Freire (1996, p. 44), “[...] quem tem o que dizer deve assumir o dever\nde motivar, de desafiar quem escuta, no sentido de que, quem escuta diga, fale,\nresponda”. Desse modo, a acolhida configura um movimento da instituição em\nassegurar um momento de escuta e a construção bilateral (contando com a\nparticipação do estudante e a participação da instituição), do processo de\ninclusão do estudante.\n\n[PÁG. 24]\n22\n\n2 REFERENCIAL TEÓRICO\n\nEsta seção tem o objetivo de apresentar os fundamentos que contribuem\nteoricamente com o presente estudo, abordando as dimensões históricas\nreferente ao trabalho e as relações que foram se entretecendo entre trabalho e\neducação na sociedade brasileira ao longo da história. A partir da perspectiva de\neducação como direito de todos, propõe discutir a amplitude da educação\ninclusiva, apontando questões que incidem diretamente sobre o objeto de estudo:\no acolhimento como articulador das práticas educacionais inclusivas.\n\n2.1 Da dualidade estrutural à proposta de uma formação humana integral\n\nO fato do trabalho manual, no Brasil, ter sido predominantemente realizado\npor escravos, produziu diferenças tanto na construção do ideário sobre trabalho\nquanto nas práticas educativas. O trabalho sendo visto como sinônimo de\ntrabalho escravo e a formação para o trabalho, destinada às classes populares.\nDe maneira que, desde o seu surgimento, a educação diretamente articulada ao\ntrabalho se estrutura, como um sistema paralelo ao ensino regular, constituindo\ndesde o início, conforme Kuenzer (1991, p. 6), “[...] a dualidade estrutural entre\nteoria e prática e uma formação hierarquicamente diferenciada, uma formação\npara os pobres atuarem no sistema produtivo e uma escola para a elite dirigente”.\nNesse mesmo sentido, Manfredi (2016, p. 36) esclarece que\n\n[...] a escola foi instituída para preparar grupos seletos de pessoas para\nexercer o comando, o poder e a direção social. E o que levou à\nuniversalização da escola como agência social de preparação para\ninserção no mundo do trabalho, foi a expansão do capitalismo industrial.\n\nAtendendo à lógica capitalista, os mecanismos legais e as estruturas\nformativas foram cristalizando concepções e práticas escolares dualistas ao\nlongo da história,\n\n[...] de um lado, a concepção de educação escolar acadêmico-\ngeneralista, que possibilita a progressão nos estudos e de outro, a\nEducação Profissional, na qual o estudante recebia informações\nrelevantes para o domínio de um ofício (MANFREDI, 2016, p. 78).\n\nComo uma crítica à metodologia da escola tradicional e defendendo a\nbandeira de uma escola única, pública, laica, obrigatória e gratuita, em 1932, foi\nescrito o Manifesto dos Pioneiros, com diferentes inspirações filosóficas e\n\n[PÁG. 25]\n23\n\neducacionais, tais como o pragmatismo de John Dewey e a sociologia\nfuncionalista de Émile Durkheim, entre outras. Contudo, Saviani (2014, p. 27)\nafirma que “[...] quando faz a crítica da pedagogia tradicional, a Escola Nova não\nfaz a crítica da sociedade existente”, ou seja, sem profundos avanços quanto à\nperspectiva funcionalista da educação.\nCom a saída dos militares do poder e com a entrada do governo civil, em\n1985, iniciou-se a construção de um processo de redemocratização no país. Na\nperspectiva de assegurar o Estado Democrático de Direito, em 1988 foi\npromulgada a atual Carta Constitucional Brasileira. Neste clima de participação\ndemocrática, a prioridade do debate educacional, de acordo com Frigotto,\nCiavatta e Ramos (2012, p. 36) “[…] era uma concepção de mundo, de homem e\nde educação crítico-dialética, n",
+    "descricao_produto_na_dissertacao": "[PÁG. 21] Tendo em vista que o direito a uma educação de qualidade para todos está\nassegurado e expresso nas várias leis do nosso país, poder-se-ia dizer que a\nuniversalização da escola e a democratização do acesso ao ensino, superaria o\nparadoxo exclusão/inclusão. Contudo, o percurso histórico da Educação\nProfissional denota que a ausência de articulação entre formação geral e\nformação profissional, contribuiu para cristalizar concepções e práticas escolares\ndualistas. Esta ausência de articulação também é presente na educação às\npessoas com deficiência.\nAs relações entre inclusão e educação integrada permearam a\nproblematização da pesquisa que deu origem a este trabalho, que teve o IFSC\ncomo seu campo de análise. Nesse sentido, a problematização, considerou a\nperspectiva inclusiva do IFSC voltada para o acolhimento e atendimento dos\nestudantes público-alvo da Educação Especial, bem como, a constatação de que\nos documentos norteadores do IFSC não mencionam a articulação voltada ao\natendimento das necessidades dos estudantes com TFE e que as estratégias\nrelacionadas ao acolhimento dos estudantes ainda não estão institucionalizadas.\nDesta forma, o presente estudo propõe o acolhimento como uma estratégia para\nidentificar as necessidades dos estudantes público-alvo da Educação Especial e\ncom TFE, com vistas a propor ações para o seu atendimento e o desenvolvimento\ndas suas potencialidades e favorecer a articulação do seu processo de ensino-\naprendizagem, abrindo perspectivas para a efetivação da sua inclusão\neducacional.\nPartindo desse viés, o principal objetivo deste trabalho foi elaborar como\nproduto educacional um caderno de orientações para o acolhimento de\nestudantes público-alvo da Educação Especial e/ou com Transtornos Funcionais\nEspecíficos ingressantes nos cursos técnicos integrados ao Ensino Médio do\nInstituto Federal de Santa Catarina.\nVisando direcionar os principais pontos da mudança necessária para o\nprocesso de inclusão dos estudantes ingressantes no Ensino Médio Integrado,\npúblico-alvo da Educação Especial e que declaram e/ou apresentam algum\nTranstorno Funcional Específico (TFE), se propôs a alcançar os seguintes\nobjetivos específicos:\n\n[PÁG. 22] a) Identificar os campi do IFSC que ofertam cursos técnicos integrados ao\nEnsino Médio;\nb) Identificar através do Sistema Integrado de Gestão de Atividades\nAcadêmicas - SIGAA os estudantes que declararam alguma necessidade\neducacional específica no ato da matrícula durante o seu ingresso nos\ncursos técnicos integrados ao Ensino Médio do IFSC, no período\ncompreendido entre o primeiro semestre de 2018 e o primeiro semestre\nde 2019, período no qual o SIGAA já havia sido implantado;\nc) Investigar ações aplicadas pelo IFSC no que concerne ao acolhimento\ndesses estudantes;\nd) Analisar a relação entre o número de estudantes que declararam\nnecessidades educacionais específicas durante o seu ingresso no IFSC e\nos registros de acolhimento realizados pelos campi;\ne) Identificar com base na literatura e legislação vigente os conhecimentos\nnecessários para a elaboração do Produto Educacional, um caderno de\norientações para o acolhimento de estudantes público-alvo da Educação\nEspecial e/ou com Transtornos Funcionais Específicos ingressantes nos\ncursos técnicos integrados ao Ensino Médio do Instituto Federal de Santa\nCatarina;\nf) Aplicar o Produto Educacional aos servidores que compõem a\nCoordenadoria Pedagógica dos campi Itajaí e Gaspar, no período que\nantecede o ingresso do primeiro semestre d",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 23,
+        "texto": "proposto por Freire (1996, p. 44), “[...] quem tem o que dizer deve assumir o dever\nde motivar, de desafiar quem escuta, no sentido de que, quem escuta diga, fale,\nresponda”. Desse modo, a acolhida configura um movimento da instituição em\nassegurar um momento de escuta e a construção bilateral (contando com a\nparticipação do estudante e a participação da instituição), do processo de\ninclusão do estudante.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 25,
+        "texto": "educacionais, tais como o pragmatismo de John Dewey e a sociologia\nfuncionalista de Émile Durkheim, entre outras. Contudo, Saviani (2014, p. 27)\nafirma que “[...] quando faz a crítica da pedagogia tradicional, a Escola Nova não\nfaz a crítica da sociedade existente”, ou seja, sem profundos avanços quanto à\nperspectiva funcionalista da educação.\nCom a saída dos militares do poder e com a entrada do governo civil, em\n1985, iniciou-se a construção de um processo de redemocratização no país. Na\nperspectiva de assegurar o Estado Democrático de Direito, em 1988 foi\npromulgada a atual Carta Constitucional Brasileira. Neste clima de participação\ndemocrática, a prioridade do debate educacional, de acordo com Frigotto,\nCiavatta e Ramos (2012, p. 36) “[…] era uma concepção de mundo, de homem e\nde educação crítico-dialética, no qual se buscava assegurar uma formação\nbásica que superasse a dualidade entre a formação geral e a formação técnica”.\nEntretanto, diante da influência do ideário flexível e da intensificação e\nglobalização capitalista que marcaram a década de 1990, a concepção de Estado\nDemocrático de Direito foi confrontada de forma avassaladora pela doutrina do\nneoliberalismo, assumida",
+        "citacoes_detectadas": [
+          "CAIRES; OLIVEIRA, 2016",
+          "BRASIL, 1996"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 26,
+        "texto": "omnilateral, a perspectiva da formação integral caracteriza um movimento\ndialético para impulsionar a produção de novos sentidos e significados no âmbito\nda escola.\nPor um lado, ao oferecer as condições para que o estudante dê\ncontinuidade aos seus estudos, se contrapõe à lógica capitalista de educação,\nde uma formação apenas para atender às demandas dos processos de produção,\nconstituindo um veículo de transformação social. E por outro, assume uma outra\npostura\nepistemológica,\nrecorrendo\na\nprincípios\ne\npressupostos\nda\ninterdisciplinaridade e da totalidade, que de acordo com Ramos (2007, p. 20),\n“[...] não está na justaposição da formação geral e técnica, mas na articulação\nentre os conhecimentos gerais e específicos, entre a teoria e a prática dos\nconteúdos”. Constituindo assim, uma formação não pela lógica do capitalismo\nque transfere para o âmbito educacional a dinâmica de mercado, mas pela lógica\ndos sujeitos, visando formar cidadãos capazes de compreender sua realidade,\ncriticá-la e agir autonomamente sobre ela. E sobretudo, uma perspectiva de\neducação que garanta a todos o direito ao conhecimento.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "A construção de espaços inclusivos pressupõe que todos os estudantes\nse sintam acolhidos e atendidos em suas necessidades. Esta construção deve\nser feita coletivamente, de modo que a atitude acolhedora faça parte da cultura\nda escola e seja vivenciada cotidianamente. Conforme aponta Ló (2010, p. 125),\n“[...] a escola precisa construir um ambiente social que, ao respeitar as\ndiferenças, valoriza o incluir e o acolher”.\nRetomando a epígrafe que deu início a este estudo, Cury (2012, p. 37)\nafirma que “[...] a matemática adulterou nossa capacidade de enxergar as\nangústias e as necessidades dos outros a partir da perspectiva deles”. Vivemos\nem um tempo em que as relações humanas estão cada vez mais ‘cartesianas',\ncomo aponta Saviani (2014, p. 20) “[...] a sociedade de mercado tende a\ntransformar tudo em mercadoria”. De modo que, as relações afetivas são\nsobrepostas pela lógica do consumo, da troca da presença, pelo presente e as\nrelações sociais se transformaram em conexões virtuais.\nDe acordo com Nabuco (2010, p. 72),",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 32,
+        "texto": "Nesse sentido, a acolhida deve ser guiada pelo respeito e pela escuta\nsensível, na busca por diferentes estratégias para promover a interação e a\ncooperação entre as partes envolvidas. Conforme expresso por Freire (1996, p.\n45), “[...] escutar, no sentido aqui discutido, significa a disponibilidade permanente\npor parte do sujeito que escuta para a abertura à fala do outro, ao gesto do outro,\nàs diferenças do outro”.\nDesse modo, para se efetivar, a inclusão educacional implica em termos\nsempre presente, conforme adverte Mantoan (2006, p. 44, grifos da autora),",
+        "citacoes_detectadas": []
+      }
+    ],
+    "referencias_filtradas": []
+  }
+}

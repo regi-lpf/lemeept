@@ -1,0 +1,164 @@
+{
+  "id": "EPT-0067",
+  "metadados_resolvidos": {
+    "ano": 2023,
+    "autor": "Felipe Iop Capeleto",
+    "orientador": "Eduardo Augusto Werneck Ribeiro",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP1",
+    "macroprojeto": "MP1"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "CULTURA ESCOLAR NO MEIO DIGITAL EM TEMPOS DE PANDEMIA: DISCUSSÃO E PERCEPÇÃO PELOS ALUNOS A PARTIR DO AUDIOVISUAL",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/11/Dissertacao-Felipe-Iop-Capeletto.pdf",
+    "palavras_chave": [
+      "Cultura Escolar",
+      "Audiovisual",
+      "Instituto Federal",
+      "Pandemia"
+    ],
+    "autores_referenciados": [
+      "Ademir José de Lima",
+      "Ana Maria Falsarella",
+      "André Chervel",
+      "Antonio Chizzotti",
+      "Antônio Giovanni Figliuolo Uchôa",
+      "Antonio Viñao Frago",
+      "Augusto Nibaldo Silva Triviños",
+      "Bruna della Torre de Carvalho Lima",
+      "Cezar Migliorin",
+      "Christiane Kleinübing Godoi",
+      "Dante Henrique Moura",
+      "David Bédouret",
+      "Denise Todorov",
+      "Dermeval Saviani",
+      "Domingos Leite Lima Filho",
+      "Dominique Julia",
+      "Eduardo Altheman Camargo Santos",
+      "Egre Padoin",
+      "Fabiany de Cássia Tavares Silva",
+      "Felipe Iop Capeleto",
+      "Francis Vanoye",
+      "Janine Regina Mogendorff",
+      "Lana de Souza Cavalcanti",
+      "Laurence Bardin",
+      "Maria Cecília de Souza Minayo",
+      "Maria Ciavatta",
+      "Maria das Graças Lino Labrunie",
+      "Mário Lopes Amorim",
+      "Marise Nogueira Ramos",
+      "Martine Joly",
+      "Mateus Marchesan Pires",
+      "Maxwel Gonçalves Martins",
+      "Milton Santos",
+      "Mônica Ribeiro da Silva",
+      "Patricio Dugnani",
+      "Rafael Scucuglia de Souza Rodrigues",
+      "Reginaldo Leandro Plácido",
+      "Rúbia Mércia Oliveira Medeiros",
+      "Shyrlei Benkendorf",
+      "Theodor W. Adorno",
+      "Thiago de Faria Silva"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/737726#:~:text=http%3A//educapes.capes.gov.br/handle/capes/737726",
+    "titulo_produto": "Introdução à Produção Audiovisual",
+    "titulo_produto_bruto": "Curso – CURSO INTRODUÇÃO À PRODUÇÃO AUDIOVISUAL",
+    "data_publicacao": "2023-08-01",
+    "autores_colaboradores": [
+      {
+        "nome": "Insituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Capeleto, Felipe Iop",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/737726",
+        "url": "https://educapes.capes.gov.br/handle/capes/737726#:~:text=http%3A//educapes.capes.gov.br/handle/capes/737726"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "produto",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "curso"
+    ],
+    "palavras_chave_educapes": [
+      "audiovisuala",
+      "ensino médio integrado",
+      "Filme-carta",
+      "Mestrado Profissional em Educação Profissional e Tecnológica em Rede"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Curso",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\nFELIPE IOP CAPELETO\nCULTURA ESCOLAR NO MEIO DIGITAL EM TEMPOS DE PANDEMIA:\nDISCUSSÃO E PERCEPÇÃO PELOS ALUNOS A PARTIR DO AUDIOVISUAL\nBlumenau - SC\nJulho/2023\n\nFELIPE IOP CAPELETO\nCULTURA ESCOLAR NO MEIO DIGITAL EM TEMPOS DE PANDEMIA:\nDISCUSSÃO E PERCEPÇÃO PELOS ALUNOS A PARTIR DO AUDIOVISUAL\nDissertação\napresentada\nao\nPrograma\nde\nPós-graduação\nem\nEducação\nProfissional\ne\nTecnológica, ofertado pelo Campus Blumenau do\nInstituto\nFederal\nCatarinense, como parte dos\nrequisitos para a obtenção do título de Mestre em\nEducação Profissional e Tecnológica.\nOrientador: Eduardo Augusto Werneck Ribeiro\nBlumenau - SC\nJulho/2023",
+    "ficha_catalografica": "[PÁG. 3]\nCapeleto, Felipe Iop\nC236i\nCultura escolar no meio digital em tempos de pandemia: discussão e percepção\npelos alunos a partir do audiovisual / Felipe Iop Capeleto; orientador: Eduardo Augusto\nWerneck Ribeiro. - Blumenau, 2023.\n65p.\nDissertação (mestrado) – Instituto Federal Catarinense, Campus Blumenau,\nMestrado Profissional em Educação Profissional e Tecnológica (PROFEPT), Blumenau,\n2023.\nInclui referências.\n1. Cultura Escolar. 2. Audiovisuais. 3. Educação Profissional e Tecnológica.\n4. Ensino Médio Integrado. I. Ribeiro, Eduardo Augusto Werneck. II. Instituto Federal\nCatarinense. Mestrado Profissional em Educação Profissional e Tecnológica. III. Título\nCDD: 370\nFicha catalográfica revisada pela bibliotecária\nShyrlei K. Jagielski Benkendorf – CRB 14/662",
+    "sumario": "[PÁG. 12]\nSUMÁRIO\nAPRESENTAÇÃO......................................................................................................13\n1 INTRODUÇÃO........................................................................................................ 15\n2 REFERENCIAL TEÓRICO......................................................................................18\n2.1 A escola antes da escola................................................................................ 18\n2.2 Cultura escolar................................................................................................20\n2.3 Trabalho intelectual e o audiovisual................................................................25\n2.4 Os espaços..................................................................................................... 31\n3 METODOLOGIA..................................................................................................... 35\n3.1 Produto Educacional.......................................................................................37\n4 RESULTADOS E DISCUSSÕES............................................................................ 44\n4.1 Filme-carta 01 - 3min56s................................................................................ 44\n4.2 Filme-carta 02 - 3min3s.................................................................................. 48\n4.3 Conclusões..................................................................................................... 51\n5 CONSIDERAÇÕES FINAIS....................................................................................55\n6 REFERÊNCIAS.......................................................................................................58\nAPÊNDICE A – TRANSCRIÇÃO FILME-CARTA 01................................................ 62\nAPÊNDICE B – TRANSCRIÇÃO FILME-CARTA 02................................................ 63\nAPÊNDICE C – PRODUTO EDUCACIONAL............................................................64\n13\nAPRESENTAÇÃO\n\nO presente texto em forma de artigo é fruto da pesquisa desenvolvida no\nMestrado Profissional em Educação Profissional e Tecnológica (ProfEPT) do Instituto\nFederal Catarinense (IFC) - Campus Blumenau e está inserido na Linha de Pesquisa\nPráticas Educativas em Educação Profissional e Tecnológica, Macroprojeto 1 –\nPropostas metodológicas e recursos didáticos em espaços formais e não formais de\nensino na EPT, e tem como objetivo a discussão da percepção da cultura escolar no\nmeio digital por meio do audiovisual em tempos de pandemia, assim como seus\npossíveis desdobramentos e novas descobertas.\nO estado pandêmico trouxe imensos desafios e, com isso, novas realidades,\nnovas ferramentas e novos métodos, tanto escolares, como para a rotina cotidiana.\nFoi preciso que nos adaptássemos e aprendêssemos a conviver com este novo\nmundo agora imposto.\nFomos isolados da rotina presencial por questões sanitárias e passamos a\nconviver com menos pessoas presencialmente e muito mai",
+    "resumo": "[PÁG. 8]\nRESUMO\nA cultura escolar desperta a curiosidade de pesquisadores pelas peculiaridades que\ncercam o universo da escola, além de desempenhar um papel crucial no ambiente\neducacional,\ninfluenciando\nas\npráticas\npedagógicas,\nos\nrelacionamentos\ninterpessoais e a formação dos estudantes. Com a pandemia de Covid-19, a\neducação passou por uma transformação significativa, obrigando as escolas a\nsuspenderem suas atividades presenciais, proporcionando aos alunos uma nova\nmodalidade de ensino, representada pelas atividades de ensino remoto. Diante\ndisso, a comunicação digital passou a ser obrigatória no dia a dia escolar,\nacarretando impactos nas dinâmicas culturais que os alunos desenvolvem e fazendo\ncom que a utilização de meios digitais se tornasse o principal recurso de interação e\naprendizado. Nesse contexto, a percepção da cultura escolar no meio digital por\nmeio do audiovisual se torna uma abordagem relevante para compreender as\ndinâmicas e desafios enfrentados pelas instituições escolares durante esse período.\nAssim, torna-se oportuno investigar em que medida a inserção das atividades on-line\ntranspuseram a realidade da cultura escolar. Seria possível encontrar elementos da\ncultura escolar em tempos de Atividades de Ensino Remotas (AER)? Entende-se\nque sim, sendo possível identificar essa transposição de cultura (do real para o\nvirtual) através de um produto audiovisual. O uso do audiovisual como ferramenta de\npesquisa permitiu capturar e analisar aspectos da cultura escolar que se manifestam\nno ambiente digital. Por meio desse produto audiovisual desenvolvido, foi possível\nexplorar como a cultura escolar é transmitida, mantida e transformada no contexto\ndo ensino remoto e proporciona visões e percepções acerca da cultura escolar,\nprincipalmente dentro de um espaço de Educação Profissional e Tecnológica (EPT).\nDiante disso, a presente pesquisa discute a cultura escolar nesse ambiente virtual a\npartir da percepção dos alunos do primeiro ano do Ensino Médio Integrado do\nInstituto Federal Catarinense (IFC) - Campus São Francisco do Sul e, por\nconsequência, esta transposição do ambiente escolar para o virtual, o que se\ndenominou, ao final da pesquisa, como cultura escolar digital. Com os produtos\ndesenvolvidos\nno\ncurso,\npretendeu-se\nanalisar\nos\nconteúdos\nimagéticos\ndesenvolvidos, a fim de discutir a cultura escolar em tempos de pandemia no meio\ndigital e dissertar brevemente sobre esta nova nomenclatura, denominada cultura\nescolar digital.\nPalavras-Chave: Cultura Escolar. Audiovisual. Instituto Federal. Pandemia.",
+    "introducao": "[PÁG. 15]\n15\n1 INTRODUÇÃO\nA pandemia que assolou o mundo durante os anos de 2020 e 2021, trouxe\ndesafios para a nossa vida cotidiana e também para as instituições escolares. As\nescolas, por si só, possuem culturas próprias e têm sido objeto de estudos em\ndiferentes pesquisas. As particularidades pertencentes a estes estabelecimentos de\nensino podem ser chamadas de culturas escolares, que variam de escola para\nescola a depender de sua arquitetura, estrutura, atores, estudantes, professores,\nsociedade em que está inserida, além de outros fatores que compõem o ambiente\nescolar.\nCom a pandemia e o fechamento das escolas, para que pudessem se\nadequar à nova modalidade de ensino, foi aprovada pelo Conselho Superior\n(Consuper) do Instituto Federal Catarinense (IFC), estabelecida pela Resolução nº\n25/2020 do órgão, as Atividades de Ensino Remotas (AER). No ano seguinte (2021),\no estado pandêmico teve continuidade, o que manteve os estudantes por mais um\nano com as AER, sem que o vínculo escolar fosse perdido, apesar da migração do\ncotidiano escolar para o espaço digital. Com o avanço da vacinação no ano de 2022,\nas aulas retornaram a presencialidade com a exigência do comprovante de\nvacinação\ncontra\na\nCovid-19,\nsegundo\na\nPortaria\nNormativa\nnº\n05/2022/ASTEC/REITORIA/IFC.\nO distanciamento social imposto aos estudantes e ao cotidiano escolar,\npermitiu a esta pesquisa uma análise sobre os fatores que poderiam compor a\ncultura escolar, mas agora em um espaço não tão explorado, que é o ambiente\nvirtual. Diante deste cenário buscamos atingir os objetivos propostos a partir da\nseguinte problematização: seria possível encontrar elementos da cultura escolar em\ntempos de Atividades de Ensino Remotas (AER)?\nOs possíveis fatores que poderiam surgir sobre as culturas escolares\ndespertaram o interesse deste pesquisador ao investigar quais elementos são\nformadores, a partir de que ponto são formadas e como são vistas as culturas\nescolares das escolas. A escola, como ambiente escolar que conhecemos, já se\nmostra como um ambiente a ser explorado, por apresentar uma gama de elementos\nque podem ser estudados juntos ou a partir de algum elemento em específico.\nAcreditamos que a escola não perde seus elementos culturais, apenas se\nadapta a novas ferramentas, novos espaços e novos meios de ensino, como são as\n\n[PÁG. 16]\n16\natividades de ensino remoto onde os alunos estiveram inseridos nos anos de 2020 e\n2021. Mesmo neste contexto pandêmico e digital, os estudos sobre a cultura escolar\n“possibilitam apreender as variantes que a forma escolar toma em diferentes\ninstituições de ensino” (FALSARELLA, 2018, p. 622).\nPara Gonçalves Martins (2015, p. 79) “a cultura audiovisual proporciona aos\njovens informações, saberes, valores e outros modos de ler e perceber a realidade”,\ndesta forma, nossa intenção foi a de identificar como o aluno percebe a escola e,\ncomo a partir dessa percepção, é possível adaptar e estimular práticas pedagógicas\npara o aprendizado dos jovens do Ensino Médio Integrado.\nBuscamos, com a produção do audiovisual, que os alunos pudessem\ndemonstrar seu pensamento e visão crítica em suas obras audiovisuais. Por meio\ndestas produções, esperou-se que os alunos conseguissem expressar e pudessem\nser críticos ao formar suas ideias em relação à sociedade em que estão inseridos.\nDiferente da indústria cultural, que busca massificação e a alienação, tão\ncriticada pela Escola de Frankfurt, intentamos o uso do meio de comunicação\naudiovisual a favor da crítica e da produção de conteúdo com teor crítico à cultura\nescolar e não meramente reprodutivo, assim, foi possível por meio do audiovisual\n“ampliar a percepção humana, fazendo com que alcance lugares que antes não\npoderiam ser acessados apenas pelos sentidos naturais (visão, audição etc.)”\n(DUGNANI, 2022, p. 275).\nPara\nalcançar\nos\nobjetivos\npropostos,\nfoi\ndesenvolvido\num\nproduto\neducacional que consistia em um curso de extensão de introdução à produção\naudiovisual, que resultou, como produto final, em um vídeo denominado como\nfilme-carta, para que as análises sobre a cultura escolar no meio digital pudessem\nser realizadas. Ainda, o curso gerou um livro digital, para que professores e alunos\npudessem\ndesenvolver\nprodutos\naudiovisuais\ndiversos.\nAssim,\ncom\nestas\ninformações, foi possível discutir e examinar a percepção da cultura escolar em\ntempos de pandemia.\nA partir da construção dos vídeos pelos alunos do primeiro ano do ensino\nmédio integrado do Instituto Federal Catarinense - Campus São Francisco do Sul,\npretendeu-se realizar a análise e discussão dos produtos audiovisuais com\nfundamentação a partir de pesquisa bibliográfica e análise de conteúdo imagético,\nvisando desta forma a adequada compreensão do material desenvolvido.\n\n[PÁG. 17]\n17\nNesse contexto de construções e descobertas da cultura escolar e do\naudiovisual, objetivou-se, nesta pesquisa, a discussão da cultura escolar em tempos\nde pandemia no meio digital, por meio do audiovisual produzido pelos estudantes do\nprimeiro ano do Ensino Médio Integrado do Instituto Federal Catarinense - Campus\nSão Francisco do Sul. A pesquisa auxiliará a instituição escolar a identificar a\npercepção do estudante em relação à escola, examinando os elementos da cultura\nescolar no ambiente virtual, a partir do produto audiovisual produzido pelos alunos.\nForam\ndefinidos\ntambém como objetivos específicos: a) Identificar os\nelementos da cultura escolar no ambiente digital no campus São Francisco do Sul;\nb) Identificar as tecnologias de informação de comunicação utilizadas no período de\natividade de ensino remoto; c) Realizar pesquisa bibliográfica para subsidiar a\nfundamentação teórica; d) Desenvolver e aplicar um curso on-line de introdução a\nprodução audiovisual e, e) Avaliar os resultados encontrados a partir dos produtos\nproduzidos no curso aplicado.\n\n[PÁG. 18]\n18\n2 REFERENCIAL TEÓRICO\n2.1 A escola antes da escola\n\nO ambiente escolar sempre foi visto como um espaço de integração e\nsocialização entre estudantes e professores que convivem entre si em grande parte\nde seus dias. Em alguns casos, como o do Ensino Médio Integrado dos Institutos\nFederais, essa convivência é ainda mais expressiva, uma vez que ocorre em\npraticamente dois turnos – manhã e tarde.\nMais do que a relação que se tem entre alunos e professores, a escola possui\num papel fundamental na vida dos estudantes que a frequentam, como nos diz\nLabrunie (2004, p. 33), ao afirmar que “a escola sempre esteve submetida à tensão\nentre as necessidades da integração social e as exigências do desenvolvimento\npessoal”. Isto é, mais do que um ambiente para integração, a escola fica\nencarregada de dar o suporte necessário para o desenvolvimento pessoal do\nestudante,\nsendo\ndesta\nforma\na\nresponsável\npelo\nencaminhamento\ne\ndesenvolvimento profissional de quem a frequenta.\nAlém de suas carteiras, salas de aula e mestres que fazem parte do ambiente\nescolar, a escola tem como principal meio de aprendizagem os assuntos separados\npor disciplinas, repetidas ano após ano, lecionadas por um professor que possui\nformação específica para transmitir aos alunos os assuntos essenciais, em turmas\ndiferentes e que possuem experiências e perspectivas diversas, para que, desta\nforma, possam realizar sua formação e desenvolvimento pessoal e profissional.\nDesta forma, na escola os processos tradicionais perpetuam métodos de\nensino dentro das salas de aula com as carteiras dispostas perfeitamente alinhadas\numa atrás da outra. E nelas, em tese, os estudantes em sua grande maioria\nsedentos por conhecimentos transmitidos por um professor posicionado à frente da\nsala de aula em pé, disposto ali a ensinar-lhes aquilo que aprendeu durante sua\ntrajetória de formação profissional e escolar.\nE neste ambiente, a escola pode ser definida pelo conceito de ambiente em\nque se aprende e que se recebe o conhecimento por meio de materiais e métodos\naplicados por um professor preparado e capacitado para isso. Enfim, uma projeção.\nÉ necessário pensar além da escola ideal, a que não of",
+    "descricao_produto_na_dissertacao": "[PÁG. 16] 16\natividades de ensino remoto onde os alunos estiveram inseridos nos anos de 2020 e\n2021. Mesmo neste contexto pandêmico e digital, os estudos sobre a cultura escolar\n“possibilitam apreender as variantes que a forma escolar toma em diferentes\ninstituições de ensino” (FALSARELLA, 2018, p. 622).\nPara Gonçalves Martins (2015, p. 79) “a cultura audiovisual proporciona aos\njovens informações, saberes, valores e outros modos de ler e perceber a realidade”,\ndesta forma, nossa intenção foi a de identificar como o aluno percebe a escola e,\ncomo a partir dessa percepção, é possível adaptar e estimular práticas pedagógicas\npara o aprendizado dos jovens do Ensino Médio Integrado.\nBuscamos, com a produção do audiovisual, que os alunos pudessem\ndemonstrar seu pensamento e visão crítica em suas obras audiovisuais. Por meio\ndestas produções, esperou-se que os alunos conseguissem expressar e pudessem\nser críticos ao formar suas ideias em relação à sociedade em que estão inseridos.\nDiferente da indústria cultural, que busca massificação e a alienação, tão\ncriticada pela Escola de Frankfurt, intentamos o uso do meio de comunicação\naudiovisual a favor da crítica e da produção de conteúdo com teor crítico à cultura\nescolar e não meramente reprodutivo, assim, foi possível por meio do audiovisual\n“ampliar a percepção humana, fazendo com que alcance lugares que antes não\npoderiam ser acessados apenas pelos sentidos naturais (visão, audição etc.)”\n(DUGNANI, 2022, p. 275).\nPara\nalcançar\nos\nobjetivos\npropostos,\nfoi\ndesenvolvido\num\nproduto\neducacional que consistia em um curso de extensão de introdução à produção\naudiovisual, que resultou, como produto final, em um vídeo denominado como\nfilme-carta, para que as análises sobre a cultura escolar no meio digital pudessem\nser realizadas. Ainda, o curso gerou um livro digital, para que professores e alunos\npudessem\ndesenvolver\nprodutos\naudiovisuais\ndiversos.\nAssim,\ncom\nestas\ninformações, foi possível discutir e examinar a percepção da cultura escolar em\ntempos de pandemia.\nA partir da construção dos vídeos pelos alunos do primeiro ano do ensino\nmédio integrado do Instituto Federal Catarinense - Campus São Francisco do Sul,\npretendeu-se realizar a análise e discussão dos produtos audiovisuais com\nfundamentação a partir de pesquisa bibliográfica e análise de conteúdo imagético,\nvisando desta forma a adequada compreensão do material desenvolvido.\n\n[PÁG. 26] 26\n(2016, p. 2) categorizam o trabalho como “fundante da humanidade, incorporando\ntodos os elementos que movem as relações humanas: linguagem, cultura, política,\neducação, ciência e técnica”, o que nos auxiliou no entendimento e aplicação do\nproduto educacional aplicado nesta pesquisa, a produção audiovisual.\nAdorno (2021, p. 81) nos diz que “a própria cultura surge da separação radical\nentre trabalho intelectual e trabalho braçal, extraindo dessa separação, desse\n‘pecado original’, a sua força”, assim, podemos deixar claro que aqui tratamos do\naprimoramento intelectual, tornando o ensino integral dos Institutos Federais\ndiferente diante dos demais estabelecimentos escolares.\nDiante do avanço do capitalismo, emerge uma nova classe trabalhadora, que\nsurge com o aparecimento das indústrias, “o proletariado, que aos poucos ganha\npoder de consumo, mas se estabelece como uma classe explorada pelos donos dos\nmeios de produção” (LIMA, 2020, p. 36), classe que além de produzir, também\ntornava-se\nclasse\nconsumidora.\nEsses\nnovos\ncomportamentos\ne\nfenômenos\ninstigaram p",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 23,
+        "texto": "23\nmembros do corpo escolar. Além disso, esses alunos recebem formação técnica\nintegrada ao Ensino Médio.\nA formação integrada propiciada pelos Institutos Federais, por meio do EPT,\n“não somente possibilita o acesso a conhecimentos científicos, mas também\npromove a reflexão crítica sobre os padrões culturais” (Ramos, 2014, p. 90),\npossibilitando aos alunos pertencentes a estas instituições de ensino o ensejo de\nrefletir sobre aquilo que os cerca de forma crítica e consciente.\nA EPT busca promover a integração e o contato entre a teoria e a prática ao\nlongo do Ensino Médio Integrado realizado pelo estudante ao trazer exemplos do\nmundo real para dentro da sala de aula. Como nos diz Ramos (2014, p. 91)\n[...] a educação profissional não é meramente ensinar a fazer e preparar para o\nmercado de trabalho, mas é proporcionar a compreensão das dinâmicas sócio\nprodutivas das sociedades modernas, com as suas conquistas e os seus revezes, e\ntambém habilitar as pessoas para o exercício autônomo e crítico de profissões, sem\nnunca se esgotar a elas.\nAo passarem mais tempo na escola, em razão de cursarem o Ensino Médio\nIntegrado, os alunos têm mais oportunidades de vivenciarem a cultura escolar da",
+        "citacoes_detectadas": [
+          "Ramos, 2014, p. 90"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 24,
+        "texto": "24\nvisão de mundo.\nAlém dos autores já citados, que dissertam sobre cultura escolar, podemos\ndestacar a proposição apresentada por Plácido; Benkendorf; Todorov (2021, p. 192),\nque nos trazem a visão da categorização da cultura escolar em porosidade e\npermeabilidade, quando dizem que: “com porosidade estamos nos referindo aos\nespaços da instituição escolar, seja no sentido físico ou social, enquanto por\npermeabilidade nos referimos ao diálogo e trânsito de ideias que perpassam a\nescola.”\nOs autores vão além ao nos dizerem que com esta categorização há\ninteração entre a escola e seu ambiente, havendo, desta forma, o fluxo de diálogos e\nideias entre a instituição escolar e seus atores - alunos, professores e sociedade. E,\ndesta forma, é possível entender que a porosidade e a permeabilidade são\nintegradas, precisando uma da outra para existir o fluxo de ideias e interação, já que\n“é necessário que exista o espaço para que ocorra fluxo de ideias” (PLÁCIDO;\nBENKENDORF; TODOROV, 2021, p. 192).\nA contribuição dos referidos autores nos proporciona a possibilidade de\nenxergar como os elementos de determinada cultura escolar podem ser entendidos\ne absorvidos pelos atores que frequentam as ins",
+        "citacoes_detectadas": [
+          "PLÁCIDO;\nBENKENDORF; TODOROV, 2021, p. 192"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 25,
+        "texto": "25\n2.3 Trabalho intelectual e o audiovisual\nNão somos livres, estamos atrelados a nosso trabalho, o qual é a própria\nessência do homem. O homem produz e transforma a natureza para sua própria\nexistência, para poder existir e conforme suas necessidades, conforme Saviani\n(1989, p. 8) afirma, ao dizer que “no processo pelo qual o homem produz a sua\nexistência, é também o trabalho que define a existência histórica dos homens\".\nPortanto, temos o trabalho em nossa essência e também a nossa divisão, ao\nsepararmos os homens entre a classe dominante e trabalhadores serviçais, ou seja,\nsomos separados por classes.\nDessa forma, é possível notar que além da divisão do trabalho dos homens\nentre classe dominante e trabalhadores serviçais, há também, da mesma forma, a\ndivisão na escola, sendo a escola das ciências e humanidades para aqueles ditos\nlivres, proprietários, e a escola do aprendizado, destinada ao aprendizado serviçal, a\ndos não proprietários, ou seja, trabalhadores em geral.\nRamos (2008, p. 3) afirma que\nVemos, então, que a história da dualidade educacional coincide com a\nhistória da luta de classes no capitalismo. Por isso a educação permanece\ndividida entre aquela destinada aos que ",
+        "citacoes_detectadas": [
+          "MOURA; LIMA FILHO; SILVA, 2015, p. 1059"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 28,
+        "texto": "28\nsemelhança” (ADORNO, 1985, p. 99), e onde tudo aquilo que se apresente diferente\ndo que é imposto pelo capital e não gere lucro ou não incentive o consumo, possa\nse tornar subversivo e estranho ao sistema capitalista.\nVamos aqui nos ater a cultura do cinema, considerando este como veículo\nque mais se aproxima do objeto resultante do produto educacional aplicado nesta\npesquisa. O cinema foi uma importante ferramenta de massificação de cultura,\nlevando à massa ideias, ideais e ideologias, como, por exemplo, o que foi realizado\npelo cinema alemão, russo e americano, sendo utilizado, por este último, até os dias\natuais a mesma técnica, para o público buscar identificação com o que é\napresentado na grande tela, tornando os americanos sempre heróis diante de vilões\ncriados por eles mesmos.\nMas, para o cinema ser apresentado, há muita exigência de produção\nintelectual, que é o ponto que aqui nos importa. O cinema como produto cultural é\ncapaz de expor ideias que podem ser compartilhadas e mostradas a diferentes\npúblicos. Dessa forma, é possível instigar nas pessoas o desenvolvimento da crítica\ncultural, que as torna despertas do estado anestésico que o sistema capitalista e de\nconsumo ",
+        "citacoes_detectadas": [
+          "ADORNO, 1985, p. 99"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 29,
+        "texto": "29\no estudante pode mostrar ao criar o material audiovisual. Ao compreender o trabalho\nnesta perspectiva de produção e criação, o estudante aproxima-se do audiovisual de\nforma com que, por meio deste recurso, seja possível transferir para o vídeo a sua\nvisão e suas percepções do trabalho de forma imagética. Esta “dimensão intelectual\nabrange, além das ciências da natureza e da matemática, as ciências humanas e\nsociais, a filosofia, as letras, as artes, enfim, a cultura” (MOURA; LIMA FILHO;\nSILVA, 2015, p. 1061), ou seja, podemos afirmar que o audiovisual é capaz de ser\nimportante ferramenta interdisciplinar de percepção do trabalho, atravessando e\nsendo possível de retratar, pelo olhar do estudante, o cotidiano escolar e, por\nconseguinte, a cultura escolar percebida na qual estão inseridos.\nAssim, na escola, o aluno além de absorver os conhecimentos repassados\npelos professores, torna-se produtor da sua realidade e construtor da cultura escolar\nem que acaba por se inserir ao perceber que “a educação é uma instituição\nnecessária para incorporar a população a todo tipo de transformação social, efetiva,\nque se pretenda” (CIAVATTA, 2005 , p. 17).\nAo aplicarmos o produto educacional foi",
+        "citacoes_detectadas": [
+          "MOURA; LIMA FILHO;\nSILVA, 2015, p. 1061"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "ADORNO, Theodor Ludwig Wiesengrund. Dialética do esclarecimento: fragmentos filosóficos.1 ed. Rio de Janeiro: Zahar, 1985.",
+      "ADORNO, Theodor Ludwig Wiesengrund. Indústria cultural e sociedade.13 ed. São Paulo: Paz e Terra, 2021.",
+      "RAMOS, Marise. Concepção do Ensino Médio Integrado. 2008. Disponível em: https://tecnicadmiwj.files.wordpress.com/2008/09/texto-concepcao-do-ensino-medio-i ntegrado-marise-ramos1.pdf. Acesso em: 11 jul. 2023.",
+      "RAMOS, Marise Nogueira. História e política da educação profissional [recurso eletrônico]. Curitiba: Instituto Federal do Paraná, 2014. - (Coleção formação pedagógica; v. 5). 61"
+    ]
+  }
+}

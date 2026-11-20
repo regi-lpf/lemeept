@@ -1,0 +1,254 @@
+{
+  "id": "EPT-0038",
+  "metadados_resolvidos": {
+    "ano": 2024,
+    "autor": "Juliana Amadei",
+    "orientador": "Denise Fernandes",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP2",
+    "macroprojeto": "MP6"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "PERCEPÇÃO DOS PROFISSIONAIS ENFERMEIROS SOBRE OS REGISTROS DA ASSISTÊNCIA DE ENFERMAGEM E SUA ATUAÇÃO PROFISSIONAL NO INSTITUTO FEDERAL CATARINENSE",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/10/Dissertacao-Juliana-Amadei.pdf",
+    "palavras_chave": [
+      "enfermagem",
+      "ensino",
+      "educação em saúde",
+      "educação integral",
+      "ProfEPT"
+    ],
+    "autores_referenciados": [
+      "Alba Lúcia Botura Leite de Barros",
+      "Alboni Marisa Dudeque Pianovski Vieira",
+      "Alessandra Nitschke",
+      "Alexandra Schmitt Rasche",
+      "André Luís Dias",
+      "Antônio Carlos Gil",
+      "Antonio Souza Junior",
+      "Arlida Schmidt Godoy",
+      "B. Smeltzer",
+      "Bruna Cristina Velozo",
+      "C. Suzanne",
+      "Carme Ferré Grau",
+      "Cíntia de Souza Batista Tortato",
+      "Cladecir Alberto Schenkel",
+      "Cloves Alexandre de Castro",
+      "Dante Henrique Moura",
+      "Dermeval Saviani",
+      "Egre Padoin",
+      "Eliezer Moreira Pacheco",
+      "Emanoel Avelar Muniz",
+      "Ethel Leonor Noia Maciel",
+      "Fernanda Demutti Pimpão",
+      "Flávia Regina da Costa Abreu",
+      "Flávio Trevisani Fakih",
+      "Francis Solange Vieira Tourinho",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "Grazielly Soares Ávila",
+      "Henrique Pitt",
+      "Isabel M. Avello",
+      "Izilda Esmênia Muglia Araújo",
+      "Jaqueline Miranda Barros Silva",
+      "Jeanne Liliane Marlene Michel",
+      "João José Saraiva da Fonseca",
+      "Joel Rolim Mancia",
+      "Jussara Soares Marques Anjos",
+      "Kálya Yasmine Nunes de Lima",
+      "Kenedy Everaldo Rufino Lima",
+      "Laurena Moreira Pires",
+      "Laurence Bardin",
+      "Marhla Laiane de Brito Assunção",
+      "Maria Ciavatta",
+      "Maria da Cruz Dias Feitosa",
+      "Maria da Soledade Simeão dos Santos",
+      "Maria Itayra Coelho de Souza Padilha",
+      "Mário Lopes Amorim",
+      "Marise Nogueira Ramos",
+      "Matilde Meire Miranda Cadette",
+      "Mirelle Inácio Soares",
+      "Mírian Paura Sabrosa Zippin Grinspun",
+      "Nilza Martins Ravazoli Brito",
+      "Olavo Henrique Menin",
+      "Oswalcir Almeida de Azevedo",
+      "Patrícia de Oliveira Bastos",
+      "Patrícia Madalena Vieira Hermida",
+      "Patricia Naiara de Oliveira Moreira",
+      "Reginaldo Leandro Plácido",
+      "Robson de Paula Araujo",
+      "Rosana Jimenes Pavanelli",
+      "Suzana Lins da Silva",
+      "Thais Gonçalves Dias",
+      "Uwe Flick",
+      "Valéria Conceição de Oliveira",
+      "Viviane Euzébia Pereira Santos"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "https://educapes.capes.gov.br/handle/capes/778287",
+    "titulo_produto": "Prontuário unificado e cronograma de ações de educação em saúde",
+    "titulo_produto_bruto": "PRONTUÁRIO UNIFICADO E CRONOGRAMA DE AÇÕES DE EDUCAÇÃO EM SAÚDE",
+    "data_publicacao": "2024-07-19",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Amadei, Juliana",
+        "papel": "creator"
+      },
+      {
+        "nome": "Fernandes, Denise",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/778287",
+        "url": "https://educapes.capes.gov.br/handle/capes/778287"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Prontuário unificado e cronograma de ações de educação em saúde",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "ferramentas"
+    ],
+    "palavras_chave_educapes": [
+      "Educação em Saúde",
+      "Enfermeiro escolar",
+      "Sistematização da Assistência de Enfermagem Escolar",
+      "Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT)",
+      "Organização e Memórias de Espaços Pedagógicos na Educação Profissional e Tecnológica (EPT)"
+    ],
+    "tipo_produto_regex": null,
+    "fonte_tipo_regex": null,
+    "formato_produto_regex": "Manual / Protocolo",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "Instituto Federal Catarinense\n Programa de Pós-Graduação em Educação Profissional e Tecnológica\nCampus Blumenau\n\nJULIANA AMADEI\n\nPERCEPÇÃO DOS PROFISSIONAIS ENFERMEIROS SOBRE OS REGISTROS DA\nASSISTÊNCIA DE ENFERMAGEM E SUA ATUAÇÃO PROFISSIONAL NO\nINSTITUTO FEDERAL CATARINENSE\n\nBlumenau\n2024\n\nJULIANA AMADEI\n\nPERCEPÇÃO DOS PROFISSIONAIS ENFERMEIROS SOBRE OS REGISTROS DA\nASSISTÊNCIA DE ENFERMAGEM E SUA ATUAÇÃO PROFISSIONAL NO\nINSTITUTO FEDERAL CATARINENSE\n\nDissertação submetida ao Programa de Pós-\ngraduação\nem\nEducação\nProfissional\ne\nTecnológica do Instituto Federal Catarinense –\nCampus Blumenau para a obtenção do título de\nMestra\nem\nEducação\nProfissional\ne\nTecnológica.\nOrientadora:\nProf.(ª)\nDenise\nFernandes,\nDoutora\n\nBlumenau\n2024",
+    "ficha_catalografica": "",
+    "sumario": "[PÁG. 17]\nSUMÁRIO\n1\nINTRODUÇÃO ............................................................................................................... 15\n2\nREFERENCIAL TEÓRICO .......................................................................................... 19\n2.1 Ensino médio integrado e a formação integral ............................................................. 19\n2.2 História e fundamentos da enfermagem e a atuação do(a) enfermeiro(a) no ambiente\nescolar ............................................................................................................................... 21\n2.3 Educação profissional e tecnológica, Instituto Federal Catarinense e enfermagem 27\n2.4 Sistematização da assistência de enfermagem e registros da assistência ................... 35\n3\nMETODOLOGIA ........................................................................................................... 41\n3.1 Delimitação da pesquisa ................................................................................................. 41\n3.2 Coleta de dados ............................................................................................................... 42\n3.3 Análise dos dados ............................................................................................................ 43\n3.4 Produto educacional ....................................................................................................... 44\n3.5 Avaliação do produto educacional ................................................................................ 45\n4\nRESULTADOS E DISCUSSÃO .................................................................................... 46\n4.1 Caracterização dos participantes da pesquisa ............................................................. 48\n4.2 Categoria I: atuação do enfermeiro no ambiente escolar ............................................. 52\n4.3 Categoria II: sistematização da assistência de enfermagem no ambiente escolar .... 55\n4.4 Categoria III: contribuições do enfermeiro na formação integral ............................. 61\n5\nPRODUTO EDUCACIONAL ....................................................................................... 70\n5.1 Apresentando o produto educacional ............................................................................ 71\n5.2 Avaliação do produto educacional ................................................................................ 72\n5.3 Aprimoramento do produto educacional após avaliação ............................................ 81\nCONSIDERAÇÕES FINAIS ......................................................................................... 83\nREFERÊNCIAS ..............................................................................................................85\nAPÊNDICE A – ROTEIRO DA ENTREVISTA COM OS ENFERMEIROS ......... 92\nAPÊNDICE B – TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO –\nPROFISSIONAIS DA EDUCAÇÃO ...................................................................",
+    "resumo": "[PÁG. 12]\nRESUMO\nO presente estudo visa compreender a percepção dos enfermeiros atuantes na educação\nprofissional e tecnológica (EPT) quanto à sua contribuição na formação integral através das\nações educativas de prevenção e promoção da saúde e dos registros dos atendimentos\nambulatoriais. Esta pesquisa foi realizada utilizando entrevista semiestruturada e os dados\nforam analisados através da metodologia da análise de conteúdo. A pesquisa se insere na linha\nde Organização e Memórias de Espaços Pedagógicos na EPT, integrando-se ao macroprojeto 6\n– Organização de espaços pedagógicos da EPT. Os resultados são apresentados em três\ncategorias: I- Atuação do enfermeiro no ambiente escolar, em que se buscou entender a\npercepção dos enfermeiros quanto à sua atividade no ambiente escolar em um sistema de ensino\nque visa à formação integral; II- Sistematização da assistência de enfermagem no ambiente\nescolar, em que se buscou entender a percepção dos enfermeiros sobre as formas de registros\ndos atendimentos de enfermagem e sua importância no contexto escolar na contribuição para a\neducação integral; III- Contribuições do enfermeiro escolar na formação integral, em que se\npretendeu identificar as percepções dos enfermeiros quanto aos conceitos de educação integral\ne formação omnilateral e o entendimento do que é a EPT proposta pelos Institutos Federais.\nNessas categorias, apresentamos que a percepção dos enfermeiros sobre sua atuação no\nambiente escolar é voltada principalmente para ações de promoção e prevenção em saúde. Eles\ncompreendem que contribuem com a educação integral, sentindo-se também como educadores\natuando no ambiente escolar. Os enfermeiros compreendem ser fundamental realizar ações e\nregistros de enfermagem padronizados e sistematizados. Também se constatou que os\nenfermeiros sentem falta de uma proximidade com demais colegas para padronização de\ndocumentos e de regimentos, com o propósito de planejar ações em conjunto e trocar\nexperiências. Diante dos resultados, foram construídos os seguintes produtos educacionais: um\nprontuário unificado para os atendimentos ambulatoriais e um calendário de ações de prevenção\ne promoção da saúde. Os produtos educacionais foram avaliados através de grupo focal e de\nquestionário on-line estruturado com perguntas objetivas e discursivas. O grupo focal reuniu os\nprofissionais enfermeiros em sala virtual onde foram realizadas discussões sobre os produtos\neducacionais previamente enviados. Após o momento de discussão do grupo focal, os produtos\nforam avaliados, via questionário on-line na plataforma Google Forms, sobre sua aceitação,\nutilidade e possível melhoria nos processos realizados pelos profissionais de enfermagem.\nConcluímos, através das percepções e da avaliação dos enfermeiros, que a pesquisa possibilitou\nmelhorias para as suas atividades em ambiente escolar. Os produtos educacionais foram\njulgados adequados e aceitos para a utilização na prática diária dos enfermeiros. Identificamos\ntambém a percepção dos enfermeiros(as) quanto à sua atuação no ambiente escolar como\neducadores, sendo esta atuação focada principalmente em atividades de educação em saúde.\nDesta forma, trazemos nossa contribuição com um dos pontos da missão dos Institutos Federais,\nque é oferecer uma educação integral, que aqui compreendeu as ações de educação e de\natendimento ambulatorial dos enfermeiros escolares.\nPalavras-chave: enfermagem; ensino; educação em saúde; educação integral; ProfEPT.",
+    "introducao": "[PÁG. 19]\n15\n\n1\nINTRODUÇÃO\nO presente estudo versou sobre a percepção dos profissionais de enfermagem nos\nespaços pedagógicos da Educação Profissional e Tecnológica (EPT), quanto às suas ações de\nprevenção e de promoção da saúde, com o foco sobre os registros dessas ações e os\natendimentos prestados em um sistema de ensino que visa à formação integral. Este estudo é\nparte integrante do Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT)\ne está inserido na linha de pesquisa Organização e Memórias de Espaços Pedagógicos na EPT,\nem seu macroprojeto 6, versando sobre a organização de espaços pedagógicos na EPT.\nNos Institutos Federais, conforme previsto em sua lei de criação (Lei n. 11.892/2008),\né ofertada a EPT, numa proposta pedagógica de educação integral. Conforme apontam\nNitschke, Plácido e Pitt (2021, p. 42), na EPT compreende-se a educação integral como aquela\nque se pauta na politécnica e omnilateralidade, “cuja gênese encontra-se em Marx e Engels e\nse aproxima da concepção de escola unitária de Gramsci, para quem a politécnica vai além da\ndicotomia entre trabalho manual/trabalho intelectual”. É uma proposta pedagógica\ncomprometida com a utopia de uma formação inteira, ou integral, no sentido de desenvolver as\nfaculdades físicas e intelectuais do sujeito em uma perspectiva ampla. Frigotto, Ciavatta e\nRamos (2005) entendem que uma educação integral significa garantir aos sujeitos que vivem\ndo trabalho o direito a uma formação completa para poderem fazer uma leitura do mundo em\nque estão inseridos e atuar nele como cidadãos dignos e integrados a uma sociedade política.\n\nPara Pacheco (2015, p. 15):\n[…] a concepção de EPT que deve orientar as ações de ensino, pesquisa e extensão\nnos Institutos Federais (IF) baseia-se na integração entre ciência, tecnologia e cultura\ncomo dimensões indissociáveis da vida humana e, ao mesmo tempo, no\ndesenvolvimento da capacidade de investigação científica, essencial à construção da\nautonomia intelectual.\n\nNessa perspectiva, a EPT busca uma formação completa do ser humano, preparando-o\npara a vida. Como destaca Pacheco (2015, p. 29): “Formação humana integral trata-se de\nsuperar a divisão do ser humano entre o que pensa e aquele que trabalha, produzida pela divisão\nsocial do trabalho, presente na formação voltada ao treinamento para a execução de\ndeterminadas tarefas”.\n\nA educação integral ofertada nos IF tem seu ápice de materialização no Ensino Técnico\nintegrado ao Ensino Médio. Cabe esclarecer que o Ensino Técnico integrado ao Ensino Médio\né uma modalidade de educação profissional que busca a formação integral do estudante no que\nse refere à formação humana e cultural para o exercício da cidadania e da democracia, integrada\n\n[PÁG. 20]\n16\n\nà formação para o mundo do trabalho. Essa perspectiva voltada para a formação integral agrega\no respeito às posições e às demandas dos adolescentes, além de proporcionar o estímulo ao seu\nenvolvimento no processo de construção do cotidiano da escola e da sociedade.\nCabe ainda pontuar que nesta proposta de educação integral o estudante adolescente é\natendido em suas múltiplas necessidades escolares, na compreensão de que a escola é um\nespaço de formação cidadã de adolescentes, local para aquisição de conhecimentos e\ndesenvolvimento crítico e político, o que contribui para construção de valores pessoais, crenças,\nhábitos e conceitos, fatores estes que interferem na produção social e na saúde. Essa visão de\neducação integral compreende, ainda, que a adolescência é uma fase de transformações\nsignificativas, com mudanças biopsicossociais que trazem consigo hábitos que podem se\nconsolidar por toda a vida adulta. Acrescenta-se que essas transformações fazem com que a\nadolescência represente um momento de vulnerabilidade desses indivíduos, tendo em vista\ncomportamentos que podem levar à exposição a diferentes riscos, inclusive relacionados à\nsaúde.\nO enfermeiro escolar é o profissional capacitado para prestar cuidados de enfermagem\nespecializados de forma autônoma, no campo educacional, em uma equipe multidisciplinar. A\natuação do enfermeiro no ambiente escolar, através das suas ações de educação em saúde,\nconsultas de enfermagem e acolhimento, contribui para a formação integral do ser humano,\nredução de vulnerabilidades existentes na fase da adolescência, incentivando a adoção de\nhábitos de vida mais saudáveis, melhorando consequentemente a qualidade de vida dos\neducandos.\nOs Institutos Federais de Educação Ciência e Tecnologia, que fazem parte da Rede\nFederal de Educação Profissional Científica e Tecnológica, visam a uma educação integral e,\npara essa contribuição, dispõem de profissionais enfermeiros em diversas unidades. A presença\ndesses profissionais impulsiona as ações de educação em saúde dos escolares, participando de\nmaneira ativa no processo de educação em saúde dos discentes, ajustando saúde e educação na\nconstrução de uma escola mais saudável e contribuindo para o ensino, aprendizagem e para\numa educação integral.\nA atuação do enfermeiro na educação profissional e tecnológica contribui com a\nformação omnilateral, através das ações de educação em saúde, como oficinas, e da participação\nem projetos de ensino e extensão. Essa contribuição também acontece por meio das ações de\npromoção e prevenção em saúde, além dos atendimentos individuais ao estudante com\norientações de saúde.\n\n[PÁG. 21]\n17\n\nOs registros dos cuidados à saúde são fundamentais para o atendimento ao estudante,\npois através deles conhecemos o histórico de saúde do paciente, família, condições\nsocioeconômicas, entre outras. Esses registros oferecem subsídios à equipe de saúde para\nplanejamento das ações, das condutas e da organização do cuidado para o indivíduo e\ncoletividade, buscando a integralidade na assistência, ou seja, o atendimento do paciente na\ntotalidade. Além disso, resulta para a instituição, em termos de registro, numa gama de\ninformações que, uma vez reunidas, irão constituir o prontuário do estudante e o histórico de\nações educativas.\nA Sistematização da Assistência de Enfermagem (SAE) facilita, organiza e agiliza o\ntrabalho dos enfermeiros e se constitui em um instrumento metodológico dinâmico e inovador\nessencial para orientar a prática da enfermagem, estando prevista pelo Conselho Federal de\nEnfermagem (Cofen), na Resolução Cofen n. 358/2009 como Sistematização da Assistência de\nEnfermagem (SAE) (Brasil, 2009).\nA SAE é viabilizada de diversas maneiras, sendo uma delas o Processo de Enfermagem\n(PE), composto por algumas etapas como histórico, diagnóstico, intervenções e resultados de\nenfermagem, podendo ser registrado, dentre outras formas, a partir de um sistema de\nclassificação em enfermagem, veiculado em linguagem padronizada (Barros; Fakih; Michel;\n2002).\nConsiderando que o IFC dispõe do serviço de enfermagem em diversos campus e que\ncada um registra seus atendimentos individualmente, torna-se necessário padronizar e unificar\na forma dos registros e a sistematização da assistência deste serviço, a fim de gerar melhor\norganização, planejamento e segurança tanto para os profissionais quanto para os estudantes e\na Instituição.\nPortanto, esta pesquisa translacional se desenvolveu através da questão norteadora: qual\na percepção dos enfermeiros sobre suas atividades no sistema de registro da assistência de\nenfermagem e das ações educativas em saúde na contribuição para a educação integral no IFC?\nPara responder a essa pergunta, foram realizadas entrevistas com os enfermeiros que prestam\nassistência de enfermagem no IFC. Assim, foi possível compreender a percepção desses\nprofissionais sobre o papel do histórico, da organização e da manutenção dos dados dos\nregistros do cuidado de saúde e das ações educativas de promoção à saúde, e da SAE, na\nformação integral. Após analisar as entrevistas, identificamos os principais pontos de\nintervenção. Desta forma, para auxiliar a equipe de enfermagem na colaboração para uma\neducação integral, foram criados os seguintes produtos educacionais: ",
+    "descricao_produto_na_dissertacao": "[PÁG. 48] objetivos a serem alcançados com a interpretação das entrevistas e o desenvolvimento do\nproduto educacional, somados à avaliação do produto educacional, que trouxe subsídios para a\ninterpretação da viabilidade e eficácia deste último.\nO corpus é o conjunto dos documentos a serem submetidos aos procedimentos\nanalíticos. A sua constituição implica, muitas vezes, escolhas, seleções e regras. É fundamental\nobservar algumas regras: a) exaustividade, sugere-se esgotar todo o assunto sem omissão de\nnenhuma parte; b) representatividade, preocupa-se com amostras que representem o universo;\nc) homogeneidade, nesse caso os dados devem referir-se ao mesmo tema, serem coletados por\nmeio de técnicas iguais e indivíduos semelhantes; d) pertinência, é necessário que os\ndocumentos sejam adaptados aos objetivos da pesquisa e e) exclusividade, um elemento não\ndeve ser classificado em mais de uma categoria.\nPrimeiramente, foi realizada a pré-análise com a constituição do corpus, que foi as\ntranscrições das entrevistas. Após isso, foi feita a codificação com o auxílio do programa\nMAXQDA2024. Os códigos gerados pelo programa foram revisados, selecionados quanto à\nsua frequência e interpretados e apresentados quanto à sua informação principal. Segundo Flick\n(2009), o avanço da tecnologia também trouxe mudanças na pesquisa qualitativa. Desde 1980,\niniciaram-se avanços tecnológicos com a introdução de computadores na pesquisa qualitativa.\nAtualmente, existe uma variedade de programas de software disponíveis, entre eles o\nMAXQDA, que auxilia nos processos de análises e transcrições da pesquisa qualitativa. O\nMAXQDA auxilia a pesquisa qualitativa, mas não a realiza nem a automatiza, embora esse\nauxílio possa representar um impacto sobre a pesquisa. Como ainda é o autor que escreve por\nmeio da utilização do processador de textos, é, ainda, o pesquisador que realiza a codificação\netc., com o uso do MAXQDA. As categorias foram criadas através da análise do centro de\ninformações presentes nos tópicos de entrevista, gerando as categorias a serem discutidas.\n3.4 Produto educacional\nAs percepções encontradas na pesquisa deram embasamento para a construção do\nproduto educacional, definido como um prontuário unificado para uso pelos profissionais da\nenfermagem do IFC e um cronograma de ações de educação para a prevenção e promoção à\nsaúde, que está inserido, na íntegra, no Apêndice C.\nO prontuário unificado será utilizado para os registros da assistência de enfermagem.\nEle busca contemplar todas as etapas do PE, tais como: anamnese (histórico de saúde), exame\nfísico, diagnóstico, prescrição, implementação e avaliação/evolução de enfermagem. O\ncronograma de ações de educação em saúde foi proposto mensalmente, com ações pensadas no\n\n[PÁG. 49] público de estudantes adolescentes, contemplando as campanhas nacionais e considerado\nespaço para ações específicas de cada campus.\nNesse sentido, com um prontuário unificado e com ações de educação em saúde\npadronizadas, respeitando as especificidades de cada local, contribui-se com a educação\nintegral proposta pela EPT.\n3.5 Avaliação do produto educacional\nOs produtos educacionais foram enviados aos participantes da pesquisa via e-mail para\nanálise. Após 15 dias, realizamos um grupo focal para a análise e debate sobre as informações\nsobre a forma de aplicação dos produtos. A avaliação ocorreu através de um questionário com\nperguntas objetivas e discursivas via Google Forms. As respostas do questionário foram\navaliadas e apr",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 19,
+        "texto": "1\nINTRODUÇÃO\nO presente estudo versou sobre a percepção dos profissionais de enfermagem nos\nespaços pedagógicos da Educação Profissional e Tecnológica (EPT), quanto às suas ações de\nprevenção e de promoção da saúde, com o foco sobre os registros dessas ações e os\natendimentos prestados em um sistema de ensino que visa à formação integral. Este estudo é\nparte integrante do Mestrado Profissional em Educação Profissional e Tecnológica (ProfEPT)\ne está inserido na linha de pesquisa Organização e Memórias de Espaços Pedagógicos na EPT,\nem seu macroprojeto 6, versando sobre a organização de espaços pedagógicos na EPT.\nNos Institutos Federais, conforme previsto em sua lei de criação (Lei n. 11.892/2008),\né ofertada a EPT, numa proposta pedagógica de educação integral. Conforme apontam\nNitschke, Plácido e Pitt (2021, p. 42), na EPT compreende-se a educação integral como aquela\nque se pauta na politécnica e omnilateralidade, “cuja gênese encontra-se em Marx e Engels e\nse aproxima da concepção de escola unitária de Gramsci, para quem a politécnica vai além da\ndicotomia entre trabalho manual/trabalho intelectual”. É uma proposta pedagógica\ncomprometida com a utopia de uma formação inteira, ou",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 20,
+        "texto": "à formação para o mundo do trabalho. Essa perspectiva voltada para a formação integral agrega\no respeito às posições e às demandas dos adolescentes, além de proporcionar o estímulo ao seu\nenvolvimento no processo de construção do cotidiano da escola e da sociedade.\nCabe ainda pontuar que nesta proposta de educação integral o estudante adolescente é\natendido em suas múltiplas necessidades escolares, na compreensão de que a escola é um\nespaço de formação cidadã de adolescentes, local para aquisição de conhecimentos e\ndesenvolvimento crítico e político, o que contribui para construção de valores pessoais, crenças,\nhábitos e conceitos, fatores estes que interferem na produção social e na saúde. Essa visão de\neducação integral compreende, ainda, que a adolescência é uma fase de transformações\nsignificativas, com mudanças biopsicossociais que trazem consigo hábitos que podem se\nconsolidar por toda a vida adulta. Acrescenta-se que essas transformações fazem com que a\nadolescência represente um momento de vulnerabilidade desses indivíduos, tendo em vista\ncomportamentos que podem levar à exposição a diferentes riscos, inclusive relacionados à\nsaúde.\nO enfermeiro escolar é o profissional cap",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 23,
+        "texto": "2\nREFERENCIAL TEÓRICO\n2.1 Ensino médio integrado e a formação integral\nO termo “integrado” remete, por um lado, à forma de oferta do ensino médio articulado\ncom a educação profissional. Por outro lado, o termo também faz menção a um tipo de\nformação, integrada, plena, que possibilita ao educando a compreensão das partes no seu todo\nou da unidade no diverso, tratando-se a educação como uma totalidade social (Ciavatta, 2014,\np. 198).\nPartindo desse pressuposto, lembramos que o Ensino Médio Integrado, na perspectiva\nda EPT, busca a formação do educando na sua totalidade, nas várias áreas do conhecimento, da\nciência, da cultura e do trabalho. Frigotto, Ciavatta e Ramos (2012, p. 84) afirmam que com “a\nformação integrada ou do ensino médio integrado ao ensino técnico, queremos que a educação\ngeral se torne inseparável da educação profissional em todos os campos onde se dá a preparação\npara o trabalho”. Nessa perspectiva, o(a) enfermeiro(a) na EPT contribui com esta preparação,\neducando em saúde e formando indivíduos com conhecimentos em saúde que poderão, por sua\nvez, ser multiplicadores desse conhecimento na sociedade.\nA formação integral se materializa nos IFs, principalmente na ofert",
+        "citacoes_detectadas": [
+          "Ciavatta, 2014,\np. 198",
+          "Frigotto; Ciavatta; Ramos, 2012, p. 76"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 24,
+        "texto": "relevância de uma formação integral, completa do ser humano, possibilitando ao educando uma\nvisão do todo e não uma visão fragmentada, buscando assim uma formação integral. Segundo\nCiavatta (2014), “o sentido de formação integrada ou ensino médio integrado à educação\nprofissional sob uma base unitária de formação geral é uma condição necessária para se fazer a\ntravessia para a educação politécnica e omnilateral realizada pela escola unitária”.\nNesse sentido, observa-se o quanto é importante um processo formativo integral,\npossibilitando uma educação plena, formando cidadãos(ãs) com uma visão ampla,\ndesenvolvendo o pensamento crítico, que questiona as desigualdades entre as classes sociais,\nbuscando superar a dualidade presente no sistema capitalista, que destina o trabalho manual\npara as classes menos favorecidas e o trabalho intelectual para a elite, contribuindo, por fim,\npara a construção de uma sociedade mais justa e igualitária. Como destaca Ciavatta (2014, p.\n197):\nA formação integrada significa mais do que uma articulação entre ensino médio e\neducação profissional. Ela visa recuperar, no atual contexto histórico e sob uma\nespecífica correlação de forças entre as classes, a c",
+        "citacoes_detectadas": [
+          "Brasil,\n1990",
+          "Brasil, 2013, p. 9"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 32,
+        "texto": "Sendo assim, na perspectiva da EPT, temos que esse modelo educacional visa a uma\nformação integral do ser humano, ou seja, em todas as dimensões da vida humana, preparando\no estudante para o mundo do trabalho. O IFC, que faz parte da Rede Federal de Educação\nProfissional e Tecnológica, conta com profissionais de enfermagem, que contribuem através\ndas suas ações e atendimentos de saúde com a formação dos discentes para o mundo do trabalho,\nsendo considerados educadores em saúde.\nSaviani (2007) apresenta relevantes contribuições teóricas capazes de compreender essa\nrelação, especialmente ao afirmar que trabalho e educação são atividades peculiares aos seres\nhumanos, os quais se diferenciam dos outros animais por meio da racionalidade e da ação sobre\na natureza, para produzirem a própria existência. Nas comunidades primitivas, o homem\nadotava o modo de produção comunal e aprendia a produzir sua própria existência e a trabalhar,\nno ato dessas atividades. Ademais, apropriou-se coletivamente dos meios de produção para\nsatisfazer suas necessidades e, dessa forma, os indivíduos trabalhavam, educavam-se,\nconstruíam e transmitiam o conhecimento às outras gerações.\nO trabalho faz parte da hum",
+        "citacoes_detectadas": [
+          "Moura, 2007"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 33,
+        "texto": "economia que estavam em pleno desenvolvimento, com propostas direcionadas para o ensino\nde ofícios como sapataria, carpintaria etc. (Moura, 2007).\nA educação profissional no Brasil tem, em sua origem, um caráter assistencialista, ou\nseja, buscou atender aqueles mais vulneráveis, com condições socioeconômicas precárias.\nSendo assim, a EPT busca superar essa dualidade histórica. Como destaca Moura (2007, p. 6):\nDiante disso, o início do século XX trouxe uma novidade para a história da educação\nprofissional do país quando houve um esforço público de organização da formação\nprofissional, modificando a preocupação mais nitidamente assistencialista de\natendimento a menores abandonados e órfãos, para a da preparação de operários para\no exercício profissional. Assim, em 1906, o ensino profissional passou a ser atribuição\ndo Ministério da Agricultura, Indústria e Comércio, mediante a busca da consolidação\nde uma política de incentivo para preparação de ofícios dentro destes três ramos da\neconomia.\nEm 1909, o então presidente Nilo Peçanha criou as primeiras Escolas de Aprendizes\nArtífices para o ensino profissional, instituições estas consideradas precursoras das escolas\ntécnicas federais, t",
+        "citacoes_detectadas": [
+          "Moura, 2007",
+          "Castro; Plácido;\nSchenkel, 2020",
+          "Vieira; Souza Junior, 2016",
+          "Schenkel, 2012",
+          "Moura, 2007"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 35,
+        "texto": "A Rede Federal de Educação Profissional e Tecnológica foi pensada na perspectiva de\nestimular o desenvolvimento regional, conter mobilidades inter-regionais e estimular a\ndesconcentração industrial nas regiões tradicionalmente polarizantes, como o sudeste brasileiro,\nnotadamente São Paulo e Rio de Janeiro. A Rede Federal de Educação Profissional e\nTecnológica no Brasil é muito significativa e produz fluxos e dinâmicas em espaços que há\nmuito não têm tanta visibilidade e desenvolvimento (Castro; Plácido; Schenkel, 2020).\nO objetivo principal da EPT não é formar pessoas para o mercado de trabalho, mas sim\npara o mundo do trabalho, ou seja, um indivíduo que tanto pode ser um técnico quanto um\nescritor ou um filósofo. Atividades como música, artes plásticas, teatro e literatura devem fazer\nparte da formação dos nossos estudantes. Busca-se superar o preconceito de classes de que um\ntrabalhador não pode ser um intelectual, um artista, ou seja, de que a universidade é um espaço\npara as elites e a escola técnica para os trabalhadores (Pacheco, 2015).\nDiante disso, a EPT busca a superação da divisão de classes, do trabalho manual e do\ntrabalho intelectual e da formação para atender às neces",
+        "citacoes_detectadas": [
+          "Castro; Plácido; Schenkel, 2020",
+          "Pacheco, 2015"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 36,
+        "texto": "de educação nacional voltado não só para desenvolvimento de conhecimentos gerais, de\nciências e das suas tecnologias, mas principalmente direcionado para o desenvolvimento do\ntrabalho humano, englobando, assim, uma formação politécnica, ou seja, uma formação\nhumana integral ou omnilateral (Feitosa, 2023). Segundo Pacheco (2010, p. 12):\nOs Institutos Federais de Educação, Ciência e Tecnologia são a síntese daquilo que de\nmelhor a Rede Federal construiu ao longo de sua história e das políticas de educação\nprofissional e tecnológica do governo federal. São caracterizados pela ousadia e\ninovação, necessárias a uma política, é um conceito que tem em vista antecipar, aqui\ne agora, as bases de uma escola contemporânea do futuro e comprometida com uma\nsociedade radicalmente democrática e socialmente justa.\nO Instituto Federal Catarinense (IFC) foi criado pela Lei Federal n. 11.892, de 29 de\ndezembro de 2008, e teve origem na integração das escolas agrotécnicas de Concórdia, Rio do\nSul e Sombrio e dos colégios agrícolas de Araquari e Camboriú, que eram vinculados à\nUniversidade Federal de Santa Catarina (Brasil, 2008).\nHoje, a trajetória formativa do IFC se integra às demandas sociais e aos",
+        "citacoes_detectadas": [
+          "Feitosa, 2023",
+          "Brasil, 2008",
+          "Brasil,\n2008"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 39,
+        "texto": "consequentemente, melhora em sua qualidade de vida. Portanto, a atuação da enfermagem na\nescola contribui com a educação omnilateral proposta pelos IF através das suas ações de\neducação em saúde, tanto coletivas como individuais, inseridas nas políticas educacionais de\npermanência estudantil e das políticas de saúde.\n2.4 Sistematização da assistência de enfermagem e registros da assistência\nHistoricamente, a prática da enfermagem passou por grandes transformações técnicas e\ncientíficas, saindo do modo empírico para o científico. Esse fato contribuiu para o\ndesenvolvimento da profissão. Com isso, surgiu a Sistematização da Assistência de\nEnfermagem (SAE), que se trata de uma metodologia de trabalho dos profissionais da\nenfermagem que proporciona desenvolver habilidades de modo sistematizado, organizado e\nplanejado que se reflete diretamente na qualidade da assistência prestada à pessoa, à família e\nà coletividade.\nDesta forma, a SAE sistematiza, organiza o serviço de enfermagem quanto ao método,\npessoal e instrumento (manuais, protocolos e regimentos), dando possibilidades para a\nrealização do PE, que também é denominado por alguns autores de consulta de enfermagem. A\nSAE também pod",
+        "citacoes_detectadas": [
+          "Feitosa, 2023"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 52,
+        "texto": "ensino que visa à formação integral. Essa categoria engloba principalmente questões voltadas\nàs práticas exercidas pelos enfermeiros no ambiente escolar, contrastando essas práticas de\nenfermagem em outros ambientes já vivenciados pelo profissional e identificando a percepção\ndo enfermeiro nas atividades e adaptações de ações necessárias quanto ao exercício em\nambiente escolar. Analisando os códigos criados nessa categoria, encontramos em ordem de\nfrequência: prevenção e promoção à saúde, trabalho em equipe, identidade de grupo, agendas\neducativas, valorização dos enfermeiros no ambiente escolar.\nNa segunda categoria: Sistematização da assistência de enfermagem no ambiente\nescolar, a intenção foi entender a percepção dos entrevistados sobre as formas de registros dos\natendimentos de enfermagem e sua importância no contexto escolar como contribuição para a\neducação integral. Nesta categoria as questões elaboradas na entrevista buscam identificar as\nformas de registro das ações praticadas pelos enfermeiros no ambiente escolar, a utilização\ndesses dados após o registro e a sua percepção quanto à necessidade e importância desses\nregistros em um ambiente escolar. Os códigos gerados ness",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 70,
+        "texto": "Percebemos que os entrevistados reconhecem que contribuem com a educação integral\natravés das ações de educação em saúde, pois a educação em saúde forma pessoas mais\nsaudáveis, com conhecimento do processo saúde/doença. O estudante com conhecimento em\nsaúde levará esse ensino para a vida dele e será um adulto com melhor qualidade de vida, além\nde multiplicar este conhecimento no meio em que vive, contribuindo, assim, com uma\nsociedade mais saudável. Como enfatizam Anjos et al. (2022 b), o enfermeiro consegue\nincentivar o autocuidado dos adolescentes, proporcionando conhecimentos sobre sua saúde,\ndiminuindo assim os fatores de riscos, tornando-os pessoas com hábitos mais saudáveis,\naumentando a qualidade de vida desse público.\nUma das questões levantadas durante a entrevista foi a formação omnilateral.\nConstatou-se que os entrevistados têm desconhecimento sobre o termo “Omnilateral”, apesar\nde ser um importante conceito na EPT aplicada nos IFs.\n“Não conheço” (E4), “Não sei te responder” (E1), “Eu desconheço totalmente esse termo.\nNunca ouvi falar” (E7), “Olha, eu nunca, nunca trabalhei com essa palavra. E para falar a\nverdade, não” (E6). Cabe ressaltar que apenas um dos entrevistado",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 71,
+        "texto": "com consciência do seu papel na sociedade. É, portanto, uma “concepção de formação humana,\ncom base na integração de todas as dimensões da vida no processo formativo” (Ramos, 2008,\np. 2).\nNesse sentido, é necessário que o IFC, através do núcleo pedagógico e da gestão, traga\nessas temáticas para serem discutidas nas formações dos servidores, por ser importante os\nprofissionais possuírem o entendimento da educação proposta pela EPT dos IFs.\n Os entrevistados conseguem definir a educação integral, apesar de apresentar\nfragilidades em suas falas, mas reconhecem a importância da atuação da enfermagem na\ncontribuição do desenvolvimento integral dos estudantes, como se observa nas falas quando\nquestionados: “sobre educação integral, como você define?”, aqui apresentadas com a\ncodificação desenvolvimento integral.\n“É no mesmo sentido que eu falei de da de educar para o para o todo, né, De educar\ntanto não só né, na nossa área de saúde a nossa área da enfermagem, mas sim de todas as\ndisciplinas, todas as atividades serem de certa forma integrada, né? Seria nesse sentido” (E1).\n“Bom, eu defino dentro desse contexto mesmo, né? Não se limitar só às disciplinas, mas\na toda uma formação cidadã q",
+        "citacoes_detectadas": [
+          "Ramos, 2008,\np. 2"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "CIAVATTA, Maria. O ensino integrado, a politecnia e a educação omnilateral. Por que lutamos? Trabalho & Educação, Belo Horizonte, v. 23, n. 1, p. 187-205, 2014. Disponível em: https://periodicos.ufmg.br/index.php/trabedu/article/view/9303. Acesso em: 26 jul. 2024. COFEN. Conselho Federal de Enfermagem. Resolução Cofen nº 514/2016. Aprova o Guia de Recomendações para os registros de enfermagem no p",
+      "FEITOSA, Maria da Cruz Dias. Percepção dos profissionais de Enfermagem acerca da implementação da sistematização da assistência de enfermagem (SAE) no âmbito do Instituto Federal do Piauí (IFPI). 2023. Dissertação (Mestrado em Educação Profissional e Tecnológica) – Instituto Federal do Piauí, Parnaíba, 2023. Disponível em: http://bia.ifpi.edu.br:8080/jspui/handle/123456789/2411. Acesso em: 26 jul.",
+      "MOURA, Dante Henrique. Educação básica e educação profissional e tecnológica: dualidade histórica e perspectivas de integração. Holos, [s. l.], v. 2, p. 4-30, 2007. DOI: 10.15628/holos.2007.11. Disponível em: https://www2.ifrn.edu.br/ojs/index.php/HOLOS/article/view/11. Acesso em: 26 jul. 2024.",
+      "PACHECO, Eliezer Moreira. Fundamentos político-pedagógicos dos institutos federais: diretrizes para uma educação profissional e tecnológica transformadora. Natal: Ed. IFRN, 2015. Disponível em: https://memoria.ifrn.edu.br/bitstream/handle/1044/1018/Fundamentos%20Poli%CC%81tico- Pedago%CC%81gicos%20dos%20Institutos%20Federais%20-%20Ebook.pdf. Acesso em: 26 jul. 2024.",
+      "PACHECO, Eliezer Moreira. Os institutos federais: uma revolução na educação profissional e tecnológica. Natal: Ed. IFRN, 2010. Disponível em: https://memoria.ifrn.edu.br/bitstream/handle/1044/1013/Os%20institutos%20federais%20-%2 0Ebook.pdf. Acesso em: 26 jul. 2024.",
+      "RAMOS, Marise. Concepção do ensino médio integrado. Texto apresentado em seminário promovido pela Secretaria de Educação do Estado do Pará nos dias, v. 8, 2008.",
+      "RAMOS, Marise Nogueira. Ensino médio integrado: lutas históricas e resistências em tempos de regressão. Educação Profissional e Tecnológica em Revista, [s. l.], v. 1, n. 1, p. 27-49, 2017. DOI: https://doi.org/10.36524/ept.v1i1.356. Disponível em: https://ojs.ifes.edu.br/index.php/ept/article/view/356. Acesso em: 26 jul. 2024.",
+      "SCHENKEL, Cladecir Alberto. Gestão ambiental: perfil profissional e formação em cursos superiores de tecnologia e de bacharelado. 2012. Tese (Doutorado em Ciências Humanas) – Universidade Federal de Uberlândia, Uberlândia, 2012. DOI: 10.14393/ufu.te.2012.13. Disponível em: https://repositorio.ufu.br/handle/123456789/13630. Acesso em: 26 jul. 2024."
+    ]
+  }
+}

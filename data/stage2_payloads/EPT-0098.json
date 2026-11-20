@@ -1,0 +1,217 @@
+{
+  "id": "EPT-0098",
+  "metadados_resolvidos": {
+    "ano": 2020,
+    "autor": "Carla Muller",
+    "orientador": "Leandro Marcos Salgado Alves",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP_INDEFINIDA",
+    "macroprojeto": "MP_INDEFINIDO"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "DIFICULDADES DE APRENDIZAGEM EM MATEMÁTICA E O INSUCESSO NO CURSO SUBSEQUENTE EM EDIFICAÇÕES",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/DISSERTACAO-CARLA-MULLER.pdf",
+    "palavras_chave": [
+      "Avaliação Diagnóstica",
+      "Educação Profissional e Tecnológica",
+      "Curso Subsequente",
+      "Matemática",
+      "Interatividade"
+    ],
+    "autores_referenciados": [
+      "A. A. Steinbach",
+      "A. M. D. P. Vieira",
+      "A. P. Costa",
+      "A. P. Mendonca",
+      "A. Souza Junior",
+      "A. Z. Lüscher",
+      "Acácia Zeneida Kuenzer",
+      "Augusto Nibaldo Silva Triviños",
+      "C. F. Araújo",
+      "C. M. Escott",
+      "C. P. Coutinho",
+      "Carmem Lúcia Costa Amaral",
+      "Cladecir Alberto Schenkel",
+      "D. T. Silveira",
+      "David Ausubel",
+      "Dermeval Saviani",
+      "E. A. A. Fonseca",
+      "E. F. Borges",
+      "Eduardo Joaquim da Silva",
+      "F. Mattos",
+      "G. A. Sousa",
+      "G. Rocas",
+      "Gaudêncio Frigotto",
+      "H. J. L. Gonçalves",
+      "I. M. Rizatti",
+      "J. D. Novack",
+      "J. Hanesian",
+      "J. M. L. Pinheiro",
+      "J. Trindade",
+      "J. V. Dantas Filho",
+      "L. B. Pelissari",
+      "L. M. S. Alves",
+      "L. Nasser",
+      "Laurence Bardin",
+      "M. A. B. V. Silva",
+      "M. A. C. Moraes",
+      "M. A. S. Anastacio",
+      "M. A. Torraca",
+      "M. R. Silva",
+      "N. Berbel",
+      "N. G. S. Figueiredo",
+      "N. S. G. Allevato",
+      "Paloma de Lavor Lopes",
+      "Paulo Freire",
+      "R. A. Santos",
+      "R. C. Haydt",
+      "R. Dore",
+      "R. J. S. Cavalcanti",
+      "R. R. Oliveira",
+      "Reginaldo Leandro Plácido",
+      "Ricardo Antunes",
+      "S. Baller",
+      "S. Druck",
+      "S. Dutta",
+      "T. E. Gerhardt",
+      "Terezinha Marisa Ribeiro de Oliveira",
+      "V. M. L. Borba",
+      "W. J. Masola"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "http://educapes.capes.gov.br/handle/capes/586884",
+    "titulo_produto": "Uma possibilidade de avaliação interativa: Socrative",
+    "titulo_produto_bruto": "Ferramenta de Avaliação – UMA POSSIBILIDADE DE AVALIAÇÃO INTERATIVA: SOCRATIVE",
+    "data_publicacao": "2021-01",
+    "autores_colaboradores": [
+      {
+        "nome": "CEDUP Renato Ramos da Silva de Lages/SC e CEDUP Abílio Paulo de Criciúma/SC",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Müller, Carla",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/586884",
+        "url": "http://educapes.capes.gov.br/handle/capes/586884"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://socrativenaavaliacao.webnode.com",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Produto Educacional - Uma possibilidade de avaliação diagnóstica interativa: Socrative",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "ferramentas"
+    ],
+    "palavras_chave_educapes": [
+      "Avaliação Diagnóstica; Educação Profissional e Tecnológica",
+      "Matemática; Interativo",
+      "Curso Técnico Subsequente em Edificações",
+      "Matemática"
+    ],
+    "tipo_produto_regex": null,
+    "fonte_tipo_regex": null,
+    "formato_produto_regex": "Site / Portal",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\n\nCARLA MÜLLER\n\nDIFICULDADES DE APRENDIZAGEM EM MATEMÁTICA E O INSUCESSO NO\nCURSO SUBSEQUENTE TÉCNICO EM EDIFICAÇÕES\n\nBLUMENAU\nFEVEREIRO DE 2021\n\nCARLA MÜLLER\n\nDIFICULDADES DE APRENDIZAGEM EM MATEMÁTICA E O INSUCESSO NO\nCURSO SUBSEQUENTE TÉCNICO EM EDIFICAÇÕES\n\nDissertação apresentada ao Programa de Pós-\ngraduação\nem\nEducação\nProfissional\ne\nTecnológica, ofertado pelo campus Blumenau do\nInstituto Federal Catarinense, como parte dos\nrequisitos para a obtenção do título de Mestra em\nEducação Profissional e Tecnológica.\n\nOrientador: Prof. Dr. Leandro Marcos Salgado\nAlves\n\nBLUMENAU\nFEVEREIRODE 2021",
+    "ficha_catalografica": "",
+    "sumario": "[PÁG. 14]\nSUMÁRIO\n\nAPRESENTAÇÃO .................................................................................................... 15\n1 INTRODUÇÃO ....................................................................................................... 17\n2 REFERENCIAL TEÓRICO ..................................................................................... 19\n2.1 EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA NO BRASIL ....................... 19\n2.2 INSUCESSO NA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA ............... 23\n2.3 DIFICULDADES EM MATEMÁTICA NA EDUCAÇÃO PROFISSIONAL\nSUBSEQUENTE E AVALIAÇÃO DIAGNÓSTICA COMO PRÁTICA EDUCATIVA 25\n2.4 SOCRATIVE E AS METODOLOGIAS ATIVAS DE APRENDIZAGEM ............ 27\n3 PROCEDIMENTOS METODOLÓGICOS............................................................... 29\n3.1 REVISÃO BIBLIOGRÁFICA ............................................................................ 30\n3.2 COLETA DE DADOS ....................................................................................... 31\n3.3 ANÁLISE DOS DADOS COLETADOS ............................................................ 31\n3.4 DEFINIÇÃO E APLICAÇÃO DO PRODUTO EDUCACIONAL ........................ 32\n3.4.1 Metodologia de desenvolvimento do Produto Educacional ................ 32\n4 RESULTADOS E DISCUSSÕES ........................................................................... 33\n4.1 INDICADORES DE RENDIMENTO ................................................................. 33\n4.2 PESQUISA COM DOCENTES ........................................................................ 41\n5 CONSIDERAÇÕES FINAIS ................................................................................... 43\nREFERÊNCIAS BIBLOGRÁFICAS .......................................................................... 44\nAPÊNDICE A – PRODUTO EDUCACIONAL ........................................................... 51\nAPÊNDICE B – AVALIAÇÃO E VALIDAÇÃO DO PRODUTO EDUCACIONAL EM\nPRIMEIRA INSTÂNCIA ............................................................................................ 56\nAPÊNDICE C – TERMO DE CONSENTIMENTO LIVRE E ESCLARECIDO ........... 63\nAPÊNDICE D – QUESTIONÁRIO DOCENTES ........................................................ 65\nAPÊNDICE E – TESTES........................................................................................... 73\nANEXO A – EMENTA CEDUP RENATO RAMOS DA SILVA ................................. 87\nANEXO B – EMENTA CEDUP ABÍLIO PAULO ....................................................... 91\n15\n\nAPRESENTAÇÃO\n\nEste artigo é o resultado da pesquisa de mestrado intitulada DIFICULDADES\nDE APRENDIZAGEM EM MATEMÁTICA E O INSUCESSO NO CURSO\nSUBSEQUENTE TÉCNICO EM EDIFICAÇÕES. O interesse pelo tema surgiu a\npartir das experiências acadêmicas e profissionais da autora, que tem formação\nprofissional técnica em nível médio em edificações, é licenciada em Matemática e\ntrabalha com a Educação Básica na Rede Estadual de Educação de Santa Catarina.\nA escolha pelo curso de edifi",
+    "resumo": "[PÁG. 9]\nRESUMO\n\nEste trabalho tem como objetivo central abordar a defasagem de aprendizagem na\ndisciplina de matemática da Educação Básica e a sua relação com os índices de\ninsucesso na Educação Profissional e Tecnológica de nível médio, na modalidade\nsubsequente. A ideia para o estudo surgiu do alinhamento das experiências\nacadêmicas e profissionais da autora. O volume de conteúdo de matemática\npresente na ementa e a familiaridade da pesquisadora com o curso, motivaram a\nescolha pelo técnico em edificações. Para observar as relações de insucesso com\nos conhecimentos da disciplina de matemática foram analisados os números de\naprovação, reprovação e evasão de 2017 a 2019 do Curso Técnico em Edificações\nSubsequente ao ensino médio nos CEDUP Renato Ramos da Silva de Lages/SC e\nCEDUP Abílio Paulo de Criciúma/SC. Para uma avaliação qualitativa também foram\nentrevistados docentes e discentes destas turmas para comparar as taxas de\ninsucesso com as percepções de professores e estudantes quanto as possíveis\ndificuldades nas disciplinas técnicas do curso. A escolha por um curso ofertado após\na conclusão da Educação Básica, na modalidade subsequente, permite nos\nvalermos da premissa de que os discentes devem possuir conhecimento matemático\npara as disciplinas práticas. Os números coletados de aprovação, reprovação e\nevasão, apontaram um índice de aproximadamente 65% de sucesso e 35% de\ninsucesso. Estes percentuais sinalizam a necessidade de reflexão sobre as\npossíveis causas de insucesso, mas, principalmente, estratégias para superação\ndesses índices. As percepções levantadas através do questionário com docentes\ndemonstram que o conhecimento de matemática possui relevância para o êxito no\ncurso. Bem como apontam defasagem nestes conhecimentos, que pode ser um fator\ndeterminante para o insucesso do estudante. Os dados obtidos, tanto quantitativos\n(taxas de sucesso e insucesso) quanto qualitativos (questionários) confirmam as\npremissas levantadas na pesquisa, de que a defasagem de conhecimento em\nmatemática é um fator importante para a predisposição ao insucesso escolar na\neducação profissional, principalmente na modalidade subsequente. A partir dessa\nrelação, aponta-se a avaliação diagnóstica de matemática, nas disciplinas técnicas,\ncomo estratégia de enfrentamento ao insucesso do estudante. Como Produto\nEducacional resultante da pesquisa, foi elaborado um site para auxiliar os\nprofessores na prática de avaliações diagnósticas interativas, através do aplicativo\nSocrative. Estas avaliações possibilitam intervenção precoce nos problemas de\naprendizagem. O site, que se caracteriza como material didático para professores,\ndisponibiliza tutoriais de utilização do Socrative e testes em arquivo para importação\nno aplicativo ou para impressão.\n\nPalavras-Chave: Avaliação Diagnóstica. Educação Profissional e Tecnológica.\nCurso Subsequente. Matemática. Interatividade.",
+    "introducao": "[PÁG. 17]\n17\n\n1 INTRODUÇÃO\n\nEste trabalho aborda as relações entre o insucesso, aqui caracterizado como\nreprovação e abandono, em curso técnico de nível médio profissionalizante e o\nconhecimento matemático. A pesquisa se deu no Curso Técnico Subsequente de\nEdificações, ofertados nos Centros de Educação Profissional – CEDUP Renato\nRamos da Silva em Lages/SC e CEDUP Abílio Paulo em Criciúma/SC.\nInicialmente, precisamos apontar que a Educação Profissional e Tecnológica\n(EPT), vem aumentando gradualmente seus números de matrículas, em\ncumprimento do Plano Nacional de Educação que estabelece “triplicar as matrículas\nda educação profissional técnica de nível médio” (BRASIL, 2014, p.22). Mas o\ninsucesso ainda é problema em todos os níveis educacionais, inclusive na EPT.\nNessa perspectiva, identificar as dificuldades em matemática dos estudantes do\ncurso técnico em edificações, ofertado na modalidade subsequente, pode auxiliar a\nentender o ‘como’ e o ‘quanto’ elas influenciam nos índices de insucesso do curso.\nDruck (2004) corrobora com a temática em estudo ao afirmar que a\nqualidade do ensino básico vem piorando, principalmente em matemática, haja vista\nas notas nas avaliações de larga escala. Neste cenário, criado pela defasagem\nescolar, muitos alunos se evadem por não conseguirem apreender conteúdo da\neducação profissional, diante das dificuldades carregadas desde o ensino\nfundamental e médio (ARAÚJO e SANTOS, 2012). Isso nos remete também a\nDantas Filho (2017) e a sua afirmação de que os alunos fracassados no ensino\nfundamental provavelmente farão péssimo ensino médio, consequentemente,\nevadirão da escola ou não terão desejos e/ou condições de entrar na faculdade ou\nnão lograrão êxito na Educação Profissional.\nEntender o contexto em que se dá o insucesso escolar é o primeiro passo\npara intervir. Porém, essa não é uma tarefa simples, dado os múltiplos fatores que\npodem levar ao insucesso. As pesquisas sobre o insucesso na Educação\nProfissional, de autores como Silva, Pelissari e Steinbach (2012), Figueiredo e\nSalles (2017), Dore e Lüscher (2011a), Dore e Lüscher (2011b) e Pinheiro e\nFonseca (2013), apontam a necessidade de identificar os fatores de insucesso para\npoder agir de maneira preventiva a essa situação como a melhor maneira de\nenfrentar o problema.\n\n[PÁG. 18]\n18\n\nO curso escolhido como objeto de pesquisa possui várias disciplinas dentro\nda área das ciências exatas. Portanto, relacionar o conhecimento matemático prévio\ndo aluno e os índices de insucesso, pode se mostrar um passo importante para\npensar em estratégias de prevenção. Diante do exposto, temos como pergunta\nnorteadora: qual a relação entre as dificuldades em matemática e os índices de\ninsucesso no curso técnico em edificações?\nTivemos como objetivo geral, facilitar a identificação das dificuldades em\nmatemática que possam comprometer a permanência e o êxito dos estudantes,\ncontribuindo para o desenvolvimento de metodologias que favoreçam a prevenção e\na intervenção positiva nesse problema. Os objetivos específicos foram: i) conhecer\nas taxas de evasão e reprovação dos últimos três anos; ii) identificar as dificuldades\nem matemática dos alunos; iii) conhecer os principais motivos de insucesso no curso\ntécnico subsequente em edificações; iv) aplicar questionário junto aos professores\ndo curso para verificar os conhecimentos matemáticos mais necessários e v)\nconstruir um site com possibilidades de avaliação diagnóstica.\nNo capítulo 2 abordamos o referencial teórico, sob o enfoque da educação\nprofissional em seu contexto histórico, o insucesso na educação profissional, as\ndificuldades em matemática, a avaliação diagnóstica como prática educativa na\neducação profissional e o uso das tecnologias na educação.\nNo capítulo 3 descrevemos os aspectos metodológicos da pesquisa, com\nseus passos e procedimentos, a metodologia do produto educacional, sua\nconcepção, elaboração e aplicação.\nAs análises e discussões dos resultados da pesquisa, no que concerne aos\níndices de rendimento e respostas aos formulários, serão abordadas no capítulo 4,\nseguido pelas considerações finais.\nTendo isto em mente apresenta-se a proposta de produto educacional\ndesenvolvido com essa pesquisa: um site para apoio aos professores com\npossibilidades de avaliação diagnóstica interativa. Dentro do site há listas de\nexercícios dos conteúdos matemáticos selecionados para auxiliar os discentes a\natingir o êxito no curso. Esse recurso pode ser utilizado no aplicativo Socrative. Há\ntambém um tutorial do aplicativo e sugestões de outras ferramentas. Tal produto tem\npotencial para ser um espaço de compartilhamento entre os professores.\n\n[PÁG. 19]\n19\n\nEspera-se que o produto educacional desenvolvido, a partir da intervenção\nprecoce nas dificuldades dos alunos em relação aos conhecimentos matemáticos,\npossa amenizar os casos de insucesso do referido curso.\n\n2 REFERENCIAL TEÓRICO\n\n2.1 EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA NO BRASIL\n\nÉ importante fazermos um resgate do histórico da EPT para entender sua\nconfiguração ao longo dos anos. Schenkel (2012) contribui com este ensejo quando\nafirma que a trajetória histórica da Educação Profissional foi marcada por iniciativas\nmúltiplas e contraditórias, inicialmente dirigida aos “desvalidos da sorte e da fortuna”.\nNo decorrer do século XIX há a criação de várias instituições, como as\nescolas das fábricas, para o ensino das primeiras letras e ofícios, tais como\ntipografia, carpintaria, tornearia, etc. Essas instituições eram eminentemente\nvoltadas para crianças pobres e órfãos e as profissões aprendidas eram mais\nbraçais. Como afirma Moura:\n\nA educação profissional no Brasil tem, portanto, a sua origem dentro\nde uma perspectiva assistencialista com o objetivo de “amparar os\nórfãos e os demais desvalidos da sorte”, ou seja, de atender àqueles\nque não tinham condições sociais satisfatórias, para que não\ncontinuassem a praticar ações que estavam na contraordem dos\nbons costumes (MOURA, 200, p.3).\n\nOu seja, a EPT nasce dentro de uma dualidade estrutural, com o ensino\npropedêutico voltado para as elites e o ensino profissional para as camadas mais\npobres. Percebemos que a educação profissional assume o viés de formação para o\npúblico que não tem condições de percorrer o trajeto que leva da educação básica\npara o ensino universitário (ALVES et al., 2019)\nSomente em 1961, com a Lei de Diretrizes e Bases da Educação (LDB)\n4.024/61 (BRASIL, 1961), é que se estabelece a equivalência, para fins de acesso\nao ensino superior, entre a educação propedêutica e profissional, encerrando a\ndualidade, ao menos no papel. Já em 1971 a Lei 5.692/71 (BRASIL, 1971) institui\nnova reforma na educação. Dessa vez tornando o segundo grau profissionalizante\nobrigatório. Na prática a dualidade continuou, pois, as escolas da rede privada\n\n[PÁG. 20]\n20\n\ncontinuaram a oferecer currículos propedêuticos para o atendimento das elites\nbrasileiras (ESCOTT e MORAES, 2012).\nEm 1982, com a Lei 7.044/82 (BRASIL, 1982), a obrigatoriedade do ensino\nprofissionalizante é revogada e se restabelecem a modalidade propedêutica e\nprofissionalizante no então segundo grau, mantendo a equivalência para\nprosseguimento dos estudos no ensino superior.\nA partir da LDB 9394/96 de 1996 (BRASIL, 1996), que a EPT surge como\numa modalidade educacional que perpassa diferentes níveis, etapas e modalidades,\nabrangendo cursos de profissionalização, ensino médio técnico e ensino superior.\nO que se percebe é que a profissionalização em nível médio sempre foi\ncentro de disputa entre interesses múltiplos e divergentes, no qual as políticas\npúblicas estabelecidas sempre buscaram atender muito mais aos modos produtivos\ndo que as demandas educacionais da classe trabalhadora (ALVES et al., 2019).\nApós este pequeno recorte histórico da EPT, cabe ainda trazer que esta é\nconceituada pela Secretaria de Educação Profissional e Tecnológica (SETEC) e\nlegislação correlata, como uma modalidade educacional que tem por objetivo\ngarantir aos cidadãos o direito à aquisição de competên",
+    "descricao_produto_na_dissertacao": "[PÁG. 18] O curso escolhido como objeto de pesquisa possui várias disciplinas dentro\nda área das ciências exatas. Portanto, relacionar o conhecimento matemático prévio\ndo aluno e os índices de insucesso, pode se mostrar um passo importante para\npensar em estratégias de prevenção. Diante do exposto, temos como pergunta\nnorteadora: qual a relação entre as dificuldades em matemática e os índices de\ninsucesso no curso técnico em edificações?\nTivemos como objetivo geral, facilitar a identificação das dificuldades em\nmatemática que possam comprometer a permanência e o êxito dos estudantes,\ncontribuindo para o desenvolvimento de metodologias que favoreçam a prevenção e\na intervenção positiva nesse problema. Os objetivos específicos foram: i) conhecer\nas taxas de evasão e reprovação dos últimos três anos; ii) identificar as dificuldades\nem matemática dos alunos; iii) conhecer os principais motivos de insucesso no curso\ntécnico subsequente em edificações; iv) aplicar questionário junto aos professores\ndo curso para verificar os conhecimentos matemáticos mais necessários e v)\nconstruir um site com possibilidades de avaliação diagnóstica.\nNo capítulo 2 abordamos o referencial teórico, sob o enfoque da educação\nprofissional em seu contexto histórico, o insucesso na educação profissional, as\ndificuldades em matemática, a avaliação diagnóstica como prática educativa na\neducação profissional e o uso das tecnologias na educação.\nNo capítulo 3 descrevemos os aspectos metodológicos da pesquisa, com\nseus passos e procedimentos, a metodologia do produto educacional, sua\nconcepção, elaboração e aplicação.\nAs análises e discussões dos resultados da pesquisa, no que concerne aos\níndices de rendimento e respostas aos formulários, serão abordadas no capítulo 4,\nseguido pelas considerações finais.\nTendo isto em mente apresenta-se a proposta de produto educacional\ndesenvolvido com essa pesquisa: um site para apoio aos professores com\npossibilidades de avaliação diagnóstica interativa. Dentro do site há listas de\nexercícios dos conteúdos matemáticos selecionados para auxiliar os discentes a\natingir o êxito no curso. Esse recurso pode ser utilizado no aplicativo Socrative. Há\ntambém um tutorial do aplicativo e sugestões de outras ferramentas. Tal produto tem\npotencial para ser um espaço de compartilhamento entre os professores.\n\n[PÁG. 19] Espera-se que o produto educacional desenvolvido, a partir da intervenção\nprecoce nas dificuldades dos alunos em relação aos conhecimentos matemáticos,\npossa amenizar os casos de insucesso do referido curso.\n\n[PÁG. 29] atividades, orientadas pelo professor, podem conduzir a uma aprendizagem efetiva,\ncontribuindo nos resultados de aproveitamento escolar e uma melhor motivação dos\nalunos (TRINDADE, 2014). Ao ser centro do processo de ensino e aprendizagem, o\ndiscente, se sentindo valorizado, tende a apresentar maior interesse pelas\natividades, o que, por sua vez, motivará o professor a rever suas práticas e modificá-\nlas quando necessário.\nPodemos dizer, diante do exposto, que toda vez que o professor centraliza o\nprocesso de aprendizagem no aluno, incentivando sua participação ativa na\nconstrução do conhecimento, o professor está utilizando uma metodologia ativa.\nNeste sentido o Socrative, ao criar avaliações que podem ser respondidas em grupo\nou individualmente, aliado à instantaneidade dos resultados, permite o professor\nrever o planejamento de uma aula, se necessário.\nO Socrative é um aplicativo interativo que pode ser utilizado",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 17,
+        "texto": "Este trabalho aborda as relações entre o insucesso, aqui caracterizado como\nreprovação e abandono, em curso técnico de nível médio profissionalizante e o\nconhecimento matemático. A pesquisa se deu no Curso Técnico Subsequente de\nEdificações, ofertados nos Centros de Educação Profissional – CEDUP Renato\nRamos da Silva em Lages/SC e CEDUP Abílio Paulo em Criciúma/SC.\nInicialmente, precisamos apontar que a Educação Profissional e Tecnológica\n(EPT), vem aumentando gradualmente seus números de matrículas, em\ncumprimento do Plano Nacional de Educação que estabelece “triplicar as matrículas\nda educação profissional técnica de nível médio” (BRASIL, 2014, p.22). Mas o\ninsucesso ainda é problema em todos os níveis educacionais, inclusive na EPT.\nNessa perspectiva, identificar as dificuldades em matemática dos estudantes do\ncurso técnico em edificações, ofertado na modalidade subsequente, pode auxiliar a\nentender o ‘como’ e o ‘quanto’ elas influenciam nos índices de insucesso do curso.\nDruck (2004) corrobora com a temática em estudo ao afirmar que a\nqualidade do ensino básico vem piorando, principalmente em matemática, haja vista\nas notas nas avaliações de larga escala. Neste cenário, criado ",
+        "citacoes_detectadas": [
+          "BRASIL, 2014, p.22",
+          "ARAÚJO e SANTOS, 2012"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 21,
+        "texto": "Frigotto (2007) comenta que um dos equívocos mais recorrentes nas\nanálises de educação no Brasil ao se relacionar a educação profissional e\ntecnológica com a universalização da educação básica, em todos os seus níveis e\nmodalidades, tem sido tratá-la em si mesma e não como parte constituinte de um\nprojeto situado em uma sociedade cindida em classes, frações de classes e grupos\nsociais desiguais e com marcas históricas específicas.\nSegundo o autor, ora a educação é concebida como elemento libertador e\nconstrutivo da cidadania, ora como capital humano e produtora de competências.\nMesmo que na verdade ela permeie ambas as situações, Frigotto defende que",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 22,
+        "texto": "essas mediações se definem pela relação de poder na sociedade. Ou seja, a\neducação está sempre visando atender as demandas do mercado de trabalho e\nseus meios de produção.\nDiante dessa perspectiva o autor aponta a desigualdade como produto e\ncondição de projeto dominante da sociedade brasileira. Onde o projeto de classe\nburguesa não necessita da universalização da escola básica e muito menos de uma\neducação integral e omnilateral, visto que a relação entre a educação básica e\nprofissional no Brasil está marcada historicamente pela dualidade. (MOURA 2008,\nFRIGOTTO, 2007, KUENZER, 2017, ALVES et al., 2019).\nPara Borges e Fagiani (2018), é preciso ter uma postura crítica sobre as\ntransformações que a sociedade contemporânea e o mundo capitalista vivenciam\npara pensar em educação e trabalho atualmente. Os autores afirmam que o desafio\nque se apresenta é o de buscar um novo sentido para a vida e para o trabalho.\nMesmo diante de atuais condições de exploração do trabalho e desemprego\nestrutural, o trabalho segue sendo atividade central nas relações sociais e na vida\nhumana.\nNo entanto, é preciso buscar uma educação básica e profissional realmente\nintegral e politécnica. Não no sentido de",
+        "citacoes_detectadas": [
+          "ALVES et al.,\n2019"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 27,
+        "texto": "responsável. Mas Borba e Costa (2018) também constatam que a formação dos\nprofessores de Matemática está obsoleta, bem como as metodologias utilizadas\npelos docentes em sala de aula são inadequadas, e que a falta de diálogo entre os\nconteúdos matemáticos e a prática social pode favorecer o desestímulo e o posterior\nfracasso de estudantes.\nDiante do exposto, dentro do viés de professor mediador, pautado nas\npedagogia histórico-crítica de Saviani (1999), a avaliação diagnóstica torna-se\nimportante instrumento para o professor. A avaliação é um tema com amplo campo\nde pesquisa, suas concepções, modalidades, aplicações, etc. Falaremos de\navaliação nos utilizando de Haydt (1997), que apresenta três tipos de avaliação: a\ndiagnóstica, a formativa e a somativa. A autora conceitua como que a avaliação\ndiagnóstica tem a função de diagnosticar, através da verificação da presença ou\nausência de pré-requisitos para novas aprendizagens e detectar dificuldades\nespecíficas de aprendizagem, tentando identificar suas causas. A avaliação\ndiagnóstica, no contexto da educação profissional, principalmente na modalidade\nsubsequente, vai permitir ao professor conhecer sua turma, e as possíveis\nfragilidade",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 33,
+        "texto": "Após estes passos, com os dados coletados, foi o momento de idealizar e\nelaborar o produto educacional. Os conteúdos escolhidos, a partir do questionário\ncom os docentes, foram: Geometria Plana e Espacial, Regra de Três, Razão e\nProporção, Conversão de Unidades e Medidas, Porcentagem e Juros.\nA partir da definição dos conteúdos para as avaliações diagnósticas, a\npróxima etapa foi escolher a maneira de abordá-los de forma mais interativa, e mais\numa vez, com base nas respostas dos professores, optamos pelo aplicativo\nSocrative, tanto pelas suas inúmeras possibilidades, quanto pelo fato de não ser\nmuito conhecido e/ou utilizado pelos professores, dentro do rol de tecnologias\napresentadas à eles no questionário.\nPara aplicação, avaliação e validação em primeira instância, o endereço\neletrônico do site foi disponibilizado aos professores que responderam à pesquisa e\ndeixaram seus e-mails registrados, aos coordenadores do curso de Edificações no\nCEDUP Renato Ramos da Silva e CEDUP Abílio Paulo, e também disponibilizado ao\ngrupo de gestores da educação profissional da rede estadual de SC de ensino. Os\nusuários do site foram convidados a responder um questionário do Google Forms,\ncomo man",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 33,
+        "texto": "Iniciaremos a discussão dos resultados apresentando os dados de aprovação\ne insucesso dos anos de 2017, 2018 e 2019 dos CEDUPs Renato Ramos da Silva e",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 34,
+        "texto": "Abílio Paulo, coletados através dos relatórios do Sistema de Gestão Educacional de\nSanta Catarina – SISGESC.\nCabe ressaltar que o CEDUP Abílio Paulo possui outras turmas do Curso\nTécnico em Edificações, mas que não foram consideradas no estudo por serem da\nmodalidade integrado. Também se salienta que houve mudanças de grade curricular\nno CEDUP Renato Ramos da Silva, motivo pelo qual não há turma de 4° módulo em\n2019, sendo a disciplina de estágio supervisionado ofertada nos outros módulos,\nportanto, sem prejuízo para a pesquisa. As ementas dos cursos, constam nos\napêndices deste trabalho.\nNo CEDUP Renato Ramos da Silva foram pesquisadas 39 turmas, dentre as\nquais: 11 turmas de 1° módulo, 12 turmas de 2° módulo, 11 turmas de 3° módulo e\n05 turmas de 4° módulo. Já no CEDUP Abílio Paulo, foram 17 turmas, a saber: 05\nturmas de 1° módulo, 04 turmas de 2° módulo, 04 turmas de 3° módulo e 04 turmas\nde 4° módulo. Ao todo, foram observadas 56 turmas, totalizando 1.330 alunos,\nresultando nas tabelas e gráficos que seguem nesta análise.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 35,
+        "texto": "Podemos perceber que o menor índice de insucesso fica próximo à 35% nos\ndois CEDUPs, o que já é bastante alto. Porém, o índice de insucesso cresceu no\nperíodo analisado no CEDUP Renato Ramos da Silva e no CEDUP Abílio Paulo as\ntaxas de insucesso permaneceram próximas nos anos de 2017 e 2018. Já em 2019\nhouve uma queda considerável. Percebemos uma mudança em 2019no CEDUP\nAbílio Paulo que pode estar associada ao fato de que o ano letivo de 2019 foi\nterminalidade do curso ofertado na modalidade subsequente.\nNa tabela 2, apresentamos os indicadores de rendimento, agora separados\npor módulo, para melhor compreensão dos dados coletados.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 35,
+        "texto": "Módulo\n2017\n2018\n2019\nAPR\nINS\nAPR\nINS\nAPR\nINS\nCEDUP\nRenato\nRamos\n1° módulo\n127\n59\n57\n28\n40\n21\n2° módulo\n97\n20\n65\n32\n32\n22\n3° módulo\n51\n31\n61\n76\n28\n50\n4° módulo\n45\n26\n5\n5\n-\n-\nCEDUP\nAbílio\nPaulo\n1° módulo\n47\n50\n14\n22\n13\n9\n2° módulo\n28\n22\n28\n27\n8\n5\n3° módulo\n26\n9\n23\n22\n11\n2\n4° módulo\n9\n32\n25\n18\n22\n2",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 36,
+        "texto": "Nos gráficos construídos a partir da tabela 2, percebemos que os maiores\nníveis de insucesso se encontram no 3° e 4° módulos no CEDUP Renato Ramos da\nSilva, enquanto no CEDUP Abílio Paulo os maiores índices de insucesso, estão no\nprimeiro e segundo módulos.\nA figura 3 apresenta os dados globais de rendimento, considerando a\ntotalidade dos dados obtidos, para melhor esclarecimento sobre em qual módulo os\nindicadores de insucesso são mais acentuados. O resultado aponta que o maior\nnível de insucesso está no terceiro módulo (3-MOD), onde 51% dos alunos não\natingem a aprovação. Tal fato demonstra a necessidade de entendimento dos\nfatores que levam a um número tão expressivo dos alunos que iniciam o módulo\nreprovam ou desistem do curso.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 41,
+        "texto": "Para a pesquisa com docentes, foi aplicado um questionário via Google\nForms. A intenção foi melhor desenhar o Produto Educacional e entender a\nperspectiva dos professores acerca do fenômeno que denominamos “insucesso”. A\npesquisa foi aplicada com os professores do Curso Técnico em Edificações dos dois\nCEDUPs, público-alvo do estudo. O link da pesquisa foi disponibilizado por e-mail\ne/ou WhatsApp, resultando em 15 participações.\nCabe destacar que para o CEDUP Abílio Paulo a pesquisa foi aplicada\nsomente com os professores que trabalham com as turmas da modalidade\nsubsequente, alcançando um total de 6 professores dos 8 que trabalham no curso.\nNo CEDUP Renato Ramos da Silva conseguimos a participação de 9 dos 14\nprofessores que trabalham com o curso técnico em edificações, portanto, atingimos\n69% de participação docente.\nO objetivo dessa pesquisa foi identificar algumas características de perfil dos\nprofessores, tais como idade, tipo de vínculo, tempo de docência e grau de\ninstrução. Também constituiu parte importante da pesquisa verificar a opinião dos\nprofessores sobre a relação dos saberes matemáticos com as disciplinas técnicas,\nquais disciplinas eles consideram de maior defasagem",
+        "citacoes_detectadas": []
+      }
+    ],
+    "referencias_filtradas": [
+      "ALVES, L. M. S., PLACIDO, R. L., FARIA F. P., ROHR, M. L. Retalhos de Experiências Exitosas em Educação Profissional e Tecnológica. Debates em Educação, 11(24), 564-585, 2019.",
+      "ARAÚJO, C. F.; SANTOS, R. A. A educação profissional de nível médio e os fatores internos/externos às instituições que causam a evasão escolar. In:",
+      "BRASIL, CAPES. Grupo de trabalho Produção Técnica. Brasília, 2019. Disponível em: http://www.prppg.ufpr.br/site/wp-content/uploads/2020/07/10062019_produo- tcnica.pdf. Acesso em: 03 nov. 2020. BRASIL. Lei 4.024, de 20 de dezembro de 1961. Fixa as Diretrizes e Bases da Educação Nacional. Brasília: DF. 1961. Disponível em: 46 http://www.planalto.gov.br/ccivil_03/leis/L4024compilado.htm. Acesso em: 2"
+    ]
+  }
+}

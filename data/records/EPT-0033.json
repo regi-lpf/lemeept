@@ -1,0 +1,232 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0033",
+  "ano": 2024,
+  "autor": "Fabiano Maurício Ponciano",
+  "orientador": "Viviane Grimm",
+  "coorientadores": [
+    "Ivonete Telles Medeiros Plácido"
+  ],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP1",
+  "macroprojeto": "MP3",
+  "dissertacao": {
+    "titulo": "O ENSINO DE EMPREENDEDORISMO EM CURSOS DE ENSINO MÉDIO INTEGRADO NOS CENTROS DE EDUCAÇÃO PROFISSIONAL (CEDUPS) DA REDE ESTADUAL DE EDUCAÇÃO DE SANTA CATARINA",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/12/Dissertacao-Fabiano-Ponciano.pdf",
+    "resumo": "Esta dissertação, desenvolvida no Mestrado em Educação Profissional e Tecnológica (ProfEPT)\ndo Instituto Federal Catarinense – Campus Blumenau, na linha de pesquisa “Práticas Educativas\nem Educação Profissional e Tecnológica”, no “Macroprojeto 3 - Práticas Educativas no\nCurrículo Integrado”, buscou analisar o Ensino de Empreendedorismo em cursos de Ensino\nMédio Integrado à Educação Profissional (EMIEP) em Centros de Educação Profissional\n(CEDUPs) da rede estadual de educação de Santa Catarina, a fim de elaborar um produto\neducacional que aborde o empreendedorismo a partir de uma perspectiva pedagógica crítica.\nDiante disso, o estudo parte da literatura especializada sobre empreendedorismo na educação\n(Dornelas, 2023), (Dolabela, 2016), de autores críticos ao empreendedorismo nas reformas\ncurriculares (Bernardes; Voigt, 2022), (Castro; Gawryszewski; Dias, 2022), (Oliveira; Júnior;\nOliveira, 2022) em diálogo com as concepções de currículo integrado e formação integral\n(Frigotto; Ciavatta; Ramos, 2005), Kuenzer (2017). A Reforma do Ensino Médio instituída pela\nLei 13.415/2017 apresenta o empreendedorismo como eixo estruturante nos itinerários\nformativos, impulsionado por políticas neoliberais, que acentuam a mercantilização do ensino.\nTodavia, considera-se que uma abordagem crítica e ética no Ensino de Empreendedorismo, que\nbusca não apenas ensinar habilidades técnicas e de gestão, pode ampliar a compreensão dos\nestudantes sobre o contexto socioeconômico em que estão inseridos. Trata-se de uma pesquisa\nde abordagem qualitativa e exploratória, que utilizou para coleta de dados um questionário\nsemiestruturado online com perguntas abertas e fechadas. Participaram da pesquisa 19 docentes\nque atuam em disciplinas da área de empreendedorismo em cursos de EMIEP de CEDUPs. Os\ndados foram analisados por meio de análise de conteúdo (Bardin, 2016) para perguntas abertas\ne análise descritiva para perguntas fechadas. Os resultados indicaram que os professores que\natuam na área de empreendedorismo no EMIEP, têm formação majoritariamente técnica,\ninclinando-se a adotar uma perspectiva predominantemente empresarial, reiterando assim, uma\nabordagem economicista e teórica do comportamento empreendedor, apontando para a\nnecessidade de uma reflexão mais crítica e contextualizada sobre o tema. A partir da análise,\nfoi desenvolvido uma série de podcasts educativos, em cinco episódios, denominada\n“PODCAST - Ética, Empreendedorismo e Educação Profissional: Uma Abordagem Crítica”,\naplicado em Roda de Conversa e avaliado por docentes dos CEDUPs participantes da pesquisa\nno final da roda de conversa, que destacaram o conteúdo como relevante e de fácil compreensão.\n\nPalavras-Chave: Ensino de Empreendedorismo. Educação Profissional e Tecnológica. Ensino\nMédio Integrado. Ética. Rede Estadual de Ensino de Santa Catarina.",
+    "palavras_chave": [
+      "Ensino de Empreendedorismo",
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "Ética",
+      "Rede Estadual de Ensino de Santa Catarina"
+    ],
+    "autores_referenciados": [
+      "A. Alves",
+      "A. C. R. Bernardes",
+      "A. J. Müller",
+      "A. L. Lima",
+      "A. M. Souza",
+      "A. R. C. Silva",
+      "A. S. Castro",
+      "Acácia Zeneida Kuenzer",
+      "Adelar Francisco Baggio",
+      "Amanda Félix da Silva",
+      "Amarildo Menezes Gonzaga",
+      "Ana Paula Flores",
+      "Ana Paula Marinho de Lima",
+      "Antônio Carlos Gil",
+      "C. D. P. Martens",
+      "C. L. Oliveira",
+      "Célia Regina Appio",
+      "Celso João Ferretti",
+      "Christian Laval",
+      "Claudio Roberto Cândido",
+      "D. de O. Pinheiro",
+      "Daniel Knebel Baggio",
+      "Dermeval Saviani",
+      "Diana Cris Fernandes Gomes",
+      "E. R. Bucioli",
+      "E. R. Januário",
+      "Édison Gonzague Brito da Silva",
+      "Elaine Arantes",
+      "Eliana Pessoa",
+      "Eric Ries",
+      "Estela Benetti",
+      "Fernanda Kleinebing",
+      "Fernanda Paula do Nascimento",
+      "Fernando Dolabela",
+      "Filomena Lúcia Gossler Rodrigues da Silva",
+      "Francisca Leidiane de Souza",
+      "Francisco Chagas Silva Souza",
+      "G. M. V. S. Oliveira",
+      "G. P. Dias",
+      "Gabriel Duwe Lima",
+      "Gaudêncio Frigotto",
+      "Gawryszewski Castro",
+      "Geraldo R. Caravantes",
+      "Gilberto Cotrim",
+      "Glen Cézar Lemos",
+      "H. A. Carli",
+      "H. F. Weffort",
+      "Hugo Barros da Silva",
+      "Hyndara Freitas",
+      "Izilene Conceição Amaro Ewald",
+      "J. A. da S. Moreira",
+      "J. M. de A. Drewinski",
+      "J. M. R. Voigt",
+      "J. Marins",
+      "J. N. Maida",
+      "J. P. Andrade",
+      "J. W. Almeida",
+      "Janayna de Mora Ferraz",
+      "Jaqueline Moll",
+      "José Dornelas",
+      "José Gerardo Bastos da Costa Júnior",
+      "José Henrique Duarte Neto",
+      "Jussara Isabel Stockmanns",
+      "L. B. Assis",
+      "L. J. O. Carmo",
+      "L. M. T. Freitas",
+      "L. P. Marcassa",
+      "Laurence Bardin",
+      "M. A. Fari Junior",
+      "M. Dacin",
+      "M. de O. Costa",
+      "M. R. Caetano",
+      "Marcelo de Amorim Pandolfi",
+      "Marcia Regina de Oliveira",
+      "Marcus Marcelo Silva Barros",
+      "Maria Ciavatta",
+      "Maria Cristina Borges da Silva",
+      "Marise Nogueira Ramos",
+      "Marival Coan",
+      "Miranilde de Oliveira Neves",
+      "Mirna Fernandes",
+      "N. D. Oliveira",
+      "Narcisa Castilho Melo",
+      "O. P. A. Lima Júnior",
+      "P. Cerqueira",
+      "Patrícia Patrício",
+      "Paulo Freire",
+      "Pedro Pimentel",
+      "Peter A. Dacin",
+      "Pierre Dardot",
+      "R. Cantillon",
+      "R. F. Cavalcante",
+      "R. M. Blanco",
+      "Ricardo Antunes",
+      "Rivanda Meira-Teixeira",
+      "Roberto Leme Batista",
+      "Shahla Cardoso de Albuquerque",
+      "Solange Carvalho Moreira Rodrigues",
+      "Tiago Barreiros de Freitas",
+      "V. Klaus",
+      "Valdelino de Carvalho Silva",
+      "Wallace Pereira Sant'Ana"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto discute formação integral e trabalho como princípio educativo, alinhado à Pedagogia Histórico-Crítica, com referências a Saviani e Frigotto.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 20,
+          "trecho": "Adoção de formação integral e omnilateral que integre ciência, cultura e trabalho de forma crítica (Sant'Ana; Silva; Lemos, 2018).",
+          "referencia_correspondente": "Sant'Ana; Silva; Lemos, 2018"
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 39,
+          "trecho": "Empreendedorismo transfere responsabilidade para o indivíduo, rejuvenescendo ideologia do capital humano (Bernardes e Voigt, 2022a).",
+          "referencia_correspondente": "Bernardes e Voigt, 2022a"
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Podcast \"Ética, Empreendedorismo e Educação Profissional: uma abordagem crítica\"",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Podcast",
+    "link": "https://educapes.capes.gov.br/handle/capes/917905",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "docentes_professores"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "Currículo Integrado",
+      "Podcast",
+      "Mestrado Profissional em Educação Profissional e Tecnológica",
+      "Produtdo Educacional"
+    ],
+    "data_publicacao": "2024-11-01",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Ponciano, Fabiano Mauricio",
+        "papel": "creator"
+      },
+      {
+        "nome": "Grimm, Viviane",
+        "papel": "creator"
+      },
+      {
+        "nome": "Plácido, Ivonete Telles Medeiros",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/917905",
+        "url": "https://educapes.capes.gov.br/handle/capes/917905"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "https://podcasters.spotify.com/pod/show/fabiano86",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Podcast \"Ética, Empreendedorismo e Educação Profissional: uma abordagem crítica",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "PODCAST – ÉTICA, EMPREENDEDORISMO E EDUCAÇÃO PROFISSIONAL: UMA ABORDAGEM CRÍTICA",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "áudio",
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0033 2024 fabiano mauricio ponciano viviane grimm ivonete telles medeiros placido ifc blumenau lp1 mp3 o ensino de empreendedorismo em cursos de ensino medio integrado nos centros de educacao profissional cedups da rede estadual de educacao de santa catarina esta dissertacao desenvolvida no mestrado em educacao profissional e tecnologica profept do instituto federal catarinense campus blumenau na linha de pesquisa praticas educativas em educacao profissional e tecnologica no macroprojeto 3 praticas educativas no curriculo integrado buscou analisar o ensino de empreendedorismo em cursos de ensino medio integrado a educacao profissional emiep em centros de educacao profissional cedups da rede estadual de educacao de santa catarina a fim de elaborar um produto educacional que aborde o empreendedorismo a partir de uma perspectiva pedagogica critica diante disso o estudo parte da literatura especializada sobre empreendedorismo na educacao dornelas 2023 dolabela 2016 de autores criticos ao empreendedorismo nas reformas curriculares bernardes voigt 2022 castro gawryszewski dias 2022 oliveira junior oliveira 2022 em dialogo com as concepcoes de curriculo integrado e formacao integral frigotto ciavatta ramos 2005 kuenzer 2017 a reforma do ensino medio instituida pela lei 13 415 2017 apresenta o empreendedorismo como eixo estruturante nos itinerarios formativos impulsionado por politicas neoliberais que acentuam a mercantilizacao do ensino todavia considera se que uma abordagem critica e etica no ensino de empreendedorismo que busca nao apenas ensinar habilidades tecnicas e de gestao pode ampliar a compreensao dos estudantes sobre o contexto socioeconomico em que estao inseridos trata se de uma pesquisa de abordagem qualitativa e exploratoria que utilizou para coleta de dados um questionario semiestruturado online com perguntas abertas e fechadas participaram da pesquisa 19 docentes que atuam em disciplinas da area de empreendedorismo em cursos de emiep de cedups os dados foram analisados por meio de analise de conteudo bardin 2016 para perguntas abertas e analise descritiva para perguntas fechadas os resultados indicaram que os professores que atuam na area de empreendedorismo no emiep tem formacao majoritariamente tecnica inclinando se a adotar uma perspectiva predominantemente empresarial reiterando assim uma abordagem economicista e teorica do comportamento empreendedor apontando para a necessidade de uma reflexao mais critica e contextualizada sobre o tema a partir da analise foi desenvolvido uma serie de podcasts educativos em cinco episodios denominada podcast etica empreendedorismo e educacao profissional uma abordagem critica aplicado em roda de conversa e avaliado por docentes dos cedups participantes da pesquisa no final da roda de conversa que destacaram o conteudo como relevante e de facil compreensao palavras chave ensino de empreendedorismo educacao profissional e tecnologica ensino medio integrado etica rede estadual de ensino de santa catarina pedagogia historico critica podcast etica empreendedorismo e educacao profissional uma abordagem critica material didatico instrucional podcast ensino medio integrado ensino de empreendedorismo educacao profissional e tecnologica ensino medio integrado etica rede estadual de ensino de santa catarina curriculo integrado podcast mestrado profissional em educacao profissional e tecnologica produtdo educacional a alves a c r bernardes a j muller a l lima a m souza a r c silva a s castro acacia zeneida kuenzer adelar francisco baggio amanda felix da silva amarildo menezes gonzaga ana paula flores ana paula marinho de lima antonio carlos gil c d p martens c l oliveira celia regina appio celso joao ferretti christian laval claudio roberto candido d de o pinheiro daniel knebel baggio dermeval saviani diana cris fernandes gomes e r bucioli e r januario edison gonzague brito da silva elaine arantes eliana pessoa eric ries estela benetti fernanda kleinebing fernanda paula do nascimento fernando dolabela filomena lucia gossler rodrigues da silva francisca leidiane de souza francisco chagas silva souza g m v s oliveira g p dias gabriel duwe lima gaudencio frigotto gawryszewski castro geraldo r caravantes gilberto cotrim glen cezar lemos h a carli h f weffort hugo barros da silva hyndara freitas izilene conceicao amaro ewald j a da s moreira j m de a drewinski j m r voigt j marins j n maida j p andrade j w almeida janayna de mora ferraz jaqueline moll jose dornelas jose gerardo bastos da costa junior jose henrique duarte neto jussara isabel stockmanns l b assis l j o carmo l m t freitas l p marcassa laurence bardin m a fari junior m dacin m de o costa m r caetano marcelo de amorim pandolfi marcia regina de oliveira marcus marcelo silva barros maria ciavatta maria cristina borges da silva marise nogueira ramos marival coan miranilde de oliveira neves mirna fernandes n d oliveira narcisa castilho melo o p a lima junior p cerqueira patricia patricio paulo freire pedro pimentel peter a dacin pierre dardot r cantillon r f cavalcante r m blanco ricardo antunes rivanda meira teixeira roberto leme batista shahla cardoso de albuquerque solange carvalho moreira rodrigues tiago barreiros de freitas v klaus valdelino de carvalho silva wallace pereira sant ana",
+    "termos_unificados": [
+      "Ensino de Empreendedorismo",
+      "Educação Profissional e Tecnológica",
+      "Ensino Médio Integrado",
+      "Ética",
+      "Rede Estadual de Ensino de Santa Catarina",
+      "Currículo Integrado",
+      "Podcast",
+      "Mestrado Profissional em Educação Profissional e Tecnológica",
+      "Produtdo Educacional"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

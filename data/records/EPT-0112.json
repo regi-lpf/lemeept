@@ -1,0 +1,213 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0112",
+  "ano": 2026,
+  "autor": "Josiane Brito Kerber Ferreira de Moraes",
+  "orientador": "Reginaldo Leandro Plácido",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP6",
+  "dissertacao": {
+    "titulo": "EVASÃO ESCOLAR NA EPT: TRAJETÓRIAS INTERROMPIDAS NO CURSO TÉCNICO SUBSEQUENTE EM ADMINISTRAÇÃO DO IFC CAMPUS SÃO FRANCISCO DO SUL",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2026/11/DISSERTACAO-E-PRODUTO-EDUCACIONAL_JOSIANE-BRITO-KERBER-FERREIRA-DE-MORAES.pdf",
+    "resumo": "A evasão escolar na Educação Profissional e Tecnológica (EPT) constitui-se como\nfenômeno complexo que compromete os objetivos formativos dos Institutos\nFederais. Esta pesquisa tem como objetivo compreender os motivos que levam à\nelevada taxa de evasão escolar (77,8%) entre os alunos matriculados no Curso\nTécnico Subsequente em Administração do Instituto Federal Catarinense campus\nSão Francisco do Sul, no período de 2018 a 2024. A análise fundamenta-se na\nperspectiva teórica que entende a evasão escolar como fenômeno multifatorial,\nconsiderando\ndimensões\nsociais,\nculturais,\ninstitucionais\ne\npedagógicas.\nMetodologicamente, trata-se de pesquisa de abordagem mista, natureza básica e\nobjetivo exploratório, utilizando procedimentos de pesquisa bibliográfica, análise\ndocumental e aplicação de questionário eletrônico com questões abertas e\nfechadas. A pesquisa volta-se à produção de conhecimento situado sobre o\nfenômeno da evasão, articulada à dimensão aplicada expressa no desenvolvimento\ne na validação de um produto educacional que intervém concretamente na realidade\ninstitucional investigada. A população pesquisada contempla os alunos ingressantes\nno período delimitado, considerando os diferentes contextos históricos vivenciados\npor essas turmas, incluindo o período pré-pandemia, pandêmico e pós-pandemia da\nCovid-19. A pesquisa desenvolveu-se na linha de pesquisa Organização e Memórias\ndos Espaços Pedagógicos da Educação Profissional e Tecnológica, macroprojeto 6,\nno âmbito do Laboratório de Espaços e Memórias da Educação Profissional e\nTecnológica de Santa Catarina (LEME). A análise quantitativa, realizada por meio do\nteste qui-quadrado, identificou associação estatisticamente significativa entre a faixa\netária dos estudantes e os índices de evasão, evidenciando que as diferentes fases\nda vida impõem demandas e dificuldades específicas que condicionam a\npermanência no curso. As demais variáveis analisadas: gênero, renda per capita,\nforma de ingresso e cor/raça não apresentaram associação estatisticamente\nsignificativa com a evasão no conjunto dos dados, embora as análises descritivas\nindiquem diferenças percentuais relevantes entre os grupos. A análise qualitativa,\norientada pela análise temática de conteúdo, revelou que os principais\ndeterminantes da evasão são de natureza socioeconômica, especialmente a\nnecessidade de conciliar trabalho e estudo, somados à influência da pandemia de\nCovid-19 sobre a trajetória formativa das turmas de 2020 a 2022. Como produto\neducacional, foi desenvolvido e validado um Guia de Acolhimento para estudantes\ningressantes, cujos resultados preliminares indicam recepção positiva e potencial\ncontribuição para o fortalecimento do sentimento de pertencimento institucional.\n\nPalavras-chave: Evasão escolar. Educação Profissional e Tecnológica. Educação\nProfissional\nSubsequente.\nPermanência\ne\nêxito\nescolar. Instituto Federal\nCatarinense.",
+    "palavras_chave": [
+      "Evasão escolar",
+      "Educação Profissional e Tecnológica",
+      "Educação Profissional Subsequente",
+      "Permanência e êxito escolar",
+      "Instituto Federal Catarinense"
+    ],
+    "autores_referenciados": [
+      "Acácia Zeneida Kuenzer",
+      "Adriana Regina de Jesus Santos",
+      "Alain Coulon",
+      "Ana Lúcia Petrocione Jardim",
+      "Ana Zuleima Lüscher",
+      "Andy Field",
+      "Antônio Carlos Gil",
+      "Antônio Cláudio Lopes de Faria",
+      "Antônio Joaquim Severino",
+      "Bernard Lahire",
+      "Candido Alberto Gomes",
+      "Celia Regina Otranto",
+      "Cladecir Alberto Schenkel",
+      "Cloves Alexandre de Castro",
+      "Cristiane Aparecida dos Santos Baggi",
+      "Cristiane Cabral Johann",
+      "Daniela Finco",
+      "Dante Henrique Moura",
+      "Denise Matiola Todorov",
+      "Dermeval Saviani",
+      "Domingos Leite Lima Filho",
+      "Dominique Julia",
+      "Doraci Alves Lopes",
+      "Egre Padoin",
+      "Elen Cristina da Silva Ferreira",
+      "Eliezer Moreira Pacheco",
+      "Elivânia Ferreira da Costa",
+      "Estela Caroline Freitas Melo",
+      "Eva Maria Lakatos",
+      "Evandro Camargos Teixeira",
+      "Flávia Alves de Castro Oliveira",
+      "François Dubet",
+      "Gaudêncio Frigotto",
+      "Gilvan da Costa Santana",
+      "Helena Hirata",
+      "Inge Renate Frose Suhr",
+      "Ivonete Telles Medeiros",
+      "Jeane de Lima Silva",
+      "Jéssica de Lima Santos",
+      "João Carlos Cichaczewski",
+      "João Henrique da Silva",
+      "John Ward Creswell",
+      "Jonas Magno dos Santos Cesário",
+      "José Alexandre Gonçalves",
+      "José Matias Pereira",
+      "Juarina Ana da Silveira Souza",
+      "Judith Victoria Castilho Mejia",
+      "Julliana Pena de Carvalho Santos",
+      "Karel Kosík",
+      "Kimberlé Crenshaw",
+      "Leda Maria Pereira da Silveira",
+      "Luana A. L. Souza",
+      "Lucas Adriano Silva",
+      "Marcelo Côrtes Neri",
+      "Maria A. L. Mendes",
+      "Maria Beatriz de Carvalho Melo Lobo",
+      "Maria Cecília de Souza Minayo",
+      "Maria Ciavatta",
+      "Maria Clara Di Pierro",
+      "Maria da Graça Jacintho Setton",
+      "Marina de Andrade Marconi",
+      "Mário Lopes Amorim",
+      "Marise Nogueira Ramos",
+      "Mateus D. Santos",
+      "Miguel Gonzáles Arroyo",
+      "Moacir Gadotti",
+      "Mônica Ribeiro da Silva",
+      "Natália Aparecida Morato Fernandes",
+      "Nayara Maria de Oliveira",
+      "Oliver Guimarães Armando Bastos",
+      "Oscar Hipólito",
+      "Paulo Freire",
+      "Paulo Roberto Motejunas",
+      "Paulo Rogério Santos e Silva",
+      "Pedro Alberto Barbetta",
+      "Pierre Bourdieu",
+      "Rafaely Karolynne do Nascimento Campos",
+      "Reginaldo Leandro Plácido",
+      "Renato Cislaghi",
+      "Rensis Likert",
+      "Roberto Leal Lobo e Silva Filho",
+      "Romeu Gomes",
+      "Rose Samyra Guedes Zahn",
+      "Rosemary Dore",
+      "Samuel de Oliveira Rodrigues",
+      "Sérgio Haddad",
+      "Shyrlei Karyna Jagielski Benkendorf",
+      "Suely Ferreira Deslandes",
+      "Thiago de Faria e Silva",
+      "Victor Hugo de Paula Flauzino",
+      "Vitor Henrique Paro",
+      "Xênia de Castro Barbosa"
+    ],
+    "base_epistemologica": {
+      "valor": "Pedagogia Histórico-Crítica",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": true,
+      "justificativa": "O texto discute trabalho como princípio educativo e desigualdades sociais, alinhando-se à Pedagogia Histórico-Crítica, com referências a Saviani e Bourdieu.",
+      "evidencias": [
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 31,
+          "trecho": "O trabalho pode ser considerado uma categoria fundante da humanidade, influenciando e integrando todos os elementos essenciais das relações humanas.",
+          "referencia_correspondente": "SAVIANI, Dermeval. Trabalho e educação: fundamentos ontológicos e históricos."
+        },
+        {
+          "secao": "Corpo/Fundamentação",
+          "pagina": 49,
+          "trecho": "A trajetória escolar resulta não apenas de escolhas individuais, mas da posição que o estudante ocupa no campo educacional.",
+          "referencia_correspondente": "BOURDIEU, Pierre. A ilusão biográfica."
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "Guia de acolhimento para estudantes ingressantes do Curso Técnico Subsequente em Administração",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Guia",
+    "link": "https://educapes.capes.gov.br/handle/capes/1190628",
+    "publico_alvo": [
+      "estudantes_alunos",
+      "gestores_coordenadores"
+    ],
+    "nivel_aplicacao": "Educação Profissional e Tecnológica",
+    "palavras_chave": [
+      "Evasão escolar",
+      "Educação Profissional e Tecnológica",
+      "Educação Profissional Subsequente",
+      "Permanência e êxito escolar",
+      "Organização e Memória da EPT",
+      "Mestrado em Educação Profissional e Tecnológica (ProfEPT)"
+    ],
+    "data_publicacao": "2026-08",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Moraes, JOSIANE BRITO KERBER FERREIRA",
+        "papel": "creator"
+      },
+      {
+        "nome": "Placido, Reginaldo Leandro",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/1190628",
+        "url": "https://educapes.capes.gov.br/handle/capes/1190628"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Produto Educacional: Guia de acolhimento para estudantes ingressantes do Curso Técnico Subsequente em Administração",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Dissertação: EVASÃO ESCOLAR NA EPT: TRAJETÓRIAS INTERROMPIDAS NO CURSO TÉCNICO SUBSEQUENTE EM ADMINISTRAÇÃO DO IFC CAMPUS SÃO  FRANCISCO DO SUL",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "GUIA DE ACOLHIMENTO PARA ESTUDANTES INGRESSANTES DO CURSO TÉCNICO SUBSEQUENTE EM ADMINISTRAÇÃO.",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0112 2026 josiane brito kerber ferreira de moraes reginaldo leandro placido ifc blumenau lp2 mp6 evasao escolar na ept trajetorias interrompidas no curso tecnico subsequente em administracao do ifc campus sao francisco do sul a evasao escolar na educacao profissional e tecnologica ept constitui se como fenomeno complexo que compromete os objetivos formativos dos institutos federais esta pesquisa tem como objetivo compreender os motivos que levam a elevada taxa de evasao escolar 77 8 entre os alunos matriculados no curso tecnico subsequente em administracao do instituto federal catarinense campus sao francisco do sul no periodo de 2018 a 2024 a analise fundamenta se na perspectiva teorica que entende a evasao escolar como fenomeno multifatorial considerando dimensoes sociais culturais institucionais e pedagogicas metodologicamente trata se de pesquisa de abordagem mista natureza basica e objetivo exploratorio utilizando procedimentos de pesquisa bibliografica analise documental e aplicacao de questionario eletronico com questoes abertas e fechadas a pesquisa volta se a producao de conhecimento situado sobre o fenomeno da evasao articulada a dimensao aplicada expressa no desenvolvimento e na validacao de um produto educacional que intervem concretamente na realidade institucional investigada a populacao pesquisada contempla os alunos ingressantes no periodo delimitado considerando os diferentes contextos historicos vivenciados por essas turmas incluindo o periodo pre pandemia pandemico e pos pandemia da covid 19 a pesquisa desenvolveu se na linha de pesquisa organizacao e memorias dos espacos pedagogicos da educacao profissional e tecnologica macroprojeto 6 no ambito do laboratorio de espacos e memorias da educacao profissional e tecnologica de santa catarina leme a analise quantitativa realizada por meio do teste qui quadrado identificou associacao estatisticamente significativa entre a faixa etaria dos estudantes e os indices de evasao evidenciando que as diferentes fases da vida impoem demandas e dificuldades especificas que condicionam a permanencia no curso as demais variaveis analisadas genero renda per capita forma de ingresso e cor raca nao apresentaram associacao estatisticamente significativa com a evasao no conjunto dos dados embora as analises descritivas indiquem diferencas percentuais relevantes entre os grupos a analise qualitativa orientada pela analise tematica de conteudo revelou que os principais determinantes da evasao sao de natureza socioeconomica especialmente a necessidade de conciliar trabalho e estudo somados a influencia da pandemia de covid 19 sobre a trajetoria formativa das turmas de 2020 a 2022 como produto educacional foi desenvolvido e validado um guia de acolhimento para estudantes ingressantes cujos resultados preliminares indicam recepcao positiva e potencial contribuicao para o fortalecimento do sentimento de pertencimento institucional palavras chave evasao escolar educacao profissional e tecnologica educacao profissional subsequente permanencia e exito escolar instituto federal catarinense pedagogia historico critica guia de acolhimento para estudantes ingressantes do curso tecnico subsequente em administracao material didatico instrucional guia educacao profissional e tecnologica evasao escolar educacao profissional e tecnologica educacao profissional subsequente permanencia e exito escolar instituto federal catarinense organizacao e memoria da ept mestrado em educacao profissional e tecnologica profept acacia zeneida kuenzer adriana regina de jesus santos alain coulon ana lucia petrocione jardim ana zuleima luscher andy field antonio carlos gil antonio claudio lopes de faria antonio joaquim severino bernard lahire candido alberto gomes celia regina otranto cladecir alberto schenkel cloves alexandre de castro cristiane aparecida dos santos baggi cristiane cabral johann daniela finco dante henrique moura denise matiola todorov dermeval saviani domingos leite lima filho dominique julia doraci alves lopes egre padoin elen cristina da silva ferreira eliezer moreira pacheco elivania ferreira da costa estela caroline freitas melo eva maria lakatos evandro camargos teixeira flavia alves de castro oliveira francois dubet gaudencio frigotto gilvan da costa santana helena hirata inge renate frose suhr ivonete telles medeiros jeane de lima silva jessica de lima santos joao carlos cichaczewski joao henrique da silva john ward creswell jonas magno dos santos cesario jose alexandre goncalves jose matias pereira juarina ana da silveira souza judith victoria castilho mejia julliana pena de carvalho santos karel kosik kimberle crenshaw leda maria pereira da silveira luana a l souza lucas adriano silva marcelo cortes neri maria a l mendes maria beatriz de carvalho melo lobo maria cecilia de souza minayo maria ciavatta maria clara di pierro maria da graca jacintho setton marina de andrade marconi mario lopes amorim marise nogueira ramos mateus d santos miguel gonzales arroyo moacir gadotti monica ribeiro da silva natalia aparecida morato fernandes nayara maria de oliveira oliver guimaraes armando bastos oscar hipolito paulo freire paulo roberto motejunas paulo rogerio santos e silva pedro alberto barbetta pierre bourdieu rafaely karolynne do nascimento campos reginaldo leandro placido renato cislaghi rensis likert roberto leal lobo e silva filho romeu gomes rose samyra guedes zahn rosemary dore samuel de oliveira rodrigues sergio haddad shyrlei karyna jagielski benkendorf suely ferreira deslandes thiago de faria e silva victor hugo de paula flauzino vitor henrique paro xenia de castro barbosa",
+    "termos_unificados": [
+      "Evasão escolar",
+      "Educação Profissional e Tecnológica",
+      "Educação Profissional Subsequente",
+      "Permanência e êxito escolar",
+      "Instituto Federal Catarinense",
+      "Organização e Memória da EPT",
+      "Mestrado em Educação Profissional e Tecnológica (ProfEPT)"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

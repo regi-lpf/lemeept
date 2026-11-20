@@ -1,0 +1,343 @@
+{
+  "id": "EPT-0035",
+  "metadados_resolvidos": {
+    "ano": 2024,
+    "autor": "Jonas Felácio Júnior",
+    "orientador": "Reginaldo Leandro Plácido",
+    "coorientadores": [],
+    "instituicao": "Instituto Federal Catarinense (IFC)",
+    "campus": "IFC Blumenau",
+    "linha_pesquisa": "LP2",
+    "macroprojeto": "MP5"
+  },
+  "dissertacao_deterministica": {
+    "titulo": "A PERCEPÇÃO DOS ESTUDANTES DO ENSINO MÉDIO INTEGRADO DO INSTITUTO FEDERAL CATARINENSE – CAMPUS RIO DO SUL – SOBRE O TRABALHO PARA O POVO XOKLENG LAKLÃNÕ DO ALTO VALE DO ITAJAÍ",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2024/11/Dissertacao-Jonas-Felacio-Junior.pdf",
+    "palavras_chave": [
+      "Organização da Educação Profissional e Tecnológica",
+      "Xokleng Laklãnõ",
+      "Produto Educacional",
+      "ensino",
+      "trabalho"
+    ],
+    "autores_referenciados": [
+      "A. A. Cardoso",
+      "Acácia Zeneida Kuenzer",
+      "Adriana Oliveira dos Santos Siqueira",
+      "Alex Jordane",
+      "Alexandro Machado Namem",
+      "Alice Ribeiro Casimiro Lopes",
+      "Aline Cristina Silva Lima",
+      "Allan Andrei Steimbach",
+      "Ana Elisa de Castro Freitas",
+      "Ana Lúcia Vulfe Nötzold",
+      "Ana Sara Castaman",
+      "Antônio Carlos Gil",
+      "Antônio Carlos Maciel",
+      "Antonio Gramsci",
+      "Antônio Joaquim Severino",
+      "Augusto Nibaldo Silva Triviños",
+      "Bruno Kilian Kadletz",
+      "Carla Beatriz Meinerz",
+      "Carlos Alberto Lucena",
+      "Catia Dagnoni",
+      "Celestino Sachet",
+      "Cintia Regia Rodrigues",
+      "Cláudia Helena dos Santos Araújo",
+      "Cristiane Rodrigues de Freitas",
+      "Daniel Munduruku",
+      "Darcy Ribeiro",
+      "Dermeval Saviani",
+      "Edna Elza Vieira",
+      "Eduardo Gdes Neves",
+      "Eduardo Gomes da Silva Filho",
+      "Eliezer Moreira Pacheco",
+      "Elinilze Guedes Teodoro",
+      "Elizabeth Macedo",
+      "Fábio José Rauen",
+      "Fernando Roque Fernandes",
+      "Friedrich Engels",
+      "Gaudêncio Frigotto",
+      "Gersem dos Santos Luciano",
+      "Gilberto Schmidt Gerlach",
+      "Giovani José da Silva",
+      "Giralda Seyferth",
+      "Helen Estefany dos Santos Pinheiro",
+      "Ireno Antônio Berticelli",
+      "Ismael Martinez",
+      "Ivan Carlos Serpa",
+      "Ivo Marcos Theis",
+      "Jackson Alexsandro Peres",
+      "João Klug",
+      "John Manuel Monteiro",
+      "José Deeke",
+      "José Deribaldo Gomes dos Santos",
+      "José Gimeno Sacristán",
+      "José Moisés Nunes da Silva",
+      "José Paulo Netto",
+      "Juliana Schneider Medeiros",
+      "Karine Martins Sobral",
+      "Karl Marx",
+      "Karla Lucia Bento",
+      "Karla Rodrigues Mota",
+      "Klaus Richter",
+      "Lauro Chagas e Sá",
+      "Lilian Blanck de Oliveira",
+      "Lilian Blank de Oliveira",
+      "Luciano Félix Florit",
+      "Lúcio Tadeu Mota",
+      "Luís Claudio Machado Ferreira",
+      "Luís Donizete Benzi Grupioni",
+      "Luisa Tombini Wittmann",
+      "Marcondes Marchetti",
+      "Maria Ciavatta",
+      "Maria da Paz Cavalcante",
+      "Maria Izabel de Bortoli Hentz",
+      "Maria Lúcia de Arruda Aranha",
+      "Maria Margarida de Andrade",
+      "Maria Raimunda Lima Valle",
+      "Mario Alighiero Manacorda",
+      "Mario Borges Netto",
+      "Marisa Vorraber Costa",
+      "Marise Nogueira Ramos",
+      "Marta Ferreira da Silva Severo",
+      "Mauro Titton",
+      "Moisey Mikhaylovich Pistrak",
+      "Nanblá Gakran",
+      "Olivia Morais Medeiros Neta",
+      "Oswaldo Rodrigues Cabral",
+      "Paulo César",
+      "Reinaldo Matias Fleuri",
+      "Ricardo Antônio Rodrigues",
+      "Ricardo Antunes",
+      "Ricardo Ribeiro",
+      "Rodolfo Santos Nunes",
+      "Rodrigo Lavina",
+      "Rodrigo Wartha",
+      "Rosa Oliveira Marins Azevedo",
+      "Rosângela Célia Faustino",
+      "Rosemary Dore",
+      "Rosiane Magalhães de Lima",
+      "Rosineide Lourinho Santos",
+      "Sandra Maria Assis",
+      "Sérgio Sachet",
+      "Sílvio Coelho dos Santos",
+      "Soraya Farias Aquino",
+      "Tolfo Silveira",
+      "Valberto Dirksen",
+      "Vânia Maria Alves",
+      "Walderes Priprá",
+      "Walter F. Piazza",
+      "Wanusa Aparecida Scheimann",
+      "Zilfran Varela Fontenele"
+    ]
+  },
+  "evidencias_educapes": {
+    "handle_url": "http://educapes.capes.gov.br/handle/capes/917643",
+    "titulo_produto": "Sequência Didática: o trabalho para o povo Xokleng Laklãnõ",
+    "titulo_produto_bruto": "O TRABALHO PARA O POVO XOKLENG LAKLÃNÕ",
+    "data_publicacao": "2024-10",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Felácio Junior, Jonas",
+        "papel": "creator"
+      },
+      {
+        "nome": "Placido, Reginaldo Leandro",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/917643",
+        "url": "http://educapes.capes.gov.br/handle/capes/917643"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "A Percepção dos estudantes do Ensino Médio Integrado do Instituto Federal Catarinense, campus Rio do Sul, sobre o trabalho para o povo Xokleng Laklãnõ do Alto Vale do Itajaí",
+        "url": ""
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Sequência Didática: o trabalho para o povo Xokleng Laklãnõ",
+        "url": ""
+      }
+    ],
+    "colecao_educapes": null,
+    "dc_type_educapes": [
+      "livro digital"
+    ],
+    "palavras_chave_educapes": [
+      "Organização da Educação Profissional e Tecnológica",
+      "Xokleng Laklãnõ",
+      "Produto Educacional",
+      "Sequência Didática",
+      "Trabalho como princípio educativo",
+      "Mestrado em Educação Profissional e Tecnológica (ProfEPT)",
+      "Organização e Memória da EPT"
+    ],
+    "tipo_produto_regex": "material_didatico_instrucional",
+    "fonte_tipo_regex": "dissertacao_ficha",
+    "formato_produto_regex": "Sequência Didática",
+    "fonte_formato_regex": "dissertacao_ficha"
+  },
+  "recortes_textuais": {
+    "capa": "INSTITUTO FEDERAL CATARINENSE\nCAMPUS BLUMENAU\nPROGRAMA DE PÓS-GRADUAÇÃO EM EDUCAÇÃO PROFISSIONAL E\nTECNOLÓGICA\n\nJONAS FELÁCIO JÚNIOR\n\nA PERCEPÇÃO DOS ESTUDANTES DO ENSINO MÉDIO INTEGRADO DO\nINSTITUTO FEDERAL CATARINENSE, CAMPUS RIO DO SUL, SOBRE O\nTRABALHO PARA O POVO XOKLENG LAKLÃNÕ DO ALTO VALE DO ITAJAÍ\n\nBlumenau\n2024\n\nJONAS FELÁCIO JÚNIOR\n\nA PERCEPÇÃO DOS ESTUDANTES DO ENSINO MÉDIO INTEGRADO DO\nINSTITUTO FEDERAL CATARINENSE, CAMPUS RIO DO SUL, SOBRE O\nTRABALHO PARA O POVO XOKLENG LAKLÃNÕ DO ALTO VALE DO ITAJAÍ\n\nDissertação apresentada ao Programa de Pós-\ngraduação\nem\nEducação\nProfissional\ne\nTecnológica, ofertado pelo campus Blumenau\ndo Instituto Federal Catarinense, como parte\ndos requisitos para a obtenção do título de\nMestre\nem\nEducação\nProfissional\ne\nTecnológica.\nOrientador: Dr. Reginaldo Leandro Plácido\n\nBlumenau\n2024",
+    "ficha_catalografica": "",
+    "sumario": "[PÁG. 16]\nSUMÁRIO\n\nAPRESENTAÇÃO .................................................................................................... 14\n1\nINTRODUÇÃO ............................................................................................... 16\n2\nREFERENCIAL TEÓRICO ............................................................................. 20\n2.1\nO TRABALHO ENQUANTO DIFERENCIAL DO SER HUMANO ................... 20\n2.2\nO TRABALHO COMO PRINCÍPIO EDUCATIVO ........................................... 24\n2.3\nCURRÍCULO INTEGRADO NO ENSINO MÉDIO .......................................... 30\n2.4\nA PERSPECTIVA DA POLITECNIA ............................................................... 43\n2.5\nA HISTÓRIA E CULTURA AFRO-BRASILEIRA E INDÍGENA: DEBATE SOBRE\nA LEGISLAÇÃO EDUCACIONAL ATUAL ...................................................... 56\n2.6\nHISTÓRICO DO POVO XOKLENG LAKLÃNÕ .............................................. 63\n2.6.1 Breve contextualização sobre a história de Santa Catarina e a colonização\ndo território ................................................................................................... 71\n2.6.2 A colonização do Vale do Itajaí: o último refúgio do povo Xokleng Laklãnõ\n ....................................................................................................................... 73\n2.6.3 As consequências da colonização para o povo Xokleng Laklãnõ ........... 77\n2.6.3.1\nAssaltos realizados pelos indígenas .................................................... 79\n2.6.4 O genocídio promovido “em nome do progresso” ................................... 81\n2.6.4.1\nO papel estratégico desempenhado pela imprensa regional ............... 84\n2.6.5 A repercussão internacional do genocídio ................................................ 85\n2.6.5.1\nAldeamento e “pacificação” do povo Xokleng Laklãnõ ......................... 86\n2.6.5.2\nTransformações no modo de vida do povo Xokleng Laklãnõ ............... 90\n2.6.5.3\nA diáspora do povo Xokleng Laklãnõ dentro de seu próprio território .. 92\n2.7\nO TRABALHO PARA O POVO XOKLENG LAKLÃNÕ ................................... 95\n3\nMETODOLOGIA .......................................................................................... 104\n3.1\nCAMPO DE INVESTIGAÇÃO ....................................................................... 104\n3.2\nCARACTERIZAÇÃO DA PESQUISA ........................................................... 104\n3.3\nTÉCNICA DE COLETA DE DADOS ............................................................. 105\n3.3.1 População e amostra .................................................................................. 106\n3.3.2 Técnica de análise de dados ..................................................................... 107\n3.4\nPOSSIVEÍS RISCOS, PROVIDÊNCIAS, PROPOSTAS E BENEFÍCIOS ..... 109\n3.5\nPRODUTO EDUCACIONAL ......................................................................... 109\n3.5.1 Descrição técnica do Produto Educacional ...............................",
+    "resumo": "[PÁG. 11]\nRESUMO\n\nEsta dissertação é resultado da pesquisa “A Percepção dos estudantes do Ensino\nMédio Integrado do Instituto Federal Catarinense, campus Rio do Sul, sobre o trabalho\npara o povo Xokleng Laklãnõ do Alto Vale do Itajaí”, desenvolvida no Mestrado em\nEducação Profissional e Tecnológica (ProfEPT) do Instituto Federal Catarinense. A\npesquisa se insere na linha de Organização e Memórias de Espaços Pedagógicos na\nEPT, no Macroprojeto 5 - Organização do currículo integrado na EPT. Trata-se de uma\npesquisa básica, com procedimentos técnicos de uma pesquisa participante e\naplicação do Produto Educacional (PE) “Sequência Didática: o trabalho para o povo\nXokleng Laklãnõ”, bem como, coleta de dados bibliográficos e documentais. Os\nresultados indicam que, a partir da aplicação do PE, os participantes demonstraram\ninteresse sobre o trabalho a partir da perspectiva indígena, sendo que o preconceito\ndemonstrado nos encontros iniciais, foi se dissipando ao longo da aplicação das\natividades propostas na pesquisa.\n\nPalavras-Chave: Organização da Educação Profissional e Tecnológica; Xokleng\nLaklãnõ; Produto Educacional; ensino; trabalho.",
+    "introducao": "[PÁG. 20]\n16\n\n1\n INTRODUÇÃO\n\nEsta dissertação pretende discutir qual é a percepção dos estudantes dos\ncursos de Ensino Médio Integrado do Instituto Federal Catarinense, campus Rio do\nSul, sobre o trabalho para o povo Xokleng Laklãnõ.1 Os descendentes dessa\npopulação originária catarinense vivem atualmente na Terra Indígena Ibirama\nLaklãnõ. O Estado de Santa Catarina conta com dez regiões metropolitanas, sendo\numa delas a Região Metropolitana do Alto Vale do Itajaí, composta por 28 municípios\ne pela maior parte da extensão da Terra Indígena (IBGE, 2024). Por sua vez,\nterritorialmente, o Alto Vale do Itajaí integra a região do Vale do Itajaí.2 Nesta região\ncatarinense, estão localizados o campus Rio do Sul do Instituto Federal Catarinense\ne a Terra Indígena Laklãnõ.\nA etnia Xokleng Laklãnõ já residia no território catarinense antes da chegada\ndos imigrantes europeus e teve sua dinâmica social afetada, em decorrência do\nprocesso colonizatório. Obviamente, se sucederam transformações no modo de viver\ndos indígenas. Mesmo assim, continuaram acontecendo atividades de trabalho, o que\noportunizou a continuidade das gerações do povo Xokleng Laklãnõ até os dias atuais.\nCabe contextualizar que os estudantes participantes da pesquisa estão\nvinculados ao Ensino Médio Integrado à Educação Profissional (EMIEP), uma\nmodalidade formal de educação. O EMIEP integra as dimensões do trabalho, da\nciência e da cultura. Na formação do EMIEP, postula-se que a educação geral se torne\nparte inseparável da educação profissional em todos os campos onde ocorre a\npreparação para o trabalho (Frigotto; Ciavatta; Ramos, 2005, p. 17).\nA Lei de Diretrizes e Bases da Educação Nacional (Lei nº 9.394/96) estabelece\nque a educação profissional deve estar integrada às diferentes formas de educação,\nao trabalho, à ciência e à tecnologia. Portanto, a oferta do EMIEP apresenta a\nperspectiva de oportunizar melhoria da qualidade dessa etapa final da educação\n\n1O termo Xokleng foi criado por antropólogos e pesquisadores, que realizaram pesquisas junto a essa\npopulação originária catarinense. No entanto, os integrantes desse povo se intitulam como Laklãnõ,\nque em uma tradução simples significa “o povo a caminho do sol”. Devido a essa controvérsia existente\nentre a academia e a população indígena, esta pesquisa optou por usar as duas nomenclaturas.\nInicialmente, o termo Xokleng, que já foi amplamente divulgado no meio acadêmico, seguido por\nLaklãnõ, sendo como os indígenas se denominam, em relação a sua identidade.\n2Por meio do endereço eletrônico:\nhttps://pt.wikipedia.org/wiki/Lista_de_mesorregi%C3%B5es_e_microrregi%C3%B5es_de_Santa_Cata\nrina é possível ter acesso a informações sobre as mesorregiões e microrregiões do Estado de Santa\nCatarina. (Lista [...], 2021).\n\n[PÁG. 21]\n17\n\nbásica (Brasil, 1996). Em termos curriculares, essa modalidade reúne os conteúdos\ndo Ensino Médio e da formação profissional, que deverão ser trabalhados\nintegradamente, assegurando o diálogo entre teoria e prática.\nEm relação ao problema investigado pela pesquisa, existiu a busca por\nresponder a seguinte questão: como os estudantes dos cursos de Ensino Médio\nIntegrado do Instituto Federal Catarinense, campus Rio do Sul, percebem o trabalho\nno povo Xokleng Laklãnõ? No cotidiano das populações originárias existia um cenário\nde preparação para o mundo do trabalho, considerando-se que os ensinamentos\nestavam voltados principalmente para o aprendizado da sobrevivência. Os indígenas\nprecisavam aprender formas de obtenção da subsistência, com intuito de viabilizar a\nalimentação do grupo. Havia uma organização social e cultural distinta, em\ncomparação com sociedades não-indígenas. Considerando-se essas particularidades\nhistóricas, a dissertação apresenta informações sobre a história e cultura do povo\nXokleng Laklãnõ.\nEsses dados também foram compartilhados no decorrer da aplicação do\nProduto Educacional “Sequência Didática: o trabalho para o povo Xokleng Laklãnõ”.\nAs informações históricas são estratégicas para os educandos entenderem como\nfunciona a organização social desta população indígena e como são desenvolvidas\nas atividades de trabalho. Assim, contaram com subsídios necessários para elaborar\nsuas percepções sobre o trabalho para o povo Xokleng Laklãnõ. No âmbito da EPT,\nbusca-se enfocar o trabalho como princípio educativo, no sentido de superar a\ndicotomia trabalho manual versus trabalho intelectual e, ao mesmo tempo, incorporar\na dimensão intelectual ao trabalho produtivo. Nesta perspectiva é possível formar\ntrabalhadores capazes de atuar como dirigentes e cidadãos (Frigotto; Ciavatta;\nRamos, 2005, p. 17).\nEm relação à justificativa desta pesquisa, cabe considerar que grande parcela\ndos estudantes dos cursos Técnico em Agropecuária e Técnico em Agroecologia,\nvinculados ao Ensino Médio Integrado, são descendentes de famílias que vieram da\nEuropa. Os antepassados dos estudantes passaram a residir nas colônias de\nimigrantes,\nformadas\nprincipalmente\npor\nalemães,\nitalianos\ne\npoloneses.\nPosteriormente esses núcleos coloniais tornaram-se municípios do Alto Vale do Itajaí.\nA influência europeia é tão forte na região do Vale do Itajaí que existem placas\nidentificando esse território como Vale Europeu, desconsiderando a presença\nancestral dos indígenas nessa região. Existe a necessidade de considerar a realidade\n\n[PÁG. 22]\n18\n\nde desconhecimento, preconceito e indiferença, de expressiva parcela dos jovens, em\nrelação à população indígena regional. Durante a fase inicial de investigação desta\npesquisa foi possível constatar que a maioria dos estudantes dos cursos de Ensino\nMédio Integrado do IFC, campus Rio do Sul, possuem pouco conhecimento, em\nrelação à população originária do Alto Vale do Itajaí. Mesmo estudando na mesma\nregião onde está inserida a Terra Indígena, os estudantes desconhecem a realidade\nvivenciada pelos indígenas. Inclusive, determinada parcela desses jovens não tem\nconhecimento sobre a existência de descendentes da população originária regional.\nDevido a esse contexto, a pesquisa apresentou, a partir da aplicação do\nProduto Educacional, informações aos estudantes sobre o cotidiano do povo Xokleng\nLaklãnõ. A junção dos dados obtidos pelas pesquisas bibliográfica e documental, com\nas informações levantadas durante os encontros de aplicação do Produto Educacional\noportunizaram uma análise das informações que compõem os resultados da pesquisa.\nO objetivo geral desta pesquisa foi compreender como os estudantes dos\ncursos de Ensino Médio Integrado do Instituto Federal Catarinense, campus Rio do\nSul, percebem o trabalho nas relações do povo Xokleng Laklãnõ. Foram objetivos\nespecíficos: verificar nos arquivos históricos de Rio do Sul e Ibirama, se existem\ndocumentações e publicações sobre o trabalho para o povo Xokleng Laklãnõ;\nidentificar características das relações de trabalho do povo Xokleng Laklãnõ e\nrelacioná-las com os conceitos de Educação Profissional e Tecnológica; elaborar\ncomo produto educacional uma Sequência Didática no Memorial Indígena do Instituto\nFederal Catarinense, campus Rio do Sul, contemplando turmas do Ensino Médio\nIntegrado, para demonstrar como pode ser percebido o trabalho nas relações do povo\nXokleng Laklãnõ.\nQuanto à estratégia de pesquisa, caracteriza-se como pesquisa bibliográfica.\nEm relação aos objetivos e ao ponto de vista dos procedimentos técnicos adotados,\nesta pesquisa caracteriza-se como participante, porque ocorreram etapas\ndesenvolvidas com a participação de estudantes e do pesquisador. Quanto aos\nobjetivos propostos, a pesquisa é descritiva e exploratória. Já em relação à sua\nnatureza e abordagem, pode ser considerada básica e qualitativa, com elaboração e\naplicação de Produto Educacional. O Produto Educacional trata-se de um projeto de\nensino, aplicado no formato de Sequência Didática, com o seguinte título “Sequência\nDidática: o trabalho para o povo Xokleng Laklãnõ”.\n\n[PÁG. 23]\n19\n\nÉ importante ressaltar que o trabalho é um conceito do âmbito da EPT. Por\napresentar essas cara",
+    "descricao_produto_na_dissertacao": "[PÁG. 21] básica (Brasil, 1996). Em termos curriculares, essa modalidade reúne os conteúdos\ndo Ensino Médio e da formação profissional, que deverão ser trabalhados\nintegradamente, assegurando o diálogo entre teoria e prática.\nEm relação ao problema investigado pela pesquisa, existiu a busca por\nresponder a seguinte questão: como os estudantes dos cursos de Ensino Médio\nIntegrado do Instituto Federal Catarinense, campus Rio do Sul, percebem o trabalho\nno povo Xokleng Laklãnõ? No cotidiano das populações originárias existia um cenário\nde preparação para o mundo do trabalho, considerando-se que os ensinamentos\nestavam voltados principalmente para o aprendizado da sobrevivência. Os indígenas\nprecisavam aprender formas de obtenção da subsistência, com intuito de viabilizar a\nalimentação do grupo. Havia uma organização social e cultural distinta, em\ncomparação com sociedades não-indígenas. Considerando-se essas particularidades\nhistóricas, a dissertação apresenta informações sobre a história e cultura do povo\nXokleng Laklãnõ.\nEsses dados também foram compartilhados no decorrer da aplicação do\nProduto Educacional “Sequência Didática: o trabalho para o povo Xokleng Laklãnõ”.\nAs informações históricas são estratégicas para os educandos entenderem como\nfunciona a organização social desta população indígena e como são desenvolvidas\nas atividades de trabalho. Assim, contaram com subsídios necessários para elaborar\nsuas percepções sobre o trabalho para o povo Xokleng Laklãnõ. No âmbito da EPT,\nbusca-se enfocar o trabalho como princípio educativo, no sentido de superar a\ndicotomia trabalho manual versus trabalho intelectual e, ao mesmo tempo, incorporar\na dimensão intelectual ao trabalho produtivo. Nesta perspectiva é possível formar\ntrabalhadores capazes de atuar como dirigentes e cidadãos (Frigotto; Ciavatta;\nRamos, 2005, p. 17).\nEm relação à justificativa desta pesquisa, cabe considerar que grande parcela\ndos estudantes dos cursos Técnico em Agropecuária e Técnico em Agroecologia,\nvinculados ao Ensino Médio Integrado, são descendentes de famílias que vieram da\nEuropa. Os antepassados dos estudantes passaram a residir nas colônias de\nimigrantes,\nformadas\nprincipalmente\npor\nalemães,\nitalianos\ne\npoloneses.\nPosteriormente esses núcleos coloniais tornaram-se municípios do Alto Vale do Itajaí.\nA influência europeia é tão forte na região do Vale do Itajaí que existem placas\nidentificando esse território como Vale Europeu, desconsiderando a presença\nancestral dos indígenas nessa região. Existe a necessidade de considerar a realidade\n\n[PÁG. 22] de desconhecimento, preconceito e indiferença, de expressiva parcela dos jovens, em\nrelação à população indígena regional. Durante a fase inicial de investigação desta\npesquisa foi possível constatar que a maioria dos estudantes dos cursos de Ensino\nMédio Integrado do IFC, campus Rio do Sul, possuem pouco conhecimento, em\nrelação à população originária do Alto Vale do Itajaí. Mesmo estudando na mesma\nregião onde está inserida a Terra Indígena, os estudantes desconhecem a realidade\nvivenciada pelos indígenas. Inclusive, determinada parcela desses jovens não tem\nconhecimento sobre a existência de descendentes da população originária regional.\nDevido a esse contexto, a pesquisa apresentou, a partir da aplicação do\nProduto Educacional, informações aos estudantes sobre o cotidiano do povo Xokleng\nLaklãnõ. A junção dos dados obtidos pelas pesquisas bibliográfica e documental, com\nas informações levantadas durante os encon",
+    "trechos_epistemologicos": [
+      {
+        "secao": "Introdução",
+        "pagina": 20,
+        "texto": "Esta dissertação pretende discutir qual é a percepção dos estudantes dos\ncursos de Ensino Médio Integrado do Instituto Federal Catarinense, campus Rio do\nSul, sobre o trabalho para o povo Xokleng Laklãnõ.1 Os descendentes dessa\npopulação originária catarinense vivem atualmente na Terra Indígena Ibirama\nLaklãnõ. O Estado de Santa Catarina conta com dez regiões metropolitanas, sendo\numa delas a Região Metropolitana do Alto Vale do Itajaí, composta por 28 municípios\ne pela maior parte da extensão da Terra Indígena (IBGE, 2024). Por sua vez,\nterritorialmente, o Alto Vale do Itajaí integra a região do Vale do Itajaí.2 Nesta região\ncatarinense, estão localizados o campus Rio do Sul do Instituto Federal Catarinense\ne a Terra Indígena Laklãnõ.\nA etnia Xokleng Laklãnõ já residia no território catarinense antes da chegada\ndos imigrantes europeus e teve sua dinâmica social afetada, em decorrência do\nprocesso colonizatório. Obviamente, se sucederam transformações no modo de viver\ndos indígenas. Mesmo assim, continuaram acontecendo atividades de trabalho, o que\noportunizou a continuidade das gerações do povo Xokleng Laklãnõ até os dias atuais.\nCabe contextualizar que os estudantes participantes",
+        "citacoes_detectadas": [
+          "IBGE, 2024",
+          "Frigotto; Ciavatta; Ramos, 2005, p. 17"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 21,
+        "texto": "básica (Brasil, 1996). Em termos curriculares, essa modalidade reúne os conteúdos\ndo Ensino Médio e da formação profissional, que deverão ser trabalhados\nintegradamente, assegurando o diálogo entre teoria e prática.\nEm relação ao problema investigado pela pesquisa, existiu a busca por\nresponder a seguinte questão: como os estudantes dos cursos de Ensino Médio\nIntegrado do Instituto Federal Catarinense, campus Rio do Sul, percebem o trabalho\nno povo Xokleng Laklãnõ? No cotidiano das populações originárias existia um cenário\nde preparação para o mundo do trabalho, considerando-se que os ensinamentos\nestavam voltados principalmente para o aprendizado da sobrevivência. Os indígenas\nprecisavam aprender formas de obtenção da subsistência, com intuito de viabilizar a\nalimentação do grupo. Havia uma organização social e cultural distinta, em\ncomparação com sociedades não-indígenas. Considerando-se essas particularidades\nhistóricas, a dissertação apresenta informações sobre a história e cultura do povo\nXokleng Laklãnõ.\nEsses dados também foram compartilhados no decorrer da aplicação do\nProduto Educacional “Sequência Didática: o trabalho para o povo Xokleng Laklãnõ”.\nAs informações histórica",
+        "citacoes_detectadas": [
+          "Brasil, 1996",
+          "Frigotto; Ciavatta;\nRamos, 2005, p. 17"
+        ]
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 23,
+        "texto": "É importante ressaltar que o trabalho é um conceito do âmbito da EPT. Por\napresentar essas características, o projeto está vinculado à linha de pesquisa\nOrganização e Memórias de Espaços Pedagógicos na Educação Profissional e\nTecnológica (EPT). A proposta insere-se no Macroprojeto 5 - Organização do currículo\nintegrado na EPT, do Programa de Mestrado Profissional em Educação Profissional e\nTecnológica (ProfEPT), polo Blumenau, na área de ensino.\nEm relação a base teórica desta pesquisa, foram citados os seguintes autores\nindígenas: Gakran (2015), Priprá (2022) e Luciano (2006). A escrita da dissertação\ntambém buscou embasamento nas pesquisas dos seguintes autores não-indígenas:\nFrigotto, Ciavatta e Ramos (2014), Santos (1973) e Marx e Engels (2020). A pesquisa\ne seu respectivo Produto Educacional estabeleceram diálogo com as disciplinas\nofertadas nos cursos de Ensino Médio Integrado ao técnico em Agropecuária e ao\ntécnico em Agroecologia do IFC, campus Rio do Sul. Também apresentou sua\ncontribuição em termos de aprimoramento dos hábitos de estudo dos educandos, em\numa perspectiva de interdisciplinaridade e transversalidade.\nO texto da dissertação está estruturado da seguinte forma.",
+        "citacoes_detectadas": []
+      },
+      {
+        "secao": "Introdução",
+        "pagina": 24,
+        "texto": "Iniciamos esse primeiro tópico apresentando a definição elaborada por Marx\nque considera que “o trabalho é, antes de tudo, um processo entre o homem e a\nnatureza, processo este em que o homem, por sua própria ação, medeia, regula e\ncontrola seu metabolismo com a natureza” (Marx, 2013, p. 326). Conforme a\nperspectiva deste autor, o homem se “apropria da matéria natural, de uma forma útil\npara a sua própria vida, ele põe em movimentos as forças naturais pertencentes a sua\ncorporeidade, seus braços e pernas, cabeça e mãos” (Marx, 2013, p. 326). Marx\n(2013, p. 326) analisa a consequência desse processo: “agindo sobre a natureza\nexterna e modificando-a por meio desse movimento, ele modifica, ao mesmo tempo,\nsua própria natureza.”\nO trabalho é um tema pesquisado por inúmeros pesquisadores há séculos, com\nas mais diversas abordagens e entendimentos. Existem muitas pesquisas que\nestudam o trabalho em seus sentidos ontológico, histórico e enquanto princípio\neducativo. Esse primeiro tópico do referencial teórico contemplará o sentido ontológico\ndo trabalho, evidenciando principalmente a relação entre o ser humano e a natureza.\nMarx e Engels (2020, p. 421) analisam o trabalho como um dos mais",
+        "citacoes_detectadas": [
+          "Marx, 2013, p. 326",
+          "Marx, 2013, p. 326"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 25,
+        "texto": "consciência, pela religião, por tudo o que se quiser, mas eles começam a distinguir-\nse dos animais assim que começam a produzir os seus meios de subsistência.”\nPergher e Frizzo (2010, p. 2) interpretam que foi a partir da necessidade de\nsobrevivência que os antepassados do homem modificaram sua relação com a\nnatureza. Como consequência desse processo, deixaram de depender de uma\nrelação de adaptação às condições a que eram submetidos, para estabelecer relações\nde transformação da natureza e atender às suas necessidades. Primeiramente,\ncontemplaram as questões imediatas de sobrevivência. Com o desenvolvimento das\ncivilizações humanas, passaram a buscar atender as necessidades produzidas pelas\nnovas formas de produção e reprodução da vida. “A esse processo de transformação\nda natureza chamamos de trabalho, ou seja, a relação entre o ser humano e a\nnatureza” (Pergher; Frizzo, 2010, p. 2).\nMarx e Engels (2020, p. 431) chamam atenção para o fato de que nenhum\nanimal pode imprimir na natureza a sua vontade, somente o homem: “só o que podem\nfazer os animais é utilizar a natureza. O homem, ao contrário, modifica a natureza e a\nobriga a servir-lhe, domina-a. Aí está a diferença essencial e",
+        "citacoes_detectadas": [
+          "Pergher; Frizzo, 2010, p. 2",
+          "César, 2023"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 26,
+        "texto": "pensamento de Marx, é possível entender que a partir do processo de apropriação da\nnatureza, o ser humano começou a ter consciência de suas ações de subsistência. A\npartir desse momento, passou a projetar formas de satisfazê-las, conforme suas\nvontades e necessidades diárias (César, 2023). “A transformação da natureza por\nmeio do trabalho - sentido ontológico - é uma condição de sobrevivência que se fará\npresente em todas as comunidades, como forma de humanização sob o aspecto da\nautocriação do homem”, explicam Siqueira, Ferreira e Silva (2023, p. 3).\nAntunes (2009, p. 136) conceitua o trabalho como categoria intermediária “que\npossibilita o salto ontológico das formas pré-humanas para o ser social, a própria\nbusca de uma vida cheia de sentido é empreendida pelos seres sociais, para sua\nautorrealização individual e coletiva.” Aranha (2010, p. 111) menciona que a essência\ndo ser humano é o trabalho, por isso, pode ser entendido como fator de construção\ndo ser humano: “porque através dele se faz e se constrói. O ser humano se torna\npropriamente humano na medida que pela ação modifica o mundo externo conforme\nsuas necessidades, ao mesmo tempo, constrói-se a si mesmo.”\nSegundo Frigotto",
+        "citacoes_detectadas": [
+          "César, 2023",
+          "Frigotto; Ciavatta; Ramos,\n2014, p. 7",
+          "Ramos, 2008, p. 21",
+          "Ramos, 2008, p. 21"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 27,
+        "texto": "de manutenção da vida transformando a natureza. Este processo só foi possível com\no desenvolvimento do cérebro e de estágios cognitivos superiores”, destacam Pergher\ne Frizzo (2010, p. 2). Em decorrência desses fatores, afirmam que “o objeto do\ntrabalho é, portanto, a objetivação da vida genérica do homem. Sendo que o processo\nde trabalho transforma dialeticamente não apenas o objeto, mas também o\ntrabalhador, assim como suas condições de trabalho” (Pergher; Frizzo, 2010, p. 2).\nElucidam que “trabalho, não é simplesmente transformar um objeto em alguma outra\ncoisa, em outro objeto, é envolver-se numa práxis em que o trabalhador também se\ntransforma por seu trabalho” (Pergher; Frizzo, 2010, p. 2). De acordo com o\npensamento de Marx, o trabalho é um processo em que participam o homem e a\nnatureza: “onde o ser humano com sua própria ação impulsiona, regula e controla seu\nintercâmbio material com a natureza como uma de suas forças. Atuando sobre a\nnatureza externa e modificando-a, ao mesmo tempo modifica sua própria natureza”\n(Marx; Engels, 2006, p. 142).\nPara Ciavatta (2005, p. 45-46), “a produção da existência humana e a aquisição\nda consciência se dão pelo trabalho, pela ação sobre ",
+        "citacoes_detectadas": [
+          "Pergher; Frizzo, 2010, p. 2",
+          "Pergher; Frizzo, 2010, p. 2",
+          "Marx; Engels, 2006, p. 142",
+          "Ciavatta,\n2005, p. 46",
+          "Pergher; Frizzo, 2010,\np. 4"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 28,
+        "texto": "Com intuito de facilitar o entendimento dos leitores, iniciamos esse tópico\nmencionando conceitos sobre o trabalho como princípio educativo. Ciavatta (2008, p.\n408) explica que, no caso do trabalho como princípio educativo a relação entre o\ntrabalho e a educação, [...] afirma “o caráter formativo do trabalho e da educação como\nação humanizadora, por meio do desenvolvimento de todas as potencialidades do ser\nhumano”. Conforme o pensamento de Ciavatta (2008), o campo específico de\ndiscussão teórica do trabalho como princípio educativo é o materialismo histórico: “em\nque se parte do trabalho como produtor dos meios de vida, tanto nos aspectos\nmateriais, como culturais, de conhecimento, de criação material e simbólica, e de\nformas de sociabilidade” (Ciavatta, 2008, p. 408-409).\n“Como boa parte dos vocábulos da língua portuguesa, o termo trabalho pode\nassumir diferentes significados, dependendo do contexto em que é usado”, observam\nSá, Jordane e Giraldo (2022, p. 195). Comentam que em uma conversa informal o\ntermo trabalho pode ser entendido como emprego, ou atividade profissional\ndesenvolvida por uma pessoa. “No sentido escolar, pode ser sinônimo de lição ou\nexercício. Todos esses sign",
+        "citacoes_detectadas": [
+          "Ciavatta, 2008, p. 408-409",
+          "Sá; Jordane; Giraldo, 2022, p. 195",
+          "Sá;\nJordane; Giraldo, 2022, p. 196"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 29,
+        "texto": "Medeiros Neta, Assis e Lima (2016, p. 108) afirmam que o trabalho,\nconsiderado princípio educativo, é uma proposta marxista: “como fato social, em todas\nas sociedades, sempre promoveu aprendizagens, mas foi com Marx que ele foi\nelevado à condição de princípio educativo.” Sobre a educação para o trabalho,\npropõem que “o norte da formação seja a inclusão social, laboral e política dos\nsujeitos, numa perspectiva integrada” (Medeiros Neta; Assis; Lima, 2016, p. 108).\nMaciel (2018, p. 87) também compartilha o entendimento de que “a concepção\nde trabalho como princípio educativo decorre da concepção marxista de educação”.\nExplica que essa concepção se sustenta sobre três alicerces: “o intelectual, que é\nformado pela aquisição do conhecimento científico e cultural; o corporal, enquanto\ndesenvolvimento físico; e, o tecnológico, enquanto domínio de princípios gerais\nnecessários ao manejo dos diversos ramos industriais” (Maciel, 2018, p. 89).\nCésar (2023) elucida que a educação acontece desde que o homem existe e\nse entende como ser social. O trabalho foi tornando o ser humano cada vez mais\nsocial. A partir do pensamento marxista, compreende-se que a educação é inerente à\nsociedade humana, e",
+        "citacoes_detectadas": [
+          "Medeiros Neta; Assis; Lima, 2016, p. 108",
+          "Maciel, 2018, p. 89"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 30,
+        "texto": "educativo” (Siqueira; Ferreira; Silva, 2023, p. 9).\nPor se constituir em direito e dever, o trabalho engendra um princípio formativo\nou educativo, de acordo com Frigotto, Ciavatta e Ramos (2014): “o trabalho como\nprincípio educativo deriva do fato de que todos os seres humanos são seres da\nnatureza, portanto, têm a necessidade de alimentar-se, proteger-se das intempéries e\ncriar seus meios de vida”. Para esses autores, “é fundamental socializar desde a\ninfância, o princípio de que a tarefa de prover a subsistência e outras esferas da vida\npelo trabalho é comum a todos os seres humanos” (Frigotto; Ciavatta; Ramos, 2014,\np. 9). No entendimento desses educadores, a partir dessa prática vislumbra-se a\nperspectiva de evitar a formação de pessoas que pensem em explorar os demais.\nCésar (2023) considera que é indissolúvel o caráter formativo do trabalho e da\neducação, pois a educação se origina do trabalho. Observa ainda que a relação entre\ntrabalho e educação pode oportunizar uma ação humanizadora que visa desenvolver\ndiversas potencialidades do ser humano, para serem formados indivíduos autônomos,\nemancipados, críticos e éticos. Nesta perspectiva, vislumbra-se a questão do trabalho\ncomo",
+        "citacoes_detectadas": [
+          "Siqueira; Ferreira; Silva, 2023, p. 9",
+          "Frigotto; Ciavatta; Ramos, 2014,\np. 9",
+          "César, 2023",
+          "Sobral; Santos, 2023, p. 4"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 31,
+        "texto": "decorrência da produção de sua existência. Enquanto ser humano, não nasce\nsocialmente compreendido, mas adquire a capacidade de utilizar os conhecimentos\ndisponibilizados pela família e comunidade onde está inserido. Esse processo de\nformação do ser social pode ser chamado por educação (César, 2023).\n“O trabalho como princípio educativo consiste no fato de ser o trabalho um dos\nelementos fundamentais que determina o modo de organização de um tipo de\neducação, conforme o grau de desenvolvimento social atingido historicamente”,\nobservam Sobral e Santos (2023, p. 4). Na continuidade da análise sobre o tema,\nexplicam que a tese do trabalho como princípio educativo exprime o seguinte: “aquilo\nque define o processo educativo se encontra fora dele (no trabalho). Tal relação\nconsiste no fato de que transformar a natureza para a satisfação das necessidades\nhumanas é algo a ser realizado em qualquer forma de sociabilidade” (Sobral; Santos,\n2023, p. 4). Esses teóricos apresentam uma constatação interessante, referindo-se\nque “não se trata de averiguar se o trabalho pode ser o princípio educativo, mas\nreconhecer que ele é um princípio educativo em qualquer forma de sociabilidade\nhumana, indepe",
+        "citacoes_detectadas": [
+          "César, 2023",
+          "Sobral; Santos,\n2023, p. 4",
+          "Sobral; Santos, 2023, p. 5",
+          "Frigotto; Ciavatta; Ramos, 2014,\np. 1"
+        ]
+      },
+      {
+        "secao": "Corpo/Fundamentação",
+        "pagina": 32,
+        "texto": "um projeto que se limita a preparar e qualificar o trabalhador a partir dos interesses\npatronais” (Della Fonte, 2018, p. 7).\nFrigotto, Ciavatta e Ramos (2014, p. 9) enfatizam que “o trabalho como\nprincípio educativo não é apenas uma técnica didática ou metodológica no processo\nde aprendizagem, mas um princípio ético-político.” A partir desta perspectiva,\nentendem que “o trabalho é, ao mesmo tempo, um dever e um direito. O que é\ninaceitável e deve ser combatido são as relações sociais de exploração e alienação\ndo trabalho em qualquer circunstância e idade.” (Frigotto; Ciavatta; Ramos, 2014, p.\n9).\nSá, Jordane e Giraldo (2022, p. 198) analisam que “ao adotarmos o trabalho\ncomo princípio educativo, combinamos as justificativas histórica, pedagógica e política\ne assumimos o compromisso político-pedagógico com a formação humana para\nsuperação de todas as formas de exploração”. Acreditam que seja prioritário buscar\n“perspectivas educacionais capazes de formar trabalhadores críticos em relação às\nsuas posições profissionais e conscientes das possibilidades de transformação da\nestrutura social baseada em classes” (Sá; Jordane; Giraldo, 2022, p. 198).\nSobre a compreensão do conceito de trab",
+        "citacoes_detectadas": [
+          "Della Fonte, 2018, p. 7",
+          "Frigotto; Ciavatta; Ramos, 2014, p.\n9",
+          "Sá; Jordane; Giraldo, 2022, p. 198",
+          "Siqueira;\nFerreira; Silva, 2023, p. 2"
+        ]
+      }
+    ],
+    "referencias_filtradas": [
+      "CÉSAR, Paulo. O trabalho como princípio educativo. [S. l.: s. n.], 2023. 1 vídeo (1 h 10 min.). Publicado pelo Canal Bora Aprender. Disponível em: https://www.youtube.com/watch?v=AMzbJWVPPek. Acesso em: 23 set. 2024.",
+      "CIAVATTA, Maria. O ensino integrado, a politecnia e a educação omnilateral. Por que lutamos? Trabalho & Educação, Belo Horizonte, v. 23, n. 1, p. 187-205, 2014.",
+      "CIAVATTA, Maria. Trabalho como princípio educativo. In: PEREIRA, Isabel Brasil; LIMA Julio César França. Dicionário da educação profissional em saúde. 2. ed. rev. e ampl. Rio de Janeiro: EPSJV, 2008. p. 408-415.",
+      "CIAVATTA, Maria. Trabalho como princípio educativo na sociedade contemporânea. In: EDUCAÇÃO e o mundo do trabalho. Brasília: MEC, 2005. p. 42-48.",
+      "DELLA FONTE, S. Formação no e para o trabalho. Educação Profissional e Tecnológica em Revista, Vitória, v. 2, n. 2, p. 6-19, 2018. Disponível em: https://ojs.ifes.edu.br/index.php/ept/article/view/383. Acesso em: 26 jan. 2024. Disponível em: http://educa.fcc.org.br/scielo.php?script=sci_arttext&pid=S2237- 94602018000200085. Acesso em: 12 maio 2024.",
+      "MACIEL, Antônio Carlos. Marx e a politecnia, ou: do princípio educativo ao princípio pedagógico. Revista Exitus, Santarém, v. 8, n. 2, p. 85 - 110, maio/ ago. 2018. Disponível em: http://educa.fcc.org.br/scielo.php?script=sci_arttext&pid=S2237- 94602018000200085. Acesso em: 12 maio 2024. 166",
+      "MARX, Karl. Instruções para os delegados do Conselho Geral Provisório: as diferentes questões. 2008. Disponível em: http://www.marxists.org/portugues/marx/1866/08/instrucoes.htm. Acesso em: 25 set. 2024.",
+      "MARX, Karl. Manuscritos econômico-filosóficos e outros textos escolhidos. São Paulo: Nova Cultural,1987.",
+      "MARX, Karl. O capital: crítica da economia política. Livro I: O processo de produção do capital. São Paulo: Boitempo, 2013.",
+      "MARX, Karl; ENGELS, Friedrich. História, natureza, trabalho e educação. São Paulo: Expressão Popular, 2020.",
+      "MARX, Karl; ENGELS, Friedrich. Textos sobre educação e ensino. 5. ed. São Paulo: Centauro, 2006.",
+      "MEDEIROS NETA, Olivia Morais; ASSIS, Sandra Maria; LIMA, Aline Cristina Silva Lima. O Trabalho como Princípio Educativo: uma possibilidade de superação da dualidade educacional no ensino médio integrado. Revista Ensino Interdisciplinar, Mossoró, v. 2, n. 5, jul. 2016. Disponível em: https://repositorio.ufrn.br/handle/123456789/23170. Acesso em: 12 maio 2024.",
+      "MEDEIROS, Juliana Schneider. Povos indígenas e a Lei n. 11.645: (in)visibilidades no ensino de história do Brasil. In: BERGAMASCHI, Maria Aparecida; DALLA ZEN, Maria Isabel Habckost; XAVIER, Maria Luisa Merino de Freitas (org.). Povos indígenas e educação. 2. ed. Porto Alegre: Mediação, 2012. v. 1. p. 49-62.",
+      "RAMOS, Marise. Currículo Integrado. Minicurso Práticas de Integração Curricular e Interdisciplinaridade na Educação Profissional. [S. l., 2017]. Disponível em: https://www.ifpb.edu.br/joaopessoa/ensino/articulacao-pedagogica/projeto-de- atualizacao-dos-ppcs/2017/encontros-pedagogicos-2017/ii-encontro-pedagogico-de- 2017/texto-curriculo-integrado-e-interdisciplinaridade.pdf. Acesso em: 15 set. 2024",
+      "RAMOS, Marise. Concepção do ensino médio integrado. [S. l., 2008]. Disponível em: https://tecnicadmiwj.wordpress.com/wp-content/uploads/2008/09/texto- concepcao-do-ensino-medio-integrado-marise-ramos1.pdf. Acesso em: 15 set. 2024.",
+      "CÉSAR, Paulo. O trabalho como princípio educativo. [S. l.: s. n.], 2023. 1 vídeo (1 h 10 min.). Publicado pelo Canal Bora Aprender. Disponível em: https://www.youtube.com/watch?v=AMzbJWVPPek. Acesso em: 23 set. 2024.",
+      "CIAVATTA, Maria. Trabalho como princípio educativo. In: PEREIRA, Isabel Brasil; LIMA Julio César França. Dicionário da educação profissional em saúde. 2. ed. rev. e ampl. Rio de Janeiro: EPSJV, 2008. p. 408-415.",
+      "CIAVATTA, Maria. Trabalho como princípio educativo na sociedade contemporânea. In: EDUCAÇÃO e o mundo do trabalho. Brasília: MEC, 2005. p. 42-48.",
+      "DELLA FONTE, S. Formação no e para o trabalho. Educação Profissional e Tecnológica em Revista, Vitória, v. 2, n. 2, p. 6-19, 2018. Disponível em: https://ojs.ifes.edu.br/index.php/ept/article/view/383. Acesso em: 26 jan. 2024. Disponível em: http://educa.fcc.org.br/scielo.php?script=sci_ arttext&pid=S2237-94602018000200085. Acesso em: 12 maio 2024.",
+      "MARX, Karl. Manuscritos econômico-filosóficos e outros textos escolhidos. São Paulo: Nova Cultural, 1987.",
+      "MARX, Karl. O capital: crítica da economia política. Livro I: O processo de produção do capital. São Paulo: Boitempo, 2013.",
+      "MARX, Karl; ENGELS, Friedrich. História, natureza, trabalho e educação. São Paulo: Expressão Popular, 2020.",
+      "MARX, Karl; ENGELS, Friedrich. Textos sobre educação e ensino. 5. ed. São Paulo: Centauro, 2006.",
+      "MEDEIROS NETA, Olivia Morais; ASSIS, Sandra Maria; LIMA, Aline Cristina Silva Lima. O Trabalho como Princípio Educativo: uma possibilidade de superação da dualidade educacional no ensino médio integrado. Revista Ensino Interdisciplinar, Mossoró, v. 2, n. 5, jul. 2016. Disponível em: https:// repositorio.ufrn.br/handle/123456789/23170. Acesso em: 12 maio 2024.",
+      "MEDEIROS, Juliana Schneider. Povos indígenas e a Lei n. 11.645: (in) visibilidades no ensino de história do Brasil. In: BERGAMASCHI, Maria Aparecida; DALLA ZEN, Maria Isabel Habckost; XAVIER, Maria Luisa Merino de Freitas (org.). Povos indígenas e educação. 2. ed. Porto Alegre: Mediação, 2012. v. 1. p. 49-62."
+    ]
+  }
+}

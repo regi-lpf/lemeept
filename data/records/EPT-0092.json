@@ -1,0 +1,140 @@
+{
+  "schema_version": "4.0",
+  "id": "EPT-0092",
+  "ano": 2020,
+  "autor": "Cátia Maria Alves Monteiro",
+  "orientador": "Reginaldo Leandro Plácido",
+  "coorientadores": [],
+  "instituicao": "Instituto Federal Catarinense (IFC)",
+  "campus": "IFC Blumenau",
+  "linha_pesquisa": "LP2",
+  "macroprojeto": "MP6",
+  "dissertacao": {
+    "titulo": "ACOLHER PARA INCLUIR: O ACOLHIMENTO COMO ARTICULADOR DAS PRÁTICAS EDUCACIONAIS INCLUSIVAS",
+    "link": "https://profept.ifc.edu.br/wp-content/uploads/sites/54/2023/09/VERSAO-FINAL-DISSERTACAO-E-PRODUTO-EDUCACIONAL-CATIA-MARIA-ALVES-MONTEIRO.pdf",
+    "resumo": "O paradoxo exclusão/inclusão é o pano de fundo do presente estudo, que tem como\ntema central, o acolhimento como articulador das práticas educacionais inclusivas.\nA partir dessa temática, busca-se repensar as concepções da educação inclusiva e\ndo paradigma da educação para todos na Educação Profissional e Tecnológica. O\ncaráter interdisciplinar do Mestrado Profissional em Educação Profissional e\nTecnológica (ProfEPT), vinculando teoria à prática, requer que o trabalho de\nconclusão do curso ocorra de forma integrada ao desenvolvimento e aplicação de\num produto educacional. Assim, o estudo teórico e a pesquisa realizada inserida na\nLinha de Pesquisa Organizações e Memórias de Espaços Pedagógicos na EPT,\nsubsidiaram o desenvolvimento do Produto Educacional “Acolher para Incluir:\nCaderno de orientações para o acolhimento de estudantes público-alvo da\nEducação Especial e/ou com Transtornos Funcionais Específicos, do Instituto\nFederal de Santa Catarina”. A metodologia utilizada foi de pesquisa do tipo\nparticipante, por meio de pesquisa bibliográfica e documental. Como instrumento\npara a coleta de dados foi aplicado questionário aos coordenadores dos Núcleos de\nAcessibilidade Educacional (NAE) dos campi do IFSC que ofertam cursos técnicos\nintegrados ao Ensino Médio. Os dados coletados foram sistematizados e analisados\na partir da construção iterativa de uma explicação, proposta enquanto parte da\nanálise qualitativa de conteúdo. Os resultados da pesquisa apontam que a aplicação\ndo produto educacional apresenta importantes contribuições para o processo de\ninclusão dos estudantes. Todavia, a proposta de acolhimento não encerra por si só\ntodo esse processo, haja vista que corresponde à etapa inicial e que a inclusão deve\nser construída de forma contínua e permanente, considerando a singularidade do\nsujeito.\n\nPalavras-Chave: Educação Inclusiva. Acolhimento. Educação Integral. Educação\nProfissional e Tecnológica.",
+    "palavras_chave": [
+      "Educação Inclusiva",
+      "Acolhimento",
+      "Educação Integral",
+      "Educação Profissional e Tecnológica"
+    ],
+    "autores_referenciados": [
+      "A. A. O. Roveda",
+      "A. Cury",
+      "A. M. L. Padilha",
+      "A. M. L. Weiss",
+      "Carlos Rodrigues Brandão",
+      "Christian Laville",
+      "Cleber Cristiano Prodanov",
+      "D. Diniz",
+      "D. M. Z. Kanofre",
+      "Dermeval Saviani",
+      "E. A. Ropoli",
+      "Ernani Cesar de Freitas",
+      "Eva Maria Lakatos",
+      "Gabriel Kaplún",
+      "Gaudêncio Frigotto",
+      "Jean Dionne",
+      "K. W. Simon",
+      "Laura Cavalcanti de Farias Brehmer",
+      "M. A. Marconi",
+      "M. C. Borges",
+      "M. E. Nabuco",
+      "M. M. Cruz",
+      "M. Ramos",
+      "Maria Ciavatta",
+      "Maria Teresa Eglér Mantoan",
+      "Marta Rejane Proença Filietaz",
+      "Marta Verdi",
+      "Paulo Freire",
+      "Priscila de Souza Chisté Leite",
+      "R. Glat",
+      "Rensis Likert",
+      "Romeu Kazumi Sassaki",
+      "V. G. Caires"
+    ],
+    "base_epistemologica": {
+      "valor": "Educação Libertadora / Freireana",
+      "candidato": null,
+      "confianca": "alta",
+      "revisao_pendente": false,
+      "curado_humano": false,
+      "justificativa": "O texto cita Freire (1996) sobre diálogo e escuta como fundamentos do acolhimento. O caderno propõe práticas de inclusão baseadas em práticas pedagógicas críticas.",
+      "evidencias": [
+        {
+          "secao": "Introdução",
+          "pagina": 23,
+          "trecho": "quem tem o que dizer deve assumir o dever de motivar, de desafiar quem escuta, no sentido de que, quem escuta diga, fale, responda",
+          "referencia_correspondente": null
+        }
+      ]
+    }
+  },
+  "produto": {
+    "titulo": "ACOLHER PARA INCLUIR: CADERNO DE ORIENTAÇÕES PARA O ACOLHIMENTO DE ESTUDANTES PÚBLICO-ALVO DA EDUCAÇÃO ESPECIAL E/OU COM TRANSTORNOS FUNCIONAIS ESPECÍFICOS DO  INSTITUTO FEDERAL DE SANTA CATARINA - IFSC",
+    "tipo": "material_didatico_instrucional",
+    "formato": "Caderno Pedagógico",
+    "link": "http://educapes.capes.gov.br/handle/capes/574365",
+    "publico_alvo": [
+      "estudantes_alunos"
+    ],
+    "nivel_aplicacao": "Ensino Médio Integrado",
+    "palavras_chave": [
+      "Educação Profissional e Tecnológica",
+      "Educação Inclusiva",
+      "Acolhimento",
+      "Educação Integral",
+      "Mestrado Profissional em Educação Tecnológica",
+      "Organização e Memória da EPT"
+    ],
+    "data_publicacao": "2020-08-07",
+    "autores_colaboradores": [
+      {
+        "nome": "Instituto Federal Catarinense",
+        "papel": "contributor"
+      },
+      {
+        "nome": "Monteiro, C. M. A.",
+        "papel": "creator"
+      },
+      {
+        "nome": "Placido, R. L.",
+        "papel": "creator"
+      }
+    ],
+    "identificadores": [
+      {
+        "esquema": "handle",
+        "valor": "capes/574365",
+        "url": "http://educapes.capes.gov.br/handle/capes/574365"
+      },
+      {
+        "esquema": "identifier",
+        "valor": "Acolher para incluir: caderno de orientações para o acolhimento de Estudantes Público-alvo da Educação Especial e/ou com Transtornos Funcionais Específicos do Instituto Federal de Santa Catarina",
+        "url": ""
+      }
+    ],
+    "proveniencia": {
+      "fonte_tipo_escolhida": "dissertacao_ficha",
+      "rotulo_original_declarado": "Texto – ACOLHER PARA INCLUIR : CADERNO DE ORIENTAÇÕES PARA O ACOLHIMENTO DE ESTUDANTES PÚBLICO-ALVO DA EDUCAÇÃO ESPECIAL E COM TRANSTORNOS FUNCIONAIS ESPECÍFICOS DO INSTITUTO FEDERAL DE SANTA CATARINA.",
+      "colecao_educapes": null,
+      "dc_type_educapes": [
+        "texto"
+      ]
+    }
+  },
+  "indice_busca": {
+    "texto_busca_normalizado": "ept 0092 2020 catia maria alves monteiro reginaldo leandro placido ifc blumenau lp2 mp6 acolher para incluir o acolhimento como articulador das praticas educacionais inclusivas o paradoxo exclusao inclusao e o pano de fundo do presente estudo que tem como tema central o acolhimento como articulador das praticas educacionais inclusivas a partir dessa tematica busca se repensar as concepcoes da educacao inclusiva e do paradigma da educacao para todos na educacao profissional e tecnologica o carater interdisciplinar do mestrado profissional em educacao profissional e tecnologica profept vinculando teoria a pratica requer que o trabalho de conclusao do curso ocorra de forma integrada ao desenvolvimento e aplicacao de um produto educacional assim o estudo teorico e a pesquisa realizada inserida na linha de pesquisa organizacoes e memorias de espacos pedagogicos na ept subsidiaram o desenvolvimento do produto educacional acolher para incluir caderno de orientacoes para o acolhimento de estudantes publico alvo da educacao especial e ou com transtornos funcionais especificos do instituto federal de santa catarina a metodologia utilizada foi de pesquisa do tipo participante por meio de pesquisa bibliografica e documental como instrumento para a coleta de dados foi aplicado questionario aos coordenadores dos nucleos de acessibilidade educacional nae dos campi do ifsc que ofertam cursos tecnicos integrados ao ensino medio os dados coletados foram sistematizados e analisados a partir da construcao iterativa de uma explicacao proposta enquanto parte da analise qualitativa de conteudo os resultados da pesquisa apontam que a aplicacao do produto educacional apresenta importantes contribuicoes para o processo de inclusao dos estudantes todavia a proposta de acolhimento nao encerra por si so todo esse processo haja vista que corresponde a etapa inicial e que a inclusao deve ser construida de forma continua e permanente considerando a singularidade do sujeito palavras chave educacao inclusiva acolhimento educacao integral educacao profissional e tecnologica educacao libertadora freireana acolher para incluir caderno de orientacoes para o acolhimento de estudantes publico alvo da educacao especial e ou com transtornos funcionais especificos do instituto federal de santa catarina ifsc material didatico instrucional caderno pedagogico ensino medio integrado educacao inclusiva acolhimento educacao integral educacao profissional e tecnologica mestrado profissional em educacao tecnologica organizacao e memoria da ept a a o roveda a cury a m l padilha a m l weiss carlos rodrigues brandao christian laville cleber cristiano prodanov d diniz d m z kanofre dermeval saviani e a ropoli ernani cesar de freitas eva maria lakatos gabriel kaplun gaudencio frigotto jean dionne k w simon laura cavalcanti de farias brehmer m a marconi m c borges m e nabuco m m cruz m ramos maria ciavatta maria teresa egler mantoan marta rejane proenca filietaz marta verdi paulo freire priscila de souza chiste leite r glat rensis likert romeu kazumi sassaki v g caires",
+    "termos_unificados": [
+      "Educação Inclusiva",
+      "Acolhimento",
+      "Educação Integral",
+      "Educação Profissional e Tecnológica",
+      "Mestrado Profissional em Educação Tecnológica",
+      "Organização e Memória da EPT"
+    ],
+    "tem_produto_vinculado": true,
+    "tem_resumo": true
+  }
+}

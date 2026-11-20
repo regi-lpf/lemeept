@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Bibliométrico LEME / ProfEPT</title>
+    <link rel="stylesheet" href="./frontend/styles.css">
+</head>
+
+<body style="margin: 0; padding: 16px; background: #f8fafc;">
+    <section id="leme-painel-ept" class="leme-painel-ept"
+        data-json-url="https://regi-lpf.github.io/lemeept/dist/painel-ept-v4.json"
+        data-json-url-local="./dist/painel-ept-v4.json">
+        <a class="leme-skip" href="#leme-controles">Pular para pesquisa e filtros</a>
+        <div class="leme-header">
+            <div>
+                <div class="leme-eyebrow" aria-hidden="true">PAINEL PROFEPT</div>
+                <h2>Bússola LEME – Navegador da Produção ProfEPT</h2>
+                <p class="leme-subtitle">Trace sua rota por dissertações e produtos educacionais. Ajuste as coordenadas
+                    por tema, autor, orientador, ano, linha, macroprojeto e referências.</p>
+            </div>
+            <div class="leme-update">
+                <div>Período analisado: <strong id="leme-periodo">Carregando...</strong></div>
+                <div id="leme-gerado-em" class="leme-update-meta"></div>
+            </div>
+        </div>
+        <section id="leme-graficos" class="leme-panel" aria-label="Visualizações bibliométricas">
+            <div class="leme-panel-head">
+                <div>
+                    <h3>1ª Carta Náutica: ProfEPT/IFC</h3>
+                    <p id="leme-graficos-desc">Cada defesa compreende uma dissertação e um produto educacional
+                        vinculado. Clique em um ou mais itens nos gráficos para combinar filtros.</p>
+                </div>
+                <div class="leme-panel-head-actions">
+                    <div id="leme-graficos-nota" class="leme-note">Carregando indicadores...</div>
+                </div>
+            </div>
+            <div class="leme-scope-bar">
+                <span class="leme-scope-label">Escopo de análise:</span>
+                <div class="leme-scope" role="group"
+                    aria-label="Separar escopo entre todas as produções, dissertações e produtos educacionais">
+                    <button type="button" data-escopo="todas" class="is-active" aria-pressed="true">Todas (Dissertações
+                        +
+                        Produtos)</button>
+                    <button type="button" data-escopo="dissertacoes" aria-pressed="false">Dissertações</button>
+                    <button type="button" data-escopo="produtos" aria-pressed="false">Produtos Educacionais</button>
+                </div>
+            </div>
+            <div id="leme-graficos-filtros" class="leme-active-filters is-compact"
+                aria-label="Filtros ativos no painel"></div>
+            <div id="leme-insights" class="leme-insights" aria-label="Resumo dinâmico dos dados filtrados"></div>
+            <div class="leme-charts-grid">
+                <div class="leme-chart-card" data-chart-scope="todas dissertacoes produtos">
+                    <h4 class="leme-chart-title" id="leme-chart-ano-title">Produções por ano</h4>
+                    <p class="leme-chart-subtitle" title="Evolução temporal das produções no recorte atual.">Evolução
+                        temporal no recorte.</p>
+                    <div id="leme-chart-ano"></div>
+                </div>
+                <div class="leme-chart-card" data-chart-scope="todas dissertacoes">
+                    <h4 class="leme-chart-title">Linha de pesquisa</h4>
+                    <p class="leme-chart-subtitle" title="Participação percentual de cada linha no conjunto atual.">
+                        Participação percentual por linha.</p>
+                    <div id="leme-chart-linha"></div>
+                </div>
+                <div class="leme-chart-card" data-chart-scope="todas dissertacoes">
+                    <h4 class="leme-chart-title">Macroprojeto</h4>
+                    <p class="leme-chart-subtitle" title="Distribuição por código e tema de cada macroprojeto.">
+                        Distribuição
+                        por código e tema.</p>
+                    <div id="leme-chart-macro"></div>
+                </div>
+                <div class="leme-chart-card" data-chart-scope="todas dissertacoes">
+                    <h4 class="leme-sr-only">Orientadores e coorientadores</h4>
+                    <div class="leme-chart-card-head">
+                        <div class="leme-chart-tabs" role="group"
+                            aria-label="Alternar entre orientação principal e coorientação">
+                            <button type="button" class="leme-chart-tab is-active" data-orientador-tab="orientador"
+                                aria-pressed="true" title="Orientadores principais">Orientação</button>
+                            <button type="button" class="leme-chart-tab" data-orientador-tab="coorientador"
+                                aria-pressed="false" title="Coorientadores no recorte atual">Coorientação <span
+                                    id="leme-tab-coor-count">(0)</span></button>
+                        </div>
+                        <button type="button" class="leme-chart-expand-btn" data-open-ranking="orientador"
+                            aria-label="Expandir ranking completo de orientadores">Ver todos</button>
+                    </div>
+                    <p id="leme-chart-orientador-subtitle" class="leme-chart-subtitle"
+                        title="Top 10 orientadores principais por número de defesas orientadas.">Top 10 por defesas
+                        orientadas.</p>
+                    <div id="leme-chart-orientador"></div>
+                </div>
+                <div class="leme-chart-card" data-chart-scope="todas dissertacoes">
+                    <h4 class="leme-chart-title">Base epistemológica (consolidadas)</h4>
+                    <p class="leme-chart-subtitle"
+                        title="Contabiliza bases validadas e sinaliza registros ainda em curadoria.">Bases validadas e
+                        pendências.</p>
+                    <div id="leme-chart-base"></div>
+                </div>
+                <div class="leme-chart-card" data-chart-scope="todas dissertacoes">
+                    <div class="leme-chart-card-head">
+                        <h4 class="leme-chart-title">Autores mais referenciados (Top 12)</h4>
+                        <button type="button" class="leme-chart-expand-btn" data-open-ranking="autor_referenciado"
+                            aria-label="Expandir ranking completo de autores referenciados">Ver todos</button>
+                    </div>
+                    <p class="leme-chart-subtitle"
+                        title="Autores teóricos mais citados nas dissertações do recorte atual.">
+                        Autores mais citados nas dissertações.</p>
+                    <div id="leme-chart-autores-ref"></div>
+                </div>
+                <div class="leme-chart-card" data-chart-scope="todas produtos">
+                    <h4 class="leme-chart-title">Tipo de produto (CAPES)</h4>
+                    <p class="leme-chart-subtitle" title="Classificação tipológica dos produtos educacionais.">
+                        Classificação
+                        tipológica dos produtos.</p>
+                    <div id="leme-chart-tipo"></div>
+                </div>
+                <div class="leme-chart-card" data-chart-scope="todas produtos">
+                    <h4 class="leme-chart-title">Público-alvo</h4>
+                    <p class="leme-chart-subtitle"
+                        title="Destinatários atendidos (um produto pode atender múltiplos públicos).">Destinatários
+                        atendidos pelos produtos.</p>
+                    <div id="leme-chart-publico"></div>
+                </div>
+                <div class="leme-chart-card" data-chart-scope="todas produtos">
+                    <h4 class="leme-chart-title">Nível de aplicação</h4>
+                    <p class="leme-chart-subtitle"
+                        title="Etapas e modalidades de ensino onde os produtos educacionais são aplicados.">Etapas e
+                        modalidades de aplicação.</p>
+                    <div id="leme-chart-nivel"></div>
+                </div>
+            </div>
+        </section>
+        <div class="leme-stats" aria-label="Indicadores gerais do painel">
+            <div class="leme-stat"><strong id="leme-stat-total">—</strong><span>defesas analisadas</span></div>
+            <div class="leme-stat"><strong id="leme-stat-producoes">—</strong><span>produções bibliográficas e
+                    técnicas</span></div>
+            <div class="leme-stat">
+                <strong id="leme-stat-orientadores">—</strong>
+                <span>orientadores principais</span>
+                <small id="leme-stat-coorientadores" class="leme-stat-sub"></small>
+            </div>
+            <div class="leme-stat"><strong id="leme-stat-macroprojetos">—</strong><span>macroprojetos</span></div>
+        </div>
+        <section id="leme-controles" class="leme-panel" aria-label="Pesquisa e filtros">
+            <div class="leme-panel-head">
+                <div>
+                    <h3>Pesquise no acervo</h3>
+                    <p>Alterne entre a visão integrada, apenas dissertações ou apenas produtos educacionais, e combine
+                        filtros dinâmicos.</p>
+                </div>
+                <div class="leme-note">Filtros inteligentes</div>
+            </div>
+            <div class="leme-search-row">
+                <input id="leme-busca" class="leme-search" type="search"
+                    placeholder="Busque por tema, título, autor, orientador, autor referenciado (ex.: Saviani, Freire), palavra-chave..."
+                    aria-label="Busca no painel EPT" />
+                <button id="leme-limpar" class="leme-clear" type="button">Limpar filtros</button>
+            </div>
+            <div class="leme-filters">
+                <div class="leme-field"><label for="leme-filtro-ano">Ano</label><select id="leme-filtro-ano"
+                        data-campo="ano" data-default="Todos"></select></div>
+                <div class="leme-field"><label for="leme-filtro-linha">Linha de pesquisa</label><select
+                        id="leme-filtro-linha" data-campo="linha_pesquisa" data-default="Todas"></select></div>
+                <div class="leme-field"><label for="leme-filtro-macro">Macroprojeto</label><select
+                        id="leme-filtro-macro" data-campo="macroprojeto" data-default="Todos"></select></div>
+                <div class="leme-field"><label for="leme-filtro-tipo">Tipo de produto</label><select
+                        id="leme-filtro-tipo" data-campo="tipo_produto" data-default="Todos"></select></div>
+                <div class="leme-field"><label for="leme-filtro-publico">Público-alvo</label><select
+                        id="leme-filtro-publico" data-campo="publico_alvo" data-default="Todos"></select></div>
+                <div class="leme-field"><label for="leme-filtro-nivel">Nível de aplicação</label><select
+                        id="leme-filtro-nivel" data-campo="nivel_aplicacao" data-default="Todos"></select></div>
+                <div class="leme-field"><label for="leme-filtro-orientador">Orientador</label><select
+                        id="leme-filtro-orientador" data-campo="orientador" data-default="Todos"></select></div>
+                <div class="leme-field"><label for="leme-filtro-base">Base epistemológica</label><select
+                        id="leme-filtro-base" data-campo="base_epistemologica" data-default="Todas"></select></div>
+            </div>
+            <div id="leme-filtros-ativos" class="leme-active-filters"></div>
+        </section>
+        <div id="leme-resultados-area" class="leme-toolbar">
+            <div id="leme-contador" class="leme-count" aria-live="polite">Carregando resultados...</div>
+            <div class="leme-actions-toolbar">
+                <div class="leme-sort-wrap">
+                    <label class="leme-sr-only" for="leme-ordenar">Ordenar resultados</label>
+                    <select id="leme-ordenar" class="leme-sort-select" aria-label="Ordenar resultados">
+                        <option value="ano_desc">Mais recentes</option>
+                        <option value="ano_asc">Mais antigos</option>
+                        <option value="titulo_asc">Título (A–Z)</option>
+                        <option value="autor_asc">Autor(a) (A–Z)</option>
+                    </select>
+                </div>
+                <button id="leme-exportar-csv" class="leme-export-btn" type="button">Baixar resultados (.CSV)</button>
+                <div class="leme-view" role="group" aria-label="Alternar visualização">
+                    <button id="leme-view-cards" class="is-active" type="button" aria-pressed="true">Cartões</button>
+                    <button id="leme-view-table" type="button" aria-pressed="false">Tabela</button>
+                </div>
+            </div>
+        </div>
+        <div id="leme-resultados" class="leme-results"></div>
+        <nav id="leme-paginacao" class="leme-pagination" aria-label="Paginação de resultados"></nav>
+        <div id="leme-modal-backdrop" class="leme-modal-backdrop" aria-hidden="true">
+            <div class="leme-modal" role="dialog" aria-modal="true" aria-labelledby="leme-modal-title">
+                <div class="leme-modal-head">
+                    <h3 id="leme-modal-title" class="leme-modal-title">Detalhes do trabalho</h3>
+                    <button id="leme-modal-close" class="leme-modal-close" type="button">Fechar</button>
+                </div>
+                <div id="leme-modal-content"></div>
+            </div>
+        </div>
+    </section>
+    <script src="./frontend/app.js"></script>
+</body>
+
+</html>
