@@ -4,10 +4,12 @@ from pathlib import Path
 from typing import Optional
 
 from pipeline.extractors import (
+    classificar_formato_produto_com_fonte,
     classificar_produto_com_fonte,
     classificar_produto_regex,
     coletar_evidencias_educapes,
     detectar_macroprojeto_e_linha,
+    extrair_contexto_produto,
     extrair_coorientador,
     extrair_palavras_chave_resumo,
     extrair_sentenca_produto,
@@ -23,12 +25,14 @@ from pipeline.normalizers import limpar_nome_pessoa, normalizar_nome_orientador
 from pipeline.references import extrair_autores_referencias
 
 __all__ = [
+    "classificar_formato_produto_com_fonte",
     "classificar_produto_com_fonte",
     "classificar_produto_regex",
     "coletar_evidencias_educapes",
     "detectar_macroprojeto_e_linha",
     "executar_etapa2",
     "extrair_autores_referencias",
+    "extrair_contexto_produto",
     "extrair_coorientador",
     "extrair_palavras_chave_resumo",
     "extrair_sentenca_produto",

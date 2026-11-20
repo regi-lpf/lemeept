@@ -24,6 +24,10 @@ BASES_EPISTEMOLOGICAS_CANONICAS: Tuple[str, ...] = tuple(
 ALIASES_BASE_EPISTEMOLOGICA: Dict[str, str] = dict(_tax["aliases_base_epistemologica"])
 NIVEIS_APLICACAO_CANONICOS: Tuple[str, ...] = tuple(_tax["niveis_aplicacao_canonicos"])
 ALIASES_NIVEL_APLICACAO: Dict[str, str] = dict(_tax["aliases_nivel_aplicacao"])
+FORMATOS_PRODUTO_CANONICOS: Tuple[str, ...] = tuple(
+    _tax["formatos_produto_canonicos"]
+)
+ALIASES_FORMATO_PRODUTO: Dict[str, str] = dict(_tax["aliases_formato_produto"])
 
 # --- Pessoas / Docentes / Coorientação ---
 PREPOSICOES_NOME: FrozenSet[str] = frozenset(_pes["preposicoes_nome"])

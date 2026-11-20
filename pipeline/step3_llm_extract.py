@@ -18,6 +18,7 @@ from pipeline.normalizers import (
     limpar_palavras_chave,
     limpar_resumo_publico,
     normalizar_base_epistemologica,
+    normalizar_formato_produto,
     normalizar_nivel_aplicacao,
     normalizar_nome_orientador,
     normalizar_texto_busca,
@@ -54,6 +55,7 @@ def construir_indice_busca(registro: Dict[str, Any]) -> Dict[str, Any]:
         base.get("valor") or "",
         pro.get("titulo", ""),
         pro.get("tipo", ""),
+        pro.get("formato") or "",
         pro.get("nivel_aplicacao", ""),
         " ".join(tags_unificadas),
         " ".join(dis.get("autores_referenciados") or []),
@@ -85,6 +87,7 @@ def montar_prompt_enxuto(payload: ContratoExtracaoDeterministicaV4) -> str:
             "colecao_educapes": edu.colecao_educapes,
             "dc_type_educapes": edu.dc_type_educapes,
             "tipo_sugerido_regex": edu.tipo_produto_regex,
+            "formato_sugerido_regex": edu.formato_produto_regex,
             "descricao_na_dissertacao": rec.descricao_produto_na_dissertacao[:2500],
         },
         "resumo": rec.resumo[:3000],
@@ -170,6 +173,7 @@ def montar_registro_final(
     tags_pro = limpar_palavras_chave(edu.palavras_chave_educapes or tags_dis)
     resumo_limpo = limpar_resumo_publico(payload.recortes_textuais.resumo)
     nivel_aplicacao_norm = normalizar_nivel_aplicacao(resp.produto_nivel_aplicacao)
+    formato_final = normalizar_formato_produto(edu.formato_produto_regex or resp.produto_formato)
 
     registro_dict: Dict[str, Any] = {
         "schema_version": "4.0",
@@ -201,6 +205,7 @@ def montar_registro_final(
         "produto": {
             "titulo": edu.titulo_produto or resp.produto_titulo,
             "tipo": tipo_final,
+            "formato": formato_final,
             "link": edu.handle_url,
             "publico_alvo": list(resp.produto_publico_alvo),
             "nivel_aplicacao": nivel_aplicacao_norm,
@@ -366,6 +371,7 @@ def ressincronizar_registros_deterministico(
 
             pro = raw["produto"]
             pro["titulo"] = edu.titulo_produto or pro.get("titulo", "")
+            pro["formato"] = normalizar_formato_produto(edu.formato_produto_regex or pro.get("formato"))
             pro["link"] = edu.handle_url
             pro["nivel_aplicacao"] = normalizar_nivel_aplicacao(pro.get("nivel_aplicacao"))
             pro["palavras_chave"] = limpar_palavras_chave(edu.palavras_chave_educapes or tags_dis)

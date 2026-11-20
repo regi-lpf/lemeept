@@ -5,8 +5,10 @@ from typing import Dict, List, Optional, Tuple
 from pipeline.catalogs import (
     ALIASES_BASE_EPISTEMOLOGICA,
     ALIASES_DOCENTES,
+    ALIASES_FORMATO_PRODUTO,
     ALIASES_NIVEL_APLICACAO,
     BASES_EPISTEMOLOGICAS_CANONICAS,
+    FORMATOS_PRODUTO_CANONICOS,
     NIVEIS_APLICACAO_CANONICOS,
     PREPOSICOES_NOME,
 )
@@ -181,5 +183,24 @@ def normalizar_nivel_aplicacao(nivel: Optional[str]) -> str:
     # Evita que slugs snake_case não mapeados da LLM vazem para o frontend
     if "_" in limpo and limpo == limpo.lower():
         return "Educação Profissional e Tecnológica"
+
+    return limpo
+
+
+def normalizar_formato_produto(formato: Optional[str]) -> Optional[str]:
+    """Padroniza o formato específico do produto para rótulo legível e consistente."""
+    if not formato or not isinstance(formato, str):
+        return None
+
+    limpo = re.sub(r"\s+", " ", formato).strip(" .;-–—:")
+    if not limpo:
+        return None
+
+    chave = normalizar_texto_busca(limpo)
+    if chave in ALIASES_FORMATO_PRODUTO:
+        return ALIASES_FORMATO_PRODUTO[chave]
+
+    if "_" in limpo and limpo == limpo.lower():
+        return None
 
     return limpo
