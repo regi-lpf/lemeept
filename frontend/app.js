@@ -52,7 +52,7 @@
     const FACET_FIELDS = [
         "ano", "linha_pesquisa", "macroprojeto", "orientador", "coorientador",
         "base_epistemologica", "autor_referenciado",
-        "tipo_produto", "publico_alvo", "nivel_aplicacao"
+        "tipo_produto", "formato_produto", "publico_alvo", "nivel_aplicacao"
     ];
     const EMPTY_SET = new Set();
 
@@ -69,6 +69,7 @@
     const MULTI_SELECT_SENTINEL = "__leme_multi__";
     const filtrosSelecionados = new Map(FACET_FIELDS.map(c => [c, new Set()]));
     let modoCardOrientador = "orientador";
+    let modoCardTipoProduto = "tipo_produto";
     let paginaAtual = 1;
     let debounceTimer = null;
     let ultimoFocoAntesModal = null;
@@ -106,8 +107,13 @@
     const chartBaseEl = raiz.querySelector("#leme-chart-base");
     const chartAutoresRefEl = raiz.querySelector("#leme-chart-autores-ref");
     const chartTipoEl = raiz.querySelector("#leme-chart-tipo");
+    const chartTipoTitleEl = raiz.querySelector("#leme-chart-tipo-title");
+    const chartTipoHeadEl = raiz.querySelector("#leme-chart-tipo-head");
+    const chartTipoSubtitleEl = raiz.querySelector("#leme-chart-tipo-subtitle");
+    const botoesTabTipoProduto = Array.from(raiz.querySelectorAll(".leme-chart-tab[data-tipo-tab]"));
     const chartPublicoEl = raiz.querySelector("#leme-chart-publico");
     const chartNivelEl = raiz.querySelector("#leme-chart-nivel");
+    const chartFormatoEl = raiz.querySelector("#leme-chart-formato");
     const graficosFiltrosEl = raiz.querySelector("#leme-graficos-filtros");
     const filtrosAtivos = raiz.querySelector("#leme-filtros-ativos");
     const graficosNota = raiz.querySelector("#leme-graficos-nota");
@@ -125,6 +131,8 @@
     const botoesExpandirRanking = Array.from(raiz.querySelectorAll(".leme-chart-expand-btn[data-open-ranking]"));
     const btnExpandOrientador = raiz.querySelector('.leme-chart-expand-btn[data-open-ranking="orientador"]');
     const btnExpandAutoresRef = raiz.querySelector('.leme-chart-expand-btn[data-open-ranking="autor_referenciado"]');
+    const btnExpandTipoFormato = raiz.querySelector("#leme-expand-tipo-formato");
+    const btnExpandFormato = raiz.querySelector("#leme-expand-formato");
 
     function normalizarBusca(valor) {
         return String(valor || "")
@@ -285,6 +293,7 @@
         const macroLabel = traduzirSlug("macroprojeto", macroSlug);
         const tipoSlug = ehValorPublico(prod.tipo) ? String(prod.tipo).trim() : "";
         const tipoLabel = traduzirSlug("tipo_produto", tipoSlug);
+        const formatoProduto = ehValorPublico(prod.formato) ? limparRotulo(prod.formato) : "";
         const nivelAplicacao = ehValorPublico(prod.nivel_aplicacao) ? limparRotulo(prod.nivel_aplicacao) : "";
         const instituicaoCampus = formatarInstituicaoCampus(d.instituicao, d.campus);
 
@@ -300,6 +309,7 @@
             macroLabel,
             tipoSlug,
             tipoLabel,
+            formatoProduto,
             publicosSlugs.join(" "),
             publicosLabels.join(" "),
             baseAprovada,
@@ -315,7 +325,7 @@
                 linhaSlug, linhaLabel,
                 macroSlug, macroLabel,
                 diss.titulo, diss.resumo, autoresRef.join(" "), baseAprovada,
-                prod.titulo, tipoSlug, tipoLabel,
+                prod.titulo, tipoSlug, tipoLabel, formatoProduto,
                 publicosSlugs.join(" "), publicosLabels.join(" "),
                 nivelAplicacao, termosUnificados.join(" ")
             ].join(" "));
@@ -369,6 +379,7 @@
             produto_titulo: limparRotulo(prod.titulo),
             tipo_produto: tipoSlug,
             tipo_produto_label: tipoLabel,
+            formato_produto: formatoProduto,
             produto_link: sanitizarUrl(prod.link),
             publico_alvo: publicosSlugs,
             publico_alvo_labels: publicosLabels,
@@ -577,6 +588,7 @@
                 if (ehValorPublico(a)) adicionar("autor_referenciado", a, i);
             }
             if (ehValorPublico(item.tipo_produto)) adicionar("tipo_produto", item.tipo_produto, i);
+            if (ehValorPublico(item.formato_produto)) adicionar("formato_produto", item.formato_produto, i);
             for (let j = 0; j < item.publico_alvo.length; j++) {
                 const p = item.publico_alvo[j];
                 if (ehValorPublico(p)) adicionar("publico_alvo", p, i);
@@ -851,6 +863,7 @@
 
         adicionarChipsFaceta("autor_referenciado", "Autor referenciado");
         adicionarChipsFaceta("coorientador", "Coorientador");
+        adicionarChipsFaceta("formato_produto", "Formato do produto");
         filtros.forEach(filtro => {
             const label = raiz.querySelector('label[for="' + filtro.id + '"]');
             const nomeFiltro = label ? label.textContent : filtro.dataset.campo;
@@ -1456,6 +1469,60 @@
         }
     }
 
+    function renderGraficoFormato(el, lista, termos, indicesBuscaSet, btnExpand) {
+        const listaFormato = obterListaGraficoFaceta("formato_produto", lista, termos, indicesBuscaSet);
+        const dadosFormato = contarAgregado(listaFormato, i => i.formato_produto, 1);
+        renderHorizontalChart(
+            el,
+            dadosFormato,
+            10,
+            { agruparOutras: false, campoFiltro: "formato_produto" }
+        );
+        if (btnExpand) btnExpand.disabled = dadosFormato.length === 0;
+    }
+
+    function renderCardTipoProduto(lista, termos, indicesBuscaSet) {
+        const mostrarSwitch = escopo === "todas";
+        const modoEfetivo = mostrarSwitch ? modoCardTipoProduto : "tipo_produto";
+
+        if (chartTipoHeadEl) chartTipoHeadEl.classList.toggle("is-hidden", !mostrarSwitch);
+        if (btnExpandTipoFormato) {
+            btnExpandTipoFormato.classList.toggle("is-hidden", !mostrarSwitch || modoEfetivo !== "formato_produto");
+        }
+        if (chartTipoTitleEl) {
+            chartTipoTitleEl.classList.toggle("leme-sr-only", mostrarSwitch);
+            chartTipoTitleEl.classList.toggle("leme-chart-title", !mostrarSwitch);
+            chartTipoTitleEl.textContent = mostrarSwitch ? "Tipo e formato do produto" : "Tipo de produto (CAPES)";
+        }
+
+        botoesTabTipoProduto.forEach(btn => {
+            const ativo = btn.dataset.tipoTab === modoEfetivo;
+            btn.classList.toggle("is-active", ativo);
+            btn.setAttribute("aria-pressed", ativo ? "true" : "false");
+        });
+
+        if (modoEfetivo === "formato_produto") {
+            if (chartTipoSubtitleEl) {
+                chartTipoSubtitleEl.textContent = "Top 10 formatos específicos.";
+                chartTipoSubtitleEl.title = "Top 10 formatos específicos declarados ou identificados para os produtos educacionais.";
+            }
+            renderGraficoFormato(chartTipoEl, lista, termos, indicesBuscaSet, btnExpandTipoFormato);
+            return;
+        }
+
+        if (chartTipoSubtitleEl) {
+            chartTipoSubtitleEl.textContent = "Classificação tipológica dos produtos.";
+            chartTipoSubtitleEl.title = "Classificação tipológica dos produtos educacionais.";
+        }
+        const listaTipo = obterListaGraficoFaceta("tipo_produto", lista, termos, indicesBuscaSet);
+        renderHorizontalChart(
+            chartTipoEl,
+            contarAgregado(listaTipo, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k)),
+            9,
+            { campoFiltro: "tipo_produto" }
+        );
+    }
+
     function atualizarGraficos(lista, termos, indicesBuscaSet) {
         atualizarVisibilidadeGraficos();
         renderInsights(lista);
@@ -1510,13 +1577,7 @@
         }
 
         if (escopo === "todas" || escopo === "produtos") {
-            const listaTipo = obterListaGraficoFaceta("tipo_produto", lista, termos, indicesBuscaSet);
-            renderHorizontalChart(
-                chartTipoEl,
-                contarAgregado(listaTipo, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k)),
-                9,
-                { campoFiltro: "tipo_produto" }
-            );
+            renderCardTipoProduto(lista, termos, indicesBuscaSet);
             const listaPublico = obterListaGraficoFaceta("publico_alvo", lista, termos, indicesBuscaSet);
             renderHorizontalChart(
                 chartPublicoEl,
@@ -1531,6 +1592,10 @@
                 8,
                 { campoFiltro: "nivel_aplicacao" }
             );
+        }
+
+        if (escopo === "produtos") {
+            renderGraficoFormato(chartFormatoEl, lista, termos, indicesBuscaSet, btnExpandFormato);
         }
 
         const totalItensEscopo = lista.length * multiplicadorEscopo();
@@ -1549,6 +1614,7 @@
 
         if (escopo === "produtos") {
             if (ehValorPublico(item.tipo_produto_label)) badges.push('<span class="leme-badge red">' + escapeHtml(item.tipo_produto_label) + '</span>');
+            if (ehValorPublico(item.formato_produto)) badges.push('<span class="leme-badge">' + escapeHtml(item.formato_produto) + '</span>');
             if (ehValorPublico(item.nivel_aplicacao)) badges.push('<span class="leme-badge green">' + escapeHtml(item.nivel_aplicacao) + '</span>');
             item.publico_alvo_labels.slice(0, 2).forEach(pub => {
                 badges.push('<span class="leme-badge">' + escapeHtml(pub) + '</span>');
@@ -1635,12 +1701,13 @@
         if (escopo === "produtos") {
             resultados.innerHTML = '<table class="leme-table">' +
                 '<caption>Produtos Educacionais filtrados</caption>' +
-                '<thead><tr><th scope="col">Produto Educacional</th><th scope="col">Tipo (CAPES)</th><th scope="col">Público-Alvo</th><th scope="col">Nível de Aplicação</th><th scope="col">Autor(a)</th><th scope="col">Ano</th><th scope="col">Ações</th></tr></thead>' +
+                '<thead><tr><th scope="col">Produto Educacional</th><th scope="col">Tipo (CAPES)</th><th scope="col">Formato</th><th scope="col">Público-Alvo</th><th scope="col">Nível de Aplicação</th><th scope="col">Autor(a)</th><th scope="col">Ano</th><th scope="col">Ações</th></tr></thead>' +
                 '<tbody>' + lista.map(item => {
                     const titulo = item.produto_titulo || item.dissertacao_titulo || "Não informado";
                     return '<tr>' +
                         '<td><div class="leme-table-title">' + highlightText(titulo, termos) + '</div></td>' +
                         '<td>' + escapeHtml(valorPublico(item.tipo_produto_label)) + '</td>' +
+                        '<td>' + escapeHtml(valorPublico(item.formato_produto)) + '</td>' +
                         '<td>' + escapeHtml(item.publico_alvo_labels.join(", ") || "Não informado") + '</td>' +
                         '<td>' + escapeHtml(valorPublico(item.nivel_aplicacao)) + '</td>' +
                         '<td>' + highlightText(valorPublico(item.autor), termos) + '</td>' +
@@ -1877,6 +1944,20 @@
             coletarBase: () => obterListaGraficoFaceta("coorientador", resultadosAtuais),
             coletarDados: base => contarCoorientadores(base),
             parAlternavel: "orientador"
+        },
+        formato_produto: {
+            titulo: "Formatos de produto: ranking completo",
+            campoFiltro: "formato_produto",
+            corteInicial: 1,
+            rotuloOrdenacaoFreq: "Mais frequentes",
+            placeholderBusca: "Pesquisar formato por nome...",
+            entidadePlural: "formatos",
+            entidadeSingular: "formato",
+            acaoDescricao: "neste formato",
+            colunaCsv: "Formato do produto",
+            arquivoCsv: "ranking-formatos-produto-leme-ept.csv",
+            coletarBase: () => obterListaGraficoFaceta("formato_produto", resultadosAtuais),
+            coletarDados: base => contarAgregado(base, i => i.formato_produto, 1)
         }
     };
 
@@ -2281,8 +2362,9 @@
             '<div class="leme-detail-item is-wide"><b>Autores referenciados:</b><div class="leme-tags">' + autoresRefHtml + '</div></div>' +
             '<div class="leme-detail-item is-wide"><b>Produto educacional:</b><br>' + highlightText(valorPublico(item.produto_titulo), termos) + '</div>' +
             '<div class="leme-detail-item"><b>Tipo de produto (CAPES):</b><br>' + highlightText(valorPublico(item.tipo_produto_label), termos) + '</div>' +
+            '<div class="leme-detail-item"><b>Formato do produto:</b><br>' + highlightText(valorPublico(item.formato_produto), termos) + '</div>' +
             '<div class="leme-detail-item"><b>Nível de aplicação:</b><br>' + highlightText(valorPublico(item.nivel_aplicacao), termos) + '</div>' +
-            '<div class="leme-detail-item is-wide"><b>Público-alvo:</b><br>' + highlightText(item.publico_alvo_labels.join(", ") || "Não informado", termos) + '</div>' +
+            '<div class="leme-detail-item"><b>Público-alvo:</b><br>' + highlightText(item.publico_alvo_labels.join(", ") || "Não informado", termos) + '</div>' +
             '<div class="leme-detail-item is-wide"><b>Resumo da dissertação:</b><br>' + highlightText(item.dissertacao_resumo || "Resumo não disponível.", termos) + renderTags(item.termos_unificados, termos) + (linksModal.length ? '<div class="leme-actions">' + linksModal.join("") + '</div>' : '') + '</div>' +
             renderSecaoDetalhesRecolhivel(item, termos) +
             '</div>';
@@ -2342,7 +2424,8 @@
         } else if (escopo === "produtos") {
             cols = [
                 ["id", "ID"], ["ano", "Ano"], ["produto_titulo", "Título do Produto Educacional"],
-                ["tipo_produto_label", "Tipo de Produto"], ["publico_alvo_str", "Público-Alvo"],
+                ["tipo_produto_label", "Tipo de Produto"], ["formato_produto", "Formato do Produto"],
+                ["publico_alvo_str", "Público-Alvo"],
                 ["nivel_aplicacao", "Nível de Aplicação"], ["data_publicacao", "Data de Publicação"],
                 ["autor", "Autor"], ["orientador", "Orientador"], ["produto_link", "Link eduCAPES"]
             ];
@@ -2354,7 +2437,8 @@
                 ["instituicaoCampus", "Instituição / Campus"],
                 ["linha_pesquisa_label", "Linha de Pesquisa"], ["macroprojeto_label", "Macroprojeto"],
                 ["base_status_label", "Base Epistemológica"], ["autores_ref_str", "Autores Referenciados"],
-                ["tipo_produto_label", "Tipo de Produto"], ["publico_alvo_str", "Público-Alvo"],
+                ["tipo_produto_label", "Tipo de Produto"], ["formato_produto", "Formato do Produto"],
+                ["publico_alvo_str", "Público-Alvo"],
                 ["nivel_aplicacao", "Nível de Aplicação"], ["data_publicacao", "Data de Publicação"],
                 ["dissertacao_link", "Link Dissertação"], ["produto_link", "Link eduCAPES"]
             ];
@@ -2366,6 +2450,7 @@
                     ...item,
                     autor: valorPublico(item.autor),
                     orientador: valorPublico(item.orientador),
+                    formato_produto: valorPublico(item.formato_produto),
                     coorientadores_str: item.coorientadores.join(", "),
                     autores_ref_str: item.autores_referenciados.join(", "),
                     publico_alvo_str: item.publico_alvo_labels.join(", ")
@@ -2416,6 +2501,7 @@
         botoesEscopo.forEach(b => { b.disabled = disabled; });
         filtros.forEach(f => { f.disabled = disabled; });
         botoesTabOrientador.forEach(b => { b.disabled = disabled; });
+        botoesTabTipoProduto.forEach(b => { b.disabled = disabled; });
         botoesExpandirRanking.forEach(b => { b.disabled = disabled; });
         exportarCsv.disabled = disabled || resultadosAtuais.length === 0;
     }
@@ -2453,6 +2539,13 @@
         if (tabOriBtn && !tabOriBtn.disabled) {
             modoCardOrientador = tabOriBtn.dataset.orientadorTab || "orientador";
             renderCardOrientadores(resultadosAtuais);
+            return;
+        }
+
+        const tabTipoBtn = e.target.closest("[data-tipo-tab]");
+        if (tabTipoBtn && !tabTipoBtn.disabled) {
+            modoCardTipoProduto = tabTipoBtn.dataset.tipoTab || "tipo_produto";
+            renderCardTipoProduto(resultadosAtuais);
             return;
         }
 
@@ -2653,7 +2746,7 @@
             contador.textContent = "Não foi possível carregar os dados.";
             graficosNota.textContent = "Dados indisponíveis";
             insights.innerHTML = '<div class="leme-insight-card"><strong>Indisponível</strong><span>Não foi possível carregar os indicadores bibliométricos.</span></div>';
-            [chartAnoEl, chartLinhaEl, chartMacroEl, chartOrientadorEl, chartBaseEl, chartAutoresRefEl, chartTipoEl, chartPublicoEl, chartNivelEl]
+            [chartAnoEl, chartLinhaEl, chartMacroEl, chartOrientadorEl, chartBaseEl, chartAutoresRefEl, chartTipoEl, chartPublicoEl, chartNivelEl, chartFormatoEl]
                 .forEach(el => {
                     if (el) el.innerHTML = '<div class="leme-empty-chart">Dados indisponíveis no momento.</div>';
                 });

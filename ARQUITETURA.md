@@ -43,6 +43,8 @@ flowchart TD
     DIST --> FE["Preview Local (index.html + frontend/*)"]
     FE --> BUILD["Build Elementor-Safe (scripts/build_frontend.py)"]
     BUILD --> WIDGET["Bundle WordPress/Elementor (dist/widget-elementor.html)"]
+    DIST --> PAGES["Deploy GitHub Pages (.github/workflows/pages.yml) + Loader"]
+    WIDGET --> PAGES
 ```
 
 ---
@@ -53,7 +55,7 @@ flowchart TD
 * **Etapa 2 — Extração Determinística ([pipeline/step2_deterministic.py](pipeline/step2_deterministic.py) + [pipeline/extractors/](pipeline/extractors) + [pipeline/references.py](pipeline/references.py)):** Orquestrador enxuto que delega leitura/recorte de PDFs via `pymupdf` (`pdf_sections.py`), extração de coorientadores e palavras-chave (`metadata.py`), classificação de Macroprojeto/Linha, tipologia CAPES e formato específico do produto (`classifiers.py`), scraping/cache do eduCAPES (`educapes.py`) e parsing ABNT de `autores_referenciados` (`references.py`).
 * **Etapa 3 — Inferência Semântica e Hidratação ([pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py) + [pipeline/llm_provider.py](pipeline/llm_provider.py) + [pipeline/normalizers.py](pipeline/normalizers.py) + [pipeline/catalogs.py](pipeline/catalogs.py) + [pipeline/SKILL.md](pipeline/SKILL.md)):** Envia apenas um JSON compacto com os fragmentos relevantes (nunca o PDF inteiro) ao provedor configurado (`gemini`, `groq`, `mistral`, `openrouter` ou `ollama` local), aplica normalização canônica e trava de confiança (`RespostaInterpretativaLLM`) e hidrata `data/records/EPT-XXXX.json`. Inclui modo offline `--sync-deterministico`.
 * **Etapa 4 — Curadoria Bidirecional e Compilação ([pipeline/step4_compile.py](pipeline/step4_compile.py)):** Importa decisões humanas (`APROVADO` / `MANTER_NULO`) de `dist/revisao_epistemologica_pendente.csv` para `data/records/`, executa reconciliação global de `autores_referenciados` via `pipeline/references.py`, valida todos os registros contra `ContratoDefesaV4` e `PainelEptV4Output`, publica `dist/painel-ept-v4.json` e atualiza o CSV com as pendências restantes.
-* **Frontend e Empacotamento Elementor (`index.html` + `frontend/` + `scripts/build_frontend.py`):** Mantém HTML, CSS e Vanilla JS separados para desenvolvimento local e compila `dist/widget-elementor.html` (autocontido, zero dependências externas, CSS 100% escopado em `#leme-painel-ept` e sem linhas em branco) para colagem no **Widget HTML (`</>`)** do Elementor.
+* **Frontend e Empacotamento Elementor (`index.html` + `frontend/` + `scripts/build_frontend.py` + `.github/workflows/pages.yml`):** Mantém HTML, CSS e Vanilla JS separados para desenvolvimento local e compila `dist/widget-elementor.html` (autocontido, zero dependências externas, CSS 100% escopado em `#leme-painel-ept` e sem linhas em branco), publicado continuamente da branch `main` no GitHub Pages com carregamento no **Widget HTML (`</>`)** do Elementor via snippet único `dist/loader-elementor.html`.
 
 ---
 
@@ -65,7 +67,9 @@ flowchart TD
 | [frontend/](frontend) / [index.html](index.html) | Rastreado | Código-fonte modular do painel v4 (`styles.css`, `app.js` e `index.html` para preview HTTP local). |
 | [scripts/build_frontend.py](scripts/build_frontend.py) | Rastreado | Compilador e validador zero-dependência que gera `dist/widget-elementor.html` (`--check`). |
 | [dist/painel-ept-v4.json](dist/painel-ept-v4.json) | Rastreado | Catálogo bibliométrico final validado por `PainelEptV4Output` e consumido pelo frontend. |
-| [dist/widget-elementor.html](dist/widget-elementor.html) | Rastreado | Artefato único compactado pronto para colagem no **Widget HTML (`</>`)** do Elementor. |
+| [dist/widget-elementor.html](dist/widget-elementor.html) | Rastreado | Artefato único compactado pronto para entrega pelo GitHub Pages ou colagem direta no **Widget HTML (`</>`)** do Elementor. |
+| [dist/loader-elementor.html](dist/loader-elementor.html) | Rastreado | Snippet enxuto (26 linhas) para colagem única no **Widget HTML (`</>`)** que carrega `dist/widget-elementor.html` do GitHub Pages e reexecuta o `<script>`. |
+| [.github/workflows/pages.yml](.github/workflows/pages.yml) | Rastreado | Workflow do GitHub Actions na `main` que valida `--check` e publica apenas os artefatos públicos no GitHub Pages. |
 | [dist/revisao_epistemologica_pendente.csv](dist/revisao_epistemologica_pendente.csv) | Rastreado | Planilha bidirecional de curadoria humana (`;`, `UTF-8-SIG`) para bases pendentes. |
 | [tests/test_pipeline_v4.py](tests/test_pipeline_v4.py) | Rastreado | Suíte de testes unitários offline (`unittest`). |
 | [pyproject.toml](pyproject.toml) / [uv.lock](uv.lock) | Rastreado | Manifesto de dependências Python (`>=3.14`) gerenciado via `uv`. |

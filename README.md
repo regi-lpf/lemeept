@@ -12,7 +12,7 @@ Repositório da pipeline de coleta, extração híbrida (determinística + LLM),
 | **[ARQUITETURA.md](ARQUITETURA.md)** | Visão executiva da arquitetura, fluxo Mermaid, mapa de diretórios/artefatos e regras de governança. |
 | **[CONTRATO_DADOS.md](CONTRATO_DADOS.md)** | Especificação de domínio v4, taxonomia CAPES/ProfEPT (Linhas, MPs, 9 Tipos, 5 Públicos, 8 Níveis, 7 Matrizes) e regras de evidência. |
 | **[DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md)** | Referência de engenharia: stack, variáveis de ambiente, schemas Pydantic v2 (`pipeline/models_v4.py`) e implementação interna dos módulos e do frontend. |
-| **[AUDITORIA_E_REFATORACAO.md](AUDITORIA_E_REFATORACAO.md)** | Registro rastreável das 53 melhorias aplicadas (`AUD-01` a `AUD-25` na pipeline e `FE-01` a `FE-28` no frontend) e backlog futuro. |
+| **[AUDITORIA_E_REFATORACAO.md](AUDITORIA_E_REFATORACAO.md)** | Registro rastreável das 55 melhorias aplicadas (`AUD-01` a `AUD-25` na pipeline e `FE-01` a `FE-30` no frontend) e backlog futuro. |
 | **[RELATORIOS.md](RELATORIOS.md)** | Relatório executivo de resultados do acervo compilado, orçamento empírico de tokens (viabilidade em 8 GB VRAM) e marcos históricos por etapa. |
 
 ---
@@ -76,7 +76,7 @@ Acesse `http://localhost:8000/index.html`. Após editar os fontes, gere e valide
 python3 scripts/build_frontend.py
 ```
 
-> **Atenção ao colar no Elementor / WordPress:** cole o conteúdo de [dist/widget-elementor.html](dist/widget-elementor.html) **exclusivamente no Widget HTML (`</>`)** nativo do Elementor. **Nunca** utilize o widget **Editor de Texto**, pois o TinyMCE/`wpautop` injeta tags `<p>`/`<span>`, decodifica entidades HTML e quebra os scripts do painel.
+> **Deploy no Elementor / WordPress:** em produção via GitHub Pages (publicado a partir da branch `main` por [.github/workflows/pages.yml](.github/workflows/pages.yml)), basta colar uma única vez o snippet [dist/loader-elementor.html](dist/loader-elementor.html) (ou, para colagem estática offline, o bundle completo [dist/widget-elementor.html](dist/widget-elementor.html)) **exclusivamente no Widget HTML (`</>`)** nativo do Elementor. **Nunca** utilize o widget **Editor de Texto**, pois o TinyMCE/`wpautop` injeta tags `<p>`/`<span>`, decodifica entidades HTML e quebra os scripts do painel.
 
 ---
 
