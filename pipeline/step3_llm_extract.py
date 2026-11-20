@@ -6,6 +6,7 @@ from typing import Any, Dict, List, Optional
 
 from pydantic import ValidationError
 
+from pipeline.catalogs import MP_PARA_LP
 from pipeline.llm_provider import LLMClient
 from pipeline.models_v4 import (
     ContratoDefesaV4,
@@ -28,15 +29,6 @@ logger = logging.getLogger("step3_llm_extract")
 SKILL_PATH = Path("pipeline/SKILL.md")
 STAGE2_DIR = Path("data/stage2_payloads")
 RECORDS_DIR = Path("data/records")
-
-MP_PARA_LP = {
-    "MP1": "LP1",
-    "MP2": "LP1",
-    "MP3": "LP1",
-    "MP4": "LP2",
-    "MP5": "LP2",
-    "MP6": "LP2",
-}
 
 
 def construir_indice_busca(registro: Dict[str, Any]) -> Dict[str, Any]:

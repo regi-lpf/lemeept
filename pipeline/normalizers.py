@@ -2,37 +2,26 @@ import re
 import unicodedata
 from typing import Dict, List, Optional, Tuple
 
+from pipeline.catalogs import (
+    ALIASES_BASE_EPISTEMOLOGICA,
+    ALIASES_DOCENTES,
+    ALIASES_NIVEL_APLICACAO,
+    BASES_EPISTEMOLOGICAS_CANONICAS,
+    NIVEIS_APLICACAO_CANONICOS,
+    PREPOSICOES_NOME,
+)
 
 CONTROLE_INVISIVEL_RE = re.compile(
     r"[\u200b-\u200f\u202a-\u202e\ufeff\x00-\x08\x0b\x0c\x0e-\x1f]"
 )
 
-PREPOSICOES_NOME = {"da", "de", "do", "das", "dos", "e"}
+MAIUSCULAS_PT = "A-ZÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ"
+MINUSCULAS_PT = "a-zàáâãäåçèéêëìíîïñòóôõöùúûüý"
 
 TITULACOES_PESSOA_RE = re.compile(
-    r"^\s*(?:prof(?:essor(?:a|\(a\))?|\.?[ªao])?\.?|dr(?:a|\.?[ªa])?\.?|doutor(?:a|\(a\))?|m[ea]\.?|m\.?sc\.?|esp(?:ecialista)?\.?|ph\.?d\.?)(?=\s|$)\s*",
+    r"^\s*(?:prof(?:essor(?:a|\(a\))?|\.?[ªao])?|dr(?:a|\.?[ªa])?|doutor(?:a|\(a\))?|m[ea]|m\.?sc|esp(?:ecialista)?|ph\.?d)"
+    rf"(?:\.(?=\s|:|$|[{MAIUSCULAS_PT}])|(?=[\s:]|$))\s*",
     flags=re.IGNORECASE,
-)
-
-BASES_EPISTEMOLOGICAS_CANONICAS: Tuple[str, ...] = (
-    "Materialismo Histórico-Dialético",
-    "Pedagogia Histórico-Crítica",
-    "Educação Libertadora / Freireana",
-    "Teoria Histórico-Cultural / Sociointeracionismo",
-    "Aprendizagem Significativa",
-    "Teoria Crítica",
-    "Pensamento Complexo / Interdisciplinaridade",
-)
-
-NIVEIS_APLICACAO_CANONICOS: Tuple[str, ...] = (
-    "Ensino Médio Integrado",
-    "Curso Técnico Subsequente",
-    "EJA / PROEJA",
-    "Formação de Professores",
-    "Educação Superior",
-    "Ensino Fundamental",
-    "Gestão Institucional",
-    "Educação Profissional e Tecnológica",
 )
 
 
@@ -81,13 +70,10 @@ def formatar_nome_proprio(nome: str) -> str:
     if not limpo:
         return ""
     palavras = limpo.lower().split(" ")
-    resultado = []
-    for i, p in enumerate(palavras):
-        if i > 0 and p in PREPOSICOES_NOME:
-            resultado.append(p)
-        else:
-            resultado.append(p.capitalize())
-    return " ".join(resultado)
+    return " ".join(
+        p if i > 0 and p in PREPOSICOES_NOME else p.capitalize()
+        for i, p in enumerate(palavras)
+    )
 
 
 def limpar_nome_pessoa(bruto: str) -> str:
@@ -107,39 +93,13 @@ def limpar_nome_pessoa(bruto: str) -> str:
     return nome
 
 
-_ALIASES_DOCENTES: Dict[str, str] = {
-    "fatima perez zago de oliveira": "Fátima Peres Zago de Oliveira",
-    "fatima peres zago de oliveira": "Fátima Peres Zago de Oliveira",
-    "inge r f suhr": "Inge Renate Frose Suhr",
-    "inge renate frose suhr": "Inge Renate Frose Suhr",
-    "eduardo werneck ribeiro": "Eduardo Augusto Werneck Ribeiro",
-    "eduardo augusto werneck ribeiro": "Eduardo Augusto Werneck Ribeiro",
-    "leandro marcos alves salgado": "Leandro Marcos Salgado Alves",
-    "leandro marcos salgado alves": "Leandro Marcos Salgado Alves",
-    "sonia regina de souza fernandes": "Sônia Regina de Souza Fernandes",
-    "reginaldo leandro placido": "Reginaldo Leandro Plácido",
-    "cloves alexandre de castro": "Cloves Alexandre de Castro",
-    "jorge da cunha dutra": "Jorge da Cunha Dutra",
-    "raquel cardoso de faria e custodio": "Raquel Cardoso de Faria e Custódio",
-    "eder aparecido de carvalho": "Eder Aparecido de Carvalho",
-    "denise fernandes": "Denise Fernandes",
-    "humberto luis de cesaro": "Humberto Luis de Cesaro",
-    "simao alberto": "Simão Alberto",
-    "juliene marques bogo": "Juliene Marques Bogo",
-    "viviane grimm": "Viviane Grimm",
-    "sara nunes": "Sara Nunes",
-    "bruno nunes batista": "Bruno Nunes Batista",
-    "ivonete telles medeiros placido": "Ivonete Telles Medeiros Plácido",
-}
-
-
 def normalizar_nome_orientador(nome: Optional[str]) -> str:
     """Limpa titulações/pontuação de orientadores e resolve aliases canônicos conhecidos."""
     limpo = limpar_nome_pessoa(nome or "")
     if not limpo:
         return ""
     chave = normalizar_texto_busca(limpo)
-    return _ALIASES_DOCENTES.get(chave, limpo)
+    return ALIASES_DOCENTES.get(chave, limpo)
 
 
 def limpar_prefixo_orientador(texto: str) -> str:
@@ -174,32 +134,6 @@ def limpar_resumo_publico(resumo: str) -> str:
     return texto.strip()
 
 
-_ALIASES_BASE_EPISTEMOLOGICA: Dict[str, str] = {
-    "materialismo historico dialetico": "Materialismo Histórico-Dialético",
-    "materialismo historico e dialetico": "Materialismo Histórico-Dialético",
-    "mhd": "Materialismo Histórico-Dialético",
-    "pedagogia historico critica": "Pedagogia Histórico-Crítica",
-    "pedagogia historico critica de saviani": "Pedagogia Histórico-Crítica",
-    "pedagogia historico critica de dermeval saviani": "Pedagogia Histórico-Crítica",
-    "pedagogia historico critica de demerval saviani": "Pedagogia Histórico-Crítica",
-    "educacao libertadora freireana": "Educação Libertadora / Freireana",
-    "educacao libertadora": "Educação Libertadora / Freireana",
-    "pedagogia freireana": "Educação Libertadora / Freireana",
-    "educacao freireana": "Educação Libertadora / Freireana",
-    "pedagogia libertadora": "Educação Libertadora / Freireana",
-    "teoria historico cultural sociointeracionismo": "Teoria Histórico-Cultural / Sociointeracionismo",
-    "teoria historico cultural": "Teoria Histórico-Cultural / Sociointeracionismo",
-    "sociointeracionismo": "Teoria Histórico-Cultural / Sociointeracionismo",
-    "historico cultural": "Teoria Histórico-Cultural / Sociointeracionismo",
-    "aprendizagem significativa": "Aprendizagem Significativa",
-    "teoria da aprendizagem significativa": "Aprendizagem Significativa",
-    "teoria critica": "Teoria Crítica",
-    "pensamento complexo interdisciplinaridade": "Pensamento Complexo / Interdisciplinaridade",
-    "pensamento complexo": "Pensamento Complexo / Interdisciplinaridade",
-    "interdisciplinaridade": "Pensamento Complexo / Interdisciplinaridade",
-}
-
-
 def normalizar_base_epistemologica(valor: Optional[str]) -> Tuple[Optional[str], bool]:
     """
     Mapeia uma matriz epistemológica (ou composição válida de matrizes canônicas)
@@ -213,16 +147,15 @@ def normalizar_base_epistemologica(valor: Optional[str]) -> Tuple[Optional[str],
         return None, False
 
     chave = normalizar_texto_busca(limpo)
-    if chave in _ALIASES_BASE_EPISTEMOLOGICA:
-        return _ALIASES_BASE_EPISTEMOLOGICA[chave], True
+    if chave in ALIASES_BASE_EPISTEMOLOGICA:
+        return ALIASES_BASE_EPISTEMOLOGICA[chave], True
 
     # Suporta composições declaradas entre matrizes canônicas (ex: "MHD e PHC")
     partes = [p.strip() for p in re.split(r"\s*(?:\be\b|,|;|\+|/)\s*", limpo) if p.strip()]
     if len(partes) > 1:
         resolvidas: List[str] = []
         for parte in partes:
-            chave_parte = normalizar_texto_busca(parte)
-            canon = _ALIASES_BASE_EPISTEMOLOGICA.get(chave_parte)
+            canon = ALIASES_BASE_EPISTEMOLOGICA.get(normalizar_texto_busca(parte))
             if not canon:
                 return limpo, False
             if canon not in resolvidas:
@@ -230,41 +163,6 @@ def normalizar_base_epistemologica(valor: Optional[str]) -> Tuple[Optional[str],
         return " e ".join(resolvidas), True
 
     return limpo, False
-
-
-_ALIASES_NIVEL_APLICACAO: Dict[str, str] = {
-    "ensino medio integrado": "Ensino Médio Integrado",
-    "curso tecnico integrado ao ensino medio": "Ensino Médio Integrado",
-    "medio integrado": "Ensino Médio Integrado",
-    "tecnico integrado": "Ensino Médio Integrado",
-    "ensino medio tecnico integrado": "Ensino Médio Integrado",
-    "curso tecnico subsequente": "Curso Técnico Subsequente",
-    "tecnico subsequente": "Curso Técnico Subsequente",
-    "ensino tecnico subsequente": "Curso Técnico Subsequente",
-    "ensino medio profissional": "Curso Técnico Subsequente",
-    "eja proeja": "EJA / PROEJA",
-    "eja": "EJA / PROEJA",
-    "proeja": "EJA / PROEJA",
-    "educacao de jovens e adultos": "EJA / PROEJA",
-    "formacao de professores": "Formação de Professores",
-    "formacao docente": "Formação de Professores",
-    "formacao continuada": "Formação de Professores",
-    "capacitacao docente": "Formação de Professores",
-    "educacao superior": "Educação Superior",
-    "ensino superior": "Educação Superior",
-    "universitario": "Educação Superior",
-    "graduacao": "Educação Superior",
-    "pos graduacao": "Educação Superior",
-    "ensino fundamental": "Ensino Fundamental",
-    "gestao institucional": "Gestão Institucional",
-    "gestao escolar": "Gestão Institucional",
-    "educacao profissional e tecnologica": "Educação Profissional e Tecnológica",
-    "ept": "Educação Profissional e Tecnológica",
-    "educacional academico": "Educação Profissional e Tecnológica",
-    "educacional": "Educação Profissional e Tecnológica",
-    "ensino medio superior": "Educação Profissional e Tecnológica",
-    "ensino medio integral e superior": "Educação Profissional e Tecnológica",
-}
 
 
 def normalizar_nivel_aplicacao(nivel: Optional[str]) -> str:
@@ -277,8 +175,8 @@ def normalizar_nivel_aplicacao(nivel: Optional[str]) -> str:
         return "Educação Profissional e Tecnológica"
 
     chave = normalizar_texto_busca(limpo)
-    if chave in _ALIASES_NIVEL_APLICACAO:
-        return _ALIASES_NIVEL_APLICACAO[chave]
+    if chave in ALIASES_NIVEL_APLICACAO:
+        return ALIASES_NIVEL_APLICACAO[chave]
 
     # Evita que slugs snake_case não mapeados da LLM vazem para o frontend
     if "_" in limpo and limpo == limpo.lower():

@@ -83,7 +83,7 @@ python3 scripts/build_frontend.py
 ## 5. Verificação e Testes Automatizados
 
 ```bash
-uv run python -m py_compile pipeline/*.py tests/*.py scripts/build_frontend.py
+uv run python -m py_compile pipeline/*.py pipeline/extractors/*.py tests/*.py scripts/build_frontend.py
 uv run python -m unittest discover -s tests -v
 python3 scripts/build_frontend.py --check
 ```

@@ -91,5 +91,5 @@ A todo produto educacional aplica-se **exatamente um** tipo principal canônico.
 
 ## 6. Metadados Determinísticos de Origem (Etapa 2)
 
-* **Da Dissertação (`RecortesTextuais` + `DissertacaoDeterministica`):** `capa` (instituição, campus, autor, título, orientador, ano), `ficha_catalografica`, `sumario`, `resumo`, `introducao`, `palavras_chave` (extraídas do resumo), `autores_referenciados` (sobrenomes normalizados extraídos das referências ABNT) e `coorientadores` (extraídos das páginas preliminares e ficha catalográfica).
+* **Da Dissertação (`RecortesTextuais` + `DissertacaoDeterministica`):** `capa` (instituição, campus, autor, título, orientador, ano), `ficha_catalografica`, `sumario`, `resumo`, `introducao`, `palavras_chave` (extraídas do resumo), `autores_referenciados` (nomes completos normalizados e reconciliados extraídos das referências ABNT) e `coorientadores` (extraídos das páginas preliminares e ficha catalográfica).
 * **Do Produto Educacional (`EvidenciasEduCAPES`):** `autores_colaboradores` (nomes e papéis `creator`/`contributor`), `identificadores` (esquema, valor e URL), `data_publicacao` (`YYYY-MM-DD`, `YYYY-MM` ou `YYYY`), `colecao_educapes`, `dc_type_educapes` e `palavras_chave_educapes`.

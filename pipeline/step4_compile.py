@@ -5,10 +5,11 @@ import logging
 from datetime import datetime, timezone
 from enum import Enum
 from pathlib import Path
-from typing import List
+from typing import Dict, List
 
 from pipeline.models_v4 import ContratoDefesaV4, PainelEptV4Output
 from pipeline.normalizers import normalizar_base_epistemologica
+from pipeline.references import reconciliar_autores_referenciados
 from pipeline.step3_llm_extract import construir_indice_busca
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -128,6 +129,7 @@ def compilar_pipeline_v4(
         raise RuntimeError(f"Nenhum registro encontrado em {records_dir}")
 
     registros_validados: List[ContratoDefesaV4] = []
+    raw_por_id: Dict[str, tuple[Path, dict]] = {}
     pendentes_revisao: List[dict] = []
 
     for arq in arquivos:
@@ -136,7 +138,32 @@ def compilar_pipeline_v4(
 
         registro = ContratoDefesaV4.model_validate(raw)
         registros_validados.append(registro)
+        raw_por_id[registro.id] = (arq, raw)
 
+    # 2b. Reconciliação determinística global de autores referenciados no acervo
+    mapa_autores = {
+        reg.id: list(reg.dissertacao.autores_referenciados)
+        for reg in registros_validados
+    }
+    autores_reconciliados = reconciliar_autores_referenciados(mapa_autores)
+    qtd_reconciliados = 0
+    for idx, registro in enumerate(registros_validados):
+        novos_autores = autores_reconciliados.get(registro.id, [])
+        if novos_autores != registro.dissertacao.autores_referenciados:
+            arq, raw = raw_por_id[registro.id]
+            raw["dissertacao"]["autores_referenciados"] = novos_autores
+            raw["indice_busca"] = construir_indice_busca(raw)
+            registro_atualizado = ContratoDefesaV4.model_validate(raw)
+            arq.write_text(registro_atualizado.model_dump_json(indent=2), encoding="utf-8")
+            registros_validados[idx] = registro_atualizado
+            qtd_reconciliados += 1
+
+    if qtd_reconciliados:
+        logger.info(
+            f"Autores referenciados reconciliados em {qtd_reconciliados} registro(s) de {records_dir}."
+        )
+
+    for registro in registros_validados:
         base = registro.dissertacao.base_epistemologica
         if base.revisao_pendente:
             evidencia_principal = base.evidencias[0] if base.evidencias else None

@@ -42,6 +42,11 @@ from pipeline.normalizers import (
     normalizar_texto_busca,
     remover_acentos,
 )
+from pipeline.references import (
+    extrair_autores_referencias as extrair_autores_ref_direto,
+    normalizar_autor_referencia,
+    reconciliar_autores_referenciados,
+)
 from pipeline.step1_collect import (
     carregar_mapeamento_ids_existentes,
     extrair_defesas_do_html,
@@ -247,6 +252,29 @@ class TestStep2Deterministic(unittest.TestCase):
         self.assertIn("6. REFERÊNCIAS", texto_refs)
         self.assertNotIn("isolada em minúsculas", texto_refs)
 
+    def test_isolar_secoes_pdf_corta_apendices_e_aceita_multiplas_secoes_refs(self):
+        paginas = [
+            (1, "Capa IFC Blumenau"),
+            (2, "Folha de rosto"),
+            (3, "RESUMO\nResumo do estudo."),
+            (4, "SUMÁRIO\n1 INTRODUÇÃO .... 5\n5 REFERÊNCIAS .... 8"),
+            (5, "REFERÊNCIAS\nAPÊNDICE A\nANEXO B\n10"),  # continuação de sumário sem pontilhado
+            (6, "1. INTRODUÇÃO\nTexto introdutório da pesquisa."),
+            (7, "2. DESENVOLVIMENTO\nCorpo do artigo 1."),
+            (8, "REFERÊNCIAS\nSAVIANI, Dermeval. Pedagogia. São Paulo: Autores Associados, 2007."),
+            (9, "GUIA DIDÁTICO DO PRODUTO\nTexto corrido do produto educacional sem referências bibliográficas ao longo de toda a página para testar o corte automático por mudança de seção."),
+            (10, "3. ARTIGO 2\nREFERÊNCIAS\nKAPLÚN,\nGabriel. Materiales educativos. Montevideo, 2003."),
+            (11, "APÊNDICE A – QUESTIONÁRIO\nQUESTIONÁRIO APLICADO, Questionário 1. 2024.\nTERMO DE AUTORIZAÇÃO, Consentimento livre. 2024."),
+        ]
+        _, texto_refs = isolar_secoes_pdf(paginas)
+        self.assertIn("SAVIANI, Dermeval", texto_refs)
+        self.assertIn("KAPLÚN,", texto_refs)
+        self.assertNotIn("GUIA DIDÁTICO DO PRODUTO", texto_refs)
+        self.assertNotIn("QUESTIONÁRIO APLICADO", texto_refs)
+        self.assertNotIn("TERMO DE AUTORIZAÇÃO", texto_refs)
+        autores = extrair_autores_referencias(texto_refs)
+        self.assertEqual(autores, ["Dermeval Saviani", "Gabriel Kaplún"])
+
     def test_extrair_palavras_chave_variantes(self):
         self.assertEqual(
             extrair_palavras_chave_resumo("Texto\nPalavras-chaves: Gênero. Sexualidade. EPT."),
@@ -309,18 +337,54 @@ class TestStep2Deterministic(unittest.TestCase):
         texto = """
         BRASIL. Ministério da Educação. Diretrizes. 2020.
         EDUCAÇÃO, Revista de. Editorial. 2021.
-        DE SOUZA JUNIOR, João. Título. 2018.
-        ÁVILA, Maria. Título. 2019.
-        MÜLLER, Hans. Título. 2017.
-        PEÑA, Carlos. Título. 2016.
-        ESPÍRITO SANTO, Ruy. Título. 2022.
-        SAVIANI, Dermeval. Pedagogia. 2007.
+        INSTITUTO FEDERAL CATARINENSE. Plano de Desenvolvimento. 2022.
+        FATORES EXPLICATIVOS, Dados Gerais do Formulário. 2024.
+        QUESTIONÁRIO APLICADO, Respostas de Estudantes. 2023.
+        TERMO DE AUTORIZAÇÃO, Participação em Pesquisa. 2024.
+        COMPONENTE CURRICULAR, Organização Escolar. 2022.
+        GEÓGRAFOS, 7., 2014, Vitória. Anais [...]. 2014.
+        MOODLE, nesse contexto, opera como ambiente virtual em 2023.
+        BRIQUET DE LEMOS, Antonio A. Bibliotecas. Brasília, 1998.
+        PLÁCIDO, Reginaldo Leandro Plácido. Políticas de EPT. 2020.
+        DE SOUZA JUNIOR, João. Título da obra. 2018.
+        ÁVILA, Maria. Título da obra. 2019.
+        MÜLLER, Hans. Título da obra. 2017.
+        PEÑA, Carlos. Título da obra. 2016.
+        ESPÍRITO SANTO, Ruy. Título da obra. 2022.
+        SAVIANI, Dermeval. Pedagogia histórico-crítica. 2007.
+        FRIGOTTO, Gaudêncio; CIAVATTA, Maria; RAMOS, Marise Nogueira (Orgs.). Ensino Médio Integrado. 2005.
+        LÜDKE, M. & ANDRÉ, Marli E. D. A. de. Pesquisa em educação. 1986.
+        FREIRE, Paulo e SHOR, Ira. Medo e ousadia. 1986.
+        ABRAMO, H.W. Espaços de juventude. In: FREITAS, M.V. de; PAPA, F. de C. (Org.). Juventude. 2008.
+        KAPLÚN,
+        Gabriel. Aprender y enseñar. 2003.
         """
         autores = extrair_autores_referencias(texto)
         self.assertEqual(
             autores,
-            ["Espírito Santo", "Müller", "Peña", "Saviani", "Souza", "Ávila"],
+            [
+                "Antonio A. Briquet de Lemos",
+                "Carlos Peña",
+                "Dermeval Saviani",
+                "Gabriel Kaplún",
+                "Gaudêncio Frigotto",
+                "H. W. Abramo",
+                "Hans Müller",
+                "Ira Shor",
+                "João de Souza Junior",
+                "Maria Ávila",
+                "Maria Ciavatta",
+                "Marise Nogueira Ramos",
+                "Marli André",
+                "Menga Lüdke",
+                "Paulo Freire",
+                "Reginaldo Leandro Plácido",
+                "Ruy Espírito Santo",
+            ],
         )
+        # In: organizadores não entram como autores principais e ruídos são descartados
+        self.assertNotIn("M. V. de Freitas", autores)
+        self.assertNotIn("F. de C. Papa", autores)
 
     def test_classificar_produto_com_fonte_alinhado(self):
         t1, f1 = classificar_produto_com_fonte("Podcast – Vozes da EPT", "", "", None, [])
@@ -449,6 +513,8 @@ class TestNormalizersAndStep3(unittest.TestCase):
 
         self.assertEqual(limpar_nome_pessoa("Profa. Dra. ANA MARIA DE SOUZA (IFC),"), "Ana Maria de Souza")
         self.assertEqual(limpar_nome_pessoa("Prof. Me. Esp. João Carlos:"), "João Carlos")
+        self.assertEqual(normalizar_nome_orientador("Dr.Reginaldo Leandro Plácido"), "Reginaldo Leandro Plácido")
+        self.assertEqual(normalizar_nome_orientador("Dra.: Juliene Marques Bogo"), "Juliene Marques Bogo")
         self.assertEqual(limpar_nome_pessoa("Débora Magna Santos Costa de Souza,"), "Débora Magna Santos Costa de Souza")
 
         self.assertEqual(limpar_prefixo_orientador(": Viviane Grimm"), "Viviane Grimm")
@@ -461,6 +527,54 @@ class TestNormalizersAndStep3(unittest.TestCase):
         self.assertEqual(normalizar_nome_orientador("Leandro Marcos Alves Salgado"), "Leandro Marcos Salgado Alves")
         self.assertEqual(normalizar_nome_orientador("Sonia Regina de Souza Fernandes."), "Sônia Regina de Souza Fernandes")
         self.assertEqual(normalizar_nome_orientador("Carlos Eduardo Monteiro"), "Carlos Eduardo Monteiro")
+
+    def test_normalizacao_e_reconciliacao_autores_referenciados(self):
+        self.assertEqual(normalizar_autor_referencia("Demerval Saviani."), "Dermeval Saviani")
+        self.assertEqual(normalizar_autor_referencia("H.W. Abramo,"), "H. W. Abramo")
+        self.assertEqual(normalizar_autor_referencia("Lev Vigotski"), "Lev Vygotsky")
+        self.assertEqual(normalizar_autor_referencia("trivinos"), "trivinos")
+
+        reconciliado = reconciliar_autores_referenciados(
+            {
+                "EPT-0001": [
+                    "Kaplun",  # sobrenome isolado raro mantido como está se não bater
+                    "Gabriel Káplun",
+                    "Placido",
+                    "R. L. Placido",
+                    "Augusto Nibaldo Silva Trivinos",
+                    "Demerval Saviani",
+                    "M. Silva",
+                ],
+                "EPT-0002": [
+                    "Gabriel Kaplún",
+                    "Reginaldo L. Plácido",
+                    "Augusto Nibaldo Silva Triviños",
+                    "D. Saviani",
+                    "Marise Ramos",
+                    "D. L. Lima Filho",
+                    "Maria Silva",
+                ],
+                "EPT-0003": [
+                    "Marise Nogueira Ramos",
+                    "Reginaldo Leandro Plácido",
+                    "Domingos Leite Lima Filho",
+                    "Marcos Silva",
+                    "Acacia Zeneida Kuenzer",
+                ],
+            }
+        )
+        # Regra 1 & aliases: Gabriel Kaplún, Triviños, Saviani, Plácido e Domingos Leite Lima Filho
+        self.assertIn("Gabriel Kaplún", reconciliado["EPT-0001"])
+        self.assertIn("Augusto Nibaldo Silva Triviños", reconciliado["EPT-0001"])
+        self.assertIn("Dermeval Saviani", reconciliado["EPT-0001"])
+        self.assertIn("Reginaldo Leandro Plácido", reconciliado["EPT-0001"])
+        self.assertIn("Dermeval Saviani", reconciliado["EPT-0002"])
+        self.assertIn("Marise Nogueira Ramos", reconciliado["EPT-0002"])
+        self.assertIn("Domingos Leite Lima Filho", reconciliado["EPT-0002"])
+        # Homônimo ambíguo ('M. Silva' com Maria Silva e Marcos Silva) NÃO é fundido indevidamente
+        self.assertIn("M. Silva", reconciliado["EPT-0001"])
+        self.assertIn("Maria Silva", reconciliado["EPT-0002"])
+        self.assertIn("Marcos Silva", reconciliado["EPT-0003"])
 
     def test_prompt_enxuto_e_montar_registro_final_rejeita_nao_canonico(self):
         payload = _make_sample_payload(mp="MP_INDEFINIDO", lp="LP1")
@@ -649,6 +763,76 @@ class TestStep4Compile(unittest.TestCase):
             self.assertTrue(rec_final.dissertacao.base_epistemologica.curado_humano)
             self.assertFalse(rec_final.dissertacao.base_epistemologica.revisao_pendente)
             self.assertIn("pedagogia historico critica", rec_final.indice_busca.texto_busca_normalizado)
+
+    def test_compilar_reconcilia_autores_entre_registros_e_eh_idempotente(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            rec_dir = tmp_path / "records"
+            dist_dir = tmp_path / "dist"
+            rec_dir.mkdir()
+            dist_dir.mkdir()
+
+            resp_ok = RespostaInterpretativaLLM(
+                macroprojeto="MP1",
+                produto_titulo="Produto Teste",
+                produto_tipo="material_didatico_instrucional",
+                produto_publico_alvo=["docentes_professores"],
+                produto_nivel_aplicacao="Ensino Médio Integrado",
+                base_epistemologica=BaseEpistemologicaLLM(
+                    valor="pedagogia_historico_critica",
+                    candidato=None,
+                    confianca="alta",
+                    justificativa="Fundamentado em Saviani.",
+                    evidencias=[EvidenciaCurtaLLM(secao="Introdução", pagina=12, trecho_curto="Prática social.")],
+                ),
+            )
+            p1 = _make_sample_payload(cod="EPT-0903", autores_ref=["Gabriel Kaplun", "D. H. Moura"])
+            p2 = _make_sample_payload(cod="EPT-0904", autores_ref=["Gabriel Kaplún", "Dante Henrique Moura"])
+            (rec_dir / "EPT-0903.json").write_text(montar_registro_final(p1, resp_ok).model_dump_json(indent=2), encoding="utf-8")
+            (rec_dir / "EPT-0904.json").write_text(montar_registro_final(p2, resp_ok).model_dump_json(indent=2), encoding="utf-8")
+
+            saida1 = compilar_pipeline_v4(records_dir=rec_dir, dist_dir=dist_dir)
+            r1 = next(d for d in saida1.defesas if d.id == "EPT-0903")
+            self.assertEqual(r1.dissertacao.autores_referenciados, ["Dante Henrique Moura", "Gabriel Kaplún"])
+            self.assertIn("dante henrique moura", r1.indice_busca.texto_busca_normalizado)
+
+            # Arquivo individual também foi atualizado e segunda compilação é idempotente
+            gravado = ContratoDefesaV4.model_validate_json((rec_dir / "EPT-0903.json").read_text(encoding="utf-8"))
+            self.assertEqual(gravado.dissertacao.autores_referenciados, ["Dante Henrique Moura", "Gabriel Kaplún"])
+            with self.assertLogs("step4_compile", level="INFO") as logs:
+                compilar_pipeline_v4(records_dir=rec_dir, dist_dir=dist_dir)
+            self.assertFalse(any("reconciliados em" in m for m in logs.output))
+
+
+class TestCatalogsAndModularity(unittest.TestCase):
+    def test_resources_json_e_catalogs_sem_duplicacao(self):
+        from pipeline import catalogs
+        from pipeline.extractors import (
+            classifiers,
+            educapes,
+            metadata,
+            pdf_sections,
+        )
+
+        self.assertEqual(catalogs.MP_PARA_LP["MP1"], "LP1")
+        self.assertEqual(catalogs.MP_PARA_LP["MP6"], "LP2")
+
+        raw_ref = json.loads((catalogs.RESOURCES_DIR / "referencias.json").read_text(encoding="utf-8"))
+        self.assertEqual(
+            set(raw_ref["stopwords_entidade"]) & set(raw_ref["stopwords_token_nao_pessoa"]),
+            set(),
+        )
+        self.assertTrue({"capes", "brasil"}.issubset(catalogs.STOPWORDS_TOKEN_NAO_PESSOA))
+
+        for k, v in catalogs.ALIASES_DOCENTES.items():
+            self.assertEqual(catalogs.ALIASES_AUTORES_REFERENCIA.get(k), v)
+
+        # Garante que step2_deterministic reexporta os módulos especializados sem reescrita
+        self.assertIs(extrair_autores_referencias, extrair_autores_ref_direto)
+        self.assertIs(detectar_macroprojeto_e_linha, classifiers.detectar_macroprojeto_e_linha)
+        self.assertIs(extrair_coorientador, metadata.extrair_coorientador)
+        self.assertIs(isolar_secoes_pdf, pdf_sections.isolar_secoes_pdf)
+        self.assertIs(coletar_evidencias_educapes, educapes.coletar_evidencias_educapes)
 
 
 if __name__ == "__main__":

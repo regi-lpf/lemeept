@@ -19,8 +19,16 @@ flowchart TD
     S2 <--> CACHE["Cache HTML Local (data/cache_educapes/)"]
     S2 --> PAYLOAD["Payloads Stage 2 (data/stage2_payloads/EPT-XXXX.json)"]
 
-    NORM["Normalizadores Canônicos (pipeline/normalizers.py)"] --> S1
+    RES["Catálogos JSON (pipeline/resources/*.json)"] --> CAT["Loader Imutável (pipeline/catalogs.py)"]
+    CAT --> NORM["Normalizadores (pipeline/normalizers.py)"]
+    CAT --> REF["Referências ABNT (pipeline/references.py)"]
+    CAT --> S2
+    CAT --> S3
+
+    NORM --> S1
     NORM --> S2
+    NORM --> REF
+    REF --> S2
     PAYLOAD --> S3["Etapa 3: Inferência e Sync (step3_llm_extract.py)"]
     NORM --> S3
     SKILL["Instruções de Domínio (pipeline/SKILL.md)"] --> S3
@@ -29,6 +37,7 @@ flowchart TD
 
     REC --> S4["Etapa 4: Curadoria e Compilação (step4_compile.py)"]
     NORM --> S4
+    REF --> S4
     CSV["Planilha de Curadoria (dist/revisao_epistemologica_pendente.csv)"] <--> S4
     S4 --> DIST["Artefato Publicado (dist/painel-ept-v4.json)"]
     DIST --> FE["Preview Local (index.html + frontend/*)"]
@@ -41,9 +50,9 @@ flowchart TD
 ## 2. Estrutura Modular
 
 * **Etapa 1 — Coleta e Pré-Extração (`pipeline/step1_collect.py`):** Consulta a API REST do WordPress do ProfEPT com acionamento manual via CLI, preserva IDs estáveis (`EPT-XXXX`) cruzando manifestos existentes, registra metadados brutos em `data/stage1_manifest.json` e baixa os PDFs em `pdf/dissertacoes/` com validação `%PDF-` e `SHA-256`. Não executa LLM nem OCR.
-* **Etapa 2 — Extração Determinística (`pipeline/step2_deterministic.py`):** Extrai texto nativo dos PDFs via `pymupdf` (isolando capa, folha de rosto, ficha catalográfica, sumário, resumo, palavras-chave, introdução, trechos epistemológicos, referências citadas, `autores_referenciados` em ABNT e `coorientadores`), realiza scraping com cache local do eduCAPES (`?show=full`) e aplica classificadores determinísticos para Macroprojeto, Linha de Pesquisa e Tipo de Produto.
-* **Etapa 3 — Inferência Semântica e Hidratação (`pipeline/step3_llm_extract.py` + `pipeline/llm_provider.py` + `pipeline/normalizers.py` + `pipeline/SKILL.md`):** Envia apenas um JSON compacto com os fragmentos relevantes (nunca o PDF inteiro) ao provedor configurado (`gemini`, `groq`, `mistral`, `openrouter` ou `ollama` local), aplica normalização canônica e trava de confiança (`RespostaInterpretativaLLM`) e hidrata `data/records/EPT-XXXX.json`. Inclui modo offline `--sync-deterministico`.
-* **Etapa 4 — Curadoria Bidirecional e Compilação (`pipeline/step4_compile.py`):** Importa decisões humanas (`APROVADO` / `MANTER_NULO`) de `dist/revisao_epistemologica_pendente.csv` para `data/records/`, valida todos os registros contra `ContratoDefesaV4` e `PainelEptV4Output`, publica `dist/painel-ept-v4.json` e atualiza o CSV com as pendências restantes.
+* **Etapa 2 — Extração Determinística ([pipeline/step2_deterministic.py](pipeline/step2_deterministic.py) + [pipeline/extractors/](pipeline/extractors) + [pipeline/references.py](pipeline/references.py)):** Orquestrador enxuto que delega leitura/recorte de PDFs via `pymupdf` (`pdf_sections.py`), extração de coorientadores e palavras-chave (`metadata.py`), classificação de Macroprojeto/Linha/Tipo de Produto (`classifiers.py`), scraping/cache do eduCAPES (`educapes.py`) e parsing ABNT de `autores_referenciados` (`references.py`).
+* **Etapa 3 — Inferência Semântica e Hidratação ([pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py) + [pipeline/llm_provider.py](pipeline/llm_provider.py) + [pipeline/normalizers.py](pipeline/normalizers.py) + [pipeline/catalogs.py](pipeline/catalogs.py) + [pipeline/SKILL.md](pipeline/SKILL.md)):** Envia apenas um JSON compacto com os fragmentos relevantes (nunca o PDF inteiro) ao provedor configurado (`gemini`, `groq`, `mistral`, `openrouter` ou `ollama` local), aplica normalização canônica e trava de confiança (`RespostaInterpretativaLLM`) e hidrata `data/records/EPT-XXXX.json`. Inclui modo offline `--sync-deterministico`.
+* **Etapa 4 — Curadoria Bidirecional e Compilação ([pipeline/step4_compile.py](pipeline/step4_compile.py)):** Importa decisões humanas (`APROVADO` / `MANTER_NULO`) de `dist/revisao_epistemologica_pendente.csv` para `data/records/`, executa reconciliação global de `autores_referenciados` via `pipeline/references.py`, valida todos os registros contra `ContratoDefesaV4` e `PainelEptV4Output`, publica `dist/painel-ept-v4.json` e atualiza o CSV com as pendências restantes.
 * **Frontend e Empacotamento Elementor (`index.html` + `frontend/` + `scripts/build_frontend.py`):** Mantém HTML, CSS e Vanilla JS separados para desenvolvimento local e compila `dist/widget-elementor.html` (autocontido, zero dependências externas, CSS 100% escopado em `#leme-painel-ept` e sem linhas em branco) para colagem no **Widget HTML (`</>`)** do Elementor.
 
 ---
@@ -52,7 +61,7 @@ flowchart TD
 
 | Caminho | Rastreamento Git | Função no Sistema |
 | :--- | :--- | :--- |
-| [pipeline/](pipeline) | Rastreado | Módulos da pipeline (`models_v4.py`, `normalizers.py`, `llm_provider.py`, `step1`..`step4`) e prompt `SKILL.md`. |
+| [pipeline/](pipeline) | Rastreado | Pacote da pipeline (`catalogs.py`, `resources/*.json`, `models_v4.py`, `normalizers.py`, `references.py`, `extractors/`, `llm_provider.py`, `step1`..`step4`) e prompt `SKILL.md`. |
 | [frontend/](frontend) / [index.html](index.html) | Rastreado | Código-fonte modular do painel v4 (`styles.css`, `app.js` e `index.html` para preview HTTP local). |
 | [scripts/build_frontend.py](scripts/build_frontend.py) | Rastreado | Compilador e validador zero-dependência que gera `dist/widget-elementor.html` (`--check`). |
 | [dist/painel-ept-v4.json](dist/painel-ept-v4.json) | Rastreado | Catálogo bibliométrico final validado por `PainelEptV4Output` e consumido pelo frontend. |

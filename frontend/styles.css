@@ -134,7 +134,7 @@
     color: rgba(255, 255, 255, .95);
     font-size: 15px;
     line-height: 1.6;
-    max-width: 940px;
+    max-width: 100%;
 }
 
 #leme-painel-ept .leme-update {
