@@ -2,7 +2,6 @@ import argparse
 import hashlib
 import json
 import re
-import unicodedata
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
@@ -19,44 +18,17 @@ from pipeline.models_v4 import (
     PreExtracaoItemV4,
     Stage1ManifestV4,
 )
+from pipeline.normalizers import (
+    formatar_nome_proprio,
+    limpar_prefixo_orientador,
+    limpar_texto,
+    normalizar_chave_busca,
+)
 
 WP_API_URL = "https://profept.ifc.edu.br/wp-json/wp/v2/pages?slug=dissertacoes"
 HEADERS = {
     "User-Agent": "LEME-EPT-Pipeline/4.0 (Pesquisa Bibliometrica Academica; IFC Blumenau)"
 }
-
-
-def normalizar_chave_busca(texto: str) -> str:
-    """Gera chave limpa (sem acentos, minúscula) para cruzar registros existentes."""
-    nfkd = unicodedata.normalize("NFKD", texto or "")
-    sem_acento = "".join(c for c in nfkd if not unicodedata.combining(c))
-    return re.sub(r"\s+", " ", sem_acento).strip().lower()
-
-
-def limpar_texto(texto: str) -> str:
-    if not texto:
-        return ""
-    return re.sub(r"\s+", " ", texto).strip()
-
-
-def formatar_nome_proprio(nome: str) -> str:
-    """Converte 'GEANDRO CHIARELLI' em 'Geandro Chiarelli' mantendo preposições."""
-    preposicoes = {"da", "de", "do", "das", "dos", "e"}
-    palavras = limpar_texto(nome).lower().split(" ")
-    resultado = []
-    for i, p in enumerate(palavras):
-        if i > 0 and p in preposicoes:
-            resultado.append(p)
-        else:
-            resultado.append(p.capitalize())
-    return " ".join(resultado)
-
-
-def limpar_prefixo_orientador(texto: str) -> str:
-    """Remove 'Orientador:', 'Orientadora:', 'Dr.', 'Drª.', 'Prof.' etc."""
-    txt = re.sub(r"^orientador[a]?\s*:\s*", "", texto, flags=re.IGNORECASE)
-    txt = re.sub(r"^(prof[ªa]?\.?\s*)?(dr[ªa]?\.?\s*)", "", txt, flags=re.IGNORECASE)
-    return formatar_nome_proprio(txt)
 
 
 DEFAULT_REF_IDS: Tuple[Path, ...] = (

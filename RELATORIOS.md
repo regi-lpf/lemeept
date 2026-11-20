@@ -314,20 +314,19 @@ class ContratoDefesaV4(BaseModel):
 
 ---
 
-## 4. Próximo Passo: Integração e Atualização do Frontend (Painel Bibliométrico v4)
+## 4. Integração e Consolidação do Frontend (Painel Bibliométrico v4) — Concluída
 
-Com o artefato `dist/painel-ept-v4.json` validado pelo contrato `ContratoDefesaV4`, a etapa final consiste na adaptação do widget HTML/CSS/JS do Elementor mantendo a identidade visual existente:
+Com o artefato `dist/painel-ept-v4.json` validado por `PainelEptV4Output` / `ContratoDefesaV4`, o widget HTML/CSS/JS autocontido para Elementor (WordPress) e servidor HTTP local foi consolidado em [index.html](index.html), preservando o legado v3 em [index-v3.html](index-v3.html):
 
-1. **Adaptação ao Contrato v4:**
-* Atualizar o mapeamento de propriedades no script Vanilla JS para ler `dissertacao.autores_referenciados`, `dissertacao.base_epistemologica`, `produto.tipo`, `produto.publico_alvo`, `produto.proveniencia` e `indice_busca`.
-* Consumir `indice_busca.texto_busca_normalizado` para busca textual instantânea (já contemplando autores referenciados) e `indice_busca.termos_unificados` para o ranking de palavras-chave frequentes.
-* Incorporar visualização bibliométrica de **Autores Mais Referenciados** a partir de `dissertacao.autores_referenciados`.
+1. **Adaptação Integral ao Contrato v4 e Regras de Domínio:**
+   * Leitura de `gerado_em`, `dissertacao.autores_referenciados`, `dissertacao.base_epistemologica` (distinguindo bases consolidadas, registros `revisao_pendente: true` e não declarados), `produto.tipo`, `produto.publico_alvo`, `produto.nivel_aplicacao`, `produto.data_publicacao`, `produto.proveniencia`, `produto.identificadores` e `indice_busca`.
+   * Camada `I18N` completa para `LP1`..`LP2`, `MP1`..`MP6`, 9 tipos CAPES, 5 públicos-alvo e fontes de tipologia, com enriquecimento de `texto_busca_normalizado` e consolidação canônica de orientadores (**21** chaves únicas) e instituição/campus.
+   * Resolução automática entre `data-json-url-local` (`./dist/painel-ept-v4.json` em `localhost`) e `data-json-url` (publicação em produção).
 
+2. **Dashboard Interativo (*Cross-Filtering*), Layout Compacto e Rankings Completos:**
+   * Separação de escopos (**Todas**, **Dissertações** e **Produtos Educacionais**), grade compacta `3 × 3` (`2 × 2` em **Produtos**) com animações estilo BI por reconciliação de DOM (`dataset.barKey`), ordenação configurável (`ano_desc` padrão) e modo **Tabela** com acesso ao modal de detalhes e fallback responsivo automático para **Cartões** em telas menores (`<= 720px`).
+   * Todos os **9 gráficos** e os **3 cards categóricos de destaque** operam como filtros interativos bidirecionais (clique/teclado alterna o filtro em sincronia com os `<select>` e chips ativos), mantendo evidências epistemológicas e proveniência eduCAPES em um bloco `<details>` recolhido no modal.
+   * Botão `"Ver todos"` nos cards **Autores mais referenciados** e **Orientadores** abre modal expansível unificado (`abrirModalRanking` / `RANKING_CONFIGS`) com busca por nome, cortes adaptáveis (`Todos`, `≥ 2`, `≥ 5`, `≥ 10` — iniciando em `≥ 5` para autores e `Todos` para orientadores), ordenação, paginação (`30` itens/página), clique para filtrar com fechamento automático e exportação `.CSV` do ranking.
 
-2. **Camada de Apresentação (`I18N` / Rótulos Legíveis):**
-* Mapear os slugs canônicos (`LP1`..`LP2`, `MP1`..`MP6`, os 9 tipos de produto da CAPES e os 5 grupos de `publico_alvo`) em rótulos completos nos filtros, gráficos e cards, mantendo os slugs como valores internos de filtragem.
-
-
-3. **Separação de Escopo (Todas / Dissertações / Produtos) e Métricas:**
-* Separar visualmente e metricamente as **Dissertações** (resumo, orientador, autores referenciados, base epistemológica aprovada e link do PDF) dos **Produtos Educacionais** (tipo CAPES, nível de aplicação, público-alvo e link do eduCAPES).
-* Tratar registros com `base_epistemologica.valor == null` (`revisao_pendente: true`) de forma graciosa nos gráficos e nos detalhes do modal.
+3. **Segurança, Acessibilidade e Performance (`FE-01` a `FE-24`):**
+   * Sanitização resiliente (`escapeHtml` Unicode, `sanitizarUrl` `http:`/`https:`, `csvEscape` anti-*Formula Injection*), contraste WCAG 2.1 AA (`>= 4.5:1`), *focus trap* no modal, remoção de `backdrop-filter`, índice facetado em memória (`indiceFacetas`) e otimização de busca/destaque (*fast-path* e recorte de resumo nos cards). Detalhes completos em [AUDITORIA_E_REFATORACAO.md](AUDITORIA_E_REFATORACAO.md).

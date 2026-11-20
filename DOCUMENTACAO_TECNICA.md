@@ -2,7 +2,7 @@
 
 > **Escopo deste documento:** Especificação técnica atualizada e fiel ao comportamento **em vigor** na pasta [pipeline/](pipeline), validada pela suíte de testes em [tests/test_pipeline_v4.py](tests/test_pipeline_v4.py) e confrontada com [RELATORIOS.md](RELATORIOS.md) e com os artefatos compilados em `data/` e `dist/`.
 >
-> O histórico da auditoria e das 25 correções aplicadas na refatoração (`AUD-01` a `AUD-25`) está registrado em [AUDITORIA_E_REFATORACAO.md](AUDITORIA_E_REFATORACAO.md).
+> O histórico das auditorias e refatorações aplicadas na pipeline (`AUD-01` a `AUD-25`) e no frontend (`FE-01` a `FE-24`) está registrado em [AUDITORIA_E_REFATORACAO.md](AUDITORIA_E_REFATORACAO.md).
 
 ---
 
@@ -50,8 +50,10 @@ flowchart TD
     S2 <--> CACHE["Cache HTML Local (data/cache_educapes/)"]
     S2 --> PAYLOAD["Payloads Stage 2 (data/stage2_payloads/EPT-XXXX.json)"]
 
+    NORM["Normalizadores Canônicos (pipeline/normalizers.py)"] --> S1
+    NORM --> S2
     PAYLOAD --> S3["Etapa 3: Inferência e Sync (step3_llm_extract.py)"]
-    NORM["Normalizadores Canônicos (pipeline/normalizers.py)"] --> S3
+    NORM --> S3
     SKILL["Instruções de Domínio (pipeline/SKILL.md)"] --> S3
     PROV["Cliente Agnóstico (pipeline/llm_provider.py)"] <--> S3
     S3 --> REC["Registros Validados (data/records/EPT-XXXX.json)"]
@@ -170,18 +172,22 @@ Schema enxuto imposto à saída da LLM em `step3_llm_extract.py`:
 ### 5.1. Etapa 1 — Coleta e Pré-Extração (`pipeline/step1_collect.py`)
 
 * **Fonte e TLS:** Consulta `https://profept.ifc.edu.br/wp-json/wp/v2/pages?slug=dissertacoes` com `SSL_VERIFY = False` (supressão explícita de `InsecureRequestWarning`).
-* **Parser sequencial independente de DOM (`extrair_defesas_do_html`):** Percorre tags em fluxo contínuo ignorando containers pai (`ul`, `li`, `p`), delimita cada defesa por `Acadêmico/Discente/Autor:`, resolve o ano via cabeçalhos `DEFESAS 20XX` com fallback na URL do PDF e preserva `titulo_produto_bruto` e `handle_educapes`.
+* **Parser sequencial independente de DOM (`extrair_defesas_do_html`):** Percorre tags em fluxo contínuo ignorando containers pai (`ul`, `li`, `p`), delimita cada defesa por `Acadêmico/Discente/Autor:`, resolve o ano via cabeçalhos `DEFESAS 20XX` com fallback na URL do PDF e preserva `titulo_produto_bruto` e `handle_educapes`. Utiliza os normalizadores compartilhados de `pipeline/normalizers.py` para padronizar nomes (`formatar_nome_proprio`), limpar prefixos/titulações e resolver aliases de orientadores (`limpar_prefixo_orientador`) e gerar chaves de busca (`normalizar_chave_busca`).
 * **Estabilidade de IDs multi-referência (`carregar_mapeamento_ids_existentes`):** Lê em ordem de prioridade `[data/stage1_manifest.json, dist/painel-ept-v4.json, painel-ept-v3.json]`, preservando o primeiro ID mapeado por URL ou autor normalizado, processando `reversed(fontes)` para numeração cronológica de novas defesas e ordenando o manifesto por `id`.
 * **Download e integridade:** Reaproveita PDFs locais válidos (`st_size > 1024` e cabeçalho `b"%PDF-"`), valida assinatura mágica após download via streaming e calcula `SHA-256`.
 * **CLI (`--saida`, `--pdfs-dir`, `--ref-ids`):** Permite personalizar destinos e listas de referência sem editar código.
 
 ### 5.2. Etapa 2 — Extração Determinística (`pipeline/step2_deterministic.py`)
 
-* **Sanitização e leitura (`ler_paginas_pdf` / `normalizar_espacos`):** Remove caracteres invisíveis/de controle (`\u200b`–`\u200f`, `\x00`–`\x1f`, etc.) preservando quebras legíveis.
+* **Sanitização e leitura (`ler_paginas_pdf`):** Reutiliza `normalizar_espacos` e `CONTROLE_INVISIVEL_RE` de `pipeline/normalizers.py` para remover caracteres invisíveis/de controle (`\u200b`–`\u200f`, `\x00`–`\x1f`, etc.) preservando quebras legíveis, além de aplicar `limpar_nome_pessoa` e `normalizar_nome_orientador` nos metadados resolvidos.
 * **Detecção taxonômica integral (`detectar_macroprojeto_e_linha`):**
   1. Normaliza o texto completo do PDF (`txt_limpo`) e gera versão condensada sem separadores (`txt_colado`).
   2. Busca assinaturas explícitas (`Macroprojeto 1..6 / I..VI`, `MP1..3`, `MP5..6`). Para `MP4`, aplica varredura sensível ao contexto sobre `(?<!\.)\bmp\s*[-]?\s*(4)\b`, descartando extensões `.mp4`, prefixos (`formato`, `arquivo`, `extensao`, `video`, `audio`, `midia`, `em`) e sufixos técnicos (`padrao`, `formato`, `video`, `mb`, etc.).
   3. Busca pelos títulos canônicos dos 6 macroprojetos (espaçado e colado) e aplica fallback para Linha de Pesquisa (`LP1` / `LP2`) antes de retornar `MP_INDEFINIDO` / `LP_INDEFINIDA`.
+* **Extração determinística de coorientadores (`extrair_coorientador`):**
+  * Varre as páginas preliminares iniciais (`paginas[:5]` — capa, folha de rosto, ficha catalográfica e folha de aprovação) somadas a `recortes.ficha_catalografica`, evitando trechos narrativos de agradecimentos ou corpo do texto.
+  * Suporta dois padrões: rótulos explícitos com dois-pontos (`Co-orientador(a)`, `Coorientador(a)`, `Coorientação:`, com nome na mesma linha, na linha seguinte ou quebrado em duas linhas sem capturar cidade/instituição via `_eh_linha_continuacao_nome`) e entradas de ficha catalográfica ABNT após ponto e vírgula (`; coorientadora Nome Sobrenome. -- Cidade`).
+  * Remove titulações e pontuação via `normalizar_nome_orientador`, filtra placeholders (`Não se aplica`, etc.) e fragmentos em prosa (`_eh_nome_pessoa_valido`), deduplica contra o `orientador` principal e consolida prefixos mantendo o nome completo mais longo.
 * **Isolamento cirúrgico de seções (`isolar_secoes_pdf` -> `(RecortesTextuais, texto_refs)`):**
   * Retorna `(RecortesTextuais(), "")` para PDF vazio.
   * Janela de pré-textuais em `paginas[:18]`; captura `RESUMO` com extensão automática para a página seguinte quando `Palavras-chave` anteceder `ABSTRACT` (`<= 4500` chars).
@@ -198,11 +204,9 @@ Schema enxuto imposto à saída da LLM em `step3_llm_extract.py`:
 
 ### 5.3. Normalizadores Canônicos (`pipeline/normalizers.py`)
 
-* `normalizar_texto_busca`: NFKD sem acentos, minúsculo e alfanumérico.
-* `limpar_palavras_chave`: remove pontuação residual nas pontas e deduplica por chave normalizada.
-* `limpar_resumo_publico`: remove marcas `[PÁG. X]` e título `RESUMO` antes da gravação em `dissertacao.resumo`.
-* `normalizar_base_epistemologica`: mapeia termos e aliases para as 7 matrizes canônicas (suportando composições válidas entre matrizes canônicas ligadas por `" e "` / `,` / `;` / `+` / `/`), retornando `(termo_normalizado, eh_canonico)`.
-* `normalizar_nivel_aplicacao`: padroniza variações e slugs `snake_case` nos rótulos legíveis definidos em `SKILL.md`.
+* **Primitivas de texto e Unicode:** `remover_acentos` (NFKD), `limpar_texto` (remove `CONTROLE_INVISIVEL_RE` e colapsa espaços), `normalizar_espacos` (preserva quebras de parágrafo), `normalizar_chave_busca` (chave sem acentos e minúscula para cruzamento de registros/pessoas) e `normalizar_texto_busca` (chave alfanumérica para índice de busca).
+* **Nomes próprios, titulações e docentes:** `formatar_nome_proprio` (capitalização preservando preposições), `limpar_nome_pessoa` (remove filiações entre parênteses, pontuação residual e titulações acadêmicas via `TITULACOES_PESSOA_RE`), `normalizar_nome_orientador` (limpa e aplica resolução canônica de aliases em `_ALIASES_DOCENTES`) e `limpar_prefixo_orientador` (remove rótulos `Orientador(a):` delegando para `normalizar_nome_orientador`).
+* **Conteúdo e taxonomia semântica:** `limpar_palavras_chave` (deduplicação sem pontuação residual), `limpar_resumo_publico` (remove `[PÁG. X]` e cabeçalho `RESUMO`), `normalizar_base_epistemologica` (aliases e composições das 7 matrizes canônicas, retornando `(termo_normalizado, eh_canonico)`) e `normalizar_nivel_aplicacao` (padronização para rótulos legíveis definidos em `SKILL.md`).
 
 ### 5.4. Provedor Modular de LLM (`pipeline/llm_provider.py`)
 
@@ -215,16 +219,46 @@ Schema enxuto imposto à saída da LLM em `step3_llm_extract.py`:
 ### 5.5. Etapa 3 — Inferência, Hidratação e Ressincronização (`pipeline/step3_llm_extract.py` + `pipeline/SKILL.md`)
 
 * `pipeline/SKILL.md` instrui o modelo estritamente sobre o JSON compacto de entrada (`montar_prompt_enxuto`, incluindo `linha_pesquisa_pre_detectada`) e o schema de saída `RespostaInterpretativaLLM` (`trecho_curto` `<= 180` chars, `justificativa` `<= 2` frases, vocabulário canônico de bases e níveis).
-* `montar_registro_final` impõe `MP -> LP`, aplica `normalizar_base_epistemologica` (rebaixando termos não canônicos para `candidato` + `revisao_pendente=True`), limpa `resumo` via `limpar_resumo_publico`, normaliza `nivel_aplicacao`, preserva `titulo_produto_bruto` em `rotulo_original_declarado`, diferencia `"dissertacao_ficha"` vs. `"educapes_dc_type"` vs. `"inferencia_llm"` e inicializa `curado_humano=False`.
+* `montar_registro_final` impõe `MP -> LP`, canoniza `autor` (`limpar_nome_pessoa`) e `orientador`/`coorientadores` (`normalizar_nome_orientador`), aplica `normalizar_base_epistemologica` (rebaixando termos não canônicos para `candidato` + `revisao_pendente=True`), limpa `resumo` via `limpar_resumo_publico`, normaliza `nivel_aplicacao`, preserva `titulo_produto_bruto` em `rotulo_original_declarado`, diferencia `"dissertacao_ficha"` vs. `"educapes_dc_type"` vs. `"inferencia_llm"` e inicializa `curado_humano=False`.
 * `construir_indice_busca` inclui `dissertacao.base_epistemologica.valor` junto aos demais metadados, palavras-chave e `autores_referenciados`.
 * `executar_etapa3` usa `sobrescrever=False` por padrão e protege registros com `curado_humano=True` mesmo com `--sobrescrever` (exigindo `--forcar-curados` para substituição).
-* `ressincronizar_registros_deterministico` (`--sync-deterministico`) atualiza todos os campos determinísticos da Etapa 2, normalizadores e `indice_busca` nos registros existentes sem chamar a LLM e preservando curadorias humanas, além de alertar sobre divergências entre `linha_pesquisa` determinística e registros prévios.
+* `ressincronizar_registros_deterministico` (`--sync-deterministico`) atualiza todos os campos determinísticos da Etapa 2, normalizadores (incluindo nomes canônicos de orientador/coorientadores) e `indice_busca` nos registros existentes sem chamar a LLM e preservando curadorias humanas, além de alertar sobre divergências entre `linha_pesquisa` determinística e registros prévios.
 
 ### 5.6. Etapa 4 — Curadoria Bidirecional e Compilação (`pipeline/step4_compile.py`)
 
 * `aplicar_curadoria_csv` importa decisões `APROVADO` e `MANTER_NULO` do CSV (inferindo `APROVADO` se `base_epistemologica_aprovada` estiver preenchida), normaliza termos aprovados via `normalizar_base_epistemologica`, marca `curado_humano = True`, recalcula `indice_busca` e valida `ContratoDefesaV4`.
 * `compilar_pipeline_v4` valida o artefato final completo com `PainelEptV4Output`, grava `dist/painel-ept-v4.json` e reescreve (ou exclui quando zerado) `dist/revisao_epistemologica_pendente.csv`.
 * **CLI (`--records-dir`, `--dist-dir`):** Suporta compilação em diretórios isolados.
+
+### 5.7. Frontend — Painel Bibliométrico v4 (`index.html`)
+
+* **Consolidação e Empacotamento:** O frontend v4 consolidado reside em [index.html](index.html) como fragmento `<section id="leme-painel-ept">` autocontido (HTML + CSS + Vanilla JS), pronto para colagem direta no widget HTML do Elementor (WordPress) ou visualização via servidor HTTP local. O widget legado v3 permanece preservado em [index-v3.html](index-v3.html).
+* **Resolução de Fonte JSON (`resolverUrlsDados` / `carregarPayloadJson`):** Declara `data-json-url` (produção em `https://raw.githubusercontent.com/regi-lpf/lemeept/refs/heads/main/dist/painel-ept-v4.json`) e `data-json-url-local` (`./dist/painel-ept-v4.json`). Em `localhost`, `127.0.0.1`, `[::1]` ou `file:`, prioriza o artefato local com fallback para a URL remota; em produção, consome `data-json-url` diretamente. Em falhas de carregamento, exibe estado degradado em `#leme-periodo`, indicadores e gráficos, desabilita filtros/exportação e oferece botão `"Tentar novamente"`.
+* **Aderência ao Contrato v4 e Regras de Domínio:**
+  * Exibe `gerado_em` (`Atualizado em DD/MM/AAAA`) no cabeçalho junto ao intervalo de anos.
+  * Traduz todos os slugs via `I18N` (`linha_pesquisa`, `macroprojeto`, `tipo_produto`, `publico_alvo`, `fonte_tipo`).
+  * `formatarInstituicaoCampus` remove duplicações de sigla (`"Instituto Federal Catarinense (IFC) – Campus Blumenau"`), e `limparNomePessoa` + `consolidarOrientadores` removem pontuação residual e unificam filtro, gráfico e indicador por `orientadorChave` (**21** orientadores únicos).
+  * Enriquece `indice_busca.texto_busca_normalizado` com os rótulos `I18N`, `publico_alvo`, `instituicao` e `campus`, tornando pesquisáveis termos traduzidos como `"práticas educativas"`, `"docentes"` e `"evento organizado"`.
+  * Trata `base_epistemologica` em 3 estados explícitos (`valor` aprovado com selo `"Validado por curadoria"` se `curado_humano: true`, `"Em curadoria"` quando `revisao_pendente: true` sem vazar `candidato`, e `"Não declarada explicitamente"`), exibindo rodapé de pendências no gráfico correspondente.
+  * Preserva `base_evidencias` (apenas para bases aprovadas), `data_publicacao`, `proveniencia`, `autores_colaboradores` e `identificadores` em um único bloco recolhível `<details>` dentro do modal.
+* **Dashboard Interativo e Layout Compacto (`#leme-graficos`):**
+  * Em desktop (`>= 1080px`), os 9 gráficos ocupam grade **`3 × 3`** compacta em tela cheia (`2 × 2` via `.is-scope-produtos` no escopo de produtos), adaptando-se para **2 colunas** (`721–1079px`) e **1 coluna** (`<= 720px`), com faixa de destaques reduzida e rolagem interna nos rankings longos.
+  * **Animações estilo BI (reconciliação de DOM):** `renderHorizontalChart`, `renderYearChart` e `renderCompositionChart` reconciliam os nós existentes por `dataset.barKey`, transicionando suavemente barras horizontais via GPU (`transform: scaleX(...)`), colunas anuais (`height`) e composição (`width`) sem destruir o DOM nem perder o foco de teclado, além de transições suaves no modal e nos chips (`@media (prefers-reduced-motion: reduce)` preservado).
+  * Mecanismo unificado `data-filter-campo` / `data-filter-valor` + `alternarFiltroInterativo` sincronizado com `filtrosPorCampo` (`<select>`) e chips ativos (`#leme-filtros-ativos`), alternando (adiciona ou remove no segundo clique) filtros diretamente a partir de todos os **9 gráficos** (`ano`, `linha_pesquisa`, `macroprojeto`, `orientador`, `base_epistemologica`, `autor_referenciado`, `tipo_produto`, `publico_alvo`, `nivel_aplicacao`) e dos **3 cards categóricos de destaque** (`#leme-insights`).
+  * `contarAgregado` e `contarOrientadores` preservam `{ key, label, valor }` para manter consistência exata com as chaves internas dos filtros (excluindo barras agregadas `"Outras"`); quando `limite` é omitido em `contarOrientadores(lista, limite)`, retorna a lista completa para alimentar o rodapé de totais no card Top 10 e o modal completo.
+* **Modais Expansíveis de Ranking Completo (`FE-24` — `abrirModalRanking` / `RANKING_CONFIGS`):**
+  * Botão discreto `"Ver todos"` (`data-open-ranking`) nos cabeçalhos dos cards **Autores mais referenciados** e **Orientadores**, reaproveitando a estrutura acessível de `#leme-modal-backdrop` com a classe modificadora `.is-ranking`.
+  * **Autores referenciados:** abre no corte inicial **`≥ 5`** (adaptando automaticamente para `≥ 2` ou `Todos` se o recorte filtrado não possuir itens com `≥ 5`).
+  * **Orientadores:** compartilha exatamente a mesma estrutura pensando no crescimento futuro do acervo, abrindo em **`Todos (≥ 1)`** (com barra de paginação oculta automaticamente enquanto a contagem for `<= rankingPorPagina`).
+  * **Recursos internos do modal:** pesquisa instantânea por nome (`normalizarBusca` + `highlightText`, com botão de resgate `"Mostrar em Todos (≥ 1)"` quando há resultados fora do corte ativo), pills adaptáveis (`Todos`, `≥ 2`, `≥ 5`, `≥ 10`) com contagem ao vivo no recorte, ordenação (`Mais citados` / `Mais orientações` vs. `A–Z`), barras horizontais normalizadas pelo máximo global do recorte (`maxGlobal`) com posição `#N` e percentual sobre o recorte, paginação simples configurável (`rankingPorPagina = 30`, usando `data-ranking-pagina` isolado de `data-pagina` do catálogo), clique em qualquer linha aplicando `alternarFiltroInterativo` com fechamento automático (`data-close-modal="1"`), e botão **Exportar ranking (.CSV)** (`baixarCsvRanking` via `csvEscape` e `dispararDownloadCsv`).
+* **Escopos, Ordenação, Tabela e Exportação:**
+  * Suporta 3 escopos (`todas`, `dissertacoes`, `produtos`), ordenação (`ano_desc` padrão, `ano_asc`, `titulo_asc`, `autor_asc`), modo Tabela com botão `"Ver detalhes"` e colunas adaptadas por escopo, fallback responsivo automático para Cartões abaixo de `720px` via `matchMedia`, e exportação `.CSV` com `csvEscape` protegido contra *Formula Injection* (`=`, `+`, `-`, `@`, `\t`, `\r`).
+* **Segurança, Acessibilidade (WCAG 2.1 AA), Elementor e Performance:**
+  * **Índice facetado em memória (`indiceFacetas` / `construirIndiceFacetas`):** indexa no boot todas as 9 facetas em `Map<campo, Map<chave, Set<number>>>` com interseção ordenada pelo menor conjunto (`intersecarSets`), evitando varreduras repetidas sobre o catálogo ao filtrar e ao popular seletores.
+  * `escapeHtml` utiliza `HTML_ESCAPE_MAP` com escapes Unicode (`\u0026amp;`..`\u0026#39;`), resistente a editores HTML/Elementor; `sanitizarUrl` restringe links a `http:`/`https:` com `rel="noopener noreferrer"`.
+  * Modal com *focus trap* (`manterFocoNoModal`), bloqueio de scroll no `body` e restauração de foco; paleta ajustada para contraste `>= 4.5:1`; `aria-live="polite"` restrito a `#leme-contador` e `#leme-ranking-status`.
+  * CSS 100% escopado em `#leme-painel-ept`, `overflow: clip`, `z-index: 100000` no modal, guarda `data-leme-init` contra reinicialização, remoção de `backdrop-filter`, *fast-path* em `highlightText` e recorte de resumo nos cards (`trechoResumoCard`).
+* **Plano Futuro (Otimização de Payload JSON — Opção C):** Caso o volume do acervo cresça e o download inicial do JSON torne-se gargalo, a Etapa 4 poderá minificar `dist/painel-ept-v4.json` e omitir `indice_busca.texto_busca_normalizado` (que hoje representa ~34,8% do JSON compacto, reduzindo de `~1.171 KB` / `~241 KB` gzip para `~643 KB` / `~159 KB` gzip), reconstruindo o índice de busca textual no boot do frontend em ~3 ms — e, acima de ~400–500 defesas, considerar *split* entre catálogo leve e detalhes sob demanda.
 
 ---
 

@@ -3,6 +3,17 @@ import unicodedata
 from typing import Dict, List, Optional, Tuple
 
 
+CONTROLE_INVISIVEL_RE = re.compile(
+    r"[\u200b-\u200f\u202a-\u202e\ufeff\x00-\x08\x0b\x0c\x0e-\x1f]"
+)
+
+PREPOSICOES_NOME = {"da", "de", "do", "das", "dos", "e"}
+
+TITULACOES_PESSOA_RE = re.compile(
+    r"^\s*(?:prof(?:essor(?:a|\(a\))?|\.?[ªao])?\.?|dr(?:a|\.?[ªa])?\.?|doutor(?:a|\(a\))?|m[ea]\.?|m\.?sc\.?|esp(?:ecialista)?\.?|ph\.?d\.?)(?=\s|$)\s*",
+    flags=re.IGNORECASE,
+)
+
 BASES_EPISTEMOLOGICAS_CANONICAS: Tuple[str, ...] = (
     "Materialismo Histórico-Dialético",
     "Pedagogia Histórico-Crítica",
@@ -25,14 +36,116 @@ NIVEIS_APLICACAO_CANONICOS: Tuple[str, ...] = (
 )
 
 
+def remover_acentos(texto: str) -> str:
+    """Remove marcas diacríticas Unicode preservando o texto base."""
+    if not texto:
+        return ""
+    nfkd = unicodedata.normalize("NFKD", texto)
+    return "".join(c for c in nfkd if not unicodedata.combining(c))
+
+
+def limpar_texto(texto: str) -> str:
+    """Remove caracteres invisíveis de controle e colapsa espaços em branco."""
+    if not texto:
+        return ""
+    sem_controle = CONTROLE_INVISIVEL_RE.sub("", texto)
+    return re.sub(r"\s+", " ", sem_controle).strip()
+
+
+def normalizar_espacos(texto: str) -> str:
+    """Remove caracteres invisíveis preservando quebras de parágrafo."""
+    if not texto:
+        return ""
+    texto_limpo = CONTROLE_INVISIVEL_RE.sub("", texto)
+    texto_limpo = re.sub(r"[ \t]+\n", "\n", texto_limpo)
+    return re.sub(r"[ \t]+", " ", re.sub(r"\n{3,}", "\n\n", texto_limpo)).strip()
+
+
+def normalizar_chave_busca(texto: str) -> str:
+    """Gera chave limpa (sem acentos, minúscula) para cruzar registros e pessoas."""
+    return limpar_texto(remover_acentos(texto)).lower()
+
+
 def normalizar_texto_busca(texto: str) -> str:
     """Normaliza texto para chave de busca (sem acentos, minúscula e alfanumérica)."""
     if not texto:
         return ""
-    nfkd = unicodedata.normalize("NFKD", texto.lower())
-    sem_acentos = "".join(c for c in nfkd if not unicodedata.combining(c))
+    sem_acentos = remover_acentos(texto.lower())
     limpo = re.sub(r"[^a-z0-9\s]", " ", sem_acentos)
     return re.sub(r"\s+", " ", limpo).strip()
+
+
+def formatar_nome_proprio(nome: str) -> str:
+    """Converte 'GEANDRO CHIARELLI' em 'Geandro Chiarelli' mantendo preposições."""
+    limpo = limpar_texto(nome).strip(" ,.;-–—:")
+    if not limpo:
+        return ""
+    palavras = limpo.lower().split(" ")
+    resultado = []
+    for i, p in enumerate(palavras):
+        if i > 0 and p in PREPOSICOES_NOME:
+            resultado.append(p)
+        else:
+            resultado.append(p.capitalize())
+    return " ".join(resultado)
+
+
+def limpar_nome_pessoa(bruto: str) -> str:
+    """Remove filiações entre parênteses, titulações acadêmicas e pontuação residual."""
+    nome = re.sub(r"\s*\(.*?\)", "", bruto or "")
+    nome = limpar_texto(nome).strip(" ,.;-–—:")
+    while True:
+        novo = TITULACOES_PESSOA_RE.sub("", nome).lstrip(" ,.;-–—:")
+        if novo == nome:
+            break
+        nome = novo
+    nome = nome.strip(" ,.;-–—:")
+    if not nome:
+        return ""
+    if nome == nome.upper():
+        return formatar_nome_proprio(nome)
+    return nome
+
+
+_ALIASES_DOCENTES: Dict[str, str] = {
+    "fatima perez zago de oliveira": "Fátima Peres Zago de Oliveira",
+    "fatima peres zago de oliveira": "Fátima Peres Zago de Oliveira",
+    "inge r f suhr": "Inge Renate Frose Suhr",
+    "inge renate frose suhr": "Inge Renate Frose Suhr",
+    "eduardo werneck ribeiro": "Eduardo Augusto Werneck Ribeiro",
+    "eduardo augusto werneck ribeiro": "Eduardo Augusto Werneck Ribeiro",
+    "leandro marcos alves salgado": "Leandro Marcos Salgado Alves",
+    "leandro marcos salgado alves": "Leandro Marcos Salgado Alves",
+    "sonia regina de souza fernandes": "Sônia Regina de Souza Fernandes",
+    "reginaldo leandro placido": "Reginaldo Leandro Plácido",
+    "cloves alexandre de castro": "Cloves Alexandre de Castro",
+    "jorge da cunha dutra": "Jorge da Cunha Dutra",
+    "raquel cardoso de faria e custodio": "Raquel Cardoso de Faria e Custódio",
+    "eder aparecido de carvalho": "Eder Aparecido de Carvalho",
+    "denise fernandes": "Denise Fernandes",
+    "humberto luis de cesaro": "Humberto Luis de Cesaro",
+    "simao alberto": "Simão Alberto",
+    "juliene marques bogo": "Juliene Marques Bogo",
+    "viviane grimm": "Viviane Grimm",
+    "sara nunes": "Sara Nunes",
+    "bruno nunes batista": "Bruno Nunes Batista",
+    "ivonete telles medeiros placido": "Ivonete Telles Medeiros Plácido",
+}
+
+
+def normalizar_nome_orientador(nome: Optional[str]) -> str:
+    """Limpa titulações/pontuação de orientadores e resolve aliases canônicos conhecidos."""
+    limpo = limpar_nome_pessoa(nome or "")
+    if not limpo:
+        return ""
+    chave = normalizar_texto_busca(limpo)
+    return _ALIASES_DOCENTES.get(chave, limpo)
+
+
+def limpar_prefixo_orientador(texto: str) -> str:
+    """Remove 'Orientador(a):', titulações acadêmicas e normaliza para nome canônico."""
+    txt = re.sub(r"^orientador(?:a|\(a\))?\s*:\s*", "", texto or "", flags=re.IGNORECASE)
+    return normalizar_nome_orientador(txt)
 
 
 def limpar_palavras_chave(tags: List[str]) -> List[str]:

@@ -13,10 +13,12 @@ from pipeline.models_v4 import (
     RespostaInterpretativaLLM,
 )
 from pipeline.normalizers import (
+    limpar_nome_pessoa,
     limpar_palavras_chave,
     limpar_resumo_publico,
     normalizar_base_epistemologica,
     normalizar_nivel_aplicacao,
+    normalizar_nome_orientador,
     normalizar_texto_busca,
 )
 
@@ -181,9 +183,9 @@ def montar_registro_final(
         "schema_version": "4.0",
         "id": payload.id,
         "ano": meta.ano,
-        "autor": meta.autor,
-        "orientador": meta.orientador,
-        "coorientadores": list(meta.coorientadores),
+        "autor": limpar_nome_pessoa(meta.autor),
+        "orientador": normalizar_nome_orientador(meta.orientador),
+        "coorientadores": [normalizar_nome_orientador(c) for c in meta.coorientadores],
         "instituicao": meta.instituicao,
         "campus": meta.campus,
         "linha_pesquisa": lp_final,
@@ -319,9 +321,9 @@ def ressincronizar_registros_deterministico(
             edu = payload.evidencias_educapes
 
             raw["ano"] = meta.ano
-            raw["autor"] = meta.autor
-            raw["orientador"] = meta.orientador
-            raw["coorientadores"] = list(meta.coorientadores)
+            raw["autor"] = limpar_nome_pessoa(meta.autor)
+            raw["orientador"] = normalizar_nome_orientador(meta.orientador)
+            raw["coorientadores"] = [normalizar_nome_orientador(c) for c in meta.coorientadores]
             raw["instituicao"] = meta.instituicao
             raw["campus"] = meta.campus
 
