@@ -391,6 +391,7 @@
 #leme-painel-ept .leme-insights .leme-insight-card {
     padding: 9px 12px;
     border-radius: 16px;
+    min-width: 0;
 }
 
 #leme-painel-ept .leme-insights .leme-insight-card::after {
@@ -400,6 +401,9 @@
 }
 
 #leme-painel-ept .leme-insight-card strong {
+    display: block;
+    min-width: 0;
+    max-width: 100%;
     font-size: 15px;
     line-height: 1.2;
     margin-bottom: 2px;
@@ -410,8 +414,13 @@
 
 #leme-painel-ept .leme-insights .leme-insight-card span {
     display: block;
+    min-width: 0;
+    max-width: 100%;
     font-size: 11px;
     line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #leme-painel-ept button.leme-insight-card.is-clickable {
@@ -517,10 +526,13 @@
     color: var(--leme-muted);
     padding: 2px 7px;
     min-height: 20px;
+    max-width: 100%;
     font-size: 11px;
     font-weight: 800;
     line-height: 1.2;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     cursor: pointer;
     margin: 0;
     box-shadow: none;
@@ -585,6 +597,7 @@
 
 #leme-painel-ept .leme-bars {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     gap: 4px;
     max-height: 162px;
     overflow-y: auto;
@@ -597,6 +610,9 @@
     grid-template-columns: minmax(105px, 42%) 1fr auto;
     gap: 7px;
     align-items: center;
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
     transition: opacity .2s ease, transform .2s ease;
 }
 
@@ -636,10 +652,28 @@
 
 #leme-painel-ept button.leme-bar-row.is-clickable.is-active {
     background: var(--leme-primary-soft);
-    border-color: var(--leme-border-strong);
+    border-color: var(--leme-primary);
+    box-shadow: inset 3px 0 0 var(--leme-primary);
+}
+
+#leme-painel-ept .leme-bars.is-filtered button.leme-bar-row.is-clickable:not(.is-active) .leme-bar-fill {
+    opacity: .32;
+}
+
+#leme-painel-ept .leme-bars.is-filtered button.leme-bar-row.is-clickable:not(.is-active) .leme-bar-label,
+#leme-painel-ept .leme-bars.is-filtered button.leme-bar-row.is-clickable:not(.is-active) .leme-bar-value {
+    color: #475569;
+}
+
+#leme-painel-ept .leme-bars.is-filtered button.leme-bar-row.is-clickable:not(.is-active):hover .leme-bar-fill,
+#leme-painel-ept .leme-bars.is-filtered button.leme-bar-row.is-clickable:not(.is-active):focus-visible .leme-bar-fill {
+    opacity: 1;
 }
 
 #leme-painel-ept .leme-bar-label {
+    display: block;
+    min-width: 0;
+    max-width: 100%;
     color: #334155;
     font-size: 11.5px;
     line-height: 1.25;
@@ -666,7 +700,7 @@
     background: linear-gradient(90deg, var(--leme-primary), var(--leme-secondary));
     transform-origin: left center;
     transform: scaleX(0);
-    transition: transform .32s cubic-bezier(.22, 1, .36, 1);
+    transition: transform .32s cubic-bezier(.22, 1, .36, 1), opacity .2s ease;
 }
 
 #leme-painel-ept .leme-bar-value {
@@ -725,7 +759,20 @@
 }
 
 #leme-painel-ept button.leme-year-col.is-clickable.is-active {
-    border-color: var(--leme-border-strong);
+    border-color: var(--leme-primary);
+}
+
+#leme-painel-ept .leme-year-chart.is-filtered button.leme-year-col.is-clickable:not(.is-active) .leme-year-bar {
+    opacity: .30;
+}
+
+#leme-painel-ept .leme-year-chart.is-filtered button.leme-year-col.is-clickable:not(.is-active) .leme-year-value {
+    color: #475569;
+}
+
+#leme-painel-ept .leme-year-chart.is-filtered button.leme-year-col.is-clickable:not(.is-active):hover .leme-year-bar,
+#leme-painel-ept .leme-year-chart.is-filtered button.leme-year-col.is-clickable:not(.is-active):focus-visible .leme-year-bar {
+    opacity: 1;
 }
 
 #leme-painel-ept .leme-year-value {
@@ -741,13 +788,18 @@
     border-radius: 10px 10px 4px 4px;
     background: linear-gradient(180deg, var(--leme-primary), var(--leme-secondary));
     box-shadow: 0 4px 10px rgba(59, 71, 229, .14);
-    transition: height .32s cubic-bezier(.22, 1, .36, 1);
+    transition: height .32s cubic-bezier(.22, 1, .36, 1), opacity .2s ease;
 }
 
 #leme-painel-ept .leme-year-label {
+    display: block;
+    max-width: 100%;
     color: #475569;
     font-size: 11.5px;
     font-weight: 800;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #leme-painel-ept .leme-composition {
@@ -788,6 +840,7 @@
 
 #leme-painel-ept .leme-composition-legend {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     gap: 6px;
 }
 
@@ -795,7 +848,10 @@
     display: grid;
     grid-template-columns: 11px minmax(0, 1fr) auto;
     gap: 8px;
-    align-items: start;
+    align-items: center;
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 #leme-painel-ept button.leme-composition-item.is-clickable {
@@ -820,23 +876,50 @@
 
 #leme-painel-ept button.leme-composition-item.is-clickable.is-active {
     background: var(--leme-primary-soft);
-    border-color: var(--leme-border-strong);
+    border-color: var(--leme-primary);
+    box-shadow: inset 3px 0 0 var(--leme-primary);
 }
 
 #leme-painel-ept .leme-composition-dot {
     display: block;
     width: 10px;
     height: 10px;
-    margin-top: 3px;
+    margin-top: 0;
     border-radius: 50%;
+    transition: opacity .2s ease;
+}
+
+#leme-painel-ept .leme-composition.is-filtered .leme-composition-segment.is-clickable:not(.is-active) {
+    opacity: .30;
+}
+
+#leme-painel-ept .leme-composition.is-filtered button.leme-composition-item.is-clickable:not(.is-active) .leme-composition-dot {
+    opacity: .40;
+}
+
+#leme-painel-ept .leme-composition.is-filtered button.leme-composition-item.is-clickable:not(.is-active) .leme-composition-label,
+#leme-painel-ept .leme-composition.is-filtered button.leme-composition-item.is-clickable:not(.is-active) .leme-composition-value {
+    color: #475569;
+}
+
+#leme-painel-ept .leme-composition.is-filtered .leme-composition-segment.is-clickable:not(.is-active):hover,
+#leme-painel-ept .leme-composition.is-filtered button.leme-composition-item.is-clickable:not(.is-active):hover .leme-composition-dot,
+#leme-painel-ept .leme-composition.is-filtered button.leme-composition-item.is-clickable:not(.is-active):focus-visible .leme-composition-dot {
+    opacity: 1;
 }
 
 #leme-painel-ept .leme-composition-label {
+    display: block;
+    min-width: 0;
+    max-width: 100%;
     color: #334155;
     font-size: 11.5px;
     line-height: 1.3;
     font-weight: 700;
     text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #leme-painel-ept .leme-composition-value {
@@ -1036,6 +1119,49 @@
     padding: 0 7px;
     border-color: transparent;
     background: #fff;
+}
+
+#leme-painel-ept .leme-active-filters.is-compact {
+    margin: 0 0 10px;
+    gap: 6px;
+    align-items: center;
+}
+
+#leme-painel-ept .leme-active-filters.is-compact:empty {
+    display: none;
+}
+
+#leme-painel-ept .leme-active-filters.is-compact .leme-chip {
+    padding: 3px 5px 3px 9px;
+    font-size: 11px;
+}
+
+#leme-painel-ept .leme-active-filters.is-compact .leme-chip button {
+    min-height: 22px;
+    min-width: 22px;
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+#leme-painel-ept .leme-chip-clear-all {
+    border: 1px solid var(--leme-border-strong);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--leme-primary);
+    padding: 4px 10px;
+    min-height: 26px;
+    font-size: 11px;
+    font-weight: 800;
+    cursor: pointer;
+    margin: 0;
+    box-shadow: none;
+    transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+
+#leme-painel-ept .leme-chip-clear-all:hover {
+    background: var(--leme-primary);
+    color: #fff;
+    border-color: var(--leme-primary);
 }
 
 #leme-painel-ept .leme-toolbar {
@@ -1670,6 +1796,32 @@
     flex-shrink: 0;
 }
 
+#leme-painel-ept .leme-ranking-selected-count {
+    color: var(--leme-primary);
+    font-weight: 800;
+}
+
+#leme-painel-ept .leme-ranking-clear-btn {
+    border: 1px solid #cfd6ff;
+    border-radius: 999px;
+    background: var(--leme-primary-soft);
+    color: var(--leme-primary);
+    padding: 2px 8px;
+    min-height: 22px;
+    font-size: 11px;
+    font-weight: 800;
+    cursor: pointer;
+    margin: 0 0 0 4px;
+    box-shadow: none;
+    transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+
+#leme-painel-ept .leme-ranking-clear-btn:hover {
+    background: var(--leme-primary);
+    color: #fff;
+    border-color: var(--leme-primary);
+}
+
 #leme-painel-ept .leme-ranking-list {
     flex: 1 1 auto;
     min-height: 120px;
@@ -1862,7 +2014,6 @@
         gap: 5px;
     }
 
-    #leme-painel-ept .leme-bar-label,
     #leme-painel-ept .leme-chart-subtitle {
         white-space: normal;
     }

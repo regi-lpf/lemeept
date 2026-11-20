@@ -66,8 +66,8 @@
     let escopo = "todas";
     let ordenacao = "ano_desc";
     let modo = "cards";
-    let autorReferenciadoAtivo = "";
-    let coorientadorAtivo = "";
+    const MULTI_SELECT_SENTINEL = "__leme_multi__";
+    const filtrosSelecionados = new Map(FACET_FIELDS.map(c => [c, new Set()]));
     let modoCardOrientador = "orientador";
     let paginaAtual = 1;
     let debounceTimer = null;
@@ -93,7 +93,6 @@
     const statCoorientadoresEl = raiz.querySelector("#leme-stat-coorientadores");
     const statMacroprojetosEl = raiz.querySelector("#leme-stat-macroprojetos");
     const filtros = Array.from(raiz.querySelectorAll("select[data-campo]"));
-    const filtrosPorCampo = new Map(filtros.map(f => [f.dataset.campo, f]));
     const botoesEscopo = Array.from(raiz.querySelectorAll(".leme-scope button[data-escopo]"));
     const chartsGridEl = raiz.querySelector(".leme-charts-grid");
     const chartCards = Array.from(raiz.querySelectorAll(".leme-chart-card[data-chart-scope]"));
@@ -109,6 +108,7 @@
     const chartTipoEl = raiz.querySelector("#leme-chart-tipo");
     const chartPublicoEl = raiz.querySelector("#leme-chart-publico");
     const chartNivelEl = raiz.querySelector("#leme-chart-nivel");
+    const graficosFiltrosEl = raiz.querySelector("#leme-graficos-filtros");
     const filtrosAtivos = raiz.querySelector("#leme-filtros-ativos");
     const graficosNota = raiz.querySelector("#leme-graficos-nota");
     const graficosDesc = raiz.querySelector("#leme-graficos-desc");
@@ -602,31 +602,65 @@
         return resultado;
     }
 
+    function obterValoresFiltroAtivo(campo) {
+        return (campo && filtrosSelecionados.get(campo)) || EMPTY_SET;
+    }
+
+    function prefixoAcaoFiltro(ativo, qtdAtivos) {
+        if (ativo) return "Remover filtro: ";
+        return qtdAtivos > 0 ? "Adicionar filtro: " : "Filtrar por ";
+    }
+
+    function temAlgumFiltroFaceta(ignorarCampo) {
+        for (let i = 0; i < FACET_FIELDS.length; i++) {
+            const campo = FACET_FIELDS[i];
+            if (ignorarCampo && campo === ignorarCampo) continue;
+            const set = filtrosSelecionados.get(campo);
+            if (set && set.size > 0) return true;
+        }
+        return false;
+    }
+
+    function obterUniaoIndicesFaceta(campo, valoresSet) {
+        if (!valoresSet || !valoresSet.size) return EMPTY_SET;
+        const mapaCampo = indiceFacetas.get(campo);
+        if (!mapaCampo) return EMPTY_SET;
+        if (valoresSet.size === 1) {
+            const unico = valoresSet.values().next().value;
+            return mapaCampo.get(unico) || EMPTY_SET;
+        }
+        const uniao = new Set();
+        valoresSet.forEach(val => {
+            const s = mapaCampo.get(val);
+            if (s) s.forEach(idx => uniao.add(idx));
+        });
+        return uniao;
+    }
+
+    function limparTodosFiltros() {
+        busca.value = "";
+        filtrosSelecionados.forEach(set => set.clear());
+        aplicarFiltros(true);
+    }
+
     function filtrarIndicesPorFacetas(ignorarCampo) {
         const sets = [];
-        if (autorReferenciadoAtivo && ignorarCampo !== "autor_referenciado") {
-            const mapaAutor = indiceFacetas.get("autor_referenciado");
-            const s = (mapaAutor && mapaAutor.get(autorReferenciadoAtivo)) || EMPTY_SET;
-            if (!s.size) return [];
-            sets.push(s);
-        }
-        if (coorientadorAtivo && ignorarCampo !== "coorientador") {
-            const mapaCoor = indiceFacetas.get("coorientador");
-            const s = (mapaCoor && mapaCoor.get(coorientadorAtivo)) || EMPTY_SET;
-            if (!s.size) return [];
-            sets.push(s);
-        }
-        for (let i = 0; i < filtros.length; i++) {
-            const filtro = filtros[i];
-            const campo = filtro.dataset.campo;
-            if (!filtro.value || (ignorarCampo && campo === ignorarCampo)) continue;
-            const mapaCampo = indiceFacetas.get(campo);
-            const s = (mapaCampo && mapaCampo.get(filtro.value)) || EMPTY_SET;
+        for (let i = 0; i < FACET_FIELDS.length; i++) {
+            const campo = FACET_FIELDS[i];
+            if (ignorarCampo && campo === ignorarCampo) continue;
+            const selecionados = filtrosSelecionados.get(campo);
+            if (!selecionados || !selecionados.size) continue;
+            const s = obterUniaoIndicesFaceta(campo, selecionados);
             if (!s.size) return [];
             sets.push(s);
         }
         if (!sets.length) return null;
         return intersecarSets(sets);
+    }
+
+    function obterListaGraficoFaceta(campo, listaPadrao, termos, indicesBuscaSet) {
+        if (!campo || obterValoresFiltroAtivo(campo).size === 0) return listaPadrao;
+        return filtrarDados(campo, termos, indicesBuscaSet);
     }
 
     function calcularIndicesBuscaSet(listaTermos) {
@@ -715,41 +749,54 @@
 
     function popularFiltrosDinamicos(termos, indicesBuscaSet) {
         const listaTermos = termos || termosBusca();
-        const temFiltroAtivo = Boolean(autorReferenciadoAtivo || coorientadorAtivo) || filtros.some(f => Boolean(f.value));
+        const temFiltroAtivo = temAlgumFiltroFaceta();
         const baseSemFiltros = (!temFiltroAtivo && listaTermos.length)
             ? Array.from(indicesBuscaSet || calcularIndicesBuscaSet(listaTermos), idx => dados[idx])
             : null;
 
         filtros.forEach(select => {
             const campo = select.dataset.campo;
-            const atual = select.value;
+            const selecionados = obterValoresFiltroAtivo(campo);
+            const semOutrosFiltros = !temAlgumFiltroFaceta(campo) && !listaTermos.length;
+            let base = null;
             let opcoes;
-            if (!temFiltroAtivo && !listaTermos.length) {
+            if (semOutrosFiltros) {
                 const mapaCampo = indiceFacetas.get(campo) || new Map();
                 opcoes = ordenarOpcoesFiltro(campo, Array.from(mapaCampo.entries(), ([k, s]) => [k, s.size]));
             } else {
-                const base = baseSemFiltros || filtrarDados(campo, listaTermos, indicesBuscaSet);
+                base = baseSemFiltros || filtrarDados(campo, listaTermos, indicesBuscaSet);
                 opcoes = contarOpcoes(base, campo);
             }
+            const mapaContagem = new Map(opcoes);
             const padrao = select.dataset.default || "Todos";
 
             let html = '<option value="">' + escapeHtml(padrao) + '</option>';
-            let existeAtual = !atual;
-            let qtdAtual = 0;
-
-            opcoes.forEach(([chave, qtd]) => {
-                if (chave === atual) { existeAtual = true; qtdAtual = qtd; }
-                const rotulo = formatarOpcaoFiltro(campo, chave);
-                html += '<option value="' + escapeHtml(chave) + '">' + escapeHtml(rotulo) + '</option>';
-            });
-
-            if (atual && !existeAtual) {
-                html += '<option value="' + escapeHtml(atual) + '">' + escapeHtml(formatarOpcaoFiltro(campo, atual)) + '</option>';
+            if (selecionados.size > 1) {
+                html += '<option value="' + MULTI_SELECT_SENTINEL + '">' + selecionados.size + ' ' + (padrao === "Todas" ? "selecionadas" : "selecionados") + '</option>';
             }
 
+            opcoes.forEach(([chave]) => {
+                const rotulo = formatarOpcaoFiltro(campo, chave);
+                const prefixo = (selecionados.size > 1 && selecionados.has(chave)) ? "✓ " : "";
+                html += '<option value="' + escapeHtml(chave) + '">' + escapeHtml(prefixo + rotulo) + '</option>';
+            });
+
+            selecionados.forEach(valor => {
+                if (!mapaContagem.has(valor)) {
+                    const prefixo = selecionados.size > 1 ? "✓ " : "";
+                    html += '<option value="' + escapeHtml(valor) + '">' + escapeHtml(prefixo + formatarOpcaoFiltro(campo, valor)) + '</option>';
+                }
+            });
+
             select.innerHTML = html;
-            select.value = atual;
-            select.disabled = opcoes.length === 0 && !atual;
+            if (selecionados.size === 0) {
+                select.value = "";
+            } else if (selecionados.size === 1) {
+                select.value = selecionados.values().next().value;
+            } else {
+                select.value = MULTI_SELECT_SENTINEL;
+            }
+            select.disabled = opcoes.length === 0 && selecionados.size === 0;
 
             const field = select.closest(".leme-field");
             if (field) {
@@ -759,10 +806,19 @@
                     countEl.className = "leme-field-count";
                     field.appendChild(countEl);
                 }
-                countEl.classList.toggle("is-selected", Boolean(atual));
-                countEl.textContent = atual
-                    ? (qtdAtual || 0) + " registro(s) nesta opção"
-                    : opcoes.length + " opção(ões) disponível(is)";
+                countEl.classList.toggle("is-selected", selecionados.size > 0);
+                if (selecionados.size === 0) {
+                    countEl.textContent = opcoes.length + " opção(ões) disponível(is)";
+                } else if (selecionados.size === 1) {
+                    const unico = selecionados.values().next().value;
+                    countEl.textContent = (mapaContagem.get(unico) || 0) + " registro(s) nesta opção";
+                } else {
+                    const uniao = obterUniaoIndicesFaceta(campo, selecionados);
+                    const qtdUniao = semOutrosFiltros
+                        ? uniao.size
+                        : base.reduce((acc, it) => acc + (uniao.has(it._idx) ? 1 : 0), 0);
+                    countEl.textContent = selecionados.size + " opções · " + qtdUniao + " registro(s)";
+                }
             }
         });
     }
@@ -776,33 +832,38 @@
                 '<button type="button" data-clear-search="1" aria-label="Remover busca ' + escapeHtml(val) + '">×</button></span>'
             );
         }
-        if (autorReferenciadoAtivo) {
-            chips.push(
-                '<span class="leme-chip">Autor referenciado: ' + escapeHtml(autorReferenciadoAtivo) +
-                '<button type="button" data-clear-author-ref="1" aria-label="Remover filtro de autor referenciado ' + escapeHtml(autorReferenciadoAtivo) + '">×</button></span>'
-            );
-        }
-        if (coorientadorAtivo) {
-            const rotuloCoor = coorientadoresPorChave.get(coorientadorAtivo) || coorientadorAtivo;
-            chips.push(
-                '<span class="leme-chip">Coorientador: ' + escapeHtml(rotuloCoor) +
-                '<button type="button" data-clear-coorientador="1" aria-label="Remover filtro de coorientador ' + escapeHtml(rotuloCoor) + '">×</button></span>'
-            );
-        }
-        filtros.forEach(filtro => {
-            if (filtro.value) {
-                const label = raiz.querySelector('label[for="' + filtro.id + '"]');
-                const nomeFiltro = label ? label.textContent : filtro.dataset.campo;
-                const rotuloValor = formatarOpcaoFiltro(filtro.dataset.campo, filtro.value);
+
+        const adicionarChipsFaceta = (campo, nomeFiltro) => {
+            const valores = obterValoresFiltroAtivo(campo);
+            if (!valores.size) return;
+            valores.forEach(valor => {
+                const rotuloValor = formatarOpcaoFiltro(campo, valor);
                 chips.push(
                     '<span class="leme-chip">' +
                     escapeHtml(nomeFiltro) + ': ' +
                     escapeHtml(labelCurto(rotuloValor, 46)) +
-                    '<button type="button" data-clear-filter="' + escapeHtml(filtro.dataset.campo) + '" aria-label="Remover filtro ' + escapeHtml(nomeFiltro + ": " + rotuloValor) + '">×</button></span>'
+                    '<button type="button" data-clear-filter-campo="' + escapeHtml(campo) +
+                    '" data-clear-filter-valor="' + escapeHtml(valor) +
+                    '" aria-label="Remover filtro ' + escapeHtml(nomeFiltro + ": " + rotuloValor) + '">×</button></span>'
                 );
-            }
+            });
+        };
+
+        adicionarChipsFaceta("autor_referenciado", "Autor referenciado");
+        adicionarChipsFaceta("coorientador", "Coorientador");
+        filtros.forEach(filtro => {
+            const label = raiz.querySelector('label[for="' + filtro.id + '"]');
+            const nomeFiltro = label ? label.textContent : filtro.dataset.campo;
+            adicionarChipsFaceta(filtro.dataset.campo, nomeFiltro);
         });
-        filtrosAtivos.innerHTML = chips.join("");
+
+        const htmlChips = chips.join("");
+        filtrosAtivos.innerHTML = htmlChips;
+        if (graficosFiltrosEl) {
+            graficosFiltrosEl.innerHTML = chips.length
+                ? (htmlChips + '<button type="button" class="leme-chip-clear-all" data-clear-all-filters="1">Limpar filtros</button>')
+                : "";
+        }
     }
 
     function ordenarResultados(lista) {
@@ -823,36 +884,12 @@
         return copia.sort((a, b) => (b.anoNum - a.anoNum) || b.id.localeCompare(a.id, "pt-BR"));
     }
 
-    function obterValorFiltroAtivo(campo) {
-        if (!campo) return "";
-        if (campo === "autor_referenciado") return autorReferenciadoAtivo;
-        if (campo === "coorientador") return coorientadorAtivo;
-        const select = filtrosPorCampo.get(campo);
-        return select ? select.value : "";
-    }
-
     function alternarFiltroInterativo(campo, valor) {
         if (!campo || !valor) return;
-        if (campo === "autor_referenciado") {
-            autorReferenciadoAtivo = autorReferenciadoAtivo === valor ? "" : valor;
-            aplicarFiltros(true);
-            return;
-        }
-        if (campo === "coorientador") {
-            coorientadorAtivo = coorientadorAtivo === valor ? "" : valor;
-            aplicarFiltros(true);
-            return;
-        }
-        const select = filtrosPorCampo.get(campo);
-        if (!select) return;
-        const novoValor = select.value === valor ? "" : valor;
-        if (novoValor && !Array.from(select.options).some(opt => opt.value === novoValor)) {
-            const opt = document.createElement("option");
-            opt.value = novoValor;
-            opt.textContent = formatarOpcaoFiltro(campo, novoValor);
-            select.appendChild(opt);
-        }
-        select.value = novoValor;
+        const set = filtrosSelecionados.get(campo);
+        if (!set) return;
+        if (set.has(valor)) set.delete(valor);
+        else set.add(valor);
         aplicarFiltros(true);
     }
 
@@ -907,12 +944,22 @@
         return ordenarRankingMapa(mapa, limite);
     }
 
-    function agruparTop(lista, limite) {
+    function agruparTop(lista, limite, valoresAtivos) {
         if (lista.length <= limite) return lista;
         const top = lista.slice(0, limite);
-        const outras = lista.slice(limite).reduce((soma, item) => soma + item.valor, 0);
-        if (outras) top.push({ key: "", label: "Outras", valor: outras });
-        return top;
+        const extrasAtivos = [];
+        let outras = 0;
+        for (let i = limite; i < lista.length; i++) {
+            const item = lista[i];
+            if (valoresAtivos && item.key && valoresAtivos.has(item.key)) {
+                extrasAtivos.push(item);
+            } else {
+                outras += item.valor;
+            }
+        }
+        const saida = extrasAtivos.length ? top.concat(extrasAtivos) : top;
+        if (outras) saida.push({ key: "", label: "Outras", valor: outras });
+        return saida;
     }
 
     function renderInsightCard(titulo, itemOuTexto, campoFiltro) {
@@ -920,12 +967,14 @@
             const key = itemOuTexto.key || "";
             const label = itemOuTexto.label || "—";
             if (campoFiltro && key) {
-                const ativo = obterValorFiltroAtivo(campoFiltro) === key;
+                const ativosCampo = obterValoresFiltroAtivo(campoFiltro);
+                const ativo = ativosCampo.has(key);
+                const acao = prefixoAcaoFiltro(ativo, ativosCampo.size);
                 return '<button type="button" class="leme-insight-card is-clickable' + (ativo ? ' is-active' : '') +
                     '" data-filter-campo="' + escapeHtml(campoFiltro) +
                     '" data-filter-valor="' + escapeHtml(key) +
                     '" aria-pressed="' + (ativo ? 'true' : 'false') +
-                    '" title="' + (ativo ? 'Remover filtro: ' : 'Filtrar por ') + escapeHtml(label) + '">' +
+                    '" title="' + acao + escapeHtml(label) + '">' +
                     '<strong>' + escapeHtml(label) + '</strong><span>' + escapeHtml(titulo) + '</span></button>';
             }
             return '<div class="leme-insight-card"><strong>' + escapeHtml(label) + '</strong><span>' + escapeHtml(titulo) + '</span></div>';
@@ -974,15 +1023,33 @@
     function rotuloMacroCurto(valor) {
         const texto = limparRotulo(valor);
         const partes = texto.split(/\s+[–—-]\s+/);
-        if (partes.length < 2) return labelCurto(texto, 46);
-        return partes[0] + " · " + labelCurto(partes.slice(1).join(" – "), 38);
+        if (partes.length < 2) return texto;
+        return partes[0] + " · " + partes.slice(1).join(" – ");
     }
 
     function renderHorizontalChart(el, dadosGrafico, limite, opcoes) {
         const config = opcoes || {};
         const dadosValidos = dadosGrafico.filter(d => d.valor > 0);
         const limiteReal = limite || 8;
-        const lista = config.agruparOutras === false ? dadosValidos.slice(0, limiteReal) : agruparTop(dadosValidos, limiteReal);
+        const campoFiltro = config.campoFiltro || "";
+        const valoresAtivos = campoFiltro ? obterValoresFiltroAtivo(campoFiltro) : EMPTY_SET;
+
+        let lista;
+        let extrasCount = 0;
+        if (config.agruparOutras === false) {
+            lista = dadosValidos.slice(0, limiteReal);
+            if (valoresAtivos.size > 0) {
+                for (let i = limiteReal; i < dadosValidos.length; i++) {
+                    const d = dadosValidos[i];
+                    if (d.key && valoresAtivos.has(d.key)) {
+                        lista.push(d);
+                        extrasCount++;
+                    }
+                }
+            }
+        } else {
+            lista = agruparTop(dadosValidos, limiteReal, valoresAtivos);
+        }
 
         if (!lista.length) {
             el.innerHTML = '<div class="leme-empty-chart">' + escapeHtml(config.emptyText || "Limpe algum filtro ou faça uma busca mais ampla para comparar categorias.") + '</div>';
@@ -995,8 +1062,8 @@
             barsEl = el.firstElementChild;
         }
 
-        const campoFiltro = config.campoFiltro || "";
-        const valorAtivo = config.valorAtivo !== undefined ? config.valorAtivo : (campoFiltro ? obterValorFiltroAtivo(campoFiltro) : "");
+        const temAlgumAtivoVisivel = Boolean(campoFiltro && valoresAtivos.size > 0 && lista.some(d => d.key && valoresAtivos.has(d.key)));
+        barsEl.classList.toggle("is-filtered", temAlgumAtivoVisivel);
         const max = Math.max(...lista.map(d => d.valor), 1);
 
         const chavesNovas = new Set();
@@ -1020,7 +1087,7 @@
             const barKey = d.key ? ("k:" + d.key) : ("l:" + d.label);
             const ehClicavel = Boolean(campoFiltro && d.key);
             const expectedTag = ehClicavel ? "BUTTON" : "DIV";
-            const rotulo = config.formatarRotulo ? config.formatarRotulo(d.label) : labelCurto(d.label, 56);
+            const rotulo = config.formatarRotulo ? config.formatarRotulo(d.label) : limparRotulo(d.label);
             const scale = Math.max(0.04, d.valor / max);
             const scaleStr = "scaleX(" + scale.toFixed(4) + ")";
 
@@ -1064,12 +1131,12 @@
             valSpan.textContent = String(d.valor);
 
             if (ehClicavel) {
-                const ativo = valorAtivo === d.key;
+                const ativo = valoresAtivos.has(d.key);
                 row.classList.toggle("is-active", ativo);
                 row.dataset.filterCampo = campoFiltro;
                 row.dataset.filterValor = d.key;
                 row.setAttribute("aria-pressed", ativo ? "true" : "false");
-                row.title = (ativo ? "Remover filtro: " : "Filtrar por ") + d.label;
+                row.title = prefixoAcaoFiltro(ativo, valoresAtivos.size) + d.label;
             } else {
                 labelSpan.title = d.label;
             }
@@ -1087,7 +1154,9 @@
         }
 
         const footnoteText = config.footnote || ((config.agruparOutras === false && dadosValidos.length > limiteReal)
-            ? ("Exibindo os " + limiteReal + " primeiros de " + dadosValidos.length + " itens distintos neste recorte.")
+            ? (extrasCount > 0
+                ? ("Exibindo os " + limiteReal + " primeiros + " + extrasCount + " selecionado(s) de " + dadosValidos.length + " itens distintos neste recorte.")
+                : ("Exibindo os " + limiteReal + " primeiros de " + dadosValidos.length + " itens distintos neste recorte."))
             : "");
         let footnoteEl = el.querySelector(".leme-chart-footnote");
         if (footnoteText) {
@@ -1119,7 +1188,9 @@
         const legendEl = compEl.querySelector(".leme-composition-legend");
 
         const campoFiltro = config.campoFiltro || "";
-        const valorAtivo = config.valorAtivo !== undefined ? config.valorAtivo : (campoFiltro ? obterValorFiltroAtivo(campoFiltro) : "");
+        const valoresAtivos = campoFiltro ? obterValoresFiltroAtivo(campoFiltro) : EMPTY_SET;
+        const temAlgumAtivoVisivel = Boolean(campoFiltro && valoresAtivos.size > 0 && lista.some(d => d.key && valoresAtivos.has(d.key)));
+        compEl.classList.toggle("is-filtered", temAlgumAtivoVisivel);
         const cores = ["#3b47e5", "#7b359c", "#d62849", "#1f7a49"];
         const total = lista.reduce((soma, item) => soma + item.valor, 0) || 1;
 
@@ -1144,7 +1215,8 @@
             const pctStr = ((d.valor / total) * 100).toFixed(2) + "%";
             const percentual = ((d.valor / total) * 100).toFixed(1).replace(".0", "");
             const ehClicavel = Boolean(campoFiltro && d.key);
-            const ativo = Boolean(ehClicavel && valorAtivo === d.key);
+            const ativo = Boolean(ehClicavel && valoresAtivos.has(d.key));
+            const prefixoTooltip = prefixoAcaoFiltro(ativo, valoresAtivos.size);
 
             let seg = segsExist.get(barKey);
             if (!seg) {
@@ -1160,7 +1232,7 @@
             if (ehClicavel) {
                 seg.dataset.filterCampo = campoFiltro;
                 seg.dataset.filterValor = d.key;
-                seg.title = (ativo ? "Remover filtro: " : "Filtrar por ") + d.label + " (" + d.valor + ")";
+                seg.title = prefixoTooltip + d.label + " (" + d.valor + ")";
             } else {
                 seg.removeAttribute("data-filter-campo");
                 seg.removeAttribute("data-filter-valor");
@@ -1201,7 +1273,7 @@
                 leg.dataset.filterCampo = campoFiltro;
                 leg.dataset.filterValor = d.key;
                 leg.setAttribute("aria-pressed", ativo ? "true" : "false");
-                leg.title = (ativo ? "Remover filtro: " : "Filtrar por ") + d.label;
+                leg.title = prefixoTooltip + d.label;
             } else {
                 legLabel.title = d.label;
             }
@@ -1219,7 +1291,7 @@
 
     function renderYearChart(el, lista) {
         const peso = multiplicadorEscopo();
-        const valorAtivo = obterValorFiltroAtivo("ano");
+        const valoresAtivos = obterValoresFiltroAtivo("ano");
         const dadosAno = contarAgregado(lista, i => i.ano, peso)
             .sort((a, b) => Number(a.label) - Number(b.label));
 
@@ -1234,6 +1306,8 @@
             chartEl = el.firstElementChild;
         }
         chartEl.classList.toggle("is-single", dadosAno.length === 1);
+        const temAlgumAtivoVisivel = Boolean(valoresAtivos.size > 0 && dadosAno.some(d => d.key && valoresAtivos.has(d.key)));
+        chartEl.classList.toggle("is-filtered", temAlgumAtivoVisivel);
 
         const max = Math.max(...dadosAno.map(d => d.valor), 1);
         const alturaMaxBarra = 86;
@@ -1253,7 +1327,7 @@
         const novos = [];
         dadosAno.forEach((d, idx) => {
             const hStr = Math.max(8, Math.round((d.valor / max) * alturaMaxBarra)) + "px";
-            const ativo = valorAtivo === d.key;
+            const ativo = valoresAtivos.has(d.key);
             let col = existentes.get(d.key);
             let barEl;
 
@@ -1284,7 +1358,7 @@
 
             col.classList.toggle("is-active", ativo);
             col.setAttribute("aria-pressed", ativo ? "true" : "false");
-            col.title = (ativo ? "Remover filtro: ano " : "Filtrar por ano ") + d.label;
+            col.title = prefixoAcaoFiltro(ativo, valoresAtivos.size) + "ano " + d.label;
             col.querySelector(".leme-year-value").textContent = String(d.valor);
             col.querySelector(".leme-year-label").textContent = d.label;
 
@@ -1307,7 +1381,7 @@
             card.classList.toggle("is-hidden", !permitidos.includes(escopo));
         });
 
-        const dica = " Clique em qualquer categoria, ano, orientador ou autor para filtrar.";
+        const dica = " Clique em um ou mais itens nos gráficos para combinar filtros.";
         if (escopo === "dissertacoes") {
             chartAnoTitle.textContent = "Dissertações defendidas por ano";
             graficosDesc.textContent = "Indicadores específicos das dissertações defendidas no programa ProfEPT." + dica;
@@ -1320,10 +1394,12 @@
         }
     }
 
-    function renderCardOrientadores(lista) {
-        const dadosOrientadores = contarOrientadores(lista);
-        const dadosCoor = contarCoorientadores(lista);
-        const defsCoor = contarDefesasComCoorientacao(lista);
+    function renderCardOrientadores(lista, termos, indicesBuscaSet) {
+        const listaOri = obterListaGraficoFaceta("orientador", lista, termos, indicesBuscaSet);
+        const listaCoor = obterListaGraficoFaceta("coorientador", lista, termos, indicesBuscaSet);
+        const dadosOrientadores = contarOrientadores(listaOri);
+        const dadosCoor = contarCoorientadores(listaCoor);
+        const defsCoor = contarDefesasComCoorientacao(listaCoor);
 
         if (tabCoorCountEl) {
             tabCoorCountEl.textContent = "(" + dadosCoor.length.toLocaleString("pt-BR") + ")";
@@ -1352,7 +1428,6 @@
                 {
                     agruparOutras: false,
                     campoFiltro: "coorientador",
-                    valorAtivo: coorientadorAtivo,
                     emptyText: "Nenhuma coorientação registrada neste recorte."
                 }
             );
@@ -1381,28 +1456,32 @@
         }
     }
 
-    function atualizarGraficos(lista) {
+    function atualizarGraficos(lista, termos, indicesBuscaSet) {
         atualizarVisibilidadeGraficos();
         renderInsights(lista);
-        renderYearChart(chartAnoEl, lista);
+        const listaAno = obterListaGraficoFaceta("ano", lista, termos, indicesBuscaSet);
+        renderYearChart(chartAnoEl, listaAno);
 
         if (escopo === "todas" || escopo === "dissertacoes") {
+            const listaLinha = obterListaGraficoFaceta("linha_pesquisa", lista, termos, indicesBuscaSet);
             renderCompositionChart(
                 chartLinhaEl,
-                contarAgregado(lista, i => i.linha_pesquisa, 1, k => traduzirSlug("linha_pesquisa", k)),
+                contarAgregado(listaLinha, i => i.linha_pesquisa, 1, k => traduzirSlug("linha_pesquisa", k)),
                 { campoFiltro: "linha_pesquisa" }
             );
+            const listaMacro = obterListaGraficoFaceta("macroprojeto", lista, termos, indicesBuscaSet);
             renderHorizontalChart(
                 chartMacroEl,
-                contarAgregado(lista, i => i.macroprojeto, 1, k => traduzirSlug("macroprojeto", k)),
+                contarAgregado(listaMacro, i => i.macroprojeto, 1, k => traduzirSlug("macroprojeto", k)),
                 6,
                 { formatarRotulo: rotuloMacroCurto, campoFiltro: "macroprojeto" }
             );
-            renderCardOrientadores(lista);
+            renderCardOrientadores(lista, termos, indicesBuscaSet);
 
-            const totalRecorte = lista.length;
-            const pendentes = lista.filter(i => i.base_revisao_pendente).length;
-            const naoDeclaradas = lista.filter(i => !i.base_epistemologica && !i.base_revisao_pendente).length;
+            const listaBase = obterListaGraficoFaceta("base_epistemologica", lista, termos, indicesBuscaSet);
+            const totalRecorte = listaBase.length;
+            const pendentes = listaBase.filter(i => i.base_revisao_pendente).length;
+            const naoDeclaradas = listaBase.filter(i => !i.base_epistemologica && !i.base_revisao_pendente).length;
             const consolidadas = totalRecorte - pendentes - naoDeclaradas;
             const partesNota = [];
             if (totalRecorte > 0 && (pendentes > 0 || naoDeclaradas > 0)) {
@@ -1415,37 +1494,40 @@
                 ? "Nenhuma base consolidada neste recorte (" + pendentes + " registro(s) em curadoria pendente)."
                 : "Nenhuma base epistemológica consolidada neste recorte.";
 
-            renderHorizontalChart(chartBaseEl, contarAgregado(lista, i => i.base_epistemologica, 1), 8, {
+            renderHorizontalChart(chartBaseEl, contarAgregado(listaBase, i => i.base_epistemologica, 1), 8, {
                 footnote: footnoteBase,
                 emptyText: emptyBase,
                 campoFiltro: "base_epistemologica"
             });
 
-            const dadosAutoresRef = contarAgregado(lista, i => i.autores_referenciados, 1);
+            const listaAutoresRef = obterListaGraficoFaceta("autor_referenciado", lista, termos, indicesBuscaSet);
+            const dadosAutoresRef = contarAgregado(listaAutoresRef, i => i.autores_referenciados, 1);
             renderHorizontalChart(chartAutoresRefEl, dadosAutoresRef, 12, {
                 agruparOutras: false,
-                campoFiltro: "autor_referenciado",
-                valorAtivo: autorReferenciadoAtivo
+                campoFiltro: "autor_referenciado"
             });
             if (btnExpandAutoresRef) btnExpandAutoresRef.disabled = dadosAutoresRef.length === 0;
         }
 
         if (escopo === "todas" || escopo === "produtos") {
+            const listaTipo = obterListaGraficoFaceta("tipo_produto", lista, termos, indicesBuscaSet);
             renderHorizontalChart(
                 chartTipoEl,
-                contarAgregado(lista, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k)),
+                contarAgregado(listaTipo, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k)),
                 9,
                 { campoFiltro: "tipo_produto" }
             );
+            const listaPublico = obterListaGraficoFaceta("publico_alvo", lista, termos, indicesBuscaSet);
             renderHorizontalChart(
                 chartPublicoEl,
-                contarAgregado(lista, i => i.publico_alvo, 1, k => traduzirSlug("publico_alvo", k)),
+                contarAgregado(listaPublico, i => i.publico_alvo, 1, k => traduzirSlug("publico_alvo", k)),
                 6,
                 { agruparOutras: false, campoFiltro: "publico_alvo" }
             );
+            const listaNivel = obterListaGraficoFaceta("nivel_aplicacao", lista, termos, indicesBuscaSet);
             renderHorizontalChart(
                 chartNivelEl,
-                contarAgregado(lista, i => i.nivel_aplicacao, 1),
+                contarAgregado(listaNivel, i => i.nivel_aplicacao, 1),
                 8,
                 { campoFiltro: "nivel_aplicacao" }
             );
@@ -1683,7 +1765,7 @@
         atualizarContador(resultadosAtuais.length);
         exportarCsv.disabled = resultadosAtuais.length === 0;
         renderFiltrosAtivos();
-        atualizarGraficos(resultadosAtuais);
+        atualizarGraficos(resultadosAtuais, termos, indicesBuscaSet);
         atualizarVisualizacao(termos);
     }
 
@@ -1763,7 +1845,8 @@
             acaoDescricao: "que citam o autor",
             colunaCsv: "Autor referenciado",
             arquivoCsv: "ranking-autores-referenciados-leme-ept.csv",
-            coletarDados: () => contarAgregado(resultadosAtuais, i => i.autores_referenciados, 1)
+            coletarBase: () => obterListaGraficoFaceta("autor_referenciado", resultadosAtuais),
+            coletarDados: base => contarAgregado(base, i => i.autores_referenciados, 1)
         },
         orientador: {
             titulo: "Orientadores principais: ranking completo",
@@ -1776,7 +1859,8 @@
             acaoDescricao: "orientadas",
             colunaCsv: "Orientador",
             arquivoCsv: "ranking-orientadores-leme-ept.csv",
-            coletarDados: () => contarOrientadores(resultadosAtuais),
+            coletarBase: () => obterListaGraficoFaceta("orientador", resultadosAtuais),
+            coletarDados: base => contarOrientadores(base),
             parAlternavel: "coorientador"
         },
         coorientador: {
@@ -1790,7 +1874,8 @@
             acaoDescricao: "coorientadas",
             colunaCsv: "Coorientador",
             arquivoCsv: "ranking-coorientadores-leme-ept.csv",
-            coletarDados: () => contarCoorientadores(resultadosAtuais),
+            coletarBase: () => obterListaGraficoFaceta("coorientador", resultadosAtuais),
+            coletarDados: base => contarCoorientadores(base),
             parAlternavel: "orientador"
         }
     };
@@ -1835,6 +1920,53 @@
         return filtrados;
     }
 
+    function montarHtmlSelecaoModalRanking(campo) {
+        const selecionados = obterValoresFiltroAtivo(campo);
+        if (!selecionados.size) return "";
+        return ' · <strong class="leme-ranking-selected-count">' + selecionados.size +
+            ' selecionado(s)</strong> <button type="button" class="leme-ranking-clear-btn" data-clear-ranking-campo="' +
+            escapeHtml(campo) + '">Limpar</button>';
+    }
+
+    function sincronizarEstadoModalRanking() {
+        if (!estadoModalRanking) return;
+        const cfg = estadoModalRanking.cfg;
+        const valoresAtivos = obterValoresFiltroAtivo(cfg.campoFiltro);
+        const infoEl = modalContent.querySelector("#leme-ranking-selecao-info");
+        if (infoEl) infoEl.innerHTML = montarHtmlSelecaoModalRanking(cfg.campoFiltro);
+
+        const barsEl = modalContent.querySelector("#leme-ranking-lista .leme-bars");
+        if (barsEl) {
+            const rows = Array.from(barsEl.querySelectorAll("button.leme-ranking-row[data-filter-valor]"));
+            const temVisivelAtivo = valoresAtivos.size > 0 && rows.some(r => valoresAtivos.has(r.dataset.filterValor));
+            barsEl.classList.toggle("is-filtered", temVisivelAtivo);
+            rows.forEach(row => {
+                const val = row.dataset.filterValor;
+                const ativo = valoresAtivos.has(val);
+                row.classList.toggle("is-active", ativo);
+                row.setAttribute("aria-pressed", ativo ? "true" : "false");
+                const label = row.dataset.rankingLabel || val;
+                const info = row.dataset.rankingInfo || "";
+                row.title = prefixoAcaoFiltro(ativo, valoresAtivos.size) + label + info;
+            });
+        }
+
+        if (cfg.parAlternavel) {
+            const qtdOri = contarOrientadores(obterListaGraficoFaceta("orientador", resultadosAtuais)).length;
+            const qtdCoor = contarCoorientadores(obterListaGraficoFaceta("coorientador", resultadosAtuais)).length;
+            const btnOri = modalContent.querySelector('[data-modal-ranking-tipo="orientador"]');
+            const btnCoor = modalContent.querySelector('[data-modal-ranking-tipo="coorientador"]');
+            if (btnOri) {
+                btnOri.textContent = "Orientação principal (" + qtdOri.toLocaleString("pt-BR") + ")";
+                btnOri.disabled = qtdOri === 0;
+            }
+            if (btnCoor) {
+                btnCoor.textContent = "Coorientação (" + qtdCoor.toLocaleString("pt-BR") + ")";
+                btnCoor.disabled = qtdCoor === 0;
+            }
+        }
+    }
+
     function renderModalRankingLista() {
         if (!estadoModalRanking) return;
         const estado = estadoModalRanking;
@@ -1869,7 +2001,8 @@
         if (estado.pagina > totalPaginas) estado.pagina = totalPaginas;
 
         if (!totalFiltrado) {
-            statusEl.innerHTML = '<span>0 ' + escapeHtml(cfg.entidadePlural) + ' exibidos</span>' +
+            statusEl.innerHTML = '<span>0 ' + escapeHtml(cfg.entidadePlural) +
+                ' exibidos<span id="leme-ranking-selecao-info">' + montarHtmlSelecaoModalRanking(cfg.campoFiltro) + '</span></span>' +
                 '<span>Contagem: defesas ' + escapeHtml(cfg.acaoDescricao) + ' (% sobre ' + escapeHtml(estado.totalDefesas) + ')</span>';
             pagEl.innerHTML = "";
 
@@ -1897,17 +2030,21 @@
             estado.dadosBrutos.length.toLocaleString("pt-BR") + " " + entidadeResumo +
             (totalPaginas > 1 ? (" · pág. " + estado.pagina + " de " + totalPaginas) : "");
 
-        statusEl.innerHTML = '<span>' + escapeHtml(textoExibindo) + '</span>' +
+        statusEl.innerHTML = '<span>' + escapeHtml(textoExibindo) +
+            '<span id="leme-ranking-selecao-info">' + montarHtmlSelecaoModalRanking(cfg.campoFiltro) + '</span></span>' +
             '<span>Contagem: defesas ' + escapeHtml(cfg.acaoDescricao) + ' (% sobre ' + escapeHtml(estado.totalDefesas) + ')</span>';
 
         listaEl.innerHTML = '<div class="leme-bars"></div>';
         const barsEl = listaEl.firstElementChild;
-        const valorAtivo = obterValorFiltroAtivo(cfg.campoFiltro);
+        const valoresAtivos = obterValoresFiltroAtivo(cfg.campoFiltro);
+        const temVisivelAtivo = valoresAtivos.size > 0 && paginaItens.some(d => valoresAtivos.has(d.key));
+        barsEl.classList.toggle("is-filtered", temVisivelAtivo);
         const novos = [];
 
         paginaItens.forEach(d => {
-            const ativo = valorAtivo === d.key;
+            const ativo = valoresAtivos.has(d.key);
             const pct = formatarPercentualPtBr(d.valor, estado.totalDefesas);
+            const infoPct = " (" + d.valor + " · " + pct + ")";
             const scale = Math.max(0.03, d.valor / estado.maxGlobal);
             const scaleStr = "scaleX(" + scale.toFixed(4) + ")";
 
@@ -1916,9 +2053,11 @@
             row.className = "leme-bar-row leme-ranking-row is-clickable is-entering" + (ativo ? " is-active" : "");
             row.dataset.filterCampo = cfg.campoFiltro;
             row.dataset.filterValor = d.key;
-            row.dataset.closeModal = "1";
+            row.dataset.modalRankingRow = "1";
+            row.dataset.rankingLabel = d.label;
+            row.dataset.rankingInfo = infoPct;
             row.setAttribute("aria-pressed", ativo ? "true" : "false");
-            row.title = (ativo ? "Remover filtro: " : "Filtrar por ") + d.label + " (" + d.valor + " · " + pct + ")";
+            row.title = prefixoAcaoFiltro(ativo, valoresAtivos.size) + d.label + infoPct;
 
             const rankEl = document.createElement("span");
             rankEl.className = "leme-ranking-rank";
@@ -1980,7 +2119,8 @@
     function abrirModalRanking(tipo) {
         const cfg = RANKING_CONFIGS[tipo];
         if (!cfg) return;
-        const brutos = cfg.coletarDados();
+        const baseRanking = cfg.coletarBase();
+        const brutos = cfg.coletarDados(baseRanking);
         if (!brutos.length) return;
 
         if (!modalBackdrop.classList.contains("is-open")) {
@@ -1994,7 +2134,7 @@
             rankOriginal: idx + 1,
             norm: normalizarBusca(d.label)
         }));
-        const totalDefesas = resultadosAtuais.length;
+        const totalDefesas = baseRanking.length;
         const corteInicial = escolherCorteAdaptavel(dadosBrutos, cfg.corteInicial);
 
         estadoModalRanking = {
@@ -2013,23 +2153,24 @@
         modalEl.classList.add("is-ranking");
         modalTitle.textContent = cfg.titulo;
 
+        const instrucaoModal = " Clique em um ou mais itens para combinar filtros no painel (feche quando terminar).";
         let resumo;
         if (tipo === "coorientador") {
-            const defsCoor = contarDefesasComCoorientacao(resultadosAtuais);
+            const defsCoor = contarDefesasComCoorientacao(baseRanking);
             resumo = dadosBrutos.length.toLocaleString("pt-BR") + " " +
                 (dadosBrutos.length === 1 ? "coorientador distinto" : "coorientadores distintos") +
                 " em " + defsCoor.toLocaleString("pt-BR") + (defsCoor === 1 ? " defesa com coorientação" : " defesas com coorientação") +
                 " (de " + totalDefesas.toLocaleString("pt-BR") + (totalDefesas === 1 ? " defesa" : " defesas") +
-                " no recorte atual). Clique em qualquer item para filtrar o painel.";
+                " no recorte atual)." + instrucaoModal;
         } else {
             resumo = dadosBrutos.length.toLocaleString("pt-BR") + " " +
                 (dadosBrutos.length === 1 ? cfg.entidadeSingular + " distinto" : cfg.entidadePlural + " distintos") +
                 " em " + totalDefesas.toLocaleString("pt-BR") + (totalDefesas === 1 ? " defesa" : " defesas") +
-                " do recorte atual. Clique em qualquer item para filtrar o painel.";
+                " do recorte atual." + instrucaoModal;
         }
 
-        const qtdOriModal = cfg.parAlternavel ? contarOrientadores(resultadosAtuais).length : 0;
-        const qtdCoorModal = cfg.parAlternavel ? contarCoorientadores(resultadosAtuais).length : 0;
+        const qtdOriModal = cfg.parAlternavel ? contarOrientadores(obterListaGraficoFaceta("orientador", resultadosAtuais)).length : 0;
+        const qtdCoorModal = cfg.parAlternavel ? contarCoorientadores(obterListaGraficoFaceta("coorientador", resultadosAtuais)).length : 0;
         const modeTabsHtml = cfg.parAlternavel
             ? '<div class="leme-ranking-mode-tabs" role="group" aria-label="Alternar entre orientação principal e coorientação">' +
             '<button type="button" class="leme-ranking-mode-tab' + (tipo === "orientador" ? " is-active" : "") + '" data-modal-ranking-tipo="orientador" aria-pressed="' + (tipo === "orientador" ? "true" : "false") + '"' + (qtdOriModal === 0 ? " disabled" : "") + '>Orientação principal (' + qtdOriModal.toLocaleString("pt-BR") + ')</button>' +
@@ -2363,9 +2504,10 @@
 
         const filterTrigger = e.target.closest("[data-filter-campo][data-filter-valor]");
         if (filterTrigger) {
-            const fechar = filterTrigger.dataset.closeModal === "1";
             alternarFiltroInterativo(filterTrigger.dataset.filterCampo, filterTrigger.dataset.filterValor);
-            if (fechar) fecharModal();
+            if (filterTrigger.dataset.modalRankingRow === "1" && estadoModalRanking) {
+                sincronizarEstadoModalRanking();
+            }
             return;
         }
 
@@ -2383,25 +2525,26 @@
             return;
         }
 
-        const clearAuthor = e.target.closest("[data-clear-author-ref]");
-        if (clearAuthor) {
-            autorReferenciadoAtivo = "";
+        const clearRankingCampo = e.target.closest("[data-clear-ranking-campo]");
+        if (clearRankingCampo && estadoModalRanking) {
+            const set = filtrosSelecionados.get(clearRankingCampo.dataset.clearRankingCampo);
+            if (set) set.clear();
+            aplicarFiltros(true);
+            sincronizarEstadoModalRanking();
+            return;
+        }
+
+        const clearFilterBtn = e.target.closest("[data-clear-filter-campo][data-clear-filter-valor]");
+        if (clearFilterBtn) {
+            const set = filtrosSelecionados.get(clearFilterBtn.dataset.clearFilterCampo);
+            if (set) set.delete(clearFilterBtn.dataset.clearFilterValor);
             aplicarFiltros(true);
             return;
         }
 
-        const clearCoor = e.target.closest("[data-clear-coorientador]");
-        if (clearCoor) {
-            coorientadorAtivo = "";
-            aplicarFiltros(true);
-            return;
-        }
-
-        const clearFilter = e.target.closest("[data-clear-filter]");
-        if (clearFilter) {
-            const filtro = filtros.find(f => f.dataset.campo === clearFilter.dataset.clearFilter);
-            if (filtro) filtro.value = "";
-            aplicarFiltros(true);
+        const clearAllBtn = e.target.closest("[data-clear-all-filters]");
+        if (clearAllBtn) {
+            limparTodosFiltros();
             return;
         }
 
@@ -2413,7 +2556,15 @@
         }
     });
 
-    filtros.forEach(filtro => filtro.addEventListener("change", () => aplicarFiltros(true)));
+    filtros.forEach(filtro => filtro.addEventListener("change", () => {
+        if (filtro.value === MULTI_SELECT_SENTINEL) return;
+        const set = filtrosSelecionados.get(filtro.dataset.campo);
+        if (set) {
+            set.clear();
+            if (filtro.value) set.add(filtro.value);
+        }
+        aplicarFiltros(true);
+    }));
     ordenarSelect.addEventListener("change", () => {
         ordenacao = ordenarSelect.value || "ano_desc";
         paginaAtual = 1;
@@ -2427,13 +2578,7 @@
     busca.addEventListener("keydown", e => {
         if (e.key === "Escape") { busca.value = ""; aplicarFiltros(true); }
     });
-    limpar.addEventListener("click", () => {
-        busca.value = "";
-        autorReferenciadoAtivo = "";
-        coorientadorAtivo = "";
-        filtros.forEach(f => { f.value = ""; });
-        aplicarFiltros(true);
-    });
+    limpar.addEventListener("click", limparTodosFiltros);
     btnCards.addEventListener("click", () => { modo = "cards"; atualizarVisualizacao(); });
     btnTable.addEventListener("click", () => { modo = "table"; atualizarVisualizacao(); });
     exportarCsv.addEventListener("click", baixarCsv);
@@ -2519,3 +2664,4 @@
 
     iniciarPainel();
 })();
+

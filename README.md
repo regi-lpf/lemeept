@@ -12,7 +12,7 @@ Repositório da pipeline de coleta, extração híbrida (determinística + LLM),
 | **[ARQUITETURA.md](ARQUITETURA.md)** | Visão executiva da arquitetura, fluxo Mermaid, mapa de diretórios/artefatos e regras de governança. |
 | **[CONTRATO_DADOS.md](CONTRATO_DADOS.md)** | Especificação de domínio v4, taxonomia CAPES/ProfEPT (Linhas, MPs, 9 Tipos, 5 Públicos, 8 Níveis, 7 Matrizes) e regras de evidência. |
 | **[DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md)** | Referência de engenharia: stack, variáveis de ambiente, schemas Pydantic v2 (`pipeline/models_v4.py`) e implementação interna dos módulos e do frontend. |
-| **[AUDITORIA_E_REFATORACAO.md](AUDITORIA_E_REFATORACAO.md)** | Registro rastreável das 51 melhorias aplicadas (`AUD-01` a `AUD-25` na pipeline e `FE-01` a `FE-26` no frontend) e backlog futuro. |
+| **[AUDITORIA_E_REFATORACAO.md](AUDITORIA_E_REFATORACAO.md)** | Registro rastreável das 53 melhorias aplicadas (`AUD-01` a `AUD-25` na pipeline e `FE-01` a `FE-28` no frontend) e backlog futuro. |
 | **[RELATORIOS.md](RELATORIOS.md)** | Relatório executivo de resultados do acervo compilado, orçamento empírico de tokens (viabilidade em 8 GB VRAM) e marcos históricos por etapa. |
 
 ---

@@ -1,6 +1,6 @@
 # Auditoria Técnica e Registro de Refatorações — Pipeline & Frontend v4
 
-> **Escopo deste documento:** Registro rastreável de todas as auditorias e correções aplicadas na pipeline (`AUD-01` a `AUD-25`) e no frontend (`FE-01` a `FE-26`), além do backlog futuro. Para a especificação técnica atual dos módulos, consulte [DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md); para resultados empíricos do acervo, consulte [RELATORIOS.md](RELATORIOS.md).
+> **Escopo deste documento:** Registro rastreável de todas as auditorias e correções aplicadas na pipeline (`AUD-01` a `AUD-25`) e no frontend (`FE-01` a `FE-28`), além do backlog futuro. Para a especificação técnica atual dos módulos, consulte [DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md); para resultados empíricos do acervo, consulte [RELATORIOS.md](RELATORIOS.md).
 
 ---
 
@@ -54,7 +54,7 @@
 
 ---
 
-## 2. Auditoria e Refatoração do Frontend (`FE-01` a `FE-26`)
+## 2. Auditoria e Refatoração do Frontend (`FE-01` a `FE-28`)
 
 > **Arquitetura e Regra de Deploy no Elementor:** O código-fonte foi modularizado em [index.html](index.html) + [frontend/styles.css](frontend/styles.css) + [frontend/app.js](frontend/app.js) e compilado via [scripts/build_frontend.py](scripts/build_frontend.py) em [dist/widget-elementor.html](dist/widget-elementor.html). **No Elementor, cole o bundle exclusivamente no Widget HTML (`</>`)** — nunca no **Editor de Texto** (TinyMCE/`wpautop` injeta `<p>`/`<span>` e corrompe scripts).
 
@@ -62,14 +62,14 @@
 
 | Aspecto do Frontend | Pré-Refatoração (`index-new.html` / `index.html` v3) | Pós-Refatoração ([index.html](index.html) + `frontend/` → [dist/widget-elementor.html](dist/widget-elementor.html)) |
 | :--- | :--- | :--- |
-| Estrutura e Empacotamento | Monólito de 4.732 linhas (209 KB) / `index.html` v3 + `index-new.html` | Fontes modulares (`index.html` 204L + `frontend/*`) + bundle validado `dist/widget-elementor.html` (`142 KB` / `30,9 KB` gzip, `0` linhas em branco, `FE-26`) |
+| Estrutura e Empacotamento | Monólito de 4.732 linhas (209 KB) / `index.html` v3 + `index-new.html` | Fontes modulares (`index.html` 212L + `frontend/*`) + bundle validado `dist/widget-elementor.html` (`152,3 KB` / `32,6 KB` gzip, `0` linhas em branco, `FE-26..28`) |
 | Sanitização HTML, URLs e CSV | `escapeHtml` *no-op* (`<`→`<`) com DOM-XSS e quebra em `EPT-0020`/`EPT-0029`; links/CSV sem proteção | `HTML_ESCAPE_MAP` com escapes Unicode; `sanitizarUrl` (`http:`/`https:` + `rel="noopener noreferrer"`); `csvEscape` anti-*Formula Injection* |
 | Orientadores, Coorientação e Campus | `30` entradas com `:`/`.`, coorientação sem métrica/filtro próprio, `"IFC – IFC Blumenau"` | Orientadores consolidados + **`coorientador` como 10ª faceta autônoma** (`FE-25`: toggle no card, subtexto em `.leme-stats`, aba/CSV no modal); `"IFC – Campus Blumenau"` |
 | Cobertura do Contrato v4 e Busca | Busca sem rótulos `I18N`/`publico_alvo`; omitia `gerado_em`, `evidencias`, `proveniencia`, `data_publicacao` | Busca enriquecida com `I18N`/`publico_alvo`/`instituicao`/coorientadores; `gerado_em` no topo; `<details>` recolhido no modal |
-| Dashboard BI e Rankings (`FE-22..24`) | Apenas barras de autores filtravam (por substring); cards altos; só Top 12/Top 10 visíveis | Grade compacta `3 × 3` (`2 × 2` em `produtos`), animações BI via reconciliação DOM, índice de **10 facetas**, *cross-filtering* nos 9 gráficos + 3 insights e modal `"Ver todos"` com busca, cortes, paginação (`30`/pág.) e CSV |
+| Dashboard BI, Rankings e Filtros (`FE-22..24`, `FE-27..28`) | Apenas barras de autores filtravam (por substring); cards altos sem `ellipsis`; filtro único e só Top 12/Top 10 | Grade compacta `3 × 3` com truncamento `ellipsis` nos selecionáveis, animações BI, índice de **10 facetas**, seleção múltipla (**OU** intra-faceta / **E** entre facetas) com base disjuntiva e chips no topo do dashboard, além de modal `"Ver todos"` com seleção contínua (`30`/pág.) e CSV |
 | Ordenação, Responsividade e WCAG AA | Sem ordenação (2026 no fim); armadilha Tabela em `<= 720px`; contrastes `< 3.5:1` e `backdrop-filter` | Ordenação `ano_desc` padrão + seletor; Tabela com `"Ver detalhes"` e fallback `matchMedia`; contraste `>= 4.5:1`; sem `backdrop-filter` |
 
-### Quadro Consolidado dos Achados do Frontend (`FE-01` a `FE-26`)
+### Quadro Consolidado dos Achados do Frontend (`FE-01` a `FE-28`)
 
 | ID | Sev. | Status | Resumo da Solução Aplicada |
 | :--- | :--- | :--- | :--- |
@@ -99,6 +99,8 @@
 | `FE-24` | Melhoria | **Resolvido** | Modais expansíveis unificados (`abrirModalRanking` / `RANKING_CONFIGS`) acionados via `"Ver todos"` com busca, pills adaptáveis (`Todos`, `≥ 2`, `≥ 5`, `≥ 10`), ordenação, paginação (`rankingPorPagina = 30` via `data-ranking-pagina`), filtro por clique e exportação `.CSV`. |
 | `FE-25` | Melhoria | **Resolvido** | Coorientação autônoma (`coorientador` como 10ª faceta em `indiceFacetas` isolada de `orientador`): toggle `Orientação \| Coorientação (N)` no card, subtexto `#leme-stat-coorientadores` em `.leme-stats`, chip dedicado, alternador interno e CSV próprio no modal. |
 | `FE-26` | Melhoria | **Resolvido** | Modularização em [index.html](index.html) + [frontend/styles.css](frontend/styles.css) + [frontend/app.js](frontend/app.js) e build via [scripts/build_frontend.py](scripts/build_frontend.py) (`--check`) gerando [dist/widget-elementor.html](dist/widget-elementor.html) (`0` linhas em branco, `wpautop`-safe). |
+| `FE-27` | Melhoria | **Resolvido** | Truncamento com reticências (`text-overflow: ellipsis`) nos selecionáveis dos cards do dashboard (`.leme-bars` e `.leme-composition-legend` com `minmax(0, 1fr)`, `min-width: 0` nos rótulos e texto integral em `title` via `rotuloMacroCurto` e `renderHorizontalChart`). |
+| `FE-28` | Melhoria | **Resolvido** | Seleção múltipla de filtros no dashboard e no modal `"Ver todos"` (`filtrosSelecionados` com **OU** intra-faceta e **E** entre facetas, facetamento disjuntivo com `.is-filtered` WCAG AA, promoção de selecionados fora do Top N/`"Outras"`, barra compacta `#leme-graficos-filtros`, remoção unitária de chips, sincronização dos `<select>` via `MULTI_SELECT_SENTINEL` e seleção múltipla contínua sem fechamento automático no modal). |
 
 ---
 
