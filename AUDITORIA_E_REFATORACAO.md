@@ -1,6 +1,6 @@
 # Auditoria Técnica, Discrepâncias e Backlog de Refatoração — Pipeline & Frontend v4
 
-> **Status Atual:** **Pipeline (`AUD-01` a `AUD-25`) e Frontend (`FE-01` a `FE-24`) Concluídos.** As fases da pipeline foram implementadas e validadas nos registros do acervo; o frontend consolidado em [index.html](index.html) teve todas as 24 melhorias aplicadas e aprovadas em checagem estática.
+> **Status Atual:** **Pipeline (`AUD-01` a `AUD-25`) e Frontend (`FE-01` a `FE-26`) Concluídos.** As fases da pipeline foram implementadas e validadas nos registros do acervo; o frontend modularizado ([index.html](index.html) + [frontend/](frontend) → [dist/widget-elementor.html](dist/widget-elementor.html)) teve todas as 26 melhorias aplicadas e aprovadas em checagem estática.
 
 ---
 
@@ -95,23 +95,23 @@
 
 ---
 
-## 4. Auditoria e Refatoração do Frontend (`FE-01` a `FE-24`)
+## 4. Auditoria e Refatoração do Frontend (`FE-01` a `FE-26`)
 
-> **Consolidação:** O widget v4 em andamento (`index-new.html`) foi consolidado e refatorado diretamente em [index.html](index.html), preservando o widget legado v3 sem alterações em [index-v3.html](index-v3.html).
+> **Consolidação e Deploy no Elementor:** Os fontes do frontend v4 foram modularizados em [index.html](index.html) + [frontend/styles.css](frontend/styles.css) + [frontend/app.js](frontend/app.js), gerando [dist/widget-elementor.html](dist/widget-elementor.html) via [scripts/build_frontend.py](scripts/build_frontend.py) (legado v3 preservado em [index-v3.html](index-v3.html)). **Importante:** no Elementor, cole o bundle exclusivamente no **Widget HTML (`</>`)** — nunca no **Editor de Texto** (TinyMCE/`wpautop` injeta tags `<p>`/`<span>` e corrompe scripts).
 
 ### Resumo Comparativo (Antes vs. Depois)
 
-| Aspecto do Frontend | Pré-Refatoração (`index-new.html` / `index.html` v3) | Pós-Refatoração ([index.html](index.html) v4) |
+| Aspecto do Frontend | Pré-Refatoração (`index-new.html` / `index.html` v3) | Pós-Refatoração ([index.html](index.html) + `frontend/` → [dist/widget-elementor.html](dist/widget-elementor.html)) |
 | :--- | :--- | :--- |
-| Estrutura de arquivos e URL JSON | `index.html` (v3) + `index-new.html` (`./dist/painel-ept-v4.json` relativo) | Consolidado em `index.html` (`data-json-url` produção + `data-json-url-local` em `localhost`); legado em `index-v3.html` |
+| Estrutura de arquivos e URL JSON | `index.html` (v3) + `index-new.html` (`./dist/painel-ept-v4.json` relativo) | Modular (`index.html` + `frontend/*`) compilado em `dist/widget-elementor.html` (`FE-26`); `data-json-url` + `data-json-url-local`; legado em `index-v3.html` |
 | Sanitização HTML (`escapeHtml`) e URLs | *No-op* (`<`→`<`, `"`→`"`) com DOM-XSS ativo e quebra em `EPT-0020`/`EPT-0029`; links sem checagem | `HTML_ESCAPE_MAP` com escapes Unicode; `sanitizarUrl` (`http:`/`https:` + `rel="noopener noreferrer"`); `csvEscape` anti-fórmula |
-| Orientadores e Instituição/Campus | `30` entradas com `:`/`.`, `": Juliene Marques Bogo"` no gráfico, `"IFC – IFC Blumenau"` | **21** orientadores canônicos consolidados (`orientadorChave`); `"Instituto Federal Catarinense (IFC) – Campus Blumenau"` |
-| Busca e Cobertura do Contrato v4 | Busca sem rótulos `I18N`/`publico_alvo`; omitia `gerado_em`, `evidencias`, `proveniencia`, `data_publicacao` | Busca enriquecida com `I18N`/`publico_alvo`/`instituicao`; `gerado_em` no topo; `<details>` recolhido no modal |
-| Interatividade do Dashboard e Layout BI | Apenas barras de `"Autores mais referenciados"` filtravam (por substring via `#leme-busca`); cards altos | Grade compacta `3 × 3` (`2 × 2` em `produtos`), animações BI via reconciliação DOM + índice facetado (`FE-23`) e *cross-filtering* nos **9 gráficos** + **3 cards categóricos** (`FE-22`) |
-| Exploração de Rankings Longos (`FE-24`) | Apenas Top 12 autores e Top 10 orientadores visíveis no card; sem busca, corte nem exportação do ranking | Botão `"Ver todos"` abre modal unificado (autores em `≥ 5` e orientadores em `Todos`) com busca por nome, cortes adaptáveis, ordenação, paginação (`30`/pág.), clique para filtrar e CSV do ranking |
+| Orientadores, Coorientação e Campus | `30` entradas com `:`/`.`, coorientação restrita a busca/detalhes, `"IFC – IFC Blumenau"` | Orientadores consolidados + **`coorientador` como 10ª faceta autônoma** (`FE-25`: toggle no card, subtexto em `.leme-stats`, aba/CSV no modal); `"IFC – Campus Blumenau"` |
+| Busca e Cobertura do Contrato v4 | Busca sem rótulos `I18N`/`publico_alvo`; omitia `gerado_em`, `evidencias`, `proveniencia`, `data_publicacao` | Busca enriquecida com `I18N`/`publico_alvo`/`instituicao`/coorientadores; `gerado_em` no topo; `<details>` recolhido no modal |
+| Interatividade do Dashboard e Layout BI | Apenas barras de `"Autores mais referenciados"` filtravam (por substring via `#leme-busca`); cards altos | Grade compacta `3 × 3` (`2 × 2` em `produtos`), animações BI via reconciliação DOM + índice de **10 facetas** (`FE-23`/`FE-25`) e *cross-filtering* nos **9 gráficos** + **3 cards categóricos** (`FE-22`) |
+| Exploração de Rankings Longos (`FE-24`) | Apenas Top 12 autores e Top 10 orientadores visíveis no card; sem busca, corte nem exportação do ranking | Botão `"Ver todos"` abre modal unificado (autores em `≥ 5`; orientadores/coorientadores em `Todos` com abas) com busca, cortes adaptáveis, ordenação, paginação (`30`/pág.), clique para filtrar e CSV próprio |
 | Ordenação, Responsividade e WCAG AA | Sem ordenação (2026 no fim); armadilha Tabela em `<= 720px`; contrastes `< 3.5:1` e `backdrop-filter` | Ordenação `ano_desc` padrão + seletor; Tabela com `"Ver detalhes"` e fallback `matchMedia`; contraste `>= 4.5:1`; sem `backdrop-filter` |
 
-### Quadro Resumo dos Achados do Frontend (`FE-01` a `FE-24`)
+### Quadro Resumo dos Achados do Frontend (`FE-01` a `FE-26`)
 
 | ID | Severidade | Status | Resumo |
 | :--- | :--- | :--- | :--- |
@@ -139,8 +139,10 @@
 | `FE-22` | Melhoria | **Resolvido** | Dashboard 100% interativo (`data-filter-campo` / `data-filter-valor` + `alternarFiltroInterativo`): clique/teclado em qualquer um dos **9 gráficos** ou **3 cards categóricos de destaque** alterna o filtro em sincronia bidirecional com os `<select>` e chips. |
 | `FE-23` | Melhoria | **Resolvido** | Dashboard compacto `3 × 3` fullscreen em `>= 1080px` (`2 × 2` em `produtos`), animações estilo BI via reconciliação de DOM (`dataset.barKey`, barras GPU `scaleX`) + modal/chips suaves e índice facetado em memória (`indiceFacetas` / `construirIndiceFacetas` / `intersecarSets`). |
 | `FE-24` | Melhoria | **Resolvido** | Modais expansíveis unificados (`abrirModalRanking` / `RANKING_CONFIGS`) acionados via `"Ver todos"` nos cards **Autores mais referenciados** (corte inicial adaptável `≥ 5`) e **Orientadores** (corte inicial `Todos`), com busca por nome (+ resgate em `Todos`), pills adaptáveis (`Todos`, `≥ 2`, `≥ 5`, `≥ 10`), ordenação (`Frequência` / `A–Z`), paginação simples (`rankingPorPagina = 30` via `data-ranking-pagina`, oculta automaticamente quando `<= 30`), clique para filtrar + fechamento automático e exportação `.CSV` do ranking (`baixarCsvRanking` com `csvEscape`). |
+| `FE-25` | Melhoria | **Resolvido** | Coorientação autônoma (`coorientador` como 10ª faceta em `indiceFacetas` sem somar a `orientador` principal): busca em `extrasBusca`, mini-toggle `Orientação \| Coorientação (N)` no card, subtexto `#leme-stat-coorientadores` em `.leme-stats`, chip dedicado `"Coorientador: ..."` (sem `<select>` extra), alternador interno e exportação CSV própria (`ranking-coorientadores-leme-ept.csv`) no modal. |
+| `FE-26` | Melhoria | **Resolvido** | Modularização em [index.html](index.html) (~204 linhas) + [frontend/styles.css](frontend/styles.css) (CSS consolidado) + [frontend/app.js](frontend/app.js) e build via [scripts/build_frontend.py](scripts/build_frontend.py) (`--check`) gerando [dist/widget-elementor.html](dist/widget-elementor.html) (142 KB / 30,9 KB gzip, zero linhas em branco/`wpautop`-safe) para colagem no **Widget HTML (`</>`)** do Elementor. |
 
-* **Status de verificação:** Checagem estática automatizada em [index.html](index.html) **100% aprovada**.
+* **Status de verificação:** `python3 scripts/build_frontend.py --check` e checagem de paridade **100% aprovados** (`81` funções JS, `48` IDs HTML, `0` classes CSS não usadas).
 
 ### Backlog Futuro (Fora do Escopo Atual)
 

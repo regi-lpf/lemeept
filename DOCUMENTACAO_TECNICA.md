@@ -2,7 +2,7 @@
 
 > **Escopo deste documento:** Especificação técnica atualizada e fiel ao comportamento **em vigor** na pasta [pipeline/](pipeline), validada pela suíte de testes em [tests/test_pipeline_v4.py](tests/test_pipeline_v4.py) e confrontada com [RELATORIOS.md](RELATORIOS.md) e com os artefatos compilados em `data/` e `dist/`.
 >
-> O histórico das auditorias e refatorações aplicadas na pipeline (`AUD-01` a `AUD-25`) e no frontend (`FE-01` a `FE-24`) está registrado em [AUDITORIA_E_REFATORACAO.md](AUDITORIA_E_REFATORACAO.md).
+> O histórico das auditorias e refatorações aplicadas na pipeline (`AUD-01` a `AUD-25`) e no frontend (`FE-01` a `FE-26`) está registrado em [AUDITORIA_E_REFATORACAO.md](AUDITORIA_E_REFATORACAO.md).
 
 ---
 
@@ -230,9 +230,10 @@ Schema enxuto imposto à saída da LLM em `step3_llm_extract.py`:
 * `compilar_pipeline_v4` valida o artefato final completo com `PainelEptV4Output`, grava `dist/painel-ept-v4.json` e reescreve (ou exclui quando zerado) `dist/revisao_epistemologica_pendente.csv`.
 * **CLI (`--records-dir`, `--dist-dir`):** Suporta compilação em diretórios isolados.
 
-### 5.7. Frontend — Painel Bibliométrico v4 (`index.html`)
+### 5.7. Frontend — Painel Bibliométrico v4 (`index.html` + `frontend/` → `dist/widget-elementor.html`)
 
-* **Consolidação e Empacotamento:** O frontend v4 consolidado reside em [index.html](index.html) como fragmento `<section id="leme-painel-ept">` autocontido (HTML + CSS + Vanilla JS), pronto para colagem direta no widget HTML do Elementor (WordPress) ou visualização via servidor HTTP local. O widget legado v3 permanece preservado em [index-v3.html](index-v3.html).
+* **Modularização e Empacotamento Elementor-Safe (`FE-26`):** O código de desenvolvimento fica separado em [index.html](index.html) (~204 linhas de preview HTML5 + estrutura `<section id="leme-painel-ept">`), [frontend/styles.css](frontend/styles.css) (CSS consolidado e 100% escopado) e [frontend/app.js](frontend/app.js) (Vanilla JS sem dependências). O script [scripts/build_frontend.py](scripts/build_frontend.py) compila e valida o artefato autocontido [dist/widget-elementor.html](dist/widget-elementor.html) (~142 KB / ~30,9 KB gzip, `0` linhas em branco, `0` CRLF, preservação de combinadores CSS e validação léxica JS). O widget legado v3 permanece em [index-v3.html](index-v3.html).
+  * **Aviso de Deploy (Elementor / WordPress):** cole [dist/widget-elementor.html](dist/widget-elementor.html) **exclusivamente no Widget HTML (`</>`) nativo do Elementor** — **nunca** no widget **Editor de Texto**, pois o TinyMCE/`wpautop` reescreve o código (injeta `<p>`/`<span>` e decodifica entidades), quebrando `<script>` e `escapeHtml`.
 * **Resolução de Fonte JSON (`resolverUrlsDados` / `carregarPayloadJson`):** Declara `data-json-url` (produção em `https://raw.githubusercontent.com/regi-lpf/lemeept/refs/heads/main/dist/painel-ept-v4.json`) e `data-json-url-local` (`./dist/painel-ept-v4.json`). Em `localhost`, `127.0.0.1`, `[::1]` ou `file:`, prioriza o artefato local com fallback para a URL remota; em produção, consome `data-json-url` diretamente. Em falhas de carregamento, exibe estado degradado em `#leme-periodo`, indicadores e gráficos, desabilita filtros/exportação e oferece botão `"Tentar novamente"`.
 * **Aderência ao Contrato v4 e Regras de Domínio:**
   * Exibe `gerado_em` (`Atualizado em DD/MM/AAAA`) no cabeçalho junto ao intervalo de anos.
@@ -250,11 +251,15 @@ Schema enxuto imposto à saída da LLM em `step3_llm_extract.py`:
   * Botão discreto `"Ver todos"` (`data-open-ranking`) nos cabeçalhos dos cards **Autores mais referenciados** e **Orientadores**, reaproveitando a estrutura acessível de `#leme-modal-backdrop` com a classe modificadora `.is-ranking`.
   * **Autores referenciados:** abre no corte inicial **`≥ 5`** (adaptando automaticamente para `≥ 2` ou `Todos` se o recorte filtrado não possuir itens com `≥ 5`).
   * **Orientadores:** compartilha exatamente a mesma estrutura pensando no crescimento futuro do acervo, abrindo em **`Todos (≥ 1)`** (com barra de paginação oculta automaticamente enquanto a contagem for `<= rankingPorPagina`).
-  * **Recursos internos do modal:** pesquisa instantânea por nome (`normalizarBusca` + `highlightText`, com botão de resgate `"Mostrar em Todos (≥ 1)"` quando há resultados fora do corte ativo), pills adaptáveis (`Todos`, `≥ 2`, `≥ 5`, `≥ 10`) com contagem ao vivo no recorte, ordenação (`Mais citados` / `Mais orientações` vs. `A–Z`), barras horizontais normalizadas pelo máximo global do recorte (`maxGlobal`) com posição `#N` e percentual sobre o recorte, paginação simples configurável (`rankingPorPagina = 30`, usando `data-ranking-pagina` isolado de `data-pagina` do catálogo), clique em qualquer linha aplicando `alternarFiltroInterativo` com fechamento automático (`data-close-modal="1"`), e botão **Exportar ranking (.CSV)** (`baixarCsvRanking` via `csvEscape` e `dispararDownloadCsv`).
+  * **Recursos internos do modal:** pesquisa instantânea por nome (`normalizarBusca` + `highlightText`, com botão de resgate `"Mostrar em Todos (≥ 1)"` quando há resultados fora do corte ativo), pills adaptáveis (`Todos`, `≥ 2`, `≥ 5`, `≥ 10`) com contagem ao vivo no recorte, ordenação (`Mais citados` / `Mais orientações` / `Mais coorientações` vs. `A–Z`), barras horizontais normalizadas pelo máximo global do recorte (`maxGlobal`) com posição `#N` e percentual sobre o recorte, paginação simples configurável (`rankingPorPagina = 30`, usando `data-ranking-pagina` isolado de `data-pagina` do catálogo), clique em qualquer linha aplicando `alternarFiltroInterativo` com fechamento automático (`data-close-modal="1"`), e botão **Exportar ranking (.CSV)** (`baixarCsvRanking` via `csvEscape` e `dispararDownloadCsv`).
+* **Coorientação Autônoma (`FE-25`):**
+  * `coorientador` atua como 10ª faceta independente no motor (`FACET_FIELDS`, `indiceFacetas`, `coorientadoresPorChave`, `coorientadorAtivo`), sem misturar contagens com `orientador` principal e com busca textual garantida em `extrasBusca` (`coorientadores.join(" ")`).
+  * No card **Orientadores**, um mini-toggle (**`Orientação` | `Coorientação (N)`**) alterna as barras sem quebrar o grid `3 × 3`; em `.leme-stats`, o indicador exibe subtexto `#leme-stat-coorientadores` (`+ N coorientador(es) (D defesa(s))`).
+  * Mantém os 8 `<select>` originais em `.leme-filters` (filtro acionável via gráfico, modal `"Ver todos"` ou busca, gerando chip próprio `"Coorientador: ..."`), além de alternador interno **`Orientação principal` | `Coorientação`** e exportação `.CSV` separada (`ranking-coorientadores-leme-ept.csv`) no modal.
 * **Escopos, Ordenação, Tabela e Exportação:**
   * Suporta 3 escopos (`todas`, `dissertacoes`, `produtos`), ordenação (`ano_desc` padrão, `ano_asc`, `titulo_asc`, `autor_asc`), modo Tabela com botão `"Ver detalhes"` e colunas adaptadas por escopo, fallback responsivo automático para Cartões abaixo de `720px` via `matchMedia`, e exportação `.CSV` com `csvEscape` protegido contra *Formula Injection* (`=`, `+`, `-`, `@`, `\t`, `\r`).
 * **Segurança, Acessibilidade (WCAG 2.1 AA), Elementor e Performance:**
-  * **Índice facetado em memória (`indiceFacetas` / `construirIndiceFacetas`):** indexa no boot todas as 9 facetas em `Map<campo, Map<chave, Set<number>>>` com interseção ordenada pelo menor conjunto (`intersecarSets`), evitando varreduras repetidas sobre o catálogo ao filtrar e ao popular seletores.
+  * **Índice facetado em memória (`indiceFacetas` / `construirIndiceFacetas`):** indexa no boot todas as 10 facetas em `Map<campo, Map<chave, Set<number>>>` com interseção ordenada pelo menor conjunto (`intersecarSets`), evitando varreduras repetidas sobre o catálogo ao filtrar e ao popular seletores.
   * `escapeHtml` utiliza `HTML_ESCAPE_MAP` com escapes Unicode (`\u0026amp;`..`\u0026#39;`), resistente a editores HTML/Elementor; `sanitizarUrl` restringe links a `http:`/`https:` com `rel="noopener noreferrer"`.
   * Modal com *focus trap* (`manterFocoNoModal`), bloqueio de scroll no `body` e restauração de foco; paleta ajustada para contraste `>= 4.5:1`; `aria-live="polite"` restrito a `#leme-contador` e `#leme-ranking-status`.
   * CSS 100% escopado em `#leme-painel-ept`, `overflow: clip`, `z-index: 100000` no modal, guarda `data-leme-init` contra reinicialização, remoção de `backdrop-filter`, *fast-path* em `highlightText` e recorte de resumo nos cards (`trechoResumoCard`).
@@ -295,15 +300,17 @@ uv run python -m pipeline.step3_llm_extract --sync-deterministico
 uv run python -m pipeline.step4_compile
 ```
 
-### Curadoria Humana e Frontend (`index.html`)
+### Curadoria Humana, Preview Local e Build Elementor
 
 1. Edite [dist/revisao_epistemologica_pendente.csv](dist/revisao_epistemologica_pendente.csv) (`;`, `UTF-8-SIG`) marcando `APROVADO` (com `base_epistemologica_aprovada`) ou `MANTER_NULO`.
 2. Execute `uv run python -m pipeline.step4_compile` para aplicar em `data/records/` (com `curado_humano: true`) e atualizar `dist/painel-ept-v4.json`.
-3. Sirva a raiz localmente via `python3 -m http.server 8000` e abra `http://localhost:8000/index.html` (em `localhost`, carrega `./dist/painel-ept-v4.json` via `data-json-url-local`; em produção, usa `data-json-url`).
+3. Sirva a raiz localmente via `python3 -m http.server 8000` e abra `http://localhost:8000/index.html` (carrega `./dist/painel-ept-v4.json` via `data-json-url-local` usando `./frontend/styles.css` e `./frontend/app.js`).
+4. Para publicar no WordPress, gere e valide o bundle com `python3 scripts/build_frontend.py` e cole [dist/widget-elementor.html](dist/widget-elementor.html) **apenas no Widget HTML (`</>`)** do Elementor (nunca no **Editor de Texto**).
 
 ### Verificação e Testes Automatizados
 
 ```bash
-./.venv/bin/python -m py_compile pipeline/*.py tests/*.py
+./.venv/bin/python -m py_compile pipeline/*.py tests/*.py scripts/build_frontend.py
 ./.venv/bin/python -m unittest discover -s tests -v
+python3 scripts/build_frontend.py --check
 ```
