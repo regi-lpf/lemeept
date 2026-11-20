@@ -1,117 +1,95 @@
-# Contrato de dados do painel LEME / ProfEPT (v3)
+# Contrato Conceitual de Dados e Taxonomia de Domínio — LEME / ProfEPT (v4)
 
-- Defesa
-  - ID
-  - Ano
-  - Autor
-  - Orientador
-  - Co-Orientador(es)?[]
-  - Instituição
-  - Campus
-  - Linha de Pesquisa
-  - Dissertação
-    - Título
-    - Link
-    - Resumo
-    - Palavras-Chave[]
-    - Base Epistemológica
-  - Produto Educacional
-    - Tipo
-    - Link
-    - Público-Alvo[]
-    - Nivel de Aplicação
-    - Palavras-Chave[]
+> **Escopo deste documento:** Especificação canônica do domínio bibliométrico CAPES/ProfEPT (estrutura conceitual v4, Linhas de Pesquisa, Macroprojetos, 9 Tipos de Produto, 5 Públicos-Alvo, 8 Níveis de Aplicação, 7 Matrizes Epistemológicas e regras de evidência). Para a implementação dos schemas em Pydantic v2, consulte [pipeline/models_v4.py](pipeline/models_v4.py) e a Seção 2 de [DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md).
 
-## Linhas de Pesquisa e Macroprojetos
-- LP1: Práticas Educativas em EPT
-  - MP1: Propostas metodológicas e recursos didáticos em espaços formais e não formais de ensino na EPT
-  - MP2: Inclusão e diversidade em espaços formais e não formais de ensino na EPT
-  - MP3: Práticas educativas no currículo integrado
-- LP2: Organização e Memórias de Espaços Pedagógicos
-  - MP4: História e memórias no contexto da EPT
-  - MP5: Organização do currículo integrado na EPT
-  - MP6: Organização de espaços pedagógicos na EPT
+---
 
-## Tipos de Produto
+## 1. Estrutura Conceitual do Registro (`ContratoDefesaV4`)
 
-### No processo de extração
-- eduCAPES `dc.type` e coleção são evidência complementar. Não substituem automaticamente o formato específico declarado na dissertação/ficha do produto.
+* **`Defesa`**
+  * `id` (`EPT-XXXX`), `ano`, `autor`, `orientador`, `coorientadores[]` *(contabilizados de forma estritamente separada do orientador principal)*, `instituicao`, `campus`
+  * `linha_pesquisa` (`LP1` | `LP2`) e `macroprojeto` (`MP1`..`MP6`)
+  * **`dissertacao`**: `titulo`, `link`, `resumo`, `palavras_chave[]`, `autores_referenciados[]`, `base_epistemologica` (`valor`, `candidato`, `confianca`, `revisao_pendente`, `curado_humano`, `justificativa`, `evidencias[]`)
+  * **`produto`**: `titulo`, `tipo` (1 dos 9 slugs CAPES), `link`, `publico_alvo[]` (1 ou mais dos 5 slugs), `nivel_aplicacao`, `palavras_chave[]`, `data_publicacao`, `autores_colaboradores[]`, `identificadores[]`, `proveniencia` (`fonte_tipo_escolhida`, `rotulo_original_declarado`, `colecao_educapes`, `dc_type_educapes[]`)
+  * **`indice_busca`**: `texto_busca_normalizado`, `termos_unificados[]`, `tem_produto_vinculado`, `tem_resumo`
 
-### Classificação dos tipos
-São 9 os tipos oficiais de produto educacional. A todo e qualquer produto se aplica um único tipo. Os tipos são: 
+---
 
-1. Material didático/instrucional  
-  Propostas  de  ensino,  envolvendo  sugestões  de  experimentos  e  outras atividades práticas, sequências didáticas, propostas de intervenção, roteiros de oficinas; material textual, como manuais, guias,  textos  de apoio, artigos em  revistas  técnicas  ou  de  divulgação, livros  didáticos  e  paradidáticos,  histórias  em  quadrinhos  e  similares,  dicionários;  mídias educacionais, como vídeos, simulações, animações, videoaulas, experimentos virtuais e áudios; objetos  de  aprendizagem;  ambientes  de  aprendizagem;  páginas  de  internet  e  blogs;  jogos educacionais  de  mesa  ou  virtuais,  e  afins;  entre  outros;  
+## 2. Linhas de Pesquisa e Macroprojetos (`MP1–3 → LP1` | `MP4–6 → LP2`)
 
-2. Curso/Oficina  de  Formação Profissional
-  Cursos, oficinas, entre outros), com proposta detalhada, que tenha relação com a APCN; 
+* **`LP1` — Práticas Educativas em EPT**
+  * `MP1`: Propostas metodológicas e recursos didáticos em espaços formais e não formais de ensino na EPT
+  * `MP2`: Inclusão e diversidade em espaços formais e não formais de ensino na EPT
+  * `MP3`: Práticas educativas no currículo integrado
+* **`LP2` — Organização e Memórias de Espaços Pedagógicos**
+  * `MP4`: História e memórias no contexto da EPT
+  * `MP5`: Organização do currículo integrado na EPT
+  * `MP6`: Organização de espaços pedagógicos na EPT
 
-3. Tecnologia social 
-  Produtos, dispositivos ou equipamentos; processos, procedimentos, técnicas  ou  metodologias;  serviços;  inovações  sociais  organizacionais;  inovações  sociais  de gestão, entre outros; 
+---
 
-4. Software/Aplicativo
-  Aplicativos de modelagem, aplicativos de aquisição e análise de dados, plataformas virtuais e similares, programas de computador, entre outros; 
+## 3. Tipos Oficiais de Produto Educacional CAPES (`TipoProdutoSlug`)
 
-5. Evento Organizados
-  Exposições científicas, olímpiadas, expedições, feiras e mostras científicas e atividades  de  divulgação  científica; 
+A todo produto educacional aplica-se **exatamente um** tipo principal canônico. Os metadados `dc.type` e coleção do eduCAPES são preservados separadamente em `proveniencia` como evidência complementar e não substituem automaticamente o formato específico declarado na dissertação/ficha do produto (`dissertacao_ficha` > `educapes_dc_type` > `inferencia_llm`).
 
-6. Acervo
-  Curadoria  de mostras e exposições  realizadas, acervos produzidos, curadoria de coleções, entre outros; 
+1. **`material_didatico_instrucional` — Material Didático ou Instrucional:** Propostas de ensino (sugestões de experimentos, atividades práticas, sequências didáticas, propostas de intervenção, roteiros de oficinas); material textual (manuais didáticos, guias, textos de apoio, artigos em revistas técnicas/divulgação, livros didáticos/paradidáticos, histórias em quadrinhos, dicionários, folders educativos, portfólios formativos); mídias e ambientes educacionais (vídeos, podcasts, simulações, animações, videoaulas, experimentos virtuais, áudios, objetos e ambientes virtuais de aprendizagem como Moodle/AVA, páginas de internet, sites educativos, blogs, jogos educacionais de mesa ou virtuais e afins).
+2. **`curso_oficina` — Curso ou Oficina de Formação Profissional:** Cursos, oficinas e formações estruturadas com proposta pedagógica detalhada vinculada à APCN.
+3. **`tecnologia_social` — Tecnologia Social:** Produtos, dispositivos ou equipamentos; processos, procedimentos, técnicas ou metodologias; serviços e inovações sociais organizacionais ou de gestão.
+4. **`software_aplicativo` — Software ou Aplicativo:** Aplicativos de modelagem, aquisição e análise de dados, sistemas web desenvolvidos como software, simuladores e programas de computador *(não inclui sequências didáticas que apenas utilizam aplicativos de terceiros)*.
+5. **`eventos_organizados` — Evento Organizado:** Exposições científicas, olimpíadas, expedições, feiras, mostras científicas e atividades estruturadas de divulgação científica.
+6. **`acervo` — Acervo:** Curadoria de mostras e exposições realizadas, acervos históricos/documentais produzidos e curadoria de coleções.
+7. **`produto_comunicacao` — Produto de Comunicação:** Produtos de mídia, criação de programa de rádio ou TV, campanhas publicitárias e similares.
+8. **`manual_protocolo` — Manual ou Protocolo:** Guias de instruções técnicas, protocolos tecnológicos experimentais, manuais de operação, gestão, normas e/ou procedimentos institucionais.
+9. **`carta_mapa` — Carta, Mapa ou Similar:** Cartas cartográficas, mapas temáticos e representações espaciais similares.
 
-7. Produto de comunicação
-  Produto de  mídia,  criação  de  programa  de  rádio  ou  TV,  campanha  publicitária,  entre  outros;  
+---
 
-8. Manual/Protocolo
-  Guia  de  instruções,  protocolo  tecnológico  experimental/  aplicação  ou adequação  tecnológica;  manual  de  operação,  manual  de  gestão,  manual  de  normas  e/ou procedimentos, entre outros; 
+## 4. Públicos-Alvo (`PublicoAlvoSlug`) e Níveis de Aplicação
 
-9. Carta/Mapa ou similar.
+### 5 Agrupamentos Canônicos de Público-Alvo (permite múltiplos por produto)
+1. `docentes_professores` — Docentes e Professores
+2. `estudantes_alunos` — Estudantes e Alunos
+3. `gestores_coordenadores` — Gestores e Coordenadores Escolares
+4. `tecnicos_profissionais_educacao` — Técnicos e Profissionais da Educação
+5. `comunidade_externa` — Comunidade Externa
 
-## Públicos-Alvo
+### 8 Níveis de Aplicação Padronizados (`normalizar_nivel_aplicacao`)
+* `Ensino Médio Integrado`
+* `Curso Técnico Subsequente`
+* `EJA / PROEJA`
+* `Formação de Professores`
+* `Educação Superior`
+* `Ensino Fundamental`
+* `Gestão Institucional`
+* `Educação Profissional e Tecnológica` *(rótulo transversal quando o produto abrange a modalidade EPT de forma ampla)*
 
-Há 5 agrupamentos no que diz respeito ao público-alvo de um produto educacional. São eles:
+---
 
-1. Docentes e Professores
-2. Estudantes e Alunos
-3. Gestores e Coordenadores Escolares
-4. Técnicos e Profissionais da Educação
-5. Comunidade Externa
+## 5. Base Epistemológica: Vocabulário Canônico e Regra de Evidência
 
+### 7 Matrizes Canônicas Preferenciais (`normalizar_base_epistemologica`)
+1. `Materialismo Histórico-Dialético`
+2. `Pedagogia Histórico-Crítica`
+3. `Educação Libertadora / Freireana`
+4. `Teoria Histórico-Cultural / Sociointeracionismo`
+5. `Aprendizagem Significativa`
+6. `Teoria Crítica`
+7. `Pensamento Complexo / Interdisciplinaridade`
+*(Quando o texto sustenta explicitamente duas matrizes canônicas articuladas sem predominância única, admite-se a composição ligada por `" e "`, ex.: `"Pedagogia Histórico-Crítica e Materialismo Histórico-Dialético"`.)*
 
-## Regra específica da base epistemológica
+### Protocolo de Extração e Classificação Assistida
+`base_epistemologica` é um campo interpretativo e **nunca** deve ser deduzido apenas pela lista de referências finais, pelo tema da pesquisa, pela linha/macroprojeto ou pelo objetivo do produto:
 
-Base epistemológica é um campo interpretativo e não deve ser deduzido por lista de autores. O fluxo focado deve:
+1. **Busca de evidência no texto:** localizar trechos no resumo, introdução, referencial teórico e seção metodológica onde a filiação teórica/epistemológica é declarada ou fundamenta o argumento, registrando seção e página (`[PÁG. X]`).
+2. **Cruzamento com referências:** selecionar na seção de referências apenas as entradas correspondentes às citações presentes nesses trechos.
+3. **Recorte enxuto para a LLM:** enviar somente o resumo, os trechos epistemológicos localizados e as referências correspondentes (nunca o PDF inteiro).
+4. **Trava de confiança:**
+   * Apenas classificações com `confianca == "alta"`, termo pertencente ao vocabulário canônico e evidência localizável (`secao`, `pagina`, `trecho`) preenchem `valor` (`revisao_pendente: false`).
+   * Casos com `confianca` `"media"`, `"baixa"`, `"abstencao"` ou termo fora do vocabulário canônico mantêm `valor: null`, registram o termo em `candidato` com justificativa/evidências e seguem para curadoria humana (`revisao_pendente: true` em `dist/revisao_epistemologica_pendente.csv`).
 
-1. procurar evidência no resumo, introdução, referencial/fundamentação teórica e seção metodológica;
-2. identificar autores/obras citados nos trechos que sustentam o argumento, com páginas;
-3. localizar na seção de referências apenas as entradas correspondentes a essas citações (autor e, quando possível, ano/título);
-4. pedir classificação assistida usando esses trechos e referências correspondentes, sem enviar o PDF inteiro;
-5. retornar valor canônico ou abstenção, confiança, justificativa curta e evidências de texto e referência;
-6. aceitar valor de alta confiança no JSON de trabalho; manter os demais para revisão na planilha.
+---
 
-Uma referência bibliográfica que não esteja ligada a uma citação/argumento pertinente não sustenta a classificação. Se só houver tema geral, nome isolado ou associação implícita, usar abstenção ou confiança baixa.
+## 6. Metadados Determinísticos de Origem (Etapa 2)
 
-## Uso de GPT na etapa de dissertação
-
-Quando a extração determinística não resolver a base, o GPT recebe somente o resumo e trechos localizados do referencial/fundamentação/metodologia, mais referências que correspondam a citações desses trechos. O modelo deve propor um candidato, justificar sua leitura e apontar evidência com página; não deve converter tema de pesquisa, linha/macroprojeto, objetivo do produto ou lista de referências em base epistemológica por associação. A saída é uma classificação assistida: só `alta` preenche `valor`; `media`, `baixa` ou abstenção mantêm `valor: null` e registram `candidato`, evidências e revisão pendente. Quando o texto sustenta mais de uma tradição sem declarar uma base dominante, registrar a formulação composta como hipótese ou abster-se, sem forçar uma categoria única.
-
-## Metadados da dissertação
-
-- `capa`: contém instituição, campus, autor, título, orientador, ano
-- `resumo`: resumo da dissertação;
-- `fichaCatalografica`: texto/campos bibliográficos úteis;
-- `sumario`: títulos e hierarquia de seções, incluindo a introdução;
-- `introducao`: texto extraído da seção de introdução;
-- `palavrasChave`: lista, em geral extraída do resumo, quando disponível.
-
-## Metadados do produto educacional
-
-- `autoresColaboradores`: pessoas e seus papéis quando a fonte informar;
-- `identificadores`: esquema, valor e URL, incluindo identificadores de outros hospedeiros;
-- `dataPublicacao`: data ISO `YYYY-MM-DD` ou precisão menor se a fonte só fornecer ano/mês;
-- `colecaoEduCAPES`: rótulo original de “Aparece nas coleções:”, separado do tipo educacional;
-- `dcTypeEduCAPES`: valores originais de `dc.type`, separados da coleção e do tipo educacional canônico;
-- `tipoProduto`: exatamente um tipo principal canônico; priorizar formato explicitamente descrito na dissertação/ficha do produto. Preservar `dc.type`, coleção, rótulo original e campo consultado em campos separados;
-- `palavrasChave`: lista de termos fornecidos pelo eduCAPES.
-
-
-
+* **Da Dissertação (`RecortesTextuais` + `DissertacaoDeterministica`):** `capa` (instituição, campus, autor, título, orientador, ano), `ficha_catalografica`, `sumario`, `resumo`, `introducao`, `palavras_chave` (extraídas do resumo), `autores_referenciados` (sobrenomes normalizados extraídos das referências ABNT) e `coorientadores` (extraídos das páginas preliminares e ficha catalográfica).
+* **Do Produto Educacional (`EvidenciasEduCAPES`):** `autores_colaboradores` (nomes e papéis `creator`/`contributor`), `identificadores` (esquema, valor e URL), `data_publicacao` (`YYYY-MM-DD`, `YYYY-MM` ou `YYYY`), `colecao_educapes`, `dc_type_educapes` e `palavras_chave_educapes`.

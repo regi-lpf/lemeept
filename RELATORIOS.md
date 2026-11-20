@@ -1,332 +1,46 @@
-# Relatório Consolidado de Arquitetura e Contratos — Pipeline v4 (LEME / ProfEPT)
+# Relatório Consolidado de Resultados e Viabilidade — Projeto LEME / ProfEPT (v4)
 
-## 1. Visão Geral e Viabilidade Operacional
-
-A pipeline de extração, normalização e compilação do acervo **ProfEPT (IFC Blumenau)** está consolidada na **versão 4.0**, operando em 4 etapas modulares com validação estrita via **Pydantic v2** (`pipeline/models_v4.py`).
-
-* **Volume do Acervo:** 111 defesas catalogadas (`EPT-0001` a `EPT-0111`), totalizando **222 produções** (111 dissertações + 111 produtos educacionais).
-* **Orçamento de Contexto e Tokens (Viável em LLM Local — 8 GB VRAM):**
-  * **Input médio:** ~9.000 tokens (isolamento cirúrgico de seções relevantes em JSON compacto, eliminando o envio de PDFs integrais e listas completas de referências).
-  * **Output médio:**
-    * **Payload JSON final (`RespostaInterpretativaLLM`):** ~400–500 tokens (campos interpretativos enxutos, hidratados deterministicamente em Python na pós-extração).
-    * **Orçamento total de geração (incluindo *reasoning/thinking tokens*):** até ~10.000 tokens quando executado em modelos com cadeia de pensamento ativa (`gemini-2.5-flash` / modelos *thinking*). Para execução local em **8 GB de VRAM**, recomenda-se desativar o modo *thinking* (ex.: `think=False` no Ollama ou `thinking_budget=0` na API) ou utilizar modelos *instruct* diretos (como `qwen2.5:7b-instruct` ou `ministral-3:8b`), mantendo o consumo real de saída próximo ao tamanho do JSON (~500 tokens) e dentro da janela de `num_ctx=8192`.
+> **Escopo deste documento:** Fotografia empírica do acervo compilado em [dist/painel-ept-v4.json](dist/painel-ept-v4.json), orçamento de contexto/tokens (viabilidade em GPUs locais de 8 GB VRAM) e síntese executiva dos marcos técnicos alcançados por etapa. Para schemas Pydantic e implementação dos módulos, consulte [DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md); para o changelog de auditoria (`AUD-01..25` e `FE-01..26`), consulte [AUDITORIA_E_REFATORACAO.md](AUDITORIA_E_REFATORACAO.md).
 
 ---
 
-## 2. Histórico de Execução e Fixes Técnicos por Etapa
+## 1. Viabilidade Operacional e Orçamento de Contexto (LLM Local — 8 GB VRAM)
 
-### Etapa 1: Coleta e Pré-Extração (`pipeline/step1_collect.py`) — Concluída
-Gera o manifesto `data/stage1_manifest.json` (`Stage1ManifestV4`) e realiza o download local dos PDFs em `pdf/dissertacoes/EPT-XXXX.pdf` com verificação de assinatura mágica (`%PDF-`) e hash `SHA-256`.
+A arquitetura v4 substituiu o envio de PDFs integrais por recortes determinísticos cirúrgicos em JSON compacto (`montar_prompt_enxuto`), viabilizando a execução tanto em APIs cloud quanto em hardware local com **8 GB de VRAM**:
 
-* **SSL Institucional (`profept.ifc.edu.br` / `.edu.br`):** Contorno de cadeia intermediária incompleta (`SSLCertVerificationError`) via `verify=False` com supressão explícita de `InsecureRequestWarning`.
-* **Parser Sequencial Independente de DOM:** Contorno de listas `<ul>` mal fechadas na API do WordPress percorrendo os elementos `<li>` sequencialmente com `Acadêmico/Discente/Autor:` como delimitador.
-* **Flexibilidade de Rótulos e Pontuação:** Regex tolerante a variações manuais (`Dissertação:`, `Dissertação intitulada`, `Artigo:`, `Orientador:` / `Orientadora:`).
-* **Preservação do Rótulo Bruto do Produto:** Captura de prefixos declarados antes do link na página de origem no campo `titulo_produto_bruto` (ex.: `"Texto – "`, `"Podcast – "`, `"Curso – "`, `"Sequência Didática: "`).
-* **Fallback de Ano:** Extração pelos cabeçalhos `DEFESAS YYYY` no DOM com fallback via regex na URL (`/uploads/sites/54/YYYY/`).
-
----
-
-### Etapa 2: Extração Determinística (`pipeline/step2_deterministic.py`) — Concluída e Reprocessada (111/111)
-Gera os 111 payloads estruturados em `data/stage2_payloads/EPT-0001.json` a `EPT-0111.json` (`ContratoExtracaoDeterministicaV4`).
-
-* **Varredura Taxonômica Integral & Vínculo Rígido (`MP1–3 → LP1` | `MP4–6 → LP2`):** Busca integral no PDF com normalização de espaços colados e numeração romana/arábica. Correção de regex em `detectar_macroprojeto_e_linha` adicionando grupo de captura explícito `(4)` com *negative lookahead* anti-extensão de vídeo (`.mp4`), resolvendo falha `IndexError: no such group` no registro `EPT-0100`.
-* **Mapeamento Determinístico de Autores Referenciados (`autores_referenciados`):**
-  * Assinatura de `isolar_secoes_pdf` atualizada para retornar `(RecortesTextuais, texto_refs)`, expondo até 25 páginas a partir de `REFERÊNCIAS` / `REFERÊNCIAS BIBLIOGRÁFICAS` sem inflar o recorte `referencias_filtradas` enviado à LLM.
-  * Extrator ABNT (`extrair_autores_referencias`) captura sobrenomes em caixa alta (`SOBRENOME, Nome` com suporte a acentuação e cedilha), normaliza partículas compostas (`DA`, `DE`, `DO`, `DAS`, `DOS`, `DEL`, `VON`, `VAN`) e descarta entidades institucionais/legais (`BRASIL`, `SANTA CATARINA`, `MINISTÉRIO`, `CAPES`, `MEC`, `IBID`, `IDEM`, `DISPONÍVEL`, etc.), gerando lista única, ordenada e capitalizada (ex.: `["Ciavatta", "Freire", "Frigotto", "Saviani"]`).
-* **Hierarquia de Fontes para Produto Educacional:** Priorização do `titulo_produto_bruto` e da sentença exata onde ocorre *"produto educacional"* no corpo da dissertação, evitando falsos positivos com termos do contexto da pesquisa. Metadados do eduCAPES (`dc.type`, coleção, `<meta>` Dublin Core e `?show=full`, com cache em `data/cache_educapes/`) são preservados como evidência complementar.
-* **Isolamento Cirúrgico de Recortes Textuais:** Extração isolada de capa, ficha catalográfica, sumário, resumo, introdução, descrição do produto, trechos com marcadores epistemológicos (preservando `[PÁG. X]`) e apenas as referências bibliográficas correspondentes às citações detectadas.
+* **Input médio enviado à LLM (Etapa 3):** **~7.104 tokens** na medição empírica dos payloads (máximo **~8.853 tokens** somando `pipeline/SKILL.md` + payload do registro, dentro do orçamento projetado de ~9.000 tokens).
+* **Output estruturado (`RespostaInterpretativaLLM`):** **~400–500 tokens** de JSON enxuto, hidratado deterministicamente em Python na pós-extração.
+* **Orçamento total de geração e recomendação para 8 GB VRAM:**
+  * Em modelos com cadeia de pensamento ativa (*reasoning/thinking tokens*, como `gemini-2.5-flash`), o orçamento bruto de geração pode atingir até ~10.000 tokens.
+  * Para execução local em **8 GB de VRAM**, recomenda-se desativar o modo *thinking* (`LLM_THINK=false` no Ollama ou `LLM_THINKING_BUDGET=0` na API Gemini) ou utilizar modelos *instruct* diretos (`qwen2.5:7b-instruct` ou `ministral-3:8b`) com janela `LLM_NUM_CTX=8192`, mantendo a saída próxima aos ~500 tokens do JSON.
 
 ---
 
-### Etapa 3: Inferência Semântica Estruturada (`pipeline/llm_provider.py` + `pipeline/step3_llm_extract.py`) — Concluída
-Consome `pipeline/SKILL.md` e os payloads da Etapa 2, gerando registros individuais validados em `data/records/EPT-XXXX.json` (`ContratoDefesaV4`).
+## 2. Fotografia Empírica do Acervo Compilado ([dist/painel-ept-v4.json](dist/painel-ept-v4.json))
 
-* **Camada Modular Agnóstica (`LLMClient`):** Suporte intercambiável entre SDK oficial `google-genai` (`gemini-2.5-flash`) e endpoints OpenAI-compatíveis (`ollama` local, `groq`, `openrouter`, `mistral`) via variáveis de ambiente.
-* **Sanitização de Schemas e Serialização:** Remoção de `additionalProperties` incompatível com OpenAPI Schema do Gemini, expansão inline de `$defs`/`$ref` e serialização explícita de submodelos via `.model_dump()`.
-* **Hidratação Determinística e Repasse Passivo (`montar_registro_final`):**
-  * Imposição obrigatória do vínculo taxonômico `MP1–3 → LP1` e `MP4–6 → LP2`.
-  * Repasse direto de `dis_det.autores_referenciados` para `dissertacao.autores_referenciados` sem trafegar a lista no prompt da LLM (zero impacto em tokens e isolamento estrito entre referências gerais e evidência epistemológica).
-  * Incorporação dos `autores_referenciados` ao `indice_busca.texto_busca_normalizado` (`construir_indice_busca`).
-  * Trava de confiança na `base_epistemologica`: apenas classificações com `confianca == "alta"` e evidência localizável (`secao`, `pagina`, `trecho`) preenchem `valor`; demais casos mantêm `valor: null` e `revisao_pendente: true`.
-* **Decisão Operacional:** A extração automatizada foi encerrada; ajustes remanescentes em `base_epistemologica` serão realizados exclusivamente via curadoria humana.
-
----
-
-### Etapa 4: Compilação e Curadoria (`pipeline/step4_compile.py`) — Concluída
-Consolida os registros individuais de `data/records/` nos artefatos finais de publicação e revisão:
-
-* **`dist/painel-ept-v4.json`:** Artefato único validado contendo metadados de compilação, contadores totais e a lista completa de `ContratoDefesaV4` com `indice_busca` pré-calculado.
-* **`dist/revisao_epistemologica_pendente.csv`:** Planilha delimitada por ponto e vírgula (`UTF-8-SIG`) exportando apenas registros com `revisao_pendente == true`, acompanhados de candidato sugerido, justificativa, seção, página e trecho de evidência.
-
----
-
-## 3. Contratos de Dados (Modelos Pydantic v2 — `pipeline/models_v4.py`)
-
-### Enums e Tipos Canônicos
-
-```python
-from datetime import datetime
-from typing import List, Literal, Optional
-from pydantic import BaseModel, Field
-
-LinhaPesquisaCode = Literal["LP1", "LP2"]
-MacroprojetoCode = Literal["MP1", "MP2", "MP3", "MP4", "MP5", "MP6"]
-
-TipoProdutoSlug = Literal[
-    "material_didatico_instrucional",
-    "curso_oficina",
-    "tecnologia_social",
-    "software_aplicativo",
-    "eventos_organizados",
-    "acervo",
-    "produto_comunicacao",
-    "manual_protocolo",
-    "carta_mapa",
-]
-
-PublicoAlvoSlug = Literal[
-    "docentes_professores",
-    "estudantes_alunos",
-    "gestores_coordenadores",
-    "tecnicos_profissionais_educacao",
-    "comunidade_externa",
-]
-
-ConfiancaEpistemologica = Literal["alta", "media", "baixa", "abstencao"]
-FonteTipoProduto = Literal["dissertacao_ficha", "educapes_dc_type", "inferencia_llm"]
-
-```
+* **Volume e Cardinalidade:** **112 defesas** catalogadas (`EPT-0001` a `EPT-0112`), totalizando **224 produções** (`112 dissertações + 112 produtos educacionais`). *(Nota: a auditoria inicial `AUD-01..25` foi executada sobre o snapshot de 111 defesas / 222 produções, antes da incorporação da 112ª defesa e da rodada complementar de curadoria).*
+* **Distribuição Temporal (2020–2026):** `2020: 24` · `2021: 6` · `2022: 6` · `2023: 12` · `2024: 36` · `2025: 21` · `2026: 7`.
+* **Distribuição por Linha de Pesquisa e Macroprojeto:**
+  * `LP1` (**63** defesas): `MP1: 16` · `MP2: 19` · `MP3: 28`
+  * `LP2` (**49** defesas): `MP4: 12` · `MP5: 12` · `MP6: 25`
+* **Orientação e Coorientação (contabilizadas separadamente):** **17** orientadores principais canônicos consolidados (em 110 defesas com orientador declarado) e **2** coorientadores distintos em **2** defesas com coorientação (`EPT-0004` e `EPT-0033`).
+* **Cobertura de Metadados e Extração Determinística:**
+  * `dissertacao.autores_referenciados`: **112/112** registros preenchidos (**1.570** autores únicos / **4.315** ocorrências totais; `435` citados em `≥ 2` defesas, `160` em `≥ 5` e `78` em `≥ 10`).
+  * `dissertacao.resumo` e `dissertacao.palavras_chave`: **111/112** preenchidos (**0** com marcador `[PÁG. X]` residual).
+  * `produto.palavras_chave`: **112/112** preenchidas.
+* **Bases Epistemológicas (`dissertacao.base_epistemologica`):**
+  * **No compilado atual (pós-curadoria):** **111** registros consolidados com vocabulário canônico (`Pedagogia Histórico-Crítica: 52`, `Materialismo Histórico-Dialético: 26`, `Educação Libertadora / Freireana: 23`, `Teoria Crítica: 4`, `Teoria Histórico-Cultural / Sociointeracionismo: 3`, `Aprendizagem Significativa: 1`, `Pedagogia Histórico-Crítica e Materialismo Histórico-Dialético: 1`, `Educação Libertadora / Freireana e Teoria Histórico-Cultural / Sociointeracionismo: 1`) e **1** registro em curadoria pendente (`revisao_pendente: true`).
+  * *(No snapshot pré-curadoria humana da auditoria de 111 defesas: 60 bases aprovadas automaticamente com `confianca == "alta"` e 51 em revisão pendente no CSV).*
+* **Níveis de Aplicação e Proveniência dos Produtos (`produto`):**
+  * **Níveis de aplicação:** `Ensino Médio Integrado: 67` · `Educação Profissional e Tecnológica: 35` · `Educação Superior: 3` · `Curso Técnico Subsequente: 2` · `Formação de Professores: 2` · `Ensino Médio: 2` · `EJA / PROEJA: 1`.
+  * **Proveniência da tipologia (`fonte_tipo_escolhida`):** `dissertacao_ficha: 84` · `inferencia_llm: 28`.
 
 ---
 
-### Contrato 1: Saída da Pré-Extração (`Stage1ManifestV4`)
+## 3. Síntese Executiva dos Marcos Técnicos por Etapa
 
-```python
-class FonteProfeptV4(BaseModel):
-    titulo_bruto: str
-    autor_bruto: str
-    orientador_bruto: Optional[str] = None
-    ano: int
-    campus: str = "IFC Blumenau"
-    url_dissertacao: str
-    titulo_produto_bruto: Optional[str] = None
-    handle_educapes: Optional[str] = None
-
-
-class ArquivosDefesaV4(BaseModel):
-    pdf_dissertacao_path: str
-    sha256_dissertacao: str
-    pdf_produto_path: Optional[str] = None
-    status_download: Literal["OK", "ERRO_HTTP", "CORROMPIDO"]
-
-
-class PreExtracaoItemV4(BaseModel):
-    id: str = Field(..., pattern=r"^EPT-[0-9]{4}$")
-    coletado_em: str = Field(default_factory=lambda: datetime.now().astimezone().isoformat())
-    fonte_profept: FonteProfeptV4
-    arquivos: ArquivosDefesaV4
-
-
-class Stage1ManifestV4(BaseModel):
-    schema_version: str = "4.0"
-    gerado_em: str = Field(default_factory=lambda: datetime.now().astimezone().isoformat())
-    total_registros: int
-    registros: List[PreExtracaoItemV4]
-
-```
-
----
-
-### Contrato 2: Saída da Extração Determinística (`ContratoExtracaoDeterministicaV4`)
-
-```python
-class AutorColaboradorV4(BaseModel):
-    nome: str
-    papel: Optional[str] = None
-
-
-class IdentificadorProdutoV4(BaseModel):
-    esquema: str
-    valor: str
-    url: Optional[str] = None
-
-
-class MetadadosResolvidos(BaseModel):
-    ano: int
-    autor: str
-    orientador: str
-    coorientadores: List[str] = Field(default_factory=list)
-    instituicao: str = "Instituto Federal Catarinense (IFC)"
-    campus: str = "Blumenau"
-    linha_pesquisa: str
-    macroprojeto: str
-
-
-class DissertacaoDeterministica(BaseModel):
-    titulo: str
-    link: str
-    palavras_chave: List[str] = Field(default_factory=list)
-    autores_referenciados: List[str] = Field(default_factory=list)
-
-
-class EvidenciasEduCAPES(BaseModel):
-    handle_url: Optional[str] = None
-    titulo_produto: Optional[str] = None
-    data_publicacao: Optional[str] = None
-    autores_colaboradores: List[AutorColaboradorV4] = Field(default_factory=list)
-    identificadores: List[IdentificadorProdutoV4] = Field(default_factory=list)
-    colecao_educapes: Optional[str] = None
-    dc_type_educapes: List[str] = Field(default_factory=list)
-    palavras_chave_educapes: List[str] = Field(default_factory=list)
-    tipo_produto_regex: Optional[str] = None
-
-
-class TrechoEpistemologico(BaseModel):
-    secao: str
-    pagina: int
-    texto: str
-    citacoes_detectadas: List[str] = Field(default_factory=list)
-
-
-class RecortesTextuais(BaseModel):
-    capa: str = ""
-    ficha_catalografica: str = ""
-    sumario: str = ""
-    resumo: str = ""
-    introducao: str = ""
-    descricao_produto_na_dissertacao: str = ""
-    trechos_epistemologicos: List[TrechoEpistemologico] = Field(default_factory=list)
-    referencias_filtradas: List[str] = Field(default_factory=list)
-
-
-class ContratoExtracaoDeterministicaV4(BaseModel):
-    id: str
-    metadados_resolvidos: MetadadosResolvidos
-    dissertacao_deterministica: DissertacaoDeterministica
-    evidencias_educapes: EvidenciasEduCAPES
-    recortes_textuais: RecortesTextuais
-
-```
-
----
-
-### Contrato Intermediário: Saída Enxuta da LLM (`RespostaInterpretativaLLM`)
-
-```python
-class EvidenciaCurtaLLM(BaseModel):
-    secao: str
-    pagina: int
-    trecho_curto: str = Field(..., description="Citação literal curta de até 180 caracteres")
-    referencia_correspondente: Optional[str] = None
-
-
-class BaseEpistemologicaLLM(BaseModel):
-    valor: Optional[str] = None
-    candidato: Optional[str] = None
-    confianca: ConfiancaEpistemologica
-    justificativa: str = Field(..., description="Explicação objetiva em no máximo 2 frases")
-    evidencias: List[EvidenciaCurtaLLM] = Field(default_factory=list)
-
-
-class RespostaInterpretativaLLM(BaseModel):
-    macroprojeto: MacroprojetoCode
-    produto_titulo: str
-    produto_tipo: TipoProdutoSlug
-    produto_publico_alvo: List[PublicoAlvoSlug] = Field(default_factory=list)
-    produto_nivel_aplicacao: str
-    base_epistemologica: BaseEpistemologicaLLM
-
-```
-
----
-
-### Contrato 3: Registro Final Validado (`ContratoDefesaV4`)
-
-```python
-class EvidenciaEpistemologicaV4(BaseModel):
-    secao: str
-    pagina: int
-    trecho: str
-    referencia_correspondente: Optional[str] = None
-
-
-class BaseEpistemologicaV4(BaseModel):
-    valor: Optional[str] = None
-    candidato: Optional[str] = None
-    confianca: ConfiancaEpistemologica
-    revisao_pendente: bool
-    justificativa: str
-    evidencias: List[EvidenciaEpistemologicaV4] = Field(default_factory=list)
-
-
-class DissertacaoFinalV4(BaseModel):
-    titulo: str
-    link: str
-    resumo: str
-    palavras_chave: List[str] = Field(default_factory=list)
-    autores_referenciados: List[str] = Field(default_factory=list)
-    base_epistemologica: BaseEpistemologicaV4
-
-
-class ProvenienciaProdutoV4(BaseModel):
-    fonte_tipo_escolhida: FonteTipoProduto
-    rotulo_original_declarado: Optional[str] = None
-    colecao_educapes: Optional[str] = None
-    dc_type_educapes: List[str] = Field(default_factory=list)
-
-
-class ProdutoFinalV4(BaseModel):
-    titulo: str
-    tipo: TipoProdutoSlug
-    link: Optional[str] = None
-    publico_alvo: List[PublicoAlvoSlug] = Field(default_factory=list)
-    nivel_aplicacao: str
-    palavras_chave: List[str] = Field(default_factory=list)
-    data_publicacao: Optional[str] = None
-    autores_colaboradores: List[AutorColaboradorV4] = Field(default_factory=list)
-    identificadores: List[IdentificadorProdutoV4] = Field(default_factory=list)
-    proveniencia: ProvenienciaProdutoV4
-
-
-class IndiceBuscaV4(BaseModel):
-    texto_busca_normalizado: str
-    termos_unificados: List[str] = Field(default_factory=list)
-    tem_produto_vinculado: bool
-    tem_resumo: bool
-
-
-class ContratoDefesaV4(BaseModel):
-    schema_version: str = "4.0"
-    id: str = Field(..., pattern=r"^EPT-[0-9]{4}$")
-    ano: int
-    autor: str
-    orientador: str
-    coorientadores: List[str] = Field(default_factory=list)
-    instituicao: str
-    campus: str
-    linha_pesquisa: LinhaPesquisaCode
-    macroprojeto: MacroprojetoCode
-    dissertacao: DissertacaoFinalV4
-    produto: ProdutoFinalV4
-    indice_busca: IndiceBuscaV4
-
-```
-
----
-
-## 4. Integração e Consolidação do Frontend (Painel Bibliométrico v4) — Concluída
-
-Com o artefato `dist/painel-ept-v4.json` validado por `PainelEptV4Output` / `ContratoDefesaV4`, o frontend v4 foi modularizado em [index.html](index.html) + [frontend/styles.css](frontend/styles.css) + [frontend/app.js](frontend/app.js) e empacotado por [scripts/build_frontend.py](scripts/build_frontend.py) em [dist/widget-elementor.html](dist/widget-elementor.html) (~142 KB / `0` linhas em branco), preservando o legado v3 em [index-v3.html](index-v3.html). **Regra de deploy:** colar `dist/widget-elementor.html` sempre no **Widget HTML (`</>`)** do Elementor, nunca no **Editor de Texto**.
-
-1. **Adaptação Integral ao Contrato v4 e Regras de Domínio:**
-   * Leitura de `gerado_em`, `dissertacao.autores_referenciados`, `dissertacao.base_epistemologica` (distinguindo bases consolidadas, registros `revisao_pendente: true` e não declarados), `produto.tipo`, `produto.publico_alvo`, `produto.nivel_aplicacao`, `produto.data_publicacao`, `produto.proveniencia`, `produto.identificadores` e `indice_busca`.
-   * Camada `I18N` completa para `LP1`..`LP2`, `MP1`..`MP6`, 9 tipos CAPES, 5 públicos-alvo e fontes de tipologia, com enriquecimento de `texto_busca_normalizado`, consolidação canônica de orientadores/campus e autonomia de `coorientadores` sem misturar contagens.
-   * Resolução automática entre `data-json-url-local` (`./dist/painel-ept-v4.json` em `localhost`) e `data-json-url` (publicação em produção).
-
-2. **Dashboard Interativo (*Cross-Filtering*), Coorientação e Rankings Completos:**
-   * Separação de escopos (**Todas**, **Dissertações** e **Produtos Educacionais**), grade compacta `3 × 3` (`2 × 2` em **Produtos**) com animações estilo BI por reconciliação de DOM (`dataset.barKey`), mini-toggle **`Orientação` | `Coorientação (N)`** no card + subtexto em `.leme-stats`, ordenação configurável (`ano_desc` padrão) e modo **Tabela** com acesso ao modal de detalhes e fallback responsivo automático para **Cartões** (`<= 720px`).
-   * Todos os **9 gráficos** (incluindo alternância de coorientação) e os **3 cards categóricos de destaque** operam como filtros interativos bidirecionais sincronizados com os `<select>` e chips ativos, mantendo evidências epistemológicas e proveniência eduCAPES em um bloco `<details>` recolhido no modal.
-   * Botão `"Ver todos"` nos cards **Autores mais referenciados** e **Orientadores** abre modal expansível unificado (`abrirModalRanking` / `RANKING_CONFIGS`, com alternador interno **`Orientação principal` | `Coorientação`**) oferecendo busca, cortes adaptáveis (`Todos`, `≥ 2`, `≥ 5`, `≥ 10`), ordenação, paginação (`30` itens/pág.), clique para filtrar fechando o modal e exportação `.CSV` própria.
-
-3. **Segurança, Acessibilidade, Elementor e Performance (`FE-01` a `FE-26`):**
-   * Sanitização resiliente (`escapeHtml` Unicode, `sanitizarUrl` `http:`/`https:`, `csvEscape` anti-*Formula Injection*), contraste WCAG 2.1 AA (`>= 4.5:1`), *focus trap* no modal, remoção de `backdrop-filter`, índice facetado em memória (**10** facetas em `indiceFacetas`) e validação automática de bundle (`scripts/build_frontend.py --check`). Detalhes completos em [AUDITORIA_E_REFATORACAO.md](AUDITORIA_E_REFATORACAO.md).
+1. **Etapa 1 — Coleta e Pré-Extração (`pipeline/step1_collect.py`):** Contorno de erro de cadeia SSL institucional (`profept.ifc.edu.br`), parser sequencial independente de DOM para listas `<ul>` mal fechadas, regex flexível para variações manuais de rótulos, captura do prefixo bruto do produto (`titulo_produto_bruto`), fallback de ano pela URL do PDF e preservação multi-referência de IDs `EPT-XXXX`.
+2. **Etapa 2 — Extração Determinística (`pipeline/step2_deterministic.py`):** Varredura taxonômica integral com vínculo rígido `MP1–3 → LP1` / `MP4–6 → LP2` e filtro contextual anti-`.mp4` (corrigindo `EPT-0100`); extrator ABNT de `autores_referenciados` em até 25 páginas de referências sem inflar o prompt da LLM; extrator determinístico de `coorientadores` em páginas preliminares e ficha catalográfica; hierarquia de fontes priorizando a ficha/dissertação sobre `dc.type` do eduCAPES.
+3. **Etapa 3 — Inferência Semântica e Hidratação (`pipeline/step3_llm_extract.py` + `pipeline/llm_provider.py`):** Camada modular agnóstica de provedor (`google-genai` e OpenAI-compatíveis), sanitização automática de JSON Schemas (`additionalProperties` e `$defs`/`$ref`), repasse determinístico passivo de `autores_referenciados` e `coorientadores`, trava de confiança para `base_epistemologica`, proteção a registros com `curado_humano: true` e modo `--sync-deterministico`. **Decisão operacional:** encerrada a extração automatizada via LLM, eventuais ajustes remanescentes em `base_epistemologica` ocorrem exclusivamente via curadoria humana.
+4. **Etapa 4 — Curadoria e Compilação (`pipeline/step4_compile.py`):** Fluxo bidirecional com `dist/revisao_epistemologica_pendente.csv` (`UTF-8-SIG`, `;`) e validação integral do artefato `dist/painel-ept-v4.json` contra `PainelEptV4Output` ([pipeline/models_v4.py](pipeline/models_v4.py)).
+5. **Frontend v4 e Empacotamento Elementor (`index.html` + `frontend/` → `dist/widget-elementor.html`):** Modularização do código-fonte com build validado por `scripts/build_frontend.py` (`--check`, zero linhas em branco, `wpautop`-safe, para colagem exclusiva no **Widget HTML (`</>`)** do Elementor); dashboard interativo `3 × 3` com animações BI por reconciliação de DOM e índice em memória de **10 facetas**; autonomia da coorientação (mini-toggle no card, subtexto nos indicadores e aba/CSV próprios no modal); modais expansíveis de ranking completo (`Ver todos`, busca, cortes adaptáveis, paginação de 30 itens e exportação `.CSV`); sanitização XSS/URL/CSV e acessibilidade WCAG 2.1 AA.

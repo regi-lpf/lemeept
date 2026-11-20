@@ -1,149 +1,107 @@
-# Auditoria Técnica, Discrepâncias e Backlog de Refatoração — Pipeline & Frontend v4
+# Auditoria Técnica e Registro de Refatorações — Pipeline & Frontend v4
 
-> **Status Atual:** **Pipeline (`AUD-01` a `AUD-25`) e Frontend (`FE-01` a `FE-26`) Concluídos.** As fases da pipeline foram implementadas e validadas nos registros do acervo; o frontend modularizado ([index.html](index.html) + [frontend/](frontend) → [dist/widget-elementor.html](dist/widget-elementor.html)) teve todas as 26 melhorias aplicadas e aprovadas em checagem estática.
+> **Escopo deste documento:** Registro rastreável de todas as auditorias e correções aplicadas na pipeline (`AUD-01` a `AUD-25`) e no frontend (`FE-01` a `FE-26`), além do backlog futuro. Para a especificação técnica atual dos módulos, consulte [DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md); para resultados empíricos do acervo, consulte [RELATORIOS.md](RELATORIOS.md).
 
 ---
 
-## 1. Resumo da Execução da Refatoração (Antes vs. Depois)
+## 1. Auditoria e Refatoração da Pipeline (`AUD-01` a `AUD-25`)
 
-| Métrica do Acervo Compilado (`dist/painel-ept-v4.json`) | Pré-Refatoração (Snapshot Inicial) | Pós-Refatoração (Compilado Atual) |
+### Comparativo de Qualidade do Acervo (Snapshot da Auditoria)
+
+| Métrica do Acervo (`dist/painel-ept-v4.json`) | Pré-Refatoração (Snapshot Inicial) | Pós-Refatoração da Pipeline |
 | :--- | :--- | :--- |
-| Defesas compiladas (`PainelEptV4Output`) | 111 (sem validação do envelope raiz) | **111** (222 produções; validado por `PainelEptV4Output`) |
-| `dissertacao.autores_referenciados` preenchidos | 77 / 111 (87 na Etapa 2; 10 dessincronizados) | **108 / 111** *(restam apenas 3 PDFs sem camada de texto legível: `EPT-0059`, `EPT-0072`, `EPT-0073`)* |
-| `dissertacao.resumo` preenchidos | 105 / 111 (**102** iniciavam com `[PÁG. X]\n`) | **107 / 111** (**0** com `[PÁG. X]` residual) |
+| Validação do envelope raiz (`PainelEptV4Output`) | Ausente (validava apenas itens isolados) | **100% validado** (`PainelEptV4Output` + `ContratoDefesaV4`) |
+| `dissertacao.autores_referenciados` preenchidos | 77 / 111 (10 dessincronizados entre Etapas 2 e 3) | **108 / 111** *(apenas 3 PDFs sem camada de texto legível: `EPT-0059`, `EPT-0072`, `EPT-0073` — posteriormente 112/112 no compilado atual)* |
+| `dissertacao.resumo` limpos (sem `[PÁG. X]`) | 105 / 111 preenchidos (**102** com `[PÁG. X]\n` residual) | **107 / 111** preenchidos (**0** com `[PÁG. X]` residual) |
 | `dissertacao.palavras_chave` preenchidas | 87 / 111 | **107 / 111** (100% dos resumos extraídos) |
-| Valores distintos em `base_epistemologica.valor` | 44 (incluindo *typos*, `snake_case` e termos livres) | **4** termos canônicos aprovados (60 registros) + 51 pendentes (`None`) |
-| Valores distintos em `produto.nivel_aplicacao` | 21 (Title Case + `snake_case` + genéricos) | **7** rótulos canônicos padronizados |
-| `base_epistemologica.valor` indexada em `indice_busca` | Não | **Sim** (100% pesquisável) |
-| Correção bônus de falso positivo `.mp4` | `EPT-0100` classificado como `MP4/LP2` por `"mp4 – um padrao..."` | `step2` detecta `LP1`; `EPT-0100` e `EPT-0108` sinalizados via warning na ressincronização para eventual `--id ... --sobrescrever` |
-| Suíte de testes automatizados | 0 testes | **19 testes unitários** passando (`unittest`, 0 falhas) |
+| Valores distintos em `base_epistemologica.valor` | 44 (incluindo *typos*, `snake_case` e termos livres) | **100% vocabulário canônico** (termos livres rebaixados para revisão pendente) |
+| Valores distintos em `produto.nivel_aplicacao` | 21 (Title Case + `snake_case` + genéricos) | **7–8 rótulos canônicos padronizados** |
+| `base_epistemologica.valor` em `indice_busca` | Não indexada | **100% indexada e pesquisável** |
+| Prevenção de falso positivo `.mp4` em `MP4` | `EPT-0100` classificado como `MP4/LP2` por `"mp4 – um padrao..."` | Filtro contextual anti-extensão `.mp4` em `step2`; divergências sinalizadas no `--sync-deterministico` |
+| Suíte de testes automatizados (`unittest`) | 0 testes | **Suíte unitária offline completa** em [tests/test_pipeline_v4.py](tests/test_pipeline_v4.py) |
 
----
+### Quadro Consolidado dos Achados da Pipeline (`AUD-01` a `AUD-25`)
 
-## 2. Quadro Resumo dos Achados (`AUD-01` a `AUD-25`)
+* **Total:** **25 itens** (**4 Críticos**, **6 Altos**, **9 Médios**, **6 Baixos** — todos **Resolvidos**).
 
-* **Total de achados:** **25 itens** — **4 Críticos**, **6 Altos**, **9 Médios** e **6 Baixos** (todos **Resolvidos**).
-
-| ID | Severidade | Status | Arquivo(s) / Linhas | Resumo |
+| ID | Sev. | Status | Arquivo(s) | Problema Identificado e Solução Aplicada |
 | :--- | :--- | :--- | :--- | :--- |
-| `AUD-01` | Crítico | **Resolvido** | [pipeline/llm_provider.py](pipeline/llm_provider.py) | `OPENAI_COMPAT_PRESETS` agora guarda nomes das variáveis em `env_key` e resolve sem expor segredos no `EnvironmentError`. |
-| `AUD-02` | Crítico | **Resolvido** | [pipeline/llm_provider.py](pipeline/llm_provider.py) | `load_dotenv` ancorado em `PROJECT_ROOT / ".env"` (`Path(__file__).resolve().parent.parent`). |
-| `AUD-03` | Crítico | **Resolvido** | [pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py) | Default alterado para `sobrescrever=False`; adicionado `curado_humano: bool` com trava contra sobrescrita sem `--forcar-curados`. |
-| `AUD-04` | Crítico | **Resolvido** | [pipeline/llm_provider.py](pipeline/llm_provider.py), [.env.dev](.env.dev) | Preset `mistral` (`MISTRAL_API_KEY`) implementado; `.env.dev` atualizado removendo `gonka`. |
-| `AUD-05` | Alto | **Resolvido** | [pipeline/normalizers.py](pipeline/normalizers.py), [pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py) | `normalizar_base_epistemologica` padroniza as 7 matrizes (+ composições) e rebaixa valores não canônicos para revisão pendente. |
-| `AUD-06` | Alto | **Resolvido** | [pipeline/normalizers.py](pipeline/normalizers.py), [pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py) | `normalizar_nivel_aplicacao` reduz variantes e `snake_case` a rótulos canônicos. |
-| `AUD-07` | Alto | **Resolvido** | [pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py) | Criado `ressincronizar_registros_deterministico` (`--sync-deterministico`); 111/111 registros sincronizados offline sem rechamar LLM. |
-| `AUD-08` | Alto | **Resolvido** | [pipeline/step2_deterministic.py](pipeline/step2_deterministic.py), [pipeline/SKILL.md](pipeline/SKILL.md) | `REGRAS_TIPO_PRODUTO` e `REGRAS_DC_TYPE_EDUCAPES` harmonizados com `SKILL.md` e `CONTRATO_DADOS.md`. |
-| `AUD-09` | Alto | **Resolvido** | [pipeline/SKILL.md](pipeline/SKILL.md) | `SKILL.md` reescrito para espelhar exatamente `montar_prompt_enxuto` e `RespostaInterpretativaLLM`. |
-| `AUD-10` | Alto | **Resolvido** | [pipeline/step1_collect.py](pipeline/step1_collect.py) | `carregar_mapeamento_ids_existentes` aceita múltiplos arquivos em ordem de prioridade (`stage1_manifest.json` -> `painel-ept-v4.json` -> `painel-ept-v3.json`). |
-| `AUD-11` | Médio | **Resolvido** | [pipeline/step2_deterministic.py](pipeline/step2_deterministic.py) | `isolar_secoes_pdf([])` corrigido para retornar `(RecortesTextuais(), "")`. |
-| `AUD-12` | Médio | **Resolvido** | [pipeline/step2_deterministic.py](pipeline/step2_deterministic.py) | Branch `if not handle_url:` unificada usando `extrair_sentenca_produto` e `classificar_produto_com_fonte`. |
-| `AUD-13` | Médio | **Resolvido** | [pipeline/step2_deterministic.py](pipeline/step2_deterministic.py) | Limpeza de controle invisível, `_eh_pagina_sumario` e `_PADRAO_REFS` aumentaram cobertura de `autores_referenciados` para 108/111. |
-| `AUD-14` | Médio | **Resolvido** | [pipeline/normalizers.py](pipeline/normalizers.py), [pipeline/step2_deterministic.py](pipeline/step2_deterministic.py) | `limpar_resumo_publico` eliminou 100% dos `[PÁG. X]` no JSON público; resumo multi-página e `Palavras-chave(s)` elevaram cobertura para 107/111. |
-| `AUD-15` | Médio | **Resolvido** | [pipeline/models_v4.py](pipeline/models_v4.py), [pipeline/step2_deterministic.py](pipeline/step2_deterministic.py), [pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py) | `classificar_produto_com_fonte` distingue `"dissertacao_ficha"` de `"educapes_dc_type"`; `titulo_produto_bruto` preservado separadamente. |
-| `AUD-16` | Médio | **Resolvido** | [pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py) | `construir_indice_busca` agora indexa `dissertacao.base_epistemologica.valor`. |
-| `AUD-17` | Médio | **Resolvido** | [pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py), [pipeline/SKILL.md](pipeline/SKILL.md) | `montar_prompt_enxuto` envia `linha_pesquisa_pre_detectada` e `montar_registro_final` valida divergências. |
-| `AUD-18` | Médio | **Resolvido** | [pipeline/llm_provider.py](pipeline/llm_provider.py), [.env.dev](.env.dev) | Adicionado suporte a `LLM_THINKING_BUDGET` (Gemini), `LLM_NUM_CTX`/`LLM_THINK` (Ollama) e default `qwen2.5:7b-instruct`. |
-| `AUD-19` | Médio | **Resolvido** | [pipeline/step2_deterministic.py](pipeline/step2_deterministic.py) | `extrair_autores_referencias` suporta acentos (`À–Ý`), remove `AGNOMES`, amplia `IGNORAR_ENTRADAS_REF` e preserva sobrenomes compostos. |
-| `AUD-20` | Baixo | **Resolvido** | [pipeline/step2_deterministic.py](pipeline/step2_deterministic.py) | Helpers `_adicionar_unico`, `_adicionar_colaborador_unico` e `_adicionar_identificador_unico` deduplicam `<meta>` e `<table>`. |
-| `AUD-21` | Baixo | **Resolvido** | [pipeline/llm_provider.py](pipeline/llm_provider.py) | `RateLimitError` agora relança imediatamente na última tentativa antes do `time.sleep`. |
-| `AUD-22` | Baixo | **Resolvido** | `step1`, `step2`, `llm_provider`, [pyproject.toml](pyproject.toml) | Removidos imports/variáveis mortas (`ssl`, `urlparse`, `bloco_busca_mp`), corrigida indentação e removida dependência `google>=3.0.0`. |
-| `AUD-23` | Baixo | **Resolvido** | `step1`–`step4`, [pipeline/models_v4.py](pipeline/models_v4.py) | Adicionada CLI `argparse` nos 4 módulos, `PainelEptV4Output`, timestamps unificados em UTC e `campus="IFC Blumenau"`. |
-| `AUD-24` | Baixo | **Resolvido** | [DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md), [README.md](README.md), [ARQUITETURA.md](ARQUITETURA.md), [RELATORIOS.md](RELATORIOS.md) | Documentação sincronizada e cerca de código órfã removida de `RELATORIOS.md`. |
-| `AUD-25` | Baixo | **Resolvido** | [tests/test_pipeline_v4.py](tests/test_pipeline_v4.py) | Criada suíte com 19 testes unitários offline via `unittest` (100% aprovados). |
+| `AUD-01` | Crítico | **Resolvido** | [pipeline/llm_provider.py](pipeline/llm_provider.py) | `OPENAI_COMPAT_PRESETS` guardava o valor do segredo em `"env_key"` e chamava `os.getenv(valor)`. Corrigido para guardar o nome da variável (`"GROQ_API_KEY"`, etc.), com fallback `LLM_API_KEY` e sem expor segredos em `EnvironmentError`. |
+| `AUD-02` | Crítico | **Resolvido** | [pipeline/llm_provider.py](pipeline/llm_provider.py) | Substituído `load_dotenv("../.env")` por `PROJECT_ROOT / ".env"` ancorado via `Path(__file__).resolve().parent.parent`. |
+| `AUD-03` | Crítico | **Resolvido** | [pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py) | Alterado default para `sobrescrever=False` e criado `curado_humano: bool = False` em `BaseEpistemologicaV4`, protegendo curadorias humanas contra `--sobrescrever` sem `--forcar-curados`. |
+| `AUD-04` | Crítico | **Resolvido** | [pipeline/llm_provider.py](pipeline/llm_provider.py), [.env.dev](.env.dev) | Implementado preset `mistral` (`MISTRAL_API_KEY`) e removido provedor obsoleto `gonka` de `.env.dev`. |
+| `AUD-05` | Alto | **Resolvido** | [pipeline/normalizers.py](pipeline/normalizers.py), [pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py) | `normalizar_base_epistemologica` padroniza as 7 matrizes canônicas (+ composições por `" e "`) e move termos não canônicos sem curadoria para `candidato` com `revisao_pendente=True`. |
+| `AUD-06` | Alto | **Resolvido** | [pipeline/normalizers.py](pipeline/normalizers.py), [pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py) | `normalizar_nivel_aplicacao` converte variantes `snake_case`/livres nos 8 rótulos canônicos de nível de aplicação. |
+| `AUD-07` | Alto | **Resolvido** | [pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py) | Criado `ressincronizar_registros_deterministico` (`--sync-deterministico`) para atualizar registros offline com dados da Etapa 2 preservando curadoria e alertando divergências (`EPT-0100`, `EPT-0108`). |
+| `AUD-08` | Alto | **Resolvido** | [pipeline/step2_deterministic.py](pipeline/step2_deterministic.py), [pipeline/SKILL.md](pipeline/SKILL.md) | `REGRAS_TIPO_PRODUTO` harmonizada (`podcast`, `ava`, `moodle`, `site`, `blog`, `folder`, `portfólio` → `material_didatico_instrucional`; `software_aplicativo` restrito a software real) + `REGRAS_DC_TYPE_EDUCAPES` para tags não ambíguas. |
+| `AUD-09` | Alto | **Resolvido** | [pipeline/SKILL.md](pipeline/SKILL.md) | Prompt reescrito para espelhar `montar_prompt_enxuto` (`linha_pesquisa_pre_detectada`) e `RespostaInterpretativaLLM` (`trecho_curto`, vocabulário canônico). |
+| `AUD-10` | Alto | **Resolvido** | [pipeline/step1_collect.py](pipeline/step1_collect.py) | `carregar_mapeamento_ids_existentes` consulta em prioridade `[data/stage1_manifest.json, dist/painel-ept-v4.json, painel-ept-v3.json]` com numeração cronológica. |
+| `AUD-11` | Médio | **Resolvido** | [pipeline/step2_deterministic.py](pipeline/step2_deterministic.py) | `isolar_secoes_pdf([])` corrigido para retornar tupla `(RecortesTextuais(), "")`. |
+| `AUD-12` | Médio | **Resolvido** | [pipeline/step2_deterministic.py](pipeline/step2_deterministic.py) | Branch sem `handle_url` de `coletar_evidencias_educapes` unificada com `extrair_sentenca_produto` e `classificar_produto_com_fonte`. |
+| `AUD-13` | Médio | **Resolvido** | [pipeline/step2_deterministic.py](pipeline/step2_deterministic.py) | Remoção de controle invisível (`\u200b`, `\x01`), `_eh_pagina_sumario`, `_PADRAO_REFS` tolerante a numeração/Title Case e filtro anti-`.mp4` em `detectar_macroprojeto_e_linha`. |
+| `AUD-14` | Médio | **Resolvido** | [pipeline/normalizers.py](pipeline/normalizers.py), [pipeline/step2_deterministic.py](pipeline/step2_deterministic.py) | `limpar_resumo_publico` remove `[PÁG. X]` e cabeçalho `RESUMO`; captura de resumo multi-página e regex `Palavras[\s\-–]+chaves?` com `;`/`.`/`,` ampliaram cobertura para 100% dos resumos legíveis. |
+| `AUD-15` | Médio | **Resolvido** | `models_v4.py`, `step2`, `step3` | `classificar_produto_com_fonte` retorna `(tipo, fonte)` diferenciando `"dissertacao_ficha"` de `"educapes_dc_type"`; `titulo_produto_bruto` preservado em `rotulo_original_declarado`. |
+| `AUD-16` | Médio | **Resolvido** | [pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py) | `construir_indice_busca` passou a indexar `dissertacao.base_epistemologica.valor`. |
+| `AUD-17` | Médio | **Resolvido** | [pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py), [pipeline/SKILL.md](pipeline/SKILL.md) | `montar_prompt_enxuto` inclui `linha_pesquisa_pre_detectada` e `montar_registro_final` emite warning em caso de divergência. |
+| `AUD-18` | Médio | **Resolvido** | [pipeline/llm_provider.py](pipeline/llm_provider.py), [.env.dev](.env.dev) | Suporte a `LLM_THINKING_BUDGET` (Gemini), `LLM_NUM_CTX`/`LLM_THINK` (Ollama) e default `qwen2.5:7b-instruct`. |
+| `AUD-19` | Médio | **Resolvido** | [pipeline/step2_deterministic.py](pipeline/step2_deterministic.py) | `extrair_autores_referencias` suporta acentuação maiúscula (`À–Ý`), remove `AGNOMES`, amplia `IGNORAR_ENTRADAS_REF` e preserva sobrenomes compostos. |
+| `AUD-20` | Baixo | **Resolvido** | [pipeline/step2_deterministic.py](pipeline/step2_deterministic.py) | Helpers `_adicionar_unico`, `_adicionar_colaborador_unico` e `_adicionar_identificador_unico` deduplicam `<meta>` e `<table>` do eduCAPES. |
+| `AUD-21` | Baixo | **Resolvido** | [pipeline/llm_provider.py](pipeline/llm_provider.py) | `RateLimitError` verifica `tentativa == max_retries` e relança antes do `time.sleep`. |
+| `AUD-22` | Baixo | **Resolvido** | `step1`, `step2`, `llm_provider`, [pyproject.toml](pyproject.toml) | Limpeza de imports/variáveis mortas (`ssl`, `urlparse`, `bloco_busca_mp`), indentação e remoção de `google>=3.0.0`. |
+| `AUD-23` | Baixo | **Resolvido** | `step1`–`step4`, [pipeline/models_v4.py](pipeline/models_v4.py) | CLI `argparse` nos 4 módulos, `PainelEptV4Output`, timestamps UTC e padronização de `campus="IFC Blumenau"`. |
+| `AUD-24` | Baixo | **Resolvido** | Documentação (`*.md`) | Sincronização de contratos, comandos e limpeza de formatação Markdown. |
+| `AUD-25` | Baixo | **Resolvido** | [tests/test_pipeline_v4.py](tests/test_pipeline_v4.py) | Suíte de testes unitários offline cobrindo normalizadores, provedores e Etapas 1–4. |
 
 ---
 
-## 3. Detalhamento Técnico dos Achados e Soluções Aplicadas
+## 2. Auditoria e Refatoração do Frontend (`FE-01` a `FE-26`)
 
-### Críticos (`AUD-01` a `AUD-04`)
+> **Arquitetura e Regra de Deploy no Elementor:** O código-fonte foi modularizado em [index.html](index.html) + [frontend/styles.css](frontend/styles.css) + [frontend/app.js](frontend/app.js) e compilado via [scripts/build_frontend.py](scripts/build_frontend.py) em [dist/widget-elementor.html](dist/widget-elementor.html). **No Elementor, cole o bundle exclusivamente no Widget HTML (`</>`)** — nunca no **Editor de Texto** (TinyMCE/`wpautop` injeta `<p>`/`<span>` e corrompe scripts).
 
-* **`AUD-01` — Lookup e segurança de API keys em [pipeline/llm_provider.py](pipeline/llm_provider.py):** `OPENAI_COMPAT_PRESETS` antes armazenava `os.getenv("GROQ_API_KEY")` (o valor do segredo) em `"env_key"` e invocava `os.getenv(preset["env_key"])`. Corrigido para armazenar os nomes das variáveis (`"GROQ_API_KEY"`, `"OPENROUTER_API_KEY"`, `"MISTRAL_API_KEY"`), resolver via `os.getenv(preset["env_key"]) or os.getenv("LLM_API_KEY")` e nunca interpolar valores secretos em exceções.
-* **`AUD-02` — Caminho relativo de `.env` em [pipeline/llm_provider.py](pipeline/llm_provider.py):** Substituído `load_dotenv(dotenv_path="../.env")` por `PROJECT_ROOT / ".env"` ancorado via `Path(__file__).resolve().parent.parent`, permitindo execução confiável a partir da raiz do projeto.
-* **`AUD-03` — Proteção contra sobrescrita de curadoria em [pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py):** `__main__` passou a usar `sobrescrever=False` por padrão; `BaseEpistemologicaV4` ganhou `curado_humano: bool = False` (ativado pela Etapa 4), impedindo reprocessamentos com `--sobrescrever` de apagar revisões humanas sem `--forcar-curados`.
-* **`AUD-04` — Provedores suportados ([pipeline/llm_provider.py](pipeline/llm_provider.py), [.env.dev](.env.dev)):** Removido `gonka` de `.env.dev`.
-
-### Alta Prioridade (`AUD-05` a `AUD-10`)
-
-* **`AUD-05` — Normalização de `base_epistemologica.valor` ([pipeline/normalizers.py](pipeline/normalizers.py)):** Criada `normalizar_base_epistemologica` com aliases e suporte a composições válidas das 7 matrizes canônicas. Em `montar_registro_final` e na ressincronização, valores não canônicos sem curadoria humana são automaticamente movidos para `candidato` com `revisao_pendente = True`.
-* **`AUD-06` — Normalização de `produto.nivel_aplicacao` ([pipeline/normalizers.py](pipeline/normalizers.py)):** Criada `normalizar_nivel_aplicacao`, reduzindo as 21 variações originais para 7 rótulos canônicos no acervo atual.
-* **`AUD-07` — Ressincronização determinística Etapa 2 -> Etapa 3 ([pipeline/step3_llm_extract.py](pipeline/step3_llm_extract.py)):** Implementado `ressincronizar_registros_deterministico` (`--sync-deterministico`), atualizando os 111 registros sem chamadas LLM e preservando integralmente campos curados. Durante a ressincronização, `EPT-0100` (agora `LP1` na Etapa 2 após ajuste de falso positivo `.mp4`) e `EPT-0108` (`LP2` determinística vs. `MP3/LP1` anterior) foram sinalizados via log para eventual reprocessamento pontual (`--id ... --sobrescrever`).
-* **`AUD-08` — Alinhamento taxonômico de produtos ([pipeline/step2_deterministic.py](pipeline/step2_deterministic.py), [pipeline/SKILL.md](pipeline/SKILL.md)):** `podcast`, `ava`, `moodle`, `website`, `site educativo`, `blog`, `material de apoio`, `folder educativo` e `portfólio formativo` unificados em `material_didatico_instrucional`; `software_aplicativo` restringido para evitar falsos positivos em sequências didáticas que apenas citam apps; adicionada `REGRAS_DC_TYPE_EDUCAPES` apenas para tags não ambíguas do eduCAPES.
-* **`AUD-09` — Alinhamento de `pipeline/SKILL.md` ([pipeline/SKILL.md](pipeline/SKILL.md)):** Prompt reescrito para refletir o payload enxuto real (`montar_prompt_enxuto`), o schema `RespostaInterpretativaLLM` (`trecho_curto`, ausência de `revisao_pendente`) e os rótulos canônicos de `produto_nivel_aplicacao` e `base_epistemologica`.
-* **`AUD-10` — Estabilidade de IDs na Etapa 1 ([pipeline/step1_collect.py](pipeline/step1_collect.py)):** `carregar_mapeamento_ids_existentes` agora consulta por prioridade `[data/stage1_manifest.json, dist/painel-ept-v4.json, painel-ept-v3.json]`.
-
-### Média Prioridade (`AUD-11` a `AUD-19`)
-
-* **`AUD-11`:** `isolar_secoes_pdf([])` corrigido para retornar `(RecortesTextuais(), "")`.
-* **`AUD-12`:** Branch sem `handle_url` de `coletar_evidencias_educapes` unificada com `extrair_sentenca_produto` e `classificar_produto_com_fonte`.
-* **`AUD-13`:** Adicionada remoção de caracteres invisíveis (`\u200b`, `\x01`, etc.), detecção de sumário (`_eh_pagina_sumario`) e `_PADRAO_REFS` tolerante a numeração e variações de cabeçalho (elevando `autores_referenciados` para `108/111`; `EPT-0059`, `EPT-0072` e `EPT-0073` não possuem texto legível na camada PDF). Além disso, corrigiu-se um falso positivo adicional na detecção de `MP4` em `detectar_macroprojeto_e_linha` que antes capturava `"mp4 – um padrao de audio e video"` em `EPT-0100`.
-* **`AUD-14`:** `limpar_resumo_publico` remove `[PÁG. X]` e `RESUMO` na gravação de `dissertacao.resumo`; captura de `RESUMO` multi-página + regex flexível `Palavras[\s\-–]+chaves?` elevaram `palavras_chave` para `107/111`.
-* **`AUD-15`:** `classificar_produto_com_fonte` retorna `(tipo, fonte)` alcançando `"educapes_dc_type"`; `EvidenciasEduCAPES` e `proveniencia.rotulo_original_declarado` preservam `titulo_produto_bruto`.
-* **`AUD-16`:** `construir_indice_busca` passou a incluir `dissertacao.base_epistemologica.valor`.
-* **`AUD-17`:** `montar_prompt_enxuto` inclui `linha_pesquisa_pre_detectada`, com alerta em `montar_registro_final` e na ressincronização quando houver divergência.
-* **`AUD-18`:** `LLMClient` ganhou suporte a `LLM_THINKING_BUDGET` (Gemini), `LLM_NUM_CTX`/`LLM_THINK` (Ollama) e default `qwen2.5:7b-instruct`.
-* **`AUD-19`:** `extrair_autores_referencias` ampliado para acentuação maiúscula completa (`À–Ý`), filtragem de `AGNOMES` e stopwords institucionais, preservando sobrenomes compostos reais.
-
-### Baixa Prioridade (`AUD-20` a `AUD-25`)
-
-* **`AUD-20`:** Deduplicação unificada entre `<meta>` e `<table>` em `coletar_evidencias_educapes`.
-* **`AUD-21`:** `RateLimitError` em `llm_provider.py` verifica `tentativa == max_retries` antes do backoff.
-* **`AUD-22`:** Limpeza de imports mortos (`ssl`, `urlparse`), variável `bloco_busca_mp`, indentação em `llm_provider.py` e remoção de `google>=3.0.0` do [pyproject.toml](pyproject.toml).
-* **`AUD-23`:** Adicionada interface CLI `argparse` em `step1`–`step4`, criado `PainelEptV4Output` em [pipeline/models_v4.py](pipeline/models_v4.py), unificados timestamps em UTC e padronizado `campus="Blumenau"`.
-* **`AUD-24`:** Atualizados [DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md), [README.md](README.md), [ARQUITETURA.md](ARQUITETURA.md) e removida cerca ```` ``` ```` órfã em [RELATORIOS.md](RELATORIOS.md).
-* **`AUD-25`:** Criada suíte de testes unitários em [tests/test_pipeline_v4.py](tests/test_pipeline_v4.py) (19 casos cobrindo todos os módulos da pipeline v4).
-
----
-
-## 4. Auditoria e Refatoração do Frontend (`FE-01` a `FE-26`)
-
-> **Consolidação e Deploy no Elementor:** Os fontes do frontend v4 foram modularizados em [index.html](index.html) + [frontend/styles.css](frontend/styles.css) + [frontend/app.js](frontend/app.js), gerando [dist/widget-elementor.html](dist/widget-elementor.html) via [scripts/build_frontend.py](scripts/build_frontend.py) (legado v3 preservado em [index-v3.html](index-v3.html)). **Importante:** no Elementor, cole o bundle exclusivamente no **Widget HTML (`</>`)** — nunca no **Editor de Texto** (TinyMCE/`wpautop` injeta tags `<p>`/`<span>` e corrompe scripts).
-
-### Resumo Comparativo (Antes vs. Depois)
+### Resumo Comparativo do Frontend (Antes vs. Depois)
 
 | Aspecto do Frontend | Pré-Refatoração (`index-new.html` / `index.html` v3) | Pós-Refatoração ([index.html](index.html) + `frontend/` → [dist/widget-elementor.html](dist/widget-elementor.html)) |
 | :--- | :--- | :--- |
-| Estrutura de arquivos e URL JSON | `index.html` (v3) + `index-new.html` (`./dist/painel-ept-v4.json` relativo) | Modular (`index.html` + `frontend/*`) compilado em `dist/widget-elementor.html` (`FE-26`); `data-json-url` + `data-json-url-local`; legado em `index-v3.html` |
-| Sanitização HTML (`escapeHtml`) e URLs | *No-op* (`<`→`<`, `"`→`"`) com DOM-XSS ativo e quebra em `EPT-0020`/`EPT-0029`; links sem checagem | `HTML_ESCAPE_MAP` com escapes Unicode; `sanitizarUrl` (`http:`/`https:` + `rel="noopener noreferrer"`); `csvEscape` anti-fórmula |
-| Orientadores, Coorientação e Campus | `30` entradas com `:`/`.`, coorientação restrita a busca/detalhes, `"IFC – IFC Blumenau"` | Orientadores consolidados + **`coorientador` como 10ª faceta autônoma** (`FE-25`: toggle no card, subtexto em `.leme-stats`, aba/CSV no modal); `"IFC – Campus Blumenau"` |
-| Busca e Cobertura do Contrato v4 | Busca sem rótulos `I18N`/`publico_alvo`; omitia `gerado_em`, `evidencias`, `proveniencia`, `data_publicacao` | Busca enriquecida com `I18N`/`publico_alvo`/`instituicao`/coorientadores; `gerado_em` no topo; `<details>` recolhido no modal |
-| Interatividade do Dashboard e Layout BI | Apenas barras de `"Autores mais referenciados"` filtravam (por substring via `#leme-busca`); cards altos | Grade compacta `3 × 3` (`2 × 2` em `produtos`), animações BI via reconciliação DOM + índice de **10 facetas** (`FE-23`/`FE-25`) e *cross-filtering* nos **9 gráficos** + **3 cards categóricos** (`FE-22`) |
-| Exploração de Rankings Longos (`FE-24`) | Apenas Top 12 autores e Top 10 orientadores visíveis no card; sem busca, corte nem exportação do ranking | Botão `"Ver todos"` abre modal unificado (autores em `≥ 5`; orientadores/coorientadores em `Todos` com abas) com busca, cortes adaptáveis, ordenação, paginação (`30`/pág.), clique para filtrar e CSV próprio |
+| Estrutura e Empacotamento | Monólito de 4.732 linhas (209 KB) / `index.html` v3 + `index-new.html` | Fontes modulares (`index.html` 204L + `frontend/*`) + bundle validado `dist/widget-elementor.html` (`142 KB` / `30,9 KB` gzip, `0` linhas em branco, `FE-26`) |
+| Sanitização HTML, URLs e CSV | `escapeHtml` *no-op* (`<`→`<`) com DOM-XSS e quebra em `EPT-0020`/`EPT-0029`; links/CSV sem proteção | `HTML_ESCAPE_MAP` com escapes Unicode; `sanitizarUrl` (`http:`/`https:` + `rel="noopener noreferrer"`); `csvEscape` anti-*Formula Injection* |
+| Orientadores, Coorientação e Campus | `30` entradas com `:`/`.`, coorientação sem métrica/filtro próprio, `"IFC – IFC Blumenau"` | Orientadores consolidados + **`coorientador` como 10ª faceta autônoma** (`FE-25`: toggle no card, subtexto em `.leme-stats`, aba/CSV no modal); `"IFC – Campus Blumenau"` |
+| Cobertura do Contrato v4 e Busca | Busca sem rótulos `I18N`/`publico_alvo`; omitia `gerado_em`, `evidencias`, `proveniencia`, `data_publicacao` | Busca enriquecida com `I18N`/`publico_alvo`/`instituicao`/coorientadores; `gerado_em` no topo; `<details>` recolhido no modal |
+| Dashboard BI e Rankings (`FE-22..24`) | Apenas barras de autores filtravam (por substring); cards altos; só Top 12/Top 10 visíveis | Grade compacta `3 × 3` (`2 × 2` em `produtos`), animações BI via reconciliação DOM, índice de **10 facetas**, *cross-filtering* nos 9 gráficos + 3 insights e modal `"Ver todos"` com busca, cortes, paginação (`30`/pág.) e CSV |
 | Ordenação, Responsividade e WCAG AA | Sem ordenação (2026 no fim); armadilha Tabela em `<= 720px`; contrastes `< 3.5:1` e `backdrop-filter` | Ordenação `ano_desc` padrão + seletor; Tabela com `"Ver detalhes"` e fallback `matchMedia`; contraste `>= 4.5:1`; sem `backdrop-filter` |
 
-### Quadro Resumo dos Achados do Frontend (`FE-01` a `FE-26`)
+### Quadro Consolidado dos Achados do Frontend (`FE-01` a `FE-26`)
 
-| ID | Severidade | Status | Resumo |
+| ID | Sev. | Status | Resumo da Solução Aplicada |
 | :--- | :--- | :--- | :--- |
-| `FE-01` | Crítico | **Resolvido** | Reescrita de `escapeHtml` com `HTML_ESCAPE_MAP` Unicode (`\u0026amp;`..`\u0026#39;`), corrigindo DOM-XSS e quebras de DOM em resumos/títulos. |
-| `FE-02` | Crítico | **Resolvido** | Adicionada `sanitizarUrl` (`http:`/`https:` apenas) e `rel="noopener noreferrer"` em todos os links de card, tabela e modal. |
-| `FE-03` | Alto | **Resolvido** | `limparNomePessoa` e `consolidarOrientadores` eliminaram pontuação residual (`:`/`.`) e unificaram KPI, gráfico e filtro em 21 chaves. |
-| `FE-04` | Alto | **Resolvido** | `texto_busca_normalizado` enriquecido com rótulos `I18N`, `publico_alvo`, `instituicao` e `campus`. |
-| `FE-05` | Alto | **Resolvido** | Exibição de `gerado_em`, 3 estados claros para `base_epistemologica`, nota de pendências no gráfico e `<details>` recolhido com `base_evidencias` e metadados eduCAPES. |
+| `FE-01` | Crítico | **Resolvido** | Reescrita de `escapeHtml` com `HTML_ESCAPE_MAP` Unicode (`\u0026amp;`..`\u0026#39;`), eliminando DOM-XSS e corrupção por editores HTML. |
+| `FE-02` | Crítico | **Resolvido** | `sanitizarUrl` restringe links a `http:`/`https:` com `rel="noopener noreferrer"` em cards, tabela e modal. |
+| `FE-03` | Alto | **Resolvido** | `limparNomePessoa` e `consolidarOrientadores` removem pontuação residual (`:`/`.`) e unificam KPI, gráfico e filtro por chave normalizada. |
+| `FE-04` | Alto | **Resolvido** | `texto_busca_normalizado` enriquecido no boot com rótulos `I18N`, `publico_alvo`, `instituicao`, `campus` e `coorientadores` (`extrasBusca`). |
+| `FE-05` | Alto | **Resolvido** | Exibição de `gerado_em`, 3 estados para `base_epistemologica`, nota de pendências no gráfico e `<details>` recolhido com `base_evidencias` e metadados eduCAPES. |
 | `FE-06` | Alto | **Resolvido** | Ordenação padrão `ano_desc` + seletor `#leme-ordenar` (`ano_desc`, `ano_asc`, `titulo_asc`, `autor_asc`). |
-| `FE-07` | Alto | **Resolvido** | `csvEscape` protege contra *Formula Injection* (`=`, `+`, `-`, `@`, `\t`, `\r`), botão desabilita com 0 resultados e colunas incluem `autores_referenciados`/`coorientadores`/`data_publicacao`. |
-| `FE-08` | Alto | **Resolvido** | Filtro de `"Autores mais referenciados"` migrado para estado dedicado + `<button type="button">` acessível por teclado (posteriormente unificado em `FE-22`). |
-| `FE-09` | Alto | **Resolvido** | Cores ajustadas (`#3b47e5`, `#1f7a49`, `#d62849`, `#b91c3a`, `#526075`) atingindo contraste `>= 4.5:1` (WCAG 2.1 AA). |
-| `FE-10` | Médio | **Resolvido** | `formatarInstituicaoCampus` remove redundância `"IFC – IFC Blumenau"` e remove textos de campus hardcoded. |
+| `FE-07` | Alto | **Resolvido** | `csvEscape` anti-*Formula Injection* (`=`, `+`, `-`, `@`, `\t`, `\r`), desabilitação com 0 resultados e inclusão de `autores_referenciados`/`coorientadores`/`data_publicacao`. |
+| `FE-08` | Alto | **Resolvido** | Filtro de `"Autores mais referenciados"` migrado para estado dedicado + `<button type="button">` acessível por teclado (unificado em `FE-22`). |
+| `FE-09` | Alto | **Resolvido** | Paleta ajustada (`#3b47e5`, `#1f7a49`, `#d62849`, `#b91c3a`, `#526075`) cumprindo contraste `>= 4.5:1` (WCAG 2.1 AA). |
+| `FE-10` | Médio | **Resolvido** | `formatarInstituicaoCampus` remove redundância `"IFC – IFC Blumenau"` e textos de campus hardcoded. |
 | `FE-11` | Médio | **Resolvido** | `matchMedia("(max-width: 720px)")` garante fallback automático da Tabela para Cartões em telas pequenas. |
 | `FE-12` | Médio | **Resolvido** | Botão `"Ver detalhes"` na Tabela, colunas próprias no escopo `dissertacoes`, `title` nos códigos e título do modal adaptado em `produtos`. |
-| `FE-13` | Médio | **Resolvido** | *Focus trap* e restauração de foco no modal, bloqueio de scroll no `body`, `role="group"` e remoção de 10 `aria-live` excedentes. |
-| `FE-14` | Médio | **Resolvido** | Blindagem Elementor/WordPress (`data-leme-init`, `overflow: clip`, `z-index: 100000`, resets escopados em `#leme-painel-ept`, `mqMobile.addListener`). |
-| `FE-15` | Médio | **Resolvido** | `data-json-url` (produção) + `data-json-url-local` (local) e estado completo de erro com botão `"Tentar novamente"`. |
-| `FE-16` | Médio | **Resolvido** | Fallbacks `valorPublico` em autor/orientador vazios e filtro `Ano` ordenado em ordem decrescente (`2026..2020`). |
-| `FE-17` | Médio | **Resolvido** | Consolidação final em [index.html](index.html) preservando legado v3 intacto em [index-v3.html](index-v3.html). |
+| `FE-13` | Médio | **Resolvido** | *Focus trap* (`manterFocoNoModal`) e restauração de foco no modal, bloqueio de scroll no `body`, `role="group"` e `aria-live="polite"` enxuto. |
+| `FE-14` | Médio | **Resolvido** | Blindagem Elementor/WordPress (`data-leme-init`, `overflow: clip`, `z-index: 100000`, CSS 100% escopado em `#leme-painel-ept`, `mqMobile.addListener`). |
+| `FE-15` | Médio | **Resolvido** | `data-json-url` (produção) + `data-json-url-local` (local) e estado degradado de erro com botão `"Tentar novamente"`. |
+| `FE-16` | Médio | **Resolvido** | Fallbacks `valorPublico` em campos vazios e filtro `Ano` ordenado em ordem decrescente (`2026..2020`). |
+| `FE-17` | Médio | **Resolvido** | Consolidação final do frontend v4 em [index.html](index.html) (e posterior remoção dos artefatos legados v3 da raiz). |
 | `FE-18` | Baixo | **Resolvido** | Remoção de classes CSS mortas, variáveis duplicadas, IDs não lidos e retenção desnecessária de `item.raw`. |
 | `FE-19` | Baixo | **Resolvido** | Padronização em `LF` com quebra final em EOF e `font-weight` padrão (`700`/`800`). |
 | `FE-20` | Baixo | **Resolvido** | Lookup O(1) por `Map(id)`, *fast-path* em `highlightText`, recorte `trechoResumoCard`, cache de referências DOM e ordenação sem recalcular gráficos. |
-| `FE-21` | Baixo | **Resolvido** | Validação defensiva do envelope JSON em `iniciarPainel` e remoção de `backdrop-filter` para fluidez de compositor. |
-| `FE-22` | Melhoria | **Resolvido** | Dashboard 100% interativo (`data-filter-campo` / `data-filter-valor` + `alternarFiltroInterativo`): clique/teclado em qualquer um dos **9 gráficos** ou **3 cards categóricos de destaque** alterna o filtro em sincronia bidirecional com os `<select>` e chips. |
-| `FE-23` | Melhoria | **Resolvido** | Dashboard compacto `3 × 3` fullscreen em `>= 1080px` (`2 × 2` em `produtos`), animações estilo BI via reconciliação de DOM (`dataset.barKey`, barras GPU `scaleX`) + modal/chips suaves e índice facetado em memória (`indiceFacetas` / `construirIndiceFacetas` / `intersecarSets`). |
-| `FE-24` | Melhoria | **Resolvido** | Modais expansíveis unificados (`abrirModalRanking` / `RANKING_CONFIGS`) acionados via `"Ver todos"` nos cards **Autores mais referenciados** (corte inicial adaptável `≥ 5`) e **Orientadores** (corte inicial `Todos`), com busca por nome (+ resgate em `Todos`), pills adaptáveis (`Todos`, `≥ 2`, `≥ 5`, `≥ 10`), ordenação (`Frequência` / `A–Z`), paginação simples (`rankingPorPagina = 30` via `data-ranking-pagina`, oculta automaticamente quando `<= 30`), clique para filtrar + fechamento automático e exportação `.CSV` do ranking (`baixarCsvRanking` com `csvEscape`). |
-| `FE-25` | Melhoria | **Resolvido** | Coorientação autônoma (`coorientador` como 10ª faceta em `indiceFacetas` sem somar a `orientador` principal): busca em `extrasBusca`, mini-toggle `Orientação \| Coorientação (N)` no card, subtexto `#leme-stat-coorientadores` em `.leme-stats`, chip dedicado `"Coorientador: ..."` (sem `<select>` extra), alternador interno e exportação CSV própria (`ranking-coorientadores-leme-ept.csv`) no modal. |
-| `FE-26` | Melhoria | **Resolvido** | Modularização em [index.html](index.html) (~204 linhas) + [frontend/styles.css](frontend/styles.css) (CSS consolidado) + [frontend/app.js](frontend/app.js) e build via [scripts/build_frontend.py](scripts/build_frontend.py) (`--check`) gerando [dist/widget-elementor.html](dist/widget-elementor.html) (142 KB / 30,9 KB gzip, zero linhas em branco/`wpautop`-safe) para colagem no **Widget HTML (`</>`)** do Elementor. |
+| `FE-21` | Baixo | **Resolvido** | Validação defensiva do envelope JSON em `iniciarPainel` e remoção de `backdrop-filter`. |
+| `FE-22` | Melhoria | **Resolvido** | Dashboard 100% interativo (`data-filter-campo` / `data-filter-valor` + `alternarFiltroInterativo`) nos **9 gráficos** e **3 cards categóricos de destaque**. |
+| `FE-23` | Melhoria | **Resolvido** | Dashboard compacto `3 × 3` fullscreen em `>= 1080px` (`2 × 2` em `produtos`), animações estilo BI via reconciliação de DOM (`dataset.barKey`) e índice facetado em memória (`indiceFacetas`). |
+| `FE-24` | Melhoria | **Resolvido** | Modais expansíveis unificados (`abrirModalRanking` / `RANKING_CONFIGS`) acionados via `"Ver todos"` com busca, pills adaptáveis (`Todos`, `≥ 2`, `≥ 5`, `≥ 10`), ordenação, paginação (`rankingPorPagina = 30` via `data-ranking-pagina`), filtro por clique e exportação `.CSV`. |
+| `FE-25` | Melhoria | **Resolvido** | Coorientação autônoma (`coorientador` como 10ª faceta em `indiceFacetas` isolada de `orientador`): toggle `Orientação \| Coorientação (N)` no card, subtexto `#leme-stat-coorientadores` em `.leme-stats`, chip dedicado, alternador interno e CSV próprio no modal. |
+| `FE-26` | Melhoria | **Resolvido** | Modularização em [index.html](index.html) + [frontend/styles.css](frontend/styles.css) + [frontend/app.js](frontend/app.js) e build via [scripts/build_frontend.py](scripts/build_frontend.py) (`--check`) gerando [dist/widget-elementor.html](dist/widget-elementor.html) (`0` linhas em branco, `wpautop`-safe). |
 
-* **Status de verificação:** `python3 scripts/build_frontend.py --check` e checagem de paridade **100% aprovados** (`81` funções JS, `48` IDs HTML, `0` classes CSS não usadas).
+---
 
-### Backlog Futuro (Fora do Escopo Atual)
+## 3. Backlog Futuro (Fora do Escopo Atual)
 
 * **Otimização do Artefato JSON (`Opção C` — Etapa 4):** Minificar `dist/painel-ept-v4.json` e omitir `indice_busca.texto_busca_normalizado` do arquivo publicado (~34,8% do JSON compacto, reduzindo de `~1.171 KB` / `~241 KB` gzip para `~643 KB` / `~159 KB` gzip), reconstruindo o índice textual em ~3 ms no boot do frontend — além de eventual *split* entre catálogo leve e detalhes sob demanda caso o acervo supere ~400–500 defesas.
