@@ -1,6 +1,7 @@
 import csv
 import json
 import os
+import re
 import tempfile
 import unittest
 from pathlib import Path
@@ -1423,6 +1424,143 @@ class TestUniversalFrontendBuilder(unittest.TestCase):
             widget = (tmp_path / "public" / "widget-elementor.html").read_text(encoding="utf-8")
             self.assertIn("Painel &lt;Teste&gt; &amp; &quot;Campus&quot;", widget)
             self.assertIn("Subtítulo &lt;seguro&gt;", widget)
+
+    def test_integridade_simbolos_js_e_higiene_frontend(self):
+        app_js_path = PROJECT_ROOT / "frontend" / "app.js"
+        styles_css_path = PROJECT_ROOT / "frontend" / "styles.css"
+        widget_path = PROJECT_ROOT / "public" / "widget-elementor.html"
+        loader_tpl_path = (
+            PROJECT_ROOT
+            / "src"
+            / "lemeept_extractor"
+            / "templates"
+            / "frontend"
+            / "loader-elementor.template.html"
+        )
+        loader_pub_path = PROJECT_ROOT / "public" / "loader-elementor.html"
+
+        for arquivo in (app_js_path, styles_css_path, widget_path, loader_tpl_path, loader_pub_path):
+            raw = arquivo.read_bytes()
+            self.assertEqual(raw.count(b"\r"), 0, f"CR encontrado em {arquivo}")
+            self.assertTrue(raw.endswith(b"\n"), f"Sem LF final em {arquivo}")
+
+        css_text = styles_css_path.read_text(encoding="utf-8")
+        self.assertIn("#leme-painel-ept .leme-scope-bar.is-hidden", css_text)
+        self.assertIn("#leme-painel-ept .leme-field.is-hidden", css_text)
+
+        js_text = app_js_path.read_text(encoding="utf-8")
+        widget_text = widget_path.read_text(encoding="utf-8")
+
+        for proibido in ("multiplicadorEscopo", "lista.length * 2", "Falha ao carregar o painel ProfEPT v4"):
+            self.assertNotIn(proibido, js_text)
+            self.assertNotIn(proibido, widget_text)
+
+        for obrigatorio in ("pesoProducaoItem", "contarProducoesLista", "atualizarModoAcervo"):
+            self.assertIn(obrigatorio, js_text)
+            self.assertIn(obrigatorio, widget_text)
+
+        # Lexer JS que preserva estrutura sintatica removendo comentarios, strings e regexes
+        def extrair_codigo_sem_literais(src: str) -> str:
+            out = []
+            i = 0
+            n = len(src)
+            prev_token = ""
+            regex_prefixes = set("=(:,!&|?[{;+-*/%^~<>")
+            while i < n:
+                ch = src[i]
+                nxt = src[i + 1] if i + 1 < n else ""
+                if ch == "/" and nxt == "/":
+                    i += 2
+                    while i < n and src[i] != "\n":
+                        i += 1
+                    continue
+                if ch == "/" and nxt == "*":
+                    i += 2
+                    while i + 1 < n and not (src[i] == "*" and src[i + 1] == "/"):
+                        if src[i] == "\n":
+                            out.append("\n")
+                        i += 1
+                    i += 2
+                    continue
+                if ch in ("'", '"', "`"):
+                    quote = ch
+                    out.append(quote)
+                    i += 1
+                    while i < n and src[i] != quote:
+                        if src[i] == "\\":
+                            i += 2
+                            continue
+                        if src[i] == "\n":
+                            out.append("\n")
+                        i += 1
+                    out.append(quote)
+                    i += 1
+                    prev_token = quote
+                    continue
+                if ch == "/" and (not prev_token or prev_token in regex_prefixes or prev_token == "return"):
+                    in_class = False
+                    i += 1
+                    while i < n:
+                        c = src[i]
+                        if c == "\\":
+                            i += 2
+                            continue
+                        if c == "[":
+                            in_class = True
+                        elif c == "]" and in_class:
+                            in_class = False
+                        elif c == "/" and not in_class:
+                            i += 1
+                            while i < n and src[i].isalpha():
+                                i += 1
+                            break
+                        i += 1
+                    out.append(" REGEX ")
+                    prev_token = "REGEX"
+                    continue
+                out.append(ch)
+                if ch.isalnum() or ch in "_$":
+                    m = re.match(r"[A-Za-z0-9_$]+", src[i:])
+                    if m:
+                        tok = m.group(0)
+                        out.pop()
+                        out.append(tok)
+                        i += len(tok)
+                        prev_token = tok
+                        continue
+                elif not ch.isspace():
+                    prev_token = ch
+                i += 1
+            return "".join(out)
+
+        codigo_limpo = extrair_codigo_sem_literais(js_text)
+        funcoes_declaradas = set(re.findall(r"\bfunction\s+([A-Za-z_$][A-Za-z0-9_$]*)\s*\(", codigo_limpo))
+        vars_declaradas = set(re.findall(r"\b(?:const|let|var)\s+([A-Za-z_$][A-Za-z0-9_$]*)\b", codigo_limpo))
+        params_declarados = set()
+        for params_raw in re.findall(r"\bfunction(?:\s+[A-Za-z_$][A-Za-z0-9_$]*)?\s*\(([^)]*)\)", codigo_limpo):
+            for p in params_raw.split(","):
+                p_clean = p.strip().lstrip(".").split("=")[0].strip()
+                if re.fullmatch(r"[A-Za-z_$][A-Za-z0-9_$]*", p_clean):
+                    params_declarados.add(p_clean)
+        palavras_js = {
+            "if", "for", "while", "switch", "catch", "function", "return", "typeof",
+            "void", "delete", "new", "await", "throw", "else", "in", "of",
+            "Array", "Boolean", "Date", "Error", "Function", "Intl", "JSON", "Map",
+            "Math", "Number", "Object", "Promise", "RegExp", "Set", "String", "URL",
+            "Blob", "fetch", "setTimeout", "clearTimeout", "encodeURIComponent",
+            "decodeURIComponent", "isNaN", "parseInt", "parseFloat",
+            "requestAnimationFrame", "document", "window", "console",
+        }
+        chamadas_livres = set(re.findall(r"(?<![.\w$])([A-Za-z_$][A-Za-z0-9_$]*)\s*\(", codigo_limpo))
+        conhecidos = funcoes_declaradas | vars_declaradas | params_declarados | palavras_js
+        nao_definidos = sorted(chamadas_livres - conhecidos)
+        self.assertEqual(nao_definidos, [], f"Chamadas JS indefinidas em app.js: {nao_definidos}")
+
+        funcoes_orfas = [
+            fn for fn in sorted(funcoes_declaradas)
+            if len(re.findall(rf"\b{re.escape(fn)}\b", codigo_limpo)) < 2
+        ]
+        self.assertEqual(funcoes_orfas, [], f"Funcoes JS declaradas sem uso em app.js: {funcoes_orfas}")
 
 
 if __name__ == "__main__":

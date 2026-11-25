@@ -54,6 +54,7 @@
         "base_epistemologica", "autor_referenciado",
         "tipo_produto", "formato_produto", "publico_alvo", "nivel_aplicacao"
     ];
+    const PRODUCT_FACET_FIELDS = ["tipo_produto", "formato_produto", "publico_alvo", "nivel_aplicacao"];
     const EMPTY_SET = new Set();
 
     let dados = [];
@@ -62,6 +63,8 @@
     let coorientadoresPorChave = new Map();
     let indiceFacetas = new Map();
     let metaRaiz = { total_defesas: 0, total_producoes: 0, gerado_em: "" };
+    let acervoTemProdutos = true;
+    let acervoTemSemProduto = false;
     let resultadosAtuais = [];
     let escopo = "todas";
     let ordenacao = "ano_desc";
@@ -94,6 +97,7 @@
     const statCoorientadoresEl = raiz.querySelector("#leme-stat-coorientadores");
     const statMacroprojetosEl = raiz.querySelector("#leme-stat-macroprojetos");
     const filtros = Array.from(raiz.querySelectorAll("select[data-campo]"));
+    const scopeBarEl = raiz.querySelector(".leme-scope-bar");
     const botoesEscopo = Array.from(raiz.querySelectorAll(".leme-scope button[data-escopo]"));
     const chartsGridEl = raiz.querySelector(".leme-charts-grid");
     const chartCards = Array.from(raiz.querySelectorAll(".leme-chart-card[data-chart-scope]"));
@@ -527,13 +531,51 @@
         return (ini > 0 ? "… " : "") + miolo + (fim < texto.length ? "…" : "");
     }
 
+    function pesoProducaoItem(item) {
+        if (escopo === "dissertacoes") return 1;
+        if (escopo === "produtos") return item && item.tem_produto ? 1 : 0;
+        return 1 + (item && item.tem_produto ? 1 : 0);
+    }
+
     function contarProducoesLista(lista) {
-        if (escopo === "dissertacoes") return lista.length;
-        let comProduto = 0;
+        let total = 0;
         for (let i = 0; i < lista.length; i++) {
-            if (lista[i].tem_produto) comProduto++;
+            total += pesoProducaoItem(lista[i]);
         }
-        return escopo === "produtos" ? comProduto : (lista.length + comProduto);
+        return total;
+    }
+
+    function atualizarModoAcervo() {
+        acervoTemProdutos = dados.some(item => item.tem_produto);
+        acervoTemSemProduto = dados.some(item => !item.tem_produto);
+
+        if (scopeBarEl) {
+            scopeBarEl.classList.toggle("is-hidden", !acervoTemProdutos);
+        }
+
+        if (!acervoTemProdutos) {
+            escopo = "dissertacoes";
+            botoesEscopo.forEach(btn => {
+                const ativo = btn.dataset.escopo === "dissertacoes";
+                btn.classList.toggle("is-active", ativo);
+                btn.setAttribute("aria-pressed", ativo ? "true" : "false");
+            });
+            PRODUCT_FACET_FIELDS.forEach(campo => {
+                const set = filtrosSelecionados.get(campo);
+                if (set) set.clear();
+            });
+        }
+
+        filtros.forEach(select => {
+            const isCampoProduto = PRODUCT_FACET_FIELDS.includes(select.dataset.campo);
+            const fieldEl = select.closest(".leme-field");
+            if (fieldEl) {
+                fieldEl.classList.toggle("is-hidden", !acervoTemProdutos && isCampoProduto);
+            }
+            if (!acervoTemProdutos && isCampoProduto) {
+                select.value = "";
+            }
+        });
     }
 
     function contarDefesasComCoorientacao(lista) {
@@ -774,7 +816,8 @@
 
     function popularFiltrosDinamicos(termos, indicesBuscaSet) {
         const listaTermos = termos || termosBusca();
-        const temFiltroAtivo = temAlgumFiltroFaceta();
+        const restringeProdutos = escopo === "produtos" && acervoTemSemProduto;
+        const temFiltroAtivo = temAlgumFiltroFaceta() || restringeProdutos;
         const baseSemFiltros = (!temFiltroAtivo && listaTermos.length)
             ? Array.from(indicesBuscaSet || calcularIndicesBuscaSet(listaTermos), idx => dados[idx])
             : null;
@@ -782,7 +825,7 @@
         filtros.forEach(select => {
             const campo = select.dataset.campo;
             const selecionados = obterValoresFiltroAtivo(campo);
-            const semOutrosFiltros = !temAlgumFiltroFaceta(campo) && !listaTermos.length;
+            const semOutrosFiltros = !temAlgumFiltroFaceta(campo) && !listaTermos.length && !restringeProdutos;
             let base = null;
             let opcoes;
             if (semOutrosFiltros) {
@@ -920,9 +963,11 @@
     }
 
     function contarAgregado(lista, extratorChave, peso, formatadorRotulo) {
-        const fator = peso || 1;
+        const pesoFn = typeof peso === "function" ? peso : () => (peso == null ? 1 : peso);
         const mapa = new Map();
         lista.forEach(item => {
+            const fator = pesoFn(item);
+            if (!fator) return;
             const valores = extratorChave(item);
             const arr = Array.isArray(valores) ? valores : [valores];
             arr.forEach(v => {
@@ -1039,7 +1084,7 @@
         }
 
         insights.innerHTML = [
-            renderInsightCard("produções (dissertações + produtos)", (lista.length * 2).toLocaleString("pt-BR")),
+            renderInsightCard("produções (dissertações + produtos)", contarProducoesLista(lista).toLocaleString("pt-BR")),
             renderInsightCard("tipo de produto mais comum", primeiroItem(contarAgregado(lista, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k))), "tipo_produto"),
             renderInsightCard("autor mais referenciado", primeiroItem(contarAgregado(lista, i => i.autores_referenciados, 1)), "autor_referenciado"),
             renderInsightCard("orientador em destaque", primeiroItem(contarOrientadores(lista, 1)), "orientador")
@@ -1316,9 +1361,8 @@
     }
 
     function renderYearChart(el, lista) {
-        const peso = multiplicadorEscopo();
         const valoresAtivos = obterValoresFiltroAtivo("ano");
-        const dadosAno = contarAgregado(lista, i => i.ano, peso)
+        const dadosAno = contarAgregado(lista, i => i.ano, pesoProducaoItem)
             .sort((a, b) => Number(a.label) - Number(b.label));
 
         if (!dadosAno.length) {
@@ -1410,13 +1454,17 @@
         const dica = " Clique em um ou mais itens nos gráficos para combinar filtros.";
         if (escopo === "dissertacoes") {
             chartAnoTitle.textContent = "Dissertações defendidas por ano";
-            graficosDesc.textContent = "Indicadores específicos das dissertações defendidas no programa ProfEPT." + dica;
+            graficosDesc.textContent = (acervoTemProdutos
+                ? "Indicadores específicos das dissertações defendidas no acervo."
+                : "Indicadores das dissertações defendidas no acervo.") + dica;
         } else if (escopo === "produtos") {
             chartAnoTitle.textContent = "Produtos educacionais por ano";
             graficosDesc.textContent = "Indicadores específicos dos produtos educacionais vinculados às defesas." + dica;
         } else {
             chartAnoTitle.textContent = "Produções por ano (Dissertações + Produtos)";
-            graficosDesc.textContent = "Visão panorâmica: cada defesa contabiliza 1 dissertação e 1 produto educacional." + dica;
+            graficosDesc.textContent = (acervoTemSemProduto
+                ? "Visão panorâmica: contabiliza cada dissertação e seu produto educacional quando vinculado."
+                : "Visão panorâmica: cada defesa contabiliza 1 dissertação e 1 produto educacional.") + dica;
         }
     }
 
@@ -1763,7 +1811,7 @@
                 '<td>' + escapeHtml(valorPublico(item.linha_pesquisa_label)) + '</td>' +
                 '<td title="' + escapeHtml(item.macroprojeto_label) + '">' + escapeHtml(valorPublico(item.macroprojeto)) + '</td>' +
                 '<td>' + escapeHtml(item.base_status_label) + '</td>' +
-                '<td>' + escapeHtml(valorPublico(item.tipo_produto_label)) + '</td>' +
+                '<td>' + escapeHtml(item.tem_produto ? valorPublico(item.tipo_produto_label) : "Sem produto vinculado") + '</td>' +
                 '<td><div class="leme-table-actions">' + btnDetalhes(item, item.dissertacao_titulo) + renderActions(item) + '</div></td>' +
                 '</tr>'
             ).join("") + '</tbody></table>';
@@ -2466,10 +2514,12 @@
                     ...item,
                     autor: valorPublico(item.autor),
                     orientador: valorPublico(item.orientador),
-                    formato_produto: valorPublico(item.formato_produto),
+                    tipo_produto_label: item.tem_produto ? valorPublico(item.tipo_produto_label) : "Sem produto vinculado",
+                    formato_produto: item.tem_produto ? valorPublico(item.formato_produto) : "Sem produto vinculado",
+                    publico_alvo_str: item.tem_produto ? item.publico_alvo_labels.join(", ") : "Sem produto vinculado",
+                    nivel_aplicacao: item.tem_produto ? valorPublico(item.nivel_aplicacao) : "",
                     coorientadores_str: item.coorientadores.join(", "),
-                    autores_ref_str: item.autores_referenciados.join(", "),
-                    publico_alvo_str: item.publico_alvo_labels.join(", ")
+                    autores_ref_str: item.autores_referenciados.join(", ")
                 };
                 return cols.map(c => csvEscape(serializado[c[0]])).join(";");
             })
@@ -2751,12 +2801,13 @@
             consolidarOrientadores(dados);
             construirIndiceFacetas(dados);
             dadosPorId = new Map(dados.map(item => [item.id, item]));
+            atualizarModoAcervo();
 
             definirControlesDesabilitados(false);
             atualizarIndicadores();
             aplicarFiltros(true);
         } catch (erro) {
-            console.error("Falha ao carregar o painel ProfEPT v4:", erro);
+            console.error("Falha ao carregar o painel LEME v4:", erro);
             definirControlesDesabilitados(true);
             periodoEl.textContent = "Indisponível";
             geradoEmEl.textContent = "";
