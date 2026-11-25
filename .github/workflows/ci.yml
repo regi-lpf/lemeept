@@ -35,7 +35,7 @@ jobs:
           enable-cache: true
 
       - name: Sincronizar dependências
-        run: uv sync --frozen --no-install-project
+        run: uv sync --frozen --no-install-project --no-dev
 
       - name: Lint estático (ruff)
         run: uvx ruff check --select F,E9,E402,B src/ collectors/ scripts/ tests/
@@ -62,9 +62,34 @@ jobs:
           print(f'Contrato OK: {out.total_defesas} defesas / {out.total_producoes} producoes')
           "
 
+  frontend-smoke:
+    name: Frontend Smoke Tests (Playwright)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Instalar uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+
+      - name: Sincronizar dependências com dev
+        run: uv sync --frozen --no-install-project --group dev
+
+      - name: Instalar Chromium (Playwright)
+        run: uv run --no-sync playwright install --with-deps chromium
+
+      - name: Executar smoke tests E2E do frontend
+        env:
+          LEMEEPT_REQUIRE_SMOKE: "1"
+          PYTHONPATH: src
+        run: uv run --no-sync python -m unittest tests/test_frontend_smoke.py -v
+
   package:
     name: Build & Smoke Test (lemeept-extractor)
-    needs: test
+    needs: [test, frontend-smoke]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
