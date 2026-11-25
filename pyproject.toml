@@ -1,14 +1,75 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
 [project]
-name = "lemeept"
-version = "0.1.0"
-requires-python = ">=3.14"
+name = "lemeept-extractor"
+version = "0.4.0b0"
+description = "Pipeline bibliométrica universal (extração determinística, inferência LLM, curadoria e gerador de painel) para o ecossistema LEME / ProfEPT e acervos acadêmicos."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+authors = [
+    { name = "Reginaldo Leandro Plácido Filho" },
+]
+keywords = [
+    "bibliometrics",
+    "profept",
+    "education",
+    "pdf-extraction",
+    "llm",
+    "pydantic",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
 dependencies = [
-    "beautifulsoup4==4.15.0",
-    "google-genai>=3.3.0",
-    "openai==3.50.0",
-    "pydantic==2.14.3",
-    "pymupdf==2.1",
-    "python-dotenv==1.2.4",
-    "requests==2.34.2",
-    "urllib3==2.8.0",
+    "beautifulsoup4>=4.12.0",
+    "google-genai>=1.0.0",
+    "openai>=1.50.0",
+    "pydantic>=2.10.0",
+    "pymupdf>=1.24.0",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+    "urllib3>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://regi-lpf.github.io/lemeept/"
+Repository = "https://github.com/regi-lpf/lemeept"
+"Author Lattes" = "https://busca-cv-lattes.cnpq.br/curriculo/4321376313119387"
+
+[project.scripts]
+lemeept-extractor = "lemeept_extractor.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lemeept_extractor"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"frontend/styles.css" = "lemeept_extractor/templates/frontend/styles.css"
+"frontend/app.js" = "lemeept_extractor/templates/frontend/app.js"
+
+[tool.hatch.build.targets.sdist]
+only-include = [
+    "src/lemeept_extractor",
+    "frontend/styles.css",
+    "frontend/app.js",
+    "pyproject.toml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "CITATION.cff",
+]
+exclude = [
+    "**/__pycache__",
+    "**/*.pyc",
 ]

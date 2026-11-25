@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "LEME / ProfEPT (lemeept & lemeept-extractor): Painel Bibliométrico e Pipeline Universal de Extração"
+message: "Se você utilizar este software ou sua pipeline bibliométrica em pesquisas ou relatórios institucionais, cite-o usando os metadados abaixo."
+type: software
+authors:
+  - given-names: "Reginaldo Leandro"
+    family-names: "Plácido Filho"
+    website: "https://busca-cv-lattes.cnpq.br/curriculo/4321376313119387"
+url: "https://regi-lpf.github.io/lemeept/"
+repository-code: "https://github.com/regi-lpf/lemeept"
+license: MIT
+version: "0.4.0-beta"
+keywords:
+  - bibliometrics
+  - profept
+  - educational-products
+  - epistemology
+  - pdf-extraction
+  - llm
