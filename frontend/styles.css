@@ -487,6 +487,8 @@
     flex-direction: column;
 }
 
+#leme-painel-ept .leme-scope-bar.is-hidden,
+#leme-painel-ept .leme-field.is-hidden,
 #leme-painel-ept .leme-chart-card.is-hidden,
 #leme-painel-ept .leme-chart-card-head.is-hidden,
 #leme-painel-ept .leme-chart-expand-btn.is-hidden {
