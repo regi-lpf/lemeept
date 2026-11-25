@@ -1,0 +1,118 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Test & Lint (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.12", "3.14"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Instalar uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          enable-cache: true
+
+      - name: Sincronizar dependências
+        run: uv sync --frozen --no-install-project
+
+      - name: Lint estático (ruff)
+        run: uvx ruff check --select F,E9,E402,B src/ collectors/ scripts/ tests/
+
+      - name: Verificar compilação de bytecode
+        run: PYTHONPATH=src uv run --no-sync python -m compileall -q src collectors scripts tests
+
+      - name: Executar suíte de testes unitários
+        run: PYTHONPATH=src uv run --no-sync python -m unittest discover -s tests -v
+
+      - name: Validar bundle Elementor e loader
+        run: |
+          python3 scripts/build_frontend.py --check --emit-loader
+          python3 scripts/build_frontend.py --from-template --check --emit-loader
+
+      - name: Validar contrato JSON v4 publicado
+        run: |
+          PYTHONPATH=src uv run --no-sync python -c "
+          import json
+          from pathlib import Path
+          from lemeept_extractor.models import PainelEptV4Output
+          dados = json.loads(Path('public/painel-ept-v4.json').read_text(encoding='utf-8'))
+          out = PainelEptV4Output.model_validate(dados)
+          print(f'Contrato OK: {out.total_defesas} defesas / {out.total_producoes} producoes')
+          "
+
+  package:
+    name: Build & Smoke Test (lemeept-extractor)
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Instalar uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+
+      - name: Construir wheel e sdist
+        run: uv build
+
+      - name: Auditar conteúdos do wheel
+        run: |
+          uv run --no-sync python -c "
+          import glob, zipfile
+          whl = glob.glob('dist/lemeept_extractor-*.whl')[0]
+          with zipfile.ZipFile(whl) as zf:
+              nomes = zf.namelist()
+          esperados = [
+              'lemeept_extractor/SKILL.md',
+              'lemeept_extractor/resources/pessoas.json',
+              'lemeept_extractor/resources/referencias.json',
+              'lemeept_extractor/resources/taxonomia.json',
+              'lemeept_extractor/templates/frontend/index.template.html',
+              'lemeept_extractor/templates/frontend/loader-elementor.template.html',
+              'lemeept_extractor/templates/frontend/styles.css',
+              'lemeept_extractor/templates/frontend/app.js',
+          ]
+          for item in esperados:
+              assert item in nomes, f'Ausente no wheel: {item}'
+          for proibido in ('collectors', 'ifc_blumenau', 'lemeept.toml', 'public/', 'docs/'):
+              vazamentos = [n for n in nomes if proibido in n]
+              assert not vazamentos, f'Conteudo indevido no wheel: {vazamentos}'
+          print(f'Wheel validado: {whl} ({len(nomes)} arquivos)')
+          "
+
+      - name: Smoke test em venv isolado
+        run: |
+          uv venv /tmp/smoke-venv --python 3.12
+          uv pip install --python /tmp/smoke-venv/bin/python --no-deps dist/lemeept_extractor-*.whl
+          /tmp/smoke-venv/bin/lemeept-extractor --version
+          /tmp/smoke-venv/bin/lemeept-extractor --help
+          /tmp/smoke-venv/bin/lemeept-extractor build-frontend --root /tmp/smoke-site --emit-site \
+            --titulo "Painel Teste CI" \
+            --json-url "https://exemplo.edu.br/painel/public/painel-ept-v4.json"
+          /tmp/smoke-venv/bin/lemeept-extractor build-frontend --root /tmp/smoke-site --check --emit-loader \
+            --titulo "Painel Teste CI" \
+            --json-url "https://exemplo.edu.br/painel/public/painel-ept-v4.json"

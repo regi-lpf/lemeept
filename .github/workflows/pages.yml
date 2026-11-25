@@ -25,16 +25,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validar bundle do frontend
-        run: python3 scripts/build_frontend.py --check
+      - name: Validar bundle e loader do frontend
+        run: python3 scripts/build_frontend.py --check --emit-loader
 
       - name: Montar artefato publico (_site)
         run: |
-          mkdir -p _site/frontend _site/dist
+          mkdir -p _site/frontend _site/public
           touch _site/.nojekyll
           cp index.html _site/index.html
           cp frontend/styles.css frontend/app.js _site/frontend/
-          cp dist/painel-ept-v4.json dist/widget-elementor.html dist/loader-elementor.html _site/dist/
+          cp public/painel-ept-v4.json public/widget-elementor.html public/loader-elementor.html _site/public/
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5

@@ -201,8 +201,10 @@
         if (!camp) return inst;
         if (!inst) return camp;
         if (normalizarBusca(inst) === normalizarBusca(camp)) return inst;
-        if (/\bIFC\b/i.test(inst)) {
-            camp = camp.replace(/^IFC\s*[-–—:]?\s*/i, "").trim();
+        const matchSigla = inst.match(/\(([A-ZÀ-ÖØ-Þ0-9]{2,12})\)/) || inst.match(/\b([A-Z]{2,8})\b/);
+        if (matchSigla) {
+            const siglaEsc = matchSigla[1].replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+            camp = camp.replace(new RegExp("^" + siglaEsc + "\\s*[-–—:]?\\s*", "i"), "").trim();
         }
         if (camp && !/^campus\b/i.test(camp)) {
             camp = "Campus " + camp;
@@ -394,6 +396,7 @@
                 dc_type_educapes: Array.isArray(prov.dc_type_educapes) ? prov.dc_type_educapes.map(limparRotulo).filter(ehValorPublico) : []
             },
             termos_unificados: termosUnificados,
+            tem_produto: Boolean(d.produto),
             texto_busca_normalizado: textoBuscaNorm
         };
     }
@@ -524,8 +527,13 @@
         return (ini > 0 ? "… " : "") + miolo + (fim < texto.length ? "…" : "");
     }
 
-    function multiplicadorEscopo() {
-        return escopo === "todas" ? 2 : 1;
+    function contarProducoesLista(lista) {
+        if (escopo === "dissertacoes") return lista.length;
+        let comProduto = 0;
+        for (let i = 0; i < lista.length; i++) {
+            if (lista[i].tem_produto) comProduto++;
+        }
+        return escopo === "produtos" ? comProduto : (lista.length + comProduto);
     }
 
     function contarDefesasComCoorientacao(lista) {
@@ -540,7 +548,7 @@
         const anos = dados.map(item => item.anoNum).filter(n => n > 0);
         const periodo = anos.length ? Math.min(...anos) + "–" + Math.max(...anos) : "Sem ano informado";
         const totalDefesas = metaRaiz.total_defesas || dados.length;
-        const totalProducoes = metaRaiz.total_producoes || (totalDefesas * 2);
+        const totalProducoes = metaRaiz.total_producoes || (totalDefesas + dados.filter(item => item.tem_produto).length);
         const dataGeracao = formatarDataIsoBr(metaRaiz.gerado_em);
 
         periodoEl.textContent = periodo;
@@ -699,23 +707,28 @@
     function filtrarDados(ignorarCampo, termosPreCalculados, indicesBuscaSet) {
         const listaTermos = termosPreCalculados || termosBusca();
         const indicesFac = filtrarIndicesPorFacetas(ignorarCampo);
+        const somenteComProduto = escopo === "produtos";
 
         if (indicesFac !== null) {
             if (!indicesFac.length) return [];
-            if (!listaTermos.length) return indicesFac.map(idx => dados[idx]);
             const out = [];
             for (let i = 0; i < indicesFac.length; i++) {
                 const idx = indicesFac[i];
-                if (indicesBuscaSet ? indicesBuscaSet.has(idx) : itemCorrespondeTermos(dados[idx], listaTermos)) {
-                    out.push(dados[idx]);
+                const item = dados[idx];
+                if (somenteComProduto && !item.tem_produto) continue;
+                if (!listaTermos.length || (indicesBuscaSet ? indicesBuscaSet.has(idx) : itemCorrespondeTermos(item, listaTermos))) {
+                    out.push(item);
                 }
             }
             return out;
         }
 
-        if (!listaTermos.length) return dados;
-        if (indicesBuscaSet) return Array.from(indicesBuscaSet, idx => dados[idx]);
-        return dados.filter(item => itemCorrespondeTermos(item, listaTermos));
+        if (!listaTermos.length) return somenteComProduto ? dados.filter(item => item.tem_produto) : dados;
+        if (indicesBuscaSet) {
+            const out = Array.from(indicesBuscaSet, idx => dados[idx]);
+            return somenteComProduto ? out.filter(item => item.tem_produto) : out;
+        }
+        return dados.filter(item => (!somenteComProduto || item.tem_produto) && itemCorrespondeTermos(item, listaTermos));
     }
 
     function formatarOpcaoFiltro(campo, valor) {
@@ -1598,7 +1611,7 @@
             renderGraficoFormato(chartFormatoEl, lista, termos, indicesBuscaSet, btnExpandFormato);
         }
 
-        const totalItensEscopo = lista.length * multiplicadorEscopo();
+        const totalItensEscopo = contarProducoesLista(lista);
         const rotuloUnidade = escopo === "dissertacoes"
             ? "dissertação(ões)"
             : escopo === "produtos"
@@ -1671,7 +1684,7 @@
             } else if (escopo === "dissertacoes") {
                 metaHtml += '<div><b>Base epistemológica:</b> ' + highlightText(item.base_status_label, termos) + '</div>';
             } else {
-                metaHtml += '<div><b>Produto:</b> ' + highlightText(labelCurto(item.produto_titulo, 72) || "Não informado", termos) + '</div>';
+                metaHtml += '<div><b>Produto:</b> ' + highlightText(item.tem_produto ? (labelCurto(item.produto_titulo, 72) || "Não informado") : "Sem produto vinculado", termos) + '</div>';
             }
 
             const corpoTexto = ehProduto
@@ -1805,7 +1818,8 @@
         } else if (escopo === "produtos") {
             contador.innerHTML = '<strong>' + total + '</strong> produto(s) educacional(is) encontrado(s)';
         } else {
-            contador.innerHTML = '<strong>' + total + '</strong> defesa(s) encontrada(s) · <strong>' + (total * 2) + '</strong> produções';
+            const totalProducoes = contarProducoesLista(resultadosAtuais);
+            contador.innerHTML = '<strong>' + total + '</strong> defesa(s) encontrada(s) · <strong>' + totalProducoes + '</strong> produções';
         }
     }
 
@@ -2360,11 +2374,13 @@
             '<div class="leme-detail-item is-wide"><b>Macroprojeto:</b><br>' + highlightText(valorPublico(item.macroprojeto_label), termos) + '</div>' +
             '<div class="leme-detail-item is-wide"><b>Base epistemológica:</b><br>' + textoBase + justificativaHtml + '</div>' +
             '<div class="leme-detail-item is-wide"><b>Autores referenciados:</b><div class="leme-tags">' + autoresRefHtml + '</div></div>' +
-            '<div class="leme-detail-item is-wide"><b>Produto educacional:</b><br>' + highlightText(valorPublico(item.produto_titulo), termos) + '</div>' +
-            '<div class="leme-detail-item"><b>Tipo de produto (CAPES):</b><br>' + highlightText(valorPublico(item.tipo_produto_label), termos) + '</div>' +
-            '<div class="leme-detail-item"><b>Formato do produto:</b><br>' + highlightText(valorPublico(item.formato_produto), termos) + '</div>' +
-            '<div class="leme-detail-item"><b>Nível de aplicação:</b><br>' + highlightText(valorPublico(item.nivel_aplicacao), termos) + '</div>' +
-            '<div class="leme-detail-item"><b>Público-alvo:</b><br>' + highlightText(item.publico_alvo_labels.join(", ") || "Não informado", termos) + '</div>' +
+            (item.tem_produto
+                ? '<div class="leme-detail-item is-wide"><b>Produto educacional:</b><br>' + highlightText(valorPublico(item.produto_titulo), termos) + '</div>' +
+                  '<div class="leme-detail-item"><b>Tipo de produto (CAPES):</b><br>' + highlightText(valorPublico(item.tipo_produto_label), termos) + '</div>' +
+                  '<div class="leme-detail-item"><b>Formato do produto:</b><br>' + highlightText(valorPublico(item.formato_produto), termos) + '</div>' +
+                  '<div class="leme-detail-item"><b>Nível de aplicação:</b><br>' + highlightText(valorPublico(item.nivel_aplicacao), termos) + '</div>' +
+                  '<div class="leme-detail-item"><b>Público-alvo:</b><br>' + highlightText(item.publico_alvo_labels.join(", ") || "Não informado", termos) + '</div>'
+                : '<div class="leme-detail-item is-wide"><b>Produto educacional:</b><br>Sem produto vinculado</div>') +
             '<div class="leme-detail-item is-wide"><b>Resumo da dissertação:</b><br>' + highlightText(item.dissertacao_resumo || "Resumo não disponível.", termos) + renderTags(item.termos_unificados, termos) + (linksModal.length ? '<div class="leme-actions">' + linksModal.join("") + '</div>' : '') + '</div>' +
             renderSecaoDetalhesRecolhivel(item, termos) +
             '</div>';
@@ -2725,7 +2741,9 @@
             const totalProducoesNum = Number(payload.total_producoes);
             metaRaiz = {
                 total_defesas: Number.isFinite(totalDefesasNum) ? totalDefesasNum : defesas.length,
-                total_producoes: Number.isFinite(totalProducoesNum) ? totalProducoesNum : (defesas.length * 2),
+                total_producoes: Number.isFinite(totalProducoesNum)
+                    ? totalProducoesNum
+                    : (defesas.length + defesas.filter(item => Boolean(item && item.produto)).length),
                 gerado_em: typeof payload.gerado_em === "string" ? payload.gerado_em : ""
             };
 

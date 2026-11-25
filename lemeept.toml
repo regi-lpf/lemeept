@@ -1,0 +1,20 @@
+[instituicao]
+nome = "Instituto Federal Catarinense (IFC)"
+campus = "Blumenau"
+sigla = "IFC"
+somente_dissertacoes = false
+
+[catalogos]
+overlay_json = "config/ifc_blumenau_catalogos.json"
+
+[frontend]
+titulo = "Bússola LEME – Navegador da Produção ProfEPT"
+titulo_pagina = "Painel Bibliométrico LEME / ProfEPT"
+subtitulo = "Trace sua rota por dissertações e produtos educacionais. Ajuste as coordenadas por tema, autor, orientador, ano, linha, macroprojeto e referências."
+eyebrow = "PAINEL PROFEPT"
+titulo_graficos = "1ª Carta Náutica: ProfEPT/IFC"
+json_url = "https://regi-lpf.github.io/lemeept/public/painel-ept-v4.json"
+json_url_local = "./public/painel-ept-v4.json"
+widget_url = "https://regi-lpf.github.io/lemeept/public/widget-elementor.html"
+loader_texto = "Carregando painel LEME / ProfEPT..."
+loader_erro_log = "Falha ao carregar widget LEME / ProfEPT:"
