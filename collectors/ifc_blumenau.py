@@ -18,6 +18,7 @@ from lemeept_extractor.io_utils import (  # noqa: E402
     baixar_pdf_com_validacao,
     calcular_sha256,
     carregar_mapeamento_ids_existentes,
+    escrever_texto_atomico,
 )
 from lemeept_extractor.models import (  # noqa: E402
     ArquivosDefesaV4,
@@ -150,6 +151,7 @@ def executar_etapa1(
     print(f"2. Encontradas {len(fontes)} defesas estruturadas na página.")
 
     mapa_ids, max_id = carregar_mapeamento_ids_existentes(caminho_referencia_ids)
+    ids_usados: set[str] = set()
     registros_v4: List[PreExtracaoItemV4] = []
 
     # Processa em ordem reversa (mais antigas para mais recentes) para manter numeração cronológica
@@ -157,12 +159,18 @@ def executar_etapa1(
         chave_autor = normalizar_chave_busca(fonte.autor_bruto)
         cod_existente = mapa_ids.get(fonte.url_dissertacao.strip()) or mapa_ids.get(chave_autor)
 
-        if cod_existente:
+        if cod_existente and cod_existente not in ids_usados:
             cod_defesa = cod_existente
         else:
+            if cod_existente and cod_existente in ids_usados:
+                print(f"  [AVISO] Colisão de ID {cod_existente} no mesmo lote; alocando novo sequencial.")
             max_id += 1
             cod_defesa = f"EPT-{max_id:04d}"
+            while cod_defesa in ids_usados:
+                max_id += 1
+                cod_defesa = f"EPT-{max_id:04d}"
             print(f"  [+] Nova defesa descoberta: {cod_defesa} ({fonte.autor_bruto} - {fonte.ano})")
+        ids_usados.add(cod_defesa)
 
         nome_arquivo = f"{cod_defesa}.pdf"
         caminho_pdf = diretorio_pdfs / nome_arquivo
@@ -194,9 +202,7 @@ def executar_etapa1(
         registros=registros_v4,
     )
 
-    caminho_manifesto_saida.parent.mkdir(parents=True, exist_ok=True)
-    with open(caminho_manifesto_saida, "w", encoding="utf-8") as f:
-        f.write(manifesto.model_dump_json(indent=2))
+    escrever_texto_atomico(caminho_manifesto_saida, manifesto.model_dump_json(indent=2))
 
     ok_count = sum(1 for r in registros_v4 if r.arquivos.status_download == "OK")
     print("\n--- Etapa 1 Concluída ---")

@@ -1563,5 +1563,146 @@ class TestUniversalFrontendBuilder(unittest.TestCase):
         self.assertEqual(funcoes_orfas, [], f"Funcoes JS declaradas sem uso em app.js: {funcoes_orfas}")
 
 
+class TestAuditWave1SecurityAndIO(unittest.TestCase):
+    def test_escrever_atomico_e_download_parcial_nao_deixam_pdf_corrompido(self):
+        from requests import RequestException
+
+        from lemeept_extractor.io_utils import baixar_pdf_com_validacao, escrever_texto_atomico
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            alvo = root / "sub" / "dado.json"
+            escrever_texto_atomico(alvo, '{"ok": true}')
+            self.assertEqual(alvo.read_text(encoding="utf-8"), '{"ok": true}')
+
+            pdf_dest = root / "EPT-0001.pdf"
+
+            class _RespParcial:
+                status_code = 200
+
+                def __enter__(self):
+                    return self
+
+                def __exit__(self, *args):
+                    return False
+
+                def iter_content(self, chunk_size=65536):
+                    yield b"%PDF-1.4\n" + (b"0" * 1500)
+                    raise RequestException("queda no meio do download")
+
+            with patch("lemeept_extractor.io_utils.requests.get", return_value=_RespParcial()):
+                sha, status = baixar_pdf_com_validacao("https://exemplo.edu.br/a.pdf", pdf_dest)
+
+            self.assertEqual(status, "ERRO_HTTP")
+            self.assertEqual(sha, "")
+            self.assertFalse(pdf_dest.exists())
+            self.assertFalse(pdf_dest.with_name(f".{pdf_dest.name}.tmp").exists())
+
+    def test_resolver_id_estavel_evita_colisao_no_mesmo_lote(self):
+        from lemeept_extractor.io_utils import resolver_id_estavel
+
+        mapa = {"https://ex/a.pdf": "EPT-0001"}
+        usados = set()
+        id1, max1, novo1 = resolver_id_estavel(mapa, 1, id_explicito="EPT-0001", ids_usados=usados)
+        id2, max2, novo2 = resolver_id_estavel(mapa, max1, url="https://ex/a.pdf", ids_usados=usados)
+        self.assertEqual(id1, "EPT-0001")
+        self.assertFalse(novo1)
+        self.assertEqual(id2, "EPT-0002")
+        self.assertEqual(max2, 2)
+        self.assertTrue(novo2)
+
+    def test_curadoria_csv_virgula_cabecalho_invalido_traversal_e_formula_injection(self):
+        from lemeept_extractor.models import (
+            BaseEpistemologicaV4,
+            ContratoDefesaV4,
+            DissertacaoFinalV4,
+            IndiceBuscaV4,
+        )
+        from lemeept_extractor.stages.compile import aplicar_curadoria_csv, compilar_pipeline_v4
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            records_dir = root / "records"
+            out_dir = root / "public"
+            records_dir.mkdir()
+            out_dir.mkdir()
+
+            reg = ContratoDefesaV4(
+                id="EPT-0010",
+                ano=2025,
+                autor="Maria Silva",
+                orientador="Joao Lima",
+                instituicao="IFC",
+                campus="Blumenau",
+                linha_pesquisa="LP1",
+                macroprojeto="MP1",
+                dissertacao=DissertacaoFinalV4(
+                    titulo="=SUM(1,2) Dissertacao Teste",
+                    link="https://exemplo.edu.br/10.pdf",
+                    resumo="Resumo",
+                    base_epistemologica=BaseEpistemologicaV4(
+                        valor=None,
+                        candidato="Pedagogia Histórico-Crítica",
+                        confianca="baixa",
+                        revisao_pendente=True,
+                        justificativa="=cmd|'/C calc'!A0",
+                    ),
+                ),
+                indice_busca=IndiceBuscaV4(
+                    texto_busca_normalizado="ept 0010",
+                    termos_unificados=[],
+                    tem_produto_vinculado=False,
+                    tem_resumo=True,
+                ),
+            )
+            (records_dir / "EPT-0010.json").write_text(reg.model_dump_json(indent=2), encoding="utf-8")
+
+            # Compila para gerar CSV sanitizado contra formula injection
+            compilar_pipeline_v4(records_dir=records_dir, output_dir=out_dir)
+            csv_path = out_dir / "revisao_epistemologica_pendente.csv"
+            csv_raw = csv_path.read_text(encoding="utf-8-sig")
+            self.assertIn("'=SUM(1,2)", csv_raw)
+            self.assertIn("'=cmd|", csv_raw)
+
+            # Cabeçalho inválido não pode ser sobrescrito silenciosamente
+            csv_invalido = out_dir / "invalido.csv"
+            csv_invalido.write_text("col_errada;outra\n1;2\n", encoding="utf-8-sig")
+            with self.assertRaises(ValueError):
+                aplicar_curadoria_csv(records_dir=records_dir, relatorio_revisao=csv_invalido)
+            self.assertIn("col_errada", csv_invalido.read_text(encoding="utf-8-sig"))
+
+            # CSV com vírgula + tentativa de path traversal no id
+            csv_virgula = out_dir / "virgula.csv"
+            csv_virgula.write_text(
+                "id,status_curadoria,base_epistemologica_aprovada\n"
+                "../evil,APROVADO,Teoria Crítica\n"
+                "EPT-0010,APROVADO,Teoria Crítica\n",
+                encoding="utf-8-sig",
+            )
+            atualizados = aplicar_curadoria_csv(records_dir=records_dir, relatorio_revisao=csv_virgula)
+            self.assertEqual(atualizados, 1)
+            salvo = json.loads((records_dir / "EPT-0010.json").read_text(encoding="utf-8"))
+            self.assertEqual(salvo["dissertacao"]["base_epistemologica"]["valor"], "Teoria Crítica")
+            self.assertTrue(salvo["dissertacao"]["base_epistemologica"]["curado_humano"])
+
+    def test_loader_escapa_fechamento_script_e_extract_retorna_codigo_erro(self):
+        from lemeept_extractor.frontend_builder import DEFAULT_FRONTEND_CONFIG, renderizar_loader_template
+        from lemeept_extractor.stages.extract import main as extract_main
+
+        cfg = {**DEFAULT_FRONTEND_CONFIG, "loader_erro_log": "Erro </script><script>alert(1)</script>"}
+        loader = renderizar_loader_template(cfg)
+        self.assertNotIn("Erro </script>", loader)
+        self.assertIn(r"<\/script>", loader)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            manifesto = Path(tmp) / "manifest.json"
+            manifesto.write_text(
+                json.dumps({"registros": [{"id": "EPT-0099", "fonte_profept": {}, "arquivos": {"pdf_dissertacao_path": "/nao/existe.pdf"}}]}),
+                encoding="utf-8",
+            )
+            rc = extract_main(["--manifesto", str(manifesto), "--saida-dir", tmp])
+            self.assertEqual(rc, 1)
+
+
 if __name__ == "__main__":
     unittest.main()

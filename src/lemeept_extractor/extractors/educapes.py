@@ -12,6 +12,7 @@ from lemeept_extractor.extractors.classifiers import (
     classificar_produto_com_fonte,
     extrair_sentenca_produto,
 )
+from lemeept_extractor.io_utils import escrever_texto_atomico
 from lemeept_extractor.models import EvidenciasEduCAPES
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -194,7 +195,7 @@ def coletar_evidencias_educapes(
             )
             if resp.status_code == 200:
                 html = resp.text
-                cache_file.write_text(html, encoding="utf-8")
+                escrever_texto_atomico(cache_file, html)
                 time.sleep(0.6)
         except requests.RequestException as e:
             print(f"  [eduCAPES] Falha ao acessar {full_url}: {e}")

@@ -1,9 +1,11 @@
 import hashlib
 import json
+import os
 import re
 import shutil
+import tempfile
 from pathlib import Path
-from typing import Dict, Literal, Optional, Sequence, Tuple, Union
+from typing import Dict, Literal, Optional, Sequence, Set, Tuple, Union
 
 import requests
 import urllib3
@@ -47,6 +49,34 @@ def validar_cabecalho_pdf(caminho: Path, tamanho_minimo: int = 5) -> bool:
         return False
 
 
+def escrever_texto_atomico(destino: Path, conteudo: str, *, encoding: str = "utf-8") -> None:
+    """Escreve texto em arquivo temporário no mesmo diretório e substitui atomicamente."""
+    destino.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path: Optional[Path] = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding=encoding,
+            dir=destino.parent,
+            prefix=f".{destino.name}.",
+            suffix=".tmp",
+            delete=False,
+        ) as f:
+            tmp_path = Path(f.name)
+            f.write(conteudo)
+            f.flush()
+        os.replace(tmp_path, destino)
+    except BaseException:
+        if tmp_path is not None:
+            tmp_path.unlink(missing_ok=True)
+        raise
+
+
+def escrever_json_atomico(destino: Path, objeto: object, *, indent: int = 2) -> None:
+    """Serializa objeto JSON UTF-8 e persiste atomicamente."""
+    escrever_texto_atomico(destino, json.dumps(objeto, ensure_ascii=False, indent=indent))
+
+
 def baixar_pdf_com_validacao(
     url: str,
     destino: Path,
@@ -63,6 +93,7 @@ def baixar_pdf_com_validacao(
     if validar_cabecalho_pdf(destino, tamanho_minimo=1025):
         return calcular_sha256(destino), "OK"
 
+    tmp_destino = destino.with_name(f".{destino.name}.tmp")
     try:
         with requests.get(
             url,
@@ -75,21 +106,33 @@ def baixar_pdf_com_validacao(
                 print(f"  [ERRO HTTP {resp.status_code}] {url}")
                 return "", "ERRO_HTTP"
 
-            with open(destino, "wb") as f:
+            hasher = hashlib.sha256()
+            primeiros = bytearray()
+            total_bytes = 0
+            with open(tmp_destino, "wb") as f:
                 for chunk in resp.iter_content(chunk_size=65536):
                     if chunk:
                         f.write(chunk)
+                        hasher.update(chunk)
+                        total_bytes += len(chunk)
+                        if len(primeiros) < 5:
+                            primeiros.extend(chunk[: 5 - len(primeiros)])
 
-        if not validar_cabecalho_pdf(destino, tamanho_minimo=5):
+        if bytes(primeiros[:5]) != b"%PDF-" or total_bytes < 1025:
             print(f"  [CORROMPIDO] Arquivo baixado não é um PDF válido: {url}")
-            destino.unlink(missing_ok=True)
+            tmp_destino.unlink(missing_ok=True)
             return "", "CORROMPIDO"
 
-        return calcular_sha256(destino), "OK"
+        os.replace(tmp_destino, destino)
+        return hasher.hexdigest(), "OK"
 
     except requests.RequestException as e:
+        tmp_destino.unlink(missing_ok=True)
         print(f"  [FALHA REDE] {url} -> {e}")
         return "", "ERRO_HTTP"
+    except BaseException:
+        tmp_destino.unlink(missing_ok=True)
+        raise
 
 
 def validar_ou_copiar_pdf_local(
@@ -180,6 +223,7 @@ def resolver_id_estavel(
     url: str = "",
     autor: str = "",
     chave_arquivo: str = "",
+    ids_usados: Optional[Set[str]] = None,
 ) -> Tuple[str, int, bool]:
     """
     Resolve ou gera um identificador estável EPT-XXXX.
@@ -189,7 +233,11 @@ def resolver_id_estavel(
         id_norm = id_explicito.strip().upper()
         match = _ID_PATTERN.match(id_norm)
         if match:
-            return id_norm, max(max_id, int(match.group(1))), False
+            if ids_usados is None or id_norm not in ids_usados:
+                if ids_usados is not None:
+                    ids_usados.add(id_norm)
+                return id_norm, max(max_id, int(match.group(1))), False
+            print(f"  [AVISO] Colisão de ID {id_norm} no mesmo lote; alocando novo sequencial.")
 
     chaves_busca = [
         url.strip() if url else "",
@@ -199,7 +247,19 @@ def resolver_id_estavel(
     ]
     for chave in chaves_busca:
         if chave and chave in mapa_ids:
-            return mapa_ids[chave], max_id, False
+            cand = mapa_ids[chave]
+            if ids_usados is None or cand not in ids_usados:
+                if ids_usados is not None:
+                    ids_usados.add(cand)
+                return cand, max_id, False
+            print(f"  [AVISO] Colisão de ID {cand} no mesmo lote; alocando novo sequencial.")
+            break
 
     novo_max = max_id + 1
-    return f"EPT-{novo_max:04d}", novo_max, True
+    novo_id = f"EPT-{novo_max:04d}"
+    while ids_usados is not None and novo_id in ids_usados:
+        novo_max += 1
+        novo_id = f"EPT-{novo_max:04d}"
+    if ids_usados is not None:
+        ids_usados.add(novo_id)
+    return novo_id, novo_max, True

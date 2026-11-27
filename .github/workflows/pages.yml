@@ -16,7 +16,54 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  verify:
+    name: Verify Frontend & Data Contract
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Instalar uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+
+      - name: Sincronizar dependências com dev
+        run: uv sync --frozen --no-install-project --group dev
+
+      - name: Validar bundle Elementor e loader
+        run: |
+          uv run --no-sync python scripts/build_frontend.py --check --emit-loader
+          uv run --no-sync python scripts/build_frontend.py --from-template --check --emit-loader
+
+      - name: Validar contrato JSON v4 publicado
+        run: |
+          PYTHONPATH=src uv run --no-sync python -c "
+          import json
+          from pathlib import Path
+          from lemeept_extractor.models import PainelEptV4Output
+          dados = json.loads(Path('public/painel-ept-v4.json').read_text(encoding='utf-8'))
+          out = PainelEptV4Output.model_validate(dados)
+          print(f'Contrato OK: {out.total_defesas} defesas / {out.total_producoes} producoes')
+          "
+
+      - name: Executar suíte unitária
+        env:
+          PYTHONPATH: src
+        run: uv run --no-sync python -m unittest tests/test_lemeept.py -v
+
+      - name: Instalar Chromium (Playwright)
+        run: uv run --no-sync playwright install --with-deps chromium
+
+      - name: Executar smoke tests E2E do frontend
+        env:
+          LEMEEPT_REQUIRE_SMOKE: "1"
+          PYTHONPATH: src
+        run: uv run --no-sync python -m unittest tests/test_frontend_smoke.py -v
+
   deploy:
+    needs: verify
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -24,9 +71,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Validar bundle e loader do frontend
-        run: python3 scripts/build_frontend.py --check --emit-loader
 
       - name: Montar artefato publico (_site)
         run: |

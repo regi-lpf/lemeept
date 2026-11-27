@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import Optional, Sequence
 
 from lemeept_extractor.config import LemeConfig, aplicar_config
+from lemeept_extractor.io_utils import escrever_json_atomico
 from lemeept_extractor.extractors import (
     classificar_formato_produto_com_fonte,
     classificar_produto_com_fonte,
@@ -78,11 +79,12 @@ def executar_etapa2(
     erros = []
 
     for item in registros:
-        cod = item["id"]
-        fonte = item["fonte_profept"]
-        pdf_path = Path(item["arquivos"]["pdf_dissertacao_path"])
+        cod = str(item.get("id", "<sem-id>")) if isinstance(item, dict) else "<invalido>"
 
         try:
+            cod = item["id"]
+            fonte = item["fonte_profept"]
+            pdf_path = Path(item["arquivos"]["pdf_dissertacao_path"])
             if not pdf_path.exists():
                 raise FileNotFoundError(f"PDF ausente: {pdf_path}")
 
@@ -167,8 +169,7 @@ def executar_etapa2(
             )
 
             out_file = output_dir / f"{cod}.json"
-            with open(out_file, "w", encoding="utf-8") as out:
-                json.dump(payload.model_dump(), out, ensure_ascii=False, indent=2)
+            escrever_json_atomico(out_file, payload.model_dump())
 
             processados += 1
             if processados % 15 == 0 or processados == len(registros):
@@ -182,6 +183,7 @@ def executar_etapa2(
     print(f"Payloads gerados com sucesso: {processados}/{len(registros)}")
     if erros:
         print(f"Falhas ({len(erros)}): {erros}")
+    return len(erros)
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -208,7 +210,7 @@ def _build_parser() -> argparse.ArgumentParser:
 def main(argv: Optional[Sequence[str]] = None) -> int:
     args = _build_parser().parse_args(argv)
     cfg = aplicar_config(config_path=args.config)
-    executar_etapa2(
+    qtd_erros = executar_etapa2(
         manifest_path=args.manifesto,
         output_dir=args.saida_dir,
         cache_dir=args.cache_dir,
@@ -216,7 +218,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         somente_dissertacoes=args.somente_dissertacoes,
         config=cfg,
     )
-    return 0
+    return 1 if qtd_erros > 0 else 0
 
 
 if __name__ == "__main__":

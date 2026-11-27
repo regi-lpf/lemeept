@@ -131,7 +131,10 @@ def renderizar_index_template(frontend_cfg: dict[str, str]) -> str:
 def renderizar_loader_template(frontend_cfg: dict[str, str]) -> str:
     """Renderiza `public/loader-elementor.html` parametrizado a partir do template embutido."""
     tpl = _resolver_asset_template("loader-elementor.template.html").read_text(encoding="utf-8")
-    erro_js = json.dumps(frontend_cfg.get("loader_erro_log") or "Falha ao carregar widget:", ensure_ascii=False)[1:-1]
+    erro_js = json.dumps(
+        frontend_cfg.get("loader_erro_log") or "Falha ao carregar widget:",
+        ensure_ascii=False,
+    )[1:-1].replace("</", "<\\/")
     substituicoes = {
         "{{WIDGET_URL}}": html.escape(frontend_cfg.get("widget_url", ""), quote=True),
         "{{LOADER_TEXTO}}": html.escape(frontend_cfg.get("loader_texto", ""), quote=True),

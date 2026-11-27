@@ -2,7 +2,7 @@ import argparse
 import csv
 import re
 from pathlib import Path
-from typing import Dict, List, Literal, Optional, Sequence, Tuple, Union
+from typing import Dict, List, Literal, Optional, Sequence, Set, Tuple, Union
 
 import pymupdf
 
@@ -15,6 +15,7 @@ from lemeept_extractor.io_utils import (
     DEFAULT_REF_IDS,
     baixar_pdf_com_validacao,
     carregar_mapeamento_ids_existentes,
+    escrever_texto_atomico,
     resolver_id_estavel,
     validar_cabecalho_pdf,
     validar_ou_copiar_pdf_local,
@@ -121,8 +122,7 @@ def _gravar_manifesto(
         total_registros=len(registros),
         registros=registros,
     )
-    caminho_manifesto_saida.parent.mkdir(parents=True, exist_ok=True)
-    caminho_manifesto_saida.write_text(manifesto.model_dump_json(indent=2), encoding="utf-8")
+    escrever_texto_atomico(caminho_manifesto_saida, manifesto.model_dump_json(indent=2))
     return manifesto
 
 
@@ -207,6 +207,7 @@ def ingerir_de_csv(
 
     delimitador = _detectar_delimitador(conteudo[:4096])
     mapa_ids, max_id = carregar_mapeamento_ids_existentes(caminho_referencia_ids)
+    ids_usados: Set[str] = set()
 
     registros: List[PreExtracaoItemV4] = []
     with open(csv_path, "r", encoding="utf-8-sig", newline="") as f:
@@ -236,6 +237,7 @@ def ingerir_de_csv(
                 url=url_dissertacao or fonte_pdf,
                 autor=autor_bruto,
                 chave_arquivo="" if _eh_url_http(fonte_pdf) else fonte_pdf,
+                ids_usados=ids_usados,
             )
 
             sha256, status, caminho_final = _resolver_pdf_csv(
@@ -297,6 +299,7 @@ def ingerir_de_diretorio_pdfs(
         p for p in origem_pdfs_dir.iterdir() if p.is_file() and p.suffix.lower() == ".pdf"
     )
     mapa_ids, max_id = carregar_mapeamento_ids_existentes(caminho_referencia_ids)
+    ids_usados: Set[str] = set()
     destino_base = diretorio_pdfs or Path("pdf/dissertacoes")
     registros: List[PreExtracaoItemV4] = []
 
@@ -312,6 +315,7 @@ def ingerir_de_diretorio_pdfs(
             id_explicito=id_explicito,
             autor=autor_prelim,
             chave_arquivo=str(arq.as_posix()),
+            ids_usados=ids_usados,
         )
 
         destino_copia = (destino_base / f"{cod_defesa}.pdf") if copiar_pdfs else None
