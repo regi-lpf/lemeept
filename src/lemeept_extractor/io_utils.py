@@ -4,11 +4,14 @@ import os
 import re
 import shutil
 import tempfile
+from functools import lru_cache
 from pathlib import Path
 from typing import Dict, Literal, Optional, Sequence, Set, Tuple, Union
 
 import requests
 import urllib3
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 from lemeept_extractor.normalizers import normalizar_chave_busca
 
@@ -77,6 +80,22 @@ def escrever_json_atomico(destino: Path, objeto: object, *, indent: int = 2) -> 
     escrever_texto_atomico(destino, json.dumps(objeto, ensure_ascii=False, indent=indent))
 
 
+@lru_cache(maxsize=1)
+def obter_sessao_http() -> requests.Session:
+    """Retorna sessão HTTP compartilhada com connection pooling e retries automáticos."""
+    sessao = requests.Session()
+    retry = Retry(
+        total=3,
+        backoff_factor=0.5,
+        status_forcelist=(429, 500, 502, 503, 504),
+        allowed_methods=frozenset(["GET", "HEAD"]),
+    )
+    adapter = HTTPAdapter(max_retries=retry, pool_connections=8, pool_maxsize=16)
+    sessao.mount("https://", adapter)
+    sessao.mount("http://", adapter)
+    return sessao
+
+
 def baixar_pdf_com_validacao(
     url: str,
     destino: Path,
@@ -95,7 +114,7 @@ def baixar_pdf_com_validacao(
 
     tmp_destino = destino.with_name(f".{destino.name}.tmp")
     try:
-        with requests.get(
+        with obter_sessao_http().get(
             url,
             headers=headers or DEFAULT_HEADERS,
             stream=True,

@@ -12,7 +12,7 @@ from lemeept_extractor.extractors.classifiers import (
     classificar_produto_com_fonte,
     extrair_sentenca_produto,
 )
-from lemeept_extractor.io_utils import escrever_texto_atomico
+from lemeept_extractor.io_utils import escrever_texto_atomico, obter_sessao_http
 from lemeept_extractor.models import EvidenciasEduCAPES
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -207,7 +207,7 @@ def coletar_evidencias_educapes(
         html = cache_file.read_text(encoding="utf-8", errors="ignore")
     else:
         try:
-            resp = requests.get(
+            resp = obter_sessao_http().get(
                 full_url,
                 timeout=20,
                 verify=False,

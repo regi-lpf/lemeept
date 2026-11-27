@@ -144,6 +144,7 @@ class RecortesTextuais(BaseModel):
 
 class ContratoExtracaoDeterministicaV4(BaseModel):
     id: str
+    sha256_dissertacao: Optional[str] = None
     metadados_resolvidos: MetadadosResolvidos
     dissertacao_deterministica: DissertacaoDeterministica
     evidencias_educapes: EvidenciasEduCAPES

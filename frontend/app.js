@@ -56,6 +56,15 @@
     ];
     const PRODUCT_FACET_FIELDS = ["tipo_produto", "formato_produto", "publico_alvo", "nivel_aplicacao"];
     const EMPTY_SET = new Set();
+    const collatorPtBr = new Intl.Collator("pt-BR");
+
+    function agendarAnimacaoDom(fn) {
+        if (typeof window.requestAnimationFrame === "function") {
+            window.requestAnimationFrame(() => window.requestAnimationFrame(fn));
+        } else {
+            window.setTimeout(fn, 0);
+        }
+    }
 
     let dados = [];
     let dadosPorId = new Map();
@@ -75,6 +84,7 @@
     let modoCardTipoProduto = "tipo_produto";
     let paginaAtual = 1;
     let debounceTimer = null;
+    let modalBuscaTimer = null;
     let carregandoPainel = false;
     let ultimoFocoAntesModal = null;
     let bodyOverflowAnterior = "";
@@ -791,7 +801,7 @@
             return entradas.sort((a, b) => Number(b[0]) - Number(a[0]));
         }
         return entradas.sort((a, b) =>
-            formatarOpcaoFiltro(campo, a[0]).localeCompare(formatarOpcaoFiltro(campo, b[0]), "pt-BR")
+            collatorPtBr.compare(formatarOpcaoFiltro(campo, a[0]), formatarOpcaoFiltro(campo, b[0]))
         );
     }
 
@@ -941,19 +951,19 @@
     function ordenarResultados(lista) {
         const copia = lista.slice();
         if (ordenacao === "ano_asc") {
-            return copia.sort((a, b) => (a.anoNum - b.anoNum) || a.id.localeCompare(b.id, "pt-BR"));
+            return copia.sort((a, b) => (a.anoNum - b.anoNum) || collatorPtBr.compare(a.id, b.id));
         }
         if (ordenacao === "titulo_asc") {
             return copia.sort((a, b) => {
                 const ta = escopo === "produtos" ? (a.produto_titulo || a.dissertacao_titulo) : a.dissertacao_titulo;
                 const tb = escopo === "produtos" ? (b.produto_titulo || b.dissertacao_titulo) : b.dissertacao_titulo;
-                return ta.localeCompare(tb, "pt-BR");
+                return collatorPtBr.compare(ta, tb);
             });
         }
         if (ordenacao === "autor_asc") {
-            return copia.sort((a, b) => (a.autor || "").localeCompare(b.autor || "", "pt-BR"));
+            return copia.sort((a, b) => collatorPtBr.compare(a.autor || "", b.autor || ""));
         }
-        return copia.sort((a, b) => (b.anoNum - a.anoNum) || b.id.localeCompare(a.id, "pt-BR"));
+        return copia.sort((a, b) => (b.anoNum - a.anoNum) || collatorPtBr.compare(b.id, a.id));
     }
 
     function alternarFiltroInterativo(campo, valor) {
@@ -984,12 +994,12 @@
             });
         });
         return Array.from(mapa.values())
-            .sort((a, b) => b.valor - a.valor || String(a.label).localeCompare(String(b.label), "pt-BR"));
+            .sort((a, b) => b.valor - a.valor || collatorPtBr.compare(String(a.label), String(b.label)));
     }
 
     function ordenarRankingMapa(mapa, limite) {
         const ordenado = Array.from(mapa.values())
-            .sort((a, b) => b.valor - a.valor || String(a.label).localeCompare(String(b.label), "pt-BR"));
+            .sort((a, b) => b.valor - a.valor || collatorPtBr.compare(String(a.label), String(b.label)));
         return limite ? ordenado.slice(0, limite) : ordenado;
     }
 
@@ -1060,18 +1070,19 @@
         return lista && lista[0] ? lista[0] : null;
     }
 
-    function renderInsights(lista) {
+    function renderInsights(lista, obterAgregadoBase) {
         if (!lista.length) {
             insights.innerHTML = '<div class="leme-insight-card"><strong>0</strong><span>Nenhum resultado neste recorte. Limpe algum filtro ou use uma busca mais ampla.</span></div>';
             return;
         }
+        const obterAgg = obterAgregadoBase || ((_, computador) => computador());
 
         if (escopo === "dissertacoes") {
             insights.innerHTML = [
                 renderInsightCard("dissertações no recorte", lista.length.toLocaleString("pt-BR")),
-                renderInsightCard("base epistemológica predominante", primeiroItem(contarAgregado(lista, i => i.base_epistemologica, 1)), "base_epistemologica"),
-                renderInsightCard("autor mais referenciado", primeiroItem(contarAgregado(lista, i => i.autores_referenciados, 1)), "autor_referenciado"),
-                renderInsightCard("orientador em destaque", primeiroItem(contarOrientadores(lista, 1)), "orientador")
+                renderInsightCard("base epistemológica predominante", primeiroItem(obterAgg("base_epistemologica", () => contarAgregado(lista, i => i.base_epistemologica, 1))), "base_epistemologica"),
+                renderInsightCard("autor mais referenciado", primeiroItem(obterAgg("autor_referenciado", () => contarAgregado(lista, i => i.autores_referenciados, 1))), "autor_referenciado"),
+                renderInsightCard("orientador em destaque", primeiroItem(obterAgg("orientador", () => contarOrientadores(lista))), "orientador")
             ].join("");
             return;
         }
@@ -1079,18 +1090,18 @@
         if (escopo === "produtos") {
             insights.innerHTML = [
                 renderInsightCard("produtos educacionais no recorte", lista.length.toLocaleString("pt-BR")),
-                renderInsightCard("tipo de produto mais comum", primeiroItem(contarAgregado(lista, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k))), "tipo_produto"),
-                renderInsightCard("público-alvo principal", primeiroItem(contarAgregado(lista, i => i.publico_alvo, 1, k => traduzirSlug("publico_alvo", k))), "publico_alvo"),
-                renderInsightCard("nível de aplicação predominante", primeiroItem(contarAgregado(lista, i => i.nivel_aplicacao, 1)), "nivel_aplicacao")
+                renderInsightCard("tipo de produto mais comum", primeiroItem(obterAgg("tipo_produto", () => contarAgregado(lista, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k)))), "tipo_produto"),
+                renderInsightCard("público-alvo principal", primeiroItem(obterAgg("publico_alvo", () => contarAgregado(lista, i => i.publico_alvo, 1, k => traduzirSlug("publico_alvo", k)))), "publico_alvo"),
+                renderInsightCard("nível de aplicação predominante", primeiroItem(obterAgg("nivel_aplicacao", () => contarAgregado(lista, i => i.nivel_aplicacao, 1))), "nivel_aplicacao")
             ].join("");
             return;
         }
 
         insights.innerHTML = [
             renderInsightCard("produções (dissertações + produtos)", contarProducoesLista(lista).toLocaleString("pt-BR")),
-            renderInsightCard("tipo de produto mais comum", primeiroItem(contarAgregado(lista, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k))), "tipo_produto"),
-            renderInsightCard("autor mais referenciado", primeiroItem(contarAgregado(lista, i => i.autores_referenciados, 1)), "autor_referenciado"),
-            renderInsightCard("orientador em destaque", primeiroItem(contarOrientadores(lista, 1)), "orientador")
+            renderInsightCard("tipo de produto mais comum", primeiroItem(obterAgg("tipo_produto", () => contarAgregado(lista, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k)))), "tipo_produto"),
+            renderInsightCard("autor mais referenciado", primeiroItem(obterAgg("autor_referenciado", () => contarAgregado(lista, i => i.autores_referenciados, 1))), "autor_referenciado"),
+            renderInsightCard("orientador em destaque", primeiroItem(obterAgg("orientador", () => contarOrientadores(lista))), "orientador")
         ].join("");
     }
 
@@ -1220,11 +1231,13 @@
         });
 
         if (novos.length) {
-            void barsEl.offsetWidth;
-            for (let i = 0; i < novos.length; i++) {
-                novos[i].row.classList.remove("is-entering");
-                novos[i].fill.style.transform = novos[i].scaleStr;
-            }
+            agendarAnimacaoDom(() => {
+                for (let i = 0; i < novos.length; i++) {
+                    if (!novos[i].row.isConnected) continue;
+                    novos[i].row.classList.remove("is-entering");
+                    novos[i].fill.style.transform = novos[i].scaleStr;
+                }
+            });
         }
 
         const footnoteText = config.footnote || ((config.agruparOutras === false && dadosValidos.length > limiteReal)
@@ -1356,10 +1369,13 @@
         });
 
         if (novosSegs.length) {
-            void trackEl.offsetWidth;
-            for (let i = 0; i < novosSegs.length; i++) {
-                novosSegs[i].seg.style.width = novosSegs[i].pctStr;
-            }
+            agendarAnimacaoDom(() => {
+                for (let i = 0; i < novosSegs.length; i++) {
+                    if (novosSegs[i].seg.isConnected) {
+                        novosSegs[i].seg.style.width = novosSegs[i].pctStr;
+                    }
+                }
+            });
         }
     }
 
@@ -1440,10 +1456,13 @@
         });
 
         if (novos.length) {
-            void chartEl.offsetWidth;
-            for (let i = 0; i < novos.length; i++) {
-                novos[i].barEl.style.height = novos[i].hStr;
-            }
+            agendarAnimacaoDom(() => {
+                for (let i = 0; i < novos.length; i++) {
+                    if (novos[i].barEl.isConnected) {
+                        novos[i].barEl.style.height = novos[i].hStr;
+                    }
+                }
+            });
         }
     }
 
@@ -1471,10 +1490,11 @@
         }
     }
 
-    function renderCardOrientadores(lista, termos, indicesBuscaSet) {
+    function renderCardOrientadores(lista, termos, indicesBuscaSet, obterAgregado) {
+        const obterAgg = obterAgregado || ((_, listaAlvo, computador) => computador());
         const listaOri = obterListaGraficoFaceta("orientador", lista, termos, indicesBuscaSet);
         const listaCoor = obterListaGraficoFaceta("coorientador", lista, termos, indicesBuscaSet);
-        const dadosOrientadores = contarOrientadores(listaOri);
+        const dadosOrientadores = obterAgg("orientador", listaOri, () => contarOrientadores(listaOri));
         const dadosCoor = contarCoorientadores(listaCoor);
         const defsCoor = contarDefesasComCoorientacao(listaCoor);
 
@@ -1545,7 +1565,8 @@
         if (btnExpand) btnExpand.disabled = dadosFormato.length === 0;
     }
 
-    function renderCardTipoProduto(lista, termos, indicesBuscaSet) {
+    function renderCardTipoProduto(lista, termos, indicesBuscaSet, obterAgregado) {
+        const obterAgg = obterAgregado || ((_, listaAlvo, computador) => computador());
         const mostrarSwitch = escopo === "todas";
         const modoEfetivo = mostrarSwitch ? modoCardTipoProduto : "tipo_produto";
 
@@ -1581,7 +1602,7 @@
         const listaTipo = obterListaGraficoFaceta("tipo_produto", lista, termos, indicesBuscaSet);
         renderHorizontalChart(
             chartTipoEl,
-            contarAgregado(listaTipo, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k)),
+            obterAgg("tipo_produto", listaTipo, () => contarAgregado(listaTipo, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k))),
             9,
             { campoFiltro: "tipo_produto" }
         );
@@ -1589,7 +1610,15 @@
 
     function atualizarGraficos(lista, termos, indicesBuscaSet) {
         atualizarVisibilidadeGraficos();
-        renderInsights(lista);
+        const memoBase = new Map();
+        function obterAgregado(campo, listaAlvo, computador) {
+            if (listaAlvo === lista) {
+                if (!memoBase.has(campo)) memoBase.set(campo, computador());
+                return memoBase.get(campo);
+            }
+            return computador();
+        }
+        renderInsights(lista, (campo, computador) => obterAgregado(campo, lista, computador));
         const listaAno = obterListaGraficoFaceta("ano", lista, termos, indicesBuscaSet);
         renderYearChart(chartAnoEl, listaAno);
 
@@ -1607,7 +1636,7 @@
                 6,
                 { formatarRotulo: rotuloMacroCurto, campoFiltro: "macroprojeto" }
             );
-            renderCardOrientadores(lista, termos, indicesBuscaSet);
+            renderCardOrientadores(lista, termos, indicesBuscaSet, obterAgregado);
 
             const listaBase = obterListaGraficoFaceta("base_epistemologica", lista, termos, indicesBuscaSet);
             const totalRecorte = listaBase.length;
@@ -1625,14 +1654,23 @@
                 ? "Nenhuma base consolidada neste recorte (" + pendentes + " registro(s) em curadoria pendente)."
                 : "Nenhuma base epistemológica consolidada neste recorte.";
 
-            renderHorizontalChart(chartBaseEl, contarAgregado(listaBase, i => i.base_epistemologica, 1), 8, {
-                footnote: footnoteBase,
-                emptyText: emptyBase,
-                campoFiltro: "base_epistemologica"
-            });
+            renderHorizontalChart(
+                chartBaseEl,
+                obterAgregado("base_epistemologica", listaBase, () => contarAgregado(listaBase, i => i.base_epistemologica, 1)),
+                8,
+                {
+                    footnote: footnoteBase,
+                    emptyText: emptyBase,
+                    campoFiltro: "base_epistemologica"
+                }
+            );
 
             const listaAutoresRef = obterListaGraficoFaceta("autor_referenciado", lista, termos, indicesBuscaSet);
-            const dadosAutoresRef = contarAgregado(listaAutoresRef, i => i.autores_referenciados, 1);
+            const dadosAutoresRef = obterAgregado(
+                "autor_referenciado",
+                listaAutoresRef,
+                () => contarAgregado(listaAutoresRef, i => i.autores_referenciados, 1)
+            );
             renderHorizontalChart(chartAutoresRefEl, dadosAutoresRef, 12, {
                 agruparOutras: false,
                 campoFiltro: "autor_referenciado"
@@ -1641,18 +1679,18 @@
         }
 
         if (escopo === "todas" || escopo === "produtos") {
-            renderCardTipoProduto(lista, termos, indicesBuscaSet);
+            renderCardTipoProduto(lista, termos, indicesBuscaSet, obterAgregado);
             const listaPublico = obterListaGraficoFaceta("publico_alvo", lista, termos, indicesBuscaSet);
             renderHorizontalChart(
                 chartPublicoEl,
-                contarAgregado(listaPublico, i => i.publico_alvo, 1, k => traduzirSlug("publico_alvo", k)),
+                obterAgregado("publico_alvo", listaPublico, () => contarAgregado(listaPublico, i => i.publico_alvo, 1, k => traduzirSlug("publico_alvo", k))),
                 6,
                 { agruparOutras: false, campoFiltro: "publico_alvo" }
             );
             const listaNivel = obterListaGraficoFaceta("nivel_aplicacao", lista, termos, indicesBuscaSet);
             renderHorizontalChart(
                 chartNivelEl,
-                contarAgregado(listaNivel, i => i.nivel_aplicacao, 1),
+                obterAgregado("nivel_aplicacao", listaNivel, () => contarAgregado(listaNivel, i => i.nivel_aplicacao, 1)),
                 8,
                 { campoFiltro: "nivel_aplicacao" }
             );
@@ -2059,9 +2097,9 @@
             return true;
         });
         if (estado.ordenacao === "az") {
-            filtrados.sort((a, b) => a.label.localeCompare(b.label, "pt-BR") || (b.valor - a.valor));
+            filtrados.sort((a, b) => collatorPtBr.compare(a.label, b.label) || (b.valor - a.valor));
         } else {
-            filtrados.sort((a, b) => (b.valor - a.valor) || a.label.localeCompare(b.label, "pt-BR"));
+            filtrados.sort((a, b) => (b.valor - a.valor) || collatorPtBr.compare(a.label, b.label));
         }
         return filtrados;
     }
@@ -2126,7 +2164,9 @@
 
         Array.from(cortesEl.querySelectorAll("button[data-ranking-corte]")).forEach(btn => {
             const corteBtn = Number(btn.dataset.rankingCorte || 1);
-            const qtdCorte = contarItensPorCorte(estado.dadosBrutos, corteBtn);
+            const qtdCorte = estado.contagensCortes && estado.contagensCortes.has(corteBtn)
+                ? estado.contagensCortes.get(corteBtn)
+                : contarItensPorCorte(estado.dadosBrutos, corteBtn);
             const ativo = estado.corte === corteBtn;
             const rotuloBase = corteBtn === 1 ? "Todos" : ("≥ " + corteBtn);
             btn.textContent = rotuloBase + " (" + qtdCorte.toLocaleString("pt-BR") + ")";
@@ -2234,11 +2274,13 @@
         });
 
         if (novos.length) {
-            void barsEl.offsetWidth;
-            for (let i = 0; i < novos.length; i++) {
-                novos[i].row.classList.remove("is-entering");
-                novos[i].fill.style.transform = novos[i].scaleStr;
-            }
+            agendarAnimacaoDom(() => {
+                for (let i = 0; i < novos.length; i++) {
+                    if (!novos[i].row.isConnected) continue;
+                    novos[i].row.classList.remove("is-entering");
+                    novos[i].fill.style.transform = novos[i].scaleStr;
+                }
+            });
         }
 
         pagEl.innerHTML = montarHtmlPaginacao(
@@ -2285,11 +2327,16 @@
             ? baseRanking.reduce((acc, item) => acc + (item.tem_produto ? 1 : 0), 0)
             : baseRanking.length;
         const corteInicial = escolherCorteAdaptavel(dadosBrutos, cfg.corteInicial);
+        if (modalBuscaTimer) {
+            clearTimeout(modalBuscaTimer);
+            modalBuscaTimer = null;
+        }
 
         estadoModalRanking = {
             tipo: tipo,
             cfg: cfg,
             dadosBrutos: dadosBrutos,
+            contagensCortes: new Map(RANKING_CORTES.map(c => [c, contarItensPorCorte(dadosBrutos, c)])),
             totalBase: totalBase,
             unidadeSingular: ehFormato ? "produto" : "defesa",
             unidadePlural: ehFormato ? "produtos" : "defesas",
@@ -2359,13 +2406,17 @@
 
         if (buscaModalInput) {
             buscaModalInput.addEventListener("input", () => {
-                if (!estadoModalRanking) return;
-                estadoModalRanking.busca = buscaModalInput.value || "";
-                const norm = normalizarBusca(estadoModalRanking.busca);
-                estadoModalRanking.buscaTermos = norm ? norm.split(" ").filter(Boolean) : [];
-                estadoModalRanking.pagina = 1;
-                renderModalRankingLista();
-                if (listaModalEl) listaModalEl.scrollTop = 0;
+                clearTimeout(modalBuscaTimer);
+                modalBuscaTimer = setTimeout(() => {
+                    modalBuscaTimer = null;
+                    if (!estadoModalRanking) return;
+                    estadoModalRanking.busca = buscaModalInput.value || "";
+                    const norm = normalizarBusca(estadoModalRanking.busca);
+                    estadoModalRanking.buscaTermos = norm ? norm.split(" ").filter(Boolean) : [];
+                    estadoModalRanking.pagina = 1;
+                    renderModalRankingLista();
+                    if (listaModalEl) listaModalEl.scrollTop = 0;
+                }, 120);
             });
         }
 
@@ -2385,6 +2436,10 @@
 
     function abrirModal(item) {
         if (!item) return;
+        if (modalBuscaTimer) {
+            clearTimeout(modalBuscaTimer);
+            modalBuscaTimer = null;
+        }
         estadoModalRanking = null;
         modalEl.classList.remove("is-ranking");
         const termos = termosBusca();
@@ -2447,6 +2502,10 @@
     }
 
     function fecharModal() {
+        if (modalBuscaTimer) {
+            clearTimeout(modalBuscaTimer);
+            modalBuscaTimer = null;
+        }
         if (!modalBackdrop.classList.contains("is-open")) return;
         estadoModalRanking = null;
         modalEl.classList.remove("is-ranking");

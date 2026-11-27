@@ -8,8 +8,8 @@ import pymupdf
 
 from lemeept_extractor.config import LemeConfig, aplicar_config
 from lemeept_extractor.extractors import (
+    extrair_capa_e_ficha,
     extrair_metadados_preliminares_pdf,
-    isolar_secoes_pdf,
 )
 from lemeept_extractor.io_utils import (
     DEFAULT_REF_IDS,
@@ -171,12 +171,8 @@ def _extrair_preliminares_pdf_local(pdf_path: Path) -> Dict[str, object]:
         return {}
     try:
         paginas = _ler_primeiras_paginas_pdf(pdf_path, max_paginas=8)
-        recortes, _ = isolar_secoes_pdf(paginas)
-        return extrair_metadados_preliminares_pdf(
-            recortes.capa,
-            recortes.ficha_catalografica,
-            pdf_path.stem,
-        )
+        capa, ficha = extrair_capa_e_ficha(paginas)
+        return extrair_metadados_preliminares_pdf(capa, ficha, pdf_path.stem)
     except Exception:
         return {}
 

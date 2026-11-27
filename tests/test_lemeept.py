@@ -1620,7 +1620,8 @@ class TestAuditWave1SecurityAndIO(unittest.TestCase):
                     yield b"%PDF-1.4\n" + (b"0" * 1500)
                     raise RequestException("queda no meio do download")
 
-            with patch("lemeept_extractor.io_utils.requests.get", return_value=_RespParcial()):
+            with patch("lemeept_extractor.io_utils.obter_sessao_http") as mock_sessao:
+                mock_sessao.return_value.get.return_value = _RespParcial()
                 sha, status = baixar_pdf_com_validacao("https://exemplo.edu.br/a.pdf", pdf_dest)
 
             self.assertEqual(status, "ERRO_HTTP")
@@ -2037,6 +2038,134 @@ class TestAuditWave2ExtractorsAndCLI(unittest.TestCase):
         with self.assertRaises(SystemExit) as cm2:
             cli.main(["--config=", "extract"])
         self.assertEqual(cm2.exception.code, 2)
+
+
+class TestAuditWave2Optimizations(unittest.TestCase):
+    def test_etapa2_cache_sha256_pula_pdf_e_forcar_reprocessa(self):
+        import pymupdf
+
+        from lemeept_extractor.io_utils import calcular_sha256
+        from lemeept_extractor.stages.extract import executar_etapa2
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmp = Path(tmpdir)
+            pdf_path = tmp / "diss.pdf"
+            doc = pymupdf.open()
+            page = doc.new_page()
+            page.insert_text((72, 72), "Dissertacao EPT\nResumo\nPalavras-chave: EPT.")
+            doc.save(pdf_path)
+            doc.close()
+
+            manifesto = {
+                "versao_schema": "4.0.0",
+                "total_registros": 1,
+                "registros": [
+                    {
+                        "id": "EPT-9901",
+                        "fonte_profept": {
+                            "titulo_bruto": "Estudo Teste EPT",
+                            "autor_bruto": "Ana Silva",
+                            "orientador_bruto": "João Souza",
+                            "ano": 2024,
+                            "instituicao": "IFC",
+                            "campus": "Blumenau",
+                            "sem_produto": True,
+                        },
+                        "arquivos": {
+                            "pdf_dissertacao_path": str(pdf_path),
+                            "sha256_pdf": calcular_sha256(pdf_path),
+                            "status_download": "OK",
+                        },
+                    }
+                ],
+            }
+            manifest_path = tmp / "manifest.json"
+            out_dir = tmp / "stage2"
+            cache_dir = tmp / "cache"
+            manifest_path.write_text(json.dumps(manifesto), encoding="utf-8")
+
+            self.assertEqual(
+                executar_etapa2(manifest_path=manifest_path, output_dir=out_dir, cache_dir=cache_dir),
+                0,
+            )
+            payload = json.loads((out_dir / "EPT-9901.json").read_text(encoding="utf-8"))
+            self.assertEqual(payload["sha256_dissertacao"], calcular_sha256(pdf_path))
+
+            with patch(
+                "lemeept_extractor.stages.extract.ler_paginas_pdf",
+                side_effect=AssertionError("Etapa 2 deveria pular PDF com SHA-256 em cache"),
+            ):
+                self.assertEqual(
+                    executar_etapa2(manifest_path=manifest_path, output_dir=out_dir, cache_dir=cache_dir),
+                    0,
+                )
+
+            with patch(
+                "lemeept_extractor.stages.extract.ler_paginas_pdf",
+                return_value=[(1, "Texto forcado")],
+            ) as mock_ler:
+                self.assertEqual(
+                    executar_etapa2(
+                        manifest_path=manifest_path,
+                        output_dir=out_dir,
+                        cache_dir=cache_dir,
+                        forcar=True,
+                    ),
+                    0,
+                )
+            self.assertEqual(mock_ler.call_count, 1)
+
+    def test_sessao_http_reutilizada_e_llm_schema_cache_rate_limit(self):
+        from requests.adapters import HTTPAdapter
+
+        from lemeept_extractor.io_utils import obter_sessao_http
+        from lemeept_extractor.llm_provider import (
+            LLMClient,
+            _obter_schema_gemini,
+            _obter_schema_openai_compat,
+        )
+        from lemeept_extractor.models import RespostaInterpretativaLLM
+
+        s1 = obter_sessao_http()
+        s2 = obter_sessao_http()
+        self.assertIs(s1, s2)
+        self.assertIsInstance(s1.adapters["https://"], HTTPAdapter)
+        self.assertIsInstance(s1.adapters["http://"], HTTPAdapter)
+
+        self.assertIs(
+            _obter_schema_gemini(RespostaInterpretativaLLM),
+            _obter_schema_gemini(RespostaInterpretativaLLM),
+        )
+        self.assertIs(
+            _obter_schema_openai_compat(RespostaInterpretativaLLM),
+            _obter_schema_openai_compat(RespostaInterpretativaLLM),
+        )
+
+        env = {"LLM_PROVIDER": "gemini", "GEMINI_API_KEY": "fake-key", "LLM_DELAY": "2.0"}
+        fake_resp = MagicMock()
+        fake_resp.text = '{"ok": true}'
+        with patch.dict(os.environ, env, clear=True), patch(
+            "lemeept_extractor.llm_provider.genai.Client"
+        ) as mock_client, patch("lemeept_extractor.llm_provider.time.sleep") as mock_sleep:
+            mock_client.return_value.models.generate_content.return_value = fake_resp
+            client = LLMClient()
+            client.gerar_estruturado("sys", "user1", RespostaInterpretativaLLM, max_retries=1)
+            mock_sleep.assert_not_called()
+
+            client.gerar_estruturado("sys", "user2", RespostaInterpretativaLLM, max_retries=1)
+            mock_sleep.assert_called_once()
+            espera = mock_sleep.call_args.args[0]
+            self.assertGreater(espera, 0.0)
+            self.assertLessEqual(espera, 2.0)
+
+    def test_frontend_sem_offsetwidth_nem_localecompare(self):
+        app_js = (PROJECT_ROOT / "frontend" / "app.js").read_text(encoding="utf-8")
+        bundle = (PROJECT_ROOT / "public" / "widget-elementor.html").read_text(encoding="utf-8")
+        for conteudo in (app_js, bundle):
+            self.assertNotIn("offsetWidth", conteudo)
+            self.assertNotIn("localeCompare", conteudo)
+            self.assertIn("Intl.Collator", conteudo)
+            self.assertIn("requestAnimationFrame", conteudo)
 
 
 if __name__ == "__main__":

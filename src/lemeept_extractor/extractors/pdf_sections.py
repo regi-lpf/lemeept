@@ -127,17 +127,26 @@ def _pagina_tem_indicio_bib(texto: str) -> bool:
     )
 
 
+def extrair_capa_e_ficha(paginas: List[Tuple[int, str]]) -> Tuple[str, str]:
+    """Extrai o texto das duas primeiras páginas (capa) e da ficha catalográfica."""
+    capa = "\n\n".join(txt for _, txt in paginas[:2])
+    ficha = ""
+    for num_pag, txt in paginas:
+        upper = txt.upper()
+        if "FICHA CATALOGRÁFICA" in upper or "CDD" in upper or "CDU" in upper:
+            ficha = f"[PÁG. {num_pag}]\n{txt}"
+            break
+    return capa, ficha
+
+
 def _extrair_pre_textuais(paginas: List[Tuple[int, str]]) -> Tuple[str, str, str, str]:
     pre_textuais = paginas[:18]
-    capa = "\n\n".join(txt for _, txt in pre_textuais[:2])
-    ficha = ""
+    capa, ficha = extrair_capa_e_ficha(pre_textuais)
     resumo = ""
     sumario = ""
 
     for idx_pre, (num_pag, txt) in enumerate(pre_textuais):
         upper = txt.upper()
-        if not ficha and ("FICHA CATALOGRÁFICA" in upper or "CDD" in upper or "CDU" in upper):
-            ficha = f"[PÁG. {num_pag}]\n{txt}"
         if not resumo and re.search(r"(^|\n)\s*RESUMO\s*[:\-–—]?\s*(\n|$)", upper):
             bloco_resumo = txt
             if not re.search(r"(?:^|\n)\s*palavras[\s\-–]+chaves?", bloco_resumo, flags=re.IGNORECASE) and idx_pre + 1 < len(paginas):
