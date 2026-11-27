@@ -451,6 +451,22 @@ class TestFrontendSmoke(unittest.TestCase):
 
             page.click("button[data-escopo='produtos']")
             self.assertTrue(page.locator("#leme-chart-formato").is_visible())
+
+            self.assertEqual(page.locator("#leme-controles").get_attribute("tabindex"), "-1")
+
+            page.click("button[data-escopo='todas']")
+            page.click("button[data-open-ranking='autor_referenciado']")
+            self.assertIn("is-open", page.locator("#leme-modal-backdrop").get_attribute("class") or "")
+            page.fill("#leme-ranking-busca", "Freire")
+            page.locator("#leme-ranking-busca").press("Escape")
+            self.assertIn("is-open", page.locator("#leme-modal-backdrop").get_attribute("class") or "")
+            self.assertEqual(page.locator("#leme-ranking-busca").input_value(), "")
+            page.locator("#leme-ranking-busca").press("Escape")
+            self.assertNotIn("is-open", page.locator("#leme-modal-backdrop").get_attribute("class") or "")
+
+            page.locator("#leme-chart-base button.leme-bar-row.is-clickable").first.click()
+            page.wait_for_timeout(400)
+
             page.locator(".leme-card-detail-btn").first.click()
             self.assertIn("is-open", page.locator("#leme-modal-backdrop").get_attribute("class") or "")
             page.click("#leme-modal-close")

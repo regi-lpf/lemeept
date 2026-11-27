@@ -93,6 +93,7 @@
     const RANKING_CORTES = [1, 2, 5, 10];
     let estadoModalRanking = null;
     const mqMobile = window.matchMedia("(max-width: 720px)");
+    const mqReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
     const busca = raiz.querySelector("#leme-busca");
     const limpar = raiz.querySelector("#leme-limpar");
@@ -599,7 +600,12 @@
 
     function atualizarIndicadores() {
         const anos = dados.map(item => item.anoNum).filter(n => n > 0);
-        const periodo = anos.length ? Math.min(...anos) + "–" + Math.max(...anos) : "Sem ano informado";
+        let periodo = "Sem ano informado";
+        if (anos.length) {
+            const minAno = Math.min(...anos);
+            const maxAno = Math.max(...anos);
+            periodo = minAno === maxAno ? String(minAno) : (minAno + "–" + maxAno);
+        }
         const totalDefesas = metaRaiz.total_defesas || dados.length;
         const totalProducoes = metaRaiz.total_producoes || (totalDefesas + dados.filter(item => item.tem_produto).length);
         const dataGeracao = formatarDataIsoBr(metaRaiz.gerado_em);
@@ -1156,6 +1162,16 @@
         Array.from(barsEl.children).forEach(ch => {
             if (ch.dataset && ch.dataset.barKey) existentes.set(ch.dataset.barKey, ch);
         });
+        const animarOrdem = !(mqReducedMotion && mqReducedMotion.matches);
+        const posicoesAntes = new Map();
+        if (animarOrdem) {
+            existentes.forEach((node, key) => {
+                posicoesAntes.set(key, node.getBoundingClientRect().top);
+                node.classList.remove("is-reordering");
+                node.style.transition = "";
+                node.style.transform = "";
+            });
+        }
 
         lista.forEach(d => {
             chavesNovas.add(d.key ? ("k:" + d.key) : ("l:" + d.label));
@@ -1168,6 +1184,7 @@
         });
 
         const novos = [];
+        const persistidos = [];
         lista.forEach((d, idx) => {
             const barKey = d.key ? ("k:" + d.key) : ("l:" + d.label);
             const ehClicavel = Boolean(campoFiltro && d.key);
@@ -1208,6 +1225,7 @@
                 fill = row.querySelector(".leme-bar-fill");
                 row.classList.remove("is-entering");
                 fill.style.transform = scaleStr;
+                persistidos.push(row);
             }
 
             const labelSpan = row.querySelector(".leme-bar-label");
@@ -1230,12 +1248,40 @@
             if (ref !== row) barsEl.insertBefore(row, ref);
         });
 
-        if (novos.length) {
+        const movidos = [];
+        if (animarOrdem && persistidos.length) {
+            for (let i = 0; i < persistidos.length; i++) {
+                const row = persistidos[i];
+                const topAntes = posicoesAntes.get(row.dataset.barKey);
+                const deltaY = topAntes !== undefined ? (topAntes - row.getBoundingClientRect().top) : 0;
+                if (Math.abs(deltaY) >= 1) {
+                    row.style.transition = "none";
+                    row.style.transform = "translateY(" + deltaY.toFixed(1) + "px)";
+                    movidos.push(row);
+                }
+            }
+        }
+
+        if (novos.length || movidos.length) {
             agendarAnimacaoDom(() => {
                 for (let i = 0; i < novos.length; i++) {
                     if (!novos[i].row.isConnected) continue;
                     novos[i].row.classList.remove("is-entering");
                     novos[i].fill.style.transform = novos[i].scaleStr;
+                }
+                for (let i = 0; i < movidos.length; i++) {
+                    const row = movidos[i];
+                    if (!row.isConnected) continue;
+                    row.style.transition = "";
+                    row.classList.add("is-reordering");
+                    row.style.transform = "";
+                    const limparReord = ev => {
+                        if (ev.target === row && ev.propertyName === "transform") {
+                            row.classList.remove("is-reordering");
+                            row.removeEventListener("transitionend", limparReord);
+                        }
+                    };
+                    row.addEventListener("transitionend", limparReord);
                 }
             });
         }
@@ -2512,10 +2558,18 @@
         modalBackdrop.classList.remove("is-open");
         modalBackdrop.setAttribute("aria-hidden", "true");
         document.body.style.overflow = bodyOverflowAnterior;
-        if (ultimoFocoAntesModal && ultimoFocoAntesModal.isConnected) {
-            ultimoFocoAntesModal.focus();
-        }
+        const destinoFoco = (
+            ultimoFocoAntesModal &&
+            ultimoFocoAntesModal.isConnected &&
+            !ultimoFocoAntesModal.disabled &&
+            ultimoFocoAntesModal.offsetParent !== null
+        )
+            ? ultimoFocoAntesModal
+            : (busca && busca.isConnected && !busca.disabled ? busca : raiz);
         ultimoFocoAntesModal = null;
+        if (destinoFoco && typeof destinoFoco.focus === "function") {
+            destinoFoco.focus();
+        }
     }
 
     function manterFocoNoModal(e) {
@@ -2586,7 +2640,7 @@
                     tipo_produto_label: item.tem_produto ? valorPublico(item.tipo_produto_label) : "Sem produto vinculado",
                     formato_produto: item.tem_produto ? valorPublico(item.formato_produto) : "Sem produto vinculado",
                     publico_alvo_str: item.tem_produto ? item.publico_alvo_labels.join(", ") : "Sem produto vinculado",
-                    nivel_aplicacao: item.tem_produto ? valorPublico(item.nivel_aplicacao) : "",
+                    nivel_aplicacao: item.tem_produto ? valorPublico(item.nivel_aplicacao) : "Sem produto vinculado",
                     coorientadores_str: item.coorientadores.join(", "),
                     autores_ref_str: item.autores_referenciados.join(", ")
                 };
@@ -2606,7 +2660,7 @@
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
-        URL.revokeObjectURL(url);
+        window.setTimeout(() => URL.revokeObjectURL(url), 1000);
     }
 
     function baixarCsvRanking() {
@@ -2828,6 +2882,21 @@
         if (!raiz.isConnected || !modalBackdrop.classList.contains("is-open")) return;
         if (e.key === "Escape") {
             e.preventDefault();
+            if (
+                estadoModalRanking &&
+                document.activeElement &&
+                document.activeElement.id === "leme-ranking-busca" &&
+                document.activeElement.value
+            ) {
+                clearTimeout(modalBuscaTimer);
+                modalBuscaTimer = null;
+                document.activeElement.value = "";
+                estadoModalRanking.busca = "";
+                estadoModalRanking.buscaTermos = [];
+                estadoModalRanking.pagina = 1;
+                renderModalRankingLista();
+                return;
+            }
             fecharModal();
         } else if (e.key === "Tab") {
             manterFocoNoModal(e);
