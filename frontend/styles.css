@@ -537,7 +537,7 @@
     background: transparent;
     color: var(--leme-muted);
     padding: 2px 7px;
-    min-height: 20px;
+    min-height: 24px;
     max-width: 100%;
     font-size: 11px;
     font-weight: 800;
@@ -572,7 +572,7 @@
     background: var(--leme-primary-soft);
     color: var(--leme-primary);
     padding: 2px 8px;
-    min-height: 22px;
+    min-height: 24px;
     font-size: 10.5px;
     font-weight: 800;
     line-height: 1.2;
@@ -646,6 +646,12 @@
     border-radius: 8px;
     box-shadow: none;
     transition: background .15s ease, border-color .15s ease, opacity .2s ease, transform .15s ease;
+}
+
+#leme-painel-ept .leme-bar-row.is-reordering,
+#leme-painel-ept button.leme-bar-row.is-clickable.is-reordering {
+    transition: transform .34s cubic-bezier(.22, 1, .36, 1), opacity .2s ease, background .15s ease, border-color .15s ease;
+    will-change: transform;
 }
 
 #leme-painel-ept button.leme-bar-row.is-clickable:hover {
@@ -1149,13 +1155,14 @@
 }
 
 #leme-painel-ept .leme-active-filters.is-compact .leme-chip button {
-    min-height: 22px;
-    min-width: 22px;
+    min-height: 24px;
+    min-width: 24px;
     padding: 0 5px;
     font-size: 12px;
 }
 
-#leme-painel-ept .leme-chip-clear-all {
+#leme-painel-ept .leme-chip-clear-all,
+#leme-painel-ept .leme-chip-no-filters {
     border: 1px solid var(--leme-border-strong);
     border-radius: 999px;
     background: #fff;
@@ -1164,13 +1171,13 @@
     min-height: 26px;
     font-size: 11px;
     font-weight: 800;
-    cursor: pointer;
     margin: 0;
     box-shadow: none;
     transition: background .15s ease, color .15s ease, border-color .15s ease;
 }
 
 #leme-painel-ept .leme-chip-clear-all:hover {
+    cursor: pointer;
     background: var(--leme-primary);
     color: #fff;
     border-color: var(--leme-primary);
@@ -1444,9 +1451,6 @@
     text-align: left;
     padding: 13px 14px;
     border: 0;
-    position: sticky;
-    top: 0;
-    z-index: 2;
     white-space: nowrap;
     font-weight: 800;
 }
@@ -1819,7 +1823,7 @@
     background: var(--leme-primary-soft);
     color: var(--leme-primary);
     padding: 2px 8px;
-    min-height: 22px;
+    min-height: 24px;
     font-size: 11px;
     font-weight: 800;
     cursor: pointer;
@@ -1944,8 +1948,7 @@
 
 @media (max-width: 1024px) {
 
-    #leme-painel-ept .leme-stats,
-    #leme-painel-ept .leme-insights {
+    #leme-painel-ept .leme-stats {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -2140,3 +2143,4 @@
         animation: none !important;
     }
 }
+

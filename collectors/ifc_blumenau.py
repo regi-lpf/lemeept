@@ -18,6 +18,7 @@ from lemeept_extractor.io_utils import (  # noqa: E402
     baixar_pdf_com_validacao,
     calcular_sha256,
     carregar_mapeamento_ids_existentes,
+    escrever_texto_atomico,
 )
 from lemeept_extractor.models import (  # noqa: E402
     ArquivosDefesaV4,
@@ -53,7 +54,12 @@ HEADERS = {
     "User-Agent": "LEME-EPT-Pipeline/4.0 (Pesquisa Bibliometrica Academica; IFC Blumenau)"
 }
 
-def extrair_defesas_do_html(html_content: str) -> List[FonteProfeptV4]:
+def extrair_defesas_do_html(
+    html_content: str,
+    *,
+    instituicao: str = "Instituto Federal Catarinense (IFC)",
+    campus: str = "IFC Blumenau",
+) -> List[FonteProfeptV4]:
     soup = BeautifulSoup(html_content, "html.parser")
     ano_atual: Optional[int] = None
     fontes: List[FonteProfeptV4] = []
@@ -76,8 +82,8 @@ def extrair_defesas_do_html(html_content: str) -> List[FonteProfeptV4]:
                         autor_bruto=atual["autor_raw"],
                         orientador_bruto=atual.get("orientador_raw"),
                         ano=ano_final,
-                        instituicao="Instituto Federal Catarinense (IFC)",
-                        campus="IFC Blumenau",
+                        instituicao=instituicao,
+                        campus=campus,
                         url_dissertacao=atual["url_dis"],
                         titulo_produto_bruto=atual.get("titulo_prod"),
                         handle_educapes=atual.get("handle_prod"),
@@ -88,8 +94,8 @@ def extrair_defesas_do_html(html_content: str) -> List[FonteProfeptV4]:
     # Percorre cabeçalhos (para ano) e todos os <li> sequencialmente (independe de <ul> quebrada)
     for elem in soup.find_all(["p", "h1", "h2", "h3", "h4", "div", "span", "strong", "li"]):
         if elem.name != "li":
-            # Ignora containers que possuem filhos estruturais para não ler o bloco inteiro
-            if elem.find(["ul", "li", "p"]):
+            # Ignora tags dentro de <li> ou containers com filhos estruturais para não cortar defesas
+            if elem.find_parent("li") is not None or elem.find(["ul", "li", "p"]):
                 continue
             texto_bloco = limpar_texto(elem.get_text())
             match_ano = re.search(r"DEFESAS\s+(20\d{2})", texto_bloco, flags=re.IGNORECASE)
@@ -108,7 +114,7 @@ def extrair_defesas_do_html(html_content: str) -> List[FonteProfeptV4]:
             atual["autor_raw"] = formatar_nome_proprio(autor_bruto)
 
         # 2. Orientador / Orientadora
-        elif re.match(r"^orientador[a]?\s*:", texto_li, flags=re.IGNORECASE):
+        elif re.match(r"^orientador(?:a|\(a\))?\s*:", texto_li, flags=re.IGNORECASE):
             atual["orientador_raw"] = limpar_prefixo_orientador(texto_li)
 
         # 3. Dissertação (aceita com ou sem ':', 'intitulada', 'artigo', etc.)
@@ -136,6 +142,8 @@ def executar_etapa1(
     caminho_manifesto_saida: Path = Path("data/stage1_manifest.json"),
     diretorio_pdfs: Path = Path("pdf/dissertacoes"),
     caminho_referencia_ids: Union[Optional[Path], Sequence[Path]] = DEFAULT_REF_IDS,
+    instituicao: Optional[str] = None,
+    campus: Optional[str] = None,
 ):
     print("1. Consultando API do WordPress ProfEPT...")
     resp = requests.get(WP_API_URL, headers=HEADERS, timeout=30, verify=SSL_VERIFY)
@@ -146,10 +154,15 @@ def executar_etapa1(
         raise RuntimeError("API do WordPress retornou lista vazia para slug='dissertacoes'.")
 
     html_bruto = paginas[0].get("content", {}).get("rendered", "")
-    fontes = extrair_defesas_do_html(html_bruto)
+    fontes = extrair_defesas_do_html(
+        html_bruto,
+        instituicao=instituicao or "Instituto Federal Catarinense (IFC)",
+        campus=campus or "IFC Blumenau",
+    )
     print(f"2. Encontradas {len(fontes)} defesas estruturadas na página.")
 
     mapa_ids, max_id = carregar_mapeamento_ids_existentes(caminho_referencia_ids)
+    ids_usados: set[str] = set()
     registros_v4: List[PreExtracaoItemV4] = []
 
     # Processa em ordem reversa (mais antigas para mais recentes) para manter numeração cronológica
@@ -157,12 +170,18 @@ def executar_etapa1(
         chave_autor = normalizar_chave_busca(fonte.autor_bruto)
         cod_existente = mapa_ids.get(fonte.url_dissertacao.strip()) or mapa_ids.get(chave_autor)
 
-        if cod_existente:
+        if cod_existente and cod_existente not in ids_usados:
             cod_defesa = cod_existente
         else:
+            if cod_existente and cod_existente in ids_usados:
+                print(f"  [AVISO] Colisão de ID {cod_existente} no mesmo lote; alocando novo sequencial.")
             max_id += 1
             cod_defesa = f"EPT-{max_id:04d}"
+            while cod_defesa in ids_usados:
+                max_id += 1
+                cod_defesa = f"EPT-{max_id:04d}"
             print(f"  [+] Nova defesa descoberta: {cod_defesa} ({fonte.autor_bruto} - {fonte.ano})")
+        ids_usados.add(cod_defesa)
 
         nome_arquivo = f"{cod_defesa}.pdf"
         caminho_pdf = diretorio_pdfs / nome_arquivo
@@ -194,9 +213,7 @@ def executar_etapa1(
         registros=registros_v4,
     )
 
-    caminho_manifesto_saida.parent.mkdir(parents=True, exist_ok=True)
-    with open(caminho_manifesto_saida, "w", encoding="utf-8") as f:
-        f.write(manifesto.model_dump_json(indent=2))
+    escrever_texto_atomico(caminho_manifesto_saida, manifesto.model_dump_json(indent=2))
 
     ok_count = sum(1 for r in registros_v4 if r.arquivos.status_download == "OK")
     print("\n--- Etapa 1 Concluída ---")
@@ -237,11 +254,17 @@ def _build_parser() -> argparse.ArgumentParser:
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
     args = _build_parser().parse_args(argv)
-    aplicar_config(config_path=args.config)
+    cfg = aplicar_config(config_path=args.config)
+    inst_cfg = (cfg.instituicao.nome or "").strip() or None
+    campus_cfg = (cfg.instituicao.campus or "").strip()
+    if campus_cfg and inst_cfg and "IFC" in inst_cfg and not campus_cfg.upper().startswith("IFC"):
+        campus_cfg = f"IFC {campus_cfg}"
     executar_etapa1(
         caminho_manifesto_saida=args.saida,
         diretorio_pdfs=args.pdfs_dir,
         caminho_referencia_ids=args.ref_ids if args.ref_ids is not None else DEFAULT_REF_IDS,
+        instituicao=inst_cfg,
+        campus=campus_cfg or None,
     )
     return 0
 

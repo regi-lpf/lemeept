@@ -77,11 +77,16 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     comandos = available_subcommands()
 
     config_cli: Optional[str] = None
-    if len(args_list) >= 2 and args_list[0] == "--config":
+    if args_list and args_list[0] == "--config":
+        if len(args_list) < 2 or not args_list[1].strip():
+            _build_top_parser(comandos).error("a opção `--config` exige um caminho de arquivo.")
         config_cli = str(Path(args_list[1]).resolve())
         args_list = args_list[2:]
     elif args_list and args_list[0].startswith("--config="):
-        config_cli = str(Path(args_list[0].split("=", 1)[1]).resolve())
+        valor_cfg = args_list[0].split("=", 1)[1].strip()
+        if not valor_cfg:
+            _build_top_parser(comandos).error("a opção `--config=` exige um caminho não vazio.")
+        config_cli = str(Path(valor_cfg).resolve())
         args_list = args_list[1:]
 
     env_anterior = os.environ.get("LEMEEPT_CONFIG")
@@ -89,7 +94,10 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         os.environ["LEMEEPT_CONFIG"] = config_cli
 
     try:
-        if not args_list or args_list[0] in ("-h", "--help", "--version"):
+        if not args_list:
+            _build_top_parser(comandos).print_help()
+            return 0
+        if args_list[0] in ("-h", "--help", "--version"):
             _build_top_parser(comandos).parse_args(args_list[:1])
             return 0
 

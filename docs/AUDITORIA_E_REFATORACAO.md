@@ -1,6 +1,6 @@
 # Auditoria Técnica e Registro de Refatorações — Pipeline & Frontend v4
 
-> **Escopo deste documento:** Registro rastreável de todas as auditorias e correções aplicadas na pipeline (`AUD-01` a `AUD-25`) e no frontend (`FE-01` a `FE-30`), além do backlog futuro. Para a especificação técnica atual dos módulos, consulte [DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md); para resultados empíricos do acervo, consulte [RELATORIOS.md](RELATORIOS.md).
+> **Escopo deste documento:** Registro rastreável de todas as auditorias e correções aplicadas na pipeline (`AUD-01` a `AUD-33`), no frontend (`FE-01` a `FE-32`) e na rodada de estabilização `v0.4.1-beta` (Smoke Tests E2E + Ondas 1–3 anti-overengineering, performance e segurança), além do backlog futuro. Para a especificação técnica atual dos módulos, consulte [DOCUMENTACAO_TECNICA.md](DOCUMENTACAO_TECNICA.md); para resultados empíricos do acervo, consulte [RELATORIOS.md](RELATORIOS.md).
 
 ---
 
@@ -124,7 +124,18 @@
 
 ---
 
-## 4. Backlog Futuro (Fora do Escopo Atual)
+## 4. Rodada 4 — Smoke Tests E2E, Performance e Auditoria Anti-Overengineering (`v0.4.1-beta`)
 
-* **Otimização do Artefato JSON (`Opção C` — Etapa 4):** Minificar `public/painel-ept-v4.json` e omitir `indice_busca.texto_busca_normalizado` do arquivo publicado (~34,8% do JSON compacto, reduzindo de `~1.171 KB` / `~241 KB` gzip para `~643 KB` / `~159 KB` gzip), reconstruindo o índice textual em ~3 ms no boot do frontend — além de eventual *split* entre catálogo leve e detalhes sob demanda caso o acervo supere ~400–500 defesas.
-* **Separação em 2 Repositórios (Trabalho futuro opcional):** Publicar `lemeept-extractor` em repositório próprio (ou manter release sincronizada com Zenodo/PyPI) separado do portal institucional `lemeept` (`lemeept.toml`, `config/ifc_blumenau_catalogos.json`, `collectors/ifc_blumenau.py`, `public/` e GitHub Pages).
+Conduzida para adequar o custo de manutenção ao escopo enxuto de **1 mantenedor** preservando a integração WordPress/Elementor, dividida em suíte E2E + **3 ondas**:
+
+* **Smoke Tests E2E ([tests/test_frontend_smoke.py](../tests/test_frontend_smoke.py)):** 4 cenários em Chromium headless via Playwright (acervo completo, acervo misto com `produto: null`, modo somente dissertações e fluxo real do `loader-elementor.html` + `widget-elementor.html`), isolando `playwright` no grupo `dev` e bloqueando deploys inválidos no `pages.yml` (`FR-01`, `FR-07`).
+* **Onda 1 — Segurança, I/O Atômico e Qualidade Bibliométrica (`FR-01..04`, `BUG-01..09`, `BUG-11`, `BUG-14..16`):** escrita atômica via `.tmp` + `os.replace` em toda a pipeline e no download de PDFs; blindagem da planilha de curadoria (detecção `;`/`,`, validação de colunas, *CSV Formula Injection* e *path traversal*); janelas centradas nos matches epistemológicos + matrizes `Aprendizagem Significativa` e `Teoria Crítica`; normalização de chaves em `catalogs.aplicar_overlay`; composições canônicas (`phc`, `/` e `" e "` internos); parser ABNT (`Jean-Paul`, `ANA`/`RUI`, `DELLA FONTE`/`CÂMARA`); `--limite` incremental na Etapa 3, `json.dumps` no schema OpenRouter e filtro de erros HTTP transientes; e correções de debounce, denominador de `formato_produto` no modal e fallback de erro no loader Elementor.
+* **Onda 2 — Corte de Overengineering e Otimizações (`OPT-01..04`, `OPT-06`, `OE-01`, `OE-03`, `OE-05`, `BUG-10`, `BUG-12..13`):** redução de **45,8% bruto / 37,4% gzip** em `public/painel-ept-v4.json` (`1.361,6 KB → 737,4 KB`; `309,0 KB → 193,4 KB` gzip) removendo `texto_busca_normalizado` redundante do artefato publicado; remoção de ~380 linhas de minificadores/lexers artesanais em `frontend_builder.py` e adoção de `index.template.html` como fonte única de `index.html`; unificação dos classificadores de produto e correções em `metadata.py`, `pdf_sections.py`, `educapes.py`, `ifc_blumenau.py` e `cli.py`; cache incremental por `sha256_dissertacao` (`--forcar`) na Etapa 2; `obter_sessao_http()` compartilhada, `@lru_cache` de schemas LLM e rate-limit por `time.monotonic()`; e fim de *layout thrashing* no frontend (`Intl.Collator("pt-BR")`, `requestAnimationFrame`, cache `memoBase` e debounce de `120 ms` no modal).
+* **Onda 3 — Config Estrita, Edge-Cases, WCAG 2.2 AA e Animação FLIP (`FR-05`, `FR-08`, `OE-07`, `EC-01..02`, `EC-04`, `EC-07..08`, `EC-12`):** `ConfigDict(extra="forbid")` em `LemeConfig` e localizador único de TOML; `__version__` via `importlib.metadata` (`0.4.1b0`); suporte a handles crus/`&show=full` no eduCAPES, capa em `[:3]`, citações múltiplas `;` e `LUKÁCS` em `pdf_sections.py`, `"Ma Li"` e `D'Avila`/`Silva-Santos` em `normalizers.py`; alvos táteis `>= 24×24px` (WCAG 2.2 AA), `tabindex="-1"` em `#leme-controles`, `Escape` progressivo em `#leme-ranking-busca`, fallback de foco em `fecharModal()`, chip `.leme-chip-no-filters` e animação FLIP de reordenação nas barras de ranking (`.is-reordering`).
+
+---
+
+## 5. Backlog Futuro (Adiado Intencionalmente para Escopo de 1 Mantenedor)
+
+* **Refatorações estruturais adiadas por baixo retorno imediato (`OE-02`, `OE-04`, `FR-06`, `FR-09`):** migração dos catálogos globais de `catalogs.py` para contexto imutável; substituição do índice invertido/diffing manual em `frontend/app.js`; desacoplamento integral do vocabulário ProfEPT em `models.py`; e limpeza de histórico `.git` via `git filter-repo` em marco planejado de release.
+* **Evolução acima de ~400–500 defesas / Separação em 2 Repositórios:** eventual *split* entre catálogo leve e detalhes sob demanda no JSON publicado, e separação opcional entre `lemeept-extractor` e o portal institucional `lemeept` caso o projeto ganhe múltiplos mantenedores.

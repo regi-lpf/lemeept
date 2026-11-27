@@ -56,6 +56,15 @@
     ];
     const PRODUCT_FACET_FIELDS = ["tipo_produto", "formato_produto", "publico_alvo", "nivel_aplicacao"];
     const EMPTY_SET = new Set();
+    const collatorPtBr = new Intl.Collator("pt-BR");
+
+    function agendarAnimacaoDom(fn) {
+        if (typeof window.requestAnimationFrame === "function") {
+            window.requestAnimationFrame(() => window.requestAnimationFrame(fn));
+        } else {
+            window.setTimeout(fn, 0);
+        }
+    }
 
     let dados = [];
     let dadosPorId = new Map();
@@ -75,6 +84,8 @@
     let modoCardTipoProduto = "tipo_produto";
     let paginaAtual = 1;
     let debounceTimer = null;
+    let modalBuscaTimer = null;
+    let carregandoPainel = false;
     let ultimoFocoAntesModal = null;
     let bodyOverflowAnterior = "";
     const itensPorPagina = 12;
@@ -82,6 +93,7 @@
     const RANKING_CORTES = [1, 2, 5, 10];
     let estadoModalRanking = null;
     const mqMobile = window.matchMedia("(max-width: 720px)");
+    const mqReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
     const busca = raiz.querySelector("#leme-busca");
     const limpar = raiz.querySelector("#leme-limpar");
@@ -588,7 +600,12 @@
 
     function atualizarIndicadores() {
         const anos = dados.map(item => item.anoNum).filter(n => n > 0);
-        const periodo = anos.length ? Math.min(...anos) + "–" + Math.max(...anos) : "Sem ano informado";
+        let periodo = "Sem ano informado";
+        if (anos.length) {
+            const minAno = Math.min(...anos);
+            const maxAno = Math.max(...anos);
+            periodo = minAno === maxAno ? String(minAno) : (minAno + "–" + maxAno);
+        }
         const totalDefesas = metaRaiz.total_defesas || dados.length;
         const totalProducoes = metaRaiz.total_producoes || (totalDefesas + dados.filter(item => item.tem_produto).length);
         const dataGeracao = formatarDataIsoBr(metaRaiz.gerado_em);
@@ -700,6 +717,8 @@
     }
 
     function limparTodosFiltros() {
+        clearTimeout(debounceTimer);
+        debounceTimer = null;
         busca.value = "";
         filtrosSelecionados.forEach(set => set.clear());
         aplicarFiltros(true);
@@ -788,7 +807,7 @@
             return entradas.sort((a, b) => Number(b[0]) - Number(a[0]));
         }
         return entradas.sort((a, b) =>
-            formatarOpcaoFiltro(campo, a[0]).localeCompare(formatarOpcaoFiltro(campo, b[0]), "pt-BR")
+            collatorPtBr.compare(formatarOpcaoFiltro(campo, a[0]), formatarOpcaoFiltro(campo, b[0]))
         );
     }
 
@@ -903,7 +922,6 @@
 
         const adicionarChipsFaceta = (campo, nomeFiltro) => {
             const valores = obterValoresFiltroAtivo(campo);
-            if (!valores.size) return;
             valores.forEach(valor => {
                 const rotuloValor = formatarOpcaoFiltro(campo, valor);
                 chips.push(
@@ -926,31 +944,35 @@
             adicionarChipsFaceta(filtro.dataset.campo, nomeFiltro);
         });
 
-        const htmlChips = chips.join("");
+        const temFiltros = chips.length > 0;
+        const htmlChips = temFiltros
+            ? chips.join("")
+            : '<span class="leme-chip-no-filters">Nenhum filtro ativo</span>';
+
         filtrosAtivos.innerHTML = htmlChips;
         if (graficosFiltrosEl) {
-            graficosFiltrosEl.innerHTML = chips.length
-                ? (htmlChips + '<button type="button" class="leme-chip-clear-all" data-clear-all-filters="1">Limpar filtros</button>')
-                : "";
+            graficosFiltrosEl.innerHTML = temFiltros
+                ? htmlChips + '<button type="button" class="leme-chip-clear-all" data-clear-all-filters="1">Limpar filtros</button>'
+                : htmlChips;
         }
     }
 
     function ordenarResultados(lista) {
         const copia = lista.slice();
         if (ordenacao === "ano_asc") {
-            return copia.sort((a, b) => (a.anoNum - b.anoNum) || a.id.localeCompare(b.id, "pt-BR"));
+            return copia.sort((a, b) => (a.anoNum - b.anoNum) || collatorPtBr.compare(a.id, b.id));
         }
         if (ordenacao === "titulo_asc") {
             return copia.sort((a, b) => {
                 const ta = escopo === "produtos" ? (a.produto_titulo || a.dissertacao_titulo) : a.dissertacao_titulo;
                 const tb = escopo === "produtos" ? (b.produto_titulo || b.dissertacao_titulo) : b.dissertacao_titulo;
-                return ta.localeCompare(tb, "pt-BR");
+                return collatorPtBr.compare(ta, tb);
             });
         }
         if (ordenacao === "autor_asc") {
-            return copia.sort((a, b) => (a.autor || "").localeCompare(b.autor || "", "pt-BR"));
+            return copia.sort((a, b) => collatorPtBr.compare(a.autor || "", b.autor || ""));
         }
-        return copia.sort((a, b) => (b.anoNum - a.anoNum) || b.id.localeCompare(a.id, "pt-BR"));
+        return copia.sort((a, b) => (b.anoNum - a.anoNum) || collatorPtBr.compare(b.id, a.id));
     }
 
     function alternarFiltroInterativo(campo, valor) {
@@ -981,12 +1003,12 @@
             });
         });
         return Array.from(mapa.values())
-            .sort((a, b) => b.valor - a.valor || String(a.label).localeCompare(String(b.label), "pt-BR"));
+            .sort((a, b) => b.valor - a.valor || collatorPtBr.compare(String(a.label), String(b.label)));
     }
 
     function ordenarRankingMapa(mapa, limite) {
         const ordenado = Array.from(mapa.values())
-            .sort((a, b) => b.valor - a.valor || String(a.label).localeCompare(String(b.label), "pt-BR"));
+            .sort((a, b) => b.valor - a.valor || collatorPtBr.compare(String(a.label), String(b.label)));
         return limite ? ordenado.slice(0, limite) : ordenado;
     }
 
@@ -1057,18 +1079,19 @@
         return lista && lista[0] ? lista[0] : null;
     }
 
-    function renderInsights(lista) {
+    function renderInsights(lista, obterAgregadoBase) {
         if (!lista.length) {
             insights.innerHTML = '<div class="leme-insight-card"><strong>0</strong><span>Nenhum resultado neste recorte. Limpe algum filtro ou use uma busca mais ampla.</span></div>';
             return;
         }
+        const obterAgg = obterAgregadoBase || ((_, computador) => computador());
 
         if (escopo === "dissertacoes") {
             insights.innerHTML = [
                 renderInsightCard("dissertações no recorte", lista.length.toLocaleString("pt-BR")),
-                renderInsightCard("base epistemológica predominante", primeiroItem(contarAgregado(lista, i => i.base_epistemologica, 1)), "base_epistemologica"),
-                renderInsightCard("autor mais referenciado", primeiroItem(contarAgregado(lista, i => i.autores_referenciados, 1)), "autor_referenciado"),
-                renderInsightCard("orientador em destaque", primeiroItem(contarOrientadores(lista, 1)), "orientador")
+                renderInsightCard("base epistemológica predominante", primeiroItem(obterAgg("base_epistemologica", () => contarAgregado(lista, i => i.base_epistemologica, 1))), "base_epistemologica"),
+                renderInsightCard("autor mais referenciado", primeiroItem(obterAgg("autor_referenciado", () => contarAgregado(lista, i => i.autores_referenciados, 1))), "autor_referenciado"),
+                renderInsightCard("orientador em destaque", primeiroItem(obterAgg("orientador", () => contarOrientadores(lista))), "orientador")
             ].join("");
             return;
         }
@@ -1076,18 +1099,18 @@
         if (escopo === "produtos") {
             insights.innerHTML = [
                 renderInsightCard("produtos educacionais no recorte", lista.length.toLocaleString("pt-BR")),
-                renderInsightCard("tipo de produto mais comum", primeiroItem(contarAgregado(lista, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k))), "tipo_produto"),
-                renderInsightCard("público-alvo principal", primeiroItem(contarAgregado(lista, i => i.publico_alvo, 1, k => traduzirSlug("publico_alvo", k))), "publico_alvo"),
-                renderInsightCard("nível de aplicação predominante", primeiroItem(contarAgregado(lista, i => i.nivel_aplicacao, 1)), "nivel_aplicacao")
+                renderInsightCard("tipo de produto mais comum", primeiroItem(obterAgg("tipo_produto", () => contarAgregado(lista, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k)))), "tipo_produto"),
+                renderInsightCard("público-alvo principal", primeiroItem(obterAgg("publico_alvo", () => contarAgregado(lista, i => i.publico_alvo, 1, k => traduzirSlug("publico_alvo", k)))), "publico_alvo"),
+                renderInsightCard("nível de aplicação predominante", primeiroItem(obterAgg("nivel_aplicacao", () => contarAgregado(lista, i => i.nivel_aplicacao, 1))), "nivel_aplicacao")
             ].join("");
             return;
         }
 
         insights.innerHTML = [
             renderInsightCard("produções (dissertações + produtos)", contarProducoesLista(lista).toLocaleString("pt-BR")),
-            renderInsightCard("tipo de produto mais comum", primeiroItem(contarAgregado(lista, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k))), "tipo_produto"),
-            renderInsightCard("autor mais referenciado", primeiroItem(contarAgregado(lista, i => i.autores_referenciados, 1)), "autor_referenciado"),
-            renderInsightCard("orientador em destaque", primeiroItem(contarOrientadores(lista, 1)), "orientador")
+            renderInsightCard("tipo de produto mais comum", primeiroItem(obterAgg("tipo_produto", () => contarAgregado(lista, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k)))), "tipo_produto"),
+            renderInsightCard("autor mais referenciado", primeiroItem(obterAgg("autor_referenciado", () => contarAgregado(lista, i => i.autores_referenciados, 1))), "autor_referenciado"),
+            renderInsightCard("orientador em destaque", primeiroItem(obterAgg("orientador", () => contarOrientadores(lista))), "orientador")
         ].join("");
     }
 
@@ -1142,6 +1165,16 @@
         Array.from(barsEl.children).forEach(ch => {
             if (ch.dataset && ch.dataset.barKey) existentes.set(ch.dataset.barKey, ch);
         });
+        const animarOrdem = !(mqReducedMotion && mqReducedMotion.matches);
+        const posicoesAntes = new Map();
+        if (animarOrdem) {
+            existentes.forEach((node, key) => {
+                posicoesAntes.set(key, node.getBoundingClientRect().top);
+                node.classList.remove("is-reordering");
+                node.style.transition = "";
+                node.style.transform = "";
+            });
+        }
 
         lista.forEach(d => {
             chavesNovas.add(d.key ? ("k:" + d.key) : ("l:" + d.label));
@@ -1154,6 +1187,7 @@
         });
 
         const novos = [];
+        const persistidos = [];
         lista.forEach((d, idx) => {
             const barKey = d.key ? ("k:" + d.key) : ("l:" + d.label);
             const ehClicavel = Boolean(campoFiltro && d.key);
@@ -1194,6 +1228,7 @@
                 fill = row.querySelector(".leme-bar-fill");
                 row.classList.remove("is-entering");
                 fill.style.transform = scaleStr;
+                persistidos.push(row);
             }
 
             const labelSpan = row.querySelector(".leme-bar-label");
@@ -1216,12 +1251,42 @@
             if (ref !== row) barsEl.insertBefore(row, ref);
         });
 
-        if (novos.length) {
-            void barsEl.offsetWidth;
-            for (let i = 0; i < novos.length; i++) {
-                novos[i].row.classList.remove("is-entering");
-                novos[i].fill.style.transform = novos[i].scaleStr;
+        const movidos = [];
+        if (animarOrdem && persistidos.length) {
+            for (let i = 0; i < persistidos.length; i++) {
+                const row = persistidos[i];
+                const topAntes = posicoesAntes.get(row.dataset.barKey);
+                const deltaY = topAntes !== undefined ? (topAntes - row.getBoundingClientRect().top) : 0;
+                if (Math.abs(deltaY) >= 1) {
+                    row.style.transition = "none";
+                    row.style.transform = "translateY(" + deltaY.toFixed(1) + "px)";
+                    movidos.push(row);
+                }
             }
+        }
+
+        if (novos.length || movidos.length) {
+            agendarAnimacaoDom(() => {
+                for (let i = 0; i < novos.length; i++) {
+                    if (!novos[i].row.isConnected) continue;
+                    novos[i].row.classList.remove("is-entering");
+                    novos[i].fill.style.transform = novos[i].scaleStr;
+                }
+                for (let i = 0; i < movidos.length; i++) {
+                    const row = movidos[i];
+                    if (!row.isConnected) continue;
+                    row.style.transition = "";
+                    row.classList.add("is-reordering");
+                    row.style.transform = "";
+                    const limparReord = ev => {
+                        if (ev.target === row && ev.propertyName === "transform") {
+                            row.classList.remove("is-reordering");
+                            row.removeEventListener("transitionend", limparReord);
+                        }
+                    };
+                    row.addEventListener("transitionend", limparReord);
+                }
+            });
         }
 
         const footnoteText = config.footnote || ((config.agruparOutras === false && dadosValidos.length > limiteReal)
@@ -1353,10 +1418,13 @@
         });
 
         if (novosSegs.length) {
-            void trackEl.offsetWidth;
-            for (let i = 0; i < novosSegs.length; i++) {
-                novosSegs[i].seg.style.width = novosSegs[i].pctStr;
-            }
+            agendarAnimacaoDom(() => {
+                for (let i = 0; i < novosSegs.length; i++) {
+                    if (novosSegs[i].seg.isConnected) {
+                        novosSegs[i].seg.style.width = novosSegs[i].pctStr;
+                    }
+                }
+            });
         }
     }
 
@@ -1437,10 +1505,13 @@
         });
 
         if (novos.length) {
-            void chartEl.offsetWidth;
-            for (let i = 0; i < novos.length; i++) {
-                novos[i].barEl.style.height = novos[i].hStr;
-            }
+            agendarAnimacaoDom(() => {
+                for (let i = 0; i < novos.length; i++) {
+                    if (novos[i].barEl.isConnected) {
+                        novos[i].barEl.style.height = novos[i].hStr;
+                    }
+                }
+            });
         }
     }
 
@@ -1468,10 +1539,11 @@
         }
     }
 
-    function renderCardOrientadores(lista, termos, indicesBuscaSet) {
+    function renderCardOrientadores(lista, termos, indicesBuscaSet, obterAgregado) {
+        const obterAgg = obterAgregado || ((_, listaAlvo, computador) => computador());
         const listaOri = obterListaGraficoFaceta("orientador", lista, termos, indicesBuscaSet);
         const listaCoor = obterListaGraficoFaceta("coorientador", lista, termos, indicesBuscaSet);
-        const dadosOrientadores = contarOrientadores(listaOri);
+        const dadosOrientadores = obterAgg("orientador", listaOri, () => contarOrientadores(listaOri));
         const dadosCoor = contarCoorientadores(listaCoor);
         const defsCoor = contarDefesasComCoorientacao(listaCoor);
 
@@ -1542,7 +1614,8 @@
         if (btnExpand) btnExpand.disabled = dadosFormato.length === 0;
     }
 
-    function renderCardTipoProduto(lista, termos, indicesBuscaSet) {
+    function renderCardTipoProduto(lista, termos, indicesBuscaSet, obterAgregado) {
+        const obterAgg = obterAgregado || ((_, listaAlvo, computador) => computador());
         const mostrarSwitch = escopo === "todas";
         const modoEfetivo = mostrarSwitch ? modoCardTipoProduto : "tipo_produto";
 
@@ -1578,7 +1651,7 @@
         const listaTipo = obterListaGraficoFaceta("tipo_produto", lista, termos, indicesBuscaSet);
         renderHorizontalChart(
             chartTipoEl,
-            contarAgregado(listaTipo, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k)),
+            obterAgg("tipo_produto", listaTipo, () => contarAgregado(listaTipo, i => i.tipo_produto, 1, k => traduzirSlug("tipo_produto", k))),
             9,
             { campoFiltro: "tipo_produto" }
         );
@@ -1586,7 +1659,15 @@
 
     function atualizarGraficos(lista, termos, indicesBuscaSet) {
         atualizarVisibilidadeGraficos();
-        renderInsights(lista);
+        const memoBase = new Map();
+        function obterAgregado(campo, listaAlvo, computador) {
+            if (listaAlvo === lista) {
+                if (!memoBase.has(campo)) memoBase.set(campo, computador());
+                return memoBase.get(campo);
+            }
+            return computador();
+        }
+        renderInsights(lista, (campo, computador) => obterAgregado(campo, lista, computador));
         const listaAno = obterListaGraficoFaceta("ano", lista, termos, indicesBuscaSet);
         renderYearChart(chartAnoEl, listaAno);
 
@@ -1604,7 +1685,7 @@
                 6,
                 { formatarRotulo: rotuloMacroCurto, campoFiltro: "macroprojeto" }
             );
-            renderCardOrientadores(lista, termos, indicesBuscaSet);
+            renderCardOrientadores(lista, termos, indicesBuscaSet, obterAgregado);
 
             const listaBase = obterListaGraficoFaceta("base_epistemologica", lista, termos, indicesBuscaSet);
             const totalRecorte = listaBase.length;
@@ -1622,14 +1703,23 @@
                 ? "Nenhuma base consolidada neste recorte (" + pendentes + " registro(s) em curadoria pendente)."
                 : "Nenhuma base epistemológica consolidada neste recorte.";
 
-            renderHorizontalChart(chartBaseEl, contarAgregado(listaBase, i => i.base_epistemologica, 1), 8, {
-                footnote: footnoteBase,
-                emptyText: emptyBase,
-                campoFiltro: "base_epistemologica"
-            });
+            renderHorizontalChart(
+                chartBaseEl,
+                obterAgregado("base_epistemologica", listaBase, () => contarAgregado(listaBase, i => i.base_epistemologica, 1)),
+                8,
+                {
+                    footnote: footnoteBase,
+                    emptyText: emptyBase,
+                    campoFiltro: "base_epistemologica"
+                }
+            );
 
             const listaAutoresRef = obterListaGraficoFaceta("autor_referenciado", lista, termos, indicesBuscaSet);
-            const dadosAutoresRef = contarAgregado(listaAutoresRef, i => i.autores_referenciados, 1);
+            const dadosAutoresRef = obterAgregado(
+                "autor_referenciado",
+                listaAutoresRef,
+                () => contarAgregado(listaAutoresRef, i => i.autores_referenciados, 1)
+            );
             renderHorizontalChart(chartAutoresRefEl, dadosAutoresRef, 12, {
                 agruparOutras: false,
                 campoFiltro: "autor_referenciado"
@@ -1638,18 +1728,18 @@
         }
 
         if (escopo === "todas" || escopo === "produtos") {
-            renderCardTipoProduto(lista, termos, indicesBuscaSet);
+            renderCardTipoProduto(lista, termos, indicesBuscaSet, obterAgregado);
             const listaPublico = obterListaGraficoFaceta("publico_alvo", lista, termos, indicesBuscaSet);
             renderHorizontalChart(
                 chartPublicoEl,
-                contarAgregado(listaPublico, i => i.publico_alvo, 1, k => traduzirSlug("publico_alvo", k)),
+                obterAgregado("publico_alvo", listaPublico, () => contarAgregado(listaPublico, i => i.publico_alvo, 1, k => traduzirSlug("publico_alvo", k))),
                 6,
                 { agruparOutras: false, campoFiltro: "publico_alvo" }
             );
             const listaNivel = obterListaGraficoFaceta("nivel_aplicacao", lista, termos, indicesBuscaSet);
             renderHorizontalChart(
                 chartNivelEl,
-                contarAgregado(listaNivel, i => i.nivel_aplicacao, 1),
+                obterAgregado("nivel_aplicacao", listaNivel, () => contarAgregado(listaNivel, i => i.nivel_aplicacao, 1)),
                 8,
                 { campoFiltro: "nivel_aplicacao" }
             );
@@ -2056,9 +2146,9 @@
             return true;
         });
         if (estado.ordenacao === "az") {
-            filtrados.sort((a, b) => a.label.localeCompare(b.label, "pt-BR") || (b.valor - a.valor));
+            filtrados.sort((a, b) => collatorPtBr.compare(a.label, b.label) || (b.valor - a.valor));
         } else {
-            filtrados.sort((a, b) => (b.valor - a.valor) || a.label.localeCompare(b.label, "pt-BR"));
+            filtrados.sort((a, b) => (b.valor - a.valor) || collatorPtBr.compare(a.label, b.label));
         }
         return filtrados;
     }
@@ -2123,7 +2213,9 @@
 
         Array.from(cortesEl.querySelectorAll("button[data-ranking-corte]")).forEach(btn => {
             const corteBtn = Number(btn.dataset.rankingCorte || 1);
-            const qtdCorte = contarItensPorCorte(estado.dadosBrutos, corteBtn);
+            const qtdCorte = estado.contagensCortes && estado.contagensCortes.has(corteBtn)
+                ? estado.contagensCortes.get(corteBtn)
+                : contarItensPorCorte(estado.dadosBrutos, corteBtn);
             const ativo = estado.corte === corteBtn;
             const rotuloBase = corteBtn === 1 ? "Todos" : ("≥ " + corteBtn);
             btn.textContent = rotuloBase + " (" + qtdCorte.toLocaleString("pt-BR") + ")";
@@ -2146,7 +2238,7 @@
         if (!totalFiltrado) {
             statusEl.innerHTML = '<span>0 ' + escapeHtml(cfg.entidadePlural) +
                 ' exibidos<span id="leme-ranking-selecao-info">' + montarHtmlSelecaoModalRanking(cfg.campoFiltro) + '</span></span>' +
-                '<span>Contagem: defesas ' + escapeHtml(cfg.acaoDescricao) + ' (% sobre ' + escapeHtml(estado.totalDefesas) + ')</span>';
+                '<span>Contagem: ' + escapeHtml(estado.unidadePlural) + ' ' + escapeHtml(cfg.acaoDescricao) + ' (% sobre ' + escapeHtml(estado.totalBase) + ')</span>';
             pagEl.innerHTML = "";
 
             const emTodos = (estado.corte > 1 && estado.buscaTermos.length > 0)
@@ -2175,7 +2267,7 @@
 
         statusEl.innerHTML = '<span>' + escapeHtml(textoExibindo) +
             '<span id="leme-ranking-selecao-info">' + montarHtmlSelecaoModalRanking(cfg.campoFiltro) + '</span></span>' +
-            '<span>Contagem: defesas ' + escapeHtml(cfg.acaoDescricao) + ' (% sobre ' + escapeHtml(estado.totalDefesas) + ')</span>';
+            '<span>Contagem: ' + escapeHtml(estado.unidadePlural) + ' ' + escapeHtml(cfg.acaoDescricao) + ' (% sobre ' + escapeHtml(estado.totalBase) + ')</span>';
 
         listaEl.innerHTML = '<div class="leme-bars"></div>';
         const barsEl = listaEl.firstElementChild;
@@ -2186,7 +2278,7 @@
 
         paginaItens.forEach(d => {
             const ativo = valoresAtivos.has(d.key);
-            const pct = formatarPercentualPtBr(d.valor, estado.totalDefesas);
+            const pct = formatarPercentualPtBr(d.valor, estado.totalBase);
             const infoPct = " (" + d.valor + " · " + pct + ")";
             const scale = Math.max(0.03, d.valor / estado.maxGlobal);
             const scaleStr = "scaleX(" + scale.toFixed(4) + ")";
@@ -2231,11 +2323,13 @@
         });
 
         if (novos.length) {
-            void barsEl.offsetWidth;
-            for (let i = 0; i < novos.length; i++) {
-                novos[i].row.classList.remove("is-entering");
-                novos[i].fill.style.transform = novos[i].scaleStr;
-            }
+            agendarAnimacaoDom(() => {
+                for (let i = 0; i < novos.length; i++) {
+                    if (!novos[i].row.isConnected) continue;
+                    novos[i].row.classList.remove("is-entering");
+                    novos[i].fill.style.transform = novos[i].scaleStr;
+                }
+            });
         }
 
         pagEl.innerHTML = montarHtmlPaginacao(
@@ -2277,14 +2371,25 @@
             rankOriginal: idx + 1,
             norm: normalizarBusca(d.label)
         }));
-        const totalDefesas = baseRanking.length;
+        const ehFormato = tipo === "formato_produto";
+        const totalBase = ehFormato
+            ? baseRanking.reduce((acc, item) => acc + (item.tem_produto ? 1 : 0), 0)
+            : baseRanking.length;
         const corteInicial = escolherCorteAdaptavel(dadosBrutos, cfg.corteInicial);
+        if (modalBuscaTimer) {
+            clearTimeout(modalBuscaTimer);
+            modalBuscaTimer = null;
+        }
 
         estadoModalRanking = {
             tipo: tipo,
             cfg: cfg,
             dadosBrutos: dadosBrutos,
-            totalDefesas: totalDefesas,
+            contagensCortes: new Map(RANKING_CORTES.map(c => [c, contarItensPorCorte(dadosBrutos, c)])),
+            totalBase: totalBase,
+            unidadeSingular: ehFormato ? "produto" : "defesa",
+            unidadePlural: ehFormato ? "produtos" : "defesas",
+            colunaContagemCsv: ehFormato ? "Produtos" : "Defesas",
             maxGlobal: dadosBrutos[0] ? dadosBrutos[0].valor : 1,
             corte: corteInicial,
             busca: "",
@@ -2303,12 +2408,13 @@
             resumo = dadosBrutos.length.toLocaleString("pt-BR") + " " +
                 (dadosBrutos.length === 1 ? "coorientador distinto" : "coorientadores distintos") +
                 " em " + defsCoor.toLocaleString("pt-BR") + (defsCoor === 1 ? " defesa com coorientação" : " defesas com coorientação") +
-                " (de " + totalDefesas.toLocaleString("pt-BR") + (totalDefesas === 1 ? " defesa" : " defesas") +
+                " (de " + totalBase.toLocaleString("pt-BR") + (totalBase === 1 ? " defesa" : " defesas") +
                 " no recorte atual)." + instrucaoModal;
         } else {
+            const labelBase = totalBase === 1 ? estadoModalRanking.unidadeSingular : estadoModalRanking.unidadePlural;
             resumo = dadosBrutos.length.toLocaleString("pt-BR") + " " +
                 (dadosBrutos.length === 1 ? cfg.entidadeSingular + " distinto" : cfg.entidadePlural + " distintos") +
-                " em " + totalDefesas.toLocaleString("pt-BR") + (totalDefesas === 1 ? " defesa" : " defesas") +
+                " em " + totalBase.toLocaleString("pt-BR") + " " + labelBase +
                 " do recorte atual." + instrucaoModal;
         }
 
@@ -2349,13 +2455,17 @@
 
         if (buscaModalInput) {
             buscaModalInput.addEventListener("input", () => {
-                if (!estadoModalRanking) return;
-                estadoModalRanking.busca = buscaModalInput.value || "";
-                const norm = normalizarBusca(estadoModalRanking.busca);
-                estadoModalRanking.buscaTermos = norm ? norm.split(" ").filter(Boolean) : [];
-                estadoModalRanking.pagina = 1;
-                renderModalRankingLista();
-                if (listaModalEl) listaModalEl.scrollTop = 0;
+                clearTimeout(modalBuscaTimer);
+                modalBuscaTimer = setTimeout(() => {
+                    modalBuscaTimer = null;
+                    if (!estadoModalRanking) return;
+                    estadoModalRanking.busca = buscaModalInput.value || "";
+                    const norm = normalizarBusca(estadoModalRanking.busca);
+                    estadoModalRanking.buscaTermos = norm ? norm.split(" ").filter(Boolean) : [];
+                    estadoModalRanking.pagina = 1;
+                    renderModalRankingLista();
+                    if (listaModalEl) listaModalEl.scrollTop = 0;
+                }, 120);
             });
         }
 
@@ -2375,6 +2485,10 @@
 
     function abrirModal(item) {
         if (!item) return;
+        if (modalBuscaTimer) {
+            clearTimeout(modalBuscaTimer);
+            modalBuscaTimer = null;
+        }
         estadoModalRanking = null;
         modalEl.classList.remove("is-ranking");
         const termos = termosBusca();
@@ -2424,10 +2538,10 @@
             '<div class="leme-detail-item is-wide"><b>Autores referenciados:</b><div class="leme-tags">' + autoresRefHtml + '</div></div>' +
             (item.tem_produto
                 ? '<div class="leme-detail-item is-wide"><b>Produto educacional:</b><br>' + highlightText(valorPublico(item.produto_titulo), termos) + '</div>' +
-                  '<div class="leme-detail-item"><b>Tipo de produto (CAPES):</b><br>' + highlightText(valorPublico(item.tipo_produto_label), termos) + '</div>' +
-                  '<div class="leme-detail-item"><b>Formato do produto:</b><br>' + highlightText(valorPublico(item.formato_produto), termos) + '</div>' +
-                  '<div class="leme-detail-item"><b>Nível de aplicação:</b><br>' + highlightText(valorPublico(item.nivel_aplicacao), termos) + '</div>' +
-                  '<div class="leme-detail-item"><b>Público-alvo:</b><br>' + highlightText(item.publico_alvo_labels.join(", ") || "Não informado", termos) + '</div>'
+                '<div class="leme-detail-item"><b>Tipo de produto (CAPES):</b><br>' + highlightText(valorPublico(item.tipo_produto_label), termos) + '</div>' +
+                '<div class="leme-detail-item"><b>Formato do produto:</b><br>' + highlightText(valorPublico(item.formato_produto), termos) + '</div>' +
+                '<div class="leme-detail-item"><b>Nível de aplicação:</b><br>' + highlightText(valorPublico(item.nivel_aplicacao), termos) + '</div>' +
+                '<div class="leme-detail-item"><b>Público-alvo:</b><br>' + highlightText(item.publico_alvo_labels.join(", ") || "Não informado", termos) + '</div>'
                 : '<div class="leme-detail-item is-wide"><b>Produto educacional:</b><br>Sem produto vinculado</div>') +
             '<div class="leme-detail-item is-wide"><b>Resumo da dissertação:</b><br>' + highlightText(item.dissertacao_resumo || "Resumo não disponível.", termos) + renderTags(item.termos_unificados, termos) + (linksModal.length ? '<div class="leme-actions">' + linksModal.join("") + '</div>' : '') + '</div>' +
             renderSecaoDetalhesRecolhivel(item, termos) +
@@ -2437,16 +2551,28 @@
     }
 
     function fecharModal() {
+        if (modalBuscaTimer) {
+            clearTimeout(modalBuscaTimer);
+            modalBuscaTimer = null;
+        }
         if (!modalBackdrop.classList.contains("is-open")) return;
         estadoModalRanking = null;
         modalEl.classList.remove("is-ranking");
         modalBackdrop.classList.remove("is-open");
         modalBackdrop.setAttribute("aria-hidden", "true");
         document.body.style.overflow = bodyOverflowAnterior;
-        if (ultimoFocoAntesModal && ultimoFocoAntesModal.isConnected) {
-            ultimoFocoAntesModal.focus();
-        }
+        const destinoFoco = (
+            ultimoFocoAntesModal &&
+            ultimoFocoAntesModal.isConnected &&
+            !ultimoFocoAntesModal.disabled &&
+            ultimoFocoAntesModal.offsetParent !== null
+        )
+            ? ultimoFocoAntesModal
+            : (busca && busca.isConnected && !busca.disabled ? busca : raiz);
         ultimoFocoAntesModal = null;
+        if (destinoFoco && typeof destinoFoco.focus === "function") {
+            destinoFoco.focus();
+        }
     }
 
     function manterFocoNoModal(e) {
@@ -2467,7 +2593,7 @@
 
     function csvEscape(valor) {
         let texto = String(valor == null ? "" : valor).replace(/\r\n|\r|\n/g, " ");
-        if (/^[=+\-@\t\r]/.test(texto)) {
+        if (/^[=+\-@\t\r]/.test(texto.trimStart())) {
             texto = "'" + texto;
         }
         return '"' + texto.replace(/"/g, '""') + '"';
@@ -2517,7 +2643,7 @@
                     tipo_produto_label: item.tem_produto ? valorPublico(item.tipo_produto_label) : "Sem produto vinculado",
                     formato_produto: item.tem_produto ? valorPublico(item.formato_produto) : "Sem produto vinculado",
                     publico_alvo_str: item.tem_produto ? item.publico_alvo_labels.join(", ") : "Sem produto vinculado",
-                    nivel_aplicacao: item.tem_produto ? valorPublico(item.nivel_aplicacao) : "",
+                    nivel_aplicacao: item.tem_produto ? valorPublico(item.nivel_aplicacao) : "Sem produto vinculado",
                     coorientadores_str: item.coorientadores.join(", "),
                     autores_ref_str: item.autores_referenciados.join(", ")
                 };
@@ -2537,7 +2663,7 @@
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
-        URL.revokeObjectURL(url);
+        window.setTimeout(() => URL.revokeObjectURL(url), 1000);
     }
 
     function baixarCsvRanking() {
@@ -2546,13 +2672,13 @@
         const cfg = estado.cfg;
         const itens = obterItensModalRankingFiltrados(estado);
         if (!itens.length) return;
-        const cabecalho = ["Posição", cfg.colunaCsv, "Defesas", "Percentual (%)"].map(csvEscape).join(";");
+        const cabecalho = ["Posição", cfg.colunaCsv, estado.colunaContagemCsv, "Percentual (%)"].map(csvEscape).join(";");
         const linhas = [cabecalho].concat(
             itens.map(d => [
                 d.rankOriginal,
                 d.label,
                 d.valor,
-                formatarPercentualPtBr(d.valor, estado.totalDefesas)
+                formatarPercentualPtBr(d.valor, estado.totalBase)
             ].map(csvEscape).join(";"))
         );
         dispararDownloadCsv(linhas, cfg.arquivoCsv);
@@ -2709,6 +2835,8 @@
 
         const clearSearch = e.target.closest("[data-clear-search]");
         if (clearSearch) {
+            clearTimeout(debounceTimer);
+            debounceTimer = null;
             busca.value = "";
             aplicarFiltros(true);
             busca.focus();
@@ -2735,7 +2863,12 @@
         debounceTimer = setTimeout(() => aplicarFiltros(true), 200);
     });
     busca.addEventListener("keydown", e => {
-        if (e.key === "Escape") { busca.value = ""; aplicarFiltros(true); }
+        if (e.key === "Escape") {
+            clearTimeout(debounceTimer);
+            debounceTimer = null;
+            busca.value = "";
+            aplicarFiltros(true);
+        }
     });
     limpar.addEventListener("click", limparTodosFiltros);
     btnCards.addEventListener("click", () => { modo = "cards"; atualizarVisualizacao(); });
@@ -2744,14 +2877,29 @@
     modalClose.addEventListener("click", fecharModal);
     modalBackdrop.addEventListener("click", e => { if (e.target === modalBackdrop) fecharModal(); });
     if (typeof mqMobile.addEventListener === "function") {
-        mqMobile.addEventListener("change", () => { if (dados.length) atualizarVisualizacao(); });
+        mqMobile.addEventListener("change", () => { if (raiz.isConnected && dados.length) atualizarVisualizacao(); });
     } else if (typeof mqMobile.addListener === "function") {
-        mqMobile.addListener(() => { if (dados.length) atualizarVisualizacao(); });
+        mqMobile.addListener(() => { if (raiz.isConnected && dados.length) atualizarVisualizacao(); });
     }
     document.addEventListener("keydown", e => {
         if (!raiz.isConnected || !modalBackdrop.classList.contains("is-open")) return;
         if (e.key === "Escape") {
             e.preventDefault();
+            if (
+                estadoModalRanking &&
+                document.activeElement &&
+                document.activeElement.id === "leme-ranking-busca" &&
+                document.activeElement.value
+            ) {
+                clearTimeout(modalBuscaTimer);
+                modalBuscaTimer = null;
+                document.activeElement.value = "";
+                estadoModalRanking.busca = "";
+                estadoModalRanking.buscaTermos = [];
+                estadoModalRanking.pagina = 1;
+                renderModalRankingLista();
+                return;
+            }
             fecharModal();
         } else if (e.key === "Tab") {
             manterFocoNoModal(e);
@@ -2773,6 +2921,8 @@
     }
 
     async function iniciarPainel() {
+        if (carregandoPainel) return;
+        carregandoPainel = true;
         definirControlesDesabilitados(true);
         contador.textContent = "Carregando resultados...";
         graficosNota.textContent = "Carregando indicadores...";
@@ -2821,6 +2971,8 @@
                 });
             paginacao.innerHTML = "";
             resultados.innerHTML = '<div class="leme-empty"><p>O catálogo está temporariamente indisponível. Verifique a disponibilidade do arquivo JSON v4.</p><button type="button" class="leme-retry-btn" data-retry-load="1">Tentar novamente</button></div>';
+        } finally {
+            carregandoPainel = false;
         }
     }
 

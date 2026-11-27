@@ -105,7 +105,19 @@ def resetar_catalogos() -> None:
 def _normalizar_conjunto_str(itens: Optional[Iterable[str]]) -> FrozenSet[str]:
     if not itens:
         return frozenset()
-    return frozenset(s.strip().lower() for s in itens if s and s.strip())
+    return frozenset(chave for s in itens if s and (chave := _chave_normalizada_simples(s)))
+
+
+def _normalizar_dict_chaves(mapa: Optional[Dict[str, str]]) -> Dict[str, str]:
+    if not mapa:
+        return {}
+    out: Dict[str, str] = {}
+    for k, v in mapa.items():
+        chave = _chave_normalizada_simples(k)
+        val = (v or "").strip()
+        if chave and val:
+            out[chave] = val
+    return out
 
 
 def _estender_tupla_unica(base: Tuple[str, ...], extras: Optional[Iterable[str]], *, lower: bool = False) -> Tuple[str, ...]:
@@ -114,7 +126,12 @@ def _estender_tupla_unica(base: Tuple[str, ...], extras: Optional[Iterable[str]]
     atuais = list(base)
     vistas = set(atuais)
     for item in extras:
-        val = item.lower() if lower else item.strip()
+        if lower:
+            val = "".join(
+                c for c in unicodedata.normalize("NFKD", item.lower()) if not unicodedata.combining(c)
+            )
+        else:
+            val = item.strip()
         if val and val not in vistas:
             atuais.append(val)
             vistas.add(val)
@@ -159,8 +176,12 @@ def aplicar_overlay(
     global ALIASES_AUTORES_REFERENCIA
     global VALORES_CANONICOS_AUTORES_REF
 
-    if aliases_docentes:
-        ALIASES_DOCENTES = {**ALIASES_DOCENTES, **aliases_docentes}
+    docentes_norm = _normalizar_dict_chaves(aliases_docentes)
+    autores_ref_norm = _normalizar_dict_chaves(aliases_autores_referencia)
+    bases_alias_norm = _normalizar_dict_chaves(aliases_base_epistemologica)
+
+    if docentes_norm:
+        ALIASES_DOCENTES = {**ALIASES_DOCENTES, **docentes_norm}
 
     STOPWORDS_CONTINUACAO_NOME = STOPWORDS_CONTINUACAO_NOME | _normalizar_conjunto_str(stopwords_continuacao_nome)
     PREFIXOS_NAO_PESSOA = _estender_tupla_unica(PREFIXOS_NAO_PESSOA, prefixos_nao_pessoa, lower=True)
@@ -172,11 +193,11 @@ def aplicar_overlay(
 
     STOPWORDS_TOKEN_NAO_PESSOA = STOPWORDS_TOKEN_NAO_PESSOA | _normalizar_conjunto_str(stopwords_token_nao_pessoa)
 
-    if aliases_docentes or aliases_autores_referencia:
+    if docentes_norm or autores_ref_norm:
         ALIASES_AUTORES_REFERENCIA = {
             **ALIASES_AUTORES_REFERENCIA,
-            **(aliases_docentes or {}),
-            **(aliases_autores_referencia or {}),
+            **docentes_norm,
+            **autores_ref_norm,
         }
         VALORES_CANONICOS_AUTORES_REF = frozenset(ALIASES_AUTORES_REFERENCIA.values())
 
@@ -185,8 +206,8 @@ def aplicar_overlay(
         ALIASES_BASE_EPISTEMOLOGICA,
         bases_epistemologicas_canonicas,
     )
-    if aliases_base_epistemologica:
-        ALIASES_BASE_EPISTEMOLOGICA = {**ALIASES_BASE_EPISTEMOLOGICA, **aliases_base_epistemologica}
+    if bases_alias_norm:
+        ALIASES_BASE_EPISTEMOLOGICA = {**ALIASES_BASE_EPISTEMOLOGICA, **bases_alias_norm}
 
 
 resetar_catalogos()

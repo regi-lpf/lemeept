@@ -144,6 +144,7 @@ class RecortesTextuais(BaseModel):
 
 class ContratoExtracaoDeterministicaV4(BaseModel):
     id: str
+    sha256_dissertacao: Optional[str] = None
     metadados_resolvidos: MetadadosResolvidos
     dissertacao_deterministica: DissertacaoDeterministica
     evidencias_educapes: EvidenciasEduCAPES
@@ -202,7 +203,7 @@ class ProdutoFinalV4(BaseModel):
 
 
 class IndiceBuscaV4(BaseModel):
-    texto_busca_normalizado: str
+    texto_busca_normalizado: str = ""
     termos_unificados: List[str] = Field(default_factory=list)
     tem_produto_vinculado: bool
     tem_resumo: bool

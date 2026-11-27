@@ -8,6 +8,7 @@ from pydantic import ValidationError
 
 from lemeept_extractor import catalogs
 from lemeept_extractor.config import aplicar_config
+from lemeept_extractor.io_utils import escrever_texto_atomico
 from lemeept_extractor.llm_provider import LLMClient
 from lemeept_extractor.models import (
     ContratoDefesaV4,
@@ -49,6 +50,7 @@ def construir_indice_busca(registro: Dict[str, Any]) -> Dict[str, Any]:
         registro.get("autor", ""),
         registro.get("orientador", ""),
         " ".join(registro.get("coorientadores") or []),
+        registro.get("instituicao", ""),
         registro.get("campus", ""),
         registro.get("linha_pesquisa", ""),
         registro.get("macroprojeto", ""),
@@ -280,20 +282,40 @@ def processar_payload(
 
     modo_sem_produto = somente_dissertacoes or payload.metadados_resolvidos.sem_produto
     response_model = RespostaInterpretativaDissertacaoLLM if modo_sem_produto else RespostaInterpretativaLLM
+    prompt_sistema = system_prompt
+    if modo_sem_produto:
+        prompt_sistema = (
+            f"{system_prompt}\n\n"
+            "## MODO SOMENTE DISSERTAÇÕES ATIVO\n"
+            "Este acervo não possui produto educacional vinculado. Retorne estritamente o schema "
+            "`RespostaInterpretativaDissertacaoLLM` (`macroprojeto` e `base_epistemologica`), omitindo todos os campos `produto_*`."
+        )
     user_message = montar_prompt_enxuto(payload, somente_dissertacoes=modo_sem_produto)
 
-    conteudo = llm.gerar_estruturado(
-        system_prompt=system_prompt,
-        user_prompt=user_message,
-        response_model=response_model,
-    )
+    resp_llm = None
+    ultimo_erro_validacao: Optional[Exception] = None
+    for tentativa in range(2):
+        try:
+            conteudo = llm.gerar_estruturado(
+                system_prompt=prompt_sistema,
+                user_prompt=user_message,
+                response_model=response_model,
+            )
+            resp_llm = response_model.model_validate_json(conteudo)
+            break
+        except (ValueError, ValidationError, json.JSONDecodeError) as e:
+            ultimo_erro_validacao = e
+            if tentativa == 0:
+                logger.warning(f"[{payload.id}] Saída JSON inválida/vazia da LLM ({e}). Repetindo chamada...")
+            else:
+                raise
 
-    resp_llm = response_model.model_validate_json(conteudo)
+    if resp_llm is None and ultimo_erro_validacao is not None:
+        raise ultimo_erro_validacao
+
     registro_validado = montar_registro_final(payload, resp_llm)
 
-    records_dir.mkdir(parents=True, exist_ok=True)
-    with open(caminho_saida, "w", encoding="utf-8") as f:
-        f.write(registro_validado.model_dump_json(indent=2))
+    escrever_texto_atomico(caminho_saida, registro_validado.model_dump_json(indent=2))
 
     tipo_log = registro_validado.produto.tipo if registro_validado.produto else "SEM_PRODUTO"
     logger.info(
@@ -423,7 +445,7 @@ def ressincronizar_registros_deterministico(
 
             raw["indice_busca"] = construir_indice_busca(raw)
             validado = ContratoDefesaV4.model_validate(raw)
-            caminho_rec.write_text(validado.model_dump_json(indent=2), encoding="utf-8")
+            escrever_texto_atomico(caminho_rec, validado.model_dump_json(indent=2))
             stats["sincronizados"] += 1
 
         except Exception as e:
@@ -450,6 +472,8 @@ def executar_etapa3(
 ):
     if not skill_path.exists():
         raise FileNotFoundError(f"Arquivo de instruções não encontrado: {skill_path}")
+    if forcar_curados and not sobrescrever:
+        logger.warning("--forcar-curados não tem efeito sem --sobrescrever.")
 
     system_prompt = skill_path.read_text(encoding="utf-8")
     llm = LLMClient()
@@ -457,7 +481,9 @@ def executar_etapa3(
     arquivos = sorted(stage2_dir.glob("EPT-*.json"))
     if target_id:
         arquivos = [a for a in arquivos if a.stem == target_id]
-    if limite:
+    if limite and not sobrescrever:
+        arquivos = [a for a in arquivos if not (records_dir / f"{a.stem}.json").exists()][:limite]
+    elif limite:
         arquivos = arquivos[:limite]
 
     logger.info(f"Iniciando processamento de {len(arquivos)} payloads...")
@@ -485,6 +511,7 @@ def executar_etapa3(
     logger.info(f"Concluído | Novos: {sucessos} | Falhas: {len(falhas)}")
     for cod, erro in falhas:
         logger.error(f"  - {cod}: {erro}")
+    return len(falhas)
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -534,25 +561,25 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     cfg = aplicar_config(config_path=args.config)
     if args.sync_deterministico:
         ids_filtro = [args.target_id] if args.target_id else None
-        ressincronizar_registros_deterministico(
+        stats = ressincronizar_registros_deterministico(
             stage2_dir=args.stage2_dir,
             records_dir=args.records_dir,
             ids=ids_filtro,
         )
-    else:
-        skill_efetivo = args.skill or cfg.llm.skill_path or SKILL_PATH
-        somente_diss = args.somente_dissertacoes or cfg.instituicao.somente_dissertacoes
-        executar_etapa3(
-            sobrescrever=args.sobrescrever,
-            forcar_curados=args.forcar_curados,
-            limite=args.limite,
-            target_id=args.target_id,
-            skill_path=skill_efetivo,
-            stage2_dir=args.stage2_dir,
-            records_dir=args.records_dir,
-            somente_dissertacoes=somente_diss,
-        )
-    return 0
+        return 1 if stats["erros"] > 0 else 0
+    skill_efetivo = args.skill or cfg.llm.skill_path or SKILL_PATH
+    somente_diss = args.somente_dissertacoes or cfg.instituicao.somente_dissertacoes
+    qtd_falhas = executar_etapa3(
+        sobrescrever=args.sobrescrever,
+        forcar_curados=args.forcar_curados,
+        limite=args.limite,
+        target_id=args.target_id,
+        skill_path=skill_efetivo,
+        stage2_dir=args.stage2_dir,
+        records_dir=args.records_dir,
+        somente_dissertacoes=somente_diss,
+    )
+    return 1 if qtd_falhas > 0 else 0
 
 
 if __name__ == "__main__":

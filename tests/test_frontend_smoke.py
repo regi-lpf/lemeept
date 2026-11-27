@@ -304,13 +304,18 @@ class TestFrontendSmoke(unittest.TestCase):
 
     def test_index_acervo_completo_interacoes_principais(self) -> None:
         json_real = JSON_PATH.read_text(encoding="utf-8")
+        dados_reais = json.loads(json_real)
+        esperado_defesas = str(dados_reais["total_defesas"])
+        esperado_producoes = str(dados_reais["total_producoes"])
         context, page, page_errors, console_errors = self._abrir_pagina(
             {"/public/painel-ept-v4.json": (json_real, "application/json; charset=utf-8")}
         )
         try:
             page.goto(f"{self.base_url}/index.html", wait_until="domcontentloaded")
-            page.wait_for_function("document.getElementById('leme-stat-total')?.textContent === '112'")
-            self.assertEqual(page.locator("#leme-stat-producoes").inner_text(), "224")
+            page.wait_for_function(
+                f"document.getElementById('leme-stat-total')?.textContent === {json.dumps(esperado_defesas)}"
+            )
+            self.assertEqual(page.locator("#leme-stat-producoes").inner_text(), esperado_producoes)
             self.assertTrue(page.locator(".leme-scope-bar").is_visible())
             self.assertEqual(page.locator("#leme-resultados .leme-card").count(), 12)
 
@@ -334,6 +339,12 @@ class TestFrontendSmoke(unittest.TestCase):
             self.assertGreaterEqual(page.locator("#leme-graficos-filtros .leme-chip").count(), 1)
             page.click("#leme-limpar")
             self.assertEqual(page.locator("#leme-graficos-filtros .leme-chip").count(), 0)
+
+            page.fill("#leme-busca", "Freire")
+            page.wait_for_selector("#leme-resultados mark.leme-highlight")
+            self.assertGreater(page.locator("#leme-resultados .leme-card").count(), 0)
+            page.click("#leme-limpar")
+            self.assertEqual(page.locator("#leme-resultados .leme-card").count(), 12)
 
             page.locator(".leme-card-detail-btn").first.click()
             self.assertIn("is-open", page.locator("#leme-modal-backdrop").get_attribute("class") or "")
@@ -377,6 +388,13 @@ class TestFrontendSmoke(unittest.TestCase):
             page.click("#leme-limpar")
 
             page.click("button[data-escopo='todas']")
+            page.click("button[data-tipo-tab='formato_produto']")
+            page.click("#leme-expand-tipo-formato")
+            page.wait_for_selector("#leme-modal-backdrop.is-open #leme-ranking-status")
+            modal_status = page.locator("#leme-ranking-status").text_content() or ""
+            self.assertIn("produtos neste formato (% sobre 2)", modal_status)
+            page.click("#leme-modal-close")
+
             page.click("#leme-view-table")
             self.assertIn("Sem produto vinculado", page.locator("table.leme-table").inner_text())
 
@@ -412,6 +430,9 @@ class TestFrontendSmoke(unittest.TestCase):
     def test_fluxo_elementor_loader_e_widget_publicado(self) -> None:
         widget_html = WIDGET_PATH.read_text(encoding="utf-8")
         json_real = JSON_PATH.read_text(encoding="utf-8")
+        dados_reais = json.loads(json_real)
+        esperado_defesas = str(dados_reais["total_defesas"])
+        esperado_producoes = str(dados_reais["total_producoes"])
         context, page, page_errors, console_errors = self._abrir_pagina(
             {
                 "/public/widget-elementor.html": (widget_html, "text/html; charset=utf-8"),
@@ -422,12 +443,30 @@ class TestFrontendSmoke(unittest.TestCase):
             page.goto(f"{self.base_url}{ELEMENTOR_HOST_PATH}", wait_until="domcontentloaded")
             page.wait_for_selector("#leme-painel-ept")
             self.assertEqual(page.locator("#leme-painel-loader").count(), 0)
-            page.wait_for_function("document.getElementById('leme-stat-total')?.textContent === '112'")
-            self.assertEqual(page.locator("#leme-stat-producoes").inner_text(), "224")
+            page.wait_for_function(
+                f"document.getElementById('leme-stat-total')?.textContent === {json.dumps(esperado_defesas)}"
+            )
+            self.assertEqual(page.locator("#leme-stat-producoes").inner_text(), esperado_producoes)
             self.assertGreaterEqual(page.locator("#leme-resultados .leme-card").count(), 1)
 
             page.click("button[data-escopo='produtos']")
             self.assertTrue(page.locator("#leme-chart-formato").is_visible())
+
+            self.assertEqual(page.locator("#leme-controles").get_attribute("tabindex"), "-1")
+
+            page.click("button[data-escopo='todas']")
+            page.click("button[data-open-ranking='autor_referenciado']")
+            self.assertIn("is-open", page.locator("#leme-modal-backdrop").get_attribute("class") or "")
+            page.fill("#leme-ranking-busca", "Freire")
+            page.locator("#leme-ranking-busca").press("Escape")
+            self.assertIn("is-open", page.locator("#leme-modal-backdrop").get_attribute("class") or "")
+            self.assertEqual(page.locator("#leme-ranking-busca").input_value(), "")
+            page.locator("#leme-ranking-busca").press("Escape")
+            self.assertNotIn("is-open", page.locator("#leme-modal-backdrop").get_attribute("class") or "")
+
+            page.locator("#leme-chart-base button.leme-bar-row.is-clickable").first.click()
+            page.wait_for_timeout(400)
+
             page.locator(".leme-card-detail-btn").first.click()
             self.assertIn("is-open", page.locator("#leme-modal-backdrop").get_attribute("class") or "")
             page.click("#leme-modal-close")

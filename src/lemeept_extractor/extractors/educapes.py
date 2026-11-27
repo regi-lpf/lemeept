@@ -12,6 +12,7 @@ from lemeept_extractor.extractors.classifiers import (
     classificar_produto_com_fonte,
     extrair_sentenca_produto,
 )
+from lemeept_extractor.io_utils import escrever_texto_atomico, obter_sessao_http
 from lemeept_extractor.models import EvidenciasEduCAPES
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -23,18 +24,28 @@ def _adicionar_unico(lista: List[str], valor: str) -> None:
         lista.append(valor.strip())
 
 
+_PAPEIS_EQUIVALENTES = {
+    "author": "creator",
+    "colaborador": "contributor",
+}
+
+
 def _adicionar_colaborador_unico(
     lista: List[Dict[str, Optional[str]]],
     nome: str,
     papel: Optional[str],
 ) -> None:
-    chave = (nome.strip().lower(), (papel or "").strip().lower())
+    papel_norm = (papel or "").strip().lower()
+    papel_canon = _PAPEIS_EQUIVALENTES.get(papel_norm, papel_norm)
+    chave = (nome.strip().lower(), papel_canon)
     if not chave[0]:
         return
     for item in lista:
-        if (item.get("nome", "").strip().lower(), (item.get("papel") or "").strip().lower()) == chave:
+        papel_item = (item.get("papel") or "").strip().lower()
+        papel_item_canon = _PAPEIS_EQUIVALENTES.get(papel_item, papel_item)
+        if (item.get("nome", "").strip().lower(), papel_item_canon) == chave:
             return
-    lista.append({"nome": nome.strip(), "papel": papel})
+    lista.append({"nome": nome.strip(), "papel": papel_canon or papel})
 
 
 def _adicionar_identificador_unico(
@@ -43,12 +54,22 @@ def _adicionar_identificador_unico(
     valor: str,
     url: str = "",
 ) -> None:
-    chave = (esquema.strip().lower(), valor.strip().lower())
-    if not chave[1]:
+    esq_norm = esquema.strip().lower()
+    val_norm = valor.strip().lower()
+    if not val_norm:
         return
     for item in lista:
-        if (item.get("esquema", "").strip().lower(), item.get("valor", "").strip().lower()) == chave:
-            return
+        if item.get("valor", "").strip().lower() == val_norm:
+            item_esq = item.get("esquema", "").strip().lower()
+            if item_esq == esq_norm:
+                return
+            if item_esq == "identifier" and esq_norm != "identifier":
+                item["esquema"] = esquema.strip()
+                if url and not item.get("url"):
+                    item["url"] = url
+                return
+            if esq_norm == "identifier":
+                return
     lista.append({"esquema": esquema.strip(), "valor": valor.strip(), "url": url})
 
 
@@ -175,10 +196,21 @@ def coletar_evidencias_educapes(
             fonte_formato_regex=fonte_formato,
         )
 
-    base_url = handle_url.strip().rstrip("/")
-    full_url = base_url if "show=full" in base_url else f"{base_url}?show=full"
+    bruto_url = handle_url.strip().rstrip("/")
+    if not bruto_url.lower().startswith(("http://", "https://")):
+        handle_limpo = re.sub(r"^handle/", "", bruto_url, flags=re.IGNORECASE).lstrip("/")
+        base_url = f"https://educapes.capes.gov.br/handle/{handle_limpo}"
+    else:
+        base_url = bruto_url
+
+    if "show=full" in base_url:
+        full_url = base_url
+    else:
+        separador = "&" if "?" in base_url else "?"
+        full_url = f"{base_url}{separador}show=full"
 
     slug_cache = re.sub(r"[^a-zA-Z0-9_-]", "_", base_url.split("handle/")[-1])
+    cache_dir.mkdir(parents=True, exist_ok=True)
     cache_file = cache_dir / f"{slug_cache}.html"
 
     html = ""
@@ -186,7 +218,7 @@ def coletar_evidencias_educapes(
         html = cache_file.read_text(encoding="utf-8", errors="ignore")
     else:
         try:
-            resp = requests.get(
+            resp = obter_sessao_http().get(
                 full_url,
                 timeout=20,
                 verify=False,
@@ -194,7 +226,7 @@ def coletar_evidencias_educapes(
             )
             if resp.status_code == 200:
                 html = resp.text
-                cache_file.write_text(html, encoding="utf-8")
+                escrever_texto_atomico(cache_file, html)
                 time.sleep(0.6)
         except requests.RequestException as e:
             print(f"  [eduCAPES] Falha ao acessar {full_url}: {e}")

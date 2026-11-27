@@ -14,7 +14,7 @@ Este repositório abriga dois componentes desacoplados e complementares:
 | Documento | Responsabilidade Única |
 | :--- | :--- |
 | **[README.md](README.md)** | Visão geral do projeto, guias rápidos (outra instituição e instância IFC), Elementor, testes e build. |
-| **[CHANGELOG.md](CHANGELOG.md)** | Histórico de versões e resumo executivo da pre-release `v0.4.0-beta` (pipeline universalizada). |
+| **[CHANGELOG.md](CHANGELOG.md)** | Histórico de versões (`v0.4.1-beta` e `v0.4.0-beta`: pipeline universalizada, auditoria anti-overengineering, performance e smoke tests E2E). |
 | **[docs/ARQUITETURA.md](docs/ARQUITETURA.md)** | Diagrama de fluxo Mermaid, estrutura modular, mapa de diretórios e regras de governança. |
 | **[docs/CONTRATO_DADOS.md](docs/CONTRATO_DADOS.md)** | Taxonomia CAPES/ProfEPT (Linhas, MPs, 9 Tipos, 5 Públicos, 8 Níveis, 7 Matrizes) e regras de evidência. |
 | **[docs/DOCUMENTACAO_TECNICA.md](docs/DOCUMENTACAO_TECNICA.md)** | Referência de engenharia: stack, variáveis `.env`, schemas Pydantic v2 (`models.py`), módulos e CI/CD. |
@@ -28,8 +28,8 @@ Este repositório abriga dois componentes desacoplados e complementares:
 | Etapa / Subcomando | Função | Entrada Principal | Saída |
 | :--- | :--- | :--- | :--- |
 | **`ingest`** (`Stage 1`) | Ingestão via CSV ou pasta local de PDFs (preservando IDs `EPT-XXXX`, `%PDF-` e `SHA-256`) | `--csv` ou `--pdfs-dir` | `data/stage1_manifest.json` |
-| **`extract`** (`Stage 2`) | Extração determinística (`pymupdf`), recortes textuais, referências ABNT, coorientação e eduCAPES | `data/stage1_manifest.json` + PDFs | `data/stage2_payloads/EPT-XXXX.json` |
-| **`llm`** (`Stage 3`) | Inferência semântica enxuta (Gemini, Groq, Mistral, OpenRouter ou Ollama) + `--sync-deterministico` | `data/stage2_payloads/` + `.env` | `data/records/EPT-XXXX.json` |
+| **`extract`** (`Stage 2`) | Extração determinística (`pymupdf`), cache incremental `SHA-256` (`--forcar`), recortes textuais, referências ABNT, coorientação e eduCAPES | `data/stage1_manifest.json` + PDFs | `data/stage2_payloads/EPT-XXXX.json` |
+| **`llm`** (`Stage 3`) | Inferência semântica enxuta (Gemini, OpenRouter, Ollama ou `llama-server`) + `--sync-deterministico` | `data/stage2_payloads/` + `.env` | `data/records/EPT-XXXX.json` |
 | **`compile`** (`Stage 4`) | Curadoria humana via CSV, reconciliação global de autores e validação Pydantic v2 | `data/records/` + CSV de revisão | `public/painel-ept-v4.json` |
 | **`build-frontend`** | Renderiza templates `[frontend]` e compila bundle autocontido `wpautop`-safe para Elementor | `lemeept.toml` + templates/fontes | `index.html`, `frontend/`, `public/widget-elementor.html`, `public/loader-elementor.html` |
 
@@ -93,7 +93,7 @@ uv run lemeept-extractor llm                  # ou --sync-deterministico offline
 uv run lemeept-extractor compile
 ```
 
-* **Depuração pontual:** use `--id EPT-0001` em `extract` e `llm`. Na Etapa 3, sobrescrever registro existente exige `--sobrescrever` (e `--forcar-curados` quando `curado_humano: true`).
+* **Depuração pontual e cache:** use `--id EPT-0001` em `extract` e `llm`. A Etapa 2 pula automaticamente PDFs cujo `SHA-256` já coincide em cache (use `--forcar` para reprocessar). Na Etapa 3, sobrescrever registro existente exige `--sobrescrever` (e `--forcar-curados` quando `curado_humano: true`).
 * **Curadoria humana (`base_epistemologica`):** edite [public/revisao_epistemologica_pendente.csv](public/revisao_epistemologica_pendente.csv) (`UTF-8-SIG`, `;`), preencha `base_epistemologica_aprovada` e `status_curadoria` (`APROVADO` ou `MANTER_NULO`) e rode `uv run lemeept-extractor compile`.
 
 ---
@@ -121,8 +121,9 @@ python3 scripts/build_frontend.py --check --emit-loader
 ```bash
 ruff check --select F,E9,E402,B src/ collectors/ scripts/ tests/
 PYTHONPATH=src uv run --no-sync python -m compileall -q src collectors scripts tests
-PYTHONPATH=src uv run --no-sync python -m unittest discover -s tests -v
+LEMEEPT_REQUIRE_SMOKE=1 PYTHONPATH=src uv run --no-sync python -m unittest discover -s tests -v
 python3 scripts/build_frontend.py --check --emit-loader
+python3 scripts/build_frontend.py --from-template --check --emit-loader
 uv build
 ```
 

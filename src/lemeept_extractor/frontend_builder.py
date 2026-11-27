@@ -46,13 +46,15 @@ def _derivar_widget_url(json_url: str) -> str:
 
 def _localizar_arquivo_config(
     config_path: Optional[Path],
-    root: Optional[Path],
+    root: Optional[Path] = None,
+    *,
+    auto_detect: bool = True,
 ) -> Optional[Path]:
     if config_path is not None:
         caminho = Path(config_path)
         if not caminho.exists():
             raise FileNotFoundError(f"Arquivo de configuração não encontrado: {caminho}")
-        return caminho
+        return caminho.resolve()
 
     env_val = (os.getenv(ENV_CONFIG_VAR) or "").strip()
     if env_val:
@@ -61,10 +63,12 @@ def _localizar_arquivo_config(
             raise FileNotFoundError(
                 f"Arquivo configurado em {ENV_CONFIG_VAR} não encontrado: {caminho_env}"
             )
-        return caminho_env
+        return caminho_env.resolve()
 
-    candidato = (root or Path.cwd()).resolve() / DEFAULT_CONFIG_FILENAME
-    return candidato if candidato.exists() else None
+    if auto_detect:
+        candidato = (root or Path.cwd()).resolve() / DEFAULT_CONFIG_FILENAME
+        return candidato if candidato.exists() else None
+    return None
 
 
 def carregar_config_frontend(
@@ -81,6 +85,11 @@ def carregar_config_frontend(
         dados = tomllib.loads(caminho_cfg.read_text(encoding="utf-8"))
         secao_fe = dados.get("frontend")
         if isinstance(secao_fe, dict):
+            desconhecidas = sorted(set(secao_fe) - set(DEFAULT_FRONTEND_CONFIG))
+            if desconhecidas:
+                raise ValueError(
+                    f"Chave(s) desconhecida(s) em [frontend] de {caminho_cfg}: {', '.join(desconhecidas)}"
+                )
             for chave in DEFAULT_FRONTEND_CONFIG:
                 if secao_fe.get(chave) is not None:
                     cfg[chave] = str(secao_fe[chave])
@@ -131,7 +140,10 @@ def renderizar_index_template(frontend_cfg: dict[str, str]) -> str:
 def renderizar_loader_template(frontend_cfg: dict[str, str]) -> str:
     """Renderiza `public/loader-elementor.html` parametrizado a partir do template embutido."""
     tpl = _resolver_asset_template("loader-elementor.template.html").read_text(encoding="utf-8")
-    erro_js = json.dumps(frontend_cfg.get("loader_erro_log") or "Falha ao carregar widget:", ensure_ascii=False)[1:-1]
+    erro_js = json.dumps(
+        frontend_cfg.get("loader_erro_log") or "Falha ao carregar widget:",
+        ensure_ascii=False,
+    )[1:-1].replace("</", "<\\/")
     substituicoes = {
         "{{WIDGET_URL}}": html.escape(frontend_cfg.get("widget_url", ""), quote=True),
         "{{LOADER_TEXTO}}": html.escape(frontend_cfg.get("loader_texto", ""), quote=True),
@@ -171,108 +183,8 @@ def extrair_secao_raiz(html_doc: str) -> tuple[str, str]:
     return abertura, miolo
 
 
-def _compactar_declaracoes_css(corpo: str) -> str:
-    """Compacta declaracoes `prop: val;` fora de strings sem alterar expressoes `calc()`."""
-    out: list[str] = []
-    i = 0
-    n = len(corpo)
-    quote = ""
-    while i < n:
-        ch = corpo[i]
-        if quote:
-            out.append(ch)
-            if ch == "\\" and i + 1 < n:
-                i += 1
-                out.append(corpo[i])
-            elif ch == quote:
-                quote = ""
-            i += 1
-            continue
-        if ch in ('"', "'"):
-            quote = ch
-            out.append(ch)
-            i += 1
-            continue
-        if ch.isspace():
-            while i + 1 < n and corpo[i + 1].isspace():
-                i += 1
-            prev = out[-1] if out else ""
-            nxt = corpo[i + 1] if i + 1 < n else ""
-            if prev in ("", "{", "}", ":", ";", ",", "(") or nxt in ("", "}", ":", ";", ",", ")"):
-                pass
-            else:
-                out.append(" ")
-            i += 1
-            continue
-        if ch in (":", ";", ",") and out and out[-1] == " ":
-            out.pop()
-        out.append(ch)
-        i += 1
-    res = "".join(out).strip()
-    if res.endswith(";"):
-        res = res[:-1]
-    return res
-
-
-def _compactar_cabecalho_css(cab: str) -> str:
-    """Compacta seletor ou at-rule preservando obrigatoriamente combinadores descendentes (ex.: ` :focus-visible`)."""
-    out: list[str] = []
-    i = 0
-    n = len(cab)
-    quote = ""
-    em_paren = 0
-    while i < n:
-        ch = cab[i]
-        if quote:
-            out.append(ch)
-            if ch == "\\" and i + 1 < n:
-                i += 1
-                out.append(cab[i])
-            elif ch == quote:
-                quote = ""
-            i += 1
-            continue
-        if ch in ('"', "'"):
-            quote = ch
-            out.append(ch)
-            i += 1
-            continue
-        if ch == "(":
-            em_paren += 1
-            out.append(ch)
-            i += 1
-            continue
-        if ch == ")":
-            em_paren = max(0, em_paren - 1)
-            if out and out[-1] == " ":
-                out.pop()
-            out.append(ch)
-            i += 1
-            continue
-        if ch.isspace():
-            while i + 1 < n and cab[i + 1].isspace():
-                i += 1
-            prev = out[-1] if out else ""
-            nxt = cab[i + 1] if i + 1 < n else ""
-            if prev in ("", ",", ">", "~", "(") or (em_paren > 0 and prev == ":"):
-                pass
-            elif nxt in ("", ",", ">", "~", ")"):
-                pass
-            else:
-                out.append(" ")
-            i += 1
-            continue
-        if ch == ":" and em_paren > 0 and out and out[-1] == " ":
-            out.pop()
-        if ch in (",", ">", "~") and out and out[-1] == " ":
-            out.pop()
-        out.append(ch)
-        i += 1
-    return "".join(out).strip()
-
-
 def compactar_css(css_src: str) -> str:
-    """Minifica CSS respeitando strings, `@media` e combinadores descendentes."""
+    """Remove comentarios CSS, indentacao e linhas em branco (wpautop-safe)."""
     sem_com: list[str] = []
     i = 0
     n = len(css_src)
@@ -301,242 +213,26 @@ def compactar_css(css_src: str) -> str:
             continue
         sem_com.append(ch)
         i += 1
-    limpo = "".join(sem_com)
-
-    def _emitir_nivel(texto: str, pos: int) -> tuple[str, int]:
-        pecas: list[str] = []
-        buf: list[str] = []
-        quote_l = ""
-        m = len(texto)
-        while pos < m:
-            c = texto[pos]
-            if quote_l:
-                buf.append(c)
-                if c == "\\" and pos + 1 < m:
-                    pos += 1
-                    buf.append(texto[pos])
-                elif c == quote_l:
-                    quote_l = ""
-                pos += 1
-                continue
-            if c in ('"', "'"):
-                quote_l = c
-                buf.append(c)
-                pos += 1
-                continue
-            if c == "{":
-                cab = _compactar_cabecalho_css("".join(buf))
-                buf.clear()
-                sub, pos_fim = _emitir_nivel(texto, pos + 1)
-                pecas.append(f"{cab}{{{sub}}}")
-                pos = pos_fim
-                continue
-            if c == "}":
-                conteudo = "".join(buf)
-                if conteudo.strip():
-                    return _compactar_declaracoes_css(conteudo), pos + 1
-                return "".join(pecas), pos + 1
-            buf.append(c)
-            pos += 1
-        sobra = "".join(buf).strip()
-        if sobra:
-            pecas.append(_compactar_declaracoes_css(sobra))
-        return "".join(pecas), pos
-
-    resultado, pos_final = _emitir_nivel(limpo, 0)
-    if pos_final != len(limpo):
-        raise ValueError("Falha ao processar blocos CSS.")
-    return resultado.strip()
-
-
-def _compactar_tag_html(tag: str) -> str:
-    """Normaliza espacos fora de aspas dentro de uma tag HTML preservando atributos."""
-    out: list[str] = []
-    i = 0
-    n = len(tag)
-    quote = ""
-    while i < n:
-        ch = tag[i]
-        if quote:
-            out.append(ch)
-            if ch == quote:
-                quote = ""
-            i += 1
-            continue
-        if ch in ('"', "'"):
-            quote = ch
-            out.append(ch)
-            i += 1
-            continue
-        if ch.isspace():
-            while i + 1 < n and tag[i + 1].isspace():
-                i += 1
-            nxt = tag[i + 1] if i + 1 < n else ""
-            if nxt in (">", "") or (nxt == "/" and i + 2 < n and tag[i + 2] == ">"):
-                pass
-            elif out and out[-1] != " ":
-                out.append(" ")
-            i += 1
-            continue
-        out.append(ch)
-        i += 1
-    return "".join(out)
+    if quote:
+        raise ValueError("String CSS nao terminada.")
+    return "\n".join(linha.strip() for linha in "".join(sem_com).splitlines() if linha.strip())
 
 
 def compactar_html(abertura_sec: str, miolo_html: str) -> tuple[str, str]:
-    """Compacta HTML preservando espacos relevantes em nos inline e valores de atributos."""
-    abertura_min = _compactar_tag_html(abertura_sec)
-
-    tokens: list[tuple[str, str]] = []
-    i = 0
-    n = len(miolo_html)
-    texto_ini = 0
-    while i < n:
-        if miolo_html[i] == "<":
-            if i > texto_ini:
-                tokens.append(("text", miolo_html[texto_ini:i]))
-            j = i + 1
-            q = ""
-            while j < n:
-                cj = miolo_html[j]
-                if q:
-                    if cj == q:
-                        q = ""
-                elif cj in ('"', "'"):
-                    q = cj
-                elif cj == ">":
-                    j += 1
-                    break
-                j += 1
-            tokens.append(("tag", miolo_html[i:j]))
-            i = j
-            texto_ini = i
-            continue
-        i += 1
-    if texto_ini < n:
-        tokens.append(("text", miolo_html[texto_ini:n]))
-
-    out: list[str] = []
-    for tipo, val in tokens:
-        if tipo == "tag":
-            out.append(_compactar_tag_html(val))
-            continue
-        if not val.strip():
-            if "\n" not in val and val:
-                out.append(" ")
-            continue
-        lead = " " if val[0] in (" ", "\t") else ""
-        trail = " " if val[-1] in (" ", "\t") else ""
-        miolo_txt = " ".join(val.split())
-        out.append(f"{lead}{miolo_txt}{trail}")
-
-    return abertura_min, "".join(out)
+    """Remove indentacao e linhas em branco preservando espacos inline do HTML."""
+    abertura_min = " ".join(abertura_sec.split())
+    miolo_min = "\n".join(linha.strip() for linha in miolo_html.splitlines() if linha.strip())
+    return abertura_min, miolo_min
 
 
 def compactar_js_seguro(js_src: str) -> str:
-    """Remove comentarios fora de strings/regex e retira indentacao/linhas vazias mantendo quebras de linha."""
-    sem_com: list[str] = []
-    in_multiline_template_lines: set[int] = set()
-    linha_atual = 0
-    i = 0
-    n = len(js_src)
-    last_non_ws = ""
-
-    while i < n:
-        ch = js_src[i]
-        nxt = js_src[i : i + 2]
-        if nxt == "//":
-            nl = js_src.find("\n", i)
-            if nl == -1:
-                break
-            i = nl
-            continue
-        if nxt == "/*":
-            fim = js_src.find("*/", i + 2)
-            if fim == -1:
-                raise ValueError("Comentario de bloco JS nao terminado (`/*`).")
-            newlines_com = js_src.count("\n", i, fim)
-            sem_com.append("\n" * newlines_com if newlines_com else " ")
-            linha_atual += newlines_com
-            i = fim + 2
-            continue
-        if ch in ("'", '"', "`"):
-            q = ch
-            sem_com.append(ch)
-            i += 1
-            while i < n:
-                c = js_src[i]
-                sem_com.append(c)
-                if c == "\n":
-                    linha_atual += 1
-                    if q == "`":
-                        in_multiline_template_lines.add(linha_atual)
-                if c == "\\" and i + 1 < n:
-                    i += 1
-                    c_esc = js_src[i]
-                    sem_com.append(c_esc)
-                    if c_esc == "\n":
-                        linha_atual += 1
-                    i += 1
-                    continue
-                if c == q:
-                    i += 1
-                    break
-                i += 1
-            else:
-                raise ValueError(f"String JS nao terminada ({q}).")
-            last_non_ws = q
-            continue
-        if ch == "/" and (
-            last_non_ws in ("", "(", "[", "{", ",", ";", "=", "!", "&", "|", "?", ":", "+", "-", "*", "%", "~", "^")
-            or "".join(sem_com[-8:]).strip().endswith(("return", "typeof"))
-        ):
-            j = i + 1
-            in_cls = False
-            ok_re = False
-            re_chars = ["/"]
-            while j < n and js_src[j] != "\n":
-                cj = js_src[j]
-                re_chars.append(cj)
-                if cj == "\\" and j + 1 < n and js_src[j + 1] != "\n":
-                    j += 1
-                    re_chars.append(js_src[j])
-                    j += 1
-                    continue
-                if cj == "[":
-                    in_cls = True
-                elif cj == "]":
-                    in_cls = False
-                elif cj == "/" and not in_cls:
-                    j += 1
-                    while j < n and js_src[j].isalpha():
-                        re_chars.append(js_src[j])
-                        j += 1
-                    ok_re = True
-                    break
-                j += 1
-            if ok_re:
-                sem_com.extend(re_chars)
-                i = j
-                last_non_ws = "/"
-                continue
-
-        if ch == "\n":
-            linha_atual += 1
-        elif not ch.isspace():
-            last_non_ws = ch
-        sem_com.append(ch)
-        i += 1
-
+    """Remove comentarios de linha inteira, indentacao e linhas em branco (wpautop-safe)."""
+    normalizado = js_src.replace("\r\n", "\n").replace("\r", "\n")
     linhas_compactas: list[str] = []
-    for idx_linha, linha in enumerate("".join(sem_com).splitlines()):
-        if idx_linha in in_multiline_template_lines:
-            linhas_compactas.append(linha)
-        else:
-            s = linha.strip(" \t")
-            if s:
-                linhas_compactas.append(s)
-
+    for linha in normalizado.splitlines():
+        s = linha.strip(" \t")
+        if s and not s.startswith("//"):
+            linhas_compactas.append(s)
     js_compacto = "\n".join(linhas_compactas)
     if re.search(r"</script", js_compacto, re.I):
         raise ValueError("Sequencia `</script` proibida detectada dentro do corpo JS.")
@@ -585,21 +281,30 @@ def validar_bundle(bundle: str) -> dict[str, int]:
     unscoped: list[str] = []
     buf: list[str] = []
     quote = ""
-    for i, ch in enumerate(css):
+    i = 0
+    n_css = len(css)
+    while i < n_css:
+        ch = css[i]
         if quote:
             buf.append(ch)
-            if ch == "\\" and i + 1 < len(css):
-                continue
-            if ch == quote:
+            if ch == "\\" and i + 1 < n_css:
+                i += 1
+                buf.append(css[i])
+            elif ch == quote:
                 quote = ""
+            i += 1
             continue
         if ch in ('"', "'"):
             quote = ch
             buf.append(ch)
+            i += 1
             continue
         if ch == "{":
             hdr = " ".join("".join(buf).split()).strip()
-            if hdr and not hdr.startswith("@") and hdr not in ("from", "to") and not re.match(r"^\d+%$", hdr):
+            eh_keyframe = hdr and all(
+                p.strip() in ("from", "to") or re.match(r"^\d+%$", p.strip()) for p in hdr.split(",")
+            )
+            if hdr and not hdr.startswith("@") and not eh_keyframe:
                 for sel in hdr.split(","):
                     s = sel.strip()
                     if s and not s.startswith("#leme-painel-ept"):
@@ -609,6 +314,7 @@ def validar_bundle(bundle: str) -> dict[str, int]:
             buf.clear()
         else:
             buf.append(ch)
+        i += 1
     if unscoped:
         raise AssertionError(f"Seletores CSS fora de `#leme-painel-ept`: {unscoped}")
 
@@ -649,68 +355,6 @@ def validar_bundle(bundle: str) -> dict[str, int]:
         raise AssertionError("Helpers de seguranca (`csvEscape` / `sanitizarUrl`) ausentes.")
     if re.search(r"</script", js, re.I):
         raise AssertionError("`</script` detectado dentro do `<script>`.")
-
-    stk: list[tuple[str, int]] = []
-    pairs = {"(": ")", "[": "]", "{": "}"}
-    last_non_ws = ""
-    i = 0
-    n = len(js)
-    while i < n:
-        ch = js[i]
-        if ch in ("'", '"', "`"):
-            q = ch
-            i += 1
-            while i < n:
-                if js[i] == "\\":
-                    i += 2
-                    continue
-                if js[i] == q:
-                    i += 1
-                    break
-                i += 1
-            else:
-                raise AssertionError(f"String JS nao terminada ({q}).")
-            last_non_ws = q
-            continue
-        if ch == "/" and (
-            last_non_ws in ("", "(", "[", "{", ",", ";", "=", "!", "&", "|", "?", ":", "+", "-", "*", "%", "~", "^")
-            or js[max(0, i - 6) : i].strip().endswith(("return", "typeof"))
-        ):
-            j = i + 1
-            in_cls = False
-            ok_re = False
-            while j < n and js[j] != "\n":
-                if js[j] == "\\":
-                    j += 2
-                    continue
-                if js[j] == "[":
-                    in_cls = True
-                elif js[j] == "]":
-                    in_cls = False
-                elif js[j] == "/" and not in_cls:
-                    j += 1
-                    while j < n and js[j].isalpha():
-                        j += 1
-                    ok_re = True
-                    break
-                j += 1
-            if ok_re:
-                i = j
-                last_non_ws = "/"
-                continue
-        if ch in pairs:
-            stk.append((ch, i))
-        elif ch in (")", "]", "}"):
-            if not stk:
-                raise AssertionError(f"Delimitador JS de fechamento inesperado `{ch}` na pos {i}.")
-            op, _ = stk.pop()
-            if pairs[op] != ch:
-                raise AssertionError(f"Delimitador JS incompatível `{op}` vs `{ch}` na pos {i}.")
-        if not ch.isspace():
-            last_non_ws = ch
-        i += 1
-    if stk:
-        raise AssertionError(f"Delimitadores JS abertos sem fechamento: {stk}")
 
     return {
         "css_chaves": css.count("{"),
@@ -796,6 +440,13 @@ def gerar_site_completo(
         gerados["loader"] = out_loader
 
     return gerados
+
+
+def _rotulo_caminho(caminho: Path, root: Path) -> str:
+    try:
+        return str(caminho.relative_to(root))
+    except ValueError:
+        return str(caminho)
 
 
 def main(
@@ -898,7 +549,7 @@ def main(
             if not out_loader.exists() or out_loader.read_text(encoding="utf-8") != renderizar_loader_template(frontend_cfg):
                 print(f"[ERRO] {out_loader.name} esta ausente ou desatualizado.", file=sys.stderr)
                 return 1
-        print(f"[OK] {out_widget.relative_to(root)} atualizado e validado ({len(bundle_bytes) / 1024:.1f} KB, {len(bundle.splitlines())} linhas).")
+        print(f"[OK] {_rotulo_caminho(out_widget, root)} atualizado e validado ({len(bundle_bytes) / 1024:.1f} KB, {len(bundle.splitlines())} linhas).")
         return 0
 
     if args.emit_site:
@@ -909,7 +560,7 @@ def main(
             emitir_loader=True,
             output_dir=pasta_saida,
         )
-        print(f"Site completo gerado em {root}: {', '.join(str(p.relative_to(root)) for p in gerados.values())}")
+        print(f"Site completo gerado em {root}: {', '.join(_rotulo_caminho(p, root) for p in gerados.values())}")
     else:
         out_widget.parent.mkdir(parents=True, exist_ok=True)
         out_widget.write_bytes(bundle_bytes)
@@ -925,7 +576,7 @@ def main(
 
     print(
         f"Fontes (HTML + CSS + JS): {fontes_linhas} linhas | {fontes_bytes / 1024:.1f} KB bruto\n"
-        f"Bundle ({out_widget.relative_to(root)}): {len(bundle.splitlines())} linhas | "
+        f"Bundle ({_rotulo_caminho(out_widget, root)}): {len(bundle.splitlines())} linhas | "
         f"{len(bundle_bytes) / 1024:.1f} KB bruto | {gzip_kb:.1f} KB gzip\n"
         f"Validacao Elementor OK: css_chaves={metricas['css_chaves']}, "
         f"classes_leme={metricas['classes_leme']}, classes_estado={metricas['classes_estado']}, "

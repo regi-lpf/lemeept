@@ -12,7 +12,7 @@ MAIUSCULAS_PT = "A-ZÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ"
 MINUSCULAS_PT = "a-zàáâãäåçèéêëìíîïñòóôõöùúûüý"
 
 TITULACOES_PESSOA_RE = re.compile(
-    r"^\s*(?:prof(?:essor(?:a|\(a\))?|\.?[ªao])?|dr(?:a|\.?[ªa])?|doutor(?:a|\(a\))?|m[ea]|m\.?sc|esp(?:ecialista)?|ph\.?d)"
+    r"^\s*(?:prof(?:essor(?:a|\(a\))?|\.?[ªao])?|dr(?:a|\.?[ªa])?|doutor(?:a|\(a\))?|mestr[ea](?:\(a\))?|m[ea](?=\.)|m\.?sc|esp(?:ecialista)?|ph\.?d)"
     rf"(?:\.(?=\s|:|$|[{MAIUSCULAS_PT}])|(?=[\s:]|$))\s*",
     flags=re.IGNORECASE,
 )
@@ -57,14 +57,19 @@ def normalizar_texto_busca(texto: str) -> str:
     return re.sub(r"\s+", " ", limpo).strip()
 
 
+_INICIO_SUBNOME_RE = re.compile(r"(^|[\-'])([^\W\d_])")
+
+
 def formatar_nome_proprio(nome: str) -> str:
-    """Converte 'GEANDRO CHIARELLI' em 'Geandro Chiarelli' mantendo preposições."""
+    """Converte 'GEANDRO CHIARELLI' em 'Geandro Chiarelli' mantendo preposições e hífens/apóstrofos."""
     limpo = limpar_texto(nome).strip(" ,.;-–—:")
     if not limpo:
         return ""
     palavras = limpo.lower().split(" ")
     return " ".join(
-        p if i > 0 and p in catalogs.PREPOSICOES_NOME else p.capitalize()
+        p
+        if i > 0 and p in catalogs.PREPOSICOES_NOME
+        else _INICIO_SUBNOME_RE.sub(lambda m: m.group(1) + m.group(2).upper(), p)
         for i, p in enumerate(palavras)
     )
 
@@ -127,6 +132,32 @@ def limpar_resumo_publico(resumo: str) -> str:
     return texto.strip()
 
 
+def _proteger_matrizes_compostas(sem_acentos: str) -> Tuple[str, Dict[str, str]]:
+    """Substitui nomes/aliases com '/' ou ' e ' internos antes do split de composições."""
+    candidatos: List[Tuple[str, str]] = []
+    for base in catalogs.BASES_EPISTEMOLOGICAS_CANONICAS:
+        if "/" in base or re.search(r"\be\b", remover_acentos(base), flags=re.IGNORECASE):
+            candidatos.append((remover_acentos(base).lower(), base))
+    for alias, canon in catalogs.ALIASES_BASE_EPISTEMOLOGICA.items():
+        if re.search(r"\be\b", alias):
+            candidatos.append((alias, canon))
+    candidatos.sort(key=lambda item: len(item[0]), reverse=True)
+
+    protegidos: Dict[str, str] = {}
+    atual = sem_acentos
+    for idx, (frase, canon) in enumerate(candidatos):
+        tokens = [re.escape(tk) for tk in re.split(r"[\s/\-]+", frase) if tk]
+        if len(tokens) < 2:
+            continue
+        padrao = r"(?<![a-z0-9])" + r"[\s/\-]+".join(tokens) + r"(?![a-z0-9])"
+        token_marcador = f"__LEME_BASE_{idx}__"
+        novo, qtd = re.subn(padrao, token_marcador, atual, flags=re.IGNORECASE)
+        if qtd > 0:
+            protegidos[token_marcador] = canon
+            atual = novo
+    return atual, protegidos
+
+
 def normalizar_base_epistemologica(valor: Optional[str]) -> Tuple[Optional[str], bool]:
     """
     Mapeia uma matriz epistemológica (ou composição válida de matrizes canônicas)
@@ -144,11 +175,19 @@ def normalizar_base_epistemologica(valor: Optional[str]) -> Tuple[Optional[str],
         return catalogs.ALIASES_BASE_EPISTEMOLOGICA[chave], True
 
     # Suporta composições declaradas entre matrizes canônicas (ex: "MHD e PHC")
-    partes = [p.strip() for p in re.split(r"\s*(?:\be\b|,|;|\+|/)\s*", limpo) if p.strip()]
+    sem_acentos = remover_acentos(limpo).lower()
+    protegido, mapa_protegidos = _proteger_matrizes_compostas(sem_acentos)
+    partes = [
+        p.strip()
+        for p in re.split(r"\s*(?:\be\b|,|;|\+|/)\s*", protegido, flags=re.IGNORECASE)
+        if p.strip()
+    ]
     if len(partes) > 1:
         resolvidas: List[str] = []
         for parte in partes:
-            canon = catalogs.ALIASES_BASE_EPISTEMOLOGICA.get(normalizar_texto_busca(parte))
+            canon = mapa_protegidos.get(parte) or catalogs.ALIASES_BASE_EPISTEMOLOGICA.get(
+                normalizar_texto_busca(parte)
+            )
             if not canon:
                 return limpo, False
             if canon not in resolvidas:

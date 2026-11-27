@@ -4,6 +4,25 @@ Todas as mudanças notáveis do ecossistema **LEME / ProfEPT** (portal analític
 
 ---
 
+## [0.4.1-beta] — Auditoria Anti-Overengineering (Ondas 1–3), Smoke Tests E2E, Performance e UX/Acessibilidade
+
+### Adicionado
+* **Smoke tests E2E em navegador real (`tests/test_frontend_smoke.py`):** suíte automatizada com Playwright + Chromium headless (isolada no grupo `dev`), integrada ao CI ([.github/workflows/ci.yml](.github/workflows/ci.yml)) e como *gate* bloqueante (`verify`) antes do deploy no GitHub Pages ([.github/workflows/pages.yml](.github/workflows/pages.yml)).
+* **Cache incremental por SHA-256 na Etapa 2 (`OPT-02`):** campo `sha256_dissertacao` em `ContratoExtracaoDeterministicaV4` permitindo pular reextração de PDFs inalterados (com flag `--forcar` em `lemeept-extractor extract` para reprocessamento integral) e helper leve `extrair_capa_e_ficha` para ingestão local.
+* **Animação FLIP de reordenação nos rankings e chip de estado vazio:** gráficos horizontais (`renderHorizontalChart`) animam transições verticais de posição (`.is-reordering`, respeitando `prefers-reduced-motion: reduce`), e os painéis de filtros exibem o indicador explícito `"Nenhum filtro ativo"` (`.leme-chip-no-filters`) quando não há recortes selecionados.
+
+### Alterado
+* **Compactação de ~46% no artefato publicado (`OPT-01`):** `public/painel-ept-v4.json` passa a ser serializado de forma minificada e sem o campo redundante `indice_busca.texto_busca_normalizado` (reconstruído em milissegundos no boot do cliente), reduzindo de `1.361,6 KB` para `737,4 KB` brutos (`309,0 KB` → `193,4 KB` gzip).
+* **Simplificação de engenharia (`OE-01`, `OE-03`, `OE-05`, `OE-07`, `FR-05`):** substituição dos ~380 linhas de minificadores/lexers artesanais em `frontend_builder.py` por empacotamento direto `wpautop`-safe; `index.template.html` consolidado como fonte única de `index.html`; unificação dos classificadores de formato/tipologia em `classifiers.py`; validação estrita `ConfigDict(extra="forbid")` em `LemeConfig`; e resolução única de `__version__` (`0.4.1b0`) via `importlib.metadata`.
+* **Performance de rede, LLM e UI (`OPT-03`, `OPT-04`, `OPT-06`):** `requests.Session` compartilhada com pool e retry (`obter_sessao_http`); `@lru_cache` de schemas JSON e rate-limit baseado em `time.monotonic()` em `llm_provider.py` (provedores consolidados em `gemini`, `openrouter`, `ollama` e `llama`); `Intl.Collator("pt-BR")` único, animações via `requestAnimationFrame` (zero `offsetWidth`), cache `memoBase` entre insights e gráficos, e debounce de `120 ms` na busca do modal de ranking.
+
+### Corrigido e Endurecido (Segurança, Dados e WCAG 2.2 AA)
+* **Escrita atômica e segurança (`FR-01..04`, `BUG-03`, `BUG-07`):** gravação atômica via arquivo temporário + `os.replace` em todos os estágios e downloads de PDF; detecção de `;`/`,`, validação de cabeçalho, rejeição de `"---"` e proteção contra *CSV Formula Injection* / *path traversal* na curadoria; escape de `</script>` e fallback seguro no `loader-elementor.html`; prevenção de colisão intra-lote em `resolver_id_estavel` e códigos de saída não-zero em falhas de lote.
+* **Precisão bibliométrica (`BUG-01..02`, `BUG-04..06`, `BUG-08..10`, `EC-01..02`, `EC-04`, `EC-07`, `EC-12`):** janelas centradas nos matches epistemológicos e inclusão de `Aprendizagem Significativa` e `Teoria Crítica`; normalização de chaves em `catalogs.aplicar_overlay`; suporte a composições canônicas (`phc`, barras e `" e "` internos); parser ABNT para prenomes hifenizados (`Jean-Paul`), prenomes curtos ALL-CAPS (`ANA`, `RUI`), sobrenomes `DELLA FONTE`/`CÂMARA`, citações múltiplas com `;` e `LUKÁCS`; `--limite` incremental na Etapa 3, `json.dumps` no prompt OpenRouter e sem retry em erros 4xx; guarda anti-`MP3` (áudio), `Profa. Dra.`, `"Referências bibliográficas"`, deduplicação eduCAPES, handles crus/`&show=full`, `"Ma Li"`, `"Mestre"`/`"Mestra"` e `D'Avila`/`Silva-Santos`.
+* **Acessibilidade e frontend (`FR-08`, `BUG-11..16`, `EC-08`):** alvos táteis elevados para `>= 24×24px` (WCAG 2.2 AA), `tabindex="-1"` em `#leme-controles`, `Escape` progressivo em `#leme-ranking-busca` (limpa busca antes de fechar o modal), fallback de foco em `fecharModal()`, denominador/rótulos corretos para `formato_produto` no modal de ranking, período sem repetição em acervo de ano único e revogação assíncrona de `Blob URL` no export CSV.
+
+---
+
 ## [0.4.0-beta] — Pre-release: Universalização da Pipeline, Empacotamento PyPA (`lemeept-extractor`) e Auditoria Integral
 
 ### Resumo da Pipeline Universalizada (`lemeept-extractor`)

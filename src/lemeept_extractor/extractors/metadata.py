@@ -10,6 +10,7 @@ from lemeept_extractor.normalizers import (
     normalizar_chave_busca,
     normalizar_espacos,
     normalizar_nome_orientador,
+    normalizar_texto_busca,
 )
 
 
@@ -46,7 +47,12 @@ def _eh_nome_pessoa_valido(nome: str) -> bool:
         return False
 
     norm = normalizar_chave_busca(nome)
-    if norm in catalogs.PLACEHOLDERS_COORIENTADOR or any(p in norm for p in ("nao se aplica", "sem coorient")):
+    norm_sem_pont = normalizar_texto_busca(nome)
+    if (
+        norm in catalogs.PLACEHOLDERS_COORIENTADOR
+        or norm_sem_pont in catalogs.PLACEHOLDERS_COORIENTADOR
+        or any(p in norm_sem_pont for p in ("nao se aplica", "sem coorient"))
+    ):
         return False
     if catalogs.PREFIXOS_NAO_PESSOA and norm.startswith(catalogs.PREFIXOS_NAO_PESSOA):
         return False
@@ -134,7 +140,8 @@ def extrair_coorientador(
         _registrar_candidato_pessoa(encontrados, capturado, orient_norm)
 
     padrao_ficha = re.compile(
-        rf";\s*(?i:co[\-–—]?orientador(?:a|\(a\))?)\s+([{MAIUSCULAS_PT}].*?)(?=\.\s*--|\.|;|\n\s*\n|$)",
+        rf";\s*(?i:co[\-–—]?orientador(?:a|\(a\))?)\s+([{MAIUSCULAS_PT}].*?)"
+        r"(?=(?<!\bProf)(?<!\bProfa)(?<!\bProfª)(?<!\bDr)(?<!\bDra)(?<!\bDrª)(?<!\bMe)(?<!\bMa)\.\s*(?:--|\s|$)|;|\n\s*\n|$)",
         flags=re.DOTALL,
     )
     for m in padrao_ficha.finditer(texto):
@@ -144,7 +151,7 @@ def extrair_coorientador(
 
 
 def extrair_palavras_chave_resumo(bloco_resumo: str) -> List[str]:
-    """Extrai palavras-chave do bloco de resumo suportando separadores ';', '.' ou ','."""
+    """Extrai palavras-chave do bloco de resumo suportando separadores ';', ',' ou '.'."""
     match = re.search(
         r"(?:^|\n)\s*Palavras[\s\-–]+chaves?\s*:?\s*(.+?)(?=\n\s*\n|(?:^|\n)\s*(?:Abstract|Keywords)\b|$)",
         bloco_resumo,
@@ -153,7 +160,7 @@ def extrair_palavras_chave_resumo(bloco_resumo: str) -> List[str]:
     if not match:
         return []
     bruto = re.sub(r"\s+", " ", match.group(1)).strip().rstrip(".")
-    sep = ";" if ";" in bruto else ("." if "." in bruto else ",")
+    sep = ";" if ";" in bruto else ("," if "," in bruto else ".")
     return [
         limpa
         for item in bruto.split(sep)
@@ -239,7 +246,11 @@ def _extrair_autor_e_titulo_ficha(ficha: str) -> tuple[str, str]:
 def _extrair_orientador_preliminar(capa: str, ficha: str) -> str:
     for padrao, texto in (
         (r"(?:^|\n)\s*(?!co[\-–—]?orient)orientador(?:a|\(a\))?\s*:\s*([^\n\r]+)", f"{capa}\n{ficha}"),
-        (rf"Orientador(?:a|\(a\))?\s*:?\s*([{MAIUSCULAS_PT}][^\n.;]+)", ficha),
+        (
+            rf"(?<![Cc]o[\-–—])(?<![Cc]o)\bOrientador(?:a|\(a\))?\s*:?\s*([{MAIUSCULAS_PT}][^\n;]+?)"
+            r"(?=(?<!\bProf)(?<!\bProfa)(?<!\bProfª)(?<!\bDr)(?<!\bDra)(?<!\bDrª)(?<!\bMe)(?<!\bMa)\.|;|\n|$)",
+            ficha,
+        ),
     ):
         if not texto:
             continue

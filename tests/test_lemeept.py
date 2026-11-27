@@ -878,7 +878,11 @@ class TestStep4Compile(unittest.TestCase):
             self.assertEqual(rec_final.dissertacao.base_epistemologica.valor, "Pedagogia Histórico-Crítica")
             self.assertTrue(rec_final.dissertacao.base_epistemologica.curado_humano)
             self.assertFalse(rec_final.dissertacao.base_epistemologica.revisao_pendente)
-            self.assertIn("pedagogia historico critica", rec_final.indice_busca.texto_busca_normalizado)
+            self.assertEqual(rec_final.indice_busca.texto_busca_normalizado, "")
+            rec_persistido = json.loads((rec_dir / "EPT-0902.json").read_text(encoding="utf-8"))
+            self.assertIn("pedagogia historico critica", rec_persistido["indice_busca"]["texto_busca_normalizado"])
+            raw_json = (dist_dir / "painel-ept-v4.json").read_text(encoding="utf-8")
+            self.assertNotIn("\n  ", raw_json)
 
     def test_compilar_reconcilia_autores_entre_registros_e_eh_idempotente(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -910,11 +914,12 @@ class TestStep4Compile(unittest.TestCase):
             saida1 = compilar_pipeline_v4(records_dir=rec_dir, output_dir=dist_dir)
             r1 = next(d for d in saida1.defesas if d.id == "EPT-0903")
             self.assertEqual(r1.dissertacao.autores_referenciados, ["Dante Henrique Moura", "Gabriel Kaplún"])
-            self.assertIn("dante henrique moura", r1.indice_busca.texto_busca_normalizado)
+            self.assertEqual(r1.indice_busca.texto_busca_normalizado, "")
 
             # Arquivo individual também foi atualizado e segunda compilação é idempotente
             gravado = ContratoDefesaV4.model_validate_json((rec_dir / "EPT-0903.json").read_text(encoding="utf-8"))
             self.assertEqual(gravado.dissertacao.autores_referenciados, ["Dante Henrique Moura", "Gabriel Kaplún"])
+            self.assertIn("dante henrique moura", gravado.indice_busca.texto_busca_normalizado)
             with self.assertLogs("lemeept_extractor.stages.compile", level="INFO") as logs:
                 compilar_pipeline_v4(records_dir=rec_dir, output_dir=dist_dir)
             self.assertFalse(any("reconciliados em" in m for m in logs.output))
@@ -1363,6 +1368,31 @@ class TestUniversalFrontendBuilder(unittest.TestCase):
         loader_atual = (repo_root / "public" / "loader-elementor.html").read_text(encoding="utf-8")
         self.assertEqual(loader_renderizado.rstrip("\n"), loader_atual.rstrip("\n"))
 
+        index_renderizado = frontend_builder.renderizar_index_template(cfg)
+        index_atual = (repo_root / "index.html").read_text(encoding="utf-8")
+        self.assertEqual(" ".join(index_renderizado.split()), " ".join(index_atual.split()))
+
+    def test_builder_sem_bugs_de_lexer_css_aspas_e_js_regex(self):
+        from lemeept_extractor import frontend_builder
+
+        bundle_ficticio = (
+            '<section id="leme-painel-ept">'
+            '<style>#leme-painel-ept :focus-visible{outline:2px solid #000}\n'
+            '#leme-painel-ept .leme-x::before{content:"\\"{}"}\n'
+            '@keyframes k{0%,100%{opacity:1}}</style>'
+            '<div class="leme-x"></div>'
+            '<script>const HTML_ESCAPE_MAP={"&":"\\u0026amp;","<":"\\u0026lt;",">":"\\u0026gt;","\\"":"\\u0026quot;","\'":"\\u0026#39;"};\n'
+            'function csvEscape(v){return v}\nfunction sanitizarUrl(v){return v}\n'
+            'function f(x){return /["\'(]/.test(x);}</script>'
+            '</section>\n'
+        )
+        metricas = frontend_builder.validar_bundle(bundle_ficticio)
+        self.assertEqual(metricas["css_chaves"], 5)
+
+        js_div = "let x = 4;\nlet a = x++ / 2 // comentario apos divisao\nreturn a;"
+        compactado = frontend_builder.compactar_js_seguro(js_div)
+        self.assertIn("let a = x++ / 2", compactado)
+
     def test_gerar_site_completo_outro_campus_em_diretorio_vazio(self):
         from lemeept_extractor import frontend_builder
 
@@ -1561,6 +1591,739 @@ class TestUniversalFrontendBuilder(unittest.TestCase):
             if len(re.findall(rf"\b{re.escape(fn)}\b", codigo_limpo)) < 2
         ]
         self.assertEqual(funcoes_orfas, [], f"Funcoes JS declaradas sem uso em app.js: {funcoes_orfas}")
+
+
+class TestAuditWave1SecurityAndIO(unittest.TestCase):
+    def test_escrever_atomico_e_download_parcial_nao_deixam_pdf_corrompido(self):
+        from requests import RequestException
+
+        from lemeept_extractor.io_utils import baixar_pdf_com_validacao, escrever_texto_atomico
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            alvo = root / "sub" / "dado.json"
+            escrever_texto_atomico(alvo, '{"ok": true}')
+            self.assertEqual(alvo.read_text(encoding="utf-8"), '{"ok": true}')
+
+            pdf_dest = root / "EPT-0001.pdf"
+
+            class _RespParcial:
+                status_code = 200
+
+                def __enter__(self):
+                    return self
+
+                def __exit__(self, *args):
+                    return False
+
+                def iter_content(self, chunk_size=65536):
+                    yield b"%PDF-1.4\n" + (b"0" * 1500)
+                    raise RequestException("queda no meio do download")
+
+            with patch("lemeept_extractor.io_utils.obter_sessao_http") as mock_sessao:
+                mock_sessao.return_value.get.return_value = _RespParcial()
+                sha, status = baixar_pdf_com_validacao("https://exemplo.edu.br/a.pdf", pdf_dest)
+
+            self.assertEqual(status, "ERRO_HTTP")
+            self.assertEqual(sha, "")
+            self.assertFalse(pdf_dest.exists())
+            self.assertFalse(pdf_dest.with_name(f".{pdf_dest.name}.tmp").exists())
+
+    def test_resolver_id_estavel_evita_colisao_no_mesmo_lote(self):
+        from lemeept_extractor.io_utils import resolver_id_estavel
+
+        mapa = {"https://ex/a.pdf": "EPT-0001"}
+        usados = set()
+        id1, max1, novo1 = resolver_id_estavel(mapa, 1, id_explicito="EPT-0001", ids_usados=usados)
+        id2, max2, novo2 = resolver_id_estavel(mapa, max1, url="https://ex/a.pdf", ids_usados=usados)
+        self.assertEqual(id1, "EPT-0001")
+        self.assertFalse(novo1)
+        self.assertEqual(id2, "EPT-0002")
+        self.assertEqual(max2, 2)
+        self.assertTrue(novo2)
+
+    def test_curadoria_csv_virgula_cabecalho_invalido_traversal_e_formula_injection(self):
+        from lemeept_extractor.models import (
+            BaseEpistemologicaV4,
+            ContratoDefesaV4,
+            DissertacaoFinalV4,
+            IndiceBuscaV4,
+        )
+        from lemeept_extractor.stages.compile import aplicar_curadoria_csv, compilar_pipeline_v4
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            records_dir = root / "records"
+            out_dir = root / "public"
+            records_dir.mkdir()
+            out_dir.mkdir()
+
+            reg = ContratoDefesaV4(
+                id="EPT-0010",
+                ano=2025,
+                autor="Maria Silva",
+                orientador="Joao Lima",
+                instituicao="IFC",
+                campus="Blumenau",
+                linha_pesquisa="LP1",
+                macroprojeto="MP1",
+                dissertacao=DissertacaoFinalV4(
+                    titulo="=SUM(1,2) Dissertacao Teste",
+                    link="https://exemplo.edu.br/10.pdf",
+                    resumo="Resumo",
+                    base_epistemologica=BaseEpistemologicaV4(
+                        valor=None,
+                        candidato="Pedagogia Histórico-Crítica",
+                        confianca="baixa",
+                        revisao_pendente=True,
+                        justificativa="=cmd|'/C calc'!A0",
+                    ),
+                ),
+                indice_busca=IndiceBuscaV4(
+                    texto_busca_normalizado="ept 0010",
+                    termos_unificados=[],
+                    tem_produto_vinculado=False,
+                    tem_resumo=True,
+                ),
+            )
+            (records_dir / "EPT-0010.json").write_text(reg.model_dump_json(indent=2), encoding="utf-8")
+
+            # Compila para gerar CSV sanitizado contra formula injection
+            compilar_pipeline_v4(records_dir=records_dir, output_dir=out_dir)
+            csv_path = out_dir / "revisao_epistemologica_pendente.csv"
+            csv_raw = csv_path.read_text(encoding="utf-8-sig")
+            self.assertIn("'=SUM(1,2)", csv_raw)
+            self.assertIn("'=cmd|", csv_raw)
+
+            # Cabeçalho inválido não pode ser sobrescrito silenciosamente
+            csv_invalido = out_dir / "invalido.csv"
+            csv_invalido.write_text("col_errada;outra\n1;2\n", encoding="utf-8-sig")
+            with self.assertRaises(ValueError):
+                aplicar_curadoria_csv(records_dir=records_dir, relatorio_revisao=csv_invalido)
+            self.assertIn("col_errada", csv_invalido.read_text(encoding="utf-8-sig"))
+
+            # CSV com vírgula + tentativa de path traversal no id
+            csv_virgula = out_dir / "virgula.csv"
+            csv_virgula.write_text(
+                "id,status_curadoria,base_epistemologica_aprovada\n"
+                "../evil,APROVADO,Teoria Crítica\n"
+                "EPT-0010,APROVADO,Teoria Crítica\n",
+                encoding="utf-8-sig",
+            )
+            atualizados = aplicar_curadoria_csv(records_dir=records_dir, relatorio_revisao=csv_virgula)
+            self.assertEqual(atualizados, 1)
+            salvo = json.loads((records_dir / "EPT-0010.json").read_text(encoding="utf-8"))
+            self.assertEqual(salvo["dissertacao"]["base_epistemologica"]["valor"], "Teoria Crítica")
+            self.assertTrue(salvo["dissertacao"]["base_epistemologica"]["curado_humano"])
+
+    def test_loader_escapa_fechamento_script_e_extract_retorna_codigo_erro(self):
+        from lemeept_extractor.frontend_builder import DEFAULT_FRONTEND_CONFIG, renderizar_loader_template
+        from lemeept_extractor.stages.extract import main as extract_main
+
+        cfg = {**DEFAULT_FRONTEND_CONFIG, "loader_erro_log": "Erro </script><script>alert(1)</script>"}
+        loader = renderizar_loader_template(cfg)
+        self.assertNotIn("Erro </script>", loader)
+        self.assertIn(r"<\/script>", loader)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            manifesto = Path(tmp) / "manifest.json"
+            manifesto.write_text(
+                json.dumps({"registros": [{"id": "EPT-0099", "fonte_profept": {}, "arquivos": {"pdf_dissertacao_path": "/nao/existe.pdf"}}]}),
+                encoding="utf-8",
+            )
+            rc = extract_main(["--manifesto", str(manifesto), "--saida-dir", tmp])
+            self.assertEqual(rc, 1)
+
+
+class TestAuditWave1Bibliometrics(unittest.TestCase):
+    def test_janelas_epistemologicas_centradas_e_novas_matrizes(self):
+        from lemeept_extractor.extractors.pdf_sections import isolar_secoes_pdf
+
+        intro = "1 INTRODUÇÃO\n" + ("Texto contextual introdutório. " * 25)
+        bloco_longo = ("Contextualização preliminar extensa. " * 45) + (
+            "A análise ancora-se em David Ausubel e na aprendizagem significativa com subsunçores."
+            " "
+        ) + ("Consideração complementar final. " * 15)
+        bloco_adorno = ("Discussão inicial. " * 45) + (
+            "Sob a ótica da Teoria Crítica, Adorno e Horkheimer discutem a semiformação."
+        )
+        paginas = [
+            (1, "Capa"),
+            (8, intro),
+            (15, bloco_longo),
+            (16, bloco_adorno),
+            (30, "REFERÊNCIAS\nAUSUBEL, David. Psicologia Educacional. 1980."),
+        ]
+        recortes, _ = isolar_secoes_pdf(paginas)
+        textos = [t.texto for t in recortes.trechos_epistemologicos]
+        self.assertTrue(any("Ausubel" in tx for tx in textos))
+        self.assertTrue(any("Adorno" in tx for tx in textos))
+
+    def test_overlay_normaliza_acentos_e_base_composta_com_phc_e_barra(self):
+        from lemeept_extractor.config import CatalogosConfig, LemeConfig, usar_config
+        from lemeept_extractor.normalizers import normalizar_base_epistemologica, normalizar_nome_orientador
+        from lemeept_extractor.references import extrair_autores_referencias
+
+        cfg = LemeConfig(
+            catalogos=CatalogosConfig(
+                aliases_docentes={"Fátima Silva": "Fátima Silva"},
+                stopwords_entidade=["São José"],
+            )
+        )
+        with usar_config(cfg):
+            self.assertEqual(normalizar_nome_orientador("Fatima Silva"), "Fátima Silva")
+            self.assertEqual(extrair_autores_referencias("SÃO JOSÉ. Plano Diretor. 2022."), [])
+
+        self.assertEqual(
+            normalizar_base_epistemologica("MHD e PHC"),
+            ("Materialismo Histórico-Dialético e Pedagogia Histórico-Crítica", True),
+        )
+        self.assertEqual(
+            normalizar_base_epistemologica("MHD E Teoria Crítica"),
+            ("Materialismo Histórico-Dialético e Teoria Crítica", True),
+        )
+        self.assertEqual(
+            normalizar_base_epistemologica("Educação Libertadora / Freireana e Teoria Crítica"),
+            ("Educação Libertadora / Freireana e Teoria Crítica", True),
+        )
+        self.assertEqual(
+            normalizar_base_epistemologica("Materialismo Histórico e Dialético e Pedagogia Histórico-Crítica"),
+            ("Materialismo Histórico-Dialético e Pedagogia Histórico-Crítica", True),
+        )
+
+    def test_abnt_prenomes_compostos_tres_letras_e_sobrenomes_recuperados(self):
+        from lemeept_extractor.references import extrair_autores_referencias
+
+        refs = "\n".join(
+            [
+                "SARTRE, Jean-Paul. O ser e o nada. Petrópolis: Vozes, 2007.",
+                "ROUSSEAU, Jean-Jacques. Emílio. São Paulo: Martins Fontes, 2004.",
+                "SILVA, ANA. Didática em EPT. Florianópolis: IFC, 2021.",
+                "COSTA, RUI. Trabalho e Educação. Campinas: Autores Associados, 2020.",
+                "DELLA FONTE, Sandra Soares. Formação humana. Vitória: Ifes, 2018.",
+                "CÂMARA, Joaquim Mattoso. Princípios de linguística. Petrópolis: Vozes, 1979.",
+            ]
+        )
+        autores = extrair_autores_referencias(refs)
+        self.assertEqual(
+            autores,
+            [
+                "Ana Silva",
+                "Jean-Jacques Rousseau",
+                "Jean-Paul Sartre",
+                "Joaquim Mattoso Câmara",
+                "Rui Costa",
+                "Sandra Soares Della Fonte",
+            ],
+        )
+
+
+class TestAuditWave1LLMAndStep3(unittest.TestCase):
+    def test_llm_provider_json_dumps_llama_sem_ollama_options_e_erro_4xx_sem_retry(self):
+        from openai import APIStatusError
+
+        # OpenRouter: usa json.dumps no prompt (aspas duplas válidas) e não retenta 401
+        with patch.dict(
+            os.environ,
+            {"LLM_PROVIDER": "openrouter", "OPENROUTER_API_KEY": "k", "LLM_DELAY": "0"},
+            clear=True,
+        ):
+            client = LLMClient()
+            resp_ok = SimpleNamespace(
+                choices=[SimpleNamespace(message=SimpleNamespace(content='{"macroprojeto":"MP1"}'))]
+            )
+            client.openai_client.chat.completions.create = MagicMock(return_value=resp_ok)
+            saida = client.gerar_estruturado("sys", "usr", RespostaInterpretativaLLM, max_retries=2)
+            self.assertEqual(saida, '{"macroprojeto":"MP1"}')
+            user_msg = client.openai_client.chat.completions.create.call_args.kwargs["messages"][1]["content"]
+            self.assertIn('"additionalProperties": false', user_msg)
+            self.assertNotIn("'additionalProperties': False", user_msg)
+
+            req_fake = SimpleNamespace(url="https://openrouter.ai", method="POST", headers={})
+            resp_401 = SimpleNamespace(request=req_fake, status_code=401, headers={})
+            err_401 = APIStatusError("unauthorized", response=resp_401, body=None)
+            client.openai_client.chat.completions.create = MagicMock(side_effect=err_401)
+            with patch("lemeept_extractor.llm_provider.time.sleep") as mock_sleep:
+                with self.assertRaises(APIStatusError):
+                    client.gerar_estruturado("sys", "usr", RespostaInterpretativaLLM, max_retries=3)
+                mock_sleep.assert_not_called()
+                self.assertEqual(client.openai_client.chat.completions.create.call_count, 1)
+
+        # llama: não envia extra_body.options do Ollama e valida resposta vazia
+        with patch.dict(
+            os.environ,
+            {"LLM_PROVIDER": "llama", "LLM_NUM_CTX": "4096", "LLM_THINK": "false", "LLM_DELAY": "0"},
+            clear=True,
+        ):
+            client_llama = LLMClient()
+            client_llama.openai_client.chat.completions.create = MagicMock(
+                return_value=SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(content=None))])
+            )
+            with self.assertRaises(ValueError):
+                client_llama.gerar_estruturado("sys", "usr", RespostaInterpretativaLLM, max_retries=1)
+            kwargs_llama = client_llama.openai_client.chat.completions.create.call_args.kwargs
+            self.assertNotIn("extra_body", kwargs_llama)
+
+    def test_limite_incremental_etapa3_ignora_ja_processados(self):
+        from lemeept_extractor.stages.llm import executar_etapa3
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            s2 = root / "stage2"
+            rec = root / "records"
+            s2.mkdir()
+            rec.mkdir()
+            skill = root / "SKILL.md"
+            skill.write_text("# SKILL\n", encoding="utf-8")
+
+            for idx in (1, 2, 3):
+                cod = f"EPT-000{idx}"
+                payload = ContratoExtracaoDeterministicaV4(
+                    id=cod,
+                    metadados_resolvidos=MetadadosResolvidos(
+                        ano=2025,
+                        autor=f"Autor {idx}",
+                        orientador="Orientador A",
+                        instituicao="IFC",
+                        campus="Blumenau",
+                        linha_pesquisa="LP1",
+                        macroprojeto="MP1",
+                        sem_produto=True,
+                    ),
+                    dissertacao_deterministica=DissertacaoDeterministica(
+                        titulo=f"Dissertacao {idx}",
+                        link=f"https://ex/{idx}.pdf",
+                        palavras_chave=["EPT"],
+                        autores_referenciados=["Paulo Freire"],
+                    ),
+                    evidencias_educapes=EvidenciasEduCAPES(),
+                    recortes_textuais=RecortesTextuais(resumo="Resumo teste."),
+                )
+                (s2 / f"{cod}.json").write_text(payload.model_dump_json(), encoding="utf-8")
+
+            # EPT-0001 e EPT-0002 já existem no destino
+            (rec / "EPT-0001.json").write_text("{}", encoding="utf-8")
+            (rec / "EPT-0002.json").write_text("{}", encoding="utf-8")
+
+            resposta_ok = json.dumps(
+                {
+                    "macroprojeto": "MP1",
+                    "base_epistemologica": {
+                        "valor": "Pedagogia Histórico-Crítica",
+                        "candidato": None,
+                        "confianca": "alta",
+                        "justificativa": "Fundamentação explícita.",
+                        "evidencias": [],
+                    },
+                },
+                ensure_ascii=False,
+            )
+
+            with patch("lemeept_extractor.stages.llm.LLMClient") as mock_cls:
+                mock_cls.return_value.gerar_estruturado.return_value = resposta_ok
+                falhas = executar_etapa3(
+                    limite=1,
+                    skill_path=skill,
+                    stage2_dir=s2,
+                    records_dir=rec,
+                    somente_dissertacoes=True,
+                )
+
+            self.assertEqual(falhas, 0)
+            self.assertEqual(mock_cls.return_value.gerar_estruturado.call_count, 1)
+            self.assertTrue((rec / "EPT-0003.json").exists())
+
+
+class TestAuditWave1FrontendBuilder(unittest.TestCase):
+    def test_frontend_builder_output_dir_absoluto_fora_do_root(self):
+        from lemeept_extractor.frontend_builder import main as fb_main
+
+        with tempfile.TemporaryDirectory() as tmp:
+            out_dir = Path(tmp) / "saida_externa"
+            rc = fb_main(
+                [
+                    "--root",
+                    str(PROJECT_ROOT),
+                    "--from-template",
+                    "--emit-loader",
+                    "--output-dir",
+                    str(out_dir),
+                ]
+            )
+            self.assertEqual(rc, 0)
+            self.assertTrue((out_dir / "widget-elementor.html").exists())
+            self.assertTrue((out_dir / "loader-elementor.html").exists())
+
+
+class TestAuditWave2ExtractorsAndCLI(unittest.TestCase):
+    def test_mp3_audio_nao_vira_macroprojeto_e_titulacao_com_ponto(self):
+        from lemeept_extractor.extractors.classifiers import classificar_produto_regex, detectar_macroprojeto_e_linha
+        from lemeept_extractor.extractors.metadata import (
+            _eh_nome_pessoa_valido,
+            _extrair_orientador_preliminar,
+            extrair_coorientador,
+            extrair_palavras_chave_resumo,
+        )
+
+        self.assertEqual(
+            detectar_macroprojeto_e_linha("Podcast gravado em formato mp3 de 12 MB."),
+            ("MP_INDEFINIDO", "LP_INDEFINIDA"),
+        )
+        self.assertEqual(
+            classificar_produto_regex("Sequência didática com uso do aplicativo educacional Scratch"),
+            "material_didatico_instrucional",
+        )
+        self.assertFalse(_eh_nome_pessoa_valido("N/A"))
+        self.assertEqual(
+            extrair_coorientador("; coorientadora Profa. Dra. Maria da Silva. -- 2024."),
+            ["Maria da Silva"],
+        )
+        self.assertEqual(
+            _extrair_orientador_preliminar("", "Orientador(a): Prof. Dr. João Carlos Souza.\nCoorientador: Ana."),
+            "João Carlos Souza",
+        )
+        self.assertEqual(
+            extrair_palavras_chave_resumo("Palavras-chave: E.P.T., Ensino Médio, Currículo."),
+            ["E.P.T", "Ensino Médio", "Currículo"],
+        )
+
+    def test_educapes_deduplica_meta_e_tabela_e_ifc_html_tags_filhas(self):
+        import io
+        from contextlib import redirect_stdout
+
+        from collectors.ifc_blumenau import extrair_defesas_do_html
+        from lemeept_extractor import cli
+        from lemeept_extractor.extractors.educapes import _extrair_metadados_html_educapes
+
+        html_capes = (
+            '<html><head>'
+            '<meta name="dc.creator" content="Silva, Joao" />'
+            '<meta name="dc.contributor" content="Souza, Maria" />'
+            '<meta name="dc.identifier" content="10.1234/abc" />'
+            '</head><body><table>'
+            '<tr><td>dc.contributor.author</td><td>Silva, Joao</td></tr>'
+            '<tr><td>dc.contributor</td><td>Souza, Maria</td></tr>'
+            '<tr><td>dc.identifier.doi</td><td>10.1234/abc</td></tr>'
+            '</table></body></html>'
+        )
+        meta = _extrair_metadados_html_educapes(html_capes, "https://educapes.capes.gov.br/handle/capes/100")
+        self.assertEqual(len(meta["autores_colab"]), 2)
+        self.assertEqual(
+            [i for i in meta["identificadores"] if i["valor"] == "10.1234/abc"],
+            [{"esquema": "doi", "valor": "10.1234/abc", "url": ""}],
+        )
+
+        html_ifc = (
+            "<h3>DEFESAS 2025</h3>"
+            "<ul>"
+            "<li>Acadêmico: Fulano de Tal</li>"
+            "<li>Orientador(a): Prof. Dr. Beltrano</li>"
+            '<li>Dissertação: <a href="https://ex/d.pdf">Estudo sobre <strong>DEFESAS 2024</strong></a></li>'
+            '<li>Produto Educacional: <a href="https://educapes.capes.gov.br/handle/capes/99">Cartilha – Guia</a></li>'
+            "</ul>"
+        )
+        defesas = extrair_defesas_do_html(html_ifc)
+        self.assertEqual(len(defesas), 1)
+        self.assertEqual(defesas[0].ano, 2025)
+        self.assertEqual(defesas[0].orientador_bruto, "Beltrano")
+        self.assertEqual(defesas[0].handle_educapes, "https://educapes.capes.gov.br/handle/capes/99")
+
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            self.assertEqual(cli.main([]), 0)
+        self.assertIn("subcomandos", buf.getvalue())
+        with self.assertRaises(SystemExit) as cm1:
+            cli.main(["--config"])
+        self.assertEqual(cm1.exception.code, 2)
+        with self.assertRaises(SystemExit) as cm2:
+            cli.main(["--config=", "extract"])
+        self.assertEqual(cm2.exception.code, 2)
+
+
+class TestAuditWave2Optimizations(unittest.TestCase):
+    def test_etapa2_cache_sha256_pula_pdf_e_forcar_reprocessa(self):
+        import pymupdf
+
+        from lemeept_extractor.io_utils import calcular_sha256
+        from lemeept_extractor.stages.extract import executar_etapa2
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmp = Path(tmpdir)
+            pdf_path = tmp / "diss.pdf"
+            doc = pymupdf.open()
+            page = doc.new_page()
+            page.insert_text((72, 72), "Dissertacao EPT\nResumo\nPalavras-chave: EPT.")
+            doc.save(pdf_path)
+            doc.close()
+
+            manifesto = {
+                "versao_schema": "4.0.0",
+                "total_registros": 1,
+                "registros": [
+                    {
+                        "id": "EPT-9901",
+                        "fonte_profept": {
+                            "titulo_bruto": "Estudo Teste EPT",
+                            "autor_bruto": "Ana Silva",
+                            "orientador_bruto": "João Souza",
+                            "ano": 2024,
+                            "instituicao": "IFC",
+                            "campus": "Blumenau",
+                            "sem_produto": True,
+                        },
+                        "arquivos": {
+                            "pdf_dissertacao_path": str(pdf_path),
+                            "sha256_pdf": calcular_sha256(pdf_path),
+                            "status_download": "OK",
+                        },
+                    }
+                ],
+            }
+            manifest_path = tmp / "manifest.json"
+            out_dir = tmp / "stage2"
+            cache_dir = tmp / "cache"
+            manifest_path.write_text(json.dumps(manifesto), encoding="utf-8")
+
+            self.assertEqual(
+                executar_etapa2(manifest_path=manifest_path, output_dir=out_dir, cache_dir=cache_dir),
+                0,
+            )
+            payload = json.loads((out_dir / "EPT-9901.json").read_text(encoding="utf-8"))
+            self.assertEqual(payload["sha256_dissertacao"], calcular_sha256(pdf_path))
+
+            with patch(
+                "lemeept_extractor.stages.extract.ler_paginas_pdf",
+                side_effect=AssertionError("Etapa 2 deveria pular PDF com SHA-256 em cache"),
+            ):
+                self.assertEqual(
+                    executar_etapa2(manifest_path=manifest_path, output_dir=out_dir, cache_dir=cache_dir),
+                    0,
+                )
+
+            with patch(
+                "lemeept_extractor.stages.extract.ler_paginas_pdf",
+                return_value=[(1, "Texto forcado")],
+            ) as mock_ler:
+                self.assertEqual(
+                    executar_etapa2(
+                        manifest_path=manifest_path,
+                        output_dir=out_dir,
+                        cache_dir=cache_dir,
+                        forcar=True,
+                    ),
+                    0,
+                )
+            self.assertEqual(mock_ler.call_count, 1)
+
+    def test_sessao_http_reutilizada_e_llm_schema_cache_rate_limit(self):
+        from requests.adapters import HTTPAdapter
+
+        from lemeept_extractor.io_utils import obter_sessao_http
+        from lemeept_extractor.llm_provider import (
+            LLMClient,
+            _obter_schema_gemini,
+            _obter_schema_openai_compat,
+        )
+        from lemeept_extractor.models import RespostaInterpretativaLLM
+
+        s1 = obter_sessao_http()
+        s2 = obter_sessao_http()
+        self.assertIs(s1, s2)
+        self.assertIsInstance(s1.adapters["https://"], HTTPAdapter)
+        self.assertIsInstance(s1.adapters["http://"], HTTPAdapter)
+
+        self.assertIs(
+            _obter_schema_gemini(RespostaInterpretativaLLM),
+            _obter_schema_gemini(RespostaInterpretativaLLM),
+        )
+        self.assertIs(
+            _obter_schema_openai_compat(RespostaInterpretativaLLM),
+            _obter_schema_openai_compat(RespostaInterpretativaLLM),
+        )
+
+        env = {"LLM_PROVIDER": "gemini", "GEMINI_API_KEY": "fake-key", "LLM_DELAY": "2.0"}
+        fake_resp = MagicMock()
+        fake_resp.text = '{"ok": true}'
+        with patch.dict(os.environ, env, clear=True), patch(
+            "lemeept_extractor.llm_provider.genai.Client"
+        ) as mock_client, patch("lemeept_extractor.llm_provider.time.sleep") as mock_sleep:
+            mock_client.return_value.models.generate_content.return_value = fake_resp
+            client = LLMClient()
+            client.gerar_estruturado("sys", "user1", RespostaInterpretativaLLM, max_retries=1)
+            mock_sleep.assert_not_called()
+
+            client.gerar_estruturado("sys", "user2", RespostaInterpretativaLLM, max_retries=1)
+            mock_sleep.assert_called_once()
+            espera = mock_sleep.call_args.args[0]
+            self.assertGreater(espera, 0.0)
+            self.assertLessEqual(espera, 2.0)
+
+    def test_frontend_sem_offsetwidth_nem_localecompare(self):
+        app_js = (PROJECT_ROOT / "frontend" / "app.js").read_text(encoding="utf-8")
+        bundle = (PROJECT_ROOT / "public" / "widget-elementor.html").read_text(encoding="utf-8")
+        for conteudo in (app_js, bundle):
+            self.assertNotIn("offsetWidth", conteudo)
+            self.assertNotIn("localeCompare", conteudo)
+            self.assertIn("Intl.Collator", conteudo)
+            self.assertIn("requestAnimationFrame", conteudo)
+
+
+class TestAuditWave3PipelineAndConfig(unittest.TestCase):
+    def test_config_strict_extra_forbid_e_versao_unificada(self):
+        from pydantic import ValidationError
+
+        import lemeept_extractor
+        from lemeept_extractor import frontend_builder, io_utils
+        from lemeept_extractor.config import carregar_config
+
+        self.assertIn(lemeept_extractor.__version__, io_utils.DEFAULT_HEADERS["User-Agent"])
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            toml_bad = Path(tmpdir) / "bad.toml"
+            toml_bad.write_text('[instituicao]\ncampu = "Typo"\n', encoding="utf-8")
+            with self.assertRaises(ValidationError):
+                carregar_config(toml_bad, auto_detect=False)
+
+            toml_fe_bad = Path(tmpdir) / "fe_bad.toml"
+            toml_fe_bad.write_text('[frontend]\ntitlo = "Typo"\n', encoding="utf-8")
+            with self.assertRaises(ValueError):
+                frontend_builder.carregar_config_frontend(toml_fe_bad)
+
+    def test_educapes_pdf_sections_e_normalizers_edge_cases(self):
+        from lemeept_extractor.extractors.educapes import coletar_evidencias_educapes
+        from lemeept_extractor.extractors.pdf_sections import isolar_secoes_pdf
+        from lemeept_extractor.normalizers import formatar_nome_proprio, limpar_nome_pessoa
+
+        self.assertEqual(limpar_nome_pessoa("Ma Li"), "Ma Li")
+        self.assertEqual(limpar_nome_pessoa("Me. João Silva"), "João Silva")
+        self.assertEqual(limpar_nome_pessoa("Mestra Ana Costa"), "Ana Costa")
+        self.assertEqual(formatar_nome_proprio("MARIA D'AVILA SILVA-SANTOS"), "Maria D'Avila Silva-Santos")
+
+        paginas_curtas = [
+            (1, "Capa do trabalho"),
+            (2, "Verso em branco"),
+            (3, "Folha de rosto\nAutor X"),
+            (4, "RESUMO\nTexto do resumo.\nPalavras-chave: EPT."),
+            (5, "Materialismo histórico-dialético conforme (FREIRE, 1987; SAVIANI, 2008; LUKÁCS, 2013). " + ("x " * 70)),
+            (6, "REFERÊNCIAS\nLUKÁCS, György. Para uma ontologia do ser social. São Paulo: Boitempo, 2013."),
+        ]
+        recortes, _ = isolar_secoes_pdf(paginas_curtas)
+        self.assertIn("Folha de rosto", recortes.capa)
+        self.assertTrue(any("SAVIANI" in t.citacoes_detectadas or any("SAVIANI" in c for c in t.citacoes_detectadas) for t in recortes.trechos_epistemologicos))
+        self.assertTrue(any("LUKÁCS" in r for r in recortes.referencias_filtradas))
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            cache_dir = Path(tmpdir) / "cache_novo"
+            fake_resp = MagicMock(status_code=200, text="<html><head><title>Cartilha</title></head></html>")
+            with patch("lemeept_extractor.extractors.educapes.obter_sessao_http") as mock_sess:
+                mock_sess.return_value.get.return_value = fake_resp
+                ev = coletar_evidencias_educapes(
+                    handle_url="capes/1234?locale=pt_BR",
+                    titulo_produto_bruto="Cartilha",
+                    resumo_pdf="",
+                    descricao_produto_pdf="",
+                    cache_dir=cache_dir,
+                )
+            url_chamada = mock_sess.return_value.get.call_args.args[0]
+            self.assertEqual(url_chamada, "https://educapes.capes.gov.br/handle/capes/1234?locale=pt_BR&show=full")
+            self.assertTrue((cache_dir / "capes_1234_locale_pt_BR.html").exists())
+            self.assertEqual(ev.tipo_produto_regex, "material_didatico_instrucional")
+
+    def test_curadoria_rejeita_tracos_llm_indexa_instituicao_e_extract_rejeita_status_erro(self):
+        from lemeept_extractor.stages.compile import aplicar_curadoria_csv
+        from lemeept_extractor.stages.extract import executar_etapa2
+        from lemeept_extractor.stages.llm import construir_indice_busca, executar_etapa3
+
+        indice = construir_indice_busca(
+            {
+                "id": "EPT-0001",
+                "ano": 2024,
+                "autor": "Ana",
+                "orientador": "João",
+                "instituicao": "IFSC Florianópolis",
+                "campus": "Centro",
+                "dissertacao": {"titulo": "Estudo", "resumo": "Texto curto", "base_epistemologica": {}},
+                "produto": {},
+            }
+        )
+        self.assertIn("ifsc florianopolis", indice["texto_busca_normalizado"])
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmp = Path(tmpdir)
+            records_dir = tmp / "records"
+            records_dir.mkdir()
+            rec = {
+                "id": "EPT-0800",
+                "ano": 2024,
+                "autor": "Ana",
+                "orientador": "João",
+                "coorientadores": [],
+                "campus": "Blumenau",
+                "linha_pesquisa": "LP1",
+                "macroprojeto": "MP1",
+                "dissertacao": {
+                    "titulo": "Estudo",
+                    "link": "",
+                    "resumo": "",
+                    "palavras_chave": [],
+                    "base_epistemologica": {"valor": None, "candidato": None, "confianca": "baixa", "justificativa": "", "revisao_pendente": True, "curado_humano": False},
+                    "autores_referenciados": [],
+                },
+                "produto": {
+                    "titulo": "Sem produto",
+                    "tipo": "outro",
+                    "formato": None,
+                    "nivel_aplicacao": "Não informado",
+                    "publico_alvo": ["nao_identificado"],
+                    "link": "",
+                    "palavras_chave": [],
+                    "data_publicacao": None,
+                },
+                "indice_busca": {"texto_busca_normalizado": "", "termos_unificados": [], "tem_produto_vinculado": False, "tem_resumo": False},
+            }
+            (records_dir / "EPT-0800.json").write_text(json.dumps(rec), encoding="utf-8")
+            csv_path = tmp / "rev.csv"
+            csv_path.write_text(
+                "id;ano;autor;titulo_dissertacao;base_sugerida;candidato_sugerido;confianca;justificativa_llm;status_curadoria;base_epistemologica_aprovada\n"
+                "EPT-0800;2024;Ana;Estudo;;;baixa;;APROVADO;---\n",
+                encoding="utf-8",
+            )
+            self.assertEqual(aplicar_curadoria_csv(records_dir=records_dir, relatorio_revisao=csv_path), 0)
+
+            stage2_dir = tmp / "stage2"
+            stage2_dir.mkdir()
+            skill = tmp / "SKILL.md"
+            skill.write_text("Instruções", encoding="utf-8")
+            with patch.dict(os.environ, {"LLM_PROVIDER": "ollama"}, clear=True), self.assertLogs(
+                "lemeept_extractor.stages.llm", level="WARNING"
+            ) as logs:
+                executar_etapa3(
+                    sobrescrever=False,
+                    forcar_curados=True,
+                    skill_path=skill,
+                    stage2_dir=stage2_dir,
+                    records_dir=records_dir,
+                )
+            self.assertTrue(any("--forcar-curados" in m for m in logs.output))
+
+            manifest_err = tmp / "manifest_err.json"
+            manifest_err.write_text(
+                json.dumps(
+                    {
+                        "versao_schema": "4.0.0",
+                        "total_registros": 1,
+                        "registros": [
+                            {
+                                "id": "EPT-0801",
+                                "fonte_profept": {"titulo_bruto": "T", "autor_bruto": "A", "orientador_bruto": "O", "ano": 2024},
+                                "arquivos": {"pdf_dissertacao_path": str(tmp / "x.pdf"), "status_download": "ERRO_HTTP"},
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            self.assertEqual(executar_etapa2(manifest_path=manifest_err, output_dir=stage2_dir, cache_dir=tmp / "cache"), 1)
 
 
 if __name__ == "__main__":

@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import Optional, Sequence
 
 from lemeept_extractor.config import LemeConfig, aplicar_config
+from lemeept_extractor.io_utils import calcular_sha256, escrever_json_atomico
 from lemeept_extractor.extractors import (
     classificar_formato_produto_com_fonte,
     classificar_produto_com_fonte,
@@ -52,6 +53,7 @@ def executar_etapa2(
     target_id: Optional[str] = None,
     somente_dissertacoes: bool = False,
     config: Optional[LemeConfig] = None,
+    forcar: bool = False,
 ):
     if config is not None:
         aplicar_config(config)
@@ -75,16 +77,38 @@ def executar_etapa2(
     print(f"Iniciando Etapa 2 para {len(registros)} defesas...")
 
     processados = 0
+    pulados = 0
     erros = []
 
     for item in registros:
-        cod = item["id"]
-        fonte = item["fonte_profept"]
-        pdf_path = Path(item["arquivos"]["pdf_dissertacao_path"])
+        cod = str(item.get("id", "<sem-id>")) if isinstance(item, dict) else "<invalido>"
 
         try:
+            cod = item["id"]
+            fonte = item["fonte_profept"]
+            arquivos_item = item["arquivos"]
+            status_dl = arquivos_item.get("status_download")
+            if status_dl is not None and status_dl != "OK":
+                raise RuntimeError(f"PDF indisponível para {cod} (status_download={status_dl})")
+            pdf_path = Path(arquivos_item["pdf_dissertacao_path"])
             if not pdf_path.exists():
                 raise FileNotFoundError(f"PDF ausente: {pdf_path}")
+
+            sem_produto = somente_dissertacoes or cfg_sem_produto or bool(fonte.get("sem_produto", False))
+            sha_pdf = calcular_sha256(pdf_path)
+            out_file = output_dir / f"{cod}.json"
+            if not forcar and out_file.exists():
+                try:
+                    dados_exist = json.loads(out_file.read_text(encoding="utf-8"))
+                except (OSError, ValueError, TypeError):
+                    dados_exist = None
+                if (
+                    isinstance(dados_exist, dict)
+                    and dados_exist.get("sha256_dissertacao") == sha_pdf
+                    and bool((dados_exist.get("metadados_resolvidos") or {}).get("sem_produto", False)) == sem_produto
+                ):
+                    pulados += 1
+                    continue
 
             paginas = ler_paginas_pdf(pdf_path)
             texto_full_pdf = "\n".join(txt for _, txt in paginas)
@@ -97,10 +121,16 @@ def executar_etapa2(
             autor_bruto = (fonte.get("autor_bruto") or "").strip()
             orientador_bruto = (fonte.get("orientador_bruto") or "").strip()
             ano_bruto = int(fonte.get("ano") or 0)
-            sem_produto = somente_dissertacoes or cfg_sem_produto or bool(fonte.get("sem_produto", False))
 
             prelim = {}
-            if not titulo_bruto or not autor_bruto or not orientador_bruto or ano_bruto == 0:
+            if (
+                not titulo_bruto
+                or not autor_bruto
+                or not orientador_bruto
+                or ano_bruto == 0
+                or not fonte.get("instituicao")
+                or not fonte.get("campus")
+            ):
                 prelim = extrair_metadados_preliminares_pdf(
                     recortes.capa,
                     recortes.ficha_catalografica,
@@ -145,6 +175,7 @@ def executar_etapa2(
 
             payload = ContratoExtracaoDeterministicaV4(
                 id=cod,
+                sha256_dissertacao=sha_pdf,
                 metadados_resolvidos=MetadadosResolvidos(
                     ano=ano_final,
                     autor=autor_limpo,
@@ -166,9 +197,7 @@ def executar_etapa2(
                 recortes_textuais=recortes,
             )
 
-            out_file = output_dir / f"{cod}.json"
-            with open(out_file, "w", encoding="utf-8") as out:
-                json.dump(payload.model_dump(), out, ensure_ascii=False, indent=2)
+            escrever_json_atomico(out_file, payload.model_dump())
 
             processados += 1
             if processados % 15 == 0 or processados == len(registros):
@@ -179,9 +208,11 @@ def executar_etapa2(
             print(f"  [ERRO] {cod}: {e}")
 
     print("\n--- Resumo Etapa 2 ---")
-    print(f"Payloads gerados com sucesso: {processados}/{len(registros)}")
+    extra_cache = f" (pulados em cache: {pulados})" if pulados else ""
+    print(f"Payloads gerados com sucesso: {processados}/{len(registros)}{extra_cache}")
     if erros:
         print(f"Falhas ({len(erros)}): {erros}")
+    return len(erros)
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -197,6 +228,12 @@ def _build_parser() -> argparse.ArgumentParser:
         help="Ignora coleta de evidências de produto educacional (modo somente dissertações).",
     )
     parser.add_argument(
+        "--forcar",
+        action="store_true",
+        default=False,
+        help="Reprocessa todos os PDFs mesmo quando o payload em cache possui o mesmo SHA-256.",
+    )
+    parser.add_argument(
         "--config",
         type=Path,
         default=None,
@@ -208,15 +245,16 @@ def _build_parser() -> argparse.ArgumentParser:
 def main(argv: Optional[Sequence[str]] = None) -> int:
     args = _build_parser().parse_args(argv)
     cfg = aplicar_config(config_path=args.config)
-    executar_etapa2(
+    qtd_erros = executar_etapa2(
         manifest_path=args.manifesto,
         output_dir=args.saida_dir,
         cache_dir=args.cache_dir,
         target_id=args.target_id,
         somente_dissertacoes=args.somente_dissertacoes,
         config=cfg,
+        forcar=args.forcar,
     )
-    return 0
+    return 1 if qtd_erros > 0 else 0
 
 
 if __name__ == "__main__":

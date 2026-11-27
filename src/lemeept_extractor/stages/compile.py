@@ -1,13 +1,16 @@
 import argparse
 import csv
+import io
 import json
 import logging
+import re
 from datetime import datetime, timezone
 from enum import Enum
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence
 
 from lemeept_extractor.config import aplicar_config
+from lemeept_extractor.io_utils import escrever_texto_atomico
 from lemeept_extractor.models import ContratoDefesaV4, PainelEptV4Output
 from lemeept_extractor.normalizers import normalizar_base_epistemologica
 from lemeept_extractor.references import reconciliar_autores_referenciados
@@ -18,8 +21,31 @@ logger = logging.getLogger("lemeept_extractor.stages.compile")
 
 RECORDS_DIR = Path("data/records")
 OUTPUT_DIR = Path("public")
-ARQUIVO_FINAL = OUTPUT_DIR / "painel-ept-v4.json"
 RELATORIO_REVISAO = OUTPUT_DIR / "revisao_epistemologica_pendente.csv"
+_ID_RECORD_RE = re.compile(r"^EPT-\d{4,}$")
+_CSV_FORMULA_PREFIXES = ("=", "+", "-", "@", "\t", "\r")
+
+
+def _sanitizar_celula_csv(valor: object) -> object:
+    if isinstance(valor, str) and valor.lstrip(" ").startswith(_CSV_FORMULA_PREFIXES):
+        return "'" + valor
+    return valor
+
+
+def _detectar_delimitador_csv(caminho: Path) -> str:
+    with open(caminho, "r", encoding="utf-8-sig", newline="") as f:
+        primeira_linha = ""
+        for linha in f:
+            if linha.strip():
+                primeira_linha = linha
+                break
+    if ";" in primeira_linha and "," not in primeira_linha:
+        return ";"
+    if "," in primeira_linha and ";" not in primeira_linha:
+        return ","
+    if "," in primeira_linha and primeira_linha.count(",") > primeira_linha.count(";"):
+        return ","
+    return ";"
 
 
 class StatusCuradoria(str, Enum):
@@ -40,11 +66,21 @@ def aplicar_curadoria_csv(
         return 0
 
     atualizados = 0
+    delimitador = _detectar_delimitador_csv(relatorio_revisao)
     with open(relatorio_revisao, "r", encoding="utf-8-sig", newline="") as f:
-        reader = csv.DictReader(f, delimiter=";")
+        reader = csv.DictReader(f, delimiter=delimitador)
+        fieldnames = {c.strip() for c in (reader.fieldnames or []) if c}
+        if "id" not in fieldnames or "status_curadoria" not in fieldnames:
+            raise ValueError(
+                f"Cabeçalho CSV inválido em {relatorio_revisao}: "
+                "esperado colunas 'id' e 'status_curadoria' (delimitador ';' ou ',')."
+            )
         for row in reader:
             cod = (row.get("id") or "").strip()
             if not cod:
+                continue
+            if not _ID_RECORD_RE.match(cod):
+                logger.warning(f"[{cod}] ID inválido ignorado na importação do CSV de curadoria.")
                 continue
 
             status_bruto = (row.get("status_curadoria") or StatusCuradoria.PENDENTE.value).strip().upper()
@@ -86,8 +122,12 @@ def aplicar_curadoria_csv(
                     base["justificativa"] = justificativa_editada
             elif status == StatusCuradoria.APROVADO:
                 valor_final = valor_aprovado or (row.get("candidato_sugerido") or "").strip()
-                if not valor_final:
-                    logger.warning(f"[{cod}] Marcado como {StatusCuradoria.APROVADO.value}, mas sem valor definido. Ignorando.")
+                if (
+                    not valor_final
+                    or valor_final.strip("-–— ") == ""
+                    or valor_final.strip().lower() in ("n/a", "na", "nenhum", "nenhuma")
+                ):
+                    logger.warning(f"[{cod}] Marcado como {StatusCuradoria.APROVADO.value}, mas sem valor válido ('{valor_final}'). Ignorando.")
                     continue
 
                 valor_norm, _ = normalizar_base_epistemologica(valor_final)
@@ -103,8 +143,7 @@ def aplicar_curadoria_csv(
             raw["indice_busca"] = construir_indice_busca(raw)
             registro_validado = ContratoDefesaV4.model_validate(raw)
 
-            with open(caminho_record, "w", encoding="utf-8") as wf:
-                wf.write(registro_validado.model_dump_json(indent=2))
+            escrever_texto_atomico(caminho_record, registro_validado.model_dump_json(indent=2))
 
             atualizados += 1
             logger.info(f"[{cod}] Curadoria aplicada ({status.value}) -> Base: {base['valor'] or 'NULA (Confirmada)'}")
@@ -147,7 +186,7 @@ def compilar_pipeline_v4(
         for reg in registros_validados
     }
     autores_reconciliados = reconciliar_autores_referenciados(mapa_autores)
-    qtd_reconciliados = 0
+    pendentes_gravacao: List[tuple[int, Path, ContratoDefesaV4]] = []
     for idx, registro in enumerate(registros_validados):
         novos_autores = autores_reconciliados.get(registro.id, [])
         if novos_autores != registro.dissertacao.autores_referenciados:
@@ -155,13 +194,15 @@ def compilar_pipeline_v4(
             raw["dissertacao"]["autores_referenciados"] = novos_autores
             raw["indice_busca"] = construir_indice_busca(raw)
             registro_atualizado = ContratoDefesaV4.model_validate(raw)
-            arq.write_text(registro_atualizado.model_dump_json(indent=2), encoding="utf-8")
-            registros_validados[idx] = registro_atualizado
-            qtd_reconciliados += 1
+            pendentes_gravacao.append((idx, arq, registro_atualizado))
 
-    if qtd_reconciliados:
+    for idx, arq, registro_atualizado in pendentes_gravacao:
+        escrever_texto_atomico(arq, registro_atualizado.model_dump_json(indent=2))
+        registros_validados[idx] = registro_atualizado
+
+    if pendentes_gravacao:
         logger.info(
-            f"Autores referenciados reconciliados em {qtd_reconciliados} registro(s) de {records_dir}."
+            f"Autores referenciados reconciliados em {len(pendentes_gravacao)} registro(s) de {records_dir}."
         )
 
     for registro in registros_validados:
@@ -189,24 +230,42 @@ def compilar_pipeline_v4(
 
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # 3. Gera e valida artefato final via PainelEptV4Output
+    # 3. Gera e valida artefato final via PainelEptV4Output (sem texto_busca_normalizado redundante)
     total_com_produto = sum(1 for r in registros_validados if r.produto is not None)
+    defesas_publicacao = [
+        reg.model_copy(
+            update={
+                "indice_busca": reg.indice_busca.model_copy(
+                    update={"texto_busca_normalizado": ""}
+                )
+            }
+        )
+        for reg in registros_validados
+    ]
     artefato_final = PainelEptV4Output(
         schema_version="4.0",
         gerado_em=datetime.now(timezone.utc).isoformat(),
-        total_defesas=len(registros_validados),
-        total_producoes=len(registros_validados) + total_com_produto,
-        defesas=registros_validados,
+        total_defesas=len(defesas_publicacao),
+        total_producoes=len(defesas_publicacao) + total_com_produto,
+        defesas=defesas_publicacao,
     )
 
-    arquivo_final.write_text(artefato_final.model_dump_json(indent=2), encoding="utf-8")
+    escrever_texto_atomico(
+        arquivo_final,
+        json.dumps(artefato_final.model_dump(), ensure_ascii=False, separators=(",", ":")),
+    )
 
     # 4. Reescreve planilha apenas com o que ainda está pendente (ou remove se zerou)
     if pendentes_revisao:
-        with open(relatorio_revisao, "w", encoding="utf-8-sig", newline="") as f:
-            writer = csv.DictWriter(f, fieldnames=list(pendentes_revisao[0].keys()), delimiter=";")
-            writer.writeheader()
-            writer.writerows(pendentes_revisao)
+        buf = io.StringIO()
+        sanitizadas = [
+            {k: _sanitizar_celula_csv(v) for k, v in item.items()}
+            for item in pendentes_revisao
+        ]
+        writer = csv.DictWriter(buf, fieldnames=list(sanitizadas[0].keys()), delimiter=";")
+        writer.writeheader()
+        writer.writerows(sanitizadas)
+        escrever_texto_atomico(relatorio_revisao, buf.getvalue(), encoding="utf-8-sig")
     elif relatorio_revisao.exists():
         relatorio_revisao.unlink()
 

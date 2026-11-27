@@ -3,23 +3,25 @@
 from __future__ import annotations
 
 import json
-import os
 import tomllib
 from contextlib import contextmanager
 from pathlib import Path
 from typing import Any, Dict, Iterator, List, Optional, Union
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 from lemeept_extractor import catalogs
 from lemeept_extractor.frontend_builder import (
-    DEFAULT_CONFIG_FILENAME,
+    DEFAULT_CONFIG_FILENAME as DEFAULT_CONFIG_FILENAME,
     DEFAULT_FRONTEND_CONFIG,
-    ENV_CONFIG_VAR,
+    ENV_CONFIG_VAR as ENV_CONFIG_VAR,
+    _derivar_widget_url,
+    _localizar_arquivo_config,
 )
 
 
 class InstituicaoConfig(BaseModel):
+    model_config = ConfigDict(extra="forbid")
     nome: str = ""
     campus: str = ""
     sigla: str = ""
@@ -27,6 +29,7 @@ class InstituicaoConfig(BaseModel):
 
 
 class CatalogosConfig(BaseModel):
+    model_config = ConfigDict(extra="forbid")
     overlay_json: Optional[Path] = None
     aliases_docentes: Dict[str, str] = Field(default_factory=dict)
     aliases_autores_referencia: Dict[str, str] = Field(default_factory=dict)
@@ -39,10 +42,12 @@ class CatalogosConfig(BaseModel):
 
 
 class LLMConfig(BaseModel):
+    model_config = ConfigDict(extra="forbid")
     skill_path: Optional[Path] = None
 
 
 class FrontendConfig(BaseModel):
+    model_config = ConfigDict(extra="forbid")
     titulo: str = DEFAULT_FRONTEND_CONFIG["titulo"]
     titulo_pagina: str = DEFAULT_FRONTEND_CONFIG["titulo_pagina"]
     subtitulo: str = DEFAULT_FRONTEND_CONFIG["subtitulo"]
@@ -56,6 +61,7 @@ class FrontendConfig(BaseModel):
 
 
 class LemeConfig(BaseModel):
+    model_config = ConfigDict(extra="forbid")
     instituicao: InstituicaoConfig = Field(default_factory=InstituicaoConfig)
     catalogos: CatalogosConfig = Field(default_factory=CatalogosConfig)
     llm: LLMConfig = Field(default_factory=LLMConfig)
@@ -86,34 +92,6 @@ def _resolver_caminho(valor: Optional[Path], base_dir: Path) -> Optional[Path]:
     if valor is None:
         return None
     return valor if valor.is_absolute() else (base_dir / valor).resolve()
-
-
-def _resolver_caminho_config(
-    config_path: Optional[Path],
-    *,
-    auto_detect: bool,
-) -> Optional[Path]:
-    if config_path is not None:
-        caminho = Path(config_path)
-        if not caminho.exists():
-            raise FileNotFoundError(f"Arquivo de configuração não encontrado: {caminho}")
-        return caminho.resolve()
-
-    env_val = (os.getenv(ENV_CONFIG_VAR) or "").strip()
-    if env_val:
-        caminho_env = Path(env_val)
-        if not caminho_env.exists():
-            raise FileNotFoundError(
-                f"Arquivo configurado em {ENV_CONFIG_VAR} não encontrado: {caminho_env}"
-            )
-        return caminho_env.resolve()
-
-    if auto_detect:
-        candidato = Path.cwd() / DEFAULT_CONFIG_FILENAME
-        if candidato.exists():
-            return candidato.resolve()
-
-    return None
 
 
 def _mesclar_catalogos_overlay(
@@ -157,13 +135,18 @@ def carregar_config(
     auto_detect: bool = True,
 ) -> LemeConfig:
     """Carrega `LemeConfig` de `config_path`, `LEMEEPT_CONFIG` ou `./lemeept.toml`."""
-    caminho = _resolver_caminho_config(config_path, auto_detect=auto_detect)
+    caminho = _localizar_arquivo_config(config_path, auto_detect=auto_detect)
     if caminho is None:
         return LemeConfig()
 
     bruto = tomllib.loads(caminho.read_text(encoding="utf-8"))
     cfg = LemeConfig.model_validate({**bruto, "origem_path": caminho})
     base_dir = caminho.parent
+
+    if not cfg.frontend.titulo_pagina.strip():
+        cfg.frontend.titulo_pagina = cfg.frontend.titulo
+    if not cfg.frontend.widget_url.strip():
+        cfg.frontend.widget_url = _derivar_widget_url(cfg.frontend.json_url)
 
     if cfg.llm.skill_path is not None:
         cfg.llm.skill_path = _resolver_caminho(cfg.llm.skill_path, base_dir)

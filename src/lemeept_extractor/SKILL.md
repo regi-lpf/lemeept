@@ -23,7 +23,7 @@ Você é um analista bibliométrico especializado na Educação Profissional e T
 ## 3. Classificação do Produto Educacional (`produto_*`)
 - **`produto_titulo`:** Utilize `evidencias_produto.titulo_educapes` quando presente e limpo, ou extraia o título exato do produto descrito em `evidencias_produto.descricao_na_dissertacao` / `resumo`.
 - **`produto_tipo` (Exatamente 1 slug canônico):**
-  - Se `evidencias_produto.tipo_sugerido_regex` estiver preenchido e coerente com a descrição, respeite-o. Caso contrário, priorize o formato explicitamente descrito na dissertação (`descricao_na_dissertacao` ou título) sobre `dc_type_educapes` genérico.
+  - Se `evidencias_produto.tipo_sugerido_regex` estiver preenchido, o Python prioriza esse valor determinístico; preencha `produto_tipo` preservando-o quando coerente ou inferindo a categoria correta quando `tipo_sugerido_regex` for `null` (priorizando o formato descrito na dissertação sobre `dc_type_educapes` genérico).
   - Ignore termos do contexto da pesquisa (ex.: pesquisa feita em um *Curso Técnico* não torna o produto um `curso_oficina`).
   - Categorias permitidas:
     - `material_didatico_instrucional`: sequências didáticas, unidades didáticas, propostas de ensino/intervenção, roteiros, cadernos pedagógicos, cartilhas didáticas, folders educativos, portfólios formativos, materiais de apoio, e-books/livros digitais instrucionais, livros paradidáticos, HQs, glossários, jogos educacionais, videoaulas, animações, podcasts didáticos, objetos e ambientes virtuais de aprendizagem (AVA/Moodle) e sites/blogs educativos.

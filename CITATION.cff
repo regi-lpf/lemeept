@@ -9,7 +9,7 @@ authors:
 url: "https://regi-lpf.github.io/lemeept/"
 repository-code: "https://github.com/regi-lpf/lemeept"
 license: MIT
-version: "0.4.0-beta"
+version: "0.4.1-beta"
 keywords:
   - bibliometrics
   - profept
