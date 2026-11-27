@@ -1368,6 +1368,31 @@ class TestUniversalFrontendBuilder(unittest.TestCase):
         loader_atual = (repo_root / "public" / "loader-elementor.html").read_text(encoding="utf-8")
         self.assertEqual(loader_renderizado.rstrip("\n"), loader_atual.rstrip("\n"))
 
+        index_renderizado = frontend_builder.renderizar_index_template(cfg)
+        index_atual = (repo_root / "index.html").read_text(encoding="utf-8")
+        self.assertEqual(" ".join(index_renderizado.split()), " ".join(index_atual.split()))
+
+    def test_builder_sem_bugs_de_lexer_css_aspas_e_js_regex(self):
+        from lemeept_extractor import frontend_builder
+
+        bundle_ficticio = (
+            '<section id="leme-painel-ept">'
+            '<style>#leme-painel-ept :focus-visible{outline:2px solid #000}\n'
+            '#leme-painel-ept .leme-x::before{content:"\\"{}"}\n'
+            '@keyframes k{0%,100%{opacity:1}}</style>'
+            '<div class="leme-x"></div>'
+            '<script>const HTML_ESCAPE_MAP={"&":"\\u0026amp;","<":"\\u0026lt;",">":"\\u0026gt;","\\"":"\\u0026quot;","\'":"\\u0026#39;"};\n'
+            'function csvEscape(v){return v}\nfunction sanitizarUrl(v){return v}\n'
+            'function f(x){return /["\'(]/.test(x);}</script>'
+            '</section>\n'
+        )
+        metricas = frontend_builder.validar_bundle(bundle_ficticio)
+        self.assertEqual(metricas["css_chaves"], 5)
+
+        js_div = "let x = 4;\nlet a = x++ / 2 // comentario apos divisao\nreturn a;"
+        compactado = frontend_builder.compactar_js_seguro(js_div)
+        self.assertIn("let a = x++ / 2", compactado)
+
     def test_gerar_site_completo_outro_campus_em_diretorio_vazio(self):
         from lemeept_extractor import frontend_builder
 
