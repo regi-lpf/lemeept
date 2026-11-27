@@ -1,7 +1,7 @@
 import re
 from typing import Dict, List, Optional, Tuple
 
-from lemeept_extractor.catalogs import MP_PARA_LP
+from lemeept_extractor import catalogs
 from lemeept_extractor.models import FonteTipoProduto
 from lemeept_extractor.normalizers import remover_acentos
 
@@ -15,11 +15,11 @@ REGRAS_TIPO_PRODUTO: List[Tuple[str, str]] = [
     ("eventos_organizados", r"\b(exposi[cç][aã]o|mostra\s+cient[ií]fica|feira\s+de|olimp[ií]ada|semin[aá]rio|evento\s+cient[ií]fico)\b"),
     ("acervo", r"\b(acervo|curadoria|cole[cç][aã]o\s+digital|reposit[oó]rio|banco\s+de\s+dados)\b"),
     ("produto_comunicacao", r"\b(produto\s+comunicacional|programa\s+de\s+r[aá]dio|programa\s+de\s+tv|campanha\s+publicit[aá]ria|boletim|jornal|revista\s+de\s+divulga[cç][aã]o)\b"),
-    ("tecnologia_social", r"\b(tecnologia\s+social|dispositivo|equipamento|inova[cç][aã]o\s+social|prot[oó]tipo)\b"),
     (
         "material_didatico_instrucional",
         r"\b(material\s+did[aá]tico|material\s+de\s+apoio|sequ[eê]ncia\s+did[aá]tica|unidade\s+did[aá]tica|cartilha|e-?book|livro\s+digital|caderno|roteiro|proposta\s+pedag[oó]gica|proposta\s+de\s+interven[cç][aã]o|jogo|hist[oó]ria\s+em\s+quadrinhos|hq|gloss[aá]rio|v[ií]deo|videoaula|anima[cç][aã]o|guia|texto\s+de\s+apoio|objeto\s+de\s+aprendizagem|folder\s+educativo|portf[oó]lio\s+formativo|podcast|ambiente\s+virtual|ava|moodle|website|site\s+educativo|blog)\b",
     ),
+    ("tecnologia_social", r"\b(tecnologia\s+social|dispositivo|equipamento|inova[cç][aã]o\s+social|prot[oó]tipo)\b"),
     ("curso_oficina", r"\b(curso\s+de\s+forma[cç][aã]o|curso\s+livre|curso\s+fic|curso\s+online|curso\s+autoformativo|oficina|minicurso|workshop)\b"),
 ]
 
@@ -89,27 +89,51 @@ _ANCORA_FORMATO_RE = re.compile(
 )
 
 
+_REGRAS_TIPO_COMP = [(k, re.compile(p, flags=re.IGNORECASE)) for k, p in REGRAS_TIPO_PRODUTO]
+_REGRAS_DC_TYPE_COMP = [(k, re.compile(p, flags=re.IGNORECASE)) for k, p in REGRAS_DC_TYPE_EDUCAPES]
+_REGRAS_FORMATO_COMP = [(k, re.compile(p, flags=re.IGNORECASE)) for k, p in REGRAS_FORMATO_PRODUTO]
+_REGRAS_DC_FORMATO_COMP = [(k, re.compile(p, flags=re.IGNORECASE)) for k, p in REGRAS_DC_TYPE_FORMATO]
+_EXCLUSOES_COMP: Dict[str, re.Pattern[str]] = {
+    k: re.compile(p, flags=re.IGNORECASE) for k, p in EXCLUSOES_CONTEXTO_FORMATO.items()
+}
+_SENTENCA_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
+_PRODUTO_SING_RE = re.compile(r"\bproduto\s+educacional\b", flags=re.IGNORECASE)
+_PRODUTO_PLURAL_RE = re.compile(r"\bprodutos?\s+educaciona(?:l|is)\b", flags=re.IGNORECASE)
+
+
 def extrair_sentenca_produto(texto: str) -> str:
     if not texto:
         return ""
-    sentencas = re.split(r"(?<=[.!?])\s+", texto)
-    return " ".join(
-        s for s in sentencas if re.search(r"produto\s+educacional", s, flags=re.IGNORECASE)
-    )
+    sentencas = _SENTENCA_SPLIT_RE.split(re.sub(r"\s+", " ", texto).strip())
+    return " ".join(s for s in sentencas if _PRODUTO_SING_RE.search(s))
 
 
 def extrair_contexto_produto(texto: str) -> str:
     """Extrai sentenças sobre o produto educacional incluindo a sentença imediatamente seguinte."""
     if not texto:
         return ""
-    sentencas = re.split(r"(?<=[.!?])\s+", re.sub(r"\s+", " ", texto).strip())
+    sentencas = _SENTENCA_SPLIT_RE.split(re.sub(r"\s+", " ", texto).strip())
     selecionadas: List[str] = []
+    vistas: set[int] = set()
     for idx, sent in enumerate(sentencas):
-        if re.search(r"\bprodutos?\s+educaciona(?:l|is)\b", sent, flags=re.IGNORECASE):
-            selecionadas.append(sent)
-            if idx + 1 < len(sentencas):
-                selecionadas.append(sentencas[idx + 1])
+        if _PRODUTO_PLURAL_RE.search(sent):
+            for j in (idx, idx + 1):
+                if j < len(sentencas) and j not in vistas:
+                    selecionadas.append(sentencas[j])
+                    vistas.add(j)
     return " ".join(selecionadas)
+
+
+def _match_sem_exclusao(
+    padrao: re.Pattern[str],
+    texto: str,
+    exclusao: Optional[re.Pattern[str]],
+) -> Optional[re.Match[str]]:
+    for m in padrao.finditer(texto):
+        if exclusao and exclusao.search(texto[max(0, m.start() - 35) : m.end() + 20]):
+            continue
+        return m
+    return None
 
 
 def _encontrar_formato_em_texto(
@@ -120,12 +144,9 @@ def _encontrar_formato_em_texto(
         return None
     low = texto.strip().lower()
     candidatos: List[Tuple[int, int, str]] = []
-    for idx_regra, (formato, padrao) in enumerate(REGRAS_FORMATO_PRODUTO):
-        m = re.search(padrao, low, flags=re.IGNORECASE)
+    for idx_regra, (formato, padrao) in enumerate(_REGRAS_FORMATO_COMP):
+        m = _match_sem_exclusao(padrao, low, _EXCLUSOES_COMP.get(formato))
         if not m:
-            continue
-        exclusao = EXCLUSOES_CONTEXTO_FORMATO.get(formato)
-        if exclusao and re.search(exclusao, low[max(0, m.start() - 35) : m.end() + 20], flags=re.IGNORECASE):
             continue
         if not preferir_mais_cedo:
             return formato
@@ -201,8 +222,8 @@ def classificar_formato_produto_com_fonte(
     # 6. Fallback de menor prioridade em dc.type do eduCAPES
     dc_texto = " ".join(dc_types).strip().lower()
     if dc_texto:
-        for fmt, padrao in REGRAS_DC_TYPE_FORMATO:
-            if re.search(padrao, dc_texto, flags=re.IGNORECASE):
+        for fmt, padrao in _REGRAS_DC_FORMATO_COMP:
+            if padrao.search(dc_texto):
                 return fmt, "educapes_dc_type"
 
     return None, None
@@ -210,12 +231,14 @@ def classificar_formato_produto_com_fonte(
 
 def classificar_produto_regex(*fontes_texto: Optional[str]) -> Optional[str]:
     """Aplica regex de produto sobre fontes textuais em ordem de prioridade."""
+    exclusao_sw = _EXCLUSOES_COMP.get("Aplicativo / Software")
     for fonte in fontes_texto:
         if not fonte:
             continue
         limpo = fonte.strip().lower()
-        for tipo_canonico, padrao in REGRAS_TIPO_PRODUTO:
-            if re.search(padrao, limpo, flags=re.IGNORECASE):
+        for tipo_canonico, padrao in _REGRAS_TIPO_COMP:
+            exclusao = exclusao_sw if tipo_canonico == "software_aplicativo" else None
+            if _match_sem_exclusao(padrao, limpo, exclusao):
                 return tipo_canonico
     return None
 
@@ -239,8 +262,8 @@ def classificar_produto_com_fonte(
 
     dc_texto = " ".join(dc_types).strip().lower()
     if dc_texto:
-        for tipo_canonico, padrao in REGRAS_DC_TYPE_EDUCAPES:
-            if re.search(padrao, dc_texto, flags=re.IGNORECASE):
+        for tipo_canonico, padrao in _REGRAS_DC_TYPE_COMP:
+            if padrao.search(dc_texto):
                 return tipo_canonico, "educapes_dc_type"
 
     return None, None
@@ -252,11 +275,10 @@ def detectar_macroprojeto_e_linha(texto_completo_pdf: str) -> Tuple[str, str]:
     (por número ou título) e aplica o vínculo rígido MP1-3 -> LP1 | MP4-6 -> LP2.
     """
     txt_limpo = re.sub(r"\s+", " ", remover_acentos(texto_completo_pdf)).lower()
-    txt_colado = re.sub(r"[^a-z0-9]", "", txt_limpo)
 
     padroes_num = [
         r"\bmacro\s*[-]?\s*projeto(?:\s+de\s+pesquisa(?:\s+e\s+desenvolvimento)?)?\s*[:\-–]?\s*([1-6]|i{1,3}|iv|v|vi)\b",
-        r"\bmp\s*[-]?\s*([1-35-6])\b",
+        r"\bmp\s*[-]?\s*([1256])\b",
     ]
     romanos = {"i": "1", "ii": "2", "iii": "3", "iv": "4", "v": "5", "vi": "6"}
 
@@ -265,20 +287,22 @@ def detectar_macroprojeto_e_linha(texto_completo_pdf: str) -> Tuple[str, str]:
         if m:
             val = m.group(1).lower()
             mp = f"MP{romanos.get(val, val)}"
-            return mp, MP_PARA_LP[mp]
+            return mp, catalogs.MP_PARA_LP[mp]
 
-    for m in re.finditer(r"(?<!\.)\bmp\s*[-]?\s*(4)\b", txt_limpo):
+    for m in re.finditer(r"(?<!\.)\bmp\s*[-]?\s*([34])\b", txt_limpo):
         antes = txt_limpo[max(0, m.start() - 25) : m.start()]
         depois = txt_limpo[m.end() : min(len(txt_limpo), m.end() + 45)]
-        if re.search(r"(?:formato|arquivo|extensao|video|audio|midia|em)\s*[:(]?\s*$", antes):
+        if re.search(r"(?:formatos?|arquivos?|extens(?:ao|oes)|videos?|audios?|midias?|em)\s*[:(]?\s*$", antes):
             continue
         if re.match(
             r"^\s*(?:;|,|\)|\.|[-–—]?\s*(?:um\s+)?(?:padrao|formato|extensao|video|audio|duracao|mb|gb|kb)|\bde\s+\d+\s*(?:mb|gb|kb)\b)",
             depois,
         ):
             continue
-        return "MP4", MP_PARA_LP["MP4"]
+        mp_num = f"MP{m.group(1)}"
+        return mp_num, catalogs.MP_PARA_LP[mp_num]
 
+    txt_colado = re.sub(r"[^a-z0-9]", "", txt_limpo)
     assinaturas_mp = [
         ("MP1", r"propostas\s+metodologicas\s+e\s+recursos\s+didaticos", "propostasmetodologicase"),
         ("MP2", r"inclusao\s+e\s+diversidade\s+(?:em|nos)\s+espacos", "inclusaoediversidade"),
@@ -289,7 +313,7 @@ def detectar_macroprojeto_e_linha(texto_completo_pdf: str) -> Tuple[str, str]:
     ]
     for mp, regex_espacado, slug_colado in assinaturas_mp:
         if re.search(regex_espacado, txt_limpo) or slug_colado in txt_colado:
-            return mp, MP_PARA_LP[mp]
+            return mp, catalogs.MP_PARA_LP[mp]
 
     if re.search(r"praticas\s+(?:educativas|educacionais|pedagogicas)\s+(?:em|na)\s+(?:ept|educacao\s+profissional)", txt_limpo) or re.search(r"\blp\s*[-]?\s*1\b", txt_limpo):
         return "MP_INDEFINIDO", "LP1"

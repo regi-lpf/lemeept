@@ -24,18 +24,28 @@ def _adicionar_unico(lista: List[str], valor: str) -> None:
         lista.append(valor.strip())
 
 
+_PAPEIS_EQUIVALENTES = {
+    "author": "creator",
+    "colaborador": "contributor",
+}
+
+
 def _adicionar_colaborador_unico(
     lista: List[Dict[str, Optional[str]]],
     nome: str,
     papel: Optional[str],
 ) -> None:
-    chave = (nome.strip().lower(), (papel or "").strip().lower())
+    papel_norm = (papel or "").strip().lower()
+    papel_canon = _PAPEIS_EQUIVALENTES.get(papel_norm, papel_norm)
+    chave = (nome.strip().lower(), papel_canon)
     if not chave[0]:
         return
     for item in lista:
-        if (item.get("nome", "").strip().lower(), (item.get("papel") or "").strip().lower()) == chave:
+        papel_item = (item.get("papel") or "").strip().lower()
+        papel_item_canon = _PAPEIS_EQUIVALENTES.get(papel_item, papel_item)
+        if (item.get("nome", "").strip().lower(), papel_item_canon) == chave:
             return
-    lista.append({"nome": nome.strip(), "papel": papel})
+    lista.append({"nome": nome.strip(), "papel": papel_canon or papel})
 
 
 def _adicionar_identificador_unico(
@@ -44,12 +54,22 @@ def _adicionar_identificador_unico(
     valor: str,
     url: str = "",
 ) -> None:
-    chave = (esquema.strip().lower(), valor.strip().lower())
-    if not chave[1]:
+    esq_norm = esquema.strip().lower()
+    val_norm = valor.strip().lower()
+    if not val_norm:
         return
     for item in lista:
-        if (item.get("esquema", "").strip().lower(), item.get("valor", "").strip().lower()) == chave:
-            return
+        if item.get("valor", "").strip().lower() == val_norm:
+            item_esq = item.get("esquema", "").strip().lower()
+            if item_esq == esq_norm:
+                return
+            if item_esq == "identifier" and esq_norm != "identifier":
+                item["esquema"] = esquema.strip()
+                if url and not item.get("url"):
+                    item["url"] = url
+                return
+            if esq_norm == "identifier":
+                return
     lista.append({"esquema": esquema.strip(), "valor": valor.strip(), "url": url})
 
 

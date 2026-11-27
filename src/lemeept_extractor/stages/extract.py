@@ -102,7 +102,14 @@ def executar_etapa2(
             sem_produto = somente_dissertacoes or cfg_sem_produto or bool(fonte.get("sem_produto", False))
 
             prelim = {}
-            if not titulo_bruto or not autor_bruto or not orientador_bruto or ano_bruto == 0:
+            if (
+                not titulo_bruto
+                or not autor_bruto
+                or not orientador_bruto
+                or ano_bruto == 0
+                or not fonte.get("instituicao")
+                or not fonte.get("campus")
+            ):
                 prelim = extrair_metadados_preliminares_pdf(
                     recortes.capa,
                     recortes.ficha_catalografica,

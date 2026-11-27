@@ -10,7 +10,11 @@ from lemeept_extractor.normalizers import (
     MAIUSCULAS_PT,
     normalizar_espacos,
 )
-from lemeept_extractor.references import INDICIO_ENTRADA_REF_RE, MARCADOR_AUTOR_REF_RE
+from lemeept_extractor.references import (
+    INDICIO_ENTRADA_REF_RE,
+    MARCADOR_AUTOR_REF_RE,
+    _reconstruir_entradas_referencias,
+)
 
 _PADRAO_INTRO = re.compile(
     r"(^|\n)\s*(?:\d+(?:\.\d+)*\.?\s+)?INTRODU[ÇC][ÃA]O\s*$",
@@ -21,7 +25,7 @@ _PADRAO_REFS = re.compile(
     r"(?:^|\n)\s*(?:\d+(?:\.\d+)*\.?\s+)?"
     r"(?:"
     r"REFER[ÊE]NCIAS(?:\s+(?:BIBLIOGR[ÁA]FICAS|BIBLOGR[ÁA]FICAS|CONSULTADAS))?"
-    r"|Refer[êe]ncias(?:\s+(?:Bibliogr[áa]ficas|Consultadas))?"
+    r"|Refer[êe]ncias(?:\s+(?:[Bb]ibliogr[áa]ficas|[Cc]onsultadas))?"
     r"|BIBLIOGRAFIA(?:\s*/\s*FONTES\s+DE\s+REFER[ÊE]NCIAS?)?"
     r"|Bibliografia(?:\s*/\s*Fontes\s+de\s+Refer[êe]ncias?)?"
     r"|OBRAS\s+QUE\s+EMBASARAM(?:\s+ESTA\s+COMPOSI[ÇC][ÃA]O)?"
@@ -301,9 +305,8 @@ def _filtrar_referencias_citadas(texto_refs: str, citacoes_unicas: Set[str]) -> 
     if not texto_refs or not citacoes_unicas:
         return []
     referencias_filtradas: List[str] = []
-    entradas = re.split(rf"\n(?=[{MAIUSCULAS_PT}]{{2,}}[,\s])", texto_refs)
-    for entrada in entradas:
-        entrada_limpa = re.sub(r"\s+", " ", entrada).strip()
+    entradas = _reconstruir_entradas_referencias(texto_refs)
+    for entrada_limpa in entradas:
         if len(entrada_limpa) < 25:
             continue
         primeiro_token = re.split(r"[,.\s]", entrada_limpa)[0].upper()

@@ -1954,5 +1954,90 @@ class TestAuditWave1FrontendBuilder(unittest.TestCase):
             self.assertTrue((out_dir / "loader-elementor.html").exists())
 
 
+class TestAuditWave2ExtractorsAndCLI(unittest.TestCase):
+    def test_mp3_audio_nao_vira_macroprojeto_e_titulacao_com_ponto(self):
+        from lemeept_extractor.extractors.classifiers import classificar_produto_regex, detectar_macroprojeto_e_linha
+        from lemeept_extractor.extractors.metadata import (
+            _eh_nome_pessoa_valido,
+            _extrair_orientador_preliminar,
+            extrair_coorientador,
+            extrair_palavras_chave_resumo,
+        )
+
+        self.assertEqual(
+            detectar_macroprojeto_e_linha("Podcast gravado em formato mp3 de 12 MB."),
+            ("MP_INDEFINIDO", "LP_INDEFINIDA"),
+        )
+        self.assertEqual(
+            classificar_produto_regex("Sequência didática com uso do aplicativo educacional Scratch"),
+            "material_didatico_instrucional",
+        )
+        self.assertFalse(_eh_nome_pessoa_valido("N/A"))
+        self.assertEqual(
+            extrair_coorientador("; coorientadora Profa. Dra. Maria da Silva. -- 2024."),
+            ["Maria da Silva"],
+        )
+        self.assertEqual(
+            _extrair_orientador_preliminar("", "Orientador(a): Prof. Dr. João Carlos Souza.\nCoorientador: Ana."),
+            "João Carlos Souza",
+        )
+        self.assertEqual(
+            extrair_palavras_chave_resumo("Palavras-chave: E.P.T., Ensino Médio, Currículo."),
+            ["E.P.T", "Ensino Médio", "Currículo"],
+        )
+
+    def test_educapes_deduplica_meta_e_tabela_e_ifc_html_tags_filhas(self):
+        import io
+        from contextlib import redirect_stdout
+
+        from collectors.ifc_blumenau import extrair_defesas_do_html
+        from lemeept_extractor import cli
+        from lemeept_extractor.extractors.educapes import _extrair_metadados_html_educapes
+
+        html_capes = (
+            '<html><head>'
+            '<meta name="dc.creator" content="Silva, Joao" />'
+            '<meta name="dc.contributor" content="Souza, Maria" />'
+            '<meta name="dc.identifier" content="10.1234/abc" />'
+            '</head><body><table>'
+            '<tr><td>dc.contributor.author</td><td>Silva, Joao</td></tr>'
+            '<tr><td>dc.contributor</td><td>Souza, Maria</td></tr>'
+            '<tr><td>dc.identifier.doi</td><td>10.1234/abc</td></tr>'
+            '</table></body></html>'
+        )
+        meta = _extrair_metadados_html_educapes(html_capes, "https://educapes.capes.gov.br/handle/capes/100")
+        self.assertEqual(len(meta["autores_colab"]), 2)
+        self.assertEqual(
+            [i for i in meta["identificadores"] if i["valor"] == "10.1234/abc"],
+            [{"esquema": "doi", "valor": "10.1234/abc", "url": ""}],
+        )
+
+        html_ifc = (
+            "<h3>DEFESAS 2025</h3>"
+            "<ul>"
+            "<li>Acadêmico: Fulano de Tal</li>"
+            "<li>Orientador(a): Prof. Dr. Beltrano</li>"
+            '<li>Dissertação: <a href="https://ex/d.pdf">Estudo sobre <strong>DEFESAS 2024</strong></a></li>'
+            '<li>Produto Educacional: <a href="https://educapes.capes.gov.br/handle/capes/99">Cartilha – Guia</a></li>'
+            "</ul>"
+        )
+        defesas = extrair_defesas_do_html(html_ifc)
+        self.assertEqual(len(defesas), 1)
+        self.assertEqual(defesas[0].ano, 2025)
+        self.assertEqual(defesas[0].orientador_bruto, "Beltrano")
+        self.assertEqual(defesas[0].handle_educapes, "https://educapes.capes.gov.br/handle/capes/99")
+
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            self.assertEqual(cli.main([]), 0)
+        self.assertIn("subcomandos", buf.getvalue())
+        with self.assertRaises(SystemExit) as cm1:
+            cli.main(["--config"])
+        self.assertEqual(cm1.exception.code, 2)
+        with self.assertRaises(SystemExit) as cm2:
+            cli.main(["--config=", "extract"])
+        self.assertEqual(cm2.exception.code, 2)
+
+
 if __name__ == "__main__":
     unittest.main()

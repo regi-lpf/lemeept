@@ -326,7 +326,7 @@ def ingerir_de_diretorio_pdfs(
             PreExtracaoItemV4(
                 id=cod_defesa,
                 fonte_profept=FonteProfeptV4(
-                    titulo_bruto=str(prelim.get("titulo") or arq.stem),
+                    titulo_bruto=str(prelim.get("titulo") or ""),
                     autor_bruto=autor_prelim,
                     orientador_bruto=str(prelim.get("orientador") or "") or None,
                     ano=ano_final,
