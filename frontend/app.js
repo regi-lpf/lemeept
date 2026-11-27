@@ -922,7 +922,6 @@
 
         const adicionarChipsFaceta = (campo, nomeFiltro) => {
             const valores = obterValoresFiltroAtivo(campo);
-            if (!valores.size) return;
             valores.forEach(valor => {
                 const rotuloValor = formatarOpcaoFiltro(campo, valor);
                 chips.push(
@@ -945,12 +944,16 @@
             adicionarChipsFaceta(filtro.dataset.campo, nomeFiltro);
         });
 
-        const htmlChips = chips.join("");
+        const temFiltros = chips.length > 0;
+        const htmlChips = temFiltros
+            ? chips.join("")
+            : '<span class="leme-chip-no-filters">Nenhum filtro ativo</span>';
+
         filtrosAtivos.innerHTML = htmlChips;
         if (graficosFiltrosEl) {
-            graficosFiltrosEl.innerHTML = chips.length
-                ? (htmlChips + '<button type="button" class="leme-chip-clear-all" data-clear-all-filters="1">Limpar filtros</button>')
-                : "";
+            graficosFiltrosEl.innerHTML = temFiltros
+                ? htmlChips + '<button type="button" class="leme-chip-clear-all" data-clear-all-filters="1">Limpar filtros</button>'
+                : htmlChips;
         }
     }
 
@@ -2535,10 +2538,10 @@
             '<div class="leme-detail-item is-wide"><b>Autores referenciados:</b><div class="leme-tags">' + autoresRefHtml + '</div></div>' +
             (item.tem_produto
                 ? '<div class="leme-detail-item is-wide"><b>Produto educacional:</b><br>' + highlightText(valorPublico(item.produto_titulo), termos) + '</div>' +
-                  '<div class="leme-detail-item"><b>Tipo de produto (CAPES):</b><br>' + highlightText(valorPublico(item.tipo_produto_label), termos) + '</div>' +
-                  '<div class="leme-detail-item"><b>Formato do produto:</b><br>' + highlightText(valorPublico(item.formato_produto), termos) + '</div>' +
-                  '<div class="leme-detail-item"><b>Nível de aplicação:</b><br>' + highlightText(valorPublico(item.nivel_aplicacao), termos) + '</div>' +
-                  '<div class="leme-detail-item"><b>Público-alvo:</b><br>' + highlightText(item.publico_alvo_labels.join(", ") || "Não informado", termos) + '</div>'
+                '<div class="leme-detail-item"><b>Tipo de produto (CAPES):</b><br>' + highlightText(valorPublico(item.tipo_produto_label), termos) + '</div>' +
+                '<div class="leme-detail-item"><b>Formato do produto:</b><br>' + highlightText(valorPublico(item.formato_produto), termos) + '</div>' +
+                '<div class="leme-detail-item"><b>Nível de aplicação:</b><br>' + highlightText(valorPublico(item.nivel_aplicacao), termos) + '</div>' +
+                '<div class="leme-detail-item"><b>Público-alvo:</b><br>' + highlightText(item.publico_alvo_labels.join(", ") || "Não informado", termos) + '</div>'
                 : '<div class="leme-detail-item is-wide"><b>Produto educacional:</b><br>Sem produto vinculado</div>') +
             '<div class="leme-detail-item is-wide"><b>Resumo da dissertação:</b><br>' + highlightText(item.dissertacao_resumo || "Resumo não disponível.", termos) + renderTags(item.termos_unificados, termos) + (linksModal.length ? '<div class="leme-actions">' + linksModal.join("") + '</div>' : '') + '</div>' +
             renderSecaoDetalhesRecolhivel(item, termos) +

@@ -1161,7 +1161,8 @@
     font-size: 12px;
 }
 
-#leme-painel-ept .leme-chip-clear-all {
+#leme-painel-ept .leme-chip-clear-all,
+#leme-painel-ept .leme-chip-no-filters {
     border: 1px solid var(--leme-border-strong);
     border-radius: 999px;
     background: #fff;
@@ -1170,13 +1171,13 @@
     min-height: 26px;
     font-size: 11px;
     font-weight: 800;
-    cursor: pointer;
     margin: 0;
     box-shadow: none;
     transition: background .15s ease, color .15s ease, border-color .15s ease;
 }
 
 #leme-painel-ept .leme-chip-clear-all:hover {
+    cursor: pointer;
     background: var(--leme-primary);
     color: #fff;
     border-color: var(--leme-primary);
