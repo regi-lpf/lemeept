@@ -12,9 +12,9 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from lemeept_extractor import catalogs
 from lemeept_extractor.frontend_builder import (
-    DEFAULT_CONFIG_FILENAME,
+    DEFAULT_CONFIG_FILENAME as DEFAULT_CONFIG_FILENAME,
     DEFAULT_FRONTEND_CONFIG,
-    ENV_CONFIG_VAR,
+    ENV_CONFIG_VAR as ENV_CONFIG_VAR,
     _derivar_widget_url,
     _localizar_arquivo_config,
 )
