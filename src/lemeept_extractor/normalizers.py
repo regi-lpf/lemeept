@@ -12,7 +12,7 @@ MAIUSCULAS_PT = "A-ZÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ"
 MINUSCULAS_PT = "a-zàáâãäåçèéêëìíîïñòóôõöùúûüý"
 
 TITULACOES_PESSOA_RE = re.compile(
-    r"^\s*(?:prof(?:essor(?:a|\(a\))?|\.?[ªao])?|dr(?:a|\.?[ªa])?|doutor(?:a|\(a\))?|m[ea]|m\.?sc|esp(?:ecialista)?|ph\.?d)"
+    r"^\s*(?:prof(?:essor(?:a|\(a\))?|\.?[ªao])?|dr(?:a|\.?[ªa])?|doutor(?:a|\(a\))?|mestr[ea](?:\(a\))?|m[ea](?=\.)|m\.?sc|esp(?:ecialista)?|ph\.?d)"
     rf"(?:\.(?=\s|:|$|[{MAIUSCULAS_PT}])|(?=[\s:]|$))\s*",
     flags=re.IGNORECASE,
 )
@@ -57,14 +57,19 @@ def normalizar_texto_busca(texto: str) -> str:
     return re.sub(r"\s+", " ", limpo).strip()
 
 
+_INICIO_SUBNOME_RE = re.compile(r"(^|[\-'])([^\W\d_])")
+
+
 def formatar_nome_proprio(nome: str) -> str:
-    """Converte 'GEANDRO CHIARELLI' em 'Geandro Chiarelli' mantendo preposições."""
+    """Converte 'GEANDRO CHIARELLI' em 'Geandro Chiarelli' mantendo preposições e hífens/apóstrofos."""
     limpo = limpar_texto(nome).strip(" ,.;-–—:")
     if not limpo:
         return ""
     palavras = limpo.lower().split(" ")
     return " ".join(
-        p if i > 0 and p in catalogs.PREPOSICOES_NOME else p.capitalize()
+        p
+        if i > 0 and p in catalogs.PREPOSICOES_NOME
+        else _INICIO_SUBNOME_RE.sub(lambda m: m.group(1) + m.group(2).upper(), p)
         for i, p in enumerate(palavras)
     )
 

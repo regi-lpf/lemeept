@@ -196,10 +196,21 @@ def coletar_evidencias_educapes(
             fonte_formato_regex=fonte_formato,
         )
 
-    base_url = handle_url.strip().rstrip("/")
-    full_url = base_url if "show=full" in base_url else f"{base_url}?show=full"
+    bruto_url = handle_url.strip().rstrip("/")
+    if not bruto_url.lower().startswith(("http://", "https://")):
+        handle_limpo = re.sub(r"^handle/", "", bruto_url, flags=re.IGNORECASE).lstrip("/")
+        base_url = f"https://educapes.capes.gov.br/handle/{handle_limpo}"
+    else:
+        base_url = bruto_url
+
+    if "show=full" in base_url:
+        full_url = base_url
+    else:
+        separador = "&" if "?" in base_url else "?"
+        full_url = f"{base_url}{separador}show=full"
 
     slug_cache = re.sub(r"[^a-zA-Z0-9_-]", "_", base_url.split("handle/")[-1])
+    cache_dir.mkdir(parents=True, exist_ok=True)
     cache_file = cache_dir / f"{slug_cache}.html"
 
     html = ""

@@ -9,6 +9,7 @@ from lemeept_extractor.normalizers import (
     CONTROLE_INVISIVEL_RE,
     MAIUSCULAS_PT,
     normalizar_espacos,
+    remover_acentos,
 )
 from lemeept_extractor.references import (
     INDICIO_ENTRADA_REF_RE,
@@ -69,9 +70,13 @@ _MARCADORES_EPISTEMOLOGICOS_RE = re.compile(
 )
 _PRODUTO_EDUCACIONAL_RE = re.compile(r"\bproduto\s+educacional\b", flags=re.IGNORECASE)
 
-_CITACAO_PARENTETICA_RE = re.compile(
-    rf"\(([{MAIUSCULAS_PT}][A-Za-zÀ-ÖØ-öø-ÿ\s;&.\-]+?,\s*\d{{4}}[a-z]?(?:,\s*p\.\s*\d+(?:-\d+)?)?)\)"
+_UMA_CITACAO_PAR_RE = (
+    rf"[{MAIUSCULAS_PT}][A-Za-zÀ-ÖØ-öø-ÿ\s&\.\-]+?,\s*\d{{4}}[a-z]?(?:,\s*p\.\s*\d+(?:-\d+)?)?"
 )
+_CITACAO_PARENTETICA_RE = re.compile(
+    rf"\(({_UMA_CITACAO_PAR_RE}(?:\s*;\s*{_UMA_CITACAO_PAR_RE})*)\)"
+)
+_CDD_CDU_RE = re.compile(r"\b(?:CDD|CDU)\b")
 
 
 def ler_paginas_pdf(pdf_path: Path) -> List[Tuple[int, str]]:
@@ -128,12 +133,12 @@ def _pagina_tem_indicio_bib(texto: str) -> bool:
 
 
 def extrair_capa_e_ficha(paginas: List[Tuple[int, str]]) -> Tuple[str, str]:
-    """Extrai o texto das duas primeiras páginas (capa) e da ficha catalográfica."""
-    capa = "\n\n".join(txt for _, txt in paginas[:2])
+    """Extrai o texto das três primeiras páginas (capa/folha de rosto) e da ficha catalográfica."""
+    capa = "\n\n".join(txt for _, txt in paginas[:3])
     ficha = ""
     for num_pag, txt in paginas:
         upper = txt.upper()
-        if "FICHA CATALOGRÁFICA" in upper or "CDD" in upper or "CDU" in upper:
+        if "FICHA CATALOGRÁFICA" in upper or bool(_CDD_CDU_RE.search(upper)):
             ficha = f"[PÁG. {num_pag}]\n{txt}"
             break
     return capa, ficha
@@ -288,9 +293,13 @@ def _extrair_trechos_epistemologicos(
             recorte = _recortar_janela_centrada(paragrafo, m_epist, max_chars=1200, antes=400)
             cits = _CITACAO_PARENTETICA_RE.findall(recorte)
             for c in cits:
-                sobrenome = c.split(",")[0].strip().split()[0].upper()
-                if len(sobrenome) >= 3:
-                    citacoes_unicas.add(sobrenome)
+                for parte in c.split(";"):
+                    token = parte.strip().split(",")[0].strip().split()
+                    if not token:
+                        continue
+                    sobrenome = remover_acentos(token[0]).upper()
+                    if len(sobrenome) >= 3:
+                        citacoes_unicas.add(sobrenome)
             trechos_epist.append(
                 TrechoEpistemologico(
                     secao=secao,
@@ -318,7 +327,7 @@ def _filtrar_referencias_citadas(texto_refs: str, citacoes_unicas: Set[str]) -> 
     for entrada_limpa in entradas:
         if len(entrada_limpa) < 25:
             continue
-        primeiro_token = re.split(r"[,.\s]", entrada_limpa)[0].upper()
+        primeiro_token = remover_acentos(re.split(r"[,.\s]", entrada_limpa)[0]).upper()
         if primeiro_token in citacoes_unicas:
             referencias_filtradas.append(entrada_limpa[:400])
             if len(referencias_filtradas) >= 25:
@@ -338,11 +347,16 @@ def isolar_secoes_pdf(paginas: List[Tuple[int, str]]) -> Tuple[RecortesTextuais,
     min_idx_refs = (idx_intro + 1) if idx_intro is not None else min(5, len(paginas) // 2)
     idx_refs, texto_refs = _coletar_secoes_referencias(paginas, min_idx_refs)
 
-    introducao_paginas = paginas[idx_intro : idx_intro + 5] if idx_intro is not None else paginas[8:13]
+    inicio_corpo = idx_intro if idx_intro is not None else min(8, len(paginas) // 4)
+    introducao_paginas = (
+        paginas[idx_intro : idx_intro + 5]
+        if idx_intro is not None
+        else paginas[inicio_corpo : inicio_corpo + 5]
+    )
     introducao = "\n\n".join(f"[PÁG. {p}]\n{t}" for p, t in introducao_paginas)[:8000]
 
     fim_corpo = idx_refs if idx_refs is not None else len(paginas)
-    corpo_paginas = paginas[(idx_intro or 8) : fim_corpo]
+    corpo_paginas = paginas[inicio_corpo:fim_corpo]
 
     descricao_produto = _extrair_descricao_produto(corpo_paginas)
     pagina_intro_inicio = paginas[idx_intro][0] if idx_intro is not None else None

@@ -86,7 +86,11 @@ def executar_etapa2(
         try:
             cod = item["id"]
             fonte = item["fonte_profept"]
-            pdf_path = Path(item["arquivos"]["pdf_dissertacao_path"])
+            arquivos_item = item["arquivos"]
+            status_dl = arquivos_item.get("status_download")
+            if status_dl is not None and status_dl != "OK":
+                raise RuntimeError(f"PDF indisponível para {cod} (status_download={status_dl})")
+            pdf_path = Path(arquivos_item["pdf_dissertacao_path"])
             if not pdf_path.exists():
                 raise FileNotFoundError(f"PDF ausente: {pdf_path}")
 

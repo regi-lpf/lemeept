@@ -50,6 +50,7 @@ def construir_indice_busca(registro: Dict[str, Any]) -> Dict[str, Any]:
         registro.get("autor", ""),
         registro.get("orientador", ""),
         " ".join(registro.get("coorientadores") or []),
+        registro.get("instituicao", ""),
         registro.get("campus", ""),
         registro.get("linha_pesquisa", ""),
         registro.get("macroprojeto", ""),
@@ -471,6 +472,8 @@ def executar_etapa3(
 ):
     if not skill_path.exists():
         raise FileNotFoundError(f"Arquivo de instruções não encontrado: {skill_path}")
+    if forcar_curados and not sobrescrever:
+        logger.warning("--forcar-curados não tem efeito sem --sobrescrever.")
 
     system_prompt = skill_path.read_text(encoding="utf-8")
     llm = LLMClient()

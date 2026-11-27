@@ -2168,5 +2168,163 @@ class TestAuditWave2Optimizations(unittest.TestCase):
             self.assertIn("requestAnimationFrame", conteudo)
 
 
+class TestAuditWave3PipelineAndConfig(unittest.TestCase):
+    def test_config_strict_extra_forbid_e_versao_unificada(self):
+        from pydantic import ValidationError
+
+        import lemeept_extractor
+        from lemeept_extractor import frontend_builder, io_utils
+        from lemeept_extractor.config import carregar_config
+
+        self.assertIn(lemeept_extractor.__version__, io_utils.DEFAULT_HEADERS["User-Agent"])
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            toml_bad = Path(tmpdir) / "bad.toml"
+            toml_bad.write_text('[instituicao]\ncampu = "Typo"\n', encoding="utf-8")
+            with self.assertRaises(ValidationError):
+                carregar_config(toml_bad, auto_detect=False)
+
+            toml_fe_bad = Path(tmpdir) / "fe_bad.toml"
+            toml_fe_bad.write_text('[frontend]\ntitlo = "Typo"\n', encoding="utf-8")
+            with self.assertRaises(ValueError):
+                frontend_builder.carregar_config_frontend(toml_fe_bad)
+
+    def test_educapes_pdf_sections_e_normalizers_edge_cases(self):
+        from lemeept_extractor.extractors.educapes import coletar_evidencias_educapes
+        from lemeept_extractor.extractors.pdf_sections import isolar_secoes_pdf
+        from lemeept_extractor.normalizers import formatar_nome_proprio, limpar_nome_pessoa
+
+        self.assertEqual(limpar_nome_pessoa("Ma Li"), "Ma Li")
+        self.assertEqual(limpar_nome_pessoa("Me. João Silva"), "João Silva")
+        self.assertEqual(limpar_nome_pessoa("Mestra Ana Costa"), "Ana Costa")
+        self.assertEqual(formatar_nome_proprio("MARIA D'AVILA SILVA-SANTOS"), "Maria D'Avila Silva-Santos")
+
+        paginas_curtas = [
+            (1, "Capa do trabalho"),
+            (2, "Verso em branco"),
+            (3, "Folha de rosto\nAutor X"),
+            (4, "RESUMO\nTexto do resumo.\nPalavras-chave: EPT."),
+            (5, "Materialismo histórico-dialético conforme (FREIRE, 1987; SAVIANI, 2008; LUKÁCS, 2013). " + ("x " * 70)),
+            (6, "REFERÊNCIAS\nLUKÁCS, György. Para uma ontologia do ser social. São Paulo: Boitempo, 2013."),
+        ]
+        recortes, _ = isolar_secoes_pdf(paginas_curtas)
+        self.assertIn("Folha de rosto", recortes.capa)
+        self.assertTrue(any("SAVIANI" in t.citacoes_detectadas or any("SAVIANI" in c for c in t.citacoes_detectadas) for t in recortes.trechos_epistemologicos))
+        self.assertTrue(any("LUKÁCS" in r for r in recortes.referencias_filtradas))
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            cache_dir = Path(tmpdir) / "cache_novo"
+            fake_resp = MagicMock(status_code=200, text="<html><head><title>Cartilha</title></head></html>")
+            with patch("lemeept_extractor.extractors.educapes.obter_sessao_http") as mock_sess:
+                mock_sess.return_value.get.return_value = fake_resp
+                ev = coletar_evidencias_educapes(
+                    handle_url="capes/1234?locale=pt_BR",
+                    titulo_produto_bruto="Cartilha",
+                    resumo_pdf="",
+                    descricao_produto_pdf="",
+                    cache_dir=cache_dir,
+                )
+            url_chamada = mock_sess.return_value.get.call_args.args[0]
+            self.assertEqual(url_chamada, "https://educapes.capes.gov.br/handle/capes/1234?locale=pt_BR&show=full")
+            self.assertTrue((cache_dir / "capes_1234_locale_pt_BR.html").exists())
+            self.assertEqual(ev.tipo_produto_regex, "material_didatico_instrucional")
+
+    def test_curadoria_rejeita_tracos_llm_indexa_instituicao_e_extract_rejeita_status_erro(self):
+        from lemeept_extractor.stages.compile import aplicar_curadoria_csv
+        from lemeept_extractor.stages.extract import executar_etapa2
+        from lemeept_extractor.stages.llm import construir_indice_busca, executar_etapa3
+
+        indice = construir_indice_busca(
+            {
+                "id": "EPT-0001",
+                "ano": 2024,
+                "autor": "Ana",
+                "orientador": "João",
+                "instituicao": "IFSC Florianópolis",
+                "campus": "Centro",
+                "dissertacao": {"titulo": "Estudo", "resumo": "Texto curto", "base_epistemologica": {}},
+                "produto": {},
+            }
+        )
+        self.assertIn("ifsc florianopolis", indice["texto_busca_normalizado"])
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmp = Path(tmpdir)
+            records_dir = tmp / "records"
+            records_dir.mkdir()
+            rec = {
+                "id": "EPT-0800",
+                "ano": 2024,
+                "autor": "Ana",
+                "orientador": "João",
+                "coorientadores": [],
+                "campus": "Blumenau",
+                "linha_pesquisa": "LP1",
+                "macroprojeto": "MP1",
+                "dissertacao": {
+                    "titulo": "Estudo",
+                    "link": "",
+                    "resumo": "",
+                    "palavras_chave": [],
+                    "base_epistemologica": {"valor": None, "candidato": None, "confianca": "baixa", "justificativa": "", "revisao_pendente": True, "curado_humano": False},
+                    "autores_referenciados": [],
+                },
+                "produto": {
+                    "titulo": "Sem produto",
+                    "tipo": "outro",
+                    "formato": None,
+                    "nivel_aplicacao": "Não informado",
+                    "publico_alvo": ["nao_identificado"],
+                    "link": "",
+                    "palavras_chave": [],
+                    "data_publicacao": None,
+                },
+                "indice_busca": {"texto_busca_normalizado": "", "termos_unificados": [], "tem_produto_vinculado": False, "tem_resumo": False},
+            }
+            (records_dir / "EPT-0800.json").write_text(json.dumps(rec), encoding="utf-8")
+            csv_path = tmp / "rev.csv"
+            csv_path.write_text(
+                "id;ano;autor;titulo_dissertacao;base_sugerida;candidato_sugerido;confianca;justificativa_llm;status_curadoria;base_epistemologica_aprovada\n"
+                "EPT-0800;2024;Ana;Estudo;;;baixa;;APROVADO;---\n",
+                encoding="utf-8",
+            )
+            self.assertEqual(aplicar_curadoria_csv(records_dir=records_dir, relatorio_revisao=csv_path), 0)
+
+            stage2_dir = tmp / "stage2"
+            stage2_dir.mkdir()
+            skill = tmp / "SKILL.md"
+            skill.write_text("Instruções", encoding="utf-8")
+            with patch.dict(os.environ, {"LLM_PROVIDER": "ollama"}, clear=True), self.assertLogs(
+                "lemeept_extractor.stages.llm", level="WARNING"
+            ) as logs:
+                executar_etapa3(
+                    sobrescrever=False,
+                    forcar_curados=True,
+                    skill_path=skill,
+                    stage2_dir=stage2_dir,
+                    records_dir=records_dir,
+                )
+            self.assertTrue(any("--forcar-curados" in m for m in logs.output))
+
+            manifest_err = tmp / "manifest_err.json"
+            manifest_err.write_text(
+                json.dumps(
+                    {
+                        "versao_schema": "4.0.0",
+                        "total_registros": 1,
+                        "registros": [
+                            {
+                                "id": "EPT-0801",
+                                "fonte_profept": {"titulo_bruto": "T", "autor_bruto": "A", "orientador_bruto": "O", "ano": 2024},
+                                "arquivos": {"pdf_dissertacao_path": str(tmp / "x.pdf"), "status_download": "ERRO_HTTP"},
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            self.assertEqual(executar_etapa2(manifest_path=manifest_err, output_dir=stage2_dir, cache_dir=tmp / "cache"), 1)
+
+
 if __name__ == "__main__":
     unittest.main()

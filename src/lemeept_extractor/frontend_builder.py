@@ -46,13 +46,15 @@ def _derivar_widget_url(json_url: str) -> str:
 
 def _localizar_arquivo_config(
     config_path: Optional[Path],
-    root: Optional[Path],
+    root: Optional[Path] = None,
+    *,
+    auto_detect: bool = True,
 ) -> Optional[Path]:
     if config_path is not None:
         caminho = Path(config_path)
         if not caminho.exists():
             raise FileNotFoundError(f"Arquivo de configuração não encontrado: {caminho}")
-        return caminho
+        return caminho.resolve()
 
     env_val = (os.getenv(ENV_CONFIG_VAR) or "").strip()
     if env_val:
@@ -61,10 +63,12 @@ def _localizar_arquivo_config(
             raise FileNotFoundError(
                 f"Arquivo configurado em {ENV_CONFIG_VAR} não encontrado: {caminho_env}"
             )
-        return caminho_env
+        return caminho_env.resolve()
 
-    candidato = (root or Path.cwd()).resolve() / DEFAULT_CONFIG_FILENAME
-    return candidato if candidato.exists() else None
+    if auto_detect:
+        candidato = (root or Path.cwd()).resolve() / DEFAULT_CONFIG_FILENAME
+        return candidato if candidato.exists() else None
+    return None
 
 
 def carregar_config_frontend(
@@ -81,6 +85,11 @@ def carregar_config_frontend(
         dados = tomllib.loads(caminho_cfg.read_text(encoding="utf-8"))
         secao_fe = dados.get("frontend")
         if isinstance(secao_fe, dict):
+            desconhecidas = sorted(set(secao_fe) - set(DEFAULT_FRONTEND_CONFIG))
+            if desconhecidas:
+                raise ValueError(
+                    f"Chave(s) desconhecida(s) em [frontend] de {caminho_cfg}: {', '.join(desconhecidas)}"
+                )
             for chave in DEFAULT_FRONTEND_CONFIG:
                 if secao_fe.get(chave) is not None:
                     cfg[chave] = str(secao_fe[chave])

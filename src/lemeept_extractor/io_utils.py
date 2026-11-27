@@ -13,12 +13,13 @@ import urllib3
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+from lemeept_extractor import __version__
 from lemeept_extractor.normalizers import normalizar_chave_busca
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 DEFAULT_HEADERS: Dict[str, str] = {
-    "User-Agent": "lemeept-extractor/0.4.0b0 (Pesquisa Bibliometrica Academica)"
+    "User-Agent": f"lemeept-extractor/{__version__} (Pesquisa Bibliometrica Academica)"
 }
 
 DEFAULT_REF_IDS: Tuple[Path, ...] = (

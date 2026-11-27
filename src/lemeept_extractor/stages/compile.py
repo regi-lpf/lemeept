@@ -21,7 +21,6 @@ logger = logging.getLogger("lemeept_extractor.stages.compile")
 
 RECORDS_DIR = Path("data/records")
 OUTPUT_DIR = Path("public")
-ARQUIVO_FINAL = OUTPUT_DIR / "painel-ept-v4.json"
 RELATORIO_REVISAO = OUTPUT_DIR / "revisao_epistemologica_pendente.csv"
 _ID_RECORD_RE = re.compile(r"^EPT-\d{4,}$")
 _CSV_FORMULA_PREFIXES = ("=", "+", "-", "@", "\t", "\r")
@@ -123,8 +122,12 @@ def aplicar_curadoria_csv(
                     base["justificativa"] = justificativa_editada
             elif status == StatusCuradoria.APROVADO:
                 valor_final = valor_aprovado or (row.get("candidato_sugerido") or "").strip()
-                if not valor_final:
-                    logger.warning(f"[{cod}] Marcado como {StatusCuradoria.APROVADO.value}, mas sem valor definido. Ignorando.")
+                if (
+                    not valor_final
+                    or valor_final.strip("-–— ") == ""
+                    or valor_final.strip().lower() in ("n/a", "na", "nenhum", "nenhuma")
+                ):
+                    logger.warning(f"[{cod}] Marcado como {StatusCuradoria.APROVADO.value}, mas sem valor válido ('{valor_final}'). Ignorando.")
                     continue
 
                 valor_norm, _ = normalizar_base_epistemologica(valor_final)
