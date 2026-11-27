@@ -120,11 +120,21 @@ def _validar_prenome_ref(prenome_bruto: str) -> List[str]:
             sem_acento = remover_acentos(tc).upper()
             if sem_acento.lower() in catalogs.STOPWORDS_TOKEN_NAO_PESSOA or sem_acento in catalogs.SIGLAS_UF_PAIS:
                 return []
+            if len(tc) == 3 and re.search(r"[AEIOUÁÉÍÓÚÂÊÔÃÕ]", tc):
+                qtd_caps += 1
+                if qtd_caps > 2:
+                    return []
+                limpos.append(tc.capitalize())
+                tem_nome_ou_inicial = True
+                continue
             limpos.extend(ch + "." for ch in tc)
             tem_nome_ou_inicial = True
             continue
 
-        if re.match(rf"^[{MAIUSCULAS_PT}][{MINUSCULAS_PT}'\-]+(?:\.)?$", tc):
+        if re.match(
+            rf"^[{MAIUSCULAS_PT}](?:[{MINUSCULAS_PT}]+(?:['\-][{MAIUSCULAS_PT}{MINUSCULAS_PT}][{MINUSCULAS_PT}]*)*|['\-][{MAIUSCULAS_PT}][{MINUSCULAS_PT}]+)(?:\.)?$",
+            tc,
+        ):
             base = tc.rstrip(".")
             if remover_acentos(base).lower() in catalogs.STOPWORDS_TOKEN_NAO_PESSOA:
                 return []

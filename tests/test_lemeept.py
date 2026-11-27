@@ -1704,5 +1704,88 @@ class TestAuditWave1SecurityAndIO(unittest.TestCase):
             self.assertEqual(rc, 1)
 
 
+class TestAuditWave1Bibliometrics(unittest.TestCase):
+    def test_janelas_epistemologicas_centradas_e_novas_matrizes(self):
+        from lemeept_extractor.extractors.pdf_sections import isolar_secoes_pdf
+
+        intro = "1 INTRODUÇÃO\n" + ("Texto contextual introdutório. " * 25)
+        bloco_longo = ("Contextualização preliminar extensa. " * 45) + (
+            "A análise ancora-se em David Ausubel e na aprendizagem significativa com subsunçores."
+            " "
+        ) + ("Consideração complementar final. " * 15)
+        bloco_adorno = ("Discussão inicial. " * 45) + (
+            "Sob a ótica da Teoria Crítica, Adorno e Horkheimer discutem a semiformação."
+        )
+        paginas = [
+            (1, "Capa"),
+            (8, intro),
+            (15, bloco_longo),
+            (16, bloco_adorno),
+            (30, "REFERÊNCIAS\nAUSUBEL, David. Psicologia Educacional. 1980."),
+        ]
+        recortes, _ = isolar_secoes_pdf(paginas)
+        textos = [t.texto for t in recortes.trechos_epistemologicos]
+        self.assertTrue(any("Ausubel" in tx for tx in textos))
+        self.assertTrue(any("Adorno" in tx for tx in textos))
+
+    def test_overlay_normaliza_acentos_e_base_composta_com_phc_e_barra(self):
+        from lemeept_extractor.config import CatalogosConfig, LemeConfig, usar_config
+        from lemeept_extractor.normalizers import normalizar_base_epistemologica, normalizar_nome_orientador
+        from lemeept_extractor.references import extrair_autores_referencias
+
+        cfg = LemeConfig(
+            catalogos=CatalogosConfig(
+                aliases_docentes={"Fátima Silva": "Fátima Silva"},
+                stopwords_entidade=["São José"],
+            )
+        )
+        with usar_config(cfg):
+            self.assertEqual(normalizar_nome_orientador("Fatima Silva"), "Fátima Silva")
+            self.assertEqual(extrair_autores_referencias("SÃO JOSÉ. Plano Diretor. 2022."), [])
+
+        self.assertEqual(
+            normalizar_base_epistemologica("MHD e PHC"),
+            ("Materialismo Histórico-Dialético e Pedagogia Histórico-Crítica", True),
+        )
+        self.assertEqual(
+            normalizar_base_epistemologica("MHD E Teoria Crítica"),
+            ("Materialismo Histórico-Dialético e Teoria Crítica", True),
+        )
+        self.assertEqual(
+            normalizar_base_epistemologica("Educação Libertadora / Freireana e Teoria Crítica"),
+            ("Educação Libertadora / Freireana e Teoria Crítica", True),
+        )
+        self.assertEqual(
+            normalizar_base_epistemologica("Materialismo Histórico e Dialético e Pedagogia Histórico-Crítica"),
+            ("Materialismo Histórico-Dialético e Pedagogia Histórico-Crítica", True),
+        )
+
+    def test_abnt_prenomes_compostos_tres_letras_e_sobrenomes_recuperados(self):
+        from lemeept_extractor.references import extrair_autores_referencias
+
+        refs = "\n".join(
+            [
+                "SARTRE, Jean-Paul. O ser e o nada. Petrópolis: Vozes, 2007.",
+                "ROUSSEAU, Jean-Jacques. Emílio. São Paulo: Martins Fontes, 2004.",
+                "SILVA, ANA. Didática em EPT. Florianópolis: IFC, 2021.",
+                "COSTA, RUI. Trabalho e Educação. Campinas: Autores Associados, 2020.",
+                "DELLA FONTE, Sandra Soares. Formação humana. Vitória: Ifes, 2018.",
+                "CÂMARA, Joaquim Mattoso. Princípios de linguística. Petrópolis: Vozes, 1979.",
+            ]
+        )
+        autores = extrair_autores_referencias(refs)
+        self.assertEqual(
+            autores,
+            [
+                "Ana Silva",
+                "Jean-Jacques Rousseau",
+                "Jean-Paul Sartre",
+                "Joaquim Mattoso Câmara",
+                "Rui Costa",
+                "Sandra Soares Della Fonte",
+            ],
+        )
+
+
 if __name__ == "__main__":
     unittest.main()

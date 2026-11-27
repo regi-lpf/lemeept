@@ -57,9 +57,13 @@ _MARCADORES_EPISTEMOLOGICOS_RE = re.compile(
     r"\b(epistemol[óo]g|ontol[óo]g|materialismo\s+hist[óo]rico|dial[ée]tic|freire|saviani|"
     r"ciavatta|frigotto|ramos|gramsci|kosik|luk[áa]cs|vygotsky|vigotski|bakhtin|foucault|"
     r"bourdieu|morin|positivis|fenomenolog|hermeneut|construtivis|omnilateral|politecnia|"
-    r"trabalho\s+como\s+princ[íi]pio\s+educativo|curr[íi]culo\s+integrado)\b",
+    r"trabalho\s+como\s+princ[íi]pio\s+educativo|curr[íi]culo\s+integrado|"
+    r"aprendizagem\s+significativa|ausubel|subsun[çc]or|moreira|"
+    r"teoria\s+cr[íi]tica|adorno|horkheimer|marcuse|frankfurt|"
+    r"marx|kuenzer|manacorda|hist[óo]rico[\s\-]cultural|interdisciplinar)\b",
     flags=re.IGNORECASE,
 )
+_PRODUTO_EDUCACIONAL_RE = re.compile(r"\bproduto\s+educacional\b", flags=re.IGNORECASE)
 
 _CITACAO_PARENTETICA_RE = re.compile(
     rf"\(([{MAIUSCULAS_PT}][A-Za-zÀ-ÖØ-öø-ÿ\s;&.\-]+?,\s*\d{{4}}[a-z]?(?:,\s*p\.\s*\d+(?:-\d+)?)?)\)"
@@ -201,14 +205,42 @@ def _coletar_secoes_referencias(
     return idx_refs, "\n\n".join(blocos_refs)
 
 
+def _recortar_janela_centrada(
+    texto: str,
+    match: re.Match[str],
+    max_chars: int = 1200,
+    antes: int = 400,
+) -> str:
+    limpo = texto.strip()
+    if len(limpo) <= max_chars:
+        return limpo
+    offset_ws = len(texto) - len(texto.lstrip())
+    pos_match = max(0, match.start() - offset_ws)
+    inicio = max(0, pos_match - antes)
+    fim = min(len(limpo), inicio + max_chars)
+    if fim == len(limpo):
+        inicio = max(0, fim - max_chars)
+    if inicio > 0:
+        prox_espaco = limpo.find(" ", inicio)
+        if 0 <= prox_espaco < pos_match and prox_espaco - inicio < 80:
+            inicio = prox_espaco + 1
+    if fim < len(limpo):
+        ult_espaco = limpo.rfind(" ", pos_match, fim)
+        if ult_espaco > inicio and fim - ult_espaco < 80:
+            fim = ult_espaco
+    return limpo[inicio:fim].strip()
+
+
 def _extrair_descricao_produto(corpo_paginas: List[Tuple[int, str]]) -> str:
     trechos_produto: List[str] = []
     for p, t in corpo_paginas:
-        if not re.search(r"\bproduto\s+educacional\b", t, flags=re.IGNORECASE):
+        if not _PRODUTO_EDUCACIONAL_RE.search(t):
             continue
         for paragrafo in t.split("\n\n"):
-            if re.search(r"produto\s+educacional", paragrafo, flags=re.IGNORECASE) and len(paragrafo) > 80:
-                trechos_produto.append(f"[PÁG. {p}] {paragrafo.strip()}")
+            m_prod = _PRODUTO_EDUCACIONAL_RE.search(paragrafo)
+            if m_prod and len(paragrafo) > 80:
+                recorte = _recortar_janela_centrada(paragrafo, m_prod, max_chars=900, antes=250)
+                trechos_produto.append(f"[PÁG. {p}] {recorte}")
                 if len(trechos_produto) >= 6:
                     return "\n\n".join(trechos_produto)[:3500]
     return "\n\n".join(trechos_produto)[:3500]
@@ -220,30 +252,47 @@ def _extrair_trechos_epistemologicos(
 ) -> Tuple[List[TrechoEpistemologico], Set[str]]:
     trechos_epist: List[TrechoEpistemologico] = []
     citacoes_unicas: Set[str] = set()
+    qtd_intro = 0
+    qtd_corpo = 0
 
     for p, t in corpo_paginas:
+        secao = (
+            "Introdução"
+            if (pagina_intro_inicio is not None and p <= pagina_intro_inicio + 4)
+            else "Corpo/Fundamentação"
+        )
+        if secao == "Introdução" and qtd_intro >= 4:
+            continue
+        if secao == "Corpo/Fundamentação" and qtd_corpo >= 8:
+            continue
+
         for paragrafo in t.split("\n\n"):
-            if len(paragrafo) < 120 or not _MARCADORES_EPISTEMOLOGICOS_RE.search(paragrafo):
+            if len(paragrafo) < 120:
                 continue
-            cits = _CITACAO_PARENTETICA_RE.findall(paragrafo)
+            m_epist = _MARCADORES_EPISTEMOLOGICOS_RE.search(paragrafo)
+            if not m_epist:
+                continue
+            recorte = _recortar_janela_centrada(paragrafo, m_epist, max_chars=1200, antes=400)
+            cits = _CITACAO_PARENTETICA_RE.findall(recorte)
             for c in cits:
                 sobrenome = c.split(",")[0].strip().split()[0].upper()
                 if len(sobrenome) >= 3:
                     citacoes_unicas.add(sobrenome)
             trechos_epist.append(
                 TrechoEpistemologico(
-                    secao=(
-                        "Introdução"
-                        if (pagina_intro_inicio is not None and p <= pagina_intro_inicio + 4)
-                        else "Corpo/Fundamentação"
-                    ),
+                    secao=secao,
                     pagina=p,
-                    texto=paragrafo.strip()[:1200],
+                    texto=recorte,
                     citacoes_detectadas=cits[:8],
                 )
             )
-            if len(trechos_epist) >= 12:
+            if secao == "Introdução":
+                qtd_intro += 1
+            else:
+                qtd_corpo += 1
+            if len(trechos_epist) >= 12 or (qtd_intro >= 4 and qtd_corpo >= 8):
                 return trechos_epist, citacoes_unicas
+            break
 
     return trechos_epist, citacoes_unicas
 
