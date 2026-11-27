@@ -1,4 +1,5 @@
 import copy
+import json
 import logging
 import os
 import time
@@ -102,10 +103,17 @@ def _limpar_schema_gemini(schema: Dict[str, Any]) -> Dict[str, Any]:
     return _limpar(schema_copia)
 
 
+def _erro_http_transiente(status_code: Optional[int]) -> bool:
+    """Retorna True para erros transitórios (408, 429, 5xx ou sem código HTTP)."""
+    if status_code is None:
+        return True
+    return status_code in (408, 429) or status_code >= 500
+
+
 class LLMClient:
     """
     Cliente modular para inferência estruturada.
-    Suporta: gemini, groq, openrouter, mistral e ollama.
+    Suporta: gemini, openrouter, ollama e llama.
     """
 
     OPENAI_COMPAT_PRESETS = {
@@ -158,7 +166,7 @@ class LLMClient:
             else:
                 api_key = os.getenv("LLM_API_KEY") or "ollama"
 
-            self.openai_client = OpenAI(base_url=base_url, api_key=api_key)
+            self.openai_client = OpenAI(base_url=base_url, api_key=api_key, max_retries=0, timeout=120.0)
             self.gemini_client = None
 
         else:
@@ -198,12 +206,16 @@ class LLMClient:
                 )
                 if self.delay > 0:
                     time.sleep(self.delay)
-                return response.text
+                texto = getattr(response, "text", None)
+                if not texto or not texto.strip():
+                    raise ValueError("Resposta vazia retornada pelo Gemini.")
+                return texto
             except GeminiAPIError as e:
-                if tentativa == max_retries:
+                status_code = getattr(e, "code", None)
+                if tentativa == max_retries or not _erro_http_transiente(status_code):
                     raise
-                espera = (2**tentativa) * 10 if e.code == 429 else 2**tentativa
-                logger.warning(f"Erro Gemini (HTTP {e.code}). Aguardando {espera}s...")
+                espera = (2**tentativa) * 10 if status_code == 429 else 2**tentativa
+                logger.warning(f"Erro Gemini (HTTP {status_code}). Aguardando {espera}s...")
                 time.sleep(espera)
 
         raise RuntimeError("Falha no Gemini após múltiplas tentativas.")
@@ -218,8 +230,8 @@ class LLMClient:
         schema_estrito = _resolver_refs_schema(response_model.model_json_schema())
 
         # Nem todos os modelos gratuitos do OpenRouter aceitam strict=True no json_schema;
-        # para OpenRouter usamos json_object com instrução explícita do schema se necessário.
-        usar_strict = self.provider_name in ("groq", "mistral", "ollama")
+        # para OpenRouter e llama usamos json_object com instrução explícita do schema.
+        usar_strict = self.provider_name == "ollama"
 
         if usar_strict:
             response_format = {
@@ -233,14 +245,15 @@ class LLMClient:
             prompt_final = user_prompt
         else:
             response_format = {"type": "json_object"}
+            schema_json = json.dumps(schema_estrito, ensure_ascii=False)
             prompt_final = (
                 f"{user_prompt}\n\n"
                 f"OBRIGATÓRIO: Responda apenas com um objeto JSON válido aderente a este JSON Schema:\n"
-                f"{schema_estrito}"
+                f"{schema_json}"
             )
 
         extra_body: Dict[str, Any] = {}
-        if self.provider_name == "ollama" or self.provider_name == "llama":
+        if self.provider_name == "ollama":
             if self.num_ctx is not None:
                 extra_body["options"] = {"num_ctx": self.num_ctx}
             if self.think is not None:
@@ -263,7 +276,15 @@ class LLMClient:
                 response = self.openai_client.chat.completions.create(**request_kwargs)
                 if self.delay > 0:
                     time.sleep(self.delay)
-                return response.choices[0].message.content
+                choices = getattr(response, "choices", None) or []
+                conteudo = (
+                    getattr(choices[0].message, "content", None)
+                    if choices and getattr(choices[0], "message", None) is not None
+                    else None
+                )
+                if not conteudo or not conteudo.strip():
+                    raise ValueError(f"Resposta vazia retornada por {self.provider_name}.")
+                return conteudo
 
             except RateLimitError as e:
                 if tentativa == max_retries:
@@ -272,7 +293,8 @@ class LLMClient:
                 logger.warning(f"Rate limit ({self.provider_name}). Aguardando {espera}s... ({e})")
                 time.sleep(espera)
             except OpenAIAPIError as e:
-                if tentativa == max_retries:
+                status_code = getattr(e, "status_code", None)
+                if tentativa == max_retries or not _erro_http_transiente(status_code):
                     raise
                 espera = 2**tentativa
                 logger.warning(f"Erro API ({self.provider_name}): {e}. Tentando em {espera}s...")

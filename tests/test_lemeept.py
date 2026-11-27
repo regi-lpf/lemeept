@@ -1787,5 +1787,121 @@ class TestAuditWave1Bibliometrics(unittest.TestCase):
         )
 
 
+class TestAuditWave1LLMAndStep3(unittest.TestCase):
+    def test_llm_provider_json_dumps_llama_sem_ollama_options_e_erro_4xx_sem_retry(self):
+        from openai import APIStatusError
+
+        # OpenRouter: usa json.dumps no prompt (aspas duplas válidas) e não retenta 401
+        with patch.dict(
+            os.environ,
+            {"LLM_PROVIDER": "openrouter", "OPENROUTER_API_KEY": "k", "LLM_DELAY": "0"},
+            clear=True,
+        ):
+            client = LLMClient()
+            resp_ok = SimpleNamespace(
+                choices=[SimpleNamespace(message=SimpleNamespace(content='{"macroprojeto":"MP1"}'))]
+            )
+            client.openai_client.chat.completions.create = MagicMock(return_value=resp_ok)
+            saida = client.gerar_estruturado("sys", "usr", RespostaInterpretativaLLM, max_retries=2)
+            self.assertEqual(saida, '{"macroprojeto":"MP1"}')
+            user_msg = client.openai_client.chat.completions.create.call_args.kwargs["messages"][1]["content"]
+            self.assertIn('"additionalProperties": false', user_msg)
+            self.assertNotIn("'additionalProperties': False", user_msg)
+
+            req_fake = SimpleNamespace(url="https://openrouter.ai", method="POST", headers={})
+            resp_401 = SimpleNamespace(request=req_fake, status_code=401, headers={})
+            err_401 = APIStatusError("unauthorized", response=resp_401, body=None)
+            client.openai_client.chat.completions.create = MagicMock(side_effect=err_401)
+            with patch("lemeept_extractor.llm_provider.time.sleep") as mock_sleep:
+                with self.assertRaises(APIStatusError):
+                    client.gerar_estruturado("sys", "usr", RespostaInterpretativaLLM, max_retries=3)
+                mock_sleep.assert_not_called()
+                self.assertEqual(client.openai_client.chat.completions.create.call_count, 1)
+
+        # llama: não envia extra_body.options do Ollama e valida resposta vazia
+        with patch.dict(
+            os.environ,
+            {"LLM_PROVIDER": "llama", "LLM_NUM_CTX": "4096", "LLM_THINK": "false", "LLM_DELAY": "0"},
+            clear=True,
+        ):
+            client_llama = LLMClient()
+            client_llama.openai_client.chat.completions.create = MagicMock(
+                return_value=SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(content=None))])
+            )
+            with self.assertRaises(ValueError):
+                client_llama.gerar_estruturado("sys", "usr", RespostaInterpretativaLLM, max_retries=1)
+            kwargs_llama = client_llama.openai_client.chat.completions.create.call_args.kwargs
+            self.assertNotIn("extra_body", kwargs_llama)
+
+    def test_limite_incremental_etapa3_ignora_ja_processados(self):
+        from lemeept_extractor.stages.llm import executar_etapa3
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            s2 = root / "stage2"
+            rec = root / "records"
+            s2.mkdir()
+            rec.mkdir()
+            skill = root / "SKILL.md"
+            skill.write_text("# SKILL\n", encoding="utf-8")
+
+            for idx in (1, 2, 3):
+                cod = f"EPT-000{idx}"
+                payload = ContratoExtracaoDeterministicaV4(
+                    id=cod,
+                    metadados_resolvidos=MetadadosResolvidos(
+                        ano=2025,
+                        autor=f"Autor {idx}",
+                        orientador="Orientador A",
+                        instituicao="IFC",
+                        campus="Blumenau",
+                        linha_pesquisa="LP1",
+                        macroprojeto="MP1",
+                        sem_produto=True,
+                    ),
+                    dissertacao_deterministica=DissertacaoDeterministica(
+                        titulo=f"Dissertacao {idx}",
+                        link=f"https://ex/{idx}.pdf",
+                        palavras_chave=["EPT"],
+                        autores_referenciados=["Paulo Freire"],
+                    ),
+                    evidencias_educapes=EvidenciasEduCAPES(),
+                    recortes_textuais=RecortesTextuais(resumo="Resumo teste."),
+                )
+                (s2 / f"{cod}.json").write_text(payload.model_dump_json(), encoding="utf-8")
+
+            # EPT-0001 e EPT-0002 já existem no destino
+            (rec / "EPT-0001.json").write_text("{}", encoding="utf-8")
+            (rec / "EPT-0002.json").write_text("{}", encoding="utf-8")
+
+            resposta_ok = json.dumps(
+                {
+                    "macroprojeto": "MP1",
+                    "base_epistemologica": {
+                        "valor": "Pedagogia Histórico-Crítica",
+                        "candidato": None,
+                        "confianca": "alta",
+                        "justificativa": "Fundamentação explícita.",
+                        "evidencias": [],
+                    },
+                },
+                ensure_ascii=False,
+            )
+
+            with patch("lemeept_extractor.stages.llm.LLMClient") as mock_cls:
+                mock_cls.return_value.gerar_estruturado.return_value = resposta_ok
+                falhas = executar_etapa3(
+                    limite=1,
+                    skill_path=skill,
+                    stage2_dir=s2,
+                    records_dir=rec,
+                    somente_dissertacoes=True,
+                )
+
+            self.assertEqual(falhas, 0)
+            self.assertEqual(mock_cls.return_value.gerar_estruturado.call_count, 1)
+            self.assertTrue((rec / "EPT-0003.json").exists())
+
+
 if __name__ == "__main__":
     unittest.main()
