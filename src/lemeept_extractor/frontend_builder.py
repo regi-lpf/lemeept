@@ -801,6 +801,13 @@ def gerar_site_completo(
     return gerados
 
 
+def _rotulo_caminho(caminho: Path, root: Path) -> str:
+    try:
+        return str(caminho.relative_to(root))
+    except ValueError:
+        return str(caminho)
+
+
 def main(
     argv: Optional[Sequence[str]] = None,
     default_root: Optional[Path] = None,
@@ -901,7 +908,7 @@ def main(
             if not out_loader.exists() or out_loader.read_text(encoding="utf-8") != renderizar_loader_template(frontend_cfg):
                 print(f"[ERRO] {out_loader.name} esta ausente ou desatualizado.", file=sys.stderr)
                 return 1
-        print(f"[OK] {out_widget.relative_to(root)} atualizado e validado ({len(bundle_bytes) / 1024:.1f} KB, {len(bundle.splitlines())} linhas).")
+        print(f"[OK] {_rotulo_caminho(out_widget, root)} atualizado e validado ({len(bundle_bytes) / 1024:.1f} KB, {len(bundle.splitlines())} linhas).")
         return 0
 
     if args.emit_site:
@@ -912,7 +919,7 @@ def main(
             emitir_loader=True,
             output_dir=pasta_saida,
         )
-        print(f"Site completo gerado em {root}: {', '.join(str(p.relative_to(root)) for p in gerados.values())}")
+        print(f"Site completo gerado em {root}: {', '.join(_rotulo_caminho(p, root) for p in gerados.values())}")
     else:
         out_widget.parent.mkdir(parents=True, exist_ok=True)
         out_widget.write_bytes(bundle_bytes)
@@ -928,7 +935,7 @@ def main(
 
     print(
         f"Fontes (HTML + CSS + JS): {fontes_linhas} linhas | {fontes_bytes / 1024:.1f} KB bruto\n"
-        f"Bundle ({out_widget.relative_to(root)}): {len(bundle.splitlines())} linhas | "
+        f"Bundle ({_rotulo_caminho(out_widget, root)}): {len(bundle.splitlines())} linhas | "
         f"{len(bundle_bytes) / 1024:.1f} KB bruto | {gzip_kb:.1f} KB gzip\n"
         f"Validacao Elementor OK: css_chaves={metricas['css_chaves']}, "
         f"classes_leme={metricas['classes_leme']}, classes_estado={metricas['classes_estado']}, "

@@ -4,6 +4,7 @@
     const host = document.getElementById("leme-painel-loader");
     if (!host || host.dataset.lemeLoading === "1") return;
     host.dataset.lemeLoading = "1";
+    let alvoErro = host;
     try {
         const res = await fetch(host.dataset.widgetUrl, { cache: "no-cache" });
         if (!res.ok) throw new Error("HTTP " + res.status);
@@ -12,6 +13,7 @@
         const secao = wrapper.firstElementChild;
         if (!secao || secao.id !== "leme-painel-ept") throw new Error("Fragmento invalido.");
         host.replaceWith(secao);
+        alvoErro = secao;
         const scriptOriginal = secao.querySelector("script");
         if (scriptOriginal) {
             const novoScript = document.createElement("script");
@@ -20,7 +22,9 @@
         }
     } catch (err) {
         console.error("Falha ao carregar widget LEME / ProfEPT:", err);
-        host.textContent = "O painel está temporariamente indisponível. Atualize a página para tentar novamente.";
+        if (alvoErro && alvoErro.isConnected) {
+            alvoErro.textContent = "O painel está temporariamente indisponível. Atualize a página para tentar novamente.";
+        }
     }
 })();
 </script>

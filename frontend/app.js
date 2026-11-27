@@ -75,6 +75,7 @@
     let modoCardTipoProduto = "tipo_produto";
     let paginaAtual = 1;
     let debounceTimer = null;
+    let carregandoPainel = false;
     let ultimoFocoAntesModal = null;
     let bodyOverflowAnterior = "";
     const itensPorPagina = 12;
@@ -700,6 +701,8 @@
     }
 
     function limparTodosFiltros() {
+        clearTimeout(debounceTimer);
+        debounceTimer = null;
         busca.value = "";
         filtrosSelecionados.forEach(set => set.clear());
         aplicarFiltros(true);
@@ -2146,7 +2149,7 @@
         if (!totalFiltrado) {
             statusEl.innerHTML = '<span>0 ' + escapeHtml(cfg.entidadePlural) +
                 ' exibidos<span id="leme-ranking-selecao-info">' + montarHtmlSelecaoModalRanking(cfg.campoFiltro) + '</span></span>' +
-                '<span>Contagem: defesas ' + escapeHtml(cfg.acaoDescricao) + ' (% sobre ' + escapeHtml(estado.totalDefesas) + ')</span>';
+                '<span>Contagem: ' + escapeHtml(estado.unidadePlural) + ' ' + escapeHtml(cfg.acaoDescricao) + ' (% sobre ' + escapeHtml(estado.totalBase) + ')</span>';
             pagEl.innerHTML = "";
 
             const emTodos = (estado.corte > 1 && estado.buscaTermos.length > 0)
@@ -2175,7 +2178,7 @@
 
         statusEl.innerHTML = '<span>' + escapeHtml(textoExibindo) +
             '<span id="leme-ranking-selecao-info">' + montarHtmlSelecaoModalRanking(cfg.campoFiltro) + '</span></span>' +
-            '<span>Contagem: defesas ' + escapeHtml(cfg.acaoDescricao) + ' (% sobre ' + escapeHtml(estado.totalDefesas) + ')</span>';
+            '<span>Contagem: ' + escapeHtml(estado.unidadePlural) + ' ' + escapeHtml(cfg.acaoDescricao) + ' (% sobre ' + escapeHtml(estado.totalBase) + ')</span>';
 
         listaEl.innerHTML = '<div class="leme-bars"></div>';
         const barsEl = listaEl.firstElementChild;
@@ -2186,7 +2189,7 @@
 
         paginaItens.forEach(d => {
             const ativo = valoresAtivos.has(d.key);
-            const pct = formatarPercentualPtBr(d.valor, estado.totalDefesas);
+            const pct = formatarPercentualPtBr(d.valor, estado.totalBase);
             const infoPct = " (" + d.valor + " · " + pct + ")";
             const scale = Math.max(0.03, d.valor / estado.maxGlobal);
             const scaleStr = "scaleX(" + scale.toFixed(4) + ")";
@@ -2277,14 +2280,20 @@
             rankOriginal: idx + 1,
             norm: normalizarBusca(d.label)
         }));
-        const totalDefesas = baseRanking.length;
+        const ehFormato = tipo === "formato_produto";
+        const totalBase = ehFormato
+            ? baseRanking.reduce((acc, item) => acc + (item.tem_produto ? 1 : 0), 0)
+            : baseRanking.length;
         const corteInicial = escolherCorteAdaptavel(dadosBrutos, cfg.corteInicial);
 
         estadoModalRanking = {
             tipo: tipo,
             cfg: cfg,
             dadosBrutos: dadosBrutos,
-            totalDefesas: totalDefesas,
+            totalBase: totalBase,
+            unidadeSingular: ehFormato ? "produto" : "defesa",
+            unidadePlural: ehFormato ? "produtos" : "defesas",
+            colunaContagemCsv: ehFormato ? "Produtos" : "Defesas",
             maxGlobal: dadosBrutos[0] ? dadosBrutos[0].valor : 1,
             corte: corteInicial,
             busca: "",
@@ -2303,12 +2312,13 @@
             resumo = dadosBrutos.length.toLocaleString("pt-BR") + " " +
                 (dadosBrutos.length === 1 ? "coorientador distinto" : "coorientadores distintos") +
                 " em " + defsCoor.toLocaleString("pt-BR") + (defsCoor === 1 ? " defesa com coorientação" : " defesas com coorientação") +
-                " (de " + totalDefesas.toLocaleString("pt-BR") + (totalDefesas === 1 ? " defesa" : " defesas") +
+                " (de " + totalBase.toLocaleString("pt-BR") + (totalBase === 1 ? " defesa" : " defesas") +
                 " no recorte atual)." + instrucaoModal;
         } else {
+            const labelBase = totalBase === 1 ? estadoModalRanking.unidadeSingular : estadoModalRanking.unidadePlural;
             resumo = dadosBrutos.length.toLocaleString("pt-BR") + " " +
                 (dadosBrutos.length === 1 ? cfg.entidadeSingular + " distinto" : cfg.entidadePlural + " distintos") +
-                " em " + totalDefesas.toLocaleString("pt-BR") + (totalDefesas === 1 ? " defesa" : " defesas") +
+                " em " + totalBase.toLocaleString("pt-BR") + " " + labelBase +
                 " do recorte atual." + instrucaoModal;
         }
 
@@ -2467,7 +2477,7 @@
 
     function csvEscape(valor) {
         let texto = String(valor == null ? "" : valor).replace(/\r\n|\r|\n/g, " ");
-        if (/^[=+\-@\t\r]/.test(texto)) {
+        if (/^[=+\-@\t\r]/.test(texto.trimStart())) {
             texto = "'" + texto;
         }
         return '"' + texto.replace(/"/g, '""') + '"';
@@ -2546,13 +2556,13 @@
         const cfg = estado.cfg;
         const itens = obterItensModalRankingFiltrados(estado);
         if (!itens.length) return;
-        const cabecalho = ["Posição", cfg.colunaCsv, "Defesas", "Percentual (%)"].map(csvEscape).join(";");
+        const cabecalho = ["Posição", cfg.colunaCsv, estado.colunaContagemCsv, "Percentual (%)"].map(csvEscape).join(";");
         const linhas = [cabecalho].concat(
             itens.map(d => [
                 d.rankOriginal,
                 d.label,
                 d.valor,
-                formatarPercentualPtBr(d.valor, estado.totalDefesas)
+                formatarPercentualPtBr(d.valor, estado.totalBase)
             ].map(csvEscape).join(";"))
         );
         dispararDownloadCsv(linhas, cfg.arquivoCsv);
@@ -2709,6 +2719,8 @@
 
         const clearSearch = e.target.closest("[data-clear-search]");
         if (clearSearch) {
+            clearTimeout(debounceTimer);
+            debounceTimer = null;
             busca.value = "";
             aplicarFiltros(true);
             busca.focus();
@@ -2735,7 +2747,12 @@
         debounceTimer = setTimeout(() => aplicarFiltros(true), 200);
     });
     busca.addEventListener("keydown", e => {
-        if (e.key === "Escape") { busca.value = ""; aplicarFiltros(true); }
+        if (e.key === "Escape") {
+            clearTimeout(debounceTimer);
+            debounceTimer = null;
+            busca.value = "";
+            aplicarFiltros(true);
+        }
     });
     limpar.addEventListener("click", limparTodosFiltros);
     btnCards.addEventListener("click", () => { modo = "cards"; atualizarVisualizacao(); });
@@ -2744,9 +2761,9 @@
     modalClose.addEventListener("click", fecharModal);
     modalBackdrop.addEventListener("click", e => { if (e.target === modalBackdrop) fecharModal(); });
     if (typeof mqMobile.addEventListener === "function") {
-        mqMobile.addEventListener("change", () => { if (dados.length) atualizarVisualizacao(); });
+        mqMobile.addEventListener("change", () => { if (raiz.isConnected && dados.length) atualizarVisualizacao(); });
     } else if (typeof mqMobile.addListener === "function") {
-        mqMobile.addListener(() => { if (dados.length) atualizarVisualizacao(); });
+        mqMobile.addListener(() => { if (raiz.isConnected && dados.length) atualizarVisualizacao(); });
     }
     document.addEventListener("keydown", e => {
         if (!raiz.isConnected || !modalBackdrop.classList.contains("is-open")) return;
@@ -2773,6 +2790,8 @@
     }
 
     async function iniciarPainel() {
+        if (carregandoPainel) return;
+        carregandoPainel = true;
         definirControlesDesabilitados(true);
         contador.textContent = "Carregando resultados...";
         graficosNota.textContent = "Carregando indicadores...";
@@ -2821,6 +2840,8 @@
                 });
             paginacao.innerHTML = "";
             resultados.innerHTML = '<div class="leme-empty"><p>O catálogo está temporariamente indisponível. Verifique a disponibilidade do arquivo JSON v4.</p><button type="button" class="leme-retry-btn" data-retry-load="1">Tentar novamente</button></div>';
+        } finally {
+            carregandoPainel = false;
         }
     }
 

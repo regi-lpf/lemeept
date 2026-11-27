@@ -1903,5 +1903,26 @@ class TestAuditWave1LLMAndStep3(unittest.TestCase):
             self.assertTrue((rec / "EPT-0003.json").exists())
 
 
+class TestAuditWave1FrontendBuilder(unittest.TestCase):
+    def test_frontend_builder_output_dir_absoluto_fora_do_root(self):
+        from lemeept_extractor.frontend_builder import main as fb_main
+
+        with tempfile.TemporaryDirectory() as tmp:
+            out_dir = Path(tmp) / "saida_externa"
+            rc = fb_main(
+                [
+                    "--root",
+                    str(PROJECT_ROOT),
+                    "--from-template",
+                    "--emit-loader",
+                    "--output-dir",
+                    str(out_dir),
+                ]
+            )
+            self.assertEqual(rc, 0)
+            self.assertTrue((out_dir / "widget-elementor.html").exists())
+            self.assertTrue((out_dir / "loader-elementor.html").exists())
+
+
 if __name__ == "__main__":
     unittest.main()
