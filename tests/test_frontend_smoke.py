@@ -340,6 +340,12 @@ class TestFrontendSmoke(unittest.TestCase):
             page.click("#leme-limpar")
             self.assertEqual(page.locator("#leme-graficos-filtros .leme-chip").count(), 0)
 
+            page.fill("#leme-busca", "Freire")
+            page.wait_for_selector("#leme-resultados mark.leme-highlight")
+            self.assertGreater(page.locator("#leme-resultados .leme-card").count(), 0)
+            page.click("#leme-limpar")
+            self.assertEqual(page.locator("#leme-resultados .leme-card").count(), 12)
+
             page.locator(".leme-card-detail-btn").first.click()
             self.assertIn("is-open", page.locator("#leme-modal-backdrop").get_attribute("class") or "")
             page.click("#leme-modal-close")

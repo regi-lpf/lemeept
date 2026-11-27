@@ -202,7 +202,7 @@ class ProdutoFinalV4(BaseModel):
 
 
 class IndiceBuscaV4(BaseModel):
-    texto_busca_normalizado: str
+    texto_busca_normalizado: str = ""
     termos_unificados: List[str] = Field(default_factory=list)
     tem_produto_vinculado: bool
     tem_resumo: bool

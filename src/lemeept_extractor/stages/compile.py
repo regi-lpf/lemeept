@@ -227,17 +227,30 @@ def compilar_pipeline_v4(
 
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # 3. Gera e valida artefato final via PainelEptV4Output
+    # 3. Gera e valida artefato final via PainelEptV4Output (sem texto_busca_normalizado redundante)
     total_com_produto = sum(1 for r in registros_validados if r.produto is not None)
+    defesas_publicacao = [
+        reg.model_copy(
+            update={
+                "indice_busca": reg.indice_busca.model_copy(
+                    update={"texto_busca_normalizado": ""}
+                )
+            }
+        )
+        for reg in registros_validados
+    ]
     artefato_final = PainelEptV4Output(
         schema_version="4.0",
         gerado_em=datetime.now(timezone.utc).isoformat(),
-        total_defesas=len(registros_validados),
-        total_producoes=len(registros_validados) + total_com_produto,
-        defesas=registros_validados,
+        total_defesas=len(defesas_publicacao),
+        total_producoes=len(defesas_publicacao) + total_com_produto,
+        defesas=defesas_publicacao,
     )
 
-    escrever_texto_atomico(arquivo_final, artefato_final.model_dump_json(indent=2))
+    escrever_texto_atomico(
+        arquivo_final,
+        json.dumps(artefato_final.model_dump(), ensure_ascii=False, separators=(",", ":")),
+    )
 
     # 4. Reescreve planilha apenas com o que ainda está pendente (ou remove se zerou)
     if pendentes_revisao:

@@ -878,7 +878,11 @@ class TestStep4Compile(unittest.TestCase):
             self.assertEqual(rec_final.dissertacao.base_epistemologica.valor, "Pedagogia Histórico-Crítica")
             self.assertTrue(rec_final.dissertacao.base_epistemologica.curado_humano)
             self.assertFalse(rec_final.dissertacao.base_epistemologica.revisao_pendente)
-            self.assertIn("pedagogia historico critica", rec_final.indice_busca.texto_busca_normalizado)
+            self.assertEqual(rec_final.indice_busca.texto_busca_normalizado, "")
+            rec_persistido = json.loads((rec_dir / "EPT-0902.json").read_text(encoding="utf-8"))
+            self.assertIn("pedagogia historico critica", rec_persistido["indice_busca"]["texto_busca_normalizado"])
+            raw_json = (dist_dir / "painel-ept-v4.json").read_text(encoding="utf-8")
+            self.assertNotIn("\n  ", raw_json)
 
     def test_compilar_reconcilia_autores_entre_registros_e_eh_idempotente(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -910,11 +914,12 @@ class TestStep4Compile(unittest.TestCase):
             saida1 = compilar_pipeline_v4(records_dir=rec_dir, output_dir=dist_dir)
             r1 = next(d for d in saida1.defesas if d.id == "EPT-0903")
             self.assertEqual(r1.dissertacao.autores_referenciados, ["Dante Henrique Moura", "Gabriel Kaplún"])
-            self.assertIn("dante henrique moura", r1.indice_busca.texto_busca_normalizado)
+            self.assertEqual(r1.indice_busca.texto_busca_normalizado, "")
 
             # Arquivo individual também foi atualizado e segunda compilação é idempotente
             gravado = ContratoDefesaV4.model_validate_json((rec_dir / "EPT-0903.json").read_text(encoding="utf-8"))
             self.assertEqual(gravado.dissertacao.autores_referenciados, ["Dante Henrique Moura", "Gabriel Kaplún"])
+            self.assertIn("dante henrique moura", gravado.indice_busca.texto_busca_normalizado)
             with self.assertLogs("lemeept_extractor.stages.compile", level="INFO") as logs:
                 compilar_pipeline_v4(records_dir=rec_dir, output_dir=dist_dir)
             self.assertFalse(any("reconciliados em" in m for m in logs.output))
