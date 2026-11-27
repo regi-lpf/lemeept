@@ -1026,7 +1026,8 @@ min-width: 24px;
 padding: 0 5px;
 font-size: 12px;
 }
-#leme-painel-ept .leme-chip-clear-all {
+#leme-painel-ept .leme-chip-clear-all,
+#leme-painel-ept .leme-chip-no-filters {
 border: 1px solid var(--leme-border-strong);
 border-radius: 999px;
 background: #fff;
@@ -1035,12 +1036,12 @@ padding: 4px 10px;
 min-height: 26px;
 font-size: 11px;
 font-weight: 800;
-cursor: pointer;
 margin: 0;
 box-shadow: none;
 transition: background .15s ease, color .15s ease, border-color .15s ease;
 }
 #leme-painel-ept .leme-chip-clear-all:hover {
+cursor: pointer;
 background: var(--leme-primary);
 color: #fff;
 border-color: var(--leme-primary);
@@ -2919,7 +2920,6 @@ chips.push(
 }
 const adicionarChipsFaceta = (campo, nomeFiltro) => {
 const valores = obterValoresFiltroAtivo(campo);
-if (!valores.size) return;
 valores.forEach(valor => {
 const rotuloValor = formatarOpcaoFiltro(campo, valor);
 chips.push(
@@ -2940,12 +2940,15 @@ const label = raiz.querySelector('label[for="' + filtro.id + '"]');
 const nomeFiltro = label ? label.textContent : filtro.dataset.campo;
 adicionarChipsFaceta(filtro.dataset.campo, nomeFiltro);
 });
-const htmlChips = chips.join("");
+const temFiltros = chips.length > 0;
+const htmlChips = temFiltros
+? chips.join("")
+: '<span class="leme-chip-no-filters">Nenhum filtro ativo</span>';
 filtrosAtivos.innerHTML = htmlChips;
 if (graficosFiltrosEl) {
-graficosFiltrosEl.innerHTML = chips.length
-? (htmlChips + '<button type="button" class="leme-chip-clear-all" data-clear-all-filters="1">Limpar filtros</button>')
-: "";
+graficosFiltrosEl.innerHTML = temFiltros
+? htmlChips + '<button type="button" class="leme-chip-clear-all" data-clear-all-filters="1">Limpar filtros</button>'
+: htmlChips;
 }
 }
 function ordenarResultados(lista) {
